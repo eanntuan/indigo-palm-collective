@@ -1079,3 +1079,46 @@ body {
   line-height: 1.6;
   margin-top: 1rem;
 }
+
+/* Email Subscribers */
+.subscribers-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.subscribers-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.subscribers-table th {
+  background-color: #738561;
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.subscribers-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.9rem;
+}
+
+.subscribers-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.loading-text, .empty-state, .error-text {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.error-text {
+  color: #d2635b;
+}

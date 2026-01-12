@@ -890,7 +890,7 @@ window.syncQuickBooks = async function() {
       // Reload dashboard data
       setTimeout(() => {
         progressDiv.style.display = 'none';
-        loadDashboard();
+        loadDashboardData();
         checkQuickBooksStatus();
       }, 2000);
 
@@ -1011,4 +1011,158 @@ window.addEventListener('DOMContentLoaded', () => {
     alert('QuickBooks connection failed: ' + urlParams.get('qb_error'));
   }
 });
+
+/**
+ * Email Subscribers Management
+ */
+
+// Load email subscribers from Firestore
+window.loadEmailSubscribers = async function() {
+  const listDiv = document.getElementById('email-subscribers-list');
+  const countSpan = document.getElementById('email-count');
+
+  try {
+    listDiv.innerHTML = '<p class="loading-text">Loading subscribers...</p>';
+
+    const subscribersQuery = query(
+      collection(db, 'emailSubscribers'),
+      where('active', '==', true)
+    );
+
+    const snapshot = await getDocs(subscribersQuery);
+    const subscribers = [];
+
+    snapshot.forEach(doc => {
+      subscribers.push({
+        id: doc.id,
+        ...doc.data()
+      });
+    });
+
+    // Sort by subscribedAt (most recent first)
+    subscribers.sort((a, b) => {
+      if (!a.subscribedAt) return 1;
+      if (!b.subscribedAt) return -1;
+      return b.subscribedAt.toMillis() - a.subscribedAt.toMillis();
+    });
+
+    countSpan.textContent = subscribers.length;
+
+    if (subscribers.length === 0) {
+      listDiv.innerHTML = '<p class="empty-state">No subscribers yet.</p>';
+      return;
+    }
+
+    // Create table
+    let html = `
+      <table class="subscribers-table">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Source</th>
+            <th>Subscribed</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    subscribers.forEach(sub => {
+      const name = [sub.firstName, sub.lastName].filter(Boolean).join(' ') || '-';
+      const date = sub.subscribedAt ?
+        sub.subscribedAt.toDate().toLocaleDateString() : '-';
+
+      html += `
+        <tr>
+          <td>${sub.email}</td>
+          <td>${name}</td>
+          <td>${sub.source || '-'}</td>
+          <td>${date}</td>
+        </tr>
+      `;
+    });
+
+    html += `
+        </tbody>
+      </table>
+    `;
+
+    listDiv.innerHTML = html;
+
+  } catch (error) {
+    console.error('Error loading subscribers:', error);
+    listDiv.innerHTML = '<p class="error-text">Error loading subscribers. Please try again.</p>';
+  }
+};
+
+// Export email subscribers to CSV
+window.exportEmailSubscribers = async function() {
+  try {
+    const subscribersQuery = query(
+      collection(db, 'emailSubscribers'),
+      where('active', '==', true)
+    );
+
+    const snapshot = await getDocs(subscribersQuery);
+    const subscribers = [];
+
+    snapshot.forEach(doc => {
+      const data = doc.data();
+      subscribers.push({
+        email: data.email,
+        firstName: data.firstName || '',
+        lastName: data.lastName || '',
+        source: data.source || '',
+        subscribedAt: data.subscribedAt ?
+          data.subscribedAt.toDate().toISOString() : ''
+      });
+    });
+
+    if (subscribers.length === 0) {
+      alert('No subscribers to export.');
+      return;
+    }
+
+    // Create CSV content
+    const headers = ['Email', 'First Name', 'Last Name', 'Source', 'Subscribed At'];
+    const csvRows = [headers.join(',')];
+
+    subscribers.forEach(sub => {
+      const row = [
+        sub.email,
+        sub.firstName,
+        sub.lastName,
+        sub.source,
+        sub.subscribedAt
+      ];
+      csvRows.push(row.join(','));
+    });
+
+    const csvContent = csvRows.join('\n');
+
+    // Download CSV file
+    const blob = new Blob([csvContent], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.setAttribute('hidden', '');
+    a.setAttribute('href', url);
+    a.setAttribute('download', `email-subscribers-${new Date().toISOString().split('T')[0]}.csv`);
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    alert(`Exported ${subscribers.length} subscribers to CSV!`);
+
+  } catch (error) {
+    console.error('Error exporting subscribers:', error);
+    alert('Error exporting subscribers. Please try again.');
+  }
+};
+
+// Load subscribers when Settings tab is shown
+const originalShowSettings = window.showSettings;
+window.showSettings = function() {
+  if (originalShowSettings) originalShowSettings();
+  loadEmailSubscribers();
+};
 

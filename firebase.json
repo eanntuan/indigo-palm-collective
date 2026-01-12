@@ -20,6 +20,10 @@
       {
         "source": "/quickbooks-sync",
         "function": "quickbooksSync"
+      },
+      {
+        "source": "/email-signup",
+        "function": "emailSignup"
       }
     ]
   },

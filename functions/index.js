@@ -335,7 +335,7 @@ async function syncRevenue(auth) {
 async function syncBankBalances(auth) {
   console.log('Syncing bank account balances...');
 
-  const query = `SELECT * FROM Account WHERE AccountType IN ('Bank', 'Checking', 'Savings')`;
+  const query = `SELECT * FROM Account WHERE AccountType = 'Bank'`;
   const result = await queryQB(query, auth);
 
   const accounts = result.QueryResponse?.Account || [];
@@ -398,6 +398,63 @@ exports.quickbooksSync = functions.https.onRequest(async (req, res) => {
     res.status(500).json({
       success: false,
       error: error.message
+    });
+  }
+});
+
+/**
+ * Email Signup Handler
+ * Saves email addresses to Firestore
+ */
+exports.emailSignup = functions.https.onRequest(async (req, res) => {
+  // Enable CORS
+  res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.set('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    res.status(204).send('');
+    return;
+  }
+
+  if (req.method !== 'POST') {
+    res.status(405).json({ success: false, error: 'Method not allowed' });
+    return;
+  }
+
+  try {
+    const { email, firstName, lastName, source } = req.body;
+
+    if (!email || !email.includes('@')) {
+      res.status(400).json({ success: false, error: 'Valid email required' });
+      return;
+    }
+
+    const emailData = {
+      email: email.toLowerCase().trim(),
+      firstName: firstName || '',
+      lastName: lastName || '',
+      source: source || 'website',
+      subscribedAt: admin.firestore.FieldValue.serverTimestamp(),
+      active: true
+    };
+
+    // Use email as document ID to prevent duplicates
+    const emailId = email.toLowerCase().trim().replace(/[^a-z0-9]/g, '_');
+    await db.collection('emailSubscribers').doc(emailId).set(emailData, { merge: true });
+
+    console.log(`✓ New email subscriber: ${email}`);
+
+    res.status(200).json({
+      success: true,
+      message: 'Successfully subscribed!'
+    });
+
+  } catch (error) {
+    console.error('Email signup error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to subscribe. Please try again.'
     });
   }
 });
