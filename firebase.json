@@ -1,0 +1,30 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "netlify/**",
+      "functions/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/quickbooks-auth",
+        "function": "quickbooksAuth"
+      },
+      {
+        "source": "/quickbooks-callback",
+        "function": "quickbooksCallback"
+      },
+      {
+        "source": "/quickbooks-sync",
+        "function": "quickbooksSync"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "runtime": "nodejs20"
+  }
+}

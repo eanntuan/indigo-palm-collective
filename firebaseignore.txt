@@ -1,0 +1,17 @@
+# Firebase ignore file
+node_modules/
+functions/node_modules/
+netlify/
+.git/
+.env
+.env.*
+*.log
+*.DS_Store
+the-desert-edit-firebase-adminsdk-*.json
+package-lock.json
+
+# Large media directories - property photo galleries
+Cozy Cactus/82381 Cochran Drive For Web/
+Casa Moto/Existing Listing Pictures/
+*.mp4
+*.mov
