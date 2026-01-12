@@ -225,8 +225,9 @@ async function syncExpenses(auth) {
   const purchases = result.QueryResponse?.Purchase || [];
   console.log(`Found ${purchases.length} expense transactions`);
 
-  const batch = db.batch();
+  let batch = db.batch();
   let count = 0;
+  let batchCount = 0;
 
   for (const purchase of purchases) {
     const propertyId = mapToProperty(purchase);
@@ -248,14 +249,17 @@ async function syncExpenses(auth) {
     batch.set(docRef, expenseData, { merge: true });
 
     count++;
+    batchCount++;
 
-    if (count % 500 === 0) {
+    if (batchCount >= 500) {
       await batch.commit();
       console.log(`Committed ${count} expenses...`);
+      batch = db.batch();
+      batchCount = 0;
     }
   }
 
-  if (count % 500 !== 0) {
+  if (batchCount > 0) {
     await batch.commit();
   }
 
@@ -279,8 +283,9 @@ async function syncRevenue(auth) {
   const deposits = result.QueryResponse?.Deposit || [];
   console.log(`Found ${deposits.length} revenue transactions`);
 
-  const batch = db.batch();
+  let batch = db.batch();
   let count = 0;
+  let batchCount = 0;
 
   for (const deposit of deposits) {
     const propertyId = mapToProperty(deposit);
@@ -306,14 +311,17 @@ async function syncRevenue(auth) {
     batch.set(docRef, revenueData, { merge: true });
 
     count++;
+    batchCount++;
 
-    if (count % 500 === 0) {
+    if (batchCount >= 500) {
       await batch.commit();
       console.log(`Committed ${count} revenue transactions...`);
+      batch = db.batch();
+      batchCount = 0;
     }
   }
 
-  if (count % 500 !== 0) {
+  if (batchCount > 0) {
     await batch.commit();
   }
 
