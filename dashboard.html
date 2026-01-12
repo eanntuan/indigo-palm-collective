@@ -374,6 +374,47 @@
         </div>
     </div>
 
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeSettings()">&times;</span>
+            <h2>⚙️ Settings</h2>
+
+            <!-- QuickBooks Section -->
+            <div class="settings-section">
+                <h3>💼 QuickBooks Integration</h3>
+                <div id="qb-connection-status" class="connection-status">
+                    <div class="status-indicator disconnected"></div>
+                    <span>Checking connection...</span>
+                </div>
+
+                <div class="qb-actions">
+                    <button id="qb-connect-btn" class="primary-btn" onclick="connectQuickBooks()">
+                        Connect QuickBooks
+                    </button>
+                    <button id="qb-sync-btn" class="secondary-btn" onclick="syncQuickBooks()" style="display: none;">
+                        🔄 Sync Data Now
+                    </button>
+                </div>
+
+                <div id="qb-sync-status" class="sync-status" style="display: none;">
+                    <p><strong>Last Sync:</strong> <span id="last-sync-time">Never</span></p>
+                    <p><strong>Synced Records:</strong></p>
+                    <ul>
+                        <li>Expenses: <span id="synced-expenses">0</span></li>
+                        <li>Revenue: <span id="synced-revenue">0</span></li>
+                        <li>Bank Accounts: <span id="synced-accounts">0</span></li>
+                    </ul>
+                </div>
+
+                <p class="help-text">
+                    Connect your QuickBooks account to automatically sync expenses, revenue, and bank balances.
+                    All data is stored securely in your Firebase database.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script type="module" src="dashboard-script.js"></script>
 </body>
 </html>

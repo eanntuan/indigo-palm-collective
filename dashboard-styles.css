@@ -929,3 +929,153 @@ body {
   color: #666;
   font-size: 0.9rem;
 }
+
+/* Settings Modal */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--sage);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: var(--dark-gray);
+}
+
+.settings-section {
+  margin-bottom: 2rem;
+}
+
+.settings-section h3 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--sage);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-indicator.connected {
+  background-color: #4caf50;
+}
+
+.status-indicator.disconnected {
+  background-color: #f44336;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.qb-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.primary-btn {
+  background: var(--sage);
+  color: white;
+}
+
+.primary-btn:hover {
+  background: var(--sage-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(115, 133, 97, 0.3);
+}
+
+.secondary-btn {
+  background: var(--turquoise);
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: var(--turquoise-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 135, 123, 0.3);
+}
+
+.sync-status {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.sync-status ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.sync-status li {
+  padding: 0.25rem 0;
+}
+
+.help-text {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
