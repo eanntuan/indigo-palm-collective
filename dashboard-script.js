@@ -716,7 +716,7 @@ let currentSlide = 0;
 const slides = [
   "linear-gradient(rgba(115, 133, 97, 0.4), rgba(115, 133, 97, 0.6)), url('Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.jpg')",
   "linear-gradient(rgba(210, 99, 91, 0.4), rgba(210, 99, 91, 0.6)), url('Casa%20Moto/IMG_1268.JPG')",
-  "linear-gradient(rgba(0, 135, 123, 0.4), rgba(0, 135, 123, 0.6)), url('The%20Well/TW_DZ5A8776web.jpg')"
+  "linear-gradient(rgba(0, 135, 123, 0.4), rgba(0, 135, 123, 0.6)), url('The%20Well/1TW_4W6A0294.jpg')"
 ];
 
 function setupHeroCarousel() {
