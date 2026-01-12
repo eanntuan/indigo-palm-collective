@@ -9,3 +9,4 @@ api_token.txt
 .netlify
 the-desert-edit-firebase-adminsdk-fbsvc-*.json
 functions/.env
+functions/.env.yaml
