@@ -1,6 +1,6 @@
 // Desert Edit Dashboard - Main JavaScript
 import { db } from './firebase-config.js';
-import { collection, addDoc, getDocs, query, where, orderBy, limit } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+import { collection, addDoc, getDocs, getDoc, setDoc, deleteDoc, doc, query, where, orderBy, limit, Timestamp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
 import { parseAirbnbPayments, parseAirbnbGuests } from './csv-parsers/airbnb-parser.js';
 import { parseBankCSV } from './csv-parsers/bank-parser.js';
 
@@ -760,9 +760,6 @@ window.nextSlide = nextSlide;
 window.prevSlide = prevSlide;
 // QuickBooks Integration Functions
 // Add these to dashboard-script.js
-
-import { getDoc, getDocs, setDoc, deleteDoc, doc, collection, query, where, Timestamp } from 'firebase/firestore';
-import { db } from './firebase-config.js';
 
 /**
  * Show/hide settings section
