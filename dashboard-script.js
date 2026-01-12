@@ -849,7 +849,7 @@ async function checkQuickBooksStatus() {
  */
 window.connectQuickBooks = function() {
   // Redirect to QuickBooks OAuth
-  window.location.href = '/.netlify/functions/quickbooks-auth';
+  window.location.href = '/quickbooks-auth';
 };
 
 /**
@@ -869,7 +869,7 @@ window.syncQuickBooks = async function() {
     progressText.textContent = 'Starting sync...';
 
     // Call sync function
-    const response = await fetch('/.netlify/functions/quickbooks-sync', {
+    const response = await fetch('/quickbooks-sync', {
       method: 'POST'
     });
 
