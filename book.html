@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay | The Desert Edit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --desert-sand: #E8DCC4;
+            --sage: #738561;
+            --terracotta: #d2635b;
+            --cream: #F5F3EE;
+            --charcoal: #2C2C2C;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background-color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--sage);
+            text-decoration: none;
+        }
+
+        .back-link {
+            color: var(--sage);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--sage) 0%, #5a6b4a 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Booking Options */
+        .booking-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .booking-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .booking-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .booking-card-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .booking-card-content {
+            padding: 2rem;
+        }
+
+        .booking-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            color: var(--sage);
+            margin-bottom: 0.5rem;
+        }
+
+        .location {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-tag {
+            background: var(--desert-sand);
+            color: var(--charcoal);
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .book-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: var(--sage);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .book-btn:hover {
+            background: #5a6b4a;
+        }
+
+        /* Hostaway Widget Section */
+        .widget-section {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+
+        .widget-section h2 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: var(--sage);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .widget-section p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--sage);
+            color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .booking-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <a href="/" class="logo">The Desert Edit</a>
+            <a href="/" class="back-link">
+                <span>←</span> Back to Home
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Book Your Desert Escape</h1>
+        <p>Choose from our curated collection of vacation rentals across the Coachella Valley</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Hostaway Widget (if enabled) -->
+        <div class="widget-section">
+            <h2>Search & Book Instantly</h2>
+            <p>Check availability and book your dates</p>
+
+            <!-- Hostaway Search Bar Widget -->
+            <div id="ha-search-bar"></div>
+
+            <script src="https://public.hostaway.com/js/haSearchBar.js"></script>
+            <script>
+                haSearchBar({
+                    baseUrl: 'https://app.hostaway.com/widgets/booking-engine',
+                    accountId: '45747',
+                    color: '#738561',
+                    rounded: true,
+                    openInNewTab: false,
+                    showLocation: true,
+                    font: {
+                        family: 'Work Sans, sans-serif'
+                    }
+                });
+            </script>
+        </div>
+
+        <!-- Property Cards -->
+        <div class="booking-options">
+            <!-- Cozy Cactus -->
+            <div class="booking-card">
+                <div class="booking-card-image" style="background-image: url('email-images/cozy-cactus.jpg');"></div>
+                <div class="booking-card-content">
+                    <h3>The Cozy Cactus</h3>
+                    <p class="location">📍 Indio, CA</p>
+                    <p class="description">Perfect for families seeking adventure in the desert. Modern amenities meet desert charm.</p>
+                    <div class="features">
+                        <span class="feature-tag">3 Bedrooms</span>
+                        <span class="feature-tag">Pool & Hot Tub</span>
+                        <span class="feature-tag">Pet Friendly</span>
+                        <span class="feature-tag">Outdoor Fire Pit</span>
+                    </div>
+                    <a href="https://luxuryvacations.holidayfuture.com/listing/123646" target="_blank" class="book-btn">Check Availability</a>
+                </div>
+            </div>
+
+            <!-- Casa Moto -->
+            <div class="booking-card">
+                <div class="booking-card-image" style="background-image: url('Casa%20Moto/Existing%20Listing%20Pictures/IMG_1240.JPG');"></div>
+                <div class="booking-card-content">
+                    <h3>Casa Moto</h3>
+                    <p class="location">📍 Palm Desert, CA</p>
+                    <p class="description">A modern retreat with mountain views. Ideal for couples and small families.</p>
+                    <div class="features">
+                        <span class="feature-tag">3 Bedrooms</span>
+                        <span class="feature-tag">Private Pool</span>
+                        <span class="feature-tag">Mountain Views</span>
+                        <span class="feature-tag">Modern Design</span>
+                    </div>
+                    <a href="https://luxuryvacations.holidayfuture.com/listing/123633" target="_blank" class="book-btn">Check Availability</a>
+                </div>
+            </div>
+
+            <!-- PS Retreat -->
+            <div class="booking-card">
+                <div class="booking-card-image" style="background-image: url('PS%20Retreat/hero.jpg');"></div>
+                <div class="booking-card-content">
+                    <h3>PS Retreat</h3>
+                    <p class="location">📍 Palm Springs, CA</p>
+                    <p class="description">Mid-century modern charm in the heart of Palm Springs. Walking distance to downtown.</p>
+                    <div class="features">
+                        <span class="feature-tag">2 Bedrooms</span>
+                        <span class="feature-tag">Private Yard</span>
+                        <span class="feature-tag">Downtown Location</span>
+                        <span class="feature-tag">Vintage Charm</span>
+                    </div>
+                    <a href="mailto:thecozycactusindio@gmail.com?subject=Booking Inquiry: PS Retreat&body=Hi! I would like to book PS Retreat. Please send me availability and rates." class="book-btn">Contact for Availability</a>
+                </div>
+            </div>
+
+            <!-- The Well -->
+            <div class="booking-card">
+                <div class="booking-card-image" style="background-image: url('The%20Well/1TW_4W6A0294.jpg');"></div>
+                <div class="booking-card-content">
+                    <h3>The Well</h3>
+                    <p class="location">📍 Palm Springs, CA</p>
+                    <p class="description">Tranquil oasis with spa-like amenities. Perfect for relaxation and rejuvenation.</p>
+                    <div class="features">
+                        <span class="feature-tag">4 Bedrooms</span>
+                        <span class="feature-tag">Hot Tub</span>
+                        <span class="feature-tag">Spa Vibes</span>
+                        <span class="feature-tag">Peaceful Setting</span>
+                    </div>
+                    <a href="mailto:thecozycactusindio@gmail.com?subject=Booking Inquiry: The Well&body=Hi! I would like to book The Well. Please send me availability and rates." class="book-btn">Contact for Availability</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>Need Help Booking?</h2>
+            <p style="margin-bottom: 0.5rem;">We're here to help you find the perfect stay</p>
+            <p>📧 Email: <a href="mailto:thecozycactusindio@gmail.com">thecozycactusindio@gmail.com</a></p>
+            <p>📱 Follow us on <a href="https://www.instagram.com/thecozycactus_/" target="_blank">Instagram @thecozycactus_</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
