@@ -718,11 +718,24 @@ exports.getPricing = functions.https.onRequest(async (req, res) => {
           `/listings/${property.hostawayListingId}/calendar?startDate=${startDate}&endDate=${endDate}`
         );
 
+        // Debug: Log what Hostaway returns
+        console.log('Hostaway calendar response for', property.hostawayListingId, ':', JSON.stringify(calendarData, null, 2));
+
         // Parse nightly rates from calendar
         if (calendarData.result && Array.isArray(calendarData.result)) {
           for (const day of calendarData.result) {
             if (day.date >= startDate && day.date < endDate) {
-              const price = parseFloat(day.price || property.basePrice);
+              // Try multiple possible price fields from Hostaway
+              const price = parseFloat(
+                day.price ||
+                day.dailyRate ||
+                day.basePrice ||
+                day.rate ||
+                property.basePrice
+              );
+
+              console.log(`Date ${day.date}: price=${day.price}, dailyRate=${day.dailyRate}, basePrice=${day.basePrice}, using=${price}`);
+
               nightly.push({
                 date: day.date,
                 price: price,
@@ -731,6 +744,8 @@ exports.getPricing = functions.https.onRequest(async (req, res) => {
               totalNightlyRate += price;
             }
           }
+        } else {
+          console.log('No calendar result array found in Hostaway response');
         }
 
         // If no pricing data, use base price
