@@ -28,6 +28,10 @@
       {
         "source": "/hostaway-sync",
         "function": "hostawaySync"
+      },
+      {
+        "source": "/get-pricing",
+        "function": "getPricing"
       }
     ]
   },

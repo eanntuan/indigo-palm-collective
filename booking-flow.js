@@ -1,6 +1,6 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
 import { getFirestore, collection, addDoc, Timestamp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
-import { PROPERTIES, calculateBookingPrice } from './booking-config.js';
+import { PROPERTIES } from './booking-config.js';
 
 // Firebase config
 const firebaseConfig = {
@@ -104,7 +104,7 @@ function setupEventListeners() {
 }
 
 // Update price display
-function updatePrice() {
+async function updatePrice() {
     const checkIn = document.getElementById('check-in').value;
     const checkOut = document.getElementById('check-out').value;
     const guests = parseInt(document.getElementById('guests').value);
@@ -120,46 +120,94 @@ function updatePrice() {
         return;
     }
 
-    // Calculate price
-    const checkInDate = new Date(checkIn);
-    const checkOutDate = new Date(checkOut);
+    // Show loading state
+    document.getElementById('price-content').innerHTML = `
+        <div class="empty-state">
+            <p>Loading pricing...</p>
+        </div>
+    `;
+    document.getElementById('submit-btn').disabled = true;
 
-    priceEstimate = calculateBookingPrice(selectedProperty.id, checkInDate, checkOutDate, guests);
+    try {
+        // Fetch dynamic pricing from Cloud Function
+        const response = await fetch('/get-pricing', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                propertyId: selectedProperty.id,
+                checkIn,
+                checkOut,
+                guests
+            })
+        });
 
-    if (!priceEstimate) {
+        const data = await response.json();
+
+        if (!data.success) {
+            throw new Error(data.error || 'Failed to fetch pricing');
+        }
+
+        priceEstimate = data.pricing;
+
+        // Check if dates are available
+        if (!priceEstimate.isAvailable) {
+            document.getElementById('price-content').innerHTML = `
+                <div class="empty-state" style="color: #f44336;">
+                    <p><strong>❌ Selected dates are not available</strong></p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+                        Unavailable dates: ${priceEstimate.unavailableDates.join(', ')}
+                    </p>
+                </div>
+            `;
+            document.getElementById('submit-btn').disabled = true;
+            return;
+        }
+
+        // Display price breakdown with nightly rates
+        let nightlyBreakdown = '';
+        if (priceEstimate.nightly && priceEstimate.nightly.length > 0) {
+            const avgNightly = (priceEstimate.subtotal / priceEstimate.nights).toFixed(2);
+            nightlyBreakdown = `$${avgNightly} avg × ${priceEstimate.nights} night${priceEstimate.nights > 1 ? 's' : ''}`;
+        } else {
+            nightlyBreakdown = `${priceEstimate.nights} night${priceEstimate.nights > 1 ? 's' : ''}`;
+        }
+
         document.getElementById('price-content').innerHTML = `
-            <div class="empty-state">
-                <p>Invalid dates selected</p>
+            <div class="price-breakdown">
+                <div class="price-row">
+                    <span>${nightlyBreakdown}</span>
+                    <span>$${priceEstimate.subtotal.toFixed(2)}</span>
+                </div>
+                <div class="price-row">
+                    <span>Cleaning fee</span>
+                    <span>$${priceEstimate.cleaningFee.toFixed(2)}</span>
+                </div>
+                <div class="price-row">
+                    <span>Taxes (${(priceEstimate.taxRate * 100).toFixed(1)}%)</span>
+                    <span>$${priceEstimate.taxAmount.toFixed(2)}</span>
+                </div>
+                <div class="price-row">
+                    <strong>Total</strong>
+                    <strong>$${priceEstimate.total.toFixed(2)}</strong>
+                </div>
+            </div>
+        `;
+
+        // Enable submit button
+        document.getElementById('submit-btn').disabled = false;
+
+    } catch (error) {
+        console.error('Error fetching pricing:', error);
+        document.getElementById('price-content').innerHTML = `
+            <div class="empty-state" style="color: #f44336;">
+                <p>Error loading pricing</p>
+                <p style="font-size: 0.85rem;">${error.message}</p>
             </div>
         `;
         document.getElementById('submit-btn').disabled = true;
-        return;
     }
-
-    // Display price breakdown
-    document.getElementById('price-content').innerHTML = `
-        <div class="price-breakdown">
-            <div class="price-row">
-                <span>${priceEstimate.breakdown.nightlyRate}</span>
-                <span>$${priceEstimate.subtotal.toFixed(2)}</span>
-            </div>
-            <div class="price-row">
-                <span>Cleaning fee</span>
-                <span>${priceEstimate.breakdown.cleaning}</span>
-            </div>
-            <div class="price-row">
-                <span>Taxes</span>
-                <span>${priceEstimate.breakdown.taxes}</span>
-            </div>
-            <div class="price-row">
-                <strong>Total</strong>
-                <strong>$${priceEstimate.total.toFixed(2)}</strong>
-            </div>
-        </div>
-    `;
-
-    // Enable submit button
-    document.getElementById('submit-btn').disabled = false;
 }
 
 // Submit booking inquiry

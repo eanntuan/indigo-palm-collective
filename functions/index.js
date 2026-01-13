@@ -633,3 +633,180 @@ exports.hostawaySync = functions.https.onRequest(async (req, res) => {
     });
   }
 });
+
+/**
+ * Get Dynamic Pricing from Hostaway/Hospitable
+ * Endpoint: /get-pricing
+ * Method: POST
+ * Body: { propertyId, checkIn, checkOut, guests }
+ */
+exports.getPricing = functions.https.onRequest(async (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.set('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    res.status(204).send('');
+    return;
+  }
+
+  try {
+    const { propertyId, checkIn, checkOut, guests } = req.body;
+
+    if (!propertyId || !checkIn || !checkOut) {
+      res.status(400).json({
+        success: false,
+        error: 'Missing required fields: propertyId, checkIn, checkOut'
+      });
+      return;
+    }
+
+    // Property configuration
+    const PROPERTY_CONFIG = {
+      'cozy-cactus': {
+        hostawayListingId: 123646,
+        source: 'hostaway',
+        cleaningFee: 150,
+        taxRate: 0.12,
+        basePrice: 250 // fallback
+      },
+      'casa-moto': {
+        hostawayListingId: 123633,
+        source: 'hostaway',
+        cleaningFee: 150,
+        taxRate: 0.12,
+        basePrice: 225 // fallback
+      },
+      'ps-retreat': {
+        source: 'hospitable', // Managed via Hospitable
+        cleaningFee: 125,
+        taxRate: 0.135,
+        basePrice: 180 // fallback
+      },
+      'the-well': {
+        source: 'airbnb', // Direct Airbnb listing
+        cleaningFee: 200,
+        taxRate: 0.135,
+        basePrice: 300 // fallback
+      }
+    };
+
+    const property = PROPERTY_CONFIG[propertyId];
+    if (!property) {
+      res.status(404).json({
+        success: false,
+        error: 'Property not found'
+      });
+      return;
+    }
+
+    const checkInDate = new Date(checkIn);
+    const checkOutDate = new Date(checkOut);
+    const nights = Math.ceil((checkOutDate - checkInDate) / (1000 * 60 * 60 * 24));
+
+    let nightly = [];
+    let totalNightlyRate = 0;
+
+    // Fetch pricing from Hostaway
+    if (property.source === 'hostaway' && property.hostawayListingId) {
+      try {
+        // Hostaway calendar endpoint with pricing
+        const startDate = checkInDate.toISOString().split('T')[0];
+        const endDate = checkOutDate.toISOString().split('T')[0];
+
+        const calendarData = await callHostawayAPI(
+          `/listings/${property.hostawayListingId}/calendar?startDate=${startDate}&endDate=${endDate}`
+        );
+
+        // Parse nightly rates from calendar
+        if (calendarData.result && Array.isArray(calendarData.result)) {
+          for (const day of calendarData.result) {
+            if (day.date >= startDate && day.date < endDate) {
+              const price = parseFloat(day.price || property.basePrice);
+              nightly.push({
+                date: day.date,
+                price: price,
+                available: day.status === 'available'
+              });
+              totalNightlyRate += price;
+            }
+          }
+        }
+
+        // If no pricing data, use base price
+        if (nightly.length === 0) {
+          totalNightlyRate = property.basePrice * nights;
+          for (let i = 0; i < nights; i++) {
+            const date = new Date(checkInDate);
+            date.setDate(date.getDate() + i);
+            nightly.push({
+              date: date.toISOString().split('T')[0],
+              price: property.basePrice,
+              available: true
+            });
+          }
+        }
+
+      } catch (error) {
+        console.error('Error fetching Hostaway pricing:', error);
+        // Fallback to base price
+        totalNightlyRate = property.basePrice * nights;
+        for (let i = 0; i < nights; i++) {
+          const date = new Date(checkInDate);
+          date.setDate(date.getDate() + i);
+          nightly.push({
+            date: date.toISOString().split('T')[0],
+            price: property.basePrice,
+            available: true
+          });
+        }
+      }
+    } else {
+      // Hospitable/Airbnb properties - use base price for now
+      // TODO: Add dynamic pricing integration when API available
+      totalNightlyRate = property.basePrice * nights;
+      for (let i = 0; i < nights; i++) {
+        const date = new Date(checkInDate);
+        date.setDate(date.getDate() + i);
+        nightly.push({
+          date: date.toISOString().split('T')[0],
+          price: property.basePrice,
+          available: true
+        });
+      }
+    }
+
+    // Calculate totals
+    const cleaningFee = property.cleaningFee;
+    const subtotal = totalNightlyRate;
+    const taxAmount = (subtotal + cleaningFee) * property.taxRate;
+    const total = subtotal + cleaningFee + taxAmount;
+
+    // Check availability
+    const unavailableDates = nightly.filter(n => !n.available).map(n => n.date);
+    const isAvailable = unavailableDates.length === 0;
+
+    res.status(200).json({
+      success: true,
+      pricing: {
+        nights,
+        nightly,
+        subtotal: parseFloat(subtotal.toFixed(2)),
+        cleaningFee: parseFloat(cleaningFee.toFixed(2)),
+        taxRate: property.taxRate,
+        taxAmount: parseFloat(taxAmount.toFixed(2)),
+        total: parseFloat(total.toFixed(2)),
+        currency: 'USD',
+        isAvailable,
+        unavailableDates
+      }
+    });
+
+  } catch (error) {
+    console.error('Error in getPricing:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
