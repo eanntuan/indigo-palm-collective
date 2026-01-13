@@ -258,24 +258,37 @@
         <!-- Hostaway Widget (if enabled) -->
         <div class="widget-section">
             <h2>Search & Book Instantly</h2>
-            <p>Check availability and book your dates</p>
+            <p>Check real-time availability and book your dates</p>
 
-            <!-- Hostaway Search Bar Widget -->
-            <div id="ha-search-bar"></div>
+            <!-- Direct link to Hostaway Booking Engine as fallback -->
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="https://45747-2.holidayfuture.co" target="_blank" style="display: inline-block; padding: 1.25rem 3rem; background: #738561; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: background 0.3s;">
+                    Search Available Dates →
+                </a>
+                <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">Opens Hostaway booking portal in new tab</p>
+            </div>
+
+            <!-- Hostaway Search Bar Widget (embedded version) -->
+            <div id="ha-search-bar" style="min-height: 100px;"></div>
 
             <script src="https://public.hostaway.com/js/haSearchBar.js"></script>
             <script>
-                haSearchBar({
-                    baseUrl: 'https://app.hostaway.com/widgets/booking-engine',
-                    accountId: '45747',
-                    color: '#738561',
-                    rounded: true,
-                    openInNewTab: false,
-                    showLocation: true,
-                    font: {
-                        family: 'Work Sans, sans-serif'
-                    }
-                });
+                // Try to load the embedded widget
+                try {
+                    haSearchBar({
+                        baseUrl: 'https://app.hostaway.com/widgets/booking-engine',
+                        accountId: '45747',
+                        color: '#738561',
+                        rounded: true,
+                        openInNewTab: false,
+                        showLocation: true,
+                        font: {
+                            family: 'Work Sans, sans-serif'
+                        }
+                    });
+                } catch(e) {
+                    console.log('Hostaway widget not available, using direct link');
+                }
             </script>
         </div>
 
@@ -294,7 +307,7 @@
                         <span class="feature-tag">Pet Friendly</span>
                         <span class="feature-tag">Outdoor Fire Pit</span>
                     </div>
-                    <a href="https://luxuryvacations.holidayfuture.com/listing/123646" target="_blank" class="book-btn">Check Availability</a>
+                    <a href="mailto:thecozycactusindio@gmail.com?subject=Booking Inquiry: Cozy Cactus&body=Hi! I would like to book The Cozy Cactus. Please send me availability and rates." class="book-btn">Request Availability</a>
                 </div>
             </div>
 
@@ -311,7 +324,7 @@
                         <span class="feature-tag">Mountain Views</span>
                         <span class="feature-tag">Modern Design</span>
                     </div>
-                    <a href="https://luxuryvacations.holidayfuture.com/listing/123633" target="_blank" class="book-btn">Check Availability</a>
+                    <a href="mailto:thecozycactusindio@gmail.com?subject=Booking Inquiry: Casa Moto&body=Hi! I would like to book Casa Moto. Please send me availability and rates." class="book-btn">Request Availability</a>
                 </div>
             </div>
 
