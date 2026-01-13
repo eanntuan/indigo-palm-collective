@@ -224,6 +224,12 @@
             text-decoration: underline;
         }
 
+        /* Booking Button Hover Effect */
+        a[href*="holidayfuture.com"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(115, 133, 97, 0.4) !important;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -255,41 +261,37 @@
     <!-- Main Container -->
     <div class="container">
 
-        <!-- Hostaway Widget (if enabled) -->
+        <!-- Direct Booking Section -->
         <div class="widget-section">
             <h2>Search & Book Instantly</h2>
-            <p>Check real-time availability and book your dates</p>
+            <p>Check real-time availability across all our properties and book securely with instant confirmation</p>
 
-            <!-- Direct link to Hostaway Booking Engine as fallback -->
-            <div style="text-align: center; margin: 2rem 0;">
-                <a href="https://45747_2.holidayfuture.com" target="_blank" style="display: inline-block; padding: 1.25rem 3rem; background: #738561; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: background 0.3s;">
-                    Search Available Dates →
+            <div style="text-align: center; margin: 3rem 0;">
+                <a href="https://45747_2.holidayfuture.com" target="_blank" style="display: inline-block; padding: 1.5rem 4rem; background: linear-gradient(135deg, #738561 0%, #5a6b4a 100%); color: white; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 1.2rem; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 20px rgba(115, 133, 97, 0.3);">
+                    🔍 Search Available Dates
                 </a>
-                <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">Opens Hostaway booking portal in new tab</p>
+                <p style="margin-top: 1.5rem; color: #666; font-size: 1rem; line-height: 1.6;">
+                    Powered by Hostaway • Secure payment • Instant confirmation
+                </p>
             </div>
 
-            <!-- Hostaway Search Bar Widget (embedded version) -->
-            <div id="ha-search-bar" style="min-height: 100px;"></div>
-
-            <script src="https://public.hostaway.com/js/haSearchBar.js"></script>
-            <script>
-                // Try to load the embedded widget
-                try {
-                    haSearchBar({
-                        baseUrl: 'https://app.hostaway.com/widgets/booking-engine',
-                        accountId: '45747',
-                        color: '#738561',
-                        rounded: true,
-                        openInNewTab: false,
-                        showLocation: true,
-                        font: {
-                            family: 'Work Sans, sans-serif'
-                        }
-                    });
-                } catch(e) {
-                    console.log('Hostaway widget not available, using direct link');
-                }
-            </script>
+            <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; margin-top: 2rem;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: #738561;">✨ Why Book Direct?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                    <div>
+                        <strong>💰 Best Price Guarantee</strong>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">No platform fees or commissions</p>
+                    </div>
+                    <div>
+                        <strong>🤝 Personal Service</strong>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Direct communication with owners</p>
+                    </div>
+                    <div>
+                        <strong>🎁 Exclusive Perks</strong>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Special amenities & local tips</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Property Cards -->
