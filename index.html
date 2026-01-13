@@ -1628,15 +1628,25 @@
             </div>
 
             <!-- Hostaway Booking Widget -->
-            <div id="hostaway-widget-container" style="min-height: 600px;">
-                <!-- Hostaway widget will be injected here -->
-                <iframe
-                    src="https://app.hostaway.com/widget/45747"
-                    style="width: 100%; min-height: 600px; border: none; border-radius: 8px;"
-                    frameborder="0"
-                    allowfullscreen>
-                </iframe>
+            <div id="hostaway-widget-container" style="min-height: 500px;">
+                <!-- Hostaway Search Bar Widget -->
+                <div id="ha-search-bar"></div>
             </div>
+
+            <script src="https://public.hostaway.com/js/haSearchBar.js"></script>
+            <script>
+                haSearchBar({
+                    baseUrl: 'https://app.hostaway.com/widgets/booking-engine',
+                    accountId: '45747',
+                    color: '#738561',
+                    rounded: true,
+                    openInNewTab: false,
+                    showLocation: true,
+                    font: {
+                        family: 'Work Sans, sans-serif'
+                    }
+                });
+            </script>
 
             <div style="margin-top: 1.5rem; text-align: center;">
                 <p style="color: #777; font-size: 0.9rem;">Need help? Email us at <a href="mailto:thecozycactusindio@gmail.com" style="color: #738561;">thecozycactusindio@gmail.com</a></p>
