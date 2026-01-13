@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay | The Desert Edit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --desert-sand: #E8DCC4;
+            --sage: #738561;
+            --terracotta: #d2635b;
+            --cream: #F5F3EE;
+            --charcoal: #2C2C2C;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background-color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--sage);
+            text-decoration: none;
+        }
+
+        .back-link {
+            color: var(--sage);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 3rem;
+        }
+
+        /* Booking Form */
+        .booking-form {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .booking-form h2 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: var(--sage);
+            margin-bottom: 2rem;
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+        }
+
+        .form-section label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--charcoal);
+        }
+
+        .property-selector {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .property-option {
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .property-option:hover {
+            border-color: var(--sage);
+            background-color: #f9f9f9;
+        }
+
+        .property-option.selected {
+            border-color: var(--sage);
+            background-color: rgba(115, 133, 97, 0.1);
+        }
+
+        .property-option h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: var(--sage);
+        }
+
+        .property-option p {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .date-inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        input[type="date"],
+        input[type="number"],
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: var(--font-sans);
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--sage);
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        /* Price Summary */
+        .price-summary {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+
+        .price-summary h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--sage);
+            margin-bottom: 1.5rem;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .price-row:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--sage);
+        }
+
+        .price-breakdown {
+            margin-bottom: 1.5rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #999;
+            padding: 2rem 0;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--sage);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 1.5rem;
+        }
+
+        .submit-btn:hover {
+            background: #5a6b4a;
+        }
+
+        .submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        /* Availability Calendar */
+        .calendar-container {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .calendar-legend {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+
+        .available { background: #4caf50; }
+        .booked { background: #f44336; }
+
+        @media (max-width: 968px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .property-selector {
+                grid-template-columns: 1fr;
+            }
+
+            .price-summary {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <a href="/" class="logo">The Desert Edit</a>
+            <a href="/" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <h2>Request to Book</h2>
+
+            <form id="booking-form">
+                <!-- Property Selection -->
+                <div class="form-section">
+                    <label>Select Property</label>
+                    <div class="property-selector" id="property-selector">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Dates -->
+                <div class="form-section">
+                    <label>Check-in & Check-out Dates</label>
+                    <div class="date-inputs">
+                        <input type="date" id="check-in" required>
+                        <input type="date" id="check-out" required>
+                    </div>
+
+                    <!-- Availability Calendar (shows after property selected) -->
+                    <div id="availability-calendar" class="calendar-container" style="display: none;">
+                        <div class="calendar-legend">
+                            <div class="legend-item">
+                                <div class="legend-color available"></div>
+                                <span>Available</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color booked"></div>
+                                <span>Booked</span>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #666;">
+                            <span id="availability-status">Select dates to check availability</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="form-section">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" min="1" max="12" value="2" required>
+                </div>
+
+                <!-- Guest Information -->
+                <div class="form-section">
+                    <label for="guest-name">Your Name</label>
+                    <input type="text" id="guest-name" placeholder="Full name" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="guest-email">Email Address</label>
+                    <input type="email" id="guest-email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="guest-phone">Phone Number</label>
+                    <input type="tel" id="guest-phone" placeholder="(555) 123-4567" required>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="form-section">
+                    <label for="special-requests">Special Requests (Optional)</label>
+                    <textarea id="special-requests" placeholder="Any special needs or questions?"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Price Summary -->
+        <div class="price-summary">
+            <h3>Price Summary</h3>
+
+            <div id="price-content">
+                <div class="empty-state">
+                    <p>Select property and dates to see pricing</p>
+                </div>
+            </div>
+
+            <button class="submit-btn" id="submit-btn" disabled>Request to Book</button>
+        </div>
+    </div>
+
+    <script type="module" src="booking-flow.js"></script>
+</body>
+</html>
