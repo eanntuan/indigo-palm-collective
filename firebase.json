@@ -32,6 +32,10 @@
       {
         "source": "/get-pricing",
         "function": "getPricing"
+      },
+      {
+        "source": "/get-availability",
+        "function": "getAvailability"
       }
     ]
   },

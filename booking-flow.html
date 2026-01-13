@@ -264,6 +264,57 @@
         .available { background: #4caf50; }
         .booked { background: #f44336; }
 
+        /* Calendar Grid */
+        #calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            margin-top: 1rem;
+        }
+
+        .calendar-day {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .calendar-day:hover {
+            transform: scale(1.1);
+        }
+
+        .calendar-day.header {
+            font-weight: 600;
+            color: #666;
+            cursor: default;
+        }
+
+        .calendar-day.header:hover {
+            transform: none;
+        }
+
+        .calendar-day.available {
+            background: rgba(76, 175, 80, 0.2);
+            border: 2px solid #4caf50;
+            color: #2e7d32;
+        }
+
+        .calendar-day.booked {
+            background: rgba(244, 67, 54, 0.2);
+            border: 2px solid #f44336;
+            color: #c62828;
+            cursor: not-allowed;
+        }
+
+        .calendar-day.empty {
+            visibility: hidden;
+        }
+
         @media (max-width: 968px) {
             .container {
                 grid-template-columns: 1fr;
@@ -323,8 +374,9 @@
                                 <span>Booked</span>
                             </div>
                         </div>
-                        <p style="font-size: 0.9rem; color: #666;">
-                            <span id="availability-status">Select dates to check availability</span>
+                        <div id="calendar-grid"></div>
+                        <p style="font-size: 0.85rem; color: #999; margin-top: 1rem; text-align: center;">
+                            Showing next 90 days
                         </p>
                     </div>
                 </div>

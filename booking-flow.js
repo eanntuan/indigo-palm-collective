@@ -66,11 +66,115 @@ function selectProperty(propertyId) {
         guestsInput.value = selectedProperty.maxGuests;
     }
 
-    // Show availability calendar
+    // Show and load availability calendar
     document.getElementById('availability-calendar').style.display = 'block';
+    loadAvailabilityCalendar();
 
     // Recalculate price
     updatePrice();
+}
+
+// Load availability calendar
+async function loadAvailabilityCalendar() {
+    const calendarGrid = document.getElementById('calendar-grid');
+    calendarGrid.innerHTML = '<p style="text-align: center; color: #999;">Loading calendar...</p>';
+
+    try {
+        // Fetch next 90 days of availability
+        const startDate = new Date();
+        const endDate = new Date();
+        endDate.setDate(endDate.getDate() + 90);
+
+        const response = await fetch('/get-availability', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                propertyId: selectedProperty.id,
+                startDate: startDate.toISOString().split('T')[0],
+                endDate: endDate.toISOString().split('T')[0]
+            })
+        });
+
+        const data = await response.json();
+
+        if (!data.success) {
+            throw new Error(data.error || 'Failed to fetch availability');
+        }
+
+        // Render calendar
+        renderCalendar(data.calendar);
+
+    } catch (error) {
+        console.error('Error loading calendar:', error);
+        calendarGrid.innerHTML = '<p style="text-align: center; color: #f44336;">Error loading calendar</p>';
+    }
+}
+
+// Render calendar grid
+function renderCalendar(calendarData) {
+    const calendarGrid = document.getElementById('calendar-grid');
+    calendarGrid.innerHTML = '';
+
+    if (!calendarData || calendarData.length === 0) {
+        calendarGrid.innerHTML = '<p style="text-align: center; color: #999;">No availability data</p>';
+        return;
+    }
+
+    // Day headers
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    days.forEach(day => {
+        const header = document.createElement('div');
+        header.className = 'calendar-day header';
+        header.textContent = day;
+        calendarGrid.appendChild(header);
+    });
+
+    // Get first date and determine starting day of week
+    const firstDate = new Date(calendarData[0].date);
+    const startDayOfWeek = firstDate.getDay();
+
+    // Add empty cells for alignment
+    for (let i = 0; i < startDayOfWeek; i++) {
+        const empty = document.createElement('div');
+        empty.className = 'calendar-day empty';
+        calendarGrid.appendChild(empty);
+    }
+
+    // Add calendar days
+    calendarData.forEach(day => {
+        const dayEl = document.createElement('div');
+        const date = new Date(day.date);
+        const dayNum = date.getDate();
+
+        dayEl.className = `calendar-day ${day.available ? 'available' : 'booked'}`;
+        dayEl.textContent = dayNum;
+        dayEl.title = `${day.date} - ${day.available ? 'Available' : 'Booked'}`;
+
+        // Click to set check-in/check-out
+        if (day.available) {
+            dayEl.addEventListener('click', () => {
+                const checkInInput = document.getElementById('check-in');
+                const checkOutInput = document.getElementById('check-out');
+
+                if (!checkInInput.value) {
+                    // Set check-in
+                    checkInInput.value = day.date;
+                } else if (!checkOutInput.value && day.date > checkInInput.value) {
+                    // Set check-out
+                    checkOutInput.value = day.date;
+                    updatePrice();
+                } else {
+                    // Reset and set new check-in
+                    checkInInput.value = day.date;
+                    checkOutInput.value = '';
+                }
+            });
+        }
+
+        calendarGrid.appendChild(dayEl);
+    });
 }
 
 // Set minimum dates (today for check-in, tomorrow for check-out)

@@ -810,3 +810,174 @@ exports.getPricing = functions.https.onRequest(async (req, res) => {
     });
   }
 });
+
+/**
+ * Parse iCal data to extract booked dates
+ */
+function parseICalData(icalText) {
+  const bookedDates = [];
+  const events = icalText.split('BEGIN:VEVENT');
+
+  for (let i = 1; i < events.length; i++) {
+    const event = events[i];
+    const startMatch = event.match(/DTSTART[;:].*?(\d{8})/);
+    const endMatch = event.match(/DTEND[;:].*?(\d{8})/);
+
+    if (startMatch && endMatch) {
+      const startDate = startMatch[1];
+      const endDate = endMatch[1];
+
+      // Convert YYYYMMDD to YYYY-MM-DD
+      const start = `${startDate.substring(0, 4)}-${startDate.substring(4, 6)}-${startDate.substring(6, 8)}`;
+      const end = `${endDate.substring(0, 4)}-${endDate.substring(4, 6)}-${endDate.substring(6, 8)}`;
+
+      bookedDates.push({ start, end });
+    }
+  }
+
+  return bookedDates;
+}
+
+/**
+ * Fetch availability from iCal URL
+ */
+async function fetchICalAvailability(icalUrl) {
+  try {
+    const response = await fetch(icalUrl);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch iCal: ${response.status}`);
+    }
+    const icalText = await response.text();
+    return parseICalData(icalText);
+  } catch (error) {
+    console.error('Error fetching iCal:', error);
+    return [];
+  }
+}
+
+/**
+ * Get Availability Calendar
+ * Endpoint: /get-availability
+ * Method: POST
+ * Body: { propertyId, startDate, endDate }
+ */
+exports.getAvailability = functions.https.onRequest(async (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.set('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    res.status(204).send('');
+    return;
+  }
+
+  try {
+    const { propertyId, startDate, endDate } = req.body;
+
+    if (!propertyId || !startDate || !endDate) {
+      res.status(400).json({
+        success: false,
+        error: 'Missing required fields: propertyId, startDate, endDate'
+      });
+      return;
+    }
+
+    // Property configuration
+    const PROPERTY_CONFIG = {
+      'cozy-cactus': {
+        hostawayListingId: 123646,
+        source: 'hostaway'
+      },
+      'casa-moto': {
+        hostawayListingId: 123633,
+        source: 'hostaway'
+      },
+      'ps-retreat': {
+        icalUrl: 'https://api.hospitable.com/v1/properties/reservations.ics?key=1470484&token=d9035907-ba8e-4705-adf7-24e5ae53afe1&noCache',
+        source: 'ical'
+      },
+      'the-well': {
+        icalUrl: 'https://www.airbnb.com/calendar/ical/868862893900280104.ics?t=d0aa2a8c829445d695c19e79c80aa1f1',
+        source: 'ical'
+      }
+    };
+
+    const property = PROPERTY_CONFIG[propertyId];
+    if (!property) {
+      res.status(404).json({
+        success: false,
+        error: 'Property not found'
+      });
+      return;
+    }
+
+    const calendar = [];
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+
+    // Fetch availability based on source
+    if (property.source === 'hostaway') {
+      try {
+        const calendarData = await callHostawayAPI(
+          `/listings/${property.hostawayListingId}/calendar?startDate=${startDate}&endDate=${endDate}`
+        );
+
+        if (calendarData.result && Array.isArray(calendarData.result)) {
+          for (const day of calendarData.result) {
+            calendar.push({
+              date: day.date,
+              available: day.status === 'available',
+              price: parseFloat(day.price || 0)
+            });
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching Hostaway calendar:', error);
+        // Return empty calendar on error
+      }
+    } else if (property.source === 'ical' && property.icalUrl) {
+      // Fetch iCal data
+      const bookedRanges = await fetchICalAvailability(property.icalUrl);
+
+      // Generate calendar for date range
+      let currentDate = new Date(start);
+      while (currentDate <= end) {
+        const dateStr = currentDate.toISOString().split('T')[0];
+
+        // Check if date is booked
+        let isBooked = false;
+        for (const range of bookedRanges) {
+          const rangeStart = new Date(range.start);
+          const rangeEnd = new Date(range.end);
+          if (currentDate >= rangeStart && currentDate < rangeEnd) {
+            isBooked = true;
+            break;
+          }
+        }
+
+        calendar.push({
+          date: dateStr,
+          available: !isBooked,
+          price: 0 // iCal doesn't include pricing
+        });
+
+        currentDate.setDate(currentDate.getDate() + 1);
+      }
+    }
+
+    res.status(200).json({
+      success: true,
+      propertyId,
+      calendar,
+      startDate,
+      endDate
+    });
+
+  } catch (error) {
+    console.error('Error in getAvailability:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
