@@ -1164,5 +1164,88 @@ const originalShowSettings = window.showSettings;
 window.showSettings = function() {
   if (originalShowSettings) originalShowSettings();
   loadEmailSubscribers();
+  checkHostawayStatus();
+};
+
+/**
+ * Hostaway Sync Management
+ */
+
+// Check Hostaway sync status
+async function checkHostawayStatus() {
+  try {
+    const hostawayDoc = await getDoc(doc(db, 'settings', 'hostaway'));
+
+    if (hostawayDoc.exists()) {
+      const data = hostawayDoc.data();
+
+      document.getElementById('hostaway-status').textContent = 'Connected';
+
+      if (data.lastSync) {
+        const lastSync = data.lastSync.toDate();
+        document.getElementById('hostaway-last-sync').textContent = lastSync.toLocaleString();
+      }
+
+      if (data.lastSyncResults) {
+        const results = data.lastSyncResults;
+        document.getElementById('hostaway-sync-results').innerHTML = `
+          <ul>
+            <li>Reservations: ${results.reservations || 0}</li>
+          </ul>
+        `;
+      }
+    }
+  } catch (error) {
+    console.error('Error checking Hostaway status:', error);
+  }
+}
+
+// Sync Hostaway data
+window.syncHostaway = async function() {
+  const progressDiv = document.getElementById('hostaway-sync-progress');
+  const progressFill = document.getElementById('hostaway-progress-fill');
+  const progressText = document.getElementById('hostaway-progress-text');
+  const syncBtn = document.getElementById('hostaway-sync-btn');
+
+  try {
+    progressDiv.style.display = 'block';
+    syncBtn.disabled = true;
+    progressFill.style.width = '0%';
+    progressText.textContent = 'Starting sync...';
+
+    const response = await fetch('/hostaway-sync', {
+      method: 'POST'
+    });
+
+    progressFill.style.width = '50%';
+    progressText.textContent = 'Syncing data...';
+
+    const result = await response.json();
+
+    if (result.success) {
+      progressFill.style.width = '100%';
+
+      const reservationCount = result.results.reservations;
+      progressText.textContent = `✓ Synced ${reservationCount} reservations`;
+
+      // Reload dashboard data
+      setTimeout(() => {
+        progressDiv.style.display = 'none';
+        loadDashboardData();
+        checkHostawayStatus();
+      }, 2000);
+
+      alert(`Hostaway sync complete! Synced ${reservationCount} reservations with guest data.`);
+    } else {
+      throw new Error(result.error);
+    }
+
+  } catch (error) {
+    console.error('Sync error:', error);
+    progressDiv.style.display = 'none';
+    alert('Failed to sync Hostaway: ' + error.message);
+  } finally {
+    syncBtn.disabled = false;
+  }
 };
 

@@ -458,3 +458,178 @@ exports.emailSignup = functions.https.onRequest(async (req, res) => {
     });
   }
 });
+
+/**
+ * Hostaway Integration
+ */
+
+const hostawayApiKey = defineString('HOSTAWAY_API_KEY');
+const hostawayAccountId = defineString('HOSTAWAY_ACCOUNT_ID');
+
+async function callHostawayAPI(endpoint, method = 'GET', body = null) {
+  const url = `https://api.hostaway.com/v1${endpoint}`;
+
+  const options = {
+    method,
+    headers: {
+      'Authorization': `Bearer ${hostawayApiKey.value()}`,
+      'Content-Type': 'application/json'
+    }
+  };
+
+  if (body) {
+    options.body = JSON.stringify(body);
+  }
+
+  const response = await fetch(url, options);
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`Hostaway API error: ${response.status} - ${errorText}`);
+  }
+
+  return await response.json();
+}
+
+/**
+ * Map Hostaway listing ID to property ID
+ */
+function mapHostawayListing(listingName) {
+  const name = (listingName || '').toLowerCase();
+
+  if (name.includes('cochran') || name.includes('cozy cactus')) return 'cochran';
+  if (name.includes('casa moto') || name.includes('villa')) return 'casa-moto';
+  if (name.includes('ps retreat') || name.includes('palm springs')) return 'ps-retreat';
+  if (name.includes('the well')) return 'the-well';
+
+  return 'unknown';
+}
+
+/**
+ * Sync Hostaway reservations
+ */
+async function syncHostawayReservations() {
+  console.log('Syncing Hostaway reservations...');
+
+  // Get reservations from last 2 years
+  const startDate = new Date();
+  startDate.setFullYear(startDate.getFullYear() - 2);
+  const dateStr = startDate.toISOString().split('T')[0];
+
+  try {
+    const response = await callHostawayAPI(`/reservations?arrivalStartDate=${dateStr}&limit=1000`);
+    const reservations = response.result || [];
+
+    console.log(`Found ${reservations.length} reservations`);
+
+    let batch = db.batch();
+    let count = 0;
+    let batchCount = 0;
+
+    for (const reservation of reservations) {
+      const listingName = reservation.listingMapName || '';
+      const propertyId = mapHostawayListing(listingName);
+
+      const revenueData = {
+        propertyId,
+        source: reservation.channelName || 'Hostaway',
+        grossAmount: parseFloat(reservation.totalPrice || 0),
+        cleaningFee: parseFloat(reservation.cleaningFee || 0),
+        pmFee: parseFloat(reservation.hostServiceFee || 0),
+        netIncome: parseFloat(reservation.hostPayout || reservation.totalPrice || 0),
+        guestName: reservation.guestName || '',
+        confirmationCode: reservation.channelId || reservation.id,
+        checkIn: admin.firestore.Timestamp.fromDate(new Date(reservation.arrivalDate)),
+        checkOut: admin.firestore.Timestamp.fromDate(new Date(reservation.departureDate)),
+        nights: parseInt(reservation.nights || 0),
+        date: admin.firestore.Timestamp.fromDate(new Date(reservation.arrivalDate)),
+        hostawayId: reservation.id,
+        hostawaySyncedAt: admin.firestore.FieldValue.serverTimestamp()
+      };
+
+      const docRef = db.collection('revenue').doc(`hostaway_${reservation.id}`);
+      batch.set(docRef, revenueData, { merge: true });
+
+      // Store guest info separately
+      if (reservation.guestName && reservation.guestEmail) {
+        const guestData = {
+          email: reservation.guestEmail,
+          name: reservation.guestName,
+          phone: reservation.guestPhone || '',
+          lastStay: admin.firestore.Timestamp.fromDate(new Date(reservation.arrivalDate)),
+          propertyId,
+          hostawayId: reservation.id
+        };
+
+        const guestDocRef = db.collection('guests').doc(`hostaway_${reservation.guestEmail.replace(/[^a-z0-9]/gi, '_')}`);
+        batch.set(guestDocRef, guestData, { merge: true });
+      }
+
+      count++;
+      batchCount++;
+
+      if (batchCount >= 250) {
+        await batch.commit();
+        console.log(`Committed ${count} reservations...`);
+        batch = db.batch();
+        batchCount = 0;
+      }
+    }
+
+    if (batchCount > 0) {
+      await batch.commit();
+    }
+
+    console.log(`✓ Synced ${count} reservations`);
+    return count;
+
+  } catch (error) {
+    console.error('Hostaway sync error:', error);
+    throw error;
+  }
+}
+
+/**
+ * Hostaway Sync Function
+ */
+exports.hostawaySync = functions.https.onRequest(async (req, res) => {
+  // Enable CORS
+  res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.set('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    res.status(204).send('');
+    return;
+  }
+
+  try {
+    console.log('Starting Hostaway sync...');
+
+    const results = {
+      reservations: await syncHostawayReservations(),
+      timestamp: new Date().toISOString()
+    };
+
+    await db.collection('settings').doc('hostaway').set({
+      lastSync: admin.firestore.FieldValue.serverTimestamp(),
+      lastSyncResults: results
+    }, { merge: true });
+
+    console.log('✓ Hostaway sync complete');
+
+    res.status(200).json({
+      success: true,
+      message: 'Hostaway sync complete',
+      results
+    });
+
+  } catch (error) {
+    console.error('Hostaway sync error:', error);
+
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});

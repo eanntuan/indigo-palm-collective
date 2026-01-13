@@ -1624,8 +1624,26 @@
             <!-- Sage Green Header -->
             <div style="background-color: #738561; margin: -3rem -3rem 2rem -3rem; padding: 2.5rem 3rem; text-align: center;">
                 <h2 style="color: white; margin-bottom: 0.5rem;">Book Your Stay</h2>
-                <p class="booking-widget-subtitle" style="color: rgba(255,255,255,0.95); margin-bottom: 0;">Select your property to check availability</p>
+                <p class="booking-widget-subtitle" style="color: rgba(255,255,255,0.95); margin-bottom: 0;">Check availability and book instantly</p>
             </div>
+
+            <!-- Hostaway Booking Widget -->
+            <div id="hostaway-widget-container" style="min-height: 600px;">
+                <!-- Hostaway widget will be injected here -->
+                <iframe
+                    src="https://app.hostaway.com/widget/45747"
+                    style="width: 100%; min-height: 600px; border: none; border-radius: 8px;"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div style="margin-top: 1.5rem; text-align: center;">
+                <p style="color: #777; font-size: 0.9rem;">Need help? Email us at <a href="mailto:thecozycactusindio@gmail.com" style="color: #738561;">thecozycactusindio@gmail.com</a></p>
+            </div>
+
+            <!-- Legacy Backup -->
+            <div style="display: none;" id="legacy-booking-options">
 
             <!-- Property Selection Cards -->
             <div class="booking-properties-grid">
@@ -1667,6 +1685,8 @@
                     </a>
                 </div>
             </div>
+            </div>
+            <!-- End Legacy Backup -->
         </div>
     </div>
 

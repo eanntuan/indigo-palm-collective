@@ -24,6 +24,10 @@
       {
         "source": "/email-signup",
         "function": "emailSignup"
+      },
+      {
+        "source": "/hostaway-sync",
+        "function": "hostawaySync"
       }
     ]
   },

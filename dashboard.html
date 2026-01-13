@@ -316,6 +316,40 @@
                     </div>
                 </div>
 
+                <!-- Hostaway Sync Section -->
+                <div class="settings-card">
+                    <h3>🏠 Hostaway Sync</h3>
+                    <p class="help-text">Sync reservations, revenue, and guest data from Hostaway</p>
+
+                    <div class="settings-info">
+                        <div class="info-row">
+                            <span class="info-label">Status:</span>
+                            <span id="hostaway-status">Ready</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Last Synced:</span>
+                            <span id="hostaway-last-sync">Never</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Last Sync Results:</span>
+                            <div id="hostaway-sync-results" style="margin-top: 0.5rem;">-</div>
+                        </div>
+                    </div>
+
+                    <div class="settings-actions">
+                        <button id="hostaway-sync-btn" class="btn-primary" onclick="syncHostaway()">
+                            Sync Hostaway Data
+                        </button>
+                    </div>
+
+                    <div id="hostaway-sync-progress" class="sync-progress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="hostaway-progress-fill"></div>
+                        </div>
+                        <p class="progress-text" id="hostaway-progress-text">Syncing...</p>
+                    </div>
+                </div>
+
                 <!-- Email Subscribers Section -->
                 <div class="settings-card">
                     <h3>📧 Email Subscribers</h3>
