@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Casa Moto | The Desert Edit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --desert-sand: #E8DCC4;
+            --sage: #738561;
+            --terracotta: #d2635b;
+            --cream: #F5F3EE;
+            --charcoal: #2C2C2C;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background-color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--sage);
+            text-decoration: none;
+        }
+
+        .back-link {
+            color: var(--sage);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Property Hero */
+        .property-hero {
+            background: linear-gradient(135deg, var(--sage) 0%, #5a6b4a 100%);
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .property-image {
+            width: 100%;
+            height: 300px;
+            background-image: url('Casa Moto/Existing Listing Pictures/IMG_1240.JPG');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .property-info h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .property-info .location {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .property-features {
+            display: flex;
+            gap: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 3rem;
+        }
+
+        /* Booking Form */
+        .booking-form {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .booking-form h2 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: var(--sage);
+            margin-bottom: 2rem;
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+        }
+
+        .form-section label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--charcoal);
+        }
+
+        .date-inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        input[type="date"],
+        input[type="number"],
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: var(--font-sans);
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--sage);
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        /* Calendar */
+        .calendar-container {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .calendar-legend {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+
+        .available { background: #4caf50; }
+        .booked { background: #f44336; }
+
+        #calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            margin-top: 1rem;
+        }
+
+        .calendar-day {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .calendar-day:hover {
+            transform: scale(1.1);
+        }
+
+        .calendar-day.header {
+            font-weight: 600;
+            color: #666;
+            cursor: default;
+        }
+
+        .calendar-day.header:hover {
+            transform: none;
+        }
+
+        .calendar-day.available {
+            background: rgba(76, 175, 80, 0.2);
+            border: 2px solid #4caf50;
+            color: #2e7d32;
+        }
+
+        .calendar-day.booked {
+            background: rgba(244, 67, 54, 0.2);
+            border: 2px solid #f44336;
+            color: #c62828;
+            cursor: not-allowed;
+        }
+
+        .calendar-day.empty {
+            visibility: hidden;
+        }
+
+        /* Price Summary */
+        .price-summary {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+
+        .price-summary h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--sage);
+            margin-bottom: 1.5rem;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .price-row:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--sage);
+        }
+
+        .price-breakdown {
+            margin-bottom: 1.5rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #999;
+            padding: 2rem 0;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--sage);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 1.5rem;
+        }
+
+        .submit-btn:hover {
+            background: #5a6b4a;
+        }
+
+        .submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 968px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .price-summary {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <a href="/" class="logo">The Desert Edit</a>
+            <a href="/booking-flow.html" class="back-link">← View All Properties</a>
+        </div>
+    </div>
+
+    <!-- Property Hero -->
+    <div class="property-hero">
+        <div class="hero-content">
+            <div class="property-image"></div>
+            <div class="property-info">
+                <h1>Casa Moto</h1>
+                <p class="location">📍 Palm Desert, CA</p>
+                <div class="property-features">
+                    <span>🛏️ 3 Bedrooms</span>
+                    <span>👥 Up to 6 Guests</span>
+                    <span>🏊 Private Pool</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <h2>Select Your Dates</h2>
+
+            <form id="booking-form">
+                <!-- Dates -->
+                <div class="form-section">
+                    <label>Check-in & Check-out Dates</label>
+                    <div class="date-inputs">
+                        <input type="date" id="check-in" required>
+                        <input type="date" id="check-out" required>
+                    </div>
+
+                    <!-- Availability Calendar -->
+                    <div id="availability-calendar" class="calendar-container">
+                        <div class="calendar-legend">
+                            <div class="legend-item">
+                                <div class="legend-color available"></div>
+                                <span>Available</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color booked"></div>
+                                <span>Booked</span>
+                            </div>
+                        </div>
+                        <div id="calendar-grid"></div>
+                        <p style="font-size: 0.85rem; color: #999; margin-top: 1rem; text-align: center;">
+                            Click dates to select • Showing next 90 days
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="form-section">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" min="1" max="6" value="2" required>
+                </div>
+
+                <!-- Guest Information -->
+                <div class="form-section">
+                    <label for="guest-name">Your Name</label>
+                    <input type="text" id="guest-name" placeholder="Full name" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="guest-email">Email Address</label>
+                    <input type="email" id="guest-email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="guest-phone">Phone Number</label>
+                    <input type="tel" id="guest-phone" placeholder="(555) 123-4567" required>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="form-section">
+                    <label for="special-requests">Special Requests (Optional)</label>
+                    <textarea id="special-requests" placeholder="Any special needs or questions?"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Price Summary -->
+        <div class="price-summary">
+            <h3>Price Summary</h3>
+
+            <div id="price-content">
+                <div class="empty-state">
+                    <p>Select dates to see pricing</p>
+                </div>
+            </div>
+
+            <button class="submit-btn" id="submit-btn" disabled>Request to Book</button>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getFirestore, collection, addDoc, Timestamp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+
+        // Firebase config
+        const firebaseConfig = {
+            apiKey: "AIzaSyDEcB5KW_t3ysKKf7RtJfPJdGnH9vZ_234",
+            authDomain: "the-desert-edit.firebaseapp.com",
+            projectId: "the-desert-edit",
+            storageBucket: "the-desert-edit.firebasestorage.app",
+            messagingSenderId: "101326981347",
+            appId: "1:101326981347:web:8f0df8b1cf0c3e4e8c7b89"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Property ID
+        const PROPERTY_ID = 'casa-moto';
+        const PROPERTY_NAME = 'Casa Moto';
+
+        let priceEstimate = null;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            setMinDates();
+            setupEventListeners();
+            loadAvailabilityCalendar();
+        });
+
+        // Set minimum dates
+        function setMinDates() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('check-in').min = today;
+            document.getElementById('check-out').min = today;
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            const checkIn = document.getElementById('check-in');
+            const checkOut = document.getElementById('check-out');
+            const guests = document.getElementById('guests');
+            const submitBtn = document.getElementById('submit-btn');
+
+            checkIn.addEventListener('change', () => {
+                const checkInDate = new Date(checkIn.value);
+                checkInDate.setDate(checkInDate.getDate() + 1);
+                checkOut.min = checkInDate.toISOString().split('T')[0];
+                updatePrice();
+            });
+
+            checkOut.addEventListener('change', updatePrice);
+            guests.addEventListener('input', updatePrice);
+            submitBtn.addEventListener('click', submitBookingInquiry);
+        }
+
+        // Load availability calendar
+        async function loadAvailabilityCalendar() {
+            const calendarGrid = document.getElementById('calendar-grid');
+            calendarGrid.innerHTML = '<p style="text-align: center; color: #999;">Loading calendar...</p>';
+
+            try {
+                const startDate = new Date();
+                const endDate = new Date();
+                endDate.setDate(endDate.getDate() + 90);
+
+                const response = await fetch('/get-availability', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        propertyId: PROPERTY_ID,
+                        startDate: startDate.toISOString().split('T')[0],
+                        endDate: endDate.toISOString().split('T')[0]
+                    })
+                });
+
+                const data = await response.json();
+                if (!data.success) throw new Error(data.error);
+
+                renderCalendar(data.calendar);
+            } catch (error) {
+                console.error('Error loading calendar:', error);
+                calendarGrid.innerHTML = '<p style="text-align: center; color: #f44336;">Error loading calendar</p>';
+            }
+        }
+
+        // Render calendar
+        function renderCalendar(calendarData) {
+            const calendarGrid = document.getElementById('calendar-grid');
+            calendarGrid.innerHTML = '';
+
+            if (!calendarData || calendarData.length === 0) {
+                calendarGrid.innerHTML = '<p style="text-align: center; color: #999;">No availability data</p>';
+                return;
+            }
+
+            const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            days.forEach(day => {
+                const header = document.createElement('div');
+                header.className = 'calendar-day header';
+                header.textContent = day;
+                calendarGrid.appendChild(header);
+            });
+
+            const firstDate = new Date(calendarData[0].date);
+            const startDayOfWeek = firstDate.getDay();
+
+            for (let i = 0; i < startDayOfWeek; i++) {
+                const empty = document.createElement('div');
+                empty.className = 'calendar-day empty';
+                calendarGrid.appendChild(empty);
+            }
+
+            calendarData.forEach(day => {
+                const dayEl = document.createElement('div');
+                const date = new Date(day.date);
+                const dayNum = date.getDate();
+
+                dayEl.className = `calendar-day ${day.available ? 'available' : 'booked'}`;
+                dayEl.textContent = dayNum;
+                dayEl.title = `${day.date} - ${day.available ? 'Available' : 'Booked'}`;
+
+                if (day.available) {
+                    dayEl.addEventListener('click', () => {
+                        const checkInInput = document.getElementById('check-in');
+                        const checkOutInput = document.getElementById('check-out');
+
+                        if (!checkInInput.value) {
+                            checkInInput.value = day.date;
+                        } else if (!checkOutInput.value && day.date > checkInInput.value) {
+                            checkOutInput.value = day.date;
+                            updatePrice();
+                        } else {
+                            checkInInput.value = day.date;
+                            checkOutInput.value = '';
+                        }
+                    });
+                }
+
+                calendarGrid.appendChild(dayEl);
+            });
+        }
+
+        // Update price
+        async function updatePrice() {
+            const checkIn = document.getElementById('check-in').value;
+            const checkOut = document.getElementById('check-out').value;
+            const guests = parseInt(document.getElementById('guests').value);
+
+            if (!checkIn || !checkOut || !guests) {
+                document.getElementById('price-content').innerHTML = `
+                    <div class="empty-state"><p>Select dates to see pricing</p></div>
+                `;
+                document.getElementById('submit-btn').disabled = true;
+                return;
+            }
+
+            document.getElementById('price-content').innerHTML = `
+                <div class="empty-state"><p>Loading pricing...</p></div>
+            `;
+            document.getElementById('submit-btn').disabled = true;
+
+            try {
+                const response = await fetch('/get-pricing', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ propertyId: PROPERTY_ID, checkIn, checkOut, guests })
+                });
+
+                const data = await response.json();
+                if (!data.success) throw new Error(data.error);
+
+                priceEstimate = data.pricing;
+
+                if (!priceEstimate.isAvailable) {
+                    document.getElementById('price-content').innerHTML = `
+                        <div class="empty-state" style="color: #f44336;">
+                            <p><strong>❌ Selected dates are not available</strong></p>
+                        </div>
+                    `;
+                    document.getElementById('submit-btn').disabled = true;
+                    return;
+                }
+
+                const avgNightly = (priceEstimate.subtotal / priceEstimate.nights).toFixed(2);
+                const nightlyBreakdown = `$${avgNightly} avg × ${priceEstimate.nights} night${priceEstimate.nights > 1 ? 's' : ''}`;
+
+                document.getElementById('price-content').innerHTML = `
+                    <div class="price-breakdown">
+                        <div class="price-row">
+                            <span>${nightlyBreakdown}</span>
+                            <span>$${priceEstimate.subtotal.toFixed(2)}</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Cleaning fee</span>
+                            <span>$${priceEstimate.cleaningFee.toFixed(2)}</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Taxes (${(priceEstimate.taxRate * 100).toFixed(1)}%)</span>
+                            <span>$${priceEstimate.taxAmount.toFixed(2)}</span>
+                        </div>
+                        <div class="price-row">
+                            <strong>Total</strong>
+                            <strong>$${priceEstimate.total.toFixed(2)}</strong>
+                        </div>
+                    </div>
+                `;
+
+                document.getElementById('submit-btn').disabled = false;
+            } catch (error) {
+                console.error('Error fetching pricing:', error);
+                document.getElementById('price-content').innerHTML = `
+                    <div class="empty-state" style="color: #f44336;">
+                        <p>Error loading pricing</p>
+                    </div>
+                `;
+                document.getElementById('submit-btn').disabled = true;
+            }
+        }
+
+        // Submit booking inquiry
+        async function submitBookingInquiry() {
+            const submitBtn = document.getElementById('submit-btn');
+            const name = document.getElementById('guest-name').value.trim();
+            const email = document.getElementById('guest-email').value.trim();
+            const phone = document.getElementById('guest-phone').value.trim();
+
+            if (!name || !email || !phone || !priceEstimate) {
+                alert('Please fill in all required fields');
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
+
+            try {
+                const inquiry = {
+                    propertyId: PROPERTY_ID,
+                    propertyName: PROPERTY_NAME,
+                    checkIn: Timestamp.fromDate(new Date(document.getElementById('check-in').value)),
+                    checkOut: Timestamp.fromDate(new Date(document.getElementById('check-out').value)),
+                    guests: parseInt(document.getElementById('guests').value),
+                    guestName: name,
+                    guestEmail: email,
+                    guestPhone: phone,
+                    specialRequests: document.getElementById('special-requests').value.trim(),
+                    priceEstimate: {
+                        nights: priceEstimate.nights,
+                        subtotal: priceEstimate.subtotal,
+                        cleaningFee: priceEstimate.cleaningFee,
+                        taxAmount: priceEstimate.taxAmount,
+                        total: priceEstimate.total
+                    },
+                    status: 'pending',
+                    createdAt: Timestamp.now()
+                };
+
+                await addDoc(collection(db, 'bookingInquiries'), inquiry);
+
+                alert(`🎉 Booking request submitted for Casa Moto!\n\nWe'll review your request and send you a payment link within 24 hours.\n\nCheck your email (${email}) for confirmation.`);
+                window.location.reload();
+            } catch (error) {
+                console.error('Error submitting inquiry:', error);
+                alert('Sorry, there was an error submitting your request. Please try again or email us directly at thecozycactusindio@gmail.com');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Request to Book';
+            }
+        }
+    </script>
+</body>
+</html>
