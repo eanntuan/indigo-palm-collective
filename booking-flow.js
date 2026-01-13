@@ -269,21 +269,39 @@ async function updatePrice() {
             return;
         }
 
-        // Display price breakdown with nightly rates
-        let nightlyBreakdown = '';
+        // Display price breakdown with actual nightly rates
+        let nightlyBreakdownHTML = '';
+
         if (priceEstimate.nightly && priceEstimate.nightly.length > 0) {
-            const avgNightly = (priceEstimate.subtotal / priceEstimate.nights).toFixed(2);
-            nightlyBreakdown = `$${avgNightly} avg × ${priceEstimate.nights} night${priceEstimate.nights > 1 ? 's' : ''}`;
+            // Show each night's actual price from PriceLabs/Hostaway
+            priceEstimate.nightly.forEach(night => {
+                const date = new Date(night.date);
+                const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                nightlyBreakdownHTML += `
+                    <div class="price-row">
+                        <span>${dateStr}</span>
+                        <span>$${night.price.toFixed(2)}</span>
+                    </div>
+                `;
+            });
+            nightlyBreakdownHTML += `
+                <div class="price-row" style="border-top: 2px solid #e0e0e0; padding-top: 1rem; margin-top: 0.5rem;">
+                    <span><strong>${priceEstimate.nights} night${priceEstimate.nights > 1 ? 's' : ''}</strong></span>
+                    <span><strong>$${priceEstimate.subtotal.toFixed(2)}</strong></span>
+                </div>
+            `;
         } else {
-            nightlyBreakdown = `${priceEstimate.nights} night${priceEstimate.nights > 1 ? 's' : ''}`;
+            nightlyBreakdownHTML = `
+                <div class="price-row">
+                    <span>${priceEstimate.nights} night${priceEstimate.nights > 1 ? 's' : ''}</span>
+                    <span>$${priceEstimate.subtotal.toFixed(2)}</span>
+                </div>
+            `;
         }
 
         document.getElementById('price-content').innerHTML = `
             <div class="price-breakdown">
-                <div class="price-row">
-                    <span>${nightlyBreakdown}</span>
-                    <span>$${priceEstimate.subtotal.toFixed(2)}</span>
-                </div>
+                ${nightlyBreakdownHTML}
                 <div class="price-row">
                     <span>Cleaning fee</span>
                     <span>$${priceEstimate.cleaningFee.toFixed(2)}</span>
