@@ -266,13 +266,9 @@
             <h2>Search & Book Instantly</h2>
             <p>Check real-time availability across all our properties and book securely with instant confirmation</p>
 
-            <div style="text-align: center; margin: 3rem 0;">
-                <a href="https://45747_2.holidayfuture.com" target="_blank" style="display: inline-block; padding: 1.5rem 4rem; background: linear-gradient(135deg, #738561 0%, #5a6b4a 100%); color: white; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 1.2rem; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 20px rgba(115, 133, 97, 0.3);">
-                    🔍 Search Available Dates
-                </a>
-                <p style="margin-top: 1.5rem; color: #666; font-size: 1rem; line-height: 1.6;">
-                    Powered by Hostaway • Secure payment • Instant confirmation
-                </p>
+            <!-- Hostaway Search Bar Widget -->
+            <div style="margin: 3rem 0; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <div id="hostaway-booking-widget"></div>
             </div>
 
             <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; margin-top: 2rem;">
@@ -373,6 +369,19 @@
             <p>📱 Follow us on <a href="https://www.instagram.com/thecozycactus_/" target="_blank">Instagram @thecozycactus_</a></p>
         </div>
     </div>
+
+    <!-- Hostaway Search Bar Widget -->
+    <script src="https://d2q3n06xhbi0am.cloudfront.net/widget.js?1640277196"></script>
+    <script>
+        window.searchBar({
+            baseUrl: 'https://45747_2.holidayfuture.com/',
+            showLocation: true,
+            color: '#738561',
+            rounded: true,
+            openInNewTab: false,
+            font: 'Work Sans, sans-serif',
+        });
+    </script>
 
 </body>
 </html>
