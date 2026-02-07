@@ -4,9 +4,9 @@ import { getFirestore, collection, getDocs, query, where } from 'firebase/firest
 
 const firebaseConfig = {
   apiKey: process.env.GOOGLE_API_KEY,
-  authDomain: "indigo-palm-collective.firebaseapp.com",
-  projectId: "indigo-palm-collective",
-  storageBucket: "indigo-palm-collective.firebasestorage.app",
+  authDomain: "the-desert-edit.firebaseapp.com",
+  projectId: "the-desert-edit",
+  storageBucket: "the-desert-edit.appspot.com",
   messagingSenderId: "908153205708",
   appId: "1:908153205708:web:a02fc89fb3f361e7c4e369"
 };

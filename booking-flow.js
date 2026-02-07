@@ -5,9 +5,9 @@ import { PROPERTIES } from './booking-config.js';
 // Firebase config
 const firebaseConfig = {
     apiKey: "AIzaSyDEcB5KW_t3ysKKf7RtJfPJdGnH9vZ_234",
-    authDomain: "indigo-palm-collective.firebaseapp.com",
-    projectId: "indigo-palm-collective",
-    storageBucket: "indigo-palm-collective.firebasestorage.app",
+    authDomain: "the-desert-edit.firebaseapp.com",
+    projectId: "the-desert-edit",
+    storageBucket: "the-desert-edit.appspot.com",
     messagingSenderId: "101326981347",
     appId: "1:101326981347:web:8f0df8b1cf0c3e4e8c7b89"
 };
