@@ -344,6 +344,15 @@
             }
         }
     </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y8X6Y9X3N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9Y8X6Y9X3N');
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -409,7 +418,7 @@
                     <span>Minimalist Calm</span>
                 </div>
 
-                <a href="https://airbnb.com/h/thewellatps" target="_blank" class="cta-button">CHECK AVAILABILITY</a>
+                <a href="https://airbnb.com/h/thewellatps" target="_blank" class="cta-button" onclick="gtag('event', 'click', {'event_category': 'booking', 'event_label': 'the-well-check-availability'});">CHECK AVAILABILITY</a>
 
                 <div class="color-palette">
                     <h4>Color Palette</h4>
