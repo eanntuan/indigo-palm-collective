@@ -32,21 +32,21 @@ No more manual CSV uploads - everything syncs automatically!
 1. Still in **Keys & credentials**
 2. Under **Redirect URIs**, add:
    ```
-   https://thedesertedit.netlify.app/.netlify/functions/quickbooks-callback
+   https://indigopalmcollective.netlify.app/.netlify/functions/quickbooks-callback
    ```
 3. Click **Save**
 
 ## Step 4: Configure Netlify Environment Variables
 
 1. Go to [Netlify Dashboard](https://app.netlify.com/)
-2. Select your **thedesertedit** site
+2. Select your **indigopalmcollective** site
 3. Go to **Site settings** → **Environment variables**
 4. Add these variables:
 
 ```
 QB_CLIENT_ID = [Your Client ID from Step 2]
 QB_CLIENT_SECRET = [Your Client Secret from Step 2]
-QB_REDIRECT_URI = https://thedesertedit.netlify.app/.netlify/functions/quickbooks-callback
+QB_REDIRECT_URI = https://indigopalmcollective.netlify.app/.netlify/functions/quickbooks-callback
 ```
 
 Also add these Firebase Admin SDK credentials (for the Netlify functions):
@@ -88,7 +88,7 @@ git push
 
 ## Step 6: Connect QuickBooks to Your Dashboard
 
-1. Go to your dashboard: https://thedesertedit.netlify.app/dashboard.html
+1. Go to your dashboard: https://indigopalmcollective.netlify.app/dashboard.html
 2. Click the **⚙️ Settings** tab
 3. Click **Connect QuickBooks**
 4. Sign in with your QuickBooks account

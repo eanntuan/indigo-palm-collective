@@ -1,7 +1,7 @@
 {
   "name": "desert-edit-deploy",
   "version": "1.0.0",
-  "description": "The Desert Edit - Direct Booking Website",
+  "description": "Indigo Palm Collective - Direct Booking Website",
   "type": "module",
   "scripts": {
     "migrate": "node migrate-data-node.js",

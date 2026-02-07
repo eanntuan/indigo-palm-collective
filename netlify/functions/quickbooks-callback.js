@@ -23,7 +23,7 @@ const oauthClient = new OAuthClient({
   clientId: process.env.QB_CLIENT_ID,
   clientSecret: process.env.QB_CLIENT_SECRET,
   environment: 'production',
-  redirectUri: process.env.QB_REDIRECT_URI || 'https://thedesertedit.netlify.app/.netlify/functions/quickbooks-callback'
+  redirectUri: process.env.QB_REDIRECT_URI || 'https://indigopalmcollective.netlify.app/.netlify/functions/quickbooks-callback'
 });
 
 export const handler = async (event, context) => {

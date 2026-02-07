@@ -465,6 +465,7 @@ exports.emailSignup = functions.https.onRequest(async (req, res) => {
 
 const hostawayApiKey = defineString('HOSTAWAY_API_KEY');
 const hostawayAccountId = defineString('HOSTAWAY_ACCOUNT_ID');
+const priceLabsApiKey = defineString('PRICELABS_API_KEY');
 
 async function callHostawayAPI(endpoint, method = 'GET', body = null) {
   const url = `https://api.hostaway.com/v1${endpoint}`;
@@ -661,33 +662,35 @@ exports.getPricing = functions.https.onRequest(async (req, res) => {
       return;
     }
 
-    // Property configuration
+    // Property configuration with PriceLabs IDs
     const PROPERTY_CONFIG = {
       'cozy-cactus': {
-        hostawayListingId: 123646,
-        source: 'hostaway',
+        priceLabsId: '123646',
         cleaningFee: 150,
         taxRate: 0.12,
-        basePrice: 250 // fallback
+        baseFallback: 225,
+        weekendMultiplier: 1.15 // 15% more on weekends
       },
       'casa-moto': {
-        hostawayListingId: 123633,
-        source: 'hostaway',
+        priceLabsId: '123633',
         cleaningFee: 150,
         taxRate: 0.12,
-        basePrice: 225 // fallback
+        baseFallback: 245,
+        weekendMultiplier: 1.15
       },
       'ps-retreat': {
-        source: 'hospitable', // Managed via Hospitable
+        priceLabsId: '1171049679026732503',
         cleaningFee: 125,
         taxRate: 0.135,
-        basePrice: 180 // fallback
+        baseFallback: 225,
+        weekendMultiplier: 1.15
       },
       'the-well': {
-        source: 'airbnb', // Direct Airbnb listing
+        priceLabsId: '868862893900280104',
         cleaningFee: 200,
         taxRate: 0.135,
-        basePrice: 300 // fallback
+        baseFallback: 237,
+        weekendMultiplier: 1.15
       }
     };
 
@@ -704,91 +707,47 @@ exports.getPricing = functions.https.onRequest(async (req, res) => {
     const checkOutDate = new Date(checkOut);
     const nights = Math.ceil((checkOutDate - checkInDate) / (1000 * 60 * 60 * 24));
 
-    let nightly = [];
+    // Fetch base price from PriceLabs
+    let basePrice = property.baseFallback;
+    try {
+      const priceLabsUrl = `https://api.pricelabs.co/v1/listings/?api_key=${priceLabsApiKey.value()}`;
+      const priceLabsResponse = await fetch(priceLabsUrl);
+      const priceLabsData = await priceLabsResponse.json();
+
+      if (priceLabsData.listings) {
+        const listing = priceLabsData.listings.find(l => l.id === property.priceLabsId);
+        if (listing && listing.base) {
+          basePrice = listing.base;
+          console.log(`Using PriceLabs base price for ${propertyId}: $${basePrice}`);
+        }
+      }
+    } catch (error) {
+      console.log(`PriceLabs fetch failed, using fallback price: ${error.message}`);
+    }
+
+    // Calculate nightly rates with weekend multiplier
+    const nightly = [];
     let totalNightlyRate = 0;
 
-    // Fetch pricing from Hostaway
-    if (property.source === 'hostaway' && property.hostawayListingId) {
-      try {
-        // Hostaway calendar endpoint with pricing
-        const startDate = checkInDate.toISOString().split('T')[0];
-        const endDate = checkOutDate.toISOString().split('T')[0];
+    for (let i = 0; i < nights; i++) {
+      const date = new Date(checkInDate);
+      date.setDate(date.getDate() + i);
+      const dateStr = date.toISOString().split('T')[0];
+      const dayOfWeek = date.getDay(); // 0=Sunday, 6=Saturday
 
-        const calendarData = await callHostawayAPI(
-          `/listings/${property.hostawayListingId}/calendar?startDate=${startDate}&endDate=${endDate}`
-        );
+      // Apply weekend multiplier (Friday, Saturday, Sunday)
+      const isWeekend = dayOfWeek === 0 || dayOfWeek === 5 || dayOfWeek === 6;
+      const nightlyPrice = isWeekend
+        ? Math.round(basePrice * property.weekendMultiplier)
+        : basePrice;
 
-        // Debug: Log what Hostaway returns
-        console.log('Hostaway calendar response for', property.hostawayListingId, ':', JSON.stringify(calendarData, null, 2));
+      nightly.push({
+        date: dateStr,
+        price: nightlyPrice,
+        available: true // We'll check availability separately
+      });
 
-        // Parse nightly rates from calendar
-        if (calendarData.result && Array.isArray(calendarData.result)) {
-          for (const day of calendarData.result) {
-            if (day.date >= startDate && day.date < endDate) {
-              // Try multiple possible price fields from Hostaway
-              const price = parseFloat(
-                day.price ||
-                day.dailyRate ||
-                day.basePrice ||
-                day.rate ||
-                property.basePrice
-              );
-
-              console.log(`Date ${day.date}: price=${day.price}, dailyRate=${day.dailyRate}, basePrice=${day.basePrice}, using=${price}`);
-
-              nightly.push({
-                date: day.date,
-                price: price,
-                available: day.status === 'available'
-              });
-              totalNightlyRate += price;
-            }
-          }
-        } else {
-          console.log('No calendar result array found in Hostaway response');
-        }
-
-        // If no pricing data, use base price
-        if (nightly.length === 0) {
-          totalNightlyRate = property.basePrice * nights;
-          for (let i = 0; i < nights; i++) {
-            const date = new Date(checkInDate);
-            date.setDate(date.getDate() + i);
-            nightly.push({
-              date: date.toISOString().split('T')[0],
-              price: property.basePrice,
-              available: true
-            });
-          }
-        }
-
-      } catch (error) {
-        console.error('Error fetching Hostaway pricing:', error);
-        // Fallback to base price
-        totalNightlyRate = property.basePrice * nights;
-        for (let i = 0; i < nights; i++) {
-          const date = new Date(checkInDate);
-          date.setDate(date.getDate() + i);
-          nightly.push({
-            date: date.toISOString().split('T')[0],
-            price: property.basePrice,
-            available: true
-          });
-        }
-      }
-    } else {
-      // Hospitable/Airbnb properties - use base price for now
-      // TODO: Add dynamic pricing integration when API available
-      totalNightlyRate = property.basePrice * nights;
-      for (let i = 0; i < nights; i++) {
-        const date = new Date(checkInDate);
-        date.setDate(date.getDate() + i);
-        nightly.push({
-          date: date.toISOString().split('T')[0],
-          price: property.basePrice,
-          available: true
-        });
-      }
+      totalNightlyRate += nightlyPrice;
     }
 
     // Calculate totals

@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Desert Edit | Curated Stays Across Coachella Valley</title>
+    <title>Indigo Palm Collective | Experiential Desert Stays</title>
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="The Desert Edit | Curated Stays Across Coachella Valley">
-    <meta property="og:description" content="Intentional stays. Elevated experiences. The desert, edited.">
-    <meta property="og:image" content="https://thedesertedit.netlify.app/og-image.jpg">
+    <meta property="og:title" content="Indigo Palm Collective | Experiential Desert Stays">
+    <meta property="og:description" content="United by a shared emotional current, these desert homes restore and reenergize travelers through playful reconnection.">
+    <meta property="og:image" content="https://indigopalm.co/og-image.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thedesertedit.netlify.app/">
+    <meta property="og:url" content="https://indigopalm.co/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Desert Edit">
-    <meta name="twitter:description" content="Intentional stays. Elevated experiences. The desert, edited.">
-    <meta name="twitter:image" content="https://thedesertedit.netlify.app/og-image.jpg">
+    <meta name="twitter:title" content="Indigo Palm Collective">
+    <meta name="twitter:description" content="Experiential stays that ignite inner energy through outward care.">
+    <meta name="twitter:image" content="https://indigopalm.co/og-image.jpg">
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="cactusicon.png">
@@ -29,19 +29,21 @@
         }
 
         :root {
-            /* Brand Colors */
-            --desert-sand: #E8DCC4;
-            --sage: #738561;
-            --sage-light: #adbab7;
-            --terracotta: #d2635b;
-            --terracotta-bright: #EA8B54;
-            --dusty-blue: #6E90AD;
-            --turquoise: #00877b;
-            --coral: #d2635b;
-            --sunset-pink: #E39B96;
-            --pineapple: #fad02c;
+            /* Indigo Palm Collective Brand Colors */
+            --indigo-palm: #4B0082;
+            --sage-cactus: #969A7F;
+            --sunbaked-terracotta: #B67550;
+            --kahlo-blue: #325CD9;
+            --desert-marigold: #FEAD26;
+            --cabana-rose: #DBAF9C;
+            --warm-sand: #F5F3EE;
+            --canyon-clay: #8B4513;
             --cream: #F5F3EE;
             --charcoal: #2C2C2C;
+
+            /* Legacy support (map to new palette) */
+            --terracotta: var(--sunbaked-terracotta);
+            --sage: var(--sage-cactus);
 
             /* Typography */
             --font-serif: 'Cormorant Garamond', serif;
@@ -516,9 +518,9 @@
         .property-card.cozy-cactus .property-tag { background-color: var(--turquoise); color: white; }
         .property-card.cozy-cactus .property-title { color: var(--turquoise); }
 
-        /* Casa Moto Styling */
-        .property-card.casa-moto .property-tag { background-color: var(--terracotta); color: white; }
-        .property-card.casa-moto .property-title { color: var(--terracotta); }
+        /* Terra Luz Styling */
+        .property-card.terra-luz .property-tag { background-color: var(--sunbaked-terracotta); color: white; }
+        .property-card.terra-luz .property-title { color: var(--sunbaked-terracotta); }
 
         /* PS Retreat Styling */
         .property-card.ps-retreat .property-tag { background-color: var(--dusty-blue); color: white; }
@@ -938,7 +940,7 @@
             background-color: var(--turquoise);
         }
 
-        .casa-moto-tag {
+        .terra-luz-tag {
             background-color: var(--terracotta);
         }
 
@@ -1458,7 +1460,7 @@
     <nav>
         <div class="container">
             <a href="#" class="logo">
-                <span class="logo-text">THE DESERT EDIT</span>
+                <span class="logo-text">INDIGO PALM COLLECTIVE</span>
             </a>
             <div class="mobile-menu-toggle" id="mobileMenuToggle">
                 <span></span>
@@ -1486,9 +1488,9 @@
         </div>
 
         <div class="hero-content">
-            <h1>The Desert Edit</h1>
-            <p class="tagline">Curated homes across the desert, each designed for meaningful moments</p>
-            <p class="description">From wellness sanctuaries to family adventures, mid-century romance to bohemian gatherings. Your next getaway awaits.</p>
+            <h1>Indigo Palm Collective</h1>
+            <p class="tagline">Experiential stays that ignite inner energy through outward care</p>
+            <p class="description">United by a shared emotional current, these desert homes restore and reenergize travelers through playful reconnection. Each stay is thoughtfully curated to reawaken presence, creativity, and belonging.</p>
             <a href="#properties" class="cta-button">EXPLORE OUR HOMES</a>
         </div>
     </section>
@@ -1534,21 +1536,21 @@
                 </div>
             </a>
 
-            <!-- Casa Moto -->
-            <a href="casa-moto.html" class="property-card-link">
-                <div class="property-card casa-moto">
-                    <div class="property-image" style="background: linear-gradient(rgba(210, 99, 91, 0.2), rgba(210, 99, 91, 0.2)), url('../Casa Moto/Existing Listing Pictures/IMG_1240.JPG'); background-size: cover; background-position: center;">
-                        <div class="property-tag">PET-FRIENDLY</div>
+            <!-- Terra Luz -->
+            <a href="terra-luz.html" class="property-card-link">
+                <div class="property-card terra-luz">
+                    <div class="property-image" style="background: linear-gradient(rgba(181, 117, 80, 0.2), rgba(181, 117, 80, 0.2)), url('../Casa Moto/Existing Listing Pictures/IMG_1240.JPG'); background-size: cover; background-position: center;">
+                        <div class="property-tag">LATIN CULTURE</div>
                     </div>
                     <div class="property-content">
-                        <h3 class="property-title">Casa Moto</h3>
-                        <p class="property-location">Indian Palms Country Club | Pet-Friendly</p>
-                        <p class="property-tagline">Gather. Unwind. Belong.</p>
-                        <p class="property-description">Bohemian warmth in a gated oasis with a brand-new saltwater pool. Bring your four-legged friend, gather your favorite people, and sink into the kind of ease that only comes from truly welcoming spaces.</p>
+                        <h3 class="property-title">Terra Luz</h3>
+                        <p class="property-location">Indio | Earth & Light</p>
+                        <p class="property-tagline">Cocooned & Soothing. Vibrant & Rejuvenating.</p>
+                        <p class="property-description">A sun-washed desert sanctuary with Cuban soul. Terracotta warmth meets Kahlo blue, where indoor-outdoor flow invites you to slow down, savor local flavors, and reconnect in a sensory-rich escape.</p>
                         <div class="property-colors">
-                            <div class="color-dot" style="background-color: #d2635b;"></div>
-                            <div class="color-dot" style="background-color: #E39B96;"></div>
-                            <div class="color-dot" style="background-color: #adbab7;"></div>
+                            <div class="color-dot" style="background-color: #B67550;" title="Sunbaked Terracotta"></div>
+                            <div class="color-dot" style="background-color: #325CD9;" title="Kahlo Blue"></div>
+                            <div class="color-dot" style="background-color: #FEAD26;" title="Desert Marigold"></div>
                         </div>
                         <span class="property-link">VIEW CASA MOTO →</span>
                     </div>
@@ -1668,14 +1670,14 @@
                     </div>
                 </a>
 
-                <!-- Casa Moto -->
+                <!-- Terra Luz -->
                 <a href="https://luxuryvacations.holidayfuture.com/listing/123633" target="_blank" class="booking-property-card" style="text-decoration: none; cursor: pointer;">
                     <div class="booking-property-image" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1240.JPG');"></div>
                     <div class="booking-property-info">
-                        <h3>Casa Moto</h3>
-                        <p class="location">Palm Desert, CA</p>
-                        <p class="description">Pet-Friendly • 3 Bedrooms</p>
-                        <span class="booking-tag casa-moto-tag">Check Availability</span>
+                        <h3>Terra Luz</h3>
+                        <p class="location">Indio, CA</p>
+                        <p class="description">Latin Culture • 3 Bedrooms</p>
+                        <span class="booking-tag terra-luz-tag">Check Availability</span>
                     </div>
                 </a>
             </div>
@@ -1761,11 +1763,11 @@
 
     <!-- Video Section -->
     <section class="video-section">
-        <h2>Experience The Desert Edit</h2>
+        <h2>Experience Indigo Palm Collective</h2>
         <div class="video-container">
             <iframe
                 src="https://www.youtube.com/embed/CSY2yD4Yxmg?rel=0&modestbranding=1"
-                title="The Desert Edit Video"
+                title="Indigo Palm Collective Video"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
@@ -1777,11 +1779,11 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="logo">THE DESERT EDIT</div>
-            <p class="tagline">Intentional stays. Elevated experiences. The desert, edited.</p>
-            <p>&copy; 2026 The Desert Edit. Curated properties across Coachella Valley.</p>
+            <div class="logo">INDIGO PALM COLLECTIVE</div>
+            <p class="tagline">Experiential stays that ignite inner energy through outward care</p>
+            <p>&copy; 2026 Indigo Palm Collective. Desert homes across Coachella Valley.</p>
             <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.6;">
-                The Well and Cozy Cactus designed by <a href="https://www.theolivejar.co/" target="_blank" style="color: inherit; text-decoration: underline;">The Olive Jar</a><br>
+                Terra Luz branding and design by <a href="https://www.theolivejar.co/" target="_blank" style="color: inherit; text-decoration: underline;">Dawn Asher, The Olive Jar</a><br>
                 Photography by <a href="https://www.thirdwallphoto.com/" target="_blank" style="color: inherit; text-decoration: underline;">Third Wall</a>
             </p>
         </div>

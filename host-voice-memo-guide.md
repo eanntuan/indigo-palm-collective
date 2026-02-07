@@ -96,7 +96,7 @@ Create an authentic voice memo that captures your hosting journey, passion, and 
 **Sample Flow:**
 > "When I look at a property, I'm not just buying a house—I'm buying a business. With [Property Name], I saw [specific thing: location near attractions, unique features, underpriced for the market]. The Coachella Valley market has strong seasonality, but also year-round demand from people escaping LA or visiting Palm Springs. This property [specific feature: has a pool, backs to the golf course, is in a gated community] which immediately elevates it in the rental market.
 >
-> But beyond the numbers, I saw the opportunity to create another elevated space. My portfolio is about building a brand—The Desert Edit properties aren't just rentals, they're experiences. Each one has its own character, but they all share that same attention to detail and guest-first design. This property fits that vision, and I believe it can [specific goal: achieve $X,XXX per month, maintain 70%+ occupancy, command premium rates].
+> But beyond the numbers, I saw the opportunity to create another elevated space. My portfolio is about building a brand—Indigo Palm Collective properties aren't just rentals, they're experiences. Each one has its own character, but they all share that same attention to detail and guest-first design. This property fits that vision, and I believe it can [specific goal: achieve $X,XXX per month, maintain 70%+ occupancy, command premium rates].
 >
 > At the end of the day, I'm building equity and income. But I'm also building a reputation. And this property is the next chapter in that story."
 
@@ -195,7 +195,7 @@ If you prefer to just hit bullet points naturally rather than follow a script:
 - [How it fits your portfolio strategy]
 - [Your vision for transforming it]
 - [Financial projections you believe in]
-- Building The Desert Edit brand—each property tells a story
+- Building Indigo Palm Collective brand—each property tells a story
 
 ---
 

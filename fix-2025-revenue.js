@@ -4,9 +4,9 @@ import { getFirestore, collection, getDocs, deleteDoc, doc, addDoc } from 'fireb
 
 const firebaseConfig = {
   apiKey: "AIzaSyCh9K9YewO1U4RLXGm_l9NUc-TDiqqW7UU",
-  authDomain: "the-desert-edit.firebaseapp.com",
-  projectId: "the-desert-edit",
-  storageBucket: "the-desert-edit.firebasestorage.app",
+  authDomain: "indigo-palm-collective.firebaseapp.com",
+  projectId: "indigo-palm-collective",
+  storageBucket: "indigo-palm-collective.firebasestorage.app",
   messagingSenderId: "908153205708",
   appId: "1:908153205708:web:a02fc89fb3f361e7c4e369"
 };

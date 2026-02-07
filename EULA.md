@@ -4,13 +4,13 @@
 
 ## Agreement
 
-This End-User License Agreement ("Agreement") is between The Desert Edit ("Company") and you ("User") regarding your use of the Desert Edit Dashboard application ("Software").
+This End-User License Agreement ("Agreement") is between Indigo Palm Collective ("Company") and you ("User") regarding your use of the Desert Edit Dashboard application ("Software").
 
 By connecting this Software to your QuickBooks Online account, you agree to this Agreement.
 
 ## License Grant
 
-The Company grants you a non-exclusive, non-transferable license to use this Software for the purpose of managing financial data for The Desert Edit property rental business.
+The Company grants you a non-exclusive, non-transferable license to use this Software for the purpose of managing financial data for Indigo Palm Collective property rental business.
 
 ## Permitted Use
 
@@ -84,9 +84,9 @@ This Agreement, together with the Privacy Policy, constitutes the entire agreeme
 
 For questions about this Agreement:
 
-**The Desert Edit**
+**Indigo Palm Collective**
 Email: [your business email]
-Website: https://thedesertedit.com
+Website: https://indigopalmcollective.com
 
 ## Acknowledgment
 

@@ -1,5 +1,5 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('../the-desert-edit-firebase-adminsdk-fbsvc-7711625750.json');
+const serviceAccount = require('../indigo-palm-collective-firebase-adminsdk-fbsvc-7711625750.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)

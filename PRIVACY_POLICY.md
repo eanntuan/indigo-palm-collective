@@ -4,7 +4,7 @@
 
 ## Overview
 
-Desert Edit Dashboard ("the App") is a private financial management tool that integrates with QuickBooks Online to help manage property rental finances. This app is used exclusively by The Desert Edit business and is not available to the public.
+Desert Edit Dashboard ("the App") is a private financial management tool that integrates with QuickBooks Online to help manage property rental finances. This app is used exclusively by Indigo Palm Collective business and is not available to the public.
 
 ## Information We Collect
 
@@ -71,9 +71,9 @@ Each service has its own privacy policy:
 
 For questions about this privacy policy or data handling:
 
-**The Desert Edit**
+**Indigo Palm Collective**
 Email: [your business email]
-Website: https://thedesertedit.com
+Website: https://indigopalmcollective.com
 
 ## Changes to This Policy
 

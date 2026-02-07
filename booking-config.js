@@ -14,10 +14,10 @@ export const PROPERTIES = {
     hostawayListingId: 123646,
     availabilitySource: 'hostaway'
   },
-  'casa-moto': {
-    id: 'casa-moto',
-    name: 'Casa Moto',
-    location: 'Palm Desert, CA',
+  'terra-luz': {
+    id: 'terra-luz',
+    name: 'Terra Luz',
+    location: 'Indio, CA',
     bedrooms: 3,
     maxGuests: 6,
     basePrice: 225, // per night
