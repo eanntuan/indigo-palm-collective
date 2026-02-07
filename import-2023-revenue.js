@@ -4,7 +4,7 @@ import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
 // Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyCh9K9YewO1U4RLXGm_l9NUc-TDiqqW7UU",
+  apiKey: process.env.GOOGLE_API_KEY,
   authDomain: "indigo-palm-collective.firebaseapp.com",
   projectId: "indigo-palm-collective",
   storageBucket: "indigo-palm-collective.firebasestorage.app",
