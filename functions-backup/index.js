@@ -165,14 +165,14 @@ function mapToProperty(qbData) {
   const combined = `${name} ${description} ${memo}`;
 
   if (combined.includes('cochran') || combined.includes('cozy cactus')) return 'cochran';
-  if (combined.includes('casa moto') || combined.includes('villa')) return 'casa-moto';
+  if (combined.includes('casa moto') || combined.includes('villa')) return 'terra-luz';
   if (combined.includes('ps retreat') || combined.includes('palm springs retreat')) return 'ps-retreat';
   if (combined.includes('the well')) return 'the-well';
 
   if (qbData.Class) {
     const className = qbData.Class.Name.toLowerCase();
     if (className.includes('cochran')) return 'cochran';
-    if (className.includes('casa')) return 'casa-moto';
+    if (className.includes('casa')) return 'terra-luz';
     if (className.includes('retreat')) return 'ps-retreat';
     if (className.includes('well')) return 'the-well';
   }
@@ -499,7 +499,7 @@ function mapHostawayListing(listingName) {
   const name = (listingName || '').toLowerCase();
 
   if (name.includes('cochran') || name.includes('cozy cactus')) return 'cochran';
-  if (name.includes('casa moto') || name.includes('villa')) return 'casa-moto';
+  if (name.includes('casa moto') || name.includes('villa')) return 'terra-luz';
   if (name.includes('ps retreat') || name.includes('palm springs')) return 'ps-retreat';
   if (name.includes('the well')) return 'the-well';
 
@@ -671,7 +671,7 @@ exports.getPricing = functions.https.onRequest(async (req, res) => {
         baseFallback: 225,
         weekendMultiplier: 1.15 // 15% more on weekends
       },
-      'casa-moto': {
+      'terra-luz': {
         priceLabsId: '123633',
         cleaningFee: 150,
         taxRate: 0.12,
@@ -862,7 +862,7 @@ exports.getAvailability = functions.https.onRequest(async (req, res) => {
         hostawayListingId: 123646,
         source: 'hostaway'
       },
-      'casa-moto': {
+      'terra-luz': {
         hostawayListingId: 123633,
         source: 'hostaway'
       },

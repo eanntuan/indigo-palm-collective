@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Casa Moto | Indigo Palm Collective</title>
+    <title>Book Terra Luz | Indigo Palm Collective</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -79,7 +79,7 @@
         .property-image {
             width: 100%;
             height: 300px;
-            background-image: url('Casa Moto/Existing Listing Pictures/IMG_1240.JPG');
+            background-image: url('Terra Luz/Existing Listing Pictures/IMG_1240.JPG');
             background-size: cover;
             background-position: center;
             border-radius: 12px;
@@ -347,7 +347,7 @@
         <div class="hero-content">
             <div class="property-image"></div>
             <div class="property-info">
-                <h1>Casa Moto</h1>
+                <h1>Terra Luz</h1>
                 <p class="location">📍 Palm Desert, CA</p>
                 <div class="property-features">
                     <span>🛏️ 3 Bedrooms</span>
@@ -454,8 +454,8 @@
         const db = getFirestore(app);
 
         // Property ID
-        const PROPERTY_ID = 'casa-moto';
-        const PROPERTY_NAME = 'Casa Moto';
+        const PROPERTY_ID = 'terra-luz';
+        const PROPERTY_NAME = 'Terra Luz';
 
         let priceEstimate = null;
 
@@ -719,7 +719,7 @@
 
                 await addDoc(collection(db, 'bookingInquiries'), inquiry);
 
-                alert(`🎉 Booking request submitted for Casa Moto!\n\nWe'll review your request and send you a payment link within 24 hours.\n\nCheck your email (${email}) for confirmation.`);
+                alert(`🎉 Booking request submitted for Terra Luz!\n\nWe'll review your request and send you a payment link within 24 hours.\n\nCheck your email (${email}) for confirmation.`);
                 window.location.reload();
             } catch (error) {
                 console.error('Error submitting inquiry:', error);

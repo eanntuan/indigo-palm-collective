@@ -108,8 +108,8 @@ function mapToProperty(qbData) {
   if (combined.includes('cochran') || combined.includes('cozy cactus')) {
     return 'cochran';
   }
-  if (combined.includes('casa moto') || combined.includes('villa')) {
-    return 'casa-moto';
+  if (combined.includes('terra luz') || combined.includes('casa moto') || combined.includes('villa')) {
+    return 'terra-luz';
   }
   if (combined.includes('ps retreat') || combined.includes('palm springs retreat')) {
     return 'ps-retreat';
@@ -122,7 +122,7 @@ function mapToProperty(qbData) {
   if (qbData.Class) {
     const className = qbData.Class.Name.toLowerCase();
     if (className.includes('cochran')) return 'cochran';
-    if (className.includes('casa')) return 'casa-moto';
+    if (className.includes('casa')) return 'terra-luz';
     if (className.includes('retreat')) return 'ps-retreat';
     if (className.includes('well')) return 'the-well';
   }
