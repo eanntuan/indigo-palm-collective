@@ -10,3 +10,5 @@ api_token.txt
 the-desert-edit-firebase-adminsdk-fbsvc-*.json
 functions/.env
 functions/.env.yaml
+functions-backup/.env
+functions-backup/.env.yaml
