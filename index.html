@@ -23,6 +23,15 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="cactusicon.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y8X6Y9X3N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9Y8X6Y9X3N');
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -1665,7 +1674,7 @@
             <!-- Property Selection Cards -->
             <div class="booking-properties-grid">
                 <!-- The Cozy Cactus -->
-                <a href="https://luxuryvacations.holidayfuture.com/listing/123646" target="_blank" class="booking-property-card" style="text-decoration: none; cursor: pointer;">
+                <a href="https://luxuryvacations.holidayfuture.com/listing/123646" target="_blank" class="booking-property-card" style="text-decoration: none; cursor: pointer;" onclick="gtag('event', 'booking_click', {'property_name': 'Cozy Cactus', 'event_category': 'Booking', 'event_label': 'Check Availability'});">
                     <div class="booking-property-image" style="background-image: url('email-images/cozy-cactus.jpg');"></div>
                     <div class="booking-property-info">
                         <h3>The Cozy Cactus</h3>
@@ -1676,7 +1685,7 @@
                 </a>
 
                 <!-- Terra Luz -->
-                <a href="https://luxuryvacations.holidayfuture.com/listing/123633" target="_blank" class="booking-property-card" style="text-decoration: none; cursor: pointer;">
+                <a href="https://luxuryvacations.holidayfuture.com/listing/123633" target="_blank" class="booking-property-card" style="text-decoration: none; cursor: pointer;" onclick="gtag('event', 'booking_click', {'property_name': 'Terra Luz', 'event_category': 'Booking', 'event_label': 'Check Availability'});">
                     <div class="booking-property-image" style="background-image: url('../Terra Luz/Existing Listing Pictures/IMG_1240.JPG');"></div>
                     <div class="booking-property-info">
                         <h3>Terra Luz</h3>
