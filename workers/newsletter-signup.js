@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+// Cloudflare Worker: Newsletter Signup Handler
+// Handles "Stay in the Loop" form submissions
+
+// Import the email template (you'll need to upload this as a Worker asset)
+const EMAIL_TEMPLATE = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,8 +73,8 @@
                         <td style="background-color: #2c2c2c; padding: 30px; text-align: center;">
                             <p style="margin: 0 0 10px 0; color: rgba(255,255,255,0.7); font-size: 14px;">Indigo Palm Collective | Coachella Valley</p>
                             <p style="margin: 0; color: rgba(255,255,255,0.5); font-size: 12px;">
-                                <a href="https://indigopalmcollective.netlify.app" style="color: rgba(255,255,255,0.7); text-decoration: none;">Website</a> •
-                                <a href="https://instagram.com/thecozycactus_" style="color: rgba(255,255,255,0.7); text-decoration: none;">Instagram</a>
+                                <a href="https://indigopalm.co" style="color: rgba(255,255,255,0.7); text-decoration: none;">Website</a> •
+                                <a href="https://instagram.com/indigopalmco" style="color: rgba(255,255,255,0.7); text-decoration: none;">Instagram</a>
                             </p>
                         </td>
                     </tr>
@@ -80,4 +84,104 @@
         </tr>
     </table>
 </body>
-</html>
+</html>`;
+
+export default {
+  async fetch(request, env) {
+    // Handle CORS preflight
+    if (request.method === 'OPTIONS') {
+      return new Response(null, {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+        },
+      });
+    }
+
+    // Only accept POST requests
+    if (request.method !== 'POST') {
+      return new Response('Method not allowed', { status: 405 });
+    }
+
+    try {
+      const { email } = await request.json();
+
+      // Validate email
+      if (!email || !email.includes('@')) {
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Invalid email address'
+        }), {
+          status: 400,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+
+      // Save to Google Sheets
+      await saveToGoogleSheets(email, env);
+
+      // Send welcome email with WELCOME10
+      await sendWelcomeEmail(email, env);
+
+      return new Response(JSON.stringify({
+        success: true,
+        message: 'Welcome email sent! Check your inbox.'
+      }), {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      });
+
+    } catch (error) {
+      console.error('Newsletter signup error:', error);
+      return new Response(JSON.stringify({
+        success: false,
+        error: 'Signup failed. Please try again.'
+      }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+  },
+};
+
+// Save email to Google Sheets via Apps Script webhook
+async function saveToGoogleSheets(email, env) {
+  const WEBHOOK_URL = env.SHEETS_WEBHOOK_URL;
+
+  const response = await fetch(WEBHOOK_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Failed to save to Google Sheets');
+  }
+
+  return await response.json();
+}
+
+// Send welcome email via Resend
+async function sendWelcomeEmail(email, env) {
+  const RESEND_API_KEY = env.RESEND_API_KEY;
+
+  const emailContent = {
+    from: 'Indigo Palm Collective <hello@indigopalm.co>',
+    to: [email],
+    subject: 'Welcome to Indigo Palm Collective! 🌴',
+    html: EMAIL_TEMPLATE,
+  };
+
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${RESEND_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(emailContent),
+  });
+}

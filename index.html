@@ -2047,5 +2047,56 @@
         }
     </script>
 
+    <!-- Newsletter Signup Handler -->
+    <script>
+        const newsletterForm = document.getElementById('emailSignupForm');
+        const successMessage = document.getElementById('signupSuccess');
+
+        newsletterForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = newsletterForm.querySelector('input[name="email"]').value;
+            const submitButton = newsletterForm.querySelector('button[type="submit"]');
+
+            // Disable button during submission
+            submitButton.disabled = true;
+            submitButton.textContent = 'SIGNING UP...';
+
+            try {
+                // Send to Cloudflare Worker
+                const response = await fetch('https://newsletter.indigopalm.co/signup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Show success message
+                    newsletterForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+
+                    // Track in Google Analytics
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'newsletter_signup', {
+                            'event_category': 'engagement',
+                            'event_label': email
+                        });
+                    }
+                } else {
+                    alert(result.error || 'Signup failed. Please try again.');
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'SIGN UP';
+                }
+            } catch (error) {
+                console.error('Newsletter signup error:', error);
+                alert('Something went wrong. Please try again.');
+                submitButton.disabled = false;
+                submitButton.textContent = 'SIGN UP';
+            }
+        });
+    </script>
+
 </body>
 </html>
