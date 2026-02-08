@@ -47,7 +47,7 @@ This guide walks you through deploying the newsletter signup system for Indigo P
 **Add Environment Variables:**
 1. In the Worker dashboard, go to **Settings** > **Variables**
 2. Add these variables:
-   - `RESEND_API_KEY` = `re_BJrPaL5f_HQ4JeD6F86pt44Azwp1ghhud`
+   - `RESEND_API_KEY` = [your Resend API key]
    - `SHEETS_WEBHOOK_URL` = [paste the URL from Step 1]
 3. Click **Save**
 
