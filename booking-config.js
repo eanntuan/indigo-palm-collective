@@ -1,6 +1,11 @@
 // Booking Configuration
 // Property pricing and details
 
+// ⚠️ REBRAND NOTE (Feb 2026):
+// 'terra-luz' is the FUTURE brand name (target: May 2026 after renovations)
+// Currently marketed as "Casa Moto" on Airbnb until rebrand complete
+// To switch to Terra Luz branding: run `bash rebrand-to-terra-luz.sh`
+
 export const PROPERTIES = {
   'cozy-cactus': {
     id: 'cozy-cactus',

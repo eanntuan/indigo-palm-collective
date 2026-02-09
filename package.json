@@ -13,7 +13,8 @@
     "firebase": "^10.7.1",
     "firebase-admin": "^12.0.0",
     "intuit-oauth": "^4.0.1",
-    "node-fetch": "^2.6.7",
+    "node-fetch": "^2.7.0",
+    "node-ical": "^0.25.1",
     "resend": "^6.9.1"
   }
 }
