@@ -22,6 +22,80 @@
     <meta name="twitter:description" content="Experiential stays that ignite inner energy through outward care.">
     <meta name="twitter:image" content="https://indigopalm.co/og-image.jpg">
 
+    <!-- Schema.org Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Indigo Palm Collective",
+      "description": "Curated desert vacation rentals in the Coachella Valley with private pools, hot tubs, and mountain views",
+      "url": "https://indigopalm.co",
+      "logo": "https://indigopalm.co/cactusicon.png",
+      "image": "https://indigopalm.co/og-image.jpg",
+      "priceRange": "$$-$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Indio",
+        "addressRegion": "CA",
+        "addressCountry": "US",
+        "postalCode": "92201"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "33.7207",
+        "longitude": "-116.2156"
+      },
+      "telephone": "+1-760-XXX-XXXX",
+      "email": "indigopalmco@gmail.com",
+      "sameAs": [
+        "https://instagram.com/indigopalmco",
+        "https://pinterest.com/indigopalmco"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Vacation Rental Properties",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Accommodation",
+              "name": "The Cozy Cactus",
+              "url": "https://indigopalm.co/cozy-cactus",
+              "description": "Family-friendly 3-bedroom vacation home with pool and hot tub in Indio"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Accommodation",
+              "name": "Casa Moto",
+              "url": "https://indigopalm.co/casa-moto",
+              "description": "Latin-inspired 3-bedroom desert home with heated pool"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Accommodation",
+              "name": "PS Retreat",
+              "url": "https://indigopalm.co/ps-retreat",
+              "description": "Mid-century modern vacation rental in Palm Springs"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Accommodation",
+              "name": "The Well",
+              "url": "https://indigopalm.co/the-well",
+              "description": "1-bedroom wellness retreat in Palm Springs"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="cactusicon.png">
 
@@ -1499,7 +1573,7 @@
     <section class="hero">
         <!-- Video Background -->
         <div class="hero-video">
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline loading="lazy" preload="metadata" aria-label="Desert vacation home pool video showcasing Cozy Cactus property in Indio">
                 <source src="Cozy Cactus/the-cozy-cactus-compressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -1507,9 +1581,9 @@
 
         <div class="hero-content">
             <h1>Indigo Palm Collective</h1>
-            <p class="tagline">Experiential stays that ignite inner energy through outward care</p>
-            <p class="description">United by a shared emotional current, these desert homes restore and reenergize travelers through playful reconnection. Each stay is thoughtfully curated to reawaken presence, creativity, and belonging.</p>
-            <a href="#properties" class="cta-button">EXPLORE OUR HOMES</a>
+            <p class="tagline">When was the last time you truly arrived?</p>
+            <p class="description">Not just pulled up to a rental. But <em>arrived</em>. Exhaled. Felt your shoulders drop. Noticed the light hitting the pool just right, grabbed a cold drink, and thought: <em>okay, I'm here.</em><br><br>That's what we're building across the Coachella Valley—homes where reconnection isn't a buzzword. It's what happens naturally when the space actually holds you.</p>
+            <a href="#properties" class="cta-button">SEE WHERE YOU'LL STAY</a>
         </div>
     </section>
 
@@ -1529,20 +1603,20 @@
         3. Keep the gradient overlay for consistent styling
     -->
     <section id="properties" class="properties">
-        <h2 class="section-title">Our Collection</h2>
-        <p class="section-subtitle">Curated homes, infinite possibilities</p>
+        <h2 class="section-title">Find Your Vibe</h2>
+        <p class="section-subtitle">Four homes. Four personalities. One shared energy.</p>
         <div class="property-grid">
             <!-- Cozy Cactus -->
             <a href="cozy-cactus.html" class="property-card-link">
                 <div class="property-card cozy-cactus">
-                    <div class="property-image" style="background: linear-gradient(rgba(0, 135, 123, 0.2), rgba(0, 135, 123, 0.2)), url('../Cozy Cactus/82381 Cochran Drive For Web/1TW_DZ5A8774web.jpg'); background-size: cover; background-position: center;">
+                    <div class="property-image" style="background: linear-gradient(rgba(0, 135, 123, 0.2), rgba(0, 135, 123, 0.2)), url('../Cozy Cactus/82381 Cochran Drive For Web/1TW_DZ5A8774web.jpg'); background-size: cover; background-position: center;" role="img" aria-label="Colorful living room at Cozy Cactus vacation rental in Indio with vibrant decor and family-friendly design">
                         <div class="property-tag">FAMILY ADVENTURE</div>
                     </div>
                     <div class="property-content">
                         <h3 class="property-title">Cozy Cactus</h3>
                         <p class="property-location">Indio | 3 Bedrooms</p>
-                        <p class="property-tagline">Relax. Treat Yourself. Explore.</p>
-                        <p class="property-description">Playful pops of color meet family-friendly functionality. This isn't just a vacation rental, it's where parents get their pick-me-up coffee bar and kids discover a treasure trove of curated toys. A multi-sensory experience designed to nurture everyone.</p>
+                        <p class="property-tagline">Where kids play and parents actually relax.</p>
+                        <p class="property-description">Playful energy meets thoughtful design. This isn't just another family rental—it's where parents get their pick-me-up coffee bar and kids find a curated toy stash that keeps them busy for hours. Everyone's happy. Including you.</p>
                         <div class="property-colors">
                             <div class="color-dot" style="background-color: #00877b;"></div>
                             <div class="color-dot" style="background-color: #d2635b;"></div>
@@ -1557,7 +1631,7 @@
             <!-- Casa Moto -->
             <a href="casa-moto.html" class="property-card-link">
                 <div class="property-card terra-luz">
-                    <div class="property-image" style="background: linear-gradient(rgba(181, 117, 80, 0.2), rgba(181, 117, 80, 0.2)), url('Terra Luz/Existing Listing Pictures/IMG_1240.JPG'); background-size: cover; background-position: center;">
+                    <div class="property-image" style="background: linear-gradient(rgba(181, 117, 80, 0.2), rgba(181, 117, 80, 0.2)), url('Terra Luz/Existing Listing Pictures/IMG_1240.JPG'); background-size: cover; background-position: center;" role="img" aria-label="Casa Moto desert home exterior with terracotta walls and pool area in Indio California">
                         <div class="property-tag">MODERN DESERT</div>
                     </div>
                     <div class="property-content">
@@ -1578,14 +1652,14 @@
             <!-- PS Retreat -->
             <a href="ps-retreat.html" class="property-card-link">
                 <div class="property-card ps-retreat">
-                    <div class="property-image" style="background: linear-gradient(rgba(110, 144, 173, 0.2), rgba(110, 144, 173, 0.2)), url('../PS Retreat/IMG_3334.JPG'); background-size: cover; background-position: center;">
+                    <div class="property-image" style="background: linear-gradient(rgba(110, 144, 173, 0.2), rgba(110, 144, 173, 0.2)), url('../PS Retreat/IMG_3334.JPG'); background-size: cover; background-position: center;" role="img" aria-label="Mid-century modern bedroom at PS Retreat vacation rental in Palm Springs with turquoise accents">
                         <div class="property-tag">MID-CENTURY MODERN</div>
                     </div>
                     <div class="property-content">
                         <h3 class="property-title">PS Retreat</h3>
                         <p class="property-location">Palm Springs Central | Mid-Century</p>
-                        <p class="property-tagline">Iconic. Romantic. Effortless.</p>
-                        <p class="property-description">Mid-century magic in the heart of Palm Springs. Your "bowling alley" primary suite, turquoise pool days, and walking distance to downtown's best. This is the Palm Springs postcard, elevated.</p>
+                        <p class="property-tagline">The Palm Springs postcard, but make it yours.</p>
+                        <p class="property-description">Mid-century magic in the heart of Palm Springs. That "bowling alley" primary suite. Turquoise pool days. Walking distance to downtown. This is the vibe you came for—iconic, romantic, effortless.</p>
                         <div class="property-colors">
                             <div class="color-dot" style="background-color: #00877b;"></div>
                             <div class="color-dot" style="background-color: #6E90AD;"></div>
@@ -1599,14 +1673,14 @@
             <!-- The Well -->
             <a href="the-well.html" class="property-card-link">
                 <div class="property-card the-well">
-                    <div class="property-image" style="background: linear-gradient(rgba(115, 133, 97, 0.3), rgba(115, 133, 97, 0.3)), url('../The Well/1TW_4W6A0294.jpg'); background-size: cover; background-position: center;">
+                    <div class="property-image" style="background: linear-gradient(rgba(115, 133, 97, 0.3), rgba(115, 133, 97, 0.3)), url('../The Well/1TW_4W6A0294.jpg'); background-size: cover; background-position: center;" role="img" aria-label="Southwestern minimalist living room at The Well vacation rental in Palm Springs with sage green accents">
                         <div class="property-tag">WELLNESS RETREAT</div>
                     </div>
                     <div class="property-content">
                         <h3 class="property-title">The Well</h3>
                         <p class="property-location">Palm Springs | 1 Bedroom</p>
-                        <p class="property-tagline">Relax. Recharge. Reconnect.</p>
-                        <p class="property-description">A wellness-focused retreat where southwestern minimalism meets mid-century calm. Sage greens, terracotta warmth, and smart storage that clears the mind as much as the space. Perfect for solo travelers and remote workers seeking grounded motivation.</p>
+                        <p class="property-tagline">For when you need to reset.</p>
+                        <p class="property-description">Southwestern minimalism meets mid-century calm. Sage greens. Terracotta warmth. Smart storage that clears your mind as much as the space. Solo travelers and remote workers—this one's for you.</p>
                         <div class="property-colors">
                             <div class="color-dot" style="background-color: #738561;"></div>
                             <div class="color-dot" style="background-color: #adbab7;"></div>
@@ -1623,10 +1697,10 @@
     <!-- Direct Booking Section -->
     <section class="direct-booking">
         <div class="savings-badge">SAVE 15% + NO BOOKING FEES</div>
-        <h2>Book Direct & Save</h2>
-        <p>Why pay Airbnb's fees? Book directly with us for the best rates and personalized service</p>
+        <h2>Let's Skip the Middleman</h2>
+        <p>Airbnb takes 15-20% in fees. VRBO isn't much better. And you know what you get for that? Nothing you wouldn't get booking directly with us.<br><br>So here's the deal: <strong>Book direct, save 15%, and get the same high-touch hospitality—minus the platform tax.</strong><br><br>Plus, when you book with us, you're texting <em>us</em> if something comes up. Not navigating a customer service bot at 11pm.</p>
         <a href="/booking-flow.html" class="booking-widget-btn" style="display: inline-block; text-decoration: none; cursor: pointer;">START BOOKING</a>
-        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">Or email us at <a href="mailto:indigopalmco@gmail.com" style="color: inherit; text-decoration: underline;">indigopalmco@gmail.com</a></p>
+        <p style="margin-top: 1rem; font-size: 0.95rem; opacity: 0.9;">Prefer to chat first? Email us at <a href="mailto:indigopalmco@gmail.com" style="color: inherit; text-decoration: underline;">indigopalmco@gmail.com</a>—we're real people and we actually respond.</p>
         <div class="social-links">
             <a href="https://www.instagram.com/thecozycactus_/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow us on Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -1679,7 +1753,7 @@
             <div class="booking-properties-grid">
                 <!-- The Cozy Cactus -->
                 <a href="https://luxuryvacations.holidayfuture.com/listing/123646" target="_blank" class="booking-property-card" style="text-decoration: none; cursor: pointer;" onclick="gtag('event', 'booking_click', {'property_name': 'Cozy Cactus', 'event_category': 'Booking', 'event_label': 'Check Availability'});">
-                    <div class="booking-property-image" style="background-image: url('email-images/cozy-cactus.jpg');"></div>
+                    <div class="booking-property-image" style="background-image: url('email-images/cozy-cactus.jpg');" role="img" aria-label="Cozy Cactus family vacation rental with pool in Indio"></div>
                     <div class="booking-property-info">
                         <h3>The Cozy Cactus</h3>
                         <p class="location">Indio, CA</p>
@@ -1690,7 +1764,7 @@
 
                 <!-- Casa Moto -->
                 <a href="https://luxuryvacations.holidayfuture.com/listing/123633" target="_blank" class="booking-property-card" style="text-decoration: none; cursor: pointer;" onclick="gtag('event', 'booking_click', {'property_name': 'Casa Moto', 'event_category': 'Booking', 'event_label': 'Check Availability'});">
-                    <div class="booking-property-image" style="background-image: url('../Terra Luz/Existing Listing Pictures/IMG_1240.JPG');"></div>
+                    <div class="booking-property-image" style="background-image: url('../Terra Luz/Existing Listing Pictures/IMG_1240.JPG');" role="img" aria-label="Casa Moto desert home with Latin-inspired design and heated pool"></div>
                     <div class="booking-property-info">
                         <h3>Casa Moto</h3>
                         <p class="location">Indio, CA</p>
@@ -1722,8 +1796,8 @@
 
     <!-- Email Signup Section -->
     <section id="contact" class="email-signup">
-        <h2>Stay in the Loop</h2>
-        <p>Be the first to know about new properties, exclusive offers, and last-minute availability</p>
+        <h2>Don't Miss Out</h2>
+        <p>New properties. Last-minute availability. Exclusive offers. The good stuff lands here first.</p>
         <form name="email-signup" class="email-form" id="emailSignupForm">
             <input type="email" name="email" placeholder="Enter your email" required>
             <button type="submit">SIGN UP</button>
@@ -1738,80 +1812,22 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2 class="section-title">A Collection Worth Experiencing</h2>
-        <p class="section-subtitle">Curated • Intentional • Elevated</p>
-        <div class="about-content">
-            <p>We don't just offer places to stay. We curate spaces where <span class="highlight">memories take root.</span></p>
-            <p>Each home in our collection carries its own character, designed with intention. From the color palettes to the coffee bar setup, every detail invites you to slow down, reconnect, and <span class="highlight">make it a moment.</span></p>
-            <p>Whether you're seeking solitude in Palm Springs or gathering your crew in Indio, you'll find thoughtful touches that transform a trip into an experience.</p>
-
-            <div class="brand-values">
-                <div class="brand-value">
-                    <h3>Curated Selection</h3>
-                    <p>Each property is handpicked and designed with intentional attention to detail and guest experience.</p>
-                </div>
-                <div class="brand-value">
-                    <h3>Authentic Design</h3>
-                    <p>From southwestern minimalism to bohemian warmth, every space tells its own story through thoughtful styling.</p>
-                </div>
-                <div class="brand-value">
-                    <h3>Elevated Experiences</h3>
-                    <p>Multi-sensory details that nurture and inspire, because the best memories come from intentional spaces.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Philosophy Section -->
-    <section id="philosophy" class="philosophy">
-        <h2 class="section-title">Our Design Philosophy</h2>
-        <p class="section-subtitle">Cocooned & Soothing. Vibrant & Rejuvenating.</p>
-        <div class="philosophy-content">
-            <p>Our mission is to create experiential stays that ignite inner energy through outward care.</p>
-
-            <div class="philosophy-quote">
-                "Designs are created to strike a chord without chasing or lingering too long on trends—spaces that serve the traveler, not the other way around."
-            </div>
-
-            <p>Each property is crafted as a meaningful experience that is elevated by design, while absolutely approachable and jovial in tone. Intentionality doesn't mean overly serious. It can be playful, too. We like fun.</p>
-
-            <div class="philosophy-quote">
-                "Like palms that quietly regenerate life around them, each stay leaves guests grounded, restored, and re-energized—carrying that sense of renewal with them long after they've gone."
-            </div>
-
-            <p><strong>Make it a moment.</strong> That's our invitation to you.</p>
-        </div>
-    </section>
-
-    <!-- About Indigo Palm Collective Section -->
-    <section class="philosophy-section" style="background: var(--cream);">
         <h2 class="section-title">About Indigo Palm Collective</h2>
-        <div class="philosophy-content" style="max-width: 900px; margin: 0 auto;">
-            <p style="font-size: 1.3rem; font-style: italic; margin-bottom: 2rem; color: var(--sunbaked-terracotta);">United by a shared emotional current, these homes are designed to restore and reenergize travelers.</p>
+        <p class="section-subtitle">Experiential stays that ignite inner energy through outward care</p>
+        <div class="about-content">
+            <p>Most getaways are about disconnecting. Ours are about <em>reconnecting</em> with your people, with yourself, with the present moment.</p>
 
-            <p>Where many getaways are designed to help travelers disconnect, Indigo Palm Collective creates desert spaces meant for playful reconnection. Each stay is thoughtfully curated to reawaken presence, creativity, and a sense of belonging—places that feel alive yet calming, expressive yet effortless. United by a shared emotional current, these homes are designed to restore and reenergize travelers in a way that feels inspired yet natural, not prescribed.</p>
+            <p>Here's what we <em>won't</em> give you: generic desert vibes with succulents and the same throw pillows everyone else has. Here's what we <em>will</em>: homes that feel like someone who actually cares designed them. Sharp knives. Great coffee. Blackout curtains. The kind of details that make you text your group chat: <span class="highlight">"Wait, they thought of everything."</span></p>
 
-            <p>No two properties are the same, yet each carries a distinct emotional warmth that is both inviting and lively. Rooted in high-touch hospitality that is both intuitive and intentional, Indigo Palm Collective blends story, style, and human connection, creating spaces that feel personal, considered, and quietly transformative.</p>
-
-            <div class="philosophy-quote" style="margin: 2.5rem 0;">
-                "Our mission is to create experiential stays that ignite inner energy through outward care."
+            <div class="philosophy-quote">
+                "We design spaces that serve the traveler, not the other way around. Timeless over trendy. Comfort over clout."
             </div>
 
-            <p><strong>Indigo</strong>, by nature, represents depth of energy: intuition and heightened awareness. Long associated with creativity and emotional balance, it lives in the space between blue and violet—calm yet charged, grounding yet expansive.</p>
+            <p>From Terra Luz's Cuban-inspired warmth to Cozy Cactus's playful family energy, The Well's southwestern minimalism to PS Retreat's mid-century magic. No two properties are the same, but they all share one thing: <span class="highlight">they make you want to stay.</span></p>
 
-            <p><strong>Palm</strong> reflects a fully alive, vibrant symbol of renewal against a dry landscape. Like a palm tree rising with quiet confidence from the desert floor, our homes restore energy through thoughtful design, interactive amenities, and a deep sense of hospitality where connective roots form and travelers feel held in their desert getaway.</p>
-        </div>
-    </section>
+            <p><strong>Indigo</strong> represents depth: intuition, creativity, emotional balance. <strong>Palm</strong> is that vibrant symbol of renewal rising confidently from the desert floor. Like a palm tree, our homes restore your energy through thoughtful design and a deep sense of hospitality. Places where you feel held, even as you're encouraged to grow.</p>
 
-    <!-- About Your Host Section -->
-    <section class="philosophy-section" style="background: white;">
-        <h2 class="section-title">About Your Host</h2>
-        <div class="philosophy-content" style="max-width: 900px; margin: 0 auto;">
-            <p>Eann's journey into hospitality began at a crossroads: invest in a Tesla—or invest in something that lit her up. She chose hospitality, channeling her energy into her first property, The Cozy Cactus in Indio, and hasn't looked back since. A surfer from Culver City with a bright, bubbly spirit and an instinct for care, Eann brings both ease and intention into every home she creates. Her spaces reflect her personality: relaxed but dialed in, playful yet thoughtfully considered.</p>
-
-            <p>What truly excites Eann about hosting is the moment guests realize everything's already been thought of. From sharp knives and ZipLoc bag organizers to great coffee, blackout curtains, and even the occasional unexpected delight (like the straw visors), she designs with empathy—anticipating needs before guests ever have to ask.</p>
-
-            <p>She understands travel from the inside out: the desire to arrive, exhale, and feel instantly at home without unpacking your whole life. For Eann, hosting isn't about perfection, it's about presence. Making guests feel seen, cared for, and genuinely comfortable is the through-line in every stay she offers.</p>
+            <p>Your host, Eann, strives to anticipate what you need before you have to ask. From the coffee setup to those straw visors guests can't stop talking about—she brings ease and intention into every space. For her, hosting isn't about perfection. It's about presence. Making you feel seen, cared for, and genuinely comfortable.</p>
         </div>
     </section>
 
@@ -1847,8 +1863,8 @@
         <div class="email-popup">
             <button class="email-popup-close" id="closePopup">&times;</button>
             <div class="discount-badge">10% OFF</div>
-            <h3>Book Direct & Save!</h3>
-            <p>Skip the fees and book directly with us. Use code <strong>DIRECT10</strong> for 10% off your stay.</p>
+            <h3>Skip Airbnb. Book Direct.</h3>
+            <p>Why give Airbnb 15% when you could save that money? Use code <strong>DIRECT10</strong> for 10% off your stay.</p>
             <form name="popup-signup" method="POST" data-netlify="true" class="email-popup-form" id="popupForm">
                 <input type="hidden" name="form-name" value="popup-signup">
                 <input type="hidden" name="discount-code" value="DIRECT10">
