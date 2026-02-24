@@ -1,20 +1,18 @@
 {
-  "name": "desert-edit-deploy",
+  "name": "indigo-palm-booking",
   "version": "1.0.0",
-  "description": "Indigo Palm Collective - Direct Booking Website",
-  "type": "module",
+  "description": "Direct booking system for Indigo Palm Collective",
+  "main": "index.js",
   "scripts": {
-    "migrate": "node migrate-data-node.js",
-    "migrate-expenses": "node migrate-expenses-2025.js"
+    "dev": "netlify dev",
+    "build": "echo 'No build step needed'",
+    "deploy": "netlify deploy --prod"
   },
   "dependencies": {
-    "dotenv": "^17.2.4",
-    "exceljs": "^4.4.0",
-    "firebase": "^10.7.1",
-    "firebase-admin": "^12.0.0",
-    "intuit-oauth": "^4.0.1",
-    "node-fetch": "^2.7.0",
-    "node-ical": "^0.25.1",
-    "resend": "^6.9.1"
+    "node-ical": "^0.17.1",
+    "stripe": "^14.12.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.15.2"
   }
 }

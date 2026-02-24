@@ -2,32 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://indigopalm.co/</loc>
-    <lastmod>2026-02-07</lastmod>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://indigopalm.co/terra-luz.html</loc>
-    <lastmod>2026-02-07</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://indigopalm.co/cozy-cactus</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://indigopalm.co/cozy-cactus.html</loc>
-    <lastmod>2026-02-07</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://indigopalm.co/casa-moto</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://indigopalm.co/the-well.html</loc>
-    <lastmod>2026-02-07</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://indigopalm.co/terra-luz</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://indigopalm.co/ps-retreat.html</loc>
-    <lastmod>2026-02-07</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://indigopalm.co/ps-retreat</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://indigopalm.co/the-well</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 </urlset>

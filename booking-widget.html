@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay | Indigo Palm Collective</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Flatpickr for date picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --sage: #738561;
+            --terracotta: #B67550;
+            --turquoise: #00877b;
+            --cream: #F5F3EE;
+            --charcoal: #2C2C2C;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .booking-widget-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .widget-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .widget-header h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .widget-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Property Selection */
+        .property-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .property-card {
+            border: 2px solid transparent;
+            border-radius: 8px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: var(--cream);
+        }
+
+        .property-card:hover {
+            border-color: var(--sage);
+            transform: translateY(-2px);
+        }
+
+        .property-card.selected {
+            border-color: var(--terracotta);
+            background: white;
+            box-shadow: 0 4px 12px rgba(182, 117, 80, 0.2);
+        }
+
+        .property-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .property-card .location {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .property-card .price {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--terracotta);
+            margin-top: 1rem;
+        }
+
+        .property-card .price-note {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        /* Booking Form */
+        .booking-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 200px;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: end;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 0.9rem;
+            border: 2px solid #e5e5e5;
+            border-radius: 6px;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--sage);
+        }
+
+        .check-btn {
+            background-color: var(--sage);
+            color: white;
+            border: none;
+            padding: 0.9rem 2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            height: fit-content;
+        }
+
+        .check-btn:hover {
+            background-color: #5f6d4f;
+            transform: translateY(-2px);
+        }
+
+        /* Price Display */
+        .price-display {
+            background: linear-gradient(135deg, var(--terracotta) 0%, var(--sage) 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            display: none;
+        }
+
+        .price-display.active {
+            display: block;
+        }
+
+        .price-display h3 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-breakdown {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+
+        .price-row.total {
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding-top: 1rem;
+            border-top: 2px solid rgba(255,255,255,0.3);
+            margin-top: 0.5rem;
+        }
+
+        .price-row.indent {
+            padding-left: 1rem;
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        .book-now-btn {
+            background: white;
+            color: var(--terracotta);
+            border: none;
+            padding: 1.2rem 3rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: all 0.3s;
+        }
+
+        .book-now-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Availability Note */
+        .availability-note {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .availability-note.available {
+            display: block;
+        }
+
+        .availability-note.unavailable {
+            display: block;
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid var(--sage);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Flatpickr Customization */
+        .flatpickr-day.disabled {
+            color: #ddd !important;
+        }
+
+        .flatpickr-day.booked {
+            background: #ffebee !important;
+            border-color: #f44336 !important;
+            color: #666 !important;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .booking-form {
+                grid-template-columns: 1fr;
+            }
+
+            .property-selector {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="booking-widget-container">
+        <div class="widget-header">
+            <h1>Book Your Desert Getaway</h1>
+            <p>Check availability and pricing for all properties</p>
+        </div>
+
+        <!-- Property Selection -->
+        <div class="property-selector">
+            <div class="property-card selected" data-property="cozy-cactus" onclick="selectProperty('cozy-cactus')">
+                <h3>Cozy Cactus</h3>
+                <p class="location">Indio, CA • 3 Bedrooms</p>
+                <p>Family-friendly with pool & toys</p>
+                <div class="price">
+                    From $250 <span class="price-note">/ night</span>
+                </div>
+                <p class="price-note" style="font-size: 0.8rem; margin-top: 0.25rem; color: #666;">Dynamic pricing • Book direct & save</p>
+            </div>
+
+            <div class="property-card" data-property="casa-moto" onclick="selectProperty('casa-moto')">
+                <h3>Casa Moto</h3>
+                <p class="location">Indio, CA • 3 Bedrooms</p>
+                <p>Cuban-inspired desert sanctuary</p>
+                <div class="price">
+                    From $225 <span class="price-note">/ night</span>
+                </div>
+                <p class="price-note" style="font-size: 0.8rem; margin-top: 0.25rem; color: #666;">Dynamic pricing • Book direct & save</p>
+            </div>
+
+            <div class="property-card" data-property="ps-retreat" onclick="selectProperty('ps-retreat')">
+                <h3>PS Retreat</h3>
+                <p class="location">Palm Springs, CA • 2 Bedrooms</p>
+                <p>Mid-century modern classic</p>
+                <div class="price">
+                    From $180 <span class="price-note">/ night</span>
+                </div>
+                <p class="price-note" style="font-size: 0.8rem; margin-top: 0.25rem; color: var(--terracotta); font-weight: 500;">✓ Book here with instant pricing</p>
+            </div>
+
+            <div class="property-card" data-property="the-well" onclick="selectProperty('the-well')">
+                <h3>The Well</h3>
+                <p class="location">Palm Springs, CA • 1 Bedroom</p>
+                <p>Wellness retreat for one</p>
+                <div class="price">
+                    From $300 <span class="price-note">/ night</span>
+                </div>
+                <p class="price-note" style="font-size: 0.8rem; margin-top: 0.25rem; color: #666;">View on Airbnb for availability</p>
+            </div>
+        </div>
+
+        <!-- Booking Form -->
+        <form class="booking-form" onsubmit="checkAvailability(event)">
+            <div class="form-group">
+                <label for="checkIn">Check-in</label>
+                <input type="text" id="checkIn" placeholder="Select date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkOut">Check-out</label>
+                <input type="text" id="checkOut" placeholder="Select date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Guests</label>
+                <select id="guests" required>
+                    <option value="1">1 guest</option>
+                    <option value="2" selected>2 guests</option>
+                    <option value="3">3 guests</option>
+                    <option value="4">4 guests</option>
+                    <option value="5">5 guests</option>
+                    <option value="6">6 guests</option>
+                    <option value="7">7 guests</option>
+                    <option value="8">8 guests</option>
+                </select>
+            </div>
+
+            <button type="submit" class="check-btn" id="checkBtn">Check Availability</button>
+        </form>
+
+        <!-- Availability Note -->
+        <div id="availabilityNote" class="availability-note">
+            ✓ This property is available for your selected dates!
+        </div>
+
+        <!-- Price Display -->
+        <div id="priceDisplay" class="price-display">
+            <h3>Your Stay at <span id="selectedPropertyName">Cozy Cactus</span></h3>
+
+            <div class="price-breakdown">
+                <div class="price-row">
+                    <span>Rental</span>
+                    <span id="rentalTotal">$500.00</span>
+                </div>
+                <div class="price-row indent">
+                    <span id="nightlyBreakdown">$250 × 2 nights</span>
+                    <span id="nightlyTotal">$500.00</span>
+                </div>
+
+                <div class="price-row" style="margin-top: 1rem;">
+                    <span>Cleaning Fee</span>
+                    <span id="cleaningFee">$150.00</span>
+                </div>
+
+                <div class="price-row" style="margin-top: 1rem;">
+                    <span>Taxes (12%)</span>
+                    <span id="taxes">$78.00</span>
+                </div>
+
+                <div class="price-row total">
+                    <span>Total</span>
+                    <span id="grandTotal">$728.00</span>
+                </div>
+            </div>
+
+            <button class="book-now-btn" onclick="proceedToCheckout()">
+                Book Now - No Fees
+            </button>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loadingState" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Checking availability...</p>
+        </div>
+    </div>
+
+    <script>
+        // Property Data - Hybrid Approach
+        const properties = {
+            'cozy-cactus': {
+                name: 'Cozy Cactus',
+                basePrice: 250,
+                cleaningFee: 150,
+                taxRate: 0.12,
+                maxGuests: 8,
+                minNights: 2,
+                bookingType: 'redirect', // Redirect to Hostaway Direct
+                hostawayUrl: 'https://45747_2.holidayfuture.com/listing/123646',
+                hostawayListingId: 123646
+            },
+            'casa-moto': {
+                name: 'Casa Moto',
+                basePrice: 225,
+                cleaningFee: 150,
+                taxRate: 0.12,
+                maxGuests: 6,
+                minNights: 2,
+                bookingType: 'redirect', // Redirect to Hostaway Direct
+                hostawayUrl: 'https://45747_2.holidayfuture.com/listing/123633',
+                hostawayListingId: 123633
+            },
+            'ps-retreat': {
+                name: 'PS Retreat',
+                basePrice: 180,
+                cleaningFee: 125,
+                taxRate: 0.135,
+                maxGuests: 4,
+                minNights: 2,
+                bookingType: 'internal', // Full booking flow with Hospitable API
+                hospitable: {
+                    propertyId: 1470484,
+                    apiToken: 'd9035907-ba8e-4705-adf7-24e5ae53afe1'
+                },
+                icalUrl: 'https://api.hospitable.com/v1/properties/reservations.ics?key=1470484&token=d9035907-ba8e-4705-adf7-24e5ae53afe1'
+            },
+            'the-well': {
+                name: 'The Well',
+                basePrice: 300,
+                cleaningFee: 200,
+                taxRate: 0.135,
+                maxGuests: 2,
+                minNights: 2,
+                bookingType: 'redirect', // Redirect to Airbnb
+                externalUrl: 'https://www.airbnb.com/rooms/868862893900280104'
+            }
+        };
+
+        // Peak Season Dates (Coachella, Stagecoach, Holidays)
+        const PEAK_DATES = [
+            // Coachella 2026
+            { start: '2026-04-10', end: '2026-04-12', name: 'Coachella W1' },
+            { start: '2026-04-17', end: '2026-04-19', name: 'Coachella W2' },
+
+            // Stagecoach 2026
+            { start: '2026-04-24', end: '2026-04-26', name: 'Stagecoach' },
+
+            // Winter Holidays 2026
+            { start: '2026-12-18', end: '2026-12-31', name: 'Winter Holidays' },
+            { start: '2027-01-01', end: '2027-01-05', name: 'New Year' },
+
+            // Spring Break 2026
+            { start: '2026-03-14', end: '2026-03-22', name: 'Spring Break' },
+
+            // Memorial Day 2026
+            { start: '2026-05-22', end: '2026-05-25', name: 'Memorial Day' },
+
+            // Labor Day 2026
+            { start: '2026-09-04', end: '2026-09-07', name: 'Labor Day' },
+
+            // Thanksgiving 2026
+            { start: '2026-11-25', end: '2026-11-29', name: 'Thanksgiving' }
+        ];
+
+        // Check if date is in peak season
+        function isPeakDate(dateStr) {
+            const date = new Date(dateStr);
+            return PEAK_DATES.some(period => {
+                const start = new Date(period.start);
+                const end = new Date(period.end);
+                return date >= start && date <= end;
+            });
+        }
+
+        // Check if date is a weekend (Friday or Saturday)
+        function isWeekend(dateStr) {
+            const date = new Date(dateStr);
+            const day = date.getDay();
+            return day === 5 || day === 6; // Friday = 5, Saturday = 6
+        }
+
+        let selectedProperty = 'cozy-cactus';
+        let bookedDates = [];
+        let checkInPicker, checkOutPicker;
+
+        // Initialize Date Pickers
+        function initializeDatePickers() {
+            // Check-in picker
+            checkInPicker = flatpickr("#checkIn", {
+                minDate: "today",
+                dateFormat: "Y-m-d",
+                disable: bookedDates,
+                onChange: function(selectedDates, dateStr) {
+                    // Update check-out min date
+                    if (selectedDates[0]) {
+                        const nextDay = new Date(selectedDates[0]);
+                        nextDay.setDate(nextDay.getDate() + 1);
+                        checkOutPicker.set('minDate', nextDay);
+                    }
+                }
+            });
+
+            // Check-out picker
+            checkOutPicker = flatpickr("#checkOut", {
+                minDate: "today",
+                dateFormat: "Y-m-d",
+                disable: bookedDates
+            });
+        }
+
+        // Select Property
+        function selectProperty(propertyId) {
+            selectedProperty = propertyId;
+            const property = properties[propertyId];
+
+            // Update UI
+            document.querySelectorAll('.property-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            document.querySelector(`[data-property="${propertyId}"]`).classList.add('selected');
+
+            // Reset price display
+            document.getElementById('priceDisplay').classList.remove('active');
+            document.getElementById('availabilityNote').classList.remove('available', 'unavailable');
+
+            // Update button text based on booking type
+            const checkBtn = document.getElementById('checkBtn');
+            if (property.bookingType === 'redirect') {
+                checkBtn.textContent = 'Check Exact Pricing →';
+                checkBtn.style.backgroundColor = 'var(--terracotta)';
+            } else {
+                checkBtn.textContent = 'Check Availability';
+                checkBtn.style.backgroundColor = 'var(--sage)';
+            }
+
+            // Load availability for new property
+            loadAvailability(propertyId);
+        }
+
+        // Load Availability (from iCal)
+        async function loadAvailability(propertyId) {
+            const property = properties[propertyId];
+
+            // TODO: Fetch and parse iCal feed
+            // For now, using mock blocked dates
+            bookedDates = [
+                // Example blocked dates
+                { from: "2026-02-25", to: "2026-02-28" },
+                "2026-03-01",
+                "2026-03-15"
+            ];
+
+            // Update date pickers
+            if (checkInPicker) {
+                checkInPicker.set('disable', bookedDates);
+            }
+            if (checkOutPicker) {
+                checkOutPicker.set('disable', bookedDates);
+            }
+        }
+
+        // Check Availability
+        function checkAvailability(event) {
+            event.preventDefault();
+
+            const checkIn = document.getElementById('checkIn').value;
+            const checkOut = document.getElementById('checkOut').value;
+            const guests = parseInt(document.getElementById('guests').value);
+            const property = properties[selectedProperty];
+
+            if (!checkIn || !checkOut) {
+                alert('Please select check-in and check-out dates');
+                return;
+            }
+
+            // For Hostaway/External properties: Redirect to their booking page
+            if (property.bookingType === 'redirect') {
+                const checkInDate = new Date(checkIn);
+                const checkOutDate = new Date(checkOut);
+
+                // Build Hostaway Direct URL with dates
+                if (property.hostawayUrl) {
+                    const url = `${property.hostawayUrl}?checkIn=${checkIn}&checkOut=${checkOut}&guests=${guests}`;
+                    window.open(url, '_blank');
+                } else if (property.externalUrl) {
+                    window.open(property.externalUrl, '_blank');
+                }
+
+                // Show message
+                alert(`Opening ${property.name} booking page with your selected dates.\n\nYou'll see live PriceLabs pricing on the next page.`);
+                return;
+            }
+
+            // For PS Retreat: Full internal booking flow
+            document.getElementById('loadingState').style.display = 'block';
+            document.getElementById('priceDisplay').classList.remove('active');
+
+            // Check availability and show pricing
+            setTimeout(() => {
+                const isAvailable = checkDateAvailability(checkIn, checkOut);
+
+                document.getElementById('loadingState').style.display = 'none';
+
+                if (isAvailable) {
+                    showPricing(checkIn, checkOut, guests);
+                } else {
+                    showUnavailable();
+                }
+            }, 1000);
+        }
+
+        // Check if dates are available
+        function checkDateAvailability(checkIn, checkOut) {
+            // TODO: Parse iCal and check if any booked dates overlap
+            // For now, always return true (available)
+            return true;
+        }
+
+        // Show Pricing (Simplified for PS Retreat)
+        function showPricing(checkIn, checkOut, guests) {
+            const property = properties[selectedProperty];
+
+            // Calculate nights
+            const checkInDate = new Date(checkIn);
+            const checkOutDate = new Date(checkOut);
+            const nights = Math.ceil((checkOutDate - checkInDate) / (1000 * 60 * 60 * 24));
+
+            // Use base pricing (in future, fetch real Hospitable pricing here)
+            const nightlyRate = property.basePrice;
+            const subtotal = nightlyRate * nights;
+            const cleaningFee = property.cleaningFee;
+            const taxes = (subtotal + cleaningFee) * property.taxRate;
+            const total = subtotal + cleaningFee + taxes;
+
+            // Update UI
+            document.getElementById('selectedPropertyName').textContent = property.name;
+            document.getElementById('nightlyBreakdown').textContent = `$${nightlyRate} × ${nights} night${nights > 1 ? 's' : ''}`;
+            document.getElementById('nightlyTotal').textContent = `$${subtotal.toFixed(2)}`;
+            document.getElementById('rentalTotal').textContent = `$${subtotal.toFixed(2)}`;
+            document.getElementById('cleaningFee').textContent = `$${cleaningFee.toFixed(2)}`;
+            document.getElementById('taxes').textContent = `$${taxes.toFixed(2)}`;
+            document.getElementById('grandTotal').textContent = `$${total.toFixed(2)}`;
+
+            // Show availability note
+            const availNote = document.getElementById('availabilityNote');
+            availNote.classList.add('available');
+            availNote.classList.remove('unavailable');
+            availNote.innerHTML = `✓ ${property.name} is available for your selected dates!<br><small style="color: #666;">Note: Actual pricing may vary based on demand. Final price confirmed at checkout.</small>`;
+
+            // Show price display
+            document.getElementById('priceDisplay').classList.add('active');
+
+            // Store booking data
+            localStorage.setItem('selectedProperty', selectedProperty);
+            localStorage.setItem('checkIn', checkIn);
+            localStorage.setItem('checkOut', checkOut);
+            localStorage.setItem('guests', guests);
+            localStorage.setItem('totalPrice', total.toFixed(2));
+        }
+
+        // Show Unavailable
+        function showUnavailable() {
+            const availNote = document.getElementById('availabilityNote');
+            availNote.classList.add('unavailable');
+            availNote.classList.remove('available');
+            availNote.textContent = '✗ Sorry, this property is not available for your selected dates. Please try different dates.';
+        }
+
+        // Proceed to Checkout
+        function proceedToCheckout() {
+            const checkIn = document.getElementById('checkIn').value;
+            const checkOut = document.getElementById('checkOut').value;
+            const guests = document.getElementById('guests').value;
+
+            window.location.href = `checkout.html?property=${selectedProperty}&checkIn=${checkIn}&checkOut=${checkOut}&guests=${guests}`;
+        }
+
+        // Initialize on load
+        initializeDatePickers();
+        loadAvailability(selectedProperty);
+
+        // Set initial button text
+        const initialProperty = properties[selectedProperty];
+        const checkBtn = document.getElementById('checkBtn');
+        if (initialProperty.bookingType === 'redirect') {
+            checkBtn.textContent = 'Check Exact Pricing →';
+            checkBtn.style.backgroundColor = 'var(--terracotta)';
+        }
+    </script>
+</body>
+</html>
