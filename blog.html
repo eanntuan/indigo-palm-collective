@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories from the Desert | Indigo Palm Collective Blog</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Local guides, design stories, and the art of intentional travel. From Coachella Valley hidden gems to vacation rental design philosophy.">
+    <meta name="keywords" content="Coachella Valley travel guide, Indio things to do, Palm Springs architecture, vacation rental design, desert travel blog, Coachella house rental tips">
+    <link rel="canonical" href="https://indigopalm.co/blog">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Stories from the Desert | Indigo Palm Collective">
+    <meta property="og:description" content="Local guides, design stories, and the art of intentional travel in the Coachella Valley.">
+    <meta property="og:image" content="https://indigopalm.co/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://indigopalm.co/blog">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Pinterest Domain Verification -->
+    <meta name="p:domain_verify" content="35e730ef4830250fbf8c3192312ebaa7" />
+
+    <!-- Favicons - Indigo Palm Collective Logo -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LCY4M0HEQB');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Indigo Palm Collective Brand Colors */
+            --indigo-palm: #4B0082;
+            --sage-cactus: #969A7F;
+            --sage-light: #adbab7;
+            --sage-dark: #738561;
+            --sunbaked-terracotta: #B67550;
+            --kahlo-blue: #325CD9;
+            --desert-marigold: #FEAD26;
+            --cabana-rose: #DBAF9C;
+            --warm-sand: #F5F3EE;
+            --canyon-clay: #8B4513;
+            --cream: #F5F3EE;
+            --charcoal: #2C2C2C;
+
+            /* Legacy support */
+            --terracotta: var(--sunbaked-terracotta);
+            --sage: var(--sage-cactus);
+
+            /* Typography */
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--charcoal);
+            line-height: 1.6;
+            background-color: var(--cream);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 5%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        nav .logo-text {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            letter-spacing: 1px;
+        }
+
+        nav .logo:hover .logo-text {
+            color: var(--terracotta);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 400;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: var(--terracotta);
+        }
+
+        nav a.active {
+            color: var(--terracotta);
+            font-weight: 500;
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .blog-hero {
+            margin-top: 80px;
+            min-height: 40vh;
+            background: linear-gradient(135deg, var(--sunbaked-terracotta) 0%, var(--canyon-clay) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 5%;
+        }
+
+        .blog-hero-content {
+            max-width: 800px;
+        }
+
+        .blog-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .blog-hero .tagline {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main Content */
+        .blog-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 4rem;
+        }
+
+        .blog-main {
+            min-width: 0;
+        }
+
+        /* Featured Post */
+        .featured-post {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 4rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .featured-post:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .featured-post-image {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .featured-post-content {
+            padding: 2.5rem;
+        }
+
+        .post-category {
+            display: inline-block;
+            background: var(--terracotta);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .featured-post h2 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .post-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .post-excerpt {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: var(--terracotta);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .read-more:hover {
+            background: var(--canyon-clay);
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+        }
+
+        .blog-card-image {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+
+        .blog-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .blog-card .post-excerpt {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Sidebar */
+        .blog-sidebar {
+            position: sticky;
+            top: 120px;
+            align-self: start;
+        }
+
+        .sidebar-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-section h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+
+        .category-list {
+            list-style: none;
+        }
+
+        .category-list li {
+            margin-bottom: 1rem;
+        }
+
+        .category-list a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        .category-list a:hover {
+            color: var(--terracotta);
+        }
+
+        /* Newsletter Signup */
+        .newsletter-signup {
+            text-align: center;
+        }
+
+        .newsletter-signup p {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        .newsletter-signup input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .newsletter-signup button {
+            width: 100%;
+            padding: 0.8rem;
+            background: var(--terracotta);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-signup button:hover {
+            background: var(--canyon-clay);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+        }
+
+        footer a {
+            color: var(--terracotta);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .blog-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .blog-sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            nav ul {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 6rem 2rem;
+                gap: 1.5rem;
+                transition: right 0.3s ease;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            }
+
+            nav ul.active {
+                right: 0;
+            }
+
+            .blog-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .blog-hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-post h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">
+                <span class="logo-text">INDIGO PALM COLLECTIVE</span>
+            </a>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog" class="active">Blog</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="blog-hero-content">
+            <h1>Stories from the Desert</h1>
+            <p class="tagline">Local guides, design stories, and the art of intentional travel</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="blog-container">
+        <main class="blog-main">
+            <!-- Featured Post -->
+            <article class="featured-post">
+                <div class="featured-post-image" style="background-image: url('blog/images/cochran-before.jpeg');"></div>
+                <div class="featured-post-content">
+                    <span class="post-category">Origin Story · Part 1 of 2</span>
+                    <h2>How a Honda Element Became an Airbnb (Sort Of)</h2>
+                    <div class="post-meta">By Eann Tuan · March 3, 2026 · 5 min read</div>
+                    <p class="post-excerpt">What started as a backup plan for my 2005 Honda Element turned into The Cozy Cactus. Easter 2022, a blank canvas in Indio, and zero experience — here's how it actually started.</p>
+                    <a href="blog/cozy-cactus-origin-story.html" class="read-more">Read Part 1 →</a>
+                </div>
+            </article>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+                <!-- Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background-image: url('blog/images/indio-local-gems.jpg');"></div>
+                    <div class="blog-card-content">
+                        <span class="post-category">Local Guide</span>
+                        <h3>10 Indio Gems Only Locals Know About</h3>
+                        <div class="post-meta">March 10, 2026 · 6 min read</div>
+                        <p class="post-excerpt">Skip the tourist traps. L&G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters.</p>
+                        <a href="blog/indio-local-gems.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background-image: url('blog/images/coachella-house-vs-camping.jpg');"></div>
+                    <div class="blog-card-content">
+                        <span class="post-category">Experiential</span>
+                        <h3>Coachella 2026: Why Stay in a House vs Festival Camping</h3>
+                        <div class="post-meta">March 17, 2026 · 5 min read</div>
+                        <p class="post-excerpt">Most Coachella listings are either $5,000/night or look like your uncle's RV. Here's why a real house 15 minutes from the festival grounds changes everything.</p>
+                        <a href="blog/coachella-house-rental.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+            <!-- Categories -->
+            <div class="sidebar-section">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li><a href="/blog/category/local-guide">Local Guide</a></li>
+                    <li><a href="/blog/category/design-culture">Design & Culture</a></li>
+                    <li><a href="/blog/category/experiential">Experiential</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="sidebar-section newsletter-signup">
+                <h3>Get Desert Insights</h3>
+                <p>New stories and local tips, no fluff.</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
+        <p><a href="/">Home</a> · <a href="/#properties">Properties</a> · <a href="/blog">Blog</a> · <a href="/#contact">Contact</a></p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
