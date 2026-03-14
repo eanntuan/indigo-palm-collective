@@ -114,12 +114,12 @@ export default {
           error: 'Invalid email address'
         }), {
           status: 400,
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
         });
       }
 
-      // Save to Google Sheets
-      await saveToGoogleSheets(email, env);
+      // Save to Google Sheets (non-blocking — don't let this kill the signup)
+      saveToGoogleSheets(email, env).catch(err => console.error('Sheets save failed:', err));
 
       // Send welcome email with WELCOME10
       await sendWelcomeEmail(email, env);
@@ -142,7 +142,7 @@ export default {
         error: 'Signup failed. Please try again.'
       }), {
         status: 500,
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
       });
     }
   },
