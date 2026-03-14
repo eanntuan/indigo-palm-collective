@@ -2017,48 +2017,6 @@
     </script>
 
     <script>
-        // Email Signup Form Handler
-        const emailSignupForm = document.getElementById('emailSignupForm');
-        const signupSuccess = document.getElementById('signupSuccess');
-
-        emailSignupForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            const formData = new FormData(emailSignupForm);
-            const email = formData.get('email');
-
-            try {
-                // Send to Firebase Function
-                const response = await fetch('/email-signup', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        email: email,
-                        source: 'homepage'
-                    })
-                });
-
-                const result = await response.json();
-
-                if (result.success) {
-                    emailSignupForm.reset();
-                    signupSuccess.style.display = 'block';
-                    setTimeout(() => {
-                        signupSuccess.style.display = 'none';
-                    }, 5000);
-                } else {
-                    alert(result.error || 'Something went wrong. Please try again.');
-                }
-            } catch (error) {
-                console.error('Error submitting form:', error);
-                alert('Something went wrong. Please try again.');
-            }
-        });
-    </script>
-
-    <script>
         // Mobile menu toggle
         const mobileMenuToggle = document.getElementById('mobileMenuToggle');
         const mobileMenuClose = document.getElementById('mobileMenuClose');
