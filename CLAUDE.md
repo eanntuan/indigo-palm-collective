@@ -54,7 +54,19 @@ Never use em dashes (—) in any writing. Replace with a period, comma, colon, o
 3. Build HTML from `blog-post-template.html` with all meta tags, schemas, images
 4. Update `blog.html` with new post card
 5. Update `sitemap.xml` with new URL entry (lastmod = today)
-6. Deploy: `git add [files] && git commit -m "Add blog post: [title]" && git push origin main`
+6. Generate Pinterest pins (output after the HTML, before deploying):
+   - **3-5 pins per post**, each targeting a different angle or section of the post
+   - Format for each pin:
+     ```
+     PIN [n]: [suggested image description or filename]
+     Title: [40-60 chars, lead with keyword, headline case]
+     Description: [150-300 chars, keywords woven naturally, soft CTA, ends with full post URL]
+     Link: [full URL]
+     ```
+   - Pinterest is a search engine. Write for how people search, not how brands talk.
+   - Speak to the desire/problem ("where to stay near Coachella" not "check out our rental")
+   - No em dashes. No hashtags.
+7. Deploy: `git add [files] && git commit -m "Add blog post: [title]" && git push origin main`
 
 ## SEO Standards (apply to all pages, not just blog posts)
 - Every page needs a unique title (50-60 chars) and meta description (140-155 chars)
