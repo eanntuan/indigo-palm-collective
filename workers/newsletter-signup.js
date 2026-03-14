@@ -118,11 +118,14 @@ export default {
         });
       }
 
-      // Save to Google Sheets (non-blocking — don't let this kill the signup)
+      // Save to Google Sheets (non-blocking, don't let this kill the signup)
       saveToGoogleSheets(email, env).catch(err => console.error('Sheets save failed:', err));
 
       // Send welcome email with WELCOME10
       await sendWelcomeEmail(email, env);
+
+      // Notify owner
+      sendOwnerNotification(email, env).catch(err => console.error('Owner notification failed:', err));
 
       return new Response(JSON.stringify({
         success: true,
@@ -163,6 +166,25 @@ async function saveToGoogleSheets(email, env) {
   }
 
   return await response.json();
+}
+
+// Notify owner of new signup via Resend
+async function sendOwnerNotification(email, env) {
+  const RESEND_API_KEY = env.RESEND_API_KEY;
+
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${RESEND_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from: 'Indigo Palm Collective <hello@indigopalm.co>',
+      to: ['indigopalmco@gmail.com'],
+      subject: `New signup: ${email}`,
+      html: `<p>New newsletter subscriber: <strong>${email}</strong></p><p>Signed up at ${new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })} PT</p>`,
+    }),
+  });
 }
 
 // Send welcome email via Resend
