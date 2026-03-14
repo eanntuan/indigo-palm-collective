@@ -453,6 +453,15 @@
                 font-size: 2.5rem;
             }
 
+            .hero {
+                height: 50vh;
+                padding: 2rem 5%;
+            }
+
+            .hero-content {
+                padding: 1.5rem;
+            }
+
             .details-container {
                 grid-template-columns: 1fr;
             }
@@ -468,17 +477,57 @@
             .gallery-grid {
                 grid-template-columns: 1fr;
             }
+
+            .details-section {
+                padding: 3rem 5%;
+            }
+
+            .gallery-section {
+                padding: 3rem 5%;
+            }
+
+            .cta-button {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                height: 45vh;
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .details-main h2 {
+                font-size: 1.8rem;
+            }
+
+            .details-main p {
+                font-size: 1rem;
+            }
+
+            nav .logo {
+                font-size: 1.1rem;
+            }
+
+            nav .back-link {
+                font-size: 0.85rem;
+            }
+
+            .gallery-item {
+                height: 220px;
+            }
         }
     </style>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-LCY4M0HEQB');
-    </script>
 </head>
 <body>
     <!-- Navigation -->

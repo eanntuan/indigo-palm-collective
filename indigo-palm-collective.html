@@ -3,8 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indigo Palm Collective | Curated Stays Across Coachella Valley</title>
-    <meta name="description" content="Indigo Palm Collective offers curated vacation rentals across Coachella Valley, including Cozy Cactus and Casa Moto in Indio, CA. Family-friendly, pet-friendly, and book-direct savings.">
+    <title>Indigo Palm Collective | Vacation Rentals in Coachella Valley</title>
+    <meta name="description" content="Indigo Palm Collective offers curated vacation rentals across Coachella Valley. Family-friendly, pet-friendly, and wellness retreats in Indio and Palm Springs. Book direct and save 15%.">
+    <link rel="canonical" href="https://indigopalm.co/indigo-palm-collective">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Indigo Palm Collective | Curated Desert Vacation Rentals">
+    <meta property="og:description" content="Curated vacation rentals across Coachella Valley. Family-friendly, pet-friendly, and wellness retreats in Indio and Palm Springs. Book direct and save 15%.">
+    <meta property="og:image" content="https://indigopalm.co/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://indigopalm.co/indigo-palm-collective">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Indigo Palm Collective | Desert Vacation Rentals">
+    <meta name="twitter:description" content="Curated vacation rentals across Coachella Valley. Family-friendly, pet-friendly, and wellness retreats.">
+    <meta name="twitter:image" content="https://indigopalm.co/og-image.jpg">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LCY4M0HEQB');
+    </script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Indigo Palm Collective",
+      "description": "Curated desert vacation rentals in the Coachella Valley with private pools, hot tubs, and intentional design",
+      "url": "https://indigopalm.co/indigo-palm-collective",
+      "logo": "https://indigopalm.co/android-chrome-512x512.png",
+      "image": "https://indigopalm.co/og-image.jpg",
+      "priceRange": "$$-$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Indio",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "email": "indigopalmco@gmail.com",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Indigo Palm Collective",
+        "url": "https://indigopalm.co"
+      }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -498,8 +554,47 @@
             border: none;
         }
 
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            nav ul {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 6rem 2rem;
+                gap: 1.5rem;
+                transition: right 0.3s ease;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+
+            nav ul.active {
+                right: 0;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
             }
@@ -517,14 +612,6 @@
                 background: rgba(115, 133, 97, 0.7);
             }
 
-            nav ul {
-                gap: 1.5rem;
-            }
-
-            nav a {
-                font-size: 0.85rem;
-            }
-
             .section-title {
                 font-size: 2rem;
             }
@@ -537,6 +624,55 @@
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
+
+            section {
+                padding: 3rem 5%;
+            }
+
+            .cta-button {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .hero .tagline {
+                font-size: 1rem;
+            }
+
+            .hero .description {
+                font-size: 0.95rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            nav .logo {
+                font-size: 1.1rem;
+            }
+
+            .property-content {
+                padding: 1.25rem;
+            }
+
+            .property-title {
+                font-size: 1.6rem;
+            }
+
+            .philosophy-quote {
+                font-size: 1.4rem;
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -545,7 +681,12 @@
     <nav>
         <div class="container">
             <a href="/" class="logo">INDIGO PALM COLLECTIVE</a>
-            <ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
                 <li><a href="#properties">Properties</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#philosophy">Philosophy</a></li>
@@ -721,6 +862,30 @@
             </iframe>
         </div>
     </section>
+
+    <script>
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            }
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            });
+        });
+    </script>
 
     <!-- Footer -->
     <footer id="contact">

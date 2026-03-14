@@ -8,6 +8,17 @@
     <meta name="keywords" content="terra luz indio, pet friendly vacation rental coachella valley, indio vacation rental with pool, cuban design desert home, indian palms country club rental, saltwater pool vacation home, coachella pet friendly lodging, bohemian desert rental">
     <link rel="canonical" href="https://indigopalm.co/casa-moto">
 
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Casa Moto | Pet-Friendly Bohemian Retreat in Indio near Coachella">
+    <meta property="og:description" content="Casa Moto is a pet-friendly 3-bedroom vacation rental in Indian Palms Country Club, Indio CA. Saltwater pool, Cuban-inspired design, walking distance to Coachella.">
+    <meta property="og:image" content="https://indigopalm.co/Casa%20Moto/Existing%20Listing%20Pictures/IMG_1240.JPG">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://indigopalm.co/casa-moto">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Casa Moto | Pet-Friendly Bohemian Retreat in Indio">
+    <meta name="twitter:description" content="Pet-friendly 3BR vacation rental in Indian Palms Country Club with saltwater pool and Cuban-inspired design near Coachella.">
+    <meta name="twitter:image" content="https://indigopalm.co/Casa%20Moto/Existing%20Listing%20Pictures/IMG_1240.JPG">
+
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
@@ -117,6 +128,15 @@
       "numberOfRooms": 3,
       "petsAllowed": true
     }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LCY4M0HEQB');
     </script>
 
     <!-- Favicons -->
@@ -462,6 +482,15 @@
                 font-size: 2.5rem;
             }
 
+            .hero {
+                height: 50vh;
+                padding: 2rem 5%;
+            }
+
+            .hero-content {
+                padding: 1.5rem;
+            }
+
             .details-container {
                 grid-template-columns: 1fr;
             }
@@ -476,6 +505,55 @@
 
             .gallery-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .details-section {
+                padding: 3rem 5%;
+            }
+
+            .gallery-section {
+                padding: 3rem 5%;
+            }
+
+            .cta-button {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                height: 45vh;
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .details-main h2 {
+                font-size: 1.8rem;
+            }
+
+            .details-main p {
+                font-size: 1rem;
+            }
+
+            nav .logo {
+                font-size: 1.1rem;
+            }
+
+            nav .back-link {
+                font-size: 0.85rem;
+            }
+
+            .gallery-item {
+                height: 220px;
             }
         }
     </style>

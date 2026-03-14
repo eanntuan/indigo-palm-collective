@@ -354,8 +354,47 @@
             text-decoration: underline;
         }
 
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            nav .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 6rem 2rem;
+                gap: 1.5rem;
+                transition: right 0.3s ease;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+
+            nav .menu.active {
+                right: 0;
+            }
+
             article h1 {
                 font-size: 2rem;
             }
@@ -368,13 +407,34 @@
                 font-size: 1.7rem;
             }
 
-            nav .menu {
-                gap: 1.5rem;
-                font-size: 0.9rem;
-            }
-
             .series-nav {
                 padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            article h1 {
+                font-size: 1.7rem;
+            }
+
+            article {
+                padding: 5rem 1.25rem 3rem;
+            }
+
+            .article-body h2 {
+                font-size: 1.4rem;
+            }
+
+            .article-body {
+                font-size: 1rem;
+            }
+
+            nav .logo .logo-text {
+                font-size: 1.1rem;
+            }
+
+            .article-body img {
+                max-width: 100%;
             }
         }
     </style>
@@ -386,7 +446,12 @@
             <a href="/" class="logo">
                 <span class="logo-text">INDIGO PALM COLLECTIVE</span>
             </a>
-            <ul class="menu">
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="navMenu">
                 <li><a href="/#properties">Properties</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#philosophy">Philosophy</a></li>
@@ -416,15 +481,15 @@
             <p>One step led to another, and before I knew it, my now husband, Tyler, who is also a real estate agent (lucky me!) were driving out to Indio, CA on Easter day in 2022 to take a look at what would eventually become The Cozy Cactus. After talking to the seller, taking countless videos, and seeing the potential that this home had, we drove back to his aunt's house, excused ourselves to the living room, where we wrote our offer.</p>
 
             <!-- IMAGE 2: Property exterior before renovation -->
-            <img src="images/cochran-before.jpeg" alt="Cozy Cactus vacation rental exterior before renovation Indio California">
+            <img src="images/cochran-before.jpeg" alt="Cozy Cactus vacation rental exterior before renovation Indio California" loading="lazy" decoding="async">
             <p class="image-caption">The blank canvas: yellow walls, grandma furniture, traditional brown. You know exactly the kind of house I'm talking about.</p>
 
             <!-- IMAGE 3: Bedroom before renovation -->
-            <img src="images/cochran-before-room.jpeg" alt="Cozy Cactus bedroom before renovation with outdated furniture and yellow walls">
+            <img src="images/cochran-before-room.jpeg" alt="Cozy Cactus bedroom before renovation with outdated furniture and yellow walls" loading="lazy" decoding="async">
             <p class="image-caption">Imagine some wallpaper, white walls, and no icky carpet</p>
 
             <!-- IMAGE 4: Living room before renovation -->
-            <img src="images/cochran-before-living-room.jpeg" alt="Cozy Cactus living room before renovation with traditional brown furniture Indio">
+            <img src="images/cochran-before-living-room.jpeg" alt="Cozy Cactus living room before renovation with traditional brown furniture Indio" loading="lazy" decoding="async">
             <p class="image-caption">Doesn't this look like your grandma's living room?</p>
 
             <h2>The Facebook Marketplace Phase</h2>
@@ -432,11 +497,11 @@
             <p>Before I knew it, AGAIN, I was researching sofa beds (I still haven't found a comfortable one…), stalking facebook marketplace for the best deals all around town, going to Marshall's, Ross, TJ Max, Homegoods, etc to see if I could find any non-generic wall art (everyone knows the <a href="https://www.wayfair.com/IDEA4WALL--Animals-Portrait-Of-A-Highland-Cow-Black-And-White-Modern-Art-Extra-Large-Framed-Wall-Pictures-FLCA0-L1318-K~SFTD1019.html" target="_blank" rel="noopener noreferrer">cow print</a>). My days turned into bopping all around LA picking up a $10 sound machine (I now know better that time is money), squishing a West Elm dining table in my Honda Element (there has been nothing this car cannot fit), and slowly piecing together a discombobulated Airbnb that I prayed to the Lord almighty was a good decision. A Tesla definitely would've been easier.</p>
 
             <!-- IMAGE 5: Honda Element packed with storage -->
-            <img src="images/car-storage.jpeg" alt="Honda Element packed with vacation rental furniture and storage bins">
+            <img src="images/car-storage.jpeg" alt="Honda Element packed with vacation rental furniture and storage bins" loading="lazy" decoding="async">
             <p class="image-caption">You're going to see a theme throughout my life - how much I love this car.</p>
 
             <!-- IMAGE 6: Foosball table from Facebook Marketplace -->
-            <img src="images/foosball.jpeg" alt="Foosball table from Facebook Marketplace for Cozy Cactus game room">
+            <img src="images/foosball.jpeg" alt="Foosball table from Facebook Marketplace for Cozy Cactus game room" loading="lazy" decoding="async">
             <p class="image-caption">You have no idea how hard it was to get this Foosball in and out of my car... imagine all the metal sticks sliding in and out!</p>
 
             <h2>What I Learned from Bad Airbnbs</h2>
@@ -454,7 +519,7 @@
             <p>If you're curious about the local area surrounding the property, I put together a guide to <a href="indio-local-gems.html">10 Indio gems only locals know about</a>: the restaurants, date farms, and hidden spots worth your time while you're visiting the Coachella Valley.</p>
 
             <!-- IMAGE 7: Family gear and supplies -->
-            <img src="images/family-closet.jpg" alt="Family vacation rental closet with baby gear pack n play stroller and travel supplies">
+            <img src="images/family-closet.jpg" alt="Family vacation rental closet with baby gear pack n play stroller and travel supplies" loading="lazy" decoding="async">
             <p class="image-caption">All. The. Things. Why families needed a different kind of vacation rental<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
         </div>
@@ -472,5 +537,20 @@
         <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
         <p><a href="/">Home</a> · <a href="/#properties">Properties</a> · <a href="/blog">Blog</a> · <a href="/#contact">Contact</a></p>
     </footer>
+
+    <script>
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

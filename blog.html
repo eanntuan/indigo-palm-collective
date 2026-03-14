@@ -393,6 +393,7 @@
         .newsletter-signup button {
             width: 100%;
             padding: 0.8rem;
+            min-height: 44px;
             background: var(--terracotta);
             color: white;
             border: none;
@@ -476,6 +477,56 @@
 
             .featured-post h2 {
                 font-size: 2rem;
+            }
+
+            .read-more {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .blog-hero .tagline {
+                font-size: 1rem;
+            }
+
+            .blog-hero {
+                padding: 3rem 5%;
+                min-height: 30vh;
+            }
+
+            .blog-container {
+                padding: 2rem 5%;
+            }
+
+            .featured-post-content {
+                padding: 1.5rem;
+            }
+
+            .featured-post h2 {
+                font-size: 1.6rem;
+            }
+
+            .blog-card-content {
+                padding: 1.25rem;
+            }
+
+            .blog-card h3 {
+                font-size: 1.3rem;
+            }
+
+            nav .logo-text {
+                font-size: 1.1rem;
+            }
+
+            .newsletter-signup button,
+            .read-more {
+                min-height: 44px;
             }
         }
     </style>

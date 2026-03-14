@@ -458,6 +458,15 @@
                 font-size: 2.5rem;
             }
 
+            .hero {
+                height: 50vh;
+                padding: 2rem 5%;
+            }
+
+            .hero-content {
+                padding: 1.5rem;
+            }
+
             .details-container {
                 grid-template-columns: 1fr;
             }
@@ -473,101 +482,57 @@
             .gallery-grid {
                 grid-template-columns: 1fr;
             }
+
+            .details-section {
+                padding: 3rem 5%;
+            }
+
+            .gallery-section {
+                padding: 3rem 5%;
+            }
+
+            .cta-button {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                height: 45vh;
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .details-main h2 {
+                font-size: 1.8rem;
+            }
+
+            .details-main p {
+                font-size: 1rem;
+            }
+
+            nav .logo {
+                font-size: 1.1rem;
+            }
+
+            nav .back-link {
+                font-size: 0.85rem;
+            }
+
+            .gallery-item {
+                height: 220px;
+            }
         }
     </style>
-
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Hotel",
-      "name": "The Well",
-      "description": "1-bedroom wellness retreat in Palm Springs where southwestern minimalism meets mid-century calm. Perfect for solo travelers and remote workers seeking grounded motivation with sage greens, terracotta warmth, and smart storage.",
-      "url": "https://indigopalm.co/the-well",
-      "image": [
-        "https://indigopalm.co/The%20Well/1TW_4W6A0294.jpg"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Palm Springs",
-        "addressRegion": "CA",
-        "addressCountry": "US",
-        "postalCode": "92262"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "33.8303",
-        "longitude": "-116.5453"
-      },
-      "numberOfRooms": "1",
-      "petsAllowed": false,
-      "amenityFeature": [
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Wellness-Focused Design",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Remote Work Setup",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Smart Storage",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Mid-Century Details",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Southwestern Style",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Outdoor Space",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Full Kitchen",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Free Parking",
-          "value": true
-        }
-      ],
-      "priceRange": "$$",
-      "checkinTime": "16:00",
-      "checkoutTime": "10:00",
-      "maximumAttendeeCapacity": 2,
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "ratingCount": "25+"
-      },
-      "parentOrganization": {
-        "@type": "Organization",
-        "name": "Indigo Palm Collective",
-        "url": "https://indigopalm.co"
-      }
-    }
-    </script>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-LCY4M0HEQB');
-    </script>
 </head>
 <body>
     <!-- Navigation -->
