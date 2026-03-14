@@ -11,7 +11,8 @@
       "Bash(curl -s -A \"Mozilla/5.0 \\(compatible; Googlebot/2.1; +http://www.google.com/bot.html\\)\" \"https://unsplash.com/photos/mp9xo10Ogb8\" | grep -o 'og:image[^>]*content=\"[^\"]*\"' | head -5; echo \"---\"; curl -s -A \"Mozilla/5.0 \\(compatible; Googlebot/2.1; +http://www.google.com/bot.html\\)\" \"https://unsplash.com/photos/mp9xo10Ogb8\" | grep -o '\"images\\\\.unsplash\\\\.com/photo-[^\"?]*[^\"]*\"' | head -3)",
       "Bash(curl -s -L \\\\\n  -H \"User-Agent: Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \\\\\n  -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\" \\\\\n  \"https://unsplash.com/photos/mp9xo10Ogb8\" | grep -Eo 'https://images\\\\.unsplash\\\\.com/photo-[^\"&? ]+' | head -5)",
       "Bash(curl -sv \"https://unsplash.com/photos/mp9xo10Ogb8\" 2>&1 | head -30)",
-      "Bash(curl -s \"https://unsplash.com/photos/mp9xo10Ogb8\" 2>&1 | wc -c; curl -s \"https://unsplash.com/photos/mp9xo10Ogb8\" 2>&1 | head -c 2000)"
+      "Bash(curl -s \"https://unsplash.com/photos/mp9xo10Ogb8\" 2>&1 | wc -c; curl -s \"https://unsplash.com/photos/mp9xo10Ogb8\" 2>&1 | head -c 2000)",
+      "Bash(curl -sv \"https://source.unsplash.com/mp9xo10Ogb8\" 2>&1 | grep -E \"HTTP|location|Location\" | head -10)"
     ]
   }
 }
