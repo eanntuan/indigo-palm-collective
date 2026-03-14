@@ -138,11 +138,24 @@
         }
 
         :root {
-            --terracotta: #d2635b;
-            --sunset-pink: #E39B96;
+            /* Indigo Palm Collective Brand Colors */
+            --indigo-palm: #4B0082;
+            --sage-cactus: #969A7F;
             --sage-light: #adbab7;
+            --sage-dark: #738561;
+            --sunbaked-terracotta: #B67550;
+            --kahlo-blue: #325CD9;
+            --desert-marigold: #FEAD26;
+            --cabana-rose: #DBAF9C;
+            --warm-sand: #F5F3EE;
+            --canyon-clay: #8B4513;
             --cream: #F5F3EE;
             --charcoal: #2C2C2C;
+
+            /* Legacy support */
+            --terracotta: var(--sunbaked-terracotta);
+            --sage: var(--sage-cactus);
+
             --font-serif: 'Cormorant Garamond', serif;
             --font-sans: 'Work Sans', sans-serif;
         }
@@ -471,8 +484,8 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="indigo-palm-collective.html" class="logo">INDIGO PALM COLLECTIVE</a>
-            <a href="indigo-palm-collective.html" class="back-link">← Back to Collection</a>
+            <a href="/" class="logo">INDIGO PALM COLLECTIVE</a>
+            <a href="/" class="back-link">← Back to Collection</a>
         </div>
     </nav>
 
@@ -574,9 +587,10 @@
                 <div class="color-palette">
                     <h4>Color Palette</h4>
                     <div class="color-dots">
-                        <div class="color-dot" style="background-color: #d2635b;"></div>
-                        <div class="color-dot" style="background-color: #E39B96;"></div>
-                        <div class="color-dot" style="background-color: #adbab7;"></div>
+                        <div class="color-dot" style="background-color: #B67550;" title="Sunbaked Terracotta"></div>
+                        <div class="color-dot" style="background-color: #325CD9;" title="Kahlo Blue"></div>
+                        <div class="color-dot" style="background-color: #FEAD26;" title="Desert Marigold"></div>
+                        <div class="color-dot" style="background-color: #969A7F;" title="Sage Cactus"></div>
                     </div>
                 </div>
             </div>

@@ -126,11 +126,27 @@
         }
 
         :root {
-            --turquoise: #00877b;
-            --dusty-blue: #6E90AD;
-            --coral: #d2635b;
+            /* Indigo Palm Collective Brand Colors */
+            --indigo-palm: #4B0082;
+            --sage-cactus: #969A7F;
+            --sage-light: #adbab7;
+            --sage-dark: #738561;
+            --sunbaked-terracotta: #B67550;
+            --kahlo-blue: #325CD9;
+            --desert-marigold: #FEAD26;
+            --cabana-rose: #DBAF9C;
+            --warm-sand: #F5F3EE;
+            --canyon-clay: #8B4513;
             --cream: #F5F3EE;
             --charcoal: #2C2C2C;
+
+            /* Legacy support */
+            --terracotta: var(--sunbaked-terracotta);
+            --sage: var(--sage-cactus);
+
+            /* Property-specific accent (PS Retreat uses dusty blue as accent) */
+            --dusty-blue: #6E90AD;
+
             --font-serif: 'Cormorant Garamond', serif;
             --font-sans: 'Work Sans', sans-serif;
         }
@@ -181,7 +197,7 @@
         }
 
         nav .back-link:hover {
-            color: var(--dusty-blue);
+            color: var(--terracotta);
         }
 
         /* Hero Section */
