@@ -21,6 +21,67 @@
     <!-- Pinterest Domain Verification -->
     <meta name="p:domain_verify" content="35e730ef4830250fbf8c3192312ebaa7" />
 
+    <!-- JSON-LD Structured Data: BlogPosting -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Inside The Cozy Cactus: What Makes Families Actually Rest",
+      "description": "From labeling drawers to Stokke high chairs, here's what makes The Cozy Cactus a family vacation rental in Indio where parents actually rest, not just survive.",
+      "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Eann Tuan",
+        "url": "https://indigopalm.co"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Indigo Palm Collective",
+        "url": "https://indigopalm.co",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://indigopalm.co/apple-touch-icon.png"
+        }
+      },
+      "datePublished": "2026-03-10",
+      "dateModified": "2026-03-10",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://indigopalm.co/blog/cozy-cactus-what-i-built.html"
+      },
+      "url": "https://indigopalm.co/blog/cozy-cactus-what-i-built.html",
+      "keywords": ["family vacation rental Indio", "Coachella family Airbnb", "vacation rental with baby gear", "desert vacation rental for kids", "Cozy Cactus Indio"]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://indigopalm.co/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://indigopalm.co/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Inside The Cozy Cactus: What Makes Families Actually Rest",
+          "item": "https://indigopalm.co/blog/cozy-cactus-what-i-built.html"
+        }
+      ]
+    }
+    </script>
+
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -292,8 +353,47 @@
             text-decoration: underline;
         }
 
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            nav .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 6rem 2rem;
+                gap: 1.5rem;
+                transition: right 0.3s ease;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+
+            nav .menu.active {
+                right: 0;
+            }
+
             article h1 {
                 font-size: 2rem;
             }
@@ -310,13 +410,37 @@
                 font-size: 1.4rem;
             }
 
-            nav .menu {
-                gap: 1.5rem;
-                font-size: 0.9rem;
+            .cta-box {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            article h1 {
+                font-size: 1.7rem;
+            }
+
+            article {
+                padding: 5rem 1.25rem 3rem;
+            }
+
+            .article-body h2 {
+                font-size: 1.4rem;
+            }
+
+            .article-body {
+                font-size: 1rem;
             }
 
             .cta-box {
-                padding: 2rem;
+                padding: 1.5rem;
+            }
+
+            .cta-button {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     </style>
@@ -328,7 +452,12 @@
             <a href="/" class="logo">
                 <span class="logo-text">INDIGO PALM COLLECTIVE</span>
             </a>
-            <ul class="menu">
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="navMenu">
                 <li><a href="/#properties">Properties</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#philosophy">Philosophy</a></li>
@@ -361,7 +490,7 @@
             <p>These are not glamorous changes. They don't make good Instagram content. But they're the foundation that makes everything else work. White walls, clean floors, modern light fixtures. Suddenly the house doesn't fight you anymore.</p>
 
             <!-- IMAGE 1: Before exterior -->
-            <img src="images/cochran-before.jpeg" alt="The Cozy Cactus before renovation, yellow walls and dated exterior">
+            <img src="images/cochran-before.jpeg" alt="The Cozy Cactus before renovation, yellow walls and dated exterior" loading="lazy" decoding="async">
             <p class="image-caption">Before: yellow walls, grandma vibes, potential<br><small>Photo: Eann Tuan</small></p>
 
             <h2>The West Elm phase.</h2>
@@ -373,13 +502,13 @@
             <p>Then came the Facebook Marketplace era. I was all over LA, picking up a $10 sound machine here (I now know that time is money, but at the time I was very proud of that $10 sound machine), cramming a West Elm dining table into my Honda Element there. (There has been nothing that car cannot fit. It remains one of its best qualities.) Garage sales. Marshalls. TJ Maxx. HomeGoods. Ross. I was on a mission to find the best deal on everything, one piece at a time.</p>
 
             <!-- IMAGE 2: Honda Element packed -->
-            <img src="images/car-storage.jpeg" alt="Honda Element packed with furniture and storage bins for The Cozy Cactus">
+            <img src="images/car-storage.jpeg" alt="Honda Element packed with furniture and storage bins for The Cozy Cactus" loading="lazy" decoding="async">
             <p class="image-caption">The Honda Element: still fits everything, still the MVP<br><small>Photo: Eann Tuan</small></p>
 
             <p>Part of the thrill was the hunt. Buying new with white glove delivery is easy. Finding a foosball table on Marketplace and figuring out how to get it home is a story. I had a lot of stories by the end of this phase. And a house full of furniture.</p>
 
             <!-- IMAGE 3: Foosball table -->
-            <img src="images/foosball.jpeg" alt="Foosball table from Facebook Marketplace at The Cozy Cactus game room">
+            <img src="images/foosball.jpeg" alt="Foosball table from Facebook Marketplace at The Cozy Cactus game room" loading="lazy" decoding="async">
             <p class="image-caption">The foosball table. I will not explain what getting this in and out of my car involved.<br><small>Photo: Eann Tuan</small></p>
 
             <h2>The tchotchke problem.</h2>
@@ -401,11 +530,11 @@
             <p>She gave The Cozy Cactus its actual identity: turquoise, coral, pineapple yellow. Not safe beige. Not the generic "coastal grandmother" look every other desert rental was doing. Something that made you feel something the moment you walked in the door.</p>
 
             <!-- IMAGE 4: Bedroom after with closet and reading nook -->
-            <img src="images/cc-bedroom-closet-wide.jpg" alt="The Cozy Cactus bedroom after renovation with navy geometric wallpaper closet, emerald green velvet chair, and mustard pouf">
+            <img src="images/cc-bedroom-closet-wide.jpg" alt="The Cozy Cactus bedroom after renovation with navy geometric wallpaper closet, emerald green velvet chair, and mustard pouf" loading="lazy" decoding="async">
             <p class="image-caption">After Dawn: the bedroom that makes guests photograph the closet before they unpack<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
             <!-- IMAGE 5: Full bedroom nook -->
-            <img src="images/cc-bedroom-nook-full.jpg" alt="Full Cozy Cactus bedroom with green velvet chair, mustard pouf, wallpaper nook, hammock on pink wall">
+            <img src="images/cc-bedroom-nook-full.jpg" alt="Full Cozy Cactus bedroom with green velvet chair, mustard pouf, wallpaper nook, hammock on pink wall" loading="lazy" decoding="async">
             <p class="image-caption">Green bed. Pink wall with a hammock. Mustard pouf. Navy wallpaper. It's a lot, and it's completely intentional.<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
             <p>Turns out she was right. Annoyingly, completely, repeatedly right. The house stopped feeling like a collection of things and started feeling like a place.</p>
@@ -419,11 +548,11 @@
             <p>I bought a <a href="https://www.target.com/p/stokke-clikk-high-chair-cloud-gray/-/A-78461786" target="_blank">Stokke high chair</a> instead of the wobbly plastic disaster from the clearance aisle. Sound machines in every bedroom. (I travel with my own. I am a grown adult. Zero shame.) Dawn curated a full Family Kit: bottle warmer, bottle brush, changing pad, diaper pail, cabinet locks, Keekaroo changing table. All the things you desperately need at 10pm on night one when you left yours at home.</p>
 
             <!-- IMAGE 6: Family kit -->
-            <img src="images/familykit.jpg" alt="Family Kit at The Cozy Cactus with organized baby gear, bottle warmer, sound machine, and infant supplies">
+            <img src="images/familykit.jpg" alt="Family Kit at The Cozy Cactus with organized baby gear, bottle warmer, sound machine, and infant supplies" loading="lazy" decoding="async">
             <p class="image-caption">The Family Kit: solving the 11pm panic message before it happens<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
             <!-- IMAGE 7: Family gear closet -->
-            <img src="images/family-closet.jpg" alt="Organized family gear closet at The Cozy Cactus with pack n play, stroller, and baby supplies">
+            <img src="images/family-closet.jpg" alt="Organized family gear closet at The Cozy Cactus with pack n play, stroller, and baby supplies" loading="lazy" decoding="async">
             <p class="image-caption">All the things, so you don't have to bring all the things<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
             <h2>What it became.</h2>
@@ -451,5 +580,20 @@
         <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
         <p><a href="/">Home</a> · <a href="/#properties">Properties</a> · <a href="/blog">Blog</a> · <a href="/#contact">Contact</a></p>
     </footer>
+
+    <script>
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

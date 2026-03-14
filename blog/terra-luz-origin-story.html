@@ -14,6 +14,7 @@
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Why We Named It Casa Moto: A Love Letter to the Desert">
     <meta property="og:description" content="How Casa Moto became Casa Moto: the story behind a Latin/Cuban-inspired vacation rental in Indio, CA, and the brand philosophy that changed everything.">
+    <meta property="og:image" content="https://indigopalm.co/Casa%20Moto/Existing%20Listing%20Pictures/IMG_1240.JPG">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://indigopalm.co/blog/terra-luz-origin-story.html">
     <meta property="og:site_name" content="Indigo Palm Collective">
@@ -337,12 +338,53 @@
 
         footer a:hover { text-decoration: underline; }
 
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
         @media (max-width: 768px) {
+            .mobile-menu-toggle { display: flex; }
+
+            nav .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 6rem 2rem;
+                gap: 1.5rem;
+                transition: right 0.3s ease;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+
+            nav .menu.active { right: 0; }
+
             article h1 { font-size: 2rem; }
             .article-body { font-size: 1.05rem; }
             .article-body h2 { font-size: 1.7rem; }
-            nav .menu { gap: 1.5rem; font-size: 0.9rem; }
             .series-nav { padding: 2rem; }
+        }
+
+        @media (max-width: 480px) {
+            article h1 { font-size: 1.7rem; }
+            article { padding: 5rem 1.25rem 3rem; }
+            .article-body h2 { font-size: 1.4rem; }
+            .article-body { font-size: 1rem; }
         }
     </style>
 </head>
@@ -352,7 +394,12 @@
             <a href="/" class="logo">
                 <span class="logo-text">INDIGO PALM COLLECTIVE</span>
             </a>
-            <ul class="menu">
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="navMenu">
                 <li><a href="/#properties">Properties</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#philosophy">Philosophy</a></li>
@@ -462,5 +509,20 @@
         <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
         <p><a href="https://indigopalm.co">Home</a> · <a href="https://indigopalm.co/#properties">Properties</a> · <a href="https://indigopalm.co/blog">Blog</a> · <a href="https://indigopalm.co/#contact">Contact</a></p>
     </footer>
+
+    <script>
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

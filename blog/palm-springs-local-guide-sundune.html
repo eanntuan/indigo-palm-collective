@@ -467,8 +467,43 @@
             text-decoration: underline;
         }
 
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
+            .mobile-menu-toggle { display: flex; }
+
+            nav ul {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 6rem 2rem;
+                gap: 1.5rem;
+                transition: right 0.3s ease;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+
+            nav ul.active { right: 0; }
+
             .article-title {
                 font-size: 2.5rem;
             }
@@ -485,6 +520,16 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        @media (max-width: 480px) {
+            .article-title { font-size: 1.9rem; }
+            .article-container { padding: 2rem 1.25rem; }
+            .article-body { font-size: 1rem; }
+            .article-body h2 { font-size: 1.5rem; }
+            .article-body h3 { font-size: 1.3rem; }
+            .cta-box { padding: 1.5rem; }
+            .cta-button { padding: 0.85rem 2rem; font-size: 0.9rem; min-height: 44px; }
+        }
     </style>
 </head>
 <body>
@@ -494,7 +539,12 @@
             <a href="/" class="logo">
                 <span class="logo-text">INDIGO PALM COLLECTIVE</span>
             </a>
-            <ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
                 <li><a href="/#properties">Properties</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#philosophy">Philosophy</a></li>
@@ -618,5 +668,15 @@
         <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
         <p><a href="/">Home</a> · <a href="/#properties">Properties</a> · <a href="/blog">Blog</a> · <a href="/#contact">Contact</a></p>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('mobileMenuToggle');
+        const menu = document.getElementById('navMenu');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>

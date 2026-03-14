@@ -21,6 +21,75 @@
     <!-- Pinterest Domain Verification -->
     <meta name="p:domain_verify" content="35e730ef4830250fbf8c3192312ebaa7" />
 
+    <!-- JSON-LD Structured Data: BlogPosting -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The Story of The Cozy Cactus: From Blank Canvas to Family Sanctuary",
+      "description": "How a backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents actually rest. My journey from blank canvas to 4.66 star Airbnb with 191+ reviews.",
+      "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Eann Tuan",
+        "url": "https://indigopalm.co"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Indigo Palm Collective",
+        "url": "https://indigopalm.co",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://indigopalm.co/apple-touch-icon.png"
+        }
+      },
+      "datePublished": "2026-02-25",
+      "dateModified": "2026-03-14",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://indigopalm.co/blog/cozy-cactus-story.html"
+      },
+      "articleSection": "Property Story",
+      "keywords": ["family vacation rental Indio", "Coachella family Airbnb", "vacation rental with baby gear", "Indio family house", "desert vacation rental kids", "The Cozy Cactus"],
+      "url": "https://indigopalm.co/blog/cozy-cactus-story.html",
+      "wordCount": 1100,
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "Indigo Palm Collective Blog",
+        "url": "https://indigopalm.co/blog"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://indigopalm.co"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://indigopalm.co/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "The Story of The Cozy Cactus",
+          "item": "https://indigopalm.co/blog/cozy-cactus-story.html"
+        }
+      ]
+    }
+    </script>
+
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -291,8 +360,43 @@
             text-decoration: underline;
         }
 
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            .mobile-menu-toggle { display: flex; }
+
+            nav .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 6rem 2rem;
+                gap: 1.5rem;
+                transition: right 0.3s ease;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+
+            nav .menu.active { right: 0; }
+
             article h1 {
                 font-size: 2rem;
             }
@@ -305,14 +409,19 @@
                 font-size: 1.7rem;
             }
 
-            nav .menu {
-                gap: 1.5rem;
-                font-size: 0.9rem;
-            }
-
             .cta-box {
                 padding: 2rem;
             }
+        }
+
+        @media (max-width: 480px) {
+            article h1 { font-size: 1.7rem; }
+            article { padding: 5rem 1.25rem 3rem; }
+            .article-body { font-size: 1rem; }
+            .article-body h2 { font-size: 1.4rem; }
+            .article-body h3 { font-size: 1.2rem; }
+            .cta-box { padding: 1.5rem; }
+            .cta-button { padding: 0.85rem 2rem; font-size: 0.9rem; min-height: 44px; }
         }
     </style>
 </head>
@@ -323,7 +432,12 @@
             <a href="/" class="logo">
                 <span class="logo-text">INDIGO PALM COLLECTIVE</span>
             </a>
-            <ul class="menu">
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="navMenu">
                 <li><a href="/#properties">Properties</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#philosophy">Philosophy</a></li>
@@ -374,21 +488,21 @@
             <p>Where the batteries are. Where the extra linens go. Which drawer has the baby spoons. Which cabinet has the Tupperware lids (because that's always the mystery, right?). I didn't want guests hunting for things at 7am while their little ones are screaming for breakfast. One guest told me the labeling system was "unprecedented." Turns out basic organization is revolutionary in the vacation rental world. To be honest, my own home is not as organized as my vacation rentals. If I, the homeowner, cannot find where the forks are, how do I expect a guest to?</p>
 
             <!-- IMAGE 2: Labeled Drawers -->
-            <img src="images/cozy-cactus-labeled-drawers.jpg" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored">
+            <img src="images/cozy-cactus-labeled-drawers.jpg" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored" loading="lazy" decoding="async">
             <p class="image-caption">Everything labeled: batteries, extra linens, baby spoons, exactly where you'd look for them</p>
 
             <h3>I bought infant gear that actually works.</h3>
             <p>I bought elevated baby gear, including a <a href="https://www.target.com/p/stokke-clikk-high-chair-cloud-gray/-/A-78461786" target="_blank">Stokke high chair</a>, not the wobbly plastic disasters from the clearance aisle. Sound machines in every bedroom because sleep matters. Shoot, I'm a grown woman, and I travel with my own sound machine! Outlet covers, cabinet locks, Keekaroo changing table, etc. Dawn curated a whole Family Kit for The Cozy Cactus, and it has proven to be widely successful. We added things you don't realize you need until 10pm on vacation: bottle warmer, bottle brush, changing pad, diaper pail. Not because I'm trying to win "Host of the Year," but because those 11pm panicked messages were solvable problems.</p>
 
             <!-- IMAGE 3: Infant Gear -->
-            <img src="images/cozy-cactus-infant-gear.jpg" alt="Baby gear at The Cozy Cactus including Stokke high chair, sound machine, pack n play, and changing station">
+            <img src="images/cozy-cactus-infant-gear.jpg" alt="Baby gear at The Cozy Cactus including Stokke high chair, sound machine, pack n play, and changing station" loading="lazy" decoding="async">
             <p class="image-caption">Elevated baby gear: Stokke high chair, sound machines, pack-n-play. Everything families need, already there.</p>
 
             <h3>I designed the kitchen for families, not just wine glasses and a corkscrew.</h3>
             <p>Full set of kids' dishes, sippy cups, blender for baby food (or margaritas). Drawer dedicated to plastic bags and Ziplocs because parents need those constantly. Coffee bar with good beans because tired parents deserve decent coffee, not the preground stuff that tastes like cardboard and been sitting there for who knows how long.</p>
 
             <!-- IMAGE 4: Family Kitchen -->
-            <img src="images/cozy-cactus-family-kitchen.jpg" alt="Family-friendly kitchen at The Cozy Cactus with kids dishes, coffee bar, and organized drawers">
+            <img src="images/cozy-cactus-family-kitchen.jpg" alt="Family-friendly kitchen at The Cozy Cactus with kids dishes, coffee bar, and organized drawers" loading="lazy" decoding="async">
             <p class="image-caption">Not just wine glasses and a corkscrew: actual family infrastructure</p>
 
             <h3>I created a fun backyard moment with an eye catching mural, hot tub, and putting green.</h3>
@@ -422,7 +536,7 @@
             <p>If that sounds like what you need, you know where to find us.</p>
 
             <!-- IMAGE 5: Exterior -->
-            <img src="images/cozy-cactus-exterior.jpg" alt="The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views">
+            <img src="images/cozy-cactus-exterior.jpg" alt="The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views" loading="lazy" decoding="async">
             <p class="image-caption">A place where families actually rest. 15 minutes from Coachella, designed for humans who appreciate when someone gives a damn.</p>
 
         </div>
@@ -440,5 +554,15 @@
         <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
         <p><a href="/">Home</a> · <a href="/#properties">Properties</a> · <a href="/blog">Blog</a> · <a href="/#contact">Contact</a></p>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('mobileMenuToggle');
+        const menu = document.getElementById('navMenu');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>

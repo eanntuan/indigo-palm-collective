@@ -465,8 +465,43 @@
             text-decoration: underline;
         }
 
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            .mobile-menu-toggle { display: flex; }
+
+            nav .menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 6rem 2rem;
+                gap: 1.5rem;
+                transition: right 0.3s ease;
+                box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+
+            nav .menu.active { right: 0; }
+
             article h1 {
                 font-size: 2rem;
             }
@@ -479,14 +514,17 @@
                 font-size: 1.6rem;
             }
 
-            nav .menu {
-                gap: 1.5rem;
-                font-size: 0.9rem;
-            }
-
             .stay-cta {
                 padding: 2rem;
             }
+        }
+
+        @media (max-width: 480px) {
+            article h1 { font-size: 1.7rem; }
+            article { padding: 5rem 1.25rem 3rem; }
+            .article-body { font-size: 1rem; }
+            .gem-heading { font-size: 1.4rem; }
+            .stay-cta { padding: 1.5rem; }
         }
     </style>
 </head>
@@ -497,7 +535,12 @@
             <a href="/" class="logo">
                 <span class="logo-text">INDIGO PALM COLLECTIVE</span>
             </a>
-            <ul class="menu">
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="navMenu">
                 <li><a href="/#properties">Properties</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#philosophy">Philosophy</a></li>
@@ -543,7 +586,7 @@
                 <p><strong>Don't skip:</strong> Medjool dates, dried citrus, local honey</p>
             </div>
 
-            <img src="images/lg-desert-store.jpg" alt="L&G Desert Store roadside sign with Coca-Cola panel and date palm against blue sky, Indio CA">
+            <img src="images/lg-desert-store.jpg" alt="L&G Desert Store roadside sign with Coca-Cola panel and date palm against blue sky, Indio CA" loading="lazy" decoding="async">
             <p class="image-caption">The hand-painted sign you're looking for. Pull over immediately.</p>
 
             <!-- GEM 2 -->
@@ -561,7 +604,7 @@
                 <p><strong>Pro tip:</strong> Go early. They sell out.</p>
             </div>
 
-            <img src="images/papa-headz.jpg" alt="Two Papa Headz smash burgers stacked in paper wrappers, dripping with cheese, Indio CA">
+            <img src="images/papa-headz.jpg" alt="Two Papa Headz smash burgers stacked in paper wrappers, dripping with cheese, Indio CA" loading="lazy" decoding="async">
             <p class="image-caption">Two smash burgers. One meal. Zero regrets.</p>
 
             <!-- GEM 3 -->
@@ -578,7 +621,7 @@
                 <p><strong>Must order:</strong> Date shake, box of Medjool + Deglet dates to go</p>
             </div>
 
-            <img src="images/shields-date-garden.jpg" alt="Cafe at Shields Date Garden entrance with neon sign and date palms, Indio CA">
+            <img src="images/shields-date-garden.jpg" alt="Cafe at Shields Date Garden entrance with neon sign and date palms, Indio CA" loading="lazy" decoding="async">
             <p class="image-caption">Open since 1924. The date shake alone justifies the stop.</p>
 
             <!-- GEM 4 -->
@@ -609,7 +652,7 @@
                 <p><strong>Tip:</strong> Arrive early Saturday. Lines get long by noon.</p>
             </div>
 
-            <img src="images/indio-tamale-festival.jpg" alt="Colorful piñata-style MERCADO sign arch over lowrider cars and festival crowd at the Indio Tamale Festival">
+            <img src="images/indio-tamale-festival.jpg" alt="Colorful pinata-style MERCADO sign arch over lowrider cars and festival crowd at the Indio Tamale Festival" loading="lazy" decoding="async">
             <p class="image-caption">30+ years of tamales, live music, and absolute chaos (the good kind)</p>
 
             <!-- GEM 6 -->
@@ -626,7 +669,7 @@
                 <p><strong>Best season:</strong> October–April (summers are brutal; go early if you must)</p>
             </div>
 
-            <img src="images/coachella-valley-preserve.webp" alt="Wild California fan palms in the Coachella Valley Preserve oasis at golden hour with red mountains behind">
+            <img src="images/coachella-valley-preserve.webp" alt="Wild California fan palms in the Coachella Valley Preserve oasis at golden hour with red mountains behind" loading="lazy" decoding="async">
             <p class="image-caption">Wild fan palms fed by the San Andreas Fault. One of Southern California's most otherworldly hikes.</p>
 
             <!-- GEM 7 -->
@@ -643,7 +686,7 @@
                 <p><strong>Timing:</strong> Lunch rush is real. Go at 11am or after 2pm.</p>
             </div>
 
-            <img src="images/one-stop-taco-shop.jpg" alt="One Stop Taco Shop plate with carne asada tacos, rice, beans and fresh pico de gallo, Indio CA">
+            <img src="images/one-stop-taco-shop.jpg" alt="One Stop Taco Shop plate with carne asada tacos, rice, beans and fresh pico de gallo, Indio CA" loading="lazy" decoding="async">
             <p class="image-caption">The line is part of the experience. Trust it.</p>
 
             <!-- GEM 8 -->
@@ -661,7 +704,7 @@
                 <p><strong>Spice note:</strong> They will make it actually spicy if you ask. Ask.</p>
             </div>
 
-            <img src="images/thai-hot.jpg" alt="Thai Hot Restaurant plates with stir fry, curry, rice and spring rolls, Indio CA">
+            <img src="images/thai-hot.jpg" alt="Thai Hot Restaurant plates with stir fry, curry, rice and spring rolls, Indio CA" loading="lazy" decoding="async">
             <p class="image-caption">Real heat, real Thai food. A desert surprise.</p>
 
             <!-- GEM 9 -->
@@ -672,7 +715,7 @@
 
             <p>About 30 minutes south of Indio, the Salton Sea is either the most fascinating place in California or the most unsettling one, depending on your disposition. It's a massive inland sea that shouldn't exist (it was accidentally created in 1905 by an irrigation canal breach and never stopped), smells vaguely sulfuric near the shoreline, and has a strange post-apocalyptic beauty that photographers and artists have been chasing for decades. Bombay Beach, a half-abandoned town on the eastern shore, is one of the weirdest art installations you'll ever stumble into. Don't swim. Do stay for sunset. Bring snacks and low expectations.</p>
 
-            <img src="images/salton-sea.webp" alt="Aerial view of the Salton Sea shoreline with bulldozers on cracked earth and bright blue water, Southern California">
+            <img src="images/salton-sea.webp" alt="Aerial view of the Salton Sea shoreline with bulldozers on cracked earth and bright blue water, Southern California" loading="lazy" decoding="async">
             <p class="image-caption">Accidentally created, accidentally beautiful. The Salton Sea earns its weirdness.</p>
 
             <!-- GEM 10 -->
@@ -690,7 +733,7 @@
                 <p><strong>Pro tip:</strong> Check their Instagram for event nights. It gets special.</p>
             </div>
 
-            <img src="images/rosemary-hifi.jpg" alt="Rosemary HiFi bar interior, cobalt blue tile, walnut shelving with vinyl records, 1960s JBL speakers, concrete bar, Indio CA">
+            <img src="images/rosemary-hifi.jpg" alt="Rosemary HiFi bar interior, cobalt blue tile, walnut shelving with vinyl records, 1960s JBL speakers, concrete bar, Indio CA" loading="lazy" decoding="async">
             <p class="image-caption">Cobalt blue tile, 1960s JBL speakers, a turntable built into the bar. The Coachella Valley's first listening lounge.</p>
 
             <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 3rem 0;">
@@ -716,5 +759,15 @@
         <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
         <p><a href="/">Home</a> · <a href="/#properties">Properties</a> · <a href="/blog">Blog</a> · <a href="/#contact">Contact</a></p>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('mobileMenuToggle');
+        const menu = document.getElementById('navMenu');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>

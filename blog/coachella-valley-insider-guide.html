@@ -14,6 +14,9 @@
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="The Real Insider's Guide to the Coachella Valley">
     <meta property="og:description" content="Skip the tourist traps. A real Coachella Valley local shares the spots worth your time in Indio, Palm Springs, Joshua Tree, and beyond.">
+    <meta property="og:image" content="https://indigopalm.co/blog/images/ps-street-bougainvillea.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://indigopalm.co/blog/coachella-valley-insider-guide.html">
     <meta property="og:site_name" content="Indigo Palm Collective">
@@ -29,6 +32,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Real Insider's Guide to the Coachella Valley">
     <meta name="twitter:description" content="Skip the tourist traps. A real local shares the spots worth your time in Indio, Palm Springs, Joshua Tree, and beyond.">
+    <meta name="twitter:image" content="https://indigopalm.co/blog/images/ps-street-bougainvillea.jpg">
 
     <!-- Pinterest Domain Verification -->
     <meta name="p:domain_verify" content="35e730ef4830250fbf8c3192312ebaa7" />
@@ -40,6 +44,7 @@
       "@type": "BlogPosting",
       "headline": "The Real Insider's Guide to the Coachella Valley",
       "description": "Skip the tourist traps. A real Coachella Valley local shares the spots worth your time in Indio, Palm Springs, Joshua Tree, and beyond.",
+      "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.jpg",
       "author": {
         "@type": "Person",
         "name": "Eann Tuan",
@@ -206,12 +211,26 @@
 
         footer a:hover { text-decoration: underline; }
 
+        .mobile-menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
+        .mobile-menu-toggle span { width: 25px; height: 3px; background-color: var(--charcoal); transition: all 0.3s ease; }
+
         @media (max-width: 768px) {
+            .mobile-menu-toggle { display: flex; }
+            nav .menu { position: fixed; top: 0; right: -100%; width: 70%; height: 100vh; background: white; flex-direction: column; padding: 6rem 2rem; gap: 1.5rem; transition: right 0.3s ease; box-shadow: -2px 0 10px rgba(0,0,0,0.1); z-index: 999; }
+            nav .menu.active { right: 0; }
             article h1 { font-size: 2rem; }
             .article-body { font-size: 1.05rem; }
             .article-body h2 { font-size: 1.7rem; }
-            nav .menu { gap: 1.5rem; font-size: 0.9rem; }
             .series-nav { padding: 2rem; }
+        }
+
+        @media (max-width: 480px) {
+            article h1 { font-size: 1.7rem; }
+            article { padding: 5rem 1.25rem 3rem; }
+            .article-body { font-size: 1rem; }
+            .article-body h2 { font-size: 1.4rem; }
+            .series-nav { padding: 1.5rem; }
+            .series-button { padding: 0.85rem 2rem; font-size: 0.9rem; min-height: 44px; }
         }
     </style>
 </head>
@@ -221,7 +240,12 @@
             <a href="/" class="logo">
                 <span class="logo-text">INDIGO PALM COLLECTIVE</span>
             </a>
-            <ul class="menu">
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="navMenu">
                 <li><a href="/#properties">Properties</a></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#philosophy">Philosophy</a></li>
@@ -239,7 +263,7 @@
 
         <div class="article-body">
 
-            <img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm tree-lined street in Palm Springs CA with red bougainvillea and San Jacinto mountains" loading="lazy">
+            <img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm tree-lined street in Palm Springs CA with red bougainvillea and San Jacinto mountains">
             <p class="image-caption">A Palm Springs street on a clear morning. This is what 30 minutes from Indio looks like.</p>
 
             <p>I watched a couple walk into a chain restaurant in Palm Desert last week. They were 400 yards from one of the best taco spots in the valley.</p>
@@ -359,5 +383,15 @@
         <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
         <p><a href="https://indigopalm.co">Home</a> · <a href="https://indigopalm.co/#properties">Properties</a> · <a href="https://indigopalm.co/blog">Blog</a> · <a href="https://indigopalm.co/#contact">Contact</a></p>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('mobileMenuToggle');
+        const menu = document.getElementById('navMenu');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>

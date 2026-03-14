@@ -71,7 +71,7 @@ wrangler login
 
 # Add secrets
 wrangler secret put RESEND_API_KEY
-# Paste: re_BJrPaL5f_HQ4JeD6F86pt44Azwp1ghhud
+# Paste: re_2fymdHtu_3N3PPRJBAfEoeXrpnGZg2fTt
 
 wrangler secret put SHEETS_WEBHOOK_URL
 # Paste: [your Google Apps Script webhook URL]

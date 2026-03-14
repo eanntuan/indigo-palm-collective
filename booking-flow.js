@@ -1,35 +1,30 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
-import { getFirestore, collection, addDoc, Timestamp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+// booking-flow.js
+// Direct booking system using Cloudflare Pages Functions
+// /api/availability — fetches iCal blocked dates server-side
+// /api/booking — sends booking request email via Resend
+// pricing.json — local price calculation with peak multipliers
+
 import { PROPERTIES } from './booking-config.js';
 
-// Firebase config
-const firebaseConfig = {
-    apiKey: "AIzaSyDEcB5KW_t3ysKKf7RtJfPJdGnH9vZ_234",
-    authDomain: "the-desert-edit.firebaseapp.com",
-    projectId: "the-desert-edit",
-    storageBucket: "the-desert-edit.appspot.com",
-    messagingSenderId: "101326981347",
-    appId: "1:101326981347:web:8f0df8b1cf0c3e4e8c7b89"
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-// State
 let selectedProperty = null;
+let blockedDates = new Set();
+let pricingData = null;
 let priceEstimate = null;
 
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const res = await fetch('/pricing.json');
+        pricingData = await res.json();
+    } catch (e) {
+        console.error('Failed to load pricing data:', e);
+    }
     renderPropertySelector();
     setupEventListeners();
     setMinDates();
 });
 
-// Render property selection cards
 function renderPropertySelector() {
     const selector = document.getElementById('property-selector');
-
     Object.values(PROPERTIES).forEach(property => {
         const card = document.createElement('div');
         card.className = 'property-option';
@@ -37,355 +32,328 @@ function renderPropertySelector() {
         card.innerHTML = `
             <h3>${property.name}</h3>
             <p>${property.location}</p>
-            <p style="font-size: 0.8rem; margin-top: 0.5rem;">${property.bedrooms} bed • ${property.maxGuests} guests</p>
-            <p style="font-weight: 600; color: var(--sage); margin-top: 0.5rem;">$${property.basePrice}/night</p>
+            <p style="font-size:0.8rem;margin-top:0.5rem;">${property.bedrooms} bed &middot; ${property.maxGuests} guests</p>
+            <p style="font-weight:600;color:var(--sage);margin-top:0.5rem;">from $${property.basePrice}/night</p>
         `;
-
         card.addEventListener('click', () => selectProperty(property.id));
         selector.appendChild(card);
     });
 }
 
-// Select property
 function selectProperty(propertyId) {
-    // Remove previous selection
-    document.querySelectorAll('.property-option').forEach(el => {
-        el.classList.remove('selected');
-    });
-
-    // Select new property
-    const card = document.querySelector(`[data-property-id="${propertyId}"]`);
-    card.classList.add('selected');
-
+    document.querySelectorAll('.property-option').forEach(el => el.classList.remove('selected'));
+    document.querySelector(`[data-property-id="${propertyId}"]`).classList.add('selected');
     selectedProperty = PROPERTIES[propertyId];
 
-    // Update max guests
     const guestsInput = document.getElementById('guests');
     guestsInput.max = selectedProperty.maxGuests;
     if (parseInt(guestsInput.value) > selectedProperty.maxGuests) {
         guestsInput.value = selectedProperty.maxGuests;
     }
 
-    // Show and load availability calendar
     document.getElementById('availability-calendar').style.display = 'block';
     loadAvailabilityCalendar();
-
-    // Recalculate price
     updatePrice();
 }
 
-// Load availability calendar
 async function loadAvailabilityCalendar() {
-    const calendarGrid = document.getElementById('calendar-grid');
-    calendarGrid.innerHTML = '<p style="text-align: center; color: #999;">Loading calendar...</p>';
+    const grid = document.getElementById('calendar-grid');
+    grid.innerHTML = '<p style="text-align:center;color:#999;grid-column:1/-1;padding:1rem;">Loading availability...</p>';
 
     try {
-        // Fetch next 90 days of availability
-        const startDate = new Date();
-        const endDate = new Date();
-        endDate.setDate(endDate.getDate() + 90);
-
-        const response = await fetch('/get-availability', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                propertyId: selectedProperty.id,
-                startDate: startDate.toISOString().split('T')[0],
-                endDate: endDate.toISOString().split('T')[0]
-            })
-        });
-
-        const data = await response.json();
-
-        if (!data.success) {
-            throw new Error(data.error || 'Failed to fetch availability');
-        }
-
-        // Render calendar
-        renderCalendar(data.calendar);
-
-    } catch (error) {
-        console.error('Error loading calendar:', error);
-        calendarGrid.innerHTML = '<p style="text-align: center; color: #f44336;">Error loading calendar</p>';
+        const res = await fetch(`/api/availability?property=${selectedProperty.id}`);
+        const data = await res.json();
+        blockedDates = new Set(data.blockedDates || []);
+    } catch (e) {
+        console.error('Availability load failed:', e);
+        blockedDates = new Set();
     }
+
+    renderCalendar();
 }
 
-// Render calendar grid
-function renderCalendar(calendarData) {
-    const calendarGrid = document.getElementById('calendar-grid');
-    calendarGrid.innerHTML = '';
+function renderCalendar() {
+    const grid = document.getElementById('calendar-grid');
+    grid.innerHTML = '';
 
-    if (!calendarData || calendarData.length === 0) {
-        calendarGrid.innerHTML = '<p style="text-align: center; color: #999;">No availability data</p>';
-        return;
-    }
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const endDate = new Date(today);
+    endDate.setDate(today.getDate() + 90);
 
-    // Day headers
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    days.forEach(day => {
-        const header = document.createElement('div');
-        header.className = 'calendar-day header';
-        header.textContent = day;
-        calendarGrid.appendChild(header);
+    ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
+        const h = document.createElement('div');
+        h.className = 'calendar-day header';
+        h.textContent = day;
+        grid.appendChild(h);
     });
 
-    // Get first date and determine starting day of week
-    const firstDate = new Date(calendarData[0].date);
-    const startDayOfWeek = firstDate.getDay();
-
-    // Add empty cells for alignment
-    for (let i = 0; i < startDayOfWeek; i++) {
-        const empty = document.createElement('div');
-        empty.className = 'calendar-day empty';
-        calendarGrid.appendChild(empty);
+    // Offset blanks for first day of week
+    for (let i = 0; i < today.getDay(); i++) {
+        const blank = document.createElement('div');
+        blank.className = 'calendar-day empty';
+        grid.appendChild(blank);
     }
 
-    // Add calendar days
-    calendarData.forEach(day => {
-        const dayEl = document.createElement('div');
-        const date = new Date(day.date);
-        const dayNum = date.getDate();
+    const current = new Date(today);
+    while (current <= endDate) {
+        const dateStr = current.toISOString().split('T')[0];
+        const isBlocked = blockedDates.has(dateStr);
 
-        dayEl.className = `calendar-day ${day.available ? 'available' : 'booked'}`;
-        dayEl.textContent = dayNum;
-        dayEl.title = `${day.date} - ${day.available ? 'Available' : 'Booked'}`;
+        const cell = document.createElement('div');
+        cell.className = `calendar-day ${isBlocked ? 'booked' : 'available'}`;
+        cell.textContent = current.getDate();
+        cell.title = `${dateStr} — ${isBlocked ? 'Booked' : 'Available'}`;
 
-        // Click to set check-in/check-out
-        if (day.available) {
-            dayEl.addEventListener('click', () => {
-                const checkInInput = document.getElementById('check-in');
-                const checkOutInput = document.getElementById('check-out');
+        if (!isBlocked) {
+            const d = dateStr;
+            cell.addEventListener('click', () => {
+                const checkIn = document.getElementById('check-in');
+                const checkOut = document.getElementById('check-out');
 
-                if (!checkInInput.value) {
-                    // Set check-in
-                    checkInInput.value = day.date;
-                } else if (!checkOutInput.value && day.date > checkInInput.value) {
-                    // Set check-out
-                    checkOutInput.value = day.date;
+                if (!checkIn.value || (checkIn.value && checkOut.value)) {
+                    checkIn.value = d;
+                    checkOut.value = '';
+                    const next = new Date(d + 'T00:00:00');
+                    next.setDate(next.getDate() + 1);
+                    checkOut.min = next.toISOString().split('T')[0];
+                    updatePrice();
+                } else if (d > checkIn.value) {
+                    checkOut.value = d;
                     updatePrice();
                 } else {
-                    // Reset and set new check-in
-                    checkInInput.value = day.date;
-                    checkOutInput.value = '';
+                    checkIn.value = d;
+                    checkOut.value = '';
+                    updatePrice();
                 }
             });
         }
 
-        calendarGrid.appendChild(dayEl);
-    });
+        grid.appendChild(cell);
+        current.setDate(current.getDate() + 1);
+    }
 }
 
-// Set minimum dates (today for check-in, tomorrow for check-out)
 function setMinDates() {
     const today = new Date().toISOString().split('T')[0];
     document.getElementById('check-in').min = today;
     document.getElementById('check-out').min = today;
 }
 
-// Setup event listeners
 function setupEventListeners() {
     const checkIn = document.getElementById('check-in');
     const checkOut = document.getElementById('check-out');
-    const guests = document.getElementById('guests');
-    const submitBtn = document.getElementById('submit-btn');
 
-    // Update price when inputs change
     checkIn.addEventListener('change', () => {
-        // Set check-out min to day after check-in
-        const checkInDate = new Date(checkIn.value);
-        checkInDate.setDate(checkInDate.getDate() + 1);
-        checkOut.min = checkInDate.toISOString().split('T')[0];
+        const next = new Date(checkIn.value + 'T00:00:00');
+        next.setDate(next.getDate() + 1);
+        checkOut.min = next.toISOString().split('T')[0];
+        if (checkOut.value && checkOut.value <= checkIn.value) checkOut.value = '';
         updatePrice();
     });
 
     checkOut.addEventListener('change', updatePrice);
-    guests.addEventListener('input', updatePrice);
-
-    // Submit form
-    submitBtn.addEventListener('click', submitBookingInquiry);
+    document.getElementById('guests').addEventListener('input', updatePrice);
+    document.getElementById('submit-btn').addEventListener('click', submitBookingRequest);
 }
 
-// Update price display
-async function updatePrice() {
+function calculatePrice(propertyId, checkIn, checkOut) {
+    if (!pricingData || !pricingData[propertyId]) return null;
+
+    const p = pricingData[propertyId];
+    const start = new Date(checkIn + 'T00:00:00');
+    const end = new Date(checkOut + 'T00:00:00');
+    const nights = Math.round((end - start) / (1000 * 60 * 60 * 24));
+    if (nights < 1) return null;
+
+    let subtotal = 0;
+    const nightly = [];
+    const cur = new Date(start);
+
+    for (let i = 0; i < nights; i++) {
+        const dateStr = cur.toISOString().split('T')[0];
+        let multiplier = 1;
+        let peakLabel = null;
+
+        for (const peak of p.peakDates) {
+            if (dateStr >= peak.start && dateStr < peak.end && peak.multiplier > multiplier) {
+                multiplier = peak.multiplier;
+                peakLabel = peak.label;
+            }
+        }
+
+        const rate = Math.round(p.basePrice * multiplier);
+        subtotal += rate;
+        nightly.push({ date: dateStr, rate, peakLabel });
+        cur.setDate(cur.getDate() + 1);
+    }
+
+    const cleaningFee = p.cleaningFee;
+    const taxAmount = (subtotal + cleaningFee) * p.taxRate;
+    const total = subtotal + cleaningFee + taxAmount;
+
+    return { nights, nightly, subtotal, cleaningFee, taxRate: p.taxRate, taxAmount, total };
+}
+
+function updatePrice() {
     const checkIn = document.getElementById('check-in').value;
     const checkOut = document.getElementById('check-out').value;
-    const guests = parseInt(document.getElementById('guests').value);
+    const priceContent = document.getElementById('price-content');
+    const submitBtn = document.getElementById('submit-btn');
 
-    // Check if all required fields are filled
-    if (!selectedProperty || !checkIn || !checkOut || !guests) {
-        document.getElementById('price-content').innerHTML = `
-            <div class="empty-state">
-                <p>Select property and dates to see pricing</p>
-            </div>
-        `;
-        document.getElementById('submit-btn').disabled = true;
+    if (!selectedProperty || !checkIn || !checkOut) {
+        priceContent.innerHTML = '<div class="empty-state"><p>Select property and dates to see pricing</p></div>';
+        submitBtn.disabled = true;
+        priceEstimate = null;
         return;
     }
 
-    // Show loading state
-    document.getElementById('price-content').innerHTML = `
-        <div class="empty-state">
-            <p>Loading pricing...</p>
-        </div>
-    `;
-    document.getElementById('submit-btn').disabled = true;
-
-    try {
-        // Fetch dynamic pricing from Cloud Function
-        const response = await fetch('/get-pricing', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                propertyId: selectedProperty.id,
-                checkIn,
-                checkOut,
-                guests
-            })
-        });
-
-        const data = await response.json();
-
-        if (!data.success) {
-            throw new Error(data.error || 'Failed to fetch pricing');
-        }
-
-        priceEstimate = data.pricing;
-
-        // Check if dates are available
-        if (!priceEstimate.isAvailable) {
-            document.getElementById('price-content').innerHTML = `
-                <div class="empty-state" style="color: #f44336;">
-                    <p><strong>❌ Selected dates are not available</strong></p>
-                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">
-                        Unavailable dates: ${priceEstimate.unavailableDates.join(', ')}
-                    </p>
-                </div>
-            `;
-            document.getElementById('submit-btn').disabled = true;
-            return;
-        }
-
-        // Display price breakdown with actual nightly rates
-        let nightlyBreakdownHTML = '';
-
-        if (priceEstimate.nightly && priceEstimate.nightly.length > 0) {
-            // Show each night's actual price from PriceLabs/Hostaway
-            priceEstimate.nightly.forEach(night => {
-                const date = new Date(night.date);
-                const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-                nightlyBreakdownHTML += `
-                    <div class="price-row">
-                        <span>${dateStr}</span>
-                        <span>$${night.price.toFixed(2)}</span>
-                    </div>
-                `;
-            });
-            nightlyBreakdownHTML += `
-                <div class="price-row" style="border-top: 2px solid #e0e0e0; padding-top: 1rem; margin-top: 0.5rem;">
-                    <span><strong>${priceEstimate.nights} night${priceEstimate.nights > 1 ? 's' : ''}</strong></span>
-                    <span><strong>$${priceEstimate.subtotal.toFixed(2)}</strong></span>
-                </div>
-            `;
-        } else {
-            nightlyBreakdownHTML = `
-                <div class="price-row">
-                    <span>${priceEstimate.nights} night${priceEstimate.nights > 1 ? 's' : ''}</span>
-                    <span>$${priceEstimate.subtotal.toFixed(2)}</span>
-                </div>
-            `;
-        }
-
-        document.getElementById('price-content').innerHTML = `
-            <div class="price-breakdown">
-                ${nightlyBreakdownHTML}
-                <div class="price-row">
-                    <span>Cleaning fee</span>
-                    <span>$${priceEstimate.cleaningFee.toFixed(2)}</span>
-                </div>
-                <div class="price-row">
-                    <span>Taxes (${(priceEstimate.taxRate * 100).toFixed(1)}%)</span>
-                    <span>$${priceEstimate.taxAmount.toFixed(2)}</span>
-                </div>
-                <div class="price-row">
-                    <strong>Total</strong>
-                    <strong>$${priceEstimate.total.toFixed(2)}</strong>
-                </div>
-            </div>
-        `;
-
-        // Enable submit button
-        document.getElementById('submit-btn').disabled = false;
-
-    } catch (error) {
-        console.error('Error fetching pricing:', error);
-        document.getElementById('price-content').innerHTML = `
-            <div class="empty-state" style="color: #f44336;">
-                <p>Error loading pricing</p>
-                <p style="font-size: 0.85rem;">${error.message}</p>
-            </div>
-        `;
-        document.getElementById('submit-btn').disabled = true;
+    // Check for blocked dates in range
+    const start = new Date(checkIn + 'T00:00:00');
+    const end = new Date(checkOut + 'T00:00:00');
+    const unavailable = [];
+    const cur = new Date(start);
+    while (cur < end) {
+        const d = cur.toISOString().split('T')[0];
+        if (blockedDates.has(d)) unavailable.push(d);
+        cur.setDate(cur.getDate() + 1);
     }
+
+    if (unavailable.length > 0) {
+        priceContent.innerHTML = `
+            <div class="empty-state" style="color:#f44336;">
+                <p><strong>These dates are not available.</strong></p>
+                <p style="font-size:0.85rem;margin-top:0.5rem;">Blocked: ${unavailable.join(', ')}</p>
+            </div>`;
+        submitBtn.disabled = true;
+        priceEstimate = null;
+        return;
+    }
+
+    priceEstimate = calculatePrice(selectedProperty.id, checkIn, checkOut);
+    if (!priceEstimate) {
+        priceContent.innerHTML = '<div class="empty-state"><p>Could not calculate price.</p></div>';
+        submitBtn.disabled = true;
+        return;
+    }
+
+    // Enforce min nights
+    const p = pricingData && pricingData[selectedProperty.id];
+    if (p && priceEstimate.nights < p.minNights) {
+        priceContent.innerHTML = `<div class="empty-state" style="color:#B67550;"><p>Minimum stay is ${p.minNights} nights.</p></div>`;
+        submitBtn.disabled = true;
+        priceEstimate = null;
+        return;
+    }
+
+    // Group consecutive nights at same rate
+    const grouped = [];
+    let i = 0;
+    while (i < priceEstimate.nightly.length) {
+        const cur = priceEstimate.nightly[i];
+        let count = 1;
+        while (i + count < priceEstimate.nightly.length && priceEstimate.nightly[i + count].rate === cur.rate) count++;
+        grouped.push({ rate: cur.rate, count, peakLabel: cur.peakLabel });
+        i += count;
+    }
+
+    const rows = grouped.map(g => `
+        <div class="price-row">
+            <span>$${g.rate}/night &times; ${g.count}${g.peakLabel ? ` <span style="font-size:0.75em;color:#B67550;">(${g.peakLabel})</span>` : ''}</span>
+            <span>$${(g.rate * g.count).toFixed(2)}</span>
+        </div>`).join('');
+
+    priceContent.innerHTML = `
+        <div class="price-breakdown">
+            ${rows}
+            <div class="price-row">
+                <span>Cleaning fee</span>
+                <span>$${priceEstimate.cleaningFee.toFixed(2)}</span>
+            </div>
+            <div class="price-row">
+                <span>Taxes (${(priceEstimate.taxRate * 100).toFixed(1)}%)</span>
+                <span>$${priceEstimate.taxAmount.toFixed(2)}</span>
+            </div>
+            <div class="price-row">
+                <strong>Total</strong>
+                <strong>$${priceEstimate.total.toFixed(2)}</strong>
+            </div>
+        </div>`;
+
+    submitBtn.disabled = false;
 }
 
-// Submit booking inquiry
-async function submitBookingInquiry() {
+async function submitBookingRequest() {
     const submitBtn = document.getElementById('submit-btn');
-
-    // Validate form
     const name = document.getElementById('guest-name').value.trim();
     const email = document.getElementById('guest-email').value.trim();
     const phone = document.getElementById('guest-phone').value.trim();
+    const checkIn = document.getElementById('check-in').value;
+    const checkOut = document.getElementById('check-out').value;
+    const guests = parseInt(document.getElementById('guests').value);
+    const specialRequests = document.getElementById('special-requests').value.trim();
 
-    if (!name || !email || !phone || !selectedProperty || !priceEstimate) {
-        alert('Please fill in all required fields');
+    if (!name || !email || !phone) {
+        showMessage('Please fill in your name, email, and phone number.', 'error');
         return;
     }
 
-    // Disable button
     submitBtn.disabled = true;
     submitBtn.textContent = 'Submitting...';
 
     try {
-        // Create booking inquiry
-        const inquiry = {
-            propertyId: selectedProperty.id,
-            propertyName: selectedProperty.name,
-            checkIn: Timestamp.fromDate(new Date(document.getElementById('check-in').value)),
-            checkOut: Timestamp.fromDate(new Date(document.getElementById('check-out').value)),
-            guests: parseInt(document.getElementById('guests').value),
-            guestName: name,
-            guestEmail: email,
-            guestPhone: phone,
-            specialRequests: document.getElementById('special-requests').value.trim(),
-            priceEstimate: {
-                nights: priceEstimate.nights,
-                subtotal: priceEstimate.subtotal,
-                cleaningFee: priceEstimate.cleaningFee,
-                taxAmount: priceEstimate.taxAmount,
-                total: priceEstimate.total
-            },
-            status: 'pending', // pending, approved, paid, cancelled
-            createdAt: Timestamp.now()
-        };
+        const res = await fetch('/api/booking', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                property: selectedProperty.name,
+                checkIn,
+                checkOut,
+                guests,
+                name,
+                email,
+                phone,
+                specialRequests,
+                pricing: priceEstimate
+            })
+        });
 
-        // Save to Firestore
-        await addDoc(collection(db, 'bookingInquiries'), inquiry);
+        const data = await res.json();
+        if (!data.success) throw new Error(data.error || 'Submission failed');
 
-        // Success!
-        alert(`🎉 Booking request submitted!\n\nWe'll review your request for ${selectedProperty.name} and send you a payment link within 24 hours.\n\nCheck your email (${email}) for confirmation.`);
+        submitBtn.textContent = 'Request Sent!';
+        showMessage(
+            `Your request for ${selectedProperty.name} is confirmed. Check your inbox — we'll send a payment link within 24 hours.`,
+            'success'
+        );
 
-        // Reset form
-        window.location.reload();
+        document.getElementById('check-in').value = '';
+        document.getElementById('check-out').value = '';
 
-    } catch (error) {
-        console.error('Error submitting inquiry:', error);
-        alert('Sorry, there was an error submitting your request. Please try again or email us directly at thecozycactusindio@gmail.com');
+    } catch (err) {
+        console.error('Booking submission failed:', err);
+        showMessage('Something went wrong. Please try again or email us at indigopalmco@gmail.com.', 'error');
         submitBtn.disabled = false;
         submitBtn.textContent = 'Request to Book';
     }
+}
+
+function showMessage(text, type) {
+    const existing = document.getElementById('form-message');
+    if (existing) existing.remove();
+
+    const msg = document.createElement('p');
+    msg.id = 'form-message';
+    msg.style.cssText = `
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        ${type === 'success'
+            ? 'background:#e8f5e9;color:#2e7d32;border-left:4px solid #4caf50;'
+            : 'background:#fdecea;color:#c62828;border-left:4px solid #f44336;'}
+    `;
+    msg.textContent = text;
+    document.getElementById('submit-btn').insertAdjacentElement('afterend', msg);
 }

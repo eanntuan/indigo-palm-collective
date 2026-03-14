@@ -123,6 +123,40 @@ Nobody books a beige room. The layered rug, the accent pillow in a color that sh
 
 ---
 
+## PIN 8 — Dog in Honda Element / Car Camping
+**Image:** Fluffy dog sitting in open back of packed Honda Element, Yeti cooler, camping gear
+**Board:** Desert Getaways / Road Trip
+
+**Title (text on pin):**
+> The Desert Is Better With the Dog in the Back
+
+**Pinterest Description:**
+Cooler packed. Back seats down. Dog already claiming the cargo area. This is how we get to the Coachella Valley. The Cozy Cactus in Indio, CA is 10 minutes from the polo grounds, private pool included, and a backyard your dog will own by day two. No hotel lobbies. No checkout line. Just your crew and the desert. Full guide at indigopalm.co
+
+**Hashtags:**
+#CozyCactus #TravelWithDogs #DesertRoadTrip #HondaElement #CoachellaValley #RoadTrip #PetFriendlyTravel #DesertEscape #IndioCA #CarCamping #VacationRentalLife #BookDirect
+
+**Blog link:** https://indigopalm.co/blog/beyond-coachella-desert-escape.html
+
+---
+
+## PIN 9 — Honda Element at Shiprock / Desert Road Trip
+**Image:** Honda Element driving on dirt road toward Shiprock formation, wide open desert, golden light
+**Board:** Desert Getaways / Road Trip
+
+**Title (text on pin):**
+> The Drive Is Part of the Trip
+
+**Pinterest Description:**
+You don't fly to the desert. You drive it. Honda Element, dirt road, something dramatic on the horizon. Base yourself at The Cozy Cactus in Indio, CA and you're 45 minutes from Joshua Tree, 30 from Palm Springs, and close enough to Salton Sea to make a morning of it. Private pool waiting when you get back. indigopalm.co
+
+**Hashtags:**
+#DesertRoadTrip #HondaElement #CoachellaValley #JoshuaTree #DesertEscape #RoadTrip #CozyCactus #SouthwestTravel #DesertLife #IndioCA #VacationRentalLife #WanderMore
+
+**Blog link:** https://indigopalm.co/blog/beyond-coachella-desert-escape.html
+
+---
+
 ## Pinterest Boards to Create (if not live yet)
 - [ ] Vacation Rental Host Tips
 - [ ] Desert Getaways / Desert Vacation
@@ -141,3 +175,5 @@ Nobody books a beige room. The layered rug, the accent pillow in a color that sh
 | ASAP | Pin 5 — Pool | Desert Getaways |
 | ASAP | Pin 6 — Coffee Shops | Palm Springs Travel Guide |
 | ASAP | Pin 7 — Living Room | Vacation Rental Design |
+| Next | Pin 8 — Dog in Honda Element | Desert Getaways |
+| Next | Pin 9 — Honda Element at Shiprock | Desert Getaways |
