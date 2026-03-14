@@ -3,7 +3,7 @@
 
 **Source**: Canva's Ultimate Guide to Pinterest Marketing (43 pages)
 **Your Brand**: Indigo Palm Collective
-**Properties**: Terra Luz, The Cozy Cactus, PS Retreat, The Well
+**Properties**: Casa Moto, The Cozy Cactus, PS Retreat, The Well
 **Goal**: Create 12+ pins per week in under 10 minutes using automation
 
 ---
@@ -38,7 +38,7 @@
 
 **What You're Creating**: 4 templates (one per property) that Canva will use to "magically" generate pins.
 
-#### Template A: Terra Luz Master Template
+#### Template A: Casa Moto Master Template
 
 **Go to Canva → Your Brand → Templates → "Add new template"**
 
@@ -62,7 +62,7 @@
    - Font: Cormorant Garamond, Regular, 48pt
    - Color: #FFFFFF
    - Position: 1200px from top
-   - Text: "Terra Luz"
+   - Text: "Casa Moto"
 
 3. **Location** (LOCKED):
    - Font: Work Sans, Regular, 24pt
@@ -87,13 +87,13 @@
 - Thin white line separator between photo and terracotta (2px)
 - Subtle texture overlay on terracotta background (15% opacity)
 
-**Save As**: "Terra Luz - Pinterest Master Template"
+**Save As**: "Casa Moto - Pinterest Master Template"
 
 ---
 
 #### Template B: The Cozy Cactus Master Template
 
-**Same structure as Terra Luz, but adjust colors**:
+**Same structure as Casa Moto, but adjust colors**:
 
 **Background**:
 - Top 60%: Cozy Cactus family-friendly photo
@@ -166,7 +166,7 @@
 6. Mark them as "Brand Templates" (this unlocks Magic features)
 
 **Test It**:
-- Open Terra Luz template
+- Open Casa Moto template
 - Click "Design" in left sidebar
 - You should now see "Magic Design" option
 - This means automation is enabled ✅
@@ -183,8 +183,8 @@
 
 | property_name | headline | description | photo_url | board_name | schedule_date |
 |---------------|----------|-------------|-----------|------------|---------------|
-| Terra Luz | Where Mid-Century Modernism Meets Cuban Soul | Discover Terra Luz, a Palm Springs sanctuary blending 1960s MCM architecture with vibrant Cuban-inspired interiors. | https://yoursite.com/photos/terra-luz-hero.jpg | Palm Springs Vacation Rentals | 2026-02-24 |
-| Terra Luz | Havana Nights in the California Desert | Terra Luz brings Old Havana's warmth to Palm Springs. Cocooned elegance meets desert modernism. | https://yoursite.com/photos/terra-luz-night.jpg | Mid-Century Modern Homes | 2026-02-25 |
+| Casa Moto | Where Mid-Century Modernism Meets Cuban Soul | Discover Casa Moto, a Palm Springs sanctuary blending 1960s MCM architecture with vibrant Cuban-inspired interiors. | https://yoursite.com/photos/casa-moto-hero.jpg | Palm Springs Vacation Rentals | 2026-02-24 |
+| Casa Moto | Havana Nights in the California Desert | Casa Moto brings Old Havana's warmth to Palm Springs. Cocooned elegance meets desert modernism. | https://yoursite.com/photos/casa-moto-night.jpg | Mid-Century Modern Homes | 2026-02-25 |
 | Cozy Cactus | Family-Sized Desert Adventures Await | The Cozy Cactus sleeps 8 with a hot tub, fire pit, and Joshua Tree sunsets. Perfect for multi-gen getaways. | https://yoursite.com/photos/cozy-cactus-exterior.jpg | Family Vacation Ideas | 2026-02-26 |
 
 **Download as CSV**: File → Download → Comma-separated values (.csv)
@@ -225,7 +225,7 @@
 
 **Monday Morning Routine**:
 
-#### 1. Open Terra Luz Master Template (2 minutes)
+#### 1. Open Casa Moto Master Template (2 minutes)
 
 **Change the headline** to this week's focus:
 - Week 1: "Where Mid-Century Modernism Meets Cuban Soul"
@@ -246,7 +246,7 @@
 
 #### 2. Use Magic Switch for Multi-Format (1 minute)
 
-**From your Terra Luz pin**:
+**From your Casa Moto pin**:
 - Click "Resize" → "Magic Switch"
 - Select "Instagram Post" (1080x1080)
 - Select "Instagram Story" (1080x1920)
@@ -261,7 +261,7 @@
 **Open Canva → "Apps" → "Bulk Create"**
 
 1. **Upload Your CSV**: The spreadsheet you created in Phase 1
-2. **Select Master Template**: Terra Luz Pinterest Master
+2. **Select Master Template**: Casa Moto Pinterest Master
 3. **Map Fields**:
    - CSV Column "headline" → Template field "{{headline}}"
    - CSV Column "photo_url" → Template background image
@@ -270,7 +270,7 @@
 **Canva creates 50 unique pins** in about 90 seconds.
 
 **Filter by Property**:
-- Select "Terra Luz" rows → 12 pins
+- Select "Casa Moto" rows → 12 pins
 - Select "Cozy Cactus" rows → 12 pins
 - Select "PS Retreat" rows → 12 pins
 - Select "The Well" rows → 12 pins
@@ -283,15 +283,15 @@
 
 **From Canva Bulk Create results**:
 
-1. Select all 12 Terra Luz pins
+1. Select all 12 Casa Moto pins
 2. Click "Schedule" → Content Planner opens
 3. **Auto-Schedule**:
    - Board: "Palm Springs Vacation Rentals"
    - Frequency: 2 pins per day (morning 8am, evening 6pm)
    - Date range: Next 6 days
 4. **Add Pin Descriptions** (use your CSV description column):
-   - Include keywords: "Palm Springs vacation rental," "mid-century modern," "Terra Luz"
-   - Add link: https://indigopalmcollective.com/terra-luz
+   - Include keywords: "Palm Springs vacation rental," "mid-century modern," "Casa Moto"
+   - Add link: https://indigopalmcollective.com/casa-moto
    - Add hashtags: #PalmSprings #MCM #VacationRental #DesertGetaway
 
 **Repeat for remaining properties** (Cozy Cactus, PS Retreat, The Well)
@@ -358,7 +358,7 @@ Canva's guide recommends testing these pin styles:
 **2. Split Layout (50/50)**
 - 50% photo, 50% text/color block
 - Works for: When you have a key benefit to highlight
-- Best for: "5 Reasons to Stay at Terra Luz" style pins
+- Best for: "5 Reasons to Stay at Casa Moto" style pins
 
 **3. Text-Heavy (Informational)**
 - 30% small photo, 70% text list
@@ -386,7 +386,7 @@ Canva's guide recommends testing these pin styles:
 
 **February: "Coachella Prep" (Festival Season)**
 - Headlines: "Your Coachella Home Base," "Festival Recovery Sanctuary"
-- Properties: Focus on Terra Luz (walkable) and Cozy Cactus (group stays)
+- Properties: Focus on Casa Moto (walkable) and Cozy Cactus (group stays)
 - Boards: "Coachella Accommodation," "Festival Travel"
 
 **March: "Spring Desert Blooms"**
@@ -400,7 +400,7 @@ Canva's guide recommends testing these pin styles:
 - Boards: "Stagecoach Vacation Rentals"
 
 **May-August: "Summer Pool Season"**
-- Headlines: "Private Pool Paradise," "Beat the Heat at Terra Luz"
+- Headlines: "Private Pool Paradise," "Beat the Heat at Casa Moto"
 - Properties: All 4, focus on pool/hot tub photos
 - Boards: "Pool Vacation Homes," "Summer Desert Getaways"
 
@@ -411,7 +411,7 @@ Canva's guide recommends testing these pin styles:
 
 **December-January: "Holiday Desert Escapes"**
 - Headlines: "Warm Winter in Palm Springs," "Holiday Home Away"
-- Properties: Terra Luz (festive Cuban vibe), Cozy Cactus (family holidays)
+- Properties: Casa Moto (festive Cuban vibe), Cozy Cactus (family holidays)
 - Boards: "Winter Sun Destinations," "Holiday Vacation Rentals"
 
 ---
@@ -426,16 +426,16 @@ Canva's guide recommends testing these pin styles:
 - Great for tutorials, guides, property tours
 - Average 3x longer dwell time than standard pins
 
-**Example: "Your Terra Luz Stay Guide" Story Pin**
+**Example: "Your Casa Moto Stay Guide" Story Pin**
 
-**Page 1**: Cover - "Your Terra Luz Experience: A Guide"
+**Page 1**: Cover - "Your Casa Moto Experience: A Guide"
 **Page 2**: "Location - 5 Minutes from Downtown PS"
 **Page 3**: "The Space - Mid-Century Meets Cuban Flair"
 **Page 4**: "Indoor/Outdoor Living at Its Finest"
 **Page 5**: "Your Private Pool Sanctuary"
 **Page 6**: "Nearby: Hiking, Dining, Shopping"
 **Page 7**: "Guest Favorites: Sunset Cocktails by the Pool"
-**Page 8**: "Book Your Stay at Terra Luz"
+**Page 8**: "Book Your Stay at Casa Moto"
 
 **How to Automate in Canva**:
 1. Create first page using your master template
@@ -487,7 +487,7 @@ ROI: INFINITE (vs. Google Ads at $50-100 per booking)
 **Phase 1: Setup (Do Once)**
 
 **[ ] 9:00 AM - Create Master Templates (60 min)**
-- Terra Luz template in Canva
+- Casa Moto template in Canva
 - Cozy Cactus template
 - PS Retreat template
 - The Well template
@@ -495,7 +495,7 @@ ROI: INFINITE (vs. Google Ads at $50-100 per booking)
 **[ ] 10:00 AM - Enable Magic Features (10 min)**
 - Add templates to Brand Kit
 - Enable "Brand Template" setting
-- Test Magic Design on Terra Luz template
+- Test Magic Design on Casa Moto template
 
 **[ ] 10:10 AM - Build Bulk Create CSV (30 min)**
 - Create Google Sheet
@@ -514,14 +514,14 @@ ROI: INFINITE (vs. Google Ads at $50-100 per booking)
 ### Phase 2: First Content Batch
 
 **[ ] 11:00 AM - Generate First 12 Pins (10 min)**
-- Open Terra Luz template
+- Open Casa Moto template
 - Change headline to: "Where Mid-Century Modernism Meets Cuban Soul"
 - Click Magic Design
 - Select top 3 variations
 - Manually create 3 more with different photos (pool, interior, exterior)
 
 **[ ] 11:10 AM - Schedule to Pinterest (10 min)**
-- Select all 6 Terra Luz pins
+- Select all 6 Casa Moto pins
 - Content Planner → Schedule
 - Board: "Palm Springs Vacation Rentals"
 - Frequency: 1 pin per day for 6 days
@@ -566,7 +566,7 @@ ROI: INFINITE (vs. Google Ads at $50-100 per booking)
 
 ### 2. **Keywords in File Names**
 - Before uploading to Canva, rename files:
-  - "terra-luz-palm-springs-vacation-rental-pool.jpg"
+  - "casa-moto-palm-springs-vacation-rental-pool.jpg"
   - NOT "IMG_1234.jpg"
 - Pinterest reads file names for SEO
 
@@ -575,7 +575,7 @@ ROI: INFINITE (vs. Google Ads at $50-100 per booking)
 [Emotional Hook] + [Key Features] + [Location] + [Call to Action] + [Hashtags]
 
 Example:
-"Unwind in a Cuban-inspired desert sanctuary. Terra Luz blends 1960s mid-century modernism with vibrant Latin warmth. Private pool, indoor/outdoor living, 5 minutes from downtown Palm Springs. Book your escape at Indigo Palm Collective. #PalmSpringsVacationRental #MCMHome #TerraLuz #DesertGetaway"
+"Unwind in a Cuban-inspired desert sanctuary. Casa Moto blends 1960s mid-century modernism with vibrant Latin warmth. Private pool, indoor/outdoor living, 5 minutes from downtown Palm Springs. Book your escape at Indigo Palm Collective. #PalmSpringsVacationRental #MCMHome #TerraLuz #DesertGetaway"
 ```
 
 ### 4. **Vertical Format ALWAYS Wins**
@@ -605,7 +605,7 @@ Example:
 
 2. **Ignoring keywords**
    - Pinterest is a SEARCH engine
-   - Users search "Palm Springs vacation rental" not "Terra Luz"
+   - Users search "Palm Springs vacation rental" not "Casa Moto"
    - Use keywords in: Pin title, description, board name, file name
 
 3. **Same image, different text**
@@ -635,7 +635,7 @@ Example:
 
 ### Your Key Files:
 - `/Users/etuan/Desktop/Airbnb/indigopalm/GA4_DASHBOARD_GUIDE.md` - Track Pinterest traffic
-- `/Users/etuan/Desktop/Airbnb/Terra Luz_TOJ Branding Guide v1.pdf` - Brand colors, fonts, voice
+- `/Users/etuan/Desktop/Airbnb/Casa Moto_TOJ Branding Guide v1.pdf` - Brand colors, fonts, voice
 - This file - Your Pinterest automation playbook
 
 ### Canva Resources:

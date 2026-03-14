@@ -3,8 +3,8 @@ import fetch from 'node-fetch';
 import ical from 'node-ical';
 
 const PROPERTIES = {
-  'terra-luz': {
-    name: 'Terra Luz (Casa Moto)',
+  'casa-moto': {
+    name: 'Casa Moto (Casa Moto)',
     hostawayId: 123633,
     icalUrl: 'https://www.airbnb.com/calendar/ical/716871660845992276.ics?t=74de1981b38c40fbb8800fb4550371d6'
   },
@@ -139,7 +139,7 @@ async function analyzeOccupancy() {
   console.log('\n💡 Recommendations:');
   console.log('   • Properties with <50% occupancy need immediate attention');
   console.log('   • Properties vacant >14 days should consider price drops');
-  console.log('   • Check if Terra Luz is showing on Airbnb/VRBO correctly');
+  console.log('   • Check if Casa Moto is showing on Airbnb/VRBO correctly');
   console.log('\n');
 }
 

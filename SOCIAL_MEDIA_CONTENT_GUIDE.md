@@ -8,21 +8,21 @@
 
 ### Pinterest Pin Templates
 
-#### **Terra Luz (Cuban-Inspired Sanctuary)**
+#### **Casa Moto (Cuban-Inspired Sanctuary)**
 
 **PIN 1: Pool Photo**
 - **Title**: "Cuban-Inspired Desert Oasis with Private Pool | Palm Springs Vacation Rental"
 - **Description**:
-  "Looking for a vacation rental that feels like a cultural escape? Terra Luz combines Latin warmth with desert tranquility. Private pool with vintage tile details, cocooned outdoor spaces, and thoughtful design throughout. Perfect for groups seeking something beyond generic desert vibes.
+  "Looking for a vacation rental that feels like a cultural escape? Casa Moto combines Latin warmth with desert tranquility. Private pool with vintage tile details, cocooned outdoor spaces, and thoughtful design throughout. Perfect for groups seeking something beyond generic desert vibes.
 
-  Book your stay at Terra Luz →
+  Book your stay at Casa Moto →
 
   #palmsprings #palmspringsvacationrental #desertgetaway #airbnbstyle #vacationrental #poolhouse #latindesign #cubandecor #coachellavalley"
 
 **PIN 2: Interior Detail**
 - **Title**: "Colorful Latin-Inspired Airbnb in the Coachella Valley"
 - **Description**:
-  "Tired of beige Airbnbs? Terra Luz brings vibrant Cuban-inspired design to the desert. Every detail is intentional—from the coffee setup to the cultural touches that make you feel transported. 3BR sanctuary minutes from Palm Springs.
+  "Tired of beige Airbnbs? Casa Moto brings vibrant Cuban-inspired design to the desert. Every detail is intentional—from the coffee setup to the cultural touches that make you feel transported. 3BR sanctuary minutes from Palm Springs.
 
   📍 Indio, CA | Sleeps 8
   ✨ Private pool, full kitchen, blackout curtains
@@ -132,7 +132,7 @@ Most vacation rentals are about cramming in trends.
 
 Ours are about making you feel held.
 
-Terra Luz is Cuban-inspired warmth meets desert tranquility. Private pool with hand-selected tile. Spaces that cocoon you while the desert stretches beyond.
+Casa Moto is Cuban-inspired warmth meets desert tranquility. Private pool with hand-selected tile. Spaces that cocoon you while the desert stretches beyond.
 
 From the coffee ritual to those vintage pool loungers, every choice serves you.
 
@@ -324,7 +324,7 @@ That's Indigo Palm Collective.
 #indigopalmcollective #palmsprings #desertvacation #vacationrental #airbnbdesign
 
 ### Property-Specific Hashtags
-**Terra Luz**: #terraluz #cubandesign #latindesign #poolhouse #desertpool
+**Casa Moto**: #terraluz #cubandesign #latindesign #poolhouse #desertpool
 **The Well**: #thewell #midcenturymodern #desertminimalism #southwesternstyle
 **Cozy Cactus**: #cozycactus #familyvacation #grouptravel #desertfamily
 **PS Retreat**: #psretreat #palmspringsstyle #midcenturyhome #classicpalmsprings
@@ -343,7 +343,7 @@ That's Indigo Palm Collective.
 ## Photo Selection Guide
 
 ### Best Performers on Pinterest:
-1. **Pool shots** (especially with unique details like Terra Luz's vintage lounger/tile)
+1. **Pool shots** (especially with unique details like Casa Moto's vintage lounger/tile)
 2. **Wide living room shots** (showcase full space)
 3. **Bathroom details** (tile work, fixtures)
 4. **Outdoor/patio areas** (lifestyle aspirational)
@@ -366,7 +366,7 @@ That's Indigo Palm Collective.
 - Target keywords: "palm springs vacation rental", "desert airbnb", "coachella rental"
 
 ### Week 1: Instagram
-- Post 1: Terra Luz pool (use Template 1)
+- Post 1: Casa Moto pool (use Template 1)
 - Post 2: The Well living room detail (use Template 2)
 - Post 3: Design philosophy carousel showing all 4 properties (use Template 5)
 

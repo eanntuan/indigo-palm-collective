@@ -1,8 +1,8 @@
-# Casa Moto → Terra Luz Rebrand System
+# Casa Moto → Casa Moto Rebrand System
 
 ## Current Status: Casa Moto (Pre-Renovation)
 
-This system lets you switch all branding from "Casa Moto" to "Terra Luz" in one command when renovations are complete (target: May 2026).
+This system lets you switch all branding from "Casa Moto" to "Casa Moto" in one command when renovations are complete (target: May 2026).
 
 ---
 
@@ -19,8 +19,8 @@ This system lets you switch all branding from "Casa Moto" to "Terra Luz" in one 
 The rebrand script will update:
 
 ### Property Name
-- `Casa Moto` → `Terra Luz`
-- `casa-moto` → `terra-luz`
+- `Casa Moto` → `Casa Moto`
+- `casa-moto` → `casa-moto`
 - `casamoto` → `terraluz`
 
 ### URLs & Links
@@ -28,10 +28,10 @@ The rebrand script will update:
 - File references and internal links
 
 ### Meta Descriptions
-- Current generic copy → Terra Luz brand story (Cuban sanctuary, etc.)
+- Current generic copy → Casa Moto brand story (Cuban sanctuary, etc.)
 
 ### Photo References
-- Current photo paths → New Terra Luz photography
+- Current photo paths → New Casa Moto photography
 
 ---
 
@@ -39,8 +39,8 @@ The rebrand script will update:
 
 ### Step 1: Upload New Photos
 ```bash
-# Create folder for Terra Luz photos
-mkdir -p images/terra-luz/
+# Create folder for Casa Moto photos
+mkdir -p images/casa-moto/
 
 # Upload your new professional photos here:
 # - exterior.jpg
@@ -55,7 +55,7 @@ mkdir -p images/terra-luz/
 ### Step 2: Run the Rebrand Script
 ```bash
 cd /Users/etuan/Desktop/Airbnb/indigopalm
-bash rebrand-to-terra-luz.sh
+bash rebrand-to-casa-moto.sh
 ```
 
 That's it! Script will:
@@ -82,20 +82,20 @@ git push origin main
 Even after the script, you'll need to manually update these external services:
 
 ### Airbnb
-- [ ] Change listing name: Casa Moto → Terra Luz
+- [ ] Change listing name: Casa Moto → Casa Moto
 - [ ] Update listing URL (if needed)
 - [ ] Upload new photos
-- [ ] Update description with Terra Luz brand story
+- [ ] Update description with Casa Moto brand story
 - [ ] Update amenities/features
 
 ### Google Business Profile
-- [ ] Change business name: "Casa Moto" → "Terra Luz - Luxury Vacation Rental"
-- [ ] Upload new Terra Luz photos (10-15)
-- [ ] Update description (use copy from terra-luz-google-copy.txt)
+- [ ] Change business name: "Casa Moto" → "Casa Moto - Luxury Vacation Rental"
+- [ ] Upload new Casa Moto photos (10-15)
+- [ ] Update description (use copy from casa-moto-google-copy.txt)
 
 ### Google Ads
 - [ ] Pause old Casa Moto campaign
-- [ ] Create new Terra Luz campaign with updated headlines
+- [ ] Create new Casa Moto campaign with updated headlines
 - [ ] Update ad copy with new brand story
 
 ### Google Analytics
@@ -108,11 +108,11 @@ Even after the script, you'll need to manually update these external services:
 
 ---
 
-## 🎨 Terra Luz Brand Assets (Ready to Deploy)
+## 🎨 Casa Moto Brand Assets (Ready to Deploy)
 
-All Terra Luz branded content is saved in:
-- `/indigopalm/terra-luz-google-copy.txt` - Google Business Profile copy
-- `/indigopalm/terra-luz.html` - Property page (needs photo updates)
+All Casa Moto branded content is saved in:
+- `/indigopalm/casa-moto-google-copy.txt` - Google Business Profile copy
+- `/indigopalm/casa-moto.html` - Property page (needs photo updates)
 - `/indigopalm/REBRAND_SUMMARY.md` - Full brand guidelines
 
 ---
@@ -133,7 +133,7 @@ All Terra Luz branded content is saved in:
 - Renovations complete
 - Professional photos done
 - Run rebrand script
-- Launch Terra Luz brand
+- Launch Casa Moto brand
 - Run Google Ads with new branding
 
 ---
@@ -142,21 +142,21 @@ All Terra Luz branded content is saved in:
 
 1. **Test First**: Run script on a test branch
    ```bash
-   git checkout -b terra-luz-rebrand-test
-   bash rebrand-to-terra-luz.sh
+   git checkout -b casa-moto-rebrand-test
+   bash rebrand-to-casa-moto.sh
    # Review changes, then merge if good
    ```
 
 2. **Backup Before Running**:
    ```bash
    git add -A
-   git commit -m "Backup before Terra Luz rebrand"
+   git commit -m "Backup before Casa Moto rebrand"
    ```
 
 3. **Coordinate Airbnb Update**: Change Airbnb listing name on the SAME day you deploy website changes for consistency
 
 4. **Grand Reopening Campaign**: Consider running special launch promotion:
-   - "Newly Renovated Terra Luz - Grand Opening Special"
+   - "Newly Renovated Casa Moto - Grand Opening Special"
    - 15% off first bookings
    - Heavy Google Ads spend for launch week
 
@@ -164,10 +164,10 @@ All Terra Luz branded content is saved in:
 
 ## 📞 Questions Before Running Script?
 
-- Which Airbnb URL will Terra Luz use?
+- Which Airbnb URL will Casa Moto use?
 - Do you want to keep casa-moto.html as a redirect?
 - Should old Casa Moto bookings still see Casa Moto branding?
 
 ---
 
-**Next**: I'll create the actual `rebrand-to-terra-luz.sh` script that does all the find/replace magic.
+**Next**: I'll create the actual `rebrand-to-casa-moto.sh` script that does all the find/replace magic.

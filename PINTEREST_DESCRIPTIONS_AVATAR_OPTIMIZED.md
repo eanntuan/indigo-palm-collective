@@ -8,17 +8,17 @@ Each description now speaks directly to a specific guest avatar's pain points, l
 
 ---
 
-# TERRA LUZ - Pins
+# CASA MOTO - Pins
 
 ## PIN 1: Pool with Yellow Lounger
 **Avatar Target:** The Culture Seeker (Primary, 40%)
-**Photo:** `/Users/etuan/Desktop/Airbnb/indigopalm/Terra Luz/Existing Listing Pictures/IMG_1230.JPG`
+**Photo:** `/Users/etuan/Desktop/Airbnb/indigopalm/Casa Moto/Existing Listing Pictures/IMG_1230.JPG`
 
 ### Title:
-**Cuban-Inspired Desert Sanctuary | Terra Luz Palm Springs**
+**Cuban-Inspired Desert Sanctuary | Casa Moto Palm Springs**
 
 ### Description:
-Tired of generic desert rentals that all look the same? Terra Luz doesn't.
+Tired of generic desert rentals that all look the same? Casa Moto doesn't.
 
 This is where Cuban warmth meets desert cool. Vintage yellow lounger. Pom-pom umbrella. Hand-selected tile that tells a story. Private pool designed to transport you, not just refresh you.
 
@@ -36,13 +36,13 @@ Cuban inspired Palm Springs rental, authentic Latin design Airbnb, colorful dese
 
 ## PIN 2: Pool with Heart Detail
 **Avatar Target:** The Culture Seeker (Primary, 40%)
-**Photo:** `/Users/etuan/Desktop/Airbnb/indigopalm/Terra Luz/Existing Listing Pictures/IMG_1239.JPG`
+**Photo:** `/Users/etuan/Desktop/Airbnb/indigopalm/Casa Moto/Existing Listing Pictures/IMG_1239.JPG`
 
 ### Title:
-**A Desert Airbnb for Travelers Tired of Generic | Terra Luz**
+**A Desert Airbnb for Travelers Tired of Generic | Casa Moto**
 
 ### Description:
-Most vacation rentals are decorated. Terra Luz is curated.
+Most vacation rentals are decorated. Casa Moto is curated.
 
 Hand-carved heart details on the fence. Mosaic tile work you won't see anywhere else. Design choices that honor Latin roots, not Pinterest trends. Spaces that cocoon you in warmth while the desert stretches beyond.
 
@@ -60,15 +60,15 @@ Authentic cultural getaway, Latin soul vacation rental, hand-carved design detai
 
 ## PIN 3: Kitchen Detail (Magnolia Table)
 **Avatar Target:** The Design Enthusiast (Tertiary, 20%)
-**Photo:** `/Users/etuan/Desktop/Airbnb/indigopalm/Terra Luz/Existing Listing Pictures/IMG_1347.JPG`
+**Photo:** `/Users/etuan/Desktop/Airbnb/indigopalm/Casa Moto/Existing Listing Pictures/IMG_1347.JPG`
 
 ### Title:
-**Where Every Detail is Intentional | Terra Luz Design**
+**Where Every Detail is Intentional | Casa Moto Design**
 
 ### Description:
 Magnolia Table on the counter. Hand-selected ceramics that feel good in your hands. Geometric tile chosen for a reason.
 
-Terra Luz isn't decorated—it's designed. Every choice serves you. The books you'll actually read. The dishes that photograph beautifully but function better. The colors that warm rather than trend.
+Casa Moto isn't decorated—it's designed. Every choice serves you. The books you'll actually read. The dishes that photograph beautifully but function better. The colors that warm rather than trend.
 
 For design lovers who notice grout color. For travelers who can't relax in thoughtlessly furnished spaces. For anyone who values craft over catalog.
 
@@ -298,7 +298,7 @@ Mid-century modern architecture Palm Springs, design hotel alternative, architec
 
 ## Avatar Mapping Summary:
 
-**TERRA LUZ:**
+**CASA MOTO:**
 - Pins 1-2: Culture Seeker (exhausted by generic, wants authenticity)
 - Pin 3: Design Enthusiast (notices every detail)
 

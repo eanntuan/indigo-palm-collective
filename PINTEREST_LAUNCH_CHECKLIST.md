@@ -11,10 +11,10 @@
 
 **Open Canva** → Search "Pinterest Pin" → Blank canvas (1000x1500px)
 
-**Terra Luz Template**:
+**Casa Moto Template**:
 
 1. **Background**:
-   - Top section: Upload your best Terra Luz exterior/pool photo
+   - Top section: Upload your best Casa Moto exterior/pool photo
    - Drag to cover top 60% of canvas
    - Bottom 40%: Rectangle shape, fill with #B67550 (Sunbaked Terracotta)
 
@@ -24,7 +24,7 @@
      - Color: White
      - Position: On terracotta background, top of that section
 
-   - Property name: Type "Terra Luz"
+   - Property name: Type "Casa Moto"
      - Font: Cormorant Garamond, Regular, 48pt
      - Color: White
      - Position: Below headline
@@ -49,7 +49,7 @@
 4. **Save**:
    - Click "Share" → "Template link"
    - Enable "Allow viewers to edit and duplicate"
-   - Name it: "Terra Luz - Pinterest Master"
+   - Name it: "Casa Moto - Pinterest Master"
 
 ---
 
@@ -58,7 +58,7 @@
 1. Go to: https://www.canva.com/brand/kAHBm2QnWTk
 2. Click "Templates" tab
 3. Click "Add new template"
-4. Select the Terra Luz template you just created
+4. Select the Casa Moto template you just created
 5. Toggle "Brand Template" ON (this enables Magic features)
 6. Save
 
@@ -87,7 +87,7 @@
 
 1. **"Palm Springs Vacation Rentals"**
    - Description: "Unique vacation rentals in Palm Springs, CA. Mid-century modern homes, family properties, wellness retreats, and festival accommodations."
-   - Cover: Choose your best Terra Luz photo
+   - Cover: Choose your best Casa Moto photo
 
 2. **"Mid-Century Modern Homes"**
    - Description: "Authentic MCM architecture and design inspiration from Palm Springs. Desert modernism at its finest."
@@ -126,7 +126,7 @@
 
 1. In Canva, click "Uploads" in left sidebar
 2. Create folders:
-   - "Terra Luz Photos"
+   - "Casa Moto Photos"
    - "Cozy Cactus Photos"
    - "PS Retreat Photos"
    - "The Well Photos"
@@ -138,7 +138,7 @@
    - Detail shots (unique features)
 
 **Photo Tips**:
-- Rename files BEFORE uploading: "terra-luz-pool-palm-springs.jpg"
+- Rename files BEFORE uploading: "casa-moto-pool-palm-springs.jpg"
 - Minimum 1000px wide for quality
 - Vertical orientation preferred (but not required)
 
@@ -148,7 +148,7 @@
 
 ### Step 7: Use Magic Design (15 min)
 
-1. **Open your Terra Luz template** in Canva
+1. **Open your Casa Moto template** in Canva
 2. Replace "{{headline}}" with: "Where Mid-Century Modernism Meets Cuban Soul"
 3. Click "Design" in left sidebar
 4. Click "Magic Design"
@@ -166,7 +166,7 @@
 
 **For each of the 6 pins**:
 
-1. Swap the photo (use different Terra Luz images for variety)
+1. Swap the photo (use different Casa Moto images for variety)
    - Pin 1: Exterior hero
    - Pin 2: Pool view
    - Pin 3: Interior living space
@@ -196,11 +196,11 @@ Book at Indigo Palm Collective: [your website link]
 #PalmSprings #VacationRental #MidCenturyModern #TerraLuz #DesertGetaway #MCMHome #PalmSpringsCA #CoachellaNearby #CaliforniaTravel #DesignLovers
 ```
 
-**Example for Terra Luz**:
+**Example for Casa Moto**:
 ```
-Unwind in a Cuban-inspired desert sanctuary where 1960s MCM architecture meets vibrant Latin interiors. Terra Luz offers private pool, indoor-outdoor living, and cocooned calm just 5 minutes from downtown Palm Springs. Your sensory escape awaits.
+Unwind in a Cuban-inspired desert sanctuary where 1960s MCM architecture meets vibrant Latin interiors. Casa Moto offers private pool, indoor-outdoor living, and cocooned calm just 5 minutes from downtown Palm Springs. Your sensory escape awaits.
 
-Book at Indigo Palm Collective: https://indigopalmcollective.com/terra-luz
+Book at Indigo Palm Collective: https://indigopalmcollective.com/casa-moto
 
 #PalmSprings #VacationRental #MidCenturyModern #TerraLuz #DesertGetaway #MCMHome #PalmSpringsCA #CoachellaNearby #CaliforniaTravel #DesignLovers
 ```
@@ -215,7 +215,7 @@ Book at Indigo Palm Collective: https://indigopalmcollective.com/terra-luz
 
 **In Canva**:
 
-1. Select all 6 Terra Luz pins (click checkboxes)
+1. Select all 6 Casa Moto pins (click checkboxes)
 2. Click "Schedule" button (top right)
 3. Content Planner opens
 4. **Set posting schedule**:
@@ -236,7 +236,7 @@ Book at Indigo Palm Collective: https://indigopalmcollective.com/terra-luz
 **Now that you have the process down**, create 6 pins each for:
 
 **Cozy Cactus** (15 min):
-- Open Terra Luz template
+- Open Casa Moto template
 - Change colors: Terracotta → Desert Marigold (#FEAD26), adjust text to dark gray
 - Change photos to Cozy Cactus
 - Update property name to "The Cozy Cactus"
@@ -319,7 +319,7 @@ Book at Indigo Palm Collective: https://indigopalmcollective.com/terra-luz
 
 **After 2 hours of work today, you should have**:
 
-- [✅] Terra Luz master template created in Canva
+- [✅] Casa Moto master template created in Canva
 - [✅] Template added to Brand Kit with "Brand Template" enabled
 - [✅] Pinterest Business account connected to Canva Content Planner
 - [✅] 6 Pinterest boards created with keyword-rich names
@@ -330,7 +330,7 @@ Book at Indigo Palm Collective: https://indigopalmcollective.com/terra-luz
 
 **What Happens Next**:
 
-- **Tomorrow (Feb 25)**: First Terra Luz pin goes live at 8am
+- **Tomorrow (Feb 25)**: First Casa Moto pin goes live at 8am
 - **Next 24 Days**: 1 pin publishes automatically each day
 - **Day 7**: Check Pinterest Analytics for early signals
 - **Day 14**: Check GA4 for website traffic from Pinterest
@@ -346,18 +346,18 @@ Book at Indigo Palm Collective: https://indigopalmcollective.com/terra-luz
 
 **Story Pins = Higher Engagement** (3x more saves than regular pins)
 
-**"Your Terra Luz Experience" Story Pin**:
+**"Your Casa Moto Experience" Story Pin**:
 
 1. In Canva, search "Pinterest Story"
 2. Create 8-page swipe-through:
-   - Page 1: Cover - "Your Terra Luz Experience"
+   - Page 1: Cover - "Your Casa Moto Experience"
    - Page 2: "Location - 5 Min from Downtown PS"
    - Page 3: "Mid-Century Meets Cuban Flair"
    - Page 4: "Your Private Pool Sanctuary"
    - Page 5: "Indoor-Outdoor Living Perfected"
    - Page 6: "Nearby: Hiking, Dining, Art"
    - Page 7: "Guest Favorites: Sunset Cocktails"
-   - Page 8: "Book Your Stay at Terra Luz"
+   - Page 8: "Book Your Stay at Casa Moto"
 
 3. Use consistent branding (terracotta color, brand fonts)
 4. Publish directly to "Palm Springs Vacation Rentals" board
@@ -373,9 +373,9 @@ Book at Indigo Palm Collective: https://indigopalmcollective.com/terra-luz
 1. Open `/Users/etuan/Desktop/Airbnb/indigopalm/pinterest_bulk_create.csv`
 2. In Canva → Apps → Bulk Create
 3. Upload CSV
-4. Select Terra Luz master template
+4. Select Casa Moto master template
 5. Map "headline" column to {{headline}} field
-6. Generate → Canva creates 12 unique Terra Luz pins instantly
+6. Generate → Canva creates 12 unique Casa Moto pins instantly
 
 **Result**: 12 more pins in 5 minutes vs 60 minutes manually.
 

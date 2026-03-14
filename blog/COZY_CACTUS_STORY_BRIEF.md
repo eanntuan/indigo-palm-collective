@@ -172,4 +172,4 @@ Ready to actually rest with your family? Book The Cozy Cactus.
 - Keep it grounded and honest
 - This is the origin story of your FIRST property, so it's also the origin of your hosting philosophy
 
-**Remember:** The Cozy Cactus is fully operational with real photos and guest reviews. Terra Luz is NOT ready yet (still in renovation), so don't reference it.
+**Remember:** The Cozy Cactus is fully operational with real photos and guest reviews. Casa Moto is NOT ready yet (still in renovation), so don't reference it.

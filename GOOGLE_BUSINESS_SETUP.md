@@ -3,16 +3,16 @@
 ## Why This Helps
 When someone Googles "vacation rental Indio" or "Airbnb near Coachella," your property can appear in Google Maps and search results - completely independent of Airbnb's algorithm.
 
-## Terra Luz - Priority Setup
+## Casa Moto - Priority Setup
 
 ### Step 1: Create/Claim Your Listing
 
 1. Go to: https://business.google.com
 2. Click **Add your business**
-3. Enter business name: **Terra Luz - Luxury Vacation Rental**
+3. Enter business name: **Casa Moto - Luxury Vacation Rental**
 4. Choose category: **Vacation home rental** (primary)
    - Add secondary: **Holiday accommodation service**
-5. Enter address: [Your Terra Luz property address]
+5. Enter address: [Your Casa Moto property address]
 6. Check: "Yes, I provide goods and services to customers at this address"
 
 ### Step 2: Verify Ownership
@@ -28,12 +28,12 @@ Google will offer verification methods:
 ### Step 3: Complete Your Profile (Critical for Visibility)
 
 #### Business Information
-- **Business name**: Terra Luz - Luxury Vacation Rental
+- **Business name**: Casa Moto - Luxury Vacation Rental
 - **Category**: Vacation home rental
 - **Address**: [Full property address]
 - **Service area**: Indio, Coachella Valley, Palm Springs area
 - **Phone**: Your booking inquiry number
-- **Website**: https://indigopalm.co/terra-luz.html
+- **Website**: https://indigopalm.co/casa-moto.html
 
 #### Business Hours
 Since you're 24/7 bookable online:
@@ -76,7 +76,7 @@ Google prioritizes businesses with quality photos. Upload:
 ### Step 5: Write Your Description (350 characters max)
 
 ```
-Terra Luz is a cocooned sanctuary blending Cuban soul with desert modernism.
+Casa Moto is a cocooned sanctuary blending Cuban soul with desert modernism.
 Private heated pool, 3BR/2BA, chef's kitchen, and vibrant outdoor spaces
 perfect for Coachella, Stagecoach, and desert getaways. Walking distance to
 Old Town La Quinta dining. Book direct at indigopalm.co
@@ -112,7 +112,7 @@ Turn on Google Messages so potential guests can:
 
 Ask past 5-star Airbnb guests:
 ```
-"Hi [Name]! So glad you enjoyed Terra Luz. Would you mind
+"Hi [Name]! So glad you enjoyed Casa Moto. Would you mind
 leaving a quick Google review? It really helps us as a
 small business: [your Google Business link]
 
@@ -126,7 +126,7 @@ Thank you! 🌴"
 Once verified:
 1. Go to profile dashboard
 2. Click "Info" > "Add booking link"
-3. Enter: https://indigopalm.co/terra-luz.html
+3. Enter: https://indigopalm.co/casa-moto.html
 4. This creates a "Book" button on your listing
 
 ### Step 10: Add Q&A
@@ -170,7 +170,7 @@ Check weekly:
 
 ## Repeat for Other Properties
 
-Once Terra Luz is verified, create profiles for:
+Once Casa Moto is verified, create profiles for:
 
 1. **The Cozy Cactus** (70% occupancy - already doing well, boost it more)
 2. **PS Retreat** (60% occupancy - needs help)

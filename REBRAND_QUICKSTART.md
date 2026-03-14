@@ -1,9 +1,9 @@
-# Terra Luz Rebrand - Quick Start Guide
+# Casa Moto Rebrand - Quick Start Guide
 
 ## 🎯 Current Status (February 2026)
 
 **Active Brand:** Casa Moto
-**Future Brand:** Terra Luz (after renovations, ~May 2026)
+**Future Brand:** Casa Moto (after renovations, ~May 2026)
 **Rebrand Ready:** ✅ One-command switch when you're ready
 
 ---
@@ -13,7 +13,7 @@
 ```
 NOW (Feb 2026)          MAY 2026              FUTURE
      │                      │                    │
- Casa Moto         Terra Luz Launch      Terra Luz Growth
+ Casa Moto         Casa Moto Launch      Casa Moto Growth
      │                      │                    │
      ├─ Shopping            ├─ Renovations done  ├─ Bookings flowing
      ├─ Planning            ├─ Photos done       ├─ Reviews building
@@ -35,7 +35,7 @@ NOW (Feb 2026)          MAY 2026              FUTURE
 ### Step 2: Run One Command
 ```bash
 cd /Users/etuan/Desktop/Airbnb/indigopalm
-bash rebrand-to-terra-luz.sh
+bash rebrand-to-casa-moto.sh
 ```
 
 That's it! The script will:
@@ -56,10 +56,10 @@ That's it! The script will:
 
 ## 📋 What Changes
 
-| Current (Casa Moto) | Future (Terra Luz) |
+| Current (Casa Moto) | Future (Casa Moto) |
 |---------------------|-------------------|
-| Casa Moto listing | Terra Luz - Cuban Sanctuary |
-| Generic Airbnb photos | Professional Terra Luz photography |
+| Casa Moto listing | Casa Moto - Cuban Sanctuary |
+| Generic Airbnb photos | Professional Casa Moto photography |
 | airbnb.com/h/casamoto | airbnb.com/h/terraluz |
 | Basic description | "Cocooned sanctuary with Cuban soul" |
 | Standard pricing | Premium pricing ($275-400/night) |
@@ -68,7 +68,7 @@ That's it! The script will:
 
 ## 💡 Why Wait Until May?
 
-**DON'T advertise Terra Luz now because:**
+**DON'T advertise Casa Moto now because:**
 - ❌ Current photos don't match brand promise
 - ❌ Guest expectations won't match reality
 - ❌ Can't charge premium pricing yet
@@ -86,7 +86,7 @@ That's it! The script will:
 
 ## 🎨 What You're Building Toward
 
-**Terra Luz Brand Promise:**
+**Casa Moto Brand Promise:**
 > "A cocooned sanctuary blending Cuban soul with desert modernism.
 > Frida Kahlo blue pool, terracotta courtyard, vibrant design that
 > restores and reenergizes."
@@ -109,19 +109,19 @@ That's it! The script will:
 ## 📦 Files Ready to Deploy
 
 Everything's already prepared:
-- ✅ `rebrand-to-terra-luz.sh` - One-command rebrand
-- ✅ `terra-luz-google-copy.txt` - Google Business Profile copy
-- ✅ `terra-luz.html` - Property page (needs photo updates)
+- ✅ `rebrand-to-casa-moto.sh` - One-command rebrand
+- ✅ `casa-moto-google-copy.txt` - Google Business Profile copy
+- ✅ `casa-moto.html` - Property page (needs photo updates)
 - ✅ `REBRAND_SYSTEM.md` - Full documentation
-- ✅ `booking-config.js` - Already configured as 'terra-luz'
+- ✅ `booking-config.js` - Already configured as 'casa-moto'
 
 ---
 
 ## ⚠️ Don't Forget
 
 Before running rebrand:
-1. **Update Airbnb URL** - Get the new terra-luz URL from Airbnb
-2. **Upload photos** - Put new photos in `/images/terra-luz/`
+1. **Update Airbnb URL** - Get the new casa-moto URL from Airbnb
+2. **Upload photos** - Put new photos in `/images/casa-moto/`
 3. **Test locally** - Review changes before pushing live
 4. **Coordinate timing** - Update all platforms same day
 
@@ -131,7 +131,7 @@ Before running rebrand:
 
 **For Casa Moto:**
 - Keep using current name/branding
-- Don't advertise heavily (save budget for Terra Luz launch)
+- Don't advertise heavily (save budget for Casa Moto launch)
 - Maintain property, get reviews
 - Use Google Business Profile (free visibility)
 
@@ -150,8 +150,8 @@ A: Only if renovations + photos are done. Brand promise must match reality.
 **Q: What if I want to test the rebrand first?**
 A: Run on a test branch:
 ```bash
-git checkout -b test-terra-luz
-bash rebrand-to-terra-luz.sh
+git checkout -b test-casa-moto
+bash rebrand-to-casa-moto.sh
 # Review, then delete branch or merge
 ```
 
@@ -166,4 +166,4 @@ A: Website changes are instant. Airbnb listing keeps existing reservations under
 
 ---
 
-**Bottom line:** You're set up for a seamless rebrand when renovations are done. One command, 15 minutes, and Terra Luz is live. Until then, keep building with Casa Moto.
+**Bottom line:** You're set up for a seamless rebrand when renovations are done. One command, 15 minutes, and Casa Moto is live. Until then, keep building with Casa Moto.

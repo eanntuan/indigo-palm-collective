@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # ════════════════════════════════════════════════════════════════════
-# Casa Moto → Terra Luz Rebrand Script
+# Casa Moto → Casa Moto Rebrand Script
 # Run this when renovations are complete and you're ready to rebrand
 # ════════════════════════════════════════════════════════════════════
 
 set -e  # Exit on any error
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "🎨 CASA MOTO → TERRA LUZ REBRAND"
+echo "🎨 CASA MOTO → CASA MOTO REBRAND"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
 
@@ -44,7 +44,7 @@ echo ""
 # Step 2: Confirmation
 # ════════════════════════════════════════════════════════════════════
 
-echo "⚠️  This script will change all instances of 'Casa Moto' to 'Terra Luz'"
+echo "⚠️  This script will change all instances of 'Casa Moto' to 'Casa Moto'"
 echo ""
 echo "📋 Changes will include:"
 echo "   • Website copy (index.html, property pages)"
@@ -92,12 +92,12 @@ CHANGES=0
 
 # Property name variations
 declare -A REPLACEMENTS=(
-    ["Casa Moto"]="Terra Luz"
-    ["casa-moto"]="terra-luz"
+    ["Casa Moto"]="Casa Moto"
+    ["casa-moto"]="casa-moto"
     ["casa_moto"]="terra_luz"
     ["casamoto"]="terraluz"
-    ["CASA MOTO"]="TERRA LUZ"
-    ["Casa Moto ("]="Terra Luz ("
+    ["CASA MOTO"]="CASA MOTO"
+    ["Casa Moto ("]="Casa Moto ("
 )
 
 # Perform replacements
@@ -124,7 +124,7 @@ echo ""
 
 echo "📝 Updating brand-specific descriptions..."
 
-# Update meta description in terra-luz.html to use full Terra Luz brand story
+# Update meta description in casa-moto.html to use full Casa Moto brand story
 # (This would need the actual new description copy)
 
 echo "✅ Brand descriptions updated"
@@ -157,18 +157,18 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
     echo ""
     echo "⚠️  Changes NOT committed. Your files are updated but not committed."
     echo "   To undo: git checkout ."
-    echo "   To commit later: git add -A && git commit -m 'Rebrand to Terra Luz'"
+    echo "   To commit later: git add -A && git commit -m 'Rebrand to Casa Moto'"
     exit 0
 fi
 
 # Commit changes
 git add -A
-git commit -m "Rebrand Casa Moto to Terra Luz
+git commit -m "Rebrand Casa Moto to Casa Moto
 
 - Updated all property name references
-- Changed casa-moto to terra-luz in URLs and file names
+- Changed casa-moto to casa-moto in URLs and file names
 - Updated brand copy and descriptions
-- Ready for Terra Luz launch (May 2026)
+- Ready for Casa Moto launch (May 2026)
 
 Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
 
@@ -188,7 +188,7 @@ echo "📋 NEXT STEPS:"
 echo ""
 echo "1. Review Changes Locally"
 echo "   • Open index.html in browser"
-echo "   • Check terra-luz.html page"
+echo "   • Check casa-moto.html page"
 echo "   • Verify all links work"
 echo ""
 echo "2. Push to Production (when ready)"
@@ -196,19 +196,19 @@ echo "   git push origin main"
 echo ""
 echo "3. Update External Services"
 echo "   📱 Airbnb: Change listing name + photos"
-echo "   🗺️  Google Business: Update to 'Terra Luz'"
-echo "   📊 Google Ads: Create new Terra Luz campaign"
+echo "   🗺️  Google Business: Update to 'Casa Moto'"
+echo "   📊 Google Ads: Create new Casa Moto campaign"
 echo ""
 echo "4. Upload New Photos"
-echo "   • Replace images in /images/terra-luz/"
-echo "   • Update terra-luz.html image references"
+echo "   • Replace images in /images/casa-moto/"
+echo "   • Update casa-moto.html image references"
 echo ""
 echo "5. Grand Opening Campaign"
-echo "   • Run Google Ads with Terra Luz branding"
+echo "   • Run Google Ads with Casa Moto branding"
 echo "   • Announce on newsletter"
 echo "   • Share on social media"
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
-echo "✨ Welcome to Terra Luz! ✨"
+echo "✨ Welcome to Casa Moto! ✨"
 echo ""

@@ -17,7 +17,7 @@ When creating marketing content (listings, social posts, emails, Pinterest), ask
 
 ---
 
-# TERRA LUZ - Guest Avatars
+# CASA MOTO - Guest Avatars
 
 ## Primary Avatar: **The Culture Seeker** (40% of bookings)
 
@@ -599,7 +599,7 @@ When creating marketing content (listings, social posts, emails, Pinterest), ask
 - **Friend Groups:** Per-person math matters, show value when split
 
 ## For Amenity Priorities
-- **Terra Luz:** Invest in unique pool details, curated design pieces
+- **Casa Moto:** Invest in unique pool details, curated design pieces
 - **Cozy Cactus:** Invest in family systems (labels, kid gear, organization)
 - **The Well:** Invest in quality minimalist pieces, natural materials
 - **PS Retreat:** Invest in authentic MCM pieces, period-appropriate details

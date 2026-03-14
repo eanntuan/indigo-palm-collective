@@ -1,4 +1,4 @@
-# Terra Luz Google Business Descriptions
+# Casa Moto Google Business Descriptions
 
 ## Version 1: SEO-Optimized (Best for Search Ranking)
 **Focus**: Keywords people actually search for
@@ -27,7 +27,7 @@ Luxury vacation rental in Indio with heated pool, 3BR/2BA, sleeps 6. Perfect for
 **Focus**: Paint the experience, inspire booking
 
 ```
-Escape to Terra Luz—a Cuban-soul sanctuary where vibrant color meets desert calm. Private heated pool, 3 bedrooms, chef's kitchen. Minutes from Coachella & Stagecoach, steps from Old Town La Quinta. Your cocooned oasis awaits. Book: indigopalm.co
+Escape to Casa Moto—a Cuban-soul sanctuary where vibrant color meets desert calm. Private heated pool, 3 bedrooms, chef's kitchen. Minutes from Coachella & Stagecoach, steps from Old Town La Quinta. Your cocooned oasis awaits. Book: indigopalm.co
 ```
 
 **Character count**: 269/350 ✅
@@ -46,7 +46,7 @@ Escape to Terra Luz—a Cuban-soul sanctuary where vibrant color meets desert ca
 **Focus**: Capture festival traffic (your highest revenue dates)
 
 ```
-Your Coachella & Stagecoach home base. Terra Luz vacation rental: 15 mins from festival grounds, private heated pool, 3BR/2BA sleeps 6. Recharge between sets in this Cuban-inspired desert retreat. Full kitchen, outdoor living. Book direct: indigopalm.co
+Your Coachella & Stagecoach home base. Casa Moto vacation rental: 15 mins from festival grounds, private heated pool, 3BR/2BA sleeps 6. Recharge between sets in this Cuban-inspired desert retreat. Full kitchen, outdoor living. Book direct: indigopalm.co
 ```
 
 **Character count**: 281/350 ✅
@@ -85,7 +85,7 @@ Luxury vacation rental in Indio with heated pool & Cuban soul. 3BR/2BA, sleeps 6
 **Focus**: What guests get, not what you have
 
 ```
-Sleep 6 in style at Terra Luz. Heated pool, full kitchen, 3 private bedrooms—everything you need for your Coachella weekend or desert escape. Cuban-inspired design, outdoor living, walking distance to Old Town La Quinta. Book direct & save: indigopalm.co
+Sleep 6 in style at Casa Moto. Heated pool, full kitchen, 3 private bedrooms—everything you need for your Coachella weekend or desert escape. Cuban-inspired design, outdoor living, walking distance to Old Town La Quinta. Book direct & save: indigopalm.co
 ```
 
 **Character count**: 282/350 ✅

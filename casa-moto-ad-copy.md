@@ -1,7 +1,7 @@
 # Casa Moto Google Ads Copy
 
 **Status:** Active (February 2026 - May 2026)
-**Property:** Casa Moto (will rebrand to Terra Luz after renovations)
+**Property:** Casa Moto (will rebrand to Casa Moto after renovations)
 **Target:** Mid-week stays, remote workers, off-season travelers
 
 ---
@@ -159,7 +159,7 @@ Track these as conversions:
 ## 🚀 Launch Checklist
 
 Before activating campaign:
-- [ ] Website shows "Casa Moto" (not Terra Luz) ✅
+- [ ] Website shows "Casa Moto" (not Casa Moto) ✅
 - [ ] Photos match current property state ✅
 - [ ] casa-moto.html page is live ✅
 - [ ] Newsletter signup working
@@ -179,20 +179,20 @@ Before activating campaign:
 
 ---
 
-## ⏰ When to Switch to Terra Luz
+## ⏰ When to Switch to Casa Moto
 
 **Pause Casa Moto campaign when:**
 - Renovations begin
 - Property not available for bookings
 - Photos no longer match reality
 
-**Launch Terra Luz campaign when:**
+**Launch Casa Moto campaign when:**
 - Renovations complete (~May 2026)
 - Professional photos done
 - Airbnb listing updated
-- Website rebranded (run `bash rebrand-to-terra-luz.sh`)
+- Website rebranded (run `bash rebrand-to-casa-moto.sh`)
 
-**Terra Luz launch strategy:**
+**Casa Moto launch strategy:**
 - Run as "Grand Reopening"
 - Higher budget ($40-50/day first week)
 - Premium pricing ($275-400/night)

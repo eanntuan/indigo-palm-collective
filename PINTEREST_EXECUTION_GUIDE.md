@@ -2,18 +2,18 @@
 
 ## Your 12 Photos (Copy these exact file paths)
 
-### **TERRA LUZ (3 pins)**
+### **CASA MOTO (3 pins)**
 
 **Pin 1: Pool with Yellow Lounger**
-- File: `/Users/etuan/Desktop/Airbnb/indigopalm/Terra Luz/Existing Listing Pictures/IMG_1230.JPG`
+- File: `/Users/etuan/Desktop/Airbnb/indigopalm/Casa Moto/Existing Listing Pictures/IMG_1230.JPG`
 - Why: Vintage yellow lounger + pom-pom umbrella + gorgeous tile = instant scroll-stopper
 
 **Pin 2: Pool with Heart Detail**
-- File: `/Users/etuan/Desktop/Airbnb/indigopalm/Terra Luz/Existing Listing Pictures/IMG_1239.JPG`
+- File: `/Users/etuan/Desktop/Airbnb/indigopalm/Casa Moto/Existing Listing Pictures/IMG_1239.JPG`
 - Why: Heart on fence is unique + shows personality + pool tile detail visible
 
 **Pin 3: Kitchen Detail (Magnolia Table)**
-- File: `/Users/etuan/Desktop/Airbnb/indigopalm/Terra Luz/Existing Listing Pictures/IMG_1347.JPG`
+- File: `/Users/etuan/Desktop/Airbnb/indigopalm/Casa Moto/Existing Listing Pictures/IMG_1347.JPG`
 - Why: Close-up design detail shows curation + "Magnolia Table" book visible = aspirational
 
 ---
@@ -68,7 +68,7 @@
 
 ## Your 4 Signature Taglines
 
-**TERRA LUZ:** "Where Cuban warmth meets desert cool"
+**CASA MOTO:** "Where Cuban warmth meets desert cool"
 
 **THE WELL:** "Where minimalism feels like a hug"
 
@@ -137,7 +137,7 @@
 │                         │
 │                         │
 │  ┌─────────────────┐   │
-│  │  TERRA LUZ      │   │  ← White text, Montserrat Bold 60pt
+│  │  CASA MOTO      │   │  ← White text, Montserrat Bold 60pt
 │  │                 │   │
 │  │ where Cuban     │   │  ← White text, Lora Regular 24pt
 │  │ warmth meets    │   │
@@ -159,17 +159,17 @@
 
 ## Complete Pinterest Descriptions (Copy-Paste Ready)
 
-### **TERRA LUZ PIN 1: Pool with Yellow Lounger**
+### **CASA MOTO PIN 1: Pool with Yellow Lounger**
 
 **Title:**
-Cuban-Inspired Desert Oasis with Private Pool | Terra Luz Palm Springs
+Cuban-Inspired Desert Oasis with Private Pool | Casa Moto Palm Springs
 
 **Description:**
 Wake up to vintage pool vibes and Latin warmth in the desert. 🌴✨
 
-Stay at Terra Luz, a Cuban-inspired sanctuary in Indio, California where colorful tile details meet cocooned outdoor spaces. Private pool with hand-selected vintage loungers, pom-pom umbrellas, and design that transports you beyond the desert. Perfect for groups, culture lovers, and travelers tired of generic beige Airbnbs.
+Stay at Casa Moto, a Cuban-inspired sanctuary in Indio, California where colorful tile details meet cocooned outdoor spaces. Private pool with hand-selected vintage loungers, pom-pom umbrellas, and design that transports you beyond the desert. Perfect for groups, culture lovers, and travelers tired of generic beige Airbnbs.
 
-If you crave authenticity, vibrant design, and a getaway that actually tells a story, Terra Luz is your answer.
+If you crave authenticity, vibrant design, and a getaway that actually tells a story, Casa Moto is your answer.
 
 📍 Indio, CA | 3BR/Sleeps 8 | Book at IndigoPalmCollective.com
 
@@ -179,15 +179,15 @@ Cuban inspired Palm Springs rental, colorful desert vacation home, Latin design 
 
 ---
 
-### **TERRA LUZ PIN 2: Pool with Heart Detail**
+### **CASA MOTO PIN 2: Pool with Heart Detail**
 
 **Title:**
-A Palm Springs Airbnb for Culture Lovers | Terra Luz
+A Palm Springs Airbnb for Culture Lovers | Casa Moto
 
 **Description:**
 Most desert rentals look the same. This one doesn't.
 
-Terra Luz brings Latin soul to the Coachella Valley. Hand-carved heart details, mosaic tile work, and spaces designed to cocoon you while the desert stretches beyond. Private pool, curated design touches, and the kind of warmth that makes you feel held.
+Casa Moto brings Latin soul to the Coachella Valley. Hand-carved heart details, mosaic tile work, and spaces designed to cocoon you while the desert stretches beyond. Private pool, curated design touches, and the kind of warmth that makes you feel held.
 
 For travelers who want more than just "desert modern." For groups who want a space with personality. For anyone who's done with generic.
 
@@ -197,15 +197,15 @@ Book your stay at IndigoPalmCollective.com
 
 ---
 
-### **TERRA LUZ PIN 3: Kitchen Detail (Magnolia Table)**
+### **CASA MOTO PIN 3: Kitchen Detail (Magnolia Table)**
 
 **Title:**
-Where Every Detail Tells a Story | Terra Luz Design
+Where Every Detail Tells a Story | Casa Moto Design
 
 **Description:**
 Magnolia Table on the counter. Hand-selected ceramics. Geometric tile that catches your eye.
 
-Terra Luz isn't decorated—it's curated. Every choice serves you. From the books you'll actually read to the dishes that feel good in your hands, this Cuban-inspired Palm Springs rental proves design isn't about perfection. It's about presence.
+Casa Moto isn't decorated—it's curated. Every choice serves you. From the books you'll actually read to the dishes that feel good in your hands, this Cuban-inspired Palm Springs rental proves design isn't about perfection. It's about presence.
 
 A getaway where you notice things. Where details matter. Where the space makes you feel something.
 
@@ -402,7 +402,7 @@ For each pin:
 7. Add watermark at bottom: "IndigoPalmCollective.com"
 8. Download as PNG
 9. Name file: `[property-name]-pinterest-[number].png`
-   - Example: `terra-luz-pinterest-1.png`
+   - Example: `casa-moto-pinterest-1.png`
 
 ### **Phase 3: Upload to Pinterest (15 minutes)**
 
@@ -428,9 +428,9 @@ Use Later.com or Planoly:
 
 | Property | Photo Type | Tagline | Best For |
 |----------|-----------|---------|----------|
-| Terra Luz Pin 1 | Pool/lounger | "where Cuban warmth meets desert cool" | Discovery, broad appeal |
-| Terra Luz Pin 2 | Pool/heart | "where every detail tells a story" | Emotional connection |
-| Terra Luz Pin 3 | Kitchen detail | "curated, not decorated" | Design lovers niche |
+| Casa Moto Pin 1 | Pool/lounger | "where Cuban warmth meets desert cool" | Discovery, broad appeal |
+| Casa Moto Pin 2 | Pool/heart | "where every detail tells a story" | Emotional connection |
+| Casa Moto Pin 3 | Kitchen detail | "curated, not decorated" | Design lovers niche |
 | The Well Pin 1 | Living room | "where minimalism feels like a hug" | Design lovers, main hook |
 | The Well Pin 2 | Entry/patio | "where space breathes with you" | Lifestyle appeal |
 | The Well Pin 3 | Exterior | "timeless over trendy" | Architecture lovers |

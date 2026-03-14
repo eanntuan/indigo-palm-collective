@@ -149,7 +149,7 @@ export function parseAirbnbListings(jsonData) {
 /**
  * Map listing URL to property ID
  * @param {string} listingUrl - Airbnb listing URL
- * @returns {string} - Property ID (cochran, terra-luz, ps-retreat, the-well)
+ * @returns {string} - Property ID (cochran, casa-moto, ps-retreat, the-well)
  */
 export function mapListingToProperty(listingUrl) {
   if (!listingUrl) return 'unknown';
@@ -162,7 +162,7 @@ export function mapListingToProperty(listingUrl) {
   const listingMap = {
     '610023395582313286': 'cochran', // Cozy Cactus
     '862396322984158928': 'the-well', // The Well
-    '123633': 'terra-luz', // Terra Luz (from earlier context)
+    '123633': 'casa-moto', // Casa Moto (from earlier context)
     '123646': 'cochran' // Also Cozy Cactus
   };
 

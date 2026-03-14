@@ -86,7 +86,7 @@ See which properties people are most interested in:
 |------|-------|---------------|
 | Homepage | High | Good - people are landing properly |
 | Cozy Cactus page | Low/Med/High | Family interest level |
-| Terra Luz page | Low/Med/High | Design-conscious traveler interest |
+| Casa Moto page | Low/Med/High | Design-conscious traveler interest |
 | PS Retreat page | Low/Med/High | MCM purist interest |
 | The Well page | Low/Med/High | Couples/wellness interest |
 

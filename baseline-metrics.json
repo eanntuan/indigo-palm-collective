@@ -1,0 +1,246 @@
+{
+  "generatedAt": "2026-02-25T22:59:48.437Z",
+  "dataSource": "Import scripts (manual extraction from Airbnb earnings reports)",
+  "property": "Cozy Cactus (Cochran)",
+  "years": {
+    "2023": {
+      "year": 2023,
+      "totalGross": 73336.77,
+      "totalNet": 71017.98,
+      "avgMonthly": 5918.16,
+      "serviceFees": 2318.79,
+      "serviceFeePercent": 3.2,
+      "monthsData": 12,
+      "seasonalAvgs": {
+        "PEAK": 10539.476666666667,
+        "SHOULDER": 5679.286,
+        "LOW": 2750.7799999999997
+      },
+      "bestMonth": {
+        "name": "April",
+        "amount": 15995.22
+      },
+      "worstMonth": {
+        "name": "August",
+        "amount": 1520.6
+      },
+      "monthlyBreakdown": [
+        {
+          "month": "January",
+          "net": 7656.05,
+          "gross": 7892.18,
+          "season": "SHOULDER"
+        },
+        {
+          "month": "February",
+          "net": 7750.14,
+          "gross": 8144.48,
+          "season": "SHOULDER"
+        },
+        {
+          "month": "March",
+          "net": 11640.81,
+          "gross": 12000.84,
+          "season": "PEAK"
+        },
+        {
+          "month": "April",
+          "net": 15995.22,
+          "gross": 16489.92,
+          "season": "PEAK"
+        },
+        {
+          "month": "May",
+          "net": 3982.4,
+          "gross": 4101.3,
+          "season": "PEAK"
+        },
+        {
+          "month": "June",
+          "net": 3636.02,
+          "gross": 3746,
+          "season": "LOW"
+        },
+        {
+          "month": "July",
+          "net": 2540.43,
+          "gross": 2619,
+          "season": "LOW"
+        },
+        {
+          "month": "August",
+          "net": 1520.6,
+          "gross": 1565,
+          "season": "LOW"
+        },
+        {
+          "month": "September",
+          "net": 3306.07,
+          "gross": 3386.05,
+          "season": "LOW"
+        },
+        {
+          "month": "October",
+          "net": 2195.11,
+          "gross": 2263,
+          "season": "SHOULDER"
+        },
+        {
+          "month": "November",
+          "net": 5861.71,
+          "gross": 6043,
+          "season": "SHOULDER"
+        },
+        {
+          "month": "December",
+          "net": 4933.42,
+          "gross": 5086,
+          "season": "SHOULDER"
+        }
+      ]
+    },
+    "2024": {
+      "year": 2024,
+      "totalGross": 55375.1,
+      "totalNet": 53754.91,
+      "avgMonthly": 4479.58,
+      "serviceFees": 1620.19,
+      "serviceFeePercent": 2.9,
+      "monthsData": 12,
+      "seasonalAvgs": {
+        "PEAK": 7282.673333333332,
+        "SHOULDER": 4868.4,
+        "LOW": 1891.2224999999999
+      },
+      "bestMonth": {
+        "name": "April",
+        "amount": 14815.52
+      },
+      "worstMonth": {
+        "name": "September",
+        "amount": 1353.99
+      },
+      "monthlyBreakdown": [
+        {
+          "month": "January",
+          "net": 2345.75,
+          "gross": 2418.3,
+          "season": "SHOULDER"
+        },
+        {
+          "month": "February",
+          "net": 7621.63,
+          "gross": 7855.8,
+          "season": "SHOULDER"
+        },
+        {
+          "month": "March",
+          "net": 4554.15,
+          "gross": 4695,
+          "season": "PEAK"
+        },
+        {
+          "month": "April",
+          "net": 14815.52,
+          "gross": 15266,
+          "season": "PEAK"
+        },
+        {
+          "month": "May",
+          "net": 2478.35,
+          "gross": 2555,
+          "season": "PEAK"
+        },
+        {
+          "month": "June",
+          "net": 2320.43,
+          "gross": 2392.2,
+          "season": "LOW"
+        },
+        {
+          "month": "July",
+          "net": 2122.94,
+          "gross": 2188.6,
+          "season": "LOW"
+        },
+        {
+          "month": "August",
+          "net": 1767.53,
+          "gross": 1822.2,
+          "season": "LOW"
+        },
+        {
+          "month": "September",
+          "net": 1353.99,
+          "gross": 1392,
+          "season": "LOW"
+        },
+        {
+          "month": "October",
+          "net": 2120.88,
+          "gross": 2184,
+          "season": "SHOULDER"
+        },
+        {
+          "month": "November",
+          "net": 5212.78,
+          "gross": 5374,
+          "season": "SHOULDER"
+        },
+        {
+          "month": "December",
+          "net": 7040.96,
+          "gross": 7232,
+          "season": "SHOULDER"
+        }
+      ]
+    },
+    "2025": {
+      "year": 2025,
+      "totalGross": 2258.74,
+      "totalNet": 2191,
+      "avgMonthly": 2191,
+      "serviceFees": 67.74,
+      "serviceFeePercent": 3,
+      "monthsData": 1,
+      "seasonalAvgs": {
+        "SHOULDER": 2191
+      },
+      "bestMonth": {
+        "name": "January",
+        "amount": 2191
+      },
+      "worstMonth": {
+        "name": "January",
+        "amount": 2191
+      },
+      "monthlyBreakdown": [
+        {
+          "month": "January",
+          "net": 2191,
+          "gross": 2258.74,
+          "season": "SHOULDER"
+        }
+      ]
+    }
+  },
+  "historicalAverage": {
+    "avgMonthlyRevenue": 5198.87,
+    "estimatedADR": 266.61,
+    "estimatedOccupancy": 65
+  },
+  "rebrandOpportunity": {
+    "targetADR": 265,
+    "upliftPerNight": -1.61,
+    "upliftPercent": -0.6,
+    "annualImpact4Properties": -1644.11
+  },
+  "seasonalPatterns": {
+    "peak": "March-April-May (highest revenue)",
+    "shoulder": "Jan-Feb-Oct-Nov-Dec (moderate)",
+    "low": "June-September (lowest revenue)",
+    "bestMonth": "April",
+    "avgPeakRevenue": 8911.08,
+    "avgLowRevenue": 2321
+  }
+}

@@ -2,7 +2,7 @@
 
 ## Business Description (750 characters max)
 
-Indigo Palm Collective offers curated desert vacation rentals in Palm Springs, Indio, and La Quinta. Our properties—Cozy Cactus, Terra Luz, PS Retreat, and The Well—are thoughtfully designed experiential stays that ignite inner energy through outward care. Each home features private pools, modern amenities, and distinct personalities: from family-friendly Cozy Cactus with its curated toy collection, to Terra Luz's Latin cultural sanctuary with Kahlo blue pool, to PS Retreat's iconic mid-century magic in central Palm Springs, to The Well's minimalist wellness retreat. Perfect for Coachella and Stagecoach festival-goers, remote workers, families, and anyone seeking intentional desert living. Book direct and save 10%. High-touch hospitality meets design-forward comfort.
+Indigo Palm Collective offers curated desert vacation rentals in Palm Springs, Indio, and La Quinta. Our properties—Cozy Cactus, Casa Moto, PS Retreat, and The Well—are thoughtfully designed experiential stays that ignite inner energy through outward care. Each home features private pools, modern amenities, and distinct personalities: from family-friendly Cozy Cactus with its curated toy collection, to Casa Moto's Latin cultural sanctuary with Kahlo blue pool, to PS Retreat's iconic mid-century magic in central Palm Springs, to The Well's minimalist wellness retreat. Perfect for Coachella and Stagecoach festival-goers, remote workers, families, and anyone seeking intentional desert living. Book direct and save 10%. High-touch hospitality meets design-forward comfort.
 
 Character count: 747
 
@@ -71,13 +71,13 @@ Character count: 248
 Our vacation rentals are located across the Coachella Valley, including Indio, Palm Springs, and La Quinta. Most properties are within 15-30 minutes of the Empire Polo Club (Coachella and Stagecoach venue) and close to downtown Palm Springs, golf courses, hiking trails, and desert attractions.
 
 ### 2. What makes Indigo Palm Collective different from other vacation rentals?
-We're not just providing a place to stay—we're creating experiential stays with intention. Each property has a distinct personality and is professionally designed by Dawn Asher of The Olive Jar. From Cozy Cactus's curated toy collection for families to Terra Luz's Latin cultural touches to PS Retreat's mid-century magic, every detail is thoughtfully considered. Plus, book direct and save 10%.
+We're not just providing a place to stay—we're creating experiential stays with intention. Each property has a distinct personality and is professionally designed by Dawn Asher of The Olive Jar. From Cozy Cactus's curated toy collection for families to Casa Moto's Latin cultural touches to PS Retreat's mid-century magic, every detail is thoughtfully considered. Plus, book direct and save 10%.
 
 ### 3. Are your properties good for Coachella and Stagecoach festivals?
-Absolutely. Our Indio properties (Cozy Cactus and Terra Luz) are particularly popular for festival weekends, offering private pools, outdoor entertaining spaces, and proximity to the Empire Polo Club. We recommend booking 6-12 months in advance for festival dates.
+Absolutely. Our Indio properties (Cozy Cactus and Casa Moto) are particularly popular for festival weekends, offering private pools, outdoor entertaining spaces, and proximity to the Empire Polo Club. We recommend booking 6-12 months in advance for festival dates.
 
 ### 4. Do you allow pets?
-Select properties are pet-friendly. Terra Luz (formerly Casa Moto) welcomes well-behaved pets with prior approval. Please contact us directly to discuss pet policies, fees, and specific requirements.
+Select properties are pet-friendly. Casa Moto (formerly Casa Moto) welcomes well-behaved pets with prior approval. Please contact us directly to discuss pet policies, fees, and specific requirements.
 
 ### 5. What's your cancellation policy?
 We offer flexible cancellation policies that vary by property and season. Generally, cancellations made 30+ days before check-in receive a full refund minus service fees. Festival dates may have stricter policies. Full details are provided during booking.
@@ -86,7 +86,7 @@ We offer flexible cancellation policies that vary by property and season. Genera
 We offer contactless self check-in at all properties. You'll receive detailed instructions with door codes 24 hours before arrival. Our team is available 24/7 for questions or support during your stay.
 
 ### 7. Are your properties family-friendly?
-Yes! Cozy Cactus is specifically designed for families with a curated toy collection, coffee bar for parents, pool, hot tub, putting green, and spacious layout. Terra Luz also works well for families with its 3-bedroom layout and outdoor entertaining space. All properties have full kitchens to make family meals easier.
+Yes! Cozy Cactus is specifically designed for families with a curated toy collection, coffee bar for parents, pool, hot tub, putting green, and spacious layout. Casa Moto also works well for families with its 3-bedroom layout and outdoor entertaining space. All properties have full kitchens to make family meals easier.
 
 ---
 
@@ -114,7 +114,7 @@ Yes! Cozy Cactus is specifically designed for families with a curated toy collec
 - Pool, hot tub, putting green
 - Perfect for families
 
-### Terra Luz (Indio)
+### Casa Moto (Indio)
 - 3 bedrooms, sleeps 6
 - Kahlo blue pool
 - Latin cultural design

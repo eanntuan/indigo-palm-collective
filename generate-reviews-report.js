@@ -18,7 +18,7 @@ try {
       let propertyName = 'Unknown';
 
       if (address.includes('Cochran')) propertyName = 'Cozy Cactus';
-      else if (address.includes('Villa')) propertyName = 'Terra Luz';
+      else if (address.includes('Villa')) propertyName = 'Casa Moto';
       else if (address.includes('Indian')) propertyName = 'PS Retreat';
       else if (address.includes('Wells')) propertyName = 'The Well';
 

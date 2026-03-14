@@ -1,0 +1,54 @@
+{
+  "date": "2026-02-25",
+  "properties": {
+    "casa-moto": {
+      "name": "Casa Moto",
+      "occupancy_30days": 40.0,
+      "occupancy_60days": 50.0,
+      "booked_nights_30": 12,
+      "available_nights_30": 18,
+      "next_booking": "2026-03-05",
+      "days_until_booking": 8,
+      "status": "LOW - needs attention (<50%)"
+    },
+    "cozy-cactus": {
+      "name": "The Cozy Cactus",
+      "occupancy_30days": 70.0,
+      "occupancy_60days": 56.7,
+      "booked_nights_30": 21,
+      "available_nights_30": 9,
+      "next_booking": "2026-03-05",
+      "days_until_booking": 8,
+      "status": "GOOD - on target (70%)"
+    },
+    "ps-retreat": {
+      "name": "PS Retreat",
+      "occupancy_30days": 83.3,
+      "occupancy_60days": 55.0,
+      "booked_nights_30": 25,
+      "available_nights_30": 5,
+      "next_booking": "2026-02-27",
+      "days_until_booking": 2,
+      "status": "EXCELLENT - above target (83%)"
+    },
+    "the-well": {
+      "name": "The Well",
+      "occupancy_30days": 100.0,
+      "occupancy_60days": 100.0,
+      "booked_nights_30": 30,
+      "available_nights_30": 0,
+      "next_booking": "unknown",
+      "days_until_booking": null,
+      "status": "ALERT - 100% but no future bookings visible"
+    }
+  },
+  "portfolio": {
+    "avg_occupancy_30days": 73.3,
+    "total_booked_30days": 88,
+    "total_available_30days": 32
+  },
+  "alerts": [
+    "Casa Moto: 40% occupancy - below 50% target, needs pricing review or promotion",
+    "The Well: Shows 100% but no upcoming bookings found - possible iCal feed issue or all blocked dates"
+  ]
+}

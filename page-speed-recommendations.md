@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This document outlines performance optimization opportunities for the Indigo Palm Collective website. Based on analysis of index.html and property pages (cozy-cactus.html, terra-luz.html, ps-retreat.html, the-well.html), the primary bottlenecks are large unoptimized images, render-blocking resources, and missing lazy loading implementation.
+This document outlines performance optimization opportunities for the Indigo Palm Collective website. Based on analysis of index.html and property pages (cozy-cactus.html, casa-moto.html, ps-retreat.html, the-well.html), the primary bottlenecks are large unoptimized images, render-blocking resources, and missing lazy loading implementation.
 
 **Priority Level Key:**
 - 🔴 High Priority (Immediate impact)
@@ -42,7 +42,7 @@ Priority files:
 - og-image.jpg (721KB → target 150KB)
 - Screenshot files (2.3MB, 313KB, 252KB, etc.) - consider removing if unused
 - All Cozy Cactus gallery images (300-841KB each)
-- Terra Luz gallery images
+- Casa Moto gallery images
 - PS Retreat gallery images
 - The Well gallery images
 ```
@@ -408,7 +408,7 @@ CDN: https://indigopalm.co/cdn-cgi/image/width=800,quality=80/Cozy%20Cactus/imag
 
 ### Phase 2: Image Optimization (1 week)
 1. Batch compress all Cozy Cactus images
-2. Batch compress Terra Luz, PS Retreat, The Well images
+2. Batch compress Casa Moto, PS Retreat, The Well images
 3. Convert hero images to WebP with JPG fallback
 4. Implement responsive image sizes (srcset)
 
@@ -493,7 +493,7 @@ Priority 2 (Cozy Cactus):
 - 1TW_DZ5A8774web.jpg: 564KB → 150KB
 - 15TW_DZ5A8612web.jpg: 567KB → 150KB
 
-Priority 3 (Terra Luz, PS Retreat, The Well):
+Priority 3 (Casa Moto, PS Retreat, The Well):
 - Compress all gallery images to < 200KB each
 ```
 

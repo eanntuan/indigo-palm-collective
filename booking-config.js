@@ -2,9 +2,9 @@
 // Property pricing and details
 
 // ⚠️ REBRAND NOTE (Feb 2026):
-// 'terra-luz' is the FUTURE brand name (target: May 2026 after renovations)
+// 'casa-moto' is the FUTURE brand name (target: May 2026 after renovations)
 // Currently marketed as "Casa Moto" on Airbnb until rebrand complete
-// To switch to Terra Luz branding: run `bash rebrand-to-terra-luz.sh`
+// To switch to Casa Moto branding: run `bash rebrand-to-casa-moto.sh`
 
 export const PROPERTIES = {
   'cozy-cactus': {
@@ -19,9 +19,9 @@ export const PROPERTIES = {
     hostawayListingId: 123646,
     availabilitySource: 'hostaway'
   },
-  'terra-luz': {
-    id: 'terra-luz',
-    name: 'Terra Luz',
+  'casa-moto': {
+    id: 'casa-moto',
+    name: 'Casa Moto',
     location: 'Indio, CA',
     bedrooms: 3,
     maxGuests: 6,
