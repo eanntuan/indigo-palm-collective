@@ -1,5 +1,9 @@
 # Indigo Palm Collective — Claude Instructions
 
+## Working Style
+- **Never ask for permission before taking action.** Just do it. Assume yes on deploys, file edits, commits, and pushes.
+- If something is ambiguous, make a reasonable decision and report what you did.
+
 ## Site Context
 - **Host**: Eann Tuan
 - **Brand**: Indigo Palm Collective (indigopalm.co)
