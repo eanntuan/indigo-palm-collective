@@ -1,23 +1,16 @@
 // booking-flow.js
 // Direct booking system using Cloudflare Pages Functions
 // /api/availability — fetches iCal blocked dates server-side
+// /api/pricing — fetches live base price from PriceLabs + applies peak multipliers
 // /api/booking — sends booking request email via Resend
-// pricing.json — local price calculation with peak multipliers
 
 import { PROPERTIES } from './booking-config.js';
 
 let selectedProperty = null;
 let blockedDates = new Set();
-let pricingData = null;
 let priceEstimate = null;
 
-document.addEventListener('DOMContentLoaded', async () => {
-    try {
-        const res = await fetch('/pricing.json');
-        pricingData = await res.json();
-    } catch (e) {
-        console.error('Failed to load pricing data:', e);
-    }
+document.addEventListener('DOMContentLoaded', () => {
     renderPropertySelector();
     setupEventListeners();
     setMinDates();
@@ -88,7 +81,6 @@ function renderCalendar() {
         grid.appendChild(h);
     });
 
-    // Offset blanks for first day of week
     for (let i = 0; i < today.getDay(); i++) {
         const blank = document.createElement('div');
         blank.className = 'calendar-day empty';
@@ -157,45 +149,7 @@ function setupEventListeners() {
     document.getElementById('submit-btn').addEventListener('click', submitBookingRequest);
 }
 
-function calculatePrice(propertyId, checkIn, checkOut) {
-    if (!pricingData || !pricingData[propertyId]) return null;
-
-    const p = pricingData[propertyId];
-    const start = new Date(checkIn + 'T00:00:00');
-    const end = new Date(checkOut + 'T00:00:00');
-    const nights = Math.round((end - start) / (1000 * 60 * 60 * 24));
-    if (nights < 1) return null;
-
-    let subtotal = 0;
-    const nightly = [];
-    const cur = new Date(start);
-
-    for (let i = 0; i < nights; i++) {
-        const dateStr = cur.toISOString().split('T')[0];
-        let multiplier = 1;
-        let peakLabel = null;
-
-        for (const peak of p.peakDates) {
-            if (dateStr >= peak.start && dateStr < peak.end && peak.multiplier > multiplier) {
-                multiplier = peak.multiplier;
-                peakLabel = peak.label;
-            }
-        }
-
-        const rate = Math.round(p.basePrice * multiplier);
-        subtotal += rate;
-        nightly.push({ date: dateStr, rate, peakLabel });
-        cur.setDate(cur.getDate() + 1);
-    }
-
-    const cleaningFee = p.cleaningFee;
-    const taxAmount = (subtotal + cleaningFee) * p.taxRate;
-    const total = subtotal + cleaningFee + taxAmount;
-
-    return { nights, nightly, subtotal, cleaningFee, taxRate: p.taxRate, taxAmount, total };
-}
-
-function updatePrice() {
+async function updatePrice() {
     const checkIn = document.getElementById('check-in').value;
     const checkOut = document.getElementById('check-out').value;
     const priceContent = document.getElementById('price-content');
@@ -230,57 +184,63 @@ function updatePrice() {
         return;
     }
 
-    priceEstimate = calculatePrice(selectedProperty.id, checkIn, checkOut);
-    if (!priceEstimate) {
-        priceContent.innerHTML = '<div class="empty-state"><p>Could not calculate price.</p></div>';
-        submitBtn.disabled = true;
-        return;
-    }
+    priceContent.innerHTML = '<div class="empty-state"><p>Calculating price...</p></div>';
+    submitBtn.disabled = true;
+    priceEstimate = null;
 
-    // Enforce min nights
-    const p = pricingData && pricingData[selectedProperty.id];
-    if (p && priceEstimate.nights < p.minNights) {
-        priceContent.innerHTML = `<div class="empty-state" style="color:#B67550;"><p>Minimum stay is ${p.minNights} nights.</p></div>`;
-        submitBtn.disabled = true;
-        priceEstimate = null;
-        return;
-    }
+    try {
+        const res = await fetch(
+            `/api/pricing?property=${selectedProperty.id}&checkIn=${checkIn}&checkOut=${checkOut}`
+        );
+        const data = await res.json();
 
-    // Group consecutive nights at same rate
-    const grouped = [];
-    let i = 0;
-    while (i < priceEstimate.nightly.length) {
-        const cur = priceEstimate.nightly[i];
-        let count = 1;
-        while (i + count < priceEstimate.nightly.length && priceEstimate.nightly[i + count].rate === cur.rate) count++;
-        grouped.push({ rate: cur.rate, count, peakLabel: cur.peakLabel });
-        i += count;
-    }
+        if (!data.success) {
+            priceContent.innerHTML = `<div class="empty-state" style="color:#B67550;"><p>${data.error || 'Could not calculate price.'}</p></div>`;
+            return;
+        }
 
-    const rows = grouped.map(g => `
-        <div class="price-row">
-            <span>$${g.rate}/night &times; ${g.count}${g.peakLabel ? ` <span style="font-size:0.75em;color:#B67550;">(${g.peakLabel})</span>` : ''}</span>
-            <span>$${(g.rate * g.count).toFixed(2)}</span>
-        </div>`).join('');
+        priceEstimate = data.pricing;
 
-    priceContent.innerHTML = `
-        <div class="price-breakdown">
-            ${rows}
+        // Group consecutive nights at same rate
+        const grouped = [];
+        let i = 0;
+        while (i < priceEstimate.nightly.length) {
+            const cur = priceEstimate.nightly[i];
+            let count = 1;
+            while (i + count < priceEstimate.nightly.length && priceEstimate.nightly[i + count].rate === cur.rate) count++;
+            grouped.push({ rate: cur.rate, count, peakLabel: cur.peakLabel });
+            i += count;
+        }
+
+        const rows = grouped.map(g => `
             <div class="price-row">
-                <span>Cleaning fee</span>
-                <span>$${priceEstimate.cleaningFee.toFixed(2)}</span>
-            </div>
-            <div class="price-row">
-                <span>Taxes (${(priceEstimate.taxRate * 100).toFixed(1)}%)</span>
-                <span>$${priceEstimate.taxAmount.toFixed(2)}</span>
-            </div>
-            <div class="price-row">
-                <strong>Total</strong>
-                <strong>$${priceEstimate.total.toFixed(2)}</strong>
-            </div>
-        </div>`;
+                <span>$${g.rate}/night &times; ${g.count}${g.peakLabel ? ` <span style="font-size:0.75em;color:#B67550;">(${g.peakLabel})</span>` : ''}</span>
+                <span>$${(g.rate * g.count).toFixed(2)}</span>
+            </div>`).join('');
 
-    submitBtn.disabled = false;
+        priceContent.innerHTML = `
+            <div class="price-breakdown">
+                ${rows}
+                <div class="price-row">
+                    <span>Cleaning fee</span>
+                    <span>$${priceEstimate.cleaningFee.toFixed(2)}</span>
+                </div>
+                <div class="price-row">
+                    <span>Taxes (${(priceEstimate.taxRate * 100).toFixed(1)}%)</span>
+                    <span>$${priceEstimate.taxAmount.toFixed(2)}</span>
+                </div>
+                <div class="price-row">
+                    <strong>Total</strong>
+                    <strong>$${priceEstimate.total.toFixed(2)}</strong>
+                </div>
+            </div>`;
+
+        submitBtn.disabled = false;
+
+    } catch (err) {
+        console.error('Pricing fetch failed:', err);
+        priceContent.innerHTML = '<div class="empty-state" style="color:#f44336;"><p>Could not load pricing. Please try again.</p></div>';
+    }
 }
 
 async function submitBookingRequest() {
@@ -314,8 +274,8 @@ async function submitBookingRequest() {
                 email,
                 phone,
                 specialRequests,
-                pricing: priceEstimate
-            })
+                pricing: priceEstimate,
+            }),
         });
 
         const data = await res.json();
