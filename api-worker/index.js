@@ -58,6 +58,13 @@ const PROPERTY_INFO = {
   },
 };
 
+// Hostaway listing IDs — only properties managed on Hostaway
+// ps-retreat is on Hospitable; the-well is Airbnb-only
+const HOSTAWAY_LISTING_IDS = {
+  'cozy-cactus': 123646,
+  'casa-moto':   123633,
+};
+
 const PROPERTY_CONFIG = {
   'cozy-cactus': { basePrice: 250, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
   'casa-moto':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
@@ -724,13 +731,82 @@ async function handleConfirm(request, env) {
       `),
     });
 
-    return new Response(JSON.stringify({ success: true }), { status: 200, headers: CORS_HEADERS });
+    // Block calendar on Hostaway (Cozy Cactus + Casa Moto only)
+    let hostawayReservationId = null;
+    try {
+      hostawayReservationId = await createHostawayReservation(env, { propertyId, name, email, checkIn, checkOut, guests });
+    } catch (err) {
+      console.error('Hostaway block failed (non-fatal):', err);
+    }
+
+    return new Response(JSON.stringify({ success: true, hostawayReservationId }), { status: 200, headers: CORS_HEADERS });
   } catch (err) {
     console.error('Confirm email failed:', err);
     return new Response(JSON.stringify({ success: false, error: 'Failed to send email' }), {
       status: 500, headers: CORS_HEADERS,
     });
   }
+}
+
+// ── Hostaway ───────────────────────────────────────────────────────────────────
+
+async function getHostawayToken(env) {
+  const cached = await env.BOOKINGS.get('__hostaway_token__', { type: 'json' });
+  if (cached && cached.expires > Date.now()) return cached.token;
+
+  const res = await fetch('https://api.hostaway.com/v1/accessTokens', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({
+      grant_type: 'client_credentials',
+      client_id: env.HOSTAWAY_ACCOUNT_ID,
+      client_secret: env.HOSTAWAY_SECRET_KEY,
+      scope: 'general',
+    }),
+  });
+  if (!res.ok) throw new Error(`Hostaway auth failed: ${res.status}`);
+  const data = await res.json();
+  const token = data.access_token;
+  // Cache for 23 months (tokens valid 24 months)
+  await env.BOOKINGS.put('__hostaway_token__', JSON.stringify({
+    token,
+    expires: Date.now() + (23 * 30 * 24 * 60 * 60 * 1000),
+  }));
+  return token;
+}
+
+async function createHostawayReservation(env, { propertyId, name, email, checkIn, checkOut, guests }) {
+  const listingMapId = HOSTAWAY_LISTING_IDS[propertyId];
+  if (!listingMapId) return null; // Not on Hostaway (ps-retreat, the-well)
+
+  const token = await getHostawayToken(env);
+  const [firstName, ...rest] = name.split(' ');
+  const lastName = rest.join(' ') || 'Guest';
+
+  const res = await fetch('https://api.hostaway.com/v1/reservations', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      channelId: 2000,
+      listingMapId,
+      arrivalDate: checkIn,
+      departureDate: checkOut,
+      numberOfGuests: guests,
+      guestFirstName: firstName,
+      guestLastName: lastName,
+      guestEmail: email,
+      status: 'accepted',
+    }),
+  });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Hostaway reservation failed: ${res.status} ${err}`);
+  }
+  const data = await res.json();
+  return data.result?.id ?? null;
 }
 
 function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes }) {
