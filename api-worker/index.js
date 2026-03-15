@@ -318,8 +318,9 @@ function emailWrapper(content) {
     <tr><td align="center">
       <table width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
         <tr>
-          <td style="background:#607c67;padding:28px 36px;border-radius:12px 12px 0 0;text-align:center;">
-            <p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:400;color:#ffffff;letter-spacing:0.05em;">Indigo Palm Collective</p>
+          <td style="background:#607c67;padding:24px 36px;border-radius:12px 12px 0 0;text-align:center;">
+            <img src="https://indigopalm.co/images/logo-icon.png" alt="Indigo Palm Collective" width="52" height="52" style="display:inline-block;width:52px;height:52px;border-radius:50%;margin-bottom:10px;" /><br>
+            <p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:400;color:#ffffff;letter-spacing:0.08em;">Indigo Palm Collective</p>
           </td>
         </tr>
         <tr>
