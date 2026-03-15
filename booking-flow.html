@@ -326,20 +326,34 @@
             cursor: default;
         }
 
-        .cal-day.sel-start,
-        .cal-day.sel-end {
-            background: var(--sage-cactus);
+        .cal-day.sel-start {
+            background:
+                radial-gradient(circle 17px at center, var(--sage-cactus) 99%, transparent 100%),
+                linear-gradient(to right, transparent 50%, rgba(150,154,127,0.15) 50%);
             color: white !important;
             font-weight: 700;
-            border-radius: 50%;
+            border-radius: 0;
+        }
+
+        .cal-day.sel-end {
+            background:
+                radial-gradient(circle 17px at center, var(--sage-cactus) 99%, transparent 100%),
+                linear-gradient(to left, transparent 50%, rgba(150,154,127,0.15) 50%);
+            color: white !important;
+            font-weight: 700;
+            border-radius: 0;
+        }
+
+        .cal-day.sel-start.sel-end {
+            background: radial-gradient(circle 17px at center, var(--sage-cactus) 99%, transparent 100%);
         }
 
         .cal-day.in-range {
             background: rgba(150, 154, 127, 0.15);
             border-radius: 0;
+            color: #1a1a1a;
+            font-weight: 700;
         }
-
-        .cal-day.sel-start.sel-end { border-radius: 50%; }
 
         @media (max-width: 968px) {
             .container {
