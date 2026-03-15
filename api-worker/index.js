@@ -262,12 +262,19 @@ async function handleBooking(request, env) {
   const priceTotal = pricing?.total ? `$${pricing.total.toFixed(2)}` : 'TBD';
   const priceCents = pricing?.total ? Math.round(pricing.total * 100) : null;
 
+  // Format dates nicely: 2026-05-22 -> May 22, 2026
+  function fmtDate(d) {
+    if (!d) return d;
+    const [y, m, day] = d.split('-').map(Number);
+    return new Date(y, m - 1, day).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  }
+
   // Generate Square payment link
   let paymentLink = null;
   if (priceCents && env.SQUARE_ACCESS_TOKEN) {
     try {
       paymentLink = await createSquarePaymentLink(env.SQUARE_ACCESS_TOKEN, {
-        name: `${property} — ${checkIn} to ${checkOut}`,
+        name: `${property} — ${fmtDate(checkIn)} to ${fmtDate(checkOut)}`,
         amountCents: priceCents,
         note: `Guest: ${name} | ${guests} guest${guests !== 1 ? 's' : ''} | ${checkIn} to ${checkOut}`,
       });
@@ -276,52 +283,93 @@ async function handleBooking(request, env) {
     }
   }
 
-  const paymentSection = paymentLink
-    ? `<tr><td><strong>Payment Link</strong></td><td><a href="${paymentLink}" style="font-size:1.1rem;font-weight:bold;color:#4B0082;">Collect Payment (${priceTotal}) →</a></td></tr>`
-    : `<tr><td><strong>Total</strong></td><td>${priceTotal}</td></tr>`;
+  const emailWrapper = (content) => `
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#F5F3EE;font-family:'Helvetica Neue',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#F5F3EE;padding:40px 20px;">
+    <tr><td align="center">
+      <table width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
+        <!-- Header -->
+        <tr>
+          <td style="background:#969A7F;padding:28px 36px;border-radius:12px 12px 0 0;text-align:center;">
+            <p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:400;color:#ffffff;letter-spacing:0.05em;">Indigo Palm Collective</p>
+          </td>
+        </tr>
+        <!-- Body -->
+        <tr>
+          <td style="background:#ffffff;padding:36px;border-radius:0 0 12px 12px;">
+            ${content}
+          </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+          <td style="padding:20px 36px;text-align:center;">
+            <p style="margin:0;font-size:12px;color:#999;">indigopalm.co &nbsp;&middot;&nbsp; indigopalmco@gmail.com</p>
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
 
-  const hostEmailHtml = `
-    <h2>New Booking Request — Indigo Palm Collective</h2>
-    <table>
-      <tr><td><strong>Property</strong></td><td>${property}</td></tr>
-      <tr><td><strong>Check-in</strong></td><td>${checkIn}</td></tr>
-      <tr><td><strong>Check-out</strong></td><td>${checkOut}</td></tr>
-      <tr><td><strong>Guests</strong></td><td>${guests}</td></tr>
-      ${paymentSection}
-    </table>
-    <hr>
-    <table>
-      <tr><td><strong>Guest Name</strong></td><td>${name}</td></tr>
-      <tr><td><strong>Email</strong></td><td><a href="mailto:${email}">${email}</a></td></tr>
-      <tr><td><strong>Phone</strong></td><td>${phone}</td></tr>
-      ${specialRequests ? `<tr><td><strong>Special Requests</strong></td><td>${specialRequests}</td></tr>` : ''}
-    </table>
-  `;
+  const detailRow = (label, value) => `
+    <tr>
+      <td style="padding:10px 0;border-bottom:1px solid #F0EDE6;color:#888;font-size:13px;width:120px;vertical-align:top;">${label}</td>
+      <td style="padding:10px 0;border-bottom:1px solid #F0EDE6;color:#2C2C2C;font-size:14px;font-weight:500;">${value}</td>
+    </tr>`;
 
-  const guestEmailHtml = `
-    <h2>We got your booking request!</h2>
-    <p>Hi ${name},</p>
-    <p>Thanks for your interest in <strong>${property}</strong>. We'll review your request and send a payment link within 24 hours.</p>
-    <table>
-      <tr><td><strong>Check-in</strong></td><td>${checkIn}</td></tr>
-      <tr><td><strong>Check-out</strong></td><td>${checkOut}</td></tr>
-      <tr><td><strong>Guests</strong></td><td>${guests}</td></tr>
-      <tr><td><strong>Estimated Total</strong></td><td>${priceTotal}</td></tr>
+  const hostEmailHtml = emailWrapper(`
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#969A7F;text-transform:uppercase;letter-spacing:0.1em;">New Booking Request</p>
+    <h1 style="margin:0 0 28px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">${property}</h1>
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
+      ${detailRow('Check-in', fmtDate(checkIn))}
+      ${detailRow('Check-out', fmtDate(checkOut))}
+      ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
+      ${detailRow('Total', priceTotal)}
     </table>
-    <p style="margin-top:1.5rem;">Questions? Email us at <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a></p>
-  `;
+    ${paymentLink ? `
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
+      <tr><td style="padding:20px;background:#F5F3EE;border-radius:8px;text-align:center;">
+        <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#969A7F;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Collect Payment ${priceTotal} &rarr;</a>
+      </td></tr>
+    </table>` : ''}
+    <p style="margin:0 0 8px;font-size:13px;color:#888;text-transform:uppercase;letter-spacing:0.08em;font-weight:500;">Guest Details</p>
+    <table width="100%" cellpadding="0" cellspacing="0">
+      ${detailRow('Name', name)}
+      ${detailRow('Email', `<a href="mailto:${email}" style="color:#B67550;">${email}</a>`)}
+      ${detailRow('Phone', phone)}
+      ${specialRequests ? detailRow('Notes', specialRequests) : ''}
+    </table>
+  `);
+
+  const guestEmailHtml = emailWrapper(`
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#969A7F;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
+    <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">We got it, ${name.split(' ')[0]}.</h1>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.6;">Thanks for requesting <strong>${property}</strong>. We'll review and send a payment link within 24 hours to confirm your dates.</p>
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
+      ${detailRow('Property', property)}
+      ${detailRow('Check-in', fmtDate(checkIn))}
+      ${detailRow('Check-out', fmtDate(checkOut))}
+      ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
+      ${detailRow('Est. Total', priceTotal)}
+    </table>
+    <p style="margin:0;font-size:14px;color:#888;">Questions? Reply to this email or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
+  `);
 
   try {
     await Promise.all([
       sendEmail(env.RESEND_API_KEY, {
-        from: 'bookings@indigopalm.co',
+        from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
         to:   'indigopalmco@gmail.com',
-        subject: `New Booking Request: ${property} (${checkIn} to ${checkOut})`,
+        subject: `New Booking Request: ${property} (${fmtDate(checkIn)} to ${fmtDate(checkOut)})`,
         html:  hostEmailHtml,
         reply_to: email,
       }),
       sendEmail(env.RESEND_API_KEY, {
-        from: 'bookings@indigopalm.co',
+        from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
         to:   email,
         subject: `Booking Request Received — ${property}`,
         html:  guestEmailHtml,
