@@ -2,7 +2,7 @@
   "cozy-cactus": {
     "name": "The Cozy Cactus",
     "basePrice": 250,
-    "cleaningFee": 150,
+    "cleaningFee": 250,
     "taxRate": 0.12,
     "maxGuests": 8,
     "minNights": 2,
@@ -17,7 +17,7 @@
   "casa-moto": {
     "name": "Casa Moto",
     "basePrice": 225,
-    "cleaningFee": 150,
+    "cleaningFee": 250,
     "taxRate": 0.12,
     "maxGuests": 6,
     "minNights": 2,

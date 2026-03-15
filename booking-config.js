@@ -14,7 +14,7 @@ export const PROPERTIES = {
     bedrooms: 3,
     maxGuests: 8,
     basePrice: 250, // per night
-    cleaningFee: 150,
+    cleaningFee: 250,
     taxRate: 0.12, // 12% (adjust based on actual Indio tax rate)
     hostawayListingId: 123646,
     availabilitySource: 'hostaway'
@@ -26,7 +26,7 @@ export const PROPERTIES = {
     bedrooms: 3,
     maxGuests: 6,
     basePrice: 225, // per night
-    cleaningFee: 150,
+    cleaningFee: 250,
     taxRate: 0.12,
     hostawayListingId: 123633,
     availabilitySource: 'hostaway'
