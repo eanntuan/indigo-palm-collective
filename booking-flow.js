@@ -244,33 +244,14 @@ async function updatePrice() {
 
         priceEstimate = data.pricing;
 
-        // Group consecutive nights at same rate
-        const grouped = [];
-        let i = 0;
-        while (i < priceEstimate.nightly.length) {
-            const cur = priceEstimate.nightly[i];
-            let count = 1;
-            while (i + count < priceEstimate.nightly.length && priceEstimate.nightly[i + count].rate === cur.rate) count++;
-            grouped.push({ rate: cur.rate, count, peakLabel: cur.peakLabel });
-            i += count;
-        }
-
-        const rows = grouped.map(g => `
-            <div class="price-row">
-                <span>$${g.rate}/night &times; ${g.count}${g.peakLabel ? ` <span style="font-size:0.75em;color:#B67550;">(${g.peakLabel})</span>` : ''}</span>
-                <span>$${(g.rate * g.count).toFixed(2)}</span>
-            </div>`).join('');
+        // Show all-in average nightly rate (total / nights)
+        const avgNightly = Math.round(priceEstimate.total / priceEstimate.nights);
 
         priceContent.innerHTML = `
             <div class="price-breakdown">
-                ${rows}
                 <div class="price-row">
-                    <span>Cleaning fee</span>
-                    <span>$${priceEstimate.cleaningFee.toFixed(2)}</span>
-                </div>
-                <div class="price-row">
-                    <span>Taxes (${(priceEstimate.taxRate * 100).toFixed(1)}%)</span>
-                    <span>$${priceEstimate.taxAmount.toFixed(2)}</span>
+                    <span>$${avgNightly}/night &times; ${priceEstimate.nights} night${priceEstimate.nights !== 1 ? 's' : ''}</span>
+                    <span>$${priceEstimate.total.toFixed(2)}</span>
                 </div>
                 <div class="price-row">
                     <strong>Total</strong>
