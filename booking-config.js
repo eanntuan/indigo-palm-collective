@@ -38,7 +38,7 @@ export const PROPERTIES = {
     bedrooms: 2,
     maxGuests: 4,
     basePrice: 180, // per night
-    cleaningFee: 125,
+    cleaningFee: 200,
     taxRate: 0.135, // Palm Springs is 13.5%
     icalUrl: 'https://api.hospitable.com/v1/properties/reservations.ics?key=1470484&token=d9035907-ba8e-4705-adf7-24e5ae53afe1&noCache',
     availabilitySource: 'ical'

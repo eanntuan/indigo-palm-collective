@@ -32,7 +32,7 @@
   "ps-retreat": {
     "name": "The Sundune at Palm Springs",
     "basePrice": 280,
-    "cleaningFee": 150,
+    "cleaningFee": 200,
     "taxRate": 0.135,
     "maxGuests": 4,
     "minNights": 2,
