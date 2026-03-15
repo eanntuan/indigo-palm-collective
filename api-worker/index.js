@@ -555,7 +555,10 @@ async function handleApprove(request, env) {
     ? { ...booking.pricing, total: finalTotal }
     : { total: finalTotal, nights: 0, subtotal: finalTotal, cleaningFee: 0, taxRate: 0, taxAmount: 0 };
 
-  // Generate Square payment link
+  // Generate Square payment link (includes 3% CC fee as line item)
+  const ccFee = Math.round(finalTotal * 0.03 * 100) / 100;
+  const ccTotal = finalTotal + ccFee;
+
   let paymentLink = null;
   if (env.SQUARE_ACCESS_TOKEN) {
     try {
@@ -568,6 +571,7 @@ async function handleApprove(request, env) {
         poolHeatCost: booking.poolHeatCost || 0,
         discountAmount: (parseFloat(flatDiscount) || 0) + (booking.discountAmount || 0),
         discountCode: booking.discountCode,
+        ccFee,
         fmtDate,
       });
     } catch (e) {
@@ -575,32 +579,31 @@ async function handleApprove(request, env) {
     }
   }
 
-  const priceTotal = `$${finalTotal.toFixed(2)}`;
+  const zelleTotal = `$${finalTotal.toFixed(2)}`;
+  const cardTotal  = `$${ccTotal.toFixed(2)}`;
 
   // Send payment email to guest
   const guestPaymentHtml = emailWrapper(`
-    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Your Booking is Confirmed</p>
-    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Time to make it official.</h1>
-    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Hi ${booking.name.split(' ')[0]}, your stay at <strong>${booking.property}</strong> is confirmed. Complete your payment below to lock in your dates.</p>
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Payment Request</p>
+    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Your dates are approved.</h1>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Hi ${booking.name.split(' ')[0]}, we've approved your request for <strong>${booking.property}</strong>. Complete your payment to lock in your dates.</p>
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Property', booking.property)}
       ${detailRow('Check-in', fmtDate(booking.checkIn))}
       ${detailRow('Check-out', fmtDate(booking.checkOut))}
       ${detailRow('Guests', `${booking.guests} guest${booking.guests !== 1 ? 's' : ''}`)}
       ${booking.poolHeat ? detailRow('Pool Heat', `$${(booking.poolHeatCost || 0).toFixed(2)}`) : ''}
-      ${detailRow('Total', `<strong>${priceTotal}</strong>`)}
+      ${detailRow('Total', `<strong>${zelleTotal}</strong>`)}
     </table>
-    ${paymentLink ? `
-    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
-      <tr><td style="padding:20px;background:#F5F3EE;border-radius:8px;text-align:center;">
-        <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:16px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Pay ${priceTotal} &rarr;</a>
-        <p style="margin:12px 0 0;font-size:12px;color:#999;">Credit card via Square (3% fee included)</p>
-      </td></tr>
-    </table>` : ''}
-    <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;">
-      <p style="margin:0 0 10px;font-size:13px;font-weight:600;color:#2C2C2C;">Prefer Zelle? No fee.</p>
-      <p style="margin:0;font-size:14px;color:#555;">Send <strong>${priceTotal}</strong> to <strong>214-606-1340</strong> (MPT Industries) and reply to this email to confirm.</p>
+    <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:16px;">
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Zelle (no fee) — ${zelleTotal}</p>
+      <p style="margin:0;font-size:14px;color:#555;">Send to <strong>214-606-1340</strong> (MPT Industries) and reply to this email to confirm.</p>
     </div>
+    ${paymentLink ? `
+    <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;text-align:center;">
+      <p style="margin:0 0 12px;font-size:13px;font-weight:600;color:#2C2C2C;">Credit Card via Square — ${cardTotal} (includes 3% fee)</p>
+      <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Pay by Card &rarr;</a>
+    </div>` : ''}
     ${notesToGuest ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notesToGuest}</p></div>` : ''}
     <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or email <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
@@ -609,7 +612,7 @@ async function handleApprove(request, env) {
     await sendEmail(env.RESEND_API_KEY, {
       from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
       to:   booking.email,
-      subject: `Your booking is confirmed — ${booking.property}`,
+      subject: `Your dates are approved — payment link inside`,
       html:  guestPaymentHtml,
     });
 
@@ -674,7 +677,7 @@ async function handleDiscount(url, env) {
   }), { status: 200, headers: CORS_HEADERS });
 }
 
-async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, poolHeat, poolHeatCost, discountAmount, discountCode, fmtDate }) {
+async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, poolHeat, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate }) {
   // Fetch first location
   const locRes = await fetch('https://connect.squareup.com/v2/locations', {
     headers: { 'Authorization': `Bearer ${accessToken}`, 'Square-Version': '2024-01-18' },
@@ -711,6 +714,14 @@ async function createSquarePaymentLink(accessToken, { property, checkIn, checkOu
       name: 'Pool heating',
       quantity: '1',
       base_price_money: money(poolHeatCost),
+    });
+  }
+
+  if (ccFee > 0) {
+    lineItems.push({
+      name: 'Credit card processing fee (3%)',
+      quantity: '1',
+      base_price_money: money(ccFee),
     });
   }
 
