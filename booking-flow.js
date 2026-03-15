@@ -227,6 +227,20 @@ function setupEventListeners() {
     document.getElementById('guests').addEventListener('input', updatePrice);
     document.getElementById('submit-btn').addEventListener('click', submitBookingRequest);
     document.getElementById('apply-promo').addEventListener('click', applyPromoCode);
+
+    // Agreement toggle expand/collapse
+    document.getElementById('agreement-toggle').addEventListener('click', () => {
+        const body = document.getElementById('agreement-body');
+        const arrow = document.getElementById('agreement-arrow');
+        const open = body.style.display === 'block';
+        body.style.display = open ? 'none' : 'block';
+        arrow.textContent = open ? '▼' : '▲';
+    });
+
+    // Checkbox enables/disables submit
+    document.getElementById('agree-checkbox').addEventListener('change', (e) => {
+        document.getElementById('submit-btn').disabled = !e.target.checked;
+    });
     document.getElementById('promo-code').addEventListener('keydown', (e) => {
         if (e.key === 'Enter') { e.preventDefault(); applyPromoCode(); }
     });
@@ -317,7 +331,10 @@ async function updatePrice() {
 
         priceEstimate = data.pricing;
         renderPriceSummary();
-        submitBtn.disabled = false;
+        document.getElementById('agreement-section').style.display = 'block';
+        // Submit stays disabled until checkbox is checked
+        const agreed = document.getElementById('agree-checkbox')?.checked;
+        submitBtn.disabled = !agreed;
 
     } catch (err) {
         console.error('Pricing fetch failed:', err);
@@ -337,6 +354,12 @@ async function submitBookingRequest() {
 
     if (!name || !email || !phone) {
         showMessage('Please fill in your name, email, and phone number.', 'error');
+        return;
+    }
+
+    const agreeCheckbox = document.getElementById('agree-checkbox');
+    if (agreeCheckbox && !agreeCheckbox.checked) {
+        showMessage('Please read and agree to the rental agreement before submitting.', 'error');
         return;
     }
 

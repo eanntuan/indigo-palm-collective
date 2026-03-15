@@ -279,6 +279,72 @@
             cursor: not-allowed;
         }
 
+        .agreement-section {
+            margin-top: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .agreement-toggle {
+            width: 100%;
+            background: #f8f7f4;
+            border: none;
+            padding: 0.9rem 1.1rem;
+            text-align: left;
+            font-family: var(--font-sans);
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: #555;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .agreement-toggle:hover { background: #f0ede6; }
+
+        .agreement-body {
+            display: none;
+            padding: 1.25rem;
+            background: white;
+            max-height: 260px;
+            overflow-y: auto;
+            font-size: 0.82rem;
+            color: #666;
+            line-height: 1.7;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .agreement-body h4 { font-size: 0.82rem; font-weight: 600; color: #333; margin: 0.9rem 0 0.2rem; }
+        .agreement-body h4:first-child { margin-top: 0; }
+
+        .agreement-check-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-top: 1rem;
+            padding: 0.9rem 1rem;
+            background: #f8f7f4;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .agreement-check-row input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+            margin-top: 2px;
+            accent-color: var(--sage);
+            cursor: pointer;
+        }
+
+        .agreement-check-row label {
+            font-size: 0.85rem;
+            color: #555;
+            cursor: pointer;
+            line-height: 1.5;
+        }
+
         /* Availability Calendar */
         .calendar-container {
             margin-top: 1.25rem;
@@ -520,6 +586,41 @@
                     <button type="button" id="apply-promo" style="padding:0.75rem 1.25rem;background:white;border:2px solid #e0e0e0;border-radius:8px;font-weight:600;font-size:0.9rem;cursor:pointer;white-space:nowrap;transition:border-color 0.2s;">Apply</button>
                 </div>
                 <p id="promo-message" style="margin-top:0.5rem;font-size:0.85rem;display:none;"></p>
+            </div>
+
+            <!-- Rental Agreement -->
+            <div class="agreement-section" id="agreement-section" style="display:none;">
+                <button type="button" class="agreement-toggle" id="agreement-toggle">
+                    <span>Rental Agreement</span>
+                    <span id="agreement-arrow">&#9660;</span>
+                </button>
+                <div class="agreement-body" id="agreement-body">
+                    <p>This Rental Agreement is between MPT Industries and Guest for the selected property.</p>
+                    <h4>1. Occupancy and Use</h4>
+                    <p>The property may not be occupied by more than the agreed-upon number of guests. No parties, events, subletting, or commercial use is permitted. Violations may result in immediate termination of the stay without refund.</p>
+                    <h4>2. House Rules and Care of Property</h4>
+                    <p>Guest agrees to keep the property in good condition and follow all house rules. Guest is responsible for any damage beyond normal wear and tear.</p>
+                    <h4>3. Payment and Cancellation</h4>
+                    <p>Payment terms and cancellation policy are as stated at the time of booking. Cancellations outside the window are non-refundable. Travel insurance is strongly recommended.</p>
+                    <h4>4. Security Deposit</h4>
+                    <p>A refundable security deposit may be required. Damages, excessive cleaning, or rule violations may be deducted. Remaining funds returned within 2 days of checkout.</p>
+                    <h4>5. Pets and Children</h4>
+                    <p>Pets only with prior written approval. Unauthorized pets may result in fees or termination. Children must be supervised at all times.</p>
+                    <h4>6. Pools, Hot Tubs, and Amenities</h4>
+                    <p>Use of amenities is at Guest's own risk. No glass, foreign substances, or pets in the pool or hot tub. Misuse may result in cleaning fees.</p>
+                    <h4>7. No Refunds for Uncontrollable Events</h4>
+                    <p>No refunds for weather, power outages, water interruptions, pool or appliance downtime, construction, or acts of nature beyond Owner's control.</p>
+                    <h4>8. Entry and Maintenance</h4>
+                    <p>Owner or agents may enter the property as needed for maintenance, repairs, or emergencies.</p>
+                    <h4>9. Assumption of Risk and Liability</h4>
+                    <p>Guest assumes all risks associated with the property and amenities and holds Owner harmless from liability, except in cases of Owner's gross negligence.</p>
+                    <h4>10. Governing Law</h4>
+                    <p>Governed by California law. Disputes resolved in Riverside County, California.</p>
+                </div>
+                <div class="agreement-check-row">
+                    <input type="checkbox" id="agree-checkbox">
+                    <label for="agree-checkbox">I have read and agree to the rental agreement above.</label>
+                </div>
             </div>
 
             <button class="submit-btn" id="submit-btn" disabled>Request to Book</button>
