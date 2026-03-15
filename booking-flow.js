@@ -323,21 +323,21 @@ function renderPriceSummary() {
     if (!priceEstimate) return;
 
     const baseTotal = priceEstimate.total;
-    const discountAmount = appliedDiscount ? appliedDiscount.discountAmount : 0;
+    const discountAmount = appliedDiscount ? Number(appliedDiscount.discountAmount) : 0;
     const finalTotal = Math.max(0, baseTotal - discountAmount);
-    const allInNightly = (finalTotal / priceEstimate.nights).toFixed(2);
+    const allInNightly = (baseTotal / priceEstimate.nights).toFixed(2);
 
     const discountRow = appliedDiscount ? `
         <div class="price-row" style="color:#738561;">
             <span>Discount (${appliedDiscount.code})</span>
-            <span>-$${appliedDiscount.discountAmount.toFixed(2)}</span>
+            <span>-$${discountAmount.toFixed(2)}</span>
         </div>` : '';
 
     priceContent.innerHTML = `
         <div class="price-breakdown">
             <div class="price-row">
                 <span>${priceEstimate.nights} night${priceEstimate.nights !== 1 ? 's' : ''} &times; $${allInNightly}/night</span>
-                <span>$${finalTotal.toFixed(2)}</span>
+                <span>$${baseTotal.toFixed(2)}</span>
             </div>
             ${discountRow}
             <div class="price-row">
