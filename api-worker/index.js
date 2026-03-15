@@ -296,14 +296,18 @@ async function handleBooking(request, env) {
     return new Date(y, m - 1, day).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
   }
 
-  // Generate Square payment link
+  // Generate Square payment link with itemized order
   let paymentLink = null;
-  if (priceCents && env.SQUARE_ACCESS_TOKEN) {
+  if (pricing && env.SQUARE_ACCESS_TOKEN) {
     try {
       paymentLink = await createSquarePaymentLink(env.SQUARE_ACCESS_TOKEN, {
-        name: `${property} — ${fmtDate(checkIn)} to ${fmtDate(checkOut)}`,
-        amountCents: priceCents,
-        note: `Guest: ${name} | ${guests} guest${guests !== 1 ? 's' : ''} | ${checkIn} to ${checkOut}`,
+        property,
+        checkIn,
+        checkOut,
+        pricing,
+        discountAmount,
+        discountCode: discountCode?.trim().toUpperCase() || null,
+        fmtDate,
       });
     } catch (e) {
       console.error('Square payment link failed:', e);
@@ -469,7 +473,7 @@ async function handleDiscount(url, env) {
   }), { status: 200, headers: CORS_HEADERS });
 }
 
-async function createSquarePaymentLink(accessToken, { name, amountCents, note }) {
+async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, discountAmount, discountCode, fmtDate }) {
   // Fetch first location
   const locRes = await fetch('https://connect.squareup.com/v2/locations', {
     headers: { 'Authorization': `Bearer ${accessToken}`, 'Square-Version': '2024-01-18' },
@@ -478,6 +482,38 @@ async function createSquarePaymentLink(accessToken, { name, amountCents, note })
   const locData = await locRes.json();
   const locationId = locData.locations?.[0]?.id;
   if (!locationId) throw new Error('No Square location found');
+
+  const nights = pricing.nights;
+  const money = (dollars) => ({ amount: Math.round(dollars * 100), currency: 'USD' });
+
+  const lineItems = [
+    {
+      name: `${property} — ${nights} night${nights !== 1 ? 's' : ''}`,
+      quantity: '1',
+      base_price_money: money(pricing.subtotal),
+      note: `${fmtDate(checkIn)} to ${fmtDate(checkOut)}`,
+    },
+    {
+      name: 'Cleaning fee',
+      quantity: '1',
+      base_price_money: money(pricing.cleaningFee),
+    },
+    {
+      name: `Taxes (${(pricing.taxRate * 100).toFixed(1)}%)`,
+      quantity: '1',
+      base_price_money: money(pricing.taxAmount),
+    },
+  ];
+
+  const orderBody = { location_id: locationId, line_items: lineItems };
+
+  if (discountAmount > 0 && discountCode) {
+    orderBody.discounts = [{
+      name: `Promo: ${discountCode}`,
+      amount_money: money(discountAmount),
+      scope: 'ORDER',
+    }];
+  }
 
   const idempotencyKey = `indigo-${Date.now()}-${Math.random().toString(36).slice(2)}`;
 
@@ -490,12 +526,7 @@ async function createSquarePaymentLink(accessToken, { name, amountCents, note })
     },
     body: JSON.stringify({
       idempotency_key: idempotencyKey,
-      quick_pay: {
-        name,
-        price_money: { amount: amountCents, currency: 'USD' },
-        location_id: locationId,
-      },
-      payment_note: note,
+      order: orderBody,
     }),
   });
 
