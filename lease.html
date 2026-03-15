@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Agreement | Indigo Palm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --sage: #607c67;
+            --terracotta: #B67550;
+            --cream: #F5F3EE;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
+        }
+        body { font-family: var(--font-sans); background: var(--cream); color: #2c2c2c; line-height: 1.7; min-height: 100vh; }
+        .header { background: white; padding: 1.25rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05); text-align: center; }
+        .logo { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: #2c2c2c; text-decoration: none; display: inline-block; }
+        .container { max-width: 680px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+
+        .booking-summary { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 2rem; }
+        .booking-summary h1 { font-family: var(--font-serif); font-size: 2rem; font-weight: 400; margin-bottom: 0.25rem; }
+        .booking-summary .property-name { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage); margin-bottom: 1.5rem; }
+        .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .detail-item { }
+        .detail-item .label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #aaa; margin-bottom: 0.2rem; }
+        .detail-item .value { font-size: 1rem; font-weight: 500; color: #2c2c2c; }
+        .total-row { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid #f0ede6; display: flex; justify-content: space-between; align-items: baseline; }
+        .total-row .label { font-size: 0.85rem; font-weight: 600; color: #555; }
+        .total-row .value { font-size: 1.15rem; font-weight: 600; }
+
+        .agreement { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 2rem; }
+        .agreement h2 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #f0ede6; }
+        .clause { margin-bottom: 1.5rem; }
+        .clause h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; }
+        .clause p { font-size: 0.9rem; color: #555; line-height: 1.7; }
+
+        .sign-section { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .sign-section h2 { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; margin-bottom: 0.5rem; }
+        .sign-section p { font-size: 0.9rem; color: #666; margin-bottom: 1.5rem; }
+        .sign-input-wrap { margin-bottom: 1.25rem; }
+        .sign-input-wrap label { display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.4rem; }
+        .sign-input-wrap input { width: 100%; padding: 0.8rem 1rem; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; font-family: var(--font-serif); font-style: italic; transition: border-color 0.2s; }
+        .sign-input-wrap input:focus { outline: none; border-color: var(--sage); }
+        .btn-sign { width: 100%; padding: 1rem; background: var(--sage); color: white; border: none; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; font-family: var(--font-sans); transition: background 0.2s; }
+        .btn-sign:hover { background: #4d6654; }
+        .btn-sign:disabled { background: #ccc; cursor: not-allowed; }
+
+        .status-box { padding: 1rem 1.25rem; border-radius: 8px; font-size: 0.9rem; line-height: 1.6; margin-top: 1.25rem; }
+        .status-box.success { background: #e8f5e9; color: #2e7d32; border-left: 4px solid #4caf50; }
+        .status-box.error { background: #fdecea; color: #c62828; border-left: 4px solid #f44336; }
+
+        .signed-banner { background: #e8f5e9; border-radius: 8px; padding: 1.25rem; text-align: center; color: #2e7d32; font-weight: 600; font-size: 0.95rem; }
+
+        .loading { text-align: center; padding: 4rem 2rem; color: #aaa; font-size: 0.95rem; }
+        .error-page { text-align: center; padding: 4rem 2rem; }
+        .error-page h2 { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.75rem; }
+        .error-page p { color: #888; }
+
+        @media (max-width: 500px) { .detail-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="/" class="logo">Indigo Palm Collective</a>
+    </div>
+
+    <div class="container" id="app">
+        <div class="loading">Loading your agreement...</div>
+    </div>
+
+    <script>
+        const PROPERTY_NAMES = {
+            'cozy-cactus': 'The Cozy Cactus',
+            'casa-moto':   'Casa Moto',
+            'ps-retreat':  'PS Retreat',
+            'the-well':    'The Well',
+        };
+
+        function fmtDate(d) {
+            if (!d) return '';
+            const [y, m, day] = d.split('-').map(Number);
+            return new Date(y, m - 1, day).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+        }
+
+        function fmtMoney(n) {
+            return '$' + parseFloat(n).toLocaleString('en-US', { minimumFractionDigits: 2 });
+        }
+
+        function renderAgreement(lease) {
+            const nights = Math.round(
+                (new Date(lease.checkOut + 'T00:00:00') - new Date(lease.checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24)
+            );
+            const grandTotal = (parseFloat(lease.total) + parseFloat(lease.deposit)).toFixed(2);
+            const propName = PROPERTY_NAMES[lease.propertyId] || lease.propertyId;
+
+            const app = document.getElementById('app');
+            app.innerHTML = `
+                <div class="booking-summary">
+                    <div class="property-name">${propName}</div>
+                    <h1>Rental Agreement</h1>
+                    <div class="detail-grid" style="margin-top:1.5rem;">
+                        <div class="detail-item">
+                            <div class="label">Guest</div>
+                            <div class="value">${lease.name}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="label">Group Size</div>
+                            <div class="value">${lease.guests} guest${lease.guests !== 1 ? 's' : ''}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="label">Check-in</div>
+                            <div class="value">${fmtDate(lease.checkIn)} at 4:00 pm</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="label">Check-out</div>
+                            <div class="value">${fmtDate(lease.checkOut)} (anytime)</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="label">Nights</div>
+                            <div class="value">${nights} night${nights !== 1 ? 's' : ''}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="label">Address</div>
+                            <div class="value" style="font-size:0.9rem;">${lease.address}</div>
+                        </div>
+                    </div>
+                    <div class="total-row">
+                        <span class="label">Booking total</span>
+                        <span class="value">${fmtMoney(lease.total)}</span>
+                    </div>
+                    <div class="total-row" style="padding-top:0.75rem;margin-top:0;">
+                        <span class="label">Refundable security deposit</span>
+                        <span class="value">${fmtMoney(lease.deposit)}</span>
+                    </div>
+                    <div class="total-row" style="padding-top:0.75rem;margin-top:0;">
+                        <span class="label" style="font-weight:700;color:#2c2c2c;">Total due to secure booking</span>
+                        <span class="value" style="font-size:1.3rem;">${fmtMoney(grandTotal)}</span>
+                    </div>
+                    <p style="margin-top:1rem;font-size:0.82rem;color:#aaa;">Zelle to 214-606-1340 (MPT Industries) or pay by card via the link in your approval email.</p>
+                    <p style="margin-top:0.4rem;font-size:0.82rem;color:#888;"><strong>Cancellation policy:</strong> ${lease.cancellation}</p>
+                </div>
+
+                <div class="agreement">
+                    <h2>Terms and Conditions</h2>
+                    <p style="font-size:0.88rem;color:#888;margin-bottom:1.5rem;">This Rental Agreement is made effective between MPT Industries and Guest regarding the property located at ${lease.address}.</p>
+
+                    <div class="clause">
+                        <h3>1. Occupancy and Use</h3>
+                        <p>The property may not be occupied by more than the agreed-upon number of guests. No parties, events, subletting, or commercial use is permitted. Violations may result in immediate termination of the stay without refund.</p>
+                    </div>
+                    <div class="clause">
+                        <h3>2. House Rules and Care of Property</h3>
+                        <p>Guest agrees to keep the property in good condition and to follow all house rules provided. Guest is responsible for any damage beyond normal wear and tear caused by themselves or anyone in their party.</p>
+                    </div>
+                    <div class="clause">
+                        <h3>3. Payment and Cancellation</h3>
+                        <p>Payment terms and cancellation policy are as stated at the time of booking. Cancellations outside the stated cancellation window are non-refundable. Travel insurance is strongly recommended.</p>
+                    </div>
+                    <div class="clause">
+                        <h3>4. Security Deposit</h3>
+                        <p>A refundable security deposit may be required. Any damages, excessive cleaning, missing items, or rule violations may be deducted. Remaining funds will be returned within 2 days of checkout if no issues are found.</p>
+                    </div>
+                    <div class="clause">
+                        <h3>5. Pets and Children</h3>
+                        <p>Pets are only allowed with prior written approval. Unauthorized pets may result in additional fees or termination of the stay. Children must be supervised at all times.</p>
+                    </div>
+                    <div class="clause">
+                        <h3>6. Pools, Hot Tubs, and Amenities</h3>
+                        <p>Use of the pool, hot tub, and any amenities is at Guest's own risk. No foreign substances, glass, or pets are allowed in the pool or hot tub. Misuse may result in service or cleaning fees.</p>
+                    </div>
+                    <div class="clause">
+                        <h3>7. No Refunds for Uncontrollable Events</h3>
+                        <p>No refunds will be issued for weather, power outages, water interruptions, pool or appliance downtime, construction nearby, or acts of nature beyond Owner's control.</p>
+                    </div>
+                    <div class="clause">
+                        <h3>8. Entry and Maintenance</h3>
+                        <p>Owner or agents may enter the property as needed for maintenance, repairs, or emergencies.</p>
+                    </div>
+                    <div class="clause">
+                        <h3>9. Assumption of Risk and Liability</h3>
+                        <p>Guest assumes all risks associated with the use of the property and its amenities and agrees to hold Owner harmless from liability for injury, loss, or damage, except in cases of Owner's gross negligence.</p>
+                    </div>
+                    <div class="clause">
+                        <h3>10. Governing Law</h3>
+                        <p>This Agreement is governed by the laws of the State of California. Any disputes shall be resolved in Riverside County, California.</p>
+                    </div>
+                </div>
+
+                ${lease.signed ? `
+                    <div class="sign-section">
+                        <div class="signed-banner">
+                            Signed by ${lease.signatureName} on ${new Date(lease.signedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                        </div>
+                    </div>
+                ` : `
+                    <div class="sign-section">
+                        <h2>Sign the Agreement</h2>
+                        <p>By typing your name below, you confirm you have read and agree to the terms above.</p>
+                        <div class="sign-input-wrap">
+                            <label for="signature">Your Full Name (as signature)</label>
+                            <input type="text" id="signature" placeholder="Type your full name" autocomplete="name">
+                        </div>
+                        <button class="btn-sign" id="sign-btn">I Agree — Sign Agreement</button>
+                        <div id="sign-status"></div>
+                    </div>
+                `}
+            `;
+
+            if (!lease.signed) {
+                document.getElementById('sign-btn').addEventListener('click', async () => {
+                    const btn = document.getElementById('sign-btn');
+                    const statusDiv = document.getElementById('sign-status');
+                    const sig = document.getElementById('signature').value.trim();
+
+                    if (!sig) {
+                        statusDiv.innerHTML = `<div class="status-box error">Please type your full name to sign.</div>`;
+                        return;
+                    }
+
+                    btn.disabled = true;
+                    btn.textContent = 'Signing...';
+
+                    const id = new URLSearchParams(window.location.search).get('id');
+                    try {
+                        const res = await fetch('/api/lease/sign', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ id, signature: sig }),
+                        });
+                        const data = await res.json();
+                        if (data.success) {
+                            document.querySelector('.sign-section').innerHTML = `
+                                <div class="signed-banner">
+                                    Agreement signed. A copy has been sent to your email.
+                                </div>
+                            `;
+                        } else {
+                            statusDiv.innerHTML = `<div class="status-box error">${data.error || 'Something went wrong.'}</div>`;
+                            btn.disabled = false;
+                            btn.textContent = 'I Agree — Sign Agreement';
+                        }
+                    } catch (e) {
+                        statusDiv.innerHTML = `<div class="status-box error">Network error. Try again.</div>`;
+                        btn.disabled = false;
+                        btn.textContent = 'I Agree — Sign Agreement';
+                    }
+                });
+            }
+        }
+
+        async function init() {
+            const id = new URLSearchParams(window.location.search).get('id');
+            if (!id) {
+                document.getElementById('app').innerHTML = `
+                    <div class="error-page">
+                        <h2>Agreement not found.</h2>
+                        <p>This link may be invalid or expired.</p>
+                    </div>`;
+                return;
+            }
+
+            try {
+                const res = await fetch(`/api/lease?id=${id}`);
+                const data = await res.json();
+                if (data.success) {
+                    renderAgreement(data.lease);
+                } else {
+                    document.getElementById('app').innerHTML = `
+                        <div class="error-page">
+                            <h2>Agreement not found.</h2>
+                            <p>${data.error || 'This link may be invalid or expired.'}</p>
+                        </div>`;
+                }
+            } catch (e) {
+                document.getElementById('app').innerHTML = `
+                    <div class="error-page">
+                        <h2>Something went wrong.</h2>
+                        <p>Please try again or contact us at indigopalmco@gmail.com</p>
+                    </div>`;
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>

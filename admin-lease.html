@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Rental Agreement | Indigo Palm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --sage: #607c67;
+            --terracotta: #B67550;
+            --cream: #F5F3EE;
+            --charcoal: #000000;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
+        }
+        body { font-family: var(--font-sans); background: var(--cream); color: var(--charcoal); line-height: 1.6; min-height: 100vh; }
+        .header { background: white; padding: 1.25rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .header-inner { max-width: 700px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--charcoal); text-decoration: none; }
+        .admin-badge { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terracotta); background: #fef3ec; padding: 0.3rem 0.75rem; border-radius: 20px; }
+        .nav-links { display: flex; gap: 1.5rem; font-size: 0.85rem; }
+        .nav-links a { color: var(--terracotta); text-decoration: none; font-weight: 500; }
+        .container { max-width: 700px; margin: 0 auto; padding: 2.5rem 2rem; }
+        .card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h2 { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 400; margin-bottom: 0.5rem; }
+        .card .subtitle { font-size: 0.9rem; color: #888; margin-bottom: 1.75rem; padding-bottom: 1.5rem; border-bottom: 1px solid #f0ede6; }
+        .form-group { margin-bottom: 1.25rem; }
+        .form-group label { display: block; font-weight: 500; font-size: 0.9rem; margin-bottom: 0.4rem; }
+        .required-star { color: var(--sage); margin-left: 2px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+        input, select, textarea { width: 100%; padding: 0.7rem 0.9rem; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 0.95rem; font-family: var(--font-sans); transition: border-color 0.2s; background: white; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: var(--sage); }
+        .hint { font-size: 0.78rem; color: #aaa; margin-top: 0.3rem; }
+        .btn-send { width: 100%; padding: 1rem; background: var(--sage); color: white; border: none; border-radius: 8px; font-size: 1.05rem; font-weight: 600; cursor: pointer; transition: background 0.2s; font-family: var(--font-sans); margin-top: 0.5rem; }
+        .btn-send:hover { background: #4d6654; }
+        .btn-send:disabled { background: #ccc; cursor: not-allowed; }
+        .status-box { padding: 1rem 1.25rem; border-radius: 8px; font-size: 0.9rem; line-height: 1.6; margin-top: 1.25rem; }
+        .status-box.success { background: #e8f5e9; color: #2e7d32; border-left: 4px solid #4caf50; }
+        .status-box.error { background: #fdecea; color: #c62828; border-left: 4px solid #f44336; }
+        @media (max-width: 600px) { .form-row, .form-row-3 { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">Indigo Palm Collective</a>
+            <div style="display:flex;align-items:center;gap:1rem;">
+                <nav class="nav-links">
+                    <a href="/admin-approve.html">Review Bookings</a>
+                    <a href="/admin-send.html">Send Confirmation</a>
+                </nav>
+                <span class="admin-badge">Host Admin</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>Send Rental Agreement</h2>
+            <p class="subtitle">Fill in the booking details and send the guest a link to review and sign.</p>
+
+            <div class="form-group">
+                <label for="property">Property<span class="required-star">*</span></label>
+                <select id="property">
+                    <option value="">Select a property...</option>
+                    <option value="cozy-cactus">The Cozy Cactus — 82381 Cochran Dr, Indio, CA 92201</option>
+                    <option value="casa-moto">Casa Moto — 49768 Pacino St, Indio, CA 92201</option>
+                    <option value="ps-retreat">PS Retreat — 5301 E Waverly Dr #184, Palm Springs, CA 92264</option>
+                    <option value="the-well">The Well — 510 N Villa Ct #106, Palm Springs, CA 92262</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guest-name">Guest Name<span class="required-star">*</span></label>
+                    <input type="text" id="guest-name" placeholder="Full name">
+                </div>
+                <div class="form-group">
+                    <label for="guest-email">Guest Email<span class="required-star">*</span></label>
+                    <input type="email" id="guest-email" placeholder="guest@email.com">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guest-phone">Guest Phone</label>
+                    <input type="tel" id="guest-phone" placeholder="555-555-5555">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Group Size</label>
+                    <input type="number" id="guests" min="1" max="12" value="2">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="check-in">Check-in<span class="required-star">*</span></label>
+                    <input type="date" id="check-in">
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Check-out<span class="required-star">*</span></label>
+                    <input type="date" id="check-out">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="total">Booking Total<span class="required-star">*</span></label>
+                    <input type="number" id="total" placeholder="0.00" min="0" step="0.01">
+                    <p class="hint">Amount for the stay, not including deposit.</p>
+                </div>
+                <div class="form-group">
+                    <label for="deposit">Security Deposit</label>
+                    <input type="number" id="deposit" placeholder="200.00" value="200" min="0" step="0.01">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cancellation">Cancellation Policy</label>
+                <input type="text" id="cancellation" value="14 day cancellation for full refund. No refund after.">
+            </div>
+        </div>
+
+        <div class="card">
+            <button class="btn-send" id="send-btn">Send Rental Agreement to Guest</button>
+            <div id="send-status"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('send-btn').addEventListener('click', async () => {
+            const btn = document.getElementById('send-btn');
+            const statusDiv = document.getElementById('send-status');
+
+            const propertyId    = document.getElementById('property').value;
+            const name          = document.getElementById('guest-name').value.trim();
+            const email         = document.getElementById('guest-email').value.trim();
+            const phone         = document.getElementById('guest-phone').value.trim();
+            const guests        = parseInt(document.getElementById('guests').value) || 2;
+            const checkIn       = document.getElementById('check-in').value;
+            const checkOut      = document.getElementById('check-out').value;
+            const total         = parseFloat(document.getElementById('total').value) || 0;
+            const deposit       = parseFloat(document.getElementById('deposit').value) || 200;
+            const cancellation  = document.getElementById('cancellation').value.trim();
+
+            if (!propertyId || !name || !email || !checkIn || !checkOut || !total) {
+                statusDiv.innerHTML = `<div class="status-box error">Please fill in all required fields.</div>`;
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+            statusDiv.innerHTML = '';
+
+            try {
+                const res = await fetch('/api/lease', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ propertyId, name, email, phone, guests, checkIn, checkOut, total, deposit, cancellation }),
+                });
+
+                const data = await res.json();
+
+                if (data.success) {
+                    statusDiv.innerHTML = `<div class="status-box success">
+                        Rental agreement sent to ${email}.<br>
+                        <small>Signing link: <a href="${data.leaseUrl}" target="_blank" style="color:#2e7d32;">${data.leaseUrl}</a></small>
+                    </div>`;
+                    btn.textContent = 'Sent!';
+                } else {
+                    statusDiv.innerHTML = `<div class="status-box error">${data.error || 'Something went wrong.'}</div>`;
+                    btn.disabled = false;
+                    btn.textContent = 'Send Rental Agreement to Guest';
+                }
+            } catch (e) {
+                statusDiv.innerHTML = `<div class="status-box error">Network error. Try again.</div>`;
+                btn.disabled = false;
+                btn.textContent = 'Send Rental Agreement to Guest';
+            }
+        });
+    </script>
+</body>
+</html>

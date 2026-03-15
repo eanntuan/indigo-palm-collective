@@ -132,6 +132,18 @@ export default {
       return handleIcalFeed(icalMatch[1], env);
     }
 
+    if (path === '/api/lease' && request.method === 'POST') {
+      return handleCreateLease(request, env);
+    }
+
+    if (path === '/api/lease' && request.method === 'GET') {
+      return handleGetLease(url, env);
+    }
+
+    if (path === '/api/lease/sign' && request.method === 'POST') {
+      return handleSignLease(request, env);
+    }
+
     return new Response(JSON.stringify({ error: 'Not found' }), {
       status: 404, headers: CORS_HEADERS,
     });
@@ -880,6 +892,157 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
     <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">Check-in details are coming closer to the date. We'll make sure you're taken care of.</p>
     <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
+}
+
+// ── Lease Agreements ──────────────────────────────────────────────────────────
+
+async function handleCreateLease(request, env) {
+  let body;
+  try { body = await request.json(); } catch {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid JSON' }), { status: 400, headers: CORS_HEADERS });
+  }
+
+  const { propertyId, name, email, phone, guests, checkIn, checkOut, total, deposit, cancellation } = body;
+  if (!propertyId || !name || !email || !checkIn || !checkOut || !total) {
+    return new Response(JSON.stringify({ success: false, error: 'Missing required fields' }), { status: 400, headers: CORS_HEADERS });
+  }
+
+  const info = PROPERTY_INFO[propertyId];
+  if (!info) {
+    return new Response(JSON.stringify({ success: false, error: 'Unknown property' }), { status: 400, headers: CORS_HEADERS });
+  }
+
+  const id = generateId();
+  const lease = {
+    id, propertyId, name, email,
+    phone: phone || '',
+    guests: guests || 1,
+    checkIn, checkOut,
+    total: parseFloat(total),
+    deposit: parseFloat(deposit) || 200,
+    cancellation: cancellation || '14 day cancellation for full refund. No refund after.',
+    address: info.address,
+    signed: false,
+    signatureName: null,
+    signedAt: null,
+    createdAt: new Date().toISOString(),
+  };
+
+  await env.BOOKINGS.put(`lease:${id}`, JSON.stringify(lease));
+
+  const leaseUrl = `https://indigopalm.co/lease.html?id=${id}`;
+  const nights = Math.round((new Date(checkOut + 'T00:00:00') - new Date(checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24));
+  const firstName = name.split(' ')[0];
+  const grandTotal = (lease.total + lease.deposit).toFixed(2);
+
+  try {
+    await sendEmail(env.RESEND_API_KEY, {
+      from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+      to: email,
+      subject: `Rental Agreement — ${info.name}`,
+      html: emailWrapper(`
+        <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
+        <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:400;color:#2C2C2C;">One thing before you're in.</h1>
+        <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Hi ${firstName}, your ${nights} night${nights !== 1 ? 's' : ''} at <strong>${info.name}</strong> look great. Before we lock it in, please review and sign the rental agreement.</p>
+        <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
+          ${detailRow('Address', info.address)}
+          ${detailRow('Check-in', fmtDate(checkIn))}
+          ${detailRow('Check-out', fmtDate(checkOut))}
+          ${detailRow('Booking Total', `$${lease.total.toFixed(2)}`)}
+          ${detailRow('Security Deposit', `$${lease.deposit.toFixed(2)}`)}
+          ${detailRow('Total Due', `$${grandTotal}`)}
+        </table>
+        <div style="text-align:center;margin-bottom:28px;">
+          <a href="${leaseUrl}" style="display:inline-block;padding:14px 32px;background:#607c67;color:white;text-decoration:none;border-radius:8px;font-weight:600;font-size:15px;">Review and Sign Agreement &rarr;</a>
+        </div>
+        <p style="margin:0;font-size:13px;color:#aaa;text-align:center;">Questions? Reply here or email <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
+      `),
+    });
+
+    return new Response(JSON.stringify({ success: true, leaseUrl }), { status: 200, headers: CORS_HEADERS });
+  } catch (err) {
+    console.error('Lease email failed:', err);
+    return new Response(JSON.stringify({ success: false, error: 'Failed to send email' }), { status: 500, headers: CORS_HEADERS });
+  }
+}
+
+async function handleGetLease(url, env) {
+  const id = url.searchParams.get('id');
+  if (!id) return new Response(JSON.stringify({ success: false, error: 'Missing id' }), { status: 400, headers: CORS_HEADERS });
+
+  const raw = await env.BOOKINGS.get(`lease:${id}`);
+  if (!raw) return new Response(JSON.stringify({ success: false, error: 'Agreement not found' }), { status: 404, headers: CORS_HEADERS });
+
+  return new Response(JSON.stringify({ success: true, lease: JSON.parse(raw) }), { status: 200, headers: CORS_HEADERS });
+}
+
+async function handleSignLease(request, env) {
+  let body;
+  try { body = await request.json(); } catch {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid JSON' }), { status: 400, headers: CORS_HEADERS });
+  }
+
+  const { id, signature } = body;
+  if (!id || !signature) return new Response(JSON.stringify({ success: false, error: 'Missing id or signature' }), { status: 400, headers: CORS_HEADERS });
+
+  const raw = await env.BOOKINGS.get(`lease:${id}`);
+  if (!raw) return new Response(JSON.stringify({ success: false, error: 'Agreement not found' }), { status: 404, headers: CORS_HEADERS });
+
+  const lease = JSON.parse(raw);
+  if (lease.signed) return new Response(JSON.stringify({ success: false, error: 'Already signed' }), { status: 400, headers: CORS_HEADERS });
+
+  lease.signed = true;
+  lease.signatureName = signature;
+  lease.signedAt = new Date().toISOString();
+  await env.BOOKINGS.put(`lease:${id}`, JSON.stringify(lease));
+
+  const info = PROPERTY_INFO[lease.propertyId];
+  const nights = Math.round((new Date(lease.checkOut + 'T00:00:00') - new Date(lease.checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24));
+  const signedDate = new Date(lease.signedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  const grandTotal = (lease.total + lease.deposit).toFixed(2);
+
+  const signedHtml = emailWrapper(`
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(lease.checkIn)} &ndash; ${fmtDate(lease.checkOut)}</p>
+    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:400;color:#2C2C2C;">Agreement signed.</h1>
+    <p style="margin:0 0 24px;font-size:15px;color:#555;line-height:1.7;">Signed by <strong>${signature}</strong> on ${signedDate}. Here's a copy for your records.</p>
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+      ${detailRow('Property', info.name)}
+      ${detailRow('Address', info.address)}
+      ${detailRow('Check-in', fmtDate(lease.checkIn))}
+      ${detailRow('Check-out', fmtDate(lease.checkOut))}
+      ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
+      ${detailRow('Booking Total', `$${lease.total.toFixed(2)}`)}
+      ${detailRow('Security Deposit', `$${lease.deposit.toFixed(2)}`)}
+      ${detailRow('Total Due', `$${grandTotal}`)}
+      ${detailRow('Cancellation', lease.cancellation)}
+    </table>
+    <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;">
+      <p style="margin:0 0 12px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">What you agreed to</p>
+      <p style="margin:0;font-size:13px;color:#555;line-height:1.7;">No parties, no events, no subletting. No unauthorized pets. Outdoor noise curfew at 10pm. No smoking. Pool and amenities at your own risk. Security deposit returnable within 2 days of checkout if no issues. 14-day cancellation for full refund. Governed by California law, Riverside County.</p>
+    </div>
+    <p style="margin:0;font-size:13px;color:#aaa;">Questions? <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
+  `);
+
+  try {
+    await Promise.all([
+      sendEmail(env.RESEND_API_KEY, {
+        from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+        to: lease.email,
+        subject: `Your signed rental agreement — ${info.name}`,
+        html: signedHtml,
+      }),
+      sendEmail(env.RESEND_API_KEY, {
+        from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+        to: 'indigopalmco@gmail.com',
+        subject: `Lease signed: ${lease.name} — ${info.name} (${fmtDate(lease.checkIn)})`,
+        html: signedHtml,
+      }),
+    ]);
+    return new Response(JSON.stringify({ success: true }), { status: 200, headers: CORS_HEADERS });
+  } catch (err) {
+    console.error('Lease sign email failed:', err);
+    return new Response(JSON.stringify({ success: true }), { status: 200, headers: CORS_HEADERS }); // signed even if email fails
+  }
 }
 
 // ── iCal Feed (PS Retreat + The Well direct booking blocks) ───────────────────
