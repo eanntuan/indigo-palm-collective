@@ -244,14 +244,22 @@ async function updatePrice() {
 
         priceEstimate = data.pricing;
 
-        // Show all-in average nightly rate (total / nights)
-        const avgNightly = Math.round(priceEstimate.total / priceEstimate.nights);
+        // Average nightly rate = subtotal / nights (accommodation only, no fees)
+        const avgNightly = (priceEstimate.subtotal / priceEstimate.nights).toFixed(2);
 
         priceContent.innerHTML = `
             <div class="price-breakdown">
                 <div class="price-row">
-                    <span>$${avgNightly}/night &times; ${priceEstimate.nights} night${priceEstimate.nights !== 1 ? 's' : ''}</span>
-                    <span>$${priceEstimate.total.toFixed(2)}</span>
+                    <span>${priceEstimate.nights} night${priceEstimate.nights !== 1 ? 's' : ''} &times; $${avgNightly}</span>
+                    <span>$${priceEstimate.subtotal.toFixed(2)}</span>
+                </div>
+                <div class="price-row">
+                    <span>Cleaning fee</span>
+                    <span>$${priceEstimate.cleaningFee.toFixed(2)}</span>
+                </div>
+                <div class="price-row">
+                    <span>Taxes</span>
+                    <span>$${priceEstimate.taxAmount.toFixed(2)}</span>
                 </div>
                 <div class="price-row">
                     <strong>Total</strong>
