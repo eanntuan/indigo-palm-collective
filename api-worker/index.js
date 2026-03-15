@@ -747,12 +747,11 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
   ].filter(Boolean).join('');
 
   return emailWrapper(`
-    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Booking Confirmed</p>
-    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">You're booked.</h1>
-    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Hi ${firstName}, payment received. Your stay at <strong>${info.name}</strong> is locked in. We can't wait to host you.</p>
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
+    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">The desert is yours, ${firstName}.</h1>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Payment received. Your ${nights} night${nights !== 1 ? 's' : ''} at <strong>${info.name}</strong> are locked in. Pack light, stay long.</p>
 
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
-      ${detailRow('Property', info.name)}
       ${detailRow('Address', info.address)}
       ${detailRow('Check-in', fmtDate(checkIn))}
       ${detailRow('Check-out', fmtDate(checkOut))}
@@ -768,7 +767,7 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
 
     ${notes ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notes}</p></div>` : ''}
 
-    <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">Check-in instructions are coming your way closer to the date.</p>
+    <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">Check-in details are coming closer to the date. We'll make sure you're taken care of.</p>
     <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
 }
