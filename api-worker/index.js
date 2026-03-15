@@ -125,6 +125,13 @@ export default {
       return handleDiscount(url, env);
     }
 
+    // iCal feed for direct bookings — subscribe in Airbnb/Hospitable
+    // e.g. GET /api/calendar/ps-retreat.ics
+    const icalMatch = path.match(/^\/api\/calendar\/([\w-]+)\.ics$/);
+    if (icalMatch && request.method === 'GET') {
+      return handleIcalFeed(icalMatch[1], env);
+    }
+
     return new Response(JSON.stringify({ error: 'Not found' }), {
       status: 404, headers: CORS_HEADERS,
     });
@@ -748,6 +755,22 @@ async function handleConfirm(request, env) {
       console.error('Hostaway block failed (non-fatal):', err);
     }
 
+    // Block calendar via iCal feed (PS Retreat + The Well)
+    const ICAL_PROPERTIES = ['ps-retreat', 'the-well'];
+    if (ICAL_PROPERTIES.includes(propertyId)) {
+      try {
+        await addIcalBooking(env, {
+          propertyId,
+          uid: generateId(),
+          checkIn,
+          checkOut,
+          guestName: name,
+        });
+      } catch (err) {
+        console.error('iCal booking store failed (non-fatal):', err);
+      }
+    }
+
     return new Response(JSON.stringify({ success: true, hostawayReservationId }), { status: 200, headers: CORS_HEADERS });
   } catch (err) {
     console.error('Confirm email failed:', err);
@@ -857,6 +880,61 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
     <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">Check-in details are coming closer to the date. We'll make sure you're taken care of.</p>
     <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
+}
+
+// ── iCal Feed (PS Retreat + The Well direct booking blocks) ───────────────────
+
+// Store a booking in the iCal KV list for a property
+async function addIcalBooking(env, { propertyId, uid, checkIn, checkOut, guestName }) {
+  const key = `ical:${propertyId}`;
+  const existing = await env.BOOKINGS.get(key, { type: 'json' }) || [];
+  existing.push({ uid, checkIn, checkOut, guestName, createdAt: new Date().toISOString() });
+  await env.BOOKINGS.put(key, JSON.stringify(existing));
+}
+
+// Serve an iCal feed for a property from stored bookings
+async function handleIcalFeed(propertyId, env) {
+  const info = PROPERTY_INFO[propertyId];
+  if (!info) {
+    return new Response('Unknown property', { status: 404 });
+  }
+
+  const bookings = await env.BOOKINGS.get(`ical:${propertyId}`, { type: 'json' }) || [];
+
+  const toIcalDate = (d) => d.replace(/-/g, ''); // YYYYMMDD
+
+  const events = bookings.map(b => [
+    'BEGIN:VEVENT',
+    `UID:${b.uid}@indigopalm.co`,
+    `DTSTART;VALUE=DATE:${toIcalDate(b.checkIn)}`,
+    `DTEND;VALUE=DATE:${toIcalDate(b.checkOut)}`,
+    `SUMMARY:Direct Booking - ${b.guestName}`,
+    `DESCRIPTION:Direct booking via indigopalm.co`,
+    `STATUS:CONFIRMED`,
+    'END:VEVENT',
+  ].join('\r\n')).join('\r\n');
+
+  const now = new Date().toISOString().replace(/[-:.]/g, '').slice(0, 15) + 'Z';
+  const ical = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Indigo Palm Collective//Direct Bookings//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    `X-WR-CALNAME:${info.name} Direct Bookings`,
+    `X-WR-CALDESC:Direct bookings for ${info.name}`,
+    events,
+    'END:VCALENDAR',
+  ].filter(Boolean).join('\r\n');
+
+  return new Response(ical, {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/calendar; charset=utf-8',
+      'Content-Disposition': `attachment; filename="${propertyId}.ics"`,
+      'Cache-Control': 'no-cache',
+    },
+  });
 }
 
 // ── Discount Codes ────────────────────────────────────────────────────────────
