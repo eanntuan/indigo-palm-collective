@@ -18,6 +18,30 @@ function calcPoolHeatCost(nights) {
     return nights * 75;
 }
 
+function getPoolHeatNights() {
+    const input = document.getElementById('pool-heat-nights');
+    return input ? parseInt(input.value) || 0 : 0;
+}
+
+function syncPoolHeatNightsMax() {
+    if (!priceEstimate) return;
+    const input = document.getElementById('pool-heat-nights');
+    if (!input) return;
+    input.max = priceEstimate.nights;
+    if (!input.value || parseInt(input.value) > priceEstimate.nights) {
+        input.value = priceEstimate.nights;
+    }
+    if (parseInt(input.value) < 2) input.value = 2;
+    validatePoolHeatNights();
+}
+
+function validatePoolHeatNights() {
+    const nights = getPoolHeatNights();
+    const err = document.getElementById('pool-heat-nights-error');
+    if (err) err.style.display = nights < 2 ? 'block' : 'none';
+    return nights >= 2;
+}
+
 // Calendar navigation state
 const today = new Date();
 today.setHours(0, 0, 0, 0);
@@ -211,8 +235,16 @@ function setupEventListeners() {
     document.querySelectorAll('input[name="pool-heat"]').forEach(radio => {
         radio.addEventListener('change', () => {
             poolHeatSelected = document.getElementById('pool-heat-yes').checked;
+            const nightsRow = document.getElementById('pool-heat-nights-row');
+            nightsRow.style.display = poolHeatSelected ? 'block' : 'none';
+            if (poolHeatSelected) syncPoolHeatNightsMax();
             updatePrice();
         });
+    });
+
+    document.getElementById('pool-heat-nights').addEventListener('input', () => {
+        validatePoolHeatNights();
+        updatePrice();
     });
 
     document.getElementById('cal-prev').addEventListener('click', () => {
@@ -316,8 +348,15 @@ async function submitBookingRequest() {
             ? { ...priceEstimate, total: Math.max(0, priceEstimate.total - appliedDiscount.discountAmount) }
             : priceEstimate;
 
-        const nights = priceEstimate?.nights || 0;
-        const poolHeatCost = poolHeatSelected ? calcPoolHeatCost(nights) : 0;
+        const poolHeatNights = poolHeatSelected ? getPoolHeatNights() : 0;
+        const poolHeatCost = (poolHeatSelected && poolHeatNights >= 2) ? calcPoolHeatCost(poolHeatNights) : 0;
+
+        if (poolHeatSelected && !validatePoolHeatNights()) {
+            showMessage('Pool heating requires a minimum of 2 nights.', 'error');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Request to Book';
+            return;
+        }
 
         const res = await fetch('/api/booking', {
             method: 'POST',
@@ -335,6 +374,7 @@ async function submitBookingRequest() {
                 pricing: pricingPayload,
                 discountCode: appliedDiscount?.code || null,
                 poolHeat: poolHeatSelected,
+                poolHeatNights: poolHeatSelected ? poolHeatNights : 0,
                 poolHeatCost,
             }),
         });
@@ -366,7 +406,8 @@ function renderPriceSummary() {
 
     const nights = priceEstimate.nights;
     const accomTotal = priceEstimate.total;
-    const poolHeatCost = (poolHeatSelected && nights >= 2) ? calcPoolHeatCost(nights) : 0;
+    const poolHeatNights = poolHeatSelected ? getPoolHeatNights() : 0;
+    const poolHeatCost = (poolHeatSelected && poolHeatNights >= 2) ? calcPoolHeatCost(poolHeatNights) : 0;
     const discountAmount = appliedDiscount ? Number(appliedDiscount.discountAmount) : 0;
     const finalTotal = Math.max(0, accomTotal + poolHeatCost - discountAmount);
     const allInNightly = (accomTotal / nights).toFixed(2);
@@ -375,10 +416,18 @@ function renderPriceSummary() {
     if (selectedProperty?.id === 'casa-moto') {
         const label = document.getElementById('pool-heat-price');
         if (label) {
-            if (nights >= 7) label.textContent = '$400 flat (7+ nights)';
-            else if (nights >= 2) label.textContent = `$${calcPoolHeatCost(nights)} ($75/night)`;
-            else label.textContent = 'Available for stays of 2+ nights';
+            if (!poolHeatSelected) {
+                label.textContent = '';
+            } else if (poolHeatNights >= 7) {
+                label.textContent = '$400 flat';
+            } else if (poolHeatNights >= 2) {
+                label.textContent = `$${calcPoolHeatCost(poolHeatNights)}`;
+            } else {
+                label.textContent = 'Minimum 2 nights';
+            }
         }
+        // Sync max when dates change
+        if (poolHeatSelected) syncPoolHeatNightsMax();
     }
 
     const poolHeatRow = poolHeatSelected && poolHeatCost > 0 ? `

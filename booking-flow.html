@@ -474,25 +474,31 @@
                 <!-- Pool Heat (Casa Moto only) -->
                 <div class="form-section" id="pool-heat-section" style="display:none;">
                     <label>Pool Heating</label>
+                    <p style="font-size:0.82rem;color:#888;margin-bottom:0.75rem;line-height:1.6;">$75/night &middot; 2 night minimum &middot; $400 flat for 7+ nights</p>
                     <div id="pool-heat-options" style="border:2px solid #e0e0e0;border-radius:8px;overflow:hidden;">
-                        <label id="pool-heat-no-label" style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;cursor:pointer;border-bottom:1px solid #e0e0e0;margin:0;font-weight:400;">
+                        <label style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;cursor:pointer;border-bottom:1px solid #e0e0e0;margin:0;font-weight:400;">
                             <input type="radio" name="pool-heat" id="pool-heat-no" value="no" checked style="width:auto;border:none;padding:0;">
                             No thanks
                         </label>
-                        <label id="pool-heat-yes-label" style="display:flex;align-items:flex-start;gap:0.75rem;padding:0.85rem 1rem;cursor:pointer;margin:0;font-weight:400;">
-                            <input type="radio" name="pool-heat" id="pool-heat-yes" value="yes" style="width:auto;border:none;padding:0;margin-top:2px;">
-                            <span>
-                                Add pool heating
-                                <span id="pool-heat-price" style="display:block;font-size:0.85rem;color:#607c67;margin-top:2px;"></span>
-                            </span>
+                        <label style="display:flex;align-items:flex-start;gap:0.75rem;padding:0.85rem 1rem;cursor:pointer;margin:0;font-weight:400;">
+                            <input type="radio" name="pool-heat" id="pool-heat-yes" value="yes" style="width:auto;border:none;padding:0;margin-top:3px;">
+                            <span>Yes, add pool heating</span>
                         </label>
+                    </div>
+                    <div id="pool-heat-nights-row" style="display:none;margin-top:0.85rem;display:none;">
+                        <label for="pool-heat-nights" style="font-size:0.9rem;font-weight:500;margin-bottom:0.4rem;display:block;">How many nights?</label>
+                        <div style="display:flex;align-items:center;gap:0.75rem;">
+                            <input type="number" id="pool-heat-nights" min="2" value="2" style="width:100px;">
+                            <span id="pool-heat-price" style="font-size:0.9rem;color:#607c67;font-weight:600;"></span>
+                        </div>
+                        <p id="pool-heat-nights-error" style="display:none;font-size:0.82rem;color:#f44336;margin-top:0.35rem;">Minimum 2 nights required.</p>
                     </div>
                 </div>
 
                 <!-- Special Requests -->
                 <div class="form-section">
-                    <label for="special-requests">Special Requests (Optional)</label>
-                    <textarea id="special-requests" placeholder="Any special needs or questions?"></textarea>
+                    <label for="special-requests">Anything we should know? (Optional)</label>
+                    <textarea id="special-requests" placeholder="What brings you to the desert? Tell us who's coming, what you're celebrating, and anything that would help us make it special."></textarea>
                 </div>
             </form>
         </div>

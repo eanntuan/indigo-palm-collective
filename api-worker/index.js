@@ -311,7 +311,7 @@ async function handleBooking(request, env) {
   }
 
   const { property, propertyId, checkIn, checkOut, guests, name, email, phone,
-          specialRequests, pricing, discountCode, poolHeat, poolHeatCost } = body;
+          specialRequests, pricing, discountCode, poolHeat, poolHeatNights, poolHeatCost } = body;
 
   if (!property || !checkIn || !checkOut || !name || !email || !phone) {
     return new Response(JSON.stringify({ success: false, error: 'Missing required fields' }), {
@@ -364,6 +364,7 @@ async function handleBooking(request, env) {
     discountAmount,
     discountLabel,
     poolHeat: poolHeat || false,
+    poolHeatNights: poolHeat ? (poolHeatNights || 0) : 0,
     poolHeatCost: poolHeat ? (poolHeatCost || 0) : 0,
     estimatedTotal,
     submittedAt: new Date().toISOString(),
@@ -385,7 +386,7 @@ async function handleBooking(request, env) {
       ${detailRow('Check-in', fmtDate(checkIn))}
       ${detailRow('Check-out', fmtDate(checkOut))}
       ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
-      ${poolHeat ? detailRow('Pool Heat', `$${(poolHeatCost || 0).toFixed(2)}`) : ''}
+      ${poolHeat ? detailRow('Pool Heat', `${poolHeatNights} night${poolHeatNights !== 1 ? 's' : ''} &mdash; $${(poolHeatCost || 0).toFixed(2)}`) : ''}
       ${discountLabel ? detailRow('Discount', `<span style="color:#607c67;">-${discountLabel}</span>`) : ''}
       ${detailRow('Est. Total', priceTotal)}
     </table>
