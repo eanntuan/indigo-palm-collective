@@ -1,0 +1,9 @@
+name = "indigo-palm-api"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# Routes: intercept /api/* on indigopalm.co before GitHub Pages handles it
+# Cloudflare must be proxying (orange cloud) for indigopalm.co DNS records
+[[routes]]
+pattern = "indigopalm.co/api/*"
+zone_name = "indigopalm.co"
