@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Guide | The Cozy Cactus</title>
     <meta name="robots" content="noindex, nofollow">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LCY4M0HEQB');
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -178,7 +186,7 @@
             <iframe src="https://www.canva.com/design/DAFfWdYcJDI/GAOJJNmQASKJYJofg9gzyg/view?embed" allowfullscreen title="Cozy Cactus Welcome Guide" loading="lazy"></iframe>
         </div>
         <div class="open-link">
-            <a href="https://bit.ly/cc-welcome-guide" target="_blank">Open in full screen ↗</a>
+            <a href="https://bit.ly/cc-welcome-guide" target="_blank" onclick="gtag('event', 'open_fullscreen', { property: 'cozy-cactus' })">Open in full screen ↗</a>
         </div>
     </div>
 
@@ -227,6 +235,7 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email })
                 });
+                gtag('event', 'email_signup', { property: 'cozy-cactus', source: 'welcome_guide_popup' });
                 document.getElementById('popupForm').style.display = 'none';
                 document.getElementById('popupSkip').style.display = 'none';
                 document.getElementById('popupSuccess').style.display = 'block';
