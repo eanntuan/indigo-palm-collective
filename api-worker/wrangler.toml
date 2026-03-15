@@ -7,3 +7,7 @@ compatibility_date = "2024-01-01"
 [[routes]]
 pattern = "indigopalm.co/api/*"
 zone_name = "indigopalm.co"
+
+[[kv_namespaces]]
+binding = "DISCOUNT_CODES"
+id = "150397b0fcfc4772b72ec92b282872e2"

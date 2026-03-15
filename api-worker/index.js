@@ -67,6 +67,10 @@ export default {
       return handleBooking(request, env);
     }
 
+    if (path === '/api/discount' && request.method === 'GET') {
+      return handleDiscount(url, env);
+    }
+
     return new Response(JSON.stringify({ error: 'Not found' }), {
       status: 404, headers: CORS_HEADERS,
     });
@@ -251,7 +255,7 @@ async function handleBooking(request, env) {
     });
   }
 
-  const { property, checkIn, checkOut, guests, name, email, phone, specialRequests, pricing } = body;
+  const { property, checkIn, checkOut, guests, name, email, phone, specialRequests, pricing, discountCode } = body;
 
   if (!property || !checkIn || !checkOut || !name || !email || !phone) {
     return new Response(JSON.stringify({ success: false, error: 'Missing required fields' }), {
@@ -259,8 +263,31 @@ async function handleBooking(request, env) {
     });
   }
 
-  const priceTotal = pricing?.total ? `$${pricing.total.toFixed(2)}` : 'TBD';
-  const priceCents = pricing?.total ? Math.round(pricing.total * 100) : null;
+  // Validate + consume discount code
+  let discountAmount = 0;
+  let discountLabel = null;
+  if (discountCode && env.DISCOUNT_CODES) {
+    const key = discountCode.trim().toUpperCase();
+    const raw = await env.DISCOUNT_CODES.get(key);
+    if (raw) {
+      const codeData = JSON.parse(raw);
+      if (!codeData.used && pricing?.total) {
+        discountAmount = codeData.type === 'percent'
+          ? pricing.total * (codeData.amount / 100)
+          : codeData.amount;
+        discountAmount = Math.min(discountAmount, pricing.total);
+        discountLabel = codeData.type === 'percent'
+          ? `${codeData.amount}% off (${key})`
+          : `$${codeData.amount} off (${key})`;
+        // Mark as used
+        await env.DISCOUNT_CODES.put(key, JSON.stringify({ ...codeData, used: true, usedBy: email, usedAt: new Date().toISOString() }));
+      }
+    }
+  }
+
+  const finalTotal = pricing?.total ? Math.max(0, pricing.total - discountAmount) : null;
+  const priceTotal = finalTotal != null ? `$${finalTotal.toFixed(2)}` : 'TBD';
+  const priceCents = finalTotal != null ? Math.round(finalTotal * 100) : null;
 
   // Format dates nicely: 2026-05-22 -> May 22, 2026
   function fmtDate(d) {
@@ -328,6 +355,7 @@ async function handleBooking(request, env) {
       ${detailRow('Check-in', fmtDate(checkIn))}
       ${detailRow('Check-out', fmtDate(checkOut))}
       ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
+      ${discountLabel ? detailRow('Discount', `<span style="color:#B67550;">-${discountLabel}</span>`) : ''}
       ${detailRow('Total', priceTotal)}
     </table>
     ${paymentLink ? `
@@ -385,6 +413,51 @@ async function handleBooking(request, env) {
       status: 500, headers: CORS_HEADERS,
     });
   }
+}
+
+// ── Discount Codes ────────────────────────────────────────────────────────────
+
+async function handleDiscount(url, env) {
+  const code = url.searchParams.get('code')?.trim().toUpperCase();
+  const total = parseFloat(url.searchParams.get('total'));
+
+  if (!code) {
+    return new Response(JSON.stringify({ success: false, error: 'No code provided' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  if (!env.DISCOUNT_CODES) {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid code' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const raw = await env.DISCOUNT_CODES.get(code);
+  if (!raw) {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid code' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const codeData = JSON.parse(raw);
+  if (codeData.used) {
+    return new Response(JSON.stringify({ success: false, error: 'This code has already been used' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const discountAmount = codeData.type === 'percent'
+    ? (total * (codeData.amount / 100))
+    : codeData.amount;
+
+  return new Response(JSON.stringify({
+    success: true,
+    type: codeData.type,
+    amount: codeData.amount,
+    discountAmount: Math.min(discountAmount, total),
+    label: codeData.type === 'percent' ? `${codeData.amount}% off` : `$${codeData.amount} off`,
+  }), { status: 200, headers: CORS_HEADERS });
 }
 
 async function createSquarePaymentLink(accessToken, { name, amountCents, note }) {

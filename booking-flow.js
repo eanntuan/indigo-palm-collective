@@ -9,6 +9,7 @@ import { PROPERTIES } from './booking-config.js';
 let selectedProperty = null;
 let blockedDates = new Set();
 let priceEstimate = null;
+let appliedDiscount = null; // { code, type, amount, discountAmount, label }
 
 // Calendar navigation state
 const today = new Date();
@@ -173,6 +174,10 @@ function setupEventListeners() {
     checkOut.addEventListener('change', () => { updatePrice(); renderCalendar(); });
     document.getElementById('guests').addEventListener('input', updatePrice);
     document.getElementById('submit-btn').addEventListener('click', submitBookingRequest);
+    document.getElementById('apply-promo').addEventListener('click', applyPromoCode);
+    document.getElementById('promo-code').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') { e.preventDefault(); applyPromoCode(); }
+    });
 
     document.getElementById('cal-prev').addEventListener('click', () => {
         calMonth--;
@@ -243,22 +248,7 @@ async function updatePrice() {
         }
 
         priceEstimate = data.pricing;
-
-        // All-in nightly rate = total / nights (includes cleaning fee and taxes)
-        const allInNightly = (priceEstimate.total / priceEstimate.nights).toFixed(2);
-
-        priceContent.innerHTML = `
-            <div class="price-breakdown">
-                <div class="price-row">
-                    <span>${priceEstimate.nights} night${priceEstimate.nights !== 1 ? 's' : ''} &times; $${allInNightly}/night</span>
-                    <span>$${priceEstimate.total.toFixed(2)}</span>
-                </div>
-                <div class="price-row">
-                    <strong>Total</strong>
-                    <strong>$${priceEstimate.total.toFixed(2)}</strong>
-                </div>
-            </div>`;
-
+        renderPriceSummary();
         submitBtn.disabled = false;
 
     } catch (err) {
@@ -286,6 +276,10 @@ async function submitBookingRequest() {
     submitBtn.textContent = 'Submitting...';
 
     try {
+        const pricingPayload = appliedDiscount
+            ? { ...priceEstimate, total: Math.max(0, priceEstimate.total - appliedDiscount.discountAmount) }
+            : priceEstimate;
+
         const res = await fetch('/api/booking', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -298,7 +292,8 @@ async function submitBookingRequest() {
                 email,
                 phone,
                 specialRequests,
-                pricing: priceEstimate,
+                pricing: pricingPayload,
+                discountCode: appliedDiscount?.code || null,
             }),
         });
 
@@ -313,12 +308,109 @@ async function submitBookingRequest() {
 
         document.getElementById('check-in').value = '';
         document.getElementById('check-out').value = '';
+        appliedDiscount = null;
 
     } catch (err) {
         console.error('Booking submission failed:', err);
         showMessage('Something went wrong. Please try again or email us at indigopalmco@gmail.com.', 'error');
         submitBtn.disabled = false;
         submitBtn.textContent = 'Request to Book';
+    }
+}
+
+function renderPriceSummary() {
+    const priceContent = document.getElementById('price-content');
+    if (!priceEstimate) return;
+
+    const baseTotal = priceEstimate.total;
+    const discountAmount = appliedDiscount ? appliedDiscount.discountAmount : 0;
+    const finalTotal = Math.max(0, baseTotal - discountAmount);
+    const allInNightly = (finalTotal / priceEstimate.nights).toFixed(2);
+
+    const discountRow = appliedDiscount ? `
+        <div class="price-row" style="color:#738561;">
+            <span>Discount (${appliedDiscount.code})</span>
+            <span>-$${appliedDiscount.discountAmount.toFixed(2)}</span>
+        </div>` : '';
+
+    priceContent.innerHTML = `
+        <div class="price-breakdown">
+            <div class="price-row">
+                <span>${priceEstimate.nights} night${priceEstimate.nights !== 1 ? 's' : ''} &times; $${allInNightly}/night</span>
+                <span>$${finalTotal.toFixed(2)}</span>
+            </div>
+            ${discountRow}
+            <div class="price-row">
+                <strong>Total</strong>
+                <strong>$${finalTotal.toFixed(2)}</strong>
+            </div>
+        </div>`;
+
+    // Show promo code section
+    document.getElementById('promo-section').style.display = 'block';
+}
+
+async function applyPromoCode() {
+    const codeInput = document.getElementById('promo-code');
+    const msg = document.getElementById('promo-message');
+    const btn = document.getElementById('apply-promo');
+    const code = codeInput.value.trim().toUpperCase();
+
+    if (!code) return;
+    if (!priceEstimate) {
+        msg.style.display = 'block';
+        msg.style.color = '#f44336';
+        msg.textContent = 'Select dates first to apply a promo code.';
+        return;
+    }
+
+    // If already applied, allow removing
+    if (appliedDiscount && appliedDiscount.code === code) {
+        appliedDiscount = null;
+        codeInput.value = '';
+        btn.textContent = 'Apply';
+        msg.style.display = 'none';
+        renderPriceSummary();
+        return;
+    }
+
+    btn.textContent = 'Checking...';
+    btn.disabled = true;
+
+    try {
+        const res = await fetch(`/api/discount?code=${encodeURIComponent(code)}&total=${priceEstimate.total}`);
+        const data = await res.json();
+
+        if (data.success) {
+            appliedDiscount = { code, ...data };
+            msg.style.display = 'block';
+            msg.style.color = '#738561';
+            msg.textContent = `${data.label} applied!`;
+            btn.textContent = 'Remove';
+            btn.disabled = false;
+            btn.onclick = () => {
+                appliedDiscount = null;
+                codeInput.value = '';
+                btn.textContent = 'Apply';
+                btn.onclick = null;
+                btn.addEventListener('click', applyPromoCode);
+                msg.style.display = 'none';
+                renderPriceSummary();
+            };
+            renderPriceSummary();
+        } else {
+            msg.style.display = 'block';
+            msg.style.color = '#f44336';
+            msg.textContent = data.error || 'Invalid code.';
+            btn.textContent = 'Apply';
+            btn.disabled = false;
+        }
+    } catch (e) {
+        msg.style.display = 'block';
+        msg.style.color = '#f44336';
+        msg.textContent = 'Could not verify code. Try again.';
+        btn.textContent = 'Apply';
+        btn.disabled = false;
     }
 }
 
