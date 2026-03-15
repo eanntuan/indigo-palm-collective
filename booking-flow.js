@@ -10,6 +10,13 @@ let selectedProperty = null;
 let blockedDates = new Set();
 let priceEstimate = null;
 let appliedDiscount = null; // { code, type, amount, discountAmount, label }
+let poolHeatSelected = false;
+
+function calcPoolHeatCost(nights) {
+    if (!nights || nights < 2) return 0;
+    if (nights >= 7) return 400;
+    return nights * 75;
+}
 
 // Calendar navigation state
 const today = new Date();
@@ -41,7 +48,7 @@ function renderPropertySelector() {
             ${imgSrc ? `<img class="property-option-photo" src="${imgSrc}" alt="${property.name}" loading="lazy">` : ''}
             <div class="property-option-info">
                 <h3>${property.name}</h3>
-                <p class="property-option-meta">${property.location} &middot; ${property.bedrooms} bed &middot; up to ${property.maxGuests} guests</p>
+                <p class="property-option-meta">${property.location} &middot; ${property.bedrooms} bed/${property.bathrooms} bath &middot; up to ${property.maxGuests} guests</p>
                 <p class="property-option-price">from $${property.basePrice}/night</p>
             </div>
         `;
@@ -62,6 +69,17 @@ function selectProperty(propertyId) {
     }
 
     document.getElementById('availability-calendar').style.display = 'block';
+
+    // Pool heat: show only for Casa Moto
+    const poolSection = document.getElementById('pool-heat-section');
+    if (propertyId === 'casa-moto') {
+        poolSection.style.display = 'block';
+    } else {
+        poolSection.style.display = 'none';
+        poolHeatSelected = false;
+        document.getElementById('pool-heat-no').checked = true;
+    }
+
     loadAvailabilityCalendar();
     updatePrice();
 }
@@ -189,6 +207,14 @@ function setupEventListeners() {
         if (e.key === 'Enter') { e.preventDefault(); applyPromoCode(); }
     });
 
+    // Pool heat radios
+    document.querySelectorAll('input[name="pool-heat"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+            poolHeatSelected = document.getElementById('pool-heat-yes').checked;
+            updatePrice();
+        });
+    });
+
     document.getElementById('cal-prev').addEventListener('click', () => {
         calMonth--;
         if (calMonth < 0) { calMonth = 11; calYear--; }
@@ -290,11 +316,15 @@ async function submitBookingRequest() {
             ? { ...priceEstimate, total: Math.max(0, priceEstimate.total - appliedDiscount.discountAmount) }
             : priceEstimate;
 
+        const nights = priceEstimate?.nights || 0;
+        const poolHeatCost = poolHeatSelected ? calcPoolHeatCost(nights) : 0;
+
         const res = await fetch('/api/booking', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 property: selectedProperty.name,
+                propertyId: selectedProperty.id,
                 checkIn,
                 checkOut,
                 guests,
@@ -304,6 +334,8 @@ async function submitBookingRequest() {
                 specialRequests,
                 pricing: pricingPayload,
                 discountCode: appliedDiscount?.code || null,
+                poolHeat: poolHeatSelected,
+                poolHeatCost,
             }),
         });
 
@@ -332,13 +364,31 @@ function renderPriceSummary() {
     const priceContent = document.getElementById('price-content');
     if (!priceEstimate) return;
 
-    const baseTotal = priceEstimate.total;
+    const nights = priceEstimate.nights;
+    const accomTotal = priceEstimate.total;
+    const poolHeatCost = (poolHeatSelected && nights >= 2) ? calcPoolHeatCost(nights) : 0;
     const discountAmount = appliedDiscount ? Number(appliedDiscount.discountAmount) : 0;
-    const finalTotal = Math.max(0, baseTotal - discountAmount);
-    const allInNightly = (baseTotal / priceEstimate.nights).toFixed(2);
+    const finalTotal = Math.max(0, accomTotal + poolHeatCost - discountAmount);
+    const allInNightly = (accomTotal / nights).toFixed(2);
+
+    // Update pool heat price label
+    if (selectedProperty?.id === 'casa-moto') {
+        const label = document.getElementById('pool-heat-price');
+        if (label) {
+            if (nights >= 7) label.textContent = '$400 flat (7+ nights)';
+            else if (nights >= 2) label.textContent = `$${calcPoolHeatCost(nights)} ($75/night)`;
+            else label.textContent = 'Available for stays of 2+ nights';
+        }
+    }
+
+    const poolHeatRow = poolHeatSelected && poolHeatCost > 0 ? `
+        <div class="price-row">
+            <span>Pool heating</span>
+            <span>$${poolHeatCost.toFixed(2)}</span>
+        </div>` : '';
 
     const discountRow = appliedDiscount ? `
-        <div class="price-row" style="color:#738561;">
+        <div class="price-row" style="color:#607c67;">
             <span>Discount (${appliedDiscount.code})</span>
             <span>-$${discountAmount.toFixed(2)}</span>
         </div>` : '';
@@ -346,9 +396,10 @@ function renderPriceSummary() {
     priceContent.innerHTML = `
         <div class="price-breakdown">
             <div class="price-row">
-                <span>${priceEstimate.nights} night${priceEstimate.nights !== 1 ? 's' : ''} &times; $${allInNightly}/night</span>
-                <span>$${baseTotal.toFixed(2)}</span>
+                <span>${nights} night${nights !== 1 ? 's' : ''} &times; $${allInNightly}/night</span>
+                <span>$${accomTotal.toFixed(2)}</span>
             </div>
+            ${poolHeatRow}
             ${discountRow}
             <div class="price-row">
                 <strong>Total</strong>
@@ -357,7 +408,7 @@ function renderPriceSummary() {
         </div>
         <div style="margin-top:1rem;padding:0.85rem 1rem;background:#F5F3EE;border-radius:8px;font-size:0.82rem;line-height:1.6;color:#555;">
             <strong style="color:#2C2C2C;">Zelle (no fee):</strong> 214-606-1340 (MPT Industries)<br>
-            <strong style="color:#2C2C2C;">Credit card:</strong> Square link sent after request (3% fee)
+            <strong style="color:#2C2C2C;">Credit card:</strong> Square link sent after approval (3% fee)
         </div>`;
 
     // Show promo code section

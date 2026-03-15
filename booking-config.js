@@ -12,6 +12,7 @@ export const PROPERTIES = {
     name: 'The Cozy Cactus',
     location: 'Indio, CA',
     bedrooms: 3,
+    bathrooms: 2,
     maxGuests: 8,
     basePrice: 250, // per night
     cleaningFee: 250,
@@ -24,7 +25,8 @@ export const PROPERTIES = {
     name: 'Casa Moto',
     location: 'Indio, CA',
     bedrooms: 3,
-    maxGuests: 6,
+    bathrooms: 2,
+    maxGuests: 8,
     basePrice: 225, // per night
     cleaningFee: 250,
     taxRate: 0.12,
@@ -36,6 +38,7 @@ export const PROPERTIES = {
     name: 'PS Retreat',
     location: 'Palm Springs, CA',
     bedrooms: 2,
+    bathrooms: 2,
     maxGuests: 4,
     basePrice: 180, // per night
     cleaningFee: 200,
@@ -47,7 +50,8 @@ export const PROPERTIES = {
     id: 'the-well',
     name: 'The Well',
     location: 'Palm Springs, CA',
-    bedrooms: 4,
+    bedrooms: 1,
+    bathrooms: 1,
     maxGuests: 8,
     basePrice: 300, // per night
     cleaningFee: 200,

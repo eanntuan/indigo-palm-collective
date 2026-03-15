@@ -33,7 +33,7 @@ const PRICELABS_LISTINGS = {
 
 const PROPERTY_CONFIG = {
   'cozy-cactus': { basePrice: 250, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
-  'casa-moto':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 6, minNights: 2 },
+  'casa-moto':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
   'ps-retreat':  { basePrice: 280, cleaningFee: 200, taxRate: 0.135, maxGuests: 4, minNights: 2 },
   'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 8, minNights: 2 },
 };
@@ -65,6 +65,14 @@ export default {
 
     if (path === '/api/booking' && request.method === 'POST') {
       return handleBooking(request, env);
+    }
+
+    if (path === '/api/booking' && request.method === 'GET') {
+      return handleGetBooking(url, env);
+    }
+
+    if (path === '/api/approve' && request.method === 'POST') {
+      return handleApprove(request, env);
     }
 
     if (path === '/api/discount' && request.method === 'GET') {
@@ -245,6 +253,53 @@ async function handlePricing(url, env) {
 
 // ── Booking ───────────────────────────────────────────────────────────────────
 
+function generateId() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+}
+
+function fmtDate(d) {
+  if (!d) return d;
+  const [y, m, day] = d.split('-').map(Number);
+  return new Date(y, m - 1, day).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+function emailWrapper(content) {
+  return `<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#F5F3EE;font-family:'Helvetica Neue',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#F5F3EE;padding:40px 20px;">
+    <tr><td align="center">
+      <table width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
+        <tr>
+          <td style="background:#607c67;padding:28px 36px;border-radius:12px 12px 0 0;text-align:center;">
+            <p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:400;color:#ffffff;letter-spacing:0.05em;">Indigo Palm Collective</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="background:#ffffff;padding:36px;border-radius:0 0 12px 12px;">
+            ${content}
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:20px 36px;text-align:center;">
+            <p style="margin:0;font-size:12px;color:#999;">indigopalm.co &nbsp;&middot;&nbsp; indigopalmco@gmail.com</p>
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
+}
+
+function detailRow(label, value) {
+  return `<tr>
+    <td style="padding:10px 0;border-bottom:1px solid #F0EDE6;color:#888;font-size:13px;width:120px;vertical-align:top;">${label}</td>
+    <td style="padding:10px 0;border-bottom:1px solid #F0EDE6;color:#2C2C2C;font-size:14px;font-weight:500;">${value}</td>
+  </tr>`;
+}
+
 async function handleBooking(request, env) {
   let body;
   try {
@@ -255,7 +310,8 @@ async function handleBooking(request, env) {
     });
   }
 
-  const { property, checkIn, checkOut, guests, name, email, phone, specialRequests, pricing, discountCode } = body;
+  const { property, propertyId, checkIn, checkOut, guests, name, email, phone,
+          specialRequests, pricing, discountCode, poolHeat, poolHeatCost } = body;
 
   if (!property || !checkIn || !checkOut || !name || !email || !phone) {
     return new Response(JSON.stringify({ success: false, error: 'Missing required fields' }), {
@@ -263,7 +319,7 @@ async function handleBooking(request, env) {
     });
   }
 
-  // Validate + consume discount code
+  // Validate discount code (but don't consume yet — consume on approve)
   let discountAmount = 0;
   let discountLabel = null;
   if (discountCode && env.DISCOUNT_CODES) {
@@ -279,79 +335,49 @@ async function handleBooking(request, env) {
         discountLabel = codeData.type === 'percent'
           ? `${codeData.amount}% off (${key})`
           : `$${codeData.amount} off (${key})`;
-        // Mark as used
-        await env.DISCOUNT_CODES.put(key, JSON.stringify({ ...codeData, used: true, usedBy: email, usedAt: new Date().toISOString() }));
       }
     }
   }
 
-  const finalTotal = pricing?.total ? Math.max(0, pricing.total - discountAmount) : null;
-  const priceTotal = finalTotal != null ? `$${finalTotal.toFixed(2)}` : 'TBD';
-  const priceCents = finalTotal != null ? Math.round(finalTotal * 100) : null;
+  const baseTotal = (pricing?.total || 0) + (poolHeat ? (poolHeatCost || 0) : 0);
+  const estimatedTotal = Math.max(0, baseTotal - discountAmount);
+  const priceTotal = estimatedTotal > 0 ? `$${estimatedTotal.toFixed(2)}` : 'TBD';
 
-  // Format dates nicely: 2026-05-22 -> May 22, 2026
-  function fmtDate(d) {
-    if (!d) return d;
-    const [y, m, day] = d.split('-').map(Number);
-    return new Date(y, m - 1, day).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  // Store booking in KV
+  const bookingId = generateId();
+  const token = generateId() + generateId();
+  const bookingData = {
+    id: bookingId,
+    token,
+    status: 'pending',
+    property,
+    propertyId: propertyId || '',
+    checkIn,
+    checkOut,
+    guests,
+    name,
+    email,
+    phone,
+    specialRequests: specialRequests || '',
+    pricing: pricing || null,
+    discountCode: discountCode?.trim().toUpperCase() || null,
+    discountAmount,
+    discountLabel,
+    poolHeat: poolHeat || false,
+    poolHeatCost: poolHeat ? (poolHeatCost || 0) : 0,
+    estimatedTotal,
+    submittedAt: new Date().toISOString(),
+  };
+
+  if (env.BOOKINGS) {
+    await env.BOOKINGS.put(`booking:${bookingId}`, JSON.stringify(bookingData), {
+      expirationTtl: 60 * 60 * 24 * 60, // 60 days
+    });
   }
 
-  // Generate Square payment link with itemized order
-  let paymentLink = null;
-  if (pricing && env.SQUARE_ACCESS_TOKEN) {
-    try {
-      paymentLink = await createSquarePaymentLink(env.SQUARE_ACCESS_TOKEN, {
-        property,
-        checkIn,
-        checkOut,
-        pricing,
-        discountAmount,
-        discountCode: discountCode?.trim().toUpperCase() || null,
-        fmtDate,
-      });
-    } catch (e) {
-      console.error('Square payment link failed:', e);
-    }
-  }
+  const adminUrl = `https://indigopalm.co/admin-approve.html?id=${bookingId}&token=${token}`;
 
-  const emailWrapper = (content) => `
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
-<body style="margin:0;padding:0;background:#F5F3EE;font-family:'Helvetica Neue',Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#F5F3EE;padding:40px 20px;">
-    <tr><td align="center">
-      <table width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
-        <!-- Header -->
-        <tr>
-          <td style="background:#607c67;padding:28px 36px;border-radius:12px 12px 0 0;text-align:center;">
-            <p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:400;color:#ffffff;letter-spacing:0.05em;">Indigo Palm Collective</p>
-          </td>
-        </tr>
-        <!-- Body -->
-        <tr>
-          <td style="background:#ffffff;padding:36px;border-radius:0 0 12px 12px;">
-            ${content}
-          </td>
-        </tr>
-        <!-- Footer -->
-        <tr>
-          <td style="padding:20px 36px;text-align:center;">
-            <p style="margin:0;font-size:12px;color:#999;">indigopalm.co &nbsp;&middot;&nbsp; indigopalmco@gmail.com</p>
-          </td>
-        </tr>
-      </table>
-    </td></tr>
-  </table>
-</body>
-</html>`;
-
-  const detailRow = (label, value) => `
-    <tr>
-      <td style="padding:10px 0;border-bottom:1px solid #F0EDE6;color:#888;font-size:13px;width:120px;vertical-align:top;">${label}</td>
-      <td style="padding:10px 0;border-bottom:1px solid #F0EDE6;color:#2C2C2C;font-size:14px;font-weight:500;">${value}</td>
-    </tr>`;
-
+  // Host email
   const hostEmailHtml = emailWrapper(`
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">New Booking Request</p>
     <h1 style="margin:0 0 28px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">${property}</h1>
@@ -359,15 +385,15 @@ async function handleBooking(request, env) {
       ${detailRow('Check-in', fmtDate(checkIn))}
       ${detailRow('Check-out', fmtDate(checkOut))}
       ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
-      ${discountLabel ? detailRow('Discount', `<span style="color:#B67550;">-${discountLabel}</span>`) : ''}
-      ${detailRow('Total', priceTotal)}
+      ${poolHeat ? detailRow('Pool Heat', `$${(poolHeatCost || 0).toFixed(2)}`) : ''}
+      ${discountLabel ? detailRow('Discount', `<span style="color:#607c67;">-${discountLabel}</span>`) : ''}
+      ${detailRow('Est. Total', priceTotal)}
     </table>
-    ${paymentLink ? `
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       <tr><td style="padding:20px;background:#F5F3EE;border-radius:8px;text-align:center;">
-        <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Collect Payment ${priceTotal} &rarr;</a>
+        <a href="${adminUrl}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Review &amp; Approve &rarr;</a>
       </td></tr>
-    </table>` : ''}
+    </table>
     <p style="margin:0 0 8px;font-size:13px;color:#888;text-transform:uppercase;letter-spacing:0.08em;font-weight:500;">Guest Details</p>
     <table width="100%" cellpadding="0" cellspacing="0">
       ${detailRow('Name', name)}
@@ -377,27 +403,21 @@ async function handleBooking(request, env) {
     </table>
   `);
 
+  // Guest email (no payment link — sent after approval)
   const guestEmailHtml = emailWrapper(`
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
-    <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Your dates are on our radar.</h1>
-    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.6;">Hi ${name.split(' ')[0]}, thanks for reaching out about <strong>${property}</strong>. We'll be in touch within 24 hours with a payment link to lock it in.</p>
+    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">The desert's holding your spot.</h1>
+    <p style="margin:0 0 14px;font-size:15px;color:#555;line-height:1.7;">Hi ${name.split(' ')[0]}, we got your request for <strong>${property}</strong>, ${fmtDate(checkIn)} to ${fmtDate(checkOut)}. We'll follow up within 24 hours with a payment link to make it official.</p>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">The hot tub is ready. The stars are already out there doing their thing. We'll be in touch soon.</p>
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Property', property)}
       ${detailRow('Check-in', fmtDate(checkIn))}
       ${detailRow('Check-out', fmtDate(checkOut))}
       ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
+      ${poolHeat ? detailRow('Pool Heat', `$${(poolHeatCost || 0).toFixed(2)}`) : ''}
       ${detailRow('Est. Total', priceTotal)}
     </table>
-    <div style="margin-top:28px;padding:20px;background:#F5F3EE;border-radius:8px;">
-      <p style="margin:0 0 10px;font-size:13px;font-weight:600;color:#2C2C2C;">Payment Options</p>
-      <p style="margin:0 0 8px;font-size:14px;color:#555;">
-        <strong style="color:#2C2C2C;">Zelle (no fee):</strong> Send to <strong>214-606-1340</strong> (MPT Industries)
-      </p>
-      <p style="margin:0;font-size:14px;color:#555;">
-        <strong style="color:#2C2C2C;">Credit card (3% fee):</strong> We'll send a Square payment link.
-      </p>
-    </div>
-    <p style="margin:20px 0 0;font-size:14px;color:#888;">Questions? Reply to this email or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
+    <p style="margin:20px 0 0;font-size:14px;color:#888;">Questions? Reply here or email us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
 
   try {
@@ -405,7 +425,7 @@ async function handleBooking(request, env) {
       sendEmail(env.RESEND_API_KEY, {
         from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
         to:   'indigopalmco@gmail.com',
-        subject: `New Booking Request: ${property} (${fmtDate(checkIn)} to ${fmtDate(checkOut)})`,
+        subject: `New Booking Request: ${property} (${fmtDate(checkIn)} – ${fmtDate(checkOut)})`,
         html:  hostEmailHtml,
         reply_to: email,
       }),
@@ -423,6 +443,187 @@ async function handleBooking(request, env) {
   } catch (err) {
     console.error('Email send failed:', err);
     return new Response(JSON.stringify({ success: false, error: 'Failed to send confirmation email' }), {
+      status: 500, headers: CORS_HEADERS,
+    });
+  }
+}
+
+// ── Get Booking (for admin page) ──────────────────────────────────────────────
+
+async function handleGetBooking(url, env) {
+  const id    = url.searchParams.get('id');
+  const token = url.searchParams.get('token');
+
+  if (!id || !token) {
+    return new Response(JSON.stringify({ success: false, error: 'Missing id or token' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  if (!env.BOOKINGS) {
+    return new Response(JSON.stringify({ success: false, error: 'Storage unavailable' }), {
+      status: 500, headers: CORS_HEADERS,
+    });
+  }
+
+  const raw = await env.BOOKINGS.get(`booking:${id}`);
+  if (!raw) {
+    return new Response(JSON.stringify({ success: false, error: 'Booking not found' }), {
+      status: 404, headers: CORS_HEADERS,
+    });
+  }
+
+  const booking = JSON.parse(raw);
+  if (booking.token !== token) {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid token' }), {
+      status: 403, headers: CORS_HEADERS,
+    });
+  }
+
+  // Return booking without the token
+  const { token: _t, ...safeBooking } = booking;
+  return new Response(JSON.stringify({ success: true, booking: safeBooking }), {
+    status: 200, headers: CORS_HEADERS,
+  });
+}
+
+// ── Approve Booking ───────────────────────────────────────────────────────────
+
+async function handleApprove(request, env) {
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid JSON' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const { id, token, overrideTotal, flatDiscount, notesToGuest } = body;
+
+  if (!id || !token) {
+    return new Response(JSON.stringify({ success: false, error: 'Missing id or token' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const raw = await env.BOOKINGS.get(`booking:${id}`);
+  if (!raw) {
+    return new Response(JSON.stringify({ success: false, error: 'Booking not found' }), {
+      status: 404, headers: CORS_HEADERS,
+    });
+  }
+
+  const booking = JSON.parse(raw);
+  if (booking.token !== token) {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid token' }), {
+      status: 403, headers: CORS_HEADERS,
+    });
+  }
+
+  if (booking.status === 'approved') {
+    return new Response(JSON.stringify({ success: false, error: 'Already approved' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  // Calculate final total
+  const baseTotal = (booking.pricing?.total || 0) + (booking.poolHeatCost || 0);
+  let finalTotal;
+  if (overrideTotal != null && overrideTotal > 0) {
+    finalTotal = parseFloat(overrideTotal);
+  } else {
+    const discount = (parseFloat(flatDiscount) || 0) + (booking.discountAmount || 0);
+    finalTotal = Math.max(0, baseTotal - discount);
+  }
+
+  // Consume discount code now
+  if (booking.discountCode && env.DISCOUNT_CODES) {
+    const raw = await env.DISCOUNT_CODES.get(booking.discountCode);
+    if (raw) {
+      const codeData = JSON.parse(raw);
+      if (!codeData.used) {
+        await env.DISCOUNT_CODES.put(booking.discountCode, JSON.stringify({
+          ...codeData, used: true, usedBy: booking.email, usedAt: new Date().toISOString(),
+        }));
+      }
+    }
+  }
+
+  // Build pricing object for Square
+  const approvedPricing = booking.pricing
+    ? { ...booking.pricing, total: finalTotal }
+    : { total: finalTotal, nights: 0, subtotal: finalTotal, cleaningFee: 0, taxRate: 0, taxAmount: 0 };
+
+  // Generate Square payment link
+  let paymentLink = null;
+  if (env.SQUARE_ACCESS_TOKEN) {
+    try {
+      paymentLink = await createSquarePaymentLink(env.SQUARE_ACCESS_TOKEN, {
+        property: booking.property,
+        checkIn: booking.checkIn,
+        checkOut: booking.checkOut,
+        pricing: approvedPricing,
+        poolHeat: booking.poolHeat,
+        poolHeatCost: booking.poolHeatCost || 0,
+        discountAmount: (parseFloat(flatDiscount) || 0) + (booking.discountAmount || 0),
+        discountCode: booking.discountCode,
+        fmtDate,
+      });
+    } catch (e) {
+      console.error('Square payment link failed:', e);
+    }
+  }
+
+  const priceTotal = `$${finalTotal.toFixed(2)}`;
+
+  // Send payment email to guest
+  const guestPaymentHtml = emailWrapper(`
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Your Booking is Confirmed</p>
+    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Time to make it official.</h1>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Hi ${booking.name.split(' ')[0]}, your stay at <strong>${booking.property}</strong> is confirmed. Complete your payment below to lock in your dates.</p>
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
+      ${detailRow('Property', booking.property)}
+      ${detailRow('Check-in', fmtDate(booking.checkIn))}
+      ${detailRow('Check-out', fmtDate(booking.checkOut))}
+      ${detailRow('Guests', `${booking.guests} guest${booking.guests !== 1 ? 's' : ''}`)}
+      ${booking.poolHeat ? detailRow('Pool Heat', `$${(booking.poolHeatCost || 0).toFixed(2)}`) : ''}
+      ${detailRow('Total', `<strong>${priceTotal}</strong>`)}
+    </table>
+    ${paymentLink ? `
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
+      <tr><td style="padding:20px;background:#F5F3EE;border-radius:8px;text-align:center;">
+        <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:16px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Pay ${priceTotal} &rarr;</a>
+        <p style="margin:12px 0 0;font-size:12px;color:#999;">Credit card via Square (3% fee included)</p>
+      </td></tr>
+    </table>` : ''}
+    <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;">
+      <p style="margin:0 0 10px;font-size:13px;font-weight:600;color:#2C2C2C;">Prefer Zelle? No fee.</p>
+      <p style="margin:0;font-size:14px;color:#555;">Send <strong>${priceTotal}</strong> to <strong>214-606-1340</strong> (MPT Industries) and reply to this email to confirm.</p>
+    </div>
+    ${notesToGuest ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notesToGuest}</p></div>` : ''}
+    <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or email <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
+  `);
+
+  try {
+    await sendEmail(env.RESEND_API_KEY, {
+      from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+      to:   booking.email,
+      subject: `Your booking is confirmed — ${booking.property}`,
+      html:  guestPaymentHtml,
+    });
+
+    // Mark as approved
+    await env.BOOKINGS.put(`booking:${id}`, JSON.stringify({
+      ...booking, status: 'approved', finalTotal, approvedAt: new Date().toISOString(), paymentLink,
+    }));
+
+    return new Response(JSON.stringify({ success: true, paymentLink, finalTotal }), {
+      status: 200, headers: CORS_HEADERS,
+    });
+  } catch (err) {
+    console.error('Approve email failed:', err);
+    return new Response(JSON.stringify({ success: false, error: 'Failed to send payment email' }), {
       status: 500, headers: CORS_HEADERS,
     });
   }
@@ -473,7 +674,7 @@ async function handleDiscount(url, env) {
   }), { status: 200, headers: CORS_HEADERS });
 }
 
-async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, discountAmount, discountCode, fmtDate }) {
+async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, poolHeat, poolHeatCost, discountAmount, discountCode, fmtDate }) {
   // Fetch first location
   const locRes = await fetch('https://connect.squareup.com/v2/locations', {
     headers: { 'Authorization': `Bearer ${accessToken}`, 'Square-Version': '2024-01-18' },
@@ -504,6 +705,14 @@ async function createSquarePaymentLink(accessToken, { property, checkIn, checkOu
       base_price_money: money(pricing.taxAmount),
     },
   ];
+
+  if (poolHeat && poolHeatCost > 0) {
+    lineItems.push({
+      name: 'Pool heating',
+      quantity: '1',
+      base_price_money: money(poolHeatCost),
+    });
+  }
 
   const orderBody = { location_id: locationId, line_items: lineItems };
 

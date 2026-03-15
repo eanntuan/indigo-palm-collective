@@ -118,6 +118,11 @@
             color: var(--charcoal);
         }
 
+        .required-star {
+            color: var(--sage-cactus);
+            margin-left: 3px;
+        }
+
         .property-selector {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -446,24 +451,42 @@
 
                 <!-- Number of Guests -->
                 <div class="form-section">
-                    <label for="guests">Number of Guests</label>
+                    <label for="guests">Number of Guests<span class="required-star">*</span></label>
                     <input type="number" id="guests" min="1" max="12" value="2" required>
                 </div>
 
                 <!-- Guest Information -->
                 <div class="form-section">
-                    <label for="guest-name">Your Name</label>
+                    <label for="guest-name">Your Name<span class="required-star">*</span></label>
                     <input type="text" id="guest-name" placeholder="Full name" required>
                 </div>
 
                 <div class="form-section">
-                    <label for="guest-email">Email Address</label>
+                    <label for="guest-email">Email Address<span class="required-star">*</span></label>
                     <input type="email" id="guest-email" placeholder="your@email.com" required>
                 </div>
 
                 <div class="form-section">
-                    <label for="guest-phone">Phone Number</label>
+                    <label for="guest-phone">Phone Number<span class="required-star">*</span></label>
                     <input type="tel" id="guest-phone" placeholder="(555) 123-4567" required>
+                </div>
+
+                <!-- Pool Heat (Casa Moto only) -->
+                <div class="form-section" id="pool-heat-section" style="display:none;">
+                    <label>Pool Heating</label>
+                    <div id="pool-heat-options" style="border:2px solid #e0e0e0;border-radius:8px;overflow:hidden;">
+                        <label id="pool-heat-no-label" style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;cursor:pointer;border-bottom:1px solid #e0e0e0;margin:0;font-weight:400;">
+                            <input type="radio" name="pool-heat" id="pool-heat-no" value="no" checked style="width:auto;border:none;padding:0;">
+                            No thanks
+                        </label>
+                        <label id="pool-heat-yes-label" style="display:flex;align-items:flex-start;gap:0.75rem;padding:0.85rem 1rem;cursor:pointer;margin:0;font-weight:400;">
+                            <input type="radio" name="pool-heat" id="pool-heat-yes" value="yes" style="width:auto;border:none;padding:0;margin-top:2px;">
+                            <span>
+                                Add pool heating
+                                <span id="pool-heat-price" style="display:block;font-size:0.85rem;color:#607c67;margin-top:2px;"></span>
+                            </span>
+                        </label>
+                    </div>
                 </div>
 
                 <!-- Special Requests -->
