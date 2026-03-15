@@ -328,18 +328,17 @@
 
         .cal-day.sel-start,
         .cal-day.sel-end {
-            background: #2c2c2c;
+            background: var(--sage-cactus);
             color: white !important;
             font-weight: 700;
+            border-radius: 50%;
         }
 
         .cal-day.in-range {
-            background: #f0ede6;
+            background: rgba(150, 154, 127, 0.15);
             border-radius: 0;
         }
 
-        .cal-day.sel-start { border-radius: 50% 0 0 50%; }
-        .cal-day.sel-end   { border-radius: 0 50% 50% 0; }
         .cal-day.sel-start.sel-end { border-radius: 50%; }
 
         @media (max-width: 968px) {
