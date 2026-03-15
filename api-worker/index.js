@@ -35,24 +35,32 @@ const PROPERTY_INFO = {
   'cozy-cactus': {
     name: 'The Cozy Cactus',
     address: '82381 Cochran Dr, Indio, CA 92201',
+    mapsUrl: 'https://maps.google.com/?q=82381+Cochran+Dr,+Indio,+CA+92201',
+    photo: 'https://indigopalm.co/email-images/cozy-cactus.jpg',
     welcomeGuide: 'https://indigopalm.co/cozy-cactus/welcome-guide.html',
     airbnb: 'https://www.airbnb.com/rooms/610023395582313286',
   },
   'casa-moto': {
     name: 'Casa Moto',
     address: '49768 Pacino St, Indio, CA 92201',
+    mapsUrl: 'https://maps.google.com/?q=49768+Pacino+St,+Indio,+CA+92201',
+    photo: 'https://indigopalm.co/email-images/casa-moto.jpg',
     welcomeGuide: 'https://indigopalm.co/terra-luz/welcome-guide.html',
     airbnb: 'https://www.airbnb.com/rooms/716871660845992276',
   },
   'ps-retreat': {
     name: 'PS Retreat',
     address: '5301 E Waverly Dr #184, Palm Springs, CA 92264',
+    mapsUrl: 'https://maps.google.com/?q=5301+E+Waverly+Dr+%23184,+Palm+Springs,+CA+92264',
+    photo: 'https://indigopalm.co/email-images/ps-retreat.jpg',
     welcomeGuide: 'https://indigopalm.co/ps-retreat/welcome-guide.html',
     airbnb: 'https://www.airbnb.com/rooms/1171049679026732503',
   },
   'the-well': {
     name: 'The Well',
     address: '510 N Villa Ct #106, Palm Springs, CA 92262',
+    mapsUrl: 'https://maps.google.com/?q=510+N+Villa+Ct+%23106,+Palm+Springs,+CA+92262',
+    photo: 'https://indigopalm.co/email-images/the-well.jpg',
     welcomeGuide: null,
     airbnb: null,
   },
@@ -823,12 +831,14 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
   ].filter(Boolean).join('');
 
   return emailWrapper(`
+    ${info.photo ? `<a href="${info.mapsUrl}" target="_blank"><img src="${info.photo}" alt="${info.name}" width="560" style="display:block;width:100%;max-width:560px;height:220px;object-fit:cover;border-radius:8px;margin-bottom:28px;" /></a>` : ''}
+
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
     <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">The desert is yours, ${firstName}.</h1>
     <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Payment received. Your ${nights} night${nights !== 1 ? 's' : ''} at <strong>${info.name}</strong> are locked in. See you out there.</p>
 
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
-      ${detailRow('Address', info.address)}
+      ${detailRow('Address', `<a href="${info.mapsUrl}" style="color:#607c67;text-decoration:none;">${info.address} &rarr;</a>`)}
       ${detailRow('Check-in', fmtDate(checkIn))}
       ${detailRow('Check-out', fmtDate(checkOut))}
       ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
