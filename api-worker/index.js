@@ -31,6 +31,33 @@ const PRICELABS_LISTINGS = {
   'the-well':    { id: '868862893900280104', pms: 'airbnb'   },
 };
 
+const PROPERTY_INFO = {
+  'cozy-cactus': {
+    name: 'The Cozy Cactus',
+    address: '82381 Cochran Dr, Indio, CA 92201',
+    welcomeGuide: 'https://indigopalm.co/cozy-cactus/welcome-guide.html',
+    airbnb: 'https://www.airbnb.com/rooms/610023395582313286',
+  },
+  'casa-moto': {
+    name: 'Casa Moto',
+    address: '49768 Pacino St, Indio, CA 92201',
+    welcomeGuide: 'https://indigopalm.co/terra-luz/welcome-guide.html',
+    airbnb: 'https://www.airbnb.com/rooms/716871660845992276',
+  },
+  'ps-retreat': {
+    name: 'PS Retreat',
+    address: '5301 E Waverly Dr #184, Palm Springs, CA 92264',
+    welcomeGuide: 'https://indigopalm.co/ps-retreat/welcome-guide.html',
+    airbnb: 'https://www.airbnb.com/rooms/1171049679026732503',
+  },
+  'the-well': {
+    name: 'The Well',
+    address: '510 N Villa Ct #106, Palm Springs, CA 92262',
+    welcomeGuide: null,
+    airbnb: null,
+  },
+};
+
 const PROPERTY_CONFIG = {
   'cozy-cactus': { basePrice: 250, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
   'casa-moto':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
@@ -73,6 +100,10 @@ export default {
 
     if (path === '/api/approve' && request.method === 'POST') {
       return handleApprove(request, env);
+    }
+
+    if (path === '/api/confirm' && request.method === 'POST') {
+      return handleConfirm(request, env);
     }
 
     if (path === '/api/discount' && request.method === 'GET') {
@@ -631,6 +662,115 @@ async function handleApprove(request, env) {
       status: 500, headers: CORS_HEADERS,
     });
   }
+}
+
+// ── Booking Confirmed ─────────────────────────────────────────────────────────
+
+async function handleConfirm(request, env) {
+  let body;
+  try { body = await request.json(); } catch {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid JSON' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const { propertyId, name, email, checkIn, checkOut, guests, totalPaid, notes } = body;
+
+  if (!propertyId || !name || !email || !checkIn || !checkOut) {
+    return new Response(JSON.stringify({ success: false, error: 'Missing required fields' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const info = PROPERTY_INFO[propertyId];
+  if (!info) {
+    return new Response(JSON.stringify({ success: false, error: 'Unknown property' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const nights = Math.round(
+    (new Date(checkOut + 'T00:00:00') - new Date(checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24)
+  );
+
+  const html = buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes });
+
+  try {
+    await sendEmail(env.RESEND_API_KEY, {
+      from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+      to: email,
+      subject: `You're booked — ${info.name}`,
+      html,
+    });
+
+    // Also notify host
+    await sendEmail(env.RESEND_API_KEY, {
+      from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+      to: 'indigopalmco@gmail.com',
+      subject: `Booking confirmed: ${info.name} (${fmtDate(checkIn)} – ${fmtDate(checkOut)})`,
+      html: emailWrapper(`
+        <h2 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 20px;">Confirmation sent to ${name}</h2>
+        <table width="100%" cellpadding="0" cellspacing="0">
+          ${detailRow('Property', info.name)}
+          ${detailRow('Guest', name)}
+          ${detailRow('Email', email)}
+          ${detailRow('Check-in', fmtDate(checkIn))}
+          ${detailRow('Check-out', fmtDate(checkOut))}
+          ${detailRow('Nights', String(nights))}
+          ${detailRow('Guests', String(guests))}
+          ${totalPaid ? detailRow('Total Paid', `$${parseFloat(totalPaid).toFixed(2)}`) : ''}
+          ${notes ? detailRow('Notes', notes) : ''}
+        </table>
+      `),
+    });
+
+    return new Response(JSON.stringify({ success: true }), { status: 200, headers: CORS_HEADERS });
+  } catch (err) {
+    console.error('Confirm email failed:', err);
+    return new Response(JSON.stringify({ success: false, error: 'Failed to send email' }), {
+      status: 500, headers: CORS_HEADERS,
+    });
+  }
+}
+
+function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes }) {
+  const firstName = name.split(' ')[0];
+
+  const linksSection = [
+    info.welcomeGuide
+      ? `<a href="${info.welcomeGuide}" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Welcome Guide &rarr;</a><p style="margin:0 0 16px;font-size:13px;color:#888;">Check-in, parking, house rules, community amenities — it's all in here.</p>`
+      : '',
+    `<a href="https://indigopalm.co" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">indigopalm.co &rarr;</a><p style="margin:0 0 16px;font-size:13px;color:#888;">Explore the other properties and the blog.</p>`,
+    info.airbnb
+      ? `<a href="${info.airbnb}" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Airbnb Listing &rarr;</a><p style="margin:0;font-size:13px;color:#888;">More photos, reviews, and details.</p>`
+      : '',
+  ].filter(Boolean).join('');
+
+  return emailWrapper(`
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Booking Confirmed</p>
+    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">You're booked.</h1>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Hi ${firstName}, payment received. Your stay at <strong>${info.name}</strong> is locked in. We can't wait to host you.</p>
+
+    <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
+      ${detailRow('Property', info.name)}
+      ${detailRow('Address', info.address)}
+      ${detailRow('Check-in', fmtDate(checkIn))}
+      ${detailRow('Check-out', fmtDate(checkOut))}
+      ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
+      ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
+      ${totalPaid ? detailRow('Total Paid', `$${parseFloat(totalPaid).toFixed(2)}`) : ''}
+    </table>
+
+    <div style="padding:24px;background:#F5F3EE;border-radius:8px;margin-bottom:24px;">
+      <p style="margin:0 0 16px;font-size:13px;font-weight:600;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.08em;">Before you arrive</p>
+      ${linksSection}
+    </div>
+
+    ${notes ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notes}</p></div>` : ''}
+
+    <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">Check-in instructions are coming your way closer to the date.</p>
+    <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
+  `);
 }
 
 // ── Discount Codes ────────────────────────────────────────────────────────────
