@@ -749,7 +749,7 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
   return emailWrapper(`
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
     <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">The desert is yours, ${firstName}.</h1>
-    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Payment received. Your ${nights} night${nights !== 1 ? 's' : ''} at <strong>${info.name}</strong> are locked in. Pack light, stay long.</p>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Payment received. Your ${nights} night${nights !== 1 ? 's' : ''} at <strong>${info.name}</strong> are locked in. See you out there.</p>
 
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Address', info.address)}
@@ -757,7 +757,7 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
       ${detailRow('Check-out', fmtDate(checkOut))}
       ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
       ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
-      ${totalPaid ? detailRow('Total Paid', `$${parseFloat(totalPaid).toFixed(2)}`) : ''}
+      ${detailRow('Total Paid', totalPaid ? `$${parseFloat(totalPaid).toFixed(2)}` : '—')}
     </table>
 
     <div style="padding:24px;background:#F5F3EE;border-radius:8px;margin-bottom:24px;">
