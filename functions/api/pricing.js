@@ -1,5 +1,6 @@
 // Cloudflare Pages Function: Dynamic Pricing
-// Fetches live base price from PriceLabs and applies peak date multipliers
+// Fetches real per-night prices from PriceLabs Customer API
+// POST /v1/listing_prices returns actual dynamic price per date
 // GET /api/pricing?property=cozy-cactus&checkIn=2026-04-10&checkOut=2026-04-15
 // Requires env var: PRICELABS_API_KEY
 
@@ -10,74 +11,30 @@ const CORS_HEADERS = {
   'Content-Type': 'application/json',
 };
 
-// PriceLabs listing IDs (push_enabled listings get live pricing)
-const PRICELABS_IDS = {
-  'cozy-cactus': '123646',
-  'casa-moto':   '123633',
-  'ps-retreat':  '1470484',
-  'the-well':    '868862893900280104',
+// PriceLabs listing IDs and PMS names
+const PRICELABS_LISTINGS = {
+  'cozy-cactus': { id: '123646',             pms: 'hostaway'  },
+  'casa-moto':   { id: '123633',             pms: 'hostaway'  },
+  'ps-retreat':  { id: '1470484',            pms: 'smartbnb'  },
+  'the-well':    { id: '868862893900280104', pms: 'airbnb'    },
 };
 
-// Fallback base prices if PriceLabs is unavailable
-const FALLBACK_BASE = {
-  'cozy-cactus': 250,
-  'casa-moto':   275,
-  'ps-retreat':  225,
-  'the-well':    300,
-};
-
+// Static fallback config (used when PriceLabs sync is off or API fails)
 const PROPERTY_CONFIG = {
-  'cozy-cactus': {
-    cleaningFee: 150,
-    taxRate: 0.12,
-    maxGuests: 8,
-    minNights: 2,
-    peakDates: [
-      { start: '2026-04-10', end: '2026-04-20', multiplier: 1.5, label: 'Coachella W1' },
-      { start: '2026-04-17', end: '2026-04-27', multiplier: 1.5, label: 'Coachella W2' },
-      { start: '2026-04-24', end: '2026-05-04', multiplier: 1.3, label: 'Stagecoach' },
-      { start: '2026-11-25', end: '2026-11-30', multiplier: 1.2, label: 'Thanksgiving' },
-      { start: '2026-12-20', end: '2027-01-04', multiplier: 1.3, label: 'Holiday season' },
-    ],
-  },
-  'casa-moto': {
-    cleaningFee: 150,
-    taxRate: 0.12,
-    maxGuests: 6,
-    minNights: 2,
-    peakDates: [
-      { start: '2026-04-10', end: '2026-04-20', multiplier: 1.5, label: 'Coachella W1' },
-      { start: '2026-04-17', end: '2026-04-27', multiplier: 1.5, label: 'Coachella W2' },
-      { start: '2026-04-24', end: '2026-05-04', multiplier: 1.3, label: 'Stagecoach' },
-      { start: '2026-11-25', end: '2026-11-30', multiplier: 1.2, label: 'Thanksgiving' },
-      { start: '2026-12-20', end: '2027-01-04', multiplier: 1.3, label: 'Holiday season' },
-    ],
-  },
-  'ps-retreat': {
-    cleaningFee: 150,
-    taxRate: 0.135,
-    maxGuests: 4,
-    minNights: 2,
-    peakDates: [
-      { start: '2026-04-10', end: '2026-04-20', multiplier: 1.4, label: 'Coachella W1' },
-      { start: '2026-04-17', end: '2026-04-27', multiplier: 1.4, label: 'Coachella W2' },
-      { start: '2026-11-25', end: '2026-11-30', multiplier: 1.2, label: 'Thanksgiving' },
-      { start: '2026-12-20', end: '2027-01-04', multiplier: 1.3, label: 'Holiday season' },
-    ],
-  },
-  'the-well': {
-    cleaningFee: 200,
-    taxRate: 0.135,
-    maxGuests: 8,
-    minNights: 2,
-    peakDates: [
-      { start: '2026-04-10', end: '2026-04-20', multiplier: 1.4, label: 'Coachella W1' },
-      { start: '2026-04-17', end: '2026-04-27', multiplier: 1.4, label: 'Coachella W2' },
-      { start: '2026-11-25', end: '2026-11-30', multiplier: 1.2, label: 'Thanksgiving' },
-      { start: '2026-12-20', end: '2027-01-04', multiplier: 1.3, label: 'Holiday season' },
-    ],
-  },
+  'cozy-cactus': { basePrice: 250, cleaningFee: 150, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
+  'casa-moto':   { basePrice: 275, cleaningFee: 150, taxRate: 0.12,  maxGuests: 6, minNights: 2 },
+  'ps-retreat':  { basePrice: 225, cleaningFee: 150, taxRate: 0.135, maxGuests: 4, minNights: 2 },
+  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 8, minNights: 2 },
 };
+
+// Fallback peak multipliers — only used when PriceLabs is unavailable
+const PEAK_DATES = [
+  { start: '2026-04-10', end: '2026-04-20', multiplier: 1.5, label: 'Coachella W1' },
+  { start: '2026-04-17', end: '2026-04-27', multiplier: 1.5, label: 'Coachella W2' },
+  { start: '2026-04-24', end: '2026-05-04', multiplier: 1.3, label: 'Stagecoach'   },
+  { start: '2026-11-25', end: '2026-11-30', multiplier: 1.2, label: 'Thanksgiving' },
+  { start: '2026-12-20', end: '2027-01-04', multiplier: 1.3, label: 'Holiday'      },
+];
 
 export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
@@ -85,7 +42,7 @@ export async function onRequestGet({ request, env }) {
   const checkIn = url.searchParams.get('checkIn');
   const checkOut = url.searchParams.get('checkOut');
 
-  if (!propertyId || !PRICELABS_IDS[propertyId] || !checkIn || !checkOut) {
+  if (!propertyId || !PRICELABS_LISTINGS[propertyId] || !checkIn || !checkOut) {
     return new Response(JSON.stringify({ success: false, error: 'Missing required params' }), {
       status: 400, headers: CORS_HEADERS,
     });
@@ -108,46 +65,69 @@ export async function onRequestGet({ request, env }) {
     });
   }
 
-  // Fetch live base price from PriceLabs
-  let basePrice = FALLBACK_BASE[propertyId];
+  // Try to get real per-night prices from PriceLabs
+  const pl = PRICELABS_LISTINGS[propertyId];
+  let plPriceMap = null;
+
   try {
-    const plRes = await fetch(
-      `https://api.pricelabs.co/v1/listings?listing_id=${PRICELABS_IDS[propertyId]}`,
-      { headers: { 'X-API-Key': env.PRICELABS_API_KEY } }
-    );
+    const plRes = await fetch('https://api.pricelabs.co/v1/listing_prices', {
+      method: 'POST',
+      headers: {
+        'X-API-Key': env.PRICELABS_API_KEY,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        listings: [{
+          id: pl.id,
+          pms: pl.pms,
+          dateFrom: checkIn,
+          dateTo: checkOut,
+        }],
+      }),
+    });
+
     if (plRes.ok) {
       const plData = await plRes.json();
-      const listing = plData.listings?.[0];
-      if (listing) {
-        // Use recommended_base_price if it's a number, otherwise use base
-        const rec = listing.recommended_base_price;
-        basePrice = (typeof rec === 'number' && rec > 0) ? rec : (listing.base || basePrice);
+      const listing = Array.isArray(plData) ? plData[0] : null;
+      if (listing && !listing.error_status && listing.data?.length > 0) {
+        plPriceMap = {};
+        for (const day of listing.data) {
+          plPriceMap[day.date] = day.price;
+        }
       }
     }
   } catch (e) {
-    console.error('PriceLabs fetch failed, using fallback:', e);
+    console.error('PriceLabs API error, using fallback:', e);
   }
 
-  // Calculate per-night pricing with peak multipliers
+  // Build per-night breakdown
   const nightly = [];
   let subtotal = 0;
   const cur = new Date(start);
 
   for (let i = 0; i < nights; i++) {
     const dateStr = cur.toISOString().split('T')[0];
-    let multiplier = 1;
+    let rate;
     let peakLabel = null;
+    let source = 'pricelabs';
 
-    for (const peak of config.peakDates) {
-      if (dateStr >= peak.start && dateStr < peak.end && peak.multiplier > multiplier) {
-        multiplier = peak.multiplier;
-        peakLabel = peak.label;
+    if (plPriceMap && plPriceMap[dateStr] != null) {
+      rate = plPriceMap[dateStr];
+    } else {
+      // Fallback: base price + peak multipliers
+      source = 'fallback';
+      let multiplier = 1;
+      for (const peak of PEAK_DATES) {
+        if (dateStr >= peak.start && dateStr < peak.end && peak.multiplier > multiplier) {
+          multiplier = peak.multiplier;
+          peakLabel = peak.label;
+        }
       }
+      rate = Math.round(config.basePrice * multiplier);
     }
 
-    const rate = Math.round(basePrice * multiplier);
     subtotal += rate;
-    nightly.push({ date: dateStr, rate, peakLabel });
+    nightly.push({ date: dateStr, rate, peakLabel, source });
     cur.setDate(cur.getDate() + 1);
   }
 
@@ -165,8 +145,7 @@ export async function onRequestGet({ request, env }) {
       taxRate: config.taxRate,
       taxAmount,
       total,
-      basePrice,
-      source: 'pricelabs',
+      source: plPriceMap ? 'pricelabs' : 'fallback',
     },
   }), { status: 200, headers: CORS_HEADERS });
 }
