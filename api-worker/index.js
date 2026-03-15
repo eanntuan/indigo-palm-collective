@@ -324,7 +324,7 @@ async function handleBooking(request, env) {
       <table width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
         <!-- Header -->
         <tr>
-          <td style="background:#969A7F;padding:28px 36px;border-radius:12px 12px 0 0;text-align:center;">
+          <td style="background:#607c67;padding:28px 36px;border-radius:12px 12px 0 0;text-align:center;">
             <p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:400;color:#ffffff;letter-spacing:0.05em;">Indigo Palm Collective</p>
           </td>
         </tr>
@@ -353,7 +353,7 @@ async function handleBooking(request, env) {
     </tr>`;
 
   const hostEmailHtml = emailWrapper(`
-    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#969A7F;text-transform:uppercase;letter-spacing:0.1em;">New Booking Request</p>
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#607c67;text-transform:uppercase;letter-spacing:0.1em;">New Booking Request</p>
     <h1 style="margin:0 0 28px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">${property}</h1>
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Check-in', fmtDate(checkIn))}
@@ -365,7 +365,7 @@ async function handleBooking(request, env) {
     ${paymentLink ? `
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       <tr><td style="padding:20px;background:#F5F3EE;border-radius:8px;text-align:center;">
-        <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#969A7F;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Collect Payment ${priceTotal} &rarr;</a>
+        <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Collect Payment ${priceTotal} &rarr;</a>
       </td></tr>
     </table>` : ''}
     <p style="margin:0 0 8px;font-size:13px;color:#888;text-transform:uppercase;letter-spacing:0.08em;font-weight:500;">Guest Details</p>
@@ -378,7 +378,7 @@ async function handleBooking(request, env) {
   `);
 
   const guestEmailHtml = emailWrapper(`
-    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#969A7F;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#607c67;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
     <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Your dates are on our radar.</h1>
     <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.6;">Hi ${name.split(' ')[0]}, thanks for reaching out about <strong>${property}</strong>. We'll be in touch within 24 hours with a payment link to lock it in.</p>
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">

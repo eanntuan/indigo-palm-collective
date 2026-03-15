@@ -40,7 +40,9 @@
       "Bash(cp \"coachella valley preserve.webp\" \"/Users/eanntuan/Library/Mobile Documents/com~apple~CloudDocs/Airbnb/indigopalm/blog/images/coachella-valley-preserve.webp\")",
       "Bash(cp \"shieldsdategarden.jpg\" \"/Users/eanntuan/Library/Mobile Documents/com~apple~CloudDocs/Airbnb/indigopalm/blog/images/shields-date-garden.jpg\")",
       "Bash(cp \"lgdesertstore.jpeg\" \"/Users/eanntuan/Library/Mobile Documents/com~apple~CloudDocs/Airbnb/indigopalm/blog/images/lg-desert-store.jpg\")",
-      "Bash(bash \"/Users/eanntuan/Library/Mobile Documents/com~apple~CloudDocs/Airbnb/indigopalm/purge-cache.sh\")"
+      "Bash(bash \"/Users/eanntuan/Library/Mobile Documents/com~apple~CloudDocs/Airbnb/indigopalm/purge-cache.sh\")",
+      "WebFetch(domain:support.google.com)",
+      "WebFetch(domain:www.google.com)"
     ]
   }
 }
