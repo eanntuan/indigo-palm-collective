@@ -375,8 +375,8 @@ async function handleBooking(request, env) {
 
   const guestEmailHtml = emailWrapper(`
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#969A7F;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
-    <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">We got it, ${name.split(' ')[0]}.</h1>
-    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.6;">Thanks for requesting <strong>${property}</strong>. We'll review and send a payment link within 24 hours to confirm your dates.</p>
+    <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Your dates are on our radar.</h1>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.6;">Hi ${name.split(' ')[0]}, thanks for reaching out about <strong>${property}</strong>. We'll be in touch within 24 hours with a payment link to lock it in.</p>
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Property', property)}
       ${detailRow('Check-in', fmtDate(checkIn))}
