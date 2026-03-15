@@ -260,6 +260,25 @@ async function handleBooking(request, env) {
   }
 
   const priceTotal = pricing?.total ? `$${pricing.total.toFixed(2)}` : 'TBD';
+  const priceCents = pricing?.total ? Math.round(pricing.total * 100) : null;
+
+  // Generate Square payment link
+  let paymentLink = null;
+  if (priceCents && env.SQUARE_ACCESS_TOKEN) {
+    try {
+      paymentLink = await createSquarePaymentLink(env.SQUARE_ACCESS_TOKEN, {
+        name: `${property} — ${checkIn} to ${checkOut}`,
+        amountCents: priceCents,
+        note: `Guest: ${name} | ${guests} guest${guests !== 1 ? 's' : ''} | ${checkIn} to ${checkOut}`,
+      });
+    } catch (e) {
+      console.error('Square payment link failed:', e);
+    }
+  }
+
+  const paymentSection = paymentLink
+    ? `<tr><td><strong>Payment Link</strong></td><td><a href="${paymentLink}" style="font-size:1.1rem;font-weight:bold;color:#4B0082;">Collect Payment (${priceTotal}) →</a></td></tr>`
+    : `<tr><td><strong>Total</strong></td><td>${priceTotal}</td></tr>`;
 
   const hostEmailHtml = `
     <h2>New Booking Request — Indigo Palm Collective</h2>
@@ -268,7 +287,7 @@ async function handleBooking(request, env) {
       <tr><td><strong>Check-in</strong></td><td>${checkIn}</td></tr>
       <tr><td><strong>Check-out</strong></td><td>${checkOut}</td></tr>
       <tr><td><strong>Guests</strong></td><td>${guests}</td></tr>
-      <tr><td><strong>Total</strong></td><td>${priceTotal}</td></tr>
+      ${paymentSection}
     </table>
     <hr>
     <table>
@@ -318,6 +337,45 @@ async function handleBooking(request, env) {
       status: 500, headers: CORS_HEADERS,
     });
   }
+}
+
+async function createSquarePaymentLink(accessToken, { name, amountCents, note }) {
+  // Fetch first location
+  const locRes = await fetch('https://connect.squareup.com/v2/locations', {
+    headers: { 'Authorization': `Bearer ${accessToken}`, 'Square-Version': '2024-01-18' },
+  });
+  if (!locRes.ok) throw new Error(`Square locations fetch failed: ${locRes.status}`);
+  const locData = await locRes.json();
+  const locationId = locData.locations?.[0]?.id;
+  if (!locationId) throw new Error('No Square location found');
+
+  const idempotencyKey = `indigo-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+  const res = await fetch('https://connect.squareup.com/v2/online-checkout/payment-links', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${accessToken}`,
+      'Content-Type': 'application/json',
+      'Square-Version': '2024-01-18',
+    },
+    body: JSON.stringify({
+      idempotency_key: idempotencyKey,
+      quick_pay: {
+        name,
+        price_money: { amount: amountCents, currency: 'USD' },
+        location_id: locationId,
+      },
+      payment_note: note,
+    }),
+  });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Square payment link failed: ${err}`);
+  }
+
+  const data = await res.json();
+  return data.payment_link?.url;
 }
 
 async function sendEmail(apiKey, { from, to, subject, html, reply_to }) {
