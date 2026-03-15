@@ -344,6 +344,10 @@ function renderPriceSummary() {
                 <strong>Total</strong>
                 <strong>$${finalTotal.toFixed(2)}</strong>
             </div>
+        </div>
+        <div style="margin-top:1rem;padding:0.85rem 1rem;background:#F5F3EE;border-radius:8px;font-size:0.82rem;line-height:1.6;color:#555;">
+            <strong style="color:#2C2C2C;">Zelle (no fee):</strong> 214-606-1340 (MPT Industries)<br>
+            <strong style="color:#2C2C2C;">Credit card:</strong> Square link sent after request (3% fee)
         </div>`;
 
     // Show promo code section

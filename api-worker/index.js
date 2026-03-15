@@ -384,7 +384,16 @@ async function handleBooking(request, env) {
       ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
       ${detailRow('Est. Total', priceTotal)}
     </table>
-    <p style="margin:0;font-size:14px;color:#888;">Questions? Reply to this email or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
+    <div style="margin-top:28px;padding:20px;background:#F5F3EE;border-radius:8px;">
+      <p style="margin:0 0 10px;font-size:13px;font-weight:600;color:#2C2C2C;">Payment Options</p>
+      <p style="margin:0 0 8px;font-size:14px;color:#555;">
+        <strong style="color:#2C2C2C;">Zelle (no fee):</strong> Send to <strong>214-606-1340</strong> (MPT Industries)
+      </p>
+      <p style="margin:0;font-size:14px;color:#555;">
+        <strong style="color:#2C2C2C;">Credit card (3% fee):</strong> We'll send a Square payment link.
+      </p>
+    </div>
+    <p style="margin:20px 0 0;font-size:14px;color:#888;">Questions? Reply to this email or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
 
   try {
