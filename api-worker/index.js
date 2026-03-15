@@ -353,7 +353,7 @@ async function handleBooking(request, env) {
     </tr>`;
 
   const hostEmailHtml = emailWrapper(`
-    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#607c67;text-transform:uppercase;letter-spacing:0.1em;">New Booking Request</p>
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">New Booking Request</p>
     <h1 style="margin:0 0 28px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">${property}</h1>
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Check-in', fmtDate(checkIn))}
@@ -378,7 +378,7 @@ async function handleBooking(request, env) {
   `);
 
   const guestEmailHtml = emailWrapper(`
-    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#607c67;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
+    <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
     <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Your dates are on our radar.</h1>
     <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.6;">Hi ${name.split(' ')[0]}, thanks for reaching out about <strong>${property}</strong>. We'll be in touch within 24 hours with a payment link to lock it in.</p>
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">

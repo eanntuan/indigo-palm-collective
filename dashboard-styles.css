@@ -118,7 +118,7 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.5rem;
   font-weight: 400;
-  color: var(--sage);
+  color: var(--charcoal);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -346,7 +346,7 @@ body {
 }
 
 .yoy-source strong {
-  color: var(--sage);
+  color: var(--charcoal);
   font-weight: 600;
 }
 
@@ -435,7 +435,7 @@ body {
 .property-stat {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--sage);
+  color: var(--charcoal);
 }
 
 .property-color {
@@ -480,7 +480,7 @@ body {
 .summary-card .amount {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--sage);
+  color: var(--charcoal);
   margin-bottom: 1.5rem;
 }
 
@@ -663,7 +663,7 @@ body {
 .stat-info p {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--sage);
+  color: var(--charcoal);
 }
 
 /* Loading Overlay */
@@ -688,7 +688,7 @@ body {
   width: 60px;
   height: 60px;
   border: 5px solid var(--cream);
-  border-top-color: var(--sage);
+  border-top-color: var(--charcoal);
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto 1rem;
@@ -696,7 +696,7 @@ body {
 
 .loading-content p {
   font-size: 1.2rem;
-  color: var(--sage);
+  color: var(--charcoal);
   font-weight: 600;
 }
 
@@ -958,7 +958,7 @@ body {
 
 .modal-content h2 {
   font-family: 'Cormorant Garamond', serif;
-  color: var(--sage);
+  color: var(--charcoal);
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -984,7 +984,7 @@ body {
 
 .settings-section h3 {
   font-family: 'Cormorant Garamond', serif;
-  color: var(--sage);
+  color: var(--charcoal);
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }

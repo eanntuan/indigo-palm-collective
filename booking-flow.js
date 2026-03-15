@@ -23,17 +23,27 @@ document.addEventListener('DOMContentLoaded', () => {
     setMinDates();
 });
 
+const PROPERTY_IMAGES = {
+    'cozy-cactus': '/email-images/cozy-cactus.jpg',
+    'casa-moto':   '/email-images/casa-moto.jpg',
+    'ps-retreat':  '/email-images/ps-retreat.jpg',
+    'the-well':    '/email-images/the-well.jpg',
+};
+
 function renderPropertySelector() {
     const selector = document.getElementById('property-selector');
     Object.values(PROPERTIES).forEach(property => {
         const card = document.createElement('div');
         card.className = 'property-option';
         card.dataset.propertyId = property.id;
+        const imgSrc = PROPERTY_IMAGES[property.id] || '';
         card.innerHTML = `
-            <h3>${property.name}</h3>
-            <p>${property.location}</p>
-            <p style="font-size:0.8rem;margin-top:0.5rem;">${property.bedrooms} bed &middot; ${property.maxGuests} guests</p>
-            <p style="font-weight:600;color:var(--sage);margin-top:0.5rem;">from $${property.basePrice}/night</p>
+            ${imgSrc ? `<img class="property-option-photo" src="${imgSrc}" alt="${property.name}" loading="lazy">` : ''}
+            <div class="property-option-info">
+                <h3>${property.name}</h3>
+                <p class="property-option-meta">${property.location} &middot; ${property.bedrooms} bed &middot; up to ${property.maxGuests} guests</p>
+                <p class="property-option-price">from $${property.basePrice}/night</p>
+            </div>
         `;
         card.addEventListener('click', () => selectProperty(property.id));
         selector.appendChild(card);
