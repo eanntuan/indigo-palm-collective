@@ -10,6 +10,12 @@ let selectedProperty = null;
 let blockedDates = new Set();
 let priceEstimate = null;
 
+// Calendar navigation state
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+let calYear = today.getFullYear();
+let calMonth = today.getMonth();
+
 document.addEventListener('DOMContentLoaded', () => {
     renderPropertySelector();
     setupEventListeners();
@@ -50,8 +56,9 @@ function selectProperty(propertyId) {
 }
 
 async function loadAvailabilityCalendar() {
-    const grid = document.getElementById('calendar-grid');
-    grid.innerHTML = '<p style="text-align:center;color:#999;grid-column:1/-1;padding:1rem;">Loading availability...</p>';
+    // Reset to current month when switching property
+    calYear = today.getFullYear();
+    calMonth = today.getMonth();
 
     try {
         const res = await fetch(`/api/availability?property=${selectedProperty.id}`);
@@ -67,62 +74,80 @@ async function loadAvailabilityCalendar() {
 
 function renderCalendar() {
     const grid = document.getElementById('calendar-grid');
+    const label = document.getElementById('calendar-month-label');
     grid.innerHTML = '';
 
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const endDate = new Date(today);
-    endDate.setDate(today.getDate() + 90);
+    const monthNames = ['January','February','March','April','May','June',
+                        'July','August','September','October','November','December'];
+    label.textContent = `${monthNames[calMonth]} ${calYear}`;
 
-    ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
+    const checkInVal  = document.getElementById('check-in').value;
+    const checkOutVal = document.getElementById('check-out').value;
+
+    // Day-of-week headers
+    ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].forEach(d => {
         const h = document.createElement('div');
-        h.className = 'calendar-day header';
-        h.textContent = day;
+        h.className = 'cal-dow';
+        h.textContent = d;
         grid.appendChild(h);
     });
 
-    for (let i = 0; i < today.getDay(); i++) {
+    // First day offset
+    const firstDay = new Date(calYear, calMonth, 1).getDay();
+    for (let i = 0; i < firstDay; i++) {
         const blank = document.createElement('div');
-        blank.className = 'calendar-day empty';
+        blank.className = 'cal-day empty';
         grid.appendChild(blank);
     }
 
-    const current = new Date(today);
-    while (current <= endDate) {
-        const dateStr = current.toISOString().split('T')[0];
+    const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+
+    for (let d = 1; d <= daysInMonth; d++) {
+        const dateStr = `${calYear}-${String(calMonth + 1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+        const dateObj = new Date(calYear, calMonth, d);
+        const isPast    = dateObj < today;
         const isBlocked = blockedDates.has(dateStr);
+        const isSelStart = dateStr === checkInVal;
+        const isSelEnd   = dateStr === checkOutVal;
+        const inRange    = checkInVal && checkOutVal && dateStr > checkInVal && dateStr < checkOutVal;
 
         const cell = document.createElement('div');
-        cell.className = `calendar-day ${isBlocked ? 'booked' : 'available'}`;
-        cell.textContent = current.getDate();
-        cell.title = `${dateStr} — ${isBlocked ? 'Booked' : 'Available'}`;
+        cell.textContent = d;
 
-        if (!isBlocked) {
-            const d = dateStr;
+        let cls = 'cal-day';
+        if (isPast)         cls += ' past';
+        else if (isBlocked) cls += ' booked';
+        else                cls += ' available';
+        if (isSelStart)     cls += ' sel-start';
+        if (isSelEnd)       cls += ' sel-end';
+        if (inRange)        cls += ' in-range';
+        cell.className = cls;
+
+        if (!isPast && !isBlocked) {
             cell.addEventListener('click', () => {
-                const checkIn = document.getElementById('check-in');
+                const checkIn  = document.getElementById('check-in');
                 const checkOut = document.getElementById('check-out');
 
                 if (!checkIn.value || (checkIn.value && checkOut.value)) {
-                    checkIn.value = d;
+                    checkIn.value  = dateStr;
                     checkOut.value = '';
-                    const next = new Date(d + 'T00:00:00');
+                    const next = new Date(dateObj);
                     next.setDate(next.getDate() + 1);
                     checkOut.min = next.toISOString().split('T')[0];
                     updatePrice();
-                } else if (d > checkIn.value) {
-                    checkOut.value = d;
+                } else if (dateStr > checkIn.value) {
+                    checkOut.value = dateStr;
                     updatePrice();
                 } else {
-                    checkIn.value = d;
+                    checkIn.value  = dateStr;
                     checkOut.value = '';
                     updatePrice();
                 }
+                renderCalendar(); // re-render to show selection
             });
         }
 
         grid.appendChild(cell);
-        current.setDate(current.getDate() + 1);
     }
 }
 
@@ -133,7 +158,7 @@ function setMinDates() {
 }
 
 function setupEventListeners() {
-    const checkIn = document.getElementById('check-in');
+    const checkIn  = document.getElementById('check-in');
     const checkOut = document.getElementById('check-out');
 
     checkIn.addEventListener('change', () => {
@@ -142,11 +167,29 @@ function setupEventListeners() {
         checkOut.min = next.toISOString().split('T')[0];
         if (checkOut.value && checkOut.value <= checkIn.value) checkOut.value = '';
         updatePrice();
+        renderCalendar();
     });
 
-    checkOut.addEventListener('change', updatePrice);
+    checkOut.addEventListener('change', () => { updatePrice(); renderCalendar(); });
     document.getElementById('guests').addEventListener('input', updatePrice);
     document.getElementById('submit-btn').addEventListener('click', submitBookingRequest);
+
+    document.getElementById('cal-prev').addEventListener('click', () => {
+        calMonth--;
+        if (calMonth < 0) { calMonth = 11; calYear--; }
+        // Don't go before current month
+        if (calYear < today.getFullYear() || (calYear === today.getFullYear() && calMonth < today.getMonth())) {
+            calMonth = today.getMonth();
+            calYear  = today.getFullYear();
+        }
+        renderCalendar();
+    });
+
+    document.getElementById('cal-next').addEventListener('click', () => {
+        calMonth++;
+        if (calMonth > 11) { calMonth = 0; calYear++; }
+        renderCalendar();
+    });
 }
 
 async function updatePrice() {
