@@ -344,7 +344,7 @@ async function submitBookingRequest() {
 
         submitBtn.textContent = 'Request Sent!';
         showMessage(
-            `Your request for ${selectedProperty.name} is confirmed. Check your inbox — we'll send a payment link within 24 hours.`,
+            `Got it. We'll review your request for ${selectedProperty.name} and send a payment link within 24 hours. The desert's not going anywhere.`,
             'success'
         );
 
