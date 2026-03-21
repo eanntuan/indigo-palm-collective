@@ -1,6 +1,6 @@
 # Indigo Palm Collective — Tech Stack & Infrastructure
 
-Last updated: March 14, 2026
+Last updated: March 20, 2026
 
 ---
 
@@ -22,7 +22,8 @@ git push origin main
 CLOUDFLARE_API_TOKEN=<token> wrangler deploy
 ```
 
-**Git remote:** `git@github.com:eanntuan/desert-edit-properties.git`
+**Git remote:** `https://github.com/eanntuan/desert-edit-properties.git`
+*(switched from SSH to HTTPS on March 20, 2026)*
 
 ---
 
@@ -62,15 +63,23 @@ CLOUDFLARE_API_TOKEN=<token> wrangler deploy
 
 | File | Purpose |
 |---|---|
-| `index.html` | Homepage |
+| `index.html` | Homepage (FAQ accordion, Google share link, schema markup) |
+| `cozy-cactus.html` | Property page — The Cozy Cactus |
+| `terra-luz.html` | Property page — Terra Luz (formerly Casa Moto) |
+| `ps-retreat.html` | Property page — PS Retreat |
+| `the-well.html` | Property page — The Well |
+| `festivalguide.html` | Coachella/Stagecoach festival guide (indigopalm.co/festivalguide) |
+| `404.html` | Custom branded 404 error page |
 | `booking-flow.html` | Booking request form |
 | `booking-flow.js` | Booking form logic (property select, calendar, pricing, pool heat, promo) |
 | `booking-config.js` | Property config (names, IDs, bedrooms, bathrooms, maxGuests, pricing) |
 | `admin-approve.html` | Host-only approval page (accessed via link in host email) |
-| `TODO.md` | Ongoing feature backlog |
+| `sitemap.xml` | XML sitemap — all pages with clean URLs (no .html) |
+| `robots.txt` | Allows all crawlers, references sitemap |
 | `TECH_STACK.md` | This file |
+| `CHANGELOG.md` | Dated log of all site changes |
 | `CLAUDE.md` | Instructions for Claude |
-| `blog/` | Blog posts directory |
+| `blog/` | Blog posts — each post in its own folder as index.html (clean URLs) |
 | `email-images/` | Property hero photos used in booking form cards |
 
 ---
@@ -145,6 +154,6 @@ TODO: After payment confirmed → send "You're Booked" email + create Hostaway r
 | ID | Name | Location | Beds/Baths | Max Guests |
 |---|---|---|---|---|
 | `cozy-cactus` | The Cozy Cactus | Indio, CA | 3 bed / 2 bath | 8 |
-| `casa-moto` | Casa Moto | Indio, CA | 3 bed / 2 bath | 8 |
+| `terra-luz` | Terra Luz (formerly Casa Moto) | Indio, CA | 3 bed / 2 bath | 8 |
 | `ps-retreat` | PS Retreat | Palm Springs, CA | 2 bed / 2 bath | 4 |
 | `the-well` | The Well | Palm Springs, CA | 1 bed / 1 bath | 8 |
