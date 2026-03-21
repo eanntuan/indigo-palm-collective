@@ -38,11 +38,26 @@
       "name": "Cozy Cactus",
       "description": "Family-friendly 3-bedroom vacation rental in Indio with curated toy collection, coffee bar, pool, hot tub, and thoughtful family-friendly design.",
       "url": "https://indigopalm.co/cozy-cactus",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "Property ID",
+        "value": "cozy-cactus"
+      },
+      "additionalType": "https://schema.org/House",
       "image": [
-        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.jpg"
+        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.jpg",
+        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/2TW_DZ5A8783web.jpg",
+        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/3TW_DZ5A8619web.jpg",
+        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/4TW_DZ5A8628web.jpg",
+        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/5TW_4W6A8424web.jpg",
+        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/6TW_4W6A8436%20V2web.jpg",
+        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/6TW4W6A8441web.jpg",
+        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/7TW_4W6A8446web.jpg",
+        "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/8TW_4W6A8434web.jpg"
       ],
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "82381 Cochran Drive",
         "addressLocality": "Indio",
         "addressRegion": "CA",
         "addressCountry": "US",
@@ -53,49 +68,24 @@
         "latitude": "33.7207",
         "longitude": "-116.2156"
       },
-      "numberOfRooms": "3",
+      "numberOfRooms": 3,
       "petsAllowed": false,
       "amenityFeature": [
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Private Pool",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Hot Tub",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Free Parking",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Coffee Bar",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Curated Toy Collection",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Putting Green",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Outdoor Space",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Full Kitchen",
-          "value": true
-        }
+        { "@type": "LocationFeatureSpecification", "name": "Private Pool", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Hot Tub", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Coffee Bar", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Curated Toy Collection", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Putting Green", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Outdoor Space", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Full Kitchen", "value": true }
+      ],
+      "containsPlace": [
+        { "@type": "BedAndBreakfast", "name": "Primary Bedroom", "description": "King bed with en-suite bathroom" },
+        { "@type": "BedAndBreakfast", "name": "Second Bedroom", "description": "Queen bed, sleeps 2 adults" },
+        { "@type": "BedAndBreakfast", "name": "Third Bedroom", "description": "Twin beds, family-friendly with kids gear" },
+        { "@type": "BedAndBreakfast", "name": "Living Room", "description": "Open concept living with turquoise decor and entertainment center" },
+        { "@type": "BedAndBreakfast", "name": "Outdoor Pool Area", "description": "Private pool, hot tub, and putting green" }
       ],
       "priceRange": "$$-$$$",
       "checkinTime": "16:00",
@@ -104,7 +94,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "ratingCount": "50+"
+        "ratingCount": 50
       },
       "parentOrganization": {
         "@type": "Organization",
