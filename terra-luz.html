@@ -425,12 +425,18 @@
 
         .gallery-item {
             height: 300px;
-            background-size: cover;
-            background-position: center;
+            overflow: hidden;}
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
             transition: transform 0.3s ease;
         }
 
-        .gallery-item:hover {
+        .gallery-item:hover img {
             transform: scale(1.05);
         }
 
@@ -620,34 +626,34 @@
     <section class="gallery-section">
         <h2>Photo Gallery</h2>
         <div class="gallery-grid">
-            <div class="gallery-item" role="img" aria-label="Terra Luz Latin-inspired vacation rental exterior with terracotta tones in Indio" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1240.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Terra Luz living room with Cuban-inspired decor and warm textures" style="background-image: url('../Casa Moto/Whitagram-Image.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Cozy sitting area with woven rattan and terracotta accents at Terra Luz" style="background-image: url('../Casa Moto/Whitagram-Image 2.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Dining area with warm wood tones and Latin design details at Terra Luz" style="background-image: url('../Casa Moto/Whitagram-Image 3.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Kitchen with terracotta tile and Caramel Apple painted walls at Terra Luz" style="background-image: url('../Casa Moto/Whitagram-Image 4.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Primary bedroom with sage green walls and natural materials at Terra Luz" style="background-image: url('../Casa Moto/Whitagram-Image 5.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Guest bedroom with curated Latin-inspired decor at Terra Luz" style="background-image: url('../Casa Moto/Whitagram-Image 6.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Third bedroom with vibrant accents and comfortable bedding at Terra Luz" style="background-image: url('../Casa Moto/Whitagram-Image 7.JPG');"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1240.JPG" alt="Terra Luz Latin-inspired vacation rental exterior with terracotta tones in Indio" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Whitagram-Image.JPG" alt="Terra Luz living room with Cuban-inspired decor and warm textures" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Whitagram-Image 2.JPG" alt="Cozy sitting area with woven rattan and terracotta accents at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Whitagram-Image 3.JPG" alt="Dining area with warm wood tones and Latin design details at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Whitagram-Image 4.JPG" alt="Kitchen with terracotta tile and Caramel Apple painted walls at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Whitagram-Image 5.JPG" alt="Primary bedroom with sage green walls and natural materials at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Whitagram-Image 6.JPG" alt="Guest bedroom with curated Latin-inspired decor at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Whitagram-Image 7.JPG" alt="Third bedroom with vibrant accents and comfortable bedding at Terra Luz" loading="lazy" decoding="async"></div>
             <!-- New Photos from Existing Listing Pictures -->
-            <div class="gallery-item" role="img" aria-label="Terra Luz private pool surrounded by desert landscaping Indio CA" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1239.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Pool deck with lounge chairs at Terra Luz vacation rental" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1348.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor patio with pergola and terracotta tones at Terra Luz" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1265.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Open living space with warm Cuban-inspired color palette at Terra Luz" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1230.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Bathroom with natural tile and earthy tones at Terra Luz" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1231.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Details of handcrafted decor and authentic materials at Terra Luz" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1235.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Saltwater pool at Terra Luz with Coachella Valley mountain views" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1240.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Evening outdoor dining area at Terra Luz Indio vacation rental" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1236.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Colorful accent wall with Latin art at Terra Luz" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1266.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bathroom with warm finishes at Terra Luz Indio" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1351.JPG');"></div>
-            <div class="gallery-item" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1238.JPG');"></div>
-            <div class="gallery-item" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1237.JPG');"></div>
-            <div class="gallery-item" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1345.JPG');"></div>
-            <div class="gallery-item" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1262.JPG');"></div>
-            <div class="gallery-item" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1229.JPG');"></div>
-            <div class="gallery-item" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1232.JPG');"></div>
-            <div class="gallery-item" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1234.JPG');"></div>
-            <div class="gallery-item" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1343.JPG');"></div>
-            <div class="gallery-item" style="background-image: url('../Casa Moto/Existing Listing Pictures/IMG_1347.JPG');"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1239.JPG" alt="Terra Luz private pool surrounded by desert landscaping Indio CA" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1348.JPG" alt="Pool deck with lounge chairs at Terra Luz vacation rental" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1265.JPG" alt="Outdoor patio with pergola and terracotta tones at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1230.JPG" alt="Open living space with warm Cuban-inspired color palette at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1231.JPG" alt="Bathroom with natural tile and earthy tones at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1235.JPG" alt="Details of handcrafted decor and authentic materials at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1240.JPG" alt="Saltwater pool at Terra Luz with Coachella Valley mountain views" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1236.JPG" alt="Evening outdoor dining area at Terra Luz Indio vacation rental" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1266.JPG" alt="Colorful accent wall with Latin art at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1351.JPG" alt="Master bathroom with warm finishes at Terra Luz Indio" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1238.JPG" alt="Terra Luz outdoor living area with desert garden Indio CA" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1237.JPG" alt="Backyard patio with terracotta accents at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1345.JPG" alt="Pool area with lush landscaping at Terra Luz vacation rental" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1262.JPG" alt="Interior design detail with Latin-inspired art at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1229.JPG" alt="Open floor plan living and dining area at Terra Luz Indio" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1232.JPG" alt="Bedroom with warm earthy tones at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1234.JPG" alt="Kitchen nook with terracotta tile at Terra Luz" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1343.JPG" alt="Coachella Valley mountain views from Terra Luz pool deck" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Casa Moto/Existing Listing Pictures/IMG_1347.JPG" alt="Terra Luz vacation rental photo IMG_1347.JPG" loading="lazy" decoding="async"></div>
         </div>
     </section>
 

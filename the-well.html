@@ -449,12 +449,18 @@
 
         .gallery-item {
             height: 300px;
-            background-size: cover;
-            background-position: center;
+            overflow: hidden;}
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
             transition: transform 0.3s ease;
         }
 
-        .gallery-item:hover {
+        .gallery-item:hover img {
             transform: scale(1.05);
         }
 
@@ -656,35 +662,35 @@
     <section class="gallery-section">
         <h2>Photo Gallery</h2>
         <div class="gallery-grid">
-            <div class="gallery-item" role="img" aria-label="The Well living room with southwestern minimalist design Palm Springs" style="background-image: url('../The Well/1TW_4W6A0294.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Sage green living space with calming wellness-focused decor" style="background-image: url('../The Well/1TW_4W6A0294sage.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Mid-century modern seating area at The Well" style="background-image: url('../The Well/2TW_DZ5A0912.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Living room detail with terracotta accents and smart storage" style="background-image: url('../The Well/2TW_DZ5A0912cropped.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Open concept living area with wellness design elements" style="background-image: url('../The Well/3TW_DZ5A0901.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Dining space for solo travelers and remote workers" style="background-image: url('../The Well/4TW_DZ5A0923.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Kitchen with modern appliances and clean design" style="background-image: url('../The Well/5TW_DZ5A0895.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Bedroom sanctuary with sage green color palette" style="background-image: url('../The Well/6TW_4W6A0299.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bedroom with wellness-focused calming design" style="background-image: url('../The Well/7TW_DZ5A0884.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Bedroom with intentional living space and natural light" style="background-image: url('../The Well/8TW_DZ5A0864.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Coffee station with Keurig for morning routine" style="background-image: url('../The Well/9TW_DZ5A0868.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Coffee bar detail showing curated wellness amenities" style="background-image: url('../The Well/9TW_DZ5A0868keurig.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Bedroom view with smart storage solutions" style="background-image: url('../The Well/10TW_4W6A0304.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Closet and storage area with organizational design" style="background-image: url('../The Well/11TW_DZ5A0876.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Smart storage detail with southwestern style" style="background-image: url('../The Well/11TW_DZ5A0876center.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Storage organization perfect for extended stays" style="background-image: url('../The Well/11TW_DZ5A0876left.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Closet space with thoughtful design at The Well" style="background-image: url('../The Well/11TW_DZ5A0876right.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Bedroom with wall sconce and mid-century details" style="background-image: url('../The Well/12TW_DZ5A0810.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Mid-century sconce detail with warm lighting" style="background-image: url('../The Well/12TW_DZ5A0810sconce.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Bathroom with modern fixtures and sage accents" style="background-image: url('../The Well/13TW_DZ5A0820.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Bathroom design with wellness-focused amenities" style="background-image: url('../The Well/13TW_DZ5A0828.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Updated bathroom with calming color palette" style="background-image: url('../The Well/13TW_DZ5A0828new.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Bathroom vanity with terracotta warmth" style="background-image: url('../The Well/15TW_DZ5A0853.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Remote work setup with dedicated workspace" style="background-image: url('../The Well/16TW_4W6A0319.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Workspace area perfect for remote workers Palm Springs" style="background-image: url('../The Well/17TW_DZ5A0843.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor space with desert landscaping" style="background-image: url('../The Well/18TW_DZ5A0839.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Exterior entrance to The Well wellness retreat" style="background-image: url('../The Well/19TW_DZ5A0774.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Front door with southwestern design elements" style="background-image: url('../The Well/20TW_DZ5A0787.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="The Well exterior showing minimalist architecture Palm Springs" style="background-image: url('../The Well/21TW_DZ5A0779.jpg');"></div>
+            <div class="gallery-item"><img src="../The Well/1TW_4W6A0294.jpg" alt="The Well living room with southwestern minimalist design Palm Springs" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/1TW_4W6A0294sage.jpg" alt="Sage green living space with calming wellness-focused decor" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/2TW_DZ5A0912.jpg" alt="Mid-century modern seating area at The Well" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/2TW_DZ5A0912cropped.jpg" alt="Living room detail with terracotta accents and smart storage" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/3TW_DZ5A0901.jpg" alt="Open concept living area with wellness design elements" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/4TW_DZ5A0923.jpg" alt="Dining space for solo travelers and remote workers" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/5TW_DZ5A0895.jpg" alt="Kitchen with modern appliances and clean design" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/6TW_4W6A0299.jpg" alt="Bedroom sanctuary with sage green color palette" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/7TW_DZ5A0884.jpg" alt="Master bedroom with wellness-focused calming design" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/8TW_DZ5A0864.jpg" alt="Bedroom with intentional living space and natural light" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/9TW_DZ5A0868.jpg" alt="Coffee station with Keurig for morning routine" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/9TW_DZ5A0868keurig.jpg" alt="Coffee bar detail showing curated wellness amenities" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/10TW_4W6A0304.jpg" alt="Bedroom view with smart storage solutions" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/11TW_DZ5A0876.jpg" alt="Closet and storage area with organizational design" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/11TW_DZ5A0876center.jpg" alt="Smart storage detail with southwestern style" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/11TW_DZ5A0876left.jpg" alt="Storage organization perfect for extended stays" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/11TW_DZ5A0876right.jpg" alt="Closet space with thoughtful design at The Well" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/12TW_DZ5A0810.jpg" alt="Bedroom with wall sconce and mid-century details" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/12TW_DZ5A0810sconce.jpg" alt="Mid-century sconce detail with warm lighting" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/13TW_DZ5A0820.jpg" alt="Bathroom with modern fixtures and sage accents" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/13TW_DZ5A0828.jpg" alt="Bathroom design with wellness-focused amenities" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/13TW_DZ5A0828new.jpg" alt="Updated bathroom with calming color palette" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/15TW_DZ5A0853.jpg" alt="Bathroom vanity with terracotta warmth" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/16TW_4W6A0319.jpg" alt="Remote work setup with dedicated workspace" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/17TW_DZ5A0843.jpg" alt="Workspace area perfect for remote workers Palm Springs" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/18TW_DZ5A0839.jpg" alt="Outdoor space with desert landscaping" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/19TW_DZ5A0774.jpg" alt="Exterior entrance to The Well wellness retreat" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/20TW_DZ5A0787.jpg" alt="Front door with southwestern design elements" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../The Well/21TW_DZ5A0779.jpg" alt="The Well exterior showing minimalist architecture Palm Springs" loading="lazy" decoding="async"></div>
         </div>
     </section>
 

@@ -463,12 +463,18 @@
 
         .gallery-item {
             height: 300px;
-            background-size: cover;
-            background-position: center;
+            overflow: hidden;}
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
             transition: transform 0.3s ease;
         }
 
-        .gallery-item:hover {
+        .gallery-item:hover img {
             transform: scale(1.05);
         }
 
@@ -615,120 +621,120 @@
         <h2>See It for Yourself</h2>
         <div class="gallery-grid">
             <!-- 82381 Cochran Drive For Web Photos -->
-            <div class="gallery-item" role="img" aria-label="Cozy Cactus exterior with pool and mountain views in Indio" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/1TW_DZ5A8774web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Cozy Cactus poolside patio area with desert landscaping" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/2TW_DZ5A8783web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Colorful turquoise living room at Cozy Cactus with vibrant decor" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/3TW_DZ5A8619web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Living room seating area with coral and turquoise accents" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/4TW_DZ5A8628web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Family-friendly living space with playful color palette" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/5TW_4W6A8424web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Cozy Cactus living room with modern furnishings and artwork" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/6TW_4W6A8436 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Open concept living area with dining table and kitchen view" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/6TW4W6A8441web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Living room entertainment area with TV and comfortable seating" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/7TW_4W6A8446web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Dining area with modern table and colorful decor details" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/8TW_4W6A8434web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Cozy Cactus dining room with seating for 8 guests" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/9TW_DZ5A8649web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Modern kitchen with stainless appliances and breakfast bar" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/10TW_DZ5A8636web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Kitchen island with bar seating and turquoise accents" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/11TW_DZ5A8641web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Fully equipped kitchen at Cozy Cactus vacation rental" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/12TW_4W6A8617web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Kitchen prep area with modern appliances and ample counter space" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/12TW_DZ5A8639web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bedroom with king bed and turquoise bedding" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/13TW_4W6A8478 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bedroom with natural light and desert views" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/14TW_4W6A8415web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bedroom seating area with comfortable chair" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/15TW_DZ5A8612web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bedroom with colorful artwork and modern furnishings" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/16TW_4W6A8430 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bathroom with walk-in shower and modern fixtures" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/17TW_4W6A8482web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bathroom vanity with dual sinks and storage" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/18TW_4W6A8484web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Second bedroom with twin beds and colorful bedding" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/19TW_DZ5A8617web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Twin bedroom with playful decor and natural light" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/20TW_DZ5A8667 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Kids bedroom with curated toy collection at Cozy Cactus" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/22TW__DZ5A8656web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Third bedroom with comfortable sleeping arrangements" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/23TW_DZ5A8676web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Guest bedroom bathroom with shower and modern fixtures" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/24TW_4W6A8492web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Guest bathroom with walk-in shower and tile surround" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/24TW_4W6A8618web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Full bathroom with vanity and storage space" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/24TW_DZ5A8660web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Bathroom detail showing modern fixtures and finishes" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/24TW_DZ5A8688web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Hallway bathroom with contemporary design" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/25TW_4W6A8494web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Home office space with desk and natural light" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/25TW_4W6A8693web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Workspace area perfect for remote work at Cozy Cactus" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/26TW_DZ5A8674web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Game room with entertainment options for families" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/27TW_DZ5A8695web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Game room seating area with comfortable furnishings" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/28TW_4W6A8564web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Laundry room with washer and dryer" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/29TW_4W6A8498web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Utility room with storage and cleaning supplies" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/30TW_4W6A8503web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Hallway with bright lighting and clean design" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/31TW_4W6A8561web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Interior hallway connecting bedrooms" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/31TW_4W6A8569web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Entryway with welcoming decor and storage" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/32TW_DZ5A8662web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Front entrance of Cozy Cactus vacation home" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/33TW_DZ5A8744web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Private pool area with lounge chairs and desert views" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/34TW_DZ5A8701web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Pool with hot tub and mountain views at Cozy Cactus" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/35TW_DZ5A8740web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Heated pool and spa with patio seating" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/36TW_DZ5A8726web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Pool deck with lounge chairs and umbrella" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/37TW_DZ5A8734web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Hot tub with mountain backdrop in Indio" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/38TW_DZ5A8715web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor dining area with table and chairs" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/39TW_4W6A8595web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Poolside seating area at dusk" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/40TW_DZ5A8721web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor patio with fire pit and seating" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/40TW_DZ5A8758web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Evening view of pool and outdoor living space" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/41TW_DZ5A8764web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Desert landscaping with native plants and mountain views" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/42TW_DZ5A8586web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Side yard with desert-friendly landscaping" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/43TW_DZ5A8574web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Covered patio with outdoor furniture" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/44TW_4W6A8395web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Front yard landscaping at Cozy Cactus" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/45TW_DZ5A8592web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Driveway and garage exterior view" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/46TW_DZ5A8599web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Sunset view from pool area with mountain silhouette" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/47TW_DZ5A8834 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Golden hour at Cozy Cactus pool" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/48TW_DZ5A8837 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Evening pool lighting with desert sunset" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/49TW_DZ5A8843 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="BBQ grill area with outdoor kitchen setup" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/50TW_4W6A8608web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor grilling station for family meals" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/51TW_4W6A8609web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Garage interior with storage space" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/52TW_4W6A8589web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Night view of illuminated pool at Cozy Cactus" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/53TW_DZ5A8767web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Pool lights reflecting on water at night" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/54TW_4W6A8603web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Evening ambiance at Cozy Cactus outdoor area" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/55TW_DZ5A8770web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Twilight pool view with desert mountains" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/56TW_DZ5A8773web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor living space at sunset" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/57TW_4W6A8572web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Patio furniture arrangement for outdoor relaxation" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/58TW_4W6A8577web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Backyard overview showing pool and entertainment areas" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/59DZ5A8808 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Aerial view of Cozy Cactus outdoor amenities" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/60TW_DZ5A8814web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Property exterior with desert landscaping" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/61TW_DZ5A8798web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Side view of home and yard" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/62TW_DZ5A8810web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Full property view with mountain backdrop" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/63DZ5A8803 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Neighborhood setting in Indio near Coachella" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/64TW_DZ5A8817web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Street view of Cozy Cactus vacation rental" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/65DZ5A8821 V2web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Welcome to Cozy Cactus front entrance" style="background-image: url('../Cozy Cactus/82381 Cochran Drive For Web/66TW_DZ5A8846web.jpg');"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/1TW_DZ5A8774web.jpg" alt="Cozy Cactus exterior with pool and mountain views in Indio" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/2TW_DZ5A8783web.jpg" alt="Cozy Cactus poolside patio area with desert landscaping" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/3TW_DZ5A8619web.jpg" alt="Colorful turquoise living room at Cozy Cactus with vibrant decor" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/4TW_DZ5A8628web.jpg" alt="Living room seating area with coral and turquoise accents" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/5TW_4W6A8424web.jpg" alt="Family-friendly living space with playful color palette" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/6TW_4W6A8436 V2web.jpg" alt="Cozy Cactus living room with modern furnishings and artwork" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/6TW4W6A8441web.jpg" alt="Open concept living area with dining table and kitchen view" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/7TW_4W6A8446web.jpg" alt="Living room entertainment area with TV and comfortable seating" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/8TW_4W6A8434web.jpg" alt="Dining area with modern table and colorful decor details" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/9TW_DZ5A8649web.jpg" alt="Cozy Cactus dining room with seating for 8 guests" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/10TW_DZ5A8636web.jpg" alt="Modern kitchen with stainless appliances and breakfast bar" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/11TW_DZ5A8641web.jpg" alt="Kitchen island with bar seating and turquoise accents" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/12TW_4W6A8617web.jpg" alt="Fully equipped kitchen at Cozy Cactus vacation rental" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/12TW_DZ5A8639web.jpg" alt="Kitchen prep area with modern appliances and ample counter space" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/13TW_4W6A8478 V2web.jpg" alt="Master bedroom with king bed and turquoise bedding" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/14TW_4W6A8415web.jpg" alt="Master bedroom with natural light and desert views" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/15TW_DZ5A8612web.jpg" alt="Master bedroom seating area with comfortable chair" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/16TW_4W6A8430 V2web.jpg" alt="Master bedroom with colorful artwork and modern furnishings" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/17TW_4W6A8482web.jpg" alt="Master bathroom with walk-in shower and modern fixtures" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/18TW_4W6A8484web.jpg" alt="Master bathroom vanity with dual sinks and storage" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/19TW_DZ5A8617web.jpg" alt="Second bedroom with twin beds and colorful bedding" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/20TW_DZ5A8667 V2web.jpg" alt="Twin bedroom with playful decor and natural light" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/22TW__DZ5A8656web.jpg" alt="Kids bedroom with curated toy collection at Cozy Cactus" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/23TW_DZ5A8676web.jpg" alt="Third bedroom with comfortable sleeping arrangements" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/24TW_4W6A8492web.jpg" alt="Guest bedroom bathroom with shower and modern fixtures" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/24TW_4W6A8618web.jpg" alt="Guest bathroom with walk-in shower and tile surround" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/24TW_DZ5A8660web.jpg" alt="Full bathroom with vanity and storage space" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/24TW_DZ5A8688web.jpg" alt="Bathroom detail showing modern fixtures and finishes" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/25TW_4W6A8494web.jpg" alt="Hallway bathroom with contemporary design" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/25TW_4W6A8693web.jpg" alt="Home office space with desk and natural light" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/26TW_DZ5A8674web.jpg" alt="Workspace area perfect for remote work at Cozy Cactus" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/27TW_DZ5A8695web.jpg" alt="Game room with entertainment options for families" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/28TW_4W6A8564web.jpg" alt="Game room seating area with comfortable furnishings" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/29TW_4W6A8498web.jpg" alt="Laundry room with washer and dryer" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/30TW_4W6A8503web.jpg" alt="Utility room with storage and cleaning supplies" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/31TW_4W6A8561web.jpg" alt="Hallway with bright lighting and clean design" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/31TW_4W6A8569web.jpg" alt="Interior hallway connecting bedrooms" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/32TW_DZ5A8662web.jpg" alt="Entryway with welcoming decor and storage" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/33TW_DZ5A8744web.jpg" alt="Front entrance of Cozy Cactus vacation home" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/34TW_DZ5A8701web.jpg" alt="Private pool area with lounge chairs and desert views" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/35TW_DZ5A8740web.jpg" alt="Pool with hot tub and mountain views at Cozy Cactus" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/36TW_DZ5A8726web.jpg" alt="Heated pool and spa with patio seating" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/37TW_DZ5A8734web.jpg" alt="Pool deck with lounge chairs and umbrella" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/38TW_DZ5A8715web.jpg" alt="Hot tub with mountain backdrop in Indio" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/39TW_4W6A8595web.jpg" alt="Outdoor dining area with table and chairs" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/40TW_DZ5A8721web.jpg" alt="Poolside seating area at dusk" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/40TW_DZ5A8758web.jpg" alt="Outdoor patio with fire pit and seating" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/41TW_DZ5A8764web.jpg" alt="Evening view of pool and outdoor living space" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/42TW_DZ5A8586web.jpg" alt="Desert landscaping with native plants and mountain views" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/43TW_DZ5A8574web.jpg" alt="Side yard with desert-friendly landscaping" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/44TW_4W6A8395web.jpg" alt="Covered patio with outdoor furniture" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/45TW_DZ5A8592web.jpg" alt="Front yard landscaping at Cozy Cactus" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/46TW_DZ5A8599web.jpg" alt="Driveway and garage exterior view" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/47TW_DZ5A8834 V2web.jpg" alt="Sunset view from pool area with mountain silhouette" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/48TW_DZ5A8837 V2web.jpg" alt="Golden hour at Cozy Cactus pool" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/49TW_DZ5A8843 V2web.jpg" alt="Evening pool lighting with desert sunset" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/50TW_4W6A8608web.jpg" alt="BBQ grill area with outdoor kitchen setup" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/51TW_4W6A8609web.jpg" alt="Outdoor grilling station for family meals" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/52TW_4W6A8589web.jpg" alt="Garage interior with storage space" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/53TW_DZ5A8767web.jpg" alt="Night view of illuminated pool at Cozy Cactus" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/54TW_4W6A8603web.jpg" alt="Pool lights reflecting on water at night" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/55TW_DZ5A8770web.jpg" alt="Evening ambiance at Cozy Cactus outdoor area" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/56TW_DZ5A8773web.jpg" alt="Twilight pool view with desert mountains" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/57TW_4W6A8572web.jpg" alt="Outdoor living space at sunset" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/58TW_4W6A8577web.jpg" alt="Patio furniture arrangement for outdoor relaxation" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/59DZ5A8808 V2web.jpg" alt="Backyard overview showing pool and entertainment areas" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/60TW_DZ5A8814web.jpg" alt="Aerial view of Cozy Cactus outdoor amenities" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/61TW_DZ5A8798web.jpg" alt="Property exterior with desert landscaping" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/62TW_DZ5A8810web.jpg" alt="Side view of home and yard" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/63DZ5A8803 V2web.jpg" alt="Full property view with mountain backdrop" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/64TW_DZ5A8817web.jpg" alt="Neighborhood setting in Indio near Coachella" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/65DZ5A8821 V2web.jpg" alt="Street view of Cozy Cactus vacation rental" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/82381 Cochran Drive For Web/66TW_DZ5A8846web.jpg" alt="Welcome to Cozy Cactus front entrance" loading="lazy" decoding="async"></div>
 
             <!-- Coffee Bar & Family Kit Web Photos -->
-            <div class="gallery-item" role="img" aria-label="Curated coffee bar with specialty beans and equipment" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/1_4W6A1739web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Coffee bar setup with pour over and French press" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/2_4W6A1745web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Premium coffee selection at Cozy Cactus" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/3_4W6A1749web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Curated family toy collection for kids" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/4_4W6A1797web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Thoughtfully selected toys and games" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/4W6A1768web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Kids entertainment basket with curated toys" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/5_4W6A1779web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Family-friendly board games and activities" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/6_4W6A1813web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Beach and pool toys for family fun" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/7_4W6A1789web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Kids craft supplies and creative activities" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/8_4W6A1825web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Art supplies for creative kids" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/9_4W6A1832web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Coloring books and drawing materials" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/10_4W6A1840web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Playtime essentials organized in baskets" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/11_4W6A1847web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Thoughtful toy organization at Cozy Cactus" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/12_4W6A1850editweb.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Building blocks and construction toys" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/13_4W6A1884web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Educational toys for various ages" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/14_4W6A1888web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor play equipment and toys" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/15_4W6A1906web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Puzzles and learning games for kids" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/16_4W6A1856web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Reading nook with kids books collection" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/17_4W6A1865web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Story time books and literacy activities" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/18_4W6A1895web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Baby and toddler toys collection" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/19_4W6A1892web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Infant play items and activities" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/20_4W6A1869web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Complete family amenities at Cozy Cactus" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/21_4W6A1873web.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Welcome basket with family essentials" style="background-image: url('../Cozy Cactus/Coffee Bar & Family Kit Web/22_4W6A1821web.jpg');"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/1_4W6A1739web.jpg" alt="Curated coffee bar with specialty beans and equipment" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/2_4W6A1745web.jpg" alt="Coffee bar setup with pour over and French press" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/3_4W6A1749web.jpg" alt="Premium coffee selection at Cozy Cactus" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/4_4W6A1797web.jpg" alt="Curated family toy collection for kids" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/4W6A1768web.jpg" alt="Thoughtfully selected toys and games" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/5_4W6A1779web.jpg" alt="Kids entertainment basket with curated toys" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/6_4W6A1813web.jpg" alt="Family-friendly board games and activities" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/7_4W6A1789web.jpg" alt="Beach and pool toys for family fun" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/8_4W6A1825web.jpg" alt="Kids craft supplies and creative activities" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/9_4W6A1832web.jpg" alt="Art supplies for creative kids" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/10_4W6A1840web.jpg" alt="Coloring books and drawing materials" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/11_4W6A1847web.jpg" alt="Playtime essentials organized in baskets" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/12_4W6A1850editweb.jpg" alt="Thoughtful toy organization at Cozy Cactus" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/13_4W6A1884web.jpg" alt="Building blocks and construction toys" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/14_4W6A1888web.jpg" alt="Educational toys for various ages" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/15_4W6A1906web.jpg" alt="Outdoor play equipment and toys" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/16_4W6A1856web.jpg" alt="Puzzles and learning games for kids" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/17_4W6A1865web.jpg" alt="Reading nook with kids books collection" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/18_4W6A1895web.jpg" alt="Story time books and literacy activities" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/19_4W6A1892web.jpg" alt="Baby and toddler toys collection" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/20_4W6A1869web.jpg" alt="Infant play items and activities" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/21_4W6A1873web.jpg" alt="Complete family amenities at Cozy Cactus" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Coffee Bar & Family Kit Web/22_4W6A1821web.jpg" alt="Welcome basket with family essentials" loading="lazy" decoding="async"></div>
 
             <!-- Putting Green Photos -->
-            <div class="gallery-item" role="img" aria-label="Backyard putting green for golf practice" style="background-image: url('../Cozy Cactus/Putting Green/DSC00261.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Mini golf putting green in desert setting" style="background-image: url('../Cozy Cactus/Putting Green/DSC00264.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Artificial turf putting green with flags" style="background-image: url('../Cozy Cactus/Putting Green/DSC00267.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Backyard golf putting area with multiple holes" style="background-image: url('../Cozy Cactus/Putting Green/DSC00270.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Putting green detail showing contours" style="background-image: url('../Cozy Cactus/Putting Green/DSC00273.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Golf practice green with mountain views" style="background-image: url('../Cozy Cactus/Putting Green/DSC00279.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Putting green entertainment feature" style="background-image: url('../Cozy Cactus/Putting Green/DSC00282.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Backyard mini golf putting area" style="background-image: url('../Cozy Cactus/Putting Green/DSC00285.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Putting green with desert landscaping" style="background-image: url('../Cozy Cactus/Putting Green/DSC00288.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Multi-hole putting green setup" style="background-image: url('../Cozy Cactus/Putting Green/DSC00297.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Professional-grade backyard putting green" style="background-image: url('../Cozy Cactus/Putting Green/DSC00297_edited.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Putting green with golf balls and clubs" style="background-image: url('../Cozy Cactus/Putting Green/DSC00300.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor golf practice area at Cozy Cactus" style="background-image: url('../Cozy Cactus/Putting Green/DSC00303.jpg');"></div>
-            <div class="gallery-item" role="img" aria-label="Complete putting green amenity in backyard" style="background-image: url('../Cozy Cactus/Putting Green/DSC00306.jpg');"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00261.jpg" alt="Backyard putting green for golf practice" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00264.jpg" alt="Mini golf putting green in desert setting" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00267.jpg" alt="Artificial turf putting green with flags" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00270.jpg" alt="Backyard golf putting area with multiple holes" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00273.jpg" alt="Putting green detail showing contours" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00279.jpg" alt="Golf practice green with mountain views" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00282.jpg" alt="Putting green entertainment feature" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00285.jpg" alt="Backyard mini golf putting area" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00288.jpg" alt="Putting green with desert landscaping" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00297.jpg" alt="Multi-hole putting green setup" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00297_edited.jpg" alt="Professional-grade backyard putting green" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00300.jpg" alt="Putting green with golf balls and clubs" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00303.jpg" alt="Outdoor golf practice area at Cozy Cactus" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../Cozy Cactus/Putting Green/DSC00306.jpg" alt="Complete putting green amenity in backyard" loading="lazy" decoding="async"></div>
         </div>
     </section>
 

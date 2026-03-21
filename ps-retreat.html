@@ -444,12 +444,18 @@
 
         .gallery-item {
             height: 300px;
-            background-size: cover;
-            background-position: center;
+            overflow: hidden;}
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
             transition: transform 0.3s ease;
         }
 
-        .gallery-item:hover {
+        .gallery-item:hover img {
             transform: scale(1.05);
         }
 
@@ -650,30 +656,30 @@
     <section class="gallery-section">
         <h2>Photo Gallery</h2>
         <div class="gallery-grid">
-            <div class="gallery-item" role="img" aria-label="Mid-century modern living room at PS Retreat with iconic design" style="background-image: url('../PS Retreat/IMG_3328.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Open concept living space with turquoise accents Palm Springs" style="background-image: url('../PS Retreat/IMG_3329.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Dining area with mid-century furniture at PS Retreat" style="background-image: url('../PS Retreat/IMG_3330.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Kitchen with modern appliances and retro styling" style="background-image: url('../PS Retreat/IMG_3331.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Bowling alley primary suite with spacious bedroom" style="background-image: url('../PS Retreat/IMG_3332.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bedroom with king bed and mid-century decor" style="background-image: url('../PS Retreat/IMG_3333.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Turquoise pool at PS Retreat iconic Palm Springs setting" style="background-image: url('../PS Retreat/IMG_3334.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Pool deck with lounge chairs and desert landscaping" style="background-image: url('../PS Retreat/IMG_3335.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Guest bedroom with comfortable bedding at PS Retreat" style="background-image: url('../PS Retreat/IMG_3336.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Second bedroom with classic mid-century design" style="background-image: url('../PS Retreat/IMG_3337.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Bathroom with modern fixtures and retro tile" style="background-image: url('../PS Retreat/IMG_3338.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Master bathroom with walk-in shower Palm Springs" style="background-image: url('../PS Retreat/IMG_3340.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor patio seating for desert evenings" style="background-image: url('../PS Retreat/IMG_3341.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Poolside entertaining area at PS Retreat" style="background-image: url('../PS Retreat/IMG_3342.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Front entrance with mid-century architecture details" style="background-image: url('../PS Retreat/IMG_3343.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Exterior view showing iconic Palm Springs design" style="background-image: url('../PS Retreat/IMG_3344.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Night view of turquoise pool with lighting" style="background-image: url('../PS Retreat/IMG_3345.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Evening ambiance at PS Retreat vacation rental" style="background-image: url('../PS Retreat/IMG_3346.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Living room detail with mid-century furnishings" style="background-image: url('../PS Retreat/IMG_3347.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Kitchen counter with breakfast bar seating" style="background-image: url('../PS Retreat/IMG_3348.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Bedroom view with natural light and clean lines" style="background-image: url('../PS Retreat/IMG_3349.JPG');"></div>
-            <div class="gallery-item" role="img" aria-label="Pool and patio area perfect for relaxation" style="background-image: url('../PS Retreat/IMG_3376.jpeg');"></div>
-            <div class="gallery-item" role="img" aria-label="Outdoor space with mountain views Palm Springs" style="background-image: url('../PS Retreat/IMG_3379.jpeg');"></div>
-            <div class="gallery-item" role="img" aria-label="PS Retreat exterior walkable to downtown Palm Springs" style="background-image: url('../PS Retreat/DSC02747.jpeg');"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3328.JPG" alt="Mid-century modern living room at PS Retreat with iconic design" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3329.JPG" alt="Open concept living space with turquoise accents Palm Springs" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3330.JPG" alt="Dining area with mid-century furniture at PS Retreat" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3331.JPG" alt="Kitchen with modern appliances and retro styling" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3332.JPG" alt="Bowling alley primary suite with spacious bedroom" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3333.JPG" alt="Master bedroom with king bed and mid-century decor" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3334.JPG" alt="Turquoise pool at PS Retreat iconic Palm Springs setting" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3335.JPG" alt="Pool deck with lounge chairs and desert landscaping" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3336.JPG" alt="Guest bedroom with comfortable bedding at PS Retreat" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3337.JPG" alt="Second bedroom with classic mid-century design" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3338.JPG" alt="Bathroom with modern fixtures and retro tile" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3340.JPG" alt="Master bathroom with walk-in shower Palm Springs" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3341.JPG" alt="Outdoor patio seating for desert evenings" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3342.JPG" alt="Poolside entertaining area at PS Retreat" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3343.JPG" alt="Front entrance with mid-century architecture details" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3344.JPG" alt="Exterior view showing iconic Palm Springs design" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3345.JPG" alt="Night view of turquoise pool with lighting" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3346.JPG" alt="Evening ambiance at PS Retreat vacation rental" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3347.JPG" alt="Living room detail with mid-century furnishings" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3348.JPG" alt="Kitchen counter with breakfast bar seating" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3349.JPG" alt="Bedroom view with natural light and clean lines" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3376.jpeg" alt="Pool and patio area perfect for relaxation" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/IMG_3379.jpeg" alt="Outdoor space with mountain views Palm Springs" loading="lazy" decoding="async"></div>
+            <div class="gallery-item"><img src="../PS Retreat/DSC02747.jpeg" alt="PS Retreat exterior walkable to downtown Palm Springs" loading="lazy" decoding="async"></div>
         </div>
     </section>
 
