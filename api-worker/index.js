@@ -1,6 +1,6 @@
 // Cloudflare Worker: Indigo Palm API
 // Handles /api/availability, /api/pricing, /api/booking
-// Routes: indigopalm.co/api/*
+// Routes: indigopalm.co/api/*, indigopalm.co/*.html
 //
 // Deploy:
 //   cd api-worker
@@ -88,10 +88,27 @@ const PEAK_DATES = [
   { start: '2026-12-20', end: '2027-01-04', multiplier: 1.3, label: 'Holiday'      },
 ];
 
+// Pages that should 301 redirect from .html to clean URL
+// casa-moto.html → /terra-luz (rebrand)
+const HTML_REDIRECTS = {
+  '/cozy-cactus.html':   '/cozy-cactus',
+  '/terra-luz.html':     '/terra-luz',
+  '/casa-moto.html':     '/terra-luz',
+  '/ps-retreat.html':    '/ps-retreat',
+  '/the-well.html':      '/the-well',
+  '/festivalguide.html': '/festivalguide',
+  '/blog.html':          '/blog',
+};
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const path = url.pathname;
+
+    // 301 redirect .html property/content pages to clean URLs
+    if (HTML_REDIRECTS[path]) {
+      return Response.redirect('https://' + url.hostname + HTML_REDIRECTS[path], 301);
+    }
 
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: CORS_HEADERS });
@@ -144,9 +161,8 @@ export default {
       return handleSignLease(request, env);
     }
 
-    return new Response(JSON.stringify({ error: 'Not found' }), {
-      status: 404, headers: CORS_HEADERS,
-    });
+    // Pass all non-API requests through to GitHub Pages
+    return fetch(request);
   },
 };
 
