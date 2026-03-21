@@ -2,7 +2,7 @@
 
 ## Business Description (750 characters max)
 
-Indigo Palm Collective offers curated desert vacation rentals in Palm Springs, Indio, and La Quinta. Our properties—Cozy Cactus, Casa Moto, PS Retreat, and The Well—are thoughtfully designed experiential stays that ignite inner energy through outward care. Each home features private pools, modern amenities, and distinct personalities: from family-friendly Cozy Cactus with its curated toy collection, to Casa Moto's Latin cultural sanctuary with Kahlo blue pool, to PS Retreat's iconic mid-century magic in central Palm Springs, to The Well's minimalist wellness retreat. Perfect for Coachella and Stagecoach festival-goers, remote workers, families, and anyone seeking intentional desert living. Book direct and save 10%. High-touch hospitality meets design-forward comfort.
+Indigo Palm Collective offers curated desert vacation rentals in Palm Springs, Indio, and La Quinta. Our properties—Cozy Cactus, Casa Moto, PS Retreat, and The Well—are thoughtfully designed experiential stays that ignite inner energy through outward care. Each home features pools, hot tubs, modern amenities, and distinct personalities: from family-friendly Cozy Cactus with its curated toy collection, to Casa Moto's Latin cultural sanctuary with Kahlo blue pool, to PS Retreat's iconic mid-century magic in central Palm Springs, to The Well's minimalist wellness retreat. Perfect for Coachella and Stagecoach festival-goers, remote workers, families, and anyone seeking intentional desert living. Book direct and save 10%. High-touch hospitality meets design-forward comfort.
 
 Character count: 747
 
@@ -74,7 +74,7 @@ Our vacation rentals are located across the Coachella Valley, including Indio, P
 We're not just providing a place to stay—we're creating experiential stays with intention. Each property has a distinct personality and is professionally designed by Dawn Asher of The Olive Jar. From Cozy Cactus's curated toy collection for families to Casa Moto's Latin cultural touches to PS Retreat's mid-century magic, every detail is thoughtfully considered. Plus, book direct and save 10%.
 
 ### 3. Are your properties good for Coachella and Stagecoach festivals?
-Absolutely. Our Indio properties (Cozy Cactus and Casa Moto) are particularly popular for festival weekends, offering private pools, outdoor entertaining spaces, and proximity to the Empire Polo Club. We recommend booking 6-12 months in advance for festival dates.
+Absolutely. Our Indio properties (Cozy Cactus and Casa Moto) are particularly popular for festival weekends, offering pools, hot tubs, outdoor entertaining spaces, and proximity to the Empire Polo Club. We recommend booking 6-12 months in advance for festival dates.
 
 ### 4. Do you allow pets?
 Select properties are pet-friendly. Casa Moto (formerly Casa Moto) welcomes well-behaved pets with prior approval. Please contact us directly to discuss pet policies, fees, and specific requirements.

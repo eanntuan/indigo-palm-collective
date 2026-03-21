@@ -52,7 +52,7 @@ export const PROPERTIES = {
     location: 'Palm Springs, CA',
     bedrooms: 1,
     bathrooms: 1,
-    maxGuests: 8,
+    maxGuests: 2,
     basePrice: 300, // per night
     cleaningFee: 200,
     taxRate: 0.135,
