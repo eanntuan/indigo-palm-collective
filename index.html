@@ -48,11 +48,11 @@
         "latitude": "33.7207",
         "longitude": "-116.2156"
       },
-      "telephone": "+1-760-XXX-XXXX",
       "email": "indigopalmco@gmail.com",
       "sameAs": [
         "https://instagram.com/indigopalmco",
-        "https://pinterest.com/indigopalmco"
+        "https://pinterest.com/indigopalmco",
+        "https://share.google/JXNfopELjwDcE1CgY"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -847,6 +847,64 @@
             margin-bottom: 1.5rem;
             color: var(--terracotta);
         }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 5%;
+            background: var(--cream);
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .faq-section .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .faq-item {
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            padding: 1.25rem 0;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faq-question:hover { color: var(--terracotta); }
+        .faq-icon {
+            font-size: 1.5rem;
+            line-height: 1;
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+        .faq-question[aria-expanded="true"] .faq-icon {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1.25rem;
+        }
+        .faq-answer p {
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #555;
+        }
+        .faq-answer a { color: var(--terracotta); }
+        .faq-item.open .faq-answer { display: block; }
 
         /* Direct Booking Section */
         .direct-booking {
@@ -1974,6 +2032,94 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    How much do I save booking direct vs Airbnb?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>You save 15% booking directly through Indigo Palm Collective compared to Airbnb or VRBO. Airbnb charges 15–20% in platform fees, which we pass the savings directly to you. Plus, no hidden service fees or booking charges.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    How far are your properties from Coachella and Stagecoach?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Our Indio properties (Cozy Cactus, Terra Luz, The Well) are just 2–3 miles from Empire Polo Club — about 8–10 minutes by car. The Sundune in Palm Springs is 25 minutes from the festival grounds.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Are any of your vacation rentals pet-friendly?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, Terra Luz is our pet-friendly vacation rental in Indian Palms Country Club. We welcome dogs with advance approval. Contact us at <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> for pet policy details and any applicable fees.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Which property is best for families with young children?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cozy Cactus is our family-focused vacation rental with 4 bedrooms sleeping up to 10 guests. It includes a pack-n-play, sound machines, curated toy collection, pool, hot tub, and an organization system parents rave about in reviews.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    What is included with every direct booking?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>All Indigo Palm Collective direct bookings include: 24/7 guest support via text, coffee and tea provisions, toiletries and essentials, WiFi, pool towels, heating and cooling, and all utilities. Each property has unique amenities listed on its individual page.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Can I walk to Coachella or Stagecoach from Cozy Cactus?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes — and it's one of the best parts about staying here. You have the BEST location to the festival with no long shuttle lines or crazy surge pricing. From the property, it's about a 0.7 mile walk within Indian Palms to the front security gate, then an additional 0.3 miles to the Yellow Path at 49th & Monroe. Total walk is about 1.5 miles via Eisenhower Dr (~19 min). Bring comfy shoes — the path is gravel. No pedestrians are allowed on Monroe (between Ave 49–52) or Madison (between Ave 50–52).</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Are there golf cart rides available to the festival?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes — community members within Indian Palms often offer golf cart rides or "tailgate taxis" to the front gate for a few dollars. The going rate is roughly $5/rider for a group of 10, or $10/rider for smaller groups. We recommend planning this in advance — it saves your feet for the festival. We'll include current contact info in your welcome book closer to your stay.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    What should I know about driving and road closures during festival weekends?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Avoid driving if at all possible during festival hours — traffic around 48th & Monroe gets completely gridlocked. If you must drive, use the Monroe Gate (main guest entry, the only gate with security staff). Do not use the Avenue 50 Gate — it's restricted to residents only and you will be turned around. During festival weekends, Avenue 50 between Madison & Monroe experiences full road closures Friday through Sunday, along with several surrounding streets. We'll share the full road closure map in your welcome book.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    What amenities are available at Indian Palms when we're not at the festival?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Indian Palms Country Club has plenty to keep you busy between sets. The community offers 3 pools, pickleball courts (we provide paddles), and tennis courts (ID required to rent rackets). There's also a Lifestyle Center fitness facility — let us know in advance if you'd like access and we'll get you set up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -2203,6 +2349,24 @@
                 submitButton.disabled = false;
                 submitButton.textContent = 'SIGN UP';
             }
+        });
+    </script>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-item');
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('open');
+                    i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                if (!isOpen) {
+                    item.classList.add('open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
         });
     </script>
 
