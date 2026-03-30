@@ -149,6 +149,52 @@ TODO: After payment confirmed → send "You're Booked" email + create Hostaway r
 
 ---
 
+## Marketing & Social Media
+
+### Pinterest (Active — March 2026)
+**VA:** Sabbir Ahmed (Upwork: `upwork.com/freelancers/~01fa0f08c353e1c795`)
+**Rate:** $9/hr, 15 hrs/week (~$540/month), manual time logging enabled
+**Contact:** sabbirahmed31dec@gmail.com (Drive/general) | alennsabbir@gmail.com (Canva)
+
+**Access shared:**
+- Pinterest: login credentials shared via Upwork
+- Canva: invited as team admin at alennsabbir@gmail.com
+- Google Drive: photos folder shared at sabbirahmed31dec@gmail.com (organized by property/room)
+
+**Strategy:**
+- Phase 1 (weeks 1–2): 4 pins/day, front-load to build healthy profile (all metrics green)
+- Discovery pins: multiple room/angle variations per property
+- Conversion pins: CTA-focused, booking-intent copy
+- Links: use **Airbnb listing links** until 25–30K monthly views, then switch to `indigopalm.co`
+- Low season = Pinterest machine learning phase; position for high season wins
+- Weekly Canva drafts shared on Upwork for review before publishing
+- 15-day analytics spreadsheet delivered by Sabbir
+
+**Property priority:**
+1. Cozy Cactus — families/kids angle, amenities (bunk beds, changing table, hot tub, family kit)
+2. Terra Luz — private pool + spa, Latin cultural vibe
+3. PS Retreat / The Sundune — pending photo shoot (May/June 2026), lower priority now
+4. The Well — lowest priority (currently on 9-month MTR)
+
+**Seasonal event pins to front-load:**
+- BNP Paribas Open (March)
+- Coachella + Stagecoach (April)
+- Lacrosse tournament (January)
+
+**Behind-the-scenes photos:** Work on Pinterest — Sabbir can AI-enhance rough/work-in-progress shots
+
+---
+
+### Instagram (Planned)
+- One account for all properties (not per-property)
+- Sabbir can manage alongside Pinterest
+- Strategy: reels > static posts (algorithm favors video)
+- Needs Eann on camera for face-to-camera content (Sabbir will script reel ideas)
+- Pinterest > Meta for paid campaigns (less ad saturation in STR niche)
+- Not yet started — pending Pinterest foundation
+
+---
+
 ## Property IDs
 
 | ID | Name | Location | Beds/Baths | Max Guests |
