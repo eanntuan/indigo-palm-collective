@@ -1,0 +1,71 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "netlify/**",
+      "functions/**"
+    ],
+    "redirects": [
+      {
+        "source": "/ps-retreat",
+        "destination": "/the-sundune/",
+        "type": 301
+      },
+      {
+        "source": "/ps-retreat/",
+        "destination": "/the-sundune/",
+        "type": 301
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|webp|svg)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000, public"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800, public"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(woff|woff2|ttf|eot)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000, public"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/quickbooks-auth",
+        "function": "quickbooksAuth"
+      },
+      {
+        "source": "/quickbooks-callback",
+        "function": "quickbooksCallback"
+      },
+      {
+        "source": "/quickbooks-sync",
+        "function": "quickbooksSync"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "runtime": "nodejs20"
+  }
+}
