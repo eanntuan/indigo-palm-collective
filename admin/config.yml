@@ -1,0 +1,69 @@
+backend:
+  name: github
+  repo: eanntuan/desert-edit-properties
+  branch: main
+  auth_type: pkce
+  app_id: REPLACE_WITH_CLIENT_ID
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://indigopalm.co
+
+collections:
+  - name: "properties"
+    label: "Property Pages"
+    description: "Edit SEO titles, descriptions, and copy for each property. Changes go live in ~2 minutes."
+    files:
+
+      - name: "terra-luz"
+        label: "Terra Luz (Indio)"
+        file: "_content/terra-luz.json"
+        fields:
+          - { label: "SEO Page Title", name: "seo_title", widget: "string", hint: "Appears in browser tab and Google results. Keep under 60 characters." }
+          - { label: "SEO Meta Description", name: "seo_description", widget: "text", hint: "Appears under the title in Google results. Keep under 155 characters." }
+          - { label: "Hero Tagline", name: "tagline", widget: "string", hint: "Short line shown on the hero image." }
+          - { label: "Description Heading", name: "description_heading", widget: "string" }
+          - { label: "Description Paragraph 1", name: "description_p1", widget: "text" }
+          - { label: "Description Paragraph 2", name: "description_p2", widget: "text" }
+          - { label: "Description Paragraph 3", name: "description_p3", widget: "text" }
+          - { label: "Description Paragraph 4", name: "description_p4", widget: "text" }
+
+      - name: "the-sundune"
+        label: "The Sundune (Palm Springs)"
+        file: "_content/the-sundune.json"
+        fields:
+          - { label: "SEO Page Title", name: "seo_title", widget: "string", hint: "Keep under 60 characters." }
+          - { label: "SEO Meta Description", name: "seo_description", widget: "text", hint: "Keep under 155 characters." }
+          - { label: "Hero Tagline", name: "tagline", widget: "string" }
+          - { label: "Description Heading", name: "description_heading", widget: "string" }
+          - { label: "Description Paragraph 1", name: "description_p1", widget: "text" }
+          - { label: "Description Paragraph 2", name: "description_p2", widget: "text" }
+          - { label: "Description Paragraph 3", name: "description_p3", widget: "text" }
+          - { label: "Description Paragraph 4", name: "description_p4", widget: "text" }
+
+      - name: "cozy-cactus"
+        label: "Cozy Cactus (Indio)"
+        file: "_content/cozy-cactus.json"
+        fields:
+          - { label: "SEO Page Title", name: "seo_title", widget: "string", hint: "Keep under 60 characters." }
+          - { label: "SEO Meta Description", name: "seo_description", widget: "text", hint: "Keep under 155 characters." }
+          - { label: "Hero Tagline", name: "tagline", widget: "string" }
+          - { label: "Description Heading", name: "description_heading", widget: "string" }
+          - { label: "Description Paragraph 1", name: "description_p1", widget: "text" }
+          - { label: "Description Paragraph 2", name: "description_p2", widget: "text" }
+          - { label: "Description Paragraph 3", name: "description_p3", widget: "text" }
+          - { label: "Description Paragraph 4", name: "description_p4", widget: "text" }
+
+      - name: "the-well"
+        label: "The Well (Palm Springs)"
+        file: "_content/the-well.json"
+        fields:
+          - { label: "SEO Page Title", name: "seo_title", widget: "string", hint: "Keep under 60 characters." }
+          - { label: "SEO Meta Description", name: "seo_description", widget: "text", hint: "Keep under 155 characters." }
+          - { label: "Hero Tagline", name: "tagline", widget: "string" }
+          - { label: "Description Heading", name: "description_heading", widget: "string" }
+          - { label: "Description Paragraph 1", name: "description_p1", widget: "text" }
+          - { label: "Description Paragraph 2", name: "description_p2", widget: "text" }
+          - { label: "Description Paragraph 3", name: "description_p3", widget: "text" }
+          - { label: "Description Paragraph 4", name: "description_p4", widget: "text" }
