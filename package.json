@@ -4,8 +4,8 @@
   "description": "Direct booking system for Indigo Palm Collective",
   "main": "index.js",
   "scripts": {
-    "dev": "netlify dev",
-    "build": "echo 'No build step needed'",
+    "build": "eleventy --input=content/blog --output=blog",
+    "dev": "eleventy --input=content/blog --output=blog --serve",
     "deploy": "netlify deploy --prod"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "stripe": "^14.12.0"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
     "netlify-cli": "^17.15.2"
   }
 }

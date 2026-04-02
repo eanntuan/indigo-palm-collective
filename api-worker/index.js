@@ -114,6 +114,50 @@ export default {
       return new Response(null, { headers: CORS_HEADERS });
     }
 
+    // GitHub OAuth proxy for Decap CMS
+    // Requires secrets: GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET
+    // Set via: wrangler secret put GITHUB_CLIENT_ID
+    if (path === '/api/auth' && request.method === 'GET') {
+      const provider = url.searchParams.get('provider');
+      if (provider !== 'github') {
+        return new Response('Unsupported provider', { status: 400 });
+      }
+      const redirectUri = `${url.origin}/api/auth/callback`;
+      const authUrl = `https://github.com/login/oauth/authorize?client_id=${env.GITHUB_CLIENT_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=repo,user`;
+      return Response.redirect(authUrl, 302);
+    }
+
+    if (path === '/api/auth/callback' && request.method === 'GET') {
+      const code = url.searchParams.get('code');
+      if (!code) {
+        return new Response('Missing OAuth code', { status: 400 });
+      }
+      const tokenRes = await fetch('https://github.com/login/oauth/access_token', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          client_id: env.GITHUB_CLIENT_ID,
+          client_secret: env.GITHUB_CLIENT_SECRET,
+          code,
+        }),
+      });
+      const tokenData = await tokenRes.json();
+      if (tokenData.error) {
+        return new Response(`OAuth error: ${tokenData.error_description}`, { status: 400 });
+      }
+      const message = JSON.stringify({ token: tokenData.access_token, provider: 'github' });
+      const html = `<!DOCTYPE html><html><body><script>
+(function() {
+  function receiveMessage(e) {
+    window.opener.postMessage('authorization:github:success:${message}', e.origin);
+  }
+  window.addEventListener("message", receiveMessage, false);
+  window.opener.postMessage("authorizing:github", "*");
+})();
+<\/script></body></html>`;
+      return new Response(html, { headers: { 'Content-Type': 'text/html' } });
+    }
+
     if (path === '/api/availability' && request.method === 'GET') {
       return handleAvailability(url);
     }

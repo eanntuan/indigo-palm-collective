@@ -1,0 +1,89 @@
+backend:
+  name: github
+  repo: eanntuan/desert-edit-properties
+  branch: main
+  base_url: https://indigopalm.co
+  auth_endpoint: /api/auth
+
+media_folder: "content/blog/images"
+public_folder: "/blog/images"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "50-60 characters. Lead with the primary keyword."
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        default: ""
+
+      - label: "Meta Description"
+        name: "metaDescription"
+        widget: "string"
+        hint: "140-155 characters. Primary keyword + soft CTA. No em dashes."
+        pattern: [".{100,155}", "Keep between 100 and 155 characters"]
+
+      - label: "SEO Keywords"
+        name: "keywords"
+        widget: "list"
+        hint: "Add keywords one at a time. Examples: vacation rental Indio, Coachella family Airbnb"
+
+      - label: "Featured Image URL"
+        name: "ogImage"
+        widget: "string"
+        hint: "Full URL starting with https://indigopalm.co/blog/images/..."
+
+      - label: "Article Section"
+        name: "articleSection"
+        widget: "select"
+        options:
+          - "Property Story"
+          - "Travel Guide"
+          - "Design and Renovation"
+          - "Host Tips"
+          - "Local Guide"
+          - "Festival Guide"
+
+      - label: "Property CTA"
+        name: "property"
+        widget: "select"
+        hint: "Which property to promote at the bottom of the post"
+        options:
+          - { label: "The Cozy Cactus", value: "cozy-cactus" }
+          - { label: "Terra Luz", value: "terra-luz" }
+          - { label: "The Sundune (PS Retreat)", value: "ps-retreat" }
+          - { label: "The Well", value: "the-well" }
+          - { label: "All Properties", value: "all" }
+
+      - label: "Read Time"
+        name: "readTime"
+        widget: "string"
+        default: "5 min read"
+        hint: "e.g. 6 min read"
+
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "1-2 sentences for the blog listing page. No em dashes."
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        hint: "Write the post here. Short paragraphs (2-4 sentences). No em dashes. Use H2 for major sections, H3 for sub-sections."
