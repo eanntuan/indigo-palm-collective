@@ -1,10 +1,7 @@
 ---
-title: "Hidden Gems in Indio, CA: 10 Spots Most Visitors Miss"
+title: 10 Indio Gems Only Locals Know About
 date: 2026-03-10
-metaDescription: "L&G Desert Store dates are worth the drive. Papa Headz serves smash burgers that make you rethink California. Here is what actually matters in Indio, CA."
-ogImage: /blog/images/indio-local-gems.jpg
-heroImage: /blog/images/indio-local-gems.jpg
-heroAlt: "Mid-century modern home with vibrant orange double doors, tall cactus, and teal desert sky, Coachella Valley CA"
+metaDescription: Skip the tourist traps. L&G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA.
 keywords:
   - Indio CA
   - Coachella Valley
@@ -13,14 +10,17 @@ keywords:
   - hidden gems
   - best restaurants Indio
   - date farms Coachella Valley
-articleSection: "Local Guide"
+ogImage: /blog/images/indio-local-gems.jpg
+articleSection: Local Guide
 property: cozy-cactus
-readTime: "6 min read"
-excerpt: "Skip the tourist traps. L&G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA."
+readTime: 6 min read
+excerpt: Skip the tourist traps. L&G Desert Store has dates and strawberries. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA.
+heroImage: /blog/images/indio-local-gems.jpg
+heroAlt: Mid-century modern home with vibrant orange double doors, tall cactus, and teal desert sky, Coachella Valley CA
 layout: blog-post.njk
 ---
 
-<p>Every guest who books one of our Indio properties, like <a href="https://indigopalm.co/cozy-cactus">The Cozy Cactus</a>, gets the same basic question: <em>"What should we do around here?"</em> And every time, I feel the same mild frustration at what shows up on the first page of Google. Date shakes at a gas station convenience store. Yelp reviews of chain restaurants. "Top 10 Things to Do Near Palm Springs" articles written by someone who has clearly never been to Indio.</p>
+<p>Every guest who books one of our Indio properties, like <a href="https://indigopalm.co/cozy-cactus">The Cozy Cactus</a>, gets the same basic question: <em>"What should we do around here?"</em>
 
 <p>Indio is not Palm Springs. It's grittier, more working-class, less Instagram-curated. And that's exactly what makes it good. This is the city that hosts Coachella and Stagecoach every year, gets overlooked for eleven months, and quietly goes about being one of the most interesting corners of the Coachella Valley. Here's what's worth your time.</p>
 
@@ -28,7 +28,7 @@ layout: blog-post.njk
 <p class="image-caption">The Coachella Valley in a frame: bold color, desert plants, relentless sun</p>
 
 <div class="fun-fact">
-    <p>Indio's most famous export right now isn't dates. It's <a href="https://www.abicartermusic.com/" target="_blank" rel="noopener" style="color: var(--charcoal); font-weight: 700; text-decoration: underline;"><strong>Abi Carter</strong></a>, who <a href="https://www.billboard.com/music/music-news/abi-carter-american-idol-2024-1235687452/" target="_blank" rel="noopener" style="color: var(--charcoal); text-decoration: underline;">won American Idol Season 22 in May 2024</a> and is from right here. She busked at Palm Springs VillageFest as a teenager, got DM'd by an Idol casting producer, sang "What Was I Made For?" for all three judges, and became the first platinum ticket recipient to ever win the show. Then she came home and performed at Stagecoach 2025. Indio, CA. Quietly producing the things.</p>
+    <p>Indio's most famous export right now isn't dates. It's <a href="https://www.abicartermusic.com/" target="_blank" rel="noopener" style="color: var(--charcoal); font-weight: 700; text-decoration: underline;"><strong>Abi Carter</strong></a>, who <a href="https://www.billboard.com/music/music-news/abi-carter-american-idol-2024-1235687452/" target="_blank" rel="noopener" style="color: var(--charcoal); text-decoration: underline;">won American Idol Season 22 in May 2024</a> and is from right here. She [busked at Palm Springs VillageFest](https://www.youtube.com/watch?v=wKSGT2uPR_Y) as a teenager, got DM'd by an Idol casting producer, sang "What Was I Made For?" for all three judges, and became the first platinum ticket recipient to ever win the show. Then she came home and performed at Stagecoach 2025. Indio, CA. Quietly producing the things.</p>
 </div>
 
 <div class="gem-heading">
@@ -36,7 +36,7 @@ layout: blog-post.njk
     L&G Desert Store: The Only Dates Worth Buying
 </div>
 
-<p>If you leave the Coachella Valley without stopping at L&G Desert Store on Monroe Street, I feel sorry for you. This isn't a tourist date farm with overpriced gift boxes. It's a small family-run shop surrounded by actual date palms, where the Medjool dates are soft, caramel-thick, and grown <em>right there</em>. The dried apricots and citrus honey aren't bad either. Bring cash, bring a cooler, and buy more than you think you need because you will eat them all in the car before you get home.</p>
+<p>The L&G Desert Store on Jackson Street is a small family-run shop surrounded by actual date palms, where the Medjool dates are soft, caramel-thick, and grown <em>right there</em>. The dried apricots and citrus honey aren't bad either. Bring cash, bring a cooler, and buy more than you think you need because you will eat them all in the car before you get home.</p>
 
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=49900+Jackson+St,+Indio,+CA+92201" target="_blank" rel="noopener">49900 Jackson St, Indio, CA 92201 ↗</a></p>
@@ -52,7 +52,7 @@ layout: blog-post.njk
     Papa Headz: A Smash Burger That Demands an Apology to In-N-Out
 </div>
 
-<p>I say this as someone who has defended In-N-Out at dinner parties, argued about it on road trips, and has a standing order everyone close to me knows by heart: Papa Headz smash burgers are better. I'm sorry. They just are. The patty has that perfect crispy lace edge, the bun is soft without being sad, and the whole thing holds together in a way that suggests someone thought about the architecture of this burger. It's a small spot, it gets busy, and it is absolutely worth the wait.</p>
+<p>Papa Headz smash burgers are the local In-n-out. The patty has that perfect crispy lace edge, the bun is soft without being sad, and the whole thing holds together in a way that suggests someone thought about the architecture of this burger. It's a small spot, it gets busy, and it is absolutely worth the wait.</p>
 
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=82868+Miles+Ave,+Indio,+CA+92201" target="_blank" rel="noopener">82868 Miles Ave, Indio, CA 92201 ↗</a></p>
@@ -69,7 +69,7 @@ layout: blog-post.njk
     Shields Date Garden: Where History Tastes Good
 </div>
 
-<p>Shields has been on Highway 111 since 1924. That alone is worth respecting. But it's not just a nostalgia play. The date shake here is one of the best things you can eat in this valley. Thick, cold, made with actual Shields dates, and served in a cup so heavy you'll want to find a chair. The on-site museum about date cultivation is low-key fascinating if you have kids who will look at things, or if you, like me, find yourself oddly captivated by the history of how an entire agricultural industry got transplanted from North Africa to the California desert.</p>
+<p>Shields has been on Highway 111 since 1924. The date shake here is one of the best things you can eat in this valley. Thick, cold, made with actual Shields dates, and served in a cup so heavy you'll want to find a chair. The on-site museum about date cultivation is low-key fascinating if you have kids who will look at things, or if you, like me, find yourself oddly captivated by the history of how an entire agricultural industry got transplanted from North Africa to the California desert.</p>
 
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=80225+Hwy+111,+Indio,+CA+92201" target="_blank" rel="noopener">80-225 Hwy 111, Indio, CA 92201 ↗</a></p>
@@ -85,7 +85,7 @@ layout: blog-post.njk
     Coachella Valley History Museum: Free and Worth the Hour
 </div>
 
-<p>Free admission. Air conditioning. Real artifacts from when this whole valley was a scrubby agricultural frontier. The Coachella Valley History Museum is one of those places that sounds like a dutiful tourist obligation and ends up being the thing you tell people about. The 1926 Cabazon School building alone is worth a photo. They have rotating exhibits on everything from Agua Caliente tribal history to the construction of the All-American Canal. It's the kind of place you'll spend 45 minutes in, planning to stay 15.</p>
+<p>Free admission. Air conditioning (!!). Real artifacts from when this whole valley was a scrubby agricultural frontier. The Coachella Valley History Museum is one of those places that sounds like a dutiful tourist obligation and ends up being the thing you tell people about. The 1926 Cabazon School building alone is worth a photo. They have rotating exhibits on everything from Agua Caliente tribal history to the construction of the All-American Canal. It's the kind of place you'll spend 45 minutes in, planning to stay 15.</p>
 
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=82616+Miles+Ave,+Indio,+CA+92201" target="_blank" rel="noopener">82-616 Miles Ave, Indio, CA 92201 ↗</a></p>
@@ -98,7 +98,7 @@ layout: blog-post.njk
     The Tamale Festival: Come in December or Come Back in December
 </div>
 
-<p>If you happen to be in Indio in December, drop everything. The Indio International Tamale Festival has been running for over 30 years and calls itself the world's largest tamale festival, which I cannot independently verify but am fully prepared to believe. The Old Town block fills with vendors, live music, and tamales: sweet ones, savory ones, traditional ones, fusion ones that don't need to exist but do anyway. It's chaotic, it smells incredible, and it's the clearest expression I've seen of what Indio is: a working Latino city that knows how to throw a party.</p>
+<p>If you happen to be in Indio in December, the Indio International Tamale Festival, which has been running for over 30 years, calls itself the world's largest tamale festival. I cannot independently verify this, but am fully prepared to believe. The Old Town block fills with vendors, live music, and tamales: sweet ones, savory ones, traditional ones, fusion ones that don't need to exist but do anyway. It's chaotic, it smells incredible, and it's the clearest expression I've seen of what Indio is: a working Latino city that knows how to throw a party.</p>
 
 <div class="quick-info">
     <p><strong>When:</strong> First weekend of December, annually</p>
