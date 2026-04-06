@@ -13,7 +13,6 @@
     "stripe": "^14.12.0"
   },
   "devDependencies": {
-    "netlify-cli": "^17.15.2",
     "@11ty/eleventy": "^2.0.1",
     "luxon": "^3.4.4"
   }
