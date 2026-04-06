@@ -3,7 +3,7 @@ backend:
   repo: eanntuan/desert-edit-properties
   branch: main
   auth_type: pkce
-  app_id: REPLACE_WITH_CLIENT_ID
+  app_id: Ov23lii0Ltw19uHY42md
 
 media_folder: "content/blog/images"
 public_folder: "/blog/images"
