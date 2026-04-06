@@ -105,6 +105,16 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname;
 
+    // Force HTTPS
+    if (url.protocol === 'http:') {
+      return Response.redirect('https://' + url.hostname + url.pathname + url.search, 301);
+    }
+
+    // Redirect /index.html to /
+    if (path === '/index.html') {
+      return Response.redirect('https://' + url.hostname + '/', 301);
+    }
+
     // 301 redirect .html property/content pages to clean URLs
     if (HTML_REDIRECTS[path]) {
       return Response.redirect('https://' + url.hostname + HTML_REDIRECTS[path], 301);
