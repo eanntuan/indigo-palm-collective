@@ -1,10 +1,7 @@
 ---
-title: "5 Coffee Shops Palm Springs Locals Actually Go To"
+title: 5 Coffee Shops Palm Springs Locals Actually Go To
 date: 2026-03-14
 metaDescription: "Skip the hotel lobby drip. A local's guide to the 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and why it matters."
-ogImage: /blog/images/palm-springs-coffee-guide.jpg
-heroImage: /blog/images/palm-springs-coffee-guide.jpg
-heroAlt: "Three specialty coffee drinks at a Palm Springs coffee shop with desert light"
 keywords:
   - Palm Springs coffee shops
   - best coffee Palm Springs
@@ -14,10 +11,13 @@ keywords:
   - Koffi Palm Springs
   - Cartel Coffee Coachella
   - Everbloom Indio
-articleSection: "Palm Springs Travel Guide"
+ogImage: /blog/images/palm-springs-coffee-guide.jpg
+articleSection: Palm Springs Travel Guide
 property: all
-readTime: "4 min read"
+readTime: 4 min read
 excerpt: "Skip the hotel lobby drip. A local's guide to the 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and why it matters."
+heroImage: /blog/images/palm-springs-coffee-guide.jpg
+heroAlt: Three specialty coffee drinks at a Palm Springs coffee shop with desert light
 layout: blog-post.njk
 ---
 
@@ -37,7 +37,7 @@ layout: blog-post.njk
 
 <p>If you're spending any time in Palm Springs, you're going to end up at Koffi. It's been a local institution for over 20 years, which in coffee terms means it got there before specialty coffee was cool and has stayed relevant the whole time. The North Palm Canyon location has the best outdoor seating: sprawling patio, shade, the kind of morning energy where you lose an hour without noticing.</p>
 
-<p>Get the iced latte or their signature blended drinks if the heat is already doing something to you. Don't overthink it. This is the one you'll come back to the next morning without even planning to.</p>
+<p>Get the iced latte or their signature blended drinks (they have decaf cold brew and a stellar banana nut muffin) if the heat is already doing something to you. This is the one you'll come back to the next morning without even planning to.</p>
 
 <img src="/blog/images/koffi-palm-springs.webp" alt="Koffi coffee shop exterior in Palm Springs with palm trees and mountain backdrop" width="1500" height="1000" loading="lazy">
 <p class="image-caption">Koffi at 650 N Palm Canyon Drive, Palm Springs</p>
@@ -61,9 +61,9 @@ layout: blog-post.njk
     <a href="https://www.instagram.com/everbloomcoffee/" target="_blank" rel="noopener">@everbloomcoffee</a>
 </div>
 
-<p>This one's close to home for us. It's a 5-minute drive from <a href="/blog/terra-luz-origin-story/">Terra Luz</a>. Everbloom does coffee and matcha, local art on the walls, cozy interior that doesn't feel desert-generic. The matcha latte rivals anything in LA, which is saying something. The staff knows what they're doing with milk texture.</p>
+<p>This one is a 5-minute drive from <a href="/blog/terra-luz-origin-story/">Terra Luz</a> and <a href="/blog/cozy-cactus-story/">The Cozy Cactus</a>. Everbloom does coffee and matcha, local art on the walls, cozy interior that doesn't feel desert-generic. The matcha latte rivals anything in LA, which is saying something. The staff knows what they're doing with milk texture.</p>
 
-<p>If you're basing yourself in Indio and want a morning ritual that doesn't require driving to Palm Springs, this is it. Go before 10 AM on weekends. It gets busy and the vibe is worth arriving early for.</p>
+<p>Go before 10 AM on weekends. It gets busy and the vibe is worth arriving early for.</p>
 
 <img src="/blog/images/everbloom-indio.jpg" alt="Everbloom Coffee exterior in Indio, CA with palm trees and terracotta roof" width="1200" height="1480" loading="lazy">
 <p class="image-caption">Everbloom Coffee, Indio, CA</p>
@@ -84,9 +84,9 @@ layout: blog-post.njk
     <a href="https://www.instagram.com/saguarocoffee/" target="_blank" rel="noopener">@saguarocoffee</a>
 </div>
 
-<p>If you're based in Indio and don't want to drive to Palm Springs for a good cup, Saguaro Coffee is the answer. It's a small, independent spot with an outdoor patio, specialty drinks, and the kind of unhurried morning energy that makes you want to stay for a second. The cactus name fits: it feels planted right where it belongs.</p>
+<p>Based in Indio, Saguaro Coffee is a an independent spot with an outdoor patio, specialty drinks, and the kind of unhurried morning energy that makes you want to stay for a second. The cactus name fits: it feels planted right where it belongs.</p>
 
-<p>Go on a weekday morning if you want it quiet. Worth knowing about if you're staying at <a href="/cozy-cactus/">Cozy Cactus</a> or <a href="/terra-luz/">Terra Luz</a> and want your coffee local, not a 30-minute round trip to Palm Springs.</p>
+<p>Go on a weekday morning if you want it quiet. Worth knowing about if you're staying at <a href="/cozy-cactus/">Cozy Cactus</a> or <a href="/terra-luz/">Terra Luz</a>.</p>
 
 <img src="/blog/images/saguaro-coffee-indio.jpg" alt="Saguaro Coffee exterior in Indio CA with covered patio and palm trees" width="348" height="348" loading="lazy">
 <p class="image-caption">Saguaro Coffee, Indio, CA</p>
