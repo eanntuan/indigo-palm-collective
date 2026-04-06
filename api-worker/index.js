@@ -110,6 +110,19 @@ export default {
       return Response.redirect('https://' + url.hostname + HTML_REDIRECTS[path], 301);
     }
 
+    // 301 redirects for renamed/moved blog posts
+    const BLOG_REDIRECTS = {
+      '/blog/casa-moto-origin-story':   '/blog/terra-luz-origin-story/',
+      '/blog/casa-moto-origin-story/':  '/blog/terra-luz-origin-story/',
+      '/blog/cozy-cactus-lessons':      '/blog/cozy-cactus-story/',
+      '/blog/cozy-cactus-lessons/':     '/blog/cozy-cactus-story/',
+      '/blog/palm-springs-local-guide': '/blog/palm-springs-local-guide-sundune/',
+      '/blog/palm-springs-local-guide/':'/blog/palm-springs-local-guide-sundune/',
+    };
+    if (BLOG_REDIRECTS[path]) {
+      return Response.redirect('https://' + url.hostname + BLOG_REDIRECTS[path], 301);
+    }
+
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: CORS_HEADERS });
     }
