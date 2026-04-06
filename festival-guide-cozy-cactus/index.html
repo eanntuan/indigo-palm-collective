@@ -28,6 +28,7 @@
             --font-serif: 'Cormorant Garamond', serif;
             --font-sans: 'Work Sans', sans-serif;
         }
+        html { scroll-behavior: smooth; }
         body { font-family: var(--font-sans); color: var(--charcoal); background: var(--cream); line-height: 1.7; }
 
         nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.96); backdrop-filter: blur(10px); padding: 1.2rem 5%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: space-between; }
@@ -104,6 +105,11 @@
         .related-posts ul li a { color: var(--terracotta); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
         .related-posts ul li a:hover { text-decoration: underline; }
 
+        .section-nav { background: white; border-bottom: 1px solid rgba(0,0,0,0.08); position: sticky; top: 64px; z-index: 900; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+        .section-nav-inner { display: flex; padding: 0 2rem; max-width: 860px; margin: 0 auto; }
+        .section-nav a { display: inline-block; padding: 0.9rem 1.1rem; font-size: 0.82rem; font-weight: 600; color: #888; text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; white-space: nowrap; }
+        .section-nav a:hover { color: var(--terracotta); border-bottom-color: var(--terracotta); }
+
         footer { background: var(--charcoal); color: white; text-align: center; padding: 3rem 2rem; }
         footer a { color: var(--terracotta); text-decoration: none; }
 
@@ -141,8 +147,21 @@
         Want a printable copy? <a href="/festival-guide-cozy-cactus.pdf" download>Download the PDF</a>
     </div>
 
+    <nav class="section-nav">
+        <div class="section-nav-inner">
+            <a href="#walking">Walking</a>
+            <a href="#golf-carts">Golf Carts</a>
+            <a href="#indian-palms">Indian Palms</a>
+            <a href="#coachella">Coachella</a>
+            <a href="#stagecoach">Stagecoach</a>
+            <a href="#driving">Driving</a>
+            <a href="#road-closures">Road Closures</a>
+            <a href="#more">More Tips</a>
+        </div>
+    </nav>
+
     <!-- Walking There -->
-    <section>
+    <section id="walking">
         <div class="container">
             <p class="section-label">Getting There</p>
             <h2>Walking to the Festival</h2>
@@ -175,11 +194,13 @@
     </section>
 
     <!-- Golf Cart Rides -->
-    <section>
+    <section id="golf-carts">
         <div class="container">
             <p class="section-label">Saving Your Feet</p>
             <h2>Golf Cart Rides</h2>
-            <p>Members of the community sometimes offer rides for tips. These are not endorsed, strictly word of mouth. Plan in advance since it saves your feet for the actual festival. The going rate is around $5 per rider for a group of 10, and $10 per rider for groups of five or less.</p>
+            <p>Many residents offer rides via cars, trucks, or golf carts for a fee. <strong>Important distinction:</strong> golf carts can only take you to the front gate. Vehicles (trucks, SUVs) can take you all the way to the festival drop-off site on Monroe. Ask when you call or text where exactly they drop off.</p>
+            <p>At the end of the night, golf carts will be waiting at the front gate offering rides home for <strong>$10 per person</strong>. Worth it if your feet are done.</p>
+            <p>Plan ahead. The contacts below are word of mouth, not officially endorsed.</p>
 
             <div class="contact-grid">
                 <div class="contact-card">
@@ -220,7 +241,7 @@
     </section>
 
     <!-- Indian Palms -->
-    <section>
+    <section id="indian-palms">
         <div class="container">
             <p class="section-label">Inside the Community</p>
             <h2>Indian Palms</h2>
@@ -228,7 +249,16 @@
             <img src="/images/festival-indian-palms-entrance.jpg" alt="Indian Palms Country Club entrance sign in Indio, CA" width="1200" height="600" loading="lazy" class="post-img">
             <p class="caption">Indian Palms Country Club, Indio, CA</p>
 
-            <p>Within the gated community, it's about a 0.7 mile walk to the front security gate, then an additional 0.3 miles to the Yellow Path. You'll likely find community members offering golf cart rides or "tailgate taxis" to the front gate for some extra cash.</p>
+            <p>Within the gated community, it's about a 0.7 mile walk to the front security gate, then an additional 0.3 miles to the Yellow Path. Signs throughout the community show the path to get there. You'll likely find community members offering golf cart rides or "tailgate taxis" to the front gate for some extra cash.</p>
+
+            <div class="info-box">
+                <h4>Gate Rules</h4>
+                <p style="margin-bottom:0.75rem;"><strong>The only gate you are permitted to walk through is on Monroe (the main gate).</strong> Signs throughout the community show the path to get there.</p>
+                <p style="margin:0;">The festival drop-off area for Ubers and street vehicles is on Monroe, about half a mile from the main gate. From that drop-off point it's roughly a 1.5 mile walk to the main festival entrance.</p>
+            </div>
+
+            <h3>Food and Drinks at the Gate</h3>
+            <p>There are food and drink vendors in the parking lot near the front gate, along with a restaurant and bar called <strong>Hangar 19</strong>. The BBQ spot stays open late, even after the festival wraps up. Good to know for the walk back.</p>
 
             <h3>Amenities While You're Here</h3>
             <p>When you're not at the festivals, enjoy everything Indian Palms has to offer:</p>
@@ -244,7 +274,7 @@
     </section>
 
     <!-- Coachella Grounds -->
-    <section>
+    <section id="coachella">
         <div class="container">
             <p class="section-label">Navigation</p>
             <h2>Coachella Grounds</h2>
@@ -260,7 +290,7 @@
     </section>
 
     <!-- Stagecoach Grounds -->
-    <section>
+    <section id="stagecoach">
         <div class="container">
             <p class="section-label">Navigation</p>
             <h2>Stagecoach Grounds</h2>
@@ -276,7 +306,7 @@
     </section>
 
     <!-- Driving -->
-    <section>
+    <section id="driving">
         <div class="container">
             <p class="section-label">If You Must Drive</p>
             <h2>Driving</h2>
@@ -305,7 +335,7 @@
     </section>
 
     <!-- Road Closures -->
-    <section>
+    <section id="road-closures">
         <div class="container">
             <p class="section-label">Road Closures</p>
             <h2>Closed Streets</h2>
@@ -329,7 +359,7 @@
     </section>
 
     <!-- Related Blog Posts -->
-    <section>
+    <section id="more">
         <div class="container">
             <p class="section-label">More From the Blog</p>
             <h2>Festival Planning Resources</h2>
