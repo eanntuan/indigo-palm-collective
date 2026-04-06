@@ -91,6 +91,18 @@
         .gate-table tr:nth-child(even) td { background: #fafaf8; }
 
         .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; margin: 1.5rem 0; }
+        .link-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+        .link-pill { display: inline-block; padding: 0.45rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; text-decoration: none; border: 1px solid currentColor; transition: opacity 0.2s; }
+        .link-pill:hover { opacity: 0.7; }
+        .link-pill.primary { background: var(--terracotta); color: white; border-color: var(--terracotta); }
+        .link-pill.outline { color: var(--charcoal); border-color: #ccc; }
+        .related-posts { background: white; border-radius: 12px; padding: 2rem; margin-top: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .related-posts h3 { font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 1.25rem; }
+        .related-posts ul { list-style: none; margin: 0; padding: 0; }
+        .related-posts ul li { padding: 0.6rem 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+        .related-posts ul li:last-child { border-bottom: none; }
+        .related-posts ul li a { color: var(--terracotta); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+        .related-posts ul li a:hover { text-decoration: underline; }
 
         footer { background: var(--charcoal); color: white; text-align: center; padding: 3rem 2rem; }
         footer a { color: var(--terracotta); text-decoration: none; }
@@ -141,6 +153,9 @@
                     <h3>The Yellow Path</h3>
                     <p>The Yellow Path at 49th and Monroe is your best bet for walking. End to end it's about a mile and a half, so bring your comfortable shoes since the path is gravel.</p>
                     <p>The Monroe gate to Indian Palms is at 48th and Monroe. Once you get to the front gate, make a left onto Monroe and head south toward 49th.</p>
+                    <div class="link-row">
+                        <a href="https://www.google.com/maps/dir/82381+Cochran+Dr,+Indio,+CA+92201/Indian+Palms+Security+Gate%2F+Front+Gate,+48630+Monroe+St,+Indio,+CA+92201/33.6926588,-116.2339568/@33.6919155,-116.2340156,15.79z/data=!4m15!4m14!1m5!1m1!1s0x80daf7f842cb4029:0xc0b7b21e029a021e!2m2!1d-116.2288749!2d33.6889712!1m5!1m1!1s0x80daf81dffb19fd5:0x3468b93050869568!2m2!1d-116.233404!2d33.6962883!1m0!3e2?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="link-pill primary">Get Walking Directions</a>
+                    </div>
                     <div class="info-box">
                         <h4>Note on Pedestrian Restrictions</h4>
                         <p style="margin:0;">No pedestrians allowed on Monroe (between Ave 49 and Ave 52) or Madison (between Ave 50 and Ave 52).</p>
@@ -233,6 +248,10 @@
         <div class="container">
             <p class="section-label">Navigation</p>
             <h2>Coachella Grounds</h2>
+            <div class="link-row">
+                <a href="https://www.coachella.com" target="_blank" rel="noopener" class="link-pill primary">coachella.com</a>
+                <a href="https://www.instagram.com/coachella/" target="_blank" rel="noopener" class="link-pill outline">@coachella</a>
+            </div>
             <p>Once you get to the front gate of Indian Palms, cross the street and make a left.</p>
 
             <img src="/images/festival-coachella-map.jpg" alt="Official Coachella festival grounds map with parking lots and entrances" width="900" height="1100" loading="lazy" class="map-img">
@@ -245,6 +264,10 @@
         <div class="container">
             <p class="section-label">Navigation</p>
             <h2>Stagecoach Grounds</h2>
+            <div class="link-row">
+                <a href="https://www.stagecoachfestival.com" target="_blank" rel="noopener" class="link-pill primary">stagecoachfestival.com</a>
+                <a href="https://www.instagram.com/stagecoachfestival/" target="_blank" rel="noopener" class="link-pill outline">@stagecoachfestival</a>
+            </div>
             <p>Once you get to the front gate of Indian Palms, cross the street and make a left.</p>
 
             <img src="/images/festival-stagecoach-map.png" alt="Official Stagecoach festival grounds map with parking and entrances" width="900" height="1200" loading="lazy" class="map-img">
@@ -302,6 +325,23 @@
 
             <img src="/images/festival-ferris-wheel.jpg" alt="Film photo of festival ferris wheel and palm trees" width="1200" height="900" loading="lazy" class="post-img" style="margin-top:3rem;">
             <p class="caption">See you out there.</p>
+        </div>
+    </section>
+
+    <!-- Related Blog Posts -->
+    <section>
+        <div class="container">
+            <p class="section-label">More From the Blog</p>
+            <h2>Festival Planning Resources</h2>
+            <div class="related-posts">
+                <h3>From the Indigo Palm Blog</h3>
+                <ul>
+                    <li><a href="/blog/where-to-stay-coachella-2026/">Where to Stay for Coachella 2026: An Honest Local Guide</a></li>
+                    <li><a href="/blog/indio-between-coachella-weekends/">The In-Between Weekend: What to Do in Indio Between Coachella Weekends 1 and 2</a></li>
+                    <li><a href="/blog/indio-local-gems/">10 Indio Gems Only Locals Know About</a></li>
+                    <li><a href="/blog/things-to-do-indio-ca/">Things to Do in Indio, CA: A Local's Guide</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
