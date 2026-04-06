@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay | Indigo Palm Collective</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --indigo-palm: #4B0082;
+            --sage-cactus: #607c67;
+            --sage-light: #adbab7;
+            --sage-dark: #738561;
+            --sunbaked-terracotta: #B67550;
+            --kahlo-blue: #325CD9;
+            --desert-marigold: #FEAD26;
+            --cabana-rose: #DBAF9C;
+            --warm-sand: #F5F3EE;
+            --canyon-clay: #8B4513;
+            --cream: #F5F3EE;
+            --charcoal: #000000;
+            --terracotta: var(--sunbaked-terracotta);
+            --sage: var(--sage-cactus);
+            --desert-sand: #E8DCC4;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background-color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+
+        .back-link {
+            color: var(--terracotta);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 3rem;
+        }
+
+        /* Booking Form */
+        .booking-form {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .booking-form h2 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+
+        .booking-intro {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #f0ede6;
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+        }
+
+        .form-section label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--charcoal);
+        }
+
+        .required-star {
+            color: var(--sage-cactus);
+            margin-left: 3px;
+        }
+
+        .property-selector {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .property-option {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .property-option:hover {
+            border-color: var(--sage);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .property-option.selected {
+            border-color: var(--sage);
+            box-shadow: 0 4px 16px rgba(96,124,103,0.2);
+        }
+
+        .property-option-photo {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .property-option-info {
+            padding: 0.85rem 1rem;
+        }
+
+        .property-option h3 {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-weight: 400;
+            margin-bottom: 0.2rem;
+            color: #000;
+        }
+
+        .property-option-meta {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 0.35rem;
+        }
+
+        .property-option-price {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .date-inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        input[type="date"],
+        input[type="number"],
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: var(--font-sans);
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--charcoal);
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        /* Price Summary */
+        .price-summary {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+
+        .price-summary h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .price-row:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--charcoal);
+        }
+
+        .price-breakdown {
+            margin-bottom: 1.5rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #999;
+            padding: 2rem 0;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--sage);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 1.5rem;
+        }
+
+        .submit-btn:hover {
+            background: #5a6b4a;
+        }
+
+        .submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .agreement-section {
+            margin-top: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .agreement-toggle {
+            width: 100%;
+            background: #f8f7f4;
+            border: none;
+            padding: 0.9rem 1.1rem;
+            text-align: left;
+            font-family: var(--font-sans);
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: #555;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .agreement-toggle:hover { background: #f0ede6; }
+
+        .agreement-body {
+            display: none;
+            padding: 1.25rem;
+            background: white;
+            max-height: 260px;
+            overflow-y: auto;
+            font-size: 0.82rem;
+            color: #666;
+            line-height: 1.7;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .agreement-body h4 { font-size: 0.82rem; font-weight: 600; color: #333; margin: 0.9rem 0 0.2rem; }
+        .agreement-body h4:first-child { margin-top: 0; }
+
+        .agreement-check-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-top: 1rem;
+            padding: 0.9rem 1rem;
+            background: #f8f7f4;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .agreement-check-row input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+            margin-top: 2px;
+            accent-color: var(--sage);
+            cursor: pointer;
+        }
+
+        .agreement-check-row label {
+            font-size: 0.85rem;
+            color: #555;
+            cursor: pointer;
+            line-height: 1.5;
+        }
+
+        /* Availability Calendar */
+        .calendar-container {
+            margin-top: 1.25rem;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .calendar-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        .calendar-nav button {
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+            color: #333;
+            padding: 0.25rem 0.5rem;
+            line-height: 1;
+        }
+
+        .calendar-nav button:hover { color: #738561; }
+
+        .calendar-month-label {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #1a1a1a;
+        }
+
+        .cal-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            row-gap: 2px;
+        }
+
+        .cal-dow {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #aaa;
+            padding-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .cal-day {
+            text-align: center;
+            padding: 0.55rem 0;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.15s;
+        }
+
+        .cal-day.available {
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .cal-day.available:hover {
+            background: #f0ede6;
+        }
+
+        .cal-day.booked {
+            color: #bbb;
+            text-decoration: line-through;
+            cursor: default;
+            font-weight: 400;
+        }
+
+        .cal-day.past {
+            color: #ccc;
+            cursor: default;
+            font-weight: 400;
+        }
+
+        .cal-day.empty {
+            cursor: default;
+        }
+
+        .cal-day.sel-start {
+            background:
+                radial-gradient(circle 17px at center, var(--sage-cactus) 99%, transparent 100%),
+                linear-gradient(to right, transparent 50%, rgba(150,154,127,0.15) 50%);
+            color: white !important;
+            font-weight: 700;
+            border-radius: 0;
+        }
+
+        .cal-day.sel-end {
+            background:
+                radial-gradient(circle 17px at center, var(--sage-cactus) 99%, transparent 100%),
+                linear-gradient(to left, transparent 50%, rgba(150,154,127,0.15) 50%);
+            color: white !important;
+            font-weight: 700;
+            border-radius: 0;
+        }
+
+        .cal-day.sel-start.sel-end {
+            background: radial-gradient(circle 17px at center, var(--sage-cactus) 99%, transparent 100%);
+        }
+
+        .cal-day.in-range {
+            background: rgba(150, 154, 127, 0.15);
+            border-radius: 0;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        @media (max-width: 968px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .property-selector {
+                grid-template-columns: 1fr;
+            }
+
+            .price-summary {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <a href="/" class="logo">Indigo Palm Collective</a>
+            <a href="/" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <h2>Request to Book</h2>
+            <p class="booking-intro">The desert has a way of doing something to people. It slows them down. Makes them look up. Makes them actually talk to the people they came with.<br><br>These houses were built around that idea. Rooms that feel like somewhere. Hot tubs under open sky. Mornings with nowhere to be.<br><br>Pick your property, send us your dates, and we'll take care of the rest. We'll be in touch within 24 hours.</p>
+
+            <form id="booking-form">
+                <!-- Property Selection -->
+                <div class="form-section">
+                    <label>Select Property</label>
+                    <div class="property-selector" id="property-selector">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Dates -->
+                <div class="form-section">
+                    <label>Check-in & Check-out Dates</label>
+                    <div class="date-inputs">
+                        <input type="date" id="check-in" required>
+                        <input type="date" id="check-out" required>
+                    </div>
+
+                    <!-- Availability Calendar (shows after property selected) -->
+                    <div id="availability-calendar" class="calendar-container" style="display: none;">
+                        <div class="calendar-nav">
+                            <button id="cal-prev" type="button">&#8249;</button>
+                            <span class="calendar-month-label" id="calendar-month-label"></span>
+                            <button id="cal-next" type="button">&#8250;</button>
+                        </div>
+                        <div class="cal-grid" id="calendar-grid"></div>
+                    </div>
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="form-section">
+                    <label for="guests">Number of Guests<span class="required-star">*</span></label>
+                    <input type="number" id="guests" min="1" max="12" value="2" required>
+                </div>
+
+                <!-- Guest Information -->
+                <div class="form-section">
+                    <label for="guest-name">Your Name<span class="required-star">*</span></label>
+                    <input type="text" id="guest-name" placeholder="Full name" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="guest-email">Email Address<span class="required-star">*</span></label>
+                    <input type="email" id="guest-email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="guest-phone">Phone Number<span class="required-star">*</span></label>
+                    <input type="tel" id="guest-phone" placeholder="(555) 123-4567" required>
+                </div>
+
+                <!-- Pool Heat (Casa Moto only) -->
+                <div class="form-section" id="pool-heat-section" style="display:none;">
+                    <label>Pool Heating</label>
+                    <p style="font-size:0.82rem;color:#888;margin-bottom:0.75rem;line-height:1.6;">$75/night &middot; 2 night minimum &middot; $400 flat for 7+ nights</p>
+                    <div id="pool-heat-options" style="border:2px solid #e0e0e0;border-radius:8px;overflow:hidden;">
+                        <label style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;cursor:pointer;border-bottom:1px solid #e0e0e0;margin:0;font-weight:400;">
+                            <input type="radio" name="pool-heat" id="pool-heat-no" value="no" checked style="width:auto;border:none;padding:0;">
+                            No thanks
+                        </label>
+                        <label style="display:flex;align-items:flex-start;gap:0.75rem;padding:0.85rem 1rem;cursor:pointer;margin:0;font-weight:400;">
+                            <input type="radio" name="pool-heat" id="pool-heat-yes" value="yes" style="width:auto;border:none;padding:0;margin-top:3px;">
+                            <span>Yes, add pool heating</span>
+                        </label>
+                    </div>
+                    <div id="pool-heat-nights-row" style="display:none;margin-top:0.85rem;display:none;">
+                        <label for="pool-heat-nights" style="font-size:0.9rem;font-weight:500;margin-bottom:0.4rem;display:block;">How many nights?</label>
+                        <div style="display:flex;align-items:center;gap:0.75rem;">
+                            <input type="number" id="pool-heat-nights" min="2" value="2" style="width:100px;">
+                            <span id="pool-heat-price" style="font-size:0.9rem;color:#607c67;font-weight:600;"></span>
+                        </div>
+                        <p id="pool-heat-nights-error" style="display:none;font-size:0.82rem;color:#f44336;margin-top:0.35rem;">Minimum 2 nights required.</p>
+                    </div>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="form-section">
+                    <label for="special-requests">Anything we should know? (Optional)</label>
+                    <textarea id="special-requests" placeholder="What brings you to the desert? Tell us who's coming, what you're celebrating, and anything that would help us make it special."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Price Summary -->
+        <div class="price-summary">
+            <h3>Price Summary</h3>
+
+            <div id="price-content">
+                <div class="empty-state">
+                    <p>Select property and dates to see pricing</p>
+                </div>
+            </div>
+
+            <!-- Promo Code -->
+            <div id="promo-section" style="margin-top:1.5rem;display:none;">
+                <div style="display:flex;gap:0.5rem;">
+                    <input type="text" id="promo-code" placeholder="Promo code" style="flex:1;text-transform:uppercase;letter-spacing:0.05em;">
+                    <button type="button" id="apply-promo" style="padding:0.75rem 1.25rem;background:white;border:2px solid #e0e0e0;border-radius:8px;font-weight:600;font-size:0.9rem;cursor:pointer;white-space:nowrap;transition:border-color 0.2s;">Apply</button>
+                </div>
+                <p id="promo-message" style="margin-top:0.5rem;font-size:0.85rem;display:none;"></p>
+            </div>
+
+            <!-- Rental Agreement -->
+            <div class="agreement-section" id="agreement-section" style="display:none;">
+                <button type="button" class="agreement-toggle" id="agreement-toggle">
+                    <span>Rental Agreement</span>
+                    <span id="agreement-arrow">&#9660;</span>
+                </button>
+                <div class="agreement-body" id="agreement-body">
+                    <p>This Rental Agreement is between MPT Industries and Guest for the selected property.</p>
+                    <h4>1. Occupancy and Use</h4>
+                    <p>The property may not be occupied by more than the agreed-upon number of guests. No parties, events, subletting, or commercial use is permitted. Violations may result in immediate termination of the stay without refund.</p>
+                    <h4>2. House Rules and Care of Property</h4>
+                    <p>Guest agrees to keep the property in good condition and follow all house rules. Guest is responsible for any damage beyond normal wear and tear.</p>
+                    <h4>3. Payment and Cancellation</h4>
+                    <p>Payment terms and cancellation policy are as stated at the time of booking. Cancellations outside the window are non-refundable. Travel insurance is strongly recommended.</p>
+                    <h4>4. Security Deposit</h4>
+                    <p>A refundable security deposit may be required. Damages, excessive cleaning, or rule violations may be deducted. Remaining funds returned within 2 days of checkout.</p>
+                    <h4>5. Pets and Children</h4>
+                    <p>Pets only with prior written approval. Unauthorized pets may result in fees or termination. Children must be supervised at all times.</p>
+                    <h4>6. Pools, Hot Tubs, and Amenities</h4>
+                    <p>Use of amenities is at Guest's own risk. No glass, foreign substances, or pets in the pool or hot tub. Misuse may result in cleaning fees.</p>
+                    <h4>7. No Refunds for Uncontrollable Events</h4>
+                    <p>No refunds for weather, power outages, water interruptions, pool or appliance downtime, construction, or acts of nature beyond Owner's control.</p>
+                    <h4>8. Entry and Maintenance</h4>
+                    <p>Owner or agents may enter the property as needed for maintenance, repairs, or emergencies.</p>
+                    <h4>9. Assumption of Risk and Liability</h4>
+                    <p>Guest assumes all risks associated with the property and amenities and holds Owner harmless from liability, except in cases of Owner's gross negligence.</p>
+                    <h4>10. Governing Law</h4>
+                    <p>Governed by California law. Disputes resolved in Riverside County, California.</p>
+                </div>
+                <div class="agreement-check-row">
+                    <input type="checkbox" id="agree-checkbox">
+                    <label for="agree-checkbox">I have read and agree to the rental agreement above.</label>
+                </div>
+            </div>
+
+            <button class="submit-btn" id="submit-btn" disabled>Request to Book</button>
+        </div>
+    </div>
+
+    <script type="module" src="booking-flow.js?v=2"></script>
+</body>
+</html>
