@@ -1,369 +1,194 @@
+---
+title: "10 Indio Gems Only Locals Know About"
+date: 2026-03-10
+metaDescription: "Skip the tourist traps. L&G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA."
+ogImage: /blog/images/indio-local-gems.jpg
+heroImage: /blog/images/indio-local-gems.jpg
+heroAlt: "Mid-century modern home with vibrant orange double doors, tall cactus, and teal desert sky, Coachella Valley CA"
+keywords:
+  - Indio CA
+  - Coachella Valley
+  - local guide
+  - things to do Indio
+  - hidden gems
+  - best restaurants Indio
+  - date farms Coachella Valley
+articleSection: "Local Guide"
+property: cozy-cactus
+readTime: "6 min read"
+excerpt: "Skip the tourist traps. L&G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA."
+layout: blog-post.njk
+---
 
+<p>Every guest who books one of our Indio properties, like <a href="https://indigopalm.co/cozy-cactus">The Cozy Cactus</a>, gets the same basic question: <em>"What should we do around here?"</em> And every time, I feel the same mild frustration at what shows up on the first page of Google. Date shakes at a gas station convenience store. Yelp reviews of chain restaurants. "Top 10 Things to Do Near Palm Springs" articles written by someone who has clearly never been to Indio.</p>
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10 Indio Gems Only Locals Know About | Indigo Palm Collective Blog</title>
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Skip the tourist traps. L&amp;G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here&#39;s what actually matters in Indio, CA.">
-    <meta name="keywords" content="Indio CA, Coachella Valley, local guide, things to do Indio, hidden gems, best restaurants Indio, date farms Coachella Valley">
-    <link rel="canonical" href="https://indigopalm.co/blog/indio-local-gems">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="10 Indio Gems Only Locals Know About">
-    <meta property="og:description" content="Skip the tourist traps. L&amp;G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here&#39;s what actually matters in Indio, CA.">
-    <meta property="og:image" content="/blog/images/indio-local-gems.jpg">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://indigopalm.co/blog/indio-local-gems">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Pinterest Domain Verification -->
-    <meta name="p:domain_verify" content="35e730ef4830250fbf8c3192312ebaa7" />
-
-    <!-- JSON-LD: BlogPosting -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "10 Indio Gems Only Locals Know About",
-      "description": "Skip the tourist traps. L&G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA.",
-      "image": "/blog/images/indio-local-gems.jpg",
-      "author": {
-        "@type": "Person",
-        "name": "Eann Tuan",
-        "url": "https://indigopalm.co"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Indigo Palm Collective",
-        "url": "https://indigopalm.co",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://indigopalm.co/apple-touch-icon.png"
-        }
-      },
-      "datePublished": "2026-03-10",
-      "dateModified": "2026-03-10",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://indigopalm.co/blog/indio-local-gems"
-      },
-      "articleSection": "Local Guide",
-      "keywords": ["Indio CA","Coachella Valley","local guide","things to do Indio","hidden gems","best restaurants Indio","date farms Coachella Valley"],
-      "url": "https://indigopalm.co/blog/indio-local-gems",
-      "inLanguage": "en-US",
-      "isPartOf": {
-        "@type": "Blog",
-        "name": "Indigo Palm Collective Blog",
-        "url": "https://indigopalm.co/blog"
-      }
-    }
-    </script>
-
-    <!-- JSON-LD: Breadcrumbs -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://indigopalm.co"},
-        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://indigopalm.co/blog"},
-        {"@type": "ListItem", "position": 3, "name": "10 Indio Gems Only Locals Know About", "item": "https://indigopalm.co/blog/indio-local-gems"}
-      ]
-    }
-    </script>
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-LCY4M0HEQB');
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        :root {
-            --indigo-palm: #4B0082;
-            --sage-cactus: #607c67;
-            --sunbaked-terracotta: #B67550;
-            --kahlo-blue: #325CD9;
-            --desert-marigold: #FEAD26;
-            --cabana-rose: #DBAF9C;
-            --warm-sand: #F5F3EE;
-            --canyon-clay: #8B4513;
-            --cream: #F5F3EE;
-            --charcoal: #000000;
-            --terracotta: var(--sunbaked-terracotta);
-            --sage: var(--sage-cactus);
-            --font-serif: 'Cormorant Garamond', serif;
-            --font-sans: 'Work Sans', sans-serif;
-        }
-
-        html { scroll-behavior: smooth; }
-        body { font-family: var(--font-sans); color: var(--charcoal); line-height: 1.6; background-color: var(--cream); }
-
-        nav {
-            position: fixed; top: 0; width: 100%;
-            background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
-            padding: 1.5rem 5%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        nav .container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        nav .logo { text-decoration: none; }
-        nav .logo .logo-text { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--charcoal); }
-        nav .menu { display: flex; list-style: none; gap: 2.5rem; }
-        nav .menu a { text-decoration: none; color: var(--charcoal); font-weight: 500; transition: color 0.3s; }
-        nav .menu a:hover { color: var(--terracotta); }
-
-        article { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
-        article header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1); }
-        article h1 { font-family: var(--font-serif); font-size: 3rem; font-weight: 600; color: var(--charcoal); line-height: 1.2; margin-bottom: 1rem; }
-        .article-meta { color: #666; font-size: 0.95rem; margin-top: 1rem; }
-        .read-time { color: var(--terracotta); font-weight: 500; }
-
-        .article-body { font-size: 1.125rem; line-height: 1.8; color: #333; }
-        .article-body h2 { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 600; color: var(--charcoal); margin: 3rem 0 1.5rem; line-height: 1.3; }
-        .article-body h3 { font-family: var(--font-serif); font-size: 1.7rem; font-weight: 600; color: var(--charcoal); margin: 2.5rem 0 1rem; }
-        .article-body p { margin-bottom: 1.5rem; }
-        .article-body strong { font-weight: 600; color: var(--charcoal); }
-        .article-body em { font-style: italic; }
-        .article-body a { color: var(--terracotta); text-decoration: underline; }
-        .article-body a:hover { color: var(--canyon-clay); }
-        .article-body ul, .article-body ol { margin: 1.5rem 0 1.5rem 2rem; }
-        .article-body li { margin-bottom: 0.8rem; }
-        .article-body blockquote { border-left: 4px solid var(--terracotta); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
-        .article-body img { width: 100%; height: auto; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-        .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
-
-        .cta-box { background: linear-gradient(135deg, var(--terracotta) 0%, var(--canyon-clay) 100%); color: white; padding: 3rem; border-radius: 12px; text-align: center; margin: 4rem 0; }
-        .cta-box h3 { font-family: var(--font-serif); font-size: 2rem; font-weight: 600; margin-bottom: 1rem; }
-        .cta-box p { font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.95; }
-        .cta-button { display: inline-block; padding: 1rem 2.5rem; background: white; color: var(--terracotta); text-decoration: none; border-radius: 6px; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; }
-        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
-
-        footer { background: var(--charcoal); color: white; text-align: center; padding: 3rem 2rem; margin-top: 4rem; }
-        footer a { color: var(--terracotta); text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-
-        .mobile-menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
-        .mobile-menu-toggle span { width: 25px; height: 3px; background-color: var(--charcoal); transition: all 0.3s ease; }
-
-        @media (max-width: 768px) {
-            .mobile-menu-toggle { display: flex; }
-            nav .menu { position: fixed; top: 0; right: -100%; width: 70%; height: 100vh; background: white; flex-direction: column; padding: 6rem 2rem; gap: 1.5rem; transition: right 0.3s ease; box-shadow: -2px 0 10px rgba(0,0,0,0.1); z-index: 999; }
-            nav .menu.active { right: 0; }
-            article h1 { font-size: 2rem; }
-            .article-body { font-size: 1rem; }
-            .article-body h2 { font-size: 1.4rem; }
-            .article-body h3 { font-size: 1.2rem; }
-            article { padding: 5rem 1.25rem 3rem; }
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <div class="container">
-            <a href="/" class="logo">
-                <span class="logo-text">INDIGO PALM COLLECTIVE</span>
-            </a>
-            <div class="mobile-menu-toggle" id="mobileMenuToggle">
-                <span></span><span></span><span></span>
-            </div>
-            <ul class="menu" id="navMenu">
-                <li><a href="/#properties">Properties</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#philosophy">Philosophy</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:64px;">
-        <img src="/blog/images/indio-local-gems.jpg" alt="Mid-century modern home with vibrant orange double doors, tall cactus, and teal desert sky, Coachella Valley CA" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" fetchpriority="high">
-    </div>
-    
-
-    <article >
-        <header>
-            <h1>10 Indio Gems Only Locals Know About</h1>
-            <div class="article-meta">By Eann Tuan · March 10, 2026 · <span class="read-time">6 min read</span></div>
-        </header>
-        <div class="article-body">
-            <p>Every guest who books one of our Indio properties, like <a href="https://indigopalm.co/cozy-cactus">The Cozy Cactus</a>, gets the same basic question: <em>"What should we do around here?"</em> And every time, I feel the same mild frustration at what shows up on the first page of Google. Date shakes at a gas station convenience store. Yelp reviews of chain restaurants. "Top 10 Things to Do Near Palm Springs" articles written by someone who has clearly never been to Indio.</p>
 <p>Indio is not Palm Springs. It's grittier, more working-class, less Instagram-curated. And that's exactly what makes it good. This is the city that hosts Coachella and Stagecoach every year, gets overlooked for eleven months, and quietly goes about being one of the most interesting corners of the Coachella Valley. Here's what's worth your time.</p>
+
 <img src="/blog/images/indio-local-gems.jpg" alt="Mid-century modern home with vibrant orange double doors, tall cactus, and teal desert sky, Coachella Valley CA" width="800" height="533">
 <p class="image-caption">The Coachella Valley in a frame: bold color, desert plants, relentless sun</p>
+
 <div class="fun-fact">
     <p>Indio's most famous export right now isn't dates. It's <a href="https://www.abicartermusic.com/" target="_blank" rel="noopener" style="color: var(--charcoal); font-weight: 700; text-decoration: underline;"><strong>Abi Carter</strong></a>, who <a href="https://www.billboard.com/music/music-news/abi-carter-american-idol-2024-1235687452/" target="_blank" rel="noopener" style="color: var(--charcoal); text-decoration: underline;">won American Idol Season 22 in May 2024</a> and is from right here. She busked at Palm Springs VillageFest as a teenager, got DM'd by an Idol casting producer, sang "What Was I Made For?" for all three judges, and became the first platinum ticket recipient to ever win the show. Then she came home and performed at Stagecoach 2025. Indio, CA. Quietly producing the things.</p>
 </div>
+
 <div class="gem-heading">
     <span class="gem-number">1</span>
     L&G Desert Store: The Only Dates Worth Buying
 </div>
+
 <p>If you leave the Coachella Valley without stopping at L&G Desert Store on Monroe Street, I feel sorry for you. This isn't a tourist date farm with overpriced gift boxes. It's a small family-run shop surrounded by actual date palms, where the Medjool dates are soft, caramel-thick, and grown <em>right there</em>. The dried apricots and citrus honey aren't bad either. Bring cash, bring a cooler, and buy more than you think you need because you will eat them all in the car before you get home.</p>
+
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=49900+Jackson+St,+Indio,+CA+92201" target="_blank" rel="noopener">49900 Jackson St, Indio, CA 92201 ↗</a></p>
     <p><strong>Best time:</strong> Fall harvest season, but open year-round</p>
     <p><strong>Don't skip:</strong> Medjool dates, dried citrus, local honey</p>
 </div>
+
 <img src="/blog/images/lg-desert-store.jpg" alt="L&G Desert Store roadside sign with Coca-Cola panel and date palm against blue sky, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The hand-painted sign you're looking for. Pull over immediately.</p>
+
 <div class="gem-heading">
     <span class="gem-number">2</span>
     Papa Headz: A Smash Burger That Demands an Apology to In-N-Out
 </div>
+
 <p>I say this as someone who has defended In-N-Out at dinner parties, argued about it on road trips, and has a standing order everyone close to me knows by heart: Papa Headz smash burgers are better. I'm sorry. They just are. The patty has that perfect crispy lace edge, the bun is soft without being sad, and the whole thing holds together in a way that suggests someone thought about the architecture of this burger. It's a small spot, it gets busy, and it is absolutely worth the wait.</p>
+
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=82868+Miles+Ave,+Indio,+CA+92201" target="_blank" rel="noopener">82868 Miles Ave, Indio, CA 92201 ↗</a></p>
     <p><strong>Hours:</strong> Mon–Wed 11am–8pm · Thu–Sat 11am–10pm</p>
     <p><strong>Order:</strong> The smash burger, double if you mean it, add the sauce</p>
     <p><strong>Pro tip:</strong> Go early. They sell out.</p>
 </div>
+
 <img src="/blog/images/papa-headz.jpg" alt="Two Papa Headz smash burgers stacked in paper wrappers, dripping with cheese, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Two smash burgers. One meal. Zero regrets.</p>
+
 <div class="gem-heading">
     <span class="gem-number">3</span>
     Shields Date Garden: Where History Tastes Good
 </div>
+
 <p>Shields has been on Highway 111 since 1924. That alone is worth respecting. But it's not just a nostalgia play. The date shake here is one of the best things you can eat in this valley. Thick, cold, made with actual Shields dates, and served in a cup so heavy you'll want to find a chair. The on-site museum about date cultivation is low-key fascinating if you have kids who will look at things, or if you, like me, find yourself oddly captivated by the history of how an entire agricultural industry got transplanted from North Africa to the California desert.</p>
+
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=80225+Hwy+111,+Indio,+CA+92201" target="_blank" rel="noopener">80-225 Hwy 111, Indio, CA 92201 ↗</a></p>
     <p><strong>Hours:</strong> Daily 9am–5pm</p>
     <p><strong>Must order:</strong> Date shake, box of Medjool + Deglet dates to go</p>
 </div>
+
 <img src="/blog/images/shields-date-garden.jpg" alt="Cafe at Shields Date Garden entrance with neon sign and date palms, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Open since 1924. The date shake alone justifies the stop.</p>
+
 <div class="gem-heading">
     <span class="gem-number">4</span>
     Coachella Valley History Museum: Free and Worth the Hour
 </div>
+
 <p>Free admission. Air conditioning. Real artifacts from when this whole valley was a scrubby agricultural frontier. The Coachella Valley History Museum is one of those places that sounds like a dutiful tourist obligation and ends up being the thing you tell people about. The 1926 Cabazon School building alone is worth a photo. They have rotating exhibits on everything from Agua Caliente tribal history to the construction of the All-American Canal. It's the kind of place you'll spend 45 minutes in, planning to stay 15.</p>
+
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=82616+Miles+Ave,+Indio,+CA+92201" target="_blank" rel="noopener">82-616 Miles Ave, Indio, CA 92201 ↗</a></p>
     <p><strong>Admission:</strong> Free (donations appreciated)</p>
     <p><strong>Hours:</strong> Wed–Sat 10am–4pm</p>
 </div>
+
 <div class="gem-heading">
     <span class="gem-number">5</span>
     The Tamale Festival: Come in December or Come Back in December
 </div>
+
 <p>If you happen to be in Indio in December, drop everything. The Indio International Tamale Festival has been running for over 30 years and calls itself the world's largest tamale festival, which I cannot independently verify but am fully prepared to believe. The Old Town block fills with vendors, live music, and tamales: sweet ones, savory ones, traditional ones, fusion ones that don't need to exist but do anyway. It's chaotic, it smells incredible, and it's the clearest expression I've seen of what Indio is: a working Latino city that knows how to throw a party.</p>
+
 <div class="quick-info">
     <p><strong>When:</strong> First weekend of December, annually</p>
     <p><strong>Where:</strong> <a href="https://maps.google.com/?q=Old+Town+Indio,+Miles+Ave,+Indio,+CA" target="_blank" rel="noopener">Old Town Indio, Miles Ave ↗</a></p>
     <p><strong>Tip:</strong> Arrive early Saturday. Lines get long by noon.</p>
 </div>
+
 <img src="/blog/images/indio-tamale-festival.jpg" alt="Colorful pinata-style MERCADO sign arch over lowrider cars and festival crowd at the Indio Tamale Festival" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">30+ years of tamales, live music, and absolute chaos (the good kind)</p>
+
 <div class="gem-heading">
     <span class="gem-number">6</span>
     Coachella Valley Preserve: Hike Into the Oasis
 </div>
+
 <p>About 20 minutes from central Indio, the Coachella Valley Preserve sits on a rare natural desert oasis fed by the San Andreas Fault. Yes, the fault. Underground water gets pushed up along the fault line and creates actual palm groves (not planted ones, wild ones) in the middle of the desert. The McCallum Trail is an easy 3-mile out and back that takes you through towering California fan palms and, depending on the season, past small streams and pools. It's one of the most otherworldly places in Southern California and barely anyone outside of the valley knows it exists.</p>
+
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=29200+Thousand+Palms+Canyon+Rd,+Thousand+Palms,+CA" target="_blank" rel="noopener">29200 Thousand Palms Canyon Rd, Thousand Palms, CA ↗</a></p>
     <p><strong>Admission:</strong> Free</p>
     <p><strong>Best season:</strong> October–April (summers are brutal; go early if you must)</p>
 </div>
+
 <img src="/blog/images/coachella-valley-preserve.webp" alt="Wild California fan palms in the Coachella Valley Preserve oasis at golden hour with red mountains behind" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Wild fan palms fed by the San Andreas Fault. One of Southern California's most otherworldly hikes.</p>
+
 <div class="gem-heading">
     <span class="gem-number">7</span>
     One Stop Taco Shop: The Taco I Think About Between Visits
 </div>
+
 <p>There are taco spots all over the Coachella Valley, and most of them are fine. One Stop Taco Shop in Indio is not fine. It's the one I crave when I'm back in LA, the one I route trips around, the one I've sent more guests to than any other single recommendation. The carne asada is the move. Simple, a little charred, the right amount of salty, and served in a tortilla that hasn't been sitting in a warmer for two hours. The line out front is not a warning sign. It is the sign. Get in it.</p>
+
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=84051+Indio+Blvd,+Indio,+CA+92201" target="_blank" rel="noopener">84051 Indio Blvd, Indio, CA 92201 ↗</a></p>
     <p><strong>Order:</strong> Carne asada tacos, al pastor if they have it that day</p>
     <p><strong>Timing:</strong> Lunch rush is real. Go at 11am or after 2pm.</p>
 </div>
+
 <img src="/blog/images/one-stop-taco-shop.jpg" alt="One Stop Taco Shop plate with carne asada tacos, rice, beans and fresh pico de gallo, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The line is part of the experience. Trust it.</p>
+
 <div class="gem-heading">
     <span class="gem-number">8</span>
     Thai Hot: Actual Heat, Actual Thai Food
 </div>
+
 <p>The Coachella Valley is not a Thai food destination. Which is exactly what makes Thai Hot so surprising. This is not the pad thai with ketchup situation you might expect from a strip mall Thai spot in a desert city. They cook with real heat, not "California medium" heat, and the curries have the kind of depth that suggests someone in that kitchen cares. Order the drunken noodles. Order them spicy if you mean it, and know that they mean it too. This is the place I take friends who claim they've never had good Thai food outside of LA or a major city and need to be corrected.</p>
+
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=81944+US+Highway+111,+Indio,+CA+92201" target="_blank" rel="noopener">81944 US Highway 111, Indio, CA 92201 ↗</a></p>
     <p><strong>Hours:</strong> Mon–Fri 11am–3pm and 4–9pm</p>
     <p><strong>Order:</strong> Drunken noodles, green curry, anything with the Thai basil</p>
     <p><strong>Spice note:</strong> They will make it spicy if you ask. Ask.</p>
 </div>
+
 <img src="/blog/images/thai-hot.jpg" alt="Thai Hot Restaurant plates with stir fry, curry, rice and spring rolls, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Real heat, real Thai food. A desert surprise.</p>
+
 <div class="gem-heading">
     <span class="gem-number">9</span>
     The Salton Sea: An Acquired Taste Worth Acquiring
 </div>
+
 <p>About 30 minutes south of Indio, the Salton Sea is either the most fascinating place in California or the most unsettling one, depending on your disposition. It's a massive inland sea that shouldn't exist (it was accidentally created in 1905 by an irrigation canal breach and never stopped), smells vaguely sulfuric near the shoreline, and has a strange post-apocalyptic beauty that photographers and artists have been chasing for decades. Bombay Beach, a half-abandoned town on the eastern shore, is one of the weirdest art installations you'll ever stumble into. Don't swim. Do stay for sunset. Bring snacks and low expectations.</p>
+
 <img src="/blog/images/salton-sea.webp" alt="Aerial view of the Salton Sea shoreline with bulldozers on cracked earth and bright blue water, Southern California" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Accidentally created, accidentally beautiful. The Salton Sea earns its weirdness.</p>
+
 <div class="gem-heading">
     <span class="gem-number">10</span>
     Rosemary HiFi: Records, Sound, and the Indio You Didn't Know Existed
 </div>
+
 <p>Rosemary HiFi is the Coachella Valley's first vinyl listening lounge, and there is nothing else like it in the desert. Mexico City and Japanese-inspired, with a custom walnut bar where the backlit liquor display has been replaced by the owner's personal record collection, amplified through <em>1960s JBL speakers</em>. They pour beer from Las Palmas Brewing and earthy, sulfate-free natural wines served chilled. The sound system is the kind that makes you stop talking mid-sentence, which is either inconvenient or the entire point. They host live events and intimate sessions, and the City of Indio cut a ribbon here. This is the cultural moment Indio didn't announce, but is quietly building.</p>
+
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=45120+Oasis+St,+Indio,+CA+92201" target="_blank" rel="noopener">45120 Oasis St, Indio, CA 92201 ↗</a></p>
     <p><strong>Hours:</strong> Wed–Sun 4pm–11pm (closed Mon–Tue)</p>
     <p><strong>Best for:</strong> Evenings, music people, anyone who needs to slow down</p>
     <p><strong>Pro tip:</strong> Check their Instagram for event nights. It gets special.</p>
 </div>
+
 <img src="/blog/images/rosemary-hifi.jpg" alt="Rosemary HiFi bar interior, cobalt blue tile, walnut shelving with vinyl records, 1960s JBL speakers, concrete bar, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Cobalt blue tile, 1960s JBL speakers, a turntable built into the bar. The Coachella Valley's first listening lounge.</p>
+
 <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 3rem 0;">
+
 <h2>The Real Indio Cheat Code</h2>
+
 <p>The Coachella Valley isn't Palm Springs, and Indio definitely isn't trying to be. It's dustier, more honest, and significantly more interesting once you stop expecting it to perform for you. The best version of this place rewards exactly one thing: curiosity. Drive down a road you don't know. Order something you can't pronounce. Ask the person behind the counter what they eat for lunch.</p>
+
 <p>These ten spots are a starting point. The actual discovery is yours to make. If you're planning a Coachella trip and figuring out where to base yourself, read <a href="/blog/where-to-stay-coachella-2026/">our honest guide to Coachella 2026 accommodation options</a>. No affiliate codes, just the real breakdown. And for the backstory on how the Indigo Palm Collective started in Indio, read <a href="/blog/cozy-cactus-origin-story/">how we bought our first vacation rental on Easter Sunday 2022</a>.</p>
-
-        </div>
-        <div class="cta-box">
-            <h3>Ready to Book?</h3>
-            <p>Family-friendly 3BR in Indio with private pool, hot tub, and baby gear that actually works. Book direct and save 15% vs Airbnb.</p>
-            <a href="/cozy-cactus" class="cta-button">Book The Cozy Cactus</a>
-        </div>
-    </article>
-
-    <section style="background:#fdf6ef;border-top:1px solid #e8ddd0;padding:3rem 2rem;text-align:center;margin-top:3rem;">
-        <div style="max-width:700px;margin:0 auto;">
-            <p style="font-size:0.8rem;color:#B67550;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;">Ready to Book?</p>
-            <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.75rem;margin-bottom:1rem;color:#2c2c2c;">Stay at The Cozy Cactus</h2>
-            <p style="color:#666;margin-bottom:2rem;line-height:1.6;">Family-friendly 3BR in Indio with private pool, hot tub, and baby gear that actually works. Book direct and save 15% vs Airbnb.</p>
-            <a href="/cozy-cactus" style="background:#B67550;color:white;padding:0.85rem 2rem;text-decoration:none;font-size:0.85rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;border-radius:2px;">View The Cozy Cactus &rarr;</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
-        <p><a href="/">Home</a> &middot; <a href="/#properties">Properties</a> &middot; <a href="/blog">Blog</a> &middot; <a href="/#contact">Contact</a></p>
-    </footer>
-
-    <script>
-        const toggle = document.getElementById('mobileMenuToggle');
-        const menu = document.getElementById('navMenu');
-        if (toggle && menu) {
-            toggle.addEventListener('click', () => { menu.classList.toggle('active'); });
-        }
-    </script>
-</body>
-</html>

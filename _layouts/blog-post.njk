@@ -166,7 +166,7 @@ permalink: "{{ page.fileSlug }}/index.html"
         nav .menu a { text-decoration: none; color: var(--charcoal); font-weight: 500; transition: color 0.3s; }
         nav .menu a:hover { color: var(--terracotta); }
 
-        article { max-width: 800px; margin: 0 auto; padding: 6rem 2rem 4rem; }
+        article { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
         article header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1); }
         article h1 { font-family: var(--font-serif); font-size: 3rem; font-weight: 600; color: var(--charcoal); line-height: 1.2; margin-bottom: 1rem; }
         .article-meta { color: #666; font-size: 0.95rem; margin-top: 1rem; }
@@ -230,7 +230,13 @@ permalink: "{{ page.fileSlug }}/index.html"
         </div>
     </nav>
 
-    <article>
+    {% if heroImage %}
+    <div style="width:100%;height:480px;overflow:hidden;margin-top:64px;">
+        <img src="{{ heroImage }}" alt="{{ heroAlt if heroAlt else title }}" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" fetchpriority="high">
+    </div>
+    {% endif %}
+
+    <article {% if not heroImage %}style="padding-top:6rem;"{% endif %}>
         <header>
             <h1>{{ title }}</h1>
             <div class="article-meta">By Eann Tuan · {{ date | readableDate }} · <span class="read-time">{{ readTime }}</span></div>
