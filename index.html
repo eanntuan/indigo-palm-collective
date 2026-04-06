@@ -166,7 +166,8 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap"></noscript>
     <style>
         * {
             margin: 0;
@@ -1917,20 +1918,7 @@
                 <div id="ha-search-bar"></div>
             </div>
 
-            <script src="https://public.hostaway.com/js/haSearchBar.js"></script>
-            <script>
-                haSearchBar({
-                    baseUrl: 'https://app.hostaway.com/widgets/booking-engine',
-                    accountId: '45747',
-                    color: '#738561',
-                    rounded: true,
-                    openInNewTab: false,
-                    showLocation: true,
-                    font: {
-                        family: 'Work Sans, sans-serif'
-                    }
-                });
-            </script>
+            <script defer src="https://public.hostaway.com/js/haSearchBar.js" onload="haSearchBar({baseUrl:'https://app.hostaway.com/widgets/booking-engine',accountId:'45747',color:'#738561',rounded:true,openInNewTab:false,showLocation:true,font:{family:'Work Sans, sans-serif'}})"></script>
 
             <div style="margin-top: 1.5rem; text-align: center;">
                 <p style="color: #777; font-size: 0.9rem;">Need help? Email us at <a href="mailto:indigopalmco@gmail.com" style="color: #738561;" onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Booking Widget Help Email', 'value': 1});">indigopalmco@gmail.com</a></p>
