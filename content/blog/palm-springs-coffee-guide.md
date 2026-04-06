@@ -78,6 +78,9 @@ layout: blog-post.njk
 
 <p>La Quinta is a 20-minute drive from Palm Springs and worth making the trip for. It pairs well with a walk through Old Town if you want to stretch your legs between festival days. Read more about the broader valley in our <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a>.</p>
 
+<img src="/blog/images/yes-please-la-quinta.jpg" alt="Avocado toast, omelette, matcha latte, and cappuccino at Yes Please café in La Quinta" width="1400" height="1050" loading="lazy">
+<p class="image-caption">The scones are the move, but honestly everything on this table was a yes from me.</p>
+
 <h2>5. Saguaro Coffee, Indio</h2>
 <div class="shop-links">
     <a href="https://share.google/JiidsTkVXnW8uEs5w" target="_blank" rel="noopener">Google Maps</a>
