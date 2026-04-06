@@ -161,10 +161,69 @@ export default {
       return handleSignLease(request, env);
     }
 
+    // GitHub OAuth proxy for Decap/Sveltia CMS
+    if (path === '/api/auth' && request.method === 'GET') {
+      return handleCmsAuth(url, env);
+    }
+
+    if (path === '/api/callback' && request.method === 'GET') {
+      return handleCmsCallback(url, env);
+    }
+
     // Pass all non-API requests through to GitHub Pages
     return fetch(request);
   },
 };
+
+// ── CMS OAuth Proxy ───────────────────────────────────────────────────────────
+
+function handleCmsAuth(url, env) {
+  const clientId = env.GITHUB_CLIENT_ID || 'Ov23lii0Ltw19uHY42md';
+  const redirectUri = 'https://indigopalm.co/api/callback';
+  const state = crypto.randomUUID();
+  const authUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=repo&state=${state}`;
+  return Response.redirect(authUrl, 302);
+}
+
+async function handleCmsCallback(url, env) {
+  const code = url.searchParams.get('code');
+  const errorParam = url.searchParams.get('error');
+
+  if (errorParam || !code) {
+    return cmsPostMessage('error', { message: errorParam || 'No code returned from GitHub' });
+  }
+
+  const clientId = env.GITHUB_CLIENT_ID || 'Ov23lii0Ltw19uHY42md';
+  const clientSecret = env.GITHUB_CLIENT_SECRET;
+
+  const tokenRes = await fetch('https://github.com/login/oauth/access_token', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ client_id: clientId, client_secret: clientSecret, code }),
+  });
+
+  const tokenData = await tokenRes.json();
+
+  if (tokenData.error || !tokenData.access_token) {
+    return cmsPostMessage('error', { message: tokenData.error_description || 'Token exchange failed' });
+  }
+
+  return cmsPostMessage('success', { token: tokenData.access_token, provider: 'github' });
+}
+
+function cmsPostMessage(status, data) {
+  const msg = `authorization:github:${status}:${JSON.stringify(data)}`;
+  const html = `<!DOCTYPE html><html><body><script>
+    (function() {
+      function send() {
+        window.opener.postMessage(${JSON.stringify(msg)}, 'https://indigopalm.co');
+        window.close();
+      }
+      if (window.opener) { send(); } else { document.body.innerText = 'Auth complete. You may close this window.'; }
+    })();
+  </scr` + `ipt></body></html>`;
+  return new Response(html, { headers: { 'Content-Type': 'text/html' } });
+}
 
 // ── Availability ──────────────────────────────────────────────────────────────
 
