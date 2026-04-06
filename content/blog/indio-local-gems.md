@@ -1,7 +1,7 @@
 ---
-title: "10 Indio Gems Only Locals Know About"
+title: "Hidden Gems in Indio, CA: 10 Spots Most Visitors Miss"
 date: 2026-03-10
-metaDescription: "Skip the tourist traps. L&G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA."
+metaDescription: "L&G Desert Store dates are worth the drive. Papa Headz serves smash burgers that make you rethink California. Here is what actually matters in Indio, CA."
 ogImage: /blog/images/indio-local-gems.jpg
 heroImage: /blog/images/indio-local-gems.jpg
 heroAlt: "Mid-century modern home with vibrant orange double doors, tall cactus, and teal desert sky, Coachella Valley CA"

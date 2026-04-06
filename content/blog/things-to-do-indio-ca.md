@@ -1,7 +1,7 @@
 ---
 title: "15 Best Things to Do in Indio, CA (From Someone Who Lives There)"
 date: 2026-03-20
-metaDescription: "Skip the recycled lists. Here are 15 things worth doing in Indio, CA: from date farms and desert hikes to a listening lounge that opened in a city nobody expected."
+metaDescription: "Skip the recycled lists. Here are 15 things worth doing in Indio, CA: date farms, desert hikes, and a vinyl listening lounge nobody saw coming."
 ogImage: /blog/images/indio-local-gems.jpg
 heroImage: /blog/images/indio-local-gems.jpg
 heroAlt: "Indio California desert landscape and palm trees"

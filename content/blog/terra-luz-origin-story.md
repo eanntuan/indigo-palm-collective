@@ -1,7 +1,7 @@
 ---
 title: "The Story Behind Terra Luz: How a Desert House Found Its Name"
 date: 2026-03-14
-metaDescription: "How a Latin/Cuban-inspired vacation rental in Indio became Terra Luz: sun-washed terracotta, Kahlo blue pool, and a brand philosophy built on wabi-sabi warmth."
+metaDescription: "How a vacation rental in Indio became Terra Luz: sun-washed terracotta, a Kahlo blue pool, and a brand built on Latin warmth and desert light."
 ogImage: "https://indigopalm.co/Casa%20Moto/Existing%20Listing%20Pictures/IMG_1240.JPG"
 heroImage: "https://indigopalm.co/Casa%20Moto/Existing%20Listing%20Pictures/IMG_1240.JPG"
 heroAlt: "Terra Luz vacation rental exterior in Indio CA before renovation"

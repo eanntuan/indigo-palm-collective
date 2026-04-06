@@ -1,7 +1,7 @@
 ---
 title: "Where to Stay for Coachella 2026: The Honest Guide"
 date: 2026-03-01
-metaDescription: "An honest breakdown of Coachella 2026 accommodation options. Hotels, camping, vacation rentals near the polo grounds. No sponsorships, just truth from someone who actually lives here."
+metaDescription: "Hotels, camping, or vacation rental near the polo grounds? An honest Coachella 2026 accommodation breakdown from someone who actually lives here."
 ogImage: /blog/images/cozy-cactus-pool.jpg
 heroImage: /blog/images/cozy-cactus-pool.jpg
 heroAlt: "Private pool at a vacation rental near the Coachella festival grounds in Indio CA"

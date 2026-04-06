@@ -1,7 +1,7 @@
 ---
 title: 5 Coffee Shops Palm Springs Locals Actually Go To
 date: 2026-03-14
-metaDescription: "Skip the hotel lobby drip. A local's guide to the 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and why it matters."
+metaDescription: "Skip the hotel lobby drip. The 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and why the hotel drip stops here."
 keywords:
   - Palm Springs coffee shops
   - best coffee Palm Springs

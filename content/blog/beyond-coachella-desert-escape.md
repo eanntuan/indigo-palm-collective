@@ -1,5 +1,5 @@
 ---
-title: "Beyond Coachella: Why the Coachella Valley Is a Year-Round Desert Escape"
+title: "Coachella Valley: A Year-Round Desert Escape Worth Knowing"
 date: 2026-03-14
 metaDescription: "Most people only think of the Coachella Valley during festival season. Here's why every season in the desert is worth the trip, and how to plan it."
 ogImage: /blog/images/cozy-cactus-pool.jpg

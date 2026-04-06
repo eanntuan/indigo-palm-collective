@@ -34,7 +34,7 @@ permalink: "{{ page.fileSlug }}/index.html"
   }
 } %}
 {% set prop = propertyMap[property] if property and propertyMap[property] else propertyMap["all"] %}
-{% set canonicalUrl = "https://indigopalm.co/blog/" + page.fileSlug %}
+{% set canonicalUrl = "https://indigopalm.co/blog/" + page.fileSlug + "/" %}
 {% set publishedDate = date | isoDate %}
 <!DOCTYPE html>
 <html lang="en">

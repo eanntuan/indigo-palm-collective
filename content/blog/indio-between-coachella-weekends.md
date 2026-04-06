@@ -1,5 +1,5 @@
 ---
-title: "The In-Between Weekend: What to Do in Indio Between Coachella Weekends 1 and 2"
+title: "What to Do in Indio Between Coachella Weekends 1 and 2"
 date: 2026-04-04
 metaDescription: "Stuck in Indio CA between Coachella Weekend 1 and 2? Here's exactly what to do, from date shakes to the Salton Sea. A real local's guide, not a listicle."
 ogImage: /blog/images/indio-between-coachella-weekends.jpg

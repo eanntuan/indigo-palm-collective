@@ -1,7 +1,7 @@
 ---
-title: "Staying in Indian Palms Country Club: What You Actually Need to Know"
+title: "Indian Palms Country Club: What to Know Before You Book"
 date: 2026-03-20
-metaDescription: "Indian Palms Country Club is one of the only neighborhoods in the Coachella Valley where you can walk to Coachella. What it's like to stay here, what the community has, and why it matters."
+metaDescription: "Indian Palms is one of the only Coachella Valley neighborhoods where you can walk to Coachella. Here is what it is actually like to stay here."
 ogImage: /blog/images/cozy-cactus-aerial.jpg
 heroImage: /blog/images/cozy-cactus-aerial.jpg
 heroAlt: "Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop"

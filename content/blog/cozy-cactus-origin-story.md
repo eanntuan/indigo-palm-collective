@@ -1,7 +1,7 @@
 ---
-title: "How I Bought My First Vacation Rental in Indio, CA (The Cozy Cactus Story)"
+title: "My First Vacation Rental in Indio, CA: Cozy Cactus"
 date: 2026-03-03
-metaDescription: "How I bought my first vacation rental in Indio, CA on Easter 2022 with zero experience, a line of credit, and way too many Facebook Marketplace trips. The real origin story of The Cozy Cactus."
+metaDescription: "How I bought my first vacation rental in Indio, CA on Easter 2022 with zero experience, a line of credit, and way too many Facebook Marketplace trips."
 ogImage: /blog/images/car-camping.jpeg
 heroImage: /blog/images/car-camping.jpeg
 heroAlt: "2005 Honda Element loaded for camping, the car that started The Cozy Cactus vacation rental in Indio, CA"

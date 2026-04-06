@@ -1,7 +1,7 @@
 ---
-title: "The Story of The Cozy Cactus: From Blank Canvas to Family Sanctuary"
+title: "Cozy Cactus: From Blank Canvas to Family Sanctuary"
 date: 2026-02-25
-metaDescription: "How a backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents actually rest. My journey from blank canvas to 4.66★ Airbnb with 191+ reviews."
+metaDescription: "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents actually rest, now 4.66 stars and 191+ reviews."
 ogImage: /blog/images/cozy-cactus-exterior.jpg
 heroImage: /blog/images/cozy-cactus-exterior.jpg
 heroAlt: "The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views"

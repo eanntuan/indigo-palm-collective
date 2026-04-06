@@ -1,7 +1,7 @@
 ---
-title: "The Real Insider's Guide to the Coachella Valley"
+title: "Coachella Valley Insider Guide: Spots Worth Your Time"
 date: 2026-03-14
-metaDescription: "Skip the tourist traps. A real Coachella Valley local shares the spots worth your time in Indio, Palm Springs, Joshua Tree, and beyond. No affiliate links, no recycled lists."
+metaDescription: "Skip the tourist traps. A Coachella Valley local shares the spots worth your time in Indio, Palm Springs, and Joshua Tree. No recycled lists."
 ogImage: /blog/images/ps-street-bougainvillea.jpg
 heroImage: /blog/images/ps-street-bougainvillea.jpg
 heroAlt: "Palm tree-lined street in Palm Springs CA with red bougainvillea and San Jacinto mountains"
