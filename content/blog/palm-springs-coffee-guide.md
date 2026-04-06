@@ -68,15 +68,15 @@ layout: blog-post.njk
 <img src="/blog/images/everbloom-indio.jpg" alt="Everbloom Coffee exterior in Indio, CA with palm trees and terracotta roof" width="1200" height="1480" loading="lazy">
 <p class="image-caption">Everbloom Coffee, Indio, CA</p>
 
-<h2>4. Cheeky's, Palm Springs</h2>
+<h2>4. Yes, Please, La Quinta</h2>
 <div class="shop-links">
-    <a href="https://maps.google.com/?q=622+N+Palm+Canyon+Dr,+Palm+Springs,+CA" target="_blank" rel="noopener">Google Maps</a>
-    <a href="https://www.instagram.com/cheekys.f10/" target="_blank" rel="noopener">@cheekys.f10</a>
+    <a href="https://maps.app.goo.gl/itsHZYHafSa9FhBcA" target="_blank" rel="noopener">Google Maps</a>
+    <a href="https://www.instagram.com/yesplease.laquinta/" target="_blank" rel="noopener">@yesplease.laquinta</a>
 </div>
 
-<p>Cheeky's is known for brunch (and the line that forms for it), but the coffee program is serious and underrated. They source thoughtfully and treat it as part of the meal rather than an afterthought. The cortado is excellent.</p>
+<p>Yes, Please is a café and dessert shop in Old Town La Quinta that has been winning over locals since late 2022. The coffee is thoughtful, the baked goods are house-made, and the whole place has the kind of warmth that makes you stay longer than you planned. Huckleberry scones, buttermilk biscuits, and a cortado that holds up.</p>
 
-<p>Practically speaking: if you're going to Cheeky's for brunch anyway (and you should, once), don't order your coffee somewhere else first. Get there when they open, put your name in, and have a coffee while you wait. The line moves. It's worth it. Read more about the full Palm Springs food scene in our <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a>.</p>
+<p>La Quinta is a 20-minute drive from Palm Springs and worth making the trip for. It pairs well with a walk through Old Town if you want to stretch your legs between festival days. Read more about the broader valley in our <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a>.</p>
 
 <h2>5. Saguaro Coffee, Indio</h2>
 <div class="shop-links">
