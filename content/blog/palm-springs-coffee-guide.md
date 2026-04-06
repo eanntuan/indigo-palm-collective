@@ -11,13 +11,11 @@ keywords:
   - Koffi Palm Springs
   - Cartel Coffee Coachella
   - Everbloom Indio
-ogImage: /blog/images/palm-springs-coffee-guide.jpg
+ogImage: /blog/images/coffee-lattes-hero.jpg
 articleSection: Palm Springs Travel Guide
 property: all
 readTime: 4 min read
 excerpt: "Skip the hotel lobby drip. A local's guide to the 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and why it matters."
-heroImage: /blog/images/palm-springs-coffee-guide.jpg
-heroAlt: Three specialty coffee drinks at a Palm Springs coffee shop with desert light
 layout: blog-post.njk
 ---
 
