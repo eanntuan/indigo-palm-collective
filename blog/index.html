@@ -215,6 +215,7 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             margin-bottom: 4rem;
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
         }
 
         .featured-post:hover {
@@ -282,6 +283,13 @@
             background: var(--canyon-clay);
         }
 
+        .blog-card .read-more::after,
+        .featured-post .read-more::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+        }
+
         /* Blog Grid */
         .blog-grid {
             display: grid;
@@ -295,6 +303,7 @@
             overflow: hidden;
             box-shadow: 0 2px 15px rgba(0,0,0,0.06);
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
         }
 
         .blog-card:hover {
