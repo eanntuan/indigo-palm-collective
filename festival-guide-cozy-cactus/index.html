@@ -9,7 +9,7 @@
     <meta property="og:title" content="Festival Guide: The Cozy Cactus">
     <meta property="og:description" content="Walk to Coachella from your front door. No shuttles, no surge pricing. Your complete festival guide from The Cozy Cactus at Indian Palms.">
     <meta property="og:url" content="https://indigopalm.co/festival-guide-cozy-cactus/">
-    <meta property="og:image" content="https://indigopalm.co/og-image.jpg">
+    <meta property="og:image" content="https://indigopalm.co/images/festival-coachella-aerial.jpg">
     <meta name="robots" content="noindex">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -19,97 +19,296 @@
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Work Sans', sans-serif;
-            background: #F6F1E9;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+        :root {
+            --terracotta: #B67550;
+            --clay: #8B4513;
+            --cream: #F6F1E9;
+            --charcoal: #2C2C2C;
+            --sage: #607c67;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
         }
-        header {
-            background: white;
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 1px solid #e8e0d4;
+        body { font-family: var(--font-sans); color: var(--charcoal); background: var(--cream); line-height: 1.7; }
+
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.96); backdrop-filter: blur(10px); padding: 1.2rem 5%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--charcoal); text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--charcoal); font-weight: 500; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--terracotta); }
+
+        .hero {
+            margin-top: 64px;
+            position: relative;
+            height: 520px;
+            overflow: hidden;
         }
-        .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #2C2C2C;
-            text-decoration: none;
-        }
-        .download-btn {
-            display: inline-block;
-            padding: 0.6rem 1.4rem;
-            background: #B67550;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        .pdf-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .pdf-toolbar {
-            background: #2C2C2C;
-            padding: 0.75rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-        }
-        .pdf-toolbar span {
-            color: #ccc;
-            font-size: 0.9rem;
-        }
-        .pdf-toolbar a {
-            color: white;
-            font-size: 0.85rem;
-            text-decoration: none;
-            border: 1px solid #666;
-            padding: 0.4rem 1rem;
-            border-radius: 4px;
-        }
-        .pdf-toolbar a:hover { border-color: #B67550; color: #B67550; }
-        embed {
-            flex: 1;
-            width: 100%;
-            min-height: calc(100vh - 120px);
-            display: block;
-        }
-        .fallback {
-            display: none;
+        .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.55) 100%);
+            display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+            padding: 3rem 2rem;
             text-align: center;
-            padding: 4rem 2rem;
         }
-        @media (max-width: 600px) {
-            embed { min-height: 70vh; }
-            .pdf-toolbar span { display: none; }
+        .hero-overlay .eyebrow { color: rgba(255,255,255,0.8); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600; margin-bottom: 0.75rem; }
+        .hero-overlay h1 { font-family: var(--font-serif); font-size: 3.5rem; color: white; font-weight: 600; line-height: 1.15; margin-bottom: 1rem; }
+        .hero-overlay p { color: rgba(255,255,255,0.9); font-size: 1.1rem; max-width: 560px; }
+
+        .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+
+        .download-bar { background: var(--terracotta); color: white; text-align: center; padding: 0.9rem 2rem; font-size: 0.9rem; }
+        .download-bar a { color: white; font-weight: 600; text-decoration: underline; }
+
+        section { padding: 4rem 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
+        section:last-of-type { border-bottom: none; }
+
+        .section-label { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--terracotta); font-weight: 600; margin-bottom: 0.75rem; }
+        h2 { font-family: var(--font-serif); font-size: 2.4rem; font-weight: 600; color: var(--charcoal); margin-bottom: 1.5rem; line-height: 1.2; }
+        h3 { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 600; color: var(--charcoal); margin: 2rem 0 0.75rem; }
+        p { margin-bottom: 1.25rem; font-size: 1.05rem; color: #444; }
+        ul { margin: 0.5rem 0 1.5rem 1.5rem; }
+        ul li { margin-bottom: 0.5rem; font-size: 1.05rem; color: #444; }
+        strong { color: var(--charcoal); }
+
+        .post-img { width: 100%; height: auto; border-radius: 10px; margin: 2rem 0 0.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); display: block; }
+        .caption { text-align: center; font-size: 0.9rem; color: #888; font-style: italic; margin-bottom: 2rem; }
+
+        .map-img { width: 100%; max-width: 600px; height: auto; border-radius: 10px; margin: 2rem auto 0.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.12); display: block; border: 1px solid rgba(0,0,0,0.08); }
+
+        .info-box { background: white; border-left: 4px solid var(--terracotta); padding: 1.5rem 1.75rem; border-radius: 0 8px 8px 0; margin: 2rem 0; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .info-box h4 { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 600; margin-bottom: 0.75rem; }
+
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .contact-card { background: white; padding: 1.2rem 1.4rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+        .contact-card .name { font-weight: 600; color: var(--charcoal); font-size: 0.95rem; }
+        .contact-card .phone { color: var(--terracotta); font-size: 0.9rem; margin-top: 0.25rem; }
+        .contact-card .note { color: #888; font-size: 0.82rem; margin-top: 0.25rem; font-style: italic; }
+
+        .gate-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .gate-table th { background: var(--charcoal); color: white; padding: 0.85rem 1.25rem; text-align: left; font-size: 0.9rem; font-weight: 600; }
+        .gate-table td { padding: 0.85rem 1.25rem; font-size: 0.9rem; color: #444; border-bottom: 1px solid rgba(0,0,0,0.06); vertical-align: top; }
+        .gate-table tr:last-child td { border-bottom: none; }
+        .gate-table tr:nth-child(even) td { background: #fafaf8; }
+
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; margin: 1.5rem 0; }
+
+        footer { background: var(--charcoal); color: white; text-align: center; padding: 3rem 2rem; }
+        footer a { color: var(--terracotta); text-decoration: none; }
+
+        @media (max-width: 700px) {
+            .hero { height: 380px; }
+            .hero-overlay h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.9rem; }
+            .two-col { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links { display: none; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <a href="/" class="logo">Indigo Palm Collective</a>
-        <a href="/festival-guide-cozy-cactus.pdf" download class="download-btn">Download PDF</a>
-    </header>
 
-    <div class="pdf-container">
-        <div class="pdf-toolbar">
-            <span>Festival Guide: The Cozy Cactus at Indian Palms</span>
-            <a href="/festival-guide-cozy-cactus.pdf" target="_blank">Open in new tab</a>
-        </div>
-        <embed src="/festival-guide-cozy-cactus.pdf" type="application/pdf" width="100%" height="100%">
-        <div class="fallback">
-            <p>Your browser can't display PDFs inline.</p>
-            <a href="/festival-guide-cozy-cactus.pdf" download class="download-btn" style="margin-top:1rem; display:inline-block;">Download the Festival Guide</a>
+    <nav>
+        <a href="/" class="logo">Indigo Palm Collective</a>
+        <ul class="nav-links">
+            <li><a href="/#properties">Properties</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <img src="/images/festival-coachella-aerial.jpg" alt="Coachella festival grounds aerial view with mountains at sunset" width="1200" height="800">
+        <div class="hero-overlay">
+            <p class="eyebrow">The Cozy Cactus at Indian Palms</p>
+            <h1>Festival Guide</h1>
+            <p>You have the best location. No shuttles, no surge pricing. Here's everything you need.</p>
         </div>
     </div>
+
+    <div class="download-bar">
+        Want a printable copy? <a href="/festival-guide-cozy-cactus.pdf" download>Download the PDF</a>
+    </div>
+
+    <!-- Walking There -->
+    <section>
+        <div class="container">
+            <p class="section-label">Getting There</p>
+            <h2>Walking to the Festival</h2>
+            <p>You made it. Months of planning and the week is finally here. Good news: you have the best location to the festival. No long shuttle lines or crazy surge pricing. Time to relax.</p>
+
+            <div class="two-col">
+                <div>
+                    <h3>The Yellow Path</h3>
+                    <p>The Yellow Path at 49th and Monroe is your best bet for walking. End to end it's about a mile and a half, so bring your comfortable shoes since the path is gravel.</p>
+                    <p>The Monroe gate to Indian Palms is at 48th and Monroe. Once you get to the front gate, make a left onto Monroe and head south toward 49th.</p>
+                    <div class="info-box">
+                        <h4>Note on Pedestrian Restrictions</h4>
+                        <p style="margin:0;">No pedestrians allowed on Monroe (between Ave 49 and Ave 52) or Madison (between Ave 50 and Ave 52).</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="/images/festival-walking-map.png" alt="Walking directions from The Cozy Cactus to the festival entrance" width="800" height="800" loading="lazy" style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+
+            <img src="/images/festival-cozy-cactus-location.png" alt="Map showing The Cozy Cactus location at 82381 Cochran Drive, Indio" width="800" height="600" loading="lazy" class="map-img">
+            <p class="caption">82381 Cochran Dr, Indio, CA 92201</p>
+
+            <img src="/images/festival-pedestrian-map.jpg" alt="Indian Palms Country Club pedestrian traffic map for festival weekend" width="800" height="1000" loading="lazy" class="map-img">
+            <p class="caption">Indian Palms CC pedestrian traffic routes</p>
+        </div>
+    </section>
+
+    <!-- Golf Cart Rides -->
+    <section>
+        <div class="container">
+            <p class="section-label">Saving Your Feet</p>
+            <h2>Golf Cart Rides</h2>
+            <p>Members of the community sometimes offer rides for tips. These are not endorsed, strictly word of mouth. Plan in advance since it saves your feet for the actual festival. The going rate is around $5 per rider for a group of 10, and $10 per rider for groups of five or less.</p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="name">Sue Murren</div>
+                    <div class="phone">562-760-4313</div>
+                    <div class="note">Neighbor across the street</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">Leo</div>
+                    <div class="phone">610-207-4589</div>
+                    <div class="note">Truck / large groups. Takes you past Indian Palms to festival entrance.</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">Richards</div>
+                    <div class="phone">760-899-4693</div>
+                    <div class="note">Truck / large groups. Takes you past Indian Palms to festival entrance.</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">James</div>
+                    <div class="phone">442-458-8228</div>
+                    <div class="note">SUV</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">Sam</div>
+                    <div class="phone">323-240-0304</div>
+                    <div class="note">Golf cart</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">Cheryl</div>
+                    <div class="phone">503-998-0123</div>
+                    <div class="note"></div>
+                </div>
+            </div>
+
+            <img src="/images/festival-group-photo.jpg" alt="Festival guests at The Cozy Cactus getting ready for Coachella" width="1000" height="1200" loading="lazy" class="post-img">
+            <p class="caption">Festival crew ready to roll</p>
+        </div>
+    </section>
+
+    <!-- Indian Palms -->
+    <section>
+        <div class="container">
+            <p class="section-label">Inside the Community</p>
+            <h2>Indian Palms</h2>
+
+            <img src="/images/festival-indian-palms-entrance.jpg" alt="Indian Palms Country Club entrance sign in Indio, CA" width="1200" height="600" loading="lazy" class="post-img">
+            <p class="caption">Indian Palms Country Club, Indio, CA</p>
+
+            <p>Within the gated community, it's about a 0.7 mile walk to the front security gate, then an additional 0.3 miles to the Yellow Path. You'll likely find community members offering golf cart rides or "tailgate taxis" to the front gate for some extra cash.</p>
+
+            <h3>Amenities While You're Here</h3>
+            <p>When you're not at the festivals, enjoy everything Indian Palms has to offer:</p>
+            <ul>
+                <li>3 community pools (see page 22 of Welcome Book)</li>
+                <li>Pickleball (paddles provided at The Cozy Cactus)</li>
+                <li>Tennis (ID required to rent rackets)</li>
+                <li>Lifestyle Center / fitness center (let us know if interested and we'll get you set up)</li>
+            </ul>
+
+            <img src="/images/festival-palm-sunset.jpg" alt="Desert palm trees at sunset in the Coachella Valley" width="1200" height="800" loading="lazy" class="post-img">
+        </div>
+    </section>
+
+    <!-- Coachella Grounds -->
+    <section>
+        <div class="container">
+            <p class="section-label">Navigation</p>
+            <h2>Coachella Grounds</h2>
+            <p>Once you get to the front gate of Indian Palms, cross the street and make a left.</p>
+
+            <img src="/images/festival-coachella-map.jpg" alt="Official Coachella festival grounds map with parking lots and entrances" width="900" height="1100" loading="lazy" class="map-img">
+            <p class="caption">Official Coachella grounds map</p>
+        </div>
+    </section>
+
+    <!-- Stagecoach Grounds -->
+    <section>
+        <div class="container">
+            <p class="section-label">Navigation</p>
+            <h2>Stagecoach Grounds</h2>
+            <p>Once you get to the front gate of Indian Palms, cross the street and make a left.</p>
+
+            <img src="/images/festival-stagecoach-map.png" alt="Official Stagecoach festival grounds map with parking and entrances" width="900" height="1200" loading="lazy" class="map-img">
+            <p class="caption">Official Stagecoach grounds map</p>
+        </div>
+    </section>
+
+    <!-- Driving -->
+    <section>
+        <div class="container">
+            <p class="section-label">If You Must Drive</p>
+            <h2>Driving</h2>
+            <p>It gets extremely congested. Avoid driving if at all possible. If you must drive, avoid 48th and Monroe as it will be gridlocked.</p>
+
+            <table class="gate-table">
+                <thead>
+                    <tr><th>Gate</th><th>Details</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Monroe Gate</strong></td>
+                        <td>Only gate for guest entry. Security staff in attendance. Extra workstation added to double processing capacity. During peak hours, the transponder-only lane converts to allow general guest and paper pass access.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ave 48 + Jackson Gates</strong></td>
+                        <td>Operate as usual, no security officers. Entry via Conekt app or license plate (recommended to minimize traffic).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Avenue 50 Gate</strong></td>
+                        <td>Restricted by Indio Police to residents only. Do not use this gate as you will be turned around.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Road Closures -->
+    <section>
+        <div class="container">
+            <p class="section-label">Road Closures</p>
+            <h2>Closed Streets</h2>
+            <p>Starting April 6th, Ave 50 between Madison and Monroe Street will experience intermittent closures and delays. Full closures occur Friday through Sunday on April 13-16, 20-23, and 27-30. Streets reopen to normal traffic May 4th.</p>
+
+            <ul>
+                <li>Avenue 50 between Jackson and Madison</li>
+                <li>Avenue 49 between Monroe and Hjorth</li>
+                <li>Madison between Ave. 49 and 50</li>
+                <li>Madison between Ave. 50 and 52 during egress nightly (9:30pm to 3:00am)</li>
+                <li>Avenue 51 between Monroe and Madison</li>
+                <li>Hjorth between Ave. 49 and 50</li>
+            </ul>
+
+            <img src="/images/festival-road-closures.png" alt="Road closure map for Coachella festival weekend in Indio" width="900" height="700" loading="lazy" class="map-img">
+            <p class="caption">Road closure map for festival weekends</p>
+
+            <img src="/images/festival-ferris-wheel.jpg" alt="Film photo of festival ferris wheel and palm trees" width="1200" height="900" loading="lazy" class="post-img" style="margin-top:3rem;">
+            <p class="caption">See you out there.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p style="margin-bottom:0.5rem;">&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
+        <p><a href="/">Home</a> · <a href="/#properties">Properties</a> · <a href="/blog/">Blog</a> · <a href="/#contact">Contact</a></p>
+    </footer>
+
 </body>
 </html>
