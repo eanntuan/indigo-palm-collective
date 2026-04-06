@@ -5,12 +5,47 @@ backend:
   auth_type: pkce
   app_id: REPLACE_WITH_CLIENT_ID
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "content/blog/images"
+public_folder: "/blog/images"
 
 site_url: https://indigopalm.co
 
 collections:
+  - name: "blog"
+    label: "Blog Posts"
+    description: "Write and edit blog posts. New posts go live in ~2 minutes after saving."
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "50-60 characters. Lead with the main keyword." }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, default: "" }
+      - { label: "Meta Description", name: "metaDescription", widget: "text", hint: "140-155 characters. Shows in Google results." }
+      - label: "Keywords"
+        name: "keywords"
+        widget: "list"
+        hint: "Add 3-5 keywords. Press Enter after each one."
+      - { label: "OG Image (hero image filename)", name: "ogImage", widget: "image", hint: "Main image for social sharing and top of post." }
+      - label: "Article Section"
+        name: "articleSection"
+        widget: "select"
+        options: ["Travel Guide", "Local Guide", "Property Update", "Tips & Advice", "Events"]
+      - label: "Property"
+        name: "property"
+        widget: "select"
+        options:
+          - { label: "All Properties", value: "all" }
+          - { label: "The Cozy Cactus", value: "cozy-cactus" }
+          - { label: "Terra Luz", value: "terra-luz" }
+          - { label: "The Sundune (PS Retreat)", value: "ps-retreat" }
+          - { label: "The Well", value: "the-well" }
+      - { label: "Read Time", name: "readTime", widget: "string", hint: "e.g. 5 min read", default: "5 min read" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "1-2 sentences shown in the blog card on the blog listing page." }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+
   - name: "properties"
     label: "Property Pages"
     description: "Edit SEO titles, descriptions, and copy for each property. Changes go live in ~2 minutes."
