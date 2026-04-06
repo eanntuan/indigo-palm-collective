@@ -8,8 +8,6 @@ backend:
 media_folder: "content/blog/images"
 public_folder: "/blog/images"
 
-site_url: https://indigopalm.co
-
 collections:
   - name: "blog"
     label: "Blog Posts"
