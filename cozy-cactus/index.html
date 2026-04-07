@@ -608,6 +608,29 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Availability Calendar */
+        .avail-calendar { margin: 1.5rem 0 1.25rem; }
+        .avail-calendar h4 { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; color: #1a1a1a; }
+        .cal-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+        .cal-nav button { background: none; border: none; font-size: 1.3rem; cursor: pointer; color: #333; padding: 0.25rem 0.5rem; line-height: 1; }
+        .cal-nav button:hover { color: #00877b; }
+        .cal-month-label { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 400; color: #1a1a1a; }
+        .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); row-gap: 2px; }
+        .cal-dow { text-align: center; font-size: 0.7rem; color: #aaa; padding-bottom: 0.4rem; }
+        .cal-day { text-align: center; padding: 0.45rem 0; font-size: 0.85rem; cursor: pointer; border-radius: 50%; transition: background 0.15s; }
+        .cal-day.available { font-weight: 700; color: #1a1a1a; }
+        .cal-day.available:hover { background: #f0ede6; }
+        .cal-day.booked { color: #ccc; text-decoration: line-through; cursor: default; font-weight: 400; }
+        .cal-day.past { color: #ddd; cursor: default; font-weight: 400; }
+        .cal-day.empty { cursor: default; }
+        .cal-day.sel-start { background: radial-gradient(circle 15px at center, #00877b 99%, transparent 100%), linear-gradient(to right, transparent 50%, rgba(0,135,123,0.12) 50%); color: white !important; font-weight: 700; border-radius: 0; }
+        .cal-day.sel-end { background: radial-gradient(circle 15px at center, #00877b 99%, transparent 100%), linear-gradient(to left, transparent 50%, rgba(0,135,123,0.12) 50%); color: white !important; font-weight: 700; border-radius: 0; }
+        .cal-day.sel-start.sel-end { background: radial-gradient(circle 15px at center, #00877b 99%, transparent 100%); }
+        .cal-day.in-range { background: rgba(0,135,123,0.12); border-radius: 0; color: #1a1a1a; font-weight: 700; }
+        .cal-legend { display: flex; gap: 1rem; margin-top: 0.6rem; font-size: 0.75rem; color: #888; }
+        .cal-legend span { display: flex; align-items: center; gap: 0.3rem; }
+        .cal-legend .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+        .cal-loading { text-align: center; padding: 1.5rem; color: #aaa; font-size: 0.85rem; }
     </style>
 </head>
 <body>
@@ -696,7 +719,20 @@
                     <span>Playful & Nurturing</span>
                 </div>
 
-                <a href="/booking-flow/" class="cta-button" onclick="gtag('event', 'book_now_click', {'property_name': 'Cozy Cactus', 'event_category': 'Booking', 'event_label': 'Property Page CTA', 'value': 1});">BOOK NOW</a>
+                <div class="avail-calendar">
+                    <h4>Check Availability</h4>
+                    <div class="cal-nav">
+                        <button id="cal-prev" type="button">&#8249;</button>
+                        <span class="cal-month-label" id="cal-month-label"></span>
+                        <button id="cal-next" type="button">&#8250;</button>
+                    </div>
+                    <div class="cal-grid" id="cal-grid"><div class="cal-loading">Loading...</div></div>
+                    <div class="cal-legend">
+                        <span><span class="dot" style="background:#00877b;"></span> Selected</span>
+                        <span><span class="dot" style="background:#ddd;"></span> Booked</span>
+                    </div>
+                </div>
+                <a href="/booking-flow/" id="book-now-btn" class="cta-button" onclick="gtag('event', 'book_now_click', {'property_name': 'Cozy Cactus', 'event_category': 'Booking', 'event_label': 'Property Page CTA', 'value': 1});">BOOK NOW</a>
 
                 <div class="color-palette">
                     <h4>Color Palette</h4>
@@ -977,6 +1013,88 @@
       if (ps[3]) ps[3].textContent = d.description_p4;
     }
   }).catch(()=>{});
+</script>
+<script>
+(function() {
+    const today = new Date(); today.setHours(0,0,0,0);
+    let calYear = today.getFullYear(), calMonth = today.getMonth();
+    let blockedDates = new Set(), checkInVal = '', checkOutVal = '';
+
+    async function init() {
+        try {
+            const res = await fetch('/api/availability?property=cozy-cactus');
+            const data = await res.json();
+            blockedDates = new Set(data.blockedDates || []);
+        } catch(e) { blockedDates = new Set(); }
+        render();
+    }
+
+    function render() {
+        const grid = document.getElementById('cal-grid');
+        const label = document.getElementById('cal-month-label');
+        if (!grid) return;
+        grid.innerHTML = '';
+        const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+        label.textContent = `${months[calMonth]} ${calYear}`;
+        ['S','M','T','W','T','F','S'].forEach(d => {
+            const h = document.createElement('div'); h.className = 'cal-dow'; h.textContent = d; grid.appendChild(h);
+        });
+        const firstDay = new Date(calYear, calMonth, 1).getDay();
+        for (let i = 0; i < firstDay; i++) {
+            const b = document.createElement('div'); b.className = 'cal-day empty'; grid.appendChild(b);
+        }
+        const days = new Date(calYear, calMonth + 1, 0).getDate();
+        for (let d = 1; d <= days; d++) {
+            const dateStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+            const dateObj = new Date(calYear, calMonth, d);
+            const isPast = dateObj < today, isBlocked = blockedDates.has(dateStr);
+            const cell = document.createElement('div');
+            cell.textContent = d;
+            let cls = 'cal-day';
+            if (isPast) cls += ' past';
+            else if (isBlocked) cls += ' booked';
+            else cls += ' available';
+            if (dateStr === checkInVal) cls += ' sel-start';
+            if (dateStr === checkOutVal) cls += ' sel-end';
+            if (checkInVal && checkOutVal && dateStr > checkInVal && dateStr < checkOutVal) cls += ' in-range';
+            cell.className = cls;
+            if (!isPast && !isBlocked) {
+                cell.addEventListener('click', () => {
+                    if (!checkInVal || (checkInVal && checkOutVal)) {
+                        checkInVal = dateStr; checkOutVal = '';
+                    } else if (dateStr > checkInVal) {
+                        checkOutVal = dateStr;
+                    } else {
+                        checkInVal = dateStr; checkOutVal = '';
+                    }
+                    updateBookBtn(); render();
+                });
+            }
+            grid.appendChild(cell);
+        }
+    }
+
+    function updateBookBtn() {
+        const btn = document.getElementById('book-now-btn');
+        if (!btn) return;
+        if (checkInVal && checkOutVal) {
+            btn.href = `/booking-flow/?property=cozy-cactus&checkIn=${checkInVal}&checkOut=${checkOutVal}`;
+            btn.textContent = 'BOOK NOW';
+        } else {
+            btn.href = '/booking-flow/?property=cozy-cactus';
+            btn.textContent = 'BOOK NOW';
+        }
+    }
+
+    document.getElementById('cal-prev').addEventListener('click', () => {
+        calMonth--; if (calMonth < 0) { calMonth = 11; calYear--; } render();
+    });
+    document.getElementById('cal-next').addEventListener('click', () => {
+        calMonth++; if (calMonth > 11) { calMonth = 0; calYear++; } render();
+    });
+
+    init();
+})();
 </script>
 </body>
 </html>
