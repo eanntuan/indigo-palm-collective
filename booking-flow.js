@@ -67,7 +67,7 @@ function renderPropertySelector() {
     Object.values(PROPERTIES).forEach(property => {
         const opt = document.createElement('option');
         opt.value = property.id;
-        opt.textContent = `${property.name} — ${property.location} · ${property.bedrooms}BR · ${property.minNights} night min`;
+        opt.textContent = `${property.name} — ${property.location} · ${property.bedrooms}BR/${property.bathrooms}BA · ${property.minNights} night min`;
         selector.appendChild(opt);
     });
     selector.addEventListener('change', () => {
