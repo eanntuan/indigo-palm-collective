@@ -1918,7 +1918,7 @@
                 <div id="ha-search-bar"></div>
             </div>
 
-            <script defer src="https://public.hostaway.com/js/haSearchBar.js" onload="haSearchBar({baseUrl:'https://app.hostaway.com/widgets/booking-engine',accountId:'45747',color:'#738561',rounded:true,openInNewTab:false,showLocation:true,font:{family:'Work Sans, sans-serif'}})"></script>
+            <!-- Hostaway script injected on modal open to avoid TBT on page load -->
 
             <div style="margin-top: 1.5rem; text-align: center;">
                 <p style="color: #777; font-size: 0.9rem;">Need help? Email us at <a href="mailto:indigopalmco@gmail.com" style="color: #738561;" onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Booking Widget Help Email', 'value': 1});">indigopalmco@gmail.com</a></p>
@@ -2266,9 +2266,17 @@
         const openBookingWidgetBtn = document.getElementById('openBookingWidget');
         const closeBookingWidgetBtn = document.getElementById('closeBookingWidget');
 
-        // Open booking widget
+        // Open booking widget — lazy-load Hostaway script on first open
+        let hostawayLoaded = false;
         openBookingWidgetBtn.addEventListener('click', () => {
             bookingWidget.classList.add('active');
+            if (!hostawayLoaded) {
+                hostawayLoaded = true;
+                const s = document.createElement('script');
+                s.src = 'https://public.hostaway.com/js/haSearchBar.js';
+                s.onload = () => haSearchBar({baseUrl:'https://app.hostaway.com/widgets/booking-engine',accountId:'45747',color:'#738561',rounded:true,openInNewTab:false,showLocation:true,font:{family:'Work Sans, sans-serif'}});
+                document.body.appendChild(s);
+            }
         });
 
         // Close booking widget
