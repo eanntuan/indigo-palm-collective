@@ -4,7 +4,7 @@
 // /api/pricing — fetches live base price from PriceLabs + applies peak multipliers
 // /api/booking — sends booking request email via Resend
 
-import { PROPERTIES } from '/booking-config.js?v=2';
+import { PROPERTIES } from '/booking-config.js?v=3';
 
 let selectedProperty = null;
 let blockedDates = new Set();
@@ -495,6 +495,15 @@ function renderPriceSummary() {
             <span>-$${discountAmount.toFixed(2)}</span>
         </div>` : '';
 
+    const checkIn  = document.getElementById('check-in').value;
+    const checkOut = document.getElementById('check-out').value;
+    const airbnbLink = selectedProperty?.airbnbListingId && checkIn && checkOut
+        ? `<a href="https://www.airbnb.com/rooms/${selectedProperty.airbnbListingId}?check_in=${checkIn}&check_out=${checkOut}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.35rem;font-size:0.82rem;color:#888;text-decoration:none;margin-top:0.6rem;">
+               Compare on Airbnb
+               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+           </a>`
+        : '';
+
     priceContent.innerHTML = `
         <div class="price-breakdown">
             <div class="price-row">
@@ -507,6 +516,7 @@ function renderPriceSummary() {
                 <strong>Total</strong>
                 <strong>$${finalTotal.toFixed(2)}</strong>
             </div>
+            ${airbnbLink}
         </div>
         <div style="margin-top:1rem;padding:0.85rem 1rem;background:#F5F3EE;border-radius:8px;font-size:0.82rem;line-height:1.6;color:#555;">
             <strong style="color:#2C2C2C;">Zelle (no fee):</strong> 214-606-1340 (MPT Industries)<br>

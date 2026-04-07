@@ -18,6 +18,7 @@ export const PROPERTIES = {
     basePrice: 250,
     cleaningFee: 250,
     taxRate: 0.12,
+    airbnbListingId: '610023395582313286',
     hostawayListingId: 123646,
     availabilitySource: 'hostaway'
   },
@@ -32,6 +33,7 @@ export const PROPERTIES = {
     basePrice: 225,
     cleaningFee: 250,
     taxRate: 0.12,
+    airbnbListingId: '716871660845992276',
     hostawayListingId: 123633,
     availabilitySource: 'hostaway'
   },
@@ -46,6 +48,7 @@ export const PROPERTIES = {
     basePrice: 180,
     cleaningFee: 200,
     taxRate: 0.135,
+    airbnbListingId: '1171049679026732503',
     icalUrl: 'https://api.hospitable.com/v1/properties/reservations.ics?key=1470484&token=d9035907-ba8e-4705-adf7-24e5ae53afe1&noCache',
     availabilitySource: 'ical'
   },
@@ -60,6 +63,7 @@ export const PROPERTIES = {
     basePrice: 300,
     cleaningFee: 200,
     taxRate: 0.135,
+    airbnbListingId: '868862893900280104',
     icalUrl: 'https://www.airbnb.com/calendar/ical/868862893900280104.ics?t=d0aa2a8c829445d695c19e79c80aa1f1',
     availabilitySource: 'ical'
   }
