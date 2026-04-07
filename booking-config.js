@@ -14,20 +14,22 @@ export const PROPERTIES = {
     bedrooms: 3,
     bathrooms: 2,
     maxGuests: 8,
-    basePrice: 250, // per night
+    minNights: 2,
+    basePrice: 250,
     cleaningFee: 250,
-    taxRate: 0.12, // 12% (adjust based on actual Indio tax rate)
+    taxRate: 0.12,
     hostawayListingId: 123646,
     availabilitySource: 'hostaway'
   },
   'casa-moto': {
     id: 'casa-moto',
-    name: 'Casa Moto',
+    name: 'Terra Luz',
     location: 'Indio, CA',
     bedrooms: 3,
     bathrooms: 2,
     maxGuests: 8,
-    basePrice: 225, // per night
+    minNights: 2,
+    basePrice: 225,
     cleaningFee: 250,
     taxRate: 0.12,
     hostawayListingId: 123633,
@@ -35,14 +37,15 @@ export const PROPERTIES = {
   },
   'ps-retreat': {
     id: 'ps-retreat',
-    name: 'PS Retreat',
+    name: 'The Sundune',
     location: 'Palm Springs, CA',
     bedrooms: 2,
     bathrooms: 2,
     maxGuests: 4,
-    basePrice: 180, // per night
+    minNights: 4,
+    basePrice: 180,
     cleaningFee: 200,
-    taxRate: 0.135, // Palm Springs is 13.5%
+    taxRate: 0.135,
     icalUrl: 'https://api.hospitable.com/v1/properties/reservations.ics?key=1470484&token=d9035907-ba8e-4705-adf7-24e5ae53afe1&noCache',
     availabilitySource: 'ical'
   },
@@ -53,7 +56,8 @@ export const PROPERTIES = {
     bedrooms: 1,
     bathrooms: 1,
     maxGuests: 2,
-    basePrice: 300, // per night
+    minNights: 28,
+    basePrice: 300,
     cleaningFee: 200,
     taxRate: 0.135,
     icalUrl: 'https://www.airbnb.com/calendar/ical/868862893900280104.ics?t=d0aa2a8c829445d695c19e79c80aa1f1',
