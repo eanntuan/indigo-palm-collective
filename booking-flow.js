@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPropertySelector();
     setupEventListeners();
     setMinDates();
+    readUrlParams();
 });
 
 const PROPERTY_IMAGES = {
@@ -64,26 +65,36 @@ const PROPERTY_IMAGES = {
 function renderPropertySelector() {
     const selector = document.getElementById('property-selector');
     Object.values(PROPERTIES).forEach(property => {
-        const card = document.createElement('div');
-        card.className = 'property-option';
-        card.dataset.propertyId = property.id;
-        const imgSrc = PROPERTY_IMAGES[property.id] || '';
-        card.innerHTML = `
-            ${imgSrc ? `<img class="property-option-photo" src="${imgSrc}" alt="${property.name}" loading="lazy">` : ''}
-            <div class="property-option-info">
-                <h3>${property.name}</h3>
-                <p class="property-option-meta">${property.location} &middot; ${property.bedrooms} bed/${property.bathrooms} bath &middot; up to ${property.maxGuests} guests</p>
-                <p class="property-option-price">from $${property.basePrice}/night</p>
-            </div>
-        `;
-        card.addEventListener('click', () => selectProperty(property.id));
-        selector.appendChild(card);
+        const opt = document.createElement('option');
+        opt.value = property.id;
+        opt.textContent = `${property.name} — ${property.location} · ${property.bedrooms}BR · from $${property.basePrice}/night`;
+        selector.appendChild(opt);
+    });
+    selector.addEventListener('change', () => {
+        if (selector.value) selectProperty(selector.value);
     });
 }
 
+function readUrlParams() {
+    const params = new URLSearchParams(window.location.search);
+    const prop = params.get('property');
+    const checkIn = params.get('checkIn');
+    const checkOut = params.get('checkOut');
+
+    if (prop && PROPERTIES[prop]) {
+        document.getElementById('property-selector').value = prop;
+        selectProperty(prop);
+    }
+    if (checkIn) {
+        document.getElementById('check-in').value = checkIn;
+    }
+    if (checkOut) {
+        document.getElementById('check-out').value = checkOut;
+        updatePrice();
+    }
+}
+
 function selectProperty(propertyId) {
-    document.querySelectorAll('.property-option').forEach(el => el.classList.remove('selected'));
-    document.querySelector(`[data-property-id="${propertyId}"]`).classList.add('selected');
     selectedProperty = PROPERTIES[propertyId];
 
     const guestsInput = document.getElementById('guests');
