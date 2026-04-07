@@ -123,25 +123,39 @@
             margin-left: 3px;
         }
 
-        .property-select {
-            width: 100%;
-            padding: 0.85rem 1rem;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-family: var(--font-sans);
-            font-size: 1rem;
-            color: #1a1a1a;
-            background: white;
-            cursor: pointer;
-            appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 1rem center;
+        .custom-select { position: relative; width: 100%; user-select: none; }
+        .custom-select-trigger {
+            display: flex; align-items: center; gap: 0.75rem;
+            padding: 0.75rem 1rem; border: 2px solid #e0e0e0; border-radius: 8px;
+            background: white; cursor: pointer; font-family: var(--font-sans);
+            font-size: 0.95rem; color: #1a1a1a; transition: border-color 0.2s;
         }
-        .property-select:focus {
-            outline: none;
-            border-color: var(--sage);
+        .custom-select-trigger:after {
+            content: ''; margin-left: auto; flex-shrink: 0;
+            width: 10px; height: 6px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
         }
+        .custom-select.open .custom-select-trigger { border-color: var(--sage); border-radius: 8px 8px 0 0; }
+        .custom-select-trigger img { width: 40px; height: 40px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
+        .custom-select-trigger .trigger-placeholder { color: #aaa; }
+        .custom-select-options {
+            display: none; position: absolute; top: 100%; left: 0; right: 0; z-index: 100;
+            border: 2px solid var(--sage); border-top: none; border-radius: 0 0 8px 8px;
+            background: white; box-shadow: 0 8px 24px rgba(0,0,0,0.1); overflow: hidden;
+        }
+        .custom-select.open .custom-select-options { display: block; }
+        .custom-option {
+            display: flex; align-items: center; gap: 0.75rem;
+            padding: 0.75rem 1rem; cursor: pointer; transition: background 0.15s;
+            border-bottom: 1px solid #f0ede6;
+        }
+        .custom-option:last-child { border-bottom: none; }
+        .custom-option:hover { background: #faf8f5; }
+        .custom-option.selected { background: #f5f3ee; }
+        .custom-option img { width: 40px; height: 40px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
+        .custom-option-text { display: flex; flex-direction: column; gap: 0.15rem; }
+        .custom-option-name { font-weight: 600; font-size: 0.9rem; color: #1a1a1a; }
+        .custom-option-meta { font-size: 0.78rem; color: #888; }
 
         .date-inputs {
             display: grid;
@@ -450,10 +464,12 @@
                 <!-- Property Selection -->
                 <div class="form-section">
                     <label>Select Property</label>
-                    <select id="property-selector" class="property-select">
-                        <option value="">Select a property...</option>
-                    </select>
-                    <img id="property-hero" src="" alt="" style="display:none;width:100%;height:220px;object-fit:cover;border-radius:8px;margin-top:0.75rem;">
+                    <div class="custom-select" id="property-selector">
+                        <div class="custom-select-trigger" id="property-trigger">
+                            <span class="trigger-placeholder">Select a property...</span>
+                        </div>
+                        <div class="custom-select-options" id="property-options"></div>
+                    </div>
                 </div>
 
                 <!-- Dates -->

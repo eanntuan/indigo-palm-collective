@@ -63,16 +63,25 @@ const PROPERTY_IMAGES = {
 };
 
 function renderPropertySelector() {
-    const selector = document.getElementById('property-selector');
+    const trigger = document.getElementById('property-trigger');
+    const optionsEl = document.getElementById('property-options');
+    const container = document.getElementById('property-selector');
+
     Object.values(PROPERTIES).forEach(property => {
-        const opt = document.createElement('option');
-        opt.value = property.id;
-        opt.textContent = `${property.name} — ${property.location} · ${property.bedrooms}BR/${property.bathrooms}BA · ${property.minNights} night min`;
-        selector.appendChild(opt);
+        const item = document.createElement('div');
+        item.className = 'custom-option';
+        item.dataset.value = property.id;
+        const img = PROPERTY_IMAGES[property.id] ? `<img src="${PROPERTY_IMAGES[property.id]}" alt="${property.name}" loading="lazy">` : '';
+        item.innerHTML = `${img}<div class="custom-option-text"><span class="custom-option-name">${property.name}</span><span class="custom-option-meta">${property.bedrooms}BR/${property.bathrooms}BA &middot; ${property.minNights} night min</span></div>`;
+        item.addEventListener('click', () => {
+            selectProperty(property.id);
+            container.classList.remove('open');
+        });
+        optionsEl.appendChild(item);
     });
-    selector.addEventListener('change', () => {
-        if (selector.value) selectProperty(selector.value);
-    });
+
+    trigger.addEventListener('click', () => container.classList.toggle('open'));
+    document.addEventListener('click', e => { if (!container.contains(e.target)) container.classList.remove('open'); });
 }
 
 function readUrlParams() {
@@ -82,7 +91,6 @@ function readUrlParams() {
     const checkOut = params.get('checkOut');
 
     if (prop && PROPERTIES[prop]) {
-        document.getElementById('property-selector').value = prop;
         selectProperty(prop);
     }
     if (checkIn) {
@@ -96,13 +104,17 @@ function readUrlParams() {
 
 function selectProperty(propertyId) {
     selectedProperty = PROPERTIES[propertyId];
-    const hero = document.getElementById('property-hero');
-    if (hero) {
-        const src = PROPERTY_IMAGES[propertyId] || '';
-        hero.src = src;
-        hero.alt = selectedProperty.name;
-        hero.style.display = src ? 'block' : 'none';
+
+    // Update trigger to show selected property
+    const trigger = document.getElementById('property-trigger');
+    if (trigger) {
+        const img = PROPERTY_IMAGES[propertyId] ? `<img src="${PROPERTY_IMAGES[propertyId]}" alt="${selectedProperty.name}">` : '';
+        trigger.innerHTML = `${img}<span>${selectedProperty.name}</span>`;
     }
+    // Mark selected option
+    document.querySelectorAll('.custom-option').forEach(el => {
+        el.classList.toggle('selected', el.dataset.value === propertyId);
+    });
 
     const guestsInput = document.getElementById('guests');
     guestsInput.max = selectedProperty.maxGuests;
