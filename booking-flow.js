@@ -4,7 +4,7 @@
 // /api/pricing — fetches live base price from PriceLabs + applies peak multipliers
 // /api/booking — sends booking request email via Resend
 
-import { PROPERTIES } from './booking-config.js';
+import { PROPERTIES } from '/booking-config.js?v=2';
 
 let selectedProperty = null;
 let blockedDates = new Set();
