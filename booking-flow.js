@@ -96,6 +96,13 @@ function readUrlParams() {
 
 function selectProperty(propertyId) {
     selectedProperty = PROPERTIES[propertyId];
+    const hero = document.getElementById('property-hero');
+    if (hero) {
+        const src = PROPERTY_IMAGES[propertyId] || '';
+        hero.src = src;
+        hero.alt = selectedProperty.name;
+        hero.style.display = src ? 'block' : 'none';
+    }
 
     const guestsInput = document.getElementById('guests');
     guestsInput.max = selectedProperty.maxGuests;
