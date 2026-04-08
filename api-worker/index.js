@@ -746,6 +746,7 @@ async function handleApprove(request, env) {
         checkOut: booking.checkOut,
         pricing: approvedPricing,
         poolHeat: booking.poolHeat,
+        poolHeatNights: booking.poolHeatNights || 0,
         poolHeatCost: booking.poolHeatCost || 0,
         discountAmount: (parseFloat(flatDiscount) || 0) + (booking.discountAmount || 0),
         discountCode: booking.discountCode,
@@ -1259,7 +1260,7 @@ async function handleDiscount(url, env) {
   }), { status: 200, headers: CORS_HEADERS });
 }
 
-async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, poolHeat, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate }) {
+async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, poolHeat, poolHeatNights, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate }) {
   // Fetch first location
   const locRes = await fetch('https://connect.squareup.com/v2/locations', {
     headers: { 'Authorization': `Bearer ${accessToken}`, 'Square-Version': '2024-01-18' },
@@ -1284,8 +1285,11 @@ async function createSquarePaymentLink(accessToken, { property, checkIn, checkOu
   ];
 
   if (poolHeat && poolHeatCost > 0) {
+    const poolHeatLabel = poolHeatNights >= 7
+      ? 'Pool heating (7+ nights flat rate)'
+      : `Pool heating (${poolHeatNights} x $75)`;
     lineItems.push({
-      name: 'Pool heating',
+      name: poolHeatLabel,
       quantity: '1',
       base_price_money: money(poolHeatCost),
     });

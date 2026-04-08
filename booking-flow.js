@@ -483,9 +483,12 @@ function renderPriceSummary() {
         if (poolHeatSelected) syncPoolHeatNightsMax();
     }
 
+    const poolHeatLabel = poolHeatNights >= 7
+        ? `Pool heating (7+ nights flat rate)`
+        : `Pool heating (${poolHeatNights} &times; $75)`;
     const poolHeatRow = poolHeatSelected && poolHeatCost > 0 ? `
         <div class="price-row">
-            <span>Pool heating</span>
+            <span>${poolHeatLabel}</span>
             <span>$${poolHeatCost.toFixed(2)}</span>
         </div>` : '';
 
