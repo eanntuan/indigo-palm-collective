@@ -1227,6 +1227,30 @@
             border: none;
         }
 
+        .yt-facade {
+            position: relative;
+            cursor: pointer;
+            background: #000;
+            width: 100%;
+            height: 100%;
+        }
+        .yt-facade img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+            display: block;
+        }
+        .yt-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+        .yt-facade:hover .yt-play-btn { opacity: 0.8; }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
@@ -1760,7 +1784,7 @@
     <section class="hero">
         <!-- Video Background -->
         <div class="hero-video">
-            <video autoplay muted loop playsinline preload="none" poster="/hero-poster.jpg" aria-label="Desert vacation home pool video showcasing Cozy Cactus property in Indio">
+            <video autoplay muted loop playsinline preload="none" poster="/hero-poster.webp" aria-label="Desert vacation home pool video showcasing Cozy Cactus property in Indio">
                 <source src="Cozy Cactus/the-cozy-cactus-compressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -1839,7 +1863,7 @@
             <!-- PS Retreat -->
             <a href="the-sundune.html" class="property-card-link">
                 <div class="property-card ps-retreat">
-                    <div class="property-image" style="background: linear-gradient(rgba(110, 144, 173, 0.2), rgba(110, 144, 173, 0.2)), url('../PS Retreat/IMG_3334.JPG'); background-size: cover; background-position: center;" role="img" aria-label="Mid-century modern bedroom at PS Retreat vacation rental in Palm Springs with turquoise accents">
+                    <div class="property-image" style="background: linear-gradient(rgba(110, 144, 173, 0.2), rgba(110, 144, 173, 0.2)), url('../PS Retreat/IMG_3334.JPG'); background-image: linear-gradient(rgba(110, 144, 173, 0.2), rgba(110, 144, 173, 0.2)), image-set(url('../PS Retreat/IMG_3334.webp') type('image/webp'), url('../PS Retreat/IMG_3334.JPG') type('image/jpeg')); background-size: cover; background-position: center;" role="img" aria-label="Mid-century modern bedroom at PS Retreat vacation rental in Palm Springs with turquoise accents">
                         <div class="property-tag">MID-CENTURY MODERN</div>
                     </div>
                     <div class="property-content">
@@ -1860,7 +1884,7 @@
             <!-- The Well -->
             <a href="the-well.html" class="property-card-link">
                 <div class="property-card the-well">
-                    <div class="property-image" style="background: linear-gradient(rgba(115, 133, 97, 0.3), rgba(115, 133, 97, 0.3)), url('../The Well/1TW_4W6A0294.jpg'); background-size: cover; background-position: center;" role="img" aria-label="Southwestern minimalist living room at The Well vacation rental in Palm Springs with sage green accents">
+                    <div class="property-image" style="background: linear-gradient(rgba(115, 133, 97, 0.3), rgba(115, 133, 97, 0.3)), url('../The Well/1TW_4W6A0294.jpg'); background-image: linear-gradient(rgba(115, 133, 97, 0.3), rgba(115, 133, 97, 0.3)), image-set(url('../The Well/1TW_4W6A0294.webp') type('image/webp'), url('../The Well/1TW_4W6A0294.jpg') type('image/jpeg')); background-size: cover; background-position: center;" role="img" aria-label="Southwestern minimalist living room at The Well vacation rental in Palm Springs with sage green accents">
                         <div class="property-tag">WELLNESS RETREAT</div>
                     </div>
                     <div class="property-content">
@@ -1918,7 +1942,7 @@
             <div class="booking-properties-grid">
                 <!-- The Cozy Cactus -->
                 <a href="https://www.airbnb.com/h/cozy-cactus" target="_blank" class="booking-property-card" style="text-decoration: none; cursor: pointer;" onclick="gtag('event', 'booking_click', {'property_name': 'Cozy Cactus', 'event_category': 'Booking', 'event_label': 'Check Availability'});">
-                    <div class="booking-property-image" style="background-image: url('email-images/cozy-cactus.jpg');" role="img" aria-label="Cozy Cactus family vacation rental with pool in Indio"></div>
+                    <div class="booking-property-image" style="background-image: url('email-images/cozy-cactus.jpg'); background-image: image-set(url('email-images/cozy-cactus.webp') type('image/webp'), url('email-images/cozy-cactus.jpg') type('image/jpeg'));" role="img" aria-label="Cozy Cactus family vacation rental with pool in Indio"></div>
                     <div class="booking-property-info">
                         <h3>The Cozy Cactus</h3>
                         <p class="location">Indio, CA</p>
@@ -2000,16 +2024,27 @@
     <section class="video-section">
         <h2>Experience Indigo Palm Collective</h2>
         <div class="video-container">
-            <iframe
-                src="https://www.youtube.com/embed/CSY2yD4Yxmg?rel=0&modestbranding=1"
-                title="Indigo Palm Collective Video"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-            </iframe>
+            <div class="yt-facade" onclick="loadYT(this)" onkeydown="if(event.key==='Enter')loadYT(this)" data-id="CSY2yD4Yxmg" role="button" tabindex="0" aria-label="Play Indigo Palm Collective video">
+                <img src="https://i.ytimg.com/vi/CSY2yD4Yxmg/maxresdefault.jpg" alt="Indigo Palm Collective desert vacation home video" loading="lazy" width="1280" height="720">
+                <div class="yt-play-btn">
+                    <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+                </div>
+            </div>
         </div>
     </section>
+    <script>
+    function loadYT(el) {
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube.com/embed/' + el.dataset.id + '?rel=0&modestbranding=1&autoplay=1';
+        f.title = 'Indigo Palm Collective Video';
+        f.frameBorder = '0';
+        f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        f.referrerPolicy = 'strict-origin-when-cross-origin';
+        f.allowFullscreen = true;
+        f.style.cssText = 'width:100%;height:100%;border:none;';
+        el.replaceWith(f);
+    }
+    </script>
 
     <!-- FAQ Section -->
     <section id="faq" class="faq-section">
