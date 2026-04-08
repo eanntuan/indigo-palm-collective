@@ -4,7 +4,7 @@ date: 2026-03-01
 metaDescription: "Hotels, camping, or vacation rental near the polo grounds? An honest Coachella 2026 accommodation breakdown from someone who actually lives here."
 ogImage: /blog/images/cozy-cactus-pool.jpg
 heroImage: /blog/images/cozy-cactus-pool.jpg
-heroAlt: "Private pool at a vacation rental near the Coachella festival grounds in Indio CA"
+heroAlt: "Vacation rental near the Coachella festival grounds in Indio CA"
 keywords:
   - Coachella 2026
   - where to stay Coachella
