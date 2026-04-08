@@ -871,8 +871,8 @@
             transition: opacity 0.2s;
         }
         .contact-btn:hover { opacity: 0.85; }
-        .contact-btn.email { background: white; color: var(--terracotta); }
-        .contact-btn.instagram { background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.6); }
+        .contact-btn.email { background: rgba(255,255,255,0.15); color: #f5f3ee; border: 1px solid rgba(255,255,255,0.3); }
+        .contact-btn.instagram { background: rgba(255,255,255,0.1); color: #f5f3ee; border: 1px solid rgba(255,255,255,0.3); }
 
         @keyframes slideInUp {
             from {
@@ -2181,29 +2181,22 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Get in Touch</h2>
-        <p>Questions about a property, a booking, or just want to say hi. We're real people and we actually respond.</p>
-        <div class="contact-links">
-            <a href="mailto:indigopalmco@gmail.com" class="contact-btn email" onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Contact Section'});">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                indigopalmco@gmail.com
-            </a>
-            <a href="https://www.instagram.com/indigopalmco/" target="_blank" rel="noopener noreferrer" class="contact-btn instagram" onclick="gtag('event', 'social_click', {'event_category': 'Contact', 'event_label': 'Instagram'});">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                @indigopalmco
-            </a>
-        </div>
-    </section>
-
-    <footer>
+    <footer id="contact">
         <div class="footer-content">
             <div class="logo">INDIGO PALM COLLECTIVE</div>
             <p class="tagline">Experiential stays that ignite inner energy through outward care</p>
-            <p>&copy; 2026 Indigo Palm Collective. Desert homes across Coachella Valley.</p>
-            <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.6;">
+            <div class="contact-links" style="margin: 1.5rem 0;">
+                <a href="mailto:indigopalmco@gmail.com" class="contact-btn email" onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Footer'});">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    indigopalmco@gmail.com
+                </a>
+                <a href="https://www.instagram.com/indigopalmco/" target="_blank" rel="noopener noreferrer" class="contact-btn instagram" onclick="gtag('event', 'social_click', {'event_category': 'Contact', 'event_label': 'Footer Instagram'});">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    @indigopalmco
+                </a>
+            </div>
+            <p style="font-size: 0.9rem; opacity: 0.7;">&copy; 2026 Indigo Palm Collective. Desert homes across Coachella Valley.</p>
+            <p style="margin-top: 0.75rem; font-size: 0.85rem; opacity: 0.5;">
                 Photography by <a href="https://www.thirdwallphoto.com/" target="_blank" style="color: inherit; text-decoration: underline;">Third Wall</a>
             </p>
         </div>
