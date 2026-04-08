@@ -2448,5 +2448,23 @@
         });
     </script>
 
+    <!-- Admin debug badge: append ?debug=1 to any URL to see cache status -->
+    <script>
+    if (new URLSearchParams(window.location.search).get('debug') === '1') {
+        fetch(window.location.href, {method: 'HEAD'}).then(function(r) {
+            var modified = r.headers.get('last-modified');
+            var cache = r.headers.get('cf-cache-status') || 'n/a';
+            var age = r.headers.get('age') || '0';
+            var badge = document.createElement('div');
+            badge.style.cssText = 'position:fixed;bottom:1rem;right:1rem;background:#111;color:#4eff91;font-family:monospace;font-size:11px;padding:8px 12px;border-radius:6px;z-index:99999;line-height:1.6;box-shadow:0 2px 8px rgba(0,0,0,0.5);';
+            badge.innerHTML = '<strong>CACHE DEBUG</strong><br>'
+                + 'Last-Modified: ' + (modified ? new Date(modified).toLocaleString() : 'n/a') + '<br>'
+                + 'CF-Cache: ' + cache + '<br>'
+                + 'Age: ' + age + 's';
+            document.body.appendChild(badge);
+        });
+    }
+    </script>
+
 </body>
 </html>
