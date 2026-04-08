@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const PROPERTY_IMAGES = {
     'cozy-cactus': '/email-images/cozy-cactus.jpg',
-    'casa-moto':   '/email-images/casa-moto.jpg',
+    'terra-luz':   '/email-images/casa-moto.jpg',
     'ps-retreat':  '/email-images/ps-retreat.jpg',
     'the-well':    '/email-images/the-well.jpg',
 };
@@ -126,7 +126,7 @@ function selectProperty(propertyId) {
 
     // Pool heat: show only for Casa Moto
     const poolSection = document.getElementById('pool-heat-section');
-    if (propertyId === 'casa-moto') {
+    if (propertyId === 'terra-luz') {
         poolSection.style.display = 'block';
     } else {
         poolSection.style.display = 'none';

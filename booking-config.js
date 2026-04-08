@@ -22,8 +22,8 @@ export const PROPERTIES = {
     hostawayListingId: 123646,
     availabilitySource: 'hostaway'
   },
-  'casa-moto': {
-    id: 'casa-moto',
+  'terra-luz': {
+    id: 'terra-luz',
     name: 'Terra Luz',
     location: 'Indio, CA',
     bedrooms: 3,

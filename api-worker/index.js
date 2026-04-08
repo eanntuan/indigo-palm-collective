@@ -19,6 +19,7 @@ const CORS_HEADERS = {
 
 const ICAL_URLS = {
   'cozy-cactus': 'https://www.airbnb.com/calendar/ical/610023395582313286.ics?t=e3b2c94c1a67433bb8d523906b3e5df1',
+  'terra-luz':   'https://www.airbnb.com/calendar/ical/716871660845992276.ics?t=74de1981b38c40fbb8800fb4550371d6',
   'casa-moto':   'https://www.airbnb.com/calendar/ical/716871660845992276.ics?t=74de1981b38c40fbb8800fb4550371d6',
   'ps-retreat':  'https://www.airbnb.com/calendar/ical/1171049679026732503.ics?t=2e21a1a79aee49afaf440d1093afc318',
   'the-well':    'https://www.airbnb.com/calendar/ical/868862893900280104.ics?t=d0aa2a8c829445d695c19e79c80aa1f1',
@@ -26,6 +27,7 @@ const ICAL_URLS = {
 
 const PRICELABS_LISTINGS = {
   'cozy-cactus': { id: '123646',             pms: 'hostaway' },
+  'terra-luz':   { id: '123633',             pms: 'hostaway' },
   'casa-moto':   { id: '123633',             pms: 'hostaway' },
   'ps-retreat':  { id: '1470484',            pms: 'smartbnb' },
   'the-well':    { id: '868862893900280104', pms: 'airbnb'   },
@@ -70,11 +72,20 @@ const PROPERTY_INFO = {
 // ps-retreat is on Hospitable; the-well is Airbnb-only
 const HOSTAWAY_LISTING_IDS = {
   'cozy-cactus': 123646,
+  'terra-luz':   123633,
   'casa-moto':   123633,
+};
+
+const PROPERTY_URL_SLUGS = {
+  'cozy-cactus': 'cozy-cactus',
+  'casa-moto':   'terra-luz',
+  'ps-retreat':  'ps-retreat',
+  'the-well':    'the-well',
 };
 
 const PROPERTY_CONFIG = {
   'cozy-cactus': { basePrice: 250, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
+  'terra-luz':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
   'casa-moto':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
   'ps-retreat':  { basePrice: 280, cleaningFee: 200, taxRate: 0.135, maxGuests: 4, minNights: 2 },
   'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 8, minNights: 2 },
@@ -550,7 +561,7 @@ async function handleBooking(request, env) {
       ${detailRow('Check-in', fmtDate(checkIn))}
       ${detailRow('Check-out', fmtDate(checkOut))}
       ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
-      ${poolHeat ? detailRow('Pool Heat', `${poolHeatNights} night${poolHeatNights !== 1 ? 's' : ''} &mdash; $${(poolHeatCost || 0).toFixed(2)}`) : ''}
+      ${poolHeat ? detailRow('Pool Heat', `${poolHeatNights} night${poolHeatNights !== 1 ? 's' : ''}: $${(poolHeatCost || 0).toFixed(2)}`) : ''}
       ${discountLabel ? detailRow('Discount', `<span style="color:#607c67;">-${discountLabel}</span>`) : ''}
       ${detailRow('Est. Total', priceTotal)}
     </table>
@@ -568,8 +579,10 @@ async function handleBooking(request, env) {
     </table>
   `);
 
-  // Guest email (no payment link — sent after approval)
+  // Guest email (no payment link, sent after approval)
+  const guestHeroUrl = await getPropertyHeroImageUrl(propertyId, env);
   const guestEmailHtml = emailWrapper(`
+    ${guestHeroUrl ? `<img src="${guestHeroUrl}" alt="${property}" width="560" style="display:block;width:100%;max-width:560px;height:220px;object-fit:cover;border-radius:8px;margin-bottom:28px;" />` : ''}
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
     <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">The desert's holding your spot.</h1>
     <p style="margin:0 0 14px;font-size:15px;color:#555;line-height:1.7;">Hi ${name.split(' ')[0]}, we got your request for <strong>${property}</strong>, ${fmtDate(checkIn)} to ${fmtDate(checkOut)}. We'll follow up within 24 hours with a payment link to make it official.</p>
@@ -597,7 +610,7 @@ async function handleBooking(request, env) {
       sendEmail(env.RESEND_API_KEY, {
         from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
         to:   email,
-        subject: `Booking Request Received — ${property}`,
+        subject: `Booking Request Received: ${property}`,
         html:  guestEmailHtml,
       }),
     ]);
@@ -748,7 +761,9 @@ async function handleApprove(request, env) {
   const cardTotal  = `$${ccTotal.toFixed(2)}`;
 
   // Send payment email to guest
+  const approveHeroUrl = await getPropertyHeroImageUrl(booking.propertyId, env);
   const guestPaymentHtml = emailWrapper(`
+    ${approveHeroUrl ? `<img src="${approveHeroUrl}" alt="${booking.property}" width="560" style="display:block;width:100%;max-width:560px;height:220px;object-fit:cover;border-radius:8px;margin-bottom:28px;" />` : ''}
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Payment Request</p>
     <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Your dates are approved.</h1>
     <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Hi ${booking.name.split(' ')[0]}, we've approved your request for <strong>${booking.property}</strong>. Complete your payment to lock in your dates.</p>
@@ -761,12 +776,12 @@ async function handleApprove(request, env) {
       ${detailRow('Total', `<strong>${zelleTotal}</strong>`)}
     </table>
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:16px;">
-      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Zelle (no fee) — ${zelleTotal}</p>
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Zelle (no fee): ${zelleTotal}</p>
       <p style="margin:0;font-size:14px;color:#555;">Send to <strong>214-606-1340</strong> (MPT Industries) and reply to this email to confirm.</p>
     </div>
     ${paymentLink ? `
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;text-align:center;">
-      <p style="margin:0 0 12px;font-size:13px;font-weight:600;color:#2C2C2C;">Credit Card via Square — ${cardTotal} (includes 3% fee)</p>
+      <p style="margin:0 0 12px;font-size:13px;font-weight:600;color:#2C2C2C;">Credit Card via Square: ${cardTotal} (includes 3% fee)</p>
       <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Pay by Card &rarr;</a>
     </div>` : ''}
     ${notesToGuest ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notesToGuest}</p></div>` : ''}
@@ -777,7 +792,7 @@ async function handleApprove(request, env) {
     await sendEmail(env.RESEND_API_KEY, {
       from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
       to:   booking.email,
-      subject: `Your dates are approved — payment link inside`,
+      subject: `Your dates are approved: payment link inside`,
       html:  guestPaymentHtml,
     });
 
@@ -826,13 +841,14 @@ async function handleConfirm(request, env) {
     (new Date(checkOut + 'T00:00:00') - new Date(checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24)
   );
 
-  const html = buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes });
+  const confirmHeroUrl = await getPropertyHeroImageUrl(propertyId, env);
+  const html = buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl: confirmHeroUrl });
 
   try {
     await sendEmail(env.RESEND_API_KEY, {
       from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
       to: email,
-      subject: `You're booked — ${info.name}`,
+      subject: `You're booked at ${info.name}`,
       html,
     });
 
@@ -951,12 +967,12 @@ async function createHostawayReservation(env, { propertyId, name, email, checkIn
   return data.result?.id ?? null;
 }
 
-function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes }) {
+function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl }) {
   const firstName = name.split(' ')[0];
 
   const linksSection = [
     info.welcomeGuide
-      ? `<a href="${info.welcomeGuide}" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Welcome Guide &rarr;</a><p style="margin:0 0 16px;font-size:13px;color:#888;">Check-in, parking, house rules, community amenities — it's all in here.</p>`
+      ? `<a href="${info.welcomeGuide}" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Welcome Guide &rarr;</a><p style="margin:0 0 16px;font-size:13px;color:#888;">Check-in, parking, house rules, community amenities. It's all in here.</p>`
       : '',
     `<a href="https://indigopalm.co" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">indigopalm.co &rarr;</a><p style="margin:0 0 16px;font-size:13px;color:#888;">Explore the other properties and the blog.</p>`,
     info.airbnb
@@ -965,7 +981,7 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
   ].filter(Boolean).join('');
 
   return emailWrapper(`
-    ${info.photo ? `<a href="${info.mapsUrl}" target="_blank"><img src="${info.photo}" alt="${info.name}" width="560" style="display:block;width:100%;max-width:560px;height:220px;object-fit:cover;border-radius:8px;margin-bottom:28px;" /></a>` : ''}
+    ${(heroUrl || info.photo) ? `<a href="${info.mapsUrl}" target="_blank"><img src="${heroUrl || info.photo}" alt="${info.name}" width="560" style="display:block;width:100%;max-width:560px;height:220px;object-fit:cover;border-radius:8px;margin-bottom:28px;" /></a>` : ''}
 
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
     <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">The desert is yours, ${firstName}.</h1>
@@ -977,7 +993,7 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
       ${detailRow('Check-out', fmtDate(checkOut))}
       ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
       ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
-      ${detailRow('Total Paid', totalPaid ? `$${parseFloat(totalPaid).toFixed(2)}` : '—')}
+      ${detailRow('Total Paid', totalPaid ? `$${parseFloat(totalPaid).toFixed(2)}` : 'N/A')}
     </table>
 
     <div style="padding:24px;background:#F5F3EE;border-radius:8px;margin-bottom:24px;">
@@ -1037,7 +1053,7 @@ async function handleCreateLease(request, env) {
     await sendEmail(env.RESEND_API_KEY, {
       from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
       to: email,
-      subject: `Rental Agreement — ${info.name}`,
+      subject: `Rental Agreement: ${info.name}`,
       html: emailWrapper(`
         <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
         <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:400;color:#2C2C2C;">One thing before you're in.</h1>
@@ -1126,13 +1142,13 @@ async function handleSignLease(request, env) {
       sendEmail(env.RESEND_API_KEY, {
         from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
         to: lease.email,
-        subject: `Your signed rental agreement — ${info.name}`,
+        subject: `Your signed rental agreement: ${info.name}`,
         html: signedHtml,
       }),
       sendEmail(env.RESEND_API_KEY, {
         from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
         to: 'indigopalmco@gmail.com',
-        subject: `Lease signed: ${lease.name} — ${info.name} (${fmtDate(lease.checkIn)})`,
+        subject: `Lease signed: ${lease.name}, ${info.name} (${fmtDate(lease.checkIn)})`,
         html: signedHtml,
       }),
     ]);
@@ -1255,23 +1271,15 @@ async function createSquarePaymentLink(accessToken, { property, checkIn, checkOu
 
   const nights = pricing.nights;
   const money = (dollars) => ({ amount: Math.round(dollars * 100), currency: 'USD' });
+  const nightlyRate = nights > 0 ? Math.round(pricing.subtotal / nights) : 0;
+  const rateLabel = nightlyRate > 0 ? `$${nightlyRate}/night x ${nights}` : `${nights} night${nights !== 1 ? 's' : ''}`;
 
   const lineItems = [
     {
-      name: `${property} — ${nights} night${nights !== 1 ? 's' : ''}`,
+      name: `${property}: ${rateLabel}`,
       quantity: '1',
-      base_price_money: money(pricing.subtotal),
+      base_price_money: money(pricing.total),
       note: `${fmtDate(checkIn)} to ${fmtDate(checkOut)}`,
-    },
-    {
-      name: 'Cleaning fee',
-      quantity: '1',
-      base_price_money: money(pricing.cleaningFee),
-    },
-    {
-      name: `Taxes (${(pricing.taxRate * 100).toFixed(1)}%)`,
-      quantity: '1',
-      base_price_money: money(pricing.taxAmount),
     },
   ];
 
@@ -1323,6 +1331,28 @@ async function createSquarePaymentLink(accessToken, { property, checkIn, checkOu
 
   const data = await res.json();
   return data.payment_link?.url;
+}
+
+async function getPropertyHeroImageUrl(propertyId, env) {
+  const cacheKey = `hero-img:${propertyId}`;
+  if (env.BOOKINGS) {
+    const cached = await env.BOOKINGS.get(cacheKey);
+    if (cached) return cached;
+  }
+  const slug = PROPERTY_URL_SLUGS[propertyId] || propertyId;
+  try {
+    const res = await fetch(`https://indigopalm.co/${slug}/`);
+    const html = await res.text();
+    const match = html.match(/<meta[^>]+property="og:image"[^>]+content="([^"]+)"/i)
+                  || html.match(/<meta[^>]+content="([^"]+)"[^>]+property="og:image"/i);
+    if (match?.[1]) {
+      if (env.BOOKINGS) await env.BOOKINGS.put(cacheKey, match[1], { expirationTtl: 86400 });
+      return match[1];
+    }
+  } catch (e) {
+    console.error('Hero image fetch failed:', e);
+  }
+  return PROPERTY_INFO[propertyId]?.photo || null;
 }
 
 async function sendEmail(apiKey, { from, to, subject, html, reply_to }) {
