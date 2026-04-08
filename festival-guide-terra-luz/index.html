@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Guide: Terra Luz | Indigo Palm Collective</title>
+    <meta name="description" content="Your complete festival guide from Terra Luz in Indio. Walking, golf carts, road closures, and everything you need for Coachella and Stagecoach.">
+    <link rel="canonical" href="https://indigopalm.co/festival-guide-terra-luz/">
+    <meta property="og:title" content="Festival Guide: Terra Luz">
+    <meta property="og:description" content="Your complete festival guide from Terra Luz in Indio. Walking, golf carts, road closures, and everything you need for Coachella and Stagecoach.">
+    <meta property="og:url" content="https://indigopalm.co/festival-guide-terra-luz/">
+    <meta property="og:image" content="https://indigopalm.co/images/festival-coachella-aerial.jpg">
+    <meta name="robots" content="noindex">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap"></noscript>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --terracotta: #B67550;
+            --clay: #8B4513;
+            --cream: #F6F1E9;
+            --charcoal: #2C2C2C;
+            --sage: #607c67;
+            --kahlo: #325CD9;
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Work Sans', sans-serif;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-sans); color: var(--charcoal); background: var(--cream); line-height: 1.7; }
+
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.96); backdrop-filter: blur(10px); padding: 1.2rem 5%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--charcoal); text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--charcoal); font-weight: 500; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--terracotta); }
+
+        .hero {
+            margin-top: 64px;
+            position: relative;
+            height: 520px;
+            overflow: hidden;
+        }
+        .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.55) 100%);
+            display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .hero-overlay .eyebrow { color: rgba(255,255,255,0.8); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600; margin-bottom: 0.75rem; }
+        .hero-overlay h1 { font-family: var(--font-serif); font-size: 3.5rem; color: white; font-weight: 600; line-height: 1.15; margin-bottom: 1rem; }
+        .hero-overlay p { color: rgba(255,255,255,0.9); font-size: 1.1rem; max-width: 560px; }
+
+        .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+
+        .section-nav { background: white; border-bottom: 1px solid rgba(0,0,0,0.08); position: sticky; top: 64px; z-index: 900; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+        .section-nav-inner { display: flex; padding: 0 2rem; max-width: 860px; margin: 0 auto; justify-content: center; }
+        .section-nav a { display: inline-block; padding: 0.9rem 1.1rem; font-size: 0.82rem; font-weight: 600; color: #888; text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; white-space: nowrap; }
+        .section-nav a:hover { color: var(--terracotta); border-bottom-color: var(--terracotta); }
+
+        section { padding: 4rem 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
+        section:last-of-type { border-bottom: none; }
+
+        .section-label { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--terracotta); font-weight: 600; margin-bottom: 0.75rem; }
+        h2 { font-family: var(--font-serif); font-size: 2.4rem; font-weight: 600; color: var(--charcoal); margin-bottom: 1.5rem; line-height: 1.2; }
+        h3 { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 600; color: var(--charcoal); margin: 2rem 0 0.75rem; }
+        p { margin-bottom: 1.25rem; font-size: 1.05rem; color: #444; }
+        ul { margin: 0.5rem 0 1.5rem 1.5rem; }
+        ul li { margin-bottom: 0.5rem; font-size: 1.05rem; color: #444; }
+        strong { color: var(--charcoal); }
+
+        .post-img { width: 100%; height: auto; border-radius: 10px; margin: 2rem 0 0.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); display: block; }
+        .caption { text-align: center; font-size: 0.9rem; color: #888; font-style: italic; margin-bottom: 2rem; }
+
+        .map-img { width: 100%; max-width: 600px; height: auto; border-radius: 10px; margin: 2rem auto 0.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.12); display: block; border: 1px solid rgba(0,0,0,0.08); }
+
+        .info-box { background: white; border-left: 4px solid var(--terracotta); padding: 1.5rem 1.75rem; border-radius: 0 8px 8px 0; margin: 2rem 0; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .info-box.blue { border-left-color: var(--kahlo); }
+        .info-box h4 { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 600; margin-bottom: 0.75rem; }
+
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .contact-card { background: white; padding: 1.2rem 1.4rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+        .contact-card .name { font-weight: 600; color: var(--charcoal); font-size: 0.95rem; }
+        .contact-card .phone { color: var(--terracotta); font-size: 0.9rem; margin-top: 0.25rem; }
+        .contact-card .note { color: #888; font-size: 0.82rem; margin-top: 0.25rem; font-style: italic; }
+
+        .gate-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .gate-table th { background: var(--charcoal); color: white; padding: 0.85rem 1.25rem; text-align: left; font-size: 0.9rem; font-weight: 600; }
+        .gate-table td { padding: 0.85rem 1.25rem; font-size: 0.9rem; color: #444; border-bottom: 1px solid rgba(0,0,0,0.06); vertical-align: top; }
+        .gate-table tr:last-child td { border-bottom: none; }
+        .gate-table tr:nth-child(even) td { background: #fafaf8; }
+
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; margin: 1.5rem 0; }
+        .link-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+        .link-pill { display: inline-block; padding: 0.45rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500; text-decoration: none; border: 1px solid currentColor; transition: opacity 0.2s; }
+        .link-pill:hover { opacity: 0.7; }
+        .link-pill.primary { background: var(--terracotta); color: white; border-color: var(--terracotta); }
+        .link-pill.outline { color: var(--charcoal); border-color: #ccc; }
+
+        .amenities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .amenity-card { background: white; padding: 1.2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); text-align: center; }
+        .amenity-card .icon { font-size: 1.5rem; margin-bottom: 0.4rem; }
+        .amenity-card .label { font-size: 0.9rem; font-weight: 600; color: var(--charcoal); }
+
+        .related-posts { background: white; border-radius: 12px; padding: 2rem; margin-top: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .related-posts h3 { font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 1.25rem; }
+        .related-posts ul { list-style: none; margin: 0; padding: 0; }
+        .related-posts ul li { padding: 0.6rem 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+        .related-posts ul li:last-child { border-bottom: none; }
+        .related-posts ul li a { color: var(--terracotta); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+        .related-posts ul li a:hover { text-decoration: underline; }
+
+        footer { background: var(--charcoal); color: white; text-align: center; padding: 3rem 2rem; }
+        footer a { color: var(--terracotta); text-decoration: none; }
+
+        @media (max-width: 700px) {
+            .hero { height: 380px; }
+            .hero-overlay h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.9rem; }
+            .two-col { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="logo">Indigo Palm Collective</a>
+        <ul class="nav-links">
+            <li><a href="/#properties">Properties</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <img src="/images/festival-coachella-aerial.jpg" alt="Coachella festival grounds aerial view with mountains at sunset" width="1200" height="800">
+        <div class="hero-overlay">
+            <p class="eyebrow">Terra Luz · Indio, CA</p>
+            <h1>Festival Guide</h1>
+            <p>Close enough to feel it from the backyard. Here's everything you need to make the most of festival weekend.</p>
+        </div>
+    </div>
+
+    <nav class="section-nav">
+        <div class="section-nav-inner">
+            <a href="#getting-there">Getting There</a>
+            <a href="#golf-carts">Golf Carts</a>
+            <a href="#indian-palms">Indian Palms</a>
+            <a href="#at-home">At the House</a>
+            <a href="#coachella">Coachella</a>
+            <a href="#stagecoach">Stagecoach</a>
+            <a href="#driving">Driving</a>
+            <a href="#road-closures">Road Closures</a>
+            <a href="#more">More Tips</a>
+        </div>
+    </nav>
+
+    <!-- Getting There -->
+    <section id="getting-there">
+        <div class="container">
+            <p class="section-label">Getting There</p>
+            <h2>Walking to the Festival</h2>
+            <p>You made it. Months of planning and the week is finally here. Good news: you have the best location. You're inside Indian Palms Country Club, which puts you within walking distance of the festival. No long shuttle lines, no crazy surge pricing.</p>
+
+            <div class="two-col">
+                <div>
+                    <h3>The Yellow Path</h3>
+                    <p>The Yellow Path at 49th and Monroe is your best bet for walking to the festival. End to end it's about a mile and a half, so bring comfortable shoes since the path is gravel.</p>
+                    <p>The Monroe gate is at 48th and Monroe. From Terra Luz at 49768 Pacino, it's about a <strong>1.2 mile / 27 minute walk</strong> to the front gate, then an additional 0.3 miles to the Yellow Path. Signs throughout the community show the route.</p>
+                    <div class="link-row">
+                        <a href="https://www.google.com/maps/dir/49768+Pacino+St,+Indio,+CA+92201/Indian+Palms+Security+Gate%2F+Front+Gate,+48630+Monroe+St,+Indio,+CA+92201/" target="_blank" rel="noopener" class="link-pill primary">Get Walking Directions</a>
+                    </div>
+                    <div class="info-box" style="border-color: var(--sage);">
+                        <h4>Biking May Be the Easiest Option</h4>
+                        <p style="margin-bottom:0.75rem;">Seriously. Grab a cheap bike on Craigslist before the festival, bring a lock, and bike directly to the designated bike parking at the entrance. No gravel path, no waiting for a golf cart, no surge pricing.</p>
+                        <p style="margin:0;">You're 1.2 miles from the front gate. On a bike that's under 10 minutes. Grab a $50 beater, lock it up, and sell or donate it on your way out.</p>
+                    </div>
+                    <div class="info-box">
+                        <h4>Note on Pedestrian Restrictions</h4>
+                        <p style="margin:0;">No pedestrians allowed on Monroe (between Ave 49 and Ave 52) or Madison (between Ave 50 and Ave 52).</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="/images/festival-terra-luz-walking-map.png" alt="Walking directions from 49768 Pacino Street to Indian Palms front gate, 1.2 miles / 27 minutes" width="1330" height="900" loading="lazy" style="width:100%;height:auto;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+
+            <img src="/images/festival-ferris-wheel.jpg" alt="Coachella ferris wheel at dusk in the desert" width="1200" height="800" loading="lazy" class="post-img">
+        </div>
+    </section>
+
+    <!-- Indian Palms -->
+    <section id="indian-palms">
+        <div class="container">
+            <p class="section-label">Inside the Community</p>
+            <h2>Indian Palms</h2>
+
+            <p>You're inside Indian Palms Country Club, a gated community that borders the festival grounds on Monroe. The front gate (your exit to the Yellow Path) is on Monroe at 48th.</p>
+
+            <div class="info-box">
+                <h4>Gate Rules</h4>
+                <p style="margin-bottom:0.75rem;"><strong>The only gate you are permitted to walk through is on Monroe (the main gate).</strong> Signs throughout the community show the path to get there.</p>
+                <p style="margin:0;">The festival drop-off area for Ubers and street vehicles is on Monroe, about half a mile from the main gate. From that drop-off point it's roughly a 1.5 mile walk to the main festival entrance.</p>
+            </div>
+
+            <h3>Food and Drinks at the Gate</h3>
+            <p>There are food and drink vendors in the parking lot near the front gate, along with a restaurant and bar called <strong>Hangar 19</strong>. The BBQ spot stays open late, even after the festival wraps up. Good to know for the walk back.</p>
+
+            <h3>Community Amenities While You're Here</h3>
+            <p>When you're not at the festival, Indian Palms has more to offer:</p>
+            <ul>
+                <li>3 community pools</li>
+                <li>Pickleball courts</li>
+                <li>Tennis courts (ID required to rent rackets)</li>
+                <li>Lifestyle Center / fitness center (reach out and we'll get you set up)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Golf Carts -->
+    <section id="golf-carts">
+        <div class="container">
+            <p class="section-label">Saving Your Feet</p>
+            <h2>Golf Cart Rides</h2>
+            <p>Many local residents offer rides via cars, trucks, or golf carts for a fee. <strong>Important distinction:</strong> golf carts can only take you to the front gate of Indian Palms. Vehicles (trucks, SUVs) can take you all the way to the festival drop-off site on Monroe. Ask when you call where exactly they drop off.</p>
+            <p>At the end of the night, golf carts will be waiting at the front gate offering rides home for <strong>$10 per person</strong>. Worth every dollar if your feet are done.</p>
+            <p>Plan ahead. These contacts are word of mouth, not officially endorsed.</p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="name">Sue Murren</div>
+                    <div class="phone">562-760-4313</div>
+                    <div class="note">Golf cart, Indian Palms area</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">Leo</div>
+                    <div class="phone">610-207-4589</div>
+                    <div class="note">Truck / large groups. Takes you past Indian Palms to festival entrance.</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">Richards</div>
+                    <div class="phone">760-899-4693</div>
+                    <div class="note">Truck / large groups. Takes you past Indian Palms to festival entrance.</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">James</div>
+                    <div class="phone">442-458-8228</div>
+                    <div class="note">SUV</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">Sam</div>
+                    <div class="phone">323-240-0304</div>
+                    <div class="note">Golf cart</div>
+                </div>
+                <div class="contact-card">
+                    <div class="name">Cheryl</div>
+                    <div class="phone">503-998-0123</div>
+                    <div class="note">Golf cart</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- At the House -->
+    <section id="at-home">
+        <div class="container">
+            <p class="section-label">Between Sets</p>
+            <h2>At Terra Luz</h2>
+            <p>The house is built for exactly this. When you need to decompress between days, it's all here.</p>
+
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="icon">♨️</div>
+                    <div class="label">Private Pool</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="icon">🔥</div>
+                    <div class="label">Fire Pit</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="icon">🥩</div>
+                    <div class="label">Gas Grill</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="icon">🎬</div>
+                    <div class="label">Outdoor Projector</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="icon">🛜</div>
+                    <div class="label">Fast WiFi</div>
+                </div>
+                <div class="amenity-card">
+                    <div class="icon">❄️</div>
+                    <div class="label">Central AC</div>
+                </div>
+            </div>
+
+            <div class="info-box" style="border-color: var(--sage);">
+                <h4>Pool Hours and Noise Curfew</h4>
+                <p style="margin-bottom:0.75rem;">The pool is yours whenever you want it. Outdoor noise curfew is <strong>10pm</strong>. Fire pit can stay on later, just keep the music inside after 10.</p>
+                <p style="margin:0;">The pool deck has a new cooling overlay, so it won't burn your feet even in peak afternoon sun. Take full advantage.</p>
+            </div>
+
+            <img src="/images/festival-palm-sunset.jpg" alt="Desert palm trees at sunset in the Coachella Valley" width="1200" height="800" loading="lazy" class="post-img">
+        </div>
+    </section>
+
+    <!-- Coachella -->
+    <section id="coachella">
+        <div class="container">
+            <p class="section-label">Navigation</p>
+            <h2>Coachella Grounds</h2>
+            <div class="link-row">
+                <a href="https://www.coachella.com" target="_blank" rel="noopener" class="link-pill primary">coachella.com</a>
+                <a href="https://www.instagram.com/coachella/" target="_blank" rel="noopener" class="link-pill outline">@coachella</a>
+            </div>
+            <p>The festival is at Empire Polo Club, 81800 Avenue 51, Indio. Follow Monroe south to Ave 51. Once you get to the front gate area, follow the signage for pedestrian entry.</p>
+
+            <h3>Food and Drinks Near the Gate</h3>
+            <p>There are food and drink vendors in the parking lot near the front gate of Indian Palms, along with a restaurant and bar called <strong>Hangar 19</strong>. The BBQ spot stays open late, even after the festival wraps. Good to know for the walk back.</p>
+
+            <img src="/images/festival-coachella-aerial.jpg" alt="Aerial view of Coachella festival grounds" width="1200" height="800" loading="lazy" class="post-img">
+        </div>
+    </section>
+
+    <!-- Stagecoach -->
+    <section id="stagecoach">
+        <div class="container">
+            <p class="section-label">Navigation</p>
+            <h2>Stagecoach Grounds</h2>
+            <div class="link-row">
+                <a href="https://www.stagecoachfestival.com" target="_blank" rel="noopener" class="link-pill primary">stagecoachfestival.com</a>
+                <a href="https://www.instagram.com/stagecoachfestival/" target="_blank" rel="noopener" class="link-pill outline">@stagecoachfestival</a>
+            </div>
+            <p>Same venue, same location as Coachella: Empire Polo Club, Ave 51 and Monroe. Same walking routes apply.</p>
+
+            <img src="/images/festival-stagecoach-map.jpg" alt="Official Stagecoach festival parking and grounds map" width="900" height="1125" loading="lazy" class="map-img">
+            <p class="caption">Official Stagecoach grounds and parking map</p>
+        </div>
+    </section>
+
+    <!-- Driving -->
+    <section id="driving">
+        <div class="container">
+            <p class="section-label">If You Must Drive</p>
+            <h2>Driving</h2>
+            <p>It gets extremely congested around festival hours. Avoid driving if at all possible. If you must, plan for long waits and avoid 48th and Monroe during peak egress.</p>
+
+            <table class="gate-table">
+                <thead>
+                    <tr><th>Gate</th><th>Details</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Monroe Gate (Indian Palms)</strong></td>
+                        <td>Main gate for guest entry. Security staff in attendance. Extra workstation added to double processing capacity. Transponder-only lane converts to allow general guest access during peak hours.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ave 48 + Jackson Gates</strong></td>
+                        <td>Operate as usual with no security officers. Entry via Conekt app or license plate. Recommended to minimize traffic delays.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Avenue 50 Gate</strong></td>
+                        <td>Restricted by Indio Police to residents only. Do not use this gate.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Road Closures -->
+    <section id="road-closures">
+        <div class="container">
+            <p class="section-label">Road Closures</p>
+            <h2>Closed Streets</h2>
+            <p>Starting April 6th, Ave 50 between Madison and Monroe will experience intermittent closures and delays. Full closures occur Friday through Sunday on April 13-16, 20-23, and 27-30. Streets reopen to normal traffic May 4th.</p>
+
+            <ul>
+                <li>Avenue 50 between Jackson and Madison</li>
+                <li>Avenue 49 between Monroe and Hjorth</li>
+                <li>Madison between Ave. 49 and 50</li>
+                <li>Madison between Ave. 50 and 52 during egress nightly (9:30pm to 3:00am)</li>
+                <li>Avenue 51 between Monroe and Madison</li>
+                <li>Hjorth between Ave. 49 and 50</li>
+            </ul>
+
+            <img src="/images/festival-road-closures.png" alt="Road closure map for Coachella festival weekend in Indio" width="900" height="700" loading="lazy" class="map-img">
+            <p class="caption">Road closure map for festival weekends</p>
+        </div>
+    </section>
+
+    <!-- More Tips -->
+    <section id="more">
+        <div class="container">
+            <p class="section-label">More From the Blog</p>
+            <h2>Festival Planning Resources</h2>
+            <div class="related-posts">
+                <h3>From the Indigo Palm Blog</h3>
+                <ul>
+                    <li><a href="/blog/where-to-stay-coachella-2026/">Where to Stay for Coachella 2026: An Honest Local Guide</a></li>
+                    <li><a href="/blog/indio-between-coachella-weekends/">The In-Between Weekend: What to Do in Indio Between Coachella Weekends 1 and 2</a></li>
+                    <li><a href="/blog/indio-local-gems/">10 Indio Gems Only Locals Know About</a></li>
+                    <li><a href="/blog/things-to-do-indio-ca/">Things to Do in Indio, CA: A Local's Guide</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="margin-bottom:0.5rem;">&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
+        <p><a href="/">Home</a> · <a href="/#properties">Properties</a> · <a href="/blog/">Blog</a> · <a href="/#contact">Contact</a></p>
+    </footer>
+
+</body>
+</html>
