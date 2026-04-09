@@ -107,4 +107,4 @@ layout: blog-post.njk
 
 <p>Indio rewards the people who treat it like a real city, not a festival holding pen. The best days here are built around one thing you planned and two things you found by accident. Eat somewhere without a Google presence. Drive down a street you haven't been on. The valley is bigger than the polo grounds.</p>
 
-<p>If you're trying to figure out where to stay, read our guide on <a href="https://indigopalm.co/blog/where-to-stay-coachella-2026">honest Coachella Valley accommodation options</a>. No affiliate codes, just the real tradeoffs. And if you have kids, <a href="https://indigopalm.co/cozy-cactus">Cozy Cactus</a> is built for exactly what you're trying to do here.</p>
+<p>If you're trying to figure out where to stay, read our guide on <a href="/blog/where-to-stay-coachella-2026/">honest Coachella Valley accommodation options</a>. No affiliate codes, just the real tradeoffs. And if you have kids, <a href="https://indigopalm.co/cozy-cactus">Cozy Cactus</a> is built for exactly what you're trying to do here.</p>
