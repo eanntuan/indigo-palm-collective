@@ -60,6 +60,9 @@ layout: blog-post.njk
 
 <p>The mid-century hotels in Palm Springs are genuinely great. Nice pools, good design, real beds. If you're going to Coachella and want to experience both the festival and a proper Palm Springs hotel stay, that's a fun trip. Just worth running the full transportation math first.</p>
 
+<img src="/blog/images/palm-springs-hotel-pool.jpg" alt="Pool at a Palm Springs hotel with lounge chairs and desert landscape" loading="lazy" width="768" height="430">
+<p class="image-caption">The Palm Springs hotel experience is genuinely nice. The question is whether it's worth the commute math.</p>
+
 <p><strong>Nightly rates during Coachella:</strong> Hotels in the area price aggressively for festival weekends. Expect to pay $300-600/night for something decent. A property that's $120 on a Tuesday in February has no problem charging $500 on a Coachella Friday.</p>
 
 <p><strong>Transportation costs:</strong> Uber surge from Palm Springs to the polo grounds during festival peak hours routinely runs $100-160 each way. People report paying $120 for a 3-mile ride at peak hours. For a group of 4 taking rides in and out over three days, that's $600-900 on top of accommodation. Most people don't run this number before they book.</p>
