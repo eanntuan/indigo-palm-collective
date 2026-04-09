@@ -79,7 +79,7 @@ layout: blog-post.njk
 
 <p><a href="https://indigopalm.co/terra-luz">Terra Luz</a> is a 3-bedroom Latin/Cuban-inspired vacation rental with a private saltwater pool, terracotta courtyard, and an aesthetic designed by brand architect Dawn Asher. It's our pet-friendly property. It sleeps up to 6.</p>
 
-<p>Both are in Indian Palms Country Club, about 2.5 miles from the festival grounds. Both save you 15% versus booking through Airbnb.</p>
+<p>Both are in Indian Palms Country Club, about 2.5 miles from the festival grounds. Both skip the platform fees when you book direct.</p>
 
 <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 3rem 0;">
 
