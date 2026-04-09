@@ -89,7 +89,7 @@ layout: blog-post.njk
 
 <p>This only works if your rental has a pool worth spending time at and is close enough that splitting the group and meeting back is easy. The Cozy Cactus was built for exactly this.</p>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial drone shot of the Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with private pool" width="1400" height="933" decoding="async">
+<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial drone shot of the Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with community pool and hot tub" width="1400" height="933" decoding="async">
 <p class="image-caption">The Cozy Cactus from above. Private pool center-frame. Empire Polo Club is 2.5 miles east.</p>
 
 <img src="/blog/images/cozy-cactus-exterior.jpg" alt="Exterior of the Cozy Cactus vacation rental in Indio, California near the Coachella festival grounds" width="800" height="533" loading="lazy" decoding="async">
