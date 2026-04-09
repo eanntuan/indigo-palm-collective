@@ -114,8 +114,8 @@ layout: blog-post.njk
 
 <p>Both are in the same gated community. Both are genuine vacation rentals, not someone's house in storage. Both book out fast for festival weekends.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at the Cozy Cactus vacation rental in Indio CA under string lights and palm trees at dusk" loading="lazy" width="800" height="533">
-<p class="image-caption">The hot tub at golden hour. This is what Sunday night of a three-day festival feels like when you don't have to drive home.</p>
+<img src="/blog/images/terra-luz-pool-backyard.jpg" alt="Private pool and covered patio at Terra Luz vacation rental in Indio CA with string lights and outdoor seating" loading="lazy" width="1600" height="1066">
+<p class="image-caption">The Terra Luz backyard. Pool, pergola, string lights. This is what Sunday afternoon of a three-day festival looks like when you're 10 minutes from the grounds.</p>
 
 <h2>The 3PM Strategy</h2>
 
