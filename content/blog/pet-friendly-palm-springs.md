@@ -22,7 +22,7 @@ layout: blog-post.njk
 
 <p>I own vacation rentals here. I've navigated this from the host side and the traveler side. Here's what I know about bringing your dog to the Palm Springs area without a terrible time.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm Springs boulevard lined with palm trees and mountain backdrop on a clear day" width="1200" height="800" decoding="async">
+<img src="/blog/images/everbloom-indio.jpg" alt="Lush outdoor plants and greenery at Everbloom in Indio California, a Coachella Valley garden shop" width="1200" height="800" decoding="async">
 
 <h2>Start With Where You're Staying</h2>
 
@@ -91,7 +91,7 @@ layout: blog-post.njk
     <li>Tick and flea prevention. Desert vegetation carries both.</li>
 </ul>
 
-<img src="/blog/images/cozy-cactus-patio.jpg" alt="Outdoor patio at a Coachella Valley vacation rental with shade and desert landscaping, good for dogs" width="800" height="533" loading="lazy">
+<img src="/blog/images/cc-nook-vignette.jpg" alt="Comfortable indoor space at a Coachella Valley vacation rental, a good retreat for dogs during peak afternoon heat" width="800" height="533" loading="lazy">
 <p class="image-caption">Outdoor space and tile floors: the two things that make a rental work with a dog.</p>
 
 <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 3rem 0;">
