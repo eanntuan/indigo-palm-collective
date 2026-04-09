@@ -15,3 +15,6 @@ id = "150397b0fcfc4772b72ec92b282872e2"
 [[kv_namespaces]]
 binding = "BOOKINGS"
 id = "adf84125eb4b4a528e74f70fe721c057"
+
+[triggers]
+crons = ["0 9 * * *"]

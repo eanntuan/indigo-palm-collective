@@ -111,7 +111,63 @@ const HTML_REDIRECTS = {
   '/blog.html':          '/blog',
 };
 
+// ── Welcome Email Cron ────────────────────────────────────────────────────────
+
+async function sendDueWelcomeEmails(env) {
+  const today = new Date().toISOString().slice(0, 10);
+  const { keys } = await env.BOOKINGS.list({ prefix: 'welcome:' });
+
+  for (const key of keys) {
+    const raw = await env.BOOKINGS.get(key.name, { type: 'json' });
+    if (!raw || raw.sent || raw.sendDate > today) continue;
+
+    const { bookingId, propertyId, name, email, checkIn, checkOut, nights, guests } = raw;
+    const info = PROPERTY_INFO[propertyId];
+    if (!info?.welcomeGuide) continue;
+
+    const firstName = name.split(' ')[0];
+    const html = emailWrapper(`
+      ${info.photo ? `<img src="${info.photo}" alt="${info.name}" width="560" style="display:block;width:100%;max-width:560px;height:220px;object-fit:cover;border-radius:8px;margin-bottom:28px;" />` : ''}
+      <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
+      <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">You're almost here, ${firstName}.</h1>
+      <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Check-in is in 2 days. Everything you need to know is in your welcome guide below — parking, entry, house rules, Wi-Fi, and local tips.</p>
+      <div style="padding:24px;background:#F5F3EE;border-radius:8px;margin-bottom:24px;">
+        <p style="margin:0 0 16px;font-size:13px;font-weight:600;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.08em;">Before you arrive</p>
+        <a href="${info.welcomeGuide}" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Welcome Guide &rarr;</a>
+        <p style="margin:0 0 16px;font-size:13px;color:#888;">Check-in, parking, house rules, community amenities. It's all in here.</p>
+        <a href="${info.mapsUrl}" style="display:block;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Get Directions &rarr;</a>
+        <p style="margin:0;font-size:13px;color:#888;">${info.address}</p>
+      </div>
+      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
+        ${detailRow('Check-in', fmtDate(checkIn))}
+        ${detailRow('Check-out', fmtDate(checkOut))}
+        ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
+        ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
+      </table>
+      <p style="margin:0 0 20px;font-size:15px;color:#555;line-height:1.7;">See you in the desert.</p>
+      <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
+    `);
+
+    try {
+      await sendEmail(env.RESEND_API_KEY, {
+        from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+        to: email,
+        subject: `Your welcome guide: ${info.name} (check-in ${fmtDate(checkIn)})`,
+        html,
+      });
+      await env.BOOKINGS.put(key.name, JSON.stringify({ ...raw, sent: true, sentAt: new Date().toISOString() }));
+      console.log(`Welcome email sent: ${bookingId}`);
+    } catch (err) {
+      console.error(`Welcome email failed for ${bookingId}:`, err);
+    }
+  }
+}
+
 export default {
+  async scheduled(event, env) {
+    await sendDueWelcomeEmails(env);
+  },
+
   async fetch(request, env) {
     const url = new URL(request.url);
     const path = url.pathname;
@@ -1053,6 +1109,17 @@ async function handleSquareWebhook(request, env) {
     confirmedAt: new Date().toISOString(),
   }));
 
+  // Schedule welcome guide email for 2 days before check-in
+  if (info.welcomeGuide) {
+    const sendDate = new Date(checkIn + 'T00:00:00Z');
+    sendDate.setUTCDate(sendDate.getUTCDate() - 2);
+    await env.BOOKINGS.put(`welcome:${bookingId}`, JSON.stringify({
+      bookingId, propertyId, name, email, checkIn, checkOut, nights, guests,
+      sendDate: sendDate.toISOString().slice(0, 10),
+      sent: false,
+    }));
+  }
+
   console.log(`Booking confirmed: ${bookingId}, Hostaway: ${hostawayReservationId}`);
   return new Response('OK', { status: 200 });
 }
@@ -1122,9 +1189,6 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
   const firstName = name.split(' ')[0];
 
   const linksSection = [
-    info.welcomeGuide
-      ? `<a href="${info.welcomeGuide}" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Welcome Guide &rarr;</a><p style="margin:0 0 16px;font-size:13px;color:#888;">Check-in, parking, house rules, community amenities. It's all in here.</p>`
-      : '',
     `<a href="https://indigopalm.co" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">indigopalm.co &rarr;</a><p style="margin:0 0 16px;font-size:13px;color:#888;">Explore the other properties and the blog.</p>`,
     info.airbnb
       ? `<a href="${info.airbnb}" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Airbnb Listing &rarr;</a><p style="margin:0;font-size:13px;color:#888;">More photos, reviews, and details.</p>`
