@@ -155,4 +155,6 @@ layout: blog-post.njk
 
 <p>But the right accommodation changes the whole weekend. Proximity matters. Comfort matters. A pool matters more than you think it does on a Sunday in the desert when you have five hours until the headliner and you're running on festival tacos and adrenaline.</p>
 
-<p>If you want the recommendation from someone who lives here: stay in Indio, stay close to the grounds, and invest in a place you want to come back to between sets. Once you've figured out your lodging, check out our guide to <a href="/blog/indio-local-gems/">10 Indio gems only locals know about</a> so you know exactly where to eat, explore, and recover between sets. And if you want to understand the philosophy behind how we design our vacation rentals, read <a href="/blog/cozy-cactus-origin-story/">the origin story of how The Cozy Cactus came to be</a>.</p>
+<p>If you want the recommendation from someone who lives here: stay in Indio, stay close to the grounds, and invest in a place you want to come back to between sets. Once you've figured out your lodging, check out our guide to <a href="/blog/indio-local-gems/">10 Indio gems only locals know about</a> so you know exactly where to eat, explore, and recover between sets.</p>
+
+<p>Planning for a future Coachella? We've updated this guide into a fuller, year-round version: <a href="/blog/where-to-stay-coachella/">Where to Stay for Coachella: The Complete Guide</a>. It covers every accommodation option in more depth and is kept current each season.</p>
