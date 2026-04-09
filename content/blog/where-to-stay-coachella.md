@@ -96,7 +96,7 @@ layout: blog-post.njk
 
 <p>You notice the difference immediately. Real check-in systems. Stocked supplies. A design that makes you want to spend time in the house, not just sleep there. A pool that functions as actual recovery infrastructure, not an afterthought.</p>
 
-<p>I run two of these. You knew it was coming.</p>
+<p>I run two of these. You knew it was coming. :P</p>
 
 <img src="/blog/images/cozy-cactus-backyard-putting-green.jpg" alt="Backyard at the Cozy Cactus vacation rental in Indio California with putting green, covered patio, outdoor seating, and private hot tub at sunset" loading="lazy" width="800" height="533">
 <p class="image-caption">The Cozy Cactus backyard. Putting green, covered patio, private hot tub. The 3PM strategy starts here.</p>
