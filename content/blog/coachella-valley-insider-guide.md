@@ -19,8 +19,8 @@ excerpt: "Skip the tourist traps. A real Coachella Valley local shares the spots
 layout: blog-post.njk
 ---
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm tree-lined street in Palm Springs CA with red bougainvillea and San Jacinto mountains" width="800" height="533">
-<p class="image-caption">A Palm Springs street on a clear morning. This is what 30 minutes from Indio looks like.</p>
+<img src="/blog/images/indian-palms-front-entrance.jpg" alt="Entrance to Indian Palms Country Club neighborhood in Indio California with palm trees and desert landscaping" width="800" height="533">
+<p class="image-caption">The Indian Palms neighborhood in Indio. Quiet, gated, and 10 minutes from everything worth doing in the valley.</p>
 
 <p>I watched a couple walk into a chain restaurant in Palm Desert last week. They were 400 yards from one of the best taco spots in the valley.</p>
 
@@ -38,7 +38,7 @@ layout: blog-post.njk
 
 <p>Downtown Palm Springs has the upscale dining scene if that's your thing. El Jefe for tacos and mezcal. Workshop Kitchen + Bar if you want to feel fancy. Some of the best meals I've had out here cost under $12.</p>
 
-<p>A few specific picks near <a href="https://indigopalm.co/blog/cozy-cactus-origin-story.html">The Cozy Cactus in Indio</a>: Gambino's for savory crepes, Papa Headz for smash burgers, Everbloom for matcha that rivals anything in LA, and L&amp;G Desert Store for fresh tamales and Medjool dates grown a few miles away.</p>
+<p>A few specific picks near <a href="/blog/indio-local-gems/">The Cozy Cactus in Indio</a>: Gambino's for savory crepes, Papa Headz for smash burgers, Everbloom for matcha that rivals anything in LA, and L&amp;G Desert Store for fresh tamales and Medjool dates grown a few miles away.</p>
 
 <h2>Joshua Tree (Yes, It's Worth the Drive)</h2>
 
@@ -75,7 +75,7 @@ layout: blog-post.njk
 
 <p>And yes, these are the same grounds where Coachella and Stagecoach happen. During off-season, the fields are quiet. There's something cool about standing on the same grass where Beyoncé performed, hearing nothing but wind.</p>
 
-<p>If you're staying at <a href="https://indigopalm.co/blog/cozy-cactus-origin-story.html">The Cozy Cactus</a>, you're about 10 minutes from the polo grounds. Close enough to hear the bass during festival weekends if the wind's right.</p>
+<p>If you're staying at <a href="/cozy-cactus/">The Cozy Cactus</a>, you're about 10 minutes from the polo grounds. Close enough to hear the bass during festival weekends if the wind's right.</p>
 
 <h2>The Salton Sea</h2>
 
@@ -109,7 +109,7 @@ layout: blog-post.njk
 
 <p>The best sunsets are looking west from Indio toward the San Jacinto mountains. The alpenglow on those peaks is unreal.</p>
 
-<p>Summer is hot. Obviously. But the valley is empty, everything is cheap, and the pool is all yours. Some of us prefer it. More on that in <a href="https://indigopalm.co/blog/beyond-coachella-desert-escape.html">our year-round desert escape guide</a>.</p>
+<p>Summer is hot. Obviously. But the valley is empty, everything is cheap, and the pool is all yours. Some of us prefer it. More on that in <a href="/blog/beyond-coachella-desert-escape/">our year-round desert escape guide</a>.</p>
 
 <h2>Where to Base Yourself</h2>
 
@@ -121,7 +121,7 @@ layout: blog-post.njk
 <img src="/blog/images/cozy-cactus-living-room.jpg" alt="Bright open living room at The Cozy Cactus vacation rental in Indio CA, grey sofas, kilim rug, foosball table, mid-century design" loading="lazy" width="800" height="533">
 <p class="image-caption">The living room at The Cozy Cactus: foosball, a kilim rug, and light that makes you want to stay in.</p>
 
-<p><a href="https://indigopalm.co/blog/cozy-cactus-origin-story.html">The Cozy Cactus</a> is our place in Indio. Three bedrooms, community pool across the street, private hot tub, and a covered patio that makes you want to stay in as much as go out. But wherever you stay, stay in the valley long enough to get past the tourist layer. The real stuff is underneath.</p>
+<p><a href="/cozy-cactus/">The Cozy Cactus</a> is our place in Indio. Three bedrooms, community pool across the street, private hot tub, and a covered patio that makes you want to stay in as much as go out. But wherever you stay, stay in the valley long enough to get past the tourist layer. The real stuff is underneath.</p>
 
 <img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at The Cozy Cactus vacation rental in Indio CA, covered patio, string lights, palm trees at dusk" loading="lazy" width="800" height="533">
 <p class="image-caption">The hot tub at golden hour. Palm trees. String lights. This is why you stay in Indio.</p>
