@@ -143,7 +143,7 @@ layout: blog-post.njk
 <p><strong>A real host.</strong> Someone who answers messages before you book and has a clear process for check-in. Festival weekends are not the time to figure out that your host is unresponsive.</p>
 
 <img src="/blog/images/cozy-cactus-living-room.jpg" alt="Open living room at the Cozy Cactus vacation rental in Indio California with grey sofas, kilim rug, and foosball table" loading="lazy" width="800" height="533">
-<p class="image-caption">The living room at The Cozy Cactus. Foosball, a kilim rug, good light. The kind of place you want to come back to at 3pm.</p>
+<p class="image-caption">The Cozy Cactus living room from another angle. Foosball table, open layout, good afternoon light.</p>
 
 <h2>When to Book</h2>
 
