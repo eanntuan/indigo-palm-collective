@@ -71,8 +71,8 @@ layout: blog-post.njk
 
 <p>The key thing to know: season matters. October through April is the window when hiking here is comfortable and safe for most people. Summer hiking is possible but requires a 5am start and a realistic assessment of heat tolerance. Here are the five hikes worth knowing about.</p>
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Native California fan palm oasis at the Coachella Valley Preserve with afternoon light filtering through the fronds" width="1400" height="933" loading="lazy">
-<p class="image-caption">Palm oases exist where underground water meets the desert. They feel like portals. Palm Canyon is the biggest one.</p>
+<img src="/blog/images/everbloom-indio.jpg" alt="Lush greenery and desert plants at Everbloom in Indio California, echoing the native oasis ecosystems found in the nearby canyons" width="1400" height="933" loading="lazy">
+<p class="image-caption">The desert is not uniformly dry. Where water exists underground, it pushes through. The canyons are where you see that most clearly.</p>
 
 <h2>1. Palm Canyon (Easy to Moderate)</h2>
 
@@ -110,8 +110,8 @@ layout: blog-post.njk
 
 <p>The Agua Caliente Cultural Museum in downtown Palm Springs has information on the history and ecology of the canyons if you want context before going. Visit <a href="https://www.aguacalientebands.com/tourism/indian-canyons" target="_blank" rel="noopener">Indian Canyons</a> for current hours, fees, and trail conditions. Seasonal closures happen, particularly in summer and after heavy rains.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined Palm Springs boulevard with dramatic mountain rise in the background on a clear morning" width="1400" height="933" loading="lazy">
-<p class="image-caption">The approach to the canyons runs through this landscape. The mountains get bigger as you drive toward them.</p>
+<img src="/blog/images/saguaro-coffee-indio.jpg" alt="Saguaro Coffee exterior in Indio California, a good starting point before a morning desert hike" width="1400" height="933" loading="lazy">
+<p class="image-caption">Start the morning right before heading into the canyons. Coffee first, then mountains.</p>
 
 <h2>When to Go</h2>
 
