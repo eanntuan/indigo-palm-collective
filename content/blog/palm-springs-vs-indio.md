@@ -123,11 +123,11 @@ layout: blog-post.njk
 
 <h2>Which One Is Right for Your Trip</h2>
 
-<p><strong>Choose Palm Springs if:</strong> you want to walk from the rental to dinner every night, you're a couple or group of three, there's no festival on your agenda, midcentury architecture is a genuine draw for you, or you're visiting mid-week when rates are lower and the city is quieter.</p>
+<p><strong>Choose Palm Springs if:</strong> you want to be 10 minutes from downtown restaurants and bars, you're a couple or group of three, there's no festival on your agenda, midcentury architecture is a genuine draw for you, or you're visiting mid-week when rates are lower and the city is quieter.</p>
 
 <p><strong>Choose Indio if:</strong> your group is five or more people, you're attending Coachella or Stagecoach, you want a larger pool and actual outdoor living space, you're bringing kids and need room to move, or the nightly rate difference is a real budget consideration.</p>
 
-<p>The mistake people make is booking based on the name recognition of Palm Springs when what their group actually needs is space and proximity in Indio. And occasionally the reverse: booking Indio because it's cheaper, when a couple would have loved walking to dinner every night in Palm Springs. Get clear on the trip first.</p>
+<p>The mistake people make is booking based on the name recognition of Palm Springs when what their group actually needs is space and proximity in Indio. And occasionally the reverse: booking Indio because it's cheaper, when a couple would have loved being 10 minutes from Palm Springs restaurants every night. Get clear on the trip first.</p>
 
 <img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Midcentury modern residential neighborhood in Palm Springs with San Jacinto Mountains visible at the end of the street" loading="lazy" width="1400" height="933">
 <p class="image-caption">The residential neighborhoods in Palm Springs look like a living architecture museum. That's not an accident.</p>
