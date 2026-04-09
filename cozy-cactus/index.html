@@ -270,6 +270,8 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap"></noscript>
     <!-- Preload LCP hero image -->
     <link rel="preload" as="image" fetchpriority="high" href="/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.webp">
+    <link rel="preload" as="fetch" crossorigin href="/_content/cozy-cactus.json">
+    <link rel="preload" as="fetch" crossorigin href="/api/availability?property=cozy-cactus">
     <style>
         * {
             margin: 0;
@@ -1081,15 +1083,15 @@
         const grid = document.getElementById('cal-grid');
         const label = document.getElementById('cal-month-label');
         if (!grid) return;
-        grid.innerHTML = '';
         const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
         label.textContent = `${months[calMonth]} ${calYear}`;
+        const frag = document.createDocumentFragment();
         ['S','M','T','W','T','F','S'].forEach(d => {
-            const h = document.createElement('div'); h.className = 'cal-dow'; h.textContent = d; grid.appendChild(h);
+            const h = document.createElement('div'); h.className = 'cal-dow'; h.textContent = d; frag.appendChild(h);
         });
         const firstDay = new Date(calYear, calMonth, 1).getDay();
         for (let i = 0; i < firstDay; i++) {
-            const b = document.createElement('div'); b.className = 'cal-day empty'; grid.appendChild(b);
+            const b = document.createElement('div'); b.className = 'cal-day empty'; frag.appendChild(b);
         }
         const days = new Date(calYear, calMonth + 1, 0).getDate();
         for (let d = 1; d <= days; d++) {
@@ -1118,8 +1120,10 @@
                     updateBookBtn(); render();
                 });
             }
-            grid.appendChild(cell);
+            frag.appendChild(cell);
         }
+        grid.innerHTML = '';
+        grid.appendChild(frag);
     }
 
     function updateBookBtn() {
