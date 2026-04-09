@@ -74,6 +74,8 @@ layout: blog-post.njk
 <img src="/blog/images/coachella-shuttle.jpg" alt="Coachella festival shuttle bus picking up attendees from Palm Springs area for transport to Empire Polo Club in Indio" loading="lazy" width="800" height="533">
 <p class="image-caption">Coachella's official shuttle runs from Palm Springs and other valley pickup points. Beats surge pricing if you're already staying west.</p>
 
+<p><strong>A note on free day parking:</strong> Coachella does offer free day parking if you have a designated driver. The catch: arrive before 3pm. After that, lots fill up, you'll get turned away at entrance after entrance, and nobody directing traffic will know which lots still have space. It becomes a real time sink. If you do use free parking, consider leaving a few minutes before the headliner ends, or staying near the back of the crowd so you can move fast when it's over. Either way beats sitting in the lot for an hour while everyone else tries to leave at once.</p>
+
 <p><strong>Who it's for:</strong> People who want the Palm Springs hotel experience as part of their trip, not just as a base for the festival. If the hotel IS part of the vacation, the math works differently.</p>
 
 <h2>Option 3: The Standard Airbnb Scramble</h2>
