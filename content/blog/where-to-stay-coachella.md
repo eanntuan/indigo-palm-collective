@@ -1,7 +1,7 @@
 ---
 title: "Where to Stay for Coachella: The Complete Guide"
 date: 2026-04-09
-metaDescription: "Hotels, camping, or vacation rental near Coachella? An honest breakdown of every option from someone who actually lives in Indio. No affiliate links."
+metaDescription: "Hotels, camping, or vacation rental near Coachella? An honest breakdown of every option from a vacation rental owner in Indio. No affiliate links."
 ogImage: /blog/images/coachella-festival-crowd.jpg
 heroImage: /blog/images/coachella-festival-crowd.jpg
 heroAlt: "Crowd at Coachella Valley Music and Arts Festival at Empire Polo Club in Indio California"
@@ -19,11 +19,9 @@ excerpt: "Hotels, camping, vacation rentals: an honest breakdown of every Coache
 layout: blog-post.njk
 ---
 
-<p>Every year I watch people make the same accommodation mistakes for Coachella. Book the wrong type of place, in the wrong location, at triple the price they should have paid.</p>
+<p>Coachella accommodation is genuinely confusing. A lot of options, a wide price range, and a location question that matters more than most people realize until they're in an Uber at 1am watching the surge price tick up.</p>
 
-<p>I own vacation rentals in Indio, two minutes from the polo grounds. I've had this conversation with enough guests to know what works, what doesn't, and what people wish they'd done differently when they're sitting in Uber surge traffic at 1am wondering why they booked in Palm Springs.</p>
-
-<p>Here's the full breakdown. No affiliate codes. No "sponsored by" anything. Just how it actually works.</p>
+<p>I own vacation rentals in Indio, two minutes from the polo grounds. I've had this conversation with enough guests to have a pretty clear picture of what works for different groups. Here's the full breakdown. No affiliate codes, no sponsored takes.</p>
 
 <h2>First: Where to Stay Geographically</h2>
 
@@ -37,6 +35,9 @@ layout: blog-post.njk
 
 <p>Proximity isn't everything, but it changes the math on every other decision you make.</p>
 
+<img src="/blog/images/coachella-valley-map.jpg" alt="Map of Coachella Valley showing distances from Indio, Palm Desert, La Quinta, and Palm Springs to the Empire Polo Club festival grounds" loading="lazy" width="800" height="550">
+<p class="image-caption">The valley spread out. Indio is where the polo grounds are. Everything west of there adds commute time.</p>
+
 <img src="/blog/images/indian-palms-front-entrance.jpg" alt="Entrance to Indian Palms neighborhood in Indio California near Coachella festival grounds with palm trees and desert landscaping" loading="lazy" width="800" height="533">
 <p class="image-caption">Indian Palms in Indio. Gated, quiet, and about 10 minutes from the polo grounds. This is the sweet spot.</p>
 
@@ -48,7 +49,7 @@ layout: blog-post.njk
 
 <p><strong>Who it's for:</strong> People in their early-to-mid 20s running on festival energy and genuinely don't care about comfort. It's a specific experience. It's not for everyone, but the people who love it really love it.</p>
 
-<p><strong>Who should skip it:</strong> Anyone over 30. Anyone who uses the phrase "I need my sleep." Any group with mixed energy levels where some people want to leave at midnight and others want to stay until 2am.</p>
+<p><strong>Who should think twice:</strong> Anyone who needs reliable sleep to function. Groups with mixed energy levels where some people want to leave at midnight and others want to stay until 2am. If you're sharing a tent with someone on a different schedule, that gets old by Day 2.</p>
 
 <p><strong>Real cost:</strong> Car camping runs about $125-150 per person. That sounds reasonable until you factor in gear, the fact that festival food is expensive, and the high probability you'll take an Uber out of the campsite on Day 2 to get real food and a shower somewhere.</p>
 
@@ -57,9 +58,7 @@ layout: blog-post.njk
 
 <h2>Option 2: Hotels in Palm Springs or Palm Desert</h2>
 
-<p>The mid-century hotels in Palm Springs are genuinely great. Nice pools, good design, real beds. If you're going to Coachella and want to experience both the festival and a proper Palm Springs hotel stay, that's a legitimate trip.</p>
-
-<p>Just do the full math before you commit.</p>
+<p>The mid-century hotels in Palm Springs are genuinely great. Nice pools, good design, real beds. If you're going to Coachella and want to experience both the festival and a proper Palm Springs hotel stay, that's a fun trip. Just worth running the full transportation math first.</p>
 
 <p><strong>Nightly rates during Coachella:</strong> Hotels in the area price aggressively for festival weekends. Expect to pay $300-600/night for something decent. A property that's $120 on a Tuesday in February has no problem charging $500 on a Coachella Friday.</p>
 
@@ -82,7 +81,9 @@ layout: blog-post.njk
 
 <p><strong>What to look for in any rental:</strong> Year-round operations (not just festival listings). Real photos that show the actual current state of the property. Recent reviews from non-festival dates. A host who responds to questions before you book.</p>
 
-<p><strong>Cost:</strong> $250-500/night for a reasonable 3-bedroom in Indio. The good ones book out months in advance. What's available in March for April dates is often available for a reason.</p>
+<p><strong>Cost:</strong> $250-500/night for a reasonable 3-bedroom in Indio. The good ones book out months in advance. Last-minute availability is sometimes a lucky cancellation, but not always.</p>
+
+<p><strong>One real risk worth knowing about:</strong> Last-minute host cancellations are a documented pattern for Coachella. Hosts cancel confirmed bookings weeks or days before the festival to rebook at higher prices. It happened enough in 2025 and 2026 that local news covered it. <a href="https://kesq.com/news/2026/04/08/attendees-say-short-term-rentals-are-cancelling-days-before-coachella-festival-leaving-some-stranded/" target="_blank" rel="noopener">KESQ reported on stranded attendees just days before Weekend 1 this year</a>. Airbnb does penalize hosts who cancel, but penalties don't get you a place to stay on short notice. If you're booking through a platform, check cancellation history and look for hosts with year-round reviews, not just festival-season listings.</p>
 
 <h2>Option 4: A Purpose-Built Vacation Rental</h2>
 
@@ -145,7 +146,7 @@ layout: blog-post.njk
 
 <p>For context: our properties typically have no availability left by January for April festival weekends. What's available in March is usually what got dropped at cancellation.</p>
 
-<p>If you're reading this close to the festival, you still have options. Just be realistic about what's left and why it's still available.</p>
+<p>If you're reading this close to the festival, options are tighter but not gone. Last-minute cancellations do free up good spots. Just verify the listing has recent reviews before committing.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -157,4 +158,4 @@ layout: blog-post.njk
 
 <p><strong>What should I look for in a Coachella vacation rental?</strong> Pool access, proximity to the polo grounds, a kitchen, and a host with reviews from non-festival dates. The <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a> has more on navigating the valley once you're here.</p>
 
-<p><strong>When do properties sell out for Coachella?</strong> Good Indio properties typically book out 3-4 months in advance. Don't plan your trip around what's still available in March.</p>
+<p><strong>When do properties sell out for Coachella?</strong> Good Indio properties typically book out 3-4 months in advance. Planning around what's still available in March is possible, but your options are narrower.</p>
