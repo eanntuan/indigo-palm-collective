@@ -35,8 +35,8 @@ layout: blog-post.njk
 
 <p>Both routes work. Which entrance you choose depends on what you want to do inside the park, which we'll get to below.</p>
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Fan palm oasis at the Coachella Valley Preserve near the Coachella Valley desert floor in California" loading="lazy" width="1400" height="933">
-<p class="image-caption">The Coachella Valley Preserve is worth a stop on the way back from Joshua Tree — a fan palm oasis right on the valley floor.</p>
+<img src="/blog/images/cc-reading-nook.jpg" alt="Cozy reading space inside a Coachella Valley vacation rental, the perfect end to a day trip to Joshua Tree" loading="lazy" width="1400" height="933">
+<p class="image-caption">The best part of a day trip is coming home to a place like this. Joshua Tree by 9am. Pool by 2pm. Reading nook by 4.</p>
 
 <h2>Which Entrance to Use for Joshua Tree</h2>
 
@@ -71,8 +71,8 @@ layout: blog-post.njk
 
 <p>Festival weekends in April (Coachella and Stagecoach) are peak demand. If you're staying in the valley for a festival, a weekday Joshua Tree visit is significantly better than trying to go on a Saturday.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Panoramic view across the Coachella Valley desert floor from above with mountain ranges in the distance" loading="lazy" width="1400" height="933">
-<p class="image-caption">The view coming back down from the high desert into the valley. The elevation change is one of the reasons Joshua Tree feels so different from the valley floor.</p>
+<img src="/blog/images/cc-nook-vignette.jpg" alt="Styled vignette inside a Coachella Valley vacation rental, warm and inviting after a full day in the high desert" loading="lazy" width="1400" height="933">
+<p class="image-caption">The whole point of a day trip: you get to come back. Coming back to a house with a pool and good lighting makes a difference.</p>
 
 <h2>What to Bring on a Joshua Tree Day Trip</h2>
 
@@ -101,8 +101,8 @@ layout: blog-post.njk
 
 <p><strong>Head back by early afternoon.</strong> A full round-trip with stops takes a solid half day. You'll want to be back at your rental to actually enjoy the pool before evening.</p>
 
-<img src="/blog/images/shields-date-garden.jpg" alt="Shields Date Garden entrance with date palms in Indio California, a Coachella Valley landmark" loading="lazy" width="1400" height="933">
-<p class="image-caption">Stop at Shields Date Garden in Indio on your way back for a date shake. It's been here since 1924 and earns its reputation.</p>
+<img src="/blog/images/saguaro-coffee-indio.jpg" alt="Saguaro Coffee in Indio California, a local coffee shop worth stopping at on your way back from Joshua Tree" loading="lazy" width="1400" height="933">
+<p class="image-caption">Refuel in Indio before the last stretch home. Saguaro Coffee is a solid stop and beats a gas station every time.</p>
 
 <h2>What to Do Near Joshua Tree (Same Day)</h2>
 
