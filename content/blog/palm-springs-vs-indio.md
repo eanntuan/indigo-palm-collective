@@ -27,7 +27,7 @@ layout: blog-post.njk
 
 <h2>Palm Springs: What You're Getting</h2>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Wide palm tree-lined boulevard in downtown Palm Springs with the San Jacinto Mountains rising behind red bougainvillea" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm tree-lined street in Palm Springs under a clear blue sky with mountain views in the distance" loading="lazy" width="1400" height="933">
 <p class="image-caption">The main drag in Palm Springs. Walkability like this is rare in the California desert.</p>
 
 <p>Palm Springs is walkable in a way that almost nothing else in the desert is. You can park once, walk to dinner, get coffee in the morning without moving the car, wander the architecture streets in the afternoon, and come back to your rental without ever touching your keys again. For the Coachella Valley, that is genuinely unusual.</p>
@@ -58,8 +58,8 @@ layout: blog-post.njk
 
 <p>If you're attending Coachella or Stagecoach, Indio is the right call without much debate. The Cozy Cactus, our 3-bedroom in the Indian Palms neighborhood, is a short drive to the polo grounds. No surge pricing, no early departure to beat traffic, no standing in a rideshare line at midnight.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private pool and hot tub at the Cozy Cactus vacation rental in Indio CA with colorful outdoor furniture and string lights" loading="lazy" width="1400" height="933">
-<p class="image-caption">The pool at the Cozy Cactus. Room for the whole group, not two people balanced at the shallow end.</p>
+<img src="/blog/images/cc-nook-vignette.jpg" alt="Styled interior vignette at a Coachella Valley vacation rental with warm desert tones and comfortable furnishings" loading="lazy" width="1400" height="933">
+<p class="image-caption">Indio vacation rentals tend to have more living space per dollar. Inside and out.</p>
 
 <h3>The Real Limits of Staying in Indio</h3>
 
@@ -129,8 +129,8 @@ layout: blog-post.njk
 
 <p>The mistake people make is booking based on the name recognition of Palm Springs when what their group actually needs is space and proximity in Indio. And occasionally the reverse: booking Indio because it's cheaper, when a couple would have loved being 10 minutes from Palm Springs restaurants every night. Get clear on the trip first.</p>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Midcentury modern residential neighborhood in Palm Springs with San Jacinto Mountains visible at the end of the street" loading="lazy" width="1400" height="933">
-<p class="image-caption">The residential neighborhoods in Palm Springs look like a living architecture museum. That's not an accident.</p>
+<img src="/blog/images/yes-please-palm-springs.jpg" alt="Yes Please Books storefront in a Palm Springs neighborhood, the kind of discovery that comes from wandering on foot" loading="lazy" width="1400" height="933">
+<p class="image-caption">The walkable neighborhoods in Palm Springs reward wandering. You find places like this just by turning off the main drag.</p>
 
 <h2>Our Properties in Both Areas</h2>
 
