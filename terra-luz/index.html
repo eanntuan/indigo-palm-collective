@@ -40,12 +40,7 @@
       "name": "Terra Luz",
       "description": "Sun-washed 3-bedroom vacation home in Indio with Kahlo blue pool, Latin cultural touches, terracotta courtyard, and pass-through kitchen window. A cocooned desert sanctuary near Coachella.",
       "url": "https://indigopalm.co/terra-luz/",
-      "identifier": {
-        "@type": "PropertyValue",
-        "name": "Property ID",
-        "value": "terra-luz"
-      },
-      "additionalType": "https://schema.org/SingleFamilyResidence",
+      "additionalType": "https://schema.org/House",
       "image": [
         "https://indigopalm.co/Terra%20Luz/Existing%20Listing%20Pictures/IMG_1240.JPG",
         "https://indigopalm.co/Terra%20Luz/Existing%20Listing%20Pictures/IMG_1239.JPG",
@@ -100,6 +95,26 @@
         "@type": "AggregateRating",
         "ratingValue": 4.98,
         "ratingCount": 146
+      },
+      "containsPlace": {
+        "@type": "Accommodation",
+        "additionalType": "https://schema.org/House",
+        "numberOfBedrooms": 3,
+        "numberOfBathroomsTotal": 2,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 6
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Frida Kahlo Blue Pool", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Full Kitchen", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Outdoor Entertaining", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true }
+        ],
+        "bed": [
+          { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "King" },
+          { "@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "Queen" }
+        ]
       },
       "parentOrganization": {
         "@type": "Organization",

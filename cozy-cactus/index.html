@@ -38,12 +38,7 @@
       "name": "Cozy Cactus",
       "description": "Family-friendly 3-bedroom vacation rental in Indio with curated toy collection, coffee bar, pool, hot tub, and thoughtful family-friendly design.",
       "url": "https://indigopalm.co/cozy-cactus/",
-      "identifier": {
-        "@type": "PropertyValue",
-        "name": "Property ID",
-        "value": "cozy-cactus"
-      },
-      "additionalType": "https://schema.org/SingleFamilyResidence",
+      "additionalType": "https://schema.org/House",
       "image": [
         "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.jpg",
         "https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/2TW_DZ5A8783web.jpg",
@@ -108,6 +103,27 @@
         "@type": "AggregateRating",
         "ratingValue": 4.97,
         "ratingCount": 146
+      },
+      "containsPlace": {
+        "@type": "Accommodation",
+        "additionalType": "https://schema.org/House",
+        "numberOfBedrooms": 3,
+        "numberOfBathroomsTotal": 2,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 8
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Community Pool Access", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Hot Tub", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Full Kitchen", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true }
+        ],
+        "bed": [
+          { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "King" },
+          { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "Queen" },
+          { "@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "Single" }
+        ]
       },
       "parentOrganization": {
         "@type": "Organization",
