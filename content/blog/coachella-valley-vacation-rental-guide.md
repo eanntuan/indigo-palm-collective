@@ -37,8 +37,8 @@ layout: blog-post.njk
 
 <p>Both <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> in Indio are private-pool properties. Terra Luz has a particularly good setup: black-and-white geometric tile border, a sun shelf with built-in loungers, and a terracotta deck that holds warmth into the evening.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at night at Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">9pm, 75 degrees, no one else around. The private hot tub situation at Cozy Cactus.</p>
+<img src="/blog/images/cc-kids-room-styled.jpeg" alt="Styled kids bedroom at a Coachella Valley vacation rental with bunk beds and playful desert decor" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">Every room matters when families book. A property that thought through the kids room usually thought through everything else too.</p>
 
 <h2>2. Proximity to What You're Actually Doing</h2>
 
@@ -94,8 +94,8 @@ layout: blog-post.njk
 
 <p>For all of our properties, guests get a direct contact. Not a ticketing system. A person who knows the house.</p>
 
-<img src="/blog/images/cozy-cactus-exterior.jpg" alt="Exterior front view of Cozy Cactus vacation rental house in Indio California" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">Cozy Cactus exterior, Indio. You'll know who to call if you need anything.</p>
+<img src="/blog/images/cc-primary-styled-v1.jpeg" alt="Primary bedroom at a Coachella Valley vacation rental styled with warm desert tones and quality linens" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">The details in a bedroom tell you a lot about a host's standards. If this kind of care shows up in the photos, it's usually there in person too.</p>
 
 <h2>Putting It Together</h2>
 
