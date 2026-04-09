@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Indigo Palm Property Are You? | Take the Quiz</title>
+    <meta name="description" content="Answer 6 questions and find out which Indigo Palm Collective desert home matches your travel personality. Cozy Cactus, Terra Luz, The Sundune, or The Well?">
+    <link rel="canonical" href="https://indigopalm.co/quiz/">
+    <meta property="og:title" content="Which Desert Home Are You? Take the Quiz">
+    <meta property="og:description" content="6 questions. Find your perfect Indigo Palm property match.">
+    <meta property="og:image" content="https://indigopalm.co/og-image.jpg">
+    <meta property="og:url" content="https://indigopalm.co/quiz/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Google tag (gtag.js) — deferred until page idle -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LCY4M0HEQB');
+      function loadGTM() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB';
+        s.async = true;
+        document.head.appendChild(s);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGTM);
+      } else {
+        window.addEventListener('load', function() { setTimeout(loadGTM, 2000); });
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap"></noscript>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --serif: 'Cormorant Garamond', Georgia, serif;
+            --sans: 'Work Sans', system-ui, sans-serif;
+            --charcoal: #2c2c2c;
+            --cream: #f5f3ee;
+            --terracotta: #B67550;
+            --terracotta-dark: #8A4A2E;
+            --sage: #607c67;
+            --dusty-blue: #6E90AD;
+            --dusty-blue-dark: #3D5F78;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--cream);
+            color: var(--charcoal);
+            min-height: 100vh;
+        }
+
+        /* NAV */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e8e4df;
+        }
+        nav a.logo {
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+        nav a.back {
+            font-size: 0.85rem;
+            color: #595959;
+            text-decoration: none;
+        }
+        nav a.back:hover { color: var(--terracotta); }
+
+        /* HERO */
+        .quiz-hero {
+            text-align: center;
+            padding: 4rem 5% 3rem;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        .quiz-hero .eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--terracotta-dark);
+            margin-bottom: 1rem;
+        }
+        .quiz-hero h1 {
+            font-family: var(--serif);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            color: var(--charcoal);
+        }
+        .quiz-hero p {
+            font-size: 1rem;
+            color: #595959;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .start-btn {
+            display: inline-block;
+            background: var(--terracotta-dark);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-family: var(--sans);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: background 0.2s;
+        }
+        .start-btn:hover { background: #6B3420; }
+
+        /* PROGRESS */
+        .progress-wrap {
+            max-width: 640px;
+            margin: 0 auto 2rem;
+            padding: 0 5%;
+        }
+        .progress-top {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #595959;
+            margin-bottom: 0.5rem;
+        }
+        .progress-bar {
+            height: 3px;
+            background: #ddd;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: var(--terracotta-dark);
+            border-radius: 2px;
+            transition: width 0.4s ease;
+        }
+
+        /* QUIZ CARD */
+        .quiz-wrap {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 5% 4rem;
+        }
+
+        .question-card {
+            background: white;
+            padding: 2.5rem;
+            display: none;
+            animation: fadeUp 0.35s ease;
+        }
+        .question-card.active { display: block; }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .question-card h2 {
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 2rem;
+            color: var(--charcoal);
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .option {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            border: 1.5px solid #e8e4df;
+            cursor: pointer;
+            transition: border-color 0.15s, background 0.15s;
+            background: white;
+            text-align: left;
+            width: 100%;
+            font-family: var(--sans);
+        }
+        .option:hover {
+            border-color: var(--terracotta);
+            background: #fdf9f6;
+        }
+        .option.selected {
+            border-color: var(--terracotta-dark);
+            background: #fdf9f6;
+        }
+        .option-letter {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border: 1.5px solid #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #595959;
+            transition: border-color 0.15s, background 0.15s, color 0.15s;
+        }
+        .option.selected .option-letter {
+            border-color: var(--terracotta-dark);
+            background: var(--terracotta-dark);
+            color: white;
+        }
+        .option-text {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--charcoal);
+            padding-top: 2px;
+        }
+
+        .next-btn {
+            margin-top: 2rem;
+            width: 100%;
+            padding: 1rem;
+            background: var(--terracotta-dark);
+            color: white;
+            border: none;
+            font-family: var(--sans);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: none;
+        }
+        .next-btn:hover { background: #6B3420; }
+        .next-btn.visible { display: block; }
+
+        /* RESULT */
+        .result-card {
+            background: white;
+            display: none;
+            animation: fadeUp 0.35s ease;
+            overflow: hidden;
+        }
+        .result-card.active { display: block; }
+
+        .result-hero-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .result-body {
+            padding: 2.5rem;
+        }
+
+        .result-eyebrow {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        .result-name {
+            font-family: var(--serif);
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin-bottom: 0.25rem;
+        }
+        .result-location {
+            font-size: 0.85rem;
+            color: #595959;
+            margin-bottom: 1.5rem;
+        }
+        .result-tagline {
+            font-family: var(--serif);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #595959;
+            margin-bottom: 1.25rem;
+            line-height: 1.4;
+        }
+        .result-desc {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #3a3a3a;
+            margin-bottom: 2rem;
+        }
+
+        .result-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .btn-primary {
+            display: block;
+            text-align: center;
+            padding: 1rem;
+            color: white;
+            text-decoration: none;
+            font-family: var(--sans);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: opacity 0.2s;
+        }
+        .btn-primary:hover { opacity: 0.88; }
+        .btn-secondary {
+            display: block;
+            text-align: center;
+            padding: 0.9rem;
+            border: 1.5px solid var(--charcoal);
+            color: var(--charcoal);
+            text-decoration: none;
+            font-family: var(--sans);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            background: white;
+            transition: background 0.2s;
+            width: 100%;
+        }
+        .btn-secondary:hover { background: var(--cream); }
+
+        .share-row {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        .share-row p {
+            font-size: 0.8rem;
+            color: #595959;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .share-btns {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+        .share-btn {
+            padding: 0.5rem 1.25rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1.5px solid #ddd;
+            background: white;
+            cursor: pointer;
+            font-family: var(--sans);
+            transition: border-color 0.15s;
+        }
+        .share-btn:hover { border-color: var(--charcoal); }
+
+        .retake-row {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        .retake-link {
+            font-size: 0.85rem;
+            color: #595959;
+            cursor: pointer;
+            text-decoration: underline;
+            background: none;
+            border: none;
+            font-family: var(--sans);
+        }
+        .retake-link:hover { color: var(--charcoal); }
+
+        /* HIDDEN */
+        .screen { display: none; }
+        .screen.active { display: block; }
+
+        @media (max-width: 480px) {
+            .question-card, .result-body { padding: 1.75rem; }
+            .quiz-hero { padding: 2.5rem 5% 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="logo">Indigo Palm Collective</a>
+    <a href="/" class="back">← Back to properties</a>
+</nav>
+
+<!-- SCREEN: Intro -->
+<div id="screen-intro" class="screen active">
+    <div class="quiz-hero">
+        <p class="eyebrow">The Indigo Palm Quiz</p>
+        <h1>Which desert home is calling your name?</h1>
+        <p>Six questions. We'll match you to the Indigo Palm property that fits how you actually travel — not how you think you're supposed to.</p>
+        <button class="start-btn" onclick="startQuiz()">Find My Match</button>
+    </div>
+</div>
+
+<!-- SCREEN: Quiz -->
+<div id="screen-quiz" class="screen">
+    <div class="progress-wrap">
+        <div class="progress-top">
+            <span id="q-counter">Question 1 of 6</span>
+            <span id="q-pct">0%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+        </div>
+    </div>
+
+    <div class="quiz-wrap">
+
+        <!-- Q1 -->
+        <div class="question-card active" data-q="0">
+            <h2>Your ideal desert morning looks like...</h2>
+            <div class="options">
+                <button class="option" data-property="cc" onclick="selectOption(this)">
+                    <span class="option-letter">A</span>
+                    <span class="option-text">Coffee bar, sound machine still running, kids splashing in the pool by 9am — and you're actually relaxed about it</span>
+                </button>
+                <button class="option" data-property="tl" onclick="selectOption(this)">
+                    <span class="option-letter">B</span>
+                    <span class="option-text">Slow pour-over on a terracotta courtyard, music already on, golden light hitting the Kahlo blue pool</span>
+                </button>
+                <button class="option" data-property="sd" onclick="selectOption(this)">
+                    <span class="option-letter">C</span>
+                    <span class="option-text">Quiet walk, farmers market haul, long soak — no agenda, no hustle</span>
+                </button>
+                <button class="option" data-property="tw" onclick="selectOption(this)">
+                    <span class="option-letter">D</span>
+                    <span class="option-text">Laptop open, strong espresso, complete silence — this trip is yours</span>
+                </button>
+            </div>
+            <button class="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question-card" data-q="1">
+            <h2>Your travel group is usually...</h2>
+            <div class="options">
+                <button class="option" data-property="cc" onclick="selectOption(this)">
+                    <span class="option-letter">A</span>
+                    <span class="option-text">The whole crew — kids, cousins, someone's grandparent, three different snack preferences</span>
+                </button>
+                <button class="option" data-property="tl" onclick="selectOption(this)">
+                    <span class="option-letter">B</span>
+                    <span class="option-text">4-6 friends who genuinely care where they stay and will absolutely notice if the aesthetic is off</span>
+                </button>
+                <button class="option" data-property="sd" onclick="selectOption(this)">
+                    <span class="option-letter">C</span>
+                    <span class="option-text">Just the two of you, or a very small group of people you actually want to spend 72 hours with</span>
+                </button>
+                <button class="option" data-property="tw" onclick="selectOption(this)">
+                    <span class="option-letter">D</span>
+                    <span class="option-text">Solo, or a quiet pair — you're here to decompress, not perform</span>
+                </button>
+            </div>
+            <button class="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question-card" data-q="2">
+            <h2>What would you actually do at the pool?</h2>
+            <div class="options">
+                <button class="option" data-property="cc" onclick="selectOption(this)">
+                    <span class="option-letter">A</span>
+                    <span class="option-text">One eye on the kids, one eye on your drink — this is the first time you've truly exhaled in months</span>
+                </button>
+                <button class="option" data-property="tl" onclick="selectOption(this)">
+                    <span class="option-letter">B</span>
+                    <span class="option-text">Fire pit at dusk, someone brought a playlist, in-pool lounger, the kind of night that gets talked about for years</span>
+                </button>
+                <button class="option" data-property="sd" onclick="selectOption(this)">
+                    <span class="option-letter">C</span>
+                    <span class="option-text">Float quietly with a book and a paloma — this is the whole point</span>
+                </button>
+                <button class="option" data-property="tw" onclick="selectOption(this)">
+                    <span class="option-letter">D</span>
+                    <span class="option-text">Sit beside it in the shade and read something long — honestly the vibe</span>
+                </button>
+            </div>
+            <button class="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question-card" data-q="3">
+            <h2>When you walk into a vacation rental, you notice...</h2>
+            <div class="options">
+                <button class="option" data-property="cc" onclick="selectOption(this)">
+                    <span class="option-letter">A</span>
+                    <span class="option-text">Whether everything is labeled, where the pack-n-play is, and if someone actually thought about kids being there</span>
+                </button>
+                <button class="option" data-property="tl" onclick="selectOption(this)">
+                    <span class="option-letter">B</span>
+                    <span class="option-text">The design — immediately. You can tell if someone had a vision or just bought whatever was on sale</span>
+                </button>
+                <button class="option" data-property="sd" onclick="selectOption(this)">
+                    <span class="option-letter">C</span>
+                    <span class="option-text">The light and the quiet — can you hear anything? Is the energy calm? That's what matters</span>
+                </button>
+                <button class="option" data-property="tw" onclick="selectOption(this)">
+                    <span class="option-letter">D</span>
+                    <span class="option-text">The wifi, the desk situation, and whether there's a good coffee setup — the rest is secondary</span>
+                </button>
+            </div>
+            <button class="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question-card" data-q="4">
+            <h2>The desert to you is...</h2>
+            <div class="options">
+                <button class="option" data-property="cc" onclick="selectOption(this)">
+                    <span class="option-letter">A</span>
+                    <span class="option-text">A place to show your kids something different — space, stars, community, a putting green</span>
+                </button>
+                <button class="option" data-property="tl" onclick="selectOption(this)">
+                    <span class="option-letter">B</span>
+                    <span class="option-text">The backdrop — Coachella, Stagecoach, a festival weekend you've been planning since January</span>
+                </button>
+                <button class="option" data-property="sd" onclick="selectOption(this)">
+                    <span class="option-letter">C</span>
+                    <span class="option-text">The antidote. You come here to slow down, not speed up</span>
+                </button>
+                <button class="option" data-property="tw" onclick="selectOption(this)">
+                    <span class="option-letter">D</span>
+                    <span class="option-text">A place to disappear into for a while and come back a little clearer</span>
+                </button>
+            </div>
+            <button class="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question-card" data-q="5">
+            <h2>Last one. Your perfect travel souvenir is...</h2>
+            <div class="options">
+                <button class="option" data-property="cc" onclick="selectOption(this)">
+                    <span class="option-letter">A</span>
+                    <span class="option-text">A photo of your kid asleep in a pool float, sun on their face — proof that you got the trip right</span>
+                </button>
+                <button class="option" data-property="tl" onclick="selectOption(this)">
+                    <span class="option-letter">B</span>
+                    <span class="option-text">A photo that gets asked about. "Where were you?" "A place in Indio — you have to go."</span>
+                </button>
+                <button class="option" data-property="sd" onclick="selectOption(this)">
+                    <span class="option-letter">C</span>
+                    <span class="option-text">Something from the farmers market you'll actually use at home — or just the memory of doing nothing, beautifully</span>
+                </button>
+                <button class="option" data-property="tw" onclick="selectOption(this)">
+                    <span class="option-letter">D</span>
+                    <span class="option-text">A finished book, a cleared inbox, or just the quiet knowledge that you actually rested</span>
+                </button>
+            </div>
+            <button class="next-btn" onclick="showResult()">See My Match</button>
+        </div>
+
+        <!-- Results -->
+        <div class="result-card" id="result-cc">
+            <img class="result-hero-img"
+                 src="/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.webp"
+                 alt="Cozy Cactus vacation rental in Indio"
+                 loading="eager" width="640" height="260">
+            <div class="result-body">
+                <p class="result-eyebrow" style="color: #00877b;">Your match</p>
+                <h2 class="result-name">The Cozy Cactus</h2>
+                <p class="result-location">Indio, CA &middot; 3BR/2BA &middot; Sleeps 10</p>
+                <p class="result-tagline">"Where parents finally rest on vacation."</p>
+                <p class="result-desc">You don't need a picture-perfect house. You need a house that actually thought about you. Cozy Cactus has a pack-n-play already set up, sound machines in every room, a putting green, a community pool steps away, and a labeling system guests rave about in every review. You'll spend less time managing logistics and more time actually being on vacation.</p>
+                <div class="result-actions">
+                    <a href="/cozy-cactus/" class="btn-primary" style="background: #00877b;" onclick="gtag('event','quiz_cta_click',{property:'cozy-cactus'})">View Cozy Cactus</a>
+                    <a href="https://www.airbnb.com/h/cozy-cactus" target="_blank" class="btn-primary" style="background: #595959;" onclick="gtag('event','quiz_book_click',{property:'cozy-cactus'})">Check Availability on Airbnb</a>
+                    <button class="btn-secondary" onclick="retakeQuiz()">Retake the quiz</button>
+                </div>
+                <div class="share-row">
+                    <p>Share your result</p>
+                    <div class="share-btns">
+                        <button class="share-btn" onclick="shareResult('Cozy Cactus')">Copy link</button>
+                        <button class="share-btn" onclick="shareText('I got The Cozy Cactus on the Indigo Palm quiz. Take it at indigopalm.co/quiz/')">Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-card" id="result-tl">
+            <img class="result-hero-img"
+                 src="/Terra%20Luz/Existing%20Listing%20Pictures/IMG_1240.webp"
+                 alt="Terra Luz Latin-inspired desert home in Indio"
+                 loading="eager" width="640" height="260">
+            <div class="result-body">
+                <p class="result-eyebrow" style="color: #8A4A2E;">Your match</p>
+                <h2 class="result-name">Terra Luz</h2>
+                <p class="result-location">Indio, CA &middot; 3BR/2BA &middot; Kahlo Blue Pool</p>
+                <p class="result-tagline">"A place you'll feel before you can describe."</p>
+                <p class="result-desc">Terra Luz is a Latin/Cuban-inspired sanctuary designed from the ground up — terracotta courtyard, Kahlo blue saltwater pool, wabi-sabi warmth collected over time rather than staged overnight. It's 2.5 miles from Coachella. It's the kind of house where the aesthetic does the heavy lifting, and the photos ask themselves. You know a good stay when you're in one. This is it.</p>
+                <div class="result-actions">
+                    <a href="/terra-luz/" class="btn-primary" style="background: #8A4A2E;" onclick="gtag('event','quiz_cta_click',{property:'terra-luz'})">View Terra Luz</a>
+                    <a href="/terra-luz/#booking" class="btn-primary" style="background: #595959;" onclick="gtag('event','quiz_book_click',{property:'terra-luz'})">Check Availability</a>
+                    <button class="btn-secondary" onclick="retakeQuiz()">Retake the quiz</button>
+                </div>
+                <div class="share-row">
+                    <p>Share your result</p>
+                    <div class="share-btns">
+                        <button class="share-btn" onclick="shareResult('Terra Luz')">Copy link</button>
+                        <button class="share-btn" onclick="shareText('I got Terra Luz on the Indigo Palm quiz. Take it at indigopalm.co/quiz/')">Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-card" id="result-sd">
+            <img class="result-hero-img"
+                 src="/PS%20Retreat/IMG_3334.webp"
+                 alt="The Sundune vacation rental in Palm Springs"
+                 loading="eager" width="640" height="260"
+                 onerror="this.src='/PS%20Retreat/IMG_3334.JPG'">
+            <div class="result-body">
+                <p class="result-eyebrow" style="color: #3D5F78;">Your match</p>
+                <h2 class="result-name">The Sundune</h2>
+                <p class="result-location">Palm Springs, CA &middot; 2BR/2BA &middot; Coastal Desert</p>
+                <p class="result-tagline">"For people who've earned the slow trip."</p>
+                <p class="result-desc">The Sundune sits in Palm Springs proper — farmers markets, independent coffee shops, art galleries, and a very specific kind of afternoon light that makes you forget what day it is. Coastal desert meets mid-century calm. You come here to do less and feel more. The kind of trip you plan for yourself, not for anyone's feed.</p>
+                <div class="result-actions">
+                    <a href="/the-sundune/" class="btn-primary" style="background: #3D5F78;" onclick="gtag('event','quiz_cta_click',{property:'the-sundune'})">View The Sundune</a>
+                    <a href="mailto:indigopalmco@gmail.com?subject=Sundune Inquiry" class="btn-primary" style="background: #595959;" onclick="gtag('event','quiz_book_click',{property:'the-sundune'})">Inquire to Book</a>
+                    <button class="btn-secondary" onclick="retakeQuiz()">Retake the quiz</button>
+                </div>
+                <div class="share-row">
+                    <p>Share your result</p>
+                    <div class="share-btns">
+                        <button class="share-btn" onclick="shareResult('The Sundune')">Copy link</button>
+                        <button class="share-btn" onclick="shareText('I got The Sundune on the Indigo Palm quiz. Take it at indigopalm.co/quiz/')">Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-card" id="result-tw">
+            <img class="result-hero-img"
+                 src="/The%20Well/1TW_4W6A0294.webp"
+                 alt="The Well vacation rental in Palm Springs"
+                 loading="eager" width="640" height="260">
+            <div class="result-body">
+                <p class="result-eyebrow" style="color: #4A6050;">Your match</p>
+                <h2 class="result-name">The Well</h2>
+                <p class="result-location">Palm Springs, CA &middot; 1BR/1BA &middot; Sleeps 4</p>
+                <p class="result-tagline">"Quiet done right."</p>
+                <p class="result-desc">The Well is for people who know exactly what they need and don't require anyone to understand it. One bedroom, Palm Springs address, clean lines, and enough quiet that you'll actually finish what you came here to think about. Minimalist by design, not by accident. You travel light, you sleep well, and you leave clearer than you arrived.</p>
+                <div class="result-actions">
+                    <a href="/the-well/" class="btn-primary" style="background: #4A6050;" onclick="gtag('event','quiz_cta_click',{property:'the-well'})">View The Well</a>
+                    <a href="mailto:indigopalmco@gmail.com?subject=The Well Inquiry" class="btn-primary" style="background: #595959;" onclick="gtag('event','quiz_book_click',{property:'the-well'})">Inquire to Book</a>
+                    <button class="btn-secondary" onclick="retakeQuiz()">Retake the quiz</button>
+                </div>
+                <div class="share-row">
+                    <p>Share your result</p>
+                    <div class="share-btns">
+                        <button class="share-btn" onclick="shareResult('The Well')">Copy link</button>
+                        <button class="share-btn" onclick="shareText('I got The Well on the Indigo Palm quiz. Take it at indigopalm.co/quiz/')">Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /quiz-wrap -->
+</div><!-- /screen-quiz -->
+
+<script>
+    const TOTAL = 6;
+    let currentQ = 0;
+    let scores = { cc: 0, tl: 0, sd: 0, tw: 0 };
+    let answered = new Array(TOTAL).fill(null);
+
+    function startQuiz() {
+        document.getElementById('screen-intro').classList.remove('active');
+        document.getElementById('screen-quiz').classList.add('active');
+        updateProgress();
+        gtag('event', 'quiz_start', { event_category: 'Quiz' });
+    }
+
+    function updateProgress() {
+        const pct = Math.round((currentQ / TOTAL) * 100);
+        document.getElementById('q-counter').textContent = 'Question ' + (currentQ + 1) + ' of ' + TOTAL;
+        document.getElementById('q-pct').textContent = pct + '%';
+        document.getElementById('progress-fill').style.width = pct + '%';
+    }
+
+    function selectOption(el) {
+        const card = el.closest('.question-card');
+        card.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+        el.classList.add('selected');
+
+        const prop = el.dataset.property;
+        answered[currentQ] = prop;
+
+        const nextBtn = card.querySelector('.next-btn');
+        nextBtn.classList.add('visible');
+    }
+
+    function nextQuestion() {
+        if (answered[currentQ] === null) return;
+
+        scores[answered[currentQ]]++;
+
+        const cards = document.querySelectorAll('.question-card');
+        cards[currentQ].classList.remove('active');
+        currentQ++;
+
+        if (currentQ < TOTAL) {
+            cards[currentQ].classList.add('active');
+            updateProgress();
+        }
+    }
+
+    function showResult() {
+        if (answered[currentQ] === null) return;
+
+        scores[answered[currentQ]]++;
+
+        // Tally winner
+        const winner = Object.entries(scores).sort((a, b) => b[1] - a[1])[0][0];
+
+        document.querySelectorAll('.question-card').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('.result-card').forEach(c => c.classList.remove('active'));
+        document.getElementById('result-' + winner).classList.add('active');
+
+        const names = { cc: 'Cozy Cactus', tl: 'Terra Luz', sd: 'The Sundune', tw: 'The Well' };
+        gtag('event', 'quiz_complete', { event_category: 'Quiz', result: names[winner] });
+
+        // Update progress to 100%
+        document.getElementById('q-pct').textContent = '100%';
+        document.getElementById('progress-fill').style.width = '100%';
+        document.getElementById('q-counter').textContent = 'Your result';
+    }
+
+    function retakeQuiz() {
+        currentQ = 0;
+        scores = { cc: 0, tl: 0, sd: 0, tw: 0 };
+        answered = new Array(TOTAL).fill(null);
+
+        document.querySelectorAll('.result-card').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('.question-card').forEach((c, i) => {
+            c.classList.remove('active');
+            c.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+            c.querySelector('.next-btn').classList.remove('visible');
+        });
+        document.querySelectorAll('.question-card')[0].classList.add('active');
+        updateProgress();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function shareResult(name) {
+        const url = 'https://indigopalm.co/quiz/';
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(url).then(() => {
+                const btn = event.target;
+                btn.textContent = 'Copied!';
+                setTimeout(() => btn.textContent = 'Copy link', 2000);
+            });
+        }
+    }
+
+    function shareText(text) {
+        if (navigator.share) {
+            navigator.share({ text: text, url: 'https://indigopalm.co/quiz/' });
+        } else {
+            const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text);
+            window.open(url, '_blank');
+        }
+    }
+</script>
+
+</body>
+</html>
