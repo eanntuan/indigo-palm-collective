@@ -12,6 +12,8 @@ keywords:
   - Cartel Coffee Coachella
   - Everbloom Indio
 ogImage: /blog/images/coffee-lattes-hero.jpg
+heroImage: /blog/images/coffee-lattes-hero.jpg
+heroAlt: "Coffee bar setup with mugs, pour-over kettle, and espresso gear at a Coachella Valley vacation rental"
 articleSection: Palm Springs Travel Guide
 property: all
 readTime: 4 min read
