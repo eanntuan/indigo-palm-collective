@@ -740,6 +740,9 @@ async function handleApprove(request, env) {
   let paymentLink = null;
   if (env.SQUARE_ACCESS_TOKEN) {
     try {
+      const squareBaseUrl = env.SQUARE_SANDBOX === 'true'
+        ? 'https://connect.squareupsandbox.com'
+        : 'https://connect.squareup.com';
       paymentLink = await createSquarePaymentLink(env.SQUARE_ACCESS_TOKEN, {
         property: booking.property,
         checkIn: booking.checkIn,
@@ -752,6 +755,7 @@ async function handleApprove(request, env) {
         discountCode: booking.discountCode,
         ccFee,
         fmtDate,
+        squareBaseUrl,
       });
     } catch (e) {
       console.error('Square payment link failed:', e);
@@ -1260,9 +1264,9 @@ async function handleDiscount(url, env) {
   }), { status: 200, headers: CORS_HEADERS });
 }
 
-async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, poolHeat, poolHeatNights, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate }) {
+async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, poolHeat, poolHeatNights, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate, squareBaseUrl = 'https://connect.squareup.com' }) {
   // Fetch first location
-  const locRes = await fetch('https://connect.squareup.com/v2/locations', {
+  const locRes = await fetch(`${squareBaseUrl}/v2/locations`, {
     headers: { 'Authorization': `Bearer ${accessToken}`, 'Square-Version': '2024-01-18' },
   });
   if (!locRes.ok) throw new Error(`Square locations fetch failed: ${locRes.status}`);
@@ -1315,7 +1319,7 @@ async function createSquarePaymentLink(accessToken, { property, checkIn, checkOu
 
   const idempotencyKey = `indigo-${Date.now()}-${Math.random().toString(36).slice(2)}`;
 
-  const res = await fetch('https://connect.squareup.com/v2/online-checkout/payment-links', {
+  const res = await fetch(`${squareBaseUrl}/v2/online-checkout/payment-links`, {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${accessToken}`,
