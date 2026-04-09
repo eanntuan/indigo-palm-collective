@@ -86,8 +86,8 @@ layout: blog-post.njk
 
 <p>The advantages: after the tennis, you can walk to dinner. Palm Canyon Drive has restaurants, bars, and coffee shops within a short walk of most hotels and many rentals. If you're a first-time visitor to the area, staying in Palm Springs means you'll see more of the city.</p>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Palm Springs midcentury modern neighborhood with mountain backdrop and desert landscaping during daytime" width="1400" height="933" loading="lazy">
-<p class="image-caption">Staying in Palm Springs means this is the backdrop for your evening walk. The architecture district is worth a morning.</p>
+<img src="/blog/images/coffee-bar.jpg" alt="Coffee setup at a Palm Springs area vacation rental, a good start before morning matches at BNP Paribas" width="1400" height="933" loading="lazy">
+<p class="image-caption">Staying in Palm Springs means good coffee options within walking distance. Worth a morning before the matches start.</p>
 
 <p>The trade-offs: Palm Springs accommodation during BNP Paribas is expensive. Rates spike significantly for the two-week tournament window. Properties near downtown are smaller on average than what you'd find in Indio, and private pools are less common at that price point. The drive to the venue is straightforward, about 20 minutes, but daily back-and-forth can feel repetitive over a full week.</p>
 
@@ -108,8 +108,8 @@ layout: blog-post.njk
 
 <p>Good for: groups of 4 or more, families, people who want private outdoor space and a kitchen. <a href="/cozy-cactus/">The Cozy Cactus</a> is a 3BR/2BA in Indio with a private pool, hot tub, and game room that holds up well for tournament groups. <a href="/terra-luz/">Terra Luz</a>, opening May 2026, will be available for Stagecoach and future tournament seasons.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard in Palm Springs with San Jacinto Mountains visible at the end of the street on a clear day" width="1400" height="933" loading="lazy">
-<p class="image-caption">The drive between Palm Springs or Indio and the venue runs through this. It's a pleasant 20 minutes either direction.</p>
+<img src="/blog/images/cc-kids-room-bunks.jpeg" alt="Bunk bed room at a Coachella Valley vacation rental, practical for families bringing kids to the BNP Paribas tournament" width="1400" height="933" loading="lazy">
+<p class="image-caption">Families traveling to the tournament: a rental with dedicated bunk beds means the kids have their own space and everyone sleeps better.</p>
 
 <h2>What to Look for in a Rental During BNP Paribas</h2>
 
