@@ -29,7 +29,7 @@ layout: blog-post.njk
 
 <p><strong>Indio</strong> is where the Empire Polo Club is. That's the festival grounds. Stay here and you're 5-15 minutes from the venue. Some properties are within walking distance.</p>
 
-<p><strong>Palm Desert and La Quinta</strong> put you 20-30 minutes out in normal traffic. During festival ingress and egress, that's 45-60 minutes. You'll spend real time and money on transportation every day.</p>
+<p><strong>Palm Desert and La Quinta</strong> put you 15-25 minutes out in normal traffic. During festival ingress and egress, that stretches to 45 minutes or more. You'll spend real time and money on transportation every day.</p>
 
 <p><strong>Palm Springs</strong> is 30-45 minutes from the polo grounds on a normal day. During festival weekend, budget an hour minimum each direction. The hotels are nicer but the math gets ugly fast when you add Uber surge.</p>
 
@@ -51,7 +51,7 @@ layout: blog-post.njk
 
 <p><strong>Who should think twice:</strong> Anyone who needs reliable sleep to function. Groups with mixed energy levels where some people want to leave at midnight and others want to stay until 2am. If you're sharing a tent with someone on a different schedule, that gets old by Day 2.</p>
 
-<p><strong>Real cost:</strong> Car camping runs about $125-150 per person. That sounds reasonable until you factor in gear, the fact that festival food is expensive, and the high probability you'll take an Uber out of the campsite on Day 2 to get real food and a shower somewhere.</p>
+<p><strong>Real cost:</strong> Car camping runs about $149 + fees per person (that's the official price, before you add gear). The math gets murkier when you factor in expensive festival food and the real possibility you'll take an Uber out of the campsite on Day 2 just to get real food and a shower.</p>
 
 <img src="/blog/images/coachella-camping.jpg" alt="Coachella festival camping layout with tents and cars in the desert campground at Indio California" loading="lazy" width="800" height="450">
 <p class="image-caption">The camping experience at Coachella. Full immersion, genuine community, and roughly four hours of sleep per night.</p>
@@ -62,7 +62,7 @@ layout: blog-post.njk
 
 <p><strong>Nightly rates during Coachella:</strong> Hotels in the area price aggressively for festival weekends. Expect to pay $300-600/night for something decent. A property that's $120 on a Tuesday in February has no problem charging $500 on a Coachella Friday.</p>
 
-<p><strong>Transportation costs:</strong> Uber surge from Palm Springs to the polo grounds during festival peak hours runs $60-100 each way. For a group of 4 taking rides in and out over three days, that's $400-600 on top of accommodation. A lot of people don't run this number before they book.</p>
+<p><strong>Transportation costs:</strong> Uber surge from Palm Springs to the polo grounds during festival peak hours routinely runs $100-160 each way. People report paying $120 for a 3-mile ride at peak hours. For a group of 4 taking rides in and out over three days, that's $600-900 on top of accommodation. Most people don't run this number before they book.</p>
 
 <p><strong>The commute fatigue factor:</strong> After three days of the festival, the 45-minute ride back to your hotel stops feeling like no big deal and starts feeling like a punishment. Especially on Sunday night when everyone is leaving at once.</p>
 
