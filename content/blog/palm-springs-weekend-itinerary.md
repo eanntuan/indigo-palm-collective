@@ -99,8 +99,8 @@ layout: blog-post.njk
 
 <p>Don't rush checkout. The I-10 west back toward Los Angeles is brutal on Sunday afternoon. Leave before noon if you're LA-bound or after 7pm — the 2-4pm window is the worst. If you have flexibility, a slow checkout and a long lunch gives you a natural reason to leave at a reasonable time.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Pink bougainvillea cascading over a fence on a Palm Springs street with blue sky and desert mountains" loading="lazy" width="1400" height="933">
-<p class="image-caption">One more image of a Palm Springs street. This kind of thing just happens here on a regular Tuesday.</p>
+<img src="/blog/images/yes-please-palm-springs.jpg" alt="Yes Please Books storefront in Palm Springs, one of those neighborhood finds that makes you glad you wandered" loading="lazy" width="1400" height="933">
+<p class="image-caption">One more reason to leave the main drag for 20 minutes. This kind of thing just happens here on a regular Tuesday.</p>
 
 <h2>Practical Notes for a Palm Springs Weekend</h2>
 
