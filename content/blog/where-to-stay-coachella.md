@@ -2,9 +2,9 @@
 title: "Where to Stay for Coachella: The Complete Guide"
 date: 2026-04-09
 metaDescription: "Hotels, camping, or vacation rental near Coachella? An honest breakdown of every option from someone who actually lives in Indio. No affiliate links."
-ogImage: /blog/images/cozy-cactus-exterior.jpg
-heroImage: /blog/images/cozy-cactus-exterior.jpg
-heroAlt: "Vacation rental house exterior in Indio California near Coachella festival grounds at golden hour"
+ogImage: /blog/images/coachella-festival-crowd.jpg
+heroImage: /blog/images/coachella-festival-crowd.jpg
+heroAlt: "Crowd at Coachella Valley Music and Arts Festival at Empire Polo Club in Indio California"
 keywords:
   - where to stay for Coachella
   - Coachella accommodation
