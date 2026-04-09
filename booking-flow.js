@@ -438,7 +438,11 @@ async function submitBookingRequest() {
         submitBtn.textContent = 'Request Sent!';
         showMessage(
             `Got it. We'll review your request for ${selectedProperty.name} and send a payment link within 24 hours. The desert's not going anywhere.`,
-            'success'
+            'success',
+            [
+                { linkText: 'While you wait: how to prep for your desert stay \u2192', linkHref: '/blog/desert-vacation-prep/' },
+                { linkText: 'Follow us on Instagram @indigopalmco \u2192', linkHref: 'https://www.instagram.com/indigopalmco/', external: true },
+            ]
         );
 
         document.getElementById('check-in').value = '';
@@ -594,11 +598,11 @@ async function applyPromoCode() {
     }
 }
 
-function showMessage(text, type) {
+function showMessage(text, type, links = null) {
     const existing = document.getElementById('form-message');
     if (existing) existing.remove();
 
-    const msg = document.createElement('p');
+    const msg = document.createElement('div');
     msg.id = 'form-message';
     msg.style.cssText = `
         margin-top: 1rem;
@@ -610,6 +614,19 @@ function showMessage(text, type) {
             ? 'background:#e8f5e9;color:#2e7d32;border-left:4px solid #4caf50;'
             : 'background:#fdecea;color:#c62828;border-left:4px solid #f44336;'}
     `;
-    msg.textContent = text;
+    const p = document.createElement('p');
+    p.style.margin = '0';
+    p.textContent = text;
+    msg.appendChild(p);
+    if (links) {
+        (Array.isArray(links) ? links : [links]).forEach(link => {
+            const a = document.createElement('a');
+            a.href = link.linkHref;
+            a.textContent = link.linkText;
+            if (link.external) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+            a.style.cssText = 'display:block;margin-top:0.5rem;font-size:0.85rem;color:inherit;text-decoration:underline;opacity:0.85;';
+            msg.appendChild(a);
+        });
+    }
     document.getElementById('submit-btn').insertAdjacentElement('afterend', msg);
 }
