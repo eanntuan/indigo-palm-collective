@@ -22,8 +22,8 @@ layout: blog-post.njk
 
 <p>That extra $140-200 is the Airbnb guest service fee. It's real money. And if you book vacation rentals more than once a year, it adds up fast. The good news is there's a straightforward way to avoid most of it: book direct with the property owner.</p>
 
-<img src="/blog/images/cozy-cactus-patio.jpg" alt="Shaded outdoor patio at Cozy Cactus vacation rental in Indio California with string lights and desert plants" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">Cozy Cactus backyard. Same house, same host, lower total if you skip the platform fee.</p>
+<img src="/blog/images/coffee-bar.jpg" alt="Styled coffee bar setup inside a vacation rental with quality equipment and thoughtful details" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">The details that matter. Same house, same host, lower total if you skip the platform fee.</p>
 
 <h2>The Math, Honestly</h2>
 
@@ -62,8 +62,8 @@ layout: blog-post.njk
 
 <p><strong>Human help when things go sideways.</strong> The wifi goes down. You can't figure out the TV. A light bulb is out. On a platform booking, you're often in a support queue or waiting for a 24-hour response window. With a direct booking host who actually wants the repeat business, you get a faster response. Usually a real one.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at Cozy Cactus vacation rental in Indio California surrounded by desert landscaping at night" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">Cozy Cactus private hot tub. Best at 9pm when the desert cools down.</p>
+<img src="/blog/images/cc-kids-room-bunks.jpeg" alt="Bunk bed setup in a kids room at a Coachella Valley vacation rental, the kind of detail that shows a host thought things through" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">Thoughtful details throughout the space. That's what direct-booking hosts tend to deliver.</p>
 
 <h2>Is It Safe to Book Direct?</h2>
 
