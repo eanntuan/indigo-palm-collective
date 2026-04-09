@@ -101,7 +101,7 @@ layout: blog-post.njk
 
 <p>Fares into PSP can be higher than LAX, and flight frequency is lower. The math is worth running: sometimes the premium for PSP is worth it for the time saved, sometimes it isn't.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard in Palm Springs with San Jacinto Mountains visible at the end of the street" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm tree-lined street in Palm Springs on a clear day, a quick drive from Palm Springs International Airport" width="1400" height="933" loading="lazy">
 <p class="image-caption">Arriving into PSP means you're in the valley in minutes. From the airport to Palm Canyon Drive is about 10 minutes by car.</p>
 
 <h2>Option 4: Amtrak</h2>
@@ -116,7 +116,7 @@ layout: blog-post.njk
 
 <p>Rideshare availability in the valley is good during peak season but can get thin during off-peak hours in Indio and the east valley. If you're staying somewhere with a pool and don't need to go far, you can manage without a car. If you want flexibility, rent one.</p>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Palm Springs midcentury modern neighborhood with flat-roof homes, desert landscaping, and mountain backdrop" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-pink-door-midcentury.jpg" alt="Pink front door on a midcentury modern home in Palm Springs with desert landscaping and mountain backdrop" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs midcentury architecture is best explored by walking or slow-driving. Give yourself an afternoon with no plan.</p>
 
 <h2>A Note on Festival Weekends</h2>
@@ -127,7 +127,7 @@ layout: blog-post.njk
 
 <p>Once you've figured out how you're getting here, the question of where to stay is next. The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> covers the trade-offs between staying in the city or staying closer to the festival grounds.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Bougainvillea-lined street in Palm Springs with mountains in the distance and mid-century homes on both sides" width="1400" height="933" loading="lazy">
+<img src="/blog/images/yes-please-palm-springs.jpg" alt="Yes Please Books storefront in Palm Springs, a welcoming neighborhood spot worth wandering into" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs rewards arriving with time to wander. Don't book the first evening too tight.</p>
 
 <h2>Frequently Asked Questions</h2>
