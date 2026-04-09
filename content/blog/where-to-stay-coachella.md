@@ -69,7 +69,7 @@ layout: blog-post.njk
 
 <p><strong>The commute fatigue factor:</strong> After three days of the festival, the 45-minute ride back to your hotel stops feeling like no big deal and starts feeling like a punishment. Especially on Sunday night when everyone is leaving at once.</p>
 
-<p><strong>The shuttle option:</strong> Coachella runs official shuttle service from several valley pickup points, including Palm Springs and Cathedral City. A shuttle pass is around $75-100 for the weekend. It removes the Uber surge problem, but you're on the shuttle's schedule, not yours. Worth considering if you're locked into a Palm Springs hotel and want to skip the car entirely.</p>
+<p><strong>The shuttle option:</strong> Coachella runs an official "Any Line" shuttle pass covering multiple stops throughout the valley, including Palm Springs and Cathedral City. The pass runs around $150 + fees for the weekend. It removes the Uber surge problem, but you're on the shuttle's schedule, not yours, and waits after the headliner can be long. Worth it if you're locked into a Palm Springs hotel and want to skip the car entirely. Note: this is separate from the LAX-to-Indio shuttle, which is priced separately.</p>
 
 <img src="/blog/images/coachella-shuttle.jpg" alt="Coachella festival shuttle bus picking up attendees from Palm Springs area for transport to Empire Polo Club in Indio" loading="lazy" width="800" height="533">
 <p class="image-caption">Coachella's official shuttle runs from Palm Springs and other valley pickup points. Beats surge pricing if you're already staying west.</p>
