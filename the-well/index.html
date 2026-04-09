@@ -190,18 +190,31 @@
     }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
+    <!-- Google tag (gtag.js) — deferred until page idle -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-LCY4M0HEQB');
+      function loadGTM() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB';
+        s.async = true;
+        document.head.appendChild(s);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGTM);
+      } else {
+        window.addEventListener('load', function() { setTimeout(loadGTM, 2000); });
+      }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap"></noscript>
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" fetchpriority="high" href="/The%20Well/1TW_4W6A0294.webp">
     <style>
         * {
             margin: 0;
@@ -289,7 +302,7 @@
             margin-top: 80px;
             height: 70vh;
             background: linear-gradient(rgba(115, 133, 97, 0.3), rgba(115, 133, 97, 0.3)),
-                        url('../The Well/1TW_4W6A0294.jpg');
+                        url('../The Well/1TW_4W6A0294.webp');
             background-size: cover;
             background-position: center;
             display: flex;

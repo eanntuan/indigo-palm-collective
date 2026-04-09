@@ -229,18 +229,31 @@
     }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
+    <!-- Google tag (gtag.js) — deferred until page idle -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-LCY4M0HEQB');
+      function loadGTM() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB';
+        s.async = true;
+        document.head.appendChild(s);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGTM);
+      } else {
+        window.addEventListener('load', function() { setTimeout(loadGTM, 2000); });
+      }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap"></noscript>
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" fetchpriority="high" href="/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.webp">
     <style>
         * {
             margin: 0;
@@ -331,10 +344,7 @@
             margin-top: 80px;
             height: 70vh;
             background: linear-gradient(rgba(0, 135, 123, 0.2), rgba(0, 135, 123, 0.2)),
-                        url('../Cozy Cactus/82381 Cochran Drive For Web/1TW_DZ5A8774web.jpg');
-            background-image: linear-gradient(rgba(0, 135, 123, 0.2), rgba(0, 135, 123, 0.2)),
-                        image-set(url('../Cozy Cactus/82381 Cochran Drive For Web/1TW_DZ5A8774web.webp') type('image/webp'),
-                                  url('../Cozy Cactus/82381 Cochran Drive For Web/1TW_DZ5A8774web.jpg') type('image/jpeg'));
+                        url('../Cozy Cactus/82381 Cochran Drive For Web/1TW_DZ5A8774web.webp');
             background-size: cover;
             background-position: center;
             display: flex;
