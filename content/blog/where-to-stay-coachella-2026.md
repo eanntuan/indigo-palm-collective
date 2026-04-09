@@ -92,8 +92,8 @@ layout: blog-post.njk
 <img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial drone shot of the Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with community pool and hot tub" width="1400" height="933" decoding="async">
 <p class="image-caption">The Cozy Cactus from above. Private pool center-frame. Empire Polo Club is 2.5 miles east.</p>
 
-<img src="/blog/images/cozy-cactus-exterior.jpg" alt="Exterior of the Cozy Cactus vacation rental in Indio, California near the Coachella festival grounds" width="800" height="533" loading="lazy" decoding="async">
-<p class="image-caption">The Cozy Cactus in Indio. Walking distance to the polo grounds. Private hot tub. Sleeps 8.</p>
+<img src="/blog/images/cc-primary-styled-v1.jpeg" alt="Primary bedroom at the Cozy Cactus vacation rental in Indio California with comfortable linens and warm desert tones" width="800" height="533" loading="lazy" decoding="async">
+<p class="image-caption">Where you wake up on festival morning. Not a hotel room. Your house, your kitchen, your pool outside.</p>
 
 <h2>Honest Price Comparison</h2>
 
@@ -138,8 +138,8 @@ layout: blog-post.njk
 
 <p>The math isn't just about the nightly rate. It's about what's included, what's not, and what you'll spend anyway.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub and pool at the Cozy Cactus vacation rental in Indio, California" width="800" height="533" loading="lazy" decoding="async">
-<p class="image-caption">The 3PM strategy starts here. Pool, hot tub, shade. While everyone else is stuck in traffic.</p>
+<img src="/blog/images/cc-reading-nook.jpg" alt="Cozy reading nook at the Cozy Cactus vacation rental in Indio California, ideal for mid-afternoon festival recovery" width="800" height="533" loading="lazy" decoding="async">
+<p class="image-caption">The 3PM strategy starts here. Nap, recharge, shower. While everyone else is stuck in traffic.</p>
 
 <h2>When to Book</h2>
 
