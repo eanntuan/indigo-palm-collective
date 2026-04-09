@@ -54,11 +54,11 @@ relatedPosts:
   <li><strong>Parking:</strong> $5 at the Valley Station lot</li>
 </ul>
 
-<p>Buy online. The website lets you select a timed departure, which eliminates the wait at the Valley Station ticket counter. On busy weekends, that wait can be significant. The $2 processing fee is worth it every time.</p>
+<p><a href="https://pstramway.vivaticket.com/" target="_blank" rel="noopener">Buy tickets online at pstramway.vivaticket.com</a>. The website lets you select a timed departure, which eliminates the wait at the Valley Station ticket counter. On busy weekends, that wait can be significant. The $2 processing fee is worth it every time.</p>
 
 <p>There are also dining packages if you want to eat at one of the two restaurants at the top. Packages run $27.50 to $43 per person and include a tram ticket plus a meal credit. Worth it if you're planning to eat up there anyway — the prices at the top are what you'd expect for a captive audience at 8,500 feet.</p>
 
-<p>Discounted tickets are available through AAA, military programs, and occasionally through Costco. If you have any of those, check before buying full price.</p>
+<p>Discounted tickets are available through AAA, military programs, and occasionally through <a href="https://www.funex.com/tickets/pst-ca/palm-springs-aerial-tramway" target="_blank" rel="noopener">Fun Express</a> and Costco. If you have any of those, check before buying full price.</p>
 
 <h2>Hours</h2>
 
@@ -70,7 +70,7 @@ relatedPosts:
   <li><strong>Summer extended hours (late May through early September):</strong> Friday and Saturday last tram up at 9:00pm, last tram down at 10:30pm.</li>
 </ul>
 
-<p>The tram closes for maintenance periods, usually in late summer. Check <a href="https://pstramway.com" target="_blank" rel="noopener">pstramway.com</a> for the current schedule before you drive out there.</p>
+<p>The tram closes for maintenance periods, usually in late summer. Check the <a href="https://pstramway.com/about-us/hours/" target="_blank" rel="noopener">official hours page at pstramway.com</a> for the current schedule before you drive out there.</p>
 
 <h2>What's at the Top</h2>
 
@@ -164,7 +164,7 @@ relatedPosts:
 <p>As of 2026: adults $36.95, seniors (65+) $33.95, children (3-10) $20.95. Parking is $5 at the Valley Station. Dining packages that include a meal credit run $27.50-$43 per person. Buy online to skip the ticket counter line.</p>
 
 <h3>What are the Palm Springs Aerial Tram hours?</h3>
-<p>Monday through Friday, first tram up at 10:00am, last tram up at 8:00pm. Weekends and holidays, first tram up at 8:00am, last tram up at 8:00pm. Summer extended hours add late Friday and Saturday departures. Check <a href="https://pstramway.com" target="_blank" rel="noopener">pstramway.com</a> for current schedule and any closures.</p>
+<p>Monday through Friday, first tram up at 10:00am, last tram up at 8:00pm. Weekends and holidays, first tram up at 8:00am, last tram up at 8:00pm. Summer extended hours add late Friday and Saturday departures. Check the <a href="https://pstramway.com/about-us/hours/" target="_blank" rel="noopener">official hours page</a> for current schedule and any closures.</p>
 
 <h3>How long does the ride take?</h3>
 <p>About 10 minutes each way. Budget 2-3 hours total for the experience including wait time and exploring the Mountain Station.</p>
