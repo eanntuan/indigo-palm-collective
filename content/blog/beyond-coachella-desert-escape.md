@@ -86,8 +86,8 @@ layout: blog-post.njk
 
 <p>Pro tip: stay at Terra Luz, wake up early, hit Joshua Tree for sunrise, and be back at the pool by 11 AM. Best of both worlds.</p>
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Wild California fan palms in the Coachella Valley Preserve oasis with red mountains behind at golden hour" loading="lazy" decoding="async" width="800" height="533">
-<p class="image-caption">The Coachella Valley Preserve: wild fan palms fed by the San Andreas Fault. 20 minutes from Indio.</p>
+<img src="/blog/images/lg-desert-store.jpg" alt="L&G Desert Store in Indio California selling fresh-picked Medjool dates and local desert produce" loading="lazy" decoding="async" width="800" height="533">
+<p class="image-caption">L&G Desert Store on the way back from Joshua Tree. Fresh Medjools, local tamales, and things you won't find at a grocery store.</p>
 
 <h2>Palm Springs: Worth the 30-Minute Drive</h2>
 
