@@ -52,6 +52,9 @@ layout: blog-post.njk
 
 <p><strong>Real cost:</strong> Car camping runs about $125-150 per person. That sounds reasonable until you factor in gear, the fact that festival food is expensive, and the high probability you'll take an Uber out of the campsite on Day 2 to get real food and a shower somewhere.</p>
 
+<img src="/blog/images/coachella-camping.jpg" alt="Coachella festival camping layout with tents and cars in the desert campground at Indio California" loading="lazy" width="800" height="450">
+<p class="image-caption">The camping experience at Coachella. Full immersion, genuine community, and roughly four hours of sleep per night.</p>
+
 <h2>Option 2: Hotels in Palm Springs or Palm Desert</h2>
 
 <p>The mid-century hotels in Palm Springs are genuinely great. Nice pools, good design, real beds. If you're going to Coachella and want to experience both the festival and a proper Palm Springs hotel stay, that's a legitimate trip.</p>
@@ -63,6 +66,11 @@ layout: blog-post.njk
 <p><strong>Transportation costs:</strong> Uber surge from Palm Springs to the polo grounds during festival peak hours runs $60-100 each way. For a group of 4 taking rides in and out over three days, that's $400-600 on top of accommodation. A lot of people don't run this number before they book.</p>
 
 <p><strong>The commute fatigue factor:</strong> After three days of the festival, the 45-minute ride back to your hotel stops feeling like no big deal and starts feeling like a punishment. Especially on Sunday night when everyone is leaving at once.</p>
+
+<p><strong>The shuttle option:</strong> Coachella runs official shuttle service from several valley pickup points, including Palm Springs and Cathedral City. A shuttle pass is around $75-100 for the weekend. It removes the Uber surge problem, but you're on the shuttle's schedule, not yours. Worth considering if you're locked into a Palm Springs hotel and want to skip the car entirely.</p>
+
+<img src="/blog/images/coachella-shuttle.jpg" alt="Coachella festival shuttle bus picking up attendees from Palm Springs area for transport to Empire Polo Club in Indio" loading="lazy" width="259" height="194">
+<p class="image-caption">Coachella's official shuttle runs from Palm Springs and other valley pickup points. Beats surge pricing if you're already staying west.</p>
 
 <p><strong>Who it's for:</strong> People who want the Palm Springs hotel experience as part of their trip, not just as a base for the festival. If the hotel IS part of the vacation, the math works differently.</p>
 
