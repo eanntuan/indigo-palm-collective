@@ -99,8 +99,8 @@ layout: blog-post.njk
 
 <p>Sherman's has been in Palm Springs since 1963. It's a full Jewish deli: matzo ball soup, Reuben sandwiches, lox and cream cheese on a real bagel. The booths are worn in. The coffee comes in a diner mug. Nobody is trying to be on trend here, and that's the point. Check their hours at <a href="https://www.instagram.com/shermansdeli/" target="_blank" rel="noopener">@shermansdeli</a>.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Pink bougainvillea along a Palm Springs street with mountain views in the distance" width="1400" height="933" loading="lazy">
-<p class="image-caption">Walking Palm Springs between meals is half the experience. The bougainvillea is at its best in spring.</p>
+<img src="/blog/images/west-elm-dining.jpeg" alt="West Elm dining area in Palm Springs with desert-modern furnishings and warm natural light" width="1400" height="933" loading="lazy">
+<p class="image-caption">Walking Palm Springs between meals is half the experience. The blocks between restaurants are part of the trip.</p>
 
 <h2>Lunch</h2>
 
