@@ -92,8 +92,8 @@ layout: blog-post.njk
 
 <p>I run two of these. You knew it was coming.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private pool and backyard at the Cozy Cactus vacation rental in Indio California, outdoor seating, palm trees at golden hour" loading="lazy" width="800" height="533">
-<p class="image-caption">The Cozy Cactus backyard. Pool, outdoor seating, string lights. This is what Day 2 recovery looks like.</p>
+<img src="/blog/images/cozy-cactus-backyard-putting-green.jpg" alt="Backyard at the Cozy Cactus vacation rental in Indio California with putting green, covered patio, outdoor seating, and private hot tub at sunset" loading="lazy" width="800" height="533">
+<p class="image-caption">The Cozy Cactus backyard. Putting green, covered patio, private hot tub. The 3PM strategy starts here.</p>
 
 <h2>The Properties: Cozy Cactus and Terra Luz</h2>
 
@@ -101,7 +101,10 @@ layout: blog-post.njk
 
 <p>It's built for groups who want to be close to the festival without camping, and want a home base that functions as a real home base. Eight guests. Family-friendly setup. The kind of organization where guests can find everything without texting us.</p>
 
-<p><a href="/terra-luz/">Terra Luz</a> is our second property in Indian Palms. Also walking distance from the polo grounds. Latin-inspired design: Kahlo blue pool, terracotta courtyard, Cuban art, warm kitchen nook with rattan chairs and a capiz pendant overhead. Pet-friendly. Six guests. The vibe is more intimate and design-forward.</p>
+<img src="/blog/images/cc-living-room-v2.jpg" alt="Living room at the Cozy Cactus vacation rental in Indio California with grey sofas, kilim rug, built-in cabinets, and view to kitchen" loading="lazy" width="800" height="534">
+<p class="image-caption">The living room at The Cozy Cactus. Grey sofas, kilim rug, good light. The kind of place you want to come back to at 3pm.</p>
+
+<p><a href="/terra-luz/">Terra Luz</a> is our second property in Indian Palms. Also walking distance from the polo grounds. Latin-inspired design: Kahlo blue pool, terracotta courtyard, Cuban art, warm kitchen nook with rattan chairs and a capiz pendant overhead. Pet-friendly. Eight guests. The vibe is more intimate and design-forward.</p>
 
 <p>Both are in the same gated community. Both are genuine vacation rentals, not someone's house in storage. Both book out fast for festival weekends.</p>
 
@@ -115,6 +118,9 @@ layout: blog-post.njk
 <p>The groups who do Coachella well have a 3PM strategy. Leave the grounds at 3, drive or walk 10 minutes back to the house, pool time, nap, shower, real food, recharge. Back to the grounds by 7 or 8 for the evening sets, when the temperature has dropped 20 degrees and everyone commuting from Palm Springs is stuck in traffic.</p>
 
 <p>This strategy only works if your rental is close enough that splitting the group and meeting back is easy. It doesn't work if you're 45 minutes away and the round trip eats two hours of your day.</p>
+
+<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Community pool at Indian Palms Country Club in Indio California, steps from the Cozy Cactus vacation rental, with lounge chairs and palm trees" loading="lazy" width="800" height="533">
+<p class="image-caption">The community pool at Indian Palms, about a 2-minute walk from The Cozy Cactus. Not in your backyard, but close enough that it functions the same way.</p>
 
 <h2>What to Look For When Booking</h2>
 
