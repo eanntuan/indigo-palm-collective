@@ -21,6 +21,13 @@ property: cozy-cactus
 readTime: "8 min read"
 excerpt: "Joshua Tree is 45 minutes from Indio and less than an hour from Palm Springs. Here's how to actually do it right — which entrance, when to go, and what to bring."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Coachella Valley Insider Guide"
+    url: /blog/coachella-valley-insider-guide/
+  - title: "Where to Stay for Coachella: The Complete Guide"
+    url: /blog/where-to-stay-coachella/
+  - title: "Best Hiking Near Palm Springs"
+    url: /blog/best-hiking-palm-springs/
 ---
 
 <p>Joshua Tree National Park sits right on the edge of what makes the Coachella Valley feel like a different world. From Indio, the south entrance is about 45 minutes. From Palm Springs, the east entrance to the park is roughly the same. It's close enough for a day trip that feels completely removed from the heat and the valley floor, which is exactly why it's worth doing.</p>
@@ -113,6 +120,40 @@ layout: blog-post.njk
 <p><strong>Coachella Valley Preserve</strong> is a fan palm oasis preserve in Thousand Palms, between Indio and Palm Springs on the valley floor. The contrast between the valley desert and the dense palms around the spring is striking. Check the <a href="https://cvmshcp.org/coachella-valley-preserve/" target="_blank" rel="noopener">preserve's site</a> for current hours.</p>
 
 <p><strong>The town of Joshua Tree</strong> (near the park's west entrance) has a good breakfast spot and a few interesting shops if you want a midday break. Check Instagram for current options — the town's food scene turns over regularly.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How far is Joshua Tree from Palm Springs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About 45 to 55 miles depending on which entrance you're heading to. The drive from Palm Springs to the West Entrance via CA-62 takes roughly 50 minutes to an hour." }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is Joshua Tree from Indio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The Cottonwood South Entrance is about 40 to 50 minutes from Indio via I-10 east and CA-195 north. It's an easy morning trip and you can be back to the pool by early afternoon if you leave by 7:30am." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you do Joshua Tree as a day trip from the Coachella Valley?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, without question. Leave by 7:30 or 8am, plan for a half day in the park, and you're back in time to spend the afternoon at your rental. The drive is easy and the park rewards even a few hours of exploration." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a reservation for Joshua Tree National Park?",
+      "acceptedAnswer": { "@type": "Answer", "text": "During peak season (spring and some fall weekends), yes. Coachella and Stagecoach festival weekends in April are high demand — book ahead or plan a weekday visit. Check the NPS Joshua Tree page for current timed entry requirements." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best time to visit Joshua Tree?",
+      "acceptedAnswer": { "@type": "Answer", "text": "October through April is the sweet spot, with spring (February through April) being the most popular for wildflowers and comfortable temperatures. Weekday visits outside peak season are considerably less crowded." }
+    }
+  ]
+}
+</script>
 
 <h2>Frequently Asked Questions</h2>
 

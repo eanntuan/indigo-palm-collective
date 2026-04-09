@@ -1,6 +1,7 @@
 ---
 title: "Coachella Valley Insider Guide: Spots Worth Your Time"
 date: 2026-03-14
+dateModified: 2026-04-09
 metaDescription: "Skip the tourist traps. A Coachella Valley local shares the spots worth your time in Indio, Palm Springs, and Joshua Tree. No recycled lists."
 ogImage: /blog/images/ps-street-bougainvillea.jpg
 heroImage: /blog/images/ps-street-bougainvillea.jpg
@@ -17,6 +18,13 @@ property: cozy-cactus
 readTime: "6 min read"
 excerpt: "Skip the tourist traps. A real Coachella Valley local shares the spots worth your time in Indio, Palm Springs, Joshua Tree, and beyond. No affiliate links, no recycled lists."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Where to Stay for Coachella: The Complete Guide"
+    url: /blog/where-to-stay-coachella/
+  - title: "Joshua Tree Day Trip from Indio"
+    url: /blog/joshua-tree-day-trip-from-indio/
+  - title: "Palm Springs vs Indio: Which to Base Yourself"
+    url: /blog/palm-springs-vs-indio/
 ---
 
 <img src="/blog/images/indian-palms-front-entrance.jpg" alt="Entrance to Indian Palms Country Club neighborhood in Indio California with palm trees and desert landscaping" width="800" height="533">
