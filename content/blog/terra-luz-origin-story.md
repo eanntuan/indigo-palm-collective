@@ -2,9 +2,9 @@
 title: "The Story Behind Terra Luz: How a Desert House Found Its Name"
 date: 2026-03-14
 metaDescription: "How a vacation rental in Indio became Terra Luz: sun-washed terracotta, a Kahlo blue pool, and a brand built on Latin warmth and desert light."
-ogImage: /blog/images/ps-desert-valley-view.jpg
-heroImage: /blog/images/ps-desert-valley-view.jpg
-heroAlt: "Aerial view of the Coachella Valley desert landscape at golden hour with mountain backdrop"
+ogImage: /blog/images/ps-street-bougainvillea.jpg
+heroImage: /blog/images/ps-street-bougainvillea.jpg
+heroAlt: "Palm-lined Coachella Valley street with vibrant red bougainvillea, desert landscaping, and mountain backdrop"
 keywords:
   - Terra Luz vacation rental
   - vacation rental Indio CA
