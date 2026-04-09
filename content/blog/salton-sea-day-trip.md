@@ -88,8 +88,8 @@ layout: blog-post.njk
 
 <p>Give yourself at least 90 minutes in Bombay Beach. Walk the streets away from the main road. The most interesting things are not visible from the car window.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Wide desert valley view from an elevated vantage point with hazy mountains in the distance and dry scrubland below" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Salton Sea basin sits at the base of this kind of landscape. The scale of it takes a minute to absorb.</p>
+<img src="/blog/images/west-elm-dining.jpeg" alt="Casual dining setup inside a Coachella Valley vacation rental, a welcome contrast after a day in the remote desert" width="1400" height="933" loading="lazy">
+<p class="image-caption">The Salton Sea trip earns a good meal afterward. Come back to a rental with a real kitchen and table and you won't need to find a restaurant.</p>
 
 <h2>Salvation Mountain</h2>
 
@@ -129,8 +129,8 @@ layout: blog-post.njk
 
 <p>The Salton Sea is the kind of place that stays with you because it's genuinely unlike anything else. It doesn't try to be welcoming. It doesn't need to be. If that sounds like your kind of afternoon, make the drive.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.jpg" alt="Warm desert sunset casting pink and orange light across a Palm Springs street with silhouetted palms" width="1400" height="933" loading="lazy">
-<p class="image-caption">Time the return drive to catch the sunset on the way back. The light in the valley at the end of the day is worth it.</p>
+<img src="/blog/images/cc-kids-room-styled.jpeg" alt="Styled kids room at a Coachella Valley vacation rental, a comfortable end to a full day of desert exploration" width="1400" height="933" loading="lazy">
+<p class="image-caption">The whole family earns a good night's sleep after a day like this. A rental that thought about the kids room usually thought about everything else too.</p>
 
 <h2>Frequently Asked Questions</h2>
 
