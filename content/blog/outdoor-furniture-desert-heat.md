@@ -151,8 +151,8 @@ layout: blog-post.njk
 
 <p>A weighted base rated for wind is not optional in the Coachella Valley. Desert afternoons generate real gusts, especially from late spring through summer. An umbrella in a light base becomes a projectile. We learned this the obvious way. A weighted base rated for 30-35 mph winds (or higher) is the minimum for any property in the valley. The umbrella itself should be freestanding pole style rather than offset/cantilever if it's going to sit in a high-wind zone without a wall to buffer it.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.jpg" alt="Desert sunset over the Coachella Valley with warm terracotta light and palm tree silhouettes against orange and pink sky" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">Desert evenings are the payoff. Good outdoor furniture means actually using them instead of watching them from inside.</p>
+<img src="/blog/images/coffee-bar.jpg" alt="Well-stocked coffee bar at a desert vacation rental, the kind of detail that makes mornings on the patio better" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">Desert evenings start with good mornings. A rental that gets the details right indoors tends to get the patio right too.</p>
 
 <h2>The Short Version</h2>
 
@@ -160,8 +160,8 @@ layout: blog-post.njk
 
 <p>For more on what goes into running a rental in the Coachella Valley, read the <a href="/blog/airbnb-hosting-lessons/">hosting lessons from 191 Airbnb reviews</a>, or if you're planning a desert stay, here's <a href="/blog/desert-vacation-prep/">what to bring and prepare for a desert vacation rental</a>.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Wide view of the Coachella Valley desert landscape from elevated vantage with mountains and valley floor in afternoon light" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">The valley in full force. The furniture outside your rental has to survive this every summer.</p>
+<img src="/blog/images/west-elm-dining.jpeg" alt="Outdoor dining setup at a desert vacation rental with durable furniture and warm desert tones" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">This is what furniture that was actually specced for desert conditions looks like after a few seasons. It just keeps working.</p>
 
 <h2>FAQ: Outdoor Furniture in Desert and Extreme Heat</h2>
 
