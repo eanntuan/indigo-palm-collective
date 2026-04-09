@@ -144,4 +144,4 @@ layout: blog-post.njk
 <h3>Can you get to Palm Springs without a car?</h3>
 <p>You can get to Palm Springs without a car, but getting around the broader valley is harder. Downtown Palm Springs itself is walkable. If you're staying in Indio, La Quinta, or plan to visit Joshua Tree or the Salton Sea, you'll want a car. Rideshare availability varies, especially in the east valley.</p>
 
-<p>However you get here, the valley has plenty to offer once you arrive. The <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a> covers what's worth doing in each city from someone who actually lives here.</p>
+<p>However you get here, the valley has plenty to offer once you arrive. The <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a> covers what's worth doing in each city from a vacation rental owner who knows the valley well.</p>

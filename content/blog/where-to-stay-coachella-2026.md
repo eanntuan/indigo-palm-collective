@@ -1,7 +1,7 @@
 ---
 title: "Where to Stay for Coachella: The Honest Guide"
 date: 2026-03-01
-metaDescription: "Hotels, camping, or vacation rental near the polo grounds? An honest Coachella accommodation breakdown from someone who actually lives here."
+metaDescription: "Hotels, camping, or vacation rental near the polo grounds? An honest Coachella accommodation breakdown from a vacation rental owner in Indio."
 ogImage: /blog/images/festival-coachella-aerial.jpg
 heroImage: /blog/images/festival-coachella-aerial.jpg
 heroAlt: "Vacation rental near the Coachella festival grounds in Indio CA"
@@ -15,7 +15,7 @@ keywords:
 articleSection: "Travel Guide"
 property: cozy-cactus
 readTime: "7 min read"
-excerpt: "An honest breakdown of every Coachella accommodation option: camping, hotels, vacation rentals. No affiliate codes, from someone who actually lives here."
+excerpt: "An honest breakdown of every Coachella accommodation option: camping, hotels, vacation rentals. No affiliate codes, from a vacation rental owner in Indio."
 layout: blog-post.njk
 ---
 
@@ -23,7 +23,7 @@ layout: blog-post.njk
 
 <p>Finding a place to stay that doesn't destroy your budget, your sleep, or your will to attend Day 3.</p>
 
-<p>I live in the Coachella Valley. I've watched this cycle play out every April. People book the wrong thing, in the wrong location, for the wrong price, and spend half the festival regretting it. Here's the breakdown. No affiliate codes. No sponsored posts. Just what works.</p>
+<p>I own vacation rentals in Indio, two minutes from the polo grounds. I've watched this cycle play out every April. People book the wrong thing, in the wrong location, for the wrong price, and spend half the festival regretting it. Here's the breakdown. No affiliate codes. No sponsored posts. Just what works.</p>
 
 <h2>The Options</h2>
 
@@ -155,6 +155,6 @@ layout: blog-post.njk
 
 <p>But the right accommodation changes the whole weekend. Proximity matters. Comfort matters. A pool matters more than you think it does on a Sunday in the desert when you have five hours until the headliner and you're running on festival tacos and adrenaline.</p>
 
-<p>If you want the recommendation from someone who lives here: stay in Indio, stay close to the grounds, and invest in a place you want to come back to between sets. Once you've figured out your lodging, check out our guide to <a href="/blog/indio-local-gems/">10 Indio gems only locals know about</a> so you know exactly where to eat, explore, and recover between sets.</p>
+<p>If you want the recommendation from a vacation rental owner who has seen what works: stay in Indio, stay close to the grounds, and invest in a place you want to come back to between sets. Once you've figured out your lodging, check out our guide to <a href="/blog/indio-local-gems/">10 Indio gems only locals know about</a> so you know exactly where to eat, explore, and recover between sets.</p>
 
 <p>Planning for a future Coachella? We've updated this guide into a fuller, year-round version: <a href="/blog/where-to-stay-coachella/">Where to Stay for Coachella: The Complete Guide</a>. It covers every accommodation option in more depth and is kept current each season.</p>

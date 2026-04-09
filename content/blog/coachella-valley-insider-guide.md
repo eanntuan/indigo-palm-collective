@@ -26,7 +26,7 @@ layout: blog-post.njk
 
 <p>That hurt my soul.</p>
 
-<p>So here's the guide I wish someone had handed me when I first moved out here. No affiliate links. No "top 10 lists" recycled from a content farm. Just the spots I go and the things I do.</p>
+<p>So here's the guide I wish someone had handed me when I first started spending real time out here. I own vacation rentals in Indio. I've been coming out here long enough to know which taco spot to go to, which hike to skip, and why you should never book a hotel on the Palm Springs strip if the polo grounds are your destination. No affiliate links. No "top 10 lists" recycled from a content farm. Just the spots I go and the things I do.</p>
 
 <h2>The Food Situation (It's Better Than You Think)</h2>
 

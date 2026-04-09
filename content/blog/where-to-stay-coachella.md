@@ -15,13 +15,13 @@ keywords:
 articleSection: "Festival Guide"
 property: cozy-cactus
 readTime: "8 min read"
-excerpt: "Hotels, camping, vacation rentals: an honest breakdown of every Coachella accommodation option from someone who lives here. No affiliate links, no sponsored takes."
+excerpt: "Hotels, camping, vacation rentals: an honest breakdown of every Coachella accommodation option from a vacation rental owner in Indio. No affiliate links, no sponsored takes."
 layout: blog-post.njk
 ---
 
 <p>Every year I watch people make the same accommodation mistakes for Coachella. Book the wrong type of place, in the wrong location, at triple the price they should have paid.</p>
 
-<p>I live in Indio. I own vacation rentals here. I've had this conversation with enough guests and neighbors to know what works, what doesn't, and what people wish they'd done differently when they're sitting in Uber surge traffic at 1am wondering why they booked in Palm Springs.</p>
+<p>I own vacation rentals in Indio, two minutes from the polo grounds. I've had this conversation with enough guests to know what works, what doesn't, and what people wish they'd done differently when they're sitting in Uber surge traffic at 1am wondering why they booked in Palm Springs.</p>
 
 <p>Here's the full breakdown. No affiliate codes. No "sponsored by" anything. Just how it actually works.</p>
 
@@ -69,7 +69,7 @@ layout: blog-post.njk
 
 <p><strong>The shuttle option:</strong> Coachella runs official shuttle service from several valley pickup points, including Palm Springs and Cathedral City. A shuttle pass is around $75-100 for the weekend. It removes the Uber surge problem, but you're on the shuttle's schedule, not yours. Worth considering if you're locked into a Palm Springs hotel and want to skip the car entirely.</p>
 
-<img src="/blog/images/coachella-shuttle.jpg" alt="Coachella festival shuttle bus picking up attendees from Palm Springs area for transport to Empire Polo Club in Indio" loading="lazy" width="259" height="194">
+<img src="/blog/images/coachella-shuttle.jpg" alt="Coachella festival shuttle bus picking up attendees from Palm Springs area for transport to Empire Polo Club in Indio" loading="lazy" width="800" height="533">
 <p class="image-caption">Coachella's official shuttle runs from Palm Springs and other valley pickup points. Beats surge pricing if you're already staying west.</p>
 
 <p><strong>Who it's for:</strong> People who want the Palm Springs hotel experience as part of their trip, not just as a base for the festival. If the hotel IS part of the vacation, the math works differently.</p>
