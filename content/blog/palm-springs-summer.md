@@ -88,8 +88,8 @@ layout: blog-post.njk
 
 <p>This is genuinely how a lot of people vacation, and the desert does it well. A private pool at a rental house means you never have to fight for a chair, never have to share the water with 40 strangers, and can get in at 7am with coffee before the heat arrives.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private backyard pool at the Cozy Cactus vacation rental in Indio CA with desert landscaping and lounge chairs" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Cozy Cactus pool in Indio. In summer, this is the whole plan from about 10am to 5pm.</p>
+<img src="/blog/images/cc-reading-nook.jpg" alt="Bright reading nook inside a Coachella Valley vacation rental, perfect for the mid-afternoon heat break" width="1400" height="933" loading="lazy">
+<p class="image-caption">When the afternoon heat peaks, the best strategy is inside with AC. Read, nap, then head back out around 5.</p>
 
 <p><a href="/cozy-cactus/">The Cozy Cactus</a> in Indio has a private pool and hot tub. <a href="/terra-luz/">Terra Luz</a> opens in May 2026 with a private pool featuring a black-and-white geometric tile border, in-pool sun shelf loungers, and a terracotta deck with pergola. Both are built for exactly this kind of trip.</p>
 
@@ -105,8 +105,8 @@ layout: blog-post.njk
 
 <p>Guests who try to run their normal vacation schedule in summer, spending the afternoon on foot in 108°F heat, usually regret it. Guests who lean into the rhythm usually say it's one of the most relaxed trips they've taken.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard in Palm Springs with San Jacinto Mountains rising dramatically behind the tree line" width="1400" height="933" loading="lazy">
-<p class="image-caption">Early morning on Palm Canyon Drive before the heat arrives. This is when the architecture walk happens.</p>
+<img src="/blog/images/ps-pink-door-midcentury.jpg" alt="Pink front door on a midcentury modern home in Palm Springs with desert landscaping and mountain backdrop" width="1400" height="933" loading="lazy">
+<p class="image-caption">Early morning in Palm Springs before the heat arrives. This is when the architecture walk happens.</p>
 
 <h2>Why Summer Has Actual Advantages</h2>
 
