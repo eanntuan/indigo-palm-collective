@@ -30,8 +30,8 @@ layout: blog-post.njk
 
 <p>Guests who fight the schedule spend the trip sweaty and frustrated. Guests who lean into it usually say it's the most relaxed vacation they've taken in years.</p>
 
-<img src="/blog/images/cozy-cactus-patio.jpg" alt="Shaded outdoor patio at a Coachella Valley vacation rental with desert landscaping" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">Morning on the patio before the heat shows up. By 9am you have the whole day figured out.</p>
+<img src="/blog/images/cc-nook-vignette.jpg" alt="Cozy reading nook inside a Coachella Valley vacation rental with warm morning light" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">Morning before the heat shows up. Inside or out, the first two hours of the day are the best ones.</p>
 
 <h2>What to Actually Pack</h2>
 
@@ -68,8 +68,8 @@ layout: blog-post.njk
 
 <p>For a full breakdown, our <a href="/blog/indio-local-gems/">Indio local gems guide</a> covers 10 spots that don't show up on the tourist maps. If you're staying closer to Palm Springs, <a href="/blog/palm-springs-coffee-guide/">this Palm Springs coffee guide</a> covers the best morning options.</p>
 
-<img src="/blog/images/shields-date-garden.jpg" alt="Shields Date Garden roadside sign in Indio California, famous for date shakes since 1924" width="800" height="533" loading="lazy" decoding="async">
-<p class="image-caption">Shields Date Garden. Get the shake. Don't skip it because it sounds weird.</p>
+<img src="/blog/images/indio-tamale-festival.jpg" alt="Colorful food stalls at the Indio International Tamale Festival, a beloved Coachella Valley tradition" width="800" height="533" loading="lazy" decoding="async">
+<p class="image-caption">The valley has real food traditions. Seek them out. Ask where locals eat.</p>
 
 <h2>Driving vs. Walking</h2>
 
@@ -87,7 +87,7 @@ layout: blog-post.njk
 
 <p>This is the part guests forget to plan for. It's free. It takes 20 minutes. It's usually the thing people remember most.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm tree lined boulevard with San Jacinto mountain backdrop at sunrise in the Coachella Valley" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm tree-lined street in Palm Springs under a clear blue desert sky" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The morning window. Don't waste it sleeping in.</p>
 
 <h2>One Last Thing</h2>
