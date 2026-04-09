@@ -1216,6 +1216,16 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
       ${linksSection}
     </div>
 
+    <div style="margin-bottom:24px;">
+      <p style="margin:0 0 14px;font-size:13px;font-weight:600;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.08em;">Worth reading before you go</p>
+      <a href="https://indigopalm.co/blog/desert-vacation-prep/" style="display:block;margin-bottom:4px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Desert Vacation Prep: What to Know Before You Go &rarr;</a>
+      <p style="margin:0 0 14px;font-size:13px;color:#888;">What to pack, how to use the heat to your advantage, and why the pool matters more than you think.</p>
+      <a href="https://indigopalm.co/blog/indio-local-gems/" style="display:block;margin-bottom:4px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">10 Indio Gems Only Locals Know &rarr;</a>
+      <p style="margin:0 0 14px;font-size:13px;color:#888;">Date shakes, birria, a vinyl bar, and a few spots that don't show up on Google Maps.</p>
+      <a href="https://indigopalm.co/blog/palm-springs-coffee-guide/" style="display:block;margin-bottom:4px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">The Palm Springs Coffee Guide &rarr;</a>
+      <p style="margin:0;font-size:13px;color:#888;">Where to go before the heat shows up.</p>
+    </div>
+
     ${notes ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notes}</p></div>` : ''}
 
     <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">Check-in details are coming closer to the date. We'll make sure you're taken care of.</p>
