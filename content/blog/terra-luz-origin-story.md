@@ -79,10 +79,10 @@ layout: blog-post.njk
 <p>There are a lot of vacation rentals out there. Many are beautiful. Many are well-equipped. But most feel like staged homes, designed to photograph well, not to <em>live</em> well. Terra Luz is the opposite.</p>
 
 <ul>
-    <li>The pass-through kitchen window connects the cook to everyone poolside. No FOMO. No isolation. Just easy togetherness.</li>
-    <li>In-pool loungers let you stay submerged with a book and a drink. No towel. No overheating. Just bliss.</li>
-    <li>The fire pit doubles as a coffee table. Dinner around flames. Every night.</li>
-    <li>Rocking chairs at the pool's edge where you can nurse your morning coffee in perfect light.</li>
+    <li>The kitchen nook is a full moment: terracotta walls, a round wood table, rattan chairs, a capiz shell pendant overhead, and a sage credenza lined with Cuban and Latin art. You will eat breakfast here every morning and not want to leave.</li>
+    <li>In-pool sun shelf loungers mean you stay submerged with a book and a drink. No towel. No overheating. Just bliss.</li>
+    <li>West Elm outdoor furniture on the patio because you deserve to sit on something that actually looks good and holds up in 110-degree heat.</li>
+    <li>A pergola strung with lights over the grill area, so dinner outside stops being a logistical exercise and starts being the whole point of the night.</li>
     <li>Patterned robes because slipping them on after a swim just hits different.</li>
 </ul>
 
