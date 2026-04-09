@@ -130,7 +130,7 @@ layout: blog-post.njk
 <h3>What are the best coffee shops in Palm Springs?</h3>
 <p>Koffi and Cartel Coffee are the two consistent recommendations from people who live here. Yes Please has a strong following for espresso quality. For the full breakdown with descriptions and locations, the <a href="/blog/palm-springs-coffee-guide/">Palm Springs coffee guide</a> covers each one in detail.</p>
 
-<img src="/blog/images/ps-desert-moonrise.jpg" alt="Full moon rising over the desert mountains surrounding Palm Springs at dusk with glowing sky" loading="lazy" width="1400" height="933">
-<p class="image-caption">One of the things that surprises people about Palm Springs: the sky does this regularly. Budget time to just look up.</p>
+<img src="/blog/images/palm-springs-pool.jpg" alt="Private pool at a Palm Springs vacation rental with desert landscaping and mountain views" loading="lazy" width="1400" height="933">
+<p class="image-caption">One of the things that surprises people about Palm Springs: the evenings are for this. Budget time to just float.</p>
 
 <p>If you're planning a longer desert trip and want to explore beyond Palm Springs into the rest of the Coachella Valley, the <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a> maps out the whole region and what's worth your time in each city.</p>

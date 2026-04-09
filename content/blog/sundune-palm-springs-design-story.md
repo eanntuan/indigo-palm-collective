@@ -150,8 +150,8 @@ layout: blog-post.njk
 
 <p>Same commitment to quality and intention. Completely different personalities. That's by design.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm Springs street with vibrant bougainvillea draped over a white stucco wall and palm trees in the background" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">The color and texture vocabulary that runs through all our Palm Springs thinking.</p>
+<img src="/blog/images/cartel-coffee-palm-springs.jpg" alt="Cartel Coffee Lab at the Arrive Hotel in Palm Springs, the kind of design-forward space that informs how we think about interiors" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">The color and texture vocabulary that runs through all our Palm Springs thinking. Coffee shops like this are part of it.</p>
 
 <h2>What's Still Being Decided</h2>
 

@@ -139,8 +139,8 @@ layout: blog-post.njk
 
 <p>The psychology is also real. Guests feel like they're getting something. They commit to a longer stay, which means more time to settle in and actually enjoy the property rather than rushing in and out. Guests who stay five nights or more review better on average. They've actually had a vacation, not just a weekend.</p>
 
-<img src="/blog/images/cozy-cactus-patio.jpg" alt="Cozy Cactus vacation rental patio in Indio California with outdoor seating, desert plants, and clear evening sky" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">The Cozy Cactus patio. Guests who stay five nights always make full use of it.</p>
+<img src="/blog/images/cozy-cactus-labeled-drawers.jpg" alt="Organized kitchen drawers at The Cozy Cactus vacation rental in Indio California with labels for easy guest access" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">The labeled drawer system at The Cozy Cactus. Guests who stay five nights figure out the whole house and use all of it.</p>
 
 <h2>The Bigger Picture</h2>
 

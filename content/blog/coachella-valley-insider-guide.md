@@ -100,8 +100,8 @@ layout: blog-post.njk
 
 <h2>The Stuff Only Locals Know</h2>
 
-<img src="/blog/images/ps-desert-moonrise.jpg" alt="Full moon rising over the desert mountains and Coachella Valley at dusk" loading="lazy" width="800" height="533">
-<p class="image-caption">The Coachella Valley on a clear evening. The sky out here does things cities don't allow.</p>
+<img src="/blog/images/cozy-cactus-mural.jpg" alt="Colorful backyard mural at The Cozy Cactus vacation rental in Indio California, the kind of thoughtful detail that makes the valley worth returning to" loading="lazy" width="800" height="533">
+<p class="image-caption">The Coachella Valley on a clear evening. The sky out here does things cities don't allow. So do the backyards.</p>
 
 <p>The wind comes up almost every afternoon. Plan outdoor activities for morning.</p>
 

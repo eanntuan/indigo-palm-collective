@@ -83,8 +83,8 @@ layout: blog-post.njk
 
 <p>Our properties, for reference: <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio (3BR, 191+ reviews, private hot tub, perfect for families or groups) and <a href="/terra-luz/">Terra Luz</a> (3BR, private pool with sun shelf loungers, Latin-inspired design, opening May 2026) are both available at indigopalm.co. The Sundune in Palm Springs is available through our <a href="/booking-flow/?property=ps-retreat">direct booking page</a> as well.</p>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of Cozy Cactus vacation rental property and neighborhood in Indio California" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">Aerial view of Cozy Cactus, Indio. Indian Palms neighborhood, 15 minutes from Coachella polo grounds.</p>
+<img src="/blog/images/cozy-cactus-mural.jpg" alt="Colorful hand-painted backyard mural at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">Cozy Cactus, Indio. Indian Palms neighborhood, 15 minutes from Coachella polo grounds. The mural is in the backyard.</p>
 
 <h2>The One-Line Summary</h2>
 

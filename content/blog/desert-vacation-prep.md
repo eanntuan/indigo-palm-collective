@@ -30,8 +30,8 @@ layout: blog-post.njk
 
 <p>Guests who fight the schedule spend the trip sweaty and frustrated. Guests who lean into it usually say it's the most relaxed vacation they've taken in years.</p>
 
-<img src="/blog/images/cc-nook-vignette.jpg" alt="Cozy reading nook inside a Coachella Valley vacation rental with warm morning light" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">Morning before the heat shows up. Inside or out, the first two hours of the day are the best ones.</p>
+<img src="/blog/images/cc-closet-wallpaper.jpg" alt="Styled open closet at The Cozy Cactus vacation rental in Indio California with organized shelves and patterned wallpaper" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">Morning before the heat shows up. A rental that has space for everything makes that first-hour calm possible.</p>
 
 <h2>What to Actually Pack</h2>
 

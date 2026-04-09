@@ -105,8 +105,8 @@ layout: blog-post.njk
 
 <p>The main attraction for visitors is East Jesus, a sculpture garden inside Slab City made from salvaged materials. It's free to visit, donations welcome. The art is constantly changing as artists add and modify work. Beyond East Jesus, the rest of Slab City is a neighborhood where people live, and walking through it with a camera pointed at everything is a guest behavior worth reconsidering.</p>
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Desert landscape with native fan palms at an oasis in the Coachella Valley Preserve" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Coachella Valley at its quietest. The area around the Salton Sea has this quality at scale.</p>
+<img src="/blog/images/yes-please-la-quinta.jpg" alt="Yes Please coffee shop in La Quinta California, a good stop on the drive back from the Salton Sea" width="1400" height="933" loading="lazy">
+<p class="image-caption">The drive back is the right time to stop somewhere good. La Quinta is 20 minutes from Bombay Beach and Yes Please is worth it.</p>
 
 <h2>Practical Notes</h2>
 

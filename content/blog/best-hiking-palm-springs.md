@@ -71,8 +71,8 @@ layout: blog-post.njk
 
 <p>The key thing to know: season matters. October through April is the window when hiking here is comfortable and safe for most people. Summer hiking is possible but requires a 5am start and a realistic assessment of heat tolerance. Here are the five hikes worth knowing about.</p>
 
-<img src="/blog/images/everbloom-indio.jpg" alt="Lush greenery and desert plants at Everbloom in Indio California, echoing the native oasis ecosystems found in the nearby canyons" width="1400" height="933" loading="lazy">
-<p class="image-caption">The desert is not uniformly dry. Where water exists underground, it pushes through. The canyons are where you see that most clearly.</p>
+<img src="/blog/images/honda-element-camping.jpg" alt="Honda Element packed for a desert camping trip from the Coachella Valley, ready for an early morning hike near Palm Springs" width="1400" height="933" loading="lazy">
+<p class="image-caption">The desert is not uniformly dry. Getting out before 8am is the whole strategy. Pack the night before.</p>
 
 <h2>1. Palm Canyon (Easy to Moderate)</h2>
 

@@ -121,7 +121,7 @@ layout: blog-post.njk
 
 <p>Group-friendly layout: if you're traveling with more than two people, separate bedrooms and bathrooms reduce friction. Multiple bathrooms are underrated for tournament trips where everyone's trying to leave at the same time in the morning.</p>
 
-<img src="/blog/images/ps-orange-door-mcm.jpg" alt="Bright orange midcentury modern door on a Palm Springs home with desert plants and blue sky behind it" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-mountains.jpg" alt="Quiet Palm Springs residential street lined with palm trees and the San Jacinto Mountains at the end of the block" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs architecture is worth a morning walk between match days. The city has more midcentury modern homes per capita than anywhere in the country.</p>
 
 <h2>Booking Timing</h2>

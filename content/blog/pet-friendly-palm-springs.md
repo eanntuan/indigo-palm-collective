@@ -22,7 +22,7 @@ layout: blog-post.njk
 
 <p>I own vacation rentals here. I've navigated this from the host side and the traveler side. Here's what I know about bringing your dog to the Palm Springs area without a terrible time.</p>
 
-<img src="/blog/images/everbloom-indio.jpg" alt="Lush outdoor plants and greenery at Everbloom in Indio California, a Coachella Valley garden shop" width="1200" height="800" decoding="async">
+<img src="/blog/images/cc-closet-wallpaper.jpg" alt="Organized open closet at The Cozy Cactus vacation rental in Indio California, one of the Coachella Valley's pet-friendly short-term rentals" width="1200" height="800" loading="lazy" decoding="async">
 
 <h2>Start With Where You're Staying</h2>
 
@@ -54,7 +54,7 @@ layout: blog-post.njk
 
 <p><strong>VillageFest (Thursday Nights):</strong> Palm Springs' weekly street fair on Palm Canyon Drive. Dogs on leash are welcome and common. Street food, local vendors, live music, and an atmosphere that feels like what Palm Springs is like when it's not trying to impress anyone. Worth doing even once.</p>
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Palm canyon trail in the Coachella Valley with native fan palms and mountain views, dog-friendly hiking" width="800" height="533" loading="lazy">
+<img src="/blog/images/cc-floral-mural.jpeg" alt="Colorful floral mural at The Cozy Cactus vacation rental in Indio California, a vibrant and welcoming property for guests and their dogs" width="800" height="533" loading="lazy">
 <p class="image-caption">Palm Canyon Trail: one of the largest natural fan palm oases in North America. Dogs on leash welcome.</p>
 
 <h2>Dog-Friendly Restaurants and Cafés</h2>

@@ -75,8 +75,8 @@ layout: blog-post.njk
 
 <h2>Palm Springs: Where to Eat</h2>
 
-<img src="/blog/images/ps-vintage-cadillac.jpg" alt="Vintage Cadillac parked on a Palm Springs street with midcentury modern architecture and palm trees" loading="lazy" width="1400" height="933">
-<p class="image-caption">Palm Springs, where even the parking lot aesthetics are this good.</p>
+<img src="/blog/images/cozy-cactus-labeled-drawers.jpg" alt="Organized kitchen drawer at a Coachella Valley vacation rental in Indio California, a base for exploring Palm Springs dining" loading="lazy" width="1400" height="933">
+<p class="image-caption">Palm Springs food is better when you have a real home base. Stock the rental kitchen for breakfast and use the restaurants for the experiences worth having.</p>
 
 <p>Palm Springs has the most developed food scene in the valley by a significant margin. Downtown Palm Canyon Drive and the side streets around it have enough density that you could eat somewhere different every night for a week without trying hard. Rather than listing everything, here are the spots we feel confident about from personal experience.</p>
 

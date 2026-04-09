@@ -83,8 +83,8 @@ layout: blog-post.njk
 
 <p>If you're planning a trip to Palm Springs or staying nearby, here's what you actually need to know before you show up.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard in Palm Springs with San Jacinto Mountains in background" loading="lazy" width="1400" height="933">
-<p class="image-caption">Palm Springs, about 10 minutes north of the Surf Club on Gene Autry Trail.</p>
+<img src="/blog/images/cozy-cactus-pool.jpg" alt="Private pool at a Coachella Valley vacation rental in Indio California, a short drive from Palm Springs Surf Club" loading="lazy" width="1400" height="933">
+<p class="image-caption">Palm Springs and the south valley share the same desert sky. A private pool rental means you're not done when you leave the wave pool.</p>
 
 <h2>The Wave Pool: Three Session Types</h2>
 
@@ -100,8 +100,8 @@ layout: blog-post.njk
 
 <p>For current rates, check <a href="https://palmspringssurfclub.com" target="_blank" rel="noopener">palmspringssurfclub.com</a> directly. Pricing varies by session type and season.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm Springs residential street with bright bougainvillea and midcentury homes" loading="lazy" width="1400" height="933">
-<p class="image-caption">The streets around Palm Springs reward a slow morning before you head to the Surf Club.</p>
+<img src="/blog/images/cc-kids-room-styled.jpeg" alt="Styled kids room at a Palm Springs area vacation rental, ready for a full day at the wave pool" loading="lazy" width="1400" height="933">
+<p class="image-caption">A rental that thought through the kids room usually thought through everything else too. Good base for a Surf Club day.</p>
 
 <h2>Who It's Actually For</h2>
 
@@ -119,8 +119,8 @@ layout: blog-post.njk
 
 <p>The pool deck situation means you can spend a full day here without surfing at all. Grab a cabana, order from the restaurant, let the kids cycle between slides and the splash pad. If you've done a few waterparks in the desert heat, you know the quality of the lounger situation matters more than people admit up front. Palm Springs Surf Club has the resort-grade setup, not the plastic chair and concrete floor experience.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.jpg" alt="Desert sunset over Palm Springs neighborhood with warm orange and pink sky" loading="lazy" width="1400" height="933">
-<p class="image-caption">Afternoons at the Surf Club often run into evenings. Plan accordingly.</p>
+<img src="/blog/images/cc-kids-room-bunks.jpeg" alt="Bunk bed setup at a Palm Springs area vacation rental, great for families spending a full day at the wave pool" loading="lazy" width="1400" height="933">
+<p class="image-caption">Afternoons at the Surf Club run long. A rental with room for everyone means the evening lands soft.</p>
 
 <h2>Food and Drinks</h2>
 
@@ -144,8 +144,8 @@ layout: blog-post.njk
 
 <p><strong>Hours</strong> run Thursday through Sunday (closed Monday through Wednesday, open on holidays). Current hours vary by season, so check the website before you go.</p>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Midcentury modern neighborhood in Palm Springs with low-slung homes and desert landscaping" loading="lazy" width="1400" height="933">
-<p class="image-caption">Palm Springs neighborhoods are worth a slow drive between activities.</p>
+<img src="/blog/images/cc-bedroom-nook-full.jpg" alt="Full bedroom with wallpaper accent wall and velvet armchair at The Cozy Cactus vacation rental in Indio California" loading="lazy" width="1400" height="933">
+<p class="image-caption">A well-set-up rental is the right frame for a day like this. Come back from the Surf Club to something comfortable.</p>
 
 <h2>Pairing It With a Stay in Palm Springs</h2>
 

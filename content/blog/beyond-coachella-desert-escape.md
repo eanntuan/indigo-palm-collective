@@ -28,7 +28,7 @@ layout: blog-post.njk
 
 <p>Now I'm that person who evangelizes about winter in the desert, fall light, mid-week escapes where you work from a pool lounger. The Coachella Valley isn't just a place you visit for a long weekend. It's a place you <em>return to</em>, for the sun, the space, and the surprising amount of culture packed into this stretch of California.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Aerial view of the Coachella Valley with desert landscape, palm trees and mountain range at golden hour" decoding="async" width="800" height="533">
+<img src="/blog/images/festival-coachella-aerial.jpg" alt="Aerial view of the Coachella Valley desert landscape showing the scale of the valley floor and surrounding mountains" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">45 miles of valley. 300 days of sun. Four very different seasons.</p>
 
 <h2>The Geography of It All</h2>
@@ -107,8 +107,8 @@ layout: blog-post.njk
 
 <p><strong>Day 4:</strong> Sleep in. Lazy breakfast at the house. Pool float marathon. One last swim. Pack. (Or stay another night. We won't judge.)</p>
 
-<img src="/blog/images/cozy-cactus-backyard.jpg" alt="Backyard pool and patio at a desert vacation rental in Indio, California on a sunny day" loading="lazy" decoding="async" width="800" height="533">
-<p class="image-caption">Day 4. Pool float marathon. You earned it.</p>
+<img src="/blog/images/familykit.jpg" alt="Family amenities kit at a Coachella Valley vacation rental in Indio California with everything you need for a long stay" loading="lazy" decoding="async" width="800" height="533">
+<p class="image-caption">Day 4. Everything is already handled. That is the whole point of a rental that actually thought things through.</p>
 
 <h2>The Desert Isn't Just for Coachella</h2>
 

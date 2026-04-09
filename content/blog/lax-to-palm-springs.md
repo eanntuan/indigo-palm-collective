@@ -127,8 +127,8 @@ layout: blog-post.njk
 
 <p>Once you've figured out how you're getting here, the question of where to stay is next. The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> covers the trade-offs between staying in the city or staying closer to the festival grounds.</p>
 
-<img src="/blog/images/yes-please-palm-springs.jpg" alt="Yes Please Books storefront in Palm Springs, a welcoming neighborhood spot worth wandering into" width="1400" height="933" loading="lazy">
-<p class="image-caption">Palm Springs rewards arriving with time to wander. Don't book the first evening too tight.</p>
+<img src="/blog/images/palm-springs-pool.jpg" alt="Private pool at a Palm Springs vacation rental in the Coachella Valley, what you're arriving to after the long drive" width="1400" height="933" loading="lazy">
+<p class="image-caption">Palm Springs rewards arriving with time to settle in. Don't book the first evening too tight.</p>
 
 <h2>Frequently Asked Questions</h2>
 
