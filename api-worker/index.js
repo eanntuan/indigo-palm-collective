@@ -204,6 +204,10 @@ export default {
       return handleCmsCallback(url, env);
     }
 
+    if (path === '/api/webhook/square' && request.method === 'POST') {
+      return handleSquareWebhook(request, env);
+    }
+
     // Pass all non-API requests through to GitHub Pages
     return fetch(request);
   },
@@ -744,6 +748,7 @@ async function handleApprove(request, env) {
         ? 'https://connect.squareupsandbox.com'
         : 'https://connect.squareup.com';
       paymentLink = await createSquarePaymentLink(env.SQUARE_ACCESS_TOKEN, {
+        bookingId: id,
         property: booking.property,
         checkIn: booking.checkIn,
         checkOut: booking.checkOut,
@@ -909,6 +914,147 @@ async function handleConfirm(request, env) {
       status: 500, headers: CORS_HEADERS,
     });
   }
+}
+
+// ── Square Webhook ────────────────────────────────────────────────────────────
+
+async function handleSquareWebhook(request, env) {
+  const body = await request.text();
+
+  // Verify Square HMAC signature
+  const sigHeader = request.headers.get('x-square-hmacsha256-signature');
+  if (env.SQUARE_WEBHOOK_SIGNATURE_KEY && sigHeader) {
+    const url = 'https://indigopalm.co/api/webhook/square';
+    const encoder = new TextEncoder();
+    const keyData = encoder.encode(env.SQUARE_WEBHOOK_SIGNATURE_KEY);
+    const msgData = encoder.encode(url + body);
+    const cryptoKey = await crypto.subtle.importKey('raw', keyData, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+    const sig = await crypto.subtle.sign('HMAC', cryptoKey, msgData);
+    const expected = btoa(String.fromCharCode(...new Uint8Array(sig)));
+    if (sigHeader !== expected) {
+      console.error('Square webhook signature mismatch');
+      return new Response('Unauthorized', { status: 401 });
+    }
+  }
+
+  let event;
+  try { event = JSON.parse(body); } catch {
+    return new Response('Bad request', { status: 400 });
+  }
+
+  // Only act on completed payments
+  const eventType = event.type;
+  const paymentStatus = event.data?.object?.payment?.status;
+  if (eventType !== 'payment.updated' || paymentStatus !== 'COMPLETED') {
+    return new Response('OK', { status: 200 });
+  }
+
+  const orderId = event.data?.object?.payment?.order_id;
+  if (!orderId) return new Response('OK', { status: 200 });
+
+  // Fetch the Square order to get our reference_id (= bookingId)
+  const squareBaseUrl = env.SQUARE_SANDBOX === 'true'
+    ? 'https://connect.squareupsandbox.com'
+    : 'https://connect.squareup.com';
+
+  const orderRes = await fetch(`${squareBaseUrl}/v2/orders/${orderId}`, {
+    headers: { 'Authorization': `Bearer ${env.SQUARE_ACCESS_TOKEN}`, 'Square-Version': '2024-01-18' },
+  });
+  if (!orderRes.ok) {
+    console.error('Failed to fetch Square order:', orderId);
+    return new Response('OK', { status: 200 });
+  }
+  const orderData = await orderRes.json();
+  const bookingId = orderData.order?.reference_id;
+  const totalPaid = (orderData.order?.total_money?.amount || 0) / 100;
+
+  if (!bookingId) {
+    console.error('No reference_id on Square order:', orderId);
+    return new Response('OK', { status: 200 });
+  }
+
+  // Look up booking in KV
+  const raw = await env.BOOKINGS.get(`booking:${bookingId}`);
+  if (!raw) {
+    console.error('Booking not found for id:', bookingId);
+    return new Response('OK', { status: 200 });
+  }
+  const booking = JSON.parse(raw);
+
+  // Avoid double-processing
+  if (booking.status === 'confirmed') {
+    return new Response('OK', { status: 200 });
+  }
+
+  const { propertyId, name, email, checkIn, checkOut, guests } = booking;
+  const info = PROPERTY_INFO[propertyId];
+  if (!info) return new Response('OK', { status: 200 });
+
+  const nights = Math.round(
+    (new Date(checkOut + 'T00:00:00') - new Date(checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24)
+  );
+
+  // Send confirmation email to guest
+  const heroUrl = await getPropertyHeroImageUrl(propertyId, env);
+  const html = buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes: null, heroUrl });
+
+  await sendEmail(env.RESEND_API_KEY, {
+    from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+    to: email,
+    subject: `You're booked at ${info.name}`,
+    html,
+  });
+
+  // Notify host
+  await sendEmail(env.RESEND_API_KEY, {
+    from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+    to: 'indigopalmco@gmail.com',
+    subject: `Payment received + booking confirmed: ${info.name} (${fmtDate(checkIn)} – ${fmtDate(checkOut)})`,
+    html: emailWrapper(`
+      <h2 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 20px;">Payment received via Square</h2>
+      <table width="100%" cellpadding="0" cellspacing="0">
+        ${detailRow('Property', info.name)}
+        ${detailRow('Guest', name)}
+        ${detailRow('Email', email)}
+        ${detailRow('Check-in', fmtDate(checkIn))}
+        ${detailRow('Check-out', fmtDate(checkOut))}
+        ${detailRow('Nights', String(nights))}
+        ${detailRow('Guests', String(guests))}
+        ${detailRow('Total Paid', `$${totalPaid.toFixed(2)}`)}
+        ${detailRow('Square Order', orderId)}
+      </table>
+    `),
+  });
+
+  // Create Hostaway reservation
+  let hostawayReservationId = null;
+  try {
+    hostawayReservationId = await createHostawayReservation(env, { propertyId, name, email, checkIn, checkOut, guests });
+  } catch (err) {
+    console.error('Hostaway reservation failed (non-fatal):', err);
+  }
+
+  // Block iCal calendar (ps-retreat, the-well)
+  if (['ps-retreat', 'the-well'].includes(propertyId)) {
+    try {
+      await addIcalBooking(env, { propertyId, uid: generateId(), checkIn, checkOut, guestName: name });
+    } catch (err) {
+      console.error('iCal booking failed (non-fatal):', err);
+    }
+  }
+
+  // Mark booking as confirmed in KV
+  await env.BOOKINGS.put(`booking:${bookingId}`, JSON.stringify({
+    ...booking,
+    status: 'confirmed',
+    totalPaid,
+    squareOrderId: orderId,
+    hostawayReservationId,
+    confirmedAt: new Date().toISOString(),
+  }));
+
+  console.log(`Booking confirmed: ${bookingId}, Hostaway: ${hostawayReservationId}`);
+  return new Response('OK', { status: 200 });
 }
 
 // ── Hostaway ───────────────────────────────────────────────────────────────────
@@ -1264,7 +1410,7 @@ async function handleDiscount(url, env) {
   }), { status: 200, headers: CORS_HEADERS });
 }
 
-async function createSquarePaymentLink(accessToken, { property, checkIn, checkOut, pricing, poolHeat, poolHeatNights, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate, squareBaseUrl = 'https://connect.squareup.com' }) {
+async function createSquarePaymentLink(accessToken, { bookingId, property, checkIn, checkOut, pricing, poolHeat, poolHeatNights, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate, squareBaseUrl = 'https://connect.squareup.com' }) {
   // Fetch first location
   const locRes = await fetch(`${squareBaseUrl}/v2/locations`, {
     headers: { 'Authorization': `Bearer ${accessToken}`, 'Square-Version': '2024-01-18' },
@@ -1307,7 +1453,7 @@ async function createSquarePaymentLink(accessToken, { property, checkIn, checkOu
     });
   }
 
-  const orderBody = { location_id: locationId, line_items: lineItems };
+  const orderBody = { location_id: locationId, line_items: lineItems, reference_id: bookingId || undefined };
 
   if (discountAmount > 0 && discountCode) {
     orderBody.discounts = [{
