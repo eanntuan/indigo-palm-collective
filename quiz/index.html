@@ -84,51 +84,112 @@
         }
         nav a.back:hover { color: var(--terracotta); }
 
-        /* HERO */
-        .quiz-hero {
+        /* HERO — full-bleed 4-panel photo grid */
+        .quiz-hero-fullbleed {
+            position: relative;
+            min-height: calc(100vh - 57px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .hero-panel {
+            background-size: cover;
+            background-position: center;
+            transition: transform 12s ease;
+        }
+        .hero-panel:hover { transform: scale(1.04); }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(15, 10, 5, 0.62) 0%,
+                rgba(15, 10, 5, 0.52) 60%,
+                rgba(15, 10, 5, 0.68) 100%
+            );
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
             text-align: center;
-            padding: 4rem 5% 3rem;
-            max-width: 680px;
-            margin: 0 auto;
+            padding: 2rem 6%;
+            max-width: 600px;
         }
-        .quiz-hero .eyebrow {
-            font-size: 0.75rem;
+        .hero-content .eyebrow {
+            font-size: 0.72rem;
             font-weight: 600;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-            color: var(--terracotta-dark);
+            color: rgba(255,255,255,0.75);
             margin-bottom: 1rem;
+            display: block;
         }
-        .quiz-hero h1 {
+        .hero-content h1 {
             font-family: var(--serif);
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 400;
-            line-height: 1.15;
-            margin-bottom: 1rem;
-            color: var(--charcoal);
+            font-size: clamp(2.2rem, 6vw, 3.6rem);
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 1.25rem;
+            color: white;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.35);
         }
-        .quiz-hero p {
+        .hero-content p {
             font-size: 1rem;
-            color: #595959;
-            line-height: 1.6;
-            margin-bottom: 2rem;
+            color: rgba(255,255,255,0.82);
+            line-height: 1.65;
+            margin-bottom: 2.25rem;
+            max-width: 440px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .start-btn {
             display: inline-block;
-            background: var(--terracotta-dark);
-            color: white;
-            padding: 1rem 2.5rem;
+            background: white;
+            color: var(--terracotta-dark);
+            padding: 1rem 2.75rem;
             font-family: var(--sans);
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 0.08em;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
             text-decoration: none;
             cursor: pointer;
             border: none;
-            transition: background 0.2s;
+            transition: background 0.2s, color 0.2s;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.25);
         }
-        .start-btn:hover { background: #6B3420; }
+        .start-btn:hover {
+            background: var(--terracotta-dark);
+            color: white;
+        }
+        /* caption strip at bottom of hero */
+        .hero-captions {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            pointer-events: none;
+        }
+        .hero-caption {
+            padding: 0.6rem 0.75rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.65);
+            text-align: center;
+        }
 
         /* PROGRESS */
         .progress-wrap {
@@ -157,6 +218,9 @@
         }
 
         /* QUIZ CARD */
+        #screen-quiz {
+            background: linear-gradient(160deg, #fdf8f4 0%, #f5f3ee 50%, #faf6f0 100%);
+        }
         .quiz-wrap {
             max-width: 640px;
             margin: 0 auto;
@@ -168,6 +232,7 @@
             padding: 2.5rem;
             display: none;
             animation: fadeUp 0.35s ease;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.07);
         }
         .question-card.active { display: block; }
 
@@ -263,18 +328,54 @@
             display: none;
             animation: fadeUp 0.35s ease;
             overflow: hidden;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.07);
         }
         .result-card.active { display: block; }
 
+        .result-hero-wrap {
+            position: relative;
+            height: 380px;
+            overflow: hidden;
+        }
         .result-hero-img {
             width: 100%;
-            height: 260px;
+            height: 100%;
             object-fit: cover;
             display: block;
+            transition: transform 0.6s ease;
+        }
+        .result-card.active .result-hero-img { transform: scale(1.03); }
+        .result-hero-grad {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(0,0,0,0.1) 0%,
+                transparent 35%,
+                rgba(255,255,255,0) 55%,
+                rgba(255,255,255,0.97) 85%,
+                white 100%
+            );
+        }
+        .result-hero-label {
+            position: absolute;
+            top: 1.5rem;
+            left: 2rem;
+            z-index: 2;
+        }
+        .result-hero-label .match-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.92);
+            padding: 0.35rem 0.85rem;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            backdrop-filter: blur(4px);
         }
 
         .result-body {
-            padding: 2.5rem;
+            padding: 0.25rem 2.5rem 2.5rem;
         }
 
         .result-eyebrow {
@@ -393,9 +494,13 @@
         .screen { display: none; }
         .screen.active { display: block; }
 
-        @media (max-width: 480px) {
+        @media (max-width: 640px) {
             .question-card, .result-body { padding: 1.75rem; }
-            .quiz-hero { padding: 2.5rem 5% 2rem; }
+            .quiz-hero-fullbleed { min-height: calc(100svh - 57px); }
+            .hero-content h1 { font-size: 2rem; }
+            .hero-captions { display: none; }
+            .result-hero-wrap { height: 260px; }
+            .result-hero-label { top: 1rem; left: 1.5rem; }
         }
     </style>
 </head>
@@ -408,11 +513,26 @@
 
 <!-- SCREEN: Intro -->
 <div id="screen-intro" class="screen active">
-    <div class="quiz-hero">
-        <p class="eyebrow">The Indigo Palm Quiz</p>
-        <h1>Which desert home is calling your name?</h1>
-        <p>Six questions. We'll match you to the Indigo Palm property that fits how you actually travel, not how you think you're supposed to.</p>
-        <button class="start-btn" onclick="startQuiz()">Find My Match</button>
+    <div class="quiz-hero-fullbleed">
+        <div class="hero-grid" aria-hidden="true">
+            <div class="hero-panel" style="background-image: url('/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.webp')"></div>
+            <div class="hero-panel" style="background-image: url('/Terra%20Luz/Existing%20Listing%20Pictures/IMG_1240.webp')"></div>
+            <div class="hero-panel" style="background-image: url('/PS%20Retreat/IMG_3334.webp')"></div>
+            <div class="hero-panel" style="background-image: url('/The%20Well/1TW_4W6A0294.webp')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="eyebrow">The Indigo Palm Quiz</span>
+            <h1>Which desert home is calling your name?</h1>
+            <p>Six questions. We'll match you to the Indigo Palm property that fits how you actually travel, not how you think you're supposed to.</p>
+            <button class="start-btn" onclick="startQuiz()">Find My Match</button>
+        </div>
+        <div class="hero-captions" aria-hidden="true">
+            <span class="hero-caption">Cozy Cactus</span>
+            <span class="hero-caption">Terra Luz</span>
+            <span class="hero-caption">The Sundune</span>
+            <span class="hero-caption">The Well</span>
+        </div>
     </div>
 </div>
 
@@ -576,12 +696,17 @@
 
         <!-- Results -->
         <div class="result-card" id="result-cc">
-            <img class="result-hero-img"
-                 src="/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.webp"
-                 alt="Cozy Cactus vacation rental in Indio"
-                 loading="eager" width="640" height="260">
+            <div class="result-hero-wrap">
+                <img class="result-hero-img"
+                     src="/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.webp"
+                     alt="Cozy Cactus vacation rental in Indio"
+                     loading="eager" width="640" height="380">
+                <div class="result-hero-grad"></div>
+                <div class="result-hero-label">
+                    <span class="match-badge" style="color: #00877b;">Your match</span>
+                </div>
+            </div>
             <div class="result-body">
-                <p class="result-eyebrow" style="color: #00877b;">Your match</p>
                 <h2 class="result-name">The Cozy Cactus</h2>
                 <p class="result-location">Indio, CA &middot; 3BR/2BA &middot; Sleeps 10</p>
                 <p class="result-tagline">"Where parents finally rest on vacation."</p>
@@ -602,12 +727,17 @@
         </div>
 
         <div class="result-card" id="result-tl">
-            <img class="result-hero-img"
-                 src="/Terra%20Luz/Existing%20Listing%20Pictures/IMG_1240.webp"
-                 alt="Terra Luz Latin-inspired desert home in Indio"
-                 loading="eager" width="640" height="260">
+            <div class="result-hero-wrap">
+                <img class="result-hero-img"
+                     src="/Terra%20Luz/Existing%20Listing%20Pictures/IMG_1240.webp"
+                     alt="Terra Luz Latin-inspired desert home in Indio"
+                     loading="eager" width="640" height="380">
+                <div class="result-hero-grad"></div>
+                <div class="result-hero-label">
+                    <span class="match-badge" style="color: #8A4A2E;">Your match</span>
+                </div>
+            </div>
             <div class="result-body">
-                <p class="result-eyebrow" style="color: #8A4A2E;">Your match</p>
                 <h2 class="result-name">Terra Luz</h2>
                 <p class="result-location">Indio, CA &middot; 3BR/2BA &middot; Kahlo Blue Pool</p>
                 <p class="result-tagline">"A place you'll feel before you can describe."</p>
@@ -628,13 +758,17 @@
         </div>
 
         <div class="result-card" id="result-sd">
-            <img class="result-hero-img"
-                 src="/PS%20Retreat/IMG_3334.webp"
-                 alt="The Sundune vacation rental in Palm Springs"
-                 loading="eager" width="640" height="260"
-                 onerror="this.src='/PS%20Retreat/IMG_3334.JPG'">
+            <div class="result-hero-wrap">
+                <img class="result-hero-img"
+                     src="/PS%20Retreat/IMG_3334.webp"
+                     alt="The Sundune vacation rental in Palm Springs"
+                     loading="eager" width="640" height="380">
+                <div class="result-hero-grad"></div>
+                <div class="result-hero-label">
+                    <span class="match-badge" style="color: #3D5F78;">Your match</span>
+                </div>
+            </div>
             <div class="result-body">
-                <p class="result-eyebrow" style="color: #3D5F78;">Your match</p>
                 <h2 class="result-name">The Sundune</h2>
                 <p class="result-location">Palm Springs, CA &middot; 2BR/2BA &middot; Coastal Desert</p>
                 <p class="result-tagline">"For people who've earned the slow trip."</p>
@@ -655,12 +789,17 @@
         </div>
 
         <div class="result-card" id="result-tw">
-            <img class="result-hero-img"
-                 src="/The%20Well/1TW_4W6A0294.webp"
-                 alt="The Well vacation rental in Palm Springs"
-                 loading="eager" width="640" height="260">
+            <div class="result-hero-wrap">
+                <img class="result-hero-img"
+                     src="/The%20Well/1TW_4W6A0294.webp"
+                     alt="The Well vacation rental in Palm Springs"
+                     loading="eager" width="640" height="380">
+                <div class="result-hero-grad"></div>
+                <div class="result-hero-label">
+                    <span class="match-badge" style="color: #4A6050;">Your match</span>
+                </div>
+            </div>
             <div class="result-body">
-                <p class="result-eyebrow" style="color: #4A6050;">Your match</p>
                 <h2 class="result-name">The Well</h2>
                 <p class="result-location">Palm Springs, CA &middot; 1BR/1BA &middot; Sleeps 4</p>
                 <p class="result-tagline">"Quiet done right."</p>
