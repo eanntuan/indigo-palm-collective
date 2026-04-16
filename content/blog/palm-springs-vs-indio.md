@@ -1,5 +1,5 @@
 ---
-title: "Palm Springs vs Indio: Where to Stay in the Desert"
+title: "Palm Springs vs Indio: Where to Stay"
 date: 2026-04-09
 metaDescription: "Palm Springs vs Indio: an honest comparison of space, price, walkability, and festival proximity to help you choose the right Coachella Valley base."
 ogImage: /blog/images/ps-boulevard-palms-mountains.jpg

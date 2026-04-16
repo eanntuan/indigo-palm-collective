@@ -1,5 +1,5 @@
 ---
-title: "My First Vacation Rental in Indio, CA: Cozy Cactus"
+title: "Buying My First Vacation Rental in Indio"
 date: 2026-03-03
 metaDescription: "How I bought my first vacation rental in Indio, CA on Easter 2022 with zero experience, a line of credit, and way too many Facebook Marketplace trips."
 ogImage: /blog/images/car-camping.jpeg
