@@ -1495,10 +1495,12 @@ async function createSquarePaymentLink(accessToken, { bookingId, property, check
   const locationId = locData.locations?.[0]?.id;
   if (!locationId) throw new Error('No Square location found');
 
-  const nights = pricing.nights;
+  const nights = pricing.nights || Math.round(
+    (new Date(checkOut + 'T00:00:00') - new Date(checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24)
+  );
   const money = (dollars) => ({ amount: Math.round(dollars * 100), currency: 'USD' });
   const nightlyRate = nights > 0 ? Math.round(pricing.subtotal / nights) : 0;
-  const rateLabel = nightlyRate > 0 ? `$${nightlyRate}/night x ${nights}` : `${nights} night${nights !== 1 ? 's' : ''}`;
+  const rateLabel = nightlyRate > 0 ? `$${nightlyRate}/night x ${nights} nights` : `${nights} night${nights !== 1 ? 's' : ''}`;
 
   const lineItems = [
     {
