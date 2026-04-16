@@ -3,9 +3,9 @@ title: "Palm Springs Surf Club: What to Know Before You Go"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "A wave pool in the middle of the desert. What Palm Springs Surf Club actually is, who it's for, and what to book before you show up empty-handed."
-ogImage: /blog/images/ps-palm-springs-sign.jpg
-heroImage: /blog/images/ps-palm-springs-sign.jpg
-heroAlt: "Palm Springs welcome sign on Gene Autry Trail with mountain backdrop and clear blue sky"
+ogImage: /blog/images/pssc-group-surf-session.webp
+heroImage: /blog/images/pssc-group-surf-session.webp
+heroAlt: "Multiple surfers riding waves at Palm Springs Surf Club with the PSSC building and San Jacinto Mountains in the background"
 keywords:
   - Palm Springs Surf Club
   - wave pool Palm Springs
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs Surf Club: What to Know Before You Go",
   "description": "A wave pool in the middle of the desert. What Palm Springs Surf Club actually is, who it's for, and what to book before you show up empty-handed.",
-  "image": "https://indigopalm.co/blog/images/ps-palm-springs-sign.jpg",
+  "image": "https://indigopalm.co/blog/images/pssc-group-surf-session.webp",
   "datePublished": "2026-04-09",
   "dateModified": "2026-04-15",
   "author": {
@@ -74,8 +74,8 @@ layout: blog-post.njk
 
 <p>Here's what you need to know before you show up.</p>
 
-<img src="/blog/images/ps-palm-springs-sign.jpg" alt="Palm Springs welcome sign on Gene Autry Trail with San Jacinto Mountains in background" width="1400" height="933" loading="lazy">
-<p class="image-caption">Cathedral City sits right next to Palm Springs. The drive from downtown is about 10 minutes.</p>
+<img src="/blog/images/pssc-wave-pool-reflection.webp" alt="Palm Springs Surf Club wave pool at golden hour reflecting the PSSC building and mountains in still water" width="1400" height="788" loading="lazy">
+<p class="image-caption">The wave pool at dusk. Sessions run during the day, but this is what it looks like before the crowds arrive.</p>
 
 <h2>What the Waves Are Actually Like</h2>
 
@@ -91,8 +91,8 @@ layout: blog-post.njk
 
 <p>Boards and wetsuits are available for rent on-site. You don't need to bring anything.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Desert valley view from above Palm Springs with mountain ranges and hazy summer sky" width="1400" height="933" loading="lazy">
-<p class="image-caption">The geography that surrounds Palm Springs Surf Club. Two hours from the ocean, surrounded by desert on all sides, and somehow there are real waves here.</p>
+<img src="/blog/images/pssc-group-surf-session.webp" alt="Multiple surfers riding the Wavegarden wave at Palm Springs Surf Club with the PSSC building and mountains behind them" width="1400" height="933" loading="lazy">
+<p class="image-caption">A group session in action. The Wavegarden Cove system generates waves from a central spine, so you get defined sets with waits between them, not a continuous wall of water.</p>
 
 <h2>Who It's Actually For</h2>
 
@@ -112,8 +112,11 @@ layout: blog-post.njk
 
 <p>Weekend surf sessions book out 1 to 2 weeks in advance in peak season (October through May). If you're planning a trip and want to surf, this is the first thing to book, not the last. Buy tickets online before you finalize any other plans for that day.</p>
 
-<img src="/blog/images/palm-springs-hotel-pool.jpg" alt="Pool area at a Palm Springs hotel or resort with lounge chairs and mountain backdrop" width="1400" height="933" loading="lazy">
-<p class="image-caption">The non-surf side of the venue has lounging and food options. Worth knowing for the half of your group who doesn't surf.</p>
+<img src="/blog/images/pssc-pool-lounge.jpg" alt="PSSC lounge area with white umbrellas and teak chairs facing the wave pool with San Jacinto Mountains behind" width="1400" height="933" loading="lazy">
+<p class="image-caption">The non-surf side of the venue. Lounge chairs, umbrellas, and a clear view of the wave pool. Not a bad place to wait out a session.</p>
+
+<img src="/blog/images/pssc-beginners-on-surfboard.webp" alt="Two girls and a guy smiling while lying on a surfboard together in the wave pool at Palm Springs Surf Club" width="1400" height="933" loading="lazy">
+<p class="image-caption">Beginner sessions are the most booked. Most first-timers stand up at least once, and there's enough downtime between waves to get coaching in before your next turn.</p>
 
 <h2>Practical Details</h2>
 
@@ -135,8 +138,8 @@ layout: blog-post.njk
 
 <p>If you're building it into a Palm Springs weekend, the <a href="/blog/palm-springs-weekend-itinerary/">3-day Palm Springs itinerary</a> has a sensible structure for fitting the Surf Club into a larger trip. And if you're staying in Palm Springs for that weekend, <a href="/the-sundune/">The Sundune</a> is our 2-bedroom at 5301 E Waverly Drive, about 15 minutes from the facility.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm Springs street with bougainvillea draped over a wall and mountain views in the background" width="1400" height="933" loading="lazy">
-<p class="image-caption">The drive back from Palm Springs Surf Club to downtown is 10 minutes through this. Good way to end a morning.</p>
+<img src="/blog/images/pssc-restaurant-pool-view.webp" alt="PSSC restaurant terrace with diners overlooking the wave pool lounge and desert mountains at Palm Springs Surf Club" width="1400" height="933" loading="lazy">
+<p class="image-caption">The restaurant at PSSC overlooks the full venue. If you're bringing people who aren't surfing, this is where they'll be. Solid food and a genuinely good view.</p>
 
 <h2>Frequently Asked Questions</h2>
 
