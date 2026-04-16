@@ -79,15 +79,21 @@ layout: blog-post.njk
 
 <h2>What the Waves Are Actually Like</h2>
 
-<p>The Wavegarden Cove system generates waves from a central spine that runs the length of the pool. Waves pulse every 60 to 90 seconds or so rather than running continuously. You're not in a constant breaking wave: there are defined sets, defined waits between them, and a clear cadence to the session.</p>
+<p>The Wavegarden Cove system generates waves from a central spine that runs the length of the pool. Waves pulse in sets rather than running continuously. You're not in a constant breaking wave: there are defined waves, defined waits, and a clear cadence to each session.</p>
 
-<p>Multiple wave types are available, with different sessions booked by difficulty:</p>
+<p>PSSC offers several named session types, each calibrated for a different skill level:</p>
 
-<p><strong>Beginner lessons</strong> use soft-top boards with coaching included. The waves are smaller and more forgiving. This is the right starting point if you've never stood on a surfboard. Most people get up at least once in the first session. The coaching is structured, not "here's a board, good luck."</p>
+<p><strong>Waikiki Wave</strong> is the beginner session. Soft-top boards, coaching included, waves gentle enough to learn on. Most first-timers stand up at least once. The instruction is structured, not "here's a board, good luck." This is where you start if you've never surfed.</p>
 
-<p><strong>Intermediate sessions</strong> produce 3 to 4 second rides. If you can surf but aren't advanced, this is the tier that actually feels like surfing rather than surviving it. You have time to get on the wave, make a turn or two, and ride it out.</p>
+<p><strong>Reform Wave Pass</strong> is the step up: still approachable, but more wave to work with. Good if you've got a session or two under your belt and want something with more push than the beginner pool.</p>
 
-<p><strong>Advanced sessions</strong> generate longer, steeper waves for surfers who want a real challenge. If you surf regularly at the coast, this is the session that will actually interest you. The rides are shorter than ideal ocean conditions, but the waves are consistent and the sessions are bookable in a way the ocean never is.</p>
+<p><strong>Intermediate A-Frames and Lefts and Rights</strong> are proper surf sessions. A-Frames fire 6-wave sets with about 15 seconds between waves. Lefts and Rights run 6-wave sets with 22 seconds between. You're waiting, paddling, and riding like you would in the ocean. These are the sessions that actually feel like surfing rather than surviving it.</p>
+
+<p><strong>Advanced A-Frames</strong> are the same mechanics, steeper and faster. For surfers who want a challenge they'd recognize from a real beach break.</p>
+
+<p><strong>5 Slabs</strong> is the expert session. This is the hardest wave on site. Not the right place for a first-timer or an occasional surfer.</p>
+
+<p><strong>Sampler Session</strong> gives you a mix of wave types across one booking. Good if you're not sure which tier fits you, or if you want to test a few levels in a single day.</p>
 
 <p>Boards and wetsuits are available for rent on-site. You don't need to bring anything.</p>
 
@@ -106,9 +112,9 @@ layout: blog-post.njk
 
 <h2>Prices and What to Book</h2>
 
-<p>Surf sessions run approximately $50 to $100 per person depending on wave type and session length. Lessons are priced separately. Spectator tickets are available for people who want to watch without surfing. Cabana rentals are available for the non-surf side of the venue.</p>
+<p>Pricing is tiered by session type. As of 2026, approximate rates: Waikiki Wave (beginner) around $100. Reform Wave Pass and intermediate sessions (A-Frames, Lefts and Rights) in the $150-200 range. Advanced A-Frames around $200. 5 Slabs (expert) around $250. Sampler Sessions are priced separately.</p>
 
-<p>Current pricing changes seasonally: check <a href="https://palmspringssurfclub.com" target="_blank" rel="noopener">palmspringssurfclub.com</a> directly before booking. Don't show up expecting to buy tickets at the door, especially on weekends.</p>
+<p>Spectator tickets are available if you're coming to watch. Cabana rentals for the lounge side of the venue book separately. Check <a href="https://palmspringssurfclub.com" target="_blank" rel="noopener">palmspringssurfclub.com</a> for current pricing before you commit, as rates shift seasonally. Don't show up expecting to buy tickets at the door, especially on weekends.</p>
 
 <p>Weekend surf sessions book out 1 to 2 weeks in advance in peak season (October through May). If you're planning a trip and want to surf, this is the first thing to book, not the last. Buy tickets online before you finalize any other plans for that day.</p>
 
@@ -122,13 +128,17 @@ layout: blog-post.njk
 
 <p><strong>Address:</strong> Palm Springs Surf Club (BSR Wave Co), 1500 S Gene Autry Trail, Cathedral City, CA 92234. About 10 minutes from downtown Palm Springs and about 25 to 30 minutes from Indio.</p>
 
-<p><strong>Parking:</strong> Free on-site. Not a pain point.</p>
+<p><strong>Parking:</strong> On-site parking is available. Peak season fees may apply. Check signage on arrival.</p>
+
+<p><strong>Food and drinks:</strong> No outside food, outside beverages, coolers, or glass containers are allowed on the venue grounds. Drifters, the on-site restaurant, is open Thursday through Sunday: Thursday and Friday 11am-8pm, Saturday and Sunday 10am-8pm. Plan accordingly if you're visiting on a weekday and want a sit-down meal on-site.</p>
+
+<p><strong>Height and age requirements:</strong> Minimum height is 42 inches to participate in surf sessions. Children under 14 must be supervised by a participating adult in the water.</p>
 
 <p><strong>What to bring:</strong> Sunscreen at desert levels (SPF 50+), a change of dry clothes, flip-flops, and a water bottle with real capacity. The sun is intense even when you're in and out of the water all day. You'll underestimate how much you'll need to drink.</p>
 
-<p><strong>When to go:</strong> Mornings, and outside of summer if you can. The facility is open in summer but 110-degree afternoons while doing a physical activity near standing water is not the optimal experience. October through May is the sweet spot. If you're going in summer, book the earliest available morning session.</p>
+<p><strong>When to go:</strong> Mornings, and outside of summer if you can. The facility is open in summer but 110-degree afternoons while doing a physical activity in standing water is not the optimal experience. October through May is the sweet spot. If you're going in summer, book the earliest available morning session.</p>
 
-<p><strong>Hours:</strong> Check <a href="https://palmspringssurfclub.com" target="_blank" rel="noopener">palmspringssurfclub.com</a> for current operating days and hours. Typically closed one or two days midweek.</p>
+<p><strong>Hours:</strong> Generally open daily 10am-8pm, with seasonal variations. Check <a href="https://palmspringssurfclub.com" target="_blank" rel="noopener">palmspringssurfclub.com</a> for current operating hours before you go.</p>
 
 <h2>Honest Take</h2>
 
