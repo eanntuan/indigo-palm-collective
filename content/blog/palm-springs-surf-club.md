@@ -146,7 +146,7 @@ layout: blog-post.njk
 
 <p>It's not cheap. It's not a substitute for a real surf trip to the coast. It's not a casual splash-around pool. But if surfing is your thing, or you've always wanted to try it in a controlled environment with good instruction, it's worth the session cost. And the venue handles non-surfers well enough that bringing a mixed group isn't a problem.</p>
 
-<p>If you're building it into a Palm Springs weekend, the <a href="/blog/palm-springs-weekend-itinerary/">3-day Palm Springs itinerary</a> has a sensible structure for fitting the Surf Club into a larger trip. And if you're staying in Palm Springs for that weekend, <a href="/the-sundune/">The Sundune</a> is our 2-bedroom at 5301 E Waverly Drive, about 15 minutes from the facility.</p>
+<p>If you're building it into a Palm Springs weekend, the <a href="/blog/palm-springs-weekend-itinerary/">3-day Palm Springs itinerary</a> has a sensible structure for fitting the Surf Club into a larger trip. And if you're staying in Palm Springs for that weekend, <a href="/the-sundune/">The Sundune</a> is our 2-bedroom at 5301 E Waverly Drive, 1.3 miles from the facility, about 3 minutes by car.</p>
 
 <img src="/blog/images/pssc-restaurant-pool-view.webp" alt="PSSC restaurant terrace with diners overlooking the wave pool lounge and desert mountains at Palm Springs Surf Club" width="1400" height="933" loading="lazy">
 <p class="image-caption">The restaurant at PSSC overlooks the full venue. If you're bringing people who aren't surfing, this is where they'll be. Solid food and a genuinely good view.</p>
