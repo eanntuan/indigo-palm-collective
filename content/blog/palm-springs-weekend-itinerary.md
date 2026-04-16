@@ -3,9 +3,9 @@ title: "Palm Springs Weekend: A 3-Day Itinerary That Works"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "Day 1: arrive and decompress. Day 2: architecture walk, coffee, and a hike. Day 3: farmers market and brunch. Three days in Palm Springs, planned well."
-ogImage: /blog/images/ps-orange-door-mcm.jpg
-heroImage: /blog/images/ps-orange-door-mcm.jpg
-heroAlt: "Vibrant orange front door of a midcentury modern home in Palm Springs with desert landscaping and blue sky"
+ogImage: /blog/images/palm-springs-marilyn-monroe-statue.jpg
+heroImage: /blog/images/palm-springs-marilyn-monroe-statue.jpg
+heroAlt: "Forever Marilyn statue on Palm Springs Art Museum Walk with San Jacinto Mountains in the background"
 keywords:
   - palm springs weekend itinerary
   - 3 days in palm springs
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs Weekend: A 3-Day Itinerary That Works",
   "description": "Day 1: arrive and decompress. Day 2: architecture walk, coffee, and a hike. Day 3: farmers market and brunch. Three days in Palm Springs, planned well.",
-  "image": "https://indigopalm.co/blog/images/ps-orange-door-mcm.jpg",
+  "image": "https://indigopalm.co/blog/images/palm-springs-marilyn-monroe-statue.jpg",
   "datePublished": "2026-04-09",
   "dateModified": "2026-04-15",
   "author": {
