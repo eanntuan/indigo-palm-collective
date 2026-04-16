@@ -3,9 +3,9 @@ title: "Palm Springs Surf Club: What to Know Before You Go"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "A wave pool in the middle of the desert. What Palm Springs Surf Club actually is, who it's for, and what to book before you show up empty-handed."
-ogImage: /blog/images/pssc-group-surf-session.webp
-heroImage: /blog/images/pssc-group-surf-session.webp
-heroAlt: "Multiple surfers riding waves at Palm Springs Surf Club with the PSSC building and San Jacinto Mountains in the background"
+ogImage: /blog/images/pssc-wave-pool-reflection.webp
+heroImage: /blog/images/pssc-wave-pool-reflection.webp
+heroAlt: "Palm Springs Surf Club wave pool at golden hour with PSSC building and San Jacinto Mountains reflecting in still water"
 keywords:
   - Palm Springs Surf Club
   - wave pool Palm Springs
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs Surf Club: What to Know Before You Go",
   "description": "A wave pool in the middle of the desert. What Palm Springs Surf Club actually is, who it's for, and what to book before you show up empty-handed.",
-  "image": "https://indigopalm.co/blog/images/pssc-group-surf-session.webp",
+  "image": "https://indigopalm.co/blog/images/pssc-wave-pool-reflection.webp",
   "datePublished": "2026-04-09",
   "dateModified": "2026-04-15",
   "author": {
