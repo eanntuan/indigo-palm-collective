@@ -50,6 +50,8 @@ layout: blog-post.njk
     <li>Plan <strong>25-49 minutes door-to-gate</strong> depending on where in Indian Palms you're staying</li>
 </ol>
 
+<img src="/blog/images/coachella-festival-map-2026.jpg" alt="2026 Coachella festival map showing Indian Palms Front Gate 0.3 miles from Monroe Street entrance" width="1080" height="1350" loading="lazy">
+
 <p>Golf cart rides are also available from community members during festival weekends. The going rate is roughly $5-10 per rider depending on group size. Your host will have current contact info in your welcome book.</p>
 
 <img src="/blog/images/indian-palms-night-walk.jpg" alt="Nighttime walk back to Indian Palms Country Club from Coachella along lit community path in Indio CA" width="3024" height="4032" loading="lazy">
@@ -60,8 +62,6 @@ layout: blog-post.njk
 <p>During Coachella and Stagecoach, Monroe, Madison, and the arterials around Empire Polo Club reach full standstill from about 2pm onward on Friday, Saturday, and Sunday. This is predictable and consistent. Every experienced festival-goer has a plan for it.</p>
 
 <p>If you're in Indian Palms, your plan is to walk or take a golf cart. If you need to drive for any reason, use the Monroe Gate (the main guest entry, the only gate staffed with security) and go well before noon. The Avenue 50 Gate is residents-only and you will be turned around.</p>
-
-<img src="/blog/images/coachella-festival-map-2026.jpg" alt="2026 Coachella festival map showing Indian Palms Front Gate 0.3 miles from Monroe Street entrance" width="1080" height="1350" loading="lazy">
 
 <h2>Community Amenities Beyond the Festival</h2>
 
