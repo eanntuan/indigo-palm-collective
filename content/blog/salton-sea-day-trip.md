@@ -68,63 +68,53 @@ layout: blog-post.njk
 }
 </script>
 
-<p>The Salton Sea day trip gets a polarizing response from people who've done it. Some find it one of the most atmospheric, genuinely strange places in California. Others drive out, catch a whiff of the shoreline, and turn around. Both reactions are valid.</p>
+<p>The Salton Sea day trip gets a polarizing response. Some find it one of the most atmospheric places in California. Others drive out, catch a whiff of the shoreline, and turn around. Both reactions are valid.</p>
 
-<p>This is not a comfortable or pretty day trip. Bombay Beach, Salvation Mountain, and Slab City are about 45 minutes east of Indio, and together they make up one of the more unusual afternoons you can have in Southern California. Here's what it actually is, what's worth stopping for, and whether you should go.</p>
+<p>Bombay Beach, Salvation Mountain, and Slab City are about 45 minutes east of Indio. Together they make up one of the stranger afternoons you can have in Southern California.</p>
 
 <h2>What the Salton Sea Actually Is</h2>
 
-<p>California's largest inland lake, sitting about 226 feet below sea level in the desert southeast of Indio. It was created by accident in 1905 when an irrigation canal broke and flooded the basin for two years. In the 1950s and 60s, it was a resort destination: yacht clubs, fishing tournaments, beachside motels. Then the water grew saltier and agricultural runoff accumulated and the ecosystem shifted. Most of the resorts were abandoned. The fish populations declined. The birds stayed because they had nowhere else to go.</p>
-
-<p>What's left is one of the stranger places in California: a massive lake ringed by ghost towns, desert folk art, and a small population of holdouts. The sunsets are extraordinary. The smell near the water is also extraordinary, and not in a good way.</p>
+<p>California's largest inland lake, sitting about 226 feet below sea level in the desert southeast of Indio. Created by accident in 1905 when an irrigation canal broke and flooded the basin for two years. By the 1950s it was a resort destination with yacht clubs and fishing tournaments. Then the water grew saltier, agricultural runoff accumulated, the ecosystem shifted, and most of the resorts were abandoned. The birds stayed because they had nowhere else to go.</p>
 
 <img src="/blog/images/salton-sea.webp" alt="Salton Sea shoreline at golden hour with pelicans roosting on bleached wood near the water's edge" width="1400" height="933" loading="lazy">
+<p class="image-caption">The Salton Sea at golden hour near Bombay Beach.</p>
 
 <h2>The Smell: Be Honest About It</h2>
 
-<p>The smell is real. Near the waterline, the combination of salt, algae, and decaying fish byproducts produces a sulfur-adjacent odor that guests will notice the moment they step out of the car at the shoreline. I'm telling you this directly because the reviews that lose host trust fastest are the ones that left this part out.</p>
-
-<p>In October through March, the smell is manageable, especially if you stay a few hundred feet from the water. In summer, it intensifies. If you're smell-sensitive, or if you're bringing kids who will complain loudly about it, factor that in. You can visit Salvation Mountain and most of Bombay Beach without getting close to the waterline. That helps.</p>
+<p>Near the waterline, the combination of salt, algae, and decaying fish byproducts produces a sulfur-adjacent odor you'll notice the moment you step out of the car. In October through March it's manageable, especially if you stay back from the water. In summer it intensifies. You can visit Salvation Mountain and most of Bombay Beach without getting close to the shoreline, which helps.</p>
 
 <h2>Bombay Beach</h2>
 
-<p>Bombay Beach is the most compelling stop on the circuit. It was once a small resort community. Now it's part ghost town, part outdoor art installation, and home to a small permanent population who seem to prefer it exactly as it is.</p>
+<p>Bombay Beach is the most compelling stop. Once a small resort community, now part ghost town, part outdoor art installation, home to a small permanent population who seem to prefer it exactly as it is. Artists have been using the town as a canvas for years: rusted cars, painted murals, sculptural installations on the streets and dry lake bed. The <a href="https://www.bombaybeachbiennale.org/" target="_blank" rel="noopener">Bombay Beach Biennale</a> is an annual spring arts festival, but the art is present year-round. The most interesting things are not visible from the main road. Give yourself 90 minutes and walk away from the highway.</p>
 
-<p>Artists have been using the town as a canvas for years. Rusted cars, painted murals, sculptural installations throughout the streets and the dry lake bed. The <a href="https://www.bombaybeachbiennale.org/" target="_blank" rel="noopener">Bombay Beach Biennale</a> is an annual spring arts festival that brings new installations and performances, but even outside of it, the art is present year-round. The most interesting things are not visible from the main road. Give yourself 90 minutes and walk the streets away from the highway.</p>
-
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Desert oasis with fan palms at the Coachella Valley Preserve, the kind of landscape you pass on the drive back from the Salton Sea" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-map.jpg" alt="Coachella Valley map showing Indio, Palm Springs, and the Salton Sea to the southeast" width="1400" height="933" loading="lazy">
+<p class="image-caption">The Salton Sea sits about 45 minutes southeast of Indio via the I-10.</p>
 
 <h2>Salvation Mountain</h2>
 
-<p>About 5 miles from Bombay Beach near the town of Niland: Salvation Mountain. Leonard Knight built this brightly painted adobe-and-straw hill over decades as a folk art monument to his religious faith. He finished it around 2011 and it was designated a national folk art site. Knight passed away in 2014, and a community of volunteers maintains it.</p>
-
-<p>It's one of those places you've seen in photos but can't fully understand until you're standing in front of it. The scale, the detail, the sheer quantity of paint and intention. It's moving regardless of your personal relationship with the message. Allow 30 to 45 minutes here. Admission is free; donations go toward maintenance. More information at <a href="https://salvationmountain.us/" target="_blank" rel="noopener">salvationmountain.us</a>.</p>
+<p>About 5 miles from Bombay Beach near the town of Niland: Salvation Mountain. Leonard Knight built this brightly painted adobe-and-straw hill over decades as a folk art monument to his religious faith, finishing around 2011. Knight passed away in 2014 and volunteers maintain it now. The scale and detail stop you cold in person. Allow 30 to 45 minutes; admission is free. More at <a href="https://salvationmountain.us/" target="_blank" rel="noopener">salvationmountain.us</a>.</p>
 
 <h2>Slab City</h2>
 
-<p>Past Salvation Mountain, a few miles deeper into the desert, is Slab City: an off-grid community built on the concrete slabs of a former military base. No grid electricity. No municipal water. Roughly 150 to 200 permanent residents, more in winter when the snowbird population arrives. The state of California hasn't fully decided what to do with the land, so it exists in a kind of legal limbo.</p>
+<p>Past Salvation Mountain is Slab City: an off-grid community on the concrete slabs of a former military base. No grid electricity, no municipal water, roughly 150 to 200 permanent residents. The main visitor draw is East Jesus, a sculpture garden inside Slab City made entirely from salvaged materials. It's free, donations welcome, and the art changes constantly. Beyond East Jesus, Slab City is a neighborhood where people actually live. Walk accordingly.</p>
 
-<p>The main draw for visitors is East Jesus, a sculpture garden inside Slab City made entirely from salvaged and repurposed materials. It's free, donations welcome, and the art changes constantly as artists add and modify work. Beyond East Jesus, Slab City is a neighborhood where people actually live, not a destination. Walking through the residential areas with a camera pointed at everything is a guest behavior worth reconsidering.</p>
-
-<img src="/blog/images/coachella-valley-map.jpg" alt="Coachella Valley map showing Indio, Palm Springs, and the Salton Sea to the southeast" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.jpg" alt="Coachella Valley desert panorama from above, showing the flat expanse between Palm Springs and the Salton Sea" width="1400" height="933" loading="lazy">
+<p class="image-caption">The valley floor stretching southeast toward the Salton Sea, visible on clear days from higher ground.</p>
 
 <h2>Getting There and Practical Notes</h2>
 
-<p>From Indio, Bombay Beach is about 45 minutes east on the I-10 to the Dillon Road exit, then south. From Palm Springs, add another 30 minutes. Most people do it as a half-day trip, or combine it with a full day if they're spending significant time at all three stops.</p>
+<p>From Indio, Bombay Beach is about 45 minutes east on the I-10 to the Dillon Road exit, then south. From Palm Springs, add another 30 minutes. Most people do it as a half-day, or combine all three stops into a full day.</p>
 
-<p>Best time to go: October through March. Summer temperatures at the Salton Sea are brutal, often 5 to 10 degrees hotter than Indio because of the lower elevation. The smell is also worse in heat. Go in winter or early spring and you'll get better light, cooler air, and a less intense shoreline experience. If you time it right, the Bombay Beach Biennale is typically held in March.</p>
+<p>Best time to go: October through March. Summer temperatures are brutal here, often 5 to 10 degrees hotter than Indio because of the lower elevation. The Bombay Beach Biennale is typically held in March. Bring water, sun protection, and a full tank of gas. There are no gas stations between Niland and the interstate, no coffee shops, no shade, and very few restrooms.</p>
 
-<p>Bring water, sun protection, and enough gas to not worry about it. There are no gas stations between Niland and the interstate. There are no coffee shops, no shade at Bombay Beach, and very few restrooms. Pack accordingly.</p>
+<img src="/blog/images/ps-desert-moonrise.jpg" alt="Full moon rising over the desert southeast of Palm Springs, the kind of sky you get driving back from the Salton Sea at dusk" width="1400" height="933" loading="lazy">
+<p class="image-caption">Time the drive back right and you get this.</p>
 
 <h2>Who Should Go</h2>
 
-<p>Go if you like places that feel genuinely off the tourist map. Go if outsider art, folk art, and landscape photography interest you. Go if you like the feeling of being somewhere that used to be something else entirely. Go if you're curious about California's complicated history with water and land.</p>
+<p>Go if you like places that feel genuinely off the tourist map, if outsider art or landscape photography interests you, or if you're curious about California's complicated history with water and land.</p>
 
-<p>Skip it if you need things to be comfortable throughout. Skip it if you have young children who don't do well with long drives and no amenities. Skip it if smells bother you, or if your idea of a good afternoon requires shade, food, and a restroom within reach.</p>
+<p>Skip it if you need things to be comfortable, if smells bother you, or if your idea of a good afternoon requires shade, food, and a restroom within reach.</p>
 
-<p>The Salton Sea is the kind of place that stays with you because it doesn't try to be anything other than what it is. If that sounds like your kind of afternoon, make the drive.</p>
-
-<img src="/blog/images/indio-local-gems.jpg" alt="Local Indio California street scene with date palms, a good place to stop for food before or after the Salton Sea drive" width="1400" height="933" loading="lazy">
-
-<p>If you're based in Indio, <a href="/blog/things-to-do-indio-ca/">the things to do in Indio guide</a> covers where to eat before or after this trip. For what else to do between festival weekends or on a free day, <a href="/blog/indio-between-coachella-weekends/">the between-Coachella-weekends guide</a> covers the Salton Sea alongside other day trips worth doing from the valley. And if you need a good home base on the eastern Coachella Valley side, <a href="/cozy-cactus/">The Cozy Cactus</a> is in Indian Palms, Indio, with a pool and hot tub to come back to after a long day of driving into the desert.</p>
+<p>If you're based in Indio, <a href="/blog/things-to-do-indio-ca/">the things to do in Indio guide</a> covers where to eat before or after this trip. For more day trip ideas, <a href="/blog/indio-between-coachella-weekends/">the between-Coachella-weekends guide</a> covers the Salton Sea alongside other options from the valley. And if you need a home base on the eastern Coachella Valley side, <a href="/cozy-cactus/">The Cozy Cactus</a> is in Indian Palms, Indio, with a pool and hot tub to come back to.</p>
 
