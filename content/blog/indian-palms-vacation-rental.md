@@ -51,8 +51,7 @@ layout: blog-post.njk
     <li>Use the <strong>Yellow Path at 49th and Monroe</strong> to enter the festival grounds</li>
 </ol>
 
-<video src="/blog/images/indian-palms-night-walk.mp4" autoplay muted loop playsinline style="width:100%;border-radius:8px;margin:2rem 0 0.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);"></video>
-<p class="image-caption">This is the walk back to Indian Palms at night. There's often neighbors selling waters and offering rides back to your home inside the community.</p>
+<video src="/blog/images/indian-palms-night-walk.mp4" autoplay muted loop playsinline style="width:100%;border-radius:8px;margin:2rem 0;box-shadow:0 4px 20px rgba(0,0,0,0.1);"></video>
 
 <ol start="5">
     <li>Plan <strong>25-49 minutes door-to-gate</strong> depending on where in Indian Palms you're staying</li>
