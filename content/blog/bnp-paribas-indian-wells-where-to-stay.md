@@ -3,9 +3,9 @@ title: "BNP Paribas Open: Where to Stay in the Desert"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "Palm Springs or Indio for the BNP Paribas Open? What to look for in a rental during tournament week, and why a private pool matters after stadium seats."
-ogImage: /blog/images/indian-palms-front-entrance.jpg
-heroImage: /blog/images/indian-palms-front-entrance.jpg
-heroAlt: "Indian Palms Country Club front entrance in Indio California near the BNP Paribas Open venue"
+ogImage: /blog/images/bnp-paribas-stadium-packed.jpg
+heroImage: /blog/images/bnp-paribas-stadium-packed.jpg
+heroAlt: "Packed Stadium 1 at the BNP Paribas Open in Indian Wells California during a match with full crowd"
 keywords:
   - BNP Paribas Open where to stay
   - Indian Wells Tennis where to stay
@@ -24,6 +24,9 @@ layout: blog-post.njk
 <p>The BNP Paribas Open is one of the largest tennis events in the world outside the Grand Slams, a combined Masters 1000 and WTA 1000 tournament held every March at the Indian Wells Tennis Garden. It draws 450,000-plus attendees over two weeks. The venue sits in Indian Wells, California, a small city that sits almost exactly between Palm Springs and Indio.</p>
 
 <p>That geography creates the core accommodation question: Palm Springs to the west, or Indio to the east? Both are about 20-25 minutes from the venue. The right answer depends on what you want the non-tennis hours to look like.</p>
+
+<img src="/blog/images/indian-wells-tennis-garden-aerial.jpg" alt="Aerial view of the Indian Wells Tennis Garden showing Stadium 1, practice courts, and the Santa Rosa Mountains in the background" width="1400" height="933" loading="lazy">
+<p class="image-caption">The Indian Wells Tennis Garden from above. Stadium 1 seats just over 16,000. The practice courts in the back are where you can watch top players warm up at very close range on a grounds pass.</p>
 
 <img src="/blog/images/indian-palms-front-entrance.jpg" alt="Indian Palms Country Club entrance gate in Indio California, a neighborhood popular with BNP Paribas Open attendees" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indian Palms Country Club in Indio, about 20 minutes from the Indian Wells Tennis Garden. Quiet neighborhood, private pools common, good value for groups.</p>
@@ -87,6 +90,9 @@ layout: blog-post.njk
 
 <p>The venue itself is well-organized. Grounds passes let you watch outer court matches at very close range, which is some of the best tennis-watching you can do anywhere. A grounds pass plus a single session ticket to Stadium 1 for a key round or the finals is often a better two-week plan than buying stadium seats for every session.</p>
 
+<img src="/blog/images/bnp-paribas-stadium-packed.jpg" alt="Stadium 1 at the BNP Paribas Open in Indian Wells packed with over 16,000 spectators during a match" width="1280" height="640" loading="lazy">
+<p class="image-caption">Stadium 1 during a match session. The sightlines are excellent from most seats. If you only buy one stadium ticket, make it a quarterfinal or later, when the draws are down to players you'll recognize.</p>
+
 <img src="/blog/images/indian-palms-lifestyle-center.jpg" alt="Lifestyle center and amenity area at Indian Palms Country Club in Indio California with tennis courts and palm trees" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Indian Palms Country Club amenity area. Pickleball and tennis courts on-site, which is a specific bonus for a tournament trip.</p>
 
@@ -98,13 +104,17 @@ layout: blog-post.njk
 
 <p>The desert in March is worth building a real trip around. The weather is the best it gets all year, the tennis is genuinely world-class, and having the right place to come back to each evening makes the whole week work better.</p>
 
+<p>If you're planning the full trip: the <a href="/blog/palm-springs-weekend-itinerary/">Palm Springs weekend itinerary</a> covers how to structure a 3-day visit with the right balance of activities and rest. The <a href="/blog/best-restaurants-near-coachella/">Coachella Valley restaurant guide</a> covers where to eat in Indio specifically, which matters more than people expect once they're actually here. And if you want to understand the full picture of what the two cities offer each other, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> covers everything side by side.</p>
+
+<p>For accommodation: <a href="/the-sundune/">The Sundune</a> is our Palm Springs 2BR if you want the city access option. <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> are both 3BR options in Indio with private pools, 20-25 minutes from the venue. All three book out early for tournament week. Check availability before it goes.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "BNP Paribas Open: Where to Stay in the Desert",
   "description": "Palm Springs or Indio for the BNP Paribas Open? What to look for in a rental during the tournament, and why a private pool matters after a day in stadium seats.",
-  "image": "https://indigopalm.co/blog/images/indian-palms-front-entrance.jpg",
+  "image": "https://indigopalm.co/blog/images/bnp-paribas-stadium-packed.jpg",
   "datePublished": "2026-04-09",
   "dateModified": "2026-04-15",
   "author": {
