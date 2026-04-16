@@ -20,23 +20,22 @@ excerpt: "An honest breakdown of every Coachella accommodation option: camping, 
 layout: blog-post.njk
 ---
 
-<p>You're going to Coachella 2026. Congratulations. Now comes the part nobody warns you about.</p>
+<p>You're going to Coachella 2026. Now comes the part nobody warns you about: finding a place to stay that doesn't destroy your budget, your sleep, or your will to attend Day 3.</p>
 
-<p>Finding a place to stay that doesn't destroy your budget, your sleep, or your will to attend Day 3.</p>
+<p>I own vacation rentals in Indio, two minutes from the polo grounds. I've watched this cycle play out every April. Here's the breakdown. No affiliate codes. No sponsored posts. Just what works.</p>
 
-<p>I own vacation rentals in Indio, two minutes from the polo grounds. I've watched this cycle play out every April. People book the wrong thing, in the wrong location, for the wrong price, and spend half the festival regretting it. Here's the breakdown. No affiliate codes. No sponsored posts. Just what works.</p>
+<img src="/blog/images/coachella-festival-map-2026.jpg" alt="Coachella 2026 festival grounds map showing Empire Polo Club layout and stage locations in Indio CA" width="1400" height="933" loading="lazy">
+<p class="image-caption">The festival grounds at Empire Polo Club. Knowing the layout helps you plan your lodging strategy.</p>
 
 <h2>The Options</h2>
 
 <h3>Option 1: On-Site Camping</h3>
 
-<p><strong>The pitch:</strong> You're RIGHT THERE. Walk to the stages. Full immersion. Community vibes.</p>
+<p><strong>The pitch:</strong> You're RIGHT THERE. Walk to the stages. Full immersion.</p>
 
-<p><strong>The reality:</strong> You're sleeping in 85-degree heat inside a tent on dirt. The showers have a line. Your stuff <em>will</em> get dusty. You'll sleep maybe four hours a night if you're lucky.</p>
+<p><strong>The reality:</strong> You're sleeping in 85-degree heat on dirt. The showers have a line. You'll sleep maybe four hours a night.</p>
 
-<p><strong>Who it's for:</strong> People in their early 20s who run on adrenaline and do not care about comfort. If that's you, do it. It's a rite of passage. But go in knowing what it is.</p>
-
-<p><strong>Who should skip it:</strong> Anyone who has ever said "I need my sleep." Anyone over 30. Groups with mixed energy levels where some people will want to leave at midnight and some will want to stay until 2am.</p>
+<p><strong>Who it's for:</strong> People in their early 20s who run on adrenaline. If that's you, do it — it's a rite of passage. But go in knowing what it is.</p>
 
 <p><strong>Cost:</strong> ~$125-150 per person for car camping. Sounds cheap until you factor in the gear, the food situation, and the Uber you'll take out of there on Day 2 to get real food.</p>
 
@@ -44,61 +43,52 @@ layout: blog-post.njk
 
 <p><strong>The pitch:</strong> Air conditioning. Real beds. A lobby bar where you can pretend to be a normal person.</p>
 
-<p><strong>The reality:</strong> You're 25-45 minutes from the venue. In festival traffic, that's an hour. Each way. You'll spend more time in an Uber than watching music.</p>
+<p><strong>The reality:</strong> You're 25-45 minutes from the venue. In festival traffic, that's an hour each way.</p>
 
-<p><strong>Cost:</strong> Hotels in the area triple or quadruple their rates during Coachella weekend. A Marriott that costs $120 on a random Tuesday will charge $450 and feel no shame about it. Budget $300-600/night for something decent.</p>
-
-<p><strong>The hidden cost:</strong> Uber surge pricing during Coachella is brutal. $60-100 per ride from Palm Springs to the polo grounds is normal. Over three days, that's an extra $400-600 your group didn't budget for.</p>
-
-<p><strong>Who it's for:</strong> People who want guaranteed comfort and don't mind the commute math. Valid option. Just do the real math before you book.</p>
+<p><strong>Cost:</strong> Hotels triple or quadruple their rates during Coachella weekend. A Marriott that costs $120 on a random Tuesday will charge $450. Budget $300-600/night for something decent. Then add Uber surge: $60-100 per ride from Palm Springs to the polo grounds. Over three days, that's an extra $400-600.</p>
 
 <h3>Option 3: The Random Airbnb Scramble</h3>
 
 <p><strong>The pitch:</strong> A whole house! Split with friends! Cheaper per person!</p>
 
-<p><strong>The reality:</strong> Most listings that pop up for Coachella weekend are people renting out their primary homes for festival cash. Nothing wrong with that, but you'll notice. Mismatched furniture. A vibe that says "we removed the good stuff and put it in storage." A note on the counter about the espresso machine that you're not allowed to use.</p>
+<p><strong>The reality:</strong> Most listings that pop up for Coachella weekend are people renting out their primary homes for festival cash. You'll notice: mismatched furniture, a note on the counter about the espresso machine you're not allowed to use.</p>
 
 <p><strong>Cost:</strong> $250-500/night for a basic 3-bedroom. The good ones book months in advance. What's left by March is usually left for a reason.</p>
 
-<p><strong>Who it's for:</strong> Large groups who care more about having a home base than having a nice one.</p>
-
 <h3>Option 4: A Vacation Rental Designed for Guests</h3>
 
-<p>This is the category most people don't know exists. Properties that aren't someone's house listed for festival weekend. These are properties that were built, designed, and furnished specifically to be places guests come back to.</p>
-
-<p>Different animal entirely. You get a real check-in process. Stocked supplies. A design that makes you want to come back to the house between sets instead of dreading the commute. A pool that functions as your Day 2 recovery strategy.</p>
+<p>This is the category most people don't know exists: properties built, designed, and furnished specifically for guests who come back. You get a real check-in process, stocked supplies, and a pool that functions as your Day 2 recovery strategy.</p>
 
 <p>I own one of these. You knew it was coming.</p>
 
+<img src="/blog/images/festival-coachella-aerial.jpg" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio CA surrounded by the Coachella Valley desert" width="1400" height="933" loading="lazy">
+<p class="image-caption">The polo grounds from above. Everything you see outside the festival fence is Indio. The Cozy Cactus is 2.5 miles from this shot.</p>
+
 <h2>The Cozy Cactus: Walking Distance from the Polo Grounds</h2>
 
-<p><a href="/cozy-cactus">The Cozy Cactus</a> is our 3-bedroom vacation rental in Indio, <strong>walking distance from the Empire Polo Club</strong> where Coachella happens. Not "close." Walking distance.</p>
-
-<p>Here's what that proximity means in practice:</p>
+<p><a href="/cozy-cactus">The Cozy Cactus</a> is our 3-bedroom vacation rental in Indio, <strong>walking distance from the Empire Polo Club</strong>. Not "close." Walking distance.</p>
 
 <p><strong>Getting there:</strong> Walk. Or drive 5 minutes at normal times, maybe 10 during festival entry. Compare that to 45 minutes from Palm Springs in surge traffic.</p>
 
-<p><strong>Getting home at 1am:</strong> You walk. No Uber surge. No "should we leave before the headliner to beat traffic?" calculation. You leave when you want and walk back to a pool.</p>
+<p><strong>Getting home at 1am:</strong> You walk. No Uber surge. No "should we leave before the headliner to beat traffic?" calculation. You leave when you want and come back to a pool.</p>
 
-<p><strong>The recovery factor:</strong> Coachella is three days. Your body starts negotiating by Day 2. Having a private hot tub to sink into, a real kitchen to cook in, and a putting green to wander around on is the difference between "I survived Coachella" and "I enjoyed all three days."</p>
+<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private pool and backyard at the Cozy Cactus vacation rental in Indio CA, steps from the Coachella festival grounds" width="1400" height="933" loading="lazy">
+<p class="image-caption">Your recovery base. Pool, hot tub, patio. Two miles from the polo grounds.</p>
 
 <h2>The 3PM Strategy (This Is Why Proximity Matters)</h2>
 
-<p>The desert at 3pm on a Coachella Saturday is a specific kind of challenge. It's 95 degrees. You've been on your feet since noon. The headliner isn't until 9. That's six hours of desert sun before the headliner.</p>
+<p>The desert at 3pm on a Coachella Saturday is a specific kind of challenge. It's 95 degrees. You've been on your feet since noon. The headliner isn't until 9. That's six hours of desert sun.</p>
 
-<p>The groups who stay close do this: leave at 3, walk or drive 10 minutes back to the house, pool time, nap, shower, recharge. Back to the grounds for the evening sets when everyone else who commuted from Palm Springs is still stuck in traffic.</p>
+<p>The groups who stay close do this: leave at 3, drive 10 minutes back to the house, pool time, nap, shower, recharge. Back to the grounds for the evening sets when everyone else who commuted from Palm Springs is still stuck in traffic.</p>
 
-<p>This only works if your rental has a pool worth spending time at and is close enough that splitting the group and meeting back is easy. The Cozy Cactus was built for exactly this.</p>
+<p>This only works if your rental has a pool worth spending time at and is close enough that splitting the group is easy. The Cozy Cactus was built for exactly this.</p>
 
 <img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial drone shot of the Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with community pool and hot tub" width="1400" height="933" decoding="async">
 <p class="image-caption">The Cozy Cactus from above. Private pool center-frame. Empire Polo Club is 2.5 miles east.</p>
 
-<img src="/blog/images/cc-primary-styled-v1.jpeg" alt="Primary bedroom at the Cozy Cactus vacation rental in Indio California with comfortable linens and warm desert tones" width="800" height="533" loading="lazy" decoding="async">
-<p class="image-caption">Where you wake up on festival morning. Not a hotel room. Your house, your kitchen, your pool outside.</p>
-
 <h2>Honest Price Comparison</h2>
 
-<p>For a group of 6 (which is what a 3-bedroom comfortably sleeps), over a 3-night weekend:</p>
+<p>For a group of 6 over a 3-night weekend:</p>
 
 <table class="comparison-table">
     <thead>
@@ -120,7 +110,7 @@ layout: blog-post.njk
             <td>Palm Springs hotel (2 rooms)</td>
             <td>$2,400+</td>
             <td>$400</td>
-            <td>Uber surge: $400–600 extra</td>
+            <td>Uber surge: $400-600 extra</td>
         </tr>
         <tr>
             <td>Random Airbnb</td>
@@ -139,13 +129,13 @@ layout: blog-post.njk
 
 <p>The math isn't just about the nightly rate. It's about what's included, what's not, and what you'll spend anyway.</p>
 
-<img src="/blog/images/cc-reading-nook.jpg" alt="Cozy reading nook at the Cozy Cactus vacation rental in Indio California, ideal for mid-afternoon festival recovery" width="800" height="533" loading="lazy" decoding="async">
-<p class="image-caption">The 3PM strategy starts here. Nap, recharge, shower. While everyone else is stuck in traffic.</p>
+<img src="/blog/images/coachella-shuttle.jpg" alt="Shuttle buses at Coachella festival providing transportation to the Empire Polo Club grounds in Indio CA" width="1400" height="933" loading="lazy">
+<p class="image-caption">The shuttle is a real option if you're staying further out. But the wait at midnight on Saturday is its own kind of festival experience.</p>
 
 <h2>When to Book</h2>
 
 <div class="callout">
-    <p>Now. Three months ago was better, but now is still worth it. Coachella 2026 is April 11–13 (Weekend 1) and April 18–20 (Weekend 2). Properties in Indio, especially walking distance to the grounds, book early and don't last.</p>
+    <p>Now. Three months ago was better, but now is still worth it. Coachella 2026 is April 11-13 (Weekend 1) and April 18-20 (Weekend 2). Properties in Indio, especially walking distance to the grounds, book early and don't last.</p>
 </div>
 
 <p>If you're reading this in March, you still have options. If you're reading this in April, I hope it has a pool.</p>
@@ -154,8 +144,8 @@ layout: blog-post.njk
 
 <p>There's no wrong way to do Coachella. (There are a few wrong ways. Don't sleep in your car in a Walmart parking lot. Someone does this every year.)</p>
 
-<p>But the right accommodation changes the whole weekend. Proximity matters. Comfort matters. A pool matters more than you think it does on a Sunday in the desert when you have five hours until the headliner and you're running on festival tacos and adrenaline.</p>
+<p>Proximity matters. Comfort matters. A pool matters more than you think it does on a Sunday in the desert when you have five hours until the headliner and you're running on festival tacos and adrenaline.</p>
 
-<p>If you want the recommendation from a vacation rental owner who has seen what works: stay in Indio, stay close to the grounds, and invest in a place you want to come back to between sets. Once you've figured out your lodging, check out our guide to <a href="/blog/indio-local-gems/">10 Indio gems only locals know about</a> so you know exactly where to eat, explore, and recover between sets.</p>
+<p>Stay in Indio, stay close to the grounds, and invest in a place you want to come back to between sets. Once you've figured out your lodging, check out our guide to <a href="/blog/indio-local-gems/">10 Indio gems only locals know about</a> so you know exactly where to eat, explore, and recover between sets.</p>
 
 <p>Planning for a future Coachella? We've updated this guide into a fuller, year-round version: <a href="/blog/where-to-stay-coachella/">Where to Stay for Coachella: The Complete Guide</a>. It covers every accommodation option in more depth and is kept current each season.</p>
