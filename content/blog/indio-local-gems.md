@@ -10,12 +10,12 @@ keywords:
   - hidden gems
   - best restaurants Indio
   - date farms Coachella Valley
-ogImage: /blog/images/indio-local-gems.jpg
+ogImage: /blog/images/indio-sign-miles-ave.jpg
 articleSection: Local Guide
 property: cozy-cactus
 readTime: 6 min read
 excerpt: Skip the tourist traps. L&G Desert Store has dates and strawberries. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA.
-heroImage: /blog/images/indio-local-gems.jpg
+heroImage: /blog/images/indio-sign-miles-ave.jpg
 heroAlt: Colorful INDIO letter sign at Miles Avenue Park in Indio California with palm trees
 layout: blog-post.njk
 ---
@@ -24,7 +24,7 @@ layout: blog-post.njk
 
 <p>Indio is not Palm Springs. It's grittier, more working-class, less Instagram-curated. And that's exactly what makes it good. This is the city that hosts Coachella and Stagecoach every year, gets overlooked for eleven months, and quietly goes about being one of the most interesting corners of the Coachella Valley. Here's what's worth your time.</p>
 
-<img src="/blog/images/indio-local-gems.jpg" alt="Colorful INDIO letter sign at Miles Avenue Park in Indio California with palm trees and string lights" width="800" height="533" loading="lazy">
+<img src="/blog/images/indio-sign-miles-ave.jpg" alt="Colorful INDIO letter sign at Miles Avenue Park in Indio California with palm trees and string lights" width="800" height="533" loading="lazy">
 <p class="image-caption">Miles Avenue Park. The sign is new, the city is older and more interesting than most visitors bother to find out.</p>
 
 <div class="fun-fact">
