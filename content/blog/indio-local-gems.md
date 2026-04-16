@@ -16,7 +16,7 @@ property: cozy-cactus
 readTime: 6 min read
 excerpt: Skip the tourist traps. L&G Desert Store has dates and strawberries. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA.
 heroImage: /blog/images/indio-local-gems.jpg
-heroAlt: Mid-century modern home with vibrant orange double doors, tall cactus, and teal desert sky, Coachella Valley CA
+heroAlt: Colorful INDIO letter sign at Miles Avenue Park in Indio California with palm trees
 layout: blog-post.njk
 ---
 
