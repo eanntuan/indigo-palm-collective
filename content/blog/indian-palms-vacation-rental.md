@@ -21,7 +21,7 @@ layout: blog-post.njk
 
 <p>If you've been researching where to stay for Coachella or Stagecoach, you've probably seen Indian Palms Country Club come up. Maybe in a listing title, maybe in a review, maybe in a Facebook group where someone swore it was the best location in the valley. They weren't wrong, but there are things worth knowing before you book.</p>
 
-<p>I've owned vacation rentals in Indian Palms since 2022. I know this neighborhood. Here's what it's like to stay here.</p>
+<p>I own two vacation rentals in Indian Palms, and that's how convenient this location is to the festivals. Here's what it's like to stay here.</p>
 
 <img src="https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.jpg" alt="Vacation rental in Indian Palms Country Club Indio CA with pool and mountain views" width="800" height="533">
 
