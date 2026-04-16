@@ -247,7 +247,7 @@ permalink: "{{ page.fileSlug }}/index.html"
 
     {% if heroImage %}
     <div style="width:100%;height:480px;overflow:hidden;margin-top:64px;">
-        <img src="{{ heroImage }}" alt="{{ heroAlt if heroAlt else title }}" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" fetchpriority="high">
+        <img src="{{ heroImage }}" alt="{{ heroAlt if heroAlt else title }}" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:{{ heroPosition if heroPosition else 'center' }};" fetchpriority="high">
     </div>
     {% endif %}
 
