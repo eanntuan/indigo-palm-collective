@@ -55,6 +55,8 @@ layout: blog-post.njk
 <p>Golf cart rides are also available from community members during festival weekends. The going rate is roughly $5-10 per rider depending on group size. Your host will have current contact info in your welcome book.</p>
 
 <img src="/blog/images/indian-palms-night-walk.jpg" alt="Nighttime walk back to Indian Palms Country Club from Coachella along lit community path in Indio CA" width="3024" height="4032" loading="lazy">
+
+<video src="/blog/images/indian-palms-night-walk.mp4" autoplay muted loop playsinline style="width:100%;border-radius:8px;margin:0 0 0.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);"></video>
 <p class="image-caption">This is the walk back to Indian Palms at night. There's often neighbors selling waters and offering rides back to your home inside the community.</p>
 
 <h2>During Festival Weekends: Traffic and Parking</h2>
