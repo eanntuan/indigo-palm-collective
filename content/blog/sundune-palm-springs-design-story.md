@@ -1,6 +1,7 @@
 ---
-title: "Inside The Sundune: Palm Springs Design Story"
+title: "Inside The Sundune: A Palm Springs Design Story"
 date: 2026-04-09
+dateModified: 2026-04-15
 metaDescription: "The design story behind The Sundune at Palm Springs: coastal-desert vibes, sun-faded palettes, and a surf-inspired sanctuary steps from downtown."
 ogImage: /blog/images/ps-orange-door-mcm.jpg
 heroImage: /blog/images/ps-orange-door-mcm.jpg
@@ -11,7 +12,7 @@ keywords:
   - coastal desert interior design
   - Palm Springs short term rental
   - vacation rental design story
-articleSection: "Vacation Rental Design"
+articleSection: "Design & Culture"
 property: ps-retreat
 readTime: "6 min read"
 excerpt: "The design story behind The Sundune: how a coastal-desert identity took shape in a Palm Springs vacation rental, built around surf culture, sun-faded textures, and a pink-walled second bedroom."
@@ -22,9 +23,9 @@ layout: blog-post.njk
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Inside The Sundune: Palm Springs Design Story",
+  "headline": "Inside The Sundune: A Palm Springs Design Story",
   "datePublished": "2026-04-09",
-  "dateModified": "2026-04-09",
+  "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"
@@ -63,7 +64,7 @@ layout: blog-post.njk
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Inside The Sundune: Palm Springs Design Story",
+      "name": "Inside The Sundune: A Palm Springs Design Story",
       "item": "https://indigopalm.co/blog/sundune-palm-springs-design-story/"
     }
   ]
@@ -129,7 +130,7 @@ layout: blog-post.njk
 
 <p>The goal is for it to feel thoughtfully collected over time, not overly styled. There's a difference between a space where every piece was chosen deliberately and a space where every piece was chosen to match. We want the former.</p>
 
-<img src="/blog/images/ps-street-mountains.jpg" alt="Quiet Palm Springs residential street lined with palm trees and San Jacinto mountain backdrop at midday" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard in Palm Springs with San Jacinto mountain backdrop and clear desert sky" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">Palm Springs at its quietest. The Sundune is a few blocks from all of this.</p>
 
 <h2>The Basecamp Idea</h2>
@@ -150,8 +151,8 @@ layout: blog-post.njk
 
 <p>Same commitment to quality and intention. Completely different personalities. That's by design.</p>
 
-<img src="/blog/images/cartel-coffee-palm-springs.jpg" alt="Cartel Coffee Lab at the Arrive Hotel in Palm Springs, the kind of design-forward space that informs how we think about interiors" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">The color and texture vocabulary that runs through all our Palm Springs thinking. Coffee shops like this are part of it.</p>
+<img src="/blog/images/ps-via-sol-sunset.jpg" alt="Desert sunset over Via Sol in Palm Springs with warm golden light and silhouetted palm trees" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">The light in Palm Springs at the end of the day. It informs the whole color palette at The Sundune.</p>
 
 <h2>What's Still Being Decided</h2>
 
@@ -161,7 +162,7 @@ layout: blog-post.njk
 
 <p>What's not changing: the identity. Coastal-desert. Playful and nostalgic. A place that earns the word basecamp without it being a marketing term.</p>
 
-<p>You can <a href="/booking-flow/?property=ps-retreat">book The Sundune here</a>, or read more about <a href="/blog/palm-springs-weekend-itinerary/">how to spend a weekend in Palm Springs</a> if you want to build an itinerary first.</p>
+<p>You can browse the full property details and availability at <a href="/the-sundune/">The Sundune listing page</a>. If you're still building your itinerary, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> breaks down which city is the better base depending on what you're planning to do.</p>
 
 <h2>FAQ: The Sundune at Palm Springs</h2>
 

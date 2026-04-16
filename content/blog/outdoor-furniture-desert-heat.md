@@ -1,7 +1,8 @@
 ---
 title: "Outdoor Furniture That Survives Desert Heat"
 date: 2026-04-09
-metaDescription: "What outdoor furniture actually holds up in 115°F desert heat. Lessons from furnishing vacation rentals in Indio, CA: what works, what fails, and what we use."
+dateModified: 2026-04-15
+metaDescription: "What outdoor furniture holds up in 115°F desert heat. Lessons from furnishing vacation rentals in Indio, CA: what works, what fails, and what to use."
 ogImage: /blog/images/cozy-cactus-patio.jpg
 heroImage: /blog/images/cozy-cactus-patio.jpg
 heroAlt: "Cozy Cactus vacation rental patio in Indio California with outdoor furniture, desert landscaping, and clear desert sky"
@@ -24,7 +25,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Outdoor Furniture That Survives Desert Heat",
   "datePublished": "2026-04-09",
-  "dateModified": "2026-04-09",
+  "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"
@@ -134,12 +135,12 @@ layout: blog-post.njk
 
 <h2>What We Use at Terra Luz</h2>
 
-<p>For the outdoor patio at <a href="/terra-luz/">Terra Luz</a>, we went with West Elm outdoor furniture. It's powder-coated, holds up in direct sun, and looks good in photos without looking like it was trying to look good in photos. That last part matters more than it sounds: guests photograph the outdoor space constantly, and furniture that looks like a prop rather than actual furniture registers in the subconscious, even if guests can't say why.</p>
+<p>For the outdoor patio at <a href="/terra-luz/">Terra Luz</a>, we prioritized powder-coated frames and solution-dyed cushions from the start. The outdoor dining setup photographs well without looking like it's performing for the camera. That last part matters more than it sounds: guests photograph the outdoor space constantly, and furniture that looks like a prop rather than furniture registers in the subconscious, even if guests can't say why.</p>
 
-<p>The West Elm outdoor line isn't cheap. But it's the kind of furniture that's still there in three years looking like it should be there, not like it survived something.</p>
+<p>Buying right the first time costs more upfront. But it's still there in three years looking like it should be, not like it survived something.</p>
 
-<img src="/blog/images/west-elm-dining.jpeg" alt="West Elm outdoor dining furniture on the Terra Luz vacation rental terrace in Indio California with desert garden setting" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">West Elm outdoor at Terra Luz. Powder-coated, holds color, photographs well in desert light.</p>
+<img src="/blog/images/terra-luz-pool-backyard.jpg" alt="Terra Luz vacation rental pool and backyard in Indio California with desert garden and outdoor living space" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">The Terra Luz backyard. Everything outside here was chosen for desert durability first, then for how it photographs.</p>
 
 <h2>Two Things Nobody Tells You</h2>
 
@@ -151,17 +152,17 @@ layout: blog-post.njk
 
 <p>A weighted base rated for wind is not optional in the Coachella Valley. Desert afternoons generate real gusts, especially from late spring through summer. An umbrella in a light base becomes a projectile. We learned this the obvious way. A weighted base rated for 30-35 mph winds (or higher) is the minimum for any property in the valley. The umbrella itself should be freestanding pole style rather than offset/cantilever if it's going to sit in a high-wind zone without a wall to buffer it.</p>
 
-<img src="/blog/images/coffee-bar.jpg" alt="Well-stocked coffee bar at a desert vacation rental, the kind of detail that makes mornings on the patio better" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">Desert evenings start with good mornings. A rental that gets the details right indoors tends to get the patio right too.</p>
+<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with outdoor seating and desert landscaping" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">The Cozy Cactus backyard. Outdoor furniture here has survived multiple Coachella Valley summers.</p>
 
 <h2>The Short Version</h2>
 
 <p>If you're furnishing a desert patio and you want it to look good for more than one season: powder-coated aluminum or teak for the frames, solution-dyed acrylic (Sunbrella or equivalent) for cushion fabric, all-weather HDPE resin if you want wicker, and concrete for anything that stays put. Avoid anything sold as a bundle, anything with chrome hardware, and any cushion that just says "polyester."</p>
 
-<p>For more on what goes into running a rental in the Coachella Valley, read the <a href="/blog/airbnb-hosting-lessons/">hosting lessons from 191 Airbnb reviews</a>, or if you're planning a desert stay, here's <a href="/blog/desert-vacation-prep/">what to bring and prepare for a desert vacation rental</a>.</p>
+<p>For more on what goes into running a rental in the Coachella Valley, read the <a href="/blog/airbnb-hosting-lessons/">hosting lessons from 191 Airbnb reviews</a>. If you're looking for a desert rental where the outdoor space was actually designed to hold up, <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio is a good example of what this looks like in practice.</p>
 
-<img src="/blog/images/west-elm-dining.jpeg" alt="Outdoor dining setup at a desert vacation rental with durable furniture and warm desert tones" width="1400" height="933" loading="lazy" decoding="async">
-<p class="image-caption">This is what furniture that was actually specced for desert conditions looks like after a few seasons. It just keeps working.</p>
+<img src="/blog/images/cozy-cactus-patio.jpg" alt="Cozy Cactus vacation rental patio in Indio California with durable outdoor furniture after multiple desert summers" width="1400" height="933" loading="lazy" decoding="async">
+<p class="image-caption">Furniture specced for desert conditions after a few seasons of real use. It just keeps working.</p>
 
 <h2>FAQ: Outdoor Furniture in Desert and Extreme Heat</h2>
 
