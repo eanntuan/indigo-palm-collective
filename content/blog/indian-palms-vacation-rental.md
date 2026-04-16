@@ -75,9 +75,9 @@ layout: blog-post.njk
 
 <img src="/blog/images/cozy-cactus-living-room.jpg" alt="Living room at the Cozy Cactus vacation rental in Indian Palms Country Club with foosball table and open kitchen" width="800" height="533" loading="lazy">
 
-<p><a href="https://indigopalm.co/cozy-cactus">Cozy Cactus</a> is a 3-bedroom family-focused home with a heated community pool steps away, hot tub, and putting green. It's designed for families: pack-n-play, Stokke high chair, curated toy collection, an organization system parents consistently mention in reviews. It sleeps up to 10.</p>
+<p><a href="https://indigopalm.co/cozy-cactus">Cozy Cactus</a> is a 3-bedroom family-focused home with a heated community pool steps away, hot tub, and putting green. It's designed for families: pack-n-play, Stokke high chair, curated toy collection, an organization system parents consistently mention in reviews. It sleeps up to 8.</p>
 
-<p><a href="https://indigopalm.co/terra-luz">Terra Luz</a> is a 3-bedroom Latin/Cuban-inspired vacation rental with a private saltwater pool, terracotta courtyard, and an aesthetic designed by brand architect Dawn Asher. It's our pet-friendly property. It sleeps up to 6.</p>
+<p><a href="https://indigopalm.co/terra-luz">Terra Luz</a> is a 3-bedroom Latin/Cuban-inspired vacation rental with a private saltwater pool, terracotta courtyard, and an aesthetic designed by brand architect Dawn Asher. It's our pet-friendly property. It sleeps up to 8.</p>
 
 <p>Both are in Indian Palms Country Club, about 2.5 miles from the festival grounds. Both skip the platform fees when you book direct.</p>
 
