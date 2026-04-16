@@ -73,7 +73,7 @@ layout: blog-post.njk
 
 <h2>The Two Properties We Have Here</h2>
 
-<img src="/blog/images/cc-primary-styled-v1.jpeg" alt="Primary bedroom at the Cozy Cactus vacation rental in Indian Palms Country Club Indio CA, styled with warm desert tones" width="800" height="533" loading="lazy">
+<img src="/blog/images/cozy-cactus-living-room.jpg" alt="Living room at the Cozy Cactus vacation rental in Indian Palms Country Club with foosball table and open kitchen" width="800" height="533" loading="lazy">
 
 <p><a href="https://indigopalm.co/cozy-cactus">Cozy Cactus</a> is a 3-bedroom family-focused home with a heated pool, hot tub, and putting green. It's designed for families: pack-n-play, Stokke high chair, curated toy collection, an organization system parents consistently mention in reviews. It sleeps up to 10.</p>
 
