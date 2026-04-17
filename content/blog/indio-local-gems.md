@@ -192,4 +192,6 @@ layout: blog-post.njk
 
 <p>The Coachella Valley isn't Palm Springs, and Indio definitely isn't trying to be. It's dustier, more honest, and significantly more interesting once you stop expecting it to perform for you. The best version of this place rewards exactly one thing: curiosity. Drive down a road you don't know. Order something you can't pronounce. Ask the person behind the counter what they eat for lunch.</p>
 
+<p>If you're staying in Indio, we have two houses close to all of this: <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a>. Both have pools, both are walking distance to Old Town.</p>
+
 <p>These ten spots are a starting point. The actual discovery is yours to make. If you're planning a Coachella trip and figuring out where to base yourself, read <a href="/blog/where-to-stay-coachella-2026/">our honest guide to Coachella 2026 accommodation options</a>. No affiliate codes, just the real breakdown. And for the backstory on how the Indigo Palm Collective started in Indio, read <a href="/blog/cozy-cactus-origin-story/">how we bought our first vacation rental on Easter Sunday 2022</a>.</p>

@@ -95,3 +95,5 @@ layout: blog-post.njk
 <p>The desert has a way of slowing people down. Not everyone knows what to do when their nervous system finally stops running. Give it a day. By day two, most guests have figured out the pace. They stop trying to fill every hour. They sit by the pool longer than planned. They eat dinner slowly.</p>
 
 <p>That's the whole point. The house is set up for it. The desert helps.</p>
+
+<p>If you're planning a trip, we have properties in both Indio (<a href="/cozy-cactus/">The Cozy Cactus</a>, <a href="/terra-luz/">Terra Luz</a>) and Palm Springs (<a href="/the-sundune/">The Sundune</a>) depending on which end of the valley fits your trip.</p>

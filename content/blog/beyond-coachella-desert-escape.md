@@ -102,4 +102,6 @@ layout: blog-post.njk
 
 <p>The Coachella Valley has this reputation as a festival destination. It's also a winter escape, a remote work haven, a Joshua Tree base camp. A place where you can float in a pool with a drink in hand and feel like you've left your life behind, if only for a few days.</p>
 
+<p>If you're planning a trip out here, <a href="/terra-luz/">Terra Luz</a> is our Indio home base: private pool, hot tub, fire pit, and 10 minutes from everything in this guide.</p>
+
 <p><a href="/blog/terra-luz-origin-story/">Terra Luz</a> is our love letter to this place. Whether you're coming for Coachella, escaping winter, or just need a long weekend to reset, the Coachella Valley is waiting.</p>

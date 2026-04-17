@@ -108,3 +108,5 @@ layout: blog-post.njk
 <p>We're taking reservations for <strong>summer 2026 and beyond</strong>. Whether you're coming for Coachella, escaping a long stretch of work, or just need a long weekend to reset, we'd love to host you.</p>
 
 <p>This is more than a Coachella vacation rental or a Palm Springs getaway. It's a love letter to the desert, built into a house. Read more about <a href="/blog/desert-vacation-prep/">how to prepare for your desert stay</a> and what to expect when you get here.</p>
+
+<p>If you're ready to book, <a href="/terra-luz/">Terra Luz</a> is open for summer 2026 and beyond.</p>

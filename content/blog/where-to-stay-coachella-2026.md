@@ -148,4 +148,6 @@ layout: blog-post.njk
 
 <p>Stay in Indio, stay close to the grounds, and invest in a place you want to come back to between sets. Once you've figured out your lodging, check out our guide to <a href="/blog/indio-local-gems/">10 Indio gems only locals know about</a> so you know exactly where to eat, explore, and recover between sets.</p>
 
+<p>If you're still looking, <a href="/cozy-cactus/">The Cozy Cactus</a> is walking distance to the Empire Polo Club, sleeps 6, and has a private pool and hot tub for the hours between stages.</p>
+
 <p>Planning for a future Coachella? We've updated this guide into a fuller, year-round version: <a href="/blog/where-to-stay-coachella/">Where to Stay for Coachella: The Complete Guide</a>. It covers every accommodation option in more depth and is kept current each season.</p>

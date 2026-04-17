@@ -102,3 +102,5 @@ layout: blog-post.njk
 <p>Palm Springs works for dogs better than most places its size, but you need the right base. A private yard, tile floors, and outdoor space matter more than the amenity checklist. The trails and parks are there. The restaurant patios are there. Get the accommodation right first, then build the trip around that.</p>
 
 <p>If you want more on the area, read our <a href="https://indigopalm.co/blog/palm-springs-local-guide-sundune">local Palm Springs guide</a>, written by someone who eats here, not just visits.</p>
+
+<p>If you're planning a stay, <a href="/the-sundune/">The Sundune</a> is our Palm Springs property and it's pet-friendly — private yard, tile floors, and enough outdoor space to make your dog very happy.</p>

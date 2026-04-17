@@ -167,4 +167,6 @@ layout: blog-post.njk
 
 <p>Weekend 2 will still be there on the 18th. It always is.</p>
 
+<p>If you're looking for a place to land between weekends, <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> are both in Indio, walking distance to the grounds, with private pools built for exactly this kind of week.</p>
+
 <p>If you're looking for a longer run of local recommendations, the kind of spots that reward repeat visits, take a look at the <a href="/blog/indio-local-gems/">full local gems guide</a>. And if you're still sorting out where to stay for the whole stretch, the <a href="/blog/where-to-stay-coachella-2026/">Coachella accommodation breakdown</a> has an honest take on every option from camping to vacation rental to hotel.</p>

@@ -100,6 +100,8 @@ layout: blog-post.njk
 
 <p>If you're deciding between Indio and Palm Springs as a base, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> covers the trade-offs in detail, including what each city offers beyond just proximity to Coachella.</p>
 
+<p>If you're planning a stay in Indio, both <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> were built with all five of these checkboxes in mind from the start.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
