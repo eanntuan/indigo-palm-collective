@@ -19,7 +19,7 @@ excerpt: "Things to do in Palm Springs, from a local who actually eats here. Cof
 layout: blog-post.njk
 ---
 
-<p>I'm a surfer from Culver City who ended up owning vacation rentals in the Coachella Valley. Not a Palm Springs local, but I spend enough time here to say these recommendations are real. Not affiliate-coded, not algorithmic. This is the guide we give <a href="https://indigopalm.co/ps-retreat">Sundune</a> guests.</p>
+<p>I'm a surfer from Culver City who ended up owning vacation rentals in the Coachella Valley. Not a Palm Springs local, but I spend enough time here to say these recommendations are real. Not affiliate-coded, not algorithmic. This is the guide we give <a href="/the-sundune/">Sundune</a> guests.</p>
 
 <h2>Morning / Coffee</h2>
 
@@ -77,4 +77,4 @@ layout: blog-post.njk
 
 <p>There's a version of Palm Springs built entirely for first-timers: the Instagram midcentury shot, the pool selfie, the frozen rosé. That version is fine. But there's a quieter, more interesting version underneath, and that's what this guide points toward.</p>
 
-<p>For more Coachella Valley intel, the <a href="/blog/indio-local-gems/">Indio local gems guide</a> covers the other end of the valley. Different energy, just as worth knowing. And if you're still deciding where to stay: <a href="https://indigopalm.co/ps-retreat">The Sundune</a> is exactly what it sounds like.</p>
+<p>For more Coachella Valley intel, the <a href="/blog/indio-local-gems/">Indio local gems guide</a> covers the other end of the valley. Different energy, just as worth knowing. And if you're still deciding where to stay: <a href="/the-sundune/">The Sundune</a> is exactly what it sounds like.</p>

@@ -98,4 +98,4 @@ layout: blog-post.njk
 
 <p>The Cozy Cactus isn't baby-themed. It's thoughtfully designed for humans who notice when someone cared. It started as a backup plan for a Honda Element. It became something I'm proud of.</p>
 
-<p>If that sounds like what you need, you know where to find us. And if you want the full origin story, the Easter Sunday purchase, the Facebook Marketplace era, all of it, read <a href="/blog/cozy-cactus-story/">the complete story of how The Cozy Cactus came to be</a>.</p>
+<p>If that sounds like what you need, <a href="/cozy-cactus/">you know where to find us</a>. And if you want the full origin story, the Easter Sunday purchase, the Facebook Marketplace era, all of it, read <a href="/blog/cozy-cactus-story/">the complete story of how The Cozy Cactus came to be</a>.</p>

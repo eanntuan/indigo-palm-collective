@@ -1,7 +1,7 @@
 ---
 title: 10 Indio Gems Only Locals Know About
 date: 2026-03-10
-metaDescription: Skip the tourist traps. L&G Desert Store has dates worth the drive. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA.
+metaDescription: "Skip the tourist traps. Date shakes at L&G, smash burgers at Papa Headz, and a vinyl lounge nobody tells you about. The real Indio, CA."
 keywords:
   - Indio CA
   - Coachella Valley

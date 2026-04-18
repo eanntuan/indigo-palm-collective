@@ -2,7 +2,7 @@
 title: "Staying in Indian Palms Country Club: What You Actually Need to Know"
 date: 2026-03-20
 dateModified: 2026-04-15
-metaDescription: "Indian Palms Country Club is walkable to Coachella and Stagecoach. Vacation rentals here book out fast. Here's what staying in the neighborhood is actually like."
+metaDescription: "Indian Palms Country Club is walkable to Coachella and Stagecoach. Rentals here book fast. What staying in the neighborhood is actually like."
 ogImage: /blog/images/cozy-cactus-aerial.jpg
 heroImage: /blog/images/cozy-cactus-aerial.jpg
 heroAlt: "Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop"

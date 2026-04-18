@@ -107,7 +107,7 @@ layout: blog-post.njk
 
 <p>I'm not trying to win design awards, though we did get featured on a <a href="https://minoan.com/blog/host-spotlight-eann" target="_blank">Minoan blog post</a>! I'm trying to solve the problem of families who book a vacation rental and end up more exhausted than before they left. That's The Cozy Cactus. Families keep coming back. They don't just survive vacation. They enjoy it.</p>
 
-<p>If that sounds like what you need, you know where to find us.</p>
+<p>If that sounds like what you need, <a href="/cozy-cactus/">you know where to find us</a>.</p>
 
 <img src="/blog/images/cozy-cactus-exterior.jpg" alt="The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">A place where families rest. 15 minutes from Coachella, designed for humans who appreciate when someone gives a damn.</p>
