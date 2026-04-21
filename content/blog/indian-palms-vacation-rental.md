@@ -1,8 +1,8 @@
 ---
-title: "Staying at Indian Palms Country Club"
+title: "Indian Palms Country Club: Vacation Rental Guide"
 date: 2026-03-20
-dateModified: 2026-04-15
-metaDescription: "Indian Palms Country Club is walkable to Coachella and Stagecoach. Rentals here book fast. What staying in the neighborhood is actually like."
+dateModified: 2026-04-21
+metaDescription: "Indian Palms Country Club is 2.5 miles from the Coachella polo grounds. Private pools, gated streets, and a walk to the festival that skips traffic entirely."
 ogImage: /blog/images/cozy-cactus-aerial.jpg
 heroImage: /blog/images/cozy-cactus-aerial.jpg
 heroAlt: "Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop"
@@ -13,12 +13,59 @@ keywords:
   - walking distance Coachella vacation rental
   - Indian Palms Country Club Airbnb
   - Indio vacation rental Coachella
+  - Indian Palms Country Club Stagecoach
 articleSection: "Local Guide"
 property: all
-readTime: "5 min read"
-excerpt: "Indian Palms Country Club is one of the only neighborhoods in the Coachella Valley where you can walk to Coachella. Here's what it's actually like to stay here."
+readTime: "6 min read"
+excerpt: "Indian Palms Country Club is one of the only neighborhoods in the Coachella Valley where you can walk to Coachella. Here's what it's like to stay here."
 layout: blog-post.njk
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Indian Palms Country Club: Vacation Rental Guide",
+  "description": "Indian Palms Country Club is 2.5 miles from the Coachella polo grounds. Private pools, gated streets, and a walk to the festival that skips traffic entirely.",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-aerial.jpg",
+  "datePublished": "2026-03-20",
+  "dateModified": "2026-04-21",
+  "author": {
+    "@type": "Person",
+    "name": "Eann Tuan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Indigo Palm Collective",
+    "url": "https://indigopalm.co"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://indigopalm.co/blog/indian-palms-vacation-rental/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blog",
+      "item": "https://indigopalm.co/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Indian Palms Country Club: Vacation Rental Guide",
+      "item": "https://indigopalm.co/blog/indian-palms-vacation-rental/"
+    }
+  ]
+}
+</script>
 
 <p>If you've been researching where to stay for Coachella or Stagecoach, you've probably seen Indian Palms Country Club come up. Maybe in a listing title, maybe in a review, maybe in a Facebook group where someone swore it was the best location in the valley. They weren't wrong, but there are things worth knowing before you book.</p>
 

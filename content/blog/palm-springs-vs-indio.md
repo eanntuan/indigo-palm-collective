@@ -1,6 +1,7 @@
 ---
 title: "Palm Springs vs Indio: Where to Stay"
 date: 2026-01-20
+dateModified: 2026-04-21
 metaDescription: "Indio is not Palm Springs, they're 25 miles apart. Here's the honest difference: price, space, festival proximity, and which one is right for your trip."
 ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroImage: /blog/images/ps-boulevard-palms-mountains.jpg
@@ -30,7 +31,53 @@ relatedPosts:
     url: /blog/coachella-valley-insider-guide/
 ---
 
-<p>The most common question we get from people booking a desert trip: should you stay in Palm Springs or closer to Indio? It's a real question with a real answer, and the answer depends entirely on what your group wants from the trip. I own properties in both areas, so I have no incentive to push one over the other. Here's what actually matters.</p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Palm Springs vs Indio: Where to Stay",
+  "description": "Indio is not Palm Springs, they're 25 miles apart. Here's the honest difference: price, space, festival proximity, and which one is right for your trip.",
+  "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.jpg",
+  "datePublished": "2026-01-20",
+  "dateModified": "2026-04-21",
+  "author": {
+    "@type": "Person",
+    "name": "Eann Tuan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Indigo Palm Collective",
+    "url": "https://indigopalm.co"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://indigopalm.co/blog/palm-springs-vs-indio/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blog",
+      "item": "https://indigopalm.co/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Palm Springs vs Indio: Where to Stay",
+      "item": "https://indigopalm.co/blog/palm-springs-vs-indio/"
+    }
+  ]
+}
+</script>
+
+<p>The most common question we get from people booking a desert trip: should you stay in Palm Springs or closer to Indio? It's a real question with a real answer, and the answer depends entirely on what your group wants from the trip. I own properties in both areas, so I have no incentive to push one over the other. Here's what matters.</p>
 
 <h2>Palm Springs: What You're Getting</h2>
 
