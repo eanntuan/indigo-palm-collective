@@ -133,7 +133,7 @@ layout: blog-post.njk
 <img src="/blog/images/heyday-palm-springs.webp" alt="Double smash burger with melted cheese at The Heyday in Palm Springs with San Jacinto Mountains in the background" width="1200" height="1600" loading="lazy">
 <p class="image-caption">The Heyday on North Palm Canyon. The smash burger is the move.</p>
 
-<img src="/blog/images/ps-street-mountains.jpg" alt="Palm Springs street with restaurant storefronts and San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm tree-lined street in Palm Springs' Uptown Design District under a clear blue sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Uptown Design District runs about a mile north of downtown. Most of the best smaller restaurants are along this stretch.</p>
 
 <h2>Dinner</h2>

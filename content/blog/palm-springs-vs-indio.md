@@ -103,8 +103,8 @@ relatedPosts:
 
 <h2>Indio: What You're Getting</h2>
 
-<img src="/blog/images/cozy-cactus-backyard.jpg" alt="Backyard of the Cozy Cactus vacation rental in Indio California with private pool, hot tub, and desert landscaping" loading="lazy" width="1400" height="933">
-<p class="image-caption">This is what the same budget buys in Indio. Private pool, hot tub, room for 8 people to actually spread out.</p>
+<img src="/blog/images/cozy-cactus-backyard.jpg" alt="Backyard of the Cozy Cactus vacation rental in Indio California with private hot tub, desert landscaping, and community pool steps away" loading="lazy" width="1400" height="933">
+<p class="image-caption">This is what the same budget buys in Indio. Hot tub, community pool steps away, room for 8 people to actually spread out.</p>
 
 <p>Indio is 30 minutes east of Palm Springs. It's a working city with less polish, less Instagram curation, and fewer architecture tours. What it offers instead is space and value in a combination that's hard to find anywhere else in the valley.</p>
 
@@ -188,7 +188,7 @@ relatedPosts:
 
 <h2>Our Properties in Both Areas</h2>
 
-<p><a href="/cozy-cactus/">The Cozy Cactus</a> is our 3-bedroom in Indio, with a private pool, private hot tub, and game room. It sleeps up to 8 and is built for groups. The Indian Palms neighborhood is quiet, gated, and a short drive from the festival grounds.</p>
+<p><a href="/cozy-cactus/">The Cozy Cactus</a> is our 3-bedroom in Indio, with a private hot tub, community pool steps away, and game room. It sleeps up to 8 and is built for groups. The Indian Palms neighborhood is quiet, gated, and a short drive from the festival grounds.</p>
 
 <p><a href="/terra-luz/">Terra Luz</a> is our Latin/Cuban-inspired 3-bedroom opening May 2026 in Indio. Private pool with a black-and-white geometric tile border and in-pool sun shelf loungers, terracotta deck, and a pergola with string lights. Different feel from the Cozy Cactus, same proximity advantage.</p>
 

@@ -147,7 +147,7 @@ layout: blog-post.njk
 
 <p>If you're staying at <a href="/the-sundune/">The Sundune in Palm Springs</a>, the tram is about 20 minutes from the property. It makes an easy half-day, especially on a summer morning when you want relief from the heat before noon. For everything else worth doing in the valley, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio breakdown</a> covers where to base yourself and what's close to each.</p>
 
-<img src="/blog/images/ps-street-mountains.jpg" alt="Palm Springs residential street with San Jacinto mountains rising behind midcentury homes, 15 minutes from the tram base" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Palm Springs midcentury modern neighborhood with flat-roofed homes and the San Jacinto Mountains rising behind, near the tram base" width="1400" height="933" loading="lazy">
 
 <h2>Is It Worth It?</h2>
 

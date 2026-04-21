@@ -97,7 +97,7 @@ layout: blog-post.njk
   <li><strong>Noise policy:</strong> Many Palm Springs rentals have quiet hours and noise monitoring devices. Read the rules before you book. Violations can end a stay early.</li>
 </ul>
 
-<p>Our property in Palm Springs, <a href="/the-sundune/">The Sundune</a>, is a 2-bedroom with a balcony and community pool access, good for a smaller group of 4-5. For a group of 6-8 wanting a full private pool experience in Indio, <a href="/cozy-cactus/">The Cozy Cactus</a> has a private heated pool and hot tub.</p>
+<p>Our property in Palm Springs, <a href="/the-sundune/">The Sundune</a>, is a 2-bedroom with a balcony and community pool access, good for a smaller group of 4-5. For a group of 6-8 wanting a full pool experience in Indio, <a href="/cozy-cactus/">The Cozy Cactus</a> has a private hot tub and community pool steps away.</p>
 
 <h2>Day 1: Arrive and Settle</h2>
 
@@ -135,7 +135,7 @@ layout: blog-post.njk
 
 <h2>Day 3: Brunch and Head Out</h2>
 
-<img src="/blog/images/ps-street-mountains.jpg" alt="Palm Springs street with mountain backdrop and clear desert sky in the early morning" width="3800" height="5700" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm tree-lined street in Palm Springs under a clear blue sky on a quiet Sunday morning" width="1400" height="933" loading="lazy">
 <p class="image-caption">Sunday morning in Palm Springs is the best time to walk the streets. Everything is quieter, the light is good, and the mountains are clear.</p>
 
 <p>Sunday morning deserves a slow start. Make coffee at the rental, go for a walk before checkout, take in the neighborhood before the weekend ends. Koffi on North Palm Canyon has the best coffee in the city. Order an iced latte, sit outside, and let the morning last a bit.</p>
@@ -163,4 +163,4 @@ layout: blog-post.njk
 
 <p>Avoid Coachella and Stagecoach weekends in April unless you specifically want festival energy. Rentals are at peak prices and the valley is at peak capacity during those three weekends.</p>
 
-<p class="cta-block">Planning a desert bachelorette? <a href="/the-sundune/">The Sundune</a> in Palm Springs sleeps 4 and has a balcony and pool access. For a larger group in Indio with a private pool, <a href="/cozy-cactus/">The Cozy Cactus</a> sleeps 8 and has a heated pool and hot tub. <a href="/cozy-cactus/">Check availability.</a></p>
+<p class="cta-block">Planning a desert bachelorette? <a href="/the-sundune/">The Sundune</a> in Palm Springs sleeps 4 and has a balcony and pool access. For a larger group in Indio, <a href="/cozy-cactus/">The Cozy Cactus</a> sleeps 8 and has a private hot tub and community pool steps away. <a href="/cozy-cactus/">Check availability.</a></p>

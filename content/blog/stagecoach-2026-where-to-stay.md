@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <h2>How Far Is "Palm Springs" From Stagecoach?</h2>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of Cozy Cactus vacation rental in Indio with private pool and hot tub, close to Stagecoach festival grounds" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of Cozy Cactus vacation rental in Indio California, close to Stagecoach festival grounds, with Indian Palms community pool visible nearby" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus is in Indio's Indian Palms neighborhood. Stagecoach is a 7-minute drive from here.</p>
 
 <p>Palm Springs proper is about 24 miles from the Empire Polo Club. That sounds manageable. On a normal Tuesday at 2pm, it takes 30 minutes. On a Friday night when 80,000 people are all leaving the festival at roughly the same time, it takes anywhere from 60 minutes to 2 hours depending on when you leave.</p>
@@ -113,9 +113,9 @@ layout: blog-post.njk
 
 <p>Indian Palms is a residential neighborhood in Indio that sits directly adjacent to Indian Palms Country Club. It's quiet, gated at certain entrances, and a short straight drive to the polo grounds with no freeway needed.</p>
 
-<p>Both of our Indio properties are in this neighborhood. The Cozy Cactus has a private heated pool, hot tub, and sleeps 8. Terra Luz (our newer renovation) has a private saltwater pool with a sun shelf, a covered patio, and also sleeps 8. Both are under a 10-minute drive to the festival gates.</p>
+<p>Both of our Indio properties are in this neighborhood. The Cozy Cactus has a private hot tub, community pool steps away, and sleeps 8. Terra Luz (our newer renovation) has a private saltwater pool with a sun shelf, a covered patio, and also sleeps 8. Both are under a 10-minute drive to the festival gates.</p>
 
-<p class="cta-block">Booking for Stagecoach or a future festival weekend: <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> both have private pools and are 7-10 minutes from the Empire Polo Club. <a href="/cozy-cactus/">Check availability.</a></p>
+<p class="cta-block">Booking for Stagecoach or a future festival weekend: <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> are both 7-10 minutes from the Empire Polo Club. Terra Luz has a private saltwater pool; Cozy Cactus has a private hot tub and community pool steps away. <a href="/cozy-cactus/">Check availability.</a></p>
 
 <h2>Camping vs. Staying Off-Site</h2>
 
