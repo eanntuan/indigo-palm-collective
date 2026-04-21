@@ -33,7 +33,7 @@ layout: blog-post.njk
 <img src="/blog/images/cc-closet-wallpaper.jpg" alt="Styled open closet at The Cozy Cactus vacation rental in Indio California with organized shelves and patterned wallpaper" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">Morning before the heat shows up. A rental that has space for everything makes that first-hour calm possible.</p>
 
-<h2>What to Actually Pack</h2>
+<h2>What to Pack</h2>
 
 <p>Most people overpack clothes and underpack the stuff that matters. Here's the short list:</p>
 
@@ -51,7 +51,7 @@ layout: blog-post.njk
 
 <p>We say this every time: guests who treat the pool as the centerpiece of the trip rather than an add-on have better trips. It's where you debrief after a morning out. It's where Day 2 recovery happens. It's what makes 4pm in the desert livable.</p>
 
-<p>If you're doing a multi-night stay, block out at least one afternoon with no agenda beyond the pool. Float. Read something. Don't check your phone. The desert is very good at making you actually stop.</p>
+<p>If you're doing a multi-night stay, block out at least one afternoon with no agenda beyond the pool. Float. Read something. Don't check your phone. The desert is very good at making you stop.</p>
 
 <img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private pool and backyard at Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The 3pm strategy. Pool first, headliner second. Works every time.</p>

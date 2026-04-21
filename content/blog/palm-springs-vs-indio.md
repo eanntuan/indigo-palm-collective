@@ -95,7 +95,7 @@ relatedPosts:
 
 <h3>The Real Limits of Staying in Palm Springs</h3>
 
-<p>Properties here are smaller. Lots are compact, square footage costs more, and a lot of listings advertising a "private pool" mean a pool roughly the size of a large soaking tub. For a couple, that's fine. For six people who want to actually use the outdoor space, it can feel cramped fast.</p>
+<p>Properties here are smaller. Lots are compact, square footage costs more, and a lot of listings advertising a "private pool" mean a pool roughly the size of a large soaking tub. For a couple, that's fine. For six people who want to use the outdoor space, it can feel cramped fast.</p>
 
 <p>Rates run higher, especially in peak season. A property that would cost $280 a night in Indio often runs $420 to $600 in Palm Springs for comparable bedrooms. You're paying for the location, and it can be worth it, but it's a real cost difference.</p>
 
@@ -104,11 +104,11 @@ relatedPosts:
 <h2>Indio: What You're Getting</h2>
 
 <img src="/blog/images/cozy-cactus-backyard.jpg" alt="Backyard of the Cozy Cactus vacation rental in Indio California with private hot tub, desert landscaping, and community pool steps away" loading="lazy" width="1400" height="933">
-<p class="image-caption">This is what the same budget buys in Indio. Hot tub, community pool steps away, room for 8 people to actually spread out.</p>
+<p class="image-caption">This is what the same budget buys in Indio. Hot tub, community pool steps away, room for 8 people to spread out.</p>
 
 <p>Indio is 30 minutes east of Palm Springs. It's a working city with less polish, less Instagram curation, and fewer architecture tours. What it offers instead is space and value in a combination that's hard to find anywhere else in the valley.</p>
 
-<p>A 3-bedroom house with a private pool, a hot tub, and a yard big enough for a group to actually use runs meaningfully less than an equivalent space in Palm Springs. For family trips, friend groups, or anyone where square footage and outdoor space matter, Indio is where the rental math works in your favor.</p>
+<p>A 3-bedroom house with a private pool, a hot tub, and a yard big enough for a group runs meaningfully less than an equivalent space in Palm Springs. For family trips, friend groups, or anyone where square footage and outdoor space matter, Indio is where the rental math works in your favor.</p>
 
 <p>If you're attending Coachella or Stagecoach, Indio is the right call without much debate. The Cozy Cactus, our 3-bedroom in the Indian Palms neighborhood, is a short drive to the polo grounds. No surge pricing, no early departure to beat traffic, no standing in a rideshare line at midnight.</p>
 

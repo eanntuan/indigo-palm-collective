@@ -20,7 +20,7 @@ layout: blog-post.njk
 
 <p>If you Google "things to do in Indio, CA" right now, you'll get chain restaurants, a water park, and maybe a mention of Coachella. That's not wrong, it's just not the city. Indio is where the Coachella Valley gets real: working-class, date-palm-lined, with taquerias that don't have websites and music venues that opened without press releases.</p>
 
-<p>I've owned vacation rentals in Indio since 2022. These are the 15 things that keep coming back in reviews as the ones guests actually remember.</p>
+<p>I've owned vacation rentals in Indio since 2022. These are the 15 things that keep coming back in reviews as the ones guests remember.</p>
 
 <img src="/blog/images/indio-local-gems.jpg" alt="Indio California neighborhood street with local shops and desert palms, things to do in Indio CA" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indio rewards the people who treat it like a real city, not a festival holding pen.</p>

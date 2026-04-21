@@ -65,4 +65,4 @@ layout: blog-post.njk
 <img src="/blog/images/family-closet.jpg" alt="Family vacation rental closet with baby gear pack n play stroller and travel supplies" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">All. The. Things. Why families needed a different kind of vacation rental<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
-<p>If you're planning a trip to the Coachella Valley with kids, <a href="/cozy-cactus/">The Cozy Cactus</a> is built around exactly that: families who need gear, space, and a host who actually thought about the pack-n-play before you asked.</p>
+<p>If you're planning a trip to the Coachella Valley with kids, <a href="/cozy-cactus/">The Cozy Cactus</a> is built around exactly that: families who need gear, space, and a host who thought about the pack-n-play before you asked.</p>

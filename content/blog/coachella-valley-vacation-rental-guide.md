@@ -20,12 +20,12 @@ excerpt: "From pool access to honest reviews to a host who actually responds. Fi
 layout: blog-post.njk
 ---
 
-<p>I've been hosting vacation rentals in the Coachella Valley for years and I've stayed in rentals in other markets. Both experiences shaped what I look for when I'm the guest. There's a wide gap between rentals that look good in photos and rentals that actually work when you're in them, and most of that gap shows up in ways you can research before you book.</p>
+<p>I've been hosting vacation rentals in the Coachella Valley for years and I've stayed in rentals in other markets. Both experiences shaped what I look for when I'm the guest. There's a wide gap between rentals that look good in photos and rentals that work when you're in them, and most of that gap shows up in ways you can research before you book.</p>
 
 <p>Here are five things worth checking, in order of how often people skip them.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private pool and backyard at the Cozy Cactus vacation rental in Indio California with lounge chairs and palm trees" width="1400" height="933" loading="lazy">
-<p class="image-caption">Private pool at The Cozy Cactus in Indio. The difference between private and community pool access is bigger than it sounds.</p>
+<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Backyard and community pool area at the Cozy Cactus vacation rental in Indio California with lounge chairs and palm trees" width="1400" height="933" loading="lazy">
+<p class="image-caption">The community pool at Indian Palms Country Club, steps from The Cozy Cactus. The difference between community and private pool access is bigger than it sounds.</p>
 
 <h2>1. Pool Access: Private vs. Community, and What the Difference Is</h2>
 
@@ -37,10 +37,10 @@ layout: blog-post.njk
 
 <p>One more thing to check: heated or not. Desert nights from October through April drop to 50-60°F. An unheated pool in March is cold enough that most people don't use it. If a listing says "pool" without specifying heated, ask directly. It's the difference between a pool you use every day and one that just looks good in photos.</p>
 
-<p>Both <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> have private pools. Terra Luz has a saltwater system with a sun shelf. Both are heated year-round. That distinction comes up in every third review mentioning the pool, and it's worth knowing before you book anything.</p>
+<p><a href="/terra-luz/">Terra Luz</a> has a private saltwater pool with a sun shelf, heated year-round. <a href="/cozy-cactus/">The Cozy Cactus</a> has a private hot tub and a community pool steps away in Indian Palms Country Club. That distinction comes up in every third review mentioning the pool, and it's worth knowing before you book anything.</p>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of Cozy Cactus vacation rental in Indio California showing backyard pool and surrounding neighborhood" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Cozy Cactus from above. The private pool and yard are visible from here. This is what you're evaluating when you check the satellite view in listing maps.</p>
+<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of Cozy Cactus vacation rental in Indio California showing backyard and surrounding Indian Palms neighborhood" width="1400" height="933" loading="lazy">
+<p class="image-caption">The Cozy Cactus from above. The community pool is steps from the back gate. This is what you're evaluating when you check the satellite view in listing maps.</p>
 
 <h2>2. Read the Review Pattern, Not Just the Star Average</h2>
 
@@ -50,7 +50,7 @@ layout: blog-post.njk
 
 <p>Look for patterns across multiple reviews, not isolated incidents. One mention of a slow host response is noise. Three independent reviewers mentioning the same slow response is something you should factor in. Same with cleanliness, accuracy of the listing description, or specific amenity problems.</p>
 
-<p>Reviews that mention specific details, a problem that was solved, a particular room that worked well, a host who responded on a Sunday night, are the ones worth weighting. Generic praise tells you the stay was acceptable. Specific details tell you what the place is actually like.</p>
+<p>Reviews that mention specific details, a problem that was solved, a particular room that worked well, a host who responded on a Sunday night, are the ones worth weighting. Generic praise tells you the stay was acceptable. Specific details tell you what the place is like.</p>
 
 <p>Also check: reviews from non-festival dates. A host who manages well during Coachella weekend when guests paid 3x the normal rate and have lowered expectations might be different from the same host in October. Year-round reviews give you a fuller picture of consistency.</p>
 

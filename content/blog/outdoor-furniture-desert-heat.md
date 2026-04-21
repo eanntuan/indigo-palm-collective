@@ -75,7 +75,7 @@ layout: blog-post.njk
 
 <p>I've learned most of this the expensive way: buying things that looked good, watching them fail in one season, and replacing them with something that actually works. Across three properties in Indio and Palm Springs, I've now got a pretty clear picture of what survives and what doesn't.</p>
 
-<h2>What Actually Holds Up</h2>
+<h2>What Holds Up</h2>
 
 <h3>Powder-Coated Aluminum</h3>
 
@@ -159,7 +159,7 @@ layout: blog-post.njk
 
 <p>If you're furnishing a desert patio and you want it to look good for more than one season: powder-coated aluminum or teak for the frames, solution-dyed acrylic (Sunbrella or equivalent) for cushion fabric, all-weather HDPE resin if you want wicker, and concrete for anything that stays put. Avoid anything sold as a bundle, anything with chrome hardware, and any cushion that just says "polyester."</p>
 
-<p>For more on what goes into running a rental in the Coachella Valley, read the <a href="/blog/airbnb-hosting-lessons/">hosting lessons from 191 Airbnb reviews</a>. If you're looking for a desert rental where the outdoor space was actually designed to hold up, <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio is a good example of what this looks like in practice.</p>
+<p>For more on what goes into running a rental in the Coachella Valley, read the <a href="/blog/airbnb-hosting-lessons/">hosting lessons from 191 Airbnb reviews</a>. If you're looking for a desert rental where the outdoor space was designed to hold up, <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio is a good example of what this looks like in practice.</p>
 
 <img src="/blog/images/cozy-cactus-patio.jpg" alt="Cozy Cactus vacation rental patio in Indio California with durable outdoor furniture after multiple desert summers" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">Furniture specced for desert conditions after a few seasons of real use. It just keeps working.</p>
