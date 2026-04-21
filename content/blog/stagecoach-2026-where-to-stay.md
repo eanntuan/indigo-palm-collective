@@ -16,7 +16,7 @@ keywords:
 articleSection: "Travel Guide"
 property: cozy-cactus
 readTime: "6 min read"
-excerpt: "Stagecoach is in Indio, not Palm Springs. Staying in the right city changes the entire trip. Here's what you need to know about distance, driving, and where to actually book."
+excerpt: "Stagecoach is in Indio, not Palm Springs. Staying in the right city changes the entire trip. Here's what you need to know about distance, driving, and where to book."
 layout: blog-post.njk
 ---
 
@@ -68,7 +68,7 @@ layout: blog-post.njk
 
 <p>Stagecoach happens at the Empire Polo Club in Indio, California. Same venue as Coachella, different crowd, different vibe, and very different problem if you booked your rental in Palm Springs thinking it was close enough.</p>
 
-<p>I own two vacation rentals in Indio, both within a 10-minute drive of the polo grounds. I've also watched a lot of groups learn the hard way that "Palm Springs area" can mean anything from 5 miles to 45 miles from the festival gates. Here's what you actually need to know.</p>
+<p>I own two vacation rentals in Indio, both within a 10-minute drive of the polo grounds. I've also watched a lot of groups learn the hard way that "Palm Springs area" can mean anything from 5 miles to 45 miles from the festival gates. Here's what you need to know.</p>
 
 <h2>How Far Is "Palm Springs" From Stagecoach?</h2>
 
