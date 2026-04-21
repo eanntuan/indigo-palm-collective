@@ -72,7 +72,7 @@ layout: blog-post.njk
 <img src="/blog/images/cozy-cactus-exterior.jpg" alt="The Cozy Cactus exterior with desert landscaping in Indio California" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus at 82381 Cochran Drive, Indio. Inside a gated neighborhood at Indian Palms Country Club.</p>
 
-<h2>What Guests Actually Say</h2>
+<h2>What Guests Say</h2>
 
 <p>Three things show up in reviews more than anything else:</p>
 
@@ -103,7 +103,7 @@ layout: blog-post.njk
 <img src="/blog/images/cozy-cactus-living-room.jpg" alt="Living room at The Cozy Cactus family vacation rental Indio California" width="1400" height="933" loading="lazy">
 <p class="image-caption">The main living area. Comfortably fits 8 people without anyone feeling crowded.</p>
 
-<h2>Location: What It Actually Means</h2>
+<h2>Location</h2>
 
 <p>Indian Palms Country Club neighborhood. Gated, quiet, no through traffic. 7-10 minutes to Empire Polo Club (Coachella/Stagecoach), no freeway. 30 minutes to downtown Palm Springs. 5 minutes to Shields Date Garden.</p>
 
@@ -121,7 +121,7 @@ layout: blog-post.njk
 
 <p><strong>The neighborhood is gated.</strong> You'll get gate access instructions with your check-in details, sent 24 hours before arrival.</p>
 
-<p><strong>This is genuinely a family place.</strong> Not "family-friendly" as a marketing hedge, but actually built around what families need. If you're a group of adults looking for a party house, this is not the right match. If you're a family that wants to actually unwind in the desert, this is exactly what it's built for.</p>
+<p><strong>This is genuinely a family place.</strong> Not "family-friendly" as a marketing hedge, but built around what families need. If you're a group of adults looking for a party house, this is not the right match. If you're a family that wants to unwind in the desert, this is exactly what it's built for.</p>
 
 <img src="/blog/images/cozy-cactus-infant-gear.jpg" alt="Baby and infant gear at The Cozy Cactus Indio including Stokke high chair and pack-n-play" width="1400" height="933" loading="lazy">
 <p class="image-caption">The infant kit. Stokke high chair, real crib mattress, baby monitor. Everything guests with babies say they didn't have to pack.</p>
