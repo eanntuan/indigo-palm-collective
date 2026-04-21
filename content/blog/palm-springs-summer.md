@@ -124,7 +124,7 @@ layout: blog-post.njk
 
 <h2>A Few Things to Check Before You Go</h2>
 
-<p>Some Palm Springs restaurants close for 2 to 3 weeks in August when the summer is at its hottest and business is slowest. Check Instagram or call ahead before making a trip out for a specific spot. Nothing worse than planning a dinner around a restaurant that put a "back in September" sign on the door.</p>
+<p>Some Palm Springs restaurants close for 2 to 3 weeks in August when the summer is at its hottest and business is slowest. Check their website or call ahead before making a trip out for a specific spot. Nothing worse than planning a dinner around a restaurant that put a "back in September" sign on the door.</p>
 
 <p>The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> is worth reading if you're still deciding where to base yourself. Summer heat is similar across the valley, but there are trade-offs in terms of what's near you that matter more in summer when you're not doing as much driving.</p>
 

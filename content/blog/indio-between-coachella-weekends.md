@@ -153,7 +153,7 @@ layout: blog-post.njk
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=45120+Oasis+St,+Indio,+CA+92201" target="_blank" rel="noopener">45120 Oasis St, Indio, CA 92201 ↗</a></p>
     <p><strong>Hours:</strong> Wed–Sun 4pm–11pm</p>
     <p><strong>Best for:</strong> Evenings, anyone who needs a reason to slow down after festival mode</p>
-    <p><strong>Check:</strong> Their Instagram for event nights before you go</p>
+    <p><strong>Check:</strong> Their website for event nights before you go</p>
 </div>
 
 <img src="/blog/images/rosemary-hifi.jpg" alt="Rosemary HiFi interior with cobalt blue tile bar, walnut shelving with vinyl records and 1960s JBL speakers, Indio CA" loading="lazy" decoding="async" width="800" height="533">

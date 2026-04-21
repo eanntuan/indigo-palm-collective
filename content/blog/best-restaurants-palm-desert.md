@@ -126,7 +126,7 @@ layout: blog-post.njk
 <h2>Frequently Asked Questions</h2>
 
 <h3>Are Palm Desert restaurants open year-round?</h3>
-<p>Most are open year-round, with reduced hours in summer (June through September). October through May is the busiest season. Check each restaurant's Instagram or website before going in summer, as some reduce days or close for a few weeks in July or August.</p>
+<p>Most are open year-round, with reduced hours in summer (June through September). October through May is the busiest season. Check each restaurant's website before going in summer, as some reduce days or close for a few weeks in July or August.</p>
 
 <h3>Is El Paseo worth visiting for dinner in Palm Desert?</h3>
 <p>Yes. Kitchen 86 and Le Donne are both solid options on the boulevard, and the walkable mile of galleries and boutiques makes it easy to spend a full evening there without planning much. It's a bit quieter than downtown Palm Springs, which is either a drawback or a feature depending on what you're after.</p>

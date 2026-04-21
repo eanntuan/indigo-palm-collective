@@ -81,7 +81,7 @@ layout: blog-post.njk
 
 <p>Koffi has been in Palm Springs for over 20 years, and the outdoor patio at the North Palm Canyon location is one of the best places to start a morning in the city. Shade trees, good light, no rush. The cold brew is the right call in warmer months. Multiple locations in the valley, but North Palm Canyon has the best setup.</p>
 
-<p>Check hours at <a href="https://www.instagram.com/koffi/" target="_blank" rel="noopener">@koffi</a> before you go — they sometimes close earlier than you'd expect.</p>
+<p>Check their website before you go — they sometimes close earlier than you'd expect. Find them at <a href="https://www.instagram.com/koffi/" target="_blank" rel="noopener">@koffi</a>.</p>
 
 <h3>Les Filles Cafe</h3>
 
@@ -107,7 +107,7 @@ layout: blog-post.njk
 
 <p>Cheeky's is the Palm Springs brunch institution. The menu rotates weekly around seasonal ingredients, which is part of why regulars keep coming back. The bacon flight is four preparations of bacon and it earns its reputation. The frittata is usually excellent. The room is small and weekend waits are real.</p>
 
-<p>Weekdays are easier. If you go on a Saturday, arrive by 9am. Walk-ins only. Check <a href="https://www.instagram.com/cheekys.f10/" target="_blank" rel="noopener">@cheekys.f10</a> for current hours.</p>
+<p>Weekdays are easier. If you go on a Saturday, arrive by 9am. Walk-ins only. Check their website for current hours. Find them at <a href="https://www.instagram.com/cheekys.f10/" target="_blank" rel="noopener">@cheekys.f10</a>.</p>
 
 <img src="/blog/images/cheekys-palm-springs.jpg" alt="People waiting in line outside Cheeky's brunch restaurant in Palm Springs on a sunny day" width="1200" height="900" loading="lazy">
 <p class="image-caption">The line at Cheeky's. Weekday mornings are quieter. Saturday at 9am means this.</p>
@@ -124,7 +124,7 @@ layout: blog-post.njk
 
 <h3>Rooster and the Pig</h3>
 
-<p>Vietnamese fusion in a small, lively room in the Uptown Design District. The pork belly bun is the thing to order. The lychee cocktails are better than they sound. Service is fast and the tables fill up quickly, so go early or plan to wait a bit. Check <a href="https://www.instagram.com/roosterandthepig/" target="_blank" rel="noopener">@roosterandthepig</a> for current hours.</p>
+<p>Vietnamese fusion in a small, lively room in the Uptown Design District. The pork belly bun is the thing to order. The lychee cocktails are better than they sound. Service is fast and the tables fill up quickly, so go early or plan to wait a bit. Check their website for current hours. Find them at <a href="https://www.instagram.com/roosterandthepig/" target="_blank" rel="noopener">@roosterandthepig</a>.</p>
 
 <h3>The Heyday</h3>
 
@@ -147,7 +147,7 @@ layout: blog-post.njk
 
 <h3>Trio Restaurant</h3>
 
-<p>Trio is the Palm Springs dinner spot that works for every group configuration. American comfort food done well, a long menu, good cocktails. It's dependable in a way that's genuinely useful when you have five people with five different preferences. Check <a href="https://www.instagram.com/palmspringstrio/" target="_blank" rel="noopener">@palmspringstrio</a> for reservations.</p>
+<p>Trio is the Palm Springs dinner spot that works for every group configuration. American comfort food done well, a long menu, good cocktails. It's dependable in a way that's genuinely useful when you have five people with five different preferences. Check their website for reservations. Find them at <a href="https://www.instagram.com/palmspringstrio/" target="_blank" rel="noopener">@palmspringstrio</a>.</p>
 
 <h2>Practical Notes</h2>
 
