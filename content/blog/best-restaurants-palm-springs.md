@@ -87,6 +87,9 @@ layout: blog-post.njk
 
 <p>Les Filles is a French cafe in Cathedral City, about five minutes from downtown Palm Springs. The espresso is serious, the pastries are worth slowing down for, and the whole place has the kind of easy, unhurried energy that makes a morning feel like it's going well. You'll know you're in the right spot when the owners are out front smoking. Find them at <a href="https://www.instagram.com/lesfillescafe/" target="_blank" rel="noopener">@lesfillescafe</a>.</p>
 
+<img src="/blog/images/lesfilles-cafe-cathedral-city.webp" alt="Owners of Les Filles Cafe standing behind the pastry counter in Cathedral City with croissants and French pastries in the foreground" width="1200" height="900" loading="lazy">
+<p class="image-caption">The owners at Les Filles. That pastry case is the reason you go early.</p>
+
 <h3>Cartel Coffee Lab</h3>
 
 <p>Cartel is an Arizona-born specialty roaster with a spot inside the Arrive Hotel at 1551 N Palm Canyon Drive. Direct trade, specific origins. The cold brew is excellent and the hotel design is worth a look on its own. Find them at <a href="https://www.instagram.com/cartelcoffeecompany/" target="_blank" rel="noopener">@cartelcoffeecompany</a>.</p>
