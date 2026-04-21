@@ -137,7 +137,10 @@ layout: blog-post.njk
 
 <h3>Escena Grill</h3>
 
-<p>Escena is the golf club restaurant that's open to everyone, and the setting is one of the best in Palm Springs. The patio looks out over the course toward the San Jacinto Mountains and it's a genuinely beautiful place to have a meal. The food is California-style with a solid rotating menu — but if you go once, go for the outdoor table and stay until the light changes. Find them at <a href="https://www.instagram.com/escenagolf/" target="_blank" rel="noopener">@escenagolf</a>.</p>
+<p>Escena is the golf club restaurant that's open to everyone, and the setting is one of the best in Palm Springs. The patio looks out over the course toward the San Jacinto Mountains and it's a genuinely beautiful place to have a meal. The food is California-style with a solid rotating menu. If you go once, go for the outdoor table and stay until the light changes. Find them at <a href="https://www.instagram.com/escenagolf/" target="_blank" rel="noopener">@escenagolf</a>.</p>
+
+<img src="/blog/images/escena-grill-palm-springs.jpg" alt="Escena Grill patio in Palm Springs at sunset with outdoor seating overlooking the golf course and San Jacinto Mountains glowing gold" width="1400" height="933" loading="lazy">
+<p class="image-caption">The Escena patio at dusk. That view is the reason to go, and it looks exactly like this.</p>
 
 <h3>Trio Restaurant</h3>
 
