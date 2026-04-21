@@ -162,5 +162,16 @@
         </div>
     </div>
 
+    <script>
+      // Log the broken URL to GA so we can see exactly what people are hitting
+      if (typeof gtag !== 'undefined') {
+        gtag('event', '404_error', {
+          event_category: 'Error',
+          event_label: window.location.pathname + window.location.search,
+          page_location: window.location.href
+        });
+      }
+    </script>
+
 </body>
 </html>
