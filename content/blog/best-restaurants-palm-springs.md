@@ -123,7 +123,7 @@ layout: blog-post.njk
 
 <p>The Heyday is a smash burger spot on North Palm Canyon Drive. One of the better burgers in the valley: thin, crispy-edged patties, good bun, nothing overthought. Open daily from noon. Find them at <a href="https://www.instagram.com/the_heyday/" target="_blank" rel="noopener">@the_heyday</a>.</p>
 
-<img src="/blog/images/heyday-palm-springs.jpg" alt="Smash burger with melted cheese on a brioche bun at The Heyday in Palm Springs" width="1200" height="900" loading="lazy">
+<img src="/blog/images/heyday-palm-springs.webp" alt="Double smash burger with melted cheese at The Heyday in Palm Springs with San Jacinto Mountains in the background" width="1200" height="1600" loading="lazy">
 <p class="image-caption">The Heyday on North Palm Canyon. The smash burger is the move.</p>
 
 <img src="/blog/images/ps-street-mountains.jpg" alt="Palm Springs street with restaurant storefronts and San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
