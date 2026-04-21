@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farewell Wishes | The Cozy Cactus</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LCY4M0HEQB');
+</script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wf8wk28vyh");
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --terracotta: #B67550;
+    --sand: #F6F1E9;
+    --blush: #E8CFC4;
+    --dark: #2a2a2a;
+    --muted: #888;
+    --serif: 'Cormorant Garamond', serif;
+    --sans: 'Work Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--sand);
+    color: var(--dark);
+    min-height: 100vh;
+  }
+
+  /* Cover */
+  .cover {
+    background: var(--blush);
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 180px; height: 180px;
+    border: 3px solid var(--terracotta);
+    border-radius: 50%;
+    opacity: 0.15;
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; right: -40px;
+    width: 140px; height: 140px;
+    border: 3px solid var(--terracotta);
+    border-radius: 50%;
+    opacity: 0.15;
+  }
+
+  .cover-card {
+    background: white;
+    border-radius: 40px;
+    padding: 3rem 2.5rem;
+    max-width: 340px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  }
+
+  .farewell-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(2.4rem, 8vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+  }
+
+  .cover-subtitle {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--dark);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .cover-from {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 1;
+  }
+
+  .scroll-hint::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 32px;
+    background: var(--terracotta);
+    opacity: 0.5;
+  }
+
+  /* Content */
+  .content {
+    padding: 4rem 1.5rem 5rem;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 0.5rem;
+  }
+
+  .make-memory {
+    font-family: var(--serif);
+    font-size: clamp(2.6rem, 9vw, 4rem);
+    font-weight: 300;
+    line-height: 1;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.25rem;
+  }
+
+  .tagline-sub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 3rem;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin: 2.5rem 0;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 0.4rem;
+  }
+
+  .section-rule {
+    width: 2rem;
+    height: 2px;
+    background: var(--terracotta);
+    margin-bottom: 1.5rem;
+  }
+
+  .word-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.75rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+
+  .word-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.25rem;
+  }
+
+  .word-label em {
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .word-prompt {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .moment-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .moment-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .moment-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--blush);
+    flex-shrink: 0;
+  }
+
+  .moment-input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #e0d8d0;
+    background: transparent;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--dark);
+    padding: 0.4rem 0;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .moment-input:focus {
+    border-bottom-color: var(--terracotta);
+  }
+
+  .moment-input::placeholder {
+    color: #ccc;
+    font-style: italic;
+  }
+
+  .bucket-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .bucket-item {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .bucket-check {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid var(--blush);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .bucket-item.checked .bucket-check {
+    background: var(--terracotta);
+    border-color: var(--terracotta);
+  }
+
+  .bucket-item.checked .bucket-check::after {
+    content: '✓';
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+  }
+
+  .bucket-input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #e0d8d0;
+    background: transparent;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--dark);
+    padding: 0.4rem 0;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .bucket-input:focus {
+    border-bottom-color: var(--terracotta);
+  }
+
+  .bucket-input.prefilled {
+    font-weight: 500;
+    color: var(--terracotta);
+    border-bottom-color: transparent;
+  }
+
+  /* Footer CTA */
+  .footer-cta {
+    background: var(--terracotta);
+    border-radius: 16px;
+    padding: 2rem 1.75rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .footer-cta p {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .footer-cta a {
+    display: inline-block;
+    background: white;
+    color: var(--terracotta);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.85rem 2rem;
+    border-radius: 4px;
+    transition: opacity 0.2s;
+  }
+
+  .footer-cta a:hover { opacity: 0.85; }
+
+  .credit {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 3rem;
+  }
+
+  @media (min-width: 600px) {
+    .cover-card { padding: 3.5rem 3rem; }
+    .content { padding: 5rem 2rem 6rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Cover -->
+<section class="cover">
+  <div class="cover-card">
+    <div class="farewell-title">Farewell<br>Wishes</div>
+    <p class="cover-subtitle">A Souvenir<br>For Your Trip<br>Home</p>
+    <p class="cover-from">From Your Host, Eann</p>
+  </div>
+  <div class="scroll-hint">scroll</div>
+</section>
+
+<!-- Content -->
+<section class="content">
+
+  <p class="eyebrow">The Cozy Cactus</p>
+  <h1 class="make-memory">Make<br>It a Memory</h1>
+  <p class="tagline">May this travel experience inspire your next</p>
+  <p class="tagline-sub">well wishes to send you on your way</p>
+
+  <hr class="divider">
+
+  <!-- Highlight Reel -->
+  <p class="section-label">Highlight Reel</p>
+  <div class="section-rule"></div>
+
+  <div class="word-card">
+    <p class="word-label">Our Word of the <em>Stay</em> is "SAVOR"</p>
+    <p class="word-prompt">Looking back on your stay, list 3 moments (big or small) you want to savor into the next season.</p>
+    <div class="moment-inputs">
+      <div class="moment-row">
+        <div class="moment-dot"></div>
+        <input class="moment-input" type="text" placeholder="A moment worth keeping...">
+      </div>
+      <div class="moment-row">
+        <div class="moment-dot"></div>
+        <input class="moment-input" type="text" placeholder="A moment worth keeping...">
+      </div>
+      <div class="moment-row">
+        <div class="moment-dot"></div>
+        <input class="moment-input" type="text" placeholder="A moment worth keeping...">
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Bucket List -->
+  <p class="section-label">What's Next on Your Bucket List?</p>
+  <div class="section-rule"></div>
+
+  <ul class="bucket-list">
+    <li class="bucket-item checked" id="indio-item">
+      <div class="bucket-check"></div>
+      <input class="bucket-input prefilled" type="text" value="Indio, CA" readonly>
+    </li>
+    <li class="bucket-item">
+      <div class="bucket-check"></div>
+      <input class="bucket-input" type="text" placeholder="Next destination...">
+    </li>
+    <li class="bucket-item">
+      <div class="bucket-check"></div>
+      <input class="bucket-input" type="text" placeholder="Next destination...">
+    </li>
+    <li class="bucket-item">
+      <div class="bucket-check"></div>
+      <input class="bucket-input" type="text" placeholder="Next destination...">
+    </li>
+    <li class="bucket-item">
+      <div class="bucket-check"></div>
+      <input class="bucket-input" type="text" placeholder="Next destination...">
+    </li>
+  </ul>
+
+  <!-- CTA -->
+  <div class="footer-cta">
+    <p>Already thinking about coming back to the desert?</p>
+    <a href="/go/cozy-cactus?utm_source=farewell&utm_medium=page&utm_campaign=guest-comms" onclick="gtag('event','farewell_book_click',{'event_category':'Booking','event_label':'Farewell Page CTA'});">Book The Cozy Cactus</a>
+  </div>
+
+  <p class="credit">Guest experience by @TheOliveJar.co</p>
+
+</section>
+
+<script>
+  // Toggle bucket list checkboxes
+  document.querySelectorAll('.bucket-item:not(#indio-item) .bucket-check').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.bucket-item').classList.toggle('checked');
+    });
+  });
+</script>
+
+</body>
+</html>
