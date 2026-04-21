@@ -1,6 +1,6 @@
 ---
 title: "Best Restaurants in Palm Springs: Local Picks"
-date: 2026-04-09
+date: 2026-04-15
 dateModified: 2026-04-15
 metaDescription: "Palm Springs restaurants worth knowing, from a 20-year coffee institution to a golf club patio with mountain views. Organized by meal, verified local picks."
 ogImage: /blog/images/tropicale-palm-springs.jpg

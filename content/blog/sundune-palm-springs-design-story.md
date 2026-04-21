@@ -1,6 +1,6 @@
 ---
 title: "Inside The Sundune: Palm Springs Design Story"
-date: 2026-04-09
+date: 2026-02-18
 dateModified: 2026-04-15
 metaDescription: "The design story behind The Sundune at Palm Springs: coastal-desert vibes, sun-faded palettes, and a surf-inspired sanctuary steps from downtown."
 ogImage: /blog/images/ps-orange-door-mcm.jpg
@@ -24,7 +24,7 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Inside The Sundune: A Palm Springs Design Story",
-  "datePublished": "2026-04-09",
+  "datePublished": "2026-02-18",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",

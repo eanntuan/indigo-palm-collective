@@ -1,6 +1,6 @@
 ---
 title: "Palm Springs in Summer: Is It Worth Visiting?"
-date: 2026-04-09
+date: 2026-02-04
 dateModified: 2026-04-15
 metaDescription: "Yes, with caveats. Pool culture peaks, rates drop 30-50%, crowds disappear. Here's how to actually do summer in the desert right, month by month."
 ogImage: /blog/images/ps-via-sol-sunset.jpg
@@ -29,7 +29,7 @@ layout: blog-post.njk
   "headline": "Palm Springs in Summer: Is It Worth Visiting?",
   "description": "Yes, with caveats. Pool culture peaks, rates drop 30-50%, crowds disappear. Here's how to actually do summer in the desert right, month by month.",
   "image": "https://indigopalm.co/blog/images/ps-via-sol-sunset.jpg",
-  "datePublished": "2026-04-09",
+  "datePublished": "2026-02-04",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",

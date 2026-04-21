@@ -1,6 +1,6 @@
 ---
 title: "Palm Springs vs Indio: Where to Stay"
-date: 2026-04-09
+date: 2026-01-20
 metaDescription: "Indio is not Palm Springs, they're 25 miles apart. Here's the honest difference: price, space, festival proximity, and which one is right for your trip."
 ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroImage: /blog/images/ps-boulevard-palms-mountains.jpg

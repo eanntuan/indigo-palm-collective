@@ -1,6 +1,6 @@
 ---
 title: "Where to Stay for Coachella: Full Breakdown"
-date: 2026-04-09
+date: 2026-01-27
 dateModified: 2026-04-15
 metaDescription: "Hotels, camping, vacation rentals: an honest breakdown of every Coachella accommodation type from someone who lives here. No affiliate links."
 ogImage: /blog/images/coachella-festival-crowd.jpg
@@ -134,7 +134,7 @@ layout: blog-post.njk
   "headline": "Where to Stay for Coachella: The Full Breakdown",
   "description": "Hotels, camping, vacation rentals: an honest breakdown of every Coachella accommodation type from someone who lives here. No affiliate links, no sponsored takes.",
   "image": "https://indigopalm.co/blog/images/coachella-festival-crowd.jpg",
-  "datePublished": "2026-04-09",
+  "datePublished": "2026-01-27",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",

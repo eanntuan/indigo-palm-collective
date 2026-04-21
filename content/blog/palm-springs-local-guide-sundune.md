@@ -1,6 +1,6 @@
 ---
 title: "The Sundune Palm Springs Local Guide"
-date: 2026-05-23
+date: 2026-04-03
 metaDescription: "Things to do in Palm Springs, from a local who eats here. The Sundune's guide: coffee, brunch, surf, botanical, dinner, and drinks worth knowing about."
 ogImage: /blog/images/palm-springs-local-guide-sundune.jpg
 heroImage: /blog/images/palm-springs-local-guide-sundune.jpg

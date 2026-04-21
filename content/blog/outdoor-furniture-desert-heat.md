@@ -1,6 +1,6 @@
 ---
 title: "Outdoor Furniture That Survives Desert Heat"
-date: 2026-04-09
+date: 2025-12-18
 dateModified: 2026-04-15
 metaDescription: "What outdoor furniture holds up in 115°F desert heat. Lessons from furnishing vacation rentals in Indio, CA: what works, what fails, and what to use."
 ogImage: /blog/images/cozy-cactus-patio.jpg
@@ -24,7 +24,7 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Outdoor Furniture That Survives Desert Heat",
-  "datePublished": "2026-04-09",
+  "datePublished": "2025-12-18",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",

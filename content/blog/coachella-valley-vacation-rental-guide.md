@@ -1,6 +1,6 @@
 ---
 title: "5 Things to Check in a Coachella Valley Rental"
-date: 2026-04-09
+date: 2026-01-06
 dateModified: 2026-04-15
 metaDescription: "From pool access to honest reviews to a host who actually responds. Five things worth checking before you book a Coachella Valley vacation rental."
 ogImage: /blog/images/cozy-cactus-pool-backyard.jpg
@@ -109,7 +109,7 @@ layout: blog-post.njk
   "headline": "5 Things to Check in a Coachella Valley Rental",
   "description": "From pool access to honest reviews to a host who actually responds. Five things worth checking before you book a Coachella Valley vacation rental.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-pool-backyard.jpg",
-  "datePublished": "2026-04-09",
+  "datePublished": "2026-01-06",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",

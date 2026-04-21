@@ -1,6 +1,6 @@
 ---
 title: "Palm Springs Surf Club: What to Know"
-date: 2026-04-09
+date: 2026-03-06
 dateModified: 2026-04-15
 metaDescription: "A wave pool in the middle of the desert. What Palm Springs Surf Club is, who it's for, and what to book before you show up empty-handed."
 ogImage: /blog/images/pssc-wave-pool-reflection.webp
@@ -29,7 +29,7 @@ layout: blog-post.njk
   "headline": "Palm Springs Surf Club: What to Know Before You Go",
   "description": "A wave pool in the middle of the desert. What Palm Springs Surf Club is, who it's for, and what to book before you show up empty-handed.",
   "image": "https://indigopalm.co/blog/images/pssc-wave-pool-reflection.webp",
-  "datePublished": "2026-04-09",
+  "datePublished": "2026-03-06",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",
