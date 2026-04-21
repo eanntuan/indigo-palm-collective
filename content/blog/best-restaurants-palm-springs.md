@@ -3,9 +3,9 @@ title: "Best Restaurants in Palm Springs: Local Picks"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "Palm Springs restaurants worth knowing, from a 20-year coffee institution to a golf club patio with mountain views. Organized by meal, verified local picks."
-ogImage: /blog/images/koffi-palm-springs.webp
-heroImage: /blog/images/koffi-palm-springs.webp
-heroAlt: "Koffi coffee shop exterior in Palm Springs with palm trees and San Jacinto Mountains in background"
+ogImage: /blog/images/tropicale-palm-springs.jpg
+heroImage: /blog/images/tropicale-palm-springs.jpg
+heroAlt: "Tropicale Dining and Lounge exterior in Palm Springs with pink stucco walls, palm trees, and San Jacinto Mountains in background"
 keywords:
   - best restaurants Palm Springs
   - Palm Springs restaurants
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Best Restaurants in Palm Springs: A Local's List",
   "description": "10 Palm Springs restaurants worth your time, organized by meal. Coffee to late-night dinner, from a 20-year institution to a 12-seat omakase.",
-  "image": "https://indigopalm.co/blog/images/koffi-palm-springs.webp",
+  "image": "https://indigopalm.co/blog/images/tropicale-palm-springs.jpg",
   "datePublished": "2026-04-09",
   "dateModified": "2026-04-15",
   "author": {
@@ -72,8 +72,8 @@ layout: blog-post.njk
 
 <p>A quick note on geography: downtown Palm Springs is the main cluster along Palm Canyon Drive and its side streets. The Uptown Design District, about a mile north, tends to be a little more relaxed and local. Most of the spots below are in one of those two zones, with one exception just over the city line in Cathedral City that's worth the five-minute drive.</p>
 
-<img src="/blog/images/koffi-palm-springs.webp" alt="Koffi coffee shop in Palm Springs with outdoor patio seating under palm trees and San Jacinto Mountains in background" width="1500" height="1000" loading="lazy">
-<p class="image-caption">Koffi on North Palm Canyon. Over 20 years in Palm Springs and still the best morning seat in town.</p>
+<img src="/blog/images/tropicale-palm-springs.jpg" alt="Tropicale Dining and Lounge exterior in Palm Springs with pink stucco walls, palm trees, and San Jacinto Mountains in background" width="1400" height="1050" loading="lazy">
+<p class="image-caption">Tropicale on East Palm Canyon. One of the more recognizable exteriors in the city.</p>
 
 <h2>Coffee and Brunch</h2>
 
