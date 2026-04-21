@@ -109,6 +109,9 @@ layout: blog-post.njk
 
 <p>Weekdays are easier. If you go on a Saturday, arrive by 9am. Walk-ins only. Check <a href="https://www.instagram.com/cheekys.f10/" target="_blank" rel="noopener">@cheekys.f10</a> for current hours.</p>
 
+<img src="/blog/images/cheekys-palm-springs.jpg" alt="People waiting in line outside Cheeky's brunch restaurant in Palm Springs on a sunny day" width="1200" height="900" loading="lazy">
+<p class="image-caption">The line at Cheeky's. Weekday mornings are quieter. Saturday at 9am means this.</p>
+
 <h3>Lulu California Bistro</h3>
 
 <p>Lulu's is the right call when you're feeding a group with different preferences. Big warm room on Indian Canyon Drive, a menu wide enough to cover everyone: eggs Benedict, omelets, cocktails, pastries. Reliable and never a hard sell on any particular cuisine. Check them at <a href="https://www.instagram.com/lulupalmsprings/" target="_blank" rel="noopener">@lulupalmsprings</a>.</p>
