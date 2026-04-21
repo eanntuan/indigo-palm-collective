@@ -76,11 +76,11 @@ layout: blog-post.njk
 <p>That extra $140-200 is the Airbnb guest service fee. If you book vacation rentals more than once a year, it adds up fast. The straightforward fix: book direct with the property owner.</p>
 
 <img src="/blog/images/cozy-cactus-exterior.jpg" alt="Exterior of The Cozy Cactus vacation rental in Indio California with desert landscaping and clear blue sky" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Cozy Cactus, Indio. Same house, same host — lower total cost when you book direct.</p>
+<p class="image-caption">The Cozy Cactus, Indio. Same house, same host, lower total cost when you book direct.</p>
 
 <h2>The Math, Honestly</h2>
 
-<p>Airbnb charges guests a service fee that typically runs 14-16% of the subtotal (nightly rate plus cleaning fee, before taxes). On a $1,000 stay, that's $140-160 going to Airbnb — not the host, not toward your stay in any way.</p>
+<p>Airbnb charges guests a service fee that typically runs 14-16% of the subtotal (nightly rate plus cleaning fee, before taxes). On a $1,000 stay, that's $140-160 going to Airbnb, not the host, not toward your stay in any way.</p>
 
 <p>The host is separately charged a 3% fee on their end. So a $1,000 booking costs the guest $1,150 and nets the host about $970. Airbnb pockets around $180 from the same transaction. When you book direct through a property's own website, that fee disappears entirely.</p>
 
@@ -107,10 +107,10 @@ layout: blog-post.njk
 
 <p><strong>More flexibility.</strong> Platform bookings are locked into platform rules. A direct booking host can often be flexible about check-in time, a late checkout, or a small request that would be awkward to formalize through a platform interface.</p>
 
-<p><strong>Human help when things go sideways.</strong> The wifi goes down. You can't figure out the TV. On a platform booking you're often in a support queue. With a direct booking host who wants the repeat business, you get a faster response — usually a real one.</p>
+<p><strong>Human help when things go sideways.</strong> The wifi goes down. You can't figure out the TV. On a platform booking you're often in a support queue. With a direct booking host who wants the repeat business, you get a faster response, usually a real one.</p>
 
 <img src="/blog/images/cozy-cactus-living-room.jpg" alt="Cozy Cactus vacation rental living room in Indio California with warm lighting and comfortable seating" width="1400" height="933" loading="lazy">
-<p class="image-caption">Inside The Cozy Cactus. When something needs attention, you reach the owner directly — not a support queue.</p>
+<p class="image-caption">Inside The Cozy Cactus. When something needs attention, you reach the owner directly, not a support queue.</p>
 
 <h2>Is It Safe to Book Direct?</h2>
 
@@ -118,14 +118,14 @@ layout: blog-post.njk
 
 <p>Red flags: no real website, no verifiable reviews elsewhere, requests to pay via wire transfer or Venmo, vague communication. Any of those, use the platform. For established properties with 190+ reviews, a professional site, and secure checkout, direct booking is straightforward.</p>
 
-<p>All of our properties have 190+ reviews on Airbnb you can cross-reference before booking. Our <a href="/booking-flow/?property=cozy-cactus">direct booking flow</a> uses Square for payment processing — same protections as any other online purchase.</p>
+<p>All of our properties have 190+ reviews on Airbnb you can cross-reference before booking. Our <a href="/booking-flow/?property=cozy-cactus">direct booking flow</a> uses Square for payment processing, same protections as any other online purchase.</p>
 
 <img src="/blog/images/cozy-cactus-patio.jpg" alt="Shaded patio with string lights and desert landscaping at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus patio. Book direct at indigopalm.co and skip the platform service fee entirely.</p>
 
 <h2>How to Find Properties That Accept Direct Bookings</h2>
 
-<p>Most vacation rental owners would prefer you book direct — they just can't say so on-platform without violating terms of service. What you can do: look for a property name or brand in the listing, Google it, find the website.</p>
+<p>Most vacation rental owners would prefer you book direct, they just can't say so on-platform without violating terms of service. What you can do: look for a property name or brand in the listing, Google it, find the website.</p>
 
 <p>If you've stayed somewhere before and liked it, search the property name before rebooking through the platform. There's a good chance you can book direct and save the fee.</p>
 

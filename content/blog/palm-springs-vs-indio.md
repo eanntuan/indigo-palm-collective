@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs vs Indio: Where to Stay"
 date: 2026-04-09
-metaDescription: "Indio is not Palm Springs — they're 25 miles apart. Here's the honest difference: price, space, festival proximity, and which one is right for your trip."
+metaDescription: "Indio is not Palm Springs, they're 25 miles apart. Here's the honest difference: price, space, festival proximity, and which one is right for your trip."
 ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroAlt: "Palm tree-lined boulevard with the San Jacinto Mountains rising behind it in Palm Springs, California"
@@ -44,7 +44,7 @@ relatedPosts:
 <p>Downtown Palm Springs has density: restaurants, galleries, a weekend street market, vintage shops, and a handful of bars that go reasonably late. If your trip is about wandering and discovery, Palm Springs rewards that kind of itinerary.</p>
 
 <img src="/blog/images/ps-orange-door-mcm.jpg" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and blue sky" loading="lazy" width="1400" height="933">
-<p class="image-caption">Every block in Palm Springs has a moment like this. It's not curated — it's just how the city looks.</p>
+<p class="image-caption">Every block in Palm Springs has a moment like this. It's not curated, it's just how the city looks.</p>
 
 <h3>The Real Limits of Staying in Palm Springs</h3>
 
@@ -87,8 +87,8 @@ relatedPosts:
   <tbody>
     <tr>
       <td>Walkability</td>
-      <td>High — downtown is compact and walkable</td>
-      <td>Low — you'll drive everywhere</td>
+      <td>High, downtown is compact and walkable</td>
+      <td>Low, you'll drive everywhere</td>
     </tr>
     <tr>
       <td>Property size for the money</td>
@@ -185,7 +185,7 @@ relatedPosts:
 <p>Indio is the clear choice for Coachella or Stagecoach. The Empire Polo Club is in Indio, so staying locally means a 5–15 minute drive versus 30–60 minutes from Palm Springs. You save money on rideshares, you can actually go back to the house between afternoon and evening sets, and you avoid the surge pricing nightmare that hits Palm Springs rideshares on festival weekends.</p>
 
 <h3>Is Indio cheaper than Palm Springs for vacation rentals?</h3>
-<p>Generally yes, and significantly so for larger properties. A 3-bedroom with a private pool in Indio typically runs 30–50% less per night than a comparable space in Palm Springs. You're trading walkability and design prestige for space, outdoor room, and value — which is the right trade for most groups.</p>
+<p>Generally yes, and significantly so for larger properties. A 3-bedroom with a private pool in Indio typically runs 30–50% less per night than a comparable space in Palm Springs. You're trading walkability and design prestige for space, outdoor room, and value, which is the right trade for most groups.</p>
 
 <h3>Can you visit Palm Springs as a day trip from Indio?</h3>
 <p>Easily. The drive is about 30 minutes. Many guests staying at our Indio properties spend a day in Palm Springs doing the architecture walk, lunch, and afternoon shopping, then come back to cook dinner and use the pool. You get the best of both without paying Palm Springs nightly rates for the whole trip.</p>

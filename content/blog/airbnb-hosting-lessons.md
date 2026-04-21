@@ -88,10 +88,10 @@ layout: blog-post.njk
 
 <p>Responding in 5 minutes at 11pm earns a 5-star review even when something goes wrong. Responding in 3 hours when everything is fine can lose a guest before the stay starts.</p>
 
-<p>When a guest messages, they're vulnerable. They're about to book, just arrived somewhere new, or something is wrong. The faster you close that gap, the safer they feel — and the more generous they are with everything else. We use automated check-in messages for routine stuff, but I stay personally available for anything outside the script.</p>
+<p>When a guest messages, they're vulnerable. They're about to book, just arrived somewhere new, or something is wrong. The faster you close that gap, the safer they feel, and the more generous they are with everything else. We use automated check-in messages for routine stuff, but I stay personally available for anything outside the script.</p>
 
 <img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of The Cozy Cactus vacation rental in Indio California showing pool backyard and desert neighborhood" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Cozy Cactus from above. Four bedrooms, pool, putting green — all of it described accurately in the listing.</p>
+<p class="image-caption">The Cozy Cactus from above. Four bedrooms, pool, putting green, all of it described accurately in the listing.</p>
 
 <h2>Stock Two of Everything, Then Add One More</h2>
 
@@ -104,7 +104,7 @@ layout: blog-post.njk
 
 <h2>Temperature Control Is Binary</h2>
 
-<p>Guests either love the default thermostat setting or they hate it. We had a stretch where three reviews mentioned the house being too hot and two mentioned it being too cold — same setting each time. We landed on 72 degrees as the starting point with clear written instructions that it's easy to adjust. The reviews about temperature stopped almost immediately.</p>
+<p>Guests either love the default thermostat setting or they hate it. We had a stretch where three reviews mentioned the house being too hot and two mentioned it being too cold, same setting each time. We landed on 72 degrees as the starting point with clear written instructions that it's easy to adjust. The reviews about temperature stopped almost immediately.</p>
 
 <p>Instructions matter as much as the setting. Guests who know they're in control don't complain even if the default isn't perfect. Guests who can't figure out the thermostat blame the host.</p>
 
@@ -121,14 +121,14 @@ layout: blog-post.njk
 
 <p>Your listing photo shows the living room styled perfectly. Your cleaning crew leaves the couch cushions slightly crooked. The gap between photo and reality is where complaints are born.</p>
 
-<p>We started photographing what guests actually find on arrival. Same furniture, same art — but nothing staged at its most photogenic. Guests who find the house looking exactly like the photos have one less thing to feel deceived about. Closing expectation gaps is free.</p>
+<p>We started photographing what guests actually find on arrival. Same furniture, same art, but nothing staged at its most photogenic. Guests who find the house looking exactly like the photos have one less thing to feel deceived about. Closing expectation gaps is free.</p>
 
 <img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with lounge chairs and desert landscaping" width="1400" height="933" loading="lazy">
 <p class="image-caption">The pool and backyard photographed as guests actually find them, not styled within an inch of its life.</p>
 
 <h2>Respond to Every Bad Review Within 24 Hours</h2>
 
-<p>We had a 3-star review a couple years ago about noise from neighboring construction that started the week of their stay — nothing we could predict or control. Our response took 48 hours and read defensive. That was a mistake.</p>
+<p>We had a 3-star review a couple years ago about noise from neighboring construction that started the week of their stay, nothing we could predict or control. Our response took 48 hours and read defensive. That was a mistake.</p>
 
 <p>Future guests read host responses to bad reviews to answer one question: can I trust this host if something goes wrong? Respond within 24 hours. Acknowledge what was valid. Explain what changed. Keep it short. Don't argue. Move on.</p>
 
@@ -139,7 +139,7 @@ layout: blog-post.njk
 
 <p>Everything else here is optional. Cleanliness is not.</p>
 
-<p>You don't get credit for a clean property — guests expect it the way they expect the door to lock. But one cleaning miss, one hair on the soap dish, and it colors everything. A guest with a 9-out-of-10 stay will still lead their review with the visible hygiene issue.</p>
+<p>You don't get credit for a clean property, guests expect it the way they expect the door to lock. But one cleaning miss, one hair on the soap dish, and it colors everything. A guest with a 9-out-of-10 stay will still lead their review with the visible hygiene issue.</p>
 
 <p>We pay our cleaners above local market rate and maintain a checklist that gets updated whenever a guest mentions something. Cut corners on cleaning and none of the other investments matter.</p>
 
@@ -154,7 +154,7 @@ layout: blog-post.njk
 <h2>FAQ: Vacation Rental Hosting</h2>
 
 <h3>What vacation rental hosting tips actually move the needle on Airbnb reviews?</h3>
-<p>Response time matters more than most hosts realize. Guests who hear back fast, even at odd hours, feel taken care of — and that shows in reviews. Beyond that: stocked consumables, pre-set temperatures with clear instructions, and unexpected amenities get called out in reviews far more often than expensive furniture does.</p>
+<p>Response time matters more than most hosts realize. Guests who hear back fast, even at odd hours, feel taken care of, and that shows in reviews. Beyond that: stocked consumables, pre-set temperatures with clear instructions, and unexpected amenities get called out in reviews far more often than expensive furniture does.</p>
 
 <h3>How do you respond to a bad Airbnb review?</h3>
 <p>Respond within 24 hours. Acknowledge what was valid, explain what you've fixed or changed, keep it warm and brief. Don't argue. Future guests read host responses to decide whether you're someone they can trust, and a calm, accountable reply builds more credibility than pushing back.</p>

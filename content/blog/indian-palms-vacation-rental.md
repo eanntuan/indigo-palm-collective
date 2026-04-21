@@ -52,7 +52,7 @@ layout: blog-post.njk
 </ol>
 
 <video src="/blog/images/indian-palms-night-walk.mp4" autoplay muted loop playsinline style="width:100%;border-radius:8px;margin:2rem 0 0.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);"></video>
-<p class="image-caption">This is the yellow gravel path that leads up to the entrance of the festival (about 1 mile — so wear comfy shoes!)</p>
+<p class="image-caption">This is the yellow gravel path that leads up to the entrance of the festival (about 1 mile, so wear comfy shoes!)</p>
 
 <ol start="5">
     <li>Plan <strong>25-49 minutes door-to-gate</strong> depending on where in Indian Palms you're staying</li>
@@ -138,7 +138,7 @@ layout: blog-post.njk
       "name": "Is there parking at Indian Palms during Coachella?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Parking inside Indian Palms Country Club is available at your rental. If you need to drive to the festival, leave well before noon on Friday, Saturday, and Sunday — Monroe, Madison, and nearby roads reach full standstill from 2pm onward. Use the Monroe Gate (the main guest entry, staffed with security). The Avenue 50 Gate is for residents only."
+        "text": "Parking inside Indian Palms Country Club is available at your rental. If you need to drive to the festival, leave well before noon on Friday, Saturday, and Sunday, Monroe, Madison, and nearby roads reach full standstill from 2pm onward. Use the Monroe Gate (the main guest entry, staffed with security). The Avenue 50 Gate is for residents only."
       }
     },
     {
@@ -146,7 +146,7 @@ layout: blog-post.njk
       "name": "What amenities does Indian Palms Country Club have?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Indian Palms Country Club has three community pools, pickleball courts, tennis courts, a 27-hole golf course, and a Lifestyle Center fitness facility. The community is gated with palm tree-lined streets. It's a residential neighborhood, not a resort — there's no lobby or front desk."
+        "text": "Indian Palms Country Club has three community pools, pickleball courts, tennis courts, a 27-hole golf course, and a Lifestyle Center fitness facility. The community is gated with palm tree-lined streets. It's a residential neighborhood, not a resort, there's no lobby or front desk."
       }
     },
     {
@@ -154,7 +154,7 @@ layout: blog-post.njk
       "name": "What is the difference between The Cozy Cactus and Terra Luz?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both are 3-bedroom, 2-bathroom vacation rentals in Indian Palms Country Club that sleep up to 8. The Cozy Cactus is family-focused — it has a community pool steps away, a private hot tub, putting green, and amenities like a Stokke high chair, pack-n-play, and a curated toy collection. Terra Luz is a Latin/Cuban-inspired property with a private saltwater pool, terracotta courtyard, and a design by brand architect Dawn Asher. Terra Luz is also pet-friendly. Both let you skip platform fees when you book direct."
+        "text": "Both are 3-bedroom, 2-bathroom vacation rentals in Indian Palms Country Club that sleep up to 8. The Cozy Cactus is family-focused, it has a community pool steps away, a private hot tub, putting green, and amenities like a Stokke high chair, pack-n-play, and a curated toy collection. Terra Luz is a Latin/Cuban-inspired property with a private saltwater pool, terracotta courtyard, and a design by brand architect Dawn Asher. Terra Luz is also pet-friendly. Both let you skip platform fees when you book direct."
       }
     }
   ]

@@ -35,7 +35,7 @@ layout: blog-post.njk
 
 <p><strong>The reality:</strong> You're sleeping in 85-degree heat on dirt. The showers have a line. You'll sleep maybe four hours a night.</p>
 
-<p><strong>Who it's for:</strong> People in their early 20s who run on adrenaline. If that's you, do it — it's a rite of passage. But go in knowing what it is.</p>
+<p><strong>Who it's for:</strong> People in their early 20s who run on adrenaline. If that's you, do it, it's a rite of passage. But go in knowing what it is.</p>
 
 <p><strong>Cost:</strong> ~$125-150 per person for car camping. Sounds cheap until you factor in the gear, the food situation, and the Uber you'll take out of there on Day 2 to get real food.</p>
 

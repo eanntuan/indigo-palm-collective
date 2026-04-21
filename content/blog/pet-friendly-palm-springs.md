@@ -48,7 +48,7 @@ layout: blog-post.njk
 <img src="/blog/images/ps-street-mountains.jpg" alt="Palm Springs street with San Jacinto mountains in background, walkable dog-friendly neighborhood" width="1400" height="933" loading="lazy">
 <p class="image-caption">Ruth Hardy Park sits in the middle of a walkable neighborhood. Good for dogs, good for humans.</p>
 
-<p><strong>Palm Canyon Trail:</strong> Dogs on leash are allowed on most Palm Springs-area trails. Palm Canyon, maintained by the Agua Caliente tribe, requires an entry fee. The canyon is one of the largest natural fan palm oases in North America. Go early. Trail temperatures get brutal by 9am in summer. Bring more water than you think both of you need.</p>
+<p><strong>Palm Canyon Trail:</strong> Dogs on leash are allowed on most <a href="/blog/best-hiking-palm-springs/">Palm Springs-area trails</a>. Palm Canyon, maintained by the Agua Caliente tribe, requires an entry fee. The canyon is one of the largest natural fan palm oases in North America. Go early. Trail temperatures get brutal by 9am in summer. Bring more water than you think both of you need.</p>
 <div class="quick-info">
     <p><strong>Address:</strong> 38500 Palm Canyon Dr, Palm Springs, CA 92264</p>
     <p><strong>Admission:</strong> $12/adult, dogs allowed on leash · Best season: October–April</p>
@@ -103,4 +103,4 @@ layout: blog-post.njk
 
 <p>If you want more on the area, read our <a href="https://indigopalm.co/blog/palm-springs-local-guide-sundune">local Palm Springs guide</a>, written by someone who eats here, not just visits.</p>
 
-<p>If you're planning a stay, <a href="/the-sundune/">The Sundune</a> is our Palm Springs property and it's pet-friendly — private yard, tile floors, and enough outdoor space to make your dog very happy.</p>
+<p>If you're planning a stay, <a href="/the-sundune/">The Sundune</a> is our Palm Springs property and it's pet-friendly, private yard, tile floors, and enough outdoor space to make your dog very happy.</p>

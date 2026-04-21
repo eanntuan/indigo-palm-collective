@@ -22,7 +22,7 @@ layout: blog-post.njk
 
 <p>Most people only think of the Coachella Valley during festival season. Two weekends in April. Flower crowns. Ferris wheels. Headliners. If that's all you know about this place, you're missing about 350 days of pure desert.</p>
 
-<p>I used to be one of those people. Then we bought a house here, and everything changed. Now I'm the person who evangelizes about winter in the desert, fall light, mid-week escapes where you work from a pool lounger. The Coachella Valley is a place you <em>return to</em> — for the sun, the space, and the surprising amount of culture packed into this stretch of California.</p>
+<p>I used to be one of those people. Then we bought a house here, and everything changed. Now I'm the person who evangelizes about winter in the desert, fall light, mid-week escapes where you work from a pool lounger. The Coachella Valley is a place you <em>return to</em>, for the sun, the space, and the surprising amount of culture packed into this stretch of California.</p>
 
 <img src="/blog/images/ps-desert-valley-view.jpg" alt="Panoramic view of the Coachella Valley desert floor with mountains in the background and clear blue sky in Palm Springs CA" width="1400" height="933" loading="lazy">
 <p class="image-caption">45 miles of valley. 300 days of sun. Four very different seasons.</p>
@@ -31,7 +31,7 @@ layout: blog-post.njk
 
 <p>The <strong>Coachella Valley</strong> is a 45-mile-long valley in the Colorado Desert, stretching from Palm Springs in the northwest to the Salton Sea in the southeast. It includes Palm Springs, Cathedral City, Rancho Mirage, Palm Desert, Indian Wells, La Quinta, Indio, and Coachella.</p>
 
-<p><a href="/blog/terra-luz-origin-story/">Terra Luz is located in Indio</a>, right in the heart of the valley. That puts you 30 minutes from Palm Springs, 45 minutes from Joshua Tree, 15 minutes from La Quinta. You're not isolated — but you're also not in the chaos. Indio sits at this sweet spot of residential quiet, local authenticity, and easy access to everything else.</p>
+<p><a href="/blog/terra-luz-origin-story/">Terra Luz is located in Indio</a>, right in the heart of the valley. That puts you 30 minutes from Palm Springs, 45 minutes from Joshua Tree, 15 minutes from La Quinta. You're not isolated, but you're also not in the chaos. Indio sits at this sweet spot of residential quiet, local authenticity, and easy access to everything else.</p>
 
 <h2>Winter (December – February): Snowbird Season</h2>
 
@@ -60,7 +60,7 @@ layout: blog-post.njk
 <p>Fall activities: Joshua Tree camping in October or November (cool nights, clear skies, optimal for stargazing), date harvest tours at working farms, Indian Canyons or Ladder Canyon hikes without the risk of dying from heat exhaustion.</p>
 
 <img src="/blog/images/coachella-valley-preserve.webp" alt="Desert trails and native palms at the Coachella Valley Preserve, a natural oasis for hiking near Indio and Palm Springs CA" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Coachella Valley Preserve — native fan palms, spring-fed oasis, and trails that look nothing like what most people picture when they hear "Coachella."</p>
+<p class="image-caption">The Coachella Valley Preserve, native fan palms, spring-fed oasis, and trails that look nothing like what most people picture when they hear "Coachella."</p>
 
 <h2>Joshua Tree: 45 Minutes From Terra Luz</h2>
 
@@ -82,7 +82,7 @@ layout: blog-post.njk
 
 <h2>Palm Springs: Worth the 30-Minute Drive</h2>
 
-<p>Palm Springs is the valley's crown jewel. Mid-century modern architecture. Boutique shopping. Brunch culture. It's worth visiting — just not necessarily worth staying in. Too expensive, too crowded, too scene-y for a real escape.</p>
+<p>Palm Springs is the valley's crown jewel. Mid-century modern architecture. Boutique shopping. Brunch culture. It's worth visiting, just not necessarily worth staying in. Too expensive, too crowded, too scene-y for a real escape.</p>
 
 <p>What to do: modernist architecture tours, VillageFest on Thursday nights, the Aerial Tramway, and brunch at Cheeky's or Norma's (expect lines, worth it). For a full local breakdown, read <a href="/blog/coachella-valley-insider-guide/">our insider's guide to the valley</a>.</p>
 

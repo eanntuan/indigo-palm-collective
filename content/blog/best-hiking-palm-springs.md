@@ -166,7 +166,7 @@ relatedPosts:
     {
       "@type": "Question",
       "name": "Is Tahquitz Canyon open year round?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Tahquitz Canyon has seasonal hours and closures — generally open from early fall through late spring, with limited access in summer. Guided tours are required and run on a set schedule. Check the official Tahquitz Canyon website for current hours before planning your visit." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Tahquitz Canyon has seasonal hours and closures, generally open from early fall through late spring, with limited access in summer. Guided tours are required and run on a set schedule. Check the official Tahquitz Canyon website for current hours before planning your visit." }
     }
   ]
 }
