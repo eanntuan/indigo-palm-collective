@@ -133,7 +133,7 @@ layout: blog-post.njk
 
 <p>Palm Springs restaurants are busiest October through May. A few things worth knowing before you go:</p>
 
-<p>Check Instagram for current hours before making a trip — hours shift seasonally and some spots close for part of the summer. Downtown parking is manageable; use the structure on Amado Road, park once, and walk the downtown and Uptown Design District stretch. Reservations matter at Workshop and Trio on weekends. Cheeky's is walk-in only.</p>
+<p>Check each restaurant's website for current hours before making a trip. Hours shift seasonally and some spots close for part of the summer. Downtown parking is manageable; use the structure on Amado Road, park once, and walk the downtown and Uptown Design District stretch. Reservations matter at Workshop and Trio on weekends. Cheeky's is walk-in only.</p>
 
 <p>If you're deciding between Palm Springs and Indio for your base, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> covers the trade-offs. And if you're staying at <a href="/the-sundune/">The Sundune</a>, most of these restaurants are within a 10-minute drive.</p>
 
@@ -146,7 +146,7 @@ layout: blog-post.njk
 <p>Rooster and the Pig in the Uptown Design District and Escena Grill at the golf club are both a short drive from the Palm Canyon corridor and worth the detour. Workshop also works well for dinner and is slightly off the main tourist stretch.</p>
 
 <h3>Do Palm Springs restaurants take reservations?</h3>
-<p>Workshop and Trio take reservations and it's worth making them for weekends. Cheeky's is walk-in only. Check each restaurant's Instagram for current policies — they change seasonally.</p>
+<p>Workshop and Trio take reservations and it's worth making them for weekends. Cheeky's is walk-in only. Check each restaurant's website for current policies. They change seasonally.</p>
 
 <h3>Where should I eat in Palm Springs on a budget?</h3>
 <p>The lunch menu at Workshop is more accessible than dinner. Koffi is reasonable for a specialty coffee shop. Rooster and the Pig is mid-range and the portions are solid.</p>
