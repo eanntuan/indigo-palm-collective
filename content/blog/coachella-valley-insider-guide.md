@@ -1,5 +1,5 @@
 ---
-title: "Coachella Valley Insider Guide: Spots Worth Your Time"
+title: "Coachella Valley Insider Guide: Best Spots"
 date: 2026-03-14
 dateModified: 2026-04-09
 metaDescription: "Skip the tourist traps. A Coachella Valley local shares the spots worth your time in Indio, Palm Springs, and Joshua Tree. No recycled lists."

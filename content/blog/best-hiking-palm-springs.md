@@ -1,5 +1,5 @@
 ---
-title: "Best Hiking Near Palm Springs: Trails for Every Level"
+title: "Best Hiking Near Palm Springs: All Levels"
 date: 2026-04-09
 metaDescription: "Best hiking near Palm Springs: Palm Canyon, Murray Canyon, Tahquitz Canyon, and Bump and Grind. Trail picks for every level, plus when to go."
 ogImage: /blog/images/coachella-valley-preserve.webp

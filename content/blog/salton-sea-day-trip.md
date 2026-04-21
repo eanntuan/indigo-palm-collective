@@ -1,5 +1,5 @@
 ---
-title: "Salton Sea Day Trip: Worth It or Worth Skipping?"
+title: "Salton Sea Day Trip: Worth It?"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "Bombay Beach, Salvation Mountain, Slab City from Indio. 45 minutes east, genuinely strange, not for everyone. Honest guide, including the smell."

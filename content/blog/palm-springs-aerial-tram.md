@@ -1,5 +1,5 @@
 ---
-title: "Palm Springs Aerial Tram: What to Know Before You Go"
+title: "Palm Springs Aerial Tram: What to Know"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "Palm Springs Aerial Tram: ticket prices, hours, what's at 8,516 feet, and when to go. Honest guide from a Coachella Valley local who's been up many times."

@@ -1,5 +1,5 @@
 ---
-title: "What 191 Airbnb Reviews Taught Us About Hosting"
+title: "191 Airbnb Reviews: What We Learned"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "Hard-won hosting lessons from 191 Airbnb reviews and four years running rentals in Indio, CA. The details that move the needle on 5-star reviews."

@@ -1,5 +1,5 @@
 ---
-title: "Desert Vacation Prep: What to Know Before You Go"
+title: "Desert Vacation Prep: What You Need to Know"
 date: 2026-04-08
 metaDescription: "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days."
 ogImage: /blog/images/ps-desert-valley-view.jpg

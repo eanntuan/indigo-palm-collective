@@ -1,5 +1,5 @@
 ---
-title: "Joshua Tree Day Trip from Indio and Palm Springs"
+title: "Joshua Tree Day Trip from Indio"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "Joshua Tree day trip from Indio or Palm Springs: which entrance to use, what to bring, entry fees, and a full-day itinerary from a Coachella Valley local."

@@ -1,5 +1,5 @@
 ---
-title: "Inside The Sundune: A Palm Springs Design Story"
+title: "Inside The Sundune: Palm Springs Design Story"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "The design story behind The Sundune at Palm Springs: coastal-desert vibes, sun-faded palettes, and a surf-inspired sanctuary steps from downtown."

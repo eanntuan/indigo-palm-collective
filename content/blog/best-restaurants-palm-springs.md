@@ -1,5 +1,5 @@
 ---
-title: "Best Restaurants in Palm Springs: A Local's List"
+title: "Best Restaurants in Palm Springs: Local Picks"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "10 Palm Springs restaurants worth your time, organized by meal. Coffee to late-night dinner, from a 20-year institution to a 12-seat omakase."

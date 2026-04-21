@@ -1,5 +1,5 @@
 ---
-title: "Palm Springs Surf Club: What to Know Before You Go"
+title: "Palm Springs Surf Club: What to Know"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "A wave pool in the middle of the desert. What Palm Springs Surf Club actually is, who it's for, and what to book before you show up empty-handed."

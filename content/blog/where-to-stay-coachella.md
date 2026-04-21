@@ -1,5 +1,5 @@
 ---
-title: "Where to Stay for Coachella: The Full Breakdown"
+title: "Where to Stay for Coachella: Full Breakdown"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "Hotels, camping, vacation rentals: an honest breakdown of every Coachella accommodation type from someone who lives here. No affiliate links."

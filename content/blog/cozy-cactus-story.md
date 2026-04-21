@@ -1,5 +1,5 @@
 ---
-title: "Cozy Cactus: From Blank Canvas to Family Sanctuary"
+title: "Cozy Cactus: From Blank Canvas to Sanctuary"
 date: 2026-02-25
 metaDescription: "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents actually rest, now 4.66 stars and 191+ reviews."
 ogImage: /blog/images/cozy-cactus-exterior.jpg

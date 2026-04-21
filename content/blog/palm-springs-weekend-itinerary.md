@@ -1,5 +1,5 @@
 ---
-title: "Palm Springs Weekend: A 3-Day Itinerary That Works"
+title: "Palm Springs Weekend: A 3-Day Itinerary"
 date: 2026-04-09
 dateModified: 2026-04-15
 metaDescription: "Day 1: arrive and decompress. Day 2: architecture walk, coffee, and a hike. Day 3: farmers market and brunch. Three days in Palm Springs, planned well."

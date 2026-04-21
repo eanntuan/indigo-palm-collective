@@ -1,5 +1,5 @@
 ---
-title: "Staying in Indian Palms Country Club: The Real Story"
+title: "Staying at Indian Palms Country Club"
 date: 2026-03-20
 dateModified: 2026-04-15
 metaDescription: "Indian Palms Country Club is walkable to Coachella and Stagecoach. Rentals here book fast. What staying in the neighborhood is actually like."
