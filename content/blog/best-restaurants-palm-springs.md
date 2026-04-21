@@ -75,7 +75,7 @@ layout: blog-post.njk
 <img src="/blog/images/koffi-palm-springs.webp" alt="Koffi coffee shop in Palm Springs with outdoor patio seating under palm trees and San Jacinto Mountains in background" width="1500" height="1000" loading="lazy">
 <p class="image-caption">Koffi on North Palm Canyon. Over 20 years in Palm Springs and still the best morning seat in town.</p>
 
-<h2>Coffee and Morning</h2>
+<h2>Coffee and Brunch</h2>
 
 <h3>Koffi</h3>
 
@@ -96,6 +96,10 @@ layout: blog-post.njk
 
 <img src="/blog/images/cartel-coffee-palm-springs.jpg" alt="Cartel Coffee Lab at Arrive Hotel on North Palm Canyon Drive in Palm Springs" width="1400" height="933" loading="lazy">
 <p class="image-caption">Cartel Coffee inside the Arrive Hotel. Good coffee in a room worth lingering in.</p>
+
+<h3>Wilma &amp; Frieda's</h3>
+
+<p>Wilma &amp; Frieda's is on South Palm Canyon Drive and has become one of those places people plan around. The homemade pop tart is the thing everyone talks about, and it earns the attention: thick pastry, real filling, nothing like the foil-wrapped version you grew up eating. The rest of the menu is comfort food done carefully. Featured on Diners, Drive-Ins and Dives, which brought a crowd, but the food holds up. Find them at <a href="https://www.instagram.com/wilmafrieda/" target="_blank" rel="noopener">@wilmafrieda</a>.</p>
 
 <h2>Brunch</h2>
 
