@@ -85,7 +85,7 @@ layout: blog-post.njk
 
 <h3>Les Filles Cafe</h3>
 
-<p>Technically in Cathedral City, but close enough that we're including it. Les Filles is a French cafe where the espresso is serious, the pastries are worth slowing down for, and the whole place has the kind of easy, unhurried energy that makes a morning feel like it's going well. You'll know you're in the right spot when the owners are out front. Find them at <a href="https://www.instagram.com/lesfillescafe/" target="_blank" rel="noopener">@lesfillescafe</a>.</p>
+<p>Les Filles is a French cafe in Cathedral City, about five minutes from downtown Palm Springs. The espresso is serious, the pastries are worth slowing down for, and the whole place has the kind of easy, unhurried energy that makes a morning feel like it's going well. You'll know you're in the right spot when the owners are out front smoking. Find them at <a href="https://www.instagram.com/lesfillescafe/" target="_blank" rel="noopener">@lesfillescafe</a>.</p>
 
 <h3>Cartel Coffee Lab</h3>
 
