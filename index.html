@@ -2110,7 +2110,7 @@
     <section class="direct-booking">
         <h2>Let's Skip the Middleman</h2>
         <p>Airbnb takes 15-20% in fees. VRBO isn't much better. And you know what you get for that? Nothing you wouldn't get booking directly with us.</p>
-        <a href="/booking-flow/" class="booking-widget-btn" style="display: inline-block; text-decoration: none; cursor: pointer;">START BOOKING</a>
+        <a href="#" id="openBookingWidget" class="booking-widget-btn" style="display: inline-block; text-decoration: none; cursor: pointer;">START BOOKING</a>
         <p style="margin-top: 1rem; font-size: 0.95rem; opacity: 0.9;">Prefer to chat first? Email us at <a href="mailto:indigopalmco@gmail.com" style="color: inherit; text-decoration: underline;" onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Direct Booking Email', 'value': 1});">indigopalmco@gmail.com</a>. We're real people and we actually respond.</p>
         <div class="social-links">
             <a href="https://www.instagram.com/indigopalmco/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow us on Instagram">
@@ -2502,9 +2502,12 @@
         const closeBookingWidgetBtn = document.getElementById('closeBookingWidget');
 
         // Open booking widget
-        openBookingWidgetBtn.addEventListener('click', () => {
-            bookingWidget.classList.add('active');
-        });
+        if (openBookingWidgetBtn) {
+            openBookingWidgetBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                bookingWidget.classList.add('active');
+            });
+        }
 
         // Close booking widget
         closeBookingWidgetBtn.addEventListener('click', () => {
