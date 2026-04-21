@@ -96,7 +96,7 @@ layout: blog-post.njk
 
 <h2>Slab City</h2>
 
-<p>Past Salvation Mountain is Slab City: an off-grid community on the concrete slabs of a former military base. No grid electricity, no municipal water, roughly 150 to 200 permanent residents. The main visitor draw is East Jesus, a sculpture garden inside Slab City made entirely from salvaged materials. It's free, donations welcome, and the art changes constantly. Beyond East Jesus, Slab City is a neighborhood where people actually live. Walk accordingly.</p>
+<p>Past Salvation Mountain is Slab City: an off-grid community on the concrete slabs of a former military base. No grid electricity, no municipal water, roughly 150 to 200 permanent residents. The main visitor draw is East Jesus, a sculpture garden inside Slab City made entirely from salvaged materials. It's free, donations welcome, and the art changes constantly. Beyond East Jesus, Slab City is a neighborhood where people live. The art is the reason to visit. Move through it with that in mind.</p>
 
 <img src="/blog/images/ps-desert-valley-view.jpg" alt="Coachella Valley desert panorama from above, showing the flat expanse between Palm Springs and the Salton Sea" width="1400" height="933" loading="lazy">
 <p class="image-caption">The valley floor stretching southeast toward the Salton Sea, visible on clear days from higher ground.</p>

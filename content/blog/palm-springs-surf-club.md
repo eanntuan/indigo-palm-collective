@@ -2,7 +2,7 @@
 title: "Palm Springs Surf Club: What to Know"
 date: 2026-04-09
 dateModified: 2026-04-15
-metaDescription: "A wave pool in the middle of the desert. What Palm Springs Surf Club actually is, who it's for, and what to book before you show up empty-handed."
+metaDescription: "A wave pool in the middle of the desert. What Palm Springs Surf Club is, who it's for, and what to book before you show up empty-handed."
 ogImage: /blog/images/pssc-wave-pool-reflection.webp
 heroImage: /blog/images/pssc-wave-pool-reflection.webp
 heroAlt: "Palm Springs Surf Club wave pool at golden hour with PSSC building and San Jacinto Mountains reflecting in still water"
@@ -18,7 +18,7 @@ keywords:
 articleSection: "Travel Guide"
 property: ps-retreat
 readTime: "6 min read"
-excerpt: "A wave pool in the middle of the desert. What Palm Springs Surf Club actually is, who it's for, and what to book before you show up empty-handed."
+excerpt: "A wave pool in the middle of the desert. What Palm Springs Surf Club is, who it's for, and what to book before you show up empty-handed."
 layout: blog-post.njk
 ---
 
@@ -27,7 +27,7 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Palm Springs Surf Club: What to Know Before You Go",
-  "description": "A wave pool in the middle of the desert. What Palm Springs Surf Club actually is, who it's for, and what to book before you show up empty-handed.",
+  "description": "A wave pool in the middle of the desert. What Palm Springs Surf Club is, who it's for, and what to book before you show up empty-handed.",
   "image": "https://indigopalm.co/blog/images/pssc-wave-pool-reflection.webp",
   "datePublished": "2026-04-09",
   "dateModified": "2026-04-15",
@@ -77,7 +77,7 @@ layout: blog-post.njk
 <img src="/blog/images/pssc-wave-pool-reflection.webp" alt="Palm Springs Surf Club wave pool at golden hour reflecting the PSSC building and mountains in still water" width="1400" height="788" loading="lazy">
 <p class="image-caption">The wave pool at dusk. Sessions run during the day, but this is what it looks like before the crowds arrive.</p>
 
-<h2>What the Waves Are Actually Like</h2>
+<h2>What the Waves Are Like</h2>
 
 <p>The Wavegarden Cove system generates waves from a central spine that runs the length of the pool. Waves pulse in sets rather than running continuously. You're not in a constant breaking wave: there are defined waves, defined waits, and a clear cadence to each session.</p>
 
@@ -100,9 +100,9 @@ layout: blog-post.njk
 <img src="/blog/images/pssc-group-surf-session.webp" alt="Multiple surfers riding the Wavegarden wave at Palm Springs Surf Club with the PSSC building and mountains behind them" width="1400" height="933" loading="lazy">
 <p class="image-caption">A group session in action. The Wavegarden Cove system generates waves from a central spine, so you get defined sets with waits between them, not a continuous wall of water.</p>
 
-<h2>Who It's Actually For</h2>
+<h2>Who It's For</h2>
 
-<p>Be honest with yourself about this before you book.</p>
+<p>Think about this before you book.</p>
 
 <p><strong>If you surf or want to learn:</strong> This is genuinely your place. The beginner path is well-structured. The intermediate and advanced sessions are real surfing, not a novelty. The wave pool removes the variable of bad ocean conditions: you know what you're getting before you show up.</p>
 

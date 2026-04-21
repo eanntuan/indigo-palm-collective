@@ -51,7 +51,7 @@ layout: blog-post.njk
 <h3>Arriola's Tortilleria</h3>
 
 <img src="/blog/images/arriolas-tortilleria.jpg" alt="Arriola's Tortilleria in Indio California, established 1927, known for handmade tortillas and traditional Mexican food" width="1400" height="933" loading="lazy">
-<p class="image-caption">Arriola's has been here since 1927. The handmade tortillas are the point. Get the beans and rice combo and taste what fresh tortillas actually are.</p>
+<p class="image-caption">Arriola's has been here since 1927. The handmade tortillas are the point. Get the beans and rice combo and taste what a fresh tortilla is.</p>
 
 <p>Established 1927. That's not a marketing claim, it's a fact that tells you something about what the food is like. Handmade tortillas, beans and rice done the way they've been done for decades, simple and correct. This is not a restaurant trying to be interesting. It's a place where the tortillas are genuinely good in a way that makes the packaged version seem like a different food category.</p>
 

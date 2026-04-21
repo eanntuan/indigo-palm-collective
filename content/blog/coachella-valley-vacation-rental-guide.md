@@ -22,12 +22,12 @@ layout: blog-post.njk
 
 <p>I've been hosting vacation rentals in the Coachella Valley for years and I've stayed in rentals in other markets. Both experiences shaped what I look for when I'm the guest. There's a wide gap between rentals that look good in photos and rentals that actually work when you're in them, and most of that gap shows up in ways you can research before you book.</p>
 
-<p>Here are five things that actually matter, in order of how often people skip them.</p>
+<p>Here are five things worth checking, in order of how often people skip them.</p>
 
 <img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private pool and backyard at the Cozy Cactus vacation rental in Indio California with lounge chairs and palm trees" width="1400" height="933" loading="lazy">
 <p class="image-caption">Private pool at The Cozy Cactus in Indio. The difference between private and community pool access is bigger than it sounds.</p>
 
-<h2>1. Pool Access: Private vs. Community, and What That Actually Means</h2>
+<h2>1. Pool Access: Private vs. Community, and What the Difference Is</h2>
 
 <p>In the Coachella Valley, having a pool is not a differentiator. Most rentals have some kind of pool access. The question is which kind, and that's where most people don't look closely enough before booking.</p>
 

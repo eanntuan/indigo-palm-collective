@@ -17,7 +17,7 @@ keywords:
 articleSection: "Travel Guide"
 property: all
 readTime: "7 min read"
-excerpt: "Drive, shuttle, fly into PSP, or take Amtrak. What each option actually involves, with honest trade-offs for every type of traveler."
+excerpt: "Drive, shuttle, fly into PSP, or take Amtrak. What each option involves, with honest trade-offs for every type of traveler."
 layout: blog-post.njk
 ---
 

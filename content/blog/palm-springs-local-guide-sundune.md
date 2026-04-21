@@ -1,7 +1,7 @@
 ---
 title: "The Sundune Palm Springs Local Guide"
 date: 2026-05-23
-metaDescription: "Things to do in Palm Springs, from a local who actually eats here. The Sundune's honest guide: coffee, brunch, surf, botanical, dinner, drinks."
+metaDescription: "Things to do in Palm Springs, from a local who eats here. The Sundune's guide: coffee, brunch, surf, botanical, dinner, and drinks worth knowing about."
 ogImage: /blog/images/palm-springs-local-guide-sundune.jpg
 heroImage: /blog/images/palm-springs-local-guide-sundune.jpg
 heroAlt: "Palm Springs desert landscape with mountains and palm trees"
@@ -15,7 +15,7 @@ keywords:
 articleSection: "Local Guide"
 property: ps-retreat
 readTime: "7 min read"
-excerpt: "Things to do in Palm Springs, from a local who actually eats here. Coffee, brunch, surf, botanical, dinner, and drinks: the guide we give Sundune guests."
+excerpt: "Things to do in Palm Springs, from a local who eats here. Coffee, brunch, surf, botanical, dinner, and drinks: the guide we give Sundune guests."
 layout: blog-post.njk
 ---
 
