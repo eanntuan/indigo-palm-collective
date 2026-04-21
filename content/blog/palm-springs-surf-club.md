@@ -1,8 +1,8 @@
 ---
-title: "Palm Springs Surf Club: What to Know"
+title: "Palm Springs Surf Club: Hours, Prices & Sessions"
 date: 2026-03-06
-dateModified: 2026-04-15
-metaDescription: "A wave pool in the middle of the desert. What Palm Springs Surf Club is, who it's for, and what to book before you show up empty-handed."
+dateModified: 2026-04-21
+metaDescription: "Palm Springs Surf Club hours: open daily 10am-8pm (seasonal). Sessions from ~$100 beginner to ~$250 expert. Book in advance. Here's everything you need to know."
 ogImage: /blog/images/pssc-wave-pool-reflection.webp
 heroImage: /blog/images/pssc-wave-pool-reflection.webp
 heroAlt: "Palm Springs Surf Club wave pool at golden hour with PSSC building and San Jacinto Mountains reflecting in still water"
@@ -26,8 +26,8 @@ layout: blog-post.njk
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Palm Springs Surf Club: What to Know Before You Go",
-  "description": "A wave pool in the middle of the desert. What Palm Springs Surf Club is, who it's for, and what to book before you show up empty-handed.",
+  "headline": "Palm Springs Surf Club: Hours, Prices & Sessions",
+  "description": "Palm Springs Surf Club hours: open daily 10am-8pm (seasonal). Sessions from ~$100 beginner to ~$250 expert. Book in advance.",
   "image": "https://indigopalm.co/blog/images/pssc-wave-pool-reflection.webp",
   "datePublished": "2026-03-06",
   "dateModified": "2026-04-15",
@@ -67,6 +67,22 @@ layout: blog-post.njk
   ]
 }
 </script>
+
+<table class="comparison-table">
+  <thead>
+    <tr><th>Quick Facts</th><th></th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Address</td><td>1500 S Gene Autry Trail, Cathedral City, CA 92234</td></tr>
+    <tr><td>Hours</td><td>Daily 10am–8pm (seasonal variations; check website)</td></tr>
+    <tr><td>Beginner session</td><td>~$100 (Waikiki Wave, includes coaching)</td></tr>
+    <tr><td>Intermediate sessions</td><td>~$150–$200 (A-Frames, Lefts & Rights)</td></tr>
+    <tr><td>Advanced / Expert</td><td>~$200–$250 (Advanced A-Frames, 5 Slabs)</td></tr>
+    <tr><td>From downtown Palm Springs</td><td>~10 min by car</td></tr>
+    <tr><td>From Indio</td><td>~25–30 min by car</td></tr>
+    <tr><td>Book in advance?</td><td>Yes. Weekends book out 1–2 weeks ahead in peak season.</td></tr>
+  </tbody>
+</table>
 
 <p>There is something genuinely funny about a surf club in the middle of the Sonoran Desert. The nearest ocean is two hours west. The average July temperature is 115°F. And yet Palm Springs Surf Club exists, and it works.</p>
 
@@ -150,6 +166,55 @@ layout: blog-post.njk
 
 <img src="/blog/images/pssc-restaurant-pool-view.webp" alt="PSSC restaurant terrace with diners overlooking the wave pool lounge and desert mountains at Palm Springs Surf Club" width="1400" height="933" loading="lazy">
 <p class="image-caption">The restaurant at PSSC overlooks the full venue. If you're bringing people who aren't surfing, this is where they'll be. Solid food and a genuinely good view.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you need to know how to surf to go to Palm Springs Surf Club?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The beginner session (Waikiki Wave) includes soft-top boards and structured coaching. Most people stand up at least once during a first visit. Book in advance at palmspringssurfclub.com — don't show up without a reservation on a weekend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are Palm Springs Surf Club hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Palm Springs Surf Club is generally open daily 10am–8pm, with seasonal variations. Check palmspringssurfclub.com before you go, as hours shift outside peak season (October through May)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Palm Springs Surf Club cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Session prices vary by level. Beginner (Waikiki Wave) is approximately $100, including coaching. Intermediate sessions (A-Frames, Lefts and Rights) run $150–$200. Advanced A-Frames are around $200. Expert sessions (5 Slabs) are approximately $250. Spectator tickets and cabana rentals are available separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Palm Springs Surf Club worth it for non-surfers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's a restaurant, bar, and seating area where non-surfers can watch while others surf. It's a fine way to spend a few hours with a group. But if nobody in your group surfs and you're not interested in lessons, a private pool rental is a better use of your afternoon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is Palm Springs Surf Club from downtown Palm Springs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "About 10 minutes by car. It's technically in Cathedral City, but the border is seamless. From Indio, it's approximately 25 to 30 minutes west on I-10."
+      }
+    }
+  ]
+}
+</script>
 
 <h2>Frequently Asked Questions</h2>
 

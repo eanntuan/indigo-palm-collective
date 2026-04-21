@@ -2,6 +2,7 @@
 title: "Where to Stay for Coachella: The Honest Guide"
 date: 2026-03-01
 dateModified: 2026-04-21
+redirectTo: /blog/where-to-stay-coachella/
 metaDescription: "Vacation rental, hotel, or camping for Coachella? The polo grounds are in Indio. Here's what's close, what it costs, and what to book first."
 ogImage: /blog/images/festival-coachella-aerial.jpg
 heroImage: /blog/images/festival-coachella-aerial.jpg
@@ -17,7 +18,7 @@ articleSection: "Travel Guide"
 property: cozy-cactus
 readTime: "7 min read"
 excerpt: "An honest breakdown of every Coachella accommodation option: camping, hotels, vacation rentals. No affiliate codes, from a vacation rental owner in Indio."
-layout: blog-post.njk
+layout: redirect.njk
 ---
 
 <script type="application/ld+json">
