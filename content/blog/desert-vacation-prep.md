@@ -53,7 +53,7 @@ layout: blog-post.njk
 
 <p>If you're doing a multi-night stay, block out at least one afternoon with no agenda beyond the pool. Float. Read something. Don't check your phone. The desert is very good at making you stop.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private pool and backyard at Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Hot tub and backyard at Cozy Cactus vacation rental in Indio California with community pool steps away" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The 3pm strategy. Pool first, headliner second. Works every time.</p>
 
 <h2>Food: Skip the Chains</h2>

@@ -62,7 +62,7 @@ layout: blog-post.njk
 
 <p><strong>Check-in/out:</strong> 4pm check-in, 11am checkout. Early and late available with advance notice when the schedule allows.</p>
 
-<p><strong>Pets:</strong> Contact us before booking to discuss.</p>
+<p><strong>Pets:</strong> One pet welcome, $100 pet fee. Email us at <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking to confirm.</p>
 
 <h2>When to Come</h2>
 

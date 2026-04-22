@@ -131,7 +131,7 @@ layout: redirect.njk
 <p>This only works if your rental has a pool worth spending time at and is close enough that splitting the group is easy. The Cozy Cactus was built for exactly this.</p>
 
 <img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial drone shot of the Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with community pool and hot tub" width="1400" height="933" decoding="async">
-<p class="image-caption">The Cozy Cactus from above. Private pool center-frame. Empire Polo Club is 2.5 miles east.</p>
+<p class="image-caption">The Cozy Cactus from above. Private hot tub and community pool steps from the back gate. Empire Polo Club is 2.5 miles east.</p>
 
 <h2>Honest Price Comparison</h2>
 
@@ -195,7 +195,7 @@ layout: redirect.njk
 
 <p>Stay in Indio, stay close to the grounds, and invest in a place you want to come back to between sets. Once you've figured out your lodging, check out our guide to <a href="/blog/indio-local-gems/">10 Indio gems only locals know about</a> so you know exactly where to eat, explore, and recover between sets.</p>
 
-<p>If you're still looking, <a href="/cozy-cactus/">The Cozy Cactus</a> is walking distance to the Empire Polo Club, sleeps 6, and has a private pool and hot tub for the hours between stages.</p>
+<p>If you're still looking, <a href="/cozy-cactus/">The Cozy Cactus</a> is walking distance to the Empire Polo Club, sleeps 8, and has a private hot tub and community pool steps away for the hours between stages.</p>
 
 <p>Planning ahead? The <a href="/blog/where-to-stay-coachella/">complete Coachella accommodation guide</a> goes deeper on every option and is updated each season. And once you've sorted lodging, the <a href="/blog/indio-local-gems/">Indio local guide</a> covers where to eat and what to do in the days around the festival.</p>
 

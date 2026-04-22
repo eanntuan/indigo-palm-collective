@@ -103,4 +103,4 @@ layout: blog-post.njk
 
 <p>If you want more on the area, read our <a href="https://indigopalm.co/blog/palm-springs-local-guide-sundune">local Palm Springs guide</a>, written by someone who eats here, not just visits.</p>
 
-<p>If you're planning a stay, <a href="/the-sundune/">The Sundune</a> is our Palm Springs property and it's pet-friendly, private yard, tile floors, and enough outdoor space to make your dog very happy.</p>
+<p>We have two pet-friendly properties. <a href="/the-sundune/">The Sundune</a> in Palm Springs accepts one pet ($100 fee) — tile floors, walkable neighborhood, community pool. <a href="/terra-luz/">Terra Luz</a> in Indio accepts up to two dogs ($100 fee) with a fully fenced backyard and private saltwater pool. Email us at <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking to confirm your situation.</p>

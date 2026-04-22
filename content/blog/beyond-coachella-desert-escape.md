@@ -94,7 +94,7 @@ layout: blog-post.njk
 
 <p><strong>Day 2:</strong> Sunrise hike in Joshua Tree (Cholla Cactus Garden or Skull Rock). Date shake at Shields Date Garden. Afternoon pool and nap. Evening dinner in La Quinta.</p>
 
-<p><strong>Day 3:</strong> Morning coffee at Everbloom. Drive to Palm Springs for the Art Museum or Aerial Tramway. Brunch at Cheeky's. Evening back at Terra Luz: grill, fire pit, hot tub.</p>
+<p><strong>Day 3:</strong> Morning coffee at Everbloom. Drive to Palm Springs for the Art Museum or Aerial Tramway. Brunch at Cheeky's. Evening back at Terra Luz: grill out on the terracotta patio, close out the night in the pool.</p>
 
 <p><strong>Day 4:</strong> Sleep in. Lazy breakfast at the house. Pool float marathon. One last swim. Pack. (Or stay another night. We won't judge.)</p>
 
@@ -102,6 +102,6 @@ layout: blog-post.njk
 
 <p>The Coachella Valley has this reputation as a festival destination. It's also a winter escape, a remote work haven, a Joshua Tree base camp. A place where you can float in a pool with a drink in hand and feel like you've left your life behind, if only for a few days.</p>
 
-<p>If you're planning a trip out here, <a href="/terra-luz/">Terra Luz</a> is our Indio home base: private pool, hot tub, fire pit, and 10 minutes from everything in this guide.</p>
+<p>If you're planning a trip out here, <a href="/terra-luz/">Terra Luz</a> is our Indio home base: private saltwater pool, covered patio with pergola, and 10 minutes from everything in this guide.</p>
 
 <p><a href="/blog/terra-luz-origin-story/">Terra Luz</a> is our love letter to this place. Whether you're coming for Coachella, escaping winter, or just need a long weekend to reset, the Coachella Valley is waiting.</p>
