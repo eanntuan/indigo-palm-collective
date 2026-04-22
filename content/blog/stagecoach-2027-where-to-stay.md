@@ -1,7 +1,7 @@
 ---
 title: "Stagecoach 2027: Where to Stay Near the Festival"
 date: 2026-04-12
-metaDescription: "Where to stay for Stagecoach 2027: camping, hotels, or vacation rental near the polo grounds? The real tradeoffs, written by a host 7 minutes from the stage."
+metaDescription: "Where to stay for Stagecoach 2027: camping, hotels, or vacation rental near the polo grounds? The real tradeoffs, from a host 7 minutes from the stage."
 ogImage: /blog/images/cozy-cactus-pool-backyard.jpg
 heroImage: /blog/images/cozy-cactus-pool-backyard.jpg
 heroAlt: "Cozy Cactus vacation rental pool and backyard in Indio CA, 7 minutes from Stagecoach festival grounds"

@@ -1,7 +1,7 @@
 ---
 title: "Cozy Cactus: From Blank Canvas to Sanctuary"
 date: 2026-02-28
-metaDescription: "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents rest, now 4.66 stars and 191+ reviews."
+metaDescription: "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental in Indio, CA. Now 4.66 stars and 191+ reviews across three years of hosting."
 ogImage: /blog/images/cozy-cactus-exterior.jpg
 heroImage: /blog/images/cozy-cactus-exterior.jpg
 heroAlt: "The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views"
@@ -18,6 +18,52 @@ readTime: "8 min read"
 excerpt: "How a backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents rest, now with 4.66 stars and 191+ reviews."
 layout: blog-post.njk
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Cozy Cactus: From Blank Canvas to Sanctuary",
+  "description": "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental in Indio, CA. Now 4.66 stars and 191+ reviews across three years of hosting.",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.jpg",
+  "datePublished": "2026-02-28",
+  "dateModified": "2026-02-28",
+  "author": {
+    "@type": "Person",
+    "name": "Eann Tuan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Indigo Palm Collective",
+    "url": "https://indigopalm.co"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://indigopalm.co/blog/cozy-cactus-story/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blog",
+      "item": "https://indigopalm.co/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Cozy Cactus: From Blank Canvas to Sanctuary",
+      "item": "https://indigopalm.co/blog/cozy-cactus-story/"
+    }
+  ]
+}
+</script>
 
 <p>What started off as a backup plan for my beloved 2005 Honda Element, turned into the beginning of what some may call an "Airbnb empire," yet I call "my retirement plan when I'm dead, ha" After Covid, I had way too much time on my hands. I began dreaming of the next car I would drive after my Honda Element decided it would no longer serve as my surf camping car. (As of writing this on February 25, 2026, that car is still kickin' and I couldn't be happier.) Turns out brand new Tesla's cost over $45k… that's crazy! I started thinking of all the things I could do with that $45k. I had a line of credit and savings from being quarantined at home during Covid.</p>
 

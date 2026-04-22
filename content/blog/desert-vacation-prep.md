@@ -1,7 +1,7 @@
 ---
 title: "Desert Vacation Prep: What You Need to Know"
 date: 2026-04-08
-metaDescription: "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days."
+metaDescription: "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days when you arrive."
 ogImage: /blog/images/ps-desert-valley-view.jpg
 heroImage: /blog/images/ps-desert-valley-view.jpg
 heroAlt: "Desert valley view with palm trees and mountain backdrop in Coachella Valley California"
@@ -17,6 +17,52 @@ readTime: "6 min read"
 excerpt: "First-timer or returning desert guest, here's what to pack, what the heat means for your schedule, and how to make the most of every day."
 layout: blog-post.njk
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Desert Vacation Prep: What You Need to Know",
+  "description": "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days.",
+  "image": "https://indigopalm.co/blog/images/ps-desert-valley-view.jpg",
+  "datePublished": "2026-04-08",
+  "dateModified": "2026-04-08",
+  "author": {
+    "@type": "Person",
+    "name": "Eann Tuan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Indigo Palm Collective",
+    "url": "https://indigopalm.co"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://indigopalm.co/blog/desert-vacation-prep/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blog",
+      "item": "https://indigopalm.co/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Desert Vacation Prep: What You Need to Know",
+      "item": "https://indigopalm.co/blog/desert-vacation-prep/"
+    }
+  ]
+}
+</script>
 
 <p>The Coachella Valley runs on a different clock than wherever you came from. The mornings are cool and quiet and slightly unreal. By 2pm it's 95 degrees and you're making decisions. By evening it drops 20 degrees and suddenly you're grateful for that light jacket you almost didn't pack.</p>
 

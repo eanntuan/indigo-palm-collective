@@ -1,7 +1,7 @@
 ---
 title: "15 Things to Do in Indio, CA"
 date: 2026-03-23
-metaDescription: "15 actual things to do in Indio, CA beyond Coachella: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find."
+metaDescription: "15 actual things to do in Indio, CA beyond Coachella: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find on their own."
 ogImage: /blog/images/indio-local-gems.jpg
 heroImage: /blog/images/indio-local-gems.jpg
 heroAlt: "Indio California desert landscape and palm trees"
@@ -17,6 +17,53 @@ readTime: "7 min read"
 excerpt: "Skip the recycled lists. Here are 15 things worth doing in Indio, CA: from date farms and desert hikes to a listening lounge that opened in a city nobody expected."
 layout: blog-post.njk
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "15 Things to Do in Indio, CA",
+  "description": "15 actual things to do in Indio, CA beyond Coachella: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find.",
+  "image": "https://indigopalm.co/blog/images/indio-local-gems.jpg",
+  "datePublished": "2026-03-23",
+  "dateModified": "2026-03-23",
+  "author": {
+    "@type": "Person",
+    "name": "Eann Tuan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Indigo Palm Collective",
+    "url": "https://indigopalm.co"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://indigopalm.co/blog/things-to-do-indio-ca/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blog",
+      "item": "https://indigopalm.co/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "15 Things to Do in Indio, CA",
+      "item": "https://indigopalm.co/blog/things-to-do-indio-ca/"
+    }
+  ]
+}
+</script>
+
 
 <p>If you Google "things to do in Indio, CA" right now, you'll get chain restaurants, a water park, and maybe a mention of Coachella. That's not wrong, it's just not the city. Indio is where the Coachella Valley gets real: working-class, date-palm-lined, with taquerias that don't have websites and music venues that opened without press releases.</p>
 

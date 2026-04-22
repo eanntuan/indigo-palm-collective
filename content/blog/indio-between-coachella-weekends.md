@@ -20,6 +20,52 @@ excerpt: "Stuck in Indio between Coachella weekends? Date shakes, the Salton Sea
 layout: blog-post.njk
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Indio Between Coachella Weekends: What to Do",
+  "description": "Stuck in Indio CA between Coachella Weekend 1 and 2? Here's exactly what to do, from date shakes to the Salton Sea. A real local's guide, not a listicle.",
+  "image": "https://indigopalm.co/blog/images/indio-between-coachella-weekends.jpg",
+  "datePublished": "2026-04-04",
+  "dateModified": "2026-04-04",
+  "author": {
+    "@type": "Person",
+    "name": "Eann Tuan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Indigo Palm Collective",
+    "url": "https://indigopalm.co"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://indigopalm.co/blog/indio-between-coachella-weekends/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blog",
+      "item": "https://indigopalm.co/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Indio Between Coachella Weekends: What to Do",
+      "item": "https://indigopalm.co/blog/indio-between-coachella-weekends/"
+    }
+  ]
+}
+</script>
+
 <p>So you're staying for both weekends. Smart. Slightly chaotic. Fully committed.</p>
 
 <p>Weekend 1 ends April 13th. Weekend 2 starts April 18th. That's five days in Indio with no festival, no agenda, and probably a depleted phone battery and a vague sense that you've eaten nothing but overpriced festival burritos for three days. You could drive back to wherever you came from and turn around again (a lot of people do), but that seems like a lot of freeway for a mediocre outcome.</p>

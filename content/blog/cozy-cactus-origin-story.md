@@ -20,6 +20,52 @@ excerpt: "How I bought my first vacation rental in Indio, CA on Easter 2022 with
 layout: blog-post.njk
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Buying My First Vacation Rental in Indio",
+  "description": "How I bought my first vacation rental in Indio, CA on Easter 2022 with zero experience, a line of credit, and way too many Facebook Marketplace trips.",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-origin-hero.jpg",
+  "datePublished": "2026-03-03",
+  "dateModified": "2026-03-03",
+  "author": {
+    "@type": "Person",
+    "name": "Eann Tuan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Indigo Palm Collective",
+    "url": "https://indigopalm.co"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://indigopalm.co/blog/cozy-cactus-origin-story/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blog",
+      "item": "https://indigopalm.co/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Buying My First Vacation Rental in Indio",
+      "item": "https://indigopalm.co/blog/cozy-cactus-origin-story/"
+    }
+  ]
+}
+</script>
+
 <p>What started off as a backup plan for my beloved 2005 Honda Element, turned into the beginning of what some may call an "Airbnb empire," yet I call "my retirement plan when I'm dead, ha" After Covid, I had way too much time on my hands. I began dreaming of the next car I would drive after my Honda Element decided it would no longer serve as my surf camping car. (As of writing this on February 25, 2026, that car is still kickin' and I couldn't be happier.) Turns out brand new Tesla's cost over $45k… that's crazy! I started thinking of all the things I could do with that $45k. I had a line of credit and savings from being quarantined at home during Covid.</p>
 
 <img src="/blog/images/car-camping.jpeg" alt="2005 Honda Element car camping with surfboards and beach gear" width="800" height="533">

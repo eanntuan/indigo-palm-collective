@@ -21,6 +21,52 @@ heroPosition: center 80%
 layout: blog-post.njk
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "10 Indio Gems Only Locals Know About",
+  "description": "Skip the tourist traps. Date shakes at L&G, smash burgers at Papa Headz, and a vinyl listening lounge most visitors drive right past. The real Indio, CA.",
+  "image": "https://indigopalm.co/blog/images/indio-sign-miles-ave.webp",
+  "datePublished": "2026-03-13",
+  "dateModified": "2026-03-13",
+  "author": {
+    "@type": "Person",
+    "name": "Eann Tuan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Indigo Palm Collective",
+    "url": "https://indigopalm.co"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://indigopalm.co/blog/indio-local-gems/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blog",
+      "item": "https://indigopalm.co/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "10 Indio Gems Only Locals Know About",
+      "item": "https://indigopalm.co/blog/indio-local-gems/"
+    }
+  ]
+}
+</script>
+
 <p>Every guest who books one of our Indio properties, like <a href="https://indigopalm.co/cozy-cactus">The Cozy Cactus</a>, gets the same basic question: <em>"What should we do around here?"</em>
 
 <p>Indio is not Palm Springs. It's grittier, more working-class, less Instagram-curated. And that's exactly what makes it good. This is the city that hosts Coachella and Stagecoach every year, gets overlooked for eleven months, and quietly goes about being one of the most interesting corners of the Coachella Valley. Here's what's worth your time.</p>

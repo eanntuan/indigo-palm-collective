@@ -20,6 +20,52 @@ excerpt: "Most people only think of the Coachella Valley during festival season.
 layout: blog-post.njk
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Coachella Valley: A Year-Round Desert Escape",
+  "description": "Most people only think of the Coachella Valley during festival season. Here's why every season in the desert is worth the trip, and how to plan it.",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-pool.jpg",
+  "datePublished": "2026-03-14",
+  "dateModified": "2026-03-14",
+  "author": {
+    "@type": "Person",
+    "name": "Eann Tuan"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Indigo Palm Collective",
+    "url": "https://indigopalm.co"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://indigopalm.co/blog/beyond-coachella-desert-escape/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blog",
+      "item": "https://indigopalm.co/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Coachella Valley: A Year-Round Desert Escape",
+      "item": "https://indigopalm.co/blog/beyond-coachella-desert-escape/"
+    }
+  ]
+}
+</script>
+
 <p>Most people only think of the Coachella Valley during festival season. Two weekends in April. Flower crowns. Ferris wheels. Headliners. If that's all you know about this place, you're missing about 350 days of pure desert.</p>
 
 <p>I used to be one of those people. Then we bought a house here, and everything changed. Now I'm the person who evangelizes about winter in the desert, fall light, mid-week escapes where you work from a pool lounger. The Coachella Valley is a place you <em>return to</em>, for the sun, the space, and the surprising amount of culture packed into this stretch of California.</p>

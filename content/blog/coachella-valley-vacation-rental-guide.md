@@ -2,7 +2,7 @@
 title: "5 Things to Check in a Coachella Valley Rental"
 date: 2026-01-06
 dateModified: 2026-04-15
-metaDescription: "From pool access to honest reviews to a host who responds. Five things worth checking before you book a Coachella Valley vacation rental."
+metaDescription: "From pool access to honest reviews to a host who responds. Five things to check before booking a Coachella Valley vacation rental in Indio or Palm Springs."
 ogImage: /blog/images/cozy-cactus-pool-backyard.jpg
 heroImage: /blog/images/cozy-cactus-pool-backyard.jpg
 heroAlt: "Private pool and backyard at a Coachella Valley vacation rental in Indio California with lounge chairs and palm trees"

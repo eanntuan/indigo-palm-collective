@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs Midcentury Architecture Walk"
 date: 2026-03-26
-metaDescription: "Palm Springs has the most intact collection of midcentury modern homes in the country. Here's how to walk it, what to look for, and which streets are worth your time."
+metaDescription: "Palm Springs has the most intact collection of midcentury modern homes in the country. Here's how to walk it, what to look for, and which streets matter."
 ogImage: /blog/images/ps-mcm-neighborhood.jpg
 heroImage: /blog/images/ps-mcm-neighborhood.jpg
 heroAlt: "Palm Springs midcentury modern neighborhood with flat-roofed homes, desert landscaping, and the San Jacinto Mountains in the background"

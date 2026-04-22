@@ -2,7 +2,7 @@
 title: "Indian Palms Country Club: Vacation Rental Guide"
 date: 2026-03-20
 dateModified: 2026-04-21
-metaDescription: "Indian Palms Country Club is 2.5 miles from the Coachella polo grounds. Private pools, gated streets, and a walk to the festival that skips traffic entirely."
+metaDescription: "Indian Palms Country Club is 2.5 miles from the Coachella polo grounds. Private pools, gated streets, and a walk to the festival that skips the traffic."
 ogImage: /blog/images/cozy-cactus-aerial.jpg
 heroImage: /blog/images/cozy-cactus-aerial.jpg
 heroAlt: "Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop"

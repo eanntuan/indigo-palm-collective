@@ -2,7 +2,7 @@
 title: "Palm Springs in Summer: Is It Worth Visiting?"
 date: 2026-02-04
 dateModified: 2026-04-15
-metaDescription: "Yes, with caveats. Pool culture peaks, rates drop 30-50%, crowds disappear. Here's how to do summer in the desert right, month by month."
+metaDescription: "Yes, with caveats. Pool culture peaks in summer, rates drop 30-50%, crowds disappear. Here's how to do Palm Springs in the heat, month by month."
 ogImage: /blog/images/ps-via-sol-sunset.jpg
 heroImage: /blog/images/ps-via-sol-sunset.jpg
 heroAlt: "Desert sunset over a Palm Springs street with palm trees and San Jacinto Mountain silhouette at dusk"

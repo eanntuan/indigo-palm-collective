@@ -1,7 +1,7 @@
 ---
 title: "Coachella Valley with Kids: A Practical Family Guide"
 date: 2026-03-30
-metaDescription: "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters."
+metaDescription: "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters more than people think."
 ogImage: /blog/images/cozy-cactus-infant-gear.jpg
 heroImage: /blog/images/cozy-cactus-infant-gear.jpg
 heroAlt: "Baby and family gear laid out at Cozy Cactus vacation rental in Indio CA, pack n play stroller and infant supplies"

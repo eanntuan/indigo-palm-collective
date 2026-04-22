@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs Bachelorette Party: Real Guide"
 date: 2026-03-28
-metaDescription: "Palm Springs bachelorette trips work well because the valley has pools, restaurants, spas, and a 2-hour drive from LA. Here's what to book, and what to skip."
+metaDescription: "Palm Springs bachelorette trips: the valley has pools, restaurants, spas, and a 2-hour drive from LA. Here's what to book, and what to skip entirely."
 ogImage: /blog/images/ps-street-bougainvillea.jpg
 heroImage: /blog/images/ps-street-bougainvillea.jpg
 heroAlt: "Colorful bougainvillea-lined street in Palm Springs California on a sunny day"
