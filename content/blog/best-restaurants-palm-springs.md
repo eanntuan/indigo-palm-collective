@@ -68,7 +68,7 @@ layout: blog-post.njk
 }
 </script>
 
-<p>These are places I keep going back to in Palm Springs — organized by meal because the city runs on a rhythm. What works at 7am is different from what you want at 9pm.</p>
+<p>These are places I keep going back to in Palm Springs, organized by meal because the city runs on a rhythm. What works at 7am is different from what you want at 9pm.</p>
 
 <p>A quick note on geography: downtown Palm Springs is the main cluster along Palm Canyon Drive and its side streets. The Uptown Design District, about a mile north, tends to be a little more relaxed and local. Most of the spots below are in one of those two zones, with one exception just over the city line in Cathedral City that's worth the five-minute drive.</p>
 
@@ -81,7 +81,7 @@ layout: blog-post.njk
 
 <p>Koffi has been in Palm Springs for over 20 years, and the outdoor patio at the North Palm Canyon location is one of the best places to start a morning in the city. Shade trees, good light, no rush. The cold brew is the right call in warmer months. Multiple locations in the valley, but North Palm Canyon has the best setup.</p>
 
-<p>Check their website before you go — they sometimes close earlier than you'd expect. Find them at <a href="https://www.instagram.com/koffi/" target="_blank" rel="noopener">@koffi</a>.</p>
+<p>Check their website before you go. They sometimes close earlier than you'd expect. Find them at <a href="https://www.instagram.com/koffi/" target="_blank" rel="noopener">@koffi</a>.</p>
 
 <h3>Les Filles Cafe</h3>
 
@@ -120,7 +120,7 @@ layout: blog-post.njk
 
 <h3>Workshop Kitchen + Bar</h3>
 
-<p>Workshop is in a converted historic building with high ceilings and exposed concrete. The food program changes seasonally — the cauliflower dish, when it's on, is worth ordering. The cocktail program is one of the stronger ones in town. Works well for a relaxed lunch or an early dinner. Reservations help on weekends. Find them at <a href="https://www.instagram.com/workshopkitchenbar/" target="_blank" rel="noopener">@workshopkitchenbar</a>.</p>
+<p>Workshop is in a converted historic building with high ceilings and exposed concrete. The food program changes seasonally. The cauliflower dish, when it's on, is worth ordering. The cocktail program is one of the stronger ones in town. Works well for a relaxed lunch or an early dinner. Reservations help on weekends. Find them at <a href="https://www.instagram.com/workshopkitchenbar/" target="_blank" rel="noopener">@workshopkitchenbar</a>.</p>
 
 <h3>Rooster and the Pig</h3>
 

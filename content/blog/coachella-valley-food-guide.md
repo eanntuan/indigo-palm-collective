@@ -127,7 +127,7 @@ layout: blog-post.njk
 
 <p>During Coachella and Stagecoach, all of Indio gets busier and some places extend hours. Some pop-ups appear. The reliable spots above will still be reliable. The pop-ups are hit or miss.</p>
 
-<p>For more on what to do between meals, the <a href="/blog/things-to-do-indio-ca/">things to do in Indio guide</a> covers the full picture of what the east valley offers beyond festivals. And for the full restaurant landscape specifically near Coachella, the <a href="/blog/best-restaurants-near-coachella/">restaurants near Coachella guide</a> goes deeper on walking-distance and drive-distance options from the polo grounds.</p>
+<p>For more on what to do between meals, the <a href="/blog/things-to-do-indio-ca/">things to do in Indio guide</a> covers the full picture of what the east valley offers beyond festivals. And for the full restaurant landscape specifically near Coachella, the <a href="/blog/best-restaurants-palm-desert/">restaurants near Coachella guide</a> goes deeper on walking-distance and drive-distance options from the polo grounds.</p>
 
 <p>If you're staying with us at <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio, we keep a printed local food guide in the house with current hours for all of the above. Things change, especially during festival season, so always double-check before you drive.</p>
 

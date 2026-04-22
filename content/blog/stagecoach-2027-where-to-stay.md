@@ -91,7 +91,7 @@ layout: blog-post.njk
 
 <p>For everything else about the area: the <a href="/blog/things-to-do-indio-ca/">Indio local guide</a> covers where to eat and what to do when you're not at the festival. One Stop Taco Shop is 10 minutes from the grounds and you should go for lunch on the day you arrive. That part is non-negotiable.</p>
 
-<p>And if you want the full comparison between festival accommodation options, the <a href="/blog/where-to-stay-coachella-2026/">Coachella accommodation guide</a> covers the same tradeoffs in detail — most of it applies equally to Stagecoach.</p>
+<p>And if you want the full comparison between festival accommodation options, the <a href="/blog/where-to-stay-coachella-2026/">Coachella accommodation guide</a> covers the same tradeoffs in detail. Most of it applies equally to Stagecoach.</p>
 
 <script type="application/ld+json">
 {

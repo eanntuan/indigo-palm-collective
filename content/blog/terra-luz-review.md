@@ -101,7 +101,7 @@ layout: blog-post.njk
 
 <p><strong>Dogs are welcome.</strong> $100 pet fee, 2 dog max. Fenced backyard. Dog bowl and treats in the kitchen. The saltwater pool is dog-accessible, though some guests ask about this specifically before booking.</p>
 
-<p><strong>Check-in 4pm, checkout 11am.</strong> Early check-in or late checkout is available when the schedule allows — ask in advance. Self-check-in via smart lock, codes sent 24 hours before arrival.</p>
+<p><strong>Check-in 4pm, checkout 11am.</strong> Early check-in or late checkout is available when the schedule allows. Ask in advance. Self-check-in via smart lock, codes sent 24 hours before arrival.</p>
 
 <p><strong>Sleeps 8 comfortably.</strong> This is not a "sleeps 8 if two people share a couch" situation. Three actual bedrooms, all with beds, all with closet space.</p>
 

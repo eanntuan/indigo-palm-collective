@@ -177,7 +177,7 @@ layout: blog-post.njk
       "name": "Do you need to know how to surf to go to Palm Springs Surf Club?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The beginner session (Waikiki Wave) includes soft-top boards and structured coaching. Most people stand up at least once during a first visit. Book in advance at palmspringssurfclub.com — don't show up without a reservation on a weekend."
+        "text": "No. The beginner session (Waikiki Wave) includes soft-top boards and structured coaching. Most people stand up at least once during a first visit. Book in advance at palmspringssurfclub.com. Don't show up without a reservation on a weekend."
       }
     },
     {

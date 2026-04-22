@@ -2,7 +2,7 @@
 title: "Palm Springs vs Indio: Where to Stay"
 date: 2026-01-20
 dateModified: 2026-04-21
-metaDescription: "Palm Springs is 25 miles from Indio — about 30 min without traffic. Here's the honest breakdown: rental costs, festival logistics, and which city fits your trip."
+metaDescription: "Palm Springs is 25 miles from Indio, about 30 min without traffic. Here's the honest breakdown: rental costs, festival logistics, and which city fits your trip."
 ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroAlt: "Palm tree-lined boulevard with the San Jacinto Mountains rising behind it in Palm Springs, California"

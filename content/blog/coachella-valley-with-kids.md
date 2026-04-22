@@ -80,7 +80,7 @@ layout: blog-post.njk
 
 <p><strong>Coachella Valley Preserve (Thousand Palms, 20 min):</strong> Wild palm oases fed by the San Andreas Fault. The McCallum Trail is easy, about 3 miles, and genuinely arresting for kids: fan palms growing wild out of the desert floor, fed by fault water underground. Free admission. Go in the morning before it heats up.</p>
 
-<p><strong>Joshua Tree National Park (45 min):</strong> The Cholla Cactus Garden near the south entrance is 10 minutes from the park gate and requires almost no hiking. Kids love the alien landscape. Go at 7am or late afternoon — midday heat is not for small people.</p>
+<p><strong>Joshua Tree National Park (45 min):</strong> The Cholla Cactus Garden near the south entrance is 10 minutes from the park gate and requires almost no hiking. Kids love the alien landscape. Go at 7am or late afternoon. Midday heat is not for small people.</p>
 
 <p><strong>Old Town Indio Farmers Market (Saturday mornings):</strong> Tamales, fresh citrus, local produce. Kids can eat their way through it. Runs 8am-noon, free to browse, genuinely good coffee from the corner stand.</p>
 
@@ -102,7 +102,7 @@ layout: blog-post.njk
 
 <p>If you're figuring out the logistics: the <a href="/blog/desert-vacation-prep/">desert trip checklist</a> covers what to pack for a Coachella Valley visit, and the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> explains the tradeoffs between the two cities for families. Short version: Indio has more space per dollar. Palm Springs has more to walk to.</p>
 
-<p><a href="/cozy-cactus/">The Cozy Cactus</a> is built for exactly this trip. Three bedrooms, two bathrooms, private hot tub, game room, putting green, and a gear closet stocked for families with babies through school-age kids. Check availability — it books early for March and October.</p>
+<p><a href="/cozy-cactus/">The Cozy Cactus</a> is built for exactly this trip. Three bedrooms, two bathrooms, private hot tub, game room, putting green, and a gear closet stocked for families with babies through school-age kids. Check availability: it books early for March and October.</p>
 
 <script type="application/ld+json">
 {
