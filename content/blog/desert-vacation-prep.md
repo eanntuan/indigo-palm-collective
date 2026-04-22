@@ -14,7 +14,7 @@ keywords:
 articleSection: "Travel Guide"
 property: all
 readTime: "6 min read"
-excerpt: "First-timer or returning desert guest, here's what to actually pack, what the heat means for your schedule, and how to make the most of every day."
+excerpt: "First-timer or returning desert guest, here's what to pack, what the heat means for your schedule, and how to make the most of every day."
 layout: blog-post.njk
 ---
 

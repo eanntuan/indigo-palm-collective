@@ -14,7 +14,7 @@ ogImage: /blog/images/indio-sign-miles-ave.webp
 articleSection: Local Guide
 property: cozy-cactus
 readTime: 6 min read
-excerpt: Skip the tourist traps. L&G Desert Store has dates and strawberries. Papa Headz serves smash burgers that make you rethink California. Here's what actually matters in Indio, CA.
+excerpt: Skip the tourist traps. L&G Desert Store has dates and strawberries. Papa Headz serves smash burgers that make you rethink California. Here's what's worth your time in Indio, CA.
 heroImage: /blog/images/indio-sign-miles-ave.webp
 heroAlt: Colorful INDIO letter sign at Miles Avenue Park in Indio California with palm trees
 heroPosition: center 80%

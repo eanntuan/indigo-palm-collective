@@ -20,7 +20,7 @@ keywords:
 articleSection: "Travel Guide"
 property: all
 readTime: "8 min read"
-excerpt: "Neither is the wrong choice. But one is clearly right for your trip, depending on what you actually want. Here's the honest breakdown."
+excerpt: "Neither is the wrong choice. But one is clearly right for your trip, depending on what you want. Here's the honest breakdown."
 layout: blog-post.njk
 relatedPosts:
   - title: "Where to Stay for Coachella: The Complete Guide"
