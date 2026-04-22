@@ -1,7 +1,7 @@
 ---
 title: "The Sundune Palm Springs: What Guests Say"
 date: 2026-04-21
-metaDescription: "Sundune Palm Springs reviews: what guests actually say about this Palm Springs condo, the neighborhood, walkability, and what to expect."
+metaDescription: "Sundune Palm Springs reviews: what guests say about this Palm Springs condo, the neighborhood, walkability, and what to expect."
 ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroAlt: "Palm Springs boulevard lined with tall palms and mountain backdrop, near The Sundune vacation rental"
@@ -30,7 +30,7 @@ layout: blog-post.njk
 
 <p>The second thing: the beds. I spent more on the mattresses than felt reasonable at the time. Reviews keep mentioning them, which means it was reasonable.</p>
 
-<p>Guests who extended their stay or left glowing reviews almost always mention the same combination: the outdoor space, the walkability, and coming back from a long day to a place that felt like it was actually theirs. That's the goal.</p>
+<p>Guests who extended their stay or left glowing reviews almost always mention the same combination: the outdoor space, the walkability, and coming back from a long day to a place that felt like it was theirs. That's the goal.</p>
 
 <h2>Location</h2>
 
@@ -45,7 +45,7 @@ layout: blog-post.njk
 
 <h2>The Condo</h2>
 
-<p>Two bedrooms, two bathrooms, sleeps four comfortably. The kitchen is fully stocked for people who cook: real cookware, a coffee setup, enough counter space to actually use. Guests who cook breakfast here and walk to dinner in the evening get the best of both.</p>
+<p>Two bedrooms, two bathrooms, sleeps four comfortably. The kitchen is fully stocked for people who cook: real cookware, a coffee setup, enough counter space to use. Guests who cook breakfast here and walk to dinner in the evening get the best of both.</p>
 
 <p>Community pool access is included with the complex. It's shared, so it comes with shared-pool etiquette and hours. If a private pool is the non-negotiable, our Indio properties are set up differently: <a href="/terra-luz/">Terra Luz</a> has a private saltwater pool, and <a href="/cozy-cactus/">The Cozy Cactus</a> has a private hot tub with community pool steps away.</p>
 
@@ -86,7 +86,7 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "The Sundune Palm Springs: What Guests Say",
-  "description": "Sundune Palm Springs reviews: what guests actually say about this Palm Springs condo, the neighborhood, walkability, and what to expect.",
+  "description": "Sundune Palm Springs reviews: what guests say about this Palm Springs condo, the neighborhood, walkability, and what to expect.",
   "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.jpg",
   "datePublished": "2026-04-21",
   "dateModified": "2026-04-21",

@@ -1,7 +1,7 @@
 ---
 title: "Cozy Cactus: From Blank Canvas to Sanctuary"
 date: 2026-02-25
-metaDescription: "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents actually rest, now 4.66 stars and 191+ reviews."
+metaDescription: "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents rest, now 4.66 stars and 191+ reviews."
 ogImage: /blog/images/cozy-cactus-exterior.jpg
 heroImage: /blog/images/cozy-cactus-exterior.jpg
 heroAlt: "The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views"
@@ -15,7 +15,7 @@ keywords:
 articleSection: "Property Story"
 property: cozy-cactus
 readTime: "8 min read"
-excerpt: "How a backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents actually rest, now with 4.66 stars and 191+ reviews."
+excerpt: "How a backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents rest, now with 4.66 stars and 191+ reviews."
 layout: blog-post.njk
 ---
 
@@ -62,7 +62,7 @@ layout: blog-post.njk
 <p class="image-caption">Everything labeled: batteries, extra linens, baby spoons, exactly where you'd look for them</p>
 
 <h3>I bought infant gear that works.</h3>
-<p>I bought elevated baby gear, including a <a href="https://www.target.com/p/stokke-clikk-high-chair-cloud-gray/-/A-78461786" target="_blank">Stokke high chair</a> that actually supports a toddler well. Sound machines in every bedroom because sleep matters. Shoot, I'm a grown woman, and I travel with my own sound machine! Outlet covers, cabinet locks, Keekaroo changing table, etc. Dawn curated a whole Family Kit for The Cozy Cactus, and it has proven to be widely successful. We added things you don't realize you need until 10pm on vacation: bottle warmer, bottle brush, changing pad, diaper pail. Those 11pm panicked messages were solvable problems, so we solved them before check-in.</p>
+<p>I bought elevated baby gear, including a <a href="https://www.target.com/p/stokke-clikk-high-chair-cloud-gray/-/A-78461786" target="_blank">Stokke high chair</a> that supports a toddler well. Sound machines in every bedroom because sleep matters. Shoot, I'm a grown woman, and I travel with my own sound machine! Outlet covers, cabinet locks, Keekaroo changing table, etc. Dawn curated a whole Family Kit for The Cozy Cactus, and it has proven to be widely successful. We added things you don't realize you need until 10pm on vacation: bottle warmer, bottle brush, changing pad, diaper pail. Those 11pm panicked messages were solvable problems, so we solved them before check-in.</p>
 
 <img src="/blog/images/cc-stokke-highchair.jpg" alt="Stokke high chair at The Cozy Cactus dining area with modern curtains and fiddle leaf fig plant" loading="lazy" decoding="async" width="934" height="1400">
 <p class="image-caption">The craziest part of all this is that we are DINKWADS (Double Income, No Kids, With A Dog (and two cats)), so I had to lean on Dawn and my parent friends for advice on how to make homes family and baby friendly!</p>

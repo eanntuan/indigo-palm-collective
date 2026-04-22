@@ -103,7 +103,7 @@ layout: blog-post.njk
 
 <p><strong>Reform Wave Pass</strong> is the step up: still approachable, but more wave to work with. Good if you've got a session or two under your belt and want something with more push than the beginner pool.</p>
 
-<p><strong>Intermediate A-Frames and Lefts and Rights</strong> are proper surf sessions. A-Frames fire 6-wave sets with about 15 seconds between waves. Lefts and Rights run 6-wave sets with 22 seconds between. You're waiting, paddling, and riding like you would in the ocean. These are the sessions that actually feel like surfing rather than surviving it.</p>
+<p><strong>Intermediate A-Frames and Lefts and Rights</strong> are proper surf sessions. A-Frames fire 6-wave sets with about 15 seconds between waves. Lefts and Rights run 6-wave sets with 22 seconds between. You're waiting, paddling, and riding like you would in the ocean. These are the sessions that feel like surfing rather than surviving it.</p>
 
 <p><strong>Advanced A-Frames</strong> are the same mechanics, steeper and faster. For surfers who want a challenge they'd recognize from a real beach break.</p>
 
@@ -124,7 +124,7 @@ layout: blog-post.njk
 
 <p><strong>If you want a traditional pool day:</strong> This is not that. Palm Springs Surf Club is an active surf facility. The energy is physical and focused, not lounge-by-the-water relaxed. There is a separate restaurant, bar, and lounge area with chairs and cabana situations for non-surfers. That part is fine. But if you're expecting a beach club vibe where you sip drinks poolside and occasionally dip your feet in, you'll find the experience doesn't quite match that expectation.</p>
 
-<p><strong>Groups with mixed interest levels:</strong> This actually works well. Surfers book sessions while non-surfers eat, drink, and watch from the venue's seating area. You split, do your respective things, meet up for food. Everyone gets a version of a good day without having to compromise on everything.</p>
+<p><strong>Groups with mixed interest levels:</strong> This works well. Surfers book sessions while non-surfers eat, drink, and watch from the venue's seating area. You split, do your respective things, meet up for food. Everyone gets a version of a good day without having to compromise on everything.</p>
 
 <h2>Prices and What to Book</h2>
 

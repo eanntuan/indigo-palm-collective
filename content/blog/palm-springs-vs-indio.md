@@ -181,7 +181,7 @@ relatedPosts:
 
 <p><strong>Choose Indio if:</strong> your group is five or more people, you're attending Coachella or Stagecoach, you want a larger pool and actual outdoor living space, you're bringing kids and need room to move, or the nightly rate difference is a real budget consideration.</p>
 
-<p>The mistake people make is booking based on the name recognition of Palm Springs when what their group actually needs is space and proximity in Indio. And occasionally the reverse: booking Indio because it's cheaper, when a couple would have loved being 10 minutes from Palm Springs restaurants every night. Get clear on the trip first.</p>
+<p>The mistake people make is booking based on the name recognition of Palm Springs when what their group needs is space and proximity in Indio. And occasionally the reverse: booking Indio because it's cheaper, when a couple would have loved being 10 minutes from Palm Springs restaurants every night. Get clear on the trip first.</p>
 
 <img src="/blog/images/yes-please-palm-springs.jpg" alt="Yes Please Books storefront in a Palm Springs neighborhood, the kind of discovery that comes from wandering on foot" loading="lazy" width="1400" height="933">
 <p class="image-caption">The walkable neighborhoods in Palm Springs reward wandering. You find places like this just by turning off the main drag.</p>
@@ -229,7 +229,7 @@ relatedPosts:
 <p>About 30 miles, which is typically 30 to 40 minutes without traffic on the I-10. During Coachella or Stagecoach festival days, that drive can stretch to an hour or more in the evenings. It's a short enough distance to day-trip between the two, but long enough that staying in the wrong city can cost you a lot of time over a weekend.</p>
 
 <h3>Is Palm Springs or Indio better for Coachella?</h3>
-<p>Indio is the clear choice for Coachella or Stagecoach. The Empire Polo Club is in Indio, so staying locally means a 5–15 minute drive versus 30–60 minutes from Palm Springs. You save money on rideshares, you can actually go back to the house between afternoon and evening sets, and you avoid the surge pricing nightmare that hits Palm Springs rideshares on festival weekends.</p>
+<p>Indio is the clear choice for Coachella or Stagecoach. The Empire Polo Club is in Indio, so staying locally means a 5–15 minute drive versus 30–60 minutes from Palm Springs. You save money on rideshares, you can go back to the house between afternoon and evening sets, and you avoid the surge pricing nightmare that hits Palm Springs rideshares on festival weekends.</p>
 
 <h3>Is Indio cheaper than Palm Springs for vacation rentals?</h3>
 <p>Generally yes, and significantly so for larger properties. A 3-bedroom with a private pool in Indio typically runs 30–50% less per night than a comparable space in Palm Springs. You're trading walkability and design prestige for space, outdoor room, and value, which is the right trade for most groups.</p>

@@ -45,7 +45,7 @@ layout: blog-post.njk
 
 <p><strong>Comfortable shoes for walking on warm pavement.</strong> Sandals are fine but check the sole thickness. Thin-soled flip flops on 110-degree asphalt is a different experience than you're expecting.</p>
 
-<p><strong>Swimwear you'll actually use.</strong> If you're staying somewhere with a pool, you will be in it. Pack accordingly.</p>
+<p><strong>Swimwear you'll use.</strong> If you're staying somewhere with a pool, you will be in it. Pack accordingly.</p>
 
 <h2>The Pool Is Not a Nice-To-Have</h2>
 

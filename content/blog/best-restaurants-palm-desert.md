@@ -79,7 +79,7 @@ layout: blog-post.njk
 
 <p>The Pink Cabana is inside the Sands Hotel and Spa, a 46-room boutique hotel in Indian Wells. The design references the great tennis and racquet clubs of the 1950s and 60s: rattan furniture, pink walls, outdoor terraces. It doesn't feel like a hotel restaurant.</p>
 
-<p>The food is Mediterranean with Moroccan influence, ingredient-driven and specific. Chef Jason Niederkorn changes the menu around what's in season. The cocktail program leans into wines and spirits from Mediterranean climates and spice-route influences, which reads as unusual but actually pairs well with the food.</p>
+<p>The food is Mediterranean with Moroccan influence, ingredient-driven and specific. Chef Jason Niederkorn changes the menu around what's in season. The cocktail program leans into wines and spirits from Mediterranean climates and spice-route influences, which reads as unusual but pairs well with the food.</p>
 
 <p>Worth going for dinner if you want a room with real character and cooking that takes itself seriously without being precious about it. Reservations at <a href="https://www.instagram.com/sandshotelspa/" target="_blank" rel="noopener">@sandshotelspa</a>.</p>
 

@@ -104,7 +104,7 @@ layout: redirect.njk
 
 <h3>Option 4: A Vacation Rental Designed for Guests</h3>
 
-<p>This is the option that makes the most difference for groups who want to actually enjoy the weekend: properties built, designed, and furnished specifically for guests who come back. You get a real check-in process, stocked supplies, and a pool that functions as your Day 2 recovery strategy.</p>
+<p>This is the option that makes the most difference for groups who want to enjoy the weekend: properties built, designed, and furnished specifically for guests who come back. You get a real check-in process, stocked supplies, and a pool that functions as your Day 2 recovery strategy.</p>
 
 <p>I own one of these. You knew it was coming.</p>
 

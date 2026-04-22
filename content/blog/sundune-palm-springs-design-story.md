@@ -107,7 +107,7 @@ layout: blog-post.njk
 
 <h2>The Rooms: What's Actually There</h2>
 
-<p>The Sundune is a 2-bedroom, 2-bathroom apartment with a balcony that has become central to how guests actually use the space. Two bedrooms. Three king beds total.</p>
+<p>The Sundune is a 2-bedroom, 2-bathroom apartment with a balcony that has become central to how guests use the space. Two bedrooms. Three king beds total.</p>
 
 <p>The primary bedroom is set up with a hotel room feel: two king beds, a designer surfboard mounted above them, an accent arm chair, and an adjustable standing desk with a pool view (palm trees, for remote workers who want a reason to open their laptop without suffering for it).</p>
 

@@ -104,7 +104,7 @@ layout: blog-post.njk
 
 <h3>Thai Hot</h3>
 
-<p>Thai Hot is a Palm Springs institution. The name is honest: you can actually get this food hot, which is rarer than it should be at Thai restaurants in tourist-heavy areas. The pad see ew and larb are both strong. The curry holds up. The room is comfortable without being precious about it. Worth making a reservation for Friday and Saturday evenings because it fills up.</p>
+<p>Thai Hot is a Palm Springs institution. The name is honest: you can get this food hot, which is rarer than it should be at Thai restaurants in tourist-heavy areas. The pad see ew and larb are both strong. The curry holds up. The room is comfortable without being precious about it. Worth making a reservation for Friday and Saturday evenings because it fills up.</p>
 
 <h3>Workshop Kitchen and Bar</h3>
 

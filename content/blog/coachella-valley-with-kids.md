@@ -1,7 +1,7 @@
 ---
 title: "Coachella Valley with Kids: A Practical Family Guide"
 date: 2026-04-21
-metaDescription: "Coachella Valley with kids: what actually works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters."
+metaDescription: "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters."
 ogImage: /blog/images/cozy-cactus-infant-gear.jpg
 heroImage: /blog/images/cozy-cactus-infant-gear.jpg
 heroAlt: "Baby and family gear laid out at Cozy Cactus vacation rental in Indio CA, pack n play stroller and infant supplies"
@@ -16,11 +16,11 @@ keywords:
 articleSection: "Travel Guide"
 property: cozy-cactus
 readTime: "7 min read"
-excerpt: "What actually works when you bring kids to the Coachella Valley: where to stay, what the gear situation looks like, and a few kid-friendly spots worth the drive."
+excerpt: "What works when you bring kids to the Coachella Valley: where to stay, what the gear situation looks like, and a few kid-friendly spots worth the drive."
 layout: blog-post.njk
 ---
 
-<p>I hear from a lot of parents who are nervous about traveling to the Coachella Valley with young kids. The desert sounds harsh. Festival crowds sound like the opposite of a nap schedule. And even when you find a place with a pool, you want to know it'll actually work for your family, not just look good in photos.</p>
+<p>I hear from a lot of parents who are nervous about traveling to the Coachella Valley with young kids. The desert sounds harsh. Festival crowds sound like the opposite of a nap schedule. And even when you find a place with a pool, you want to know it'll work for your family, not just look good in photos.</p>
 
 <p>After hosting families with babies and toddlers for four years at <a href="/cozy-cactus/">The Cozy Cactus</a>, I have some actual answers. Not the "just pack light and relax!" kind. The kind that come from watching a lot of exhausted parents arrive and leave either refreshed or more tired than when they showed up.</p>
 
@@ -56,7 +56,7 @@ layout: blog-post.njk
 <img src="/blog/images/family-closet.jpg" alt="Family vacation rental supply closet at Cozy Cactus Indio CA with pack n play stroller baby gear and travel supplies organized" width="1400" height="933" loading="lazy">
 <p class="image-caption">The family closet. Guests with under-2s typically arrive and say "oh thank god." That's the goal.<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
-<p>The kitchen is stocked like someone actually cooks there: labeled drawers, full-size fridge, everything family-sized. You can make breakfast for a group without staging a scavenger hunt for the spatula.</p>
+<p>The kitchen is stocked like someone cooks there: labeled drawers, full-size fridge, everything family-sized. You can make breakfast for a group without staging a scavenger hunt for the spatula.</p>
 
 <h2>What Kids Actually Love at the Cozy Cactus</h2>
 
@@ -109,7 +109,7 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Coachella Valley with Kids: A Practical Family Guide",
-  "description": "Coachella Valley with kids: what actually works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters.",
+  "description": "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-infant-gear.jpg",
   "datePublished": "2026-04-21",
   "dateModified": "2026-04-21",

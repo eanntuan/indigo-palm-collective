@@ -16,7 +16,7 @@ keywords:
 articleSection: "Festival Guide"
 property: all
 readTime: "6 min read"
-excerpt: "Stagecoach 2027: camping, hotels, or a house 7 minutes from the stage? What actually matters for a festival weekend, from someone who hosts it every year."
+excerpt: "Stagecoach 2027: camping, hotels, or a house 7 minutes from the stage? What matters for a festival weekend, from someone who hosts it every year."
 layout: blog-post.njk
 ---
 
@@ -49,7 +49,7 @@ layout: blog-post.njk
 
 <h2>Vacation Rental: When It Makes Sense</h2>
 
-<p>A vacation rental near the festival grounds is the clearest option for groups of four or more. You get a full kitchen, private outdoor space, and a home base that actually functions as a home base rather than a room you're retreating to between festival sessions.</p>
+<p>A vacation rental near the festival grounds is the clearest option for groups of four or more. You get a full kitchen, private outdoor space, and a home base that functions as a home base rather than a room you're retreating to between festival sessions.</p>
 
 <p>The two variables that matter most for a Stagecoach rental:</p>
 

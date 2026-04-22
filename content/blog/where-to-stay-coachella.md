@@ -25,7 +25,7 @@ layout: blog-post.njk
 <p>I own two vacation rentals in Indio, two miles from the polo grounds. I've talked through this decision with hundreds of guests. Here's the full breakdown of every real option, with honest trade-offs for each.</p>
 
 <img src="/blog/images/coachella-festival-crowd.jpg" alt="Crowd at Coachella Valley Music and Arts Festival with stage lights and thousands of attendees in the desert" width="1400" height="933" loading="lazy">
-<p class="image-caption">The polo grounds at peak Saturday night. Where you sleep shapes how much of this you actually enjoy.</p>
+<p class="image-caption">The polo grounds at peak Saturday night. Where you sleep shapes how much of this you enjoy.</p>
 
 <h2>The Location Question Comes First</h2>
 
@@ -86,7 +86,7 @@ layout: blog-post.njk
 
 <p>The catch: good properties in Indian Palms book 6-12 months in advance for Coachella weekends. If you're reading this in January for an April festival, availability is limited. For 2026-specific availability and options, the <a href="/blog/where-to-stay-coachella-2026/">where to stay for Coachella 2026</a> post covers what's still findable close-in.</p>
 
-<p>The <a href="/blog/indian-palms-vacation-rental/">Indian Palms vacation rental guide</a> has more detail on what the neighborhood is like, how the walk to the grounds actually works, and what to look for when booking in this community specifically.</p>
+<p>The <a href="/blog/indian-palms-vacation-rental/">Indian Palms vacation rental guide</a> has more detail on what the neighborhood is like, how the walk to the grounds works, and what to look for when booking in this community specifically.</p>
 
 <img src="/blog/images/indian-palms-front-entrance.jpg" alt="Indian Palms Country Club entrance in Indio California with palm trees and desert landscaping" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indian Palms Country Club. A gated neighborhood 2.5 miles from the polo grounds. The walk-to-Coachella option.</p>
@@ -112,7 +112,7 @@ layout: blog-post.njk
 
 <p><strong>Solo traveler or couple with a generous budget:</strong> On-site camping for the full experience, or a Palm Springs hotel if you want the city as part of the trip. A well-rated hotel or rental in Palm Springs with shuttle passes is a comfortable setup.</p>
 
-<p><strong>Group of 4-8 prioritizing value and convenience:</strong> A vacation rental in Indian Palms is the strongest option. Per-person cost is lower than hotels, proximity eliminates transportation costs, and a private pool makes the afternoon recovery hours actually good. <a href="/cozy-cactus/">The Cozy Cactus</a> sleeps 8 in Indio, 15 minutes from the grounds by car or 40 minutes on foot. <a href="/terra-luz/">Terra Luz</a>, our second Indio property, also sleeps 8 with a private saltwater pool.</p>
+<p><strong>Group of 4-8 prioritizing value and convenience:</strong> A vacation rental in Indian Palms is the strongest option. Per-person cost is lower than hotels, proximity eliminates transportation costs, and a private pool makes the afternoon recovery hours good. <a href="/cozy-cactus/">The Cozy Cactus</a> sleeps 8 in Indio, 15 minutes from the grounds by car or 40 minutes on foot. <a href="/terra-luz/">Terra Luz</a>, our second Indio property, also sleeps 8 with a private saltwater pool.</p>
 
 <p><strong>Group with mixed energy levels:</strong> The flexibility of a private home matters here. Half the group can leave at 3pm to rest. Half can stay through the headliner. Everyone meets back at the house on their own schedule without coordinating shared transportation.</p>
 
@@ -125,7 +125,7 @@ layout: blog-post.njk
 
 <p>For any accommodation near Coachella, earlier is better. The Indian Palms rentals with good reviews are typically fully booked by November or December for the following April. Palm Springs hotels surge price but maintain availability longer, right up until the festival.</p>
 
-<p>If you're planning now, pick your accommodation type before you buy tickets. The type determines the budget, and the budget determines whether the trip actually works.</p>
+<p>If you're planning now, pick your accommodation type before you buy tickets. The type determines the budget, and the budget determines whether the trip works.</p>
 
 <script type="application/ld+json">
 {

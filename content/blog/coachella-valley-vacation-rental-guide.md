@@ -2,7 +2,7 @@
 title: "5 Things to Check in a Coachella Valley Rental"
 date: 2026-01-06
 dateModified: 2026-04-15
-metaDescription: "From pool access to honest reviews to a host who actually responds. Five things worth checking before you book a Coachella Valley vacation rental."
+metaDescription: "From pool access to honest reviews to a host who responds. Five things worth checking before you book a Coachella Valley vacation rental."
 ogImage: /blog/images/cozy-cactus-pool-backyard.jpg
 heroImage: /blog/images/cozy-cactus-pool-backyard.jpg
 heroAlt: "Private pool and backyard at a Coachella Valley vacation rental in Indio California with lounge chairs and palm trees"
@@ -16,7 +16,7 @@ keywords:
 articleSection: "Travel Guide"
 property: all
 readTime: "7 min read"
-excerpt: "From pool access to honest reviews to a host who actually responds. Five things worth checking before you book a Coachella Valley vacation rental."
+excerpt: "From pool access to honest reviews to a host who responds. Five things worth checking before you book a Coachella Valley vacation rental."
 layout: blog-post.njk
 ---
 
@@ -94,7 +94,7 @@ layout: blog-post.njk
 
 <h2>Putting It Together</h2>
 
-<p>The best Coachella Valley rental for your trip is the one that's private-pool (heated), close to what you're actually doing, priced honestly when you run the full fee calculation, reviewed consistently over time rather than seasonally, and hosted by someone who answers questions in under a few hours.</p>
+<p>The best Coachella Valley rental for your trip is the one that's private-pool (heated), close to what you're doing, priced honestly when you run the full fee calculation, reviewed consistently over time rather than seasonally, and hosted by someone who answers questions in under a few hours.</p>
 
 <p>The five things above are what separate a rental that works from one that looked great in the listing. A little research before you book saves a lot of frustration once you're there.</p>
 
@@ -107,7 +107,7 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "5 Things to Check in a Coachella Valley Rental",
-  "description": "From pool access to honest reviews to a host who actually responds. Five things worth checking before you book a Coachella Valley vacation rental.",
+  "description": "From pool access to honest reviews to a host who responds. Five things worth checking before you book a Coachella Valley vacation rental.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-pool-backyard.jpg",
   "datePublished": "2026-01-06",
   "dateModified": "2026-04-15",

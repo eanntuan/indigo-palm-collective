@@ -94,7 +94,7 @@ layout: blog-post.njk
 <img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private pool and hot tub backyard at Cozy Cactus vacation rental in Indio, perfect for Stagecoach festival groups" width="1400" height="933" loading="lazy">
 <p class="image-caption">A private pool matters more than you think. After three days of dust and sun, a cold pool at the end of the night is genuinely the best thing.</p>
 
-<p>Stagecoach runs late April, which means daytime temps in Indio regularly hit 95-105 degrees Fahrenheit. This is not an exaggeration and it's not a complaint, it's just the reality of the desert in late April. A rental with a private pool shifts from "nice to have" to "actually necessary for your group to enjoy the week."</p>
+<p>Stagecoach runs late April, which means daytime temps in Indio regularly hit 95-105 degrees Fahrenheit. This is not an exaggeration and it's not a complaint, it's just the reality of the desert in late April. A rental with a private pool shifts from "nice to have" to "essential for your group to enjoy the week."</p>
 
 <p>A few things worth prioritizing:</p>
 
@@ -128,7 +128,7 @@ layout: blog-post.njk
 
 <h2>What to Know About the Drive</h2>
 
-<p>If you're staying in Indio, here's how the commute actually works. The polo grounds are on Monroe Street. Depending on which part of Indio you're in, you're looking at one or two turns and a straight shot. No freeways. Rideshares are available but surge after the headliner, so expect 2-3x normal rates in that window.</p>
+<p>If you're staying in Indio, here's how the commute works. The polo grounds are on Monroe Street. Depending on which part of Indio you're in, you're looking at one or two turns and a straight shot. No freeways. Rideshares are available but surge after the headliner, so expect 2-3x normal rates in that window.</p>
 
 <p>If you're staying further out, plan your exits. Leaving 20 minutes before the headliner ends means light traffic. Leaving after the encore means sitting in a parking lot for 45 minutes before you even get on the road. Neither is wrong, just build it into your plan.</p>
 

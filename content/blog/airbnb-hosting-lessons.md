@@ -121,10 +121,10 @@ layout: blog-post.njk
 
 <p>Your listing photo shows the living room styled perfectly. Your cleaning crew leaves the couch cushions slightly crooked. The gap between photo and reality is where complaints are born.</p>
 
-<p>We started photographing what guests actually find on arrival. Same furniture, same art, but nothing staged at its most photogenic. Guests who find the house looking exactly like the photos have one less thing to feel deceived about. Closing expectation gaps is free.</p>
+<p>We started photographing what guests find on arrival. Same furniture, same art, but nothing staged at its most photogenic. Guests who find the house looking exactly like the photos have one less thing to feel deceived about. Closing expectation gaps is free.</p>
 
 <img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with lounge chairs and desert landscaping" width="1400" height="933" loading="lazy">
-<p class="image-caption">The pool and backyard photographed as guests actually find them, not styled within an inch of its life.</p>
+<p class="image-caption">The pool and backyard photographed as guests find them, not styled within an inch of its life.</p>
 
 <h2>Respond to Every Bad Review Within 24 Hours</h2>
 
@@ -153,7 +153,7 @@ layout: blog-post.njk
 
 <h2>FAQ: Vacation Rental Hosting</h2>
 
-<h3>What vacation rental hosting tips actually move the needle on Airbnb reviews?</h3>
+<h3>What vacation rental hosting tips move the needle on Airbnb reviews?</h3>
 <p>Response time matters more than most hosts realize. Guests who hear back fast, even at odd hours, feel taken care of, and that shows in reviews. Beyond that: stocked consumables, pre-set temperatures with clear instructions, and unexpected amenities get called out in reviews far more often than expensive furniture does.</p>
 
 <h3>How do you respond to a bad Airbnb review?</h3>

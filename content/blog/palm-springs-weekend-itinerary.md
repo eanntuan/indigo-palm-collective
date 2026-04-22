@@ -102,7 +102,7 @@ layout: blog-post.njk
 <p>The residential streets south and east of downtown are the main event. Vista Las Palmas, the Movie Colony, and Old Las Palmas have the densest concentration of midcentury modern homes worth seeing. The streetscape is one of the best things you can do in Palm Springs on foot, and it's free. The <a href="https://www.psarchitecturalfoundation.org/" target="_blank" rel="noopener">Palm Springs Architectural Foundation</a> runs guided tours if you want names and histories attached to specific houses. Budget two hours minimum.</p>
 
 <img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Midcentury modern residential street in Palm Springs with flat-roofed homes and San Jacinto Mountains visible at the end of the block" width="1400" height="933" loading="lazy">
-<p class="image-caption">The residential neighborhoods look like this. Slow down and actually look at the houses.</p>
+<p class="image-caption">The residential neighborhoods look like this. Slow down and look at the houses.</p>
 
 <h3>Afternoon: Murray Canyon or Tahquitz Creek Trail</h3>
 

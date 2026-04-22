@@ -25,7 +25,7 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Palm Springs Bachelorette Party: Real Guide",
-  "description": "Palm Springs bachelorette trips work well because the valley has pools, restaurants, spas, and a 2-hour drive from LA. Here's what to actually book and skip.",
+  "description": "Palm Springs bachelorette trips work well because the valley has pools, restaurants, spas, and a 2-hour drive from LA. Here's what to book and skip.",
   "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.jpg",
   "datePublished": "2026-05-05",
   "dateModified": "2026-05-05",
@@ -149,7 +149,7 @@ layout: blog-post.njk
 <ul>
   <li><strong>Party buses:</strong> The cost-per-hour adds up fast and the valley isn't set up for it the way Vegas or Miami are. Rideshares or a designated driver usually work better here.</li>
   <li><strong>Casinos:</strong> Fantasy Springs and Agua Caliente are both close, but they're large resort casinos with noise restrictions and a very different vibe than what most bachelorette groups are looking for. Fine if your group explicitly wants it, otherwise skip.</li>
-  <li><strong>Over-scheduling:</strong> The pool is the activity. Every extra thing you add is a commitment that competes with the thing people actually want to do. Two scheduled activities over the whole weekend is plenty.</li>
+  <li><strong>Over-scheduling:</strong> The pool is the activity. Every extra thing you add is a commitment that competes with the thing people want to do. Two scheduled activities over the whole weekend is plenty.</li>
 </ul>
 
 <h2>Best Time to Go</h2>

@@ -16,7 +16,7 @@ keywords:
 articleSection: "Travel Guide"
 property: ps-retreat
 readTime: "6 min read"
-excerpt: "Ten minutes in a rotating tram car and you go from 95-degree desert to pine forest and snow. Here's what to know about tickets, timing, and what's actually up there."
+excerpt: "Ten minutes in a rotating tram car and you go from 95-degree desert to pine forest and snow. Here's what to know about tickets, timing, and what's up there."
 layout: blog-post.njk
 ---
 
