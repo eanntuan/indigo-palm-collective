@@ -2,9 +2,9 @@
 title: "Buying My First Vacation Rental in Indio"
 date: 2026-03-03
 metaDescription: "How I bought my first vacation rental in Indio, CA on Easter 2022 with zero experience, a line of credit, and way too many Facebook Marketplace trips."
-ogImage: /blog/images/car-camping.jpeg
-heroImage: /blog/images/car-camping.jpeg
-heroAlt: "2005 Honda Element loaded for camping, the car that started The Cozy Cactus vacation rental in Indio, CA"
+ogImage: /blog/images/cozy-cactus-origin-hero.jpg
+heroImage: /blog/images/cozy-cactus-origin-hero.jpg
+heroAlt: "The Cozy Cactus vacation rental in Indio California, the property that started Indigo Palm Collective"
 keywords:
   - vacation rental Indio CA
   - first Airbnb host story
