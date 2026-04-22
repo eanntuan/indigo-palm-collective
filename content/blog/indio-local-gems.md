@@ -1,7 +1,7 @@
 ---
 title: 10 Indio Gems Only Locals Know About
 date: 2026-03-10
-metaDescription: "Skip the tourist traps. Date shakes at L&G, smash burgers at Papa Headz, and a vinyl lounge nobody tells you about. The real Indio, CA."
+metaDescription: "Skip the tourist traps. Date shakes at L&G, smash burgers at Papa Headz, and a vinyl listening lounge most visitors drive right past. The real Indio, CA."
 keywords:
   - Indio CA
   - Coachella Valley
@@ -86,7 +86,7 @@ layout: blog-post.njk
     Coachella Valley History Museum: Free and Worth the Hour
 </div>
 
-<p>Free admission. Air conditioning (!!). Real artifacts from when this whole valley was a scrubby agricultural frontier. The Coachella Valley History Museum is one of those places that sounds like a dutiful tourist obligation and ends up being the thing you tell people about. The 1926 Cabazon School building alone is worth a photo. They have rotating exhibits on everything from Agua Caliente tribal history to the construction of the All-American Canal. It's the kind of place you'll spend 45 minutes in, planning to stay 15.</p>
+<p>Free admission. Air conditioning (!!). Real artifacts from when this whole valley was an agricultural frontier. The Coachella Valley History Museum is one of those places that sounds like a dutiful tourist obligation and ends up being the thing you tell people about. The 1926 Cabazon School building alone is worth a photo. They have rotating exhibits on everything from Agua Caliente tribal history to the construction of the All-American Canal. It's the kind of place you'll spend 45 minutes in, planning to stay 15.</p>
 
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=82616+Miles+Ave,+Indio,+CA+92201" target="_blank" rel="noopener">82-616 Miles Ave, Indio, CA 92201 ↗</a></p>
@@ -164,10 +164,10 @@ layout: blog-post.njk
     The Salton Sea: An Acquired Taste Worth Acquiring
 </div>
 
-<p>About 30 minutes south of Indio, the Salton Sea is either the most fascinating place in California or the most unsettling one, depending on your disposition. It's a massive inland sea that shouldn't exist (it was accidentally created in 1905 by an irrigation canal breach and never stopped), smells vaguely sulfuric near the shoreline, and has a strange post-apocalyptic beauty that photographers and artists have been chasing for decades. Bombay Beach, a half-abandoned town on the eastern shore, is one of the weirdest art installations you'll ever stumble into. Don't swim. Do stay for sunset. Bring snacks and low expectations.</p>
+<p>About 30 minutes south of Indio, the Salton Sea is either the most fascinating place in California or the most unsettling one, depending on your disposition. It's a massive inland sea that shouldn't exist (it was accidentally created in 1905 by an irrigation canal breach and never stopped), smells vaguely sulfuric near the shoreline, and has a strange post-apocalyptic beauty that photographers and artists have been chasing for decades. Bombay Beach, a half-abandoned town on the eastern shore, is one of the weirdest art installations you'll ever stumble into. Don't swim. Do stay for sunset. Bring water, bring snacks, and go with genuine curiosity rather than a fixed idea of what a beautiful place is supposed to look like.</p>
 
 <img src="/blog/images/salton-sea.webp" alt="Aerial view of the Salton Sea shoreline with bulldozers on cracked earth and bright blue water, Southern California" loading="lazy" decoding="async" width="800" height="533">
-<p class="image-caption">Accidentally created, accidentally beautiful. The Salton Sea earns its weirdness.</p>
+<p class="image-caption">Accidentally created in 1905. The Salton Sea has a strange, earned beauty that rewards the people who show up for it.</p>
 
 <div class="gem-heading">
     <span class="gem-number">10</span>

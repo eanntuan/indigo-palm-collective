@@ -52,7 +52,7 @@ layout: blog-post.njk
 
 <h2>The tchotchke problem.</h2>
 
-<p>Here's what nobody tells you about furnishing your first rental by yourself: at some point, you have too much stuff and none of it talks to each other.</p>
+<p>At some point, you have too much stuff and none of it talks to each other.</p>
 
 <p>I had West Elm pieces next to Facebook Marketplace finds next to TJ Maxx wall art next to a throw pillow I loved in isolation and couldn't figure out where to put. I had options for every surface and no clarity about which option was right. The house was starting to feel... busy. Scattered. Like a very enthusiastic person had been set loose in a home goods store with a credit card and no plan. (Accurate.)</p>
 

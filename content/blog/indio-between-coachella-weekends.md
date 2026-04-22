@@ -101,7 +101,7 @@ layout: blog-post.njk
 
 <p>The date shake is the reason you go. It's thick, it's sweet without being cloying, and it tastes exactly like the desert should taste. The Coachella Valley Independent has given Shields the Best Date Shake award in their readers' poll every single year for a decade. That's not a streak you break accidentally.</p>
 
-<p>While you're there: the cafe does date-forward food (dates stuffed with cheese and prosciutto, date pancakes, date burger) and the gift shop sells things you will use. The 17-acre botanical garden and date grove is worth walking through. And yes, they still screen the short film "The Romance and Sex Life of the Date," narrated by Floyd Shields himself and largely unchanged since the 1950s. You should watch it. It's more interesting than it sounds, which is admittedly a low bar, but still.</p>
+<p>While you're there: the cafe does date-forward food (dates stuffed with cheese and prosciutto, date pancakes, date burger) and the gift shop sells things you will use. The 17-acre botanical garden and date grove is worth walking through. And yes, they still screen the short film "The Romance and Sex Life of the Date," narrated by Floyd Shields himself and largely unchanged since the 1950s. You should watch it. Floyd is deadpan and earnest in equal measure, and the whole thing is genuinely charming.</p>
 
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=80225+Highway+111,+Indio,+CA" target="_blank" rel="noopener">80225 Highway 111, Indio, CA ↗</a></p>
@@ -141,7 +141,7 @@ layout: blog-post.njk
 
 <h2>One More: Rosemary HiFi (The Indio You Didn't Know Existed)</h2>
 
-<p>Somewhere between the date shake and the weird sea, squeeze in an evening at Rosemary HiFi. It's in Old Town Indio, it's the Coachella Valley's first vinyl listening lounge, and there is nothing else like it in the desert.</p>
+<p>Somewhere between the date shake and the Salton Sea, squeeze in an evening at Rosemary HiFi. It's in Old Town Indio, it's the Coachella Valley's first vinyl listening lounge, and there is nothing else like it in the desert.</p>
 
 <p>The setup: a custom walnut bar where the usual backlit liquor display has been replaced by the owner's record collection, played through 1960s JBL speakers. Las Palmas Brewing beers on tap. Natural wines, earthy and sulfate-free, served chilled. The kind of sound system that makes you stop mid-conversation to listen to whatever is playing, which is either rude or the entire point depending on how you think about it.</p>
 
@@ -163,7 +163,7 @@ layout: blog-post.njk
 
 <p>The in-between week exists in a strange liminal state that most Coachella coverage completely ignores. Every guide is about how to survive the festival itself. Nobody writes about the five days where you're living in the Coachella Valley like a person instead of a festival attendee.</p>
 
-<p>Those five days are good if you let them be. Eat the tamale. Drive to the weird sea. Watch a short film about date sex from 1950. Have a honey lavender latte in the morning and a record play through vintage speakers in the evening. Sleep in. Float in the pool.</p>
+<p>Those five days are good if you let them be. Eat the tamale. Drive to the Salton Sea. Watch a short film about date sex from 1950. Have a honey lavender latte in the morning and a record play through vintage speakers in the evening. Sleep in. Float in the pool.</p>
 
 <p>Weekend 2 will still be there on the 18th. It always is.</p>
 

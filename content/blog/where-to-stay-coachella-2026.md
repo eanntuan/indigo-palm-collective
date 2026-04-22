@@ -67,7 +67,7 @@ layout: redirect.njk
 }
 </script>
 
-<p>You're going to Coachella. Now comes the part nobody warns you about: finding a place to stay that doesn't destroy your budget, your sleep, or your will to attend Day 3.</p>
+<p>You're going to Coachella. Now comes the part that takes more planning than most people expect: finding a place to stay that fits your budget, your sleep, and your energy for all three days.</p>
 
 <p>I own vacation rentals in Indio, two minutes from the polo grounds. I've watched this cycle play out every April. Here's the breakdown. No affiliate codes. No sponsored posts. Just what works.</p>
 
@@ -80,9 +80,9 @@ layout: redirect.njk
 
 <p><strong>The pitch:</strong> You're RIGHT THERE. Walk to the stages. Full immersion.</p>
 
-<p><strong>The reality:</strong> You're sleeping in 85-degree heat on dirt. The showers have a line. You'll sleep maybe four hours a night.</p>
+<p><strong>The reality:</strong> It's a genuine desert camping experience. Temperatures stay warm overnight, facilities are shared, and sleep is light. That's the trade-off for total immersion.</p>
 
-<p><strong>Who it's for:</strong> People in their early 20s who run on adrenaline. If that's you, do it, it's a rite of passage. But go in knowing what it is.</p>
+<p><strong>Who it's for:</strong> Anyone who wants to be fully inside the festival experience from morning to midnight. It's a rite of passage for a reason. Go in knowing what you're choosing and you'll probably love it.</p>
 
 <p><strong>Cost:</strong> ~$125-150 per person for car camping. Sounds cheap until you factor in the gear, the food situation, and the Uber you'll take out of there on Day 2 to get real food.</p>
 
@@ -94,17 +94,17 @@ layout: redirect.njk
 
 <p><strong>Cost:</strong> Hotels triple or quadruple their rates during Coachella weekend. A Marriott that costs $120 on a random Tuesday will charge $450. Budget $300-600/night for something decent. Then add Uber surge: $60-100 per ride from Palm Springs to the polo grounds. Over three days, that's an extra $400-600.</p>
 
-<h3>Option 3: The Random Airbnb Scramble</h3>
+<h3>Option 3: A Vacation Rental Near the Grounds (Not Purpose-Built)</h3>
 
 <p><strong>The pitch:</strong> A whole house! Split with friends! Cheaper per person!</p>
 
-<p><strong>The reality:</strong> Most listings that pop up for Coachella weekend are people renting out their primary homes for festival cash. You'll notice: mismatched furniture, a note on the counter about the espresso machine you're not allowed to use.</p>
+<p><strong>The reality:</strong> Many listings available during Coachella weekend are primary homes that owners rent out for the festival. The quality varies a lot. The good ones book months in advance.</p>
 
-<p><strong>Cost:</strong> $250-500/night for a basic 3-bedroom. The good ones book months in advance. What's left by March is usually left for a reason.</p>
+<p><strong>Cost:</strong> $250-500/night for a basic 3-bedroom. If you're looking in March or April, availability is limited and what's left tends to be either a great cancellation find or a compromise on quality. Worth searching, but read reviews carefully and verify the basics: private vs. community pool, actual bed count, distance to the grounds.</p>
 
 <h3>Option 4: A Vacation Rental Designed for Guests</h3>
 
-<p>This is the category most people don't know exists: properties built, designed, and furnished specifically for guests who come back. You get a real check-in process, stocked supplies, and a pool that functions as your Day 2 recovery strategy.</p>
+<p>This is the option that makes the most difference for groups who want to actually enjoy the weekend: properties built, designed, and furnished specifically for guests who come back. You get a real check-in process, stocked supplies, and a pool that functions as your Day 2 recovery strategy.</p>
 
 <p>I own one of these. You knew it was coming.</p>
 
@@ -189,7 +189,7 @@ layout: redirect.njk
 
 <h2>The Bottom Line</h2>
 
-<p>There's no wrong way to do Coachella. (There are a few wrong ways. Don't sleep in your car in a Walmart parking lot. Someone does this every year.)</p>
+<p>There's no single right way to do Coachella. The accommodation that works is the one that fits how you want to experience the festival.</p>
 
 <p>Proximity matters. Comfort matters. A pool matters more than you think it does on a Sunday in the desert when you have five hours until the headliner and you're running on festival tacos and adrenaline.</p>
 

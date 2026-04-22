@@ -71,9 +71,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>Palm Springs vacation rental design usually goes one of two directions: full mid-century modern revival, with the Eames chairs and the terrazzo and the aggressive attempt to look like a 1962 movie set. Or generic desert boho, with the macrame and the cactus prints and the "Live Laugh Love" vibes hidden behind a linen curtain.</p>
+<p>When we started working on The Sundune, the question wasn't "what style works in Palm Springs?" There are plenty of answers to that. The question was what would make this particular apartment feel genuinely worth coming back to.</p>
 
-<p>The Sundune is neither. And getting to that took more work than I expected.</p>
+<p>Getting to that answer took more work than I expected.</p>
 
 <h2>Why "The Sundune"</h2>
 
@@ -86,13 +86,13 @@ layout: blog-post.njk
 <img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Mid-century modern neighborhood in Palm Springs with palm trees, mountain backdrop, and clean geometric architecture" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The streets around The Sundune. Palm Springs architecture is its own category.</p>
 
-<h2>What We Were Deliberately Not Doing</h2>
+<h2>Finding the Right Identity</h2>
 
-<p>Before I get into what the design is, let me be clear about what it isn't. No literal beach house. Not a stereotypical Southwest desert stay. No crisp stark white walls that photograph well but feel cold in person. No generic beach prints. No obvious cactus motifs.</p>
+<p>The brief Dawn and I landed on was specific: a space that feels sun-faded and collected, like it has been lived in slowly over time. Not styled within an inch of its life. Nothing primary, loud, or oversaturated. Warm walls, layered textures, muted tones that sit at the intersection of the California coast and the desert.</p>
 
-<p>Also: nothing primary, loud, or oversaturated. The Coachella Valley already has plenty of that. We wanted something that felt like it had been lived in slowly over time, sun-faded and collected, not purchased in a bundle from one online store.</p>
+<p>That identity meant surf culture, not beach house. Desert warmth, not Southwestern kitsch. The distinction matters because it changes every decision downstream, from the palette to the materials to what goes on the walls.</p>
 
-<p>That's a harder brief to execute than "pick some turquoise and call it mid-century." It requires restraint.</p>
+<p>It's a harder brief to execute than "pick some turquoise and call it mid-century." It requires restraint, and Dawn is very good at restraint.</p>
 
 <h2>The Palette: Where Desert Meets Coast</h2>
 
@@ -176,4 +176,4 @@ layout: blog-post.njk
 <p>Yes. The primary bedroom has an adjustable standing desk positioned to look out at the pool and palm trees. The kitchen, dining, and living areas flow together so you can shift workspaces throughout the day. Fast WiFi comes standard.</p>
 
 <h3>What makes The Sundune different from other Palm Springs vacation rentals?</h3>
-<p>Most Palm Springs vacation rentals lean into mid-century modern or generic desert boho. The Sundune sits outside both: a surf-culture meets desert-warmth identity, specific color palette, and design choices made by a branding team, not assembled from a catalog. It's meant to function as a basecamp you're genuinely happy to come back to, not just a place to sleep.</p>
+<p>The Sundune was built around a specific identity: surf culture meets desert warmth. The color palette, materials, and art direction all come from that brief. Dawn at The Olive Jar drove the design, so every room has a point of view. It functions as a basecamp you're genuinely happy to come back to at the end of the day.</p>

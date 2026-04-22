@@ -106,7 +106,7 @@ layout: blog-post.njk
 
 <p>Guests either love the default thermostat setting or they hate it. We had a stretch where three reviews mentioned the house being too hot and two mentioned it being too cold, same setting each time. We landed on 72 degrees as the starting point with clear written instructions that it's easy to adjust. The reviews about temperature stopped almost immediately.</p>
 
-<p>Instructions matter as much as the setting. Guests who know they're in control don't complain even if the default isn't perfect. Guests who can't figure out the thermostat blame the host.</p>
+<p>Instructions matter as much as the setting. When guests know they're in control and can adjust easily, the default stops being a friction point. Clear instructions solve the problem before it starts.</p>
 
 <h2>The Putting Green Was the Best ROI We Ever Made</h2>
 

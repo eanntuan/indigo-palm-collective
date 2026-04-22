@@ -96,11 +96,11 @@ layout: blog-post.njk
 
 <p>The best Coachella Valley rental for your trip is the one that's private-pool (heated), close to what you're actually doing, priced honestly when you run the full fee calculation, reviewed consistently over time rather than seasonally, and hosted by someone who answers questions in under a few hours.</p>
 
-<p>Most people book on the nightly rate and the hero photo. The five things above are the ones that determine whether you're booking the same property that photo shows or a compromise version of it.</p>
+<p>The five things above are what separate a rental that works from one that looked great in the listing. A little research before you book saves a lot of frustration once you're there.</p>
 
 <p>If you're deciding between Indio and Palm Springs as a base, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> covers the trade-offs in detail, including what each city offers beyond just proximity to Coachella.</p>
 
-<p>If you're planning a stay in Indio, both <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> were built with all five of these checkboxes in mind from the start.</p>
+<p>If you're planning a stay in Indio, we'd love to have you. <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> were both built with these considerations at the center, and either one is a good starting point for your search.</p>
 
 <script type="application/ld+json">
 {

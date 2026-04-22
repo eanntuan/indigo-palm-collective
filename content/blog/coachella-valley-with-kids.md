@@ -16,11 +16,11 @@ keywords:
 articleSection: "Travel Guide"
 property: cozy-cactus
 readTime: "7 min read"
-excerpt: "What nobody tells you about bringing kids to the Coachella Valley: where to stay, what the gear situation actually looks like, and a few kid-friendly spots that aren't just 'the pool.'"
+excerpt: "What actually works when you bring kids to the Coachella Valley: where to stay, what the gear situation looks like, and a few kid-friendly spots worth the drive."
 layout: blog-post.njk
 ---
 
-<p>I hear from a lot of parents who are nervous about traveling to the Coachella Valley with young kids. The desert sounds harsh. Festival crowds sound like the opposite of a nap schedule. And every Airbnb listing photo shows a beautiful pool that nobody mentions is 90 degrees by noon.</p>
+<p>I hear from a lot of parents who are nervous about traveling to the Coachella Valley with young kids. The desert sounds harsh. Festival crowds sound like the opposite of a nap schedule. And even when you find a place with a pool, you want to know it'll actually work for your family, not just look good in photos.</p>
 
 <p>After hosting families with babies and toddlers for four years at <a href="/cozy-cactus/">The Cozy Cactus</a>, I have some actual answers. Not the "just pack light and relax!" kind. The kind that come from watching a lot of exhausted parents arrive and leave either refreshed or more tired than when they showed up.</p>
 
@@ -78,7 +78,7 @@ layout: blog-post.njk
 
 <p><strong>Shields Date Garden (Indio, 5 min):</strong> The on-site museum about date cultivation is surprisingly good with kids. The date shake is mandatory. Get two.</p>
 
-<p><strong>Coachella Valley Preserve (Thousand Palms, 20 min):</strong> Wild palm oases fed by the San Andreas Fault. The McCallum Trail is easy, about 3 miles, with enough visual weirdness to hold a kid's attention. Free admission. Go in the morning before it heats up.</p>
+<p><strong>Coachella Valley Preserve (Thousand Palms, 20 min):</strong> Wild palm oases fed by the San Andreas Fault. The McCallum Trail is easy, about 3 miles, and genuinely arresting for kids: fan palms growing wild out of the desert floor, fed by fault water underground. Free admission. Go in the morning before it heats up.</p>
 
 <p><strong>Joshua Tree National Park (45 min):</strong> The Cholla Cactus Garden near the south entrance is 10 minutes from the park gate and requires almost no hiking. Kids love the alien landscape. Go at 7am or late afternoon — midday heat is not for small people.</p>
 

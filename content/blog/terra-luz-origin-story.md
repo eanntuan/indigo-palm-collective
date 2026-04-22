@@ -63,7 +63,7 @@ layout: blog-post.njk
 
 <p>We didn't start out as desert people. But something about this valley, the raw landscape, the festivals, the way the mountains frame every sunset, just grabbed us.</p>
 
-<p><strong>Palm Springs</strong> is iconic, sure. But we landed in <strong>Indio</strong> because it felt more honest. Less scene, more substance. You get all the desert beauty without the performative brunch lines. You're minutes from Coachella and Stagecoach, 30 minutes from Palm Springs when you want that energy, and 45 minutes from Joshua Tree when you need total quiet.</p>
+<p><strong>Palm Springs</strong> is iconic. But we landed in <strong>Indio</strong> because it felt more honest. The desert beauty is all here, and the pace is a little easier. You're minutes from Coachella and Stagecoach, 30 minutes from Palm Springs when you want that energy, and 45 minutes from Joshua Tree when you need total quiet.</p>
 
 <p>Indio also has an emerging food scene that doesn't get enough credit. Papa Headz for smash burgers. <a href="/blog/indio-local-gems/">Everbloom for matcha</a> that rivals anything in LA. L&amp;G Desert Store where you can buy fresh tamales and Medjool dates grown a few miles away.</p>
 
@@ -76,7 +76,7 @@ layout: blog-post.njk
 
 <p>Terra Luz is a vibrant Indio cabana retreat blending Old Havana character and desert warmth, with a one-of-a-kind, color-drenched pool and patio made for slow, sun-soaked days.</p>
 
-<p>There are a lot of vacation rentals out there. Many are beautiful. Many are well-equipped. But most feel like staged homes, designed to photograph well, not to <em>live</em> well. Terra Luz is the opposite.</p>
+<p>Terra Luz was designed to live in. Every choice was made with that in mind.</p>
 
 <ul>
     <li>The kitchen nook is a full moment: terracotta walls, a round wood table, rattan chairs, a capiz shell pendant overhead, and a sage credenza lined with Cuban and Latin art. You will eat breakfast here every morning and not want to leave.</li>
@@ -92,7 +92,7 @@ layout: blog-post.njk
 
 <p>We kept the bones of what made this house special: the open living space, the massive patio, the primary bedroom with its own fireplace and soaking tub. But we deepened the identity.</p>
 
-<p>Gone are the generic boho touches. In came Sunbaked Terracotta on every outdoor surface, a Kahlo Blue pool that stops you in your tracks, natural rattan and woven textures that feel collected not bought in bulk, Cuban and Latin cultural details woven throughout, and a wabi-sabi warmth where patina is good and perfectly styled is boring.</p>
+<p>What replaced it: Sunbaked Terracotta on every outdoor surface, a Kahlo Blue pool that stops you in your tracks, natural rattan and woven textures that feel collected over time, Cuban and Latin cultural details woven throughout, and a wabi-sabi warmth where patina is welcome and lived-in is the point.</p>
 
 <h2>Who This Place Is For</h2>
 

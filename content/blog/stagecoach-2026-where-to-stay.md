@@ -121,10 +121,10 @@ layout: blog-post.njk
 
 <p>Stagecoach offers on-site camping, and a segment of the crowd does the full camping weekend. The experience is genuinely different: you walk out of your tent and you're already there, no commute, full immersion. The downside is that desert camping in late April in Indio means sleeping in serious heat, sharing bathrooms with a few thousand other people, and no pool.</p>
 
-<p>For a first Stagecoach, I'd generally recommend a rental over camping unless you know you want the full festival-grounds experience. The ability to leave for a few hours in the afternoon, take a real shower, swim, and come back refreshed changes how you feel by day 3.</p>
+<p>For a first Stagecoach, I'd generally recommend a rental over camping unless you're drawn to that total-immersion experience and know what you're signing up for. The ability to step away in the afternoon, take a real shower, cool off in the pool, and come back to the grounds refreshed changes how you feel by day 3.</p>
 
 <img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at night at Cozy Cactus vacation rental in Indio California, festival week accommodation" width="1920" height="1281" loading="lazy">
-<p class="image-caption">The hot tub hits differently at midnight after a full day at the festival. It's not glamorous, it's just necessary.</p>
+<p class="image-caption">The hot tub at midnight after a full day at the festival. After three days of sun and dust, it earns its place.</p>
 
 <h2>What to Know About the Drive</h2>
 
