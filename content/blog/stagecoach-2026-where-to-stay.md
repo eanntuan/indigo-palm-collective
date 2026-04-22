@@ -1,6 +1,6 @@
 ---
 title: "Stagecoach 2026: Where to Stay Near Indio"
-date: 2026-04-28
+date: 2026-04-10
 metaDescription: "Stagecoach 2026 is April 25-27 in Indio. Here's the honest guide to where to stay, how far is too far, and what to know about the drive home."
 ogImage: /blog/images/cozy-cactus-aerial.jpg
 heroImage: /blog/images/cozy-cactus-aerial.jpg
@@ -27,8 +27,8 @@ layout: blog-post.njk
   "headline": "Stagecoach 2026: Where to Stay Near Indio",
   "description": "Stagecoach 2026 is April 25-27 in Indio. Here's the honest guide to where to stay, how far is too far, and what to know about the drive home.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-aerial.jpg",
-  "datePublished": "2026-04-28",
-  "dateModified": "2026-04-28",
+  "datePublished": "2026-04-10",
+  "dateModified": "2026-04-10",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"
