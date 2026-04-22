@@ -1,6 +1,6 @@
 ---
 title: 10 Indio Gems Only Locals Know About
-date: 2026-03-10
+date: 2026-03-13
 metaDescription: "Skip the tourist traps. Date shakes at L&G, smash burgers at Papa Headz, and a vinyl listening lounge most visitors drive right past. The real Indio, CA."
 keywords:
   - Indio CA

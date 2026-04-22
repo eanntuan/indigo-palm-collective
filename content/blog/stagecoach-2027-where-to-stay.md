@@ -1,6 +1,6 @@
 ---
 title: "Stagecoach 2027: Where to Stay Near the Festival"
-date: 2026-04-21
+date: 2026-04-26
 metaDescription: "Where to stay for Stagecoach 2027: camping, hotels, or vacation rental near the polo grounds? The real tradeoffs, written by a host 7 minutes from the stage."
 ogImage: /blog/images/cozy-cactus-pool-backyard.jpg
 heroImage: /blog/images/cozy-cactus-pool-backyard.jpg
@@ -100,8 +100,8 @@ layout: blog-post.njk
   "headline": "Stagecoach 2027: Where to Stay Near the Festival",
   "description": "Where to stay for Stagecoach 2027: camping, hotels, or vacation rental near the polo grounds? The real tradeoffs, written by a host 7 minutes from the stage.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-pool-backyard.jpg",
-  "datePublished": "2026-04-21",
-  "dateModified": "2026-04-21",
+  "datePublished": "2026-04-26",
+  "dateModified": "2026-04-26",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

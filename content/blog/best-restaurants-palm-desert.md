@@ -1,6 +1,6 @@
 ---
 title: "Palm Desert Restaurants Worth Knowing"
-date: 2026-04-21
+date: 2026-04-17
 metaDescription: "Pink Cabana, Kitchen 86 on El Paseo, and a 30-year Italian institution. Palm Desert and Indian Wells restaurants worth knowing, organized by vibe."
 ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroImage: /blog/images/ps-boulevard-palms-mountains.jpg
@@ -27,8 +27,8 @@ layout: blog-post.njk
   "headline": "Palm Desert Restaurants Worth Knowing",
   "description": "Pink Cabana, Kitchen 86 on El Paseo, and a 30-year Italian institution. Palm Desert and Indian Wells restaurants worth knowing, organized by vibe.",
   "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.jpg",
-  "datePublished": "2026-04-21",
-  "dateModified": "2026-04-21",
+  "datePublished": "2026-04-17",
+  "dateModified": "2026-04-17",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

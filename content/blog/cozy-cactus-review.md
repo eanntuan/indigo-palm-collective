@@ -1,6 +1,6 @@
 ---
 title: "The Cozy Cactus Review: What Guests Actually Say"
-date: 2026-04-21
+date: 2026-04-19
 metaDescription: "The Cozy Cactus in Indio: 4.97 stars, 146 reviews. Here's what guests consistently love, and what to expect before you book."
 ogImage: /blog/images/cozy-cactus-exterior.jpg
 heroImage: /blog/images/cozy-cactus-exterior.jpg
@@ -26,8 +26,8 @@ layout: blog-post.njk
   "headline": "The Cozy Cactus Review: What Guests Actually Say",
   "description": "4.97 stars across 146 stays. Here's what guests consistently say about The Cozy Cactus in Indio, and what to expect before you book.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.jpg",
-  "datePublished": "2026-04-21",
-  "dateModified": "2026-04-21",
+  "datePublished": "2026-04-19",
+  "dateModified": "2026-04-19",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

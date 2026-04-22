@@ -1,6 +1,6 @@
 ---
 title: "Coachella Valley with Kids: A Practical Family Guide"
-date: 2026-04-21
+date: 2026-04-24
 metaDescription: "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters."
 ogImage: /blog/images/cozy-cactus-infant-gear.jpg
 heroImage: /blog/images/cozy-cactus-infant-gear.jpg
@@ -111,8 +111,8 @@ layout: blog-post.njk
   "headline": "Coachella Valley with Kids: A Practical Family Guide",
   "description": "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-infant-gear.jpg",
-  "datePublished": "2026-04-21",
-  "dateModified": "2026-04-21",
+  "datePublished": "2026-04-24",
+  "dateModified": "2026-04-24",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

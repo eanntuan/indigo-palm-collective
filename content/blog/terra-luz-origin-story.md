@@ -1,6 +1,6 @@
 ---
 title: "Terra Luz: How a House Gets Its Name"
-date: 2026-03-14
+date: 2026-03-17
 metaDescription: "How a vacation rental in Indio became Terra Luz: sun-washed terracotta, a Kahlo blue pool, and a brand built on Latin warmth and desert light."
 ogImage: /blog/images/ps-street-bougainvillea.jpg
 heroImage: /blog/images/ps-street-bougainvillea.jpg

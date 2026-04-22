@@ -1,6 +1,6 @@
 ---
 title: "5 Palm Springs Coffee Shops Locals Love"
-date: 2026-03-14
+date: 2026-03-19
 metaDescription: "Skip the hotel lobby drip. The 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and what makes each worth it."
 keywords:
   - Palm Springs coffee shops

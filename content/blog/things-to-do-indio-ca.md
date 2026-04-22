@@ -1,6 +1,6 @@
 ---
 title: "15 Things to Do in Indio, CA"
-date: 2026-03-20
+date: 2026-03-23
 metaDescription: "15 actual things to do in Indio, CA beyond Coachella: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find."
 ogImage: /blog/images/indio-local-gems.jpg
 heroImage: /blog/images/indio-local-gems.jpg
