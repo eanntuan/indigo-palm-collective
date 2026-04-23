@@ -16,7 +16,7 @@ So I built The Cozy Cactus to solve that specific problem!
 
 Not "family-friendly" in the throw-some-toys-in-a-basket sense. Actually designed for families who need to rest, not just perform vacation for Instagram. Here's what that looked like.
 
-![Family relaxing by heated pool at The Cozy Cactus family vacation rental in Indio California](blog/images/cozy-cactus-family-pool.jpg)
+![Family relaxing by heated pool at The Cozy Cactus family vacation rental in Indio California](blog/images/cozy-cactus-family-pool.webp)
 *The pool area designed for actual supervision, not just Instagram*
 
 ---
@@ -43,7 +43,7 @@ Here's what I changed!
 
 One guest—10-year Airbnb veteran—told me the labeling system was "unprecedented." She meant it as a compliment. I took it as confirmation that the bar is shockingly low 🙈
 
-![Organized labeled drawer system at The Cozy Cactus vacation rental showing batteries linens and kitchen supplies](blog/images/cozy-cactus-labeled-drawer.jpg)
+![Organized labeled drawer system at The Cozy Cactus vacation rental showing batteries linens and kitchen supplies](blog/images/cozy-cactus-labeled-drawer.webp)
 *Everything labeled: batteries, extra linens, baby spoons—exactly where you'd look for them*
 
 **I bought infant gear that actually works.** Not cheap Amazon basics that break by checkout! Real pack-n-plays with comfortable mattresses. Actual high chairs, not wobbly plastic disasters. Sound machines in every bedroom because sleep matters. Outlet covers already installed. Baby gates stored in the garage, ready to go.
@@ -52,7 +52,7 @@ I also added things you don't realize you need until 10pm on vacation: bottle wa
 
 **I designed the kitchen for families, not just wine glasses and a corkscrew.** Full set of kids' dishes, sippy cups, snack containers, blender for baby food. Drawer dedicated to plastic bags and Ziplocs because parents need those constantly! Coffee bar with good beans because tired parents deserve decent coffee.
 
-![Family-friendly kitchen setup at Cozy Cactus with infant gear bottle warmer and kids dishes in Indio](blog/images/cozy-cactus-family-kitchen.jpg)
+![Family-friendly kitchen setup at Cozy Cactus with infant gear bottle warmer and kids dishes in Indio](blog/images/cozy-cactus-family-kitchen.webp)
 *Not just wine glasses and a corkscrew—actual family infrastructure*
 
 **I set up the pool area for actual supervision, not Instagram.** Pool floats for kids. Shaded seating where you can watch the water without getting scorched. Outdoor toys that aren't sun-bleached garbage. Misters for when it's 110°F in July. The pool itself is heated and fenced—basic safety, not a selling point, just how it should be.
@@ -71,7 +71,7 @@ Here's what guests notice after they arrive—the stuff that doesn't photograph 
 
 The goal isn't perfection. It's anticipation! What do families need before they realize they need it?
 
-![Infant care essentials at The Cozy Cactus including pack n play sound machine and baby monitor](blog/images/cozy-cactus-infant-gear.jpg)
+![Infant care essentials at The Cozy Cactus including pack n play sound machine and baby monitor](blog/images/cozy-cactus-infant-gear.webp)
 *Pack-n-play, sound machines, bottle warmer—everything families need, already there*
 
 ---
@@ -104,7 +104,7 @@ It works! Families keep coming back. They rest. They rejuvenate. They don't just
 
 If that sounds like what you need, you know where to find us.
 
-![The Cozy Cactus 4 bedroom family vacation rental exterior in Indio near Coachella with desert mountain views](blog/images/cozy-cactus-exterior.jpg)
+![The Cozy Cactus 4 bedroom family vacation rental exterior in Indio near Coachella with desert mountain views](blog/images/cozy-cactus-exterior.webp)
 *A place where families actually rest—15 minutes from Coachella, designed for humans who appreciate when someone gives a damn*
 
 ---

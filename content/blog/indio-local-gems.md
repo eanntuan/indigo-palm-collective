@@ -91,7 +91,7 @@ layout: blog-post.njk
     <p><strong>Don't skip:</strong> Medjool dates, dried citrus, local honey</p>
 </div>
 
-<img src="/blog/images/lg-desert-store.jpg" alt="L&G Desert Store roadside sign with Coca-Cola panel and date palm against blue sky, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/lg-desert-store.webp" alt="L&G Desert Store roadside sign with Coca-Cola panel and date palm against blue sky, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The hand-painted sign you're looking for. Pull over immediately.</p>
 
 <div class="gem-heading">
@@ -108,7 +108,7 @@ layout: blog-post.njk
     <p><strong>Pro tip:</strong> Go early. They sell out.</p>
 </div>
 
-<img src="/blog/images/papa-headz.jpg" alt="Two Papa Headz smash burgers stacked in paper wrappers, dripping with cheese, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/papa-headz.webp" alt="Two Papa Headz smash burgers stacked in paper wrappers, dripping with cheese, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Two smash burgers. One meal. Zero regrets.</p>
 
 <div class="gem-heading">
@@ -124,7 +124,7 @@ layout: blog-post.njk
     <p><strong>Must order:</strong> Date shake, box of Medjool + Deglet dates to go</p>
 </div>
 
-<img src="/blog/images/shields-date-garden.jpg" alt="Cafe at Shields Date Garden entrance with neon sign and date palms, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/shields-date-garden.webp" alt="Cafe at Shields Date Garden entrance with neon sign and date palms, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Open since 1924. The date shake alone justifies the stop.</p>
 
 <div class="gem-heading">
@@ -153,7 +153,7 @@ layout: blog-post.njk
     <p><strong>Tip:</strong> Arrive early Saturday. Lines get long by noon.</p>
 </div>
 
-<img src="/blog/images/indio-tamale-festival.jpg" alt="Colorful pinata-style MERCADO sign arch over lowrider cars and festival crowd at the Indio Tamale Festival" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/indio-tamale-festival.webp" alt="Colorful pinata-style MERCADO sign arch over lowrider cars and festival crowd at the Indio Tamale Festival" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">30+ years of tamales, live music, and absolute chaos (the good kind)</p>
 
 <div class="gem-heading">
@@ -185,7 +185,7 @@ layout: blog-post.njk
     <p><strong>Timing:</strong> Lunch rush is real. Go at 11am or after 2pm.</p>
 </div>
 
-<img src="/blog/images/one-stop-taco-shop.jpg" alt="One Stop Taco Shop plate with carne asada tacos, rice, beans and fresh pico de gallo, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/one-stop-taco-shop.webp" alt="One Stop Taco Shop plate with carne asada tacos, rice, beans and fresh pico de gallo, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The line is part of the experience. Trust it.</p>
 
 <div class="gem-heading">
@@ -202,7 +202,7 @@ layout: blog-post.njk
     <p><strong>Spice note:</strong> They will make it spicy if you ask. Ask.</p>
 </div>
 
-<img src="/blog/images/thai-hot.jpg" alt="Thai Hot Restaurant plates with stir fry, curry, rice and spring rolls, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/thai-hot.webp" alt="Thai Hot Restaurant plates with stir fry, curry, rice and spring rolls, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Real heat, real Thai food. A desert surprise.</p>
 
 <div class="gem-heading">
@@ -229,7 +229,7 @@ layout: blog-post.njk
     <p><strong>Pro tip:</strong> Check their website for event nights. It gets special.</p>
 </div>
 
-<img src="/blog/images/rosemary-hifi.jpg" alt="Rosemary HiFi bar interior, cobalt blue tile, walnut shelving with vinyl records, 1960s JBL speakers, concrete bar, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/rosemary-hifi.webp" alt="Rosemary HiFi bar interior, cobalt blue tile, walnut shelving with vinyl records, 1960s JBL speakers, concrete bar, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Cobalt blue tile, 1960s JBL speakers, a turntable built into the bar. The Coachella Valley's first listening lounge.</p>
 
 <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 3rem 0;">

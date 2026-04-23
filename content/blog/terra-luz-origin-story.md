@@ -2,8 +2,8 @@
 title: "Terra Luz: How a House Gets Its Name"
 date: 2026-03-17
 metaDescription: "How a vacation rental in Indio became Terra Luz: sun-washed terracotta, a Kahlo blue pool, and a brand built on Latin warmth and desert light."
-ogImage: /blog/images/ps-street-bougainvillea.jpg
-heroImage: /blog/images/ps-street-bougainvillea.jpg
+ogImage: /blog/images/ps-street-bougainvillea.webp
+heroImage: /blog/images/ps-street-bougainvillea.webp
 heroAlt: "Palm-lined Coachella Valley street with vibrant red bougainvillea, desert landscaping, and mountain backdrop"
 keywords:
   - Terra Luz vacation rental
@@ -25,7 +25,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Terra Luz: How a House Gets Its Name",
   "description": "How a vacation rental in Indio became Terra Luz: sun-washed terracotta, a Kahlo blue pool, and a brand built on Latin warmth and desert light.",
-  "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.webp",
   "datePublished": "2026-03-17",
   "dateModified": "2026-03-17",
   "author": {
@@ -87,7 +87,7 @@ layout: blog-post.njk
 
 <p>It's also a nod to something deeper: Latin and Cuban culture, which have always drawn us in. The way Old Havana feels both relaxed and rhythmic. The bold use of color. The indoor-outdoor flow of life, where the kitchen opens to the world and meals happen in golden hour. That effortless ease of spaces designed to live in, not just look at.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard with San Jacinto mountain backdrop in the Coachella Valley at golden hour" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard with San Jacinto mountain backdrop in the Coachella Valley at golden hour" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The desert that shaped it all. Terracotta earth, blazing light, and 300 days of sun.</p>
 
 <h2>The Rebrand Was More Than a Name Change</h2>
@@ -115,7 +115,7 @@ layout: blog-post.njk
 
 <p>It's the kind of place where you can have a genuinely experiential getaway without the price tag or pretension of a resort. Float in a Kahlo blue pool under a Desert Marigold umbrella. Grill something ridiculous on the patio. Watch <em>Buena Vista Social Club</em> on an inflatable movie screen after dark. It all just fits.</p>
 
-<img src="/blog/images/indio-tamale-festival.jpg" alt="Indio local festival with desert community gathering, food, and outdoor celebration" width="800" height="533" loading="lazy" decoding="async">
+<img src="/blog/images/indio-tamale-festival.webp" alt="Indio local festival with desert community gathering, food, and outdoor celebration" width="800" height="533" loading="lazy" decoding="async">
 <p class="image-caption">Indio without the pretension. This is why we're here.</p>
 
 <h2>What Makes Terra Luz Different</h2>
@@ -146,7 +146,7 @@ layout: blog-post.njk
 
 <p>If you're the kind of person who lingers over coffee, plays backgammon for three hours, and doesn't check your email all weekend, this is your place.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.jpg" alt="Desert sunset over a quiet Coachella Valley neighborhood with warm terracotta tones and golden sky" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over a quiet Coachella Valley neighborhood with warm terracotta tones and golden sky" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The light that named it. Terra. Luz. Earth and light.</p>
 
 <h2>Book Your Terra Luz Stay</h2>

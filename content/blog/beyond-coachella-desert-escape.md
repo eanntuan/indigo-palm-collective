@@ -2,8 +2,8 @@
 title: "Coachella Valley: A Year-Round Desert Escape"
 date: 2026-03-14
 metaDescription: "Most people only think of the Coachella Valley during festival season. Here's why every season in the desert is worth the trip, and how to plan it."
-ogImage: /blog/images/cozy-cactus-pool.jpg
-heroImage: /blog/images/cozy-cactus-pool.jpg
+ogImage: /blog/images/cozy-cactus-pool.webp
+heroImage: /blog/images/cozy-cactus-pool.webp
 heroAlt: "Pool at a desert vacation rental in the Coachella Valley, California"
 keywords:
   - Coachella Valley year round
@@ -26,7 +26,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Coachella Valley: A Year-Round Desert Escape",
   "description": "Most people only think of the Coachella Valley during festival season. Here's why every season in the desert is worth the trip, and how to plan it.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-pool.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-pool.webp",
   "datePublished": "2026-03-14",
   "dateModified": "2026-03-14",
   "author": {
@@ -70,7 +70,7 @@ layout: blog-post.njk
 
 <p>This is the version of the valley that festival-only visitors never see. I bought a house here and now I'm the person who can't stop talking about fall light and mid-week escapes where nothing is on the schedule except the pool and an early hike. The Coachella Valley is a place you <em>return to</em>, for the sun, the space, and the surprising amount of culture packed into this stretch of California.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Panoramic view of the Coachella Valley desert floor with mountains in the background and clear blue sky in Palm Springs CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Panoramic view of the Coachella Valley desert floor with mountains in the background and clear blue sky in Palm Springs CA" width="1400" height="933" loading="lazy">
 <p class="image-caption">45 miles of valley. 300 days of sun. Four very different seasons.</p>
 
 <h2>The Geography of It All</h2>
@@ -123,7 +123,7 @@ layout: blog-post.njk
 
 <p>Pro tip: wake up early, hit Joshua Tree for sunrise, and be back at the pool by 11 AM. Best of both worlds.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.jpg" alt="Private pool and backyard at Terra Luz vacation rental in Indio CA, perfect for a Coachella Valley desert escape" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Private pool and backyard at Terra Luz vacation rental in Indio CA, perfect for a Coachella Valley desert escape" width="1400" height="933" loading="lazy">
 <p class="image-caption">Back at Terra Luz by 11 AM. The pool does not care what time you got up.</p>
 
 <h2>Palm Springs: Worth the 30-Minute Drive</h2>

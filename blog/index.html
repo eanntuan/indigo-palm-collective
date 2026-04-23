@@ -207,7 +207,7 @@
         .blog-hero {
             margin-top: 80px;
             min-height: 40vh;
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/blog/images/blog-hero-palm-springs.jpg') center 70%/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/blog/images/cody-board.webp') center center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -268,8 +268,15 @@
         .featured-post-image {
             width: 100%;
             height: 400px;
-            background-size: cover;
-            background-position: center;
+            overflow: hidden;
+        }
+
+        .featured-post-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
         }
 
         .featured-post-content {
@@ -356,8 +363,15 @@
         .blog-card-image {
             width: 100%;
             height: 250px;
-            background-size: cover;
-            background-position: center;
+            overflow: hidden;
+        }
+
+        .blog-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
         }
 
         .blog-card-content {
@@ -617,7 +631,7 @@
         <main class="blog-main">
             <!-- Featured Post -->
             <article class="featured-post">
-                <div class="featured-post-image" style="background-image: url('/blog/images/car-camping.jpeg');"></div>
+                <div class="featured-post-image"><img src="/blog/images/cc-foosball-room.webp" alt="The Cozy Cactus game room with foosball table, abstract art, and living area in Indio California" width="1200" height="400" loading="eager"></div>
                 <div class="featured-post-content">
                     <span class="post-category">Origin Story · Part 1 of 2</span>
                     <h2>How I Bought My First Vacation Rental in Indio, CA (The Cozy Cactus Story)</h2>
@@ -631,7 +645,7 @@
             <div class="blog-grid">
                 <!-- Stagecoach 2027 Where to Stay -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-pool-backyard.jpg'); background-color: #B67550;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Festival Guide</span>
                         <h3>Stagecoach 2027: Where to Stay Near the Festival</h3>
@@ -642,7 +656,7 @@
                 </article>
                 <!-- Sundune Palm Springs Review -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-boulevard-palms-mountains.jpg'); background-color: #B67550;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Property Review</span>
                         <h3>The Sundune Palm Springs: What Guests Say</h3>
@@ -653,7 +667,7 @@
                 </article>
                 <!-- Coachella Valley with Kids -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-infant-gear.jpg'); background-color: #B67550;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-infant-gear.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Coachella Valley with Kids: A Practical Family Guide</h3>
@@ -664,7 +678,7 @@
                 </article>
                 <!-- Terra Luz Review -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/terra-luz-pool-backyard.jpg'); background-color: #B67550;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/terra-luz-pool-backyard.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Property Guide</span>
                         <h3>Terra Luz Review: What to Expect at Indio's Private Pool Rental</h3>
@@ -675,7 +689,7 @@
                 </article>
                 <!-- Cozy Cactus Review -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-exterior.jpg'); background-color: #738561;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-exterior.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Property Guide</span>
                         <h3>The Cozy Cactus Review: What Guests Actually Say</h3>
@@ -686,7 +700,7 @@
                 </article>
                 <!-- Stagecoach 2026: Where to Stay Near Indio -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-aerial.jpg'); background-color: #B67550;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-aerial.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Stagecoach 2026: Where to Stay Near Indio</h3>
@@ -697,7 +711,7 @@
                 </article>
                 <!-- Palm Springs Bachelorette Guide -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-street-bougainvillea.jpg'); background-color: #C4845A;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-street-bougainvillea.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Palm Springs Bachelorette Party: Real Guide</h3>
@@ -708,7 +722,7 @@
                 </article>
                 <!-- Palm Springs Midcentury Architecture -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-mcm-neighborhood.jpg'); background-color: #8B7355;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-mcm-neighborhood.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>Palm Springs Midcentury Architecture Walk</h3>
@@ -719,7 +733,7 @@
                 </article>
                 <!-- Palm Springs Aerial Tram -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-aerial-tram-mountain-view.jpg'); background-color: #B67550;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-aerial-tram-mountain-view.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Palm Springs Aerial Tram: What to Know Before You Go</h3>
@@ -730,7 +744,7 @@
                 </article>
                 <!-- Desert Vacation Prep -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-desert-valley-view.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-desert-valley-view.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Desert Vacation Prep: What You Need to Know</h3>
@@ -741,7 +755,7 @@
                 </article>
                 <!-- Where to Stay for Coachella -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/coachella-festival-crowd.jpg'); background-color: #B67550;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/coachella-festival-crowd.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Festival Guide</span>
                         <h3>Where to Stay for Coachella: The Complete Guide</h3>
@@ -752,7 +766,7 @@
                 </article>
                 <!-- Palm Springs Surf Club -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/pssc-wave-pool-reflection.webp');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/pssc-wave-pool-reflection.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Palm Springs Surf Club: What to Know Before You Go</h3>
@@ -764,7 +778,7 @@
 
                 <!-- BNP Paribas Indian Wells -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/bnp-paribas-stadium-packed.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/bnp-paribas-stadium-packed.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>BNP Paribas Open: Where to Stay for Indian Wells Tennis</h3>
@@ -776,7 +790,7 @@
 
                 <!-- Best Hiking Palm Springs -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/coachella-valley-preserve.webp'); background-color: #B67550;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/coachella-valley-preserve.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Best Hiking Near Palm Springs: Trails for Every Level</h3>
@@ -788,7 +802,7 @@
 
                 <!-- Post: Outdoor Furniture Desert Heat -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-patio.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-patio.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Hosting</span>
                         <h3>Outdoor Furniture That Survives Desert Heat</h3>
@@ -800,7 +814,7 @@
 
                 <!-- Post: Airbnb Hosting Lessons -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-family-kitchen.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-family-kitchen.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Hosting</span>
                         <h3>What 191 Airbnb Reviews Taught Us About Hosting</h3>
@@ -812,7 +826,7 @@
 
                 <!-- Post: Sundune Design Story -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-orange-door-mcm.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-orange-door-mcm.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Design & Culture</span>
                         <h3>Inside The Sundune: Palm Springs Design Story</h3>
@@ -824,7 +838,7 @@
 
                 <!-- Salton Sea Day Trip -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/salton-sea.webp'); background-color: #B67550;"></div>
+                    <div class="blog-card-image"><img src="/blog/images/salton-sea.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Salton Sea Day Trip: Worth It or Worth Skipping?</h3>
@@ -836,7 +850,7 @@
 
                 <!-- LAX to Palm Springs -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-palm-springs-sign.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-palm-springs-sign.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>How to Get from LAX to Palm Springs</h3>
@@ -848,7 +862,7 @@
 
                 <!-- Why Book Direct -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-backyard.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-backyard.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Tips</span>
                         <h3>Why Book Direct? What Airbnb Doesn't Tell You</h3>
@@ -860,7 +874,7 @@
 
                 <!-- Coachella Valley Vacation Rental Guide -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-pool-backyard.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>5 Things to Look for in a Coachella Valley Vacation Rental</h3>
@@ -872,7 +886,7 @@
 
                 <!-- Palm Springs in Summer -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-via-sol-sunset.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-via-sol-sunset.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Palm Springs in Summer: Is It Worth It?</h3>
@@ -884,7 +898,7 @@
 
                 <!-- Coachella Valley Food Guide -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/el-tranvia.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/el-tranvia.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>Where to Eat in the Coachella Valley: City by City</h3>
@@ -896,7 +910,7 @@
 
                 <!-- Best Restaurants Palm Springs -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/koffi-palm-springs.webp');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/koffi-palm-springs.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>Best Restaurants in Palm Springs: A Local's Guide</h3>
@@ -908,7 +922,7 @@
 
                 <!-- Palm Desert Restaurants -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-boulevard-palms-mountains.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>Palm Desert Restaurants Worth Knowing</h3>
@@ -920,7 +934,7 @@
 
                 <!-- Palm Springs Weekend Itinerary -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/palm-springs-marilyn-monroe-statue.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/palm-springs-marilyn-monroe-statue.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Palm Springs Weekend Itinerary: 3 Days Done Right</h3>
@@ -932,7 +946,7 @@
 
                 <!-- Joshua Tree Day Trip -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/joshua-tree-national-park.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/joshua-tree-national-park.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Joshua Tree Day Trip from Indio and Palm Springs</h3>
@@ -944,7 +958,7 @@
 
                 <!-- Palm Springs vs Indio -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-boulevard-palms-mountains.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel Guide</span>
                         <h3>Palm Springs vs Indio: Where to Stay in the Desert</h3>
@@ -956,7 +970,7 @@
 
                 <!-- Post 2 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/indio-sign-miles-ave.webp');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/indio-sign-miles-ave.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>10 Indio Gems Only Locals Know About</h3>
@@ -968,7 +982,7 @@
 
                 <!-- Post 3 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-living-room.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-living-room.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Origin Story · Part 2 of 2</span>
                         <h3>Inside The Cozy Cactus: What Makes Families Actually Rest</h3>
@@ -980,7 +994,7 @@
 
                 <!-- Post 4 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-hot-tub.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>Where to Stay for Coachella 2026: An Honest Local Guide</h3>
@@ -992,7 +1006,7 @@
 
                 <!-- Post 5 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/festival-coachella-aerial.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/festival-coachella-aerial.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>The In-Between Weekend: What to Do in Indio Between Coachella Weekends 1 and 2</h3>
@@ -1004,7 +1018,7 @@
 
                 <!-- Post 6 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-mcm-neighborhood.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-mcm-neighborhood.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>The Sundune Guide to Palm Springs: What We Actually Recommend</h3>
@@ -1016,7 +1030,7 @@
 
                 <!-- Post 7 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/cozy-cactus-aerial.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/cozy-cactus-aerial.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Origin Story · Part 2 of 2</span>
                         <h3>The Story of The Cozy Cactus: From Blank Canvas to Family Sanctuary</h3>
@@ -1028,7 +1042,7 @@
 
                 <!-- Post 8 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-desert-valley-view.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-desert-valley-view.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Travel</span>
                         <h3>Beyond Coachella: Why the Coachella Valley Is a Year-Round Desert Escape</h3>
@@ -1040,7 +1054,7 @@
 
                 <!-- Post 9 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/coachella-valley-map.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/coachella-valley-map.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>The Real Insider's Guide to the Coachella Valley</h3>
@@ -1052,7 +1066,7 @@
 
                 <!-- Post 10 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/coffee-lattes-hero.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/coffee-lattes-hero.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>5 Coffee Shops Palm Springs Locals Actually Go To</h3>
@@ -1064,7 +1078,7 @@
 
                 <!-- Post 11 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/16_4W6A1856web.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/16_4W6A1856web.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Design & Culture</span>
                         <h3>The Story Behind Terra Luz: How a Desert House Found Its Name</h3>
@@ -1076,7 +1090,7 @@
 
                 <!-- Post 12 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/indian-palms-front-entrance.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/indian-palms-front-entrance.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>Staying in Indian Palms Country Club: What You Actually Need to Know</h3>
@@ -1088,7 +1102,7 @@
 
                 <!-- Post 13 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/ps-palm-street-blue-sky.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>Pet-Friendly Palm Springs: The Honest Guide to Bringing Your Dog</h3>
@@ -1100,7 +1114,7 @@
 
                 <!-- Post 14 -->
                 <article class="blog-card">
-                    <div class="blog-card-image" style="background-image: url('/blog/images/shields-date-garden.jpg');"></div>
+                    <div class="blog-card-image"><img src="/blog/images/shields-date-garden.webp" alt="Blog post thumbnail" width="600" height="250" loading="lazy"></div>
                     <div class="blog-card-content">
                         <span class="post-category">Local Guide</span>
                         <h3>15 Best Things to Do in Indio, CA (From Someone Who Lives There)</h3>

@@ -2,8 +2,8 @@
 title: "Stagecoach 2026: Where to Stay Near Indio"
 date: 2026-04-10
 metaDescription: "Stagecoach 2026 is April 25-27 in Indio. Here's the honest guide to where to stay, how far is too far, and what to know about the drive home."
-ogImage: /blog/images/cozy-cactus-aerial.jpg
-heroImage: /blog/images/cozy-cactus-aerial.jpg
+ogImage: /blog/images/cozy-cactus-aerial.webp
+heroImage: /blog/images/cozy-cactus-aerial.webp
 heroAlt: "Aerial view of a private pool vacation rental in Indio California near the Stagecoach and Coachella festival grounds"
 keywords:
   - stagecoach 2026 where to stay
@@ -26,7 +26,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Stagecoach 2026: Where to Stay Near Indio",
   "description": "Stagecoach 2026 is April 25-27 in Indio. Here's the honest guide to where to stay, how far is too far, and what to know about the drive home.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-aerial.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-aerial.webp",
   "datePublished": "2026-04-10",
   "dateModified": "2026-04-10",
   "author": {
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <h2>How Far Is "Palm Springs" From Stagecoach?</h2>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of Cozy Cactus vacation rental in Indio California, close to Stagecoach festival grounds, with Indian Palms community pool visible nearby" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of Cozy Cactus vacation rental in Indio California, close to Stagecoach festival grounds, with Indian Palms community pool visible nearby" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus is in Indio's Indian Palms neighborhood. Stagecoach is a 7-minute drive from here.</p>
 
 <p>Palm Springs proper is about 24 miles from the Empire Polo Club. That sounds manageable. On a normal Tuesday at 2pm, it takes 30 minutes. On a Friday night when 80,000 people are all leaving the festival at roughly the same time, it takes anywhere from 60 minutes to 2 hours depending on when you leave.</p>
@@ -91,7 +91,7 @@ layout: blog-post.njk
 
 <h2>What to Look For in a Stagecoach Rental</h2>
 
-<img src="/blog/images/terra-luz-pool-backyard.jpg" alt="Private saltwater pool at Terra Luz vacation rental in Indio California, ideal for Stagecoach festival groups" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Private saltwater pool at Terra Luz vacation rental in Indio California, ideal for Stagecoach festival groups" width="1400" height="933" loading="lazy">
 <p class="image-caption">A private pool changes the whole trip. After three days of dust and sun, having somewhere to decompress that's yours alone is genuinely the best thing.</p>
 
 <p>Stagecoach runs late April, which means daytime temps in Indio regularly hit 95-105 degrees Fahrenheit. This is not an exaggeration and it's not a complaint, it's just the reality of the desert in late April. A rental with a private pool shifts from "nice to have" to "essential for your group to enjoy the week."</p>
@@ -108,7 +108,7 @@ layout: blog-post.njk
 
 <h2>The Indian Palms Neighborhood</h2>
 
-<img src="/blog/images/terra-luz-pool-backyard.jpg" alt="Private saltwater pool with sun shelf at Terra Luz vacation rental in Indio California near Stagecoach" width="1600" height="1066" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Private saltwater pool with sun shelf at Terra Luz vacation rental in Indio California near Stagecoach" width="1600" height="1066" loading="lazy">
 <p class="image-caption">Terra Luz in Indio has a saltwater pool with a sun shelf. It's one street over from the Indian Palms Country Club golf course.</p>
 
 <p>Indian Palms is a residential neighborhood in Indio that sits directly adjacent to Indian Palms Country Club. It's quiet, gated at certain entrances, and a short straight drive to the polo grounds with no freeway needed.</p>
@@ -123,7 +123,7 @@ layout: blog-post.njk
 
 <p>For a first Stagecoach, I'd generally recommend a rental over camping unless you're drawn to that total-immersion experience and know what you're signing up for. The ability to step away in the afternoon, take a real shower, cool off in the pool, and come back to the grounds refreshed changes how you feel by day 3.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at night at Cozy Cactus vacation rental in Indio California, festival week accommodation" width="1920" height="1281" loading="lazy">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at night at Cozy Cactus vacation rental in Indio California, festival week accommodation" width="1920" height="1281" loading="lazy">
 <p class="image-caption">The hot tub at midnight after a full day at the festival. After three days of sun and dust, it earns its place.</p>
 
 <h2>What to Know About the Drive</h2>
@@ -136,7 +136,7 @@ layout: blog-post.njk
 
 <h2>Where to Eat Before and After Shows</h2>
 
-<img src="/blog/images/indio-sign-miles-ave.jpg" alt="Indio California city sign on Miles Avenue, gateway to the Coachella Valley desert" width="650" height="434" loading="lazy">
+<img src="/blog/images/indio-sign-miles-ave.webp" alt="Indio California city sign on Miles Avenue, gateway to the Coachella Valley desert" width="650" height="434" loading="lazy">
 <p class="image-caption">Indio is a working city, not a resort town. The food is genuinely good if you know where to go.</p>
 
 <p>Indio has solid food options that most festival-goers miss because they don't look. A few that are worth knowing:</p>

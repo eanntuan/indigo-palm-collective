@@ -3,8 +3,8 @@ title: "Where to Eat in the Coachella Valley: By City"
 date: 2026-02-25
 dateModified: 2026-04-15
 metaDescription: "The honest Coachella Valley food guide: Papa Headz and One Stop in Indio, Yes Please in La Quinta, Koffi and Thai Hot in Palm Springs. By city, no filler."
-ogImage: /blog/images/one-stop-taco-shop.jpg
-heroImage: /blog/images/one-stop-taco-shop.jpg
+ogImage: /blog/images/one-stop-taco-shop.webp
+heroImage: /blog/images/one-stop-taco-shop.webp
 heroAlt: "One Stop Taco Shop storefront in Indio California with colorful signage"
 keywords:
   - where to eat coachella valley
@@ -26,7 +26,7 @@ layout: blog-post.njk
 
 <p>I've eaten at all of these places or sent guests to them with confidence. I haven't padded the list. A shorter honest guide beats a long one with filler.</p>
 
-<img src="/blog/images/one-stop-taco-shop.jpg" alt="One Stop Taco Shop in Indio California with colorful exterior and desert landscape" width="1400" height="933" loading="lazy">
+<img src="/blog/images/one-stop-taco-shop.webp" alt="One Stop Taco Shop in Indio California with colorful exterior and desert landscape" width="1400" height="933" loading="lazy">
 <p class="image-caption">One Stop Taco Shop in Indio. Not a festival pop-up. A proper taqueria that's been here long before Coachella made Indio famous.</p>
 
 <h2>Indio</h2>
@@ -41,7 +41,7 @@ layout: blog-post.njk
 
 <h3>Papa Headz</h3>
 
-<img src="/blog/images/papa-headz.jpg" alt="Papa Headz smash burger restaurant in Indio California, a local favorite in the Coachella Valley" width="1400" height="933" loading="lazy">
+<img src="/blog/images/papa-headz.webp" alt="Papa Headz smash burger restaurant in Indio California, a local favorite in the Coachella Valley" width="1400" height="933" loading="lazy">
 <p class="image-caption">Papa Headz. The double with special sauce. If you're a smash burger person, this is your spot in Indio.</p>
 
 <p>The smash burgers here are genuinely the thing. Double patty, proper sear, the special sauce works. Counter service, quick turnaround, the kind of quality that builds a serious local following in a market where the competition is mostly chains. Papa Headz would be a solid neighborhood burger spot in any city. In Indio, it's the best burger in the area by a significant margin.</p>
@@ -50,7 +50,7 @@ layout: blog-post.njk
 
 <h3>Arriola's Tortilleria</h3>
 
-<img src="/blog/images/arriolas-tortilleria.jpg" alt="Arriola's Tortilleria in Indio California, established 1927, known for handmade tortillas and traditional Mexican food" width="1400" height="933" loading="lazy">
+<img src="/blog/images/arriolas-tortilleria.webp" alt="Arriola's Tortilleria in Indio California, established 1927, known for handmade tortillas and traditional Mexican food" width="1400" height="933" loading="lazy">
 <p class="image-caption">Arriola's has been here since 1927. The handmade tortillas are the point. Get the beans and rice combo and taste what a fresh tortilla is.</p>
 
 <p>Established 1927. That's not a marketing claim, it's a fact that tells you something about what the food is like. Handmade tortillas, beans and rice done the way they've been done for decades, simple and correct. This is not a restaurant trying to be interesting. It's a place where the tortillas are genuinely good in a way that makes the packaged version seem like a different food category.</p>
@@ -59,7 +59,7 @@ layout: blog-post.njk
 
 <h3>El Tranvia</h3>
 
-<img src="/blog/images/el-tranvia.jpg" alt="El Tranvia restaurant in Indio California, a local birria specialist and breakfast destination" width="1400" height="933" loading="lazy">
+<img src="/blog/images/el-tranvia.webp" alt="El Tranvia restaurant in Indio California, a local birria specialist and breakfast destination" width="1400" height="933" loading="lazy">
 <p class="image-caption">El Tranvia in Indio. The breakfast burrito is the order. A local institution that predates the festival crowd.</p>
 
 <p>El Tranvia is a birria specialist and local institution in Indio. The breakfast burrito is the order if you're here in the morning. It's a substantial thing, the kind that makes you rethink what a breakfast burrito can be. The birria itself is good and the prices are what they should be at a neighborhood place that's been here long enough to not care about trend cycles.</p>
@@ -76,7 +76,7 @@ layout: blog-post.njk
 
 <p>La Quinta is the city directly south of Indio. Quieter and more residential, with a village downtown area and a coffee scene that punches above its size.</p>
 
-<img src="/blog/images/yes-please-la-quinta.jpg" alt="Yes Please coffee shop in La Quinta California with specialty espresso and a relaxed atmosphere" width="1400" height="933" loading="lazy">
+<img src="/blog/images/yes-please-la-quinta.webp" alt="Yes Please coffee shop in La Quinta California with specialty espresso and a relaxed atmosphere" width="1400" height="933" loading="lazy">
 <p class="image-caption">Yes Please in La Quinta. Serious espresso without any of the affectation. Worth the short drive from Indio.</p>
 
 <h3>Yes Please</h3>
@@ -95,7 +95,7 @@ layout: blog-post.njk
 
 <p>One note first: if you're staying in Indio, Palm Springs restaurants are a 30-minute drive each direction. That's fine for a specific evening out, but it's not your everyday dining radius. Plan accordingly and use the Indio guide above for most meals.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.jpg" alt="Palm Springs street at golden hour with palm trees, mountain backdrop, and desert light" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Palm Springs street at golden hour with palm trees, mountain backdrop, and desert light" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs at golden hour. The restaurant scene here is worth the drive for a specific evening. Not for every meal if you're based in Indio.</p>
 
 <h3>Koffi</h3>
@@ -118,7 +118,7 @@ layout: blog-post.njk
 
 <p>Vietnamese fusion, which sounds like a hedge but isn't. The pork belly bun is the order. The room is loud in a good way. Rooster and the Pig has been a Palm Springs recommendation that holds up year after year without the kind of decline that happens when a restaurant gets too popular too fast. The portions are generous for the price point.</p>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Mid-century modern neighborhood street in Palm Springs California with flat-roofed homes and mountain backdrop" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-mcm-neighborhood.webp" alt="Mid-century modern neighborhood street in Palm Springs California with flat-roofed homes and mountain backdrop" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs residential streets. The restaurant scene is concentrated near downtown but worth the walk from a Palm Springs-area rental.</p>
 
 <h2>How to Use This Guide</h2>
@@ -137,7 +137,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Where to Eat in the Coachella Valley: By City",
   "description": "The honest food guide to the Coachella Valley: Papa Headz and One Stop in Indio, Yes Please in La Quinta, and Koffi in Palm Springs. Organized by city, no filler.",
-  "image": "https://indigopalm.co/blog/images/one-stop-taco-shop.jpg",
+  "image": "https://indigopalm.co/blog/images/one-stop-taco-shop.webp",
   "datePublished": "2026-02-25",
   "dateModified": "2026-04-15",
   "author": {

@@ -2,8 +2,8 @@
 title: "Terra Luz Review: What to Expect at Indio's Private Pool Rental"
 date: 2026-04-14
 metaDescription: "Terra Luz in Indio: 4.98 stars, 146 reviews. Private saltwater pool, Latin/Cuban design. What guests consistently love and what to know before booking."
-ogImage: /blog/images/terra-luz-pool-backyard.jpg
-heroImage: /blog/images/terra-luz-pool-backyard.jpg
+ogImage: /blog/images/terra-luz-pool-backyard.webp
+heroImage: /blog/images/terra-luz-pool-backyard.webp
 heroAlt: "Terra Luz private saltwater pool and backyard at vacation rental in Indio California"
 keywords:
   - Terra Luz review
@@ -25,7 +25,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Terra Luz Review: What to Expect at Indio's Private Pool Rental",
   "description": "Terra Luz in Indio: 4.98 stars, 146 reviews. Private saltwater pool, Latin/Cuban design. What guests consistently love and what to know before booking.",
-  "image": "https://indigopalm.co/blog/images/terra-luz-pool-backyard.jpg",
+  "image": "https://indigopalm.co/blog/images/terra-luz-pool-backyard.webp",
   "datePublished": "2026-04-14",
   "dateModified": "2026-04-14",
   "author": {
@@ -69,7 +69,7 @@ layout: blog-post.njk
 
 <p>I'm Eann. I own it.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.jpg" alt="Terra Luz private saltwater pool with geometric tile and sun shelf in Indio California" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz private saltwater pool with geometric tile and sun shelf in Indio California" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The private saltwater pool. Heated year-round, geometric tile border, sun shelf loungers. This is the part people come back for.</p>
 
 <h2>What Guests Consistently Say</h2>
@@ -94,7 +94,7 @@ layout: blog-post.njk
 
 <p>For festivals, this proximity is the main practical argument for booking in Indio vs Palm Springs. You leave the property, you're at the grounds in 8 minutes on surface streets. No I-10, no festival-weekend gridlock that turns a 20-minute drive into an hour. The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> breaks down exactly what each location gets you, if you're still deciding.</p>
 
-<img src="/blog/images/indian-palms-night-walk.jpg" alt="Indian Palms neighborhood in Indio California at night near Terra Luz vacation rental" width="1400" height="933" loading="lazy">
+<img src="/blog/images/indian-palms-night-walk.webp" alt="Indian Palms neighborhood in Indio California at night near Terra Luz vacation rental" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Indian Palms neighborhood at night. Quiet, gated, 8 minutes from the festival grounds.</p>
 
 <h2>What to Know Before You Book</h2>
@@ -118,7 +118,7 @@ layout: blog-post.njk
 
 <p>If you're choosing between them based on outdoor water access, Terra Luz has the private pool. If you're traveling with an infant or young kids and want dedicated baby gear, Cozy Cactus is built more specifically for that. Both are 7-10 minutes from the polo grounds. A more detailed comparison is in the <a href="/blog/palm-springs-vs-indio/">area guide</a>.</p>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of Indian Palms neighborhood in Indio showing vacation rental area near Coachella" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of Indian Palms neighborhood in Indio showing vacation rental area near Coachella" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Indian Palms area from above. Terra Luz and The Cozy Cactus are both in this neighborhood, about 15 minutes apart.</p>
 
 <h2>The Bottom Line</h2>

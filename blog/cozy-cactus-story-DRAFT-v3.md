@@ -16,7 +16,7 @@ So I partnered with Dawn, from The Olive Jar, to create a Family Kit to solve th
 
 Not "family-friendly" in the throw-some-toys-in-a-basket sense. Actually designed for families who need to rest, not just perform vacation for Instagram. Here's what that looked like.
 
-![Family relaxing by the pool at The Cozy Cactus family vacation rental in Indio California](blog/images/cozy-cactus-hot-tub.jpg)
+![Family relaxing by the pool at The Cozy Cactus family vacation rental in Indio California](blog/images/cozy-cactus-hot-tub.webp)
 *The outdoor space designed for actual use, not just Instagram*
 
 ---
@@ -43,7 +43,7 @@ Here's what I changed.
 
 One guest, a 10-year Airbnb veteran, told me the labeling system was "unprecedented." She meant it as a compliment. I can't find where the chip clips in my own home, but I definitely know where they are in my vacation rentals.
 
-![Organized labeled drawer system at The Cozy Cactus vacation rental showing batteries linens and kitchen supplies](blog/images/cozy-cactus-labeled-drawer.jpg)
+![Organized labeled drawer system at The Cozy Cactus vacation rental showing batteries linens and kitchen supplies](blog/images/cozy-cactus-labeled-drawer.webp)
 *Everything labeled: batteries, extra linens, baby spoons. Exactly where you'd look for them.*
 
 **I bought infant gear that actually works.** Not cheap Amazon basics that break by checkout. Real pack-n-plays with comfortable mattresses. "Chic" high chairs, not wobbly plastic disasters from the clearance aisle. Sound machines in every bedroom because sleep matters. Outlet covers and cabinet locks for parents.
@@ -52,7 +52,7 @@ I also added things you don't realize you need until 10pm on vacation: changing 
 
 **I designed the kitchen for families, not just wine glasses and a corkscrew.** Full set of kids' dishes, sippy cups, snack containers, Vitamix blender for baby food (or margaritas??). Drawer dedicated to plastic bags and Ziplocs because parents need those constantly. Fellow Coffee bar with good beans because tired parents deserve decent coffee, not the preground stuff that tastes like cardboard.
 
-![My favorite place in the house - the coffee bar I wish I had in my own home.](blog/images/coffee-bar.jpg)
+![My favorite place in the house - the coffee bar I wish I had in my own home.](blog/images/coffee-bar.webp)
 *Curated coffee bar with Fellow coffee grinder, Fellow kettle, and to go cups so you can explore, caffeinated.*
 
 **I set up the outdoor area for actual use, not Instagram, though I get lots of IG moments out here.** The community pool is across the street. Heated, fenced, and a 30-second walk, really! We keep pool floats for kids, outdoor toys that aren't sun-bleached garbage from three summers ago, and a hot tub in the backyard for when you need to decompress after the kids are down.
@@ -71,7 +71,7 @@ Here's what guests notice after they arrive. The stuff that doesn't photograph w
 
 The goal isn't perfection. It's anticipation. What do families need before they realize they need it?
 
-![Infant care essentials at The Cozy Cactus including pack n play sound machine and baby monitor](blog/images/cozy-cactus-infant-gear.jpg)
+![Infant care essentials at The Cozy Cactus including pack n play sound machine and baby monitor](blog/images/cozy-cactus-infant-gear.webp)
 *Pack-n-play, sound machines, bottle warmer. Everything families need, already there.*
 
 ---
@@ -102,7 +102,7 @@ It works. Families keep coming back. They rest. They actually enjoy it.
 
 If that sounds like what you need, you know where to find us.
 
-![The Cozy Cactus 4 bedroom family vacation rental exterior in Indio near Coachella with desert mountain views](blog/images/cozy-cactus-exterior.jpg)
+![The Cozy Cactus 4 bedroom family vacation rental exterior in Indio near Coachella with desert mountain views](blog/images/cozy-cactus-exterior.webp)
 *15 minutes from Coachella. Designed for families who are tired of just surviving vacation.*
 
 ---

@@ -2,8 +2,8 @@
 title: "Palm Springs Midcentury Architecture Walk"
 date: 2026-03-26
 metaDescription: "Palm Springs has the most intact collection of midcentury modern homes in the country. Here's how to walk it, what to look for, and which streets matter."
-ogImage: /blog/images/ps-mcm-neighborhood.jpg
-heroImage: /blog/images/ps-mcm-neighborhood.jpg
+ogImage: /blog/images/ps-mcm-neighborhood.webp
+heroImage: /blog/images/ps-mcm-neighborhood.webp
 heroAlt: "Palm Springs midcentury modern neighborhood with flat-roofed homes, desert landscaping, and the San Jacinto Mountains in the background"
 keywords:
   - palm springs midcentury architecture
@@ -26,7 +26,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs Midcentury Architecture Walk",
   "description": "Palm Springs has the most intact collection of midcentury modern homes in the country. Here's how to walk it, what to look for, and which streets are worth your time.",
-  "image": "https://indigopalm.co/blog/images/ps-mcm-neighborhood.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-mcm-neighborhood.webp",
   "datePublished": "2026-03-26",
   "dateModified": "2026-03-26",
   "author": {
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <h2>Why Palm Springs Has This Much MCM</h2>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Palm Springs midcentury modern residential neighborhood with flat-roofed homes, date palms, and San Jacinto Mountains backdrop" width="5001" height="3334" loading="lazy">
+<img src="/blog/images/ps-mcm-neighborhood.webp" alt="Palm Springs midcentury modern residential neighborhood with flat-roofed homes, date palms, and San Jacinto Mountains backdrop" width="5001" height="3334" loading="lazy">
 <p class="image-caption">A residential block in Palm Springs. Most of these homes date from 1945 to 1970. Many have barely been altered.</p>
 
 <p>Two things converged in Palm Springs starting in the late 1940s. First, it became a weekend destination for Hollywood money: film stars, studio executives, and the people around them who wanted a desert retreat close to LA. Second, the architects they hired were young practitioners of modernism, working in a place with no established aesthetic tradition and a climate that demanded covered overhangs, passive cooling, and indoor-outdoor connection.</p>
@@ -83,7 +83,7 @@ layout: blog-post.njk
 
 <h2>The Self-Guided Walk: Where to Start</h2>
 
-<img src="/blog/images/ps-orange-door-mcm.jpg" alt="Bright orange front door of a midcentury modern home in Palm Springs with desert garden and blue sky" width="2836" height="2836" loading="lazy">
+<img src="/blog/images/ps-orange-door-mcm.webp" alt="Bright orange front door of a midcentury modern home in Palm Springs with desert garden and blue sky" width="2836" height="2836" loading="lazy">
 <p class="image-caption">The front door color on MCM homes is often the loudest statement on the whole house. Orange, turquoise, coral, and yellow were all common. Most have been maintained or restored to period colors.</p>
 
 <p>Start at the corner of North Palm Canyon Drive and Alejo Road. This is the northern edge of the historic residential district. Park here (street parking is usually available weekday mornings and evenings) and plan to walk for 1.5 to 2 hours.</p>
@@ -99,7 +99,7 @@ layout: blog-post.njk
 
 <h2>What to Look For</h2>
 
-<img src="/blog/images/ps-midcentury-teal-door.jpg" alt="Vibrant teal front door with desert garden on a midcentury modern home in Palm Springs residential street" width="5271" height="7904" loading="lazy">
+<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Vibrant teal front door with desert garden on a midcentury modern home in Palm Springs residential street" width="5271" height="7904" loading="lazy">
 <p class="image-caption">Breezeblock screens, carports with butterfly roofs, and original tile work appear on almost every block. Once you start noticing the details, you can't stop.</p>
 
 <p>If you don't know much about architecture, here's what to look for. These features define the style and you'll start seeing them on every block once you know what they are:</p>
@@ -114,7 +114,7 @@ layout: blog-post.njk
 
 <h2>The Alexander Construction Company</h2>
 
-<img src="/blog/images/ps-pink-door-midcentury.jpg" alt="Pink door on a midcentury modern home in Palm Springs California with desert landscaping and mountain views" width="3456" height="4608" loading="lazy">
+<img src="/blog/images/ps-pink-door-midcentury.webp" alt="Pink door on a midcentury modern home in Palm Springs California with desert landscaping and mountain views" width="3456" height="4608" loading="lazy">
 <p class="image-caption">The Alexander Construction Company built over 2,000 homes in Palm Springs between 1955 and 1965. These production MCM houses are as distinctive as the custom work.</p>
 
 <p>George Alexander and his son Robert built over 2,000 homes in Palm Springs between 1955 and 1965. They hired architects, including William Krisel, to design plans that could be built efficiently at scale. The result is the Palmer and Krisel-designed tracts you'll see throughout north Palm Springs: clean lines, varied rooflines, quality material choices, and a level of architectural consistency across entire neighborhoods that was rare in postwar tract development anywhere.</p>
@@ -123,7 +123,7 @@ layout: blog-post.njk
 
 <h2>The Best Time to Do This Walk</h2>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard in Palm Springs with San Jacinto Mountains in background on a clear morning" width="2711" height="2711" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs with San Jacinto Mountains in background on a clear morning" width="2711" height="2711" loading="lazy">
 <p class="image-caption">Early morning light in Palm Springs is the best light for architecture. The mountains are sharp, the shadows are long, and the streets are quiet before 9am.</p>
 
 <p>Early morning is best: 7am to 9am in warm months, 8am to 10am in winter. The light is low and directional, which makes flat architectural surfaces read with depth and shadow. Midday light flattens everything. Late afternoon is second best, and the golden hour before sunset is genuinely beautiful if you're there in fall or spring.</p>
@@ -143,7 +143,7 @@ layout: blog-post.njk
 
 <h2>After the Walk</h2>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm Springs residential street with bougainvillea and midcentury homes on a clear desert morning" width="3516" height="2637" loading="lazy">
+<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs residential street with bougainvillea and midcentury homes on a clear desert morning" width="3516" height="2637" loading="lazy">
 <p class="image-caption">The residential streets in Palm Springs reward wandering. There's no wrong direction.</p>
 
 <p>The walk ends naturally back near downtown Palm Canyon Drive, which puts you within a few blocks of everything: Koffi for coffee, Cheeky's if you want brunch, the Village Green for a shaded break before heading to the car.</p>

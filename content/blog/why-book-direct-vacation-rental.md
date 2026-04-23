@@ -3,8 +3,8 @@ title: "Why Book Direct? What Airbnb Doesn't Tell You"
 date: 2025-12-08
 dateModified: 2026-04-15
 metaDescription: "Booking a vacation rental direct saves you 14-16% in Airbnb service fees. The honest math, what you actually get, and when direct booking makes sense."
-ogImage: /blog/images/cozy-cactus-patio.jpg
-heroImage: /blog/images/cozy-cactus-patio.jpg
+ogImage: /blog/images/cozy-cactus-patio.webp
+heroImage: /blog/images/cozy-cactus-patio.webp
 heroAlt: "Shaded patio with desert landscaping at Cozy Cactus vacation rental in Indio California"
 keywords:
   - book vacation rental direct
@@ -36,7 +36,7 @@ layout: blog-post.njk
     "url": "https://indigopalm.co"
   },
   "description": "Booking a vacation rental direct saves you 14-16% in service fees. Here's the honest math, and when direct booking makes sense.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-patio.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-patio.webp",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://indigopalm.co/blog/why-book-direct-vacation-rental/"
@@ -75,7 +75,7 @@ layout: blog-post.njk
 
 <p>That extra $140-200 is the Airbnb guest service fee. If you book vacation rentals more than once a year, it adds up fast. The straightforward fix: book direct with the property owner.</p>
 
-<img src="/blog/images/cozy-cactus-exterior.jpg" alt="Exterior of The Cozy Cactus vacation rental in Indio California with desert landscaping and clear blue sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-exterior.webp" alt="Exterior of The Cozy Cactus vacation rental in Indio California with desert landscaping and clear blue sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus, Indio. Same house, same host, lower total cost when you book direct.</p>
 
 <h2>The Math, Honestly</h2>
@@ -90,7 +90,7 @@ layout: blog-post.njk
 
 <p>On Airbnb: $1,100 (nightly) + $150 (cleaning) + $182 (service fee, ~14.5% of $1,250) = roughly $1,432 before taxes. Book direct and you skip that $182. That's a restaurant dinner, the groceries for the whole trip, or gas money for the week.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with lounge chairs and desert landscaping" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with lounge chairs and desert landscaping" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus pool. The $182 you save on fees covers two nights of groceries for the trip.</p>
 
 <h2>Airbnb Does Have Real Value</h2>
@@ -109,7 +109,7 @@ layout: blog-post.njk
 
 <p><strong>Human help when things go sideways.</strong> The wifi goes down. You can't figure out the TV. On a platform booking you're often in a support queue. With a direct booking host who wants the repeat business, you get a faster response, usually a real one.</p>
 
-<img src="/blog/images/cozy-cactus-living-room.jpg" alt="Cozy Cactus vacation rental living room in Indio California with warm lighting and comfortable seating" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-living-room.webp" alt="Cozy Cactus vacation rental living room in Indio California with warm lighting and comfortable seating" width="1400" height="933" loading="lazy">
 <p class="image-caption">Inside The Cozy Cactus. When something needs attention, you reach the owner directly, not a support queue.</p>
 
 <h2>Is It Safe to Book Direct?</h2>
@@ -120,7 +120,7 @@ layout: blog-post.njk
 
 <p>All of our properties have 190+ reviews on Airbnb you can cross-reference before booking. Our <a href="/booking-flow/?property=cozy-cactus">direct booking flow</a> uses Square for payment processing, same protections as any other online purchase.</p>
 
-<img src="/blog/images/cozy-cactus-patio.jpg" alt="Shaded patio with string lights and desert landscaping at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-patio.webp" alt="Shaded patio with string lights and desert landscaping at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus patio. Book direct at indigopalm.co and skip the platform service fee entirely.</p>
 
 <h2>How to Find Properties That Accept Direct Bookings</h2>

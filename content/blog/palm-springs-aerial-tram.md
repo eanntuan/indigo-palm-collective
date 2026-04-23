@@ -3,8 +3,8 @@ title: "Palm Springs Aerial Tram: What to Know"
 date: 2026-04-01
 dateModified: 2026-04-15
 metaDescription: "Palm Springs Aerial Tram: ticket prices, hours, what's at 8,516 feet, and when to go. Honest guide from a Coachella Valley local who's been up many times."
-ogImage: /blog/images/ps-aerial-tram-mountain-view.jpg
-heroImage: /blog/images/ps-aerial-tram-mountain-view.jpg
+ogImage: /blog/images/ps-aerial-tram-mountain-view.webp
+heroImage: /blog/images/ps-aerial-tram-mountain-view.webp
 heroAlt: "View from the top of the Palm Springs Aerial Tram at 8,516 feet with pine trees and San Jacinto peaks"
 keywords:
   - Palm Springs Aerial Tram
@@ -26,7 +26,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs Aerial Tram: What to Know Before You Go",
   "description": "Palm Springs Aerial Tram guide: ticket prices, hours, what's at 8,516 feet, and when to go. What to expect from a Coachella Valley local who's been up many times.",
-  "image": "https://indigopalm.co/blog/images/ps-aerial-tram-mountain-view.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-aerial-tram-mountain-view.webp",
   "datePublished": "2026-04-01",
   "dateModified": "2026-04-15",
   "author": {
@@ -78,7 +78,7 @@ layout: blog-post.njk
 
 <p>It opened in 1963. The current cars, which hold about 80 people, were installed in 2000. There are no stops between the base and the summit: you ride up, you spend time at the top, you come back down. The engineering is genuinely impressive even if you're not the type to care about that sort of thing.</p>
 
-<img src="/blog/images/ps-aerial-tram-car.jpg" alt="Palm Springs Aerial Tram car ascending the cliffs of Chino Canyon with the Coachella Valley spreading out below" width="1280" height="853" loading="lazy">
+<img src="/blog/images/ps-aerial-tram-car.webp" alt="Palm Springs Aerial Tram car ascending the cliffs of Chino Canyon with the Coachella Valley spreading out below" width="1280" height="853" loading="lazy">
 
 <h2>Ticket Prices</h2>
 
@@ -107,7 +107,7 @@ layout: blog-post.njk
 
 <h2>What's at the Top</h2>
 
-<img src="/blog/images/ps-aerial-tram-mountain-view.jpg" alt="Observation deck at the Palm Springs Aerial Tram Mountain Station with pine trees and distant desert valley views" width="1600" height="1066" loading="lazy">
+<img src="/blog/images/ps-aerial-tram-mountain-view.webp" alt="Observation deck at the Palm Springs Aerial Tram Mountain Station with pine trees and distant desert valley views" width="1600" height="1066" loading="lazy">
 
 <p>The Mountain Station is bigger than most people expect. When you step off the tram you're inside a building with observation decks, two restaurants (Peaks Restaurant for sit-down dining, Top of the Tram for quick service), a natural history museum, two documentary theaters, and a gift shop.</p>
 
@@ -119,7 +119,7 @@ layout: blog-post.njk
 
 <h2>When to Go</h2>
 
-<img src="/blog/images/ps-aerial-tram-sunrise.jpg" alt="Sunrise light over the San Jacinto peaks from the Palm Springs Aerial Tram Mountain Station" width="1200" height="900" loading="lazy">
+<img src="/blog/images/ps-aerial-tram-sunrise.webp" alt="Sunrise light over the San Jacinto peaks from the Palm Springs Aerial Tram Mountain Station" width="1200" height="900" loading="lazy">
 
 <p><strong>Summer (June through September):</strong> The temperature contrast is the draw. The valley is 105 degrees and the top is around 70. Weekday crowds are lighter. The extended Friday and Saturday evening hours mean you can ride up at sunset, watch the valley light up below, and come down in the dark. That's a good use of a summer evening.</p>
 
@@ -147,7 +147,7 @@ layout: blog-post.njk
 
 <p>If you're staying at <a href="/the-sundune/">The Sundune in Palm Springs</a>, the tram is about 20 minutes from the property. It makes an easy half-day, especially on a summer morning when you want relief from the heat before noon. For everything else worth doing in the valley, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio breakdown</a> covers where to base yourself and what's close to each.</p>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Palm Springs midcentury modern neighborhood with flat-roofed homes and the San Jacinto Mountains rising behind, near the tram base" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-mcm-neighborhood.webp" alt="Palm Springs midcentury modern neighborhood with flat-roofed homes and the San Jacinto Mountains rising behind, near the tram base" width="1400" height="933" loading="lazy">
 
 <h2>Is It Worth It?</h2>
 

@@ -115,8 +115,8 @@ const PROPERTY_STORY_BEATS = {
     welcome:   'The saltwater pool is heated and ready. The tortilla press is in the lower cabinet, next to the cast iron. The neighborhood is quiet.',
   },
   'ps-retreat': {
-    confirmed: 'Four minutes on foot to Palm Canyon Drive. Coffee, record shops, bookstores, a proper breakfast. The kind of location where you go out for one thing and end up gone for three hours.',
-    welcome:   'Palm Canyon Drive is a four-minute walk. Coffee, breakfast, record shops. The pool is available 7am to 10pm.',
+    confirmed: 'Ten minutes to downtown Palm Springs. Coffee, record shops, bookstores, a proper breakfast. The kind of location where you go out for one thing and end up gone for three hours.',
+    welcome:   'Downtown Palm Springs is a ten-minute drive. Coffee, breakfast, record shops. The pool is available 7am to 10pm.',
   },
   'the-well': {
     confirmed: 'A quiet Palm Springs corner with a pool and a palm tree. The kind of calm that surprises people who expected to spend the whole trip out.',
@@ -124,11 +124,34 @@ const PROPERTY_STORY_BEATS = {
   },
 };
 
+// Property-specific check-in logistics — included in welcome email (2 days before arrival)
+const PROPERTY_CHECKIN_INFO = {
+  'cozy-cactus': {
+    doorCode: '4898',
+    garageCode: '1340',
+    notes: 'Outdoor curfew is 10pm (per city regulations). We\'d love if you could turn off the patio lights to not disturb the neighbors. Luis, our hot tub tech, comes Tuesday and Friday mornings via the side back gate.',
+  },
+  'terra-luz': {
+    doorCode: '5544 (enter code, wait, then open)',
+    garageCode: '1340',
+    notes: 'Outdoor curfew is 10pm (per city regulations). We\'d love if you could turn off the patio lights to not disturb the neighbors. Pool is serviced Mondays and Thursdays. Gardeners come Wednesday mornings.',
+  },
+  'casa-moto': {
+    doorCode: '5544 (enter code, wait, then open)',
+    garageCode: '1340',
+    notes: 'Outdoor curfew is 10pm (per city regulations). Pool is serviced Mondays and Thursdays. Gardeners come Wednesday mornings.',
+  },
+};
+
 // Short go links for tracking — /go/{slug} → full URL with UTM params
 const GO_LINKS = {
-  'cc':       'https://indigopalm.co/cozy-cactus/?utm_source=reddit&utm_medium=social&utm_campaign=community',
-  'tl':       'https://indigopalm.co/terra-luz/?utm_source=reddit&utm_medium=social&utm_campaign=community',
-  'sd':       'https://indigopalm.co/the-sundune/?utm_source=reddit&utm_medium=social&utm_campaign=community',
+  'cc':                  'https://indigopalm.co/cozy-cactus/?utm_source=reddit&utm_medium=social&utm_campaign=community',
+  'tl':                  'https://indigopalm.co/terra-luz/?utm_source=reddit&utm_medium=social&utm_campaign=community',
+  'sd':                  'https://indigopalm.co/the-sundune/?utm_source=reddit&utm_medium=social&utm_campaign=community',
+  'welcome-terra-luz':   'https://indigopalm.co/welcome-guide-terra-luz/',
+  'farewell-indio':      'https://indigopalm.co/farewell-guide-indio/?utm_source=checkout-message&utm_medium=hostaway&utm_campaign=farewell',
+  'farewell-cozy-cactus': 'https://indigopalm.co/farewell-guide-cozy-cactus/?utm_source=checkout-message&utm_medium=hostaway&utm_campaign=farewell',
+  'farewell-terra-luz':  'https://indigopalm.co/farewell-guide-terra-luz/?utm_source=checkout-message&utm_medium=hostaway&utm_campaign=farewell',
 };
 
 // Pages that should 301 redirect from .html to clean URL
@@ -176,6 +199,18 @@ async function sendDueWelcomeEmails(env) {
         ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
         ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
       </table>
+      ${PROPERTY_CHECKIN_INFO[propertyId] ? `
+      <div style="padding:24px;background:#F5F3EE;border-radius:8px;margin-bottom:24px;">
+        <p style="margin:0 0 14px;font-size:13px;font-weight:600;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.08em;">Getting in</p>
+        <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:16px;">
+          ${PROPERTY_CHECKIN_INFO[propertyId].doorCode ? detailRow('Front door', PROPERTY_CHECKIN_INFO[propertyId].doorCode) : ''}
+          ${PROPERTY_CHECKIN_INFO[propertyId].garageCode ? detailRow('Garage', PROPERTY_CHECKIN_INFO[propertyId].garageCode) : ''}
+        </table>
+        <p style="margin:0 0 4px;font-size:13px;font-weight:600;color:#2C2C2C;">WiFi</p>
+        <p style="margin:0 0 14px;font-size:13px;color:#555;line-height:1.6;">Connect to &ldquo;Indigo Palm Collective&rdquo; and a browser window will pop up asking for your email. Enter it and you&rsquo;re all set. (Indigo Palm is our little collection of four desert homes across the Coachella Valley.)</p>
+        ${PROPERTY_CHECKIN_INFO[propertyId].notes ? `<p style="margin:0;font-size:13px;color:#555;line-height:1.6;">${PROPERTY_CHECKIN_INFO[propertyId].notes}</p>` : ''}
+      </div>
+      ` : ''}
       <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">See you in the desert.</p>
       ${PROPERTY_STORY_BEATS[propertyId]?.welcome ? `<p style="margin:0 0 20px;font-size:14px;color:#777;line-height:1.7;">P.S. ${PROPERTY_STORY_BEATS[propertyId].welcome}</p>` : ''}
       <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
@@ -1264,10 +1299,17 @@ function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nig
       <p style="margin:0 0 14px;font-size:13px;font-weight:600;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.08em;">Worth reading before you go</p>
       <a href="https://indigopalm.co/blog/desert-vacation-prep/" style="display:block;margin-bottom:4px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Desert Vacation Prep: What to Know Before You Go &rarr;</a>
       <p style="margin:0 0 14px;font-size:13px;color:#888;">What to pack, how to use the heat to your advantage, and why the pool matters more than you think.</p>
+      ${['ps-retreat','the-well'].includes(propertyId) ? `
+      <a href="https://indigopalm.co/blog/palm-springs-local-guide-sundune/" style="display:block;margin-bottom:4px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">The Local's Guide to Palm Springs &rarr;</a>
+      <p style="margin:0 0 14px;font-size:13px;color:#888;">Where to eat, drink, and spend your mornings before the heat shows up.</p>
+      <a href="https://indigopalm.co/blog/palm-springs-coffee-guide/" style="display:block;margin-bottom:4px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">The Palm Springs Coffee Guide &rarr;</a>
+      <p style="margin:0;font-size:13px;color:#888;">Where to go before the heat shows up.</p>
+      ` : `
       <a href="https://indigopalm.co/blog/indio-local-gems/" style="display:block;margin-bottom:4px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">10 Indio Gems Only Locals Know &rarr;</a>
       <p style="margin:0 0 14px;font-size:13px;color:#888;">Date shakes, birria, a vinyl bar, and a few spots that don't show up on Google Maps.</p>
       <a href="https://indigopalm.co/blog/palm-springs-coffee-guide/" style="display:block;margin-bottom:4px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">The Palm Springs Coffee Guide &rarr;</a>
       <p style="margin:0;font-size:13px;color:#888;">Where to go before the heat shows up.</p>
+      `}
     </div>
 
     ${notes ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notes}</p></div>` : ''}

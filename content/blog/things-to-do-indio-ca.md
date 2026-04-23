@@ -2,8 +2,8 @@
 title: "15 Things to Do in Indio, CA"
 date: 2026-03-23
 metaDescription: "15 actual things to do in Indio, CA beyond Coachella: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find on their own."
-ogImage: /blog/images/indio-local-gems.jpg
-heroImage: /blog/images/indio-local-gems.jpg
+ogImage: /blog/images/indio-local-gems.webp
+heroImage: /blog/images/indio-local-gems.webp
 heroAlt: "Indio California desert landscape and palm trees"
 keywords:
   - things to do Indio CA
@@ -24,7 +24,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "15 Things to Do in Indio, CA",
   "description": "15 actual things to do in Indio, CA beyond Coachella: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find.",
-  "image": "https://indigopalm.co/blog/images/indio-local-gems.jpg",
+  "image": "https://indigopalm.co/blog/images/indio-local-gems.webp",
   "datePublished": "2026-03-23",
   "dateModified": "2026-03-23",
   "author": {
@@ -69,7 +69,7 @@ layout: blog-post.njk
 
 <p>I've owned vacation rentals in Indio since 2022. These are the 15 things that keep coming back in reviews as the ones guests remember.</p>
 
-<img src="/blog/images/indio-local-gems.jpg" alt="Indio California neighborhood street with local shops and desert palms, things to do in Indio CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/indio-local-gems.webp" alt="Indio California neighborhood street with local shops and desert palms, things to do in Indio CA" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indio rewards the people who treat it like a real city, not a festival holding pen.</p>
 
 <div class="item-heading"><span class="item-number">1</span>L&G Desert Store: Buy Dates Like a Local</div>
@@ -84,7 +84,7 @@ layout: blog-post.njk
 <div class="quick-info">
     <p><strong>Address:</strong> 80-225 Hwy 111, Indio, CA 92201 · Daily 9am–5pm</p>
 </div>
-<img src="/blog/images/shields-date-garden.jpg" alt="Shields Date Garden entrance in Indio CA, open since 1924 on Highway 111, famous for date shakes" width="1400" height="933" loading="lazy">
+<img src="/blog/images/shields-date-garden.webp" alt="Shields Date Garden entrance in Indio CA, open since 1924 on Highway 111, famous for date shakes" width="1400" height="933" loading="lazy">
 <p class="image-caption">Shields has been doing this since 1924. The date shake is not optional.</p>
 
 <div class="item-heading"><span class="item-number">3</span>Papa Headz: The Smash Burger That Requires an Apology to In-N-Out</div>
@@ -92,7 +92,7 @@ layout: blog-post.njk
 <div class="quick-info">
     <p><strong>Address:</strong> 82868 Miles Ave, Indio, CA 92201 · Mon–Sat, closes at 8–10pm</p>
 </div>
-<img src="/blog/images/papa-headz.jpg" alt="Papa Headz smash burger in Indio CA with crispy lace edge patty on toasted bun" width="1400" height="933" loading="lazy">
+<img src="/blog/images/papa-headz.webp" alt="Papa Headz smash burger in Indio CA with crispy lace edge patty on toasted bun" width="1400" height="933" loading="lazy">
 <p class="image-caption">Papa Headz. Go early, they sell out.</p>
 
 <div class="item-heading"><span class="item-number">4</span>One Stop Taco Shop: The Taco I Think About Between Visits</div>
@@ -100,7 +100,7 @@ layout: blog-post.njk
 <div class="quick-info">
     <p><strong>Address:</strong> 84051 Indio Blvd, Indio, CA 92201</p>
 </div>
-<img src="/blog/images/one-stop-taco-shop.jpg" alt="Carne asada tacos at One Stop Taco Shop Indio CA, best tacos in the Coachella Valley" width="1400" height="933" loading="lazy">
+<img src="/blog/images/one-stop-taco-shop.webp" alt="Carne asada tacos at One Stop Taco Shop Indio CA, best tacos in the Coachella Valley" width="1400" height="933" loading="lazy">
 <p class="image-caption">One Stop Taco Shop. The line is the signal, not the deterrent.</p>
 
 <div class="item-heading"><span class="item-number">5</span>Thai Hot: Actual Thai Food, Actual Heat</div>
@@ -150,7 +150,7 @@ layout: blog-post.njk
 <div class="quick-info">
     <p><strong>When:</strong> First weekend of December · Old Town Indio</p>
 </div>
-<img src="/blog/images/indio-tamale-festival.jpg" alt="Indio Tamale Festival December in Old Town Indio CA, largest tamale festival in the world" width="1400" height="933" loading="lazy">
+<img src="/blog/images/indio-tamale-festival.webp" alt="Indio Tamale Festival December in Old Town Indio CA, largest tamale festival in the world" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Indio Tamale Festival. First weekend of December, Old Town Indio. Don't miss it.</p>
 
 <div class="item-heading"><span class="item-number">14</span>Joshua Tree National Park (Day Trip: 45 Min)</div>

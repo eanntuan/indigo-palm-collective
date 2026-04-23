@@ -3,8 +3,8 @@ title: "Outdoor Furniture That Survives Desert Heat"
 date: 2025-12-18
 dateModified: 2026-04-15
 metaDescription: "What outdoor furniture holds up in 115°F desert heat. Lessons from furnishing vacation rentals in Indio, CA: what works, what fails, and what to use."
-ogImage: /blog/images/cozy-cactus-patio.jpg
-heroImage: /blog/images/cozy-cactus-patio.jpg
+ogImage: /blog/images/cozy-cactus-patio.webp
+heroImage: /blog/images/cozy-cactus-patio.webp
 heroAlt: "Cozy Cactus vacation rental patio in Indio California with outdoor furniture, desert landscaping, and clear desert sky"
 keywords:
   - outdoor furniture desert heat
@@ -36,7 +36,7 @@ layout: blog-post.njk
     "url": "https://indigopalm.co"
   },
   "description": "What outdoor furniture holds up in 115°F desert heat. Lessons from furnishing vacation rentals in Indio, CA: what works, what fails, and what we use.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-patio.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-patio.webp",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://indigopalm.co/blog/outdoor-furniture-desert-heat/"
@@ -99,7 +99,7 @@ layout: blog-post.njk
 
 <p>When buying wicker-style outdoor furniture, read the material description carefully. "Wicker" alone tells you nothing. "All-weather resin wicker" or "HDPE wicker" is what you want.</p>
 
-<img src="/blog/images/cozy-cactus-patio.jpg" alt="Cozy Cactus vacation rental patio in Indio California with durable outdoor furniture and desert landscaping in summer heat" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/cozy-cactus-patio.webp" alt="Cozy Cactus vacation rental patio in Indio California with durable outdoor furniture and desert landscaping in summer heat" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The Cozy Cactus patio. Everything out here gets 115-degree summers. Nothing here was a bundle deal.</p>
 
 <h3>Sunbrella or Solution-Dyed Acrylic Cushion Fabric</h3>
@@ -130,7 +130,7 @@ layout: blog-post.njk
 
 <p>The $399 six-piece patio set from a home improvement store. You know the one. The cushions are polyester. The frame is painted aluminum that isn't powder-coated properly. The wicker is cheap resin, not HDPE. Everything about it is optimized for the photo and the price point, not for surviving heat. I bought one of these early on. It was gone in 18 months.</p>
 
-<img src="/blog/images/cozy-cactus-backyard.jpg" alt="Cozy Cactus vacation rental backyard in Indio California with community pool access, outdoor space, and desert vegetation" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/cozy-cactus-backyard.webp" alt="Cozy Cactus vacation rental backyard in Indio California with community pool access, outdoor space, and desert vegetation" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The backyard at The Cozy Cactus. Outdoor furniture here earns its keep every summer.</p>
 
 <h2>What We Use at Terra Luz</h2>
@@ -139,7 +139,7 @@ layout: blog-post.njk
 
 <p>Buying right the first time costs more upfront. But it's still there in three years looking like it should be, not like it survived something.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.jpg" alt="Terra Luz vacation rental pool and backyard in Indio California with desert garden and outdoor living space" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz vacation rental pool and backyard in Indio California with desert garden and outdoor living space" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The Terra Luz backyard. Everything outside here was chosen for desert durability first, then for how it photographs.</p>
 
 <h2>Two Things Nobody Tells You</h2>
@@ -152,7 +152,7 @@ layout: blog-post.njk
 
 <p>A weighted base rated for wind is not optional in the Coachella Valley. Desert afternoons generate real gusts, especially from late spring through summer. An umbrella in a light base becomes a projectile. We learned this the obvious way. A weighted base rated for 30-35 mph winds (or higher) is the minimum for any property in the valley. The umbrella itself should be freestanding pole style rather than offset/cantilever if it's going to sit in a high-wind zone without a wall to buffer it.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with outdoor seating and desert landscaping" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with outdoor seating and desert landscaping" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The Cozy Cactus backyard. Outdoor furniture here has survived multiple Coachella Valley summers.</p>
 
 <h2>The Short Version</h2>
@@ -161,7 +161,7 @@ layout: blog-post.njk
 
 <p>For more on what goes into running a rental in the Coachella Valley, read the <a href="/blog/airbnb-hosting-lessons/">hosting lessons from 191 Airbnb reviews</a>. If you're looking for a desert rental where the outdoor space was designed to hold up, <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio is a good example of what this looks like in practice.</p>
 
-<img src="/blog/images/cozy-cactus-patio.jpg" alt="Cozy Cactus vacation rental patio in Indio California with durable outdoor furniture after multiple desert summers" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/cozy-cactus-patio.webp" alt="Cozy Cactus vacation rental patio in Indio California with durable outdoor furniture after multiple desert summers" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">Furniture specced for desert conditions after a few seasons of real use. It just keeps working.</p>
 
 <h2>FAQ: Outdoor Furniture in Desert and Extreme Heat</h2>

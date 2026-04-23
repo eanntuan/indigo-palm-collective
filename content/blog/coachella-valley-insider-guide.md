@@ -3,8 +3,8 @@ title: "Coachella Valley Insider Guide: Best Spots"
 date: 2026-03-16
 dateModified: 2026-04-09
 metaDescription: "Skip the tourist traps. A Coachella Valley local shares the spots worth your time in Indio, Palm Springs, and Joshua Tree. No recycled lists."
-ogImage: /blog/images/ps-street-bougainvillea.jpg
-heroImage: /blog/images/ps-street-bougainvillea.jpg
+ogImage: /blog/images/ps-street-bougainvillea.webp
+heroImage: /blog/images/ps-street-bougainvillea.webp
 heroAlt: "Palm tree-lined street in Palm Springs CA with red bougainvillea and San Jacinto mountains"
 keywords:
   - Coachella Valley insider guide
@@ -33,7 +33,7 @@ relatedPosts:
   "@type": "BlogPosting",
   "headline": "Coachella Valley Insider Guide: Best Spots",
   "description": "Skip the tourist traps. A Coachella Valley local shares the spots worth your time in Indio, Palm Springs, and Joshua Tree. No recycled lists.",
-  "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.webp",
   "datePublished": "2026-03-16",
   "dateModified": "2026-04-09",
   "author": {
@@ -73,7 +73,7 @@ relatedPosts:
 }
 </script>
 
-<img src="/blog/images/indian-palms-front-entrance.jpg" alt="Entrance to Indian Palms Country Club neighborhood in Indio California with palm trees and desert landscaping" width="800" height="533">
+<img src="/blog/images/indian-palms-front-entrance.webp" alt="Entrance to Indian Palms Country Club neighborhood in Indio California with palm trees and desert landscaping" width="800" height="533">
 <p class="image-caption">The Indian Palms neighborhood in Indio. Quiet, gated, and 10 minutes from everything worth doing in the valley.</p>
 
 <p>I watched a couple walk into a chain restaurant in Palm Desert last week. They were 400 yards from one of the best taco spots in the valley.</p>
@@ -106,7 +106,7 @@ relatedPosts:
 
 <h2>Downtown Palm Springs</h2>
 
-<img src="/blog/images/ps-palm-springs-sign.jpg" alt="Palm Springs welcome sign with palm trees and San Jacinto mountains" loading="lazy" width="800" height="533">
+<img src="/blog/images/ps-palm-springs-sign.webp" alt="Palm Springs welcome sign with palm trees and San Jacinto mountains" loading="lazy" width="800" height="533">
 <p class="image-caption">You've arrived. Now skip the resort lobby and go find the good stuff.</p>
 
 <p>Palm Springs proper is about 30 minutes west of Indio, and it's worth exploring beyond the Instagram spots.</p>
@@ -115,12 +115,12 @@ relatedPosts:
 
 <p><strong>Palm Canyon Drive</strong> is the main drag. Wander it. Pop into the vintage shops. Get an overpriced cocktail at a mid-century modern hotel bar. That's the Palm Springs experience and it delivers.</p>
 
-<img src="/blog/images/ps-vintage-cadillac.jpg" alt="Vintage silver Cadillac parked on a Palm Springs street with palm trees and mountains" loading="lazy" width="800" height="533">
+<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage silver Cadillac parked on a Palm Springs street with palm trees and mountains" loading="lazy" width="800" height="533">
 <p class="image-caption">Palm Springs has always had this energy. Some things don't change.</p>
 
 <p><strong>The Aerial Tramway</strong> takes you from desert floor to 8,500 feet in ten minutes. The temperature drops 30 degrees. In summer, that's the whole selling point. In winter, there's actual snow up there while it's 70 degrees below.</p>
 
-<img src="/blog/images/ps-midcentury-teal-door.jpg" alt="Mid-century modern home with teal door and palm trees in Palm Springs CA" loading="lazy" width="800" height="533">
+<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Mid-century modern home with teal door and palm trees in Palm Springs CA" loading="lazy" width="800" height="533">
 <p class="image-caption">The mid-century architecture neighborhoods are worth an afternoon just walking and looking.</p>
 
 <h2>The Coachella Polo Fields (When There's No Festival)</h2>
@@ -143,7 +143,7 @@ relatedPosts:
 
 <h2>The Hiking Nobody Talks About</h2>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Wide desert valley view from above with palm trees and mountains surrounding the Coachella Valley" loading="lazy" width="800" height="533">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Wide desert valley view from above with palm trees and mountains surrounding the Coachella Valley" loading="lazy" width="800" height="533">
 <p class="image-caption">The valley from above. Joshua Tree to the north, Salton Sea to the south, everything in between.</p>
 
 <p><strong>Indian Canyons</strong> in Palm Springs. Ancient Cahuilla trading routes lined with California fan palms. The Andreas Canyon trail follows a stream through a palm oasis. It feels like you walked through a portal into somewhere tropical.</p>
@@ -154,7 +154,7 @@ relatedPosts:
 
 <h2>The Stuff Only Locals Know</h2>
 
-<img src="/blog/images/cozy-cactus-mural.jpg" alt="Colorful backyard mural at The Cozy Cactus vacation rental in Indio California, the kind of thoughtful detail that makes the valley worth returning to" loading="lazy" width="800" height="533">
+<img src="/blog/images/cozy-cactus-mural.webp" alt="Colorful backyard mural at The Cozy Cactus vacation rental in Indio California, the kind of thoughtful detail that makes the valley worth returning to" loading="lazy" width="800" height="533">
 <p class="image-caption">The Coachella Valley on a clear evening. The sky out here does things cities don't allow. So do the backyards.</p>
 
 <p>The wind comes up almost every afternoon. Plan outdoor activities for morning.</p>
@@ -167,15 +167,15 @@ relatedPosts:
 
 <h2>Where to Base Yourself</h2>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Mid-century modern homes on a quiet Palm Springs street with tall palm trees and mountains" loading="lazy" width="800" height="533">
+<img src="/blog/images/ps-mcm-neighborhood.webp" alt="Mid-century modern homes on a quiet Palm Springs street with tall palm trees and mountains" loading="lazy" width="800" height="533">
 <p class="image-caption">Palm Springs has the look. Indio has the price point and the proximity to everything.</p>
 
 <p>I'm biased, but Indio is the sweet spot. Central to everything. Joshua Tree to the north, Salton Sea to the south, Palm Springs to the west. You're 10-15 minutes from the polo grounds, close to the best date farms, and away from the Palm Springs markup.</p>
 
-<img src="/blog/images/cozy-cactus-living-room.jpg" alt="Bright open living room at The Cozy Cactus vacation rental in Indio CA, grey sofas, kilim rug, foosball table, mid-century design" loading="lazy" width="800" height="533">
+<img src="/blog/images/cozy-cactus-living-room.webp" alt="Bright open living room at The Cozy Cactus vacation rental in Indio CA, grey sofas, kilim rug, foosball table, mid-century design" loading="lazy" width="800" height="533">
 <p class="image-caption">The living room at The Cozy Cactus: foosball, a kilim rug, and light that makes you want to stay in.</p>
 
 <p><a href="/cozy-cactus/">The Cozy Cactus</a> is our place in Indio. Three bedrooms, community pool across the street, private hot tub, and a covered patio that makes you want to stay in as much as go out. But wherever you stay, stay in the valley long enough to get past the tourist layer. The real stuff is underneath.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at The Cozy Cactus vacation rental in Indio CA, covered patio, string lights, palm trees at dusk" loading="lazy" width="800" height="533">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at The Cozy Cactus vacation rental in Indio CA, covered patio, string lights, palm trees at dusk" loading="lazy" width="800" height="533">
 <p class="image-caption">The hot tub at golden hour. Palm trees. String lights. This is why you stay in Indio.</p>

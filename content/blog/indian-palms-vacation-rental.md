@@ -3,8 +3,8 @@ title: "Indian Palms Country Club: Vacation Rental Guide"
 date: 2026-03-20
 dateModified: 2026-04-21
 metaDescription: "Indian Palms Country Club is 2.5 miles from the Coachella polo grounds. Private pools, gated streets, and a walk to the festival that skips the traffic."
-ogImage: /blog/images/cozy-cactus-aerial.jpg
-heroImage: /blog/images/cozy-cactus-aerial.jpg
+ogImage: /blog/images/cozy-cactus-aerial.webp
+heroImage: /blog/images/cozy-cactus-aerial.webp
 heroAlt: "Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop"
 keywords:
   - Indian Palms Country Club vacation rental
@@ -27,7 +27,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Indian Palms Country Club: Vacation Rental Guide",
   "description": "Indian Palms Country Club is 2.5 miles from the Coachella polo grounds. Private pools, gated streets, and a walk to the festival that skips traffic entirely.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-aerial.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-aerial.webp",
   "datePublished": "2026-03-20",
   "dateModified": "2026-04-21",
   "author": {
@@ -73,7 +73,7 @@ layout: blog-post.njk
 
 <img src="https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.jpg" alt="Vacation rental in Indian Palms Country Club Indio CA with pool and mountain views" width="800" height="533" loading="lazy">
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indian Palms Country Club from above. Empire Polo Club is 2.5 miles east.</p>
 
 <h2>What Is Indian Palms Country Club?</h2>
@@ -82,13 +82,13 @@ layout: blog-post.njk
 
 <p>People who stay here for the first time are usually surprised by how quiet it is. No lobby, no front desk, no hotel energy. You're staying in a house, on a street, in a community where people live. For some guests, that's exactly what they wanted. For others who expected more of a resort experience, it can take a day to recalibrate.</p>
 
-<img src="/blog/images/indian-palms-front-entrance.jpg" alt="Indian Palms Country Club entrance in Indio CA with palm trees and mountain views" width="1400" height="934" loading="lazy">
+<img src="/blog/images/indian-palms-front-entrance.webp" alt="Indian Palms Country Club entrance in Indio CA with palm trees and mountain views" width="1400" height="934" loading="lazy">
 
 <h2>Can You Walk to Coachella from Indian Palms?</h2>
 
 <p>Yes. Indian Palms Country Club is one of the only neighborhoods in the Coachella Valley where walking to Coachella is practical. The route from your rental to the festival entrance is 1.5 to 2.2 miles, takes 25 to 49 minutes on foot, and lets you skip shuttles, surge pricing, and gridlocked roads entirely.</p>
 
-<img src="/blog/images/coachella-festival-map-2026.jpg" alt="2026 Coachella festival map showing Indian Palms Front Gate 0.3 miles from Monroe Street entrance" width="1080" height="1350" loading="lazy">
+<img src="/blog/images/coachella-festival-map-2026.webp" alt="2026 Coachella festival map showing Indian Palms Front Gate 0.3 miles from Monroe Street entrance" width="1080" height="1350" loading="lazy">
 
 <p>Here's how the walk works:</p>
 <ol>
@@ -107,7 +107,7 @@ layout: blog-post.njk
 
 <p>Golf cart rides are also available from community members during festival weekends. The going rate is roughly $5-10 per rider depending on group size. Your host will have current contact info in your welcome book.</p>
 
-<img src="/blog/images/indian-palms-night-walk.jpg" alt="Nighttime walk back to Indian Palms Country Club from Coachella along lit community path in Indio CA" width="3024" height="4032" loading="lazy">
+<img src="/blog/images/indian-palms-night-walk.webp" alt="Nighttime walk back to Indian Palms Country Club from Coachella along lit community path in Indio CA" width="3024" height="4032" loading="lazy">
 <p class="image-caption">This is the walk back to Indian Palms at night. There's often neighbors selling waters and offering rides back to your home inside the community.</p>
 
 <h2>During Festival Weekends: Traffic and Parking</h2>
@@ -127,29 +127,29 @@ layout: blog-post.njk
     <li><strong>Lifestyle Center fitness facility:</strong> Available with advance notice from your host.</li>
 </ul>
 
-<img src="/blog/images/indian-palms-lifestyle-center.jpg" alt="Aerial view of Indian Palms Country Club pickleball courts, tennis courts, and community pool in Indio CA" width="2048" height="1065" loading="lazy">
+<img src="/blog/images/indian-palms-lifestyle-center.webp" alt="Aerial view of Indian Palms Country Club pickleball courts, tennis courts, and community pool in Indio CA" width="2048" height="1065" loading="lazy">
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Hot tub at Cozy Cactus vacation rental in Indian Palms Country Club Indio CA under desert sky" width="1920" height="1281" loading="lazy">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Hot tub at Cozy Cactus vacation rental in Indian Palms Country Club Indio CA under desert sky" width="1920" height="1281" loading="lazy">
 
 <h2>What's Within Driving Distance</h2>
 
 <p>Indian Palms puts you about 10 minutes from Old Town Indio, 15 minutes from Shields Date Garden and L&amp;G Desert Store, and 20 minutes from the Coachella Valley Preserve. Palm Springs is about 30 minutes west. Joshua Tree National Park's south entrance is 45 minutes.</p>
 
-<img src="/blog/images/joshua-tree-national-park.jpg" alt="Joshua Tree National Park desert landscape with iconic Joshua trees and rock formations, 45 minutes from Indian Palms Country Club in Indio CA" width="1440" height="990" loading="lazy">
+<img src="/blog/images/joshua-tree-national-park.webp" alt="Joshua Tree National Park desert landscape with iconic Joshua trees and rock formations, 45 minutes from Indian Palms Country Club in Indio CA" width="1440" height="990" loading="lazy">
 
 <p>For day-to-day needs: there's a Stater Bros. and a Ralphs within a 5-minute drive. Several taquerias and local restaurants are within 10 minutes. You won't need to drive far for anything.</p>
 
 <h2>The Two Properties We Have Here</h2>
 
-<img src="/blog/images/cozy-cactus-living-room.jpg" alt="Living room at the Cozy Cactus vacation rental in Indian Palms Country Club with foosball table and open kitchen" width="800" height="533" loading="lazy">
+<img src="/blog/images/cozy-cactus-living-room.webp" alt="Living room at the Cozy Cactus vacation rental in Indian Palms Country Club with foosball table and open kitchen" width="800" height="533" loading="lazy">
 
-<img src="/blog/images/cozy-cactus-exterior.jpg" alt="The Cozy Cactus vacation rental exterior in Indian Palms Country Club Indio CA" width="800" height="533" loading="lazy">
+<img src="/blog/images/cozy-cactus-exterior.webp" alt="The Cozy Cactus vacation rental exterior in Indian Palms Country Club Indio CA" width="800" height="533" loading="lazy">
 
 <p><a href="/cozy-cactus/">Cozy Cactus</a> is a 3-bedroom family-focused home with a community pool steps away, private hot tub, and putting green. It's designed for families: pack-n-play, Stokke high chair, curated toy collection, an organization system parents consistently mention in reviews. It sleeps up to 8.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Backyard pool and patio at the Cozy Cactus vacation rental in Indian Palms Country Club Indio CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Backyard pool and patio at the Cozy Cactus vacation rental in Indian Palms Country Club Indio CA" width="1400" height="933" loading="lazy">
 
-<img src="/blog/images/terra-luz-pool-backyard.jpg" alt="Private saltwater pool at Terra Luz vacation rental in Indian Palms Country Club Indio CA" width="1600" height="1066" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Private saltwater pool at Terra Luz vacation rental in Indian Palms Country Club Indio CA" width="1600" height="1066" loading="lazy">
 
 <p><a href="/terra-luz/">Terra Luz</a> is a 3-bedroom Latin/Cuban-inspired vacation rental with a private saltwater pool, terracotta courtyard, and an aesthetic designed by brand architect Dawn Asher. It's our pet-friendly property. It sleeps up to 8.</p>
 

@@ -2,8 +2,8 @@
 title: "The Sundune Palm Springs: What Guests Say"
 date: 2026-04-21
 metaDescription: "The Sundune Palm Springs: 4.93 stars across 40 stays. What guests say about the 2BR condo, the walkable neighborhood, pool access, and what to expect."
-ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
-heroImage: /blog/images/ps-boulevard-palms-mountains.jpg
+ogImage: /blog/images/ps-boulevard-palms-mountains.webp
+heroImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroAlt: "Palm Springs boulevard lined with tall palms and mountain backdrop, near The Sundune vacation rental"
 keywords:
   - Sundune Palm Springs review
@@ -21,7 +21,7 @@ layout: blog-post.njk
 
 <p>The Sundune is our 2BR/2BA condo in central Palm Springs, 5 minutes on foot from Palm Canyon Drive. It has 4.93 stars across 40+ reviews on Airbnb. Here's what guests say about it, and what I'd tell you before you book.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm Springs boulevard with tall palms and San Jacinto Mountains at sunset, near The Sundune Palm Springs vacation rental" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard with tall palms and San Jacinto Mountains at sunset, near The Sundune Palm Springs vacation rental" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs in March or November: the mountains, the palms, the light. The Sundune sits inside all of this, walkable to everything.</p>
 
 <h2>What Guests Say First</h2>
@@ -36,7 +36,7 @@ layout: blog-post.njk
 
 <p>The Sundune is in a midcentury neighborhood that hasn't been overdeveloped. Palm Canyon Drive, with its restaurants, coffee, galleries, and boutiques, is a short walk. The Marilyn Monroe statue and the weekend VillageFest street market are walkable. The Indian Canyons trailheads are about 10 minutes by car.</p>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Palm Springs midcentury modern neighborhood street with low profile homes and San Jacinto Mountains backdrop" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-mcm-neighborhood.webp" alt="Palm Springs midcentury modern neighborhood street with low profile homes and San Jacinto Mountains backdrop" width="1400" height="933" loading="lazy">
 <p class="image-caption">The neighborhood around The Sundune. Midcentury, quiet, within walking range of downtown but with residential calm.</p>
 
 <p>If you're here for the BNP Paribas Open at Indian Wells, The Sundune is about 20 minutes to the venue. That puts it on par with most options in the valley. If you want to mix city access with tournament attendance, Palm Springs is the right base.</p>
@@ -51,7 +51,7 @@ layout: blog-post.njk
 
 <p>The design leans midcentury: warm tones, clean lines, no clutter. It feels like Palm Springs without performing Palm Springs.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm Springs street with bougainvillea and midcentury architecture near The Sundune vacation rental" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs street with bougainvillea and midcentury architecture near The Sundune vacation rental" width="1400" height="933" loading="lazy">
 <p class="image-caption">A few blocks from the condo. Palm Springs in spring is the bougainvillea, the mountains, and light that makes everything look like a postcard.</p>
 
 <h2>What to Know Before You Book</h2>
@@ -70,7 +70,7 @@ layout: blog-post.njk
 
 <p>Summer is honest: it's hot. 100+ degrees by late June. If you're coming in summer, you'll be pool-based and evening-out-based. The Sundune in summer is for guests who know the desert and plan accordingly. For summer desert trips, the <a href="/blog/palm-springs-summer/">Palm Springs in summer guide</a> covers what to do when it's that hot.</p>
 
-<img src="/blog/images/ps-vintage-cadillac.jpg" alt="Vintage pink Cadillac on a Palm Springs street with palm trees and blue sky, representing classic Palm Springs style near The Sundune" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage pink Cadillac on a Palm Springs street with palm trees and blue sky, representing classic Palm Springs style near The Sundune" width="1400" height="933" loading="lazy">
 <p class="image-caption">This is the Palm Springs The Sundune gives you access to. The mid-century cars, the palms, the very specific aesthetic that's been here since the Rat Pack.</p>
 
 <h2>Booking</h2>
@@ -87,7 +87,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "The Sundune Palm Springs: What Guests Say",
   "description": "Sundune Palm Springs reviews: what guests say about this Palm Springs condo, the neighborhood, walkability, and what to expect.",
-  "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp",
   "datePublished": "2026-04-21",
   "dateModified": "2026-04-21",
   "author": {

@@ -3,8 +3,8 @@ title: "Palm Springs in Summer: Is It Worth Visiting?"
 date: 2026-02-04
 dateModified: 2026-04-15
 metaDescription: "Yes, with caveats. Pool culture peaks in summer, rates drop 30-50%, crowds disappear. Here's how to do Palm Springs in the heat, month by month."
-ogImage: /blog/images/ps-via-sol-sunset.jpg
-heroImage: /blog/images/ps-via-sol-sunset.jpg
+ogImage: /blog/images/ps-via-sol-sunset.webp
+heroImage: /blog/images/ps-via-sol-sunset.webp
 heroAlt: "Desert sunset over a Palm Springs street with palm trees and San Jacinto Mountain silhouette at dusk"
 keywords:
   - Palm Springs in summer
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs in Summer: Is It Worth Visiting?",
   "description": "Yes, with caveats. Pool culture peaks, rates drop 30-50%, crowds disappear. Here's how to do summer in the desert right, month by month.",
-  "image": "https://indigopalm.co/blog/images/ps-via-sol-sunset.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-via-sol-sunset.webp",
   "datePublished": "2026-02-04",
   "dateModified": "2026-04-15",
   "author": {
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <p>Summer in the desert runs on a completely different schedule than summer anywhere else. The people who find it miserable showed up without a plan and wandered around outside at 2pm in July. The people who love it are in the pool by 7am, napping through the worst heat, and back outside by 6pm when the temperature drops and the light turns that particular shade of gold-orange that only happens in desert summers. Rates are down 30-50% from spring. Restaurants that had 45-minute waits in March will seat you tonight. Here's how to make the most of it.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.jpg" alt="Summer sunset over a Palm Springs residential street with palm trees casting long shadows and mountains turning pink at dusk" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Summer sunset over a Palm Springs residential street with palm trees casting long shadows and mountains turning pink at dusk" width="1400" height="933" loading="lazy">
 <p class="image-caption">Summer evenings in Palm Springs are legitimately one of the best parts. The heat breaks, the light turns gold-orange, and the city finally exhales.</p>
 
 <h2>The Heat Is Real</h2>
@@ -91,10 +91,10 @@ layout: blog-post.njk
 
 <p><strong>The evenings are genuinely special.</strong> After 6pm, the temperature drops enough to sit outside comfortably. By 7pm or 8pm it's often in the mid-90s, which after a day of 115 feels almost cool. The light during desert summer sunsets turns a shade of gold-pink-orange that doesn't happen in any other season. Rooftop bars and outdoor patios come alive at dusk. Some summer evenings in Palm Springs are better than anything the spring crowds are there for.</p>
 
-<img src="/blog/images/ps-desert-moonrise.jpg" alt="Full moon rising over the desert horizon near Palm Springs with mountain silhouette at dusk" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the desert horizon near Palm Springs with mountain silhouette at dusk" width="1400" height="933" loading="lazy">
 <p class="image-caption">Desert moonrises in summer. The sky has no light pollution competition once the city quiets down.</p>
 
-<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm-lined street in Palm Springs early morning with clear blue sky and no crowds before the heat arrives" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm-lined street in Palm Springs early morning with clear blue sky and no crowds before the heat arrives" width="1400" height="933" loading="lazy">
 <p class="image-caption">Early morning on Palm Canyon Drive before the heat builds. This is the window you're working with.</p>
 
 <h2>The Schedule That Works</h2>
@@ -107,7 +107,7 @@ layout: blog-post.njk
 
 <p><strong>5pm to 10pm:</strong> Back outside. Happy hour at an outdoor bar. Dinner at a patio restaurant. Evening walks when the light is at its best. Golf in the early morning is popular for the same reason: start at 6am, finish by 10am, the rest of the day is yours.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Wide desert valley view near Palm Springs with mountain ranges and sparse vegetation in summer heat" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Wide desert valley view near Palm Springs with mountain ranges and sparse vegetation in summer heat" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Coachella Valley in summer. Understand the scale of it and you understand the heat.</p>
 
 <h2>Month by Month: When to Go and What to Expect</h2>

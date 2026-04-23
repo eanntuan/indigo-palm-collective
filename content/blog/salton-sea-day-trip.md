@@ -87,7 +87,7 @@ layout: blog-post.njk
 
 <p>Bombay Beach is the most compelling stop. Once a small resort community, now part ghost town, part outdoor art installation, home to a small permanent population who seem to prefer it exactly as it is. Artists have been using the town as a canvas for years: rusted cars, painted murals, sculptural installations on the streets and dry lake bed. The <a href="https://www.bombaybeachbiennale.org/" target="_blank" rel="noopener">Bombay Beach Biennale</a> is an annual spring arts festival, but the art is present year-round. The most interesting things are not visible from the main road. Give yourself 90 minutes and walk away from the highway.</p>
 
-<img src="/blog/images/coachella-valley-map.jpg" alt="Coachella Valley map showing Indio, Palm Springs, and the Salton Sea to the southeast" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-map.webp" alt="Coachella Valley map showing Indio, Palm Springs, and the Salton Sea to the southeast" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Salton Sea sits about 45 minutes southeast of Indio via the I-10.</p>
 
 <h2>Salvation Mountain</h2>
@@ -98,7 +98,7 @@ layout: blog-post.njk
 
 <p>Past Salvation Mountain is Slab City: an off-grid community on the concrete slabs of a former military base. No grid electricity, no municipal water, roughly 150 to 200 permanent residents. The main visitor draw is East Jesus, a sculpture garden inside Slab City made entirely from salvaged materials. It's free, donations welcome, and the art changes constantly. Beyond East Jesus, Slab City is a neighborhood where people live. The art is the reason to visit. Move through it with that in mind.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Coachella Valley desert panorama from above, showing the flat expanse between Palm Springs and the Salton Sea" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Coachella Valley desert panorama from above, showing the flat expanse between Palm Springs and the Salton Sea" width="1400" height="933" loading="lazy">
 <p class="image-caption">The valley floor stretching southeast toward the Salton Sea, visible on clear days from higher ground.</p>
 
 <h2>Getting There and Practical Notes</h2>
@@ -107,7 +107,7 @@ layout: blog-post.njk
 
 <p>Best time to go: October through March. Summer temperatures are brutal here, often 5 to 10 degrees hotter than Indio because of the lower elevation. The Bombay Beach Biennale is typically held in March. Bring water, sun protection, and a full tank of gas. There are no gas stations between Niland and the interstate, no coffee shops, no shade, and very few restrooms.</p>
 
-<img src="/blog/images/ps-desert-moonrise.jpg" alt="Full moon rising over the desert southeast of Palm Springs, the kind of sky you get driving back from the Salton Sea at dusk" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the desert southeast of Palm Springs, the kind of sky you get driving back from the Salton Sea at dusk" width="1400" height="933" loading="lazy">
 <p class="image-caption">Time the drive back right and you get this.</p>
 
 <h2>Who Should Go</h2>

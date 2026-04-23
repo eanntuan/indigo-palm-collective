@@ -2,8 +2,8 @@
 title: "Palm Springs Bachelorette Party: Real Guide"
 date: 2026-03-28
 metaDescription: "Palm Springs bachelorette trips: the valley has pools, restaurants, spas, and a 2-hour drive from LA. Here's what to book, and what to skip entirely."
-ogImage: /blog/images/ps-street-bougainvillea.jpg
-heroImage: /blog/images/ps-street-bougainvillea.jpg
+ogImage: /blog/images/ps-street-bougainvillea.webp
+heroImage: /blog/images/ps-street-bougainvillea.webp
 heroAlt: "Colorful bougainvillea-lined street in Palm Springs California on a sunny day"
 keywords:
   - palm springs bachelorette party
@@ -26,7 +26,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs Bachelorette Party: Real Guide",
   "description": "Palm Springs bachelorette trips work well because the valley has pools, restaurants, spas, and a 2-hour drive from LA. Here's what to book and skip.",
-  "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.webp",
   "datePublished": "2026-03-28",
   "dateModified": "2026-03-28",
   "author": {
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <h2>Palm Springs or Indio?</h2>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard in Palm Springs California with San Jacinto Mountains backdrop on a sunny day" width="2711" height="2711" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs California with San Jacinto Mountains backdrop on a sunny day" width="2711" height="2711" loading="lazy">
 <p class="image-caption">Palm Springs has the walkability and the restaurant scene. If downtown access matters to your group, it's the better base.</p>
 
 <p>This is the first decision, and it's worth thinking through honestly. Palm Springs gives you a walkable downtown: coffee shops, boutiques, good restaurants, and a couple of bars within a few blocks of most rentals. If your group wants to walk to dinner, walk to brunch, and not get in the car every time you want something, Palm Springs is the right call.</p>
@@ -83,7 +83,7 @@ layout: blog-post.njk
 
 <h2>Where to Stay</h2>
 
-<img src="/blog/images/palm-springs-hotel-pool.jpg" alt="Palm Springs vacation rental pool on a sunny afternoon, perfect for a bachelorette party weekend" width="768" height="430" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs vacation rental pool on a sunny afternoon, perfect for a bachelorette party weekend" width="768" height="430" loading="lazy">
 <p class="image-caption">Private pool access is the baseline for a bachelorette trip in the desert. Shared or community pools have hours and crowds.</p>
 
 <p>Private pool is non-negotiable for this kind of trip. Shared hotel or community pools have hours, no alcohol allowed, and a crowd of strangers. You want to be able to get in at noon with a pitcher of something and no one telling you to quiet down.</p>
@@ -101,7 +101,7 @@ layout: blog-post.njk
 
 <h2>Day 1: Arrive and Settle</h2>
 
-<img src="/blog/images/ps-blue-door-cacti.jpg" alt="Blue front door with cacti and desert garden in Palm Springs California residential neighborhood" width="4000" height="2668" loading="lazy">
+<img src="/blog/images/ps-blue-door-cacti.webp" alt="Blue front door with cacti and desert garden in Palm Springs California residential neighborhood" width="4000" height="2668" loading="lazy">
 <p class="image-caption">Palm Springs residential streets are worth walking. Every block has a moment like this.</p>
 
 <p>Most people arrive Friday afternoon. Check-in is usually 4pm. If your group arrives earlier, head straight downtown rather than waiting in the car. Palm Canyon Drive has coffee, lunch spots, and the kind of wandering that fills an afternoon easily.</p>
@@ -117,7 +117,7 @@ layout: blog-post.njk
 
 <h2>Day 2: Pool Morning, Activity Afternoon</h2>
 
-<img src="/blog/images/cheekys-palm-springs.jpg" alt="Cheeky's restaurant in Palm Springs California, popular brunch spot with outdoor patio" width="600" height="449" loading="lazy">
+<img src="/blog/images/cheekys-palm-springs.webp" alt="Cheeky's restaurant in Palm Springs California, popular brunch spot with outdoor patio" width="600" height="449" loading="lazy">
 <p class="image-caption">Cheeky's for brunch is a Palm Springs institution. Arrive early or expect a wait, reservation or not.</p>
 
 <p>Saturday is the core day. Morning should be slow: coffee, brunch, pool time. Cheeky's on Cabrillo Ave is the Palm Springs brunch stop. They rotate their menu weekly and do genuinely interesting egg dishes. Go before 10am or after 12:30pm to avoid the worst of the wait.</p>
@@ -135,7 +135,7 @@ layout: blog-post.njk
 
 <h2>Day 3: Brunch and Head Out</h2>
 
-<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm tree-lined street in Palm Springs under a clear blue sky on a quiet Sunday morning" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue sky on a quiet Sunday morning" width="1400" height="933" loading="lazy">
 <p class="image-caption">Sunday morning in Palm Springs is the best time to walk the streets. Everything is quieter, the light is good, and the mountains are clear.</p>
 
 <p>Sunday morning deserves a slow start. Make coffee at the rental, go for a walk before checkout, take in the neighborhood before the weekend ends. Koffi on North Palm Canyon has the best coffee in the city. Order an iced latte, sit outside, and let the morning last a bit.</p>
@@ -154,7 +154,7 @@ layout: blog-post.njk
 
 <h2>Best Time to Go</h2>
 
-<img src="/blog/images/ps-via-sol-sunset.jpg" alt="Desert sunset over Palm Springs California with warm orange light on the mountains" width="5304" height="7952" loading="lazy">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over Palm Springs California with warm orange light on the mountains" width="5304" height="7952" loading="lazy">
 <p class="image-caption">Desert evenings are the payoff for surviving the afternoon. The light in Palm Springs at sunset is one of those things that's hard to photograph and impossible to forget.</p>
 
 <p>October through April is the window. The weather is 70-85 degrees most days, cool at night, and the valley is at its most alive. November and March are particularly good: warm enough for the pool, cool enough for comfortable walking.</p>

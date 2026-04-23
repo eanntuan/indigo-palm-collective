@@ -78,7 +78,7 @@ relatedPosts:
 
 <p>Hiking near Palm Springs is one of those things that surprises people who showed up for the pools and the architecture. The mountains are right there, and the canyons cut into them hold palm oases, seasonal waterfalls, and trails that feel nothing like the flat Mojave scrub around them. One thing to know before you plan: season matters more here than almost anywhere else. October through April is the window when this is comfortable and safe for most people. Summer requires a 5am start and a serious conversation with yourself about heat. Here are the five trails worth knowing.</p>
 
-<img src="/blog/images/honda-element-camping.jpg" alt="Honda Element packed for a desert camping trip from the Coachella Valley, ready for an early morning hike near Palm Springs" width="1400" height="933" loading="lazy">
+<img src="/blog/images/honda-element-camping.webp" alt="Honda Element packed for a desert camping trip from the Coachella Valley, ready for an early morning hike near Palm Springs" width="1400" height="933" loading="lazy">
 <p class="image-caption">The desert is not uniformly dry. Getting out before 8am is the whole strategy. Pack the night before.</p>
 
 <h2>1. Palm Canyon (Easy to Moderate)</h2>
@@ -93,7 +93,7 @@ relatedPosts:
 
 <p>Plan 2-3 hours. The terrain is rockier than Palm Canyon, especially near the falls. Good shoes with grip make a difference here. Also accessed through Indian Canyons, so same entrance fee applies.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Wide aerial view of the desert valley floor below Palm Springs with mountain ridgelines and hazy sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Wide aerial view of the desert valley floor below Palm Springs with mountain ridgelines and hazy sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">The view from elevation looking down into the valley. The hike up is the hard part. The view down is the payoff.</p>
 
 <h2>3. Tahquitz Canyon (Guided, Waterfall)</h2>
@@ -108,7 +108,7 @@ relatedPosts:
 
 <p>This is a good option for people who want views without committing to a long canyon hike. Go early morning when the light hits the valley from the east. Plan about 1.5-2 hours and bring more water than you think you need. Check the <a href="https://www.alltrails.com/trail/us/california/bump-and-grind-trail" target="_blank" rel="noopener">AllTrails page</a> for current conditions and recent reports.</p>
 
-<img src="/blog/images/ps-street-mountains.jpg" alt="Palm Springs residential street looking toward the dramatic rise of the San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-mountains.webp" alt="Palm Springs residential street looking toward the dramatic rise of the San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
 <p class="image-caption">Those mountains visible from every street in Palm Springs. The hikes are up there, and they're worth it.</p>
 
 <h2>5. Indian Canyons (General)</h2>
@@ -117,7 +117,7 @@ relatedPosts:
 
 <p>The Agua Caliente Cultural Museum in downtown Palm Springs has information on the history and ecology of the canyons if you want context before going. Visit <a href="https://www.aguacalientebands.com/tourism/indian-canyons" target="_blank" rel="noopener">Indian Canyons</a> for current hours, fees, and trail conditions. Seasonal closures happen, particularly in summer and after heavy rains.</p>
 
-<img src="/blog/images/saguaro-coffee-indio.jpg" alt="Saguaro Coffee exterior in Indio California, a good starting point before a morning desert hike" width="1400" height="933" loading="lazy">
+<img src="/blog/images/saguaro-coffee-indio.webp" alt="Saguaro Coffee exterior in Indio California, a good starting point before a morning desert hike" width="1400" height="933" loading="lazy">
 <p class="image-caption">Start the morning right before heading into the canyons. Coffee first, then mountains.</p>
 
 <h2>When to Go</h2>
@@ -140,7 +140,7 @@ relatedPosts:
 
 <p>The full desert packing guide is at the <a href="/blog/desert-vacation-prep/">desert vacation prep post</a>. It covers everything from what to put in your bag to how to schedule a desert day around the heat.</p>
 
-<img src="/blog/images/ps-blue-door-cacti.jpg" alt="Blue midcentury modern door in Palm Springs with mature cacti framing the entrance and mountain view beyond" width="933" height="1400" loading="lazy">
+<img src="/blog/images/ps-blue-door-cacti.webp" alt="Blue midcentury modern door in Palm Springs with mature cacti framing the entrance and mountain view beyond" width="933" height="1400" loading="lazy">
 <p class="image-caption">After the hike, Palm Springs rewards the return. Shower, coffee, and a patio table with a mountain view.</p>
 
 <script type="application/ld+json">

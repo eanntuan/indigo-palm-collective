@@ -2,8 +2,8 @@
 title: "Desert Vacation Prep: What You Need to Know"
 date: 2026-04-08
 metaDescription: "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days when you arrive."
-ogImage: /blog/images/ps-desert-valley-view.jpg
-heroImage: /blog/images/ps-desert-valley-view.jpg
+ogImage: /blog/images/ps-desert-valley-view.webp
+heroImage: /blog/images/ps-desert-valley-view.webp
 heroAlt: "Desert valley view with palm trees and mountain backdrop in Coachella Valley California"
 keywords:
   - desert vacation tips
@@ -24,7 +24,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Desert Vacation Prep: What You Need to Know",
   "description": "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days.",
-  "image": "https://indigopalm.co/blog/images/ps-desert-valley-view.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-desert-valley-view.webp",
   "datePublished": "2026-04-08",
   "dateModified": "2026-04-08",
   "author": {
@@ -76,7 +76,7 @@ layout: blog-post.njk
 
 <p>Guests who fight the schedule spend the trip sweaty and frustrated. Guests who lean into it usually say it's the most relaxed vacation they've taken in years.</p>
 
-<img src="/blog/images/cc-closet-wallpaper.jpg" alt="Styled open closet at The Cozy Cactus vacation rental in Indio California with organized shelves and patterned wallpaper" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/cc-closet-wallpaper.webp" alt="Styled open closet at The Cozy Cactus vacation rental in Indio California with organized shelves and patterned wallpaper" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">Morning before the heat shows up. A rental that has space for everything makes that first-hour calm possible.</p>
 
 <h2>What to Pack</h2>
@@ -99,7 +99,7 @@ layout: blog-post.njk
 
 <p>If you're doing a multi-night stay, block out at least one afternoon with no agenda beyond the pool. Float. Read something. Don't check your phone. The desert is very good at making you stop.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Hot tub and backyard at Cozy Cactus vacation rental in Indio California with community pool steps away" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Hot tub and backyard at Cozy Cactus vacation rental in Indio California with community pool steps away" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The 3pm strategy. Pool first, headliner second. Works every time.</p>
 
 <h2>Food: Skip the Chains</h2>
@@ -114,7 +114,7 @@ layout: blog-post.njk
 
 <p>For a full breakdown, our <a href="/blog/indio-local-gems/">Indio local gems guide</a> covers 10 spots that don't show up on the tourist maps. If you're staying closer to Palm Springs, <a href="/blog/palm-springs-coffee-guide/">this Palm Springs coffee guide</a> covers the best morning options.</p>
 
-<img src="/blog/images/indio-tamale-festival.jpg" alt="Colorful food stalls at the Indio International Tamale Festival, a beloved Coachella Valley tradition" width="800" height="533" loading="lazy" decoding="async">
+<img src="/blog/images/indio-tamale-festival.webp" alt="Colorful food stalls at the Indio International Tamale Festival, a beloved Coachella Valley tradition" width="800" height="533" loading="lazy" decoding="async">
 <p class="image-caption">The valley has real food traditions. Seek them out. Ask where locals eat.</p>
 
 <h2>Driving vs. Walking</h2>
@@ -133,7 +133,7 @@ layout: blog-post.njk
 
 <p>This is the part guests forget to plan for. It's free. It takes 20 minutes. It's usually the thing people remember most.</p>
 
-<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm tree-lined street in Palm Springs under a clear blue desert sky" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue desert sky" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The morning window. Don't waste it sleeping in.</p>
 
 <h2>One Last Thing</h2>

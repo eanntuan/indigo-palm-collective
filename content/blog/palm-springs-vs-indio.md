@@ -3,8 +3,8 @@ title: "Palm Springs vs Indio: Where to Stay"
 date: 2026-01-20
 dateModified: 2026-04-21
 metaDescription: "Palm Springs is 25 miles from Indio, about 30 min without traffic. Here's the breakdown: rental costs, festival logistics, and which city fits your trip best."
-ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
-heroImage: /blog/images/ps-boulevard-palms-mountains.jpg
+ogImage: /blog/images/ps-boulevard-palms-mountains.webp
+heroImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroAlt: "Palm tree-lined boulevard with the San Jacinto Mountains rising behind it in Palm Springs, California"
 keywords:
   - palm springs vs indio
@@ -37,7 +37,7 @@ relatedPosts:
   "@type": "BlogPosting",
   "headline": "Palm Springs vs Indio: Where to Stay",
   "description": "Indio is not Palm Springs, they're 25 miles apart. Here's the honest difference: price, space, festival proximity, and which one is right for your trip.",
-  "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp",
   "datePublished": "2026-01-20",
   "dateModified": "2026-04-21",
   "author": {
@@ -83,7 +83,7 @@ relatedPosts:
 
 <h2>Palm Springs: What You're Getting</h2>
 
-<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm tree-lined street in Palm Springs under a clear blue sky with mountain views in the distance" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue sky with mountain views in the distance" loading="lazy" width="1400" height="933">
 <p class="image-caption">The main drag in Palm Springs. Walkability like this is rare in the California desert.</p>
 
 <p>Palm Springs is walkable in a way that almost nothing else in the desert is. You can park once, walk to dinner, get coffee in the morning without moving the car, wander the architecture streets in the afternoon, and come back to your rental without ever touching your keys again. For the Coachella Valley, that is genuinely unusual.</p>
@@ -92,7 +92,7 @@ relatedPosts:
 
 <p>Downtown Palm Springs has density: restaurants, galleries, a weekend street market, vintage shops, and a handful of bars that go reasonably late. If your trip is about wandering and discovery, Palm Springs rewards that kind of itinerary.</p>
 
-<img src="/blog/images/ps-orange-door-mcm.jpg" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and blue sky" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-orange-door-mcm.webp" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and blue sky" loading="lazy" width="1400" height="933">
 <p class="image-caption">Every block in Palm Springs has a moment like this. It's not curated, it's just how the city looks.</p>
 
 <h3>The Real Limits of Staying in Palm Springs</h3>
@@ -105,7 +105,7 @@ relatedPosts:
 
 <h2>Indio: What You're Getting</h2>
 
-<img src="/blog/images/cozy-cactus-backyard.jpg" alt="Backyard of the Cozy Cactus vacation rental in Indio California with private hot tub, desert landscaping, and community pool steps away" loading="lazy" width="1400" height="933">
+<img src="/blog/images/cozy-cactus-backyard.webp" alt="Backyard of the Cozy Cactus vacation rental in Indio California with private hot tub, desert landscaping, and community pool steps away" loading="lazy" width="1400" height="933">
 <p class="image-caption">This is what the same budget buys in Indio. Hot tub, community pool steps away, room for 8 people to spread out.</p>
 
 <p>Indio is 30 minutes east of Palm Springs. It's a working city with less polish, less Instagram curation, and fewer architecture tours. What it offers instead is space and value in a combination that's hard to find anywhere else in the valley.</p>
@@ -114,7 +114,7 @@ relatedPosts:
 
 <p>If you're attending Coachella or Stagecoach, Indio is the right call without much debate. The Cozy Cactus, our 3-bedroom in the Indian Palms neighborhood, is a short drive to the polo grounds. No surge pricing, no early departure to beat traffic, no standing in a rideshare line at midnight.</p>
 
-<img src="/blog/images/cc-nook-vignette.jpg" alt="Styled interior vignette at a Coachella Valley vacation rental with warm desert tones and comfortable furnishings" loading="lazy" width="1400" height="933">
+<img src="/blog/images/cc-nook-vignette.webp" alt="Styled interior vignette at a Coachella Valley vacation rental with warm desert tones and comfortable furnishings" loading="lazy" width="1400" height="933">
 <p class="image-caption">Indio vacation rentals tend to have more living space per dollar. Inside and out.</p>
 
 <h3>The Real Limits of Staying in Indio</h3>
@@ -185,7 +185,7 @@ relatedPosts:
 
 <p>The mistake people make is booking based on the name recognition of Palm Springs when what their group needs is space and proximity in Indio. And occasionally the reverse: booking Indio because it's cheaper, when a couple would have loved being 10 minutes from Palm Springs restaurants every night. Get clear on the trip first.</p>
 
-<img src="/blog/images/yes-please-palm-springs.jpg" alt="Yes Please Books storefront in a Palm Springs neighborhood, the kind of discovery that comes from wandering on foot" loading="lazy" width="1400" height="933">
+<img src="/blog/images/yes-please-palm-springs.webp" alt="Yes Please Books storefront in a Palm Springs neighborhood, the kind of discovery that comes from wandering on foot" loading="lazy" width="1400" height="933">
 <p class="image-caption">The walkable neighborhoods in Palm Springs reward wandering. You find places like this just by turning off the main drag.</p>
 
 <h2>Our Properties in Both Areas</h2>
@@ -239,7 +239,7 @@ relatedPosts:
 <h3>Can you visit Palm Springs as a day trip from Indio?</h3>
 <p>Easily. The drive is about 30 minutes. Many guests staying at our Indio properties spend a day in Palm Springs doing the architecture walk, lunch, and afternoon shopping, then come back to cook dinner and use the pool. You get the best of both without paying Palm Springs nightly rates for the whole trip.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.jpg" alt="Golden hour sunset over a Palm Springs street with mountains turning purple behind the palm trees" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Golden hour sunset over a Palm Springs street with mountains turning purple behind the palm trees" loading="lazy" width="1400" height="933">
 <p class="image-caption">Palm Springs at sunset. Whether you're staying there or just visiting for the day, at least one evening like this is worth planning for.</p>
 
 <p>If you want a deeper look at the whole valley, our <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a> breaks down every city and neighborhood worth knowing about. The desert is bigger than most people realize when they book.</p>

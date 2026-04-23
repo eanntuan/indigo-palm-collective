@@ -4,8 +4,8 @@ date: 2026-03-01
 dateModified: 2026-04-21
 redirectTo: /blog/where-to-stay-coachella/
 metaDescription: "Vacation rental, hotel, or camping for Coachella? The polo grounds are in Indio. Here's what's close, what it costs, and what to book first."
-ogImage: /blog/images/festival-coachella-aerial.jpg
-heroImage: /blog/images/festival-coachella-aerial.jpg
+ogImage: /blog/images/festival-coachella-aerial.webp
+heroImage: /blog/images/festival-coachella-aerial.webp
 heroAlt: "Vacation rental near the Coachella festival grounds in Indio CA"
 keywords:
   - Coachella
@@ -27,7 +27,7 @@ layout: redirect.njk
   "@type": "BlogPosting",
   "headline": "Where to Stay for Coachella: The Honest Guide",
   "description": "Vacation rental, hotel, or camping for Coachella? The polo grounds are in Indio. Here's what's close, what it costs, and what to book first.",
-  "image": "https://indigopalm.co/blog/images/festival-coachella-aerial.jpg",
+  "image": "https://indigopalm.co/blog/images/festival-coachella-aerial.webp",
   "datePublished": "2026-03-01",
   "dateModified": "2026-04-21",
   "author": {
@@ -71,7 +71,7 @@ layout: redirect.njk
 
 <p>I own vacation rentals in Indio, two minutes from the polo grounds. I've watched this cycle play out every April. Here's the breakdown. No affiliate codes. No sponsored posts. Just what works.</p>
 
-<img src="/blog/images/coachella-festival-map-2026.jpg" alt="Coachella 2026 festival grounds map showing Empire Polo Club layout and stage locations in Indio CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-festival-map-2026.webp" alt="Coachella 2026 festival grounds map showing Empire Polo Club layout and stage locations in Indio CA" width="1400" height="933" loading="lazy">
 <p class="image-caption">The festival grounds at Empire Polo Club. Knowing the layout helps you plan your lodging strategy.</p>
 
 <h2>The Options</h2>
@@ -108,7 +108,7 @@ layout: redirect.njk
 
 <p>I own one of these. You knew it was coming.</p>
 
-<img src="/blog/images/festival-coachella-aerial.jpg" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio CA surrounded by the Coachella Valley desert" width="1400" height="933" loading="lazy">
+<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio CA surrounded by the Coachella Valley desert" width="1400" height="933" loading="lazy">
 <p class="image-caption">The polo grounds from above. Everything you see outside the festival fence is Indio. The Cozy Cactus is 2.5 miles from this shot.</p>
 
 <h2>The Cozy Cactus: Walking Distance from the Polo Grounds</h2>
@@ -119,7 +119,7 @@ layout: redirect.njk
 
 <p><strong>Getting home at 1am:</strong> You walk. No Uber surge. No "should we leave before the headliner to beat traffic?" calculation. You leave when you want and come back to a pool.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Private pool and backyard at the Cozy Cactus vacation rental in Indio CA, steps from the Coachella festival grounds" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Private pool and backyard at the Cozy Cactus vacation rental in Indio CA, steps from the Coachella festival grounds" width="1400" height="933" loading="lazy">
 <p class="image-caption">Your recovery base. Pool, hot tub, patio. Two miles from the polo grounds.</p>
 
 <h2>The 3PM Strategy (This Is Why Proximity Matters)</h2>
@@ -130,7 +130,7 @@ layout: redirect.njk
 
 <p>This only works if your rental has a pool worth spending time at and is close enough that splitting the group is easy. The Cozy Cactus was built for exactly this.</p>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial drone shot of the Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with community pool and hot tub" width="1400" height="933" decoding="async">
+<img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial drone shot of the Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with community pool and hot tub" width="1400" height="933" decoding="async">
 <p class="image-caption">The Cozy Cactus from above. Private hot tub and community pool steps from the back gate. Empire Polo Club is 2.5 miles east.</p>
 
 <h2>Honest Price Comparison</h2>
@@ -176,7 +176,7 @@ layout: redirect.njk
 
 <p>The math isn't just about the nightly rate. It's about what's included, what's not, and what you'll spend anyway.</p>
 
-<img src="/blog/images/coachella-shuttle.jpg" alt="Shuttle buses at Coachella festival providing transportation to the Empire Polo Club grounds in Indio CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-shuttle.webp" alt="Shuttle buses at Coachella festival providing transportation to the Empire Polo Club grounds in Indio CA" width="1400" height="933" loading="lazy">
 <p class="image-caption">The shuttle is a real option if you're staying further out. But the wait at midnight on Saturday is its own kind of festival experience.</p>
 
 <h2>When to Book</h2>

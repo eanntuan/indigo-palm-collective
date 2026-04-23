@@ -2,8 +2,8 @@
 title: "Stagecoach 2027: Where to Stay Near the Festival"
 date: 2026-04-12
 metaDescription: "Where to stay for Stagecoach 2027: camping, hotels, or vacation rental near the polo grounds? The real tradeoffs, from a host 7 minutes from the stage."
-ogImage: /blog/images/cozy-cactus-pool-backyard.jpg
-heroImage: /blog/images/cozy-cactus-pool-backyard.jpg
+ogImage: /blog/images/cozy-cactus-pool-backyard.webp
+heroImage: /blog/images/cozy-cactus-pool-backyard.webp
 heroAlt: "Cozy Cactus vacation rental pool and backyard in Indio CA, 7 minutes from Stagecoach festival grounds"
 keywords:
   - Stagecoach 2027 where to stay
@@ -24,7 +24,7 @@ layout: blog-post.njk
 
 <p>I've hosted Stagecoach guests at my two Indio properties since 2022. Here's what I've seen work and what hasn't.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Pool and backyard at Cozy Cactus vacation rental in Indio CA, seven minutes from Stagecoach festival grounds at Empire Polo Club" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Pool and backyard at Cozy Cactus vacation rental in Indio CA, seven minutes from Stagecoach festival grounds at Empire Polo Club" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus backyard. Seven minutes from the Stagecoach stage, no freeway. This is where festival weekends end well.</p>
 
 <h2>The Festival: What You're Working With</h2>
@@ -57,7 +57,7 @@ layout: blog-post.njk
 
 <p><strong>Outdoor space.</strong> Late April evenings in the Coachella Valley are genuinely beautiful: low 60s, light breeze, the kind of weather you want to be outside in. A house with a backyard and a hot tub or private pool makes those hours count.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.jpg" alt="Private saltwater pool and terracotta patio at Terra Luz vacation rental in Indio California near Stagecoach festival" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Private saltwater pool and terracotta patio at Terra Luz vacation rental in Indio California near Stagecoach festival" width="1400" height="933" loading="lazy">
 <p class="image-caption">Terra Luz backyard and private saltwater pool. After three days in festival heat, this is where late April evenings belong.</p>
 
 <h2>The Cozy Cactus: 3BR, Hot Tub, Game Room</h2>
@@ -76,7 +76,7 @@ layout: blog-post.njk
 
 <p>Dogs welcome (2 max, $100 pet fee).</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at night at The Cozy Cactus vacation rental in Indio California near Stagecoach festival grounds" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at night at The Cozy Cactus vacation rental in Indio California near Stagecoach festival grounds" width="1400" height="933" loading="lazy">
 <p class="image-caption">The private hot tub at The Cozy Cactus. Late April nights drop to the 50s. This is where Stagecoach weekends wind down.</p>
 
 <h2>When to Book</h2>
@@ -99,7 +99,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Stagecoach 2027: Where to Stay Near the Festival",
   "description": "Where to stay for Stagecoach 2027: camping, hotels, or vacation rental near the polo grounds? The real tradeoffs, written by a host 7 minutes from the stage.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-pool-backyard.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-pool-backyard.webp",
   "datePublished": "2026-04-12",
   "dateModified": "2026-04-12",
   "author": {

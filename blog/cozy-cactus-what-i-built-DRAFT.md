@@ -20,7 +20,7 @@ Before any furniture, before any "aesthetic," there were the basics that separat
 
 These are not glamorous changes. They don't make good Instagram content. But they're the foundation that makes everything else work. White walls, clean floors, modern light fixtures. Suddenly the house doesn't fight you anymore.
 
-![Cozy Cactus before renovation yellow walls and original carpet](blog/images/cochran-before-living-room.jpeg)
+![Cozy Cactus before renovation yellow walls and original carpet](blog/images/cochran-before-living-room.webp)
 *Before: yellow walls, grandma vibes, potential.*
 
 ---
@@ -35,7 +35,7 @@ Then came the Facebook Marketplace era. All over LA, picking up a $10 sound mach
 
 The thrill was the hunt. Buying new with white glove delivery is easy. Finding a foosball table on Marketplace and figuring out how to get it home is a story. I had a lot of stories by the end of this phase. And a house full of furniture.
 
-![Foosball table loaded into car after pickup in Hermosa Beach](blog/images/foosball-car.jpeg)
+![Foosball table loaded into car after pickup in Hermosa Beach](blog/images/foosball-car.webp)
 *Picked this up in Hermosa Beach. Somehow got it in and out of my car. If you've ever dealt with those steel poles, you know it ain't for the faint of heart.*
 
 ---
@@ -48,7 +48,7 @@ I had West Elm pieces next to Facebook Marketplace finds next to TJ Maxx wall ar
 
 I'd find myself standing in a room holding two pillows, completely unable to decide. Which one goes here? Do these colors work together? Is this too much? Deeply, completely overwhelmed. And the house showed it.
 
-![Paintings attempted for the home that did not make the cut](blog/images/tchotchke-problem.jpeg)
+![Paintings attempted for the home that did not make the cut](blog/images/tchotchke-problem.webp)
 *Some "paintings" by a "local artist" (aka me) that I attempted to place around the home. None of them made the cut.*
 
 This is when I hired Dawn.
@@ -63,7 +63,7 @@ Six brand filters. Six words that govern every single decision going forward: fu
 
 She gave The Cozy Cactus its actual identity: turquoise, coral, pineapple yellow. Not safe beige. Not the generic "coastal grandmother" look every other desert rental was doing. Something that made you feel something the moment you walked in the door.
 
-![Styled bedroom at The Cozy Cactus with green bed pink wall hammock and mustard pouf](blog/images/cc-primary-styled-v1.jpeg)
+![Styled bedroom at The Cozy Cactus with green bed pink wall hammock and mustard pouf](blog/images/cc-primary-styled-v1.webp)
 *Green bed. Pink wall with a hammock. Mustard pouf. Navy wallpaper. It's a lot, and it's completely intentional.*
 
 Turns out she was right. Annoyingly, completely, repeatedly right. The house stopped feeling like a collection of things and started feeling like a place.
@@ -78,7 +78,7 @@ I labeled everything. Every drawer, every cabinet, every shelf. Where the batter
 
 I bought a Stokke high chair instead of the wobbly plastic disaster from the clearance aisle. Sound machines in every bedroom. (I travel with my own. I am a grown adult. Zero shame.) A full Family Kit: bottle warmer, bottle brush, changing pad, diaper pail, cabinet locks, Keekaroo changing table. All the things you desperately need at 10pm on night one when you left yours at home.
 
-![Family kit at The Cozy Cactus including bottle warmer changing pad and infant essentials](blog/images/familykit.jpg)
+![Family kit at The Cozy Cactus including bottle warmer changing pad and infant essentials](blog/images/familykit.webp)
 *The Family Kit. Solving the 11pm panic message before it happens.*
 
 ---
@@ -91,7 +91,7 @@ I have repeat guests. Groups who come back for Coachella every year. Couples who
 
 The Cozy Cactus isn't baby-themed. It's thoughtfully designed for humans who notice when someone actually cared. It started as a backup plan for a Honda Element. It became something I'm genuinely proud of.
 
-![The Cozy Cactus exterior vacation rental in Indio near Coachella](blog/images/cozy-cactus-exterior.jpg)
+![The Cozy Cactus exterior vacation rental in Indio near Coachella](blog/images/cozy-cactus-exterior.webp)
 *3 bedrooms, sleeps 8, walking distance to Coachella.*
 
 ---

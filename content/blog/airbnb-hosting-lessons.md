@@ -3,8 +3,8 @@ title: "191 Airbnb Reviews: What We Learned"
 date: 2025-11-12
 dateModified: 2026-04-15
 metaDescription: "Hard-won hosting lessons from 191 Airbnb reviews and four years running rentals in Indio, CA. The details that move the needle on 5-star reviews."
-ogImage: /blog/images/cozy-cactus-exterior.jpg
-heroImage: /blog/images/cozy-cactus-exterior.jpg
+ogImage: /blog/images/cozy-cactus-exterior.webp
+heroImage: /blog/images/cozy-cactus-exterior.webp
 heroAlt: "Exterior of The Cozy Cactus vacation rental in Indio California with desert landscaping and clear blue sky"
 keywords:
   - vacation rental hosting tips
@@ -36,7 +36,7 @@ layout: blog-post.njk
     "url": "https://indigopalm.co"
   },
   "description": "Hard-won hosting lessons from 191 Airbnb reviews and four years running rentals in Indio, CA. The details that move the needle on 5-star reviews.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.webp",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://indigopalm.co/blog/airbnb-hosting-lessons/"
@@ -81,7 +81,7 @@ layout: blog-post.njk
 
 <p>The lesson: guests hold you to the standard your listing implies. If you say "fully stocked kitchen," you need to mean it the way a capable home cook would mean it.</p>
 
-<img src="/blog/images/cozy-cactus-family-kitchen.jpg" alt="Well-stocked family kitchen at The Cozy Cactus vacation rental in Indio California with labeled storage and warm natural light" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-family-kitchen.webp" alt="Well-stocked family kitchen at The Cozy Cactus vacation rental in Indio California with labeled storage and warm natural light" width="1400" height="933" loading="lazy">
 <p class="image-caption">The kitchen after the garlic press incident. Everything in here gets checked before every turnover.</p>
 
 <h2>Response Speed Matters More Than Response Quality</h2>
@@ -90,7 +90,7 @@ layout: blog-post.njk
 
 <p>When a guest messages, they're vulnerable. They're about to book, just arrived somewhere new, or something is wrong. The faster you close that gap, the safer they feel, and the more generous they are with everything else. We use automated check-in messages for routine stuff, but I stay personally available for anything outside the script.</p>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of The Cozy Cactus vacation rental in Indio California showing pool backyard and desert neighborhood" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of The Cozy Cactus vacation rental in Indio California showing pool backyard and desert neighborhood" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus from above. Four bedrooms, pool, putting green, all of it described accurately in the listing.</p>
 
 <h2>Stock Two of Everything, Then Add One More</h2>
@@ -99,7 +99,7 @@ layout: blog-post.njk
 
 <p>Spare roll behind every toilet, not just in the hall closet. Extra coffee filters inside the coffee drawer itself. A phone charger at every bedside table. Extra pool towels folded underneath the rack. The total cost of running this system is maybe $20-30 per restocking. Guests notice when things are just there. They notice even more when things aren't.</p>
 
-<img src="/blog/images/cozy-cactus-labeled-drawers.jpg" alt="Organized and labeled kitchen drawers at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized and labeled kitchen drawers at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy">
 <p class="image-caption">Labeled drawers and stocked consumables. Small friction, eliminated before guests arrive.</p>
 
 <h2>Temperature Control Is Binary</h2>
@@ -114,7 +114,7 @@ layout: blog-post.njk
 
 <p>Guests don't write about what they expected. They write about what surprised them. A putting green is unexpected. It photographs well. It gives people something to do on a slow afternoon without leaving the property. No amenity I've added since has moved the review needle the same way.</p>
 
-<img src="/blog/images/cozy-cactus-backyard.jpg" alt="Backyard putting green at The Cozy Cactus vacation rental in Indio California with desert landscaping and string lights" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-backyard.webp" alt="Backyard putting green at The Cozy Cactus vacation rental in Indio California with desert landscaping and string lights" width="1400" height="933" loading="lazy">
 <p class="image-caption">The $1,200 investment that shows up in 30 percent of reviews. Worth every cent.</p>
 
 <h2>Photos Tell the Truth Eventually</h2>
@@ -123,7 +123,7 @@ layout: blog-post.njk
 
 <p>We started photographing what guests find on arrival. Same furniture, same art, but nothing staged at its most photogenic. Guests who find the house looking exactly like the photos have one less thing to feel deceived about. Closing expectation gaps is free.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with lounge chairs and desert landscaping" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with lounge chairs and desert landscaping" width="1400" height="933" loading="lazy">
 <p class="image-caption">The pool and backyard photographed as guests find them, not styled within an inch of its life.</p>
 
 <h2>Respond to Every Bad Review Within 24 Hours</h2>
@@ -132,7 +132,7 @@ layout: blog-post.njk
 
 <p>Future guests read host responses to bad reviews to answer one question: can I trust this host if something goes wrong? Respond within 24 hours. Acknowledge what was valid. Explain what changed. Keep it short. Don't argue. Move on.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at The Cozy Cactus vacation rental in Indio California with desert evening sky and patio lighting" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at The Cozy Cactus vacation rental in Indio California with desert evening sky and patio lighting" width="1400" height="933" loading="lazy">
 <p class="image-caption">The hot tub guests love. Response time when it had a maintenance issue also showed up in reviews.</p>
 
 <h2>Clean Is the Only Non-Negotiable</h2>

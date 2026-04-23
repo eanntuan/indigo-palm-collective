@@ -30,7 +30,7 @@ What I've learned: have a list. An actual list of local contractors who pick up 
 
 I keep a saved contact called "HVAC EMERGENCY" in my phone. Michael, the electrician-plumber combo who has bailed me out multiple times, is in there as "MICHAEL CAGLE - CALL FIRST." He knows my properties. He's been there. That relationship took a year to build and it's worth more than any appliance warranty.
 
-![Cozy Cactus backyard with hot tub putting green and covered patio in Indio California](blog/images/cozy-cactus-backyard.jpg)
+![Cozy Cactus backyard with hot tub putting green and covered patio in Indio California](blog/images/cozy-cactus-backyard.webp)
 *The backyard at its best. The hot tub has also had its worst moments. That's part of the deal.*
 
 ---
@@ -61,7 +61,7 @@ What they're telling you when they return: you didn't disappoint. That's the who
 
 A guest who returns is also, quietly, doing your marketing for you. They've told people. They've recommended you. They've defended you in group chats when someone suggested a different rental. You just don't see that part.
 
-![Family vacation rental living room at The Cozy Cactus in Indio California near Coachella](blog/images/cozy-cactus-living-room.jpg)
+![Family vacation rental living room at The Cozy Cactus in Indio California near Coachella](blog/images/cozy-cactus-living-room.webp)
 *Three years in, this room has hosted Coachella crews, families with infants, anniversary trips, and at least two proposals. The couch has seen things.*
 
 ---
@@ -76,7 +76,7 @@ The label maker wasn't just for guests. It was for the checklist. "Baby spoons: 
 
 I had a guest tell me she walked through the house on arrival just to look at the labels. She said it felt like someone had actually thought about the visit before she arrived. That's exactly what it is.
 
-![Organized family kit at The Cozy Cactus with bottle warmer sound machine and infant essentials](blog/images/familykit.jpg)
+![Organized family kit at The Cozy Cactus with bottle warmer sound machine and infant essentials](blog/images/familykit.webp)
 *The Family Kit. Solved before the question gets asked.*
 
 ---
@@ -105,7 +105,7 @@ The photos are what gets someone to book. The systems are what gets them to come
 
 I also wish someone had told me: your first version of the house is not your final version. Things you think are permanent, like that rug you drove to Culver City to pick up, get replaced. Styles evolve. Guests leave evidence of what's working and what isn't. The house you have in year three looks nothing like what you launched with, and that's a good sign.
 
-![The Cozy Cactus exterior vacation rental in Indio California near Coachella festival grounds](blog/images/cozy-cactus-exterior.jpg)
+![The Cozy Cactus exterior vacation rental in Indio California near Coachella festival grounds](blog/images/cozy-cactus-exterior.webp)
 *Year three. Different rug. Better systems. Same house that somehow keeps getting better.*
 
 ---

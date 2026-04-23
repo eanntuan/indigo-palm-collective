@@ -2,8 +2,8 @@
 title: "Cozy Cactus: From Blank Canvas to Sanctuary"
 date: 2026-02-28
 metaDescription: "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental in Indio, CA. Now 4.66 stars and 191+ reviews across three years of hosting."
-ogImage: /blog/images/cozy-cactus-exterior.jpg
-heroImage: /blog/images/cozy-cactus-exterior.jpg
+ogImage: /blog/images/cozy-cactus-exterior.webp
+heroImage: /blog/images/cozy-cactus-exterior.webp
 heroAlt: "The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views"
 keywords:
   - family vacation rental Indio
@@ -25,7 +25,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Cozy Cactus: From Blank Canvas to Sanctuary",
   "description": "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental in Indio, CA. Now 4.66 stars and 191+ reviews across three years of hosting.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.webp",
   "datePublished": "2026-02-28",
   "dateModified": "2026-02-28",
   "author": {
@@ -71,12 +71,12 @@ layout: blog-post.njk
 
 <p>One step led to another, and before I knew it, my now husband, Tyler, who is also a real estate agent (lucky me!) were driving out to Indio, CA on Easter day in 2022 to take a look at what would eventually become The Cozy Cactus. After talking to the seller, taking countless videos, and seeing the potential that this home had, we drove back to his aunt's house, excused ourselves to the living room, where we wrote our offer.</p>
 
-<img src="/blog/images/cc-easter-visit.jpg" alt="Eann and Tyler visiting the Cozy Cactus property in Indio on Easter Sunday 2022 before purchasing" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/cc-easter-visit.webp" alt="Eann and Tyler visiting the Cozy Cactus property in Indio on Easter Sunday 2022 before purchasing" width="1400" height="1050" loading="lazy">
 <p class="image-caption">When Tyler, my then boyfriend at the time, and I drove to Indio on Easter Sunday to check out what would become The Cozy Cactus. We had no idea what we were getting ourselves into!</p>
 
 <p>Before I knew it, AGAIN, I was researching sofa beds (I still haven't found a comfortable one…), stalking facebook marketplace for the best deals all around town, going to Marshall's, Ross, TJ Max, Homegoods, etc to see if I could find any non-generic wall art (everyone knows the <a href="https://www.wayfair.com/IDEA4WALL--Animals-Portrait-Of-A-Highland-Cow-Black-And-White-Modern-Art-Extra-Large-Framed-Wall-Pictures-FLCA0-L1318-K~SFTD1019.html" target="_blank">cow print</a>). My days turned into bopping all around LA picking up a $10 sound machine (I now know better that time is money), squishing a West Elm dining table in my Honda Element (there has been nothing this car cannot fit), and slowly piecing together a discombobulated Airbnb that I prayed to the Lord almighty was a good decision. A Tesla definitely would've been easier.</p>
 
-<img src="/blog/images/cc-delivery-boxes.jpg" alt="Stacks of delivery boxes filling a room during Cozy Cactus vacation rental setup" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/cc-delivery-boxes.webp" alt="Stacks of delivery boxes filling a room during Cozy Cactus vacation rental setup" width="1400" height="1050" loading="lazy">
 <p class="image-caption">So. many. boxes. You wouldn't believe the amount of trash I've contributed to global warming. The installation process is no joke.</p>
 
 <p>As a frequent traveler myself, I have been to my share of Airbnbs, both decent and horrible at the same time. Why are the knives always SO dull and the kitchen so bare? Why are the beds so springy and outdated? When was the last time the floors were cleaned?</p>
@@ -87,7 +87,7 @@ layout: blog-post.njk
 
 <p>So when I bought the property that became The Cozy Cactus, I started there. How do families with young kids rest? Not "what makes a cute listing photo," but what makes a mom not want to leave by day two because it's too much work to stay?</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="The Cozy Cactus backyard with hot tub, putting green, and colorful mural designed for families" width="800" height="533">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="The Cozy Cactus backyard with hot tub, putting green, and colorful mural designed for families" width="800" height="533">
 <p class="image-caption">The backyard oasis: hot tub, putting green, and eye-catching mural where kids play while parents sip morning coffee</p>
 
 <h2>What I Built Instead</h2>
@@ -98,7 +98,7 @@ layout: blog-post.njk
 
 <p>Here's what I changed. First, I hired Dawn Asher, of <a href="https://www.theolivejar.co/" target="_blank">The Olive Jar</a>. Not only did she help me unify the design into one cohesive home, but she also helped me reframe my hospitality mindset, that every detail matters, and creating moments of experiential hospitality (her buzz words!) would set me apart from the rest of the cookie cutter homes in the desert. Turns out, she is a genius, and she was right.</p>
 
-<img src="/blog/images/cc-dawn-designer.jpg" alt="Eann and Dawn Asher of The Olive Jar at The Cozy Cactus" loading="lazy" decoding="async" width="1400" height="934">
+<img src="/blog/images/cc-dawn-designer.webp" alt="Eann and Dawn Asher of The Olive Jar at The Cozy Cactus" loading="lazy" decoding="async" width="1400" height="934">
 <p class="image-caption">Dawn, the mastermind, whom I now call a friend!!</p>
 
 <p>A few things I did that guests have raved about:</p>
@@ -106,22 +106,22 @@ layout: blog-post.njk
 <h3>I labeled everything.</h3>
 <p>Where the batteries are. Where the extra linens go. Which drawer has the baby spoons. Which cabinet has the Tupperware lids (because that's always the mystery, right?). I didn't want guests hunting for things at 7am while their little ones are screaming for breakfast. One guest told me the labeling system was "unprecedented." I laughed when she said it, but I get it. To be honest, my own home is not as organized as my vacation rentals. If I, the homeowner, cannot find where the forks are, how do I expect a guest to?</p>
 
-<img src="/blog/images/cozy-cactus-labeled-drawers.jpg" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Everything labeled: batteries, extra linens, baby spoons, exactly where you'd look for them</p>
 
 <h3>I bought infant gear that works.</h3>
 <p>I bought elevated baby gear, including a <a href="https://www.target.com/p/stokke-clikk-high-chair-cloud-gray/-/A-78461786" target="_blank">Stokke high chair</a> that supports a toddler well. Sound machines in every bedroom because sleep matters. Shoot, I'm a grown woman, and I travel with my own sound machine! Outlet covers, cabinet locks, Keekaroo changing table, etc. Dawn curated a whole Family Kit for The Cozy Cactus, and it has proven to be widely successful. We added things you don't realize you need until 10pm on vacation: bottle warmer, bottle brush, changing pad, diaper pail. Those 11pm panicked messages were solvable problems, so we solved them before check-in.</p>
 
-<img src="/blog/images/cc-stokke-highchair.jpg" alt="Stokke high chair at The Cozy Cactus dining area with modern curtains and fiddle leaf fig plant" loading="lazy" decoding="async" width="934" height="1400">
+<img src="/blog/images/cc-stokke-highchair.webp" alt="Stokke high chair at The Cozy Cactus dining area with modern curtains and fiddle leaf fig plant" loading="lazy" decoding="async" width="934" height="1400">
 <p class="image-caption">The craziest part of all this is that we are DINKWADS (Double Income, No Kids, With A Dog (and two cats)), so I had to lean on Dawn and my parent friends for advice on how to make homes family and baby friendly!</p>
 
-<img src="/blog/images/cozy-cactus-infant-gear.jpg" alt="Baby gear at The Cozy Cactus including Stokke high chair, sound machine, pack n play, and changing station" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/cozy-cactus-infant-gear.webp" alt="Baby gear at The Cozy Cactus including Stokke high chair, sound machine, pack n play, and changing station" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Elevated baby gear: Stokke high chair, sound machines, pack-n-play. Everything families need, already there.</p>
 
 <h3>I designed the kitchen for families, not just wine glasses and a corkscrew.</h3>
 <p>Full set of kids' dishes, sippy cups, blender for baby food (or margaritas). Drawer dedicated to plastic bags and Ziplocs because parents need those constantly. Coffee bar with good beans because tired parents deserve decent coffee, not the preground stuff that tastes like cardboard and been sitting there for who knows how long.</p>
 
-<img src="/blog/images/cozy-cactus-family-kitchen.jpg" alt="Family-friendly kitchen at The Cozy Cactus with kids dishes, coffee bar, and organized drawers" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/cozy-cactus-family-kitchen.webp" alt="Family-friendly kitchen at The Cozy Cactus with kids dishes, coffee bar, and organized drawers" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Not just wine glasses and a corkscrew: actual family infrastructure</p>
 
 <h3>I created a fun backyard moment with an eye catching mural, hot tub, and putting green.</h3>
@@ -150,15 +150,15 @@ layout: blog-post.njk
 
 <p>I wasn't trying to be revolutionary. I just wanted families to rest. Shoot. I wanted rest!! From the beginning, kids were the reason the house existed, not an afterthought. The Cozy Cactus is colorful: turquoise and coral and pineapple yellow, because why not? It's playful without being chaotic. The design is fem-leaning but appeals to everyone because good design isn't gendered, it's just good. The vibe is "organized chaos" except organized, so it's just… functional joy. It's not a sanctuary in the spa-retreat sense. It's a sanctuary in the "you can finally exhale" sense. Where parents stop managing every detail because someone already managed them. Where your little ones have what they need without you hunting for it at midnight. Where vacation means rest, not just a different location to be exhausted in.</p>
 
-<img src="/blog/images/cozy-cactus-mural.jpg" alt="Colorful hand-painted mural on The Cozy Cactus backyard wall in Indio CA" loading="lazy" decoding="async" width="1400" height="934">
+<img src="/blog/images/cozy-cactus-mural.webp" alt="Colorful hand-painted mural on The Cozy Cactus backyard wall in Indio CA" loading="lazy" decoding="async" width="1400" height="934">
 <p class="image-caption">I joke that this mural was painted by a "local artist," aka yours truly. Took lots of measurements and painter's tape, but not too shabby!</p>
 
 <p>I'm not trying to win design awards, though we did get featured on a <a href="https://minoan.com/blog/host-spotlight-eann" target="_blank">Minoan blog post</a>! I'm trying to solve the problem of families who book a vacation rental and end up more exhausted than before they left. That's The Cozy Cactus. Families keep coming back. They don't just survive vacation. They enjoy it.</p>
 
 <p>If that's the kind of vacation you've been looking for, we'd love to be your landing spot. <a href="/cozy-cactus/">Come stay with us.</a></p>
 
-<img src="/blog/images/cozy-cactus-exterior.jpg" alt="The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/cozy-cactus-exterior.webp" alt="The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">A place where families rest. 15 minutes from Coachella, designed for humans who appreciate when someone gives a damn.</p>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial drone shot of The Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with pool and mountain views" loading="lazy" decoding="async" width="1400" height="933">
+<img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial drone shot of The Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with pool and mountain views" loading="lazy" decoding="async" width="1400" height="933">
 <p class="image-caption">Indian Palms Country Club at sunset. The pool is the blue rectangle. That's the backyard.</p>

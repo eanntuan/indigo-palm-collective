@@ -3,8 +3,8 @@ title: "5 Things to Check in a Coachella Valley Rental"
 date: 2026-01-06
 dateModified: 2026-04-15
 metaDescription: "From pool access to honest reviews to a host who responds. Five things to check before booking a Coachella Valley vacation rental in Indio or Palm Springs."
-ogImage: /blog/images/cozy-cactus-pool-backyard.jpg
-heroImage: /blog/images/cozy-cactus-pool-backyard.jpg
+ogImage: /blog/images/cozy-cactus-pool-backyard.webp
+heroImage: /blog/images/cozy-cactus-pool-backyard.webp
 heroAlt: "Private pool and backyard at a Coachella Valley vacation rental in Indio California with lounge chairs and palm trees"
 keywords:
   - Coachella Valley vacation rental
@@ -24,7 +24,7 @@ layout: blog-post.njk
 
 <p>I've been hosting in the Coachella Valley for years and have stayed in enough rentals elsewhere to know where the gap is. The difference between a rental that looks good in photos and one that works when you're in it almost always comes down to five things. Most people skip at least three of them before booking.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Backyard and community pool area at the Cozy Cactus vacation rental in Indio California with lounge chairs and palm trees" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Backyard and community pool area at the Cozy Cactus vacation rental in Indio California with lounge chairs and palm trees" width="1400" height="933" loading="lazy">
 <p class="image-caption">The community pool at Indian Palms Country Club, steps from The Cozy Cactus. The difference between community and private pool access is bigger than it sounds.</p>
 
 <h2>1. Pool Access: Private vs. Community, and What the Difference Is</h2>
@@ -39,7 +39,7 @@ layout: blog-post.njk
 
 <p><a href="/terra-luz/">Terra Luz</a> has a private saltwater pool with a sun shelf, heated year-round. <a href="/cozy-cactus/">The Cozy Cactus</a> has a private hot tub and a community pool steps away in Indian Palms Country Club. That distinction comes up in every third review mentioning the pool, and it's worth knowing before you book anything.</p>
 
-<img src="/blog/images/cozy-cactus-aerial.jpg" alt="Aerial view of Cozy Cactus vacation rental in Indio California showing backyard and surrounding Indian Palms neighborhood" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of Cozy Cactus vacation rental in Indio California showing backyard and surrounding Indian Palms neighborhood" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus from above. The community pool is steps from the back gate. This is what you're evaluating when you check the satellite view in listing maps.</p>
 
 <h2>2. Read the Review Pattern, Not Just the Star Average</h2>
@@ -62,7 +62,7 @@ layout: blog-post.njk
 
 <p>For Coachella and Stagecoach specifically: Indio is the location that matters. The Empire Polo Club is at 81800 Avenue 51 in Indio. Any rental that's not in Indio adds commute time, surge pricing risk, and festival traffic to every day of the festival. The <a href="/blog/indian-palms-vacation-rental/">Indian Palms vacation rental guide</a> covers the specific neighborhood geography if you're trying to understand exactly where close-to-festival means.</p>
 
-<img src="/blog/images/cozy-cactus-exterior.jpg" alt="Front exterior of Cozy Cactus vacation rental in Indio California with desert landscaping and palm trees" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-exterior.webp" alt="Front exterior of Cozy Cactus vacation rental in Indio California with desert landscaping and palm trees" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus on Cochran Dr in Indio. The address tells you exactly where it is. Always map the actual address before booking.</p>
 
 <h2>4. Understand the Fee Structure Before You Get Attached to a Nightly Rate</h2>
@@ -89,7 +89,7 @@ layout: blog-post.njk
 
 <p>This applies to direct booking options too. If a property has a direct booking site alongside its Airbnb listing, messaging through direct booking often gets you faster response and sometimes a better rate, because the host doesn't pay a platform commission on direct bookings.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at night at the Cozy Cactus vacation rental in Indio California with string lights and desert sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at night at the Cozy Cactus vacation rental in Indio California with string lights and desert sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus hot tub. Knowing a host responds fast matters most when something like this needs attention during your stay.</p>
 
 <h2>Putting It Together</h2>
@@ -108,7 +108,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "5 Things to Check in a Coachella Valley Rental",
   "description": "From pool access to honest reviews to a host who responds. Five things worth checking before you book a Coachella Valley vacation rental.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-pool-backyard.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-pool-backyard.webp",
   "datePublished": "2026-01-06",
   "dateModified": "2026-04-15",
   "author": {

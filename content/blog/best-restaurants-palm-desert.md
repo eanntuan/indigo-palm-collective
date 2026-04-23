@@ -2,8 +2,8 @@
 title: "Palm Desert Restaurants Worth Knowing"
 date: 2026-04-17
 metaDescription: "Pink Cabana, Kitchen 86 on El Paseo, and a 30-year Italian institution. Palm Desert and Indian Wells restaurants worth knowing, organized by vibe."
-ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
-heroImage: /blog/images/ps-boulevard-palms-mountains.jpg
+ogImage: /blog/images/ps-boulevard-palms-mountains.webp
+heroImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroAlt: "Palm-lined boulevard in the Coachella Valley with San Jacinto Mountains and clear blue sky"
 keywords:
   - best restaurants Palm Desert
@@ -26,7 +26,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Desert Restaurants Worth Knowing",
   "description": "Pink Cabana, Kitchen 86 on El Paseo, and a 30-year Italian institution. Palm Desert and Indian Wells restaurants worth knowing, organized by vibe.",
-  "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.jpg",
+  "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp",
   "datePublished": "2026-04-17",
   "dateModified": "2026-04-17",
   "author": {
@@ -70,7 +70,7 @@ layout: blog-post.njk
 
 <p>El Paseo in Palm Desert is the main corridor, a mile-long boulevard with galleries, boutiques, and restaurants that feels more like a real neighborhood than a tourist strip. Indian Wells, just east, is the more residential city where a few destination restaurants have opened inside the hotels and resorts. This guide covers both.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard in the Coachella Valley with San Jacinto Mountains in the background on a clear sunny day" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in the Coachella Valley with San Jacinto Mountains in the background on a clear sunny day" width="1400" height="933" loading="lazy">
 <p class="image-caption">The valley corridor between Palm Springs and Indio. Most of Palm Desert's best restaurants sit along El Paseo or in the hotel district just east.</p>
 
 <h2>Dinner and Drinks</h2>
@@ -89,7 +89,7 @@ layout: blog-post.njk
 
 <p>It's a resort restaurant, but it doesn't eat like one. Good for a longer dinner when you want something with a real culinary point of view. Find them at <a href="https://www.instagram.com/tiacarmeniw/" target="_blank" rel="noopener">@tiacarmeniw</a>.</p>
 
-<img src="/blog/images/indian-wells-tennis-garden-aerial.jpg" alt="Aerial view of Indian Wells Tennis Garden surrounded by desert landscape and San Jacinto Mountains" width="1400" height="933" loading="lazy">
+<img src="/blog/images/indian-wells-tennis-garden-aerial.webp" alt="Aerial view of Indian Wells Tennis Garden surrounded by desert landscape and San Jacinto Mountains" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indian Wells from above. The tennis garden anchors the city, but the hotel restaurants here have become their own destination.</p>
 
 <h2>El Paseo</h2>
@@ -112,7 +112,7 @@ layout: blog-post.njk
 
 <p>Katsuyama is a Japanese izakaya on Country Club Drive, off the main El Paseo strip. The kitchen centers on ramen, including a tonkotsu that takes the broth seriously, alongside katsu and shareable plates. The energy is casual and neighborhood-forward. This is the kind of place you find because someone who lives nearby told you about it. Find them at <a href="https://www.instagram.com/katsuyama_us/" target="_blank" rel="noopener">@katsuyama_us</a>.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm-lined boulevard in the Coachella Valley with the Santa Rosa Mountains rising behind, typical of the El Paseo area" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in the Coachella Valley with the Santa Rosa Mountains rising behind, typical of the El Paseo area" width="1400" height="933" loading="lazy">
 <p class="image-caption">El Paseo runs about a mile through central Palm Desert. Park once and walk the length of it.</p>
 
 <h2>Practical Notes</h2>

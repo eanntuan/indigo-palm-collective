@@ -2,8 +2,8 @@
 title: "Inside The Cozy Cactus: Built for Families"
 date: 2026-03-10
 metaDescription: "From labeled drawers to Stokke high chairs, here is what makes The Cozy Cactus a family Airbnb in Indio where parents rest, not just survive."
-ogImage: /blog/images/cozy-cactus-exterior.jpg
-heroImage: /blog/images/cozy-cactus-exterior.jpg
+ogImage: /blog/images/cozy-cactus-exterior.webp
+heroImage: /blog/images/cozy-cactus-exterior.webp
 heroAlt: "The Cozy Cactus vacation rental exterior in Indio California near Coachella"
 keywords:
   - family vacation rental Indio
@@ -25,7 +25,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Inside The Cozy Cactus: Built for Families",
   "description": "From labeled drawers to Stokke high chairs, here is what makes The Cozy Cactus a family Airbnb in Indio where parents rest, not just survive.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.webp",
   "datePublished": "2026-03-10",
   "dateModified": "2026-03-10",
   "author": {
@@ -77,7 +77,7 @@ layout: blog-post.njk
 
 <p>These are not glamorous changes. They don't make good Instagram content. But they're the foundation that makes everything else work. White walls, clean floors, modern light fixtures. Suddenly the house doesn't fight you anymore.</p>
 
-<img src="/blog/images/cochran-before.jpeg" alt="The Cozy Cactus before renovation, yellow walls and dated exterior" decoding="async" width="800" height="533">
+<img src="/blog/images/cochran-before.webp" alt="The Cozy Cactus before renovation, yellow walls and dated exterior" decoding="async" width="800" height="533">
 <p class="image-caption">Before: yellow walls, grandma vibes, potential<br><small>Photo: Eann Tuan</small></p>
 
 <h2>The West Elm phase.</h2>
@@ -88,12 +88,12 @@ layout: blog-post.njk
 
 <p>Then came the Facebook Marketplace era. I was all over LA, picking up a $10 sound machine here (I now know that time is money, but at the time I was very proud of that $10 sound machine), cramming a West Elm dining table into my Honda Element there. (There has been nothing that car cannot fit. It remains one of its best qualities.) Garage sales. Marshalls. TJ Maxx. HomeGoods. Ross. I was on a mission to find the best deal on everything, one piece at a time.</p>
 
-<img src="/blog/images/car-storage.jpeg" alt="Honda Element packed with furniture and storage bins for The Cozy Cactus" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/car-storage.webp" alt="Honda Element packed with furniture and storage bins for The Cozy Cactus" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The Honda Element: still fits everything, still the MVP<br><small>Photo: Eann Tuan</small></p>
 
 <p>Part of the thrill was the hunt. Buying new with white glove delivery is easy. Finding a foosball table on Marketplace and figuring out how to get it home is a story. I had a lot of stories by the end of this phase. And a house full of furniture.</p>
 
-<img src="/blog/images/foosball.jpeg" alt="Foosball table from Facebook Marketplace at The Cozy Cactus game room" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/foosball.webp" alt="Foosball table from Facebook Marketplace at The Cozy Cactus game room" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The foosball table. I will not explain what getting this in and out of my car involved.<br><small>Photo: Eann Tuan</small></p>
 
 <h2>The tchotchke problem.</h2>
@@ -114,10 +114,10 @@ layout: blog-post.njk
 
 <p>She gave The Cozy Cactus its actual identity: turquoise, coral, pineapple yellow. Not safe beige. Not the generic "coastal grandmother" look every other desert rental was doing. Something that made you feel something the moment you walked in the door.</p>
 
-<img src="/blog/images/cc-bedroom-closet-wide.jpg" alt="The Cozy Cactus bedroom after renovation with navy geometric wallpaper closet, emerald green velvet chair, and mustard pouf" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/cc-bedroom-closet-wide.webp" alt="The Cozy Cactus bedroom after renovation with navy geometric wallpaper closet, emerald green velvet chair, and mustard pouf" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">After Dawn: the bedroom that makes guests photograph the closet before they unpack<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
-<img src="/blog/images/cc-bedroom-nook-full.jpg" alt="Full Cozy Cactus bedroom with green velvet chair, mustard pouf, wallpaper nook, hammock on pink wall" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/cc-bedroom-nook-full.webp" alt="Full Cozy Cactus bedroom with green velvet chair, mustard pouf, wallpaper nook, hammock on pink wall" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Green bed. Pink wall with a hammock. Mustard pouf. Navy wallpaper. It's a lot, and it's completely intentional.<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
 <p>Turns out she was right. Annoyingly, completely, repeatedly right. The house stopped feeling like a collection of things and started feeling like a place.</p>
@@ -130,10 +130,10 @@ layout: blog-post.njk
 
 <p>I bought a <a href="https://www.target.com/p/stokke-clikk-high-chair-cloud-gray/-/A-78461786" target="_blank">Stokke high chair</a> instead of the wobbly plastic disaster from the clearance aisle. Sound machines in every bedroom. (I travel with my own. I am a grown adult. Zero shame.) Dawn curated a full Family Kit: bottle warmer, bottle brush, changing pad, diaper pail, cabinet locks, Keekaroo changing table. All the things you desperately need at 10pm on night one when you left yours at home.</p>
 
-<img src="/blog/images/familykit.jpg" alt="Family Kit at The Cozy Cactus with organized baby gear, bottle warmer, sound machine, and infant supplies" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/familykit.webp" alt="Family Kit at The Cozy Cactus with organized baby gear, bottle warmer, sound machine, and infant supplies" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The Family Kit: solving the 11pm panic message before it happens<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
-<img src="/blog/images/family-closet.jpg" alt="Organized family gear closet at The Cozy Cactus with pack n play, stroller, and baby supplies" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/family-closet.webp" alt="Organized family gear closet at The Cozy Cactus with pack n play, stroller, and baby supplies" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">All the things, so you don't have to bring all the things<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
 <h2>What it became.</h2>

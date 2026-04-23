@@ -2,8 +2,8 @@
 title: "Indio Between Coachella Weekends: What to Do"
 date: 2026-04-04
 metaDescription: "Stuck in Indio CA between Coachella Weekend 1 and 2? Here's exactly what to do, from date shakes to the Salton Sea. A real local's guide, not a listicle."
-ogImage: /blog/images/indio-between-coachella-weekends.jpg
-heroImage: /blog/images/indio-between-coachella-weekends.jpg
+ogImage: /blog/images/indio-between-coachella-weekends.webp
+heroImage: /blog/images/indio-between-coachella-weekends.webp
 heroAlt: "Coachella Valley desert landscape between Indio date palms, the in-between week"
 keywords:
   - things to do Indio between Coachella weekends
@@ -26,7 +26,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Indio Between Coachella Weekends: What to Do",
   "description": "Stuck in Indio CA between Coachella Weekend 1 and 2? Here's exactly what to do, from date shakes to the Salton Sea. A real local's guide, not a listicle.",
-  "image": "https://indigopalm.co/blog/images/indio-between-coachella-weekends.jpg",
+  "image": "https://indigopalm.co/blog/images/indio-between-coachella-weekends.webp",
   "datePublished": "2026-04-04",
   "dateModified": "2026-04-04",
   "author": {
@@ -82,7 +82,7 @@ layout: blog-post.njk
 
 <p>Keep a cooler stocked. Order delivery or pick up something simple (more on where in a minute). Sleep at an hour that isn't 3am. The desert will still be there tomorrow. It literally cannot leave.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Pool and hot tub at a Coachella Valley vacation rental on a sunny desert morning" decoding="async" width="800" height="533">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Pool and hot tub at a Coachella Valley vacation rental on a sunny desert morning" decoding="async" width="800" height="533">
 <p class="image-caption">The most underrated Coachella activity: the pool at your rental on Monday morning</p>
 
 <h2>Where to Eat in Indio</h2>
@@ -136,7 +136,7 @@ layout: blog-post.njk
     <p><strong>Vibe:</strong> Small, intentional, not trying to be a Palm Springs aesthetic cafe</p>
 </div>
 
-<img src="/blog/images/one-stop-taco-shop.jpg" alt="Overhead spread of tacos and tostadas on white plates from One Stop Taco Shop, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/one-stop-taco-shop.webp" alt="Overhead spread of tacos and tostadas on white plates from One Stop Taco Shop, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The food scene between the polo grounds and the date farms is worth exploring</p>
 
 <h2>Day Trip: Shields Date Garden (Indio Is the Date Capital of the US. Act Like It.)</h2>
@@ -157,7 +157,7 @@ layout: blog-post.njk
     <p><strong>Time needed:</strong> 1.5–2 hours if you're doing the grove and the film</p>
 </div>
 
-<img src="/blog/images/shields-date-garden.jpg" alt="Shields Date Garden cafe entrance with neon sign and date palms, Highway 111, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/shields-date-garden.webp" alt="Shields Date Garden cafe entrance with neon sign and date palms, Highway 111, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Open since Christmas 1924. The date shake has won Best in the Valley for ten consecutive years.</p>
 
 <h2>Day Trip: The Salton Sea (Weird, Beautiful, Honest)</h2>
@@ -202,7 +202,7 @@ layout: blog-post.njk
     <p><strong>Check:</strong> Their website for event nights before you go</p>
 </div>
 
-<img src="/blog/images/rosemary-hifi.jpg" alt="Rosemary HiFi interior with cobalt blue tile bar, walnut shelving with vinyl records and 1960s JBL speakers, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/rosemary-hifi.webp" alt="Rosemary HiFi interior with cobalt blue tile bar, walnut shelving with vinyl records and 1960s JBL speakers, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">1960s JBL speakers, natural wine, and a record collection where the liquor display should be</p>
 
 <h2>You're Already Here. Use That.</h2>

@@ -2,8 +2,8 @@
 title: "Coachella Valley with Kids: A Practical Family Guide"
 date: 2026-03-30
 metaDescription: "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters more than people think."
-ogImage: /blog/images/cozy-cactus-infant-gear.jpg
-heroImage: /blog/images/cozy-cactus-infant-gear.jpg
+ogImage: /blog/images/cozy-cactus-infant-gear.webp
+heroImage: /blog/images/cozy-cactus-infant-gear.webp
 heroAlt: "Baby and family gear laid out at Cozy Cactus vacation rental in Indio CA, pack n play stroller and infant supplies"
 keywords:
   - Coachella Valley with kids
@@ -24,7 +24,7 @@ layout: blog-post.njk
 
 <p>After four years hosting families with babies and toddlers at <a href="/cozy-cactus/">The Cozy Cactus</a>, I know what that morning looks like and what makes it possible. Not the "just pack light and relax!" version. The kind that comes from watching a lot of exhausted parents arrive, and watching what made them leave actually rested.</p>
 
-<img src="/blog/images/cozy-cactus-infant-gear.jpg" alt="Baby gear at Cozy Cactus vacation rental in Indio CA including pack n play stroller and infant supplies for family travel" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-infant-gear.webp" alt="Baby gear at Cozy Cactus vacation rental in Indio CA including pack n play stroller and infant supplies for family travel" width="1400" height="933" loading="lazy">
 <p class="image-caption">Everything on this table was chosen because a tired parent asked for it. The pack-n-play has a real crib mattress, not the foam insert.</p>
 
 <h2>When to Come with Kids</h2>
@@ -53,7 +53,7 @@ layout: blog-post.njk
   <li>Stroller available on request</li>
 </ul>
 
-<img src="/blog/images/family-closet.jpg" alt="Family vacation rental supply closet at Cozy Cactus Indio CA with pack n play stroller baby gear and travel supplies organized" width="1400" height="933" loading="lazy">
+<img src="/blog/images/family-closet.webp" alt="Family vacation rental supply closet at Cozy Cactus Indio CA with pack n play stroller baby gear and travel supplies organized" width="1400" height="933" loading="lazy">
 <p class="image-caption">The family closet. Guests with under-2s typically arrive and say "oh thank god." That's the goal.<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
 <p>The kitchen is stocked like someone cooks there: labeled drawers, full-size fridge, everything family-sized. You can make breakfast for a group without staging a scavenger hunt for the spatula.</p>
@@ -62,7 +62,7 @@ layout: blog-post.njk
 
 <p>The putting green gets more use than anything else I built. Kids who have never held a putter will spend two hours out there. I don't know why this is so universally true but it is, so I mention it.</p>
 
-<img src="/blog/images/cozy-cactus-backyard-putting-green.jpg" alt="Kids putting green in the backyard at Cozy Cactus vacation rental Indio CA with desert landscaping" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-backyard-putting-green.webp" alt="Kids putting green in the backyard at Cozy Cactus vacation rental Indio CA with desert landscaping" width="1400" height="933" loading="lazy">
 <p class="image-caption">The putting green. I have received no fewer than a dozen reviews that specifically mention this. Kids do not need to know golf.</p>
 
 <p>The game room has foosball, a full-size ping pong table, and board games. For families with older kids (5+), this becomes the evening default.</p>
@@ -71,7 +71,7 @@ layout: blog-post.njk
 
 <p>The community pool at Indian Palms Country Club is literally steps from the back gate. It's shared and has posted hours, so plan around that. But for splashing around in the afternoon, it's exactly what kids want in the Coachella Valley in October or March.</p>
 
-<img src="/blog/images/cozy-cactus-family-kitchen.jpg" alt="Family kitchen at Cozy Cactus vacation rental in Indio CA with labeled drawers full cookware and family-sized layout" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-family-kitchen.webp" alt="Family kitchen at Cozy Cactus vacation rental in Indio CA with labeled drawers full cookware and family-sized layout" width="1400" height="933" loading="lazy">
 <p class="image-caption">The kitchen. Labeled drawers, family-sized everything. You can make breakfast for five without reorganizing the whole room first.</p>
 
 <h2>Kid-Friendly Things to Do in the Coachella Valley</h2>
@@ -110,7 +110,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Coachella Valley with Kids: A Practical Family Guide",
   "description": "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-infant-gear.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-infant-gear.webp",
   "datePublished": "2026-03-30",
   "dateModified": "2026-03-30",
   "author": {

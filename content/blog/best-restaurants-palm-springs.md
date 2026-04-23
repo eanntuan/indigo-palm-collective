@@ -3,8 +3,8 @@ title: "Best Restaurants in Palm Springs: Local Picks"
 date: 2026-04-15
 dateModified: 2026-04-15
 metaDescription: "Palm Springs restaurants worth knowing, from a 20-year coffee institution to a golf club patio with mountain views. Organized by meal, verified local picks."
-ogImage: /blog/images/tropicale-palm-springs.jpg
-heroImage: /blog/images/tropicale-palm-springs.jpg
+ogImage: /blog/images/tropicale-palm-springs.webp
+heroImage: /blog/images/tropicale-palm-springs.webp
 heroAlt: "Tropicale Dining and Lounge exterior in Palm Springs with pink stucco walls, palm trees, and San Jacinto Mountains in background"
 keywords:
   - best restaurants Palm Springs
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Best Restaurants in Palm Springs: A Local's List",
   "description": "10 Palm Springs restaurants worth your time, organized by meal. Coffee to late-night dinner, from a 20-year institution to a 12-seat omakase.",
-  "image": "https://indigopalm.co/blog/images/tropicale-palm-springs.jpg",
+  "image": "https://indigopalm.co/blog/images/tropicale-palm-springs.webp",
   "datePublished": "2026-04-09",
   "dateModified": "2026-04-15",
   "author": {
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <p>These are the places I keep going back to, organized by meal because the city runs on a different rhythm depending on when you show up. The spots below are across two zones: the main cluster along Palm Canyon Drive and the Uptown Design District about a mile north, with one exception just over the city line in Cathedral City that's worth the five-minute drive.</p>
 
-<img src="/blog/images/tropicale-palm-springs.jpg" alt="Tropicale Dining and Lounge exterior in Palm Springs with pink stucco walls, palm trees, and San Jacinto Mountains in background" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/tropicale-palm-springs.webp" alt="Tropicale Dining and Lounge exterior in Palm Springs with pink stucco walls, palm trees, and San Jacinto Mountains in background" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Tropicale on East Palm Canyon. One of the more recognizable exteriors in the city.</p>
 
 <h2>Coffee and Brunch</h2>
@@ -94,7 +94,7 @@ layout: blog-post.njk
 
 <p>Cartel is an Arizona-born specialty roaster with a spot inside the Arrive Hotel at 1551 N Palm Canyon Drive. Direct trade, specific origins. The cold brew is excellent and the hotel design is worth a look on its own. Find them at <a href="https://www.instagram.com/cartelcoffeecompany/" target="_blank" rel="noopener">@cartelcoffeecompany</a>.</p>
 
-<img src="/blog/images/cartel-coffee-palm-springs.jpg" alt="Cartel Coffee Lab at Arrive Hotel on North Palm Canyon Drive in Palm Springs" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Cartel Coffee Lab at Arrive Hotel on North Palm Canyon Drive in Palm Springs" width="1400" height="933" loading="lazy">
 <p class="image-caption">Cartel Coffee inside the Arrive Hotel. Good coffee in a room worth lingering in.</p>
 
 <h3>Wilma &amp; Frieda's</h3>
@@ -109,7 +109,7 @@ layout: blog-post.njk
 
 <p>Weekdays are easier. If you go on a Saturday, arrive by 9am. Walk-ins only. Check their website for current hours. Find them at <a href="https://www.instagram.com/cheekys.f10/" target="_blank" rel="noopener">@cheekys.f10</a>.</p>
 
-<img src="/blog/images/cheekys-palm-springs.jpg" alt="People waiting in line outside Cheeky's brunch restaurant in Palm Springs on a sunny day" width="1200" height="900" loading="lazy">
+<img src="/blog/images/cheekys-palm-springs.webp" alt="People waiting in line outside Cheeky's brunch restaurant in Palm Springs on a sunny day" width="1200" height="900" loading="lazy">
 <p class="image-caption">The line at Cheeky's. Weekday mornings are quieter. Saturday at 9am means this.</p>
 
 <h3>Lulu California Bistro</h3>
@@ -133,7 +133,7 @@ layout: blog-post.njk
 <img src="/blog/images/heyday-palm-springs.webp" alt="Double smash burger with melted cheese at The Heyday in Palm Springs with San Jacinto Mountains in the background" width="1200" height="1600" loading="lazy">
 <p class="image-caption">The Heyday on North Palm Canyon. The smash burger is the move.</p>
 
-<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm tree-lined street in Palm Springs' Uptown Design District under a clear blue sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs' Uptown Design District under a clear blue sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Uptown Design District runs about a mile north of downtown. Most of the best smaller restaurants are along this stretch.</p>
 
 <h2>Dinner</h2>
@@ -142,7 +142,7 @@ layout: blog-post.njk
 
 <p>Escena is the golf club restaurant that's open to everyone, and the setting is one of the best in Palm Springs. The patio looks out over the course toward the San Jacinto Mountains and it's a genuinely beautiful place to have a meal. The food is California-style with a solid rotating menu. If you go once, go for the outdoor table and stay until the light changes. Find them at <a href="https://www.instagram.com/escenagolf/" target="_blank" rel="noopener">@escenagolf</a>.</p>
 
-<img src="/blog/images/escena-grill-palm-springs.jpg" alt="Escena Grill patio in Palm Springs at sunset with outdoor seating overlooking the golf course and San Jacinto Mountains glowing gold" width="1400" height="933" loading="lazy">
+<img src="/blog/images/escena-grill-palm-springs.webp" alt="Escena Grill patio in Palm Springs at sunset with outdoor seating overlooking the golf course and San Jacinto Mountains glowing gold" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Escena patio at dusk. That view is the reason to go, and it looks exactly like this.</p>
 
 <h3>Trio Restaurant</h3>

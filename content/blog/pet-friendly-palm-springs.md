@@ -2,8 +2,8 @@
 title: "Pet-Friendly Palm Springs: Honest Dog Guide"
 date: 2026-03-22
 metaDescription: "Palm Springs is dog-friendly if you know where to look. The real guide to pet-friendly vacation rentals, restaurants, trails, and parks nearby."
-ogImage: /blog/images/palm-springs-pool.jpg
-heroImage: /blog/images/palm-springs-pool.jpg
+ogImage: /blog/images/palm-springs-pool.webp
+heroImage: /blog/images/palm-springs-pool.webp
 heroAlt: "Dog-friendly vacation rental in Palm Springs with private pool"
 keywords:
   - pet friendly Palm Springs
@@ -24,7 +24,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Pet-Friendly Palm Springs: Honest Dog Guide",
   "description": "Palm Springs is dog-friendly if you know where to look. The real guide to pet-friendly vacation rentals, restaurants, trails, and parks nearby.",
-  "image": "https://indigopalm.co/blog/images/palm-springs-pool.jpg",
+  "image": "https://indigopalm.co/blog/images/palm-springs-pool.webp",
   "datePublished": "2026-03-22",
   "dateModified": "2026-03-22",
   "author": {
@@ -69,7 +69,7 @@ layout: blog-post.njk
 
 <p>I own vacation rentals here. Here's what I know about bringing your dog to the Palm Springs area without a terrible time.</p>
 
-<img src="/blog/images/ps-palm-street-blue-sky.jpg" alt="Palm Springs palm-lined street under blue sky, pet-friendly Coachella Valley destination for dog travel" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Springs palm-lined street under blue sky, pet-friendly Coachella Valley destination for dog travel" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs leans dog-friendly. The culture supports it, if you know where to go.</p>
 
 <h2>Start With Where You're Staying</h2>
@@ -92,7 +92,7 @@ layout: blog-post.njk
     <p><strong>Hours:</strong> Open daily, dawn to dusk</p>
 </div>
 
-<img src="/blog/images/ps-pink-door-midcentury.jpg" alt="Pink midcentury modern front door in Palm Springs residential neighborhood, near Ruth Hardy Park" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-pink-door-midcentury.webp" alt="Pink midcentury modern front door in Palm Springs residential neighborhood, near Ruth Hardy Park" width="1400" height="933" loading="lazy">
 <p class="image-caption">Ruth Hardy Park sits in the middle of a walkable neighborhood. Good for dogs, good for humans.</p>
 
 <p><strong>Palm Canyon Trail:</strong> Dogs on leash are allowed on most <a href="/blog/best-hiking-palm-springs/">Palm Springs-area trails</a>. Palm Canyon, maintained by the Agua Caliente tribe, requires an entry fee. The canyon is one of the largest natural fan palm oases in North America. Go early. Trail temperatures get brutal by 9am in summer. Bring more water than you think both of you need.</p>
@@ -103,7 +103,7 @@ layout: blog-post.njk
 
 <p><strong>VillageFest (Thursday Nights):</strong> Palm Springs' weekly street fair on Palm Canyon Drive. Dogs on leash are welcome and common. Street food, local vendors, live music. Worth doing at least once.</p>
 
-<img src="/blog/images/ps-blue-door-cacti.jpg" alt="Colorful Palm Springs door with cacti in foreground, iconic desert aesthetic for dog-friendly travel" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-blue-door-cacti.webp" alt="Colorful Palm Springs door with cacti in foreground, iconic desert aesthetic for dog-friendly travel" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs has personality on every block. VillageFest Thursday nights is the city at its most itself.</p>
 
 <h2>Dog-Friendly Restaurants and Cafés</h2>
@@ -128,7 +128,7 @@ layout: blog-post.njk
     <p><strong>Practical heat tip:</strong> Booties exist and dogs will eventually accept them. Dog cooling vests also work well for short outdoor stints. Both are easier than explaining to a vet what happened.</p>
 </div>
 
-<img src="/blog/images/ps-vintage-cadillac.jpg" alt="Vintage Cadillac in Palm Springs, mid-century desert city style, bring your dog and explore" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage Cadillac in Palm Springs, mid-century desert city style, bring your dog and explore" width="1400" height="933" loading="lazy">
 <p class="image-caption">October through April is peak dog season in Palm Springs. The vintage car scene is a bonus.</p>
 
 <h2>What to Bring</h2>

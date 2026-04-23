@@ -2,8 +2,8 @@
 title: "The Sundune Palm Springs Local Guide"
 date: 2026-04-03
 metaDescription: "Things to do in Palm Springs, from a local who eats here. The Sundune's guide: coffee, brunch, surf, botanical, dinner, and drinks worth knowing about."
-ogImage: /blog/images/palm-springs-local-guide-sundune.jpg
-heroImage: /blog/images/palm-springs-local-guide-sundune.jpg
+ogImage: /blog/images/palm-springs-local-guide-sundune.webp
+heroImage: /blog/images/palm-springs-local-guide-sundune.webp
 heroAlt: "Palm Springs desert landscape with mountains and palm trees"
 keywords:
   - Palm Springs
@@ -25,7 +25,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "The Sundune Palm Springs Local Guide",
   "description": "Things to do in Palm Springs, from a local who eats here. The Sundune's guide: coffee, brunch, surf, botanical, dinner, and drinks worth knowing about.",
-  "image": "https://indigopalm.co/blog/images/palm-springs-local-guide-sundune.jpg",
+  "image": "https://indigopalm.co/blog/images/palm-springs-local-guide-sundune.webp",
   "datePublished": "2026-04-03",
   "dateModified": "2026-04-03",
   "author": {
@@ -78,7 +78,7 @@ layout: blog-post.njk
 <h3>Wilma &amp; Frieda's</h3>
 <p>The pop-tart gets all the attention, and it deserves some of it. But the cinnamon roll deserves its own moment. It's the kind of thing you split with someone and then immediately regret splitting. Go early.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm Springs street lined with vibrant pink bougainvillea and mid-century modern homes under blue sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs street lined with vibrant pink bougainvillea and mid-century modern homes under blue sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Palm Springs morning walk that sets the tone for the whole day.</p>
 
 <h2>Brunch</h2>
@@ -103,7 +103,7 @@ layout: blog-post.njk
 <h3>The Flannery Exchange</h3>
 <p>Free co-working space, boutique shops, matcha, coffee, and houseplants you can ship home. <strong>The Flannery Exchange</strong> is one of those places that shouldn't work as a concept but completely does. Spend an hour here in the afternoon when you need a break from the sun.</p>
 
-<img src="/blog/images/ps-blue-door-cacti.jpg" alt="Vibrant blue door with tall cacti and desert landscaping on a mid-century modern home in Palm Springs" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-blue-door-cacti.webp" alt="Vibrant blue door with tall cacti and desert landscaping on a mid-century modern home in Palm Springs" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs in one frame: bold color, desert plants, architecture that earns every Instagram post.</p>
 
 <h2>Dinner</h2>
@@ -116,7 +116,7 @@ layout: blog-post.njk
 <h3>Boozehounds</h3>
 <p><strong>Boozehounds</strong> is where you go when you want a drink and good energy, not a craft cocktail experience with a seven-minute explanation. Lively, local, unpretentious. It makes you feel like you live somewhere instead of just visiting. End your night here.</p>
 
-<img src="/blog/images/palm-springs-marilyn-monroe-statue.jpg" alt="Forever Marilyn Monroe statue on Palm Springs Art Museum Walk with San Jacinto Mountains visible in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-marilyn-monroe-statue.webp" alt="Forever Marilyn Monroe statue on Palm Springs Art Museum Walk with San Jacinto Mountains visible in the background" width="1400" height="933" loading="lazy">
 <p class="image-caption">Downtown Palm Springs after dark. Walk it at least once before you leave.</p>
 
 <hr style="border: none; border-top: 1px solid #ddd; margin: 3rem 0;">

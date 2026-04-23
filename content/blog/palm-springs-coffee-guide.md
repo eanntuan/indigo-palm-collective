@@ -11,8 +11,8 @@ keywords:
   - Koffi Palm Springs
   - Cartel Coffee Coachella
   - Everbloom Indio
-ogImage: /blog/images/coffee-lattes-hero.jpg
-heroImage: /blog/images/coffee-lattes-hero.jpg
+ogImage: /blog/images/coffee-lattes-hero.webp
+heroImage: /blog/images/coffee-lattes-hero.webp
 heroAlt: "Coffee bar setup with mugs, pour-over kettle, and espresso gear at a Coachella Valley vacation rental"
 articleSection: Palm Springs Travel Guide
 property: all
@@ -27,7 +27,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "5 Palm Springs Coffee Shops Locals Love",
   "description": "Skip the hotel lobby drip. The 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and what makes each worth it.",
-  "image": "https://indigopalm.co/blog/images/coffee-lattes-hero.jpg",
+  "image": "https://indigopalm.co/blog/images/coffee-lattes-hero.webp",
   "datePublished": "2026-03-19",
   "dateModified": "2026-03-19",
   "author": {
@@ -67,7 +67,7 @@ layout: blog-post.njk
 }
 </script>
 
-<img src="/blog/images/coffee-lattes-hero.jpg" alt="Three coffee drinks held together at a Palm Springs coffee shop" width="800" height="533">
+<img src="/blog/images/coffee-lattes-hero.webp" alt="Three coffee drinks held together at a Palm Springs coffee shop" width="800" height="533">
 
 <p>Early morning in Palm Springs is its own thing. Before the heat, before the crowds, before anyone is making decisions. The light comes sideways off the San Jacinto mountains and turns everything gold. You want coffee in your hand for this. Real coffee.</p>
 
@@ -98,7 +98,7 @@ layout: blog-post.njk
 
 <p>The focus is on direct trade, specific origins, nothing generic. Order the cold brew if you're there during the hot months. The Arrive location is worth a stop on its own: the hotel is one of the better-designed spaces in Palm Springs, and the coffee matches the room.</p>
 
-<img src="/blog/images/cartel-coffee-palm-springs.jpg" alt="Cartel Coffee Lab exterior at 1551 N Palm Canyon Drive, Palm Springs" width="1000" height="867" loading="lazy">
+<img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Cartel Coffee Lab exterior at 1551 N Palm Canyon Drive, Palm Springs" width="1000" height="867" loading="lazy">
 <p class="image-caption">Cartel Coffee Lab, 1551 N Palm Canyon Dr, Palm Springs</p>
 
 <h2>3. Everbloom, Indio</h2>
@@ -111,7 +111,7 @@ layout: blog-post.njk
 
 <p>Go before 10 AM on weekends. It gets busy and the vibe is worth arriving early for.</p>
 
-<img src="/blog/images/everbloom-indio.jpg" alt="Everbloom Coffee exterior in Indio, CA with palm trees and terracotta roof" width="1200" height="1480" loading="lazy">
+<img src="/blog/images/everbloom-indio.webp" alt="Everbloom Coffee exterior in Indio, CA with palm trees and terracotta roof" width="1200" height="1480" loading="lazy">
 <p class="image-caption">Everbloom Coffee, Indio, CA</p>
 
 <h2>4. Yes, Please, La Quinta</h2>
@@ -124,7 +124,7 @@ layout: blog-post.njk
 
 <p>La Quinta is a 20-minute drive from Palm Springs and worth making the trip for. It pairs well with a walk through Old Town if you want to stretch your legs between festival days. Read more about the broader valley in our <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a>.</p>
 
-<img src="/blog/images/yes-please-la-quinta.jpg" alt="Avocado toast, omelette, matcha latte, and cappuccino at Yes Please café in La Quinta" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/yes-please-la-quinta.webp" alt="Avocado toast, omelette, matcha latte, and cappuccino at Yes Please café in La Quinta" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The scones are the move, but honestly everything on this table was a yes from me.</p>
 
 <h2>5. Saguaro Coffee, Indio</h2>
@@ -137,7 +137,7 @@ layout: blog-post.njk
 
 <p>Go on a weekday morning if you want it quiet. Worth knowing about if you're staying at <a href="/cozy-cactus/">Cozy Cactus</a> or <a href="/terra-luz/">Terra Luz</a>.</p>
 
-<img src="/blog/images/saguaro-coffee-indio.jpg" alt="Saguaro Coffee exterior in Indio CA with covered patio and palm trees" width="348" height="348" loading="lazy">
+<img src="/blog/images/saguaro-coffee-indio.webp" alt="Saguaro Coffee exterior in Indio CA with covered patio and palm trees" width="348" height="348" loading="lazy">
 <p class="image-caption">Saguaro Coffee, Indio, CA</p>
 
 <h2>A Note on Timing</h2>

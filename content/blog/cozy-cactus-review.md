@@ -2,8 +2,8 @@
 title: "The Cozy Cactus Review: What Guests Actually Say"
 date: 2026-04-19
 metaDescription: "The Cozy Cactus in Indio: 4.97 stars, 146 reviews. Here's what guests consistently love, what to know before booking, and how it compares to other options."
-ogImage: /blog/images/cozy-cactus-exterior.jpg
-heroImage: /blog/images/cozy-cactus-exterior.jpg
+ogImage: /blog/images/cozy-cactus-exterior.webp
+heroImage: /blog/images/cozy-cactus-exterior.webp
 heroAlt: "The Cozy Cactus vacation rental exterior in Indio California near Coachella"
 keywords:
   - Cozy Cactus review
@@ -25,7 +25,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "The Cozy Cactus Review: What Guests Actually Say",
   "description": "4.97 stars across 146 stays. Here's what guests consistently say about The Cozy Cactus in Indio, and what to expect before you book.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.jpg",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.webp",
   "datePublished": "2026-04-19",
   "dateModified": "2026-04-19",
   "author": {
@@ -69,7 +69,7 @@ layout: blog-post.njk
 
 <p>After 146 guest stays and a 4.97 rating, I can tell you what that person keeps writing in her review when she leaves. The same three things, over and over, from strangers who don't know each other. That consistency means something. Here's what it is.</p>
 
-<img src="/blog/images/cozy-cactus-exterior.jpg" alt="The Cozy Cactus exterior with desert landscaping in Indio California" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-exterior.webp" alt="The Cozy Cactus exterior with desert landscaping in Indio California" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus at 82381 Cochran Drive, Indio. Inside a gated neighborhood at Indian Palms Country Club.</p>
 
 <h2>What Guests Say</h2>
@@ -82,7 +82,7 @@ layout: blog-post.njk
 
 <p><strong>How quickly they hear back.</strong> Guests mention that questions get answered fast. I take this one seriously. When someone is traveling with young kids and something isn't working, they need a real response, quickly. Not a form reply. Not an automated message. A person who knows the house and can help.</p>
 
-<img src="/blog/images/cozy-cactus-labeled-drawers.jpg" alt="Fully labeled kitchen drawers at The Cozy Cactus vacation rental Indio" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Fully labeled kitchen drawers at The Cozy Cactus vacation rental Indio" width="1400" height="933" loading="lazy">
 <p class="image-caption">Every drawer labeled. Every cabinet stocked. The thing people mention most in reviews.</p>
 
 <h2>The Outdoor Space</h2>
@@ -91,7 +91,7 @@ layout: blog-post.njk
 
 <p>If you're looking for a private pool, <a href="/terra-luz/">Terra Luz</a> is our other property 15 minutes away, with a private saltwater pool heated year-round. Different vibe, same neighborhood distance to Coachella.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.jpg" alt="Private hot tub at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy">
 <p class="image-caption">The private hot tub. Steps from the back door, not shared with anyone.</p>
 
 <h2>The Space Itself</h2>
@@ -100,7 +100,7 @@ layout: blog-post.njk
 
 <p>The kitchen is fully equipped for real cooking. Stocked pantry, sharpened knives, every pan size you'd reach for. I spent a lot of time in rental kitchens where you open the drawers and feel the absence of care. I wanted this one to feel like someone lived here and cooked here, because someone did.</p>
 
-<img src="/blog/images/cozy-cactus-living-room.jpg" alt="Living room at The Cozy Cactus family vacation rental Indio California" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-living-room.webp" alt="Living room at The Cozy Cactus family vacation rental Indio California" width="1400" height="933" loading="lazy">
 <p class="image-caption">The main living area. Comfortably fits 8 people without anyone feeling crowded.</p>
 
 <h2>Location</h2>
@@ -123,7 +123,7 @@ layout: blog-post.njk
 
 <p><strong>This is genuinely a family home.</strong> Not "family-friendly" as a phrase on a listing. Built from scratch around what families with young kids need, down to the sound machine on the nightstand and the outlet covers already in place. If you're traveling with people who matter most to you and you want a place that feels like it was ready for you, this is that place.</p>
 
-<img src="/blog/images/cozy-cactus-infant-gear.jpg" alt="Baby and infant gear at The Cozy Cactus Indio including Stokke high chair and pack-n-play" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-infant-gear.webp" alt="Baby and infant gear at The Cozy Cactus Indio including Stokke high chair and pack-n-play" width="1400" height="933" loading="lazy">
 <p class="image-caption">The infant kit. Stokke high chair, real crib mattress, baby monitor. Everything guests with babies say they didn't have to pack.</p>
 
 <h2>The Bigger Picture</h2>

@@ -3,8 +3,8 @@ title: "Joshua Tree Day Trip from Indio"
 date: 2026-04-07
 dateModified: 2026-04-15
 metaDescription: "Joshua Tree day trip from Indio or Palm Springs: which entrance to use, what to bring, entry fees, and a full-day itinerary from a Coachella Valley local."
-ogImage: /blog/images/joshua-tree-national-park.jpg
-heroImage: /blog/images/joshua-tree-national-park.jpg
+ogImage: /blog/images/joshua-tree-national-park.webp
+heroImage: /blog/images/joshua-tree-national-park.webp
 heroAlt: "Joshua Tree National Park landscape with iconic Joshua trees and granite boulder formations under a clear blue sky"
 keywords:
   - joshua tree day trip from indio
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Joshua Tree Day Trip from Indio and Palm Springs",
   "description": "Joshua Tree day trip from Indio or Palm Springs: which entrance, what to see, entry fees, what to bring, and a full-day itinerary from a Coachella Valley local.",
-  "image": "https://indigopalm.co/blog/images/joshua-tree-national-park.jpg",
+  "image": "https://indigopalm.co/blog/images/joshua-tree-national-park.webp",
   "datePublished": "2026-04-07",
   "dateModified": "2026-04-15",
   "author": {
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <p>I've directed a lot of guests toward Joshua Tree, and the poorly-done version usually involves showing up in July at noon with one water bottle and no reservation. The well-done version is more straightforward than you'd think.</p>
 
-<img src="/blog/images/joshua-tree-national-park.jpg" alt="Joshua Tree National Park with clusters of Joshua trees and rounded granite boulders under a bright blue sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/joshua-tree-national-park.webp" alt="Joshua Tree National Park with clusters of Joshua trees and rounded granite boulders under a bright blue sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">The classic boulder-and-Joshua-tree landscape in the northern section of the park.</p>
 
 <h2>Two Entrances: Which One to Use</h2>
@@ -85,7 +85,7 @@ layout: blog-post.njk
 
 <p>From Palm Springs, take the I-10 east to CA-62 north toward Yucca Valley (West Entrance) or Twentynine Palms (North Entrance). This is where most people picture Joshua Tree: large granite boulder formations, the classic Joshua tree-covered landscape, the bouldering areas. Skull Rock is an easy roadside stop. Hidden Valley is a short trail inside a natural enclosure of boulders. Keys View gives you an elevated overlook of the full Coachella Valley below, and on a clear day you can see the Salton Sea.</p>
 
-<img src="/blog/images/ps-desert-valley-view.jpg" alt="Panoramic view of the Coachella Valley desert from elevation, looking south toward Indio and the Salton Sea" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Panoramic view of the Coachella Valley desert from elevation, looking south toward Indio and the Salton Sea" width="1400" height="933" loading="lazy">
 <p class="image-caption">The view from Keys View on a clear day stretches all the way to the Salton Sea.</p>
 
 <h2>Entry Fee and Reservations</h2>
@@ -111,7 +111,7 @@ layout: blog-post.njk
   <li><strong>Offline maps:</strong> Cell service is limited. Download your route on Google Maps or AllTrails before you enter.</li>
 </ul>
 
-<img src="/blog/images/ps-desert-moonrise.jpg" alt="Full moon rising over the desert landscape near Joshua Tree, the kind of light you get if you stay until evening" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the desert landscape near Joshua Tree, the kind of light you get if you stay until evening" width="1400" height="933" loading="lazy">
 <p class="image-caption">Stay past sunset and this is what the drive back looks like.</p>
 
 <h2>A Full Day Itinerary from Indio</h2>
@@ -128,7 +128,7 @@ layout: blog-post.njk
 
 <p><strong>1:00pm:</strong> Head back. On the way, stop at Shields Date Garden in Indio (<a href="https://www.shields1924.com/" target="_blank" rel="noopener">shields1924.com</a>) for a date shake.</p>
 
-<img src="/blog/images/coachella-valley-map.jpg" alt="Coachella Valley map showing Joshua Tree to the north, Indio at center, and Palm Springs to the west" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-map.webp" alt="Coachella Valley map showing Joshua Tree to the north, Indio at center, and Palm Springs to the west" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Coachella Valley's geography: Joshua Tree is due north of Indio, making it the easiest national park day trip from the east valley.</p>
 
 <p>For other day trip options, <a href="/blog/things-to-do-indio-ca/">the things to do in Indio guide</a> covers what else is close. And if you need a base in Indio with a private saltwater pool to come back to after a full day in the park, <a href="/terra-luz/">Terra Luz</a> is pet-friendly and sleeps up to eight.</p>

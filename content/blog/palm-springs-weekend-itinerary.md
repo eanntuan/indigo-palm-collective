@@ -3,8 +3,8 @@ title: "Palm Springs Weekend: A 3-Day Itinerary"
 date: 2026-02-11
 dateModified: 2026-04-15
 metaDescription: "Day 1: arrive and decompress. Day 2: architecture walk, coffee, and a hike. Day 3: farmers market and brunch. Three days in Palm Springs, planned well."
-ogImage: /blog/images/palm-springs-marilyn-monroe-statue.jpg
-heroImage: /blog/images/palm-springs-marilyn-monroe-statue.jpg
+ogImage: /blog/images/palm-springs-marilyn-monroe-statue.webp
+heroImage: /blog/images/palm-springs-marilyn-monroe-statue.webp
 heroAlt: "Forever Marilyn statue on Palm Springs Art Museum Walk with San Jacinto Mountains in the background"
 keywords:
   - palm springs weekend itinerary
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs Weekend: A 3-Day Itinerary That Works",
   "description": "Day 1: arrive and decompress. Day 2: architecture walk, coffee, and a hike. Day 3: farmers market and brunch. Three days in Palm Springs, planned well.",
-  "image": "https://indigopalm.co/blog/images/palm-springs-marilyn-monroe-statue.jpg",
+  "image": "https://indigopalm.co/blog/images/palm-springs-marilyn-monroe-statue.webp",
   "datePublished": "2026-02-11",
   "dateModified": "2026-04-15",
   "author": {
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <p>The biggest mistake people make is treating Palm Springs like any other city. The best version of this weekend is slower: coffee with time to finish it, architecture walks without a timed endpoint, pool hours that count as time well spent.</p>
 
-<img src="/blog/images/ps-orange-door-mcm.jpg" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and clear blue sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-orange-door-mcm.webp" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and clear blue sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">You'll be stopping for photos like this within the first 20 minutes of walking the residential streets.</p>
 
 <h2>Friday: Arrive, Settle, Dinner Downtown</h2>
@@ -87,7 +87,7 @@ layout: blog-post.njk
 
 <p>Dinner on Friday works best somewhere on or near downtown Palm Canyon Drive. Rooster and the Pig in the Uptown Design District is the move if you want something punchy. Workshop Kitchen + Bar is the call if you want a more deliberate dinner. Full breakdown in the <a href="/blog/best-restaurants-palm-springs/">best restaurants in Palm Springs guide</a>. After dinner, walk the main drag. The shops stay open late and the street energy on a Friday night in the fall-through-spring season is genuinely good.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm tree-lined boulevard in downtown Palm Springs with San Jacinto Mountains at the end of the street" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm tree-lined boulevard in downtown Palm Springs with San Jacinto Mountains at the end of the street" width="1400" height="933" loading="lazy">
 <p class="image-caption">Downtown Palm Canyon Drive in the evening. Worth the walk even if you're just wandering.</p>
 
 <h2>Saturday: Architecture, Coffee, and a Hike</h2>
@@ -101,7 +101,7 @@ layout: blog-post.njk
 
 <p>The residential streets south and east of downtown are the main event. Vista Las Palmas, the Movie Colony, and Old Las Palmas have the densest concentration of midcentury modern homes worth seeing. The streetscape is one of the best things you can do in Palm Springs on foot, and it's free. The <a href="https://www.psarchitecturalfoundation.org/" target="_blank" rel="noopener">Palm Springs Architectural Foundation</a> runs guided tours if you want names and histories attached to specific houses. Budget two hours minimum.</p>
 
-<img src="/blog/images/ps-mcm-neighborhood.jpg" alt="Midcentury modern residential street in Palm Springs with flat-roofed homes and San Jacinto Mountains visible at the end of the block" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-mcm-neighborhood.webp" alt="Midcentury modern residential street in Palm Springs with flat-roofed homes and San Jacinto Mountains visible at the end of the block" width="1400" height="933" loading="lazy">
 <p class="image-caption">The residential neighborhoods look like this. Slow down and look at the houses.</p>
 
 <h3>Afternoon: Murray Canyon or Tahquitz Creek Trail</h3>
@@ -114,7 +114,7 @@ layout: blog-post.njk
 
 <p>Arenas Road, a few blocks east of Palm Canyon, has a cluster of bars and restaurants with a more neighborhood feel than the main strip. Cocktails somewhere along Arenas or in the Uptown Design District, then dinner with a reservation. Rosemary Hi-Fi, Yes Please, or Workshop are the calls depending on your appetite.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.jpg" alt="Palm Springs residential street with vibrant pink bougainvillea spilling over a stucco wall and clear desert sky above" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs residential street with vibrant pink bougainvillea spilling over a stucco wall and clear desert sky above" width="1400" height="933" loading="lazy">
 <p class="image-caption">Saturday evening in Palm Springs. The residential streets are still worth walking between dinner spots.</p>
 
 <h2>Sunday: Farmers Market, Brunch, Drive Home</h2>

@@ -134,7 +134,7 @@ layout: blog-post.njk
 
 <p>Weekend surf sessions book out 1 to 2 weeks in advance in peak season (October through May). If you're planning a trip and want to surf, this is the first thing to book, not the last. Buy tickets online before you finalize any other plans for that day.</p>
 
-<img src="/blog/images/pssc-pool-lounge.jpg" alt="PSSC lounge area with white umbrellas and teak chairs facing the wave pool with San Jacinto Mountains behind" width="1400" height="933" loading="lazy">
+<img src="/blog/images/pssc-pool-lounge.webp" alt="PSSC lounge area with white umbrellas and teak chairs facing the wave pool with San Jacinto Mountains behind" width="1400" height="933" loading="lazy">
 <p class="image-caption">The non-surf side of the venue. Lounge chairs, umbrellas, and a clear view of the wave pool. Not a bad place to wait out a session.</p>
 
 <img src="/blog/images/pssc-beginners-on-surfboard.webp" alt="Two girls and a guy smiling while lying on a surfboard together in the wave pool at Palm Springs Surf Club" width="1400" height="933" loading="lazy">
