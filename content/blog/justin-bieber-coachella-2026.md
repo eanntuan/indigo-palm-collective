@@ -4,7 +4,7 @@ date: 2026-04-23
 metaDescription: "Justin Bieber crashed Coachella 2026 and the internet lost its mind. Here's what that moment actually means for your indio vacation rental trip."
 ogImage: /blog/images/bieber-coachella-stage.webp
 heroImage: /blog/images/bieber-coachella-stage.webp
-heroAlt: "Justin Bieber performing at Coachella 2026 with fireworks and pyrotechnics at the Empire Polo Club in Indio CA"
+heroAlt: "Performer on stage at Coachella 2026 with colorful smoke and lights at the Empire Polo Club in Indio CA"
 keywords:
   - justin bieber coachella 2026
   - bieber coachella
