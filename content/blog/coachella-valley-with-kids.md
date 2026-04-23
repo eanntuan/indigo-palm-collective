@@ -20,9 +20,9 @@ excerpt: "What works when you bring kids to the Coachella Valley: where to stay,
 layout: blog-post.njk
 ---
 
-<p>I hear from a lot of parents who are nervous about traveling to the Coachella Valley with young kids. The desert sounds harsh. Festival crowds sound like the opposite of a nap schedule. And even when you find a place with a pool, you want to know it'll work for your family, not just look good in photos.</p>
+<p>It's 8am in Indio. Your toddler woke up early for once and you didn't fight it. You made coffee while he stared out at the backyard, completely absorbed by a lizard on the patio wall. Nobody is rushing anywhere. The sun is still low and soft and the pool hasn't heated past comfortable yet. This is the Coachella Valley with kids when it's working.</p>
 
-<p>After hosting families with babies and toddlers for four years at <a href="/cozy-cactus/">The Cozy Cactus</a>, I have some actual answers. Not the "just pack light and relax!" kind. The kind that come from watching a lot of exhausted parents arrive and leave either refreshed or more tired than when they showed up.</p>
+<p>After four years hosting families with babies and toddlers at <a href="/cozy-cactus/">The Cozy Cactus</a>, I know what that morning looks like and what makes it possible. Not the "just pack light and relax!" version. The kind that comes from watching a lot of exhausted parents arrive, and watching what made them leave actually rested.</p>
 
 <img src="/blog/images/cozy-cactus-infant-gear.jpg" alt="Baby gear at Cozy Cactus vacation rental in Indio CA including pack n play stroller and infant supplies for family travel" width="1400" height="933" loading="lazy">
 <p class="image-caption">Everything on this table was chosen because a tired parent asked for it. The pack-n-play has a real crib mattress, not the foam insert.</p>

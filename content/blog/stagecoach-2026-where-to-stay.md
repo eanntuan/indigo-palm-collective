@@ -66,9 +66,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>Stagecoach happens at the Empire Polo Club in Indio, California. Same venue as Coachella, different crowd, different vibe, and very different problem if you booked your rental in Palm Springs thinking it was close enough.</p>
+<p>You've been on your feet for seven hours. It's after midnight, the headliner just finished, and 80,000 people are all walking toward the same parking exits at the same time. At this point, the distance between your rental and the Empire Polo Club is the only thing that matters. Ten minutes is a beer and a debrief on the way home. Forty-five minutes is a traffic crawl down Gene Autry Trail that will test every friendship in the car.</p>
 
-<p>I own two vacation rentals in Indio, both within a 10-minute drive of the polo grounds. I've also watched a lot of groups learn the hard way that "Palm Springs area" can mean anything from 5 miles to 45 miles from the festival gates. Here's what you need to know.</p>
+<p>I own two vacation rentals in Indio, both within a 10-minute drive of the polo grounds. I've watched a lot of groups learn the hard way that "Palm Springs area" can mean anything from 5 miles to 45 miles from the festival gates. Here's what you actually need to know before you book.</p>
 
 <h2>How Far Is "Palm Springs" From Stagecoach?</h2>
 

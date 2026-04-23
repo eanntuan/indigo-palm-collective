@@ -67,9 +67,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>Getting from LAX to Palm Springs has more options than most people realize: drive, shared shuttle, fly directly into PSP, take Amtrak, or fly into Ontario (ONT) as a middle-ground option. Each has a different cost, time commitment, and level of hassle.</p>
+<p>There's a moment on the I-10 East, somewhere past Banning, where the pass opens up and the Coachella Valley drops in front of you all at once. Palm trees, flat desert, mountains on three sides, and a sky that's a slightly different blue than the one you left behind in Los Angeles. If you're driving, this is the moment the trip starts.</p>
 
-<p>The right call depends on your group size, how much luggage you have, and whether you need a car once you're here.</p>
+<p>Getting from LAX to Palm Springs has more options than most people realize: drive, shared shuttle, fly directly into PSP, take Amtrak, or fly into Ontario (ONT) as a closer middle-ground. The right call depends on your group size, your luggage, and whether you'll need a car once you arrive.</p>
 
 <img src="/blog/images/ps-boulevard-palms-mountains.jpg" alt="Palm Springs boulevard lined with tall palms and the San Jacinto mountains rising sharply in the background" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Canyon Drive and the San Jacinto mountains, about 2 hours east of LAX on the I-10.</p>

@@ -74,9 +74,9 @@ relatedPosts:
 }
 </script>
 
-<p>Hiking near Palm Springs is genuinely good, and it gets underrated because people come for the pools and the architecture and don't realize the mountains are right there. The San Jacinto range rises from the desert floor to over 10,000 feet, and the canyons cut into it hold palm oases, waterfalls, and trails that feel nothing like what you'd expect at sea level in the Mojave.</p>
+<p>You're thirty minutes from a private pool in Palm Springs, and you're standing in a canyon so thick with native fan palms that you can't see the desert on either side. The creek is running. The fronds are rattling. Somewhere overhead, the San Jacinto range climbs from here to 10,831 feet. You had no idea this was available to you an hour ago.</p>
 
-<p>The key thing to know: season matters. October through April is the window when hiking here is comfortable and safe for most people. Summer hiking is possible but requires a 5am start and a realistic assessment of heat tolerance. Here are the five hikes worth knowing about.</p>
+<p>Hiking near Palm Springs is one of those things that surprises people who showed up for the pools and the architecture. The mountains are right there, and the canyons cut into them hold palm oases, seasonal waterfalls, and trails that feel nothing like the flat Mojave scrub around them. One thing to know before you plan: season matters more here than almost anywhere else. October through April is the window when this is comfortable and safe for most people. Summer requires a 5am start and a serious conversation with yourself about heat. Here are the five trails worth knowing.</p>
 
 <img src="/blog/images/honda-element-camping.jpg" alt="Honda Element packed for a desert camping trip from the Coachella Valley, ready for an early morning hike near Palm Springs" width="1400" height="933" loading="lazy">
 <p class="image-caption">The desert is not uniformly dry. Getting out before 8am is the whole strategy. Pack the night before.</p>

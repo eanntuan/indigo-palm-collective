@@ -69,9 +69,9 @@ layout: blog-post.njk
 
 <img src="/blog/images/coffee-lattes-hero.jpg" alt="Three coffee drinks held together at a Palm Springs coffee shop" width="800" height="533">
 
-<p>Hotel lobby coffee is fine. It's there. It's warm. It technically qualifies as coffee.</p>
+<p>Early morning in Palm Springs is its own thing. Before the heat, before the crowds, before anyone is making decisions. The light comes sideways off the San Jacinto mountains and turns everything gold. You want coffee in your hand for this. Real coffee.</p>
 
-<p>But if you're staying in the Coachella Valley and you want to start your morning right, before the Joshua Tree hike, before the pool day, before you've decided what you're doing, you should know where to go. The valley has a real specialty coffee scene, and once you've been to any of these five spots, the hotel drip isn't happening again.</p>
+<p>The Coachella Valley has a better specialty coffee scene than most people expect, and it's not hidden in the hotel lobby. Once you've been to any of these five spots, the drip machine on the continental breakfast cart won't do it for you anymore.</p>
 
 <p>These are places I've been to enough times to have a regular order. No fluff, no sponsored content. Just good coffee.</p>
 

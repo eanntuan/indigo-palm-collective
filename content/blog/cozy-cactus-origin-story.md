@@ -66,7 +66,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>What started off as a backup plan for my beloved 2005 Honda Element, turned into the beginning of what some may call an "Airbnb empire," yet I call "my retirement plan when I'm dead, ha" After Covid, I had way too much time on my hands. I began dreaming of the next car I would drive after my Honda Element decided it would no longer serve as my surf camping car. (As of writing this on February 25, 2026, that car is still kickin' and I couldn't be happier.) Turns out brand new Tesla's cost over $45k… that's crazy! I started thinking of all the things I could do with that $45k. I had a line of credit and savings from being quarantined at home during Covid.</p>
+<p>It was Easter Sunday 2022. Tyler and I drove out to Indio to look at a house, which is a strange thing to do on a holiday but here we were. The place was yellow. The furniture was grandma-brown. The carpet was the kind that has lived through several decades and multiple pets. And standing in that living room, I could see exactly what it could be.</p>
+
+<p>We excused ourselves from Easter dinner at his aunt's house, snuck into the living room, and wrote an offer on our phones. That house became The Cozy Cactus. What followed was several months of Facebook Marketplace trips, a Honda Element packed beyond what physics should allow, and a crash course in what it actually means to host someone well.</p>
 
 <img src="/blog/images/car-camping.jpeg" alt="2005 Honda Element car camping with surfboards and beach gear" width="800" height="533">
 <p class="image-caption">The Honda Element that started it all. Still running in 2026, still fitting everything, sand and all.</p>

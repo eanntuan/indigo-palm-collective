@@ -20,9 +20,9 @@ excerpt: "From pool access to honest reviews to a host who responds. Five things
 layout: blog-post.njk
 ---
 
-<p>I've been hosting vacation rentals in the Coachella Valley for years and I've stayed in rentals in other markets. Both experiences shaped what I look for when I'm the guest. There's a wide gap between rentals that look good in photos and rentals that work when you're in them, and most of that gap shows up in ways you can research before you book.</p>
+<p>You find the listing on a Thursday night. The photos look right: private pool, mountain views, enough bedrooms. You book it. You arrive on Friday afternoon and the pool is cold, the bed in the primary is a platform frame from 2012, and the "private" pool turns out to share a fence with the house next door whose kids are out there every afternoon. None of this was hidden. It was just written in a way that required reading carefully, and Thursday night you were tired.</p>
 
-<p>Here are five things worth checking, in order of how often people skip them.</p>
+<p>I've been hosting in the Coachella Valley for years and have stayed in enough rentals elsewhere to know where the gap is. The difference between a rental that looks good in photos and one that works when you're in it almost always comes down to five things. Most people skip at least three of them before booking.</p>
 
 <img src="/blog/images/cozy-cactus-pool-backyard.jpg" alt="Backyard and community pool area at the Cozy Cactus vacation rental in Indio California with lounge chairs and palm trees" width="1400" height="933" loading="lazy">
 <p class="image-caption">The community pool at Indian Palms Country Club, steps from The Cozy Cactus. The difference between community and private pool access is bigger than it sounds.</p>

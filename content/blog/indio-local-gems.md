@@ -67,9 +67,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>Every guest who books one of our Indio properties, like <a href="https://indigopalm.co/cozy-cactus">The Cozy Cactus</a>, gets the same basic question: <em>"What should we do around here?"</em>
+<p>You're parked outside a small roadside shop on Jackson Street. The sign is hand-painted, slightly sun-faded, and surrounded by date palms that are actually producing dates. Inside, it smells like dried fruit and something caramel-warm. You're about to eat the best Medjool date of your life and wonder why nobody told you about this place.</p>
 
-<p>Indio is not Palm Springs. It's grittier, more working-class, less Instagram-curated. And that's exactly what makes it good. This is the city that hosts Coachella and Stagecoach every year, gets overlooked for eleven months, and quietly goes about being one of the most interesting corners of the Coachella Valley. Here's what's worth your time.</p>
+<p>That's Indio. Not Palm Springs. Grittier, more working-class, less curated, and exactly what makes it worth your time. This is the city that hosts Coachella and Stagecoach every year, gets overlooked for eleven months, and quietly goes about being one of the most interesting corners of the Coachella Valley. Here's what's worth finding.</p>
 
 <img src="/blog/images/indio-sign-miles-ave.webp" alt="Colorful INDIO letter sign at Miles Avenue Park in Indio California with palm trees and string lights" width="800" height="533" loading="lazy">
 <p class="image-caption">Miles Avenue Park. The sign is new, the city is older and more interesting than most visitors bother to find out.</p>

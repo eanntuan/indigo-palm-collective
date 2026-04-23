@@ -64,9 +64,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>The Coachella Valley runs on a different clock than wherever you came from. The mornings are cool and quiet and slightly unreal. By 2pm it's 95 degrees and you're making decisions. By evening it drops 20 degrees and suddenly you're grateful for that light jacket you almost didn't pack.</p>
+<p>The Coachella Valley does one thing most people don't expect: it changes your pace. Not just slows it down. Changes it. The mornings are cool and still and pink at the edges. By 2pm it's 95 degrees and you're making decisions about shade. By evening the temperature drops 20 degrees and suddenly the whole day resets.</p>
 
-<p>We've hosted hundreds of guests across our properties. Here's what the ones who had the best trips understood going in.</p>
+<p>We've hosted hundreds of guests across our properties. The ones who had the best trips understood one thing going in: the desert has a schedule, and your job is to work with it.</p>
 
 <h2>The Weather Is the Schedule</h2>
 

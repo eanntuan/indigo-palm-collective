@@ -66,9 +66,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>Palm Springs has the largest concentration of intact midcentury modern architecture in the United States. Not the most famous individual buildings, not the most photographed, but the most of them, still standing, still largely unchanged, still being used as homes. Walking the residential streets here feels like the 1950s and 60s simply never stopped being the present.</p>
+<p>You're standing in the living room of a house built in 1957. The floor-to-ceiling glass faces the San Jacinto mountains at exactly the angle the architect calculated for the morning light. The roofline is flat. The overhang is deep enough to kill the direct sun in summer but let the low winter sun through. The pool is the center of the floor plan, not an afterthought tacked on later. Whoever designed this solved the desert in a way that hasn't been improved on since.</p>
 
-<p>I'm not an architect. I'm not an academic. I own a vacation rental in Palm Springs and I've walked these streets more times than I can count because they're genuinely one of the best things to do here. This is a practical guide for someone who wants to understand what they're looking at and make the most of a few hours on foot.</p>
+<p>Palm Springs has more intact midcentury modern homes than anywhere in the United States. Not the most famous individual buildings, but the most of them, still standing, still lived in, largely unchanged. I own a vacation rental here and have walked these streets more times than I can count because they're one of the best things to do in this city. This is a practical guide for someone who wants to understand what they're looking at and make the most of a few hours on foot.</p>
 
 <h2>Why Palm Springs Has This Much MCM</h2>
 

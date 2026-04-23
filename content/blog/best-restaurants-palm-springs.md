@@ -68,9 +68,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>These are places I keep going back to in Palm Springs, organized by meal because the city runs on a rhythm. What works at 7am is different from what you want at 9pm.</p>
+<p>You're sitting outside at 8pm, the temperature is finally dropping below 90, and the San Jacinto mountains are turning a dark purple behind whoever is across the table from you. That specific window, the two hours after the heat breaks and before the night fully sets, is when Palm Springs dining makes the most sense. Everything tastes better outside in the desert when the air finally cooperates.</p>
 
-<p>A quick note on geography: downtown Palm Springs is the main cluster along Palm Canyon Drive and its side streets. The Uptown Design District, about a mile north, tends to be a little more relaxed and local. Most of the spots below are in one of those two zones, with one exception just over the city line in Cathedral City that's worth the five-minute drive.</p>
+<p>These are the places I keep going back to, organized by meal because the city runs on a different rhythm depending on when you show up. The spots below are across two zones: the main cluster along Palm Canyon Drive and the Uptown Design District about a mile north, with one exception just over the city line in Cathedral City that's worth the five-minute drive.</p>
 
 <img src="/blog/images/tropicale-palm-springs.jpg" alt="Tropicale Dining and Lounge exterior in Palm Springs with pink stucco walls, palm trees, and San Jacinto Mountains in background" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Tropicale on East Palm Canyon. One of the more recognizable exteriors in the city.</p>

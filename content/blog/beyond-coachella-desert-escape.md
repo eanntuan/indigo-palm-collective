@@ -66,9 +66,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>Most people only think of the Coachella Valley during festival season. Two weekends in April. Flower crowns. Ferris wheels. Headliners. If that's all you know about this place, you're missing about 350 days of pure desert.</p>
+<p>October in the Coachella Valley: the crowds are gone, the dates are being harvested, and the light in the afternoon turns a specific shade of amber that makes you want to sit outside and not move. The pool is still warm enough to use. The nights drop to the low 60s. The mountains go pink at dusk. You will not want to leave.</p>
 
-<p>I used to be one of those people. Then we bought a house here, and everything changed. Now I'm the person who evangelizes about winter in the desert, fall light, mid-week escapes where you work from a pool lounger. The Coachella Valley is a place you <em>return to</em>, for the sun, the space, and the surprising amount of culture packed into this stretch of California.</p>
+<p>This is the version of the valley that festival-only visitors never see. I bought a house here and now I'm the person who can't stop talking about fall light and mid-week escapes where nothing is on the schedule except the pool and an early hike. The Coachella Valley is a place you <em>return to</em>, for the sun, the space, and the surprising amount of culture packed into this stretch of California.</p>
 
 <img src="/blog/images/ps-desert-valley-view.jpg" alt="Panoramic view of the Coachella Valley desert floor with mountains in the background and clear blue sky in Palm Springs CA" width="1400" height="933" loading="lazy">
 <p class="image-caption">45 miles of valley. 300 days of sun. Four very different seasons.</p>

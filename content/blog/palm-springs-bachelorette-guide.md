@@ -66,9 +66,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>Palm Springs shows up on every bachelorette shortlist for a reason. It's close to LA and Phoenix, it has private pools at almost every vacation rental, the weather is warm nine months out of the year, and the downtown restaurant scene can hold its own for a long weekend. The idea works. The planning is where groups get stuck.</p>
+<p>Picture it: Saturday morning, nine of you, nobody has anywhere to be. The backyard pool is already warm from the sun. Someone made a pitcher of something cold. The mountains are right there, framed by the back gate like a painting nobody paid for. This is the specific version of Palm Springs that bachelorette trips are actually reaching for, and it's genuinely achievable if the planning is right.</p>
 
-<p>I own vacation rentals in the Coachella Valley and I've watched a lot of groups come through. Here's what I'd tell a friend who's planning one of these trips.</p>
+<p>I own vacation rentals in the Coachella Valley and I've watched a lot of groups come through. The ones who had a good trip planned two or three things in advance and left the rest flexible. Here's what I'd tell a friend.</p>
 
 <h2>Palm Springs or Indio?</h2>
 

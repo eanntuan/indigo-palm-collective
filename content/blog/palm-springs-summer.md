@@ -68,11 +68,9 @@ layout: blog-post.njk
 }
 </script>
 
-<p>The honest answer is yes. With caveats worth being specific about, because the people who tell you summer in Palm Springs is miserable are usually the ones who showed up without a plan and wandered around outside at 2pm in July.</p>
+<p>At 7am in July, the Coachella Valley is already 95 degrees and the light is the kind of flat, total brightness that makes everything look slightly overexposed. You slide into the pool before the heat locks in for the day. The water is warm from sitting overnight. Nobody else is up yet. There's an iced coffee on the patio table and the mountains are still purple at the edges. This is the version of Palm Springs that summer regulars come back for.</p>
 
-<p>Summer in the desert runs on a different schedule than summer anywhere else. Once you understand that schedule, a July or August trip to Palm Springs is genuinely worth doing. Pool culture is at its absolute peak. Rates drop 30-50% from spring. Restaurants you couldn't get into in March will seat you tonight. The city has a quieter, more local energy that I prefer to Coachella-weekend madness.</p>
-
-<p>Here's what's worth knowing before you go.</p>
+<p>Summer in the desert runs on a completely different schedule than summer anywhere else. The people who find it miserable showed up without a plan and wandered around outside at 2pm in July. The people who love it are in the pool by 7am, napping through the worst heat, and back outside by 6pm when the temperature drops and the light turns that particular shade of gold-orange that only happens in desert summers. Rates are down 30-50% from spring. Restaurants that had 45-minute waits in March will seat you tonight. Here's how to make the most of it.</p>
 
 <img src="/blog/images/ps-via-sol-sunset.jpg" alt="Summer sunset over a Palm Springs residential street with palm trees casting long shadows and mountains turning pink at dusk" width="1400" height="933" loading="lazy">
 <p class="image-caption">Summer evenings in Palm Springs are legitimately one of the best parts. The heat breaks, the light turns gold-orange, and the city finally exhales.</p>

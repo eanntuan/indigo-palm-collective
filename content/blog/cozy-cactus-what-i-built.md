@@ -67,9 +67,9 @@ layout: blog-post.njk
 
 <div class="series-badge">Part 2 of 2 · <a href="/blog/cozy-cactus-origin-story/">Read Part 1</a></div>
 
-<p>So I had the house. Yellow walls, grandma furniture, carpet that had seen things. (<a href="/blog/cozy-cactus-origin-story/">If you missed Part 1: how I bought my first vacation rental in Indio</a>, start there. It involves a Honda Element, Easter Sunday, and a real estate offer written in someone's living room.) Now I had to make it into something people would want to stay in.</p>
+<p>The moment it clicked was the boob lights. Every single room had them. Round, frosted-glass globe fixtures from approximately 1994, the kind that make even a nice space look like a waiting room. I was staring at one in what would become the master bedroom, trying to figure out why the white walls I'd just painted still felt off, and I realized the ceiling was undermining everything. Pulled every one of them out and replaced them with simple modern fixtures the same week. The house changed overnight.</p>
 
-<p>What follows is the story of how I did that. Including the part where I made a lot of decisions, then hired someone to tell me which ones were wrong.</p>
+<p>That's the part nobody really talks about with vacation rental design: the bones come before the aesthetic. (<a href="/blog/cozy-cactus-origin-story/">If you missed Part 1</a>, it involves a Honda Element, Easter Sunday, and a real estate offer written in someone's living room.) Once I had the house, the job was making it into something people would actually want to stay in. Here's what I learned doing it.</p>
 
 <h2>First: the bones.</h2>
 

@@ -99,6 +99,38 @@ const PEAK_DATES = [
   { start: '2026-12-20', end: '2027-01-04', multiplier: 1.3, label: 'Holiday'      },
 ];
 
+// Property-specific story beats — used in automated emails to paint a picture
+// of what's waiting. Confirmed = after payment. Welcome = 2 days before.
+const PROPERTY_STORY_BEATS = {
+  'cozy-cactus': {
+    confirmed: 'Three bedrooms, a fully private backyard, and a hot tub that gets better after 9pm. 146 stays worth of reviews confirm what the first one said: this one is hard to leave.',
+    welcome:   'The hot tub is best after 9pm. The patio string lights come on at dusk. The backyard is completely private.',
+  },
+  'terra-luz': {
+    confirmed: 'Saltwater pool, heated year-round. A kitchen built for people who actually cook. The design took two years and a brand strategist who cared about every decision.',
+    welcome:   'The saltwater pool is heated and ready. The tortilla press is in the lower cabinet, next to the cast iron. The neighborhood is quiet.',
+  },
+  'casa-moto': {
+    confirmed: 'Saltwater pool, heated year-round. A kitchen built for people who actually cook. The design took two years and a brand strategist who cared about every decision.',
+    welcome:   'The saltwater pool is heated and ready. The tortilla press is in the lower cabinet, next to the cast iron. The neighborhood is quiet.',
+  },
+  'ps-retreat': {
+    confirmed: 'Four minutes on foot to Palm Canyon Drive. Coffee, record shops, bookstores, a proper breakfast. The kind of location where you go out for one thing and end up gone for three hours.',
+    welcome:   'Palm Canyon Drive is a four-minute walk. Coffee, breakfast, record shops. The pool is available 7am to 10pm.',
+  },
+  'the-well': {
+    confirmed: 'A quiet Palm Springs corner with a pool and a palm tree. The kind of calm that surprises people who expected to spend the whole trip out.',
+    welcome:   'The pool deck catches the best light in the late afternoon. The Saturday farmers market is on Andreas Road, five minutes on foot.',
+  },
+};
+
+// Short go links for tracking — /go/{slug} → full URL with UTM params
+const GO_LINKS = {
+  'cc':       'https://indigopalm.co/cozy-cactus/?utm_source=reddit&utm_medium=social&utm_campaign=community',
+  'tl':       'https://indigopalm.co/terra-luz/?utm_source=reddit&utm_medium=social&utm_campaign=community',
+  'sd':       'https://indigopalm.co/the-sundune/?utm_source=reddit&utm_medium=social&utm_campaign=community',
+};
+
 // Pages that should 301 redirect from .html to clean URL
 // casa-moto.html → /terra-luz (rebrand)
 const HTML_REDIRECTS = {
@@ -130,7 +162,7 @@ async function sendDueWelcomeEmails(env) {
       ${info.photo ? `<img src="${info.photo}" alt="${info.name}" width="560" style="display:block;width:100%;max-width:560px;height:220px;object-fit:cover;border-radius:8px;margin-bottom:28px;" />` : ''}
       <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
       <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">You're almost here, ${firstName}.</h1>
-      <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Check-in is in 2 days. Everything you need to know is in your welcome guide below — parking, entry, house rules, Wi-Fi, and local tips.</p>
+      <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Check-in is in 2 days. Everything you need is in your welcome guide: parking, entry, house rules, Wi-Fi, and local tips.</p>
       <div style="padding:24px;background:#F5F3EE;border-radius:8px;margin-bottom:24px;">
         <p style="margin:0 0 16px;font-size:13px;font-weight:600;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.08em;">Before you arrive</p>
         <a href="${info.welcomeGuide}" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Welcome Guide &rarr;</a>
@@ -144,7 +176,8 @@ async function sendDueWelcomeEmails(env) {
         ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
         ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
       </table>
-      <p style="margin:0 0 20px;font-size:15px;color:#555;line-height:1.7;">See you in the desert.</p>
+      <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">See you in the desert.</p>
+      ${PROPERTY_STORY_BEATS[propertyId]?.welcome ? `<p style="margin:0 0 20px;font-size:14px;color:#777;line-height:1.7;">P.S. ${PROPERTY_STORY_BEATS[propertyId].welcome}</p>` : ''}
       <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
     `);
 
@@ -198,6 +231,12 @@ export default {
     };
     if (BLOG_REDIRECTS[path]) {
       return Response.redirect('https://' + url.hostname + BLOG_REDIRECTS[path], 301);
+    }
+
+    // /go/{slug} short links with UTM tracking
+    const goMatch = path.match(/^\/go\/([\w-]+)\/?$/);
+    if (goMatch && GO_LINKS[goMatch[1]]) {
+      return Response.redirect(GO_LINKS[goMatch[1]], 302);
     }
 
     if (request.method === 'OPTIONS') {
@@ -646,7 +685,7 @@ async function handleBooking(request, env) {
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
     <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">The desert's holding your spot.</h1>
     <p style="margin:0 0 14px;font-size:15px;color:#555;line-height:1.7;">Hi ${name.split(' ')[0]}, we got your request for <strong>${property}</strong>, ${fmtDate(checkIn)} to ${fmtDate(checkOut)}. We'll follow up within 24 hours with a payment link to make it official.</p>
-    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">The hot tub is ready. The stars are already out there doing their thing. We'll be in touch soon.</p>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">We built Indigo Palm to create the kind of desert house people come back to on purpose. Not just a place with a pool, but a place that actually feels like somewhere. That starts the moment you decide to come.</p>
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Property', property)}
       ${detailRow('Check-in', fmtDate(checkIn))}
@@ -828,11 +867,14 @@ async function handleApprove(request, env) {
 
   // Send payment email to guest
   const approveHeroUrl = await getPropertyHeroImageUrl(booking.propertyId, env);
+  const approvalBeat = PROPERTY_STORY_BEATS[booking.propertyId]?.confirmed || '';
+  const approvalFirstName = booking.name.split(' ')[0];
   const guestPaymentHtml = emailWrapper(`
     ${approveHeroUrl ? `<img src="${approveHeroUrl}" alt="${booking.property}" width="560" style="display:block;width:100%;max-width:560px;height:220px;object-fit:cover;border-radius:8px;margin-bottom:28px;" />` : ''}
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Payment Request</p>
-    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Your dates are approved.</h1>
-    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Hi ${booking.name.split(' ')[0]}, we've approved your request for <strong>${booking.property}</strong>. Complete your payment to lock in your dates.</p>
+    <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">Your dates are approved, ${approvalFirstName}.</h1>
+    <p style="margin:0 0 ${approvalBeat ? '14px' : '28px'};font-size:15px;color:#555;line-height:1.7;">We reviewed your request for <strong>${booking.property}</strong> and we're glad to have you. Complete your payment below to lock it in.</p>
+    ${approvalBeat ? `<p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">${approvalBeat}</p>` : ''}
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Property', booking.property)}
       ${detailRow('Check-in', fmtDate(booking.checkIn))}
@@ -908,7 +950,7 @@ async function handleConfirm(request, env) {
   );
 
   const confirmHeroUrl = await getPropertyHeroImageUrl(propertyId, env);
-  const html = buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl: confirmHeroUrl });
+  const html = buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl: confirmHeroUrl });
 
   try {
     await sendEmail(env.RESEND_API_KEY, {
@@ -1052,7 +1094,7 @@ async function handleSquareWebhook(request, env) {
 
   // Send confirmation email to guest
   const heroUrl = await getPropertyHeroImageUrl(propertyId, env);
-  const html = buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes: null, heroUrl });
+  const html = buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes: null, heroUrl });
 
   await sendEmail(env.RESEND_API_KEY, {
     from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
@@ -1185,8 +1227,9 @@ async function createHostawayReservation(env, { propertyId, name, email, checkIn
   return data.result?.id ?? null;
 }
 
-function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl }) {
+function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl }) {
   const firstName = name.split(' ')[0];
+  const confirmedBeat = PROPERTY_STORY_BEATS[propertyId]?.confirmed || '';
 
   const linksSection = [
     `<a href="https://indigopalm.co" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">indigopalm.co &rarr;</a><p style="margin:0 0 16px;font-size:13px;color:#888;">Explore the other properties and the blog.</p>`,
@@ -1200,7 +1243,8 @@ function buildConfirmationEmail({ info, name, checkIn, checkOut, nights, guests,
 
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
     <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">The desert is yours, ${firstName}.</h1>
-    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Payment received. Your ${nights} night${nights !== 1 ? 's' : ''} at <strong>${info.name}</strong> are locked in. See you out there.</p>
+    <p style="margin:0 0 14px;font-size:15px;color:#555;line-height:1.7;">Payment received. Your ${nights} night${nights !== 1 ? 's' : ''} at <strong>${info.name}</strong> are locked in.</p>
+    ${confirmedBeat ? `<p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">${confirmedBeat}</p>` : `<p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">See you out there.</p>`}
 
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Address', `<a href="${info.mapsUrl}" style="color:#607c67;text-decoration:none;">${info.address} &rarr;</a>`)}
