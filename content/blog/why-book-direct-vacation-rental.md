@@ -82,7 +82,7 @@ layout: blog-post.njk
 
 <p>Airbnb charges guests a service fee that typically runs 14-16% of the subtotal (nightly rate plus cleaning fee, before taxes). On a $1,000 stay, that's $140-160 going to Airbnb, not the host, not toward your stay in any way.</p>
 
-<p>The host is separately charged a 3% fee on their end. So a $1,000 booking costs the guest $1,150 and nets the host about $970. Airbnb pockets around $180 from the same transaction. When you book direct through a property's own website, that fee disappears entirely.</p>
+<p>The host is separately charged a 3% fee on their end. So a $1,000 booking costs the guest $1,150 and nets the host about $970. Airbnb keeps around $180 from the same transaction. When you book direct through a property's own website, that fee disappears entirely.</p>
 
 <h2>What That Looks Like in Practice</h2>
 
