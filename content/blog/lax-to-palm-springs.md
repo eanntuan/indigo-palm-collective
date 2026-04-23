@@ -14,6 +14,9 @@ keywords:
   - LAX Palm Springs shuttle
   - getting to Palm Springs from Los Angeles
   - PSP airport Palm Springs
+  - Palm Springs vacation rental
+  - Coachella Valley things to do
+  - Indio California travel
 articleSection: "Travel Guide"
 property: all
 readTime: "7 min read"

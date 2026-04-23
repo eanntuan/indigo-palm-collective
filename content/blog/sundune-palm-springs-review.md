@@ -12,6 +12,9 @@ keywords:
   - Palm Springs condo rental
   - Indigo Palm Sundune
   - Palm Springs short term rental
+  - Palm Springs vacation rental
+  - bachelorette trip Palm Springs desert
+  - solo travel women desert
 articleSection: "Property Review"
 property: the-sundune
 readTime: "5 min read"

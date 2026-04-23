@@ -11,6 +11,11 @@ keywords:
   - what to pack for desert
   - Palm Springs vacation tips
   - Indio vacation rental tips
+  - desert vacation rental
+  - Palm Springs vacation rental
+  - Coachella Valley things to do
+  - Indio California travel
+  - solo travel women desert
 articleSection: "Travel Guide"
 property: all
 readTime: "6 min read"

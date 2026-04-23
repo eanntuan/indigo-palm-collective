@@ -15,6 +15,8 @@ keywords:
   - Palm Springs dinner
   - Palm Springs coffee
   - best food Palm Springs CA
+  - Coachella Valley things to do
+  - bachelorette trip Palm Springs desert
 articleSection: "Local Guide"
 property: ps-retreat
 readTime: "8 min read"

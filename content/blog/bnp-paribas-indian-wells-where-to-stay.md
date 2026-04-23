@@ -14,6 +14,9 @@ keywords:
   - where to stay Indian Wells tennis tournament
   - Palm Springs BNP Paribas
   - Indio vacation rental tennis
+  - desert vacation rental
+  - Coachella Valley things to do
+  - Indio California travel
 articleSection: "Travel Guide"
 property: all
 readTime: "7 min read"

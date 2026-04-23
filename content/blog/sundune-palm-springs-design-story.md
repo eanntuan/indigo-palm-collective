@@ -12,6 +12,8 @@ keywords:
   - coastal desert interior design
   - Palm Springs short term rental
   - vacation rental design story
+  - Palm Springs vacation rental
+  - bachelorette trip Palm Springs desert
 articleSection: "Design & Culture"
 property: ps-retreat
 readTime: "6 min read"

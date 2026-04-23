@@ -13,6 +13,9 @@ keywords:
   - Salton Sea day trip
   - Indio restaurants
   - Coachella week activities
+  - Coachella Valley things to do
+  - Indio California travel
+  - Justin Bieber Coachella 2026
 articleSection: "Local Guide"
 property: all
 readTime: "7 min read"

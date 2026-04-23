@@ -14,6 +14,10 @@ keywords:
   - Indian Palms Country Club Airbnb
   - Indio vacation rental Coachella
   - Indian Palms Country Club Stagecoach
+  - Justin Bieber Coachella 2026
+  - Post Malone Stagecoach 2026
+  - desert vacation rental
+  - Indio California travel
 articleSection: "Local Guide"
 property: all
 readTime: "6 min read"

@@ -12,6 +12,8 @@ keywords:
   - direct booking vacation rental
   - how to avoid Airbnb fees
   - vacation rental booking tips
+  - desert vacation rental
+  - Palm Springs vacation rental
 articleSection: "Travel Tips"
 property: all
 readTime: "6 min read"

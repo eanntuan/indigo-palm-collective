@@ -1,7 +1,7 @@
 ---
 title: "15 Things to Do in Indio, CA"
 date: 2026-03-23
-metaDescription: "15 actual things to do in Indio, CA beyond Coachella: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find on their own."
+metaDescription: "15 things to do in Indio, CA in the Coachella Valley: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find on their own."
 ogImage: /blog/images/indio-local-gems.webp
 heroImage: /blog/images/indio-local-gems.webp
 heroAlt: "Indio California desert landscape and palm trees"
@@ -11,6 +11,10 @@ keywords:
   - Coachella Valley activities
   - Indio visitor guide
   - family things to do Indio
+  - Coachella Valley things to do
+  - Indio California travel
+  - desert vacation rental
+  - hot springs near Palm Springs Joshua Tree
 articleSection: "Local Guide"
 property: all
 readTime: "7 min read"

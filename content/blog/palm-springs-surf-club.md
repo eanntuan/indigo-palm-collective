@@ -15,6 +15,9 @@ keywords:
   - Palm Springs Surf Club review
   - Wavegarden Cove Coachella Valley
   - Palm Springs surf lessons
+  - Coachella Valley things to do
+  - bachelorette trip Palm Springs desert
+  - solo travel women desert
 articleSection: "Travel Guide"
 property: ps-retreat
 readTime: "6 min read"

@@ -15,6 +15,10 @@ keywords:
   - palm springs architecture walk
   - palm springs day trip
   - things to do palm springs california
+  - Palm Springs vacation rental
+  - bachelorette trip Palm Springs desert
+  - solo travel women desert
+  - Coachella Valley things to do
 articleSection: "Travel Guide"
 property: ps-retreat
 readTime: "8 min read"

@@ -13,6 +13,8 @@ keywords:
   - Pink Cabana Indian Wells
   - El Paseo dining Palm Desert
   - Palm Desert food guide
+  - Coachella Valley things to do
+  - Indio California travel
 articleSection: "Local Guide"
 property: all
 readTime: "7 min read"

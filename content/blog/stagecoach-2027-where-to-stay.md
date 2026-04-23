@@ -2,9 +2,9 @@
 title: "Stagecoach 2027: Where to Stay Near the Festival"
 date: 2026-04-12
 metaDescription: "Where to stay for Stagecoach 2027: camping, hotels, or vacation rental near the polo grounds? The real tradeoffs, from a host 7 minutes from the stage."
-ogImage: /blog/images/cozy-cactus-pool-backyard.webp
-heroImage: /blog/images/cozy-cactus-pool-backyard.webp
-heroAlt: "Cozy Cactus vacation rental pool and backyard in Indio CA, 7 minutes from Stagecoach festival grounds"
+ogImage: /blog/images/stagecoach-festival-crowd.webp
+heroImage: /blog/images/stagecoach-festival-crowd.webp
+heroAlt: "Stagecoach festival crowd at Empire Polo Club in Indio CA"
 keywords:
   - Stagecoach 2027 where to stay
   - Stagecoach festival accommodation
@@ -13,6 +13,9 @@ keywords:
   - Stagecoach camping vs rental
   - Indio vacation rental Stagecoach
   - Stagecoach 2027 Indio
+  - desert vacation rental
+  - Indio California travel
+  - Coachella Valley things to do
 articleSection: "Festival Guide"
 property: all
 readTime: "6 min read"

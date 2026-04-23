@@ -11,6 +11,8 @@ keywords:
   - Koffi Palm Springs
   - Cartel Coffee Coachella
   - Everbloom Indio
+  - Coachella Valley things to do
+  - solo travel women desert
 ogImage: /blog/images/coffee-lattes-hero.webp
 heroImage: /blog/images/coffee-lattes-hero.webp
 heroAlt: "Coffee bar setup with mugs, pour-over kettle, and espresso gear at a Coachella Valley vacation rental"

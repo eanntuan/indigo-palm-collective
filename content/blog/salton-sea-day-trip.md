@@ -15,6 +15,8 @@ keywords:
   - Salton Sea worth visiting
   - day trip from Indio
   - Coachella Valley day trips
+  - Coachella Valley things to do
+  - Indio California travel
 articleSection: "Travel Guide"
 property: all
 readTime: "7 min read"

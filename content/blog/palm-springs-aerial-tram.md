@@ -13,6 +13,10 @@ keywords:
   - Palm Springs Aerial Tram cost
   - things to do Palm Springs
   - is Palm Springs Aerial Tram worth it
+  - Coachella Valley things to do
+  - hot springs near Palm Springs
+  - bachelorette trip Palm Springs desert
+  - solo travel women desert
 articleSection: "Travel Guide"
 property: ps-retreat
 readTime: "6 min read"

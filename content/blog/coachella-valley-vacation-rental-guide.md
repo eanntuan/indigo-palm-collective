@@ -13,6 +13,10 @@ keywords:
   - Coachella Valley rental guide
   - vacation rental checklist
   - vacation rental pool Indio
+  - desert vacation rental
+  - Palm Springs vacation rental
+  - Indio California travel
+  - Coachella Valley things to do
 articleSection: "Travel Guide"
 property: all
 readTime: "7 min read"

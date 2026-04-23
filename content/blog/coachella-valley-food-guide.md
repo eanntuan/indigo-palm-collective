@@ -15,6 +15,9 @@ keywords:
   - indio food guide
   - palm springs dining guide
   - coachella valley where to eat
+  - Coachella Valley things to do
+  - Indio California travel
+  - Stagecoach 2026 food
 articleSection: "Local Guide"
 property: all
 readTime: "8 min read"

@@ -13,6 +13,10 @@ keywords:
   - beyond Coachella festival
   - Palm Springs winter escape
   - desert travel guide
+  - desert vacation rental
+  - Coachella Valley things to do
+  - Indio California travel
+  - hot springs near Palm Springs
 articleSection: "Desert Travel Guide"
 property: all
 readTime: "7 min read"

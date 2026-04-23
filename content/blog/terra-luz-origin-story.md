@@ -12,6 +12,9 @@ keywords:
   - Latin Cuban design
   - desert vacation rental design
   - STR design
+  - desert vacation rental
+  - Indio California travel
+  - Palm Springs vacation rental
 articleSection: "Vacation Rental Design"
 property: terra-luz
 readTime: "5 min read"

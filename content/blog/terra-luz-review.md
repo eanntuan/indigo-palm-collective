@@ -12,6 +12,11 @@ keywords:
   - Terra Luz vacation rental
   - private pool vacation rental Indio
   - Indio vacation rental near Coachella
+  - desert vacation rental
+  - Palm Springs vacation rental
+  - Indio California travel
+  - Stagecoach 2026 vacation rental
+  - bachelorette trip Palm Springs desert
 articleSection: "Property Guide"
 property: terra-luz
 readTime: "6 min read"

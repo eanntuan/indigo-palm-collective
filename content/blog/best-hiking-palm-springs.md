@@ -14,6 +14,9 @@ keywords:
   - Bump and Grind trail La Quinta
   - Indian Canyons Palm Springs
   - best hikes Coachella Valley
+  - hot springs near Palm Springs
+  - Coachella Valley things to do
+  - solo travel women desert
 articleSection: "Travel Guide"
 property: all
 readTime: "8 min read"

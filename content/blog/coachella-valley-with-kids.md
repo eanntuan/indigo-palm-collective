@@ -13,6 +13,9 @@ keywords:
   - Indio CA family vacation
   - baby friendly vacation rental Indio
   - things to do Coachella Valley kids
+  - Coachella Valley things to do
+  - Indio California travel
+  - desert vacation rental
 articleSection: "Travel Guide"
 property: cozy-cactus
 readTime: "7 min read"

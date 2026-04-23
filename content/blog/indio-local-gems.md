@@ -10,6 +10,9 @@ keywords:
   - hidden gems
   - best restaurants Indio
   - date farms Coachella Valley
+  - Indio California travel
+  - Coachella Valley things to do
+  - desert vacation rental
 ogImage: /blog/images/indio-sign-miles-ave.webp
 articleSection: Local Guide
 property: cozy-cactus

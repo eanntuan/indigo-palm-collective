@@ -15,6 +15,9 @@ keywords:
   - coachella valley day trips
   - joshua tree what to bring
   - best time to visit joshua tree
+  - hot springs near Palm Springs Joshua Tree
+  - Coachella Valley things to do
+  - Indio California travel
 articleSection: "Travel Guide"
 property: all
 readTime: "8 min read"

@@ -12,6 +12,8 @@ keywords:
   - outdoor furniture that holds up in heat
   - desert patio furniture
   - UV resistant outdoor furniture
+  - desert vacation rental
+  - Coachella Valley things to do
 articleSection: "Hosting"
 property: all
 readTime: "6 min read"

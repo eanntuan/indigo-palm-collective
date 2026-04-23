@@ -11,6 +11,9 @@ keywords:
   - pet friendly Coachella Valley
   - bring dog to Palm Springs
   - dog friendly Indio CA
+  - desert vacation rental
+  - Palm Springs vacation rental
+  - Coachella Valley things to do
 articleSection: "Travel Guide"
 property: terra-luz
 readTime: "6 min read"

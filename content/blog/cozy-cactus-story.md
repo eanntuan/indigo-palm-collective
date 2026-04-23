@@ -12,6 +12,8 @@ keywords:
   - Indio family house
   - desert vacation rental kids
   - The Cozy Cactus
+  - desert vacation rental
+  - Indio California travel
 articleSection: "Property Story"
 property: cozy-cactus
 readTime: "8 min read"

@@ -17,6 +17,9 @@ keywords:
   - indio vs palm springs for families
   - coachella valley where to stay
   - desert trip planning
+  - desert vacation rental
+  - Indio California travel
+  - bachelorette trip Palm Springs desert
 articleSection: "Travel Guide"
 property: all
 readTime: "8 min read"

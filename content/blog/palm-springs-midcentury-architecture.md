@@ -13,6 +13,9 @@ keywords:
   - palm springs architecture self-guided tour
   - Albert Frey Richard Neutra Palm Springs
   - Palm Springs Modernism Week
+  - Palm Springs vacation rental
+  - solo travel women desert
+  - bachelorette trip Palm Springs desert
 articleSection: "Local Guide"
 property: ps-retreat
 readTime: "7 min read"

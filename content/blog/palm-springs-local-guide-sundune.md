@@ -12,6 +12,10 @@ keywords:
   - Palm Springs coffee
   - The Sundune
   - Coachella Valley travel
+  - Palm Springs vacation rental
+  - bachelorette trip Palm Springs desert
+  - solo travel women desert
+  - Coachella Valley things to do
 articleSection: "Local Guide"
 property: ps-retreat
 readTime: "7 min read"

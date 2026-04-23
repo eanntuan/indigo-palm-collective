@@ -13,6 +13,10 @@ keywords:
   - Palm Springs local guide
   - Coachella Valley travel guide
   - things to do near Coachella
+  - Coachella Valley things to do
+  - Indio California travel
+  - hot springs near Palm Springs
+  - Joshua Tree day trip
 articleSection: "Coachella Valley Travel Guide"
 property: cozy-cactus
 readTime: "6 min read"

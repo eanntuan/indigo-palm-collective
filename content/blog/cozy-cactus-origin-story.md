@@ -13,6 +13,8 @@ keywords:
   - buying first Airbnb
   - STR host story
   - family vacation rental Indio
+  - desert vacation rental
+  - Indio California travel
 articleSection: "Airbnb Host Stories"
 property: cozy-cactus
 readTime: "5 min read"

@@ -15,6 +15,9 @@ keywords:
   - Coachella Valley summer
   - is Palm Springs hot in summer
   - Palm Springs off-season
+  - Palm Springs vacation rental
+  - desert vacation rental
+  - solo travel women desert
 articleSection: "Travel Guide"
 property: ps-retreat
 readTime: "7 min read"

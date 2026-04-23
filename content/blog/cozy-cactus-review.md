@@ -12,6 +12,11 @@ keywords:
   - Cozy Cactus Indian Palms vacation rental
   - Indio vacation rental with hot tub
   - family vacation rental near Coachella
+  - desert vacation rental
+  - Palm Springs vacation rental
+  - Indio California travel
+  - Stagecoach 2026 vacation rental
+  - Coachella Valley things to do
 articleSection: "Property Guide"
 property: cozy-cactus
 readTime: "6 min read"
