@@ -556,6 +556,63 @@
     }
     .tip-text { font-size: 0.9rem; line-height: 1.65; }
 
+    /* GUIDE IMAGES */
+    .guide-img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+      margin: 20px 0;
+      object-fit: cover;
+    }
+    .guide-img-full {
+      width: 100%;
+      display: block;
+      margin: 0 0 0 0;
+      object-fit: cover;
+      max-height: 260px;
+    }
+    .img-caption {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: -12px;
+      margin-bottom: 16px;
+    }
+
+    /* BLOG CALLOUT */
+    .blog-callout {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 18px;
+      margin: 20px 0;
+    }
+    .blog-callout-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 8px;
+    }
+    .blog-callout p {
+      font-size: 0.88rem;
+      line-height: 1.65;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .blog-links { display: flex; flex-direction: column; gap: 8px; }
+    .blog-link {
+      font-size: 0.82rem;
+      color: var(--teal);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+      background: var(--teal-light);
+      border-radius: 6px;
+    }
+    .blog-link:hover { color: var(--teal-dark); }
+
     @media (max-width: 400px) {
       .hg-grid, .rules-grid, .todo-grid { grid-template-columns: 1fr; }
       .tab-btn { font-size: 0.6rem; min-width: 56px; }
@@ -589,6 +646,8 @@
       <h1>THE SUNDUNE</h1>
       <p class="sub">WELCOME GUIDE</p>
     </header>
+    <img src="/PS%20Retreat/IMG_3344.JPG" alt="Exterior of The Sundune vacation rental in Palm Springs" class="guide-img-full" loading="eager" width="1400" height="260">
+
     <div class="content">
       <div class="host-card">
         <p>My name is Eann. I chose hospitality over a Tesla, and I haven't looked back. (Truly — it was that specific a decision.)</p>
@@ -621,6 +680,8 @@
       </div>
 
       <hr class="divider">
+
+      <img src="/PS%20Retreat/IMG_3334.JPG" alt="Turquoise pool at The Sundune Palm Springs vacation rental" class="guide-img" loading="lazy" width="1400" height="933">
 
       <p class="section-label">Host Tips</p>
       <div class="tip-card">
@@ -774,6 +835,8 @@
         </div>
       </div>
 
+      <img src="/PS%20Retreat/IMG_3328.JPG" alt="Coastal desert living room at The Sundune Palm Springs with warm textures" class="guide-img" loading="lazy" width="1400" height="933">
+
       <hr class="divider">
 
       <p class="section-label">Pool Detail</p>
@@ -834,6 +897,19 @@
       <p class="section-label">Local</p>
       <h2 class="section-title">Explore</h2>
       <p style="font-size:0.82rem;color:var(--muted);margin-bottom:20px;">Call ahead. Desert hours are unpredictable.</p>
+
+      <img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under clear blue sky with mountain views" class="guide-img" loading="lazy" width="1400" height="933">
+
+      <div class="blog-callout">
+        <p class="blog-callout-label">More from the host</p>
+        <p>Restaurant picks, things to skip, and how the valley works — all on the blog. Updated regularly.</p>
+        <div class="blog-links">
+          <a class="blog-link" href="https://indigopalm.co/blog/best-restaurants-palm-springs/" target="_blank" rel="noopener">Best Restaurants in Palm Springs ↗</a>
+          <a class="blog-link" href="https://indigopalm.co/blog/palm-springs-local-guide-sundune/" target="_blank" rel="noopener">Local Guide: Palm Springs ↗</a>
+          <a class="blog-link" href="https://indigopalm.co/blog/coachella-valley-insider-guide/" target="_blank" rel="noopener">Coachella Valley Insider Guide ↗</a>
+          <a class="blog-link" href="https://indigopalm.co/blog/" target="_blank" rel="noopener">All posts at indigopalm.co ↗</a>
+        </div>
+      </div>
 
       <p class="section-label">Places to Eat</p>
 
@@ -1120,6 +1196,8 @@
           <span class="checkout-label">Take out trash (dumpsters in lots 4 and 5)</span>
         </li>
       </ul>
+
+      <img src="/blog/images/ps-via-sol-sunset.webp" alt="Golden hour sunset over a Palm Springs street with mountains turning purple behind the palms" class="guide-img" loading="lazy" width="1400" height="933">
 
       <div class="review-card">
         <p class="review-title">Leave a Review</p>
