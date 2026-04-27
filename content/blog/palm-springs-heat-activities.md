@@ -73,7 +73,7 @@ layout: blog-post.njk
 
 <p>I own <a href="/the-sundune/">The Sundune</a>, a vacation rental in Palm Springs. Guests ask me constantly what to do when the heat makes being outside genuinely uncomfortable. Here's what I tell them.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard with towering palm trees and San Jacinto Mountain backdrop under a clear desert sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" <!-- SWAP May 15: sundune-exterior.webp — property exterior --> alt="Palm Springs boulevard with towering palm trees and San Jacinto Mountain backdrop under a clear desert sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">Looks beautiful. At 2pm in July it's 108°F. Have a plan.</p>
 
 <h2>Start With the Escape Room</h2>
@@ -90,7 +90,7 @@ layout: blog-post.njk
 
 <p>Here's the specific thing: Thursday afternoons are free, and there's often live music. If your trip overlaps with a Thursday, that's your afternoon right there. Climate-controlled, interesting, free, and you feel somewhat cultured by the time you leave.</p>
 
-<img src="/blog/images/palm-springs-marilyn-monroe-statue.webp" alt="Famous Marilyn Monroe sculpture on Palm Canyon Drive in downtown Palm Springs with the San Jacinto Mountains behind" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-marilyn-monroe-statue.webp" <!-- SWAP May 15: keep generic landmark shot --> alt="Famous Marilyn Monroe sculpture on Palm Canyon Drive in downtown Palm Springs with the San Jacinto Mountains behind" width="1400" height="933" loading="lazy">
 <p class="image-caption">Downtown Palm Springs. The Art Museum is nearby on Palm Canyon. Both worth hitting on the same afternoon.</p>
 
 <h2>Agua Caliente Cultural Museum</h2>
@@ -105,7 +105,7 @@ layout: blog-post.njk
 
 <p>Public skating runs $15 a session, $5 for skate rental. Pre-register online before you go. It's about 20 minutes from The Sundune. Going from 108°F outside to an ice rink at 55°F is, genuinely, one of the better temperature contrasts you'll experience. Bring a light layer.</p>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Coachella Valley stretching toward the horizon from above Palm Springs on a clear summer day" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" <!-- SWAP May 15: keep generic valley view --> alt="Coachella Valley stretching toward the horizon from above Palm Springs on a clear summer day" width="1400" height="933" loading="lazy">
 <p class="image-caption">The valley in summer. Down there it's 110°F. Up at the tram it's 30 degrees cooler. More on that below.</p>
 
 <h2>"Shots in the Night" Mini-Golf at Indian Wells Golf Resort</h2>
@@ -120,7 +120,7 @@ layout: blog-post.njk
 
 <p>The practical tip: go early in the day and ask about day-old items, which are half price and taste identical. It's a small detour that's worth building into whatever route you're running.</p>
 
-<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Teal midcentury modern door with desert landscaping in a Palm Springs neighborhood on a sunny day" width="1200" height="900" loading="lazy">
+<img src="/blog/images/ps-midcentury-teal-door.webp" <!-- SWAP May 15: keep generic OR sundune-exterior-detail.webp --> alt="Teal midcentury modern door with desert landscaping in a Palm Springs neighborhood on a sunny day" width="1200" height="900" loading="lazy">
 <p class="image-caption">Palm Springs is full of small finds. Over the Rainbow Desserts is worth adding to whatever afternoon route you're running.</p>
 
 <h2>The Aerial Tram: 30 Degrees Cooler at 8,516 Feet</h2>
@@ -135,7 +135,7 @@ layout: blog-post.njk
 
 <p>That rhythm works better than trying to fight the heat. Let the afternoon be what it is. Be cool and comfortable, then get out when the day cools down.</p>
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="A palm-lined pool in Palm Springs with lounge chairs on a bright summer afternoon" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" <!-- SWAP May 15: sundune-pool.webp — community pool at The Sundune --> alt="A palm-lined pool in Palm Springs with lounge chairs on a bright summer afternoon" width="1400" height="933" loading="lazy">
 <p class="image-caption">Pool time in the morning and evening. Escape room and museums in the middle of the day. That's the strategy.</p>
 
 <h2>A Summer Day That Actually Works</h2>

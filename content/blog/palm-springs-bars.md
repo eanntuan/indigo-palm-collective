@@ -73,7 +73,7 @@ layout: blog-post.njk
 
 <p>This is not a sponsored list. Nobody paid me to include them. I just drink here enough to have opinions.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Canyon Drive in Palm Springs lined with palm trees and backed by San Jacinto mountains at dusk" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" <!-- SWAP May 15: sundune-exterior.webp or sundune-street-view.webp — property exterior on Palm Canyon Dr --> alt="Palm Canyon Drive in Palm Springs lined with palm trees and backed by San Jacinto mountains at dusk" width="1400" height="933" loading="lazy">
 <p class="image-caption">The main drag. Most of this list is within a few blocks of here.</p>
 
 <h2>La Perlita Mexican Food</h2>
@@ -83,7 +83,7 @@ layout: blog-post.njk
 
 <p>Outdoor seating when the weather cooperates, which in Palm Springs is most of the year except the weeks that make you question your real estate decisions. Go before sunset if you can get a table outside.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.webp" alt="Bougainvillea-covered wall along a Palm Springs street near downtown restaurants and bars" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-bougainvillea.webp" <!-- SWAP May 15: sundune-patio.webp — outdoor/patio shot --> alt="Bougainvillea-covered wall along a Palm Springs street near downtown restaurants and bars" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs evenings hit differently. This is the general vibe at the right time of year.</p>
 
 <h2>Las Palmas Brewing</h2>
@@ -95,7 +95,7 @@ layout: blog-post.njk
 
 <p>This one is walkable from The Sundune, which solves the getting-home problem before it starts. If you're staying on Tahquitz Canyon Way or nearby, you're looking at maybe a 12-minute walk each direction.</p>
 
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="North Palm Canyon Drive in Palm Springs under a clear blue sky with mountains and palm trees" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" <!-- SWAP May 15: keep generic OR sundune-neighborhood.webp --> alt="North Palm Canyon Drive in Palm Springs under a clear blue sky with mountains and palm trees" width="1400" height="933" loading="lazy">
 <p class="image-caption">North Palm Canyon, where Las Palmas Brewing sits. The walk back at night is actually pleasant.</p>
 
 <h2>The Nest</h2>
@@ -107,7 +107,7 @@ layout: blog-post.njk
 
 <p>I usually tell guests: go once, tell me what you think. Everyone comes back with a story. It's become a bit of a dare in my welcome guide. The place has been there forever and shows no signs of apologizing for it.</p>
 
-<img src="/blog/images/ps-desert-moonrise.webp" alt="Desert moonrise over the Coachella Valley near Palm Springs with clear dark skies" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-moonrise.webp" <!-- SWAP May 15: keep generic desert night shot --> alt="Desert moonrise over the Coachella Valley near Palm Springs with clear dark skies" width="1400" height="933" loading="lazy">
 <p class="image-caption">The valley at night. The Nest is worth the drive out.</p>
 
 <h2>For the Morning After</h2>
@@ -123,7 +123,7 @@ layout: blog-post.njk
 
 <p>Sherman's goes late, which earns it a spot on a bar guide even though it's technically a deli. If you need something to eat after The Nest at 11pm or want a low-key nightcap somewhere that doesn't require making any decisions, Sherman's is the answer. Old Palm Springs institution. The pastrami is real.</p>
 
-<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Midcentury modern home with teal front door in Palm Springs neighborhood near downtown" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-midcentury-teal-door.webp" <!-- SWAP May 15: keep generic OR sundune-exterior-detail.webp --> alt="Midcentury modern home with teal front door in Palm Springs neighborhood near downtown" width="1400" height="933" loading="lazy">
 <p class="image-caption">Classic Palm Springs. The whole neighborhood around Tahquitz Canyon Way has this energy at night.</p>
 
 <h2>The Walkability Factor</h2>

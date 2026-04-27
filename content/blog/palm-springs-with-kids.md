@@ -75,7 +75,7 @@ layout: blog-post.njk
 
 <p>Here's what I actually tell families before they arrive.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Canyon Drive in Palm Springs lined with tall palm trees and the San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" <!-- SWAP May 15: sundune-exterior.webp — property exterior --> alt="Palm Canyon Drive in Palm Springs lined with tall palm trees and the San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Canyon Drive, the main drag. Walkable from The Sundune, and the mountains are always in the frame.</p>
 
 <h2>The Activities Worth Planning Around</h2>
@@ -96,7 +96,7 @@ layout: blog-post.njk
 
 <p><strong>Address:</strong> 50770 Seminole Dr, Cabazon. <strong>Phone:</strong> 909-272-8164. <strong>Website:</strong> <a href="https://www.cabazondinosaurs.com" target="_blank" rel="noopener">cabazondinosaurs.com</a></p>
 
-<img src="/blog/images/ps-street-mountains.webp" alt="Residential street in Palm Springs with midcentury modern homes and the Santa Rosa Mountains visible in the distance" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-mountains.webp" <!-- SWAP May 15: keep generic neighborhood shot --> alt="Residential street in Palm Springs with midcentury modern homes and the Santa Rosa Mountains visible in the distance" width="1400" height="933" loading="lazy">
 <p class="image-caption">The mountains are always in the background here. Even a walk around the neighborhood qualifies as scenery.</p>
 
 <h3>Palm Springs Air Museum</h3>
@@ -119,7 +119,7 @@ layout: blog-post.njk
 
 <p>For older kids who can handle the elevation change and have some patience for stunning views, it's legitimately one of the best things to do in the whole valley. Just read the room before committing to the ticket price.</p>
 
-<img src="/blog/images/ps-aerial-tram-mountain-view.webp" alt="View from the Palm Springs Aerial Tram looking down into the Coachella Valley desert from Mount San Jacinto" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-aerial-tram-mountain-view.webp" <!-- SWAP May 15: keep — tram photo --> alt="View from the Palm Springs Aerial Tram looking down into the Coachella Valley desert from Mount San Jacinto" width="1400" height="933" loading="lazy">
 <p class="image-caption">The view from the tram. The elevation change from desert floor to alpine is 6,000 feet in about 10 minutes. Worth it for the right age group.</p>
 
 <h2>Where to Eat with Kids</h2>
@@ -134,7 +134,7 @@ layout: blog-post.njk
 
 <p>For the full rundown on where to eat in Palm Springs, including spots beyond the kid-specific picks, the <a href="/blog/palm-springs-local-guide-sundune/">Sundune local guide</a> covers coffee, brunch, and dinner with more depth.</p>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Panoramic view of the Coachella Valley from Palm Springs with desert floor, palm trees, and mountains in every direction" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" <!-- SWAP May 15: keep generic valley view --> alt="Panoramic view of the Coachella Valley from Palm Springs with desert floor, palm trees, and mountains in every direction" width="1400" height="933" loading="lazy">
 <p class="image-caption">The valley from above. From up here, the whole itinerary makes geographic sense.</p>
 
 <h2>Where to Stay: Why The Sundune Makes Sense for Families</h2>
@@ -149,7 +149,7 @@ layout: blog-post.njk
 
 <p>If you're deciding between the two properties for a family trip, the short version: <a href="/the-sundune/">The Sundune</a> for a family of 3-4 who want walkability and Palm Springs proper. <a href="/cozy-cactus/">The Cozy Cactus</a> for a larger group or families who want more space, a private hot tub, and Indio/festival proximity.</p>
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Outdoor pool area in Palm Springs with desert palm trees and blue sky, typical of the resort and rental scene in the Coachella Valley" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" <!-- SWAP May 15: sundune-pool.webp — community pool --> alt="Outdoor pool area in Palm Springs with desert palm trees and blue sky, typical of the resort and rental scene in the Coachella Valley" width="1400" height="933" loading="lazy">
 <p class="image-caption">The community pool at The Sundune is a one-minute walk. After a morning at the Living Desert, that math works out perfectly.</p>
 
 <h2>A Realistic Day-by-Day</h2>
