@@ -21,6 +21,13 @@ property: cozy-cactus
 readTime: "7 min read"
 excerpt: "What works when you bring kids to the Coachella Valley: where to stay, what the gear situation looks like, and a few kid-friendly spots worth the drive."
 layout: blog-post.njk
+relatedPosts:
+  - title: "The Cozy Cactus Review: What Guests Actually Say"
+    url: /blog/cozy-cactus-review/
+  - title: "Coachella Valley Insider Guide"
+    url: /blog/coachella-valley-insider-guide/
+  - title: "Coachella Valley Vacation Rental Guide"
+    url: /blog/coachella-valley-vacation-rental-guide/
 ---
 
 <p>It's 8am in Indio. Your toddler woke up early for once and you didn't fight it. You made coffee while he stared out at the backyard, completely absorbed by a lizard on the patio wall. Nobody is rushing anywhere. The sun is still low and soft and the pool hasn't heated past comfortable yet. This is the Coachella Valley with kids when it's working.</p>

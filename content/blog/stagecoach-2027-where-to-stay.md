@@ -21,6 +21,13 @@ property: all
 readTime: "6 min read"
 excerpt: "Stagecoach 2027: camping, hotels, or a house 7 minutes from the stage? What matters for a festival weekend, from someone who hosts it every year."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Stagecoach 2026: Where to Stay Near the Festival"
+    url: /blog/stagecoach-2026-where-to-stay/
+  - title: "The Cozy Cactus Review: What Guests Actually Say"
+    url: /blog/cozy-cactus-review/
+  - title: "Where to Stay for Coachella"
+    url: /blog/where-to-stay-coachella/
 ---
 
 <p>Stagecoach runs the last weekend of April at the Empire Polo Club in Indio, California. Same grounds as Coachella, different crowd, three days of country music, and one of the more interesting accommodation puzzles in live events because your options range from literal dirt camping to houses with private pools a 7-minute drive from the stage.</p>

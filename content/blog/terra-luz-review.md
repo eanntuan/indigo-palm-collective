@@ -22,6 +22,13 @@ property: terra-luz
 readTime: "6 min read"
 excerpt: "4.98 stars across 146 stays. Terra Luz has a private saltwater pool, Latin/Cuban design by Dawn Asher, and a backyard people describe as the best part of the trip. Here's what to expect."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Terra Luz Origin Story"
+    url: /blog/terra-luz-origin-story/
+  - title: "How Far Is Indio from Palm Springs?"
+    url: /blog/palm-springs-vs-indio/
+  - title: "Coachella Valley Vacation Rental Guide"
+    url: /blog/coachella-valley-vacation-rental-guide/
 ---
 
 <script type="application/ld+json">

@@ -20,6 +20,13 @@ property: the-sundune
 readTime: "5 min read"
 excerpt: "What guests say about The Sundune in Palm Springs: the walkability, the midcentury neighborhood, the beds, and what surprised them most."
 layout: blog-post.njk
+relatedPosts:
+  - title: "The Sundune Palm Springs Design Story"
+    url: /blog/sundune-palm-springs-design-story/
+  - title: "Palm Springs Local Guide"
+    url: /blog/palm-springs-local-guide-sundune/
+  - title: "How Far Is Indio from Palm Springs?"
+    url: /blog/palm-springs-vs-indio/
 ---
 
 <p>The Sundune is our 2BR/2BA condo in central Palm Springs, 5 minutes on foot from Palm Canyon Drive. It has 4.93 stars across 40+ reviews on Airbnb. Here's what guests say about it, and what I'd tell you before you book.</p>

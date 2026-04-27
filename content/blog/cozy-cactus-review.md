@@ -22,6 +22,13 @@ property: cozy-cactus
 readTime: "6 min read"
 excerpt: "4.97 stars across 146 stays. Here's what guests consistently say about The Cozy Cactus, and what you should know before you book."
 layout: blog-post.njk
+relatedPosts:
+  - title: "The Cozy Cactus Origin Story"
+    url: /blog/cozy-cactus-origin-story/
+  - title: "Stagecoach 2026: Where to Stay Near the Festival"
+    url: /blog/stagecoach-2026-where-to-stay/
+  - title: "Coachella Valley Vacation Rental Guide"
+    url: /blog/coachella-valley-vacation-rental-guide/
 ---
 
 <script type="application/ld+json">
