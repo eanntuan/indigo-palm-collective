@@ -70,6 +70,47 @@ layout: blog-post.njk
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is the drive from LAX to Palm Springs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "About 2 hours without traffic, roughly 120 miles on the I-10 east. Friday afternoons or Sunday mornings can add 45 to 60 minutes. Check Google Maps before leaving the airport."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a shuttle from LAX to Palm Springs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shared shuttles run $100 to $150 per person and take 2.5 to 3 hours with stops. Best for solo travelers staying in walkable downtown Palm Springs who do not need a car once they arrive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it better to fly into LAX or PSP for Palm Springs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PSP (Palm Springs International) is more convenient if you can get a reasonable fare. It's a small, easy airport 3 miles from downtown with fast baggage claim and rental cars on-site. LAX has more routes and often lower fares but adds the 2-hour drive. Ontario (ONT) is worth checking as a middle-ground option that's about 1.5 hours from Palm Springs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you get to Palm Springs without a car?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can get there by shuttle, Amtrak, or flying into PSP. Getting around the broader Coachella Valley without a car is difficult. Downtown Palm Springs is walkable, but Indio, Joshua Tree, and most restaurants outside the immediate area require a car or rideshare."
+      }
+    }
+  ]
+}
+</script>
+
 <p>There's a moment on the I-10 East, somewhere past Banning, where the pass opens up and the Coachella Valley drops in front of you all at once. Palm trees, flat desert, mountains on three sides, and a sky that's a slightly different blue than the one you left behind in Los Angeles. If you're driving, this is the moment the trip starts.</p>
 
 <p>Getting from LAX to Palm Springs has more options than most people realize: drive, shared shuttle, fly directly into PSP, take Amtrak, or fly into Ontario (ONT) as a closer middle-ground. The right call depends on your group size, your luggage, and whether you'll need a car once you arrive.</p>
