@@ -1,0 +1,15 @@
+{
+  "name": "indigo-palm-pinterest-automation",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "generate": "node run.js",
+    "get-boards": "node get-boards.js",
+    "oauth": "node oauth-helper.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "gray-matter": "^4.0.3",
+    "puppeteer": "^21.0.0"
+  }
+}
