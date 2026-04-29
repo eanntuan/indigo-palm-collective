@@ -49,7 +49,8 @@ Return ONLY valid JSON array, no markdown, no explanation:
     messages: [{ role: 'user', content: prompt }],
   });
 
-  const text = message.content[0].text.trim();
+  const raw_text = message.content[0].text.trim();
+  const text = raw_text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/i, '').trim();
   const pins = JSON.parse(text);
 
   console.log(`Generated ${pins.length} pin descriptions for ${slug}`);
