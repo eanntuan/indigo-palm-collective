@@ -9,9 +9,10 @@ const REPO_ROOT = path.resolve(__dirname, '..');
 
 const BOARDS = [
   { id: null, name: 'Palm Springs Travel Guide' },
-  { id: null, name: 'Blogs — Palm Springs Travel / Airbnb Tips' },
+  { id: null, name: 'BLOGS| Palm Springs Travel & Airbnb Tips' },
   { id: null, name: 'Cozy Cactus Indigo Stay' },
   { id: null, name: 'Coachella Accommodation' },
+  { id: null, name: 'Terra Luz | Palm Springs Luxury Airbnb' },
   { id: null, name: 'Family Vacation Ideas' },
 ];
 
@@ -39,7 +40,7 @@ Return ONLY valid JSON array, no markdown, no explanation:
     "title": "40-60 char keyword-rich title",
     "description": "150-250 char conversational description ending with soft CTA like 'Full guide at the link.' or 'Details at the link.'",
     "angle": "practical|aspirational|local|property|listicle",
-    "board": "one of: Palm Springs Travel Guide | Blogs — Palm Springs Travel / Airbnb Tips | Cozy Cactus Indigo Stay | Coachella Accommodation | Family Vacation Ideas"
+    "board": "one of: Palm Springs Travel Guide | BLOGS| Palm Springs Travel & Airbnb Tips | Cozy Cactus Indigo Stay | Coachella Accommodation | Terra Luz | Palm Springs Luxury Airbnb | Family Vacation Ideas"
   }
 ]`;
 
