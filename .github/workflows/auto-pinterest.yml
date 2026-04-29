@@ -5,6 +5,12 @@ on:
     branches: [main]
     paths:
       - 'content/blog/**.md'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Blog post slug to pin (e.g. palm-springs-vs-scottsdale)'
+        required: true
+        default: 'palm-springs-vs-scottsdale'
 
 jobs:
   pin:
@@ -32,7 +38,11 @@ jobs:
       - name: Find new blog posts
         id: new_posts
         run: |
-          NEW=$(git diff --name-only HEAD~1 HEAD -- 'content/blog/*.md' | grep -v '^$' | xargs -I{} basename {} .md | tr '\n' ' ')
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            NEW="${{ github.event.inputs.slug }}"
+          else
+            NEW=$(git diff --name-only HEAD~1 HEAD -- 'content/blog/*.md' | grep -v '^$' | xargs -I{} basename {} .md | tr '\n' ' ')
+          fi
           echo "slugs=$NEW" >> $GITHUB_OUTPUT
           echo "New posts: $NEW"
 
