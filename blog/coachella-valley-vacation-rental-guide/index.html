@@ -339,6 +339,42 @@
         </div>
     </article>
 
+    <section style="background:#F6F1E9;padding:3rem 2rem;text-align:center;border-top:1px solid #e8e0d5;">
+        <div style="max-width:480px;margin:0 auto;">
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;color:#2a2a2a;margin-bottom:0.5rem;">One email a month.</p>
+            <p style="font-size:0.9rem;color:#666;margin-bottom:1.5rem;line-height:1.6;">What's worth knowing in the desert. New posts, last-minute availability, the occasional deal that doesn't make it to Airbnb. Nothing else.</p>
+            <form id="blogEmailForm" style="display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap;">
+                <input type="email" name="email" placeholder="Your email" required style="padding:0.75rem 1rem;border:1px solid #ccc;border-radius:2px;font-size:0.9rem;width:240px;font-family:'Work Sans',sans-serif;background:#fff;">
+                <button type="submit" style="padding:0.75rem 1.5rem;background:#B67550;color:#fff;border:none;border-radius:2px;font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">Subscribe</button>
+            </form>
+            <p id="blogEmailSuccess" style="display:none;color:#738561;font-size:0.9rem;margin-top:1rem;">You're in. Check your inbox.</p>
+        </div>
+    </section>
+    <script>
+        document.getElementById('blogEmailForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[name="email"]').value;
+            const btn = this.querySelector('button');
+            btn.disabled = true; btn.textContent = 'Subscribing...';
+            try {
+                const res = await fetch('https://newsletter.indigopalm.co/signup', {
+                    method: 'POST',
+                    headers: {'Content-Type':'application/json'},
+                    body: JSON.stringify({email})
+                });
+                const data = await res.json();
+                if (data.success) {
+                    this.style.display = 'none';
+                    document.getElementById('blogEmailSuccess').style.display = 'block';
+                    if (typeof gtag !== 'undefined') gtag('event','newsletter_signup',{'event_category':'blog','event_label':email});
+                    if (typeof pintrk !== 'undefined') pintrk('track','lead');
+                } else {
+                    btn.disabled = false; btn.textContent = 'Subscribe';
+                }
+            } catch(err) { btn.disabled = false; btn.textContent = 'Subscribe'; }
+        });
+    </script>
+
     <footer>
         <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
         <p><a href="/">Home</a> &middot; <a href="/#properties">Properties</a> &middot; <a href="/blog">Blog</a> &middot; <a href="/#contact">Contact</a></p>

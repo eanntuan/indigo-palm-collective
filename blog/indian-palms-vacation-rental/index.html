@@ -287,7 +287,7 @@
 </script>
 <p>There's a moment on festival Saturday when you step out of your front door, walk through a quiet palm-lined street, pass a neighbor sitting on their porch with coffee, and realize you're going to Coachella on foot. No shuttle line. No surge pricing. No standing in traffic. You're just walking there, like it's down the block. Because it mostly is.</p>
 <p>That's Indian Palms Country Club. A gated residential neighborhood in Indio, 2.5 miles from the Empire Polo Club, made up of streets where people actually live. I own two vacation rentals here. Here's what staying in this community is actually like.</p>
-<img src="https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.jpg" alt="Vacation rental in Indian Palms Country Club Indio CA with pool and mountain views" width="800" height="533" loading="lazy">
+<img src="/blog/images/cozy-cactus-exterior.webp" alt="Vacation rental in Indian Palms Country Club Indio CA with pool and mountain views" width="1400" height="933" loading="lazy">
 <img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indian Palms Country Club from above. Empire Polo Club is 2.5 miles east.</p>
 <h2>What Is Indian Palms Country Club?</h2>
@@ -398,6 +398,42 @@
             <a href="/#properties" class="cta-button" onclick="gtag('event', 'blog_cta_click', {'event_category': 'Booking', 'event_label': 'Indigo Palm Collective — Indian Palms Country Club: Vacation Rental Guide', 'value': 1});">See All Properties</a>
         </div>
     </article>
+
+    <section style="background:#F6F1E9;padding:3rem 2rem;text-align:center;border-top:1px solid #e8e0d5;">
+        <div style="max-width:480px;margin:0 auto;">
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;color:#2a2a2a;margin-bottom:0.5rem;">One email a month.</p>
+            <p style="font-size:0.9rem;color:#666;margin-bottom:1.5rem;line-height:1.6;">What's worth knowing in the desert. New posts, last-minute availability, the occasional deal that doesn't make it to Airbnb. Nothing else.</p>
+            <form id="blogEmailForm" style="display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap;">
+                <input type="email" name="email" placeholder="Your email" required style="padding:0.75rem 1rem;border:1px solid #ccc;border-radius:2px;font-size:0.9rem;width:240px;font-family:'Work Sans',sans-serif;background:#fff;">
+                <button type="submit" style="padding:0.75rem 1.5rem;background:#B67550;color:#fff;border:none;border-radius:2px;font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">Subscribe</button>
+            </form>
+            <p id="blogEmailSuccess" style="display:none;color:#738561;font-size:0.9rem;margin-top:1rem;">You're in. Check your inbox.</p>
+        </div>
+    </section>
+    <script>
+        document.getElementById('blogEmailForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[name="email"]').value;
+            const btn = this.querySelector('button');
+            btn.disabled = true; btn.textContent = 'Subscribing...';
+            try {
+                const res = await fetch('https://newsletter.indigopalm.co/signup', {
+                    method: 'POST',
+                    headers: {'Content-Type':'application/json'},
+                    body: JSON.stringify({email})
+                });
+                const data = await res.json();
+                if (data.success) {
+                    this.style.display = 'none';
+                    document.getElementById('blogEmailSuccess').style.display = 'block';
+                    if (typeof gtag !== 'undefined') gtag('event','newsletter_signup',{'event_category':'blog','event_label':email});
+                    if (typeof pintrk !== 'undefined') pintrk('track','lead');
+                } else {
+                    btn.disabled = false; btn.textContent = 'Subscribe';
+                }
+            } catch(err) { btn.disabled = false; btn.textContent = 'Subscribe'; }
+        });
+    </script>
 
     <footer>
         <p>&copy; 2026 Indigo Palm Collective. All rights reserved.</p>

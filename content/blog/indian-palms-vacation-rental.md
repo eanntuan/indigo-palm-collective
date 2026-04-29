@@ -75,7 +75,7 @@ layout: blog-post.njk
 
 <p>That's Indian Palms Country Club. A gated residential neighborhood in Indio, 2.5 miles from the Empire Polo Club, made up of streets where people actually live. I own two vacation rentals here. Here's what staying in this community is actually like.</p>
 
-<img src="https://indigopalm.co/Cozy%20Cactus/82381%20Cochran%20Drive%20For%20Web/1TW_DZ5A8774web.jpg" alt="Vacation rental in Indian Palms Country Club Indio CA with pool and mountain views" width="800" height="533" loading="lazy">
+<img src="/blog/images/cozy-cactus-exterior.webp" alt="Vacation rental in Indian Palms Country Club Indio CA with pool and mountain views" width="1400" height="933" loading="lazy">
 
 <img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indian Palms Country Club from above. Empire Polo Club is 2.5 miles east.</p>
