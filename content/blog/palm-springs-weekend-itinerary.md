@@ -83,7 +83,7 @@ layout: blog-post.njk
 
 <h3>Afternoon</h3>
 
-<p>If you're coming from Los Angeles, the drive is roughly two to two and a half hours depending on Friday traffic. The I-10 east can slow down between 3pm and 6pm. Aim to arrive by 4pm so you have time to decompress before dinner. Check in, walk the neighborhood, then do nothing for a while. That's actual advice, not filler. The afternoon sun is real: sit by the pool with something cold and let the city introduce itself.</p>
+<p>If you're coming from Los Angeles, the drive is roughly two to two and a half hours depending on Friday traffic. If you're still figuring out whether to drive, fly into PSP, or take a shuttle, the <a href="/blog/lax-to-palm-springs/">LAX to Palm Springs guide</a> covers every option with honest trade-offs. The I-10 east can slow down between 3pm and 6pm. Aim to arrive by 4pm so you have time to decompress before dinner. Check in, walk the neighborhood, then do nothing for a while. That's actual advice, not filler. The afternoon sun is real: sit by the pool with something cold and let the city introduce itself.</p>
 
 <p>Stop at a grocery store on N Palm Canyon Drive on the way into town. Having breakfast food and snacks at the rental means you control the morning pace on Saturday and Sunday.</p>
 

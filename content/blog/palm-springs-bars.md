@@ -134,7 +134,7 @@ layout: blog-post.njk
 
 <p>Requires a car or rideshare: The Nest (Indian Wells, 20 minutes). La Perlita is doable on foot depending on your tolerance for a 20-minute walk, but I usually drive or get a ride and figure out getting home from there.</p>
 
-<p>Palm Springs is more walkable than people expect coming from LA. It rewards walking the way beach towns do: you find things you weren't looking for, the air is good, and you don't need to negotiate a parking situation.</p>
+<p>Palm Springs is more walkable than people expect <a href="/blog/lax-to-palm-springs/">coming from LA</a>. It rewards walking the way beach towns do: you find things you weren't looking for, the air is good, and you don't need to negotiate a parking situation.</p>
 
 <h2>What I Skip</h2>
 

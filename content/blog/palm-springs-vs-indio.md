@@ -2,7 +2,7 @@
 title: "How Far Is Indio from Palm Springs? (And Which to Stay In)"
 date: 2026-01-20
 dateModified: 2026-04-23
-metaDescription: "25 miles and 30 minutes apart. Here's how Palm Springs and Indio compare on rental costs, festival logistics, and which city actually fits your trip."
+metaDescription: "Indio to Palm Springs is 25 miles, about 30 minutes. Here's how they compare on cost, pool size, walkability, and which one actually fits your trip."
 ogImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroAlt: "Palm tree-lined boulevard with the San Jacinto Mountains rising behind it in Palm Springs, California"

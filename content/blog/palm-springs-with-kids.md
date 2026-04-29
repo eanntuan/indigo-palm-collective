@@ -90,7 +90,7 @@ layout: blog-post.njk
 
 <h3>Cabazon Dinosaurs</h3>
 
-<p>If you're coming from Los Angeles, this is the car-trip stop that actually justifies the pull-over. The <a href="https://www.cabazondinosaurs.com" target="_blank" rel="noopener">Cabazon Dinosaurs</a> are a roadside fixture on I-10, about 30 minutes west of Palm Springs. There's a dinosaur garden, robotic dinosaurs, and a museum inside called The World's Biggest Dinosaurs.</p>
+<p>If you're <a href="/blog/lax-to-palm-springs/">coming from Los Angeles</a>, this is the car-trip stop that actually justifies the pull-over. The <a href="https://www.cabazondinosaurs.com" target="_blank" rel="noopener">Cabazon Dinosaurs</a> are a roadside fixture on I-10, about 30 minutes west of Palm Springs. There's a dinosaur garden, robotic dinosaurs, and a museum inside called The World's Biggest Dinosaurs.</p>
 
 <p>It's unabashedly a roadside attraction. The kids will love it for exactly that reason. Don't talk it up too much, just stop and let it land.</p>
 
