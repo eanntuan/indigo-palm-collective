@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs When It's Too Hot: Indoor Activities"
 date: 2026-04-24
-metaDescription: "Palm Springs summer heat hits 110°F+. Here are the best indoor and cool-off activities — from escape rooms to ice skating to free museum Thursdays."
+metaDescription: "Palm Springs summer heat hits 110°F+. Here are the best indoor and cool-off activities: escape rooms, ice skating, and free museum Thursdays."
 ogImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroAlt: "Palm Springs boulevard lined with palm trees and the San Jacinto mountains under a blazing summer sky"
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Palm Springs When It's Too Hot: Indoor Activities",
-  "description": "Palm Springs summer heat hits 110°F+. Here are the best indoor and cool-off activities — from escape rooms to ice skating to free museum Thursdays.",
+  "description": "Palm Springs summer heat hits 110°F+. Here are the best indoor and cool-off activities: escape rooms, ice skating, and free museum Thursdays.",
   "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp",
   "datePublished": "2026-04-24",
   "dateModified": "2026-04-24",

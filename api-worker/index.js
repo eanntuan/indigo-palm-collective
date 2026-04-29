@@ -15,6 +15,7 @@ const CORS_HEADERS = {
   'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
   'Content-Type': 'application/json',
+  'X-Robots-Tag': 'noindex, nofollow',
 };
 
 const ICAL_URLS = {
