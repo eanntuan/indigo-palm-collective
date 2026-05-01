@@ -596,6 +596,52 @@
             transform: scale(1.05);
         }
 
+        .gallery-item { cursor: zoom-in; }
+
+        /* Lightbox */
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.92);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+        #lightbox.active { display: flex; }
+        #lightbox img {
+            max-width: 92vw;
+            max-height: 88vh;
+            object-fit: contain;
+            border-radius: 4px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+        }
+        #lightbox-close {
+            position: fixed;
+            top: 1.2rem;
+            right: 1.5rem;
+            color: white;
+            font-size: 2.2rem;
+            cursor: pointer;
+            line-height: 1;
+            opacity: 0.85;
+        }
+        #lightbox-close:hover { opacity: 1; }
+        #lightbox-prev, #lightbox-next {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            opacity: 0.7;
+            user-select: none;
+        }
+        #lightbox-prev:hover, #lightbox-next:hover { opacity: 1; }
+        #lightbox-prev { left: 1rem; }
+        #lightbox-next { right: 1rem; }
+
         /* Footer */
         footer {
             background-color: var(--charcoal);
@@ -979,6 +1025,46 @@
       if (ps[3]) ps[3].textContent = d.description_p4;
     }
   }).catch(()=>{});
+</script>
+
+<div id="lightbox" role="dialog" aria-modal="true">
+  <span id="lightbox-close" aria-label="Close">&times;</span>
+  <span id="lightbox-prev" aria-label="Previous">&#8249;</span>
+  <img id="lightbox-img" src="" alt="">
+  <span id="lightbox-next" aria-label="Next">&#8250;</span>
+</div>
+
+<script>
+(function() {
+  const items = Array.from(document.querySelectorAll('.gallery-item img'));
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  let current = 0;
+
+  function show(i) {
+    current = (i + items.length) % items.length;
+    lbImg.src = items[current].src;
+    lbImg.alt = items[current].alt;
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  items.forEach((img, i) => img.closest('.gallery-item').addEventListener('click', () => show(i)));
+  document.getElementById('lightbox-close').addEventListener('click', close);
+  document.getElementById('lightbox-prev').addEventListener('click', () => show(current - 1));
+  document.getElementById('lightbox-next').addEventListener('click', () => show(current + 1));
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(current - 1);
+    if (e.key === 'ArrowRight') show(current + 1);
+  });
+})();
 </script>
 </body>
 </html>
