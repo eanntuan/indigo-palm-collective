@@ -65,6 +65,7 @@
         "latitude": "33.8303",
         "longitude": "-116.5453"
       },
+      "identifier": "https://indigopalm.co/the-well/",
       "numberOfRooms": 1,
       "petsAllowed": false,
       "amenityFeature": [
@@ -77,19 +78,30 @@
         { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Outdoor Space", "value": true }
       ],
-      "containsPlace": [
-        { "@type": "Accommodation", "name": "Primary Bedroom", "description": "King bed with sage green walls and natural materials" },
-        { "@type": "Accommodation", "name": "Living Room", "description": "Open concept with teal velvet couch and warm wood tones" },
-        { "@type": "Accommodation", "name": "Kitchen", "description": "Full kitchen with modern appliances and clean design" },
-        { "@type": "Accommodation", "name": "Outdoor Area", "description": "Private outdoor space with community pool access" }
-      ],
+      "containsPlace": {
+        "@type": "Accommodation",
+        "name": "The Well — 1BR/1BA",
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 4,
+          "unitText": "guests"
+        }
+      },
       "priceRange": "$$-$$$",
       "checkinTime": "16:00",
       "checkoutTime": "10:00",
       "maximumAttendeeCapacity": 4,
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.93",
+        "reviewCount": "40",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
       "review": {
         "@type": "Review",
-        "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 },
+        "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5, "worstRating": 1 },
         "reviewBody": "With so many options in the desert, I'm so glad I chose this place for the decor, location, accommodations, and amenities. Eann has thought of everything and was the most responsive host I've ever had.",
         "author": { "@type": "Person", "name": "Verified Airbnb Guest" },
         "datePublished": "2024-01-20",
@@ -180,7 +192,7 @@
     }
     </script>
 
-    <!-- Google tag (gtag.js) — deferred until page idle -->
+    <!-- Google tag (gtag.js) - deferred until page idle -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -523,7 +535,8 @@
 
         .gallery-item {
             height: 300px;
-            overflow: hidden;}
+            overflow: hidden;
+            aspect-ratio: 4/3;}
 
         .gallery-item img {
             width: 100%;

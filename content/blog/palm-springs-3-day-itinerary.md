@@ -1,5 +1,5 @@
 ---
-title: "Palm Springs 3-Day Itinerary: What to Do Each Day"
+title: "The Perfect 3-Day Palm Springs Itinerary"
 date: 2026-04-28
 metaDescription: "3 days in Palm Springs: aerial tram on day one, downtown and mid-century architecture on day two, Joshua Tree day trip on day three. Times, costs, and what to skip."
 ogImage: /blog/images/ps-aerial-tram-mountain-view.webp

@@ -1,5 +1,5 @@
 ---
-title: "Why Book Direct? What Airbnb Doesn't Tell You"
+title: "Why Book Direct Instead of Airbnb"
 date: 2025-12-08
 dateModified: 2026-04-15
 metaDescription: "Booking a vacation rental direct saves you 14-16% in Airbnb service fees. The honest math, what you actually get, and when direct booking makes sense."

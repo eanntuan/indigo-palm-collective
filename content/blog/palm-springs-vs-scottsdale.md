@@ -1,5 +1,5 @@
 ---
-title: "Palm Springs vs Scottsdale: Which One Is Right for Your Trip?"
+title: "Palm Springs vs Scottsdale: Which Is Right for You?"
 date: 2026-04-28
 metaDescription: "Palm Springs vs Scottsdale: both are warm-weather desert cities with pools and golf. Here's how they actually differ on vibe, cost, driving distance, and who each one fits."
 ogImage: /blog/images/ps-boulevard-palms-mountains.webp

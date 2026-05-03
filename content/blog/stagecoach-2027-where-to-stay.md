@@ -1,5 +1,5 @@
 ---
-title: "Stagecoach 2027: Where to Stay Near the Festival"
+title: "Stagecoach 2027: Best Places to Stay Near Indio"
 date: 2026-04-12
 metaDescription: "Where to stay for Stagecoach 2027: camping, hotels, or vacation rental near the polo grounds? The real tradeoffs, from a host 7 minutes from the stage."
 ogImage: /blog/images/stagecoach-festival-crowd.webp

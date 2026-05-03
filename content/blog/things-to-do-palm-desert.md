@@ -1,5 +1,5 @@
 ---
-title: "Things to Do in Palm Desert, CA: A Practical Guide"
+title: "Things to Do in Palm Desert: The Local List"
 date: 2026-04-28
 metaDescription: "Living Desert Zoo, El Paseo shopping, McCallum Theatre, Shields Date Garden, and where to eat. What's actually worth your time in Palm Desert and Indian Wells."
 ogImage: /blog/images/ps-boulevard-palms-mountains.webp

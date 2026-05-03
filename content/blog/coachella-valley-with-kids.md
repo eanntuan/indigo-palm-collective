@@ -1,5 +1,5 @@
 ---
-title: "Coachella Valley with Kids: A Practical Family Guide"
+title: "Coachella Valley with Kids: What Actually Works"
 date: 2026-03-30
 metaDescription: "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters more than people think."
 ogImage: /blog/images/cozy-cactus-infant-gear.webp

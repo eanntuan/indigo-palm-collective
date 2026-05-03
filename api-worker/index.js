@@ -221,6 +221,7 @@ async function sendDueWelcomeEmails(env) {
       await sendEmail(env.RESEND_API_KEY, {
         from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
         to: email,
+        cc: 'indigopalmco@gmail.com',
         subject: `Your welcome guide: ${info.name} (check-in ${fmtDate(checkIn)})`,
         html,
       });
@@ -745,6 +746,7 @@ async function handleBooking(request, env) {
       sendEmail(env.RESEND_API_KEY, {
         from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
         to:   email,
+        cc:   'indigopalmco@gmail.com',
         subject: `Booking Request Received: ${property}`,
         html:  guestEmailHtml,
       }),
@@ -992,6 +994,7 @@ async function handleConfirm(request, env) {
     await sendEmail(env.RESEND_API_KEY, {
       from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
       to: email,
+      cc: 'indigopalmco@gmail.com',
       subject: `You're booked at ${info.name}`,
       html,
     });
@@ -1135,6 +1138,7 @@ async function handleSquareWebhook(request, env) {
   await sendEmail(env.RESEND_API_KEY, {
     from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
     to: email,
+    cc: 'indigopalmco@gmail.com',
     subject: `You're booked at ${info.name}`,
     html,
   });
@@ -1366,6 +1370,7 @@ async function handleCreateLease(request, env) {
     await sendEmail(env.RESEND_API_KEY, {
       from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
       to: email,
+      cc: 'indigopalmco@gmail.com',
       subject: `Rental Agreement: ${info.name}`,
       html: emailWrapper(`
         <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
@@ -1455,6 +1460,7 @@ async function handleSignLease(request, env) {
       sendEmail(env.RESEND_API_KEY, {
         from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
         to: lease.email,
+        cc: 'indigopalmco@gmail.com',
         subject: `Your signed rental agreement: ${info.name}`,
         html: signedHtml,
       }),
@@ -1673,9 +1679,10 @@ async function getPropertyHeroImageUrl(propertyId, env) {
   return PROPERTY_INFO[propertyId]?.photo || null;
 }
 
-async function sendEmail(apiKey, { from, to, subject, html, reply_to }) {
+async function sendEmail(apiKey, { from, to, subject, html, reply_to, cc }) {
   const payload = { from, to, subject, html };
   if (reply_to) payload.reply_to = reply_to;
+  if (cc) payload.cc = cc;
 
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',

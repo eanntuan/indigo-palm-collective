@@ -1,5 +1,5 @@
 ---
-title: "5 Things Justin Bieber's Coachella Set Taught Us About the Desert"
+title: "Justin Bieber at Coachella: What to Expect"
 date: 2026-04-23
 metaDescription: "Justin Bieber crashed Coachella 2026 and the internet lost its mind. Here's what that moment actually means for your indio vacation rental trip."
 ogImage: /blog/images/bieber-coachella-stage.webp

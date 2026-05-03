@@ -1,5 +1,5 @@
 ---
-title: "Where to Stay for Coachella (Honest Local Guide)"
+title: "Where to Stay for Coachella: The Real Guide"
 date: 2026-01-27
 dateModified: 2026-04-15
 metaDescription: "Hotels, camping, vacation rentals: an honest breakdown of every Coachella accommodation type from someone who lives here. No affiliate links."
