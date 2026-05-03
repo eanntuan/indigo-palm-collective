@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs vs Indio: Which Desert Town Fits You?"
 date: 2026-04-09
-metaDescription: "Palm Springs vs Indio: an honest comparison of space, price, walkability, and festival proximity to help you choose the right Coachella Valley base."
+metaDescription: "Indio is 25 miles from Palm Springs, 30-40% cheaper per night, and 2 miles from the Coachella stage. Here's how to pick the right base for your trip."
 ogImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroImage: /blog/images/ps-boulevard-palms-mountains.jpg
 heroAlt: "Palm tree-lined boulevard with the San Jacinto Mountains rising behind it in Palm Springs, California"

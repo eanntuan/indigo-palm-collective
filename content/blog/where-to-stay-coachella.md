@@ -2,7 +2,7 @@
 title: "Where to Stay for Coachella: The Real Guide"
 date: 2026-01-27
 dateModified: 2026-04-15
-metaDescription: "Hotels, camping, vacation rentals: an honest breakdown of every Coachella accommodation type from someone who lives here. No affiliate links."
+metaDescription: "Private rental 2 miles from the Coachella stage runs $250-500/night. Hotels sell out first, camping is rougher than advertised. Here's what to book and when."
 ogImage: /blog/images/coachella-festival-crowd.webp
 heroImage: /blog/images/coachella-festival-crowd.webp
 heroAlt: "Crowd at Coachella Valley Music and Arts Festival at Empire Polo Club in Indio California"
