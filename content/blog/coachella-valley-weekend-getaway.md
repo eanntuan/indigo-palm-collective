@@ -130,6 +130,9 @@ layout: blog-post.njk
 
 <p>Plan for those moments and the weekend takes care of itself.</p>
 
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs California with the San Jacinto Mountains in the background on a clear desert day" width="1400" height="933" loading="lazy">
+<p class="image-caption">The San Jacinto Mountains behind Palm Springs. The valley floor is flat; the scale of the mountains doesn't register until you're standing here.</p>
+
 <h2>Frequently Asked Questions</h2>
 
 <h3>What is the best time of year for a Coachella Valley weekend getaway?</h3>

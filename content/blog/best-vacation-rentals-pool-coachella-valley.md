@@ -2,7 +2,7 @@
 title: "Best Vacation Rentals with Pool Coachella Valley: What to Look For"
 date: 2026-05-11
 dateModified: 2026-05-11
-metaDescription: "Searching for the best vacation rentals with pool in the Coachella Valley? Here's what to look for beyond the listing photos — and what actually matters."
+metaDescription: "Searching for the best vacation rentals with pool in the Coachella Valley? Here's what to look for beyond the listing photos, and what actually matters."
 ogImage: /blog/images/cozy-cactus-pool-backyard.webp
 heroImage: /blog/images/cozy-cactus-pool-backyard.webp
 heroAlt: "Private pool and backyard at Cozy Cactus vacation rental in Indio California, one of the best pool rentals in the Coachella Valley"
@@ -124,6 +124,9 @@ layout: blog-post.njk
 </ul>
 
 <p>None of this is complicated. It's just worth asking before you're in the desert in April wishing you'd asked.</p>
+
+<img src="/blog/images/cozy-cactus-backyard.webp" alt="Cozy Cactus backyard patio and outdoor dining at vacation rental in Indio California near Coachella festival grounds" width="1400" height="933" loading="lazy">
+<p class="image-caption">The backyard at The Cozy Cactus. Shade, seating, and the pool steps away. This is how a desert afternoon actually runs.</p>
 
 <h2>When to Book</h2>
 
