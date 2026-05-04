@@ -17,7 +17,7 @@ const EMAIL_TEMPLATE = `<!DOCTYPE html>
     <tr>
         <td style="background-color: #B67550; padding: 20px 36px; text-align: center;">
             <img src="https://indigopalm.co/images/logo-icon-white-feather.png" alt="Indigo Palm Collective" width="48" height="48" style="display: inline-block; width: 48px; height: 48px; object-fit: contain;" />
-            <p style="margin: 6px 0 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #ffffff;">Indigo Palm Collective</p>
+            <p style="margin: 6px 0 0; font-family: Georgia, 'Times New Roman', serif; font-size: 15px; font-weight: 400; letter-spacing: 0.01em; color: #ffffff;">Indigo Palm Collective</p>
         </td>
     </tr>
 
@@ -32,8 +32,15 @@ const EMAIL_TEMPLATE = `<!DOCTYPE html>
     <tr>
         <td style="padding: 40px 36px 0;">
             <h1 style="margin: 0 0 18px; font-family: Georgia, 'Times New Roman', serif; font-size: 26px; font-weight: 400; line-height: 1.35; color: #2C2C2C;">You're in. Welcome to our little corner of the desert.</h1>
-            <p style="margin: 0 0 14px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">I'm Eann, the host behind four desert homes across the Coachella Valley: <a href="https://indigopalm.co/cozy-cactus/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-cozy-cactus" style="color: #B67550; text-decoration: none;">The Cozy Cactus</a>, <a href="https://indigopalm.co/terra-luz/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-terra-luz" style="color: #B67550; text-decoration: none;">Terra Luz</a>, <a href="https://indigopalm.co/the-sundune/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-sundune" style="color: #B67550; text-decoration: none;">The Sundune</a>, and <a href="https://indigopalm.co/the-well/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-the-well" style="color: #B67550; text-decoration: none;">The Well</a>. Each one built differently, on purpose.</p>
-            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">You'll hear from us when we have something worth saying: a property opening, a last-minute deal, a restaurant that changed the game, a festival rental about to sell out. (We keep it short. You won't hear from us every week unless every week has a reason.)</p>
+            <p style="margin: 0 0 12px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">I'm Eann. I own four vacation homes across the Coachella Valley, each one designed with a specific guest in mind:</p>
+            <ul style="margin: 0 0 14px; padding-left: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.9; color: #555;">
+                <li><a href="https://indigopalm.co/cozy-cactus/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-cozy-cactus" style="color: #B67550; text-decoration: none;">The Cozy Cactus</a> — built for families traveling with young kids</li>
+                <li><a href="https://indigopalm.co/terra-luz/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-terra-luz" style="color: #B67550; text-decoration: none;">Terra Luz</a> — Latin-inspired retreat with a Kahlo-blue pool and Old Havana warmth</li>
+                <li><a href="https://indigopalm.co/the-sundune/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-sundune" style="color: #B67550; text-decoration: none;">The Sundune</a> — two-bedroom in Palm Springs, 10 minutes from downtown</li>
+                <li><a href="https://indigopalm.co/the-well/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-the-well" style="color: #B67550; text-decoration: none;">The Well</a> — quiet one-bedroom for guests who need a real reset, minimum 28 nights</li>
+            </ul>
+            <p style="margin: 0 0 14px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">Together they're Indigo Palm Collective. Four homes with four distinct personalities, owned and hosted by one person who answers messages.</p>
+            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">Expect to hear from me a few times a year: property news, last-minute deals, a restaurant worth the drive, a festival rental about to sell out. Short emails, always a reason to send them.</p>
         </td>
     </tr>
 

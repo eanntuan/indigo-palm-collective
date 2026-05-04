@@ -257,6 +257,17 @@ export default {
       return Response.redirect('https://' + url.hostname + HTML_REDIRECTS[path], 301);
     }
 
+    // 301 redirect blog .html URLs to clean trailing-slash URLs
+    if (path.startsWith('/blog/') && path.endsWith('.html')) {
+      const clean = path.slice(0, -5) + '/';
+      return Response.redirect('https://' + url.hostname + clean, 301);
+    }
+
+    // 301 redirect blog slugs missing trailing slash
+    if (path.startsWith('/blog/') && !path.endsWith('/') && !path.includes('.')) {
+      return Response.redirect('https://' + url.hostname + path + '/', 301);
+    }
+
     // 301 redirects for renamed/moved blog posts
     const BLOG_REDIRECTS = {
       '/blog/casa-moto-origin-story':   '/blog/terra-luz-origin-story/',
