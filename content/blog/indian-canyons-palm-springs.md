@@ -129,4 +129,4 @@ The Cahuilla have a specific connection to the California fan palm. The fruit wa
 
 ---
 
-*Eann Tuan runs Indigo Palm Collective, a small vacation rental company with properties in Indio and Palm Springs. He's hiked these canyons a handful of times and still thinks the first drop into Palm Canyon is the best moment of any first visit.*
+*Eann runs Indigo Palm Collective, a small vacation rental company with properties in Indio and Palm Springs. She's hiked these canyons a handful of times and still thinks the first drop into Palm Canyon is the best moment of any first visit.*

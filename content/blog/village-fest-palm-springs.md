@@ -115,4 +115,4 @@ The vendor booths selling mass-produced sunglasses, phone cases, and imported no
 
 ---
 
-*Eann Tuan hosts guests at Indigo Palm Collective properties in Indio and Palm Springs. He's done Village Fest more times than he's kept track of, usually in search of tamales.*
+*Eann hosts guests at Indigo Palm Collective properties in Indio and Palm Springs. She's done Village Fest more times than she's kept track of, usually in search of tamales.*

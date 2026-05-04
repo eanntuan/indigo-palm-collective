@@ -127,4 +127,4 @@ The [pet-friendly Palm Springs](/blog/pet-friendly-palm-springs/) landscape is g
 
 ---
 
-*Eann Tuan runs Indigo Palm Collective in Indio and Palm Springs. Both The Cozy Cactus and Terra Luz welcome dogs with prior approval. Ask at booking.*
+*Eann runs Indigo Palm Collective in Indio and Palm Springs. Both The Cozy Cactus and Terra Luz welcome dogs with prior approval. Ask at booking.*

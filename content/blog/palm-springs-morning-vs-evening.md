@@ -125,4 +125,4 @@ The guests who tell me they had the best trip? Almost all of them figured out th
 
 ---
 
-*Eann Tuan is the founder of Indigo Palm Collective, operating vacation rentals in Indio and Palm Springs. He's given this same advice in approximately two hundred welcome messages.*
+*Eann is the founder of Indigo Palm Collective, operating vacation rentals in Indio and Palm Springs. She's given this same advice in approximately two hundred welcome messages.*

@@ -124,4 +124,4 @@ Our properties at The Cozy Cactus and Terra Luz both sit less than two miles fro
 
 ---
 
-*Eann Tuan is the founder of Indigo Palm Collective, which operates vacation rentals in Indio and Palm Springs. He's eaten too many date shakes to count and has no regrets.*
+*Eann is the founder of Indigo Palm Collective, which operates vacation rentals in Indio and Palm Springs. She's eaten too many date shakes to count and has no regrets.*
