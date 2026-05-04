@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /booking-flow/
 
 Sitemap: https://indigopalm.co/sitemap.xml
