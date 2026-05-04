@@ -75,7 +75,7 @@ layout: blog-post.njk
 <p>That's Indio. Not Palm Springs. Grittier, more working-class, less curated, and exactly what makes it worth your time. This is the city that hosts Coachella and Stagecoach every year, gets overlooked for eleven months, and quietly goes about being one of the most interesting corners of the Coachella Valley. Here's what's worth finding.</p>
 
 <img src="/blog/images/indio-sign-miles-ave.webp" alt="Colorful INDIO letter sign at Miles Avenue Park in Indio California with palm trees and string lights" width="800" height="533" loading="lazy">
-<p class="image-caption">Miles Avenue Park. The sign is new, the city is older and more interesting than most visitors bother to find out.</p>
+<p class="image-caption">Miles Avenue Park. The sign is new, the city behind it has been worth knowing for a long time.</p>
 
 <div class="fun-fact">
     <p>Indio's most famous export right now isn't dates. It's <a href="https://www.abicartermusic.com/" target="_blank" rel="noopener" style="color: var(--charcoal); font-weight: 700; text-decoration: underline;"><strong>Abi Carter</strong></a>, who <a href="https://www.billboard.com/music/music-news/abi-carter-american-idol-2024-1235687452/" target="_blank" rel="noopener" style="color: var(--charcoal); text-decoration: underline;">won American Idol Season 22 in May 2024</a> and is from right here. She [busked at Palm Springs VillageFest](https://www.youtube.com/watch?v=wKSGT2uPR_Y) as a teenager, got DM'd by an Idol casting producer, sang "What Was I Made For?" for all three judges, and became the first platinum ticket recipient to ever win the show. Then she came home and performed at Stagecoach 2025. Indio, CA. Quietly producing the things.</p>
