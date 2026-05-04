@@ -73,7 +73,7 @@ layout: blog-post.njk
 
 <p>There's a moment on festival Saturday when you step out of your front door, walk through a quiet palm-lined street, pass a neighbor sitting on their porch with coffee, and realize you're going to Coachella on foot. No shuttle line. No surge pricing. No standing in traffic. You're just walking there, like it's down the block. Because it mostly is.</p>
 
-<p>That's Indian Palms Country Club. A gated residential neighborhood in Indio, 2.5 miles from the Empire Polo Club, made up of streets where people actually live. I own two vacation rentals here. Here's what staying in this community is actually like.</p>
+<p>That's Indian Palms Country Club. A gated residential neighborhood in Indio, 2.5 miles from the Empire Polo Club, made up of streets where people live. I own two vacation rentals here. Here's what staying in this community is like.</p>
 
 <img src="/blog/images/cozy-cactus-exterior.webp" alt="Vacation rental in Indian Palms Country Club Indio CA with pool and mountain views" width="1400" height="933" loading="lazy">
 
