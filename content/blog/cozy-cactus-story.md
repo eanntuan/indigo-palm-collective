@@ -144,7 +144,7 @@ layout: blog-post.njk
 
 <h2>What Guests Actually Say</h2>
 
-<p>A family of five checked out and told me it was "the first time we have truly rested during our vacation with our 3 children." They came back completely rejuvenated, not just exhausted in a different location. Another guest said my labeling system was unprecedented in 10 years of Airbnb stays. She wasn't exaggerating, she'd stayed in 40+ rentals. I have repeat guests. Groups of friends who come back for Coachella every year. Couples who stayed before they had kids, then came back with infants because they trusted the setup. Even grown men who just want a well-organized house with a good coffee bar and a clean pool. The Cozy Cactus isn't baby-themed - it's thoughtfully designed for humans who appreciate when someone cares.</p>
+<p>A family of five checked out and told me it was "the first time we have truly rested during our vacation with our 3 children." They came back completely rejuvenated, not just exhausted in a different location. Another guest said my labeling system was unprecedented in 10 years of Airbnb stays. She wasn't exaggerating, she'd stayed in 40+ rentals. I have repeat guests. Groups of friends who come back for Coachella every year. Couples who stayed before they had kids, then came back with infants because they trusted the setup. Even grown men who just want a well-organized house with a good coffee bar and a clean pool. The Cozy Cactus is thoughtfully designed for humans who appreciate when someone cares.</p>
 
 <p>One mom wrote: "Everything was exactly where it should be. We didn't have to ask for anything. It felt like someone thought about what families need." That's the whole point.</p>
 
