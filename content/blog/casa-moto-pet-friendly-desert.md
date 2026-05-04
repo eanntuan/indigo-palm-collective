@@ -2,7 +2,7 @@
 title: "Pet-Friendly Vacation Rental Coachella Valley: What Casa Moto Actually Built for Dogs"
 date: 2026-05-04
 dateModified: 2026-05-04
-metaDescription: "Casa Moto is a pet-friendly vacation rental in Indio, CA built with dogs in mind. Here's what that looks like beyond the fine print — from the backyard to the neighborhood."
+metaDescription: "Pet-friendly vacation rental in Coachella Valley: Casa Moto in Indio was built for dogs. Enclosed yard, tile floors, saltwater pool. No carpet anywhere."
 ogImage: /blog/images/terra-luz-pool-backyard.webp
 heroImage: /blog/images/terra-luz-pool-backyard.webp
 heroAlt: "Casa Moto private pool and backyard at pet-friendly vacation rental in Indio California Coachella Valley"
@@ -57,7 +57,7 @@ layout: blog-post.njk
 <p>Turns out the list is longer than I expected.</p>
 
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Casa Moto private saltwater pool and enclosed backyard at pet-friendly vacation rental in Indio California Coachella Valley" width="1400" height="1050" loading="eager">
-<p class="image-caption">The backyard. Fully enclosed. This was a deliberate decision — the gate latches, the fence is solid, and dogs can be out there without anyone hovering.</p>
+<p class="image-caption">The backyard. Fully enclosed. This was a deliberate decision: the gate latches, the fence is solid, and dogs can be out there without anyone hovering.</p>
 
 <h2>The Backyard Is Actually Enclosed</h2>
 
@@ -65,7 +65,7 @@ layout: blog-post.njk
 
 <p>I've seen a lot of vacation rentals with "yards" that are really just patios with some decorative fencing that a motivated Labrador could clear in one jump. Or worse, "yards" that open directly onto a shared golf course with no real boundary at all.</p>
 
-<p>At Casa Moto, the backyard is properly enclosed. The gate latches. The fence is the real kind. A dog can be out there without someone standing at the door watching every move — which, if you've ever brought a dog on a trip, you know is the difference between actually relaxing and not relaxing at all.</p>
+<p>At Casa Moto, the backyard is properly enclosed. The gate latches. The fence is the real kind. A dog can be out there without someone standing at the door watching every move. If you've ever brought a dog on a trip, you know that's the difference between actually relaxing and not relaxing at all.</p>
 
 <p>The pool has a sun shelf. There's space to set up a shade spot. The outdoor area is designed so people actually spend time there, which means it's also designed so dogs can actually be out there.</p>
 
@@ -119,31 +119,31 @@ layout: blog-post.njk
 <p>For more on what's actually worth doing in the area, the <a href="/blog/things-to-do-indio-ca/">things to do in Indio guide</a> covers the local favorites that don't show up on the tourist lists.</p>
 
 <img src="/blog/images/shields-date-garden.webp" alt="Shields Date Garden in Indio California along Highway 111, a dog-friendly stop near Casa Moto vacation rental" width="1400" height="933" loading="lazy">
-<p class="image-caption">Shields Date Garden is 10 minutes from Casa Moto. Outdoor, relaxed, and a classic Coachella Valley stop — dogs welcome on leash.</p>
+<p class="image-caption">Shields Date Garden is 10 minutes from Casa Moto. Outdoor, relaxed, and a classic Coachella Valley stop. Dogs welcome on leash.</p>
 
 <h2>What It Actually Costs to Bring a Dog</h2>
 
-<p>Transparent answer: there's a pet fee. Most of the cleaning fee for pet stays goes directly into the turnover — an extra pass on the floors, the furniture, the bedding. That's just the reality of hosting dogs in a space that needs to be clean for the next guests too.</p>
+<p>Transparent answer: there's a pet fee. Most of the cleaning fee for pet stays goes directly into the turnover: an extra pass on the floors, the furniture, the bedding. That's just the reality of hosting dogs in a space that needs to be clean for the next guests too.</p>
 
 <p>What you get for that fee is a property that's designed to have you there, not tolerating your presence. It's a difference that's hard to quantify but you feel it within about five minutes of arriving.</p>
 
 <h2>The Short Version</h2>
 
-<p>If you're looking for a pet-friendly vacation rental in the Coachella Valley and tired of the listings that technically allow dogs but clearly weren't designed with them in mind, <a href="/casa-moto/">Casa Moto</a> is the different answer.</p>
+<p>If you're looking for a pet-friendly vacation rental in the Coachella Valley and tired of the listings that technically allow dogs but clearly weren't designed with them in mind, <a href="/terra-luz/">Casa Moto</a> is the different answer.</p>
 
 <p>Enclosed backyard. Thoughtful design. A neighborhood worth walking. A property that actually looks good when a dog is in the room.</p>
 
 <p>That's what pet-friendly actually means here.</p>
 
-<p>Once you've sorted the lodging, the <a href="/blog/coachella-valley-vacation-rental-guide/">complete Coachella Valley vacation rental guide</a> goes deeper on everything from booking timing to what to look for in any desert rental — dogs included.</p>
+<p>Once you've sorted the lodging, the <a href="/blog/coachella-valley-vacation-rental-guide/">complete Coachella Valley vacation rental guide</a> goes deeper on everything from booking timing to what to look for in any desert rental, dogs included.</p>
 
 <img src="/blog/images/ps-desert-valley-view.webp" alt="Coachella Valley desert view from above showing Indio and Palm Springs area where Casa Moto pet-friendly vacation rental is located" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Coachella Valley. Casa Moto is in Indio, right in the middle of all of this — close enough to Palm Springs, far enough to feel like its own place.</p>
+<p class="image-caption">The Coachella Valley. Casa Moto is in Indio, right in the middle of all of this. Close enough to Palm Springs, far enough to feel like its own place.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>Is Casa Moto pet-friendly?</h3>
-<p>Yes. Casa Moto in Indio welcomes dogs and was designed with pets in mind — including a fully enclosed backyard, thoughtful pet-specific details, and a design aesthetic that actually works with dogs in the space. There is a pet fee; details are on the listing page.</p>
+<p>Yes. Casa Moto in Indio welcomes dogs and was designed with pets in mind: fully enclosed backyard, thoughtful pet-specific details, and a design aesthetic that actually works with dogs in the space. There is a pet fee; details are on the listing page.</p>
 
 <h3>What makes a vacation rental actually pet-friendly versus just allowing pets?</h3>
 <p>The difference shows up in the details: a properly enclosed outdoor space (so you don't have to monitor the fence), design that's meant to be used rather than displayed, and a neighborhood that works for dog walks. Most pet-allowed listings stop at the policy; a genuinely pet-friendly property is designed around the actual experience.</p>
@@ -164,7 +164,7 @@ layout: blog-post.njk
       "name": "Is Casa Moto pet-friendly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Casa Moto in Indio welcomes dogs and was designed with pets in mind — including a fully enclosed backyard, thoughtful pet-specific details, and a design aesthetic that works with dogs in the space. There is a pet fee; details are on the listing page."
+        "text": "Yes. Casa Moto in Indio welcomes dogs and was designed with pets in mind: fully enclosed backyard, thoughtful pet-specific details, and a design aesthetic that works with dogs in the space. There is a pet fee; details are on the listing page."
       }
     },
     {
