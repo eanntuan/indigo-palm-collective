@@ -86,7 +86,7 @@ layout: blog-post.njk
 
 <h2>What Summer Is Good For</h2>
 
-<p><strong>Pool culture peaks.</strong> In spring, the pool is a nice feature. In summer, the pool becomes the entire architecture of the day. You swim in the morning before the heat arrives. You return to the pool in the afternoon when the sun is at its worst. You stay until the light starts to shift around 5pm. A private pool at a rental house means you're not fighting for a chair or sharing the water with strangers. It's one of the more genuinely relaxing vacation formats I know of, and the desert heat makes it impossible to feel guilty about just floating for three hours.</p>
+<p><strong>Pool culture peaks.</strong> In spring, the pool is a nice feature. In summer, the pool becomes the entire architecture of the day. Morning swim before the heat arrives, back in the pool when the afternoon sun peaks, and staying until the light shifts around 5pm. A private pool at a rental house means you're not fighting for a chair or sharing the water with strangers. It's one of the more genuinely relaxing vacation formats I know of, and the desert heat makes it impossible to feel guilty about just floating for three hours.</p>
 
 <p><strong>Rates drop significantly.</strong> Summer is off-peak for most Palm Springs properties. You can often get a rental that would cost $400 a night in April for $180 in July. Hotels follow the same pattern. If you're flexible on season and your priority is value, summer is when the Coachella Valley makes financial sense.</p>
 

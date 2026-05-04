@@ -100,7 +100,7 @@ layout: blog-post.njk
 
 <p>Kitchen 86 is the late-night option on El Paseo, and the one that works best for groups with different appetites. The menu runs wide: wood-fired pizza, lamb chops, house-made curries and ramen, fresh seafood, small plates. The bar program is serious. Live entertainment most nights, dueling pianos on weekends. Open until 12:30am on weekends, which is unusual for the valley.</p>
 
-<p>It's not a quiet dinner spot. It's the right place when you want the evening to keep going after you eat. Find them at <a href="https://www.instagram.com/kitchen86_elpaseo/" target="_blank" rel="noopener">@kitchen86_elpaseo</a>.</p>
+<p>Best for groups who want the evening to keep going. The bar and entertainment carry it well past dinner. Find them at <a href="https://www.instagram.com/kitchen86_elpaseo/" target="_blank" rel="noopener">@kitchen86_elpaseo</a>.</p>
 
 <h3>Le Donne Cucina Italiana</h3>
 

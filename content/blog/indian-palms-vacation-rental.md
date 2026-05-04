@@ -82,7 +82,7 @@ layout: blog-post.njk
 
 <h2>What Is Indian Palms Country Club?</h2>
 
-<p>Indian Palms Country Club is a gated residential community in Indio, California. It's a mix of permanent residents and vacation rentals built around a 27-hole golf course, with palm tree-lined streets, three community pools, pickleball and tennis courts, and a Lifestyle Center. It's not a resort. It's a neighborhood. That distinction matters.</p>
+<p>Indian Palms Country Club is a gated residential community in Indio, California. It's a mix of permanent residents and vacation rentals built around a 27-hole golf course, with palm tree-lined streets, three community pools, pickleball and tennis courts, and a Lifestyle Center. Indian Palms is a residential neighborhood first. That distinction matters.</p>
 
 <p>People who stay here for the first time are usually surprised by how quiet it is. No lobby, no front desk, no hotel energy. You're staying in a house, on a street, in a community where people live. For some guests, that's exactly what they wanted. For others who expected more of a resort experience, it can take a day to recalibrate.</p>
 

@@ -112,7 +112,7 @@ layout: blog-post.njk
 
 <p>This is the evening version of staying cool: by 9pm the temperature is tolerable, and this mini-golf setup turns that window into something worth doing. Indian Wells Golf Resort runs "Shots in the Night" on Thursday through Saturday, starting about 30 minutes after sunset (43-500 Monterey Ave, Palm Desert, 760-346-4653).</p>
 
-<p>Colorful lasers, glow-in-the-dark targets, background music, food and drinks available. It's not serious golf. It's a fun way to spend an evening when you've been inside all day and the heat finally breaks. The drive from The Sundune is about 20 minutes.</p>
+<p>Colorful lasers, glow-in-the-dark targets, background music, food and drinks. A good use of that 9pm window when the heat finally breaks after a day spent inside. The drive from The Sundune is about 20 minutes.</p>
 
 <h2>Over the Rainbow Desserts</h2>
 

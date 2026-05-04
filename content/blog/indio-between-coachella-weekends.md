@@ -73,7 +73,7 @@ layout: blog-post.njk
 
 <p>Weekend 1 ends April 13th. Weekend 2 starts April 18th. That's five days in Indio with no festival, no agenda, and probably a depleted phone battery and a vague sense that you've eaten nothing but overpriced festival burritos for three days. You could drive back to wherever you came from and turn around again (a lot of people do), but that seems like a lot of freeway for a mediocre outcome.</p>
 
-<p>If you're staying in a vacation rental near the polo grounds (like <a href="https://indigopalm.co/cozy-cactus">The Cozy Cactus</a> or <a href="https://indigopalm.co/terra-luz">Terra Luz</a>), you're already positioned perfectly for everything on this list. You don't need a hotel. You don't need to check in and check out again. You just need a plan.</p>
+<p>If you're staying in a vacation rental near the polo grounds (like <a href="https://indigopalm.co/cozy-cactus">The Cozy Cactus</a> or <a href="https://indigopalm.co/terra-luz">Terra Luz</a>), you're already positioned perfectly for everything on this list. Same base, no hotel logistics, five days to actually use the valley.</p>
 
 <p>Here's mine.</p>
 

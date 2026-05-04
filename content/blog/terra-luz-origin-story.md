@@ -145,7 +145,7 @@ layout: blog-post.njk
 
 <h2>Who This Place Is For</h2>
 
-<p>Terra Luz isn't for everyone. It's not a corporate retreat center. It's for people who travel with intention. Groups and couples who value sun-soaked afternoons over rigid itineraries. People who come to <em>feel</em> something, not just see something.</p>
+<p>Terra Luz isn't for everyone. The guests who love it travel with intention. Groups and couples who value sun-soaked afternoons over rigid itineraries, who want to linger over coffee and actually feel somewhere, not pass through it.</p>
 
 <p>If you're the kind of person who lingers over coffee, plays backgammon for three hours, and doesn't check your email all weekend, this is your place.</p>
 

@@ -37,7 +37,7 @@ layout: blog-post.njk
 
 <p>Community pools are shared with everyone in the neighborhood. They have posted hours, typically closing at 10pm. They often have rules about noise levels, food, and glass. On a hot Saturday during Coachella weekend with a dozen other rental guests plus permanent residents, a community pool is a crowded, modestly relaxing experience. It's fine. It's not the same as having a pool to yourself.</p>
 
-<p>A private pool is yours for the duration of your stay. You swim at midnight if you feel like it. You can be loud without worrying about neighbors. You don't have to find your towel among ten other sets of towels. The pool functions as an extension of the house, not as a shared amenity you schedule around.</p>
+<p>A private pool is yours for the duration of your stay. Midnight is a valid swim time. Noise isn't a concern. Your towel is the only one out there. The pool functions as an extension of the house, not a shared amenity you schedule around.</p>
 
 <p>One more thing to check: heated or not. Desert nights from October through April drop to 50-60°F. An unheated pool in March is cold enough that most people don't use it. If a listing says "pool" without specifying heated, ask directly. It's the difference between a pool you use every day and one that just looks good in photos.</p>
 
