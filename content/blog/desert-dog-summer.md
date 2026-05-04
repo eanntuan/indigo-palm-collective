@@ -3,9 +3,9 @@ title: "Dogs in Desert Heat: How to Keep Your Pet Safe in Palm Springs"
 date: 2026-05-03
 dateModified: 2026-05-03
 metaDescription: "Dog safety in Coachella Valley heat: how to keep your pet safe when it hits 100 degrees in Palm Springs or Indio, and a local dog food brand worth knowing."
-ogImage: /blog/images/cozy-cactus-backyard.webp
-heroImage: /blog/images/cozy-cactus-backyard.webp
-heroAlt: "Cozy Cactus backyard pool and patio area in Indio California, dog-friendly vacation rental"
+ogImage: /blog/images/terra-luz-pool-backyard.webp
+heroImage: /blog/images/terra-luz-pool-backyard.webp
+heroAlt: "Terra Luz backyard pool and patio in Indio California, pet-friendly vacation rental in the Coachella Valley"
 keywords:
   - dog friendly palm springs
   - desert heat dog safety
@@ -79,13 +79,13 @@ The rule I follow for our guests at [The Cozy Cactus and Terra Luz](/cozy-cactus
 
 **Early morning walks.** Before 8am is the sweet spot in summer. The pavement has had all night to release heat, the air temperature is at its daily low, and the desert light is genuinely pleasant. In spring and fall, the window extends to about 10am.
 
-**Pool time.** Both The Cozy Cactus and Terra Luz in Indio have private pools, and dogs are welcome. Most dogs figure out the steps quickly. A dog who's been floating in a pool for 20 minutes on a hot afternoon is a calm, happy dog for the rest of the evening. Rinse them off after with fresh water to remove the chlorine.
+**Pool time.** Terra Luz in Indio and The Sundune in Palm Springs both have private pools and welcome dogs (a pet fee applies, prior approval at booking). Most dogs figure out the steps quickly. A dog who's been floating in a pool for 20 minutes on a hot afternoon is a calm, happy dog for the rest of the evening. Rinse them off after with fresh water to remove the chlorine.
 
 **Cooling mats and indoor enrichment.** A good cooling mat (the gel-based ones that don't need refrigeration work well) placed in front of the AC vent gives your dog a dedicated cool spot during the hottest part of the day. Puzzle feeders and frozen treats keep them occupied inside without requiring outdoor exertion.
 
 **Dog-friendly patios in the evening.** Most Palm Springs restaurants with patios allow dogs in the outdoor section, particularly after about 7pm when the heat has backed off. Check before you arrive. [Cheeky's, Birba, and El Mirasol](/blog/best-restaurants-palm-springs/) are good options, and all are dog-friendly at their outdoor tables.
 
-<img src="/blog/images/cozy-cactus-pool.webp" alt="Pool at The Cozy Cactus vacation rental in Indio California, private backyard pool for guests and pets" loading="lazy" width="1400" height="933">
+<img src="/blog/images/cozy-cactus-pool.webp" alt="Private backyard pool at a vacation rental in Indio California, shaded patio and pool area in the Coachella Valley" loading="lazy" width="1400" height="933">
 
 ## Slater and Sullivan's: A Local Dog Food Company Worth Knowing
 
@@ -115,7 +115,7 @@ A few things that make a real difference in desert travel with dogs:
 
 <img src="/blog/images/cozy-cactus-patio.webp" alt="Shaded patio area at The Cozy Cactus in Indio California with seating and desert landscaping" loading="lazy" width="1400" height="933">
 
-<img src="/blog/images/cozy-cactus-backyard-putting-green.webp" alt="Cozy Cactus backyard with putting green in Indio California, a dog-friendly outdoor space at a Coachella Valley vacation rental" loading="lazy" width="1400" height="933">
+<img src="/blog/images/cozy-cactus-backyard-putting-green.webp" alt="Backyard with putting green at a vacation rental in Indio California, shaded outdoor space at a Coachella Valley property" loading="lazy" width="1400" height="933">
 
 ## The Right Season to Bring Your Dog
 
@@ -127,4 +127,4 @@ The [pet-friendly Palm Springs](/blog/pet-friendly-palm-springs/) landscape is g
 
 ---
 
-*Eann runs Indigo Palm Collective in Indio and Palm Springs. Both The Cozy Cactus and Terra Luz welcome dogs with prior approval. Ask at booking.*
+*Eann runs Indigo Palm Collective in Indio and Palm Springs. Terra Luz and The Sundune both welcome dogs with prior approval. A pet fee applies — ask at booking.*
