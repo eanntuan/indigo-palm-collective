@@ -385,4 +385,34 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://indigopalm.co/blog/modernism-week-palm-springs/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://indigopalm.co/blog/classpass-palm-springs/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://indigopalm.co/blog/palm-springs-birthday-freebies/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://indigopalm.co/blog/best-pastries-palm-springs/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://indigopalm.co/blog/bnp-paribas-open-restaurants/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
