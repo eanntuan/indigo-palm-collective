@@ -1,88 +1,209 @@
 // Cloudflare Worker: Newsletter Signup Handler
 // Handles "Stay in the Loop" form submissions
 
-// Import the email template (you'll need to upload this as a Worker asset)
 const EMAIL_TEMPLATE = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Indigo Palm Collective Newsletter 🌵</title>
+    <title>You're in. Here's where to start.</title>
 </head>
-<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background-color: #f5f3ee;">
-    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f3ee;">
-        <tr>
-            <td style="padding: 40px 20px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<body style="margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', serif; background-color: #F5F3EE;">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #F5F3EE;">
+<tr><td style="padding: 32px 20px;">
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 580px; margin: 0 auto; background-color: #ffffff; border-radius: 4px; overflow: hidden;">
 
-                    <!-- Header -->
-                    <tr>
-                        <td style="background: linear-gradient(135deg, #738561 0%, #adbab7 100%); padding: 40px 30px; text-align: center;">
-                            <h1 style="margin: 0; color: #ffffff; font-size: 32px; font-weight: 300; letter-spacing: 2px;">INDIGO PALM COLLECTIVE</h1>
-                            <p style="margin: 10px 0 0 0; color: rgba(255,255,255,0.9); font-size: 14px; font-style: italic;">Curated stays across Coachella Valley</p>
-                        </td>
-                    </tr>
+    <!-- Header bar -->
+    <tr>
+        <td style="background-color: #B67550; padding: 20px 36px; text-align: center;">
+            <img src="https://indigopalm.co/images/logo-icon-white-feather.png" alt="Indigo Palm Collective" width="48" height="48" style="display: inline-block; width: 48px; height: 48px; object-fit: contain;" />
+            <p style="margin: 6px 0 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #ffffff;">Indigo Palm Collective</p>
+        </td>
+    </tr>
 
-                    <!-- Main Content -->
-                    <tr>
-                        <td style="padding: 40px 30px;">
-                            <h2 style="margin: 0 0 20px 0; color: #2c2c2c; font-size: 24px; font-weight: 400;">Welcome to our community!</h2>
-                            <p style="margin: 0 0 20px 0; color: #555; font-size: 16px; line-height: 1.6;">You're now in the loop for new properties, exclusive offers, last-minute deals, and desert getaway inspiration.</p>
+    <!-- Hero image -->
+    <tr>
+        <td style="padding: 0; line-height: 0;">
+            <img src="https://indigopalm.co/email-images/cozy-cactus.jpg" alt="The Cozy Cactus pool at golden hour, Indio CA" width="580" style="display: block; width: 100%; max-width: 580px; height: 260px; object-fit: cover;" />
+        </td>
+    </tr>
 
-                            <!-- Benefits List -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: 20px 0;">
+    <!-- Intro -->
+    <tr>
+        <td style="padding: 40px 36px 0;">
+            <h1 style="margin: 0 0 18px; font-family: Georgia, 'Times New Roman', serif; font-size: 26px; font-weight: 400; line-height: 1.35; color: #2C2C2C;">You're in. Welcome to our little corner of the desert.</h1>
+            <p style="margin: 0 0 14px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">I'm Eann, the host behind four desert homes across the Coachella Valley: <a href="https://indigopalm.co/cozy-cactus/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-cozy-cactus" style="color: #B67550; text-decoration: none;">The Cozy Cactus</a>, <a href="https://indigopalm.co/terra-luz/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-terra-luz" style="color: #B67550; text-decoration: none;">Terra Luz</a>, <a href="https://indigopalm.co/the-sundune/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-sundune" style="color: #B67550; text-decoration: none;">The Sundune</a>, and <a href="https://indigopalm.co/the-well/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-the-well" style="color: #B67550; text-decoration: none;">The Well</a>. Each one built differently, on purpose.</p>
+            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">You'll hear from us when we have something worth saying: a property opening, a last-minute deal, a restaurant that changed the game, a festival rental about to sell out. (We keep it short. You won't hear from us every week unless every week has a reason.)</p>
+        </td>
+    </tr>
+
+    <!-- Property grid -->
+    <tr>
+        <td style="padding: 28px 36px 0;">
+            <p style="margin: 0 0 14px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #B67550;">The homes</p>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td width="49%" style="padding-right: 6px; vertical-align: top;">
+                        <a href="https://indigopalm.co/cozy-cactus/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=grid-cozy-cactus" style="text-decoration: none; display: block;">
+                            <img src="https://indigopalm.co/email-images/cozy-cactus.webp" alt="The Cozy Cactus" width="100%" style="display: block; width: 100%; height: 140px; object-fit: cover; border-radius: 3px;" />
+                            <p style="margin: 8px 0 2px; font-family: Georgia, serif; font-size: 14px; color: #2C2C2C;">The Cozy Cactus</p>
+                            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 12px; color: #999;">3 bed &middot; Indio</p>
+                        </a>
+                    </td>
+                    <td width="2%"></td>
+                    <td width="49%" style="padding-left: 6px; vertical-align: top;">
+                        <a href="https://indigopalm.co/terra-luz/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=grid-terra-luz" style="text-decoration: none; display: block;">
+                            <img src="https://indigopalm.co/email-images/casa-moto.jpg" alt="Terra Luz" width="100%" style="display: block; width: 100%; height: 140px; object-fit: cover; border-radius: 3px;" />
+                            <p style="margin: 8px 0 2px; font-family: Georgia, serif; font-size: 14px; color: #2C2C2C;">Terra Luz</p>
+                            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 12px; color: #999;">3 bed &middot; Indio</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr><td colspan="3" style="padding-top: 12px;"></td></tr>
+                <tr>
+                    <td width="49%" style="padding-right: 6px; vertical-align: top;">
+                        <a href="https://indigopalm.co/the-sundune/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=grid-sundune" style="text-decoration: none; display: block;">
+                            <img src="https://indigopalm.co/email-images/ps-retreat.jpg" alt="The Sundune" width="100%" style="display: block; width: 100%; height: 140px; object-fit: cover; border-radius: 3px;" />
+                            <p style="margin: 8px 0 2px; font-family: Georgia, serif; font-size: 14px; color: #2C2C2C;">The Sundune</p>
+                            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 12px; color: #999;">2 bed &middot; Palm Springs</p>
+                        </a>
+                    </td>
+                    <td width="2%"></td>
+                    <td width="49%" style="padding-left: 6px; vertical-align: top;">
+                        <a href="https://indigopalm.co/the-well/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=grid-the-well" style="text-decoration: none; display: block;">
+                            <img src="https://indigopalm.co/email-images/the-well.jpg" alt="The Well" width="100%" style="display: block; width: 100%; height: 140px; object-fit: cover; border-radius: 3px;" />
+                            <p style="margin: 8px 0 2px; font-family: Georgia, serif; font-size: 14px; color: #2C2C2C;">The Well</p>
+                            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 12px; color: #999;">1 bed &middot; Palm Springs</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- Divider -->
+    <tr><td style="padding: 32px 36px 0;"><hr style="border: none; border-top: 1px solid #EDE8E0; margin: 0;" /></td></tr>
+
+    <!-- Blog links -->
+    <tr>
+        <td style="padding: 28px 36px 0;">
+            <p style="margin: 0 0 18px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #B67550;">Before you book, start here</p>
+
+            <!-- Blog link 1 -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 14px;">
+                <tr>
+                    <td style="border-radius: 3px; overflow: hidden; border: 1px solid #EDE8E0;">
+                        <a href="https://indigopalm.co/blog/indio-local-gems/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=blog-indio-gems" style="text-decoration: none; display: block;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
-                                    <td style="padding: 10px 0;">
-                                        <p style="margin: 0; color: #555; font-size: 16px; line-height: 1.8;">
-                                            ✓ New property launches<br>
-                                            ✓ Exclusive offers & last-minute deals<br>
-                                            ✓ Desert getaway inspiration<br>
-                                            ✓ Special events in Coachella Valley
-                                        </p>
+                                    <td width="100" style="vertical-align: top; padding: 0; line-height: 0;">
+                                        <img src="https://indigopalm.co/blog/images/indio-sign-miles-ave.webp" alt="Indio local gems" width="100" style="display: block; width: 100px; height: 90px; object-fit: cover;" />
+                                    </td>
+                                    <td style="padding: 14px 16px; vertical-align: top;">
+                                        <p style="margin: 0 0 4px; font-family: Georgia, serif; font-size: 15px; color: #2C2C2C; line-height: 1.3;">10 Indio Spots Most Visitors Never Find</p>
+                                        <p style="margin: 0 0 8px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 12px; color: #999; line-height: 1.5;">The taco stand by the date farm. The swim spot without the line.</p>
+                                        <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; color: #B67550; letter-spacing: 0.06em;">READ &rarr;</p>
                                     </td>
                                 </tr>
                             </table>
+                        </a>
+                    </td>
+                </tr>
+            </table>
 
-                            <!-- Discount Code Box -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: 30px 0;">
+            <!-- Blog link 2 -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 14px;">
+                <tr>
+                    <td style="border-radius: 3px; overflow: hidden; border: 1px solid #EDE8E0;">
+                        <a href="https://indigopalm.co/blog/palm-springs-vs-indio/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=blog-ps-vs-indio" style="text-decoration: none; display: block;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
-                                    <td style="background: linear-gradient(135deg, #B67550 0%, #325CD9 100%); padding: 30px; border-radius: 8px; text-align: center;">
-                                        <p style="margin: 0 0 10px 0; color: #ffffff; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">Your Welcome Gift</p>
-                                        <h3 style="margin: 10px 0; color: #ffffff; font-size: 36px; letter-spacing: 3px; font-family: 'Courier New', monospace;">WELCOME10</h3>
-                                        <p style="margin: 10px 0 0 0; color: rgba(255,255,255,0.9); font-size: 18px;">10% off your first booking</p>
+                                    <td width="100" style="vertical-align: top; padding: 0; line-height: 0;">
+                                        <img src="https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs vs Indio" width="100" style="display: block; width: 100px; height: 90px; object-fit: cover;" />
+                                    </td>
+                                    <td style="padding: 14px 16px; vertical-align: top;">
+                                        <p style="margin: 0 0 4px; font-family: Georgia, serif; font-size: 15px; color: #2C2C2C; line-height: 1.3;">Palm Springs vs Indio: Which Base Is Right for You?</p>
+                                        <p style="margin: 0 0 8px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 12px; color: #999; line-height: 1.5;">25 miles apart, 30-40% price difference, very different vibes.</p>
+                                        <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; color: #B67550; letter-spacing: 0.06em;">READ &rarr;</p>
                                     </td>
                                 </tr>
                             </table>
+                        </a>
+                    </td>
+                </tr>
+            </table>
 
-                            <!-- CTA Button -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: 30px 0;">
+            <!-- Blog link 3 -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td style="border-radius: 3px; overflow: hidden; border: 1px solid #EDE8E0;">
+                        <a href="https://indigopalm.co/blog/beyond-coachella-desert-escape/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=blog-beyond-coachella" style="text-decoration: none; display: block;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
-                                    <td style="text-align: center;">
-                                        <a href="https://indigopalm.co" style="display: inline-block; padding: 16px 40px; background-color: #d2635b; color: #ffffff; text-decoration: none; border-radius: 4px; font-size: 16px; font-weight: 600; letter-spacing: 1px;">Explore Our Homes</a>
+                                    <td width="100" style="vertical-align: top; padding: 0; line-height: 0;">
+                                        <img src="https://indigopalm.co/blog/images/cozy-cactus-pool.webp" alt="Coachella Valley beyond festival season" width="100" style="display: block; width: 100px; height: 90px; object-fit: cover;" />
+                                    </td>
+                                    <td style="padding: 14px 16px; vertical-align: top;">
+                                        <p style="margin: 0 0 4px; font-family: Georgia, serif; font-size: 15px; color: #2C2C2C; line-height: 1.3;">The Coachella Valley Outside Festival Season</p>
+                                        <p style="margin: 0 0 8px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 12px; color: #999; line-height: 1.5;">Hot springs, date shakes, Joshua Tree day trips.</p>
+                                        <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; color: #B67550; letter-spacing: 0.06em;">READ &rarr;</p>
                                     </td>
                                 </tr>
                             </table>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
-                            <p style="margin: 20px 0 0 0; color: #555; font-size: 16px; line-height: 1.6;">Ready to book? Email us at <a href="mailto:indigopalmco@gmail.com" style="color: #d2635b; text-decoration: none;">indigopalmco@gmail.com</a></p>
-                            <p style="margin: 20px 0 0 0; color: #555; font-size: 16px; line-height: 1.6;">See you in the desert!<br><strong>Indigo Palm Collective Team</strong></p>
-                        </td>
-                    </tr>
+    <!-- Divider -->
+    <tr><td style="padding: 32px 36px 0;"><hr style="border: none; border-top: 1px solid #EDE8E0; margin: 0;" /></td></tr>
 
-                    <!-- Footer -->
-                    <tr>
-                        <td style="background-color: #2c2c2c; padding: 30px; text-align: center;">
-                            <p style="margin: 0 0 10px 0; color: rgba(255,255,255,0.7); font-size: 14px;">Indigo Palm Collective | Coachella Valley</p>
-                            <p style="margin: 0; color: rgba(255,255,255,0.5); font-size: 12px;">
-                                <a href="https://indigopalm.co" style="color: rgba(255,255,255,0.7); text-decoration: none;">Website</a> •
-                                <a href="https://instagram.com/indigopalmco" style="color: rgba(255,255,255,0.7); text-decoration: none;">Instagram</a>
-                            </p>
-                        </td>
-                    </tr>
+    <!-- Discount code -->
+    <tr>
+        <td style="padding: 28px 36px 0;">
+            <p style="margin: 0 0 14px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #B67550;">Your welcome gift</p>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td style="padding: 28px; background-color: #B67550; border-radius: 3px; text-align: center;">
+                        <p style="margin: 0 0 8px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.7);">10% off your first stay</p>
+                        <p style="margin: 0 0 10px; font-family: 'Courier New', Courier, monospace; font-size: 32px; letter-spacing: 0.1em; color: #ffffff; font-weight: 600;">WELCOME10</p>
+                        <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 12px; color: rgba(255,255,255,0.6);">Enter at checkout on indigopalm.co</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 
-                </table>
-            </td>
-        </tr>
-    </table>
+    <!-- CTA -->
+    <tr>
+        <td style="padding: 24px 36px 0; text-align: center;">
+            <a href="https://indigopalm.co/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=cta-see-homes" style="display: inline-block; padding: 14px 40px; background-color: #B67550; color: #ffffff; text-decoration: none; border-radius: 3px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.06em;">See the homes</a>
+        </td>
+    </tr>
+
+    <!-- Sign off -->
+    <tr>
+        <td style="padding: 32px 36px 36px;">
+            <p style="margin: 0 0 4px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">See you in the desert.</p>
+            <p style="margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 18px; color: #2C2C2C;">Eann</p>
+        </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+        <td style="padding: 18px 36px; background-color: #F5F3EE; border-top: 2px solid #B67550;">
+            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 11px; color: #aaa; line-height: 1.7; text-align: center;">
+                Indigo Palm Collective &nbsp;&middot;&nbsp; Coachella Valley, CA<br>
+                <a href="https://indigopalm.co" style="color: #B67550; text-decoration: none;">indigopalm.co</a> &nbsp;&middot;&nbsp; <a href="https://instagram.com/indigopalmco" style="color: #B67550; text-decoration: none;">@indigopalmco</a>
+            </p>
+        </td>
+    </tr>
+
+</table>
+</td></tr>
+</table>
 </body>
 </html>`;
 
@@ -194,7 +315,7 @@ async function sendWelcomeEmail(email, env) {
   const emailContent = {
     from: 'Indigo Palm Collective <hello@indigopalm.co>',
     to: [email],
-    subject: 'Welcome to Indigo Palm Collective! 🌴',
+    subject: "You're in. Here's where to start.",
     html: EMAIL_TEMPLATE,
   };
 
