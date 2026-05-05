@@ -263,6 +263,11 @@ export default {
       return Response.redirect('https://' + url.hostname + clean, 301);
     }
 
+    // 301 redirect blog category URLs to main blog index
+    if (path.startsWith('/blog/category/') || path.startsWith('/blog/tag/')) {
+      return Response.redirect('https://' + url.hostname + '/blog/', 301);
+    }
+
     // 301 redirect blog slugs missing trailing slash
     if (path.startsWith('/blog/') && !path.endsWith('/') && !path.includes('.')) {
       return Response.redirect('https://' + url.hostname + path + '/', 301);
