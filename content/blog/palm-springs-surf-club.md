@@ -2,7 +2,7 @@
 title: "Palm Springs Surf Club: Is It Worth It?"
 date: 2026-03-06
 dateModified: 2026-04-21
-metaDescription: "Palm Springs Surf Club prices: $100 beginner to $250 expert per session. Open daily, closes at 8pm. Book 1-2 weeks ahead on weekends. What to know before you go."
+metaDescription: "Palm Springs Surf Club: $100 beginner to $250 expert per session. Open daily until 8pm. Book 1-2 weeks ahead on weekends. What to know before you go."
 ogImage: /blog/images/pssc-wave-pool-reflection.webp
 heroImage: /blog/images/pssc-wave-pool-reflection.webp
 heroAlt: "Palm Springs Surf Club wave pool at golden hour with PSSC building and San Jacinto Mountains reflecting in still water"

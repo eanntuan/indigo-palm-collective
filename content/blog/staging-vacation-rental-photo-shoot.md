@@ -16,7 +16,7 @@ keywords:
   - Casa Moto Indio
   - Indio vacation rental
 articleSection: "Hosting"
-property: casa-moto
+property: terra-luz
 readTime: "7 min read"
 excerpt: "The photo shoot is scheduled for Tuesday. It is Saturday. You think you have time. Here is what five days of vacation rental staging actually looks like, room by room."
 layout: blog-post.njk
@@ -162,7 +162,7 @@ layout: blog-post.njk
 
 <p>The staging you do before the shoot is the foundation for those photos. A good photographer can make a well-staged room look exceptional. They cannot make a cluttered or half-finished room look ready. The work happens before the camera shows up.</p>
 
-<p>At <a href="/casa-moto/">Casa Moto</a>, the photo shoot was the first time I saw every room finished and styled at the same time. It was also the first time I understood how much a deliberate five-day process changes what ends up on the listing. If you want the deeper hosting philosophy behind these details, the <a href="/blog/airbnb-hosting-lessons/">lessons from 191 Airbnb reviews</a> covers what actually moves the needle with guests.</p>
+<p>At <a href="/terra-luz/">Terra Luz</a>, the photo shoot was the first time I saw every room finished and styled at the same time. It was also the first time I understood how much a deliberate five-day process changes what ends up on the listing. If you want the deeper hosting philosophy behind these details, the <a href="/blog/airbnb-hosting-lessons/">lessons from 191 Airbnb reviews</a> covers what actually moves the needle with guests.</p>
 
 <h2>The 5-Day Staging Checklist</h2>
 

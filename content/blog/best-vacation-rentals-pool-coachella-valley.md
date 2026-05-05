@@ -102,7 +102,7 @@ layout: blog-post.njk
 
 <p><a href="/cozy-cactus/">The Cozy Cactus</a> in Indio: private in-ground pool, full-length, heated. Community hot tub steps from the back gate through the Indian Palms community. Walking distance to the Coachella festival grounds. This is the property where the pool strategy I described earlier — leave at 3pm, swim, nap, go back for the evening sets — actually works in practice.</p>
 
-<p><a href="/casa-moto/">Casa Moto</a> in Indio: private saltwater pool with a sun shelf, heated, fully enclosed backyard with a latching gate. Designed with the property's bohemian Latin aesthetic in mind, so the pool area feels like a destination rather than an afterthought. Pet-friendly (which is why the enclosed fence matters).</p>
+<p><a href="/terra-luz/">Terra Luz</a> in Indio: private saltwater pool with a sun shelf, heated, fully enclosed backyard with a latching gate. Designed with a Latin/Cuban aesthetic, so the pool area feels like a destination rather than an afterthought. Dog-friendly with prior approval (which is why the enclosed fence matters).</p>
 
 <p><a href="/the-sundune/">The Sundune</a> in Palm Springs: private pool, updated outdoor space. Positioned in Palm Springs proper, which puts you closer to the design hotels, restaurants, and the midcentury architecture that makes Palm Springs worth coming to. Different energy than Indio: more walking to things, more cafe culture, slightly different version of the desert trip.</p>
 

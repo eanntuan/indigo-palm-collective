@@ -55,7 +55,7 @@ Pavement temperatures in the Coachella Valley routinely hit 150 degrees in summe
 
 Here's how to do it right.
 
-<img src="/blog/images/cozy-cactus-backyard.webp" alt="Backyard pool and patio at The Cozy Cactus in Indio California, a dog-friendly vacation rental with private pool" loading="lazy" width="1400" height="933">
+<img src="/blog/images/cozy-cactus-backyard.webp" alt="Private backyard pool and patio at a vacation rental in Indio California in the Coachella Valley" loading="lazy" width="1400" height="933">
 
 ## The Pavement Test
 

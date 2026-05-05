@@ -2,7 +2,7 @@
 title: "ClassPass in Palm Springs: What to Expect"
 date: 2026-05-03
 dateModified: 2026-05-03
-metaDescription: "ClassPass works in Palm Springs, but the studio selection is thinner than a major city. Here's what's available, which cities have more options, and how to book."
+metaDescription: "ClassPass in Palm Springs: thinner studio selection than a big city, but still useful. What's available, which cities have more options, and how to book."
 ogImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroAlt: "Palm Springs boulevard lined with palm trees and mountains in the background on a sunny morning"

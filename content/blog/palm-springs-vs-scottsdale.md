@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs vs Scottsdale: Which Is Right for You?"
 date: 2026-04-28
-metaDescription: "Palm Springs vs Scottsdale: both are warm-weather desert cities with pools and golf. Here's how they actually differ on vibe, cost, driving distance, and who each one fits."
+metaDescription: "Palm Springs vs Scottsdale: same weather, different vibe. How they differ on cost, driving distance, and which one fits your trip."
 ogImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroAlt: "Palm-lined boulevard in Palm Springs California with San Jacinto Mountains and clear blue sky"

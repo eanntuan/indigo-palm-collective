@@ -1,9 +1,9 @@
 ---
 title: "How We Rebuilt Terra Luz: Room by Room"
 date: 2026-05-14
-metaDescription: "From Casa Moto to Terra Luz: wild tropics wallpaper, terracotta tile throughout, Kahlo Blue pool deck, and a Latin/Cuban design built room by room. Here's what we made."
-ogImage: /blog/images/terra-luz-pool-hero.webp
-heroImage: /blog/images/terra-luz-pool-hero.webp
+metaDescription: "Terra Luz renovation: Wild Tropics wallpaper, terracotta tile, Kahlo Blue pool deck, and a Latin/Cuban design rebuilt room by room. What we made and why."
+ogImage: /blog/images/terra-luz-pool-backyard.webp
+heroImage: /blog/images/terra-luz-pool-backyard.webp
 heroAlt: "Terra Luz private saltwater pool with Kahlo Blue water and terracotta patio in Indio California"
 keywords:
   - Terra Luz renovation
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "How We Rebuilt Terra Luz: Room by Room",
   "description": "From Casa Moto to Terra Luz: the full renovation story. Wild Tropics wallpaper, terracotta tile, Kahlo Blue pool deck, and a Latin/Cuban design built room by room.",
-  "image": "https://indigopalm.co/blog/images/terra-luz-pool-hero.webp",
+  "image": "https://indigopalm.co/blog/images/terra-luz-pool-backyard.webp",
   "datePublished": "2026-05-14",
   "dateModified": "2026-05-14",
   "author": {
