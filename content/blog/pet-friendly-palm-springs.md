@@ -113,10 +113,31 @@ layout: blog-post.njk
 
 <p>California law allows dogs in outdoor dining areas at restaurants that permit it, which in Palm Springs means most places with a patio.</p>
 
+<p><strong>Palm Springs</strong></p>
+
 <ul>
     <li><strong>Cheeky's:</strong> Famous brunch spot on Palm Canyon Drive. Dog-friendly patio, worth the wait. Order the bacon flight.</li>
     <li><strong>The Tropicale:</strong> Mid-century setting, great cocktails, patio seating where dogs are welcome on leash.</li>
     <li><strong>Ernest Coffee:</strong> The best coffee in Palm Springs. Outdoor seating, dogs welcome, you'll see several others while you're there.</li>
+    <li><strong>Boozehounds:</strong> The name is the promise. Sprawling atrium and patio, craft cocktails and food, and actual dog treats on hand for your dog. Probably the most dog-forward spot in the city.</li>
+</ul>
+
+<p><strong>Cathedral City</strong></p>
+
+<ul>
+    <li><strong>Luchador Brewing Company:</strong> A laid-back brewery patio with craft beer and Mexican-inspired food. Dogs are welcome outside, and the vibe is casual enough that it never feels like anyone's doing you a favor by letting your dog sit next to you.</li>
+</ul>
+
+<p><strong>Palm Desert</strong></p>
+
+<ul>
+    <li><strong>JC's Café:</strong> A relaxed spot for breakfast or lunch with a dog-friendly patio. Good for a long, slow morning after an early trail walk.</li>
+</ul>
+
+<p><strong>La Quinta</strong></p>
+
+<ul>
+    <li><strong>RD RNNR Libations Pints and Plates:</strong> A spacious dog-friendly patio with a dedicated pup menu. The PB Pooch Cup (peanut butter and whipped cream) is on the menu, which tells you the staff here actually thought about the dogs, not just the owners.</li>
 </ul>
 
 <p>Keep your dog on leash or under the table, and tip well. Servers are doing extra work when there are dogs involved.</p>
