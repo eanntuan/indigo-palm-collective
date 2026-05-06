@@ -3,9 +3,9 @@ title: "Dogs in Desert Heat: How to Keep Your Pet Safe in Palm Springs"
 date: 2026-05-03
 dateModified: 2026-05-03
 metaDescription: "Dog safety in Coachella Valley heat: how to keep your pet safe when it hits 100 degrees in Palm Springs or Indio, and a local dog food brand worth knowing."
-ogImage: /blog/images/terra-luz-pool-backyard.webp
-heroImage: /blog/images/terra-luz-pool-backyard.webp
-heroAlt: "Terra Luz backyard pool and patio in Indio California, pet-friendly vacation rental in the Coachella Valley"
+ogImage: /blog/images/desert-dog-hero.webp
+heroImage: /blog/images/desert-dog-hero.webp
+heroAlt: "dog resting in shade on hot summer day in the desert Coachella Valley"
 keywords:
   - dog friendly palm springs
   - desert heat dog safety

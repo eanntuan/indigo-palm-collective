@@ -2,9 +2,9 @@
 title: "Palm Springs with Kids: The Complete Guide"
 date: 2026-04-24
 metaDescription: "Palm Springs with kids is more doable than most people expect. Here's what actually works: activities, food, and a walkable home base at The Sundune."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroAlt: "Palm Canyon Drive in Palm Springs with palm trees and San Jacinto mountains in the background"
+ogImage: /blog/images/palm-springs-kids-vacation.webp
+heroImage: /blog/images/palm-springs-kids-vacation.webp
+heroAlt: "kids playing in vacation rental pool in Palm Springs Coachella Valley"
 keywords:
   - Palm Springs with kids
   - Palm Springs family vacation

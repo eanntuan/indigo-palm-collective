@@ -2,9 +2,9 @@
 title: "Things to Do in Palm Springs When It's 110 Degrees"
 date: 2026-04-24
 metaDescription: "Palm Springs summer heat hits 110°F+. Here are the best indoor and cool-off activities: escape rooms, ice skating, and free museum Thursdays."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroAlt: "Palm Springs boulevard lined with palm trees and the San Jacinto mountains under a blazing summer sky"
+ogImage: /blog/images/palm-springs-summer-pool.webp
+heroImage: /blog/images/palm-springs-summer-pool.webp
+heroAlt: "swimming pool in Palm Springs desert heat summer activities"
 keywords:
   - Palm Springs indoor activities
   - Palm Springs summer heat

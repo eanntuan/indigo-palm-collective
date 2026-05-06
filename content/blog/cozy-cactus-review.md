@@ -2,9 +2,9 @@
 title: "Cozy Cactus Vacation Rental: An Honest Review"
 date: 2026-04-19
 metaDescription: "The Cozy Cactus in Indio: 4.97 stars, 146 reviews. Here's what guests consistently love, what to know before booking, and how it compares to other options."
-ogImage: /blog/images/cozy-cactus-exterior.webp
-heroImage: /blog/images/cozy-cactus-exterior.webp
-heroAlt: "The Cozy Cactus vacation rental exterior in Indio California near Coachella"
+ogImage: /blog/images/cozy-cactus-review-hero.webp
+heroImage: /blog/images/cozy-cactus-review-hero.webp
+heroAlt: "desert vacation rental pool and outdoor patio at The Cozy Cactus in Indio California"
 keywords:
   - Cozy Cactus review
   - Cozy Cactus Indio review

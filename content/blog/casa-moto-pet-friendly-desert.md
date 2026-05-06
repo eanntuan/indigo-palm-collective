@@ -3,9 +3,9 @@ title: "Pet-Friendly Vacation Rental Coachella Valley: What Casa Moto Actually B
 date: 2026-05-04
 dateModified: 2026-05-04
 metaDescription: "Pet-friendly vacation rental in Coachella Valley: Casa Moto in Indio was built for dogs. Enclosed yard, tile floors, saltwater pool. No carpet anywhere."
-ogImage: /blog/images/terra-luz-pool-backyard.webp
-heroImage: /blog/images/terra-luz-pool-backyard.webp
-heroAlt: "Casa Moto private pool and backyard at pet-friendly vacation rental in Indio California Coachella Valley"
+ogImage: /blog/images/pet-friendly-rental-dog.webp
+heroImage: /blog/images/pet-friendly-rental-dog.webp
+heroAlt: "happy dog at pet-friendly vacation rental with outdoor space Coachella Valley"
 keywords:
   - pet-friendly vacation rental Coachella Valley
   - dog friendly vacation rental Indio CA

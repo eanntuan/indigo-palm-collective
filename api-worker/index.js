@@ -356,6 +356,10 @@ export default {
       return handleSquareWebhook(request, env);
     }
 
+    if (path === '/api/webhook/hostaway' && request.method === 'POST') {
+      return handleHostawayWebhook(request, env);
+    }
+
     // Pass all non-API requests through to GitHub Pages
     return fetch(request);
   },
@@ -1713,4 +1717,311 @@ async function sendEmail(apiKey, { from, to, subject, html, reply_to, cc }) {
     const err = await res.text();
     throw new Error(`Resend error: ${err}`);
   }
+}
+
+// ── Guest Messaging Auto-Responder ────────────────────────────────────────────
+// Receives Hostaway webhooks on POST /api/webhook/hostaway
+// Generates Claude replies in Eann's voice, auto-sends or escalates to email.
+//
+// Required Cloudflare secrets (run once per secret):
+//   wrangler secret put ANTHROPIC_API_KEY      --name indigo-palm-api
+//   wrangler secret put HOSTAWAY_CLIENT_ID     --name indigo-palm-api
+//   wrangler secret put HOSTAWAY_CLIENT_SECRET --name indigo-palm-api
+//
+// In Hostaway: Settings > Webhooks > Add webhook
+//   URL: https://indigopalm.co/api/webhook/hostaway
+//   Events: conversation.message.received (or "New message")
+
+const PROPERTY_CONTEXT = {
+  cozy_cactus: `
+PROPERTY: The Cozy Cactus
+ADDRESS: 82381 Cochran Dr, Indio, CA 92201
+COMMUNITY: Indian Palms Country Club
+
+CHECK-IN / CHECK-OUT
+- Check-in: 4pm. Check-out: 10am.
+- Front door code: 4898
+- Garage code: 1340
+- Self check-in, no need to meet anyone
+
+GETTING THERE / GATE ACCESS
+- GPS "Indian Palms Country Club" takes you to the Monroe St entrance.
+- License plate readers at Ave 48, Ave 50, and Jackson St gates — pull up close, wait 10 seconds.
+- If the plate reader misses you, head to Monroe St and give your name + address: 82381 Cochran Dr, Indio, CA 92201.
+
+WIFI
+- Network: "Indigo Palm Collective"
+- A browser window pops up when you connect asking for your email. Enter it and you're in.
+- (Indigo Palm is our little collection of four desert homes across the Coachella Valley.)
+
+POOL + HOT TUB
+- Community pool is shared with the neighborhood (access via the community key in the welcome guide).
+- The hot tub is private and in the backyard. It's serviced by Luis on Tuesday and Friday mornings — he comes through the side back gate, no need to do anything.
+
+APPLIANCES + LOCATIONS
+- Dishwasher: under the sink, left side. Pods in cabinet above.
+- Washer/dryer: hallway closet near the guest bathroom.
+- Coffee maker: Keurig on the counter left of the sink. K-cups in the cabinet above.
+- Pack-n-play: family amenities closet, already assembled.
+- High chair: same closet, labeled "Stokke."
+- Extra towels + linens: hallway linen closet.
+- Trash bins: outside along the side of the house.
+
+HOUSE RULES
+- Outdoor curfew: 10pm (city regulation). Please turn off patio lights by then.
+- Smoke-free property.
+- Pet-free property. No dogs or cats.
+- Max occupancy: 8 guests.
+
+WELCOME GUIDE
+Full details at: indigopalm.co/go/welcome-cozy-cactus
+
+STORY BEAT (use if it fits naturally)
+Built for families who travel with young kids and need a house that's already thought of everything. Parents arrive and exhale. The labeled drawers, Stokke high chair, sound machines in every bedroom — these aren't amenities, they're the point.
+`.trim(),
+
+  terra_luz: `
+PROPERTY: Terra Luz
+ADDRESS: 49768 Pacino St, Indio, CA 92201
+COMMUNITY: Indian Palms Country Club
+
+CHECK-IN / CHECK-OUT
+- Check-in: 4pm. Check-out: 10am.
+- Front door code: 5544 (enter code, wait a moment, then open)
+- To lock: close the door fully and press and hold the lock icon.
+- Garage code: 1340
+- Self check-in, no need to meet anyone
+
+GETTING THERE / GATE ACCESS
+- GPS "Indian Palms Country Club" takes you to the Monroe St entrance.
+- License plate readers at Ave 48, Ave 50, and Jackson St gates — pull up close, wait 5-10 seconds.
+- If the reader misses you, head to Monroe St and give your name + address: 49768 Pacino St, Indio, CA 92201.
+
+WIFI
+- Network: "Indigo Palm Collective"
+- A browser window pops up when you connect asking for your email. Enter it and you're in.
+
+POOL + HOT TUB
+- The pool is saltwater.
+- Pool heat is optional: $75/day (2-day minimum) or $400/week. Recommended Nov through May when desert nights get cold.
+- If you'd like the pool heated, let us know before arrival and we'll set it up.
+- Hot tub is no extra charge. The Spa button on the wall next to the jacuzzi turns on heat and jets. Plan about an hour to reach 102°F.
+- Pool is serviced Mondays and Thursdays. Gardeners come Wednesday mornings.
+
+APPLIANCES + LOCATIONS
+- Dishwasher: under the kitchen sink, left side. Pods in cabinet above.
+- Washer/dryer: in the laundry room off the kitchen.
+- Coffee maker: on the kitchen counter. Coffee supplies in the cabinet above.
+- Tortilla press: in the lower cabinet next to the cast iron skillet.
+- Extra towels + linens: in the hallway linen closet.
+- Trash bins: outside along the side of the house.
+
+COMMUNITY AMENITIES
+- Up to 4 guests in the reservation can use the community amenities (pool, gym, etc.).
+- Just let us know if you'd like to use them and we'll notify the front desk.
+
+HOUSE RULES
+- Outdoor curfew: 10pm (city regulation). Please turn off patio lights by then.
+- Smoke-free property.
+- Dog-friendly with prior approval only. Always confirm before assuming.
+- Max occupancy: 8 guests.
+
+WELCOME GUIDE
+Full details at: indigopalm.co/go/welcome-terra-luz
+
+STORY BEAT (use if it fits naturally)
+Built around the Latin/Cuban warmth of Old Havana. The Kahlo-blue pool, terracotta walls, and Cuban coffee beans aren't decor. They're a philosophy. Dawn Asher designed it. Every material passed a brand filter.
+`.trim(),
+};
+
+const ESCALATION_KEYWORDS = [
+  'cancel', 'refund', 'emergency', 'flood', 'fire', 'broke', 'broken',
+  'hurt', 'injury', 'damage', 'mold', 'mould', 'pest', 'bug', 'cockroach',
+  'mouse', 'rat', 'leak', 'plumbing', 'electrical', 'dispute', 'complaint',
+  'unhappy', 'unacceptable', 'disgusting', 'lawsuit', 'attorney', 'police',
+];
+
+const HOSTAWAY_LISTING_MAP = {
+  '123646': { key: 'cozy_cactus', name: 'The Cozy Cactus' },
+  '123633': { key: 'terra_luz',   name: 'Terra Luz' },
+};
+
+let _hostawayToken = null;
+let _hostawayTokenExpiry = 0;
+
+async function getHostawayToken(env) {
+  const now = Date.now();
+  if (_hostawayToken && now < _hostawayTokenExpiry) return _hostawayToken;
+
+  const res = await fetch('https://api.hostaway.com/v1/accessTokens', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({
+      grant_type:    'client_credentials',
+      client_id:     env.HOSTAWAY_CLIENT_ID,
+      client_secret: env.HOSTAWAY_CLIENT_SECRET,
+      scope:         'general',
+    }),
+  });
+  if (!res.ok) throw new Error(`Hostaway auth failed: ${res.status}`);
+  const data = await res.json();
+  _hostawayToken = data.access_token;
+  _hostawayTokenExpiry = now + (data.expires_in ? data.expires_in * 1000 - 30000 : 3600000);
+  return _hostawayToken;
+}
+
+async function getConversationHistory(token, conversationId) {
+  const res = await fetch(`https://api.hostaway.com/v1/conversations/${conversationId}/messages`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) return [];
+  const data = await res.json();
+  return (data.result || []).slice(-12);
+}
+
+async function sendHostawayReply(token, conversationId, message) {
+  const res = await fetch(`https://api.hostaway.com/v1/conversations/${conversationId}/messages`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ body: message }),
+  });
+  return res.ok;
+}
+
+async function callClaude(env, propertyKey, propertyName, guestName, currentMessage, history) {
+  const context = PROPERTY_CONTEXT[propertyKey] || '';
+
+  const historyLines = history
+    .filter(m => m.body && m.authorType)
+    .map(m => `${m.authorType === 'host' ? 'Eann' : guestName}: ${m.body}`)
+    .join('\n');
+
+  const userContent = historyLines
+    ? `Conversation so far:\n${historyLines}\n\nNew message from ${guestName}: ${currentMessage}`
+    : `${guestName} says: ${currentMessage}`;
+
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'x-api-key':         env.ANTHROPIC_API_KEY,
+      'anthropic-version': '2023-06-01',
+      'content-type':      'application/json',
+    },
+    body: JSON.stringify({
+      model:      'claude-haiku-4-5-20251001',
+      max_tokens: 400,
+      system: `You are Eann, the host of ${propertyName} — part of Indigo Palm Collective, a small collection of four desert homes in the Coachella Valley.
+
+PROPERTY CONTEXT:
+${context}
+
+VOICE RULES:
+- Warm, direct, specific. Never corporate or scripted.
+- Short paragraphs: 2-3 sentences max. White space is good.
+- No em dashes. Use periods or commas instead.
+- No hollow adjectives (great, amazing, wonderful). Be specific.
+- Parenthetical asides are fine: "(lucky you!)", "(brand new)"
+- Sign off as: Eann — no title, no company name.
+- If you don't know the answer, say so honestly and offer to find out. Never make up details.
+- Only include info that is directly relevant to the guest's question.
+- Don't add unnecessary pleasantries. Get to the answer fast.`,
+      messages: [{ role: 'user', content: userContent }],
+    }),
+  });
+
+  if (!res.ok) {
+    console.error('Claude API error:', res.status, await res.text());
+    return null;
+  }
+  const data = await res.json();
+  return data.content?.[0]?.text?.trim() || null;
+}
+
+function messageNeedsEscalation(message, reply) {
+  const lower = message.toLowerCase();
+  if (ESCALATION_KEYWORDS.some(kw => lower.includes(kw))) return true;
+  if (!reply) return true;
+  const uncertain = ["i'm not sure", "i don't know", "i can't find", "i'm unsure", "not certain", "you may want to contact"];
+  if (uncertain.some(p => reply.toLowerCase().includes(p))) return true;
+  return false;
+}
+
+async function sendEscalationEmail(env, guestName, propertyName, message, draft) {
+  const draftBlock = draft
+    ? `<p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Suggested reply (not sent):</p>
+       <blockquote style="margin:0 0 20px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
+       <p style="font-size:13px;color:#666;">Log into Hostaway to send, edit, or ignore this reply.</p>`
+    : `<p style="font-size:13px;color:#888;">Claude could not generate a reply. Check the message manually.</p>`;
+
+  await sendEmail(env.RESEND_API_KEY, {
+    from: 'Indigo Palm Bot <bookings@indigopalm.co>',
+    to:   'indigopalmco@gmail.com',
+    subject: `Guest needs a reply: ${guestName} at ${propertyName}`,
+    html: emailWrapper(`
+      <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Guest message</p>
+      <h2 style="margin:0 0 20px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${guestName} at ${propertyName}</h2>
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Their message:</p>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;border-left:3px solid #B67550;font-size:14px;color:#333;line-height:1.6;">${message.replace(/\n/g, '<br>')}</blockquote>
+      ${draftBlock}
+    `),
+  });
+}
+
+async function handleHostawayWebhook(request, env) {
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return new Response('Bad request', { status: 400 });
+  }
+
+  // Hostaway sends: { accountId, type, object: { ... } }
+  // Fall back to root-level fields if object isn't nested.
+  const obj = payload.object || payload.data || payload;
+  const eventType = (payload.type || payload.event || '').toLowerCase();
+
+  // Only handle incoming guest messages
+  if (eventType && !eventType.includes('message') && !eventType.includes('conversation')) {
+    return new Response('OK', { status: 200 });
+  }
+
+  const conversationId = obj.conversationId || obj.id;
+  const listingId      = String(obj.listingId || '');
+  const authorType     = (obj.authorType || obj.type || '').toLowerCase();
+  const message        = (obj.body || obj.message || '').trim();
+  const guestName      = (obj.guestName || obj.guest || 'Guest').split(' ')[0];
+
+  // Ignore host/system messages and empty payloads
+  if (!message || !conversationId || authorType === 'host' || authorType === 'system') {
+    return new Response('OK', { status: 200 });
+  }
+
+  const property = HOSTAWAY_LISTING_MAP[listingId];
+  if (!property) {
+    console.log(`Unknown listing ID: ${listingId}`);
+    return new Response('OK', { status: 200 });
+  }
+
+  try {
+    const token   = await getHostawayToken(env);
+    const history = await getConversationHistory(token, conversationId);
+    const reply   = await callClaude(env, property.key, property.name, guestName, message, history);
+    const escalate = messageNeedsEscalation(message, reply);
+
+    if (escalate || !reply) {
+      await sendEscalationEmail(env, guestName, property.name, message, reply);
+    } else {
+      const sent = await sendHostawayReply(token, conversationId, reply);
+      if (!sent) {
+        await sendEscalationEmail(env, guestName, property.name, message, reply);
+      }
+    }
+  } catch (err) {
+    console.error('Hostaway webhook error:', err);
+    try {
+      await sendEscalationEmail(env, guestName, property.name, message, null);
+    } catch {}
+  }
+
+  return new Response('OK', { status: 200 });
 }

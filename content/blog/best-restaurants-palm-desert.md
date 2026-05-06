@@ -2,9 +2,9 @@
 title: "Palm Desert Restaurants Worth Knowing"
 date: 2026-04-17
 metaDescription: "Pink Cabana, Kitchen 86 on El Paseo, and a 30-year Italian institution. Palm Desert and Indian Wells restaurants worth knowing, organized by vibe."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroAlt: "Palm-lined boulevard in the Coachella Valley with San Jacinto Mountains and clear blue sky"
+ogImage: /blog/images/palm-desert-restaurant-patio.webp
+heroImage: /blog/images/palm-desert-restaurant-patio.webp
+heroAlt: "outdoor restaurant patio dining in Palm Desert California"
 keywords:
   - best restaurants Palm Desert
   - Palm Desert dining

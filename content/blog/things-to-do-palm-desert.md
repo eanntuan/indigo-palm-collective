@@ -2,9 +2,9 @@
 title: "Things to Do in Palm Desert: The Local List"
 date: 2026-04-28
 metaDescription: "Living Desert Zoo, El Paseo shopping, McCallum Theatre, Shields Date Garden, and where to eat. What's actually worth your time in Palm Desert and Indian Wells."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroAlt: "Palm-lined boulevard in the Coachella Valley with mountains and clear blue sky"
+ogImage: /blog/images/palm-desert-el-paseo.webp
+heroImage: /blog/images/palm-desert-el-paseo.webp
+heroAlt: "El Paseo outdoor shopping district in Palm Desert California"
 keywords:
   - things to do Palm Desert CA
   - Palm Desert activities

@@ -3,9 +3,9 @@ title: "ClassPass in Palm Springs: What to Expect"
 date: 2026-05-03
 dateModified: 2026-05-03
 metaDescription: "ClassPass in Palm Springs: thinner studio selection than a big city, but still useful. What's available, which cities have more options, and how to book."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroAlt: "Palm Springs boulevard lined with palm trees and mountains in the background on a sunny morning"
+ogImage: /blog/images/classpass-fitness-studio.webp
+heroImage: /blog/images/classpass-fitness-studio.webp
+heroAlt: "fitness studio yoga class in Palm Springs California"
 keywords:
   - ClassPass Palm Springs
   - Palm Springs fitness studios ClassPass

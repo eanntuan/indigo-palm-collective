@@ -2,9 +2,9 @@
 title: "The Sundune Palm Springs: What Guests Say"
 date: 2026-04-21
 metaDescription: "The Sundune Palm Springs: 4.93 stars across 40 stays. What guests say about the 2BR condo, the walkable neighborhood, pool access, and what to expect."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroAlt: "Palm Springs boulevard lined with tall palms and mountain backdrop, near The Sundune vacation rental"
+ogImage: /blog/images/sundune-palm-springs-condo.webp
+heroImage: /blog/images/sundune-palm-springs-condo.webp
+heroAlt: "Palm Springs midcentury modern vacation rental pool and patio"
 keywords:
   - Sundune Palm Springs review
   - Sundune Airbnb Palm Springs

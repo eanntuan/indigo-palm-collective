@@ -2,9 +2,9 @@
 title: "Best Bars in Palm Springs: A Local's Guide"
 date: 2026-04-24
 metaDescription: "La Perlita margaritas, Las Palmas Brewing tacos, The Nest's live music in Indian Wells. A local's honest guide to Palm Springs nightlife and where to drink."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroAlt: "Palm Canyon Drive in Palm Springs at dusk with palm trees and mountains in the background"
+ogImage: /blog/images/palm-springs-bar-cocktails.webp
+heroImage: /blog/images/palm-springs-bar-cocktails.webp
+heroAlt: "outdoor cocktail bar patio in Palm Springs California nightlife"
 keywords:
   - best bars in Palm Springs
   - Palm Springs bars

@@ -3,9 +3,9 @@ title: "191 Airbnb Reviews: What We Learned"
 date: 2025-11-12
 dateModified: 2026-04-15
 metaDescription: "Hard-won hosting lessons from 191 Airbnb reviews and four years running rentals in Indio, CA. The details that move the needle on 5-star reviews."
-ogImage: /blog/images/cozy-cactus-exterior.webp
-heroImage: /blog/images/cozy-cactus-exterior.webp
-heroAlt: "Exterior of The Cozy Cactus vacation rental in Indio California with desert landscaping and clear blue sky"
+ogImage: /blog/images/airbnb-hosting-welcome.webp
+heroImage: /blog/images/airbnb-hosting-welcome.webp
+heroAlt: "welcoming vacation rental front door with host tips for Airbnb success"
 keywords:
   - vacation rental hosting tips
   - Airbnb hosting lessons

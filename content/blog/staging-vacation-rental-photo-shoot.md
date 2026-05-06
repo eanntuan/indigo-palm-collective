@@ -2,9 +2,9 @@
 title: "Staging a Vacation Rental for Photography: The 5-Day Plan"
 date: 2026-05-04
 metaDescription: "How to stage a vacation rental for photography: the 5-day countdown we ran at Casa Moto before our listing shoot, with specific tasks and honest mistakes."
-ogImage: /blog/images/terra-luz-pool-backyard.webp
-heroImage: /blog/images/terra-luz-pool-backyard.webp
-heroAlt: "Casa Moto backyard pool staged for vacation rental photography in Indio California with desert landscaping and mountain views"
+ogImage: /blog/images/vacation-rental-staging.webp
+heroImage: /blog/images/vacation-rental-staging.webp
+heroAlt: "beautifully staged vacation rental bedroom ready for photography shoot"
 keywords:
   - how to stage vacation rental photography
   - vacation rental photo shoot prep
