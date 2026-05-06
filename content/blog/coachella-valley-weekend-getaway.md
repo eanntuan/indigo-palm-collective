@@ -124,7 +124,7 @@ layout: blog-post.njk
 
 <h2>The One Thing That Improves Every Coachella Valley Weekend</h2>
 
-<p>Every single group I've seen come through the valley — the festival crowds, the bachelorette parties, the family trips, the couples weekends — has a better time when they have somewhere good to return to in the afternoon. A pool. Real outdoor furniture. A kitchen that works.</p>
+<p>Every single group I've seen come through the valley: the festival crowds, the bachelorette parties, the family trips, the couples weekends. All of them have a better time when they have somewhere good to return to in the afternoon. A pool. Real outdoor furniture. A kitchen that works.</p>
 
 <p>The desert rewards you when you build in recovery time. It's not a city trip where you go from thing to thing all day. It's a place where some of the best moments happen in the margins: a late afternoon in the pool when the light turns orange, dinner on the patio at 8pm when it's finally cool enough to be outside again, a morning walk before it gets hot.</p>
 

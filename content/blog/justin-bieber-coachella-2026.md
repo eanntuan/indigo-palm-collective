@@ -56,7 +56,7 @@ layout: blog-post.njk
 
 <img src="/blog/images/coachella-festival-crowd.webp" alt="Festival crowd at Coachella in the Coachella Valley desert" width="1400" height="933" loading="lazy">
 
-<p>Coachella runs the first two weekends of April. Stagecoach runs the last weekend. Same polo grounds in Indio. Completely different crowd, energy, and what-to-expect-at-midnight situation. If you've never compared the two directly, the <a href="/blog/coachella-vs-stagecoach/">Coachella vs. Stagecoach breakdown</a> is worth five minutes of your time before you book anything.</p>
+<p>Coachella runs the first two weekends of April. Stagecoach runs the last weekend. Same polo grounds in Indio. Completely different crowd, energy, and what-to-expect-at-midnight situation. If you've never compared the two directly, the <a href="/blog/stagecoach-2026-where-to-stay/">Stagecoach guide</a> is worth five minutes of your time before you book anything.</p>
 
 <p>The reason it matters for your rental: Stagecoach guests tend to drive in, pack coolers, and want outdoor space for tailgating. Coachella guests lean harder on late nights, are younger on average, and the noise at 2am in the neighborhood reads differently. Both work great with the right property. The property that's perfect for one crowd can feel wrong for the other.</p>
 
@@ -80,7 +80,7 @@ layout: blog-post.njk
 
 <img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Pool and backyard at Cozy Cactus vacation rental in Indio CA, minutes from Coachella" width="1400" height="933" loading="lazy">
 
-<p>The smartest move after a festival like this one is to lock in your housing before the tickets even go on sale. Every year I watch groups scramble for rentals in March because they waited until the lineup dropped. The houses closest to the polo grounds go first. If you want 7-10 minutes from the Empire Polo Club with a private pool or hot tub, <a href="/properties/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> are both worth looking at now, before the May 1 ticket rush puts everyone in booking mode at the same time.</p>
+<p>The smartest move after a festival like this one is to lock in your housing before the tickets even go on sale. Every year I watch groups scramble for rentals in March because they waited until the lineup dropped. The houses closest to the polo grounds go first. If you want 7-10 minutes from the Empire Polo Club with a private pool or hot tub, <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> are both worth looking at now, before the May 1 ticket rush puts everyone in booking mode at the same time.</p>
 
 <p>Bieber showed up unannounced and somehow that felt like the most prepared move of the weekend. Know where you're sleeping, know how long it takes to get back there, and leave everything else open. That's the actual move.</p>
 

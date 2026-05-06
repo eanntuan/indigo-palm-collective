@@ -77,7 +77,7 @@ relatedPosts:
 }
 </script>
 
-<img src="/blog/images/indian-palms-front-entrance.webp" alt="Entrance to Indian Palms Country Club neighborhood in Indio California with palm trees and desert landscaping" width="800" height="533">
+<img src="/blog/images/indian-palms-front-entrance.webp" alt="Entrance to Indian Palms Country Club neighborhood in Indio California with palm trees and desert landscaping" loading="lazy" width="800" height="533">
 <p class="image-caption">The Indian Palms neighborhood in Indio. Quiet, gated, and 10 minutes from everything worth doing in the valley.</p>
 
 <p>I watched a couple walk into a chain restaurant in Palm Desert last week. They were 400 yards from one of the best taco spots in the valley.</p>

@@ -89,7 +89,7 @@ layout: blog-post.njk
 
 <p>So when I bought the property that became The Cozy Cactus, I started there. How do families with young kids rest? Not "what makes a cute listing photo," but what makes a mom not want to leave by day two because it's too much work to stay?</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="The Cozy Cactus backyard with hot tub, putting green, and colorful mural designed for families" width="800" height="533">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="The Cozy Cactus backyard with hot tub, putting green, and colorful mural designed for families" loading="lazy" width="800" height="533">
 <p class="image-caption">The backyard oasis: hot tub, putting green, and eye-catching mural where kids play while parents sip morning coffee</p>
 
 <h2>What I Built Instead</h2>

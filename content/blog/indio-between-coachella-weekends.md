@@ -85,7 +85,7 @@ layout: blog-post.njk
 
 <p>Keep a cooler stocked. Order delivery or pick up something simple (more on where in a minute). Sleep at an hour that isn't 3am. The desert will still be there tomorrow. It literally cannot leave.</p>
 
-<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Pool and hot tub at a Coachella Valley vacation rental on a sunny desert morning" decoding="async" width="800" height="533">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Pool and hot tub at a Coachella Valley vacation rental on a sunny desert morning" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The most underrated Coachella activity: the pool at your rental on Monday morning</p>
 
 <h2>Where to Eat in Indio</h2>

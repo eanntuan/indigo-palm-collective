@@ -127,4 +127,4 @@ The [pet-friendly Palm Springs](/blog/pet-friendly-palm-springs/) landscape is g
 
 ---
 
-*Eann runs Indigo Palm Collective in Indio and Palm Springs. Terra Luz and The Sundune both welcome dogs with prior approval. A pet fee applies — ask at booking.*
+*Eann runs Indigo Palm Collective in Indio and Palm Springs. Terra Luz and The Sundune both welcome dogs with prior approval. A pet fee applies. Ask at booking.*

@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <p>We excused ourselves from Easter dinner at his aunt's house, snuck into the living room, and wrote an offer on our phones. That house became The Cozy Cactus. What followed was several months of Facebook Marketplace trips, a Honda Element packed beyond what physics should allow, and a crash course in what it actually means to host someone well.</p>
 
-<img src="/blog/images/car-camping.webp" alt="2005 Honda Element car camping with surfboards and beach gear" width="800" height="533">
+<img src="/blog/images/car-camping.webp" alt="2005 Honda Element car camping with surfboards and beach gear" loading="lazy" width="800" height="533">
 <p class="image-caption">The Honda Element that started it all. Still running in 2026, still fitting everything, sand and all.</p>
 
 <h2>Easter 2022: The Day Everything Changed</h2>

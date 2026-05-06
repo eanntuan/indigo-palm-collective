@@ -127,11 +127,11 @@ layout: blog-post.njk
 
 <p>If you want nature without the suffering, the <a href="/blog/palm-springs-aerial-tram/">Palm Springs Aerial Tram</a> is your answer. It takes about 10 minutes to ride from the desert floor to 8,516 feet in the San Jacinto Mountains, where temperatures run 20 to 30 degrees cooler than the valley.</p>
 
-<p>Pine trees, mountain views, hiking trails that are actually hikeable in summer. It's the one outdoor option that sidesteps the heat problem entirely. Buy tickets in advance during summer months — it books up.</p>
+<p>Pine trees, mountain views, hiking trails that are actually hikeable in summer. It's the one outdoor option that sidesteps the heat problem entirely. Buy tickets in advance during summer months. It books up.</p>
 
 <h2>Your Home Base: The Community Pool at The Sundune</h2>
 
-<p>Worth naming directly: The Sundune has a community pool about a one-minute walk from the front door. Summer mornings before 10am and evenings after 6pm are genuinely pleasant. The pool is the right answer for the shoulder hours — morning coffee, then pool, then leave for the escape room or museum during the midday heat, then back for an evening swim.</p>
+<p>Worth naming directly: The Sundune has a community pool about a one-minute walk from the front door. Summer mornings before 10am and evenings after 6pm are genuinely pleasant. The pool is the right answer for the shoulder hours: morning coffee, then pool, then leave for the escape room or museum during the midday heat, then back for an evening swim.</p>
 
 <p>That rhythm works better than trying to fight the heat. Let the afternoon be what it is. Be cool and comfortable, then get out when the day cools down.</p>
 

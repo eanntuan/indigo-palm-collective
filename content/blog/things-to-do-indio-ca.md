@@ -1,5 +1,5 @@
 ---
-title: "15 Things to Do in Indio, CA"
+title: "15 Things to Do in Indio, CA: Local Guide to Hidden Gems"
 date: 2026-03-23
 metaDescription: "15 things to do in Indio, CA in the Coachella Valley: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find on their own."
 ogImage: /blog/images/indio-local-gems.webp

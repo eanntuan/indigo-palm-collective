@@ -69,7 +69,7 @@ layout: blog-post.njk
 }
 </script>
 
-<img src="/blog/images/coffee-lattes-hero.webp" alt="Three coffee drinks held together at a Palm Springs coffee shop" width="800" height="533">
+<img src="/blog/images/coffee-lattes-hero.webp" alt="Three coffee drinks held together at a Palm Springs coffee shop" loading="lazy" width="800" height="533">
 
 <p>Early morning in Palm Springs is its own thing. Before the heat, before the crowds, before anyone is making decisions. The light comes sideways off the San Jacinto mountains and turns everything gold. You want coffee in your hand for this. Real coffee.</p>
 

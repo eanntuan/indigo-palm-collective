@@ -79,7 +79,7 @@ layout: blog-post.njk
 
 <p>These are not glamorous changes. They don't make good Instagram content. But they're the foundation that makes everything else work. White walls, clean floors, modern light fixtures. Suddenly the house doesn't fight you anymore.</p>
 
-<img src="/blog/images/cochran-before.webp" alt="The Cozy Cactus before renovation, yellow walls and dated exterior" decoding="async" width="800" height="533">
+<img src="/blog/images/cochran-before.webp" alt="The Cozy Cactus before renovation, yellow walls and dated exterior" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Before: yellow walls, grandma vibes, potential<br><small>Photo: Eann</small></p>
 
 <h2>The West Elm phase.</h2>
