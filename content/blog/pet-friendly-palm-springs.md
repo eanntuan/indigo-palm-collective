@@ -2,9 +2,9 @@
 title: "Pet-Friendly Palm Springs: Honest Dog Guide"
 date: 2026-03-22
 metaDescription: "Palm Springs is dog-friendly if you know where to look. The real guide to pet-friendly vacation rentals, restaurants, trails, and parks nearby."
-ogImage: /blog/images/palm-springs-pool.webp
-heroImage: /blog/images/palm-springs-pool.webp
-heroAlt: "Dog-friendly vacation rental in Palm Springs with private pool"
+ogImage: /blog/images/desert-dog-hero.webp
+heroImage: /blog/images/desert-dog-hero.webp
+heroAlt: "Dog relaxing in desert sun at a pet-friendly Palm Springs vacation rental"
 keywords:
   - pet friendly Palm Springs
   - dog friendly Palm Springs vacation rental
@@ -27,7 +27,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Pet-Friendly Palm Springs: Honest Dog Guide",
   "description": "Palm Springs is dog-friendly if you know where to look. The real guide to pet-friendly vacation rentals, restaurants, trails, and parks nearby.",
-  "image": "https://indigopalm.co/blog/images/palm-springs-pool.webp",
+  "image": "https://indigopalm.co/blog/images/desert-dog-hero.webp",
   "datePublished": "2026-03-22",
   "dateModified": "2026-03-22",
   "author": {
@@ -72,8 +72,8 @@ layout: blog-post.njk
 
 <p>I own vacation rentals here. Here's what I know about bringing your dog to the Palm Springs area without a terrible time.</p>
 
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Springs palm-lined street under blue sky, pet-friendly Coachella Valley destination for dog travel" width="1400" height="933" loading="lazy">
-<p class="image-caption">Palm Springs leans dog-friendly. The culture supports it, if you know where to go.</p>
+<img src="/blog/images/pet-friendly-rental-dog.webp" alt="Dog relaxing at a pet-friendly vacation rental in the Coachella Valley desert" width="1400" height="933" loading="lazy">
+<p class="image-caption">The right rental makes everything easier. Tile floors and a fenced outdoor space change the whole trip.</p>
 
 <h2>Start With Where You're Staying</h2>
 
@@ -139,6 +139,9 @@ layout: blog-post.njk
 <ul>
     <li><strong>RD RNNR Libations Pints and Plates:</strong> A spacious dog-friendly patio with a dedicated pup menu. The PB Pooch Cup (peanut butter and whipped cream) is on the menu, which tells you the staff here actually thought about the dogs, not just the owners.</li>
 </ul>
+
+<img src="/blog/images/cheekys-palm-springs.webp" alt="Cheeky's restaurant patio in Palm Springs, a dog-friendly brunch spot on Palm Canyon Drive" width="600" height="449" loading="lazy">
+<p class="image-caption">Cheeky's patio on a weekend morning. Dogs are regulars here.</p>
 
 <p>Keep your dog on leash or under the table, and tip well. Servers are doing extra work when there are dogs involved.</p>
 
