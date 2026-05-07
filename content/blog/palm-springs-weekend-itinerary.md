@@ -5,6 +5,7 @@ dateModified: 2026-04-15
 metaDescription: "Day 1: arrive and decompress. Day 2: architecture walk, coffee, and a hike. Day 3: farmers market and brunch. Three days in Palm Springs, planned well."
 ogImage: /blog/images/palm-springs-marilyn-monroe-statue.webp
 heroImage: /blog/images/palm-springs-marilyn-monroe-statue.webp
+heroPosition: top
 heroAlt: "Forever Marilyn statue on Palm Springs Art Museum Walk with San Jacinto Mountains in the background"
 keywords:
   - palm springs weekend itinerary

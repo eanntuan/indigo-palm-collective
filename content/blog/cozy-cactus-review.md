@@ -4,6 +4,7 @@ date: 2026-02-23
 metaDescription: "The Cozy Cactus in Indio: 4.97 stars, 146 reviews. Here's what guests consistently love, what to know before booking, and how it compares to other options."
 ogImage: /blog/images/cozy-cactus-review-hero.webp
 heroImage: /blog/images/cozy-cactus-review-hero.webp
+heroPosition: top
 heroAlt: "desert vacation rental pool and outdoor patio at The Cozy Cactus in Indio California"
 keywords:
   - Cozy Cactus review

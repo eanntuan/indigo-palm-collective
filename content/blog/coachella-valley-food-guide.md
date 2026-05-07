@@ -5,6 +5,7 @@ dateModified: 2026-04-15
 metaDescription: "The honest Coachella Valley food guide: Papa Headz and One Stop in Indio, Yes Please in La Quinta, Koffi and Thai Hot in Palm Springs. By city, no filler."
 ogImage: /blog/images/one-stop-taco-shop.webp
 heroImage: /blog/images/one-stop-taco-shop.webp
+heroPosition: bottom
 heroAlt: "One Stop Taco Shop storefront in Indio California with colorful signage"
 keywords:
   - where to eat coachella valley

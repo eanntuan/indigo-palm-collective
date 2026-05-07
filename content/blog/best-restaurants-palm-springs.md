@@ -5,6 +5,7 @@ dateModified: 2026-05-06
 metaDescription: "The 15 best restaurants in Palm Springs for 2026 — from the famous bacon flight at Cheeky's to the Cary Grant estate patio at Copley's. Addresses and hours included."
 ogImage: /blog/images/tropicale-palm-springs.webp
 heroImage: /blog/images/tropicale-palm-springs.webp
+heroPosition: bottom
 heroAlt: "Tropicale Dining and Lounge exterior in Palm Springs with pink stucco walls, palm trees, and San Jacinto Mountains in background"
 keywords:
   - best restaurants Palm Springs

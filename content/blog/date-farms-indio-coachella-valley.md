@@ -5,6 +5,7 @@ dateModified: 2026-05-03
 metaDescription: "The best date farms near Indio and Palm Springs: Shield's Date Garden, Hadley's, and where to find fresh Medjool dates in the Coachella Valley."
 ogImage: /blog/images/shields-date-garden.webp
 heroImage: /blog/images/shields-date-garden.webp
+heroPosition: bottom
 heroAlt: "Shield's Date Garden storefront and date palm groves in Indio, California"
 keywords:
   - date farms near indio california

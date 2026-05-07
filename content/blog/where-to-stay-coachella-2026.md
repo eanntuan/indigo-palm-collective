@@ -4,9 +4,9 @@ date: 2025-11-28
 dateModified: 2026-04-21
 redirectTo: /blog/where-to-stay-coachella/
 metaDescription: "Vacation rental, hotel, or camping for Coachella? The polo grounds are in Indio. Here's what's close, what it costs, and what to book first."
-ogImage: /blog/images/festival-coachella-aerial.webp
-heroImage: /blog/images/festival-coachella-aerial.webp
-heroAlt: "Vacation rental near the Coachella festival grounds in Indio CA"
+ogImage: /blog/images/festival-concert-night.webp
+heroImage: /blog/images/festival-concert-night.webp
+heroAlt: "Festival concert stage at night with crowd at Coachella Valley Music and Arts Festival"
 keywords:
   - Coachella
   - where to stay Coachella

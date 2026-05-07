@@ -4,6 +4,7 @@ date: 2025-11-25
 metaDescription: "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental in Indio, CA. Now 4.66 stars and 191+ reviews across three years of hosting."
 ogImage: /blog/images/cozy-cactus-exterior.webp
 heroImage: /blog/images/cozy-cactus-exterior.webp
+heroPosition: top
 heroAlt: "The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views"
 keywords:
   - family vacation rental Indio

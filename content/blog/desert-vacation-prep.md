@@ -4,6 +4,7 @@ date: 2026-02-02
 metaDescription: "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days when you arrive."
 ogImage: /blog/images/ps-desert-valley-view.webp
 heroImage: /blog/images/ps-desert-valley-view.webp
+heroPosition: top
 heroAlt: "Desert valley view with palm trees and mountain backdrop in Coachella Valley California"
 keywords:
   - desert vacation tips

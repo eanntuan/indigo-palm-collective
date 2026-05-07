@@ -5,6 +5,7 @@ dateModified: 2026-04-09
 metaDescription: "Skip the tourist traps. A Coachella Valley local shares the spots worth your time in Indio, Palm Springs, and Joshua Tree. No recycled lists."
 ogImage: /blog/images/ps-street-bougainvillea.webp
 heroImage: /blog/images/ps-street-bougainvillea.webp
+heroPosition: center bottom
 heroAlt: "Palm tree-lined street in Palm Springs CA with red bougainvillea and San Jacinto mountains"
 keywords:
   - Coachella Valley insider guide
