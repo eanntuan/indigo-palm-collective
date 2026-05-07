@@ -1,7 +1,8 @@
 ---
-title: "Coachella Valley: A Year-Round Desert Escape"
+title: "Coachella Valley Beyond the Festival: A Year-Round Guide"
 date: 2026-03-14
-metaDescription: "Most people only think of the Coachella Valley during festival season. Here's why every season in the desert is worth the trip, and how to plan it."
+dateModified: 2026-05-06
+metaDescription: "Winter and fall are the Coachella Valley's best-kept secret. Hiking, hot springs, and rental prices 40% below festival season. How to plan your trip."
 ogImage: /blog/images/cozy-cactus-pool.webp
 heroImage: /blog/images/cozy-cactus-pool.webp
 heroAlt: "Pool at a desert vacation rental in the Coachella Valley, California"

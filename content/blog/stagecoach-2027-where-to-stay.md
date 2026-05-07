@@ -1,7 +1,8 @@
 ---
-title: "Stagecoach 2027: Best Places to Stay Near Indio"
+title: "Stagecoach 2027: Location, Lodging, and What to Book"
 date: 2026-04-12
-metaDescription: "Where to stay for Stagecoach 2027: camping, hotels, or vacation rental near the polo grounds? The real tradeoffs, from a host 7 minutes from the stage."
+dateModified: 2026-05-06
+metaDescription: "Stagecoach 2027 is at Empire Polo Club in Indio, CA. Vacation rental 7 minutes from the stage beats hotels on price and sleep. Here's what to book first."
 ogImage: /blog/images/stagecoach-festival-crowd.webp
 heroImage: /blog/images/stagecoach-festival-crowd.webp
 heroAlt: "Stagecoach festival crowd at Empire Polo Club in Indio CA"
