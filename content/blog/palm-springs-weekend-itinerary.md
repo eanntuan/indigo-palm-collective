@@ -1,6 +1,6 @@
 ---
 title: "Palm Springs Weekend: A 3-Day Itinerary"
-date: 2026-02-11
+date: 2025-11-16
 dateModified: 2026-04-15
 metaDescription: "Day 1: arrive and decompress. Day 2: architecture walk, coffee, and a hike. Day 3: farmers market and brunch. Three days in Palm Springs, planned well."
 ogImage: /blog/images/palm-springs-marilyn-monroe-statue.webp
@@ -33,7 +33,7 @@ layout: blog-post.njk
   "headline": "Palm Springs Weekend: A 3-Day Itinerary That Works",
   "description": "Day 1: arrive and decompress. Day 2: architecture walk, coffee, and a hike. Day 3: farmers market and brunch. Three days in Palm Springs, planned well.",
   "image": "https://indigopalm.co/blog/images/palm-springs-marilyn-monroe-statue.webp",
-  "datePublished": "2026-02-11",
+  "datePublished": "2025-11-16",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",

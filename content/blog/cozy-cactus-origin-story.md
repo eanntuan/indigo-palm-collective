@@ -1,6 +1,6 @@
 ---
 title: "Buying My First Vacation Rental in Indio"
-date: 2026-03-03
+date: 2025-12-01
 metaDescription: "How I bought my first vacation rental in Indio, CA on Easter 2022 with zero experience, a line of credit, and way too many Facebook Marketplace trips."
 ogImage: /blog/images/cozy-cactus-origin-hero.webp
 heroImage: /blog/images/cozy-cactus-origin-hero.webp
@@ -29,8 +29,8 @@ layout: blog-post.njk
   "headline": "Buying My First Vacation Rental in Indio",
   "description": "How I bought my first vacation rental in Indio, CA on Easter 2022 with zero experience, a line of credit, and way too many Facebook Marketplace trips.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-origin-hero.webp",
-  "datePublished": "2026-03-03",
-  "dateModified": "2026-03-03",
+  "datePublished": "2025-12-01",
+  "dateModified": "2025-12-01",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

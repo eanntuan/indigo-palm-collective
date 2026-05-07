@@ -1,6 +1,6 @@
 ---
 title: "Palm Springs Surf Club: Prices, Hours, and Honest Review"
-date: 2026-03-06
+date: 2025-12-04
 dateModified: 2026-05-06
 metaDescription: "Palm Springs Surf Club day passes run $100-250 depending on level. Open daily until 8pm. Book 1-2 weeks ahead on weekends. What to know before you go."
 ogImage: /blog/images/pssc-wave-pool-reflection.webp
@@ -32,7 +32,7 @@ layout: blog-post.njk
   "headline": "Palm Springs Surf Club: Hours, Prices & Sessions",
   "description": "Palm Springs Surf Club hours: open daily 10am-8pm (seasonal). Sessions from ~$100 beginner to ~$250 expert. Book in advance.",
   "image": "https://indigopalm.co/blog/images/pssc-wave-pool-reflection.webp",
-  "datePublished": "2026-03-06",
+  "datePublished": "2025-12-04",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",

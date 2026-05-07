@@ -1,6 +1,6 @@
 ---
 title: "BNP Paribas Open: Where to Eat in Indian Wells"
-date: 2026-05-03
+date: 2026-03-25
 dateModified: 2026-05-03
 metaDescription: "Where to eat during the BNP Paribas Open: Nobu inside the stadium, best spots in Indian Wells and Palm Desert, and quick options between matches."
 ogImage: /blog/images/indian-wells-tennis-garden-aerial.webp
@@ -24,8 +24,8 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "BNP Paribas Open: Where to Eat in Indian Wells",
-  "datePublished": "2026-05-03",
-  "dateModified": "2026-05-03",
+  "datePublished": "2026-03-25",
+  "dateModified": "2026-03-25",
   "description": "Where to eat during the BNP Paribas Open: Nobu inside the stadium, best spots in Indian Wells and Palm Desert, and quick options between matches.",
   "author": {"@type": "Person", "name": "Eann Tuan"},
   "publisher": {"@type": "Organization", "name": "Indigo Palm Collective", "logo": {"@type": "ImageObject", "url": "https://indigopalm.co/images/logo-world.png"}},

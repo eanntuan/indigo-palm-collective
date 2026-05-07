@@ -1,6 +1,6 @@
 ---
 title: "Justin Bieber at Coachella: What to Expect"
-date: 2026-04-23
+date: 2026-03-01
 metaDescription: "Justin Bieber crashed Coachella 2026 and the internet lost its mind. Here's what that moment actually means for your indio vacation rental trip."
 ogImage: /blog/images/bieber-coachella-stage.webp
 heroImage: /blog/images/bieber-coachella-stage.webp
@@ -105,8 +105,8 @@ layout: blog-post.njk
       "url": "https://indigopalm.co/apple-touch-icon.png"
     }
   },
-  "datePublished": "2026-04-23",
-  "dateModified": "2026-04-23",
+  "datePublished": "2026-03-01",
+  "dateModified": "2026-03-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://indigopalm.co/blog/justin-bieber-coachella-2026/"

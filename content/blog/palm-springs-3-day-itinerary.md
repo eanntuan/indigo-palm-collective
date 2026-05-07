@@ -1,6 +1,6 @@
 ---
 title: "The Perfect 3-Day Palm Springs Itinerary"
-date: 2026-04-28
+date: 2026-03-13
 metaDescription: "3 days in Palm Springs: aerial tram day one, downtown and mid-century architecture day two, Joshua Tree day three. Times, costs, and what to skip."
 ogImage: /blog/images/ps-aerial-tram-mountain-view.webp
 heroImage: /blog/images/ps-aerial-tram-mountain-view.webp
@@ -29,8 +29,8 @@ layout: blog-post.njk
   "headline": "Palm Springs 3-Day Itinerary: What to Do Each Day",
   "description": "3 days in Palm Springs: aerial tram, downtown, mid-century neighborhoods, and a Joshua Tree day trip. Times, costs, and what to skip.",
   "image": "https://indigopalm.co/blog/images/ps-aerial-tram-mountain-view.webp",
-  "datePublished": "2026-04-28",
-  "dateModified": "2026-04-28",
+  "datePublished": "2026-03-13",
+  "dateModified": "2026-03-13",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

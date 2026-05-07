@@ -1,6 +1,6 @@
 ---
 title: "Desert Vacation Prep: What You Need to Know"
-date: 2026-04-08
+date: 2026-02-02
 metaDescription: "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days when you arrive."
 ogImage: /blog/images/ps-desert-valley-view.webp
 heroImage: /blog/images/ps-desert-valley-view.webp
@@ -30,8 +30,8 @@ layout: blog-post.njk
   "headline": "Desert Vacation Prep: What You Need to Know",
   "description": "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days.",
   "image": "https://indigopalm.co/blog/images/ps-desert-valley-view.webp",
-  "datePublished": "2026-04-08",
-  "dateModified": "2026-04-08",
+  "datePublished": "2026-02-02",
+  "dateModified": "2026-02-02",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

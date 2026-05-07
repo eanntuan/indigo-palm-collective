@@ -1,6 +1,6 @@
 ---
 title: "Palm Springs Midcentury Architecture Walk"
-date: 2026-03-26
+date: 2026-01-12
 metaDescription: "Palm Springs has the most intact collection of midcentury modern homes in the country. Here's how to walk it, what to look for, and which streets matter."
 ogImage: /blog/images/ps-mcm-neighborhood.webp
 heroImage: /blog/images/ps-mcm-neighborhood.webp
@@ -30,8 +30,8 @@ layout: blog-post.njk
   "headline": "Palm Springs Midcentury Architecture Walk",
   "description": "Palm Springs has the most intact collection of midcentury modern homes in the country. Here's how to walk it, what to look for, and which streets are worth your time.",
   "image": "https://indigopalm.co/blog/images/ps-mcm-neighborhood.webp",
-  "datePublished": "2026-03-26",
-  "dateModified": "2026-03-26",
+  "datePublished": "2026-01-12",
+  "dateModified": "2026-01-12",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

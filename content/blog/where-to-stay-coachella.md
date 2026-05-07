@@ -1,6 +1,6 @@
 ---
 title: "Where to Stay for Coachella: Rental vs Hotel vs Camp"
-date: 2026-01-27
+date: 2025-11-10
 dateModified: 2026-05-06
 metaDescription: "2 miles from the stage, $250-500/night private rental beats hotel prices. Hotels sell out fast, camping is rougher than it looks. What to book and when."
 ogImage: /blog/images/coachella-festival-crowd.webp
@@ -140,7 +140,7 @@ layout: blog-post.njk
   "headline": "Where to Stay for Coachella: The Full Breakdown",
   "description": "Hotels, camping, vacation rentals: an honest breakdown of every Coachella accommodation type from someone who lives here. No affiliate links, no sponsored takes.",
   "image": "https://indigopalm.co/blog/images/coachella-festival-crowd.webp",
-  "datePublished": "2026-01-27",
+  "datePublished": "2025-11-10",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",

@@ -1,6 +1,6 @@
 ---
 title: "Best Hiking Near Palm Springs: 8 Trails Worth the Drive"
-date: 2026-03-18
+date: 2025-12-25
 metaDescription: "Best hiking near Palm Springs: 8 trails with stats, fees, and honest notes. Palm Canyon to San Jacinto Peak, dog-friendly picks, and a waterfall you can swim to."
 ogImage: /blog/images/coachella-valley-desert-hiking.webp
 heroImage: /blog/images/coachella-valley-desert-hiking.webp
@@ -42,7 +42,7 @@ relatedPosts:
   "headline": "Best Hiking Near Palm Springs: 8 Trails Worth the Drive",
   "description": "Eight hikes near Palm Springs with trail stats, fees, dog policies, and honest notes. Palm Canyon, Murray Canyon, Tahquitz Canyon, Lykken Trail, San Jacinto Peak, and more.",
   "image": "https://indigopalm.co/blog/images/coachella-valley-desert-hiking.webp",
-  "datePublished": "2026-03-18",
+  "datePublished": "2025-12-25",
   "dateModified": "2026-05-06",
   "author": {
     "@type": "Person",

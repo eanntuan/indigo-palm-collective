@@ -1,6 +1,6 @@
 ---
 title: "Palm Springs vs Scottsdale: Which Is Right for You?"
-date: 2026-04-28
+date: 2026-03-16
 metaDescription: "Palm Springs vs Scottsdale: same weather, different vibe. How they differ on cost, driving distance, and which one fits your trip."
 ogImage: /blog/images/scottsdale-resort-pool.webp
 heroImage: /blog/images/scottsdale-resort-pool.webp
@@ -28,8 +28,8 @@ layout: blog-post.njk
   "headline": "Palm Springs vs Scottsdale: Which One Is Right for Your Trip?",
   "description": "Palm Springs vs Scottsdale compared on vibe, cost, driving distance, weather, and who each one fits best.",
   "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp",
-  "datePublished": "2026-04-28",
-  "dateModified": "2026-04-28",
+  "datePublished": "2026-03-16",
+  "dateModified": "2026-03-16",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

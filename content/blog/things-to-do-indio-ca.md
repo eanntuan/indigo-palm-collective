@@ -1,6 +1,6 @@
 ---
 title: "15 Things to Do in Indio, CA: Local Guide to Hidden Gems"
-date: 2026-03-23
+date: 2026-01-06
 metaDescription: "15 things to do in Indio, CA in the Coachella Valley: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find on their own."
 ogImage: /blog/images/indio-local-gems.webp
 heroImage: /blog/images/indio-local-gems.webp
@@ -29,8 +29,8 @@ layout: blog-post.njk
   "headline": "15 Things to Do in Indio, CA",
   "description": "15 actual things to do in Indio, CA beyond Coachella: date shakes, a vinyl listening lounge, Old Town, and spots most visitors never find.",
   "image": "https://indigopalm.co/blog/images/indio-local-gems.webp",
-  "datePublished": "2026-03-23",
-  "dateModified": "2026-03-23",
+  "datePublished": "2026-01-06",
+  "dateModified": "2026-01-06",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

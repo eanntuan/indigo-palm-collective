@@ -1,6 +1,6 @@
 ---
 title: "Palm Springs with Kids: The Complete Guide"
-date: 2026-04-24
+date: 2026-03-10
 metaDescription: "Palm Springs with kids is more doable than most people expect. Here's what actually works: activities, food, and a walkable home base at The Sundune."
 ogImage: /blog/images/palm-springs-kids-vacation.webp
 heroImage: /blog/images/palm-springs-kids-vacation.webp
@@ -30,8 +30,8 @@ layout: blog-post.njk
   "headline": "Palm Springs with Kids: What to Do, Where to Stay",
   "description": "Palm Springs with kids is more doable than most people expect. Here's what actually works: activities, food, and a walkable home base at The Sundune.",
   "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp",
-  "datePublished": "2026-04-24",
-  "dateModified": "2026-04-24",
+  "datePublished": "2026-03-10",
+  "dateModified": "2026-03-10",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

@@ -1,6 +1,6 @@
 ---
 title: "Terra Luz: How a House Gets Its Name"
-date: 2026-03-17
+date: 2025-12-22
 metaDescription: "How a vacation rental in Indio became Terra Luz: sun-washed terracotta, a Kahlo blue pool, and a brand built on Latin warmth and desert light."
 ogImage: /blog/images/terra-luz-origin-hero.webp
 heroImage: /blog/images/terra-luz-origin-hero.webp
@@ -29,8 +29,8 @@ layout: blog-post.njk
   "headline": "Terra Luz: How a House Gets Its Name",
   "description": "How a vacation rental in Indio became Terra Luz: sun-washed terracotta, a Kahlo blue pool, and a brand built on Latin warmth and desert light.",
   "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.webp",
-  "datePublished": "2026-03-17",
-  "dateModified": "2026-03-17",
+  "datePublished": "2025-12-22",
+  "dateModified": "2025-12-22",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

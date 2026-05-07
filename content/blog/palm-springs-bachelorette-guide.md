@@ -1,6 +1,6 @@
 ---
 title: "Palm Springs Bachelorette Party: Real Guide"
-date: 2026-03-28
+date: 2026-01-15
 metaDescription: "Desert bachelorette in Palm Springs: pools, restaurants, spas, 2 hours from LA. The honest guide to what to book, skip, and plan for your crew."
 ogImage: /blog/images/ps-palm-springs-sign.webp
 heroImage: /blog/images/ps-palm-springs-sign.webp
@@ -31,8 +31,8 @@ layout: blog-post.njk
   "headline": "Palm Springs Bachelorette Party: Real Guide",
   "description": "Palm Springs bachelorette trips work well because the valley has pools, restaurants, spas, and a 2-hour drive from LA. Here's what to book and skip.",
   "image": "https://indigopalm.co/blog/images/ps-palm-springs-sign.webp",
-  "datePublished": "2026-03-28",
-  "dateModified": "2026-03-28",
+  "datePublished": "2026-01-15",
+  "dateModified": "2026-01-15",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

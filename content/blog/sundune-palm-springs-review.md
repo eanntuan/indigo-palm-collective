@@ -1,6 +1,6 @@
 ---
 title: "The Sundune Palm Springs: What Guests Say"
-date: 2026-04-21
+date: 2026-02-26
 metaDescription: "The Sundune Palm Springs: 4.93 stars across 40 stays. What guests say about the 2BR condo, the walkable neighborhood, pool access, and what to expect."
 ogImage: /blog/images/sundune-palm-springs-condo.webp
 heroImage: /blog/images/sundune-palm-springs-condo.webp
@@ -98,8 +98,8 @@ relatedPosts:
   "headline": "The Sundune Palm Springs: What Guests Say",
   "description": "Sundune Palm Springs reviews: what guests say about this Palm Springs condo, the neighborhood, walkability, and what to expect.",
   "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp",
-  "datePublished": "2026-04-21",
-  "dateModified": "2026-04-21",
+  "datePublished": "2026-02-26",
+  "dateModified": "2026-02-26",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

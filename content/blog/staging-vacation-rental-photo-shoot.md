@@ -1,6 +1,6 @@
 ---
 title: "Staging a Vacation Rental for Photography: The 5-Day Plan"
-date: 2026-05-04
+date: 2026-04-27
 metaDescription: "How to stage a vacation rental for photography: the 5-day countdown we ran at Casa Moto before our listing shoot, with specific tasks and honest mistakes."
 ogImage: /blog/images/vacation-rental-staging.webp
 heroImage: /blog/images/vacation-rental-staging.webp
@@ -29,8 +29,8 @@ layout: blog-post.njk
   "headline": "Staging a Vacation Rental for Photography: The 5-Day Plan",
   "description": "How to stage a vacation rental for photography: the 5-day countdown we ran at Casa Moto before our listing shoot, with specific tasks and honest mistakes.",
   "image": "https://indigopalm.co/blog/images/terra-luz-pool-backyard.webp",
-  "datePublished": "2026-05-04",
-  "dateModified": "2026-05-04",
+  "datePublished": "2026-04-27",
+  "dateModified": "2026-04-27",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

@@ -1,6 +1,6 @@
 ---
 title: "Joshua Tree Day Trip from Indio"
-date: 2026-04-07
+date: 2026-01-30
 dateModified: 2026-04-15
 metaDescription: "Joshua Tree day trip from Indio or Palm Springs: which entrance to use, what to bring, entry fees, and a full-day itinerary from a Coachella Valley local."
 ogImage: /blog/images/joshua-tree-national-park.webp
@@ -32,7 +32,7 @@ layout: blog-post.njk
   "headline": "Joshua Tree Day Trip from Indio and Palm Springs",
   "description": "Joshua Tree day trip from Indio or Palm Springs: which entrance, what to see, entry fees, what to bring, and a full-day itinerary from a Coachella Valley local.",
   "image": "https://indigopalm.co/blog/images/joshua-tree-national-park.webp",
-  "datePublished": "2026-04-07",
+  "datePublished": "2026-01-30",
   "dateModified": "2026-04-15",
   "author": {
     "@type": "Person",

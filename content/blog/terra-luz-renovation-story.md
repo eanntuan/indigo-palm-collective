@@ -1,6 +1,6 @@
 ---
 title: "How We Rebuilt Terra Luz: Room by Room"
-date: 2026-05-14
+date: 2026-05-06
 metaDescription: "Terra Luz renovation: Wild Tropics wallpaper, terracotta tile, Kahlo Blue pool deck, and a Latin/Cuban design rebuilt room by room. What we made and why."
 ogImage: /blog/images/terra-luz-pool-backyard.webp
 heroImage: /blog/images/terra-luz-pool-backyard.webp
@@ -29,8 +29,8 @@ layout: blog-post.njk
   "headline": "How We Rebuilt Terra Luz: Room by Room",
   "description": "From Casa Moto to Terra Luz: the full renovation story. Wild Tropics wallpaper, terracotta tile, Kahlo Blue pool deck, and a Latin/Cuban design built room by room.",
   "image": "https://indigopalm.co/blog/images/terra-luz-pool-backyard.webp",
-  "datePublished": "2026-05-14",
-  "dateModified": "2026-05-14",
+  "datePublished": "2026-05-06",
+  "dateModified": "2026-05-06",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

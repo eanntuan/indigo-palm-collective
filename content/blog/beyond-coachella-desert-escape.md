@@ -1,6 +1,6 @@
 ---
 title: "Coachella Valley Beyond the Festival: A Year-Round Guide"
-date: 2026-03-14
+date: 2025-12-16
 dateModified: 2026-05-06
 metaDescription: "Winter and fall are the Coachella Valley's best-kept secret. Hiking, hot springs, and rental prices 40% below festival season. How to plan your trip."
 ogImage: /blog/images/cozy-cactus-pool.webp
@@ -32,8 +32,8 @@ layout: blog-post.njk
   "headline": "Coachella Valley: A Year-Round Desert Escape",
   "description": "Most people only think of the Coachella Valley during festival season. Here's why every season in the desert is worth the trip, and how to plan it.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-pool.webp",
-  "datePublished": "2026-03-14",
-  "dateModified": "2026-03-14",
+  "datePublished": "2025-12-16",
+  "dateModified": "2025-12-16",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

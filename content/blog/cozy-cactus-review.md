@@ -1,6 +1,6 @@
 ---
 title: "Cozy Cactus Vacation Rental: An Honest Review"
-date: 2026-04-19
+date: 2026-02-23
 metaDescription: "The Cozy Cactus in Indio: 4.97 stars, 146 reviews. Here's what guests consistently love, what to know before booking, and how it compares to other options."
 ogImage: /blog/images/cozy-cactus-review-hero.webp
 heroImage: /blog/images/cozy-cactus-review-hero.webp
@@ -38,8 +38,8 @@ relatedPosts:
   "headline": "The Cozy Cactus Review: What Guests Actually Say",
   "description": "4.97 stars across 146 stays. Here's what guests consistently say about The Cozy Cactus in Indio, and what to expect before you book.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.webp",
-  "datePublished": "2026-04-19",
-  "dateModified": "2026-04-19",
+  "datePublished": "2026-02-23",
+  "dateModified": "2026-02-23",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

@@ -1,6 +1,6 @@
 ---
 title: "Cozy Cactus: From Blank Canvas to Sanctuary"
-date: 2026-02-28
+date: 2025-11-25
 metaDescription: "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental in Indio, CA. Now 4.66 stars and 191+ reviews across three years of hosting."
 ogImage: /blog/images/cozy-cactus-exterior.webp
 heroImage: /blog/images/cozy-cactus-exterior.webp
@@ -28,8 +28,8 @@ layout: blog-post.njk
   "headline": "Cozy Cactus: From Blank Canvas to Sanctuary",
   "description": "A backup plan for a Honda Element became The Cozy Cactus: a family vacation rental in Indio, CA. Now 4.66 stars and 191+ reviews across three years of hosting.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.webp",
-  "datePublished": "2026-02-28",
-  "dateModified": "2026-02-28",
+  "datePublished": "2025-11-25",
+  "dateModified": "2025-11-25",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

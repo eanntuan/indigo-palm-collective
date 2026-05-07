@@ -1,6 +1,6 @@
 ---
 title: "Terra Luz Vacation Rental: An Honest Review"
-date: 2026-04-14
+date: 2026-02-14
 metaDescription: "Terra Luz in Indio: 4.98 stars, 146 reviews. Private saltwater pool, Latin/Cuban design. What guests consistently love and what to know before booking."
 ogImage: /blog/images/IMG_6691.webp
 heroImage: /blog/images/IMG_6691.webp
@@ -38,8 +38,8 @@ relatedPosts:
   "headline": "Terra Luz Review: What to Expect at Indio's Private Pool Rental",
   "description": "Terra Luz in Indio: 4.98 stars, 146 reviews. Private saltwater pool, Latin/Cuban design. What guests consistently love and what to know before booking.",
   "image": "https://indigopalm.co/blog/images/IMG_6691.webp",
-  "datePublished": "2026-04-14",
-  "dateModified": "2026-04-14",
+  "datePublished": "2026-02-14",
+  "dateModified": "2026-02-14",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

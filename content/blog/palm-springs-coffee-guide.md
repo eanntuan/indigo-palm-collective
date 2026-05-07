@@ -1,6 +1,6 @@
 ---
 title: "5 Palm Springs Coffee Shops Locals Love"
-date: 2026-03-19
+date: 2025-12-28
 metaDescription: "Skip the hotel lobby drip. The 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and what makes each worth it."
 keywords:
   - Palm Springs coffee shops
@@ -30,8 +30,8 @@ layout: blog-post.njk
   "headline": "5 Palm Springs Coffee Shops Locals Love",
   "description": "Skip the hotel lobby drip. The 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and what makes each worth it.",
   "image": "https://indigopalm.co/blog/images/coffee-lattes-hero.webp",
-  "datePublished": "2026-03-19",
-  "dateModified": "2026-03-19",
+  "datePublished": "2025-12-28",
+  "dateModified": "2025-12-28",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

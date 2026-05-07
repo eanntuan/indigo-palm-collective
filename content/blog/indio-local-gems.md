@@ -1,6 +1,6 @@
 ---
 title: 10 Indio Gems Only Locals Know About
-date: 2026-03-13
+date: 2025-12-13
 metaDescription: "Skip the tourist traps. Date shakes at L&G, smash burgers at Papa Headz, and a vinyl listening lounge most visitors drive right past. The real Indio, CA."
 keywords:
   - Indio CA
@@ -31,8 +31,8 @@ layout: blog-post.njk
   "headline": "10 Indio Gems Only Locals Know About",
   "description": "Skip the tourist traps. Date shakes at L&G, smash burgers at Papa Headz, and a vinyl listening lounge most visitors drive right past. The real Indio, CA.",
   "image": "https://indigopalm.co/blog/images/indio-sign-miles-ave.webp",
-  "datePublished": "2026-03-13",
-  "dateModified": "2026-03-13",
+  "datePublished": "2025-12-13",
+  "dateModified": "2025-12-13",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

@@ -1,6 +1,6 @@
 ---
 title: "The Sundune Palm Springs Local Guide"
-date: 2026-04-03
+date: 2026-01-24
 metaDescription: "Things to do in Palm Springs, from a local who eats here. The Sundune's guide: coffee, brunch, surf, botanical, dinner, and drinks worth knowing about."
 ogImage: /blog/images/palm-springs-local-guide-sundune.webp
 heroImage: /blog/images/palm-springs-local-guide-sundune.webp
@@ -30,8 +30,8 @@ layout: blog-post.njk
   "headline": "The Sundune Palm Springs Local Guide",
   "description": "Things to do in Palm Springs, from a local who eats here. The Sundune's guide: coffee, brunch, surf, botanical, dinner, and drinks worth knowing about.",
   "image": "https://indigopalm.co/blog/images/palm-springs-local-guide-sundune.webp",
-  "datePublished": "2026-04-03",
-  "dateModified": "2026-04-03",
+  "datePublished": "2026-01-24",
+  "dateModified": "2026-01-24",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

@@ -1,6 +1,6 @@
 ---
 title: "Best Pastries in Palm Springs: Specific Items Worth Seeking"
-date: 2026-05-03
+date: 2026-03-22
 dateModified: 2026-05-03
 metaDescription: "The best pastries in Palm Springs by specific item: the almond croissant at Koffi, pain au chocolat at Peninsula Pastries, and what else is worth the stop."
 ogImage: /blog/images/koffi-palm-springs.webp
@@ -23,8 +23,8 @@ layout: blog-post.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Best Pastries in Palm Springs: Specific Items Worth Seeking",
-  "datePublished": "2026-05-03",
-  "dateModified": "2026-05-03",
+  "datePublished": "2026-03-22",
+  "dateModified": "2026-03-22",
   "description": "The best pastries in Palm Springs by specific item: the almond croissant at Koffi, pain au chocolat at Peninsula Pastries, and what else is worth the stop.",
   "author": {"@type": "Person", "name": "Eann Tuan"},
   "publisher": {"@type": "Organization", "name": "Indigo Palm Collective", "logo": {"@type": "ImageObject", "url": "https://indigopalm.co/images/logo-icon.png"}},
