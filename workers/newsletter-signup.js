@@ -227,6 +227,11 @@ export default {
       });
     }
 
+    // Redirect GET requests (e.g. Googlebot) to main site instead of returning 405
+    if (request.method === 'GET') {
+      return Response.redirect('https://indigopalm.co/', 301);
+    }
+
     // Only accept POST requests
     if (request.method !== 'POST') {
       return new Response('Method not allowed', { status: 405 });
