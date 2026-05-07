@@ -110,7 +110,7 @@ layout: blog-post.njk
 
 <p>Fall activities: Joshua Tree camping in October or November (cool nights, clear skies, optimal for stargazing), date harvest tours at working farms, Indian Canyons or Ladder Canyon hikes without the risk of dying from heat exhaustion.</p>
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Desert trails and native palms at the Coachella Valley Preserve, a natural oasis for hiking near Indio and Palm Springs CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert canyon trail near Palm Springs California, rocky formations and blue sky above the Coachella Valley" width="1400" height="788" loading="lazy">
 <p class="image-caption">The Coachella Valley Preserve, native fan palms, spring-fed oasis, and trails that look nothing like what most people picture when they hear "Coachella."</p>
 
 <h2>Joshua Tree: 45 Minutes From Terra Luz</h2>

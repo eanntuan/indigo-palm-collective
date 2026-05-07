@@ -123,7 +123,7 @@ layout: blog-post.njk
 
 <h2>When to Go</h2>
 
-<img src="/blog/images/ps-aerial-tram-sunrise.webp" alt="Sunrise light over the San Jacinto peaks from the Palm Springs Aerial Tram Mountain Station" width="1200" height="900" loading="lazy">
+<img src="/blog/images/ps-aerial-tram-sunrise.webp" alt="Cable car ascending over mountain peaks at sunrise near Palm Springs, dramatic sky and valley view below" width="1400" height="934" loading="lazy">
 
 <p><strong>Summer (June through September):</strong> The temperature contrast is the draw. The valley is 105 degrees and the top is around 70. Weekday crowds are lighter. The extended Friday and Saturday evening hours mean you can ride up at sunset, watch the valley light up below, and come down in the dark. That's a good use of a summer evening.</p>
 

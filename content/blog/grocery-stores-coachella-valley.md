@@ -77,7 +77,7 @@ Guests staying at [The Cozy Cactus or Terra Luz](/cozy-cactus/) in Indio are bes
 
 **Ralphs** on East Sunny Dunes is a standard Kroger-brand grocery. Reliable, nothing surprising. Good if you're near the south end of Palm Springs.
 
-<img src="/blog/images/palm-springs-pool.webp" alt="Palm Springs pool and patio area on a clear sunny afternoon" loading="lazy" width="1400" height="933">
+<img src="/blog/images/palm-springs-pool.webp" alt="Palm Springs pool and patio area on a clear sunny afternoon with palm trees and blue sky" loading="lazy" width="1400" height="979">
 
 <img src="/blog/images/yes-please-palm-springs.webp" alt="Local Palm Springs market and food shop, a good stop for specialty grocery items in the Coachella Valley" loading="lazy" width="1400" height="933">
 

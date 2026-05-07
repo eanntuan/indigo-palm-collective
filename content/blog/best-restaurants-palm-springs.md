@@ -111,7 +111,7 @@ layout: blog-post.njk
 
 <p>Weekdays are easier. If you go on a Saturday, arrive by 9am. Walk-ins only. Check their website for current hours. Find them at <a href="https://www.instagram.com/cheekys.f10/" target="_blank" rel="noopener">@cheekys.f10</a>.</p>
 
-<img src="/blog/images/cheekys-palm-springs.webp" alt="People waiting in line outside Cheeky's brunch restaurant in Palm Springs on a sunny day" width="1200" height="900" loading="lazy">
+<img src="/blog/images/cheekys-palm-springs.webp" alt="Outdoor restaurant patio in Palm Springs with tables and chairs in warm desert light" width="1400" height="920" loading="lazy">
 <p class="image-caption">The line at Cheeky's. Weekday mornings are quieter. Saturday at 9am means this.</p>
 
 <h3>Lulu California Bistro</h3>
@@ -132,7 +132,7 @@ layout: blog-post.njk
 
 <p>The Heyday is a smash burger spot on North Palm Canyon Drive. One of the better burgers in the valley: thin, crispy-edged patties, good bun, nothing overthought. Open daily from noon. Find them at <a href="https://www.instagram.com/the_heyday/" target="_blank" rel="noopener">@the_heyday</a>.</p>
 
-<img src="/blog/images/heyday-palm-springs.webp" alt="Double smash burger with melted cheese at The Heyday in Palm Springs with San Jacinto Mountains in the background" width="1200" height="1600" loading="lazy">
+<img src="/blog/images/heyday-palm-springs.webp" alt="Casual outdoor dining patio at a Palm Springs restaurant with desert landscaping and warm afternoon light" width="1400" height="934" loading="lazy">
 <p class="image-caption">The Heyday on North Palm Canyon. The smash burger is the move.</p>
 
 <img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs' Uptown Design District under a clear blue sky" width="1400" height="933" loading="lazy">

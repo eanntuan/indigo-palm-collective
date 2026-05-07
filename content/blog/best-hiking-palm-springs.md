@@ -2,9 +2,9 @@
 title: "Best Hiking Near Palm Springs: All Levels"
 date: 2026-03-18
 metaDescription: "Best hiking near Palm Springs: Palm Canyon, Murray Canyon, Tahquitz Canyon, and Bump and Grind. Trail picks for every level, plus when to go."
-ogImage: /blog/images/coachella-valley-preserve.webp
-heroImage: /blog/images/coachella-valley-preserve.webp
-heroAlt: "Desert landscape with native fan palms at an oasis in the Coachella Valley, palm fronds catching morning light"
+ogImage: /blog/images/coachella-valley-desert-hiking.webp
+heroImage: /blog/images/coachella-valley-desert-hiking.webp
+heroAlt: "Desert hiking trail through rocky canyon near Palm Springs California with blue sky overhead"
 keywords:
   - hiking near Palm Springs
   - Palm Springs hiking trails
@@ -37,7 +37,7 @@ relatedPosts:
   "@type": "BlogPosting",
   "headline": "Best Hiking Near Palm Springs: Trails for Every Level",
   "description": "The best hiking near Palm Springs: Palm Canyon, Murray Canyon, Tahquitz Canyon, Bump and Grind, and more. Trail picks for every level, plus when to go and what to bring.",
-  "image": "https://indigopalm.co/blog/images/coachella-valley-preserve.webp",
+  "image": "https://indigopalm.co/blog/images/coachella-valley-desert-hiking.webp",
   "datePublished": "2026-03-18",
   "dateModified": "2026-04-09",
   "author": {
@@ -120,7 +120,7 @@ relatedPosts:
 
 <p>The Agua Caliente Cultural Museum in downtown Palm Springs has information on the history and ecology of the canyons if you want context before going. Visit <a href="https://www.aguacalientebands.com/tourism/indian-canyons" target="_blank" rel="noopener">Indian Canyons</a> for current hours, fees, and trail conditions. Seasonal closures happen, particularly in summer and after heavy rains.</p>
 
-<img src="/blog/images/saguaro-coffee-indio.webp" alt="Saguaro Coffee exterior in Indio California, a good starting point before a morning desert hike" width="1400" height="933" loading="lazy">
+<img src="/blog/images/saguaro-coffee-indio.webp" alt="Coffee shop patio in the Coachella Valley, a good starting point before a morning desert hike" width="1400" height="920" loading="lazy">
 <p class="image-caption">Start the morning right before heading into the canyons. Coffee first, then mountains.</p>
 
 <h2>When to Go</h2>

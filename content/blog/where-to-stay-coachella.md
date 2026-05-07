@@ -71,7 +71,7 @@ layout: blog-post.njk
 
 <p><strong>Good for:</strong> people who want Palm Springs as part of the vacation, not just a base. If you're staying an extra day before or after, a PS hotel has more to do in its immediate radius. For pure festival logistics, it's an expensive and tiring option.</p>
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Pool at a Palm Springs hotel with desert mountain backdrop and lounge chairs" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Pool at a Palm Springs hotel with palm trees and desert mountain backdrop, lounge chairs in the afternoon sun" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Palm Springs hotels are genuinely nice. The question is whether you're paying to stay there or paying to commute from there.</p>
 
 <h2>Option 3: Hotels in Indio and La Quinta</h2>

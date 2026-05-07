@@ -172,7 +172,7 @@ layout: blog-post.njk
     <p><strong>Best season:</strong> October–April (summers are brutal; go early if you must)</p>
 </div>
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Wild California fan palms in the Coachella Valley Preserve oasis at golden hour with red mountains behind" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert canyon trail in the Coachella Valley near Indio, rocky desert landscape under blue skies" loading="lazy" decoding="async" width="1400" height="788">
 <p class="image-caption">Wild fan palms fed by the San Andreas Fault. One of Southern California's most otherworldly hikes.</p>
 
 <div class="gem-heading">

@@ -89,7 +89,7 @@ This is the better option if you have kids under 8, older guests who want to see
 
 Andreas also has a picnic area with tables at the trailhead. It's a reasonable spot for lunch if you pack something from town.
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Desert landscape and native vegetation in the Coachella Valley near Indian Canyons Palm Springs" loading="lazy" width="1400" height="933">
+<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert canyon trail near Indian Canyons Palm Springs, rocky canyon walls and native desert vegetation" loading="lazy" width="1400" height="788">
 
 ## Murray Canyon
 

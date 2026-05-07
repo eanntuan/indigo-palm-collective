@@ -119,7 +119,7 @@ layout: blog-post.njk
     <p><strong>Address:</strong> 29200 Thousand Palms Canyon Rd, Thousand Palms, CA</p>
     <p><strong>Best season:</strong> October–April</p>
 </div>
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Coachella Valley Preserve desert oasis with wild palm groves near Indio CA, hiking trail" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert hiking trail in the Coachella Valley near Indio CA with rock formations and clear blue sky" width="1400" height="788" loading="lazy">
 <p class="image-caption">Wild palms fed by the San Andreas Fault. Free, uncrowded, genuinely strange in the best way.</p>
 
 <div class="item-heading"><span class="item-number">7</span>Rosemary HiFi: A Listening Lounge That Opened in a City Nobody Expected</div>

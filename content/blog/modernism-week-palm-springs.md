@@ -92,7 +92,7 @@ Part of what makes Modernism Week different from a typical festival is that you 
 
 [The Sundune](/the-sundune/) is a mid-century condominium in Palm Springs, built in the same era as many of the homes on the Modernism Week tour circuit. Walking out to the pool and then to a double-decker bus tour of the city's architectural history hits differently than commuting in from a hotel. The location puts you close to the core festival area and everything on Palm Canyon.
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs pool with desert landscaping and mountain views in background" loading="lazy" width="1400" height="933">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs hotel pool with palm trees and desert landscaping, mountain views in the background" loading="lazy" width="1400" height="1050">
 
 ## The Fall Edition
 

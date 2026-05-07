@@ -139,7 +139,7 @@ layout: blog-post.njk
 
 <p>Go on a weekday morning if you want it quiet. Worth knowing about if you're staying at <a href="/cozy-cactus/">Cozy Cactus</a> or <a href="/terra-luz/">Terra Luz</a>.</p>
 
-<img src="/blog/images/saguaro-coffee-indio.webp" alt="Saguaro Coffee exterior in Indio CA with covered patio and palm trees" width="348" height="348" loading="lazy">
+<img src="/blog/images/saguaro-coffee-indio.webp" alt="Coffee shop patio in Indio California with outdoor seating in the Coachella Valley" width="1400" height="920" loading="lazy">
 <p class="image-caption">Saguaro Coffee, Indio, CA</p>
 
 <h2>A Note on Timing</h2>

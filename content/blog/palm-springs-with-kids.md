@@ -149,7 +149,7 @@ layout: blog-post.njk
 
 <p>If you're deciding between the two properties for a family trip, the short version: <a href="/the-sundune/">The Sundune</a> for a family of 3-4 who want walkability and Palm Springs proper. <a href="/cozy-cactus/">The Cozy Cactus</a> for a larger group or families who want more space, a private hot tub, and Indio/festival proximity.</p>
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Outdoor pool area in Palm Springs with desert palm trees and blue sky, typical of the resort and rental scene in the Coachella Valley" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Outdoor pool area in Palm Springs with desert palm trees and blue sky, typical of the resort and rental scene in the Coachella Valley" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The community pool at The Sundune is a one-minute walk. After a morning at the Living Desert, that math works out perfectly.</p>
 
 <h2>A Realistic Day-by-Day</h2>

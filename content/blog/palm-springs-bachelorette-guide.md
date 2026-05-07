@@ -87,7 +87,7 @@ layout: blog-post.njk
 
 <h2>Where to Stay</h2>
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs vacation rental pool on a sunny afternoon, perfect for a bachelorette party weekend" width="768" height="430" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs pool with palm trees and resort landscaping on a sunny afternoon, perfect for a bachelorette party weekend" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Private pool access is the baseline for a bachelorette trip in the desert. Shared or community pools have hours and crowds.</p>
 
 <p>Private pool is non-negotiable for this kind of trip. Shared hotel or community pools have hours, no alcohol allowed, and a crowd of strangers. You want to be able to get in at noon with a pitcher of something and no one telling you to quiet down.</p>
@@ -121,7 +121,7 @@ layout: blog-post.njk
 
 <h2>Day 2: Pool Morning, Activity Afternoon</h2>
 
-<img src="/blog/images/cheekys-palm-springs.webp" alt="Cheeky's restaurant in Palm Springs California, popular brunch spot with outdoor patio" width="600" height="449" loading="lazy">
+<img src="/blog/images/cheekys-palm-springs.webp" alt="Outdoor restaurant patio in Palm Springs California with casual seating and warm desert light" width="1400" height="920" loading="lazy">
 <p class="image-caption">Cheeky's for brunch is a Palm Springs institution. Arrive early or expect a wait, reservation or not.</p>
 
 <p>Saturday is the core day. Morning should be slow: coffee, brunch, pool time. Cheeky's on Cabrillo Ave is the Palm Springs brunch stop. They rotate their menu weekly and do genuinely interesting egg dishes. Go before 10am or after 12:30pm to avoid the worst of the wait.</p>

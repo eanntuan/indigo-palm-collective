@@ -77,7 +77,7 @@ The art and jewelry booths vary week to week. Some are genuinely interesting loc
 
 The vintage and resale section is inconsistent but occasionally turns up something worth stopping for. Midcentury Palm Springs has a lot of estates, and some of that turns up at markets like this.
 
-<img src="/blog/images/cheekys-palm-springs.webp" alt="Cheeky's restaurant exterior in Palm Springs, open for dinner during Village Fest Thursday nights" loading="lazy" width="1400" height="933">
+<img src="/blog/images/cheekys-palm-springs.webp" alt="Restaurant patio in Palm Springs open for dinner on Village Fest Thursday nights, with outdoor seating lit by evening light" loading="lazy" width="1400" height="920">
 
 ## What to Eat
 

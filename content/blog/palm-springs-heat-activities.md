@@ -135,7 +135,7 @@ layout: blog-post.njk
 
 <p>That rhythm works better than trying to fight the heat. Let the afternoon be what it is. Be cool and comfortable, then get out when the day cools down.</p>
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="A palm-lined pool in Palm Springs with lounge chairs on a bright summer afternoon" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="A palm-lined pool in Palm Springs with lounge chairs on a bright summer afternoon" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Pool time in the morning and evening. Escape room and museums in the middle of the day. That's the strategy.</p>
 
 <h2>A Summer Day That Actually Works</h2>
