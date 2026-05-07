@@ -197,7 +197,8 @@ relatedPosts:
 
 <p>This is part of the <a href="https://www.aguacalientebands.com/tourism/indian-canyons" target="_blank" rel="noopener">Indian Canyons</a> on Agua Caliente Tribal Land. The entry fee goes to the tribe. <a href="https://www.alltrails.com/trail/us/california/palm-canyon-trail--6" target="_blank" rel="noopener">Palm Canyon Trail on AllTrails</a>.</p>
 
-<!-- IMAGE NEEDED: Palm Canyon trail descending into fan palm oasis, native palms lining creek bed, Indian Canyons Palm Springs -->
+<img src="/blog/images/palm-canyon-oasis-trail.webp" alt="Hikers on the Palm Canyon trail surrounded by native California fan palms in the Indian Canyons near Palm Springs" width="1400" height="931" loading="lazy">
+<p class="image-caption">Inside Palm Canyon: thousands of native fan palms line the creek bed, the trunks charcoal grey and skirt-draped. The scale only becomes clear once you are inside.</p>
 
 
 <h2>3. Murray Canyon and the Seven Sisters Waterfall (Moderate)</h2>
@@ -220,7 +221,8 @@ relatedPosts:
 
 <p>The destination is Tahquitz Falls: a 60-foot waterfall that drops off a smooth granite face into a pool. In a wet winter, the pool runs clear and the falls are running hard by February. In a dry year, it slows to a curtain of mist by April. Either way, the canyon itself justifies the trip. Tours run multiple times daily in season. Check the <a href="https://www.tahquitzcanyon.com/" target="_blank" rel="noopener">Tahquitz Canyon website</a> for current times. Open daily October through early July; weekend-only in summer.</p>
 
-<!-- IMAGE NEEDED: Tahquitz Falls waterfall in desert canyon near Palm Springs, 60-foot waterfall dropping off granite face -->
+<img src="/blog/images/desert-canyon-waterfall.webp" alt="Desert waterfall dropping into a rocky canyon pool, similar to Tahquitz Falls near Palm Springs California" width="1400" height="933" loading="lazy">
+<p class="image-caption">Tahquitz Falls drops 60 feet off a smooth granite face into a pool below. In a wet winter it runs hard from February onward. In a dry year it slows to a curtain of mist by April.</p>
 
 
 <h2>5. North Lykken Trail (Hard)</h2>
@@ -289,7 +291,8 @@ relatedPosts:
 
 <p>For everything else you might need for a desert day, the full packing list is in the <a href="/blog/desert-vacation-prep/">desert vacation prep guide</a>. It covers scheduling your day around the heat, what to eat before, and what to keep in the car for the return.</p>
 
-<!-- IMAGE NEEDED: hiker on ridge above Palm Springs looking down at Coachella Valley, or Lykken Trail view, or Bump and Grind summit panorama -->
+<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Hiker on a desert ridge trail looking out over the Coachella Valley near Palm Springs California" width="1400" height="1050" loading="lazy">
+<p class="image-caption">Start before 7am in spring and you get this: cool air, long shadows, and the whole valley laid out below you before the heat sets in.</p>
 
 
 <h2>Where to Stay for Easy Trail Access</h2>

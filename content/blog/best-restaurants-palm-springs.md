@@ -158,7 +158,8 @@ layout: blog-post.njk
 
 <p><strong>800 N Palm Canyon Dr, Palm Springs, CA 92262.</strong> (760) 459-3451. Mon-Thu 5-10pm, Fri 5-11pm, Sat 5:30-11pm, Sun 10am-2pm and 5-10pm. Reservations recommended on weekends. Find them at <a href="https://www.instagram.com/workshopkitchenbar/" target="_blank" rel="noopener">@workshopkitchenbar</a>.</p>
 
-<!-- IMAGE NEEDED: Workshop Kitchen + Bar interior showing the high ceilings, exposed concrete, and industrial-chic design of the 1926 El Paseo building -->
+<img src="/blog/images/workshop-kitchen-bar-palm-springs.webp" alt="Workshop Kitchen and Bar interior in Palm Springs showing high concrete ceilings, long communal table, and dramatic bar at the end of the room" width="2500" height="1667" loading="lazy">
+<p class="image-caption">The dining room at Workshop Kitchen and Bar. 1926 building, exposed concrete, booths carved from the walls. The space won a James Beard Foundation design award and it shows.</p>
 
 <h3>The Heyday</h3>
 

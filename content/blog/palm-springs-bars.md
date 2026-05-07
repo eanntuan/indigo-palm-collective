@@ -127,6 +127,9 @@ layout: blog-post.njk
 
 <p>Hours: Mon-Thu 3-11pm, Fri-Sat 3pm-1am, Sun 3-11pm. Happy hour runs the first and last hour of the day. This is a slower-paced spot, not a dance bar. Good for a couple drinks and a real conversation.</p>
 
+<img src="/blog/images/bootlegger-tiki-palm-springs.webp" alt="Bootlegger Tiki bar interior in Palm Springs with red-lit rum shelves and tropical tiki decor" width="1200" height="630" loading="lazy">
+<p class="image-caption">The bar at Bootlegger Tiki. Classic rum selection, tropical decor, intimate room. The 1944 Mai Tai is the drink everyone comes back for.</p>
+
 <h3>Toucans Tiki Lounge</h3>
 <p><strong>2100 N Palm Canyon Dr, Palm Springs | 760-416-7584 | <a href="https://toucanstikilounge.com/" target="_blank" rel="noopener">toucanstikilounge.com</a></strong></p>
 
