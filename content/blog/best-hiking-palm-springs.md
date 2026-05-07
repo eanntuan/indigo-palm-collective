@@ -197,8 +197,8 @@ relatedPosts:
 
 <p>This is part of the <a href="https://www.aguacalientebands.com/tourism/indian-canyons" target="_blank" rel="noopener">Indian Canyons</a> on Agua Caliente Tribal Land. The entry fee goes to the tribe. <a href="https://www.alltrails.com/trail/us/california/palm-canyon-trail--6" target="_blank" rel="noopener">Palm Canyon Trail on AllTrails</a>.</p>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Wide aerial view of the desert valley floor below Palm Springs with mountain ridgelines and blue sky" width="1400" height="933" loading="lazy">
-<p class="image-caption">The view looking down into the Coachella Valley from elevation. You earn this by going up.</p>
+<!-- IMAGE NEEDED: Palm Canyon trail descending into fan palm oasis, native palms lining creek bed, Indian Canyons Palm Springs -->
+
 
 <h2>3. Murray Canyon and the Seven Sisters Waterfall (Moderate)</h2>
 
@@ -220,8 +220,8 @@ relatedPosts:
 
 <p>The destination is Tahquitz Falls: a 60-foot waterfall that drops off a smooth granite face into a pool. In a wet winter, the pool runs clear and the falls are running hard by February. In a dry year, it slows to a curtain of mist by April. Either way, the canyon itself justifies the trip. Tours run multiple times daily in season. Check the <a href="https://www.tahquitzcanyon.com/" target="_blank" rel="noopener">Tahquitz Canyon website</a> for current times. Open daily October through early July; weekend-only in summer.</p>
 
-<img src="/blog/images/ps-street-mountains.webp" alt="Palm Springs residential street looking toward the dramatic rise of the San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
-<p class="image-caption">Those mountains are visible from every street in Palm Springs. The trails are up there.</p>
+<!-- IMAGE NEEDED: Tahquitz Falls waterfall in desert canyon near Palm Springs, 60-foot waterfall dropping off granite face -->
+
 
 <h2>5. North Lykken Trail (Hard)</h2>
 
@@ -289,8 +289,8 @@ relatedPosts:
 
 <p>For everything else you might need for a desert day, the full packing list is in the <a href="/blog/desert-vacation-prep/">desert vacation prep guide</a>. It covers scheduling your day around the heat, what to eat before, and what to keep in the car for the return.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs with the San Jacinto Mountains rising dramatically in the background" width="1400" height="933" loading="lazy">
-<p class="image-caption">After the hike, Palm Springs rewards the return. Shower, coffee, then a patio table with a mountain view.</p>
+<!-- IMAGE NEEDED: hiker on ridge above Palm Springs looking down at Coachella Valley, or Lykken Trail view, or Bump and Grind summit panorama -->
+
 
 <h2>Where to Stay for Easy Trail Access</h2>
 
