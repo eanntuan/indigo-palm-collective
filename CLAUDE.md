@@ -52,6 +52,9 @@ Never use em dashes (—) in any writing. Replace with a period, comma, colon, o
 - **Primary keyword**: In H1, first paragraph, at least one H2, and meta description.
 - **Word count**: 800-1500 words for most posts. Local guides can go longer.
 
+### Blog Post Dating Rule
+Every new post gets a date exactly 3 days after the most recently published post. Check the highest `date:` value across all `.md` files in `content/blog/`, add 3 days, use that as the new post's date.
+
 ### Blog Post Pipeline
 1. Confirm topic/angle and target keyword
 2. Write copy (no em dashes, short paragraphs, specific details)

@@ -69,6 +69,17 @@ const PROPERTY_INFO = {
   },
 };
 
+function getPropertyByName(name) {
+  return Object.values(PROPERTY_INFO).find(p =>
+    p.name.toLowerCase() === name.toLowerCase()
+  ) || null;
+}
+
+function extractStreetName(address) {
+  const m = address.match(/\d+\s+(?:[NSEW]\s+)?(\w+)\s+(?:Dr|St|Ave|Blvd|Rd|Way|Ln|Ct|Pl)\b/i);
+  return m ? m[1] : null;
+}
+
 // Hostaway listing IDs — only properties managed on Hostaway
 // ps-retreat is on Hospitable; the-well is Airbnb-only
 const HOSTAWAY_LISTING_IDS = {
@@ -233,9 +244,140 @@ async function sendDueWelcomeEmails(env) {
   }
 }
 
+// ── Pinterest Campaign Monitoring ─────────────────────────────────────────────
+
+const PINTEREST_AD_ACCOUNT_ID = '549770218152';
+
+async function fetchPinterestAnalytics(token, startDate, endDate) {
+  // Get all campaigns first
+  const campaignsRes = await fetch(
+    `https://api.pinterest.com/v5/ad_accounts/${PINTEREST_AD_ACCOUNT_ID}/campaigns?page_size=50`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  if (!campaignsRes.ok) return null;
+  const campaignsData = await campaignsRes.json();
+  const campaigns = campaignsData.items || [];
+  if (!campaigns.length) return { campaigns: [], analytics: [] };
+
+  const campaignIds = campaigns.map(c => c.id).join(',');
+  const params = new URLSearchParams({
+    start_date: startDate,
+    end_date: endDate,
+    campaign_ids: campaignIds,
+    columns: 'SPEND_IN_DOLLAR,IMPRESSION_1,OUTBOUND_CLICK_1,TOTAL_CLICKTHROUGH,CPM_IN_DOLLAR,CTR_2,TOTAL_ENGAGEMENT',
+    granularity: 'TOTAL',
+  });
+
+  const analyticsRes = await fetch(
+    `https://api.pinterest.com/v5/ad_accounts/${PINTEREST_AD_ACCOUNT_ID}/campaigns/analytics?${params}`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  if (!analyticsRes.ok) return null;
+  const analytics = await analyticsRes.json();
+
+  return { campaigns, analytics: analytics || [] };
+}
+
+async function sendPinterestDailyReport(env) {
+  if (!env.PINTEREST_ACCESS_TOKEN || !env.RESEND_API_KEY) return;
+
+  const token = env.PINTEREST_ACCESS_TOKEN;
+
+  // Yesterday (single day)
+  const yesterday = new Date();
+  yesterday.setUTCDate(yesterday.getUTCDate() - 1);
+  const yday = yesterday.toISOString().slice(0, 10);
+
+  // Last 7 days for context
+  const weekAgo = new Date();
+  weekAgo.setUTCDate(weekAgo.getUTCDate() - 7);
+  const weekStart = weekAgo.toISOString().slice(0, 10);
+
+  const [daily, weekly] = await Promise.all([
+    fetchPinterestAnalytics(token, yday, yday),
+    fetchPinterestAnalytics(token, weekStart, yday),
+  ]);
+
+  // If token isn't approved yet, skip silently
+  if (!daily || !weekly) return;
+
+  const fmt = (n, dec = 0) => n == null ? '—' : Number(n).toFixed(dec);
+  const fmtMoney = n => n == null ? '—' : `$${Number(n).toFixed(2)}`;
+  const fmtPct = n => n == null ? '—' : `${(Number(n) * 100).toFixed(2)}%`;
+
+  // Build campaign rows
+  const campaignMap = Object.fromEntries((daily.campaigns || []).map(c => [c.id, c.name]));
+
+  const dailyRows = (daily.analytics || []).map(row => {
+    const m = row.metrics || {};
+    return `
+      <tr>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;">${campaignMap[row.campaign_id] || row.campaign_id}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmtMoney(m.SPEND_IN_DOLLAR)}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmt(m.IMPRESSION_1)}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmt(m.OUTBOUND_CLICK_1)}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmtMoney(m.CPM_IN_DOLLAR)}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmtPct(m.CTR_2)}</td>
+      </tr>`;
+  }).join('');
+
+  const weeklyRows = (weekly.analytics || []).map(row => {
+    const m = row.metrics || {};
+    return `
+      <tr>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;">${campaignMap[row.campaign_id] || row.campaign_id}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmtMoney(m.SPEND_IN_DOLLAR)}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmt(m.IMPRESSION_1)}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmt(m.OUTBOUND_CLICK_1)}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmtMoney(m.CPM_IN_DOLLAR)}</td>
+        <td style="padding:8px 12px;font-size:13px;color:#333;border-bottom:1px solid #eee;text-align:right;">${fmtPct(m.CTR_2)}</td>
+      </tr>`;
+  }).join('');
+
+  const tableHeader = `
+    <tr style="background:#F5F3EE;">
+      <th style="padding:8px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:#888;text-align:left;border-bottom:2px solid #ddd;">Campaign</th>
+      <th style="padding:8px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:#888;text-align:right;border-bottom:2px solid #ddd;">Spend</th>
+      <th style="padding:8px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:#888;text-align:right;border-bottom:2px solid #ddd;">Impressions</th>
+      <th style="padding:8px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:#888;text-align:right;border-bottom:2px solid #ddd;">Clicks</th>
+      <th style="padding:8px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:#888;text-align:right;border-bottom:2px solid #ddd;">CPM</th>
+      <th style="padding:8px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:#888;text-align:right;border-bottom:2px solid #ddd;">CTR</th>
+    </tr>`;
+
+  await sendEmail(env.RESEND_API_KEY, {
+    from: 'Indigo Palm Bot <bookings@indigopalm.co>',
+    to:   'indigopalmco@gmail.com',
+    subject: `Pinterest daily: ${yday}`,
+    html: emailWrapper(`
+      <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Pinterest Ads</p>
+      <h2 style="margin:0 0 24px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">Daily report: ${yday}</h2>
+
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Yesterday</p>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:28px;">
+        ${tableHeader}${dailyRows || '<tr><td colspan="6" style="padding:12px;font-size:13px;color:#888;">No campaign activity yesterday.</td></tr>'}
+      </table>
+
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Last 7 days (${weekStart} to ${yday})</p>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:28px;">
+        ${tableHeader}${weeklyRows || '<tr><td colspan="6" style="padding:12px;font-size:13px;color:#888;">No campaign activity this week.</td></tr>'}
+      </table>
+
+      <p style="font-size:13px;color:#888;margin:0;">
+        <a href="https://ads.pinterest.com/advertiser/${PINTEREST_AD_ACCOUNT_ID}/" style="color:#607c67;">Open Pinterest Ads Manager</a>
+      </p>
+    `),
+  });
+}
+
 export default {
   async scheduled(event, env) {
     await sendDueWelcomeEmails(env);
+    await processPendingAirbnbReplies(env);
+    await sendPinterestDailyReport(env);
+  },
+
+  async email(message, env, ctx) {
+    ctx.waitUntil(handleAirbnbEmail(message, env));
   },
 
   async fetch(request, env) {
@@ -354,6 +496,30 @@ export default {
 
     if (path === '/api/webhook/square' && request.method === 'POST') {
       return handleSquareWebhook(request, env);
+    }
+
+    // PWA: inbox dashboard, manifest, service worker, push endpoints
+    if (path === '/inbox') return handleInboxPage(env);
+    if (path === '/manifest.json') return handleManifest();
+    if (path === '/sw.js') return handleServiceWorker();
+    if (path === '/api/vapid-public-key') return handleVapidPublicKey(env);
+    if (path === '/api/push-subscribe' && request.method === 'POST') return handlePushSubscribe(request, env);
+    if (path === '/api/test-push') return handleTestPush(env);
+    if (path === '/api/test-guest-message') return handleTestGuestMessage(env);
+
+    // Approval page: GET /api/approve-reply?id=XXX
+    if (path === '/api/approve-reply' && request.method === 'GET') {
+      return handleApprovalPage(request, env);
+    }
+
+    // Approval submit: POST /api/approve-reply
+    if (path === '/api/approve-reply' && request.method === 'POST') {
+      return handleApprovalSubmit(request, env);
+    }
+
+    // Discard reply: GET /api/discard-reply?id=XXX
+    if (path === '/api/discard-reply') {
+      return handleDiscardReply(request, env);
     }
 
     if (path === '/api/webhook/hostaway' && request.method === 'POST') {
@@ -1237,18 +1403,18 @@ async function getHostawayToken(env) {
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({
       grant_type: 'client_credentials',
-      client_id: env.HOSTAWAY_ACCOUNT_ID,
-      client_secret: env.HOSTAWAY_SECRET_KEY,
+      client_id: env.HOSTAWAY_CLIENT_ID,
+      client_secret: env.HOSTAWAY_CLIENT_SECRET,
       scope: 'general',
     }),
   });
   if (!res.ok) throw new Error(`Hostaway auth failed: ${res.status}`);
   const data = await res.json();
   const token = data.access_token;
-  // Cache for 23 months (tokens valid 24 months)
+  const expiresIn = data.expires_in ? data.expires_in * 1000 - 60000 : 3600000;
   await env.BOOKINGS.put('__hostaway_token__', JSON.stringify({
     token,
-    expires: Date.now() + (23 * 30 * 24 * 60 * 60 * 1000),
+    expires: Date.now() + expiresIn,
   }));
   return token;
 }
@@ -1736,32 +1902,32 @@ const PROPERTY_CONTEXT = {
   cozy_cactus: `
 PROPERTY: The Cozy Cactus
 ADDRESS: 82381 Cochran Dr, Indio, CA 92201
-COMMUNITY: Indian Palms Country Club
+COMMUNITY: Indian Palms Country Club (gated)
 
 CHECK-IN / CHECK-OUT
 - Check-in: 4pm. Check-out: 10am.
 - Front door code: 4898
 - Garage code: 1340
-- Self check-in, no need to meet anyone
+- Self check-in, no need to meet anyone.
 
-GETTING THERE / GATE ACCESS
+GATE ACCESS
 - GPS "Indian Palms Country Club" takes you to the Monroe St entrance.
-- License plate readers at Ave 48, Ave 50, and Jackson St gates — pull up close, wait 10 seconds.
-- If the plate reader misses you, head to Monroe St and give your name + address: 82381 Cochran Dr, Indio, CA 92201.
+- License plate readers at Ave 48, Ave 50, and Jackson St gates. Pull up close, wait 10 seconds.
+- If the plate reader misses you, head to the Monroe St guard booth and give your name + address: 82381 Cochran Dr.
 
 WIFI
 - Network: "Indigo Palm Collective"
-- A browser window pops up when you connect asking for your email. Enter it and you're in.
-- (Indigo Palm is our little collection of four desert homes across the Coachella Valley.)
+- A browser window pops up asking for your email. Enter it and you're in.
 
 POOL + HOT TUB
-- Community pool is shared with the neighborhood (access via the community key in the welcome guide).
-- The hot tub is private and in the backyard. It's serviced by Luis on Tuesday and Friday mornings — he comes through the side back gate, no need to do anything.
+- Community pool: shared with the neighborhood. Key in the welcome guide.
+- Hot tub: private, in the backyard. Luis services it Tuesday and Friday mornings via the side back gate.
+- No pool heat needed — the hot tub is separate and private.
 
 APPLIANCES + LOCATIONS
 - Dishwasher: under the sink, left side. Pods in cabinet above.
 - Washer/dryer: hallway closet near the guest bathroom.
-- Coffee maker: Keurig on the counter left of the sink. K-cups in the cabinet above.
+- Coffee: Keurig on the counter left of the sink. K-cups in the cabinet above.
 - Pack-n-play: family amenities closet, already assembled.
 - High chair: same closet, labeled "Stokke."
 - Extra towels + linens: hallway linen closet.
@@ -1769,68 +1935,226 @@ APPLIANCES + LOCATIONS
 
 HOUSE RULES
 - Outdoor curfew: 10pm (city regulation). Please turn off patio lights by then.
-- Smoke-free property.
-- Pet-free property. No dogs or cats.
-- Max occupancy: 8 guests.
+- Smoke-free. Pet-free. Max occupancy: 8 guests.
+
+EARLY CHECK-IN / LATE CHECKOUT
+- Early check-in: officially 4pm, but message us day-of and we'll let you know if it's ready earlier. Cleaning crew starts around 10am and usually wraps by 1-2pm. No guarantee but we try.
+- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works for $50, depends on the next booking.
+
+ADDING GUESTS
+- Happy to add anyone within the 8-guest max. Just send first and last name and we'll update the reservation.
+
+DELIVERY
+- Uber Eats and DoorDash both deliver here. Address: 82381 Cochran Dr, Indio, CA 92201.
+- Grocery delivery (Instacart, etc.) also works.
+
+NEARBY GROCERY
+- Stater Bros: Monroe St, 5 minutes. Open late.
+- Target: Monroe St, 8 minutes.
+- Ralphs: Jefferson St, 8 minutes.
+- Trader Joe's: Washington St, 15 minutes.
+
+WHERE TO EAT (Indio / Coachella Valley)
+- Shields Date Garden: Highway 111, 10 min. Breakfast, date shakes, a total Coachella Valley classic. Worth it.
+- Las Casuelas Nuevas: Rancho Mirage, 20 min. Classic Cal-Mex, good for a big group, been around forever.
+- Pinocchio in the Desert: La Quinta, 15 min. Solid Italian, nice patio.
+- Old Town La Quinta: 15 min. Good walkable strip with a few restaurants and bars.
+- Hog's Breath Saloon: Coachella, 10 min. Casual, outdoor, reliable for burgers and beers.
+- The Date Shed: Indio, 10 min. Local spot, good breakfast/brunch.
+- For coffee: Koffi on Hwy 111, 10 min.
+
+THINGS TO DO
+- Empire Polo Club (Coachella grounds): 5 min. Worth driving by even off-festival.
+- Outlet malls (Desert Premium Outlets): 10 min. Two malls next to each other.
+- Palm Springs: 25 min. Coffee, record shops, bookstores, a proper morning.
+- Joshua Tree National Park: 45 min. Go early, bring snacks.
+- Salton Sea: 30 min. Strange and beautiful if you're into that.
+- Coachella Valley Preserve: 25 min. Free, great morning hike.
 
 WELCOME GUIDE
 Full details at: indigopalm.co/go/welcome-cozy-cactus
 
-STORY BEAT (use if it fits naturally)
-Built for families who travel with young kids and need a house that's already thought of everything. Parents arrive and exhale. The labeled drawers, Stokke high chair, sound machines in every bedroom — these aren't amenities, they're the point.
+VOICE / STORY BEAT
+Built for families who travel with young kids. The labeled drawers, Stokke chair, and sound machines in every room aren't amenities — they're the whole point. Parents arrive and exhale.
 `.trim(),
 
   terra_luz: `
 PROPERTY: Terra Luz
 ADDRESS: 49768 Pacino St, Indio, CA 92201
-COMMUNITY: Indian Palms Country Club
+COMMUNITY: Indian Palms Country Club (gated)
 
 CHECK-IN / CHECK-OUT
 - Check-in: 4pm. Check-out: 10am.
 - Front door code: 5544 (enter code, wait a moment, then open)
 - To lock: close the door fully and press and hold the lock icon.
 - Garage code: 1340
-- Self check-in, no need to meet anyone
+- Self check-in, no need to meet anyone.
 
-GETTING THERE / GATE ACCESS
+GATE ACCESS
 - GPS "Indian Palms Country Club" takes you to the Monroe St entrance.
-- License plate readers at Ave 48, Ave 50, and Jackson St gates — pull up close, wait 5-10 seconds.
-- If the reader misses you, head to Monroe St and give your name + address: 49768 Pacino St, Indio, CA 92201.
+- License plate readers at Ave 48, Ave 50, and Jackson St gates. Pull up close, wait 5-10 seconds.
+- If the reader misses you, head to Monroe St and give your name + address: 49768 Pacino St.
 
 WIFI
 - Network: "Indigo Palm Collective"
-- A browser window pops up when you connect asking for your email. Enter it and you're in.
+- Browser window pops up asking for your email. Enter it and you're in.
 
 POOL + HOT TUB
-- The pool is saltwater.
-- Pool heat is optional: $75/day (2-day minimum) or $400/week. Recommended Nov through May when desert nights get cold.
-- If you'd like the pool heated, let us know before arrival and we'll set it up.
-- Hot tub is no extra charge. The Spa button on the wall next to the jacuzzi turns on heat and jets. Plan about an hour to reach 102°F.
-- Pool is serviced Mondays and Thursdays. Gardeners come Wednesday mornings.
+- Saltwater pool, heated on request.
+- Pool heat: $75/day (2-day minimum) or $400/week. Recommended Nov through May. Need at least 24 hours notice before arrival to set it up.
+- Hot tub: no extra charge. Spa button on the wall next to the jacuzzi turns on heat and jets. Plan about an hour to reach 102°F.
+- Pool serviced Mondays and Thursdays. Gardeners Wednesday mornings.
 
 APPLIANCES + LOCATIONS
 - Dishwasher: under the kitchen sink, left side. Pods in cabinet above.
-- Washer/dryer: in the laundry room off the kitchen.
-- Coffee maker: on the kitchen counter. Coffee supplies in the cabinet above.
-- Tortilla press: in the lower cabinet next to the cast iron skillet.
-- Extra towels + linens: in the hallway linen closet.
+- Washer/dryer: laundry room off the kitchen.
+- Coffee: on the kitchen counter. Supplies in the cabinet above.
+- Tortilla press + cast iron skillet: lower cabinet next to the stove.
+- Extra towels + linens: hallway linen closet.
 - Trash bins: outside along the side of the house.
 
 COMMUNITY AMENITIES
-- Up to 4 guests in the reservation can use the community amenities (pool, gym, etc.).
-- Just let us know if you'd like to use them and we'll notify the front desk.
+- Up to 4 guests can use community pool, gym, etc. Just let us know and we'll notify the front desk.
 
 HOUSE RULES
-- Outdoor curfew: 10pm (city regulation). Please turn off patio lights by then.
-- Smoke-free property.
-- Dog-friendly with prior approval only. Always confirm before assuming.
-- Max occupancy: 8 guests.
+- Outdoor curfew: 10pm (city regulation). Turn off patio lights by then.
+- Smoke-free. Dog-friendly with prior approval only. Always confirm before assuming. Max occupancy: 8 guests.
+
+EARLY CHECK-IN / LATE CHECKOUT
+- Early check-in: officially 4pm, but message us day-of and we'll check if it's ready. Cleaning usually wraps by 1-2pm. No guarantee but we try.
+- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works for $50, depends on the next booking.
+
+ADDING GUESTS
+- Happy to add anyone within the 8-guest max. Send first and last name and we'll update the reservation.
+- Dogs: prior approval required. One dog max. Confirm before assuming.
+
+POOL HEAT REQUESTS
+- If they ask about pool heat: $75/day (2-day min) or $400/week. Need 24hr notice before arrival. Let us know and we'll set it up.
+
+DELIVERY
+- Uber Eats and DoorDash both deliver here. Address: 49768 Pacino St, Indio, CA 92201.
+
+NEARBY GROCERY
+- Stater Bros: Monroe St, 5 minutes. Open late.
+- Target: Monroe St, 8 minutes.
+- Ralphs: Jefferson St, 8 minutes.
+
+WHERE TO EAT (Indio / Coachella Valley)
+- Shields Date Garden: Highway 111, 10 min. Breakfast, date shakes, iconic.
+- Las Casuelas Nuevas: Rancho Mirage, 20 min. Classic Cal-Mex, good for groups.
+- Pinocchio in the Desert: La Quinta, 15 min. Italian, good patio.
+- Old Town La Quinta: 15 min. Walkable strip with a few solid spots.
+- Hog's Breath Saloon: Coachella, 10 min. Casual burgers, outdoor.
+- For coffee: Koffi on Hwy 111, 10 min.
+
+THINGS TO DO
+- Palm Springs: 25 min. Full morning: coffee at Koffi, breakfast at Cheeky's, walk the strip.
+- Joshua Tree: 45 min. Go early.
+- Outlet malls: 10 min. Two side by side.
+- Coachella Valley Preserve: 25 min. Free, good hike.
 
 WELCOME GUIDE
 Full details at: indigopalm.co/go/welcome-terra-luz
 
-STORY BEAT (use if it fits naturally)
-Built around the Latin/Cuban warmth of Old Havana. The Kahlo-blue pool, terracotta walls, and Cuban coffee beans aren't decor. They're a philosophy. Dawn Asher designed it. Every material passed a brand filter.
+VOICE / STORY BEAT
+Latin/Cuban warmth of Old Havana. The Kahlo-blue pool, terracotta walls, and Cuban coffee beans aren't decor. They're a philosophy. Every material passed a brand filter. Dawn Asher designed it.
+`.trim(),
+
+  sundune: `
+PROPERTY: The Sundune at Palm Springs (also listed as "PS Retreat")
+ADDRESS: 5301 E Waverly Dr, Unit #184, Palm Springs, CA 92264
+COMMUNITY: Palm Canyon Villas (condo complex, not gated — open access)
+
+CHECK-IN / CHECK-OUT
+- Check-in: 4pm. Check-out: 11am.
+- Self check-in via Schlage blue keypad on the front door. Type code directly — no checkmark needed after.
+- If keypad is dark, press bottom left corner to light it up. Do NOT tap anywhere before entering your code (Schlage registers any touch as a keystroke).
+- Code is unique per reservation, sent before arrival.
+- Unit #184 is upstairs (second floor).
+
+PARKING + DIRECTIONS
+- Parking lot #5. Designated carport spot: #555. Guest spots: G572-578. Street parking on Waverly Dr always available as backup.
+- From parking lot #5: take the left-most path into the community (dumpster marks the start). Follow until you see the sign for unit #184, turn right, go up the stairs. Unit is on the left, black screen door (unlocked), then blue keypad door.
+- Walk from parking: about 3-5 minutes.
+
+WIFI
+- Network: "The PS Retreat"
+- Password: palmsprings
+
+POOL + SPA
+- Three community pools, all shared. Two keys available (on the green cactus key ring holder by the front door, black lanyard).
+- Pools heated Nov through April. Spa heated year-round.
+- No glass allowed in pool area. Do not slam the pool gate — permanent residents live next door.
+- Lost or stolen pool key: $300 replacement fee. Please make sure it's back on the cactus holder before checkout.
+- Pool chairs on the patio and in the laundry room (two lay-flat, four regular).
+
+HOUSE RULES
+- No smoking anywhere on property or common areas.
+- 9pm outdoor city noise curfew. Music off and everyone inside by then.
+- No shoes inside — helps reduce noise to downstairs neighbor.
+- No parties, no glass by pool, max occupancy: 4 guests.
+- Dogs welcome with prior approval. One dog max. Always confirm before assuming.
+- Do not pick fruit from the trees in the common areas — they belong to neighbors.
+
+EARLY CHECK-IN / LATE CHECKOUT
+- Early check-in: officially 4pm, but message day-of and we'll check if the place is ready. Sometimes possible from noon. No guarantee but we try.
+- Late checkout: 11am is firm because cleaners come right after. Message to ask, depends on next booking.
+
+ADDING GUESTS
+- Happy to add within the 4-guest max. Send first and last name.
+
+APPLIANCES + LOCATIONS
+- Coffee: K-cups in cabinet above the coffee maker.
+- Extra blankets + pillows: closets in each bedroom.
+- Trash: right cabinet of the dishwasher. Dumpsters in every parking lot — closest are in lots #4 or #5.
+- AC/heat: Nest device on the hallway wall. Press ring toward wall to switch modes (Heat/Cool/Off). Turn ring up for warmer, down for cooler.
+- Games: inside the ottoman in the living room.
+
+DELIVERY
+- Uber Eats and DoorDash both deliver here. Address: 5301 E Waverly Dr, Unit 184, Palm Springs, CA 92264.
+
+NEARBY GROCERY
+- Ralphs: Sunrise Way, 8 minutes.
+- Stater Bros: Vista Chino, 10 minutes.
+- Trader Joe's: Sunrise Way, 8 minutes.
+- Whole Foods: N Palm Canyon Dr, 12 minutes.
+
+WHERE TO EAT (Palm Springs)
+Breakfast:
+- Cheeky's: 622 N Palm Canyon Dr. Best breakfast in PS, worth the wait. Order the bacon flight.
+- The Farm: 6 miles south, Worth Ave. Outdoor, peaceful, good eggs.
+- Ernest Coffee: N Palm Canyon. Great coffee, good vibes.
+
+Lunch / casual:
+- Lulu California Bistro: S Palm Canyon, outdoor patio, good for groups.
+- Tyler's Burgers: cash only, no frills, Palm Springs institution.
+- Tac/Quila: solid tacos on N Indian Canyon.
+
+Dinner:
+- Birba: N Indian Canyon Dr. Wood-fired pizza and natural wine. Lively, a scene on weekends.
+- Workshop Kitchen + Bar: E Tahquitz Canyon Way. More special occasion, great cocktails, beautiful room.
+- Copley's: N Palm Canyon. Romantic, garden setting, upscale Cal cuisine.
+- Eight4Nine: N Indian Canyon. Good for a group dinner, decent everything.
+- Sandfish: Sushi, N Palm Canyon. Best sushi in PS, small menu, worth it.
+
+Coffee:
+- Koffi: multiple locations, Palm Canyon and N Indian Canyon. The local spot.
+- Ernest Coffee: N Palm Canyon. Good beans, good aesthetic.
+
+THINGS TO DO
+- Downtown Palm Springs: 10 min. Coffee, record shops (Framed Music + Records), independent bookstores, boutiques.
+- Palm Springs Aerial Tramway: 15 min. Takes you up to 8500 ft in the San Jacinto mountains. Stunning. Book in advance on weekends.
+- Coachella Valley Preserve: 20 min. Free, good hike, fan palms.
+- Desert Hot Springs: 20 min. Numerous natural hot spring spa resorts (Miracle Springs, El Morocco Inn).
+- Joshua Tree National Park: 40 min.
+- Moorten Botanical Garden: 5 min downtown. Small, weird, great.
+- The Living Desert Zoo: 25 min in Palm Desert.
+
+WELCOME GUIDE
+Full details at: indigopalm.co/the-sundune
+
+VOICE / STORY BEAT
+Palm Springs the way people imagined it: a private retreat with a pool, a courtyard, and quiet that makes three days feel like a week. Ten minutes to downtown when you want it. Completely calm when you don't.
 `.trim(),
 };
 
@@ -1846,29 +2170,6 @@ const HOSTAWAY_LISTING_MAP = {
   '123633': { key: 'terra_luz',   name: 'Terra Luz' },
 };
 
-let _hostawayToken = null;
-let _hostawayTokenExpiry = 0;
-
-async function getHostawayToken(env) {
-  const now = Date.now();
-  if (_hostawayToken && now < _hostawayTokenExpiry) return _hostawayToken;
-
-  const res = await fetch('https://api.hostaway.com/v1/accessTokens', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({
-      grant_type:    'client_credentials',
-      client_id:     env.HOSTAWAY_CLIENT_ID,
-      client_secret: env.HOSTAWAY_CLIENT_SECRET,
-      scope:         'general',
-    }),
-  });
-  if (!res.ok) throw new Error(`Hostaway auth failed: ${res.status}`);
-  const data = await res.json();
-  _hostawayToken = data.access_token;
-  _hostawayTokenExpiry = now + (data.expires_in ? data.expires_in * 1000 - 30000 : 3600000);
-  return _hostawayToken;
-}
 
 async function getConversationHistory(token, conversationId) {
   const res = await fetch(`https://api.hostaway.com/v1/conversations/${conversationId}/messages`, {
@@ -1910,21 +2211,70 @@ async function callClaude(env, propertyKey, propertyName, guestName, currentMess
     body: JSON.stringify({
       model:      'claude-haiku-4-5-20251001',
       max_tokens: 400,
-      system: `You are Eann, the host of ${propertyName} — part of Indigo Palm Collective, a small collection of four desert homes in the Coachella Valley.
+      system: `You are Eann, the host of ${propertyName}, part of Indigo Palm Collective: a small collection of four desert homes in the Coachella Valley.
 
 PROPERTY CONTEXT:
 ${context}
 
-VOICE RULES:
+YOUR VOICE (critical — read carefully):
 - Warm, direct, specific. Never corporate or scripted.
 - Short paragraphs: 2-3 sentences max. White space is good.
-- No em dashes. Use periods or commas instead.
-- No hollow adjectives (great, amazing, wonderful). Be specific.
-- Parenthetical asides are fine: "(lucky you!)", "(brand new)"
+- NEVER use em dashes (—). This is a hard rule. Use a period, comma, or colon instead. Scan your reply before finishing and remove every em dash.
+- No hollow adjectives (great, amazing, wonderful). Be specific instead.
+- Parenthetical asides are fine and natural: "(lucky you!)", "(brand new)", "(it's the best)"
+- First-person throughout.
 - Sign off as: Eann — no title, no company name.
-- If you don't know the answer, say so honestly and offer to find out. Never make up details.
-- Only include info that is directly relevant to the guest's question.
-- Don't add unnecessary pleasantries. Get to the answer fast.`,
+- If you don't know something, say so honestly and offer to find out. Never make up details.
+- Only include info directly relevant to the question. Don't pad.
+- Don't add unnecessary pleasantries. Get to the answer fast.
+- No "Of course!", "Absolutely!", "Great question!" openers. Just answer.
+
+SAMPLE RESPONSES IN YOUR VOICE:
+
+Early check-in request:
+"Hey [Name]! Check-in is officially 4pm but message me day-of and I'll let you know if the house is ready earlier. Cleaning crew usually wraps by 1-2pm, so it really just depends on timing. No guarantee but we try."
+
+Adding a guest:
+"Of course! Just send me [name]'s first and last name and I'll add them. You're still within the guest limit so no issue at all."
+
+Where to eat:
+"Depends what you're in the mood for — [give 2-3 specific recs with one-line descriptions from the property context, not a generic list]"
+
+Can UberEats deliver:
+"Yes, both Uber Eats and DoorDash deliver here. Just use [address] and they'll find it fine."
+
+Pool heat (Terra Luz):
+"Pool heat is $75/day (2-day min) or $400/week. If you want it warm for arrival, let me know at least 24 hours ahead and I'll get it set up. Hot tub is always free — just hit the Spa button on the wall."
+
+Adding a dog (Terra Luz or Sundune):
+"Yes, dogs are welcome with prior approval. [One dog max / etc.] Can you tell me a bit about them? Size, breed, and we should be good to go."
+
+Late checkout:
+"10am is firm on my end because the cleaning crew comes right after. If you want a little more time in the morning, I can sometimes do 11am for $50 — just depends on the next booking. Want me to check?"
+
+Noise/neighbors question:
+"Outdoor curfew is 10pm per city regulations — music off and everyone inside by then. The neighbors have always been great and we want to keep it that way. Inside the house after 10 is totally fine."
+
+Sundune — early check-in offer:
+"Hi [Name]! Just wanted to offer you early check in today at 12pm since the place will be available!"
+
+Sundune — check-in logistics question:
+"Hello! There is one set of stairs to the second floor. From lot #5, take the path by the dumpster, follow it until you see the #184 sign, turn right and go up. Unit is on the left with a black screen door."
+
+Sundune — proactive mid-stay check-in:
+"Hi [Name]\n\nHope you had a great night. Wanted to reach out to see how everything went and if you had any questions! Otherwise have a great stay 😊\n\nEann"
+
+Sundune — something went wrong (water outage etc.):
+"I totally understand! I will [look into it] and try to get a better idea. Honestly, I would proceed as usual for now — [context on what to expect]. So sorry for the inconvenience!"
+
+Sundune — good news / enthusiasm:
+"Yay so exciting!" or "Safe travels!! ENJOY" — match the guest's energy. Short, genuine, no corporate warmth.
+
+WHERE TO FOCUS:
+- If the guest asks a factual question (door code, WiFi, check-in time), answer it directly from the context.
+- If they ask for a recommendation, give 2-3 specific ones with brief descriptions. Not a wall of text.
+- If they're asking about something you're not sure about, say "let me check on that and get back to you."
+- Match the energy of their message. Short message = short reply. Excited = warm. Practical = practical.`,
       messages: [{ role: 'user', content: userContent }],
     }),
   });
@@ -1947,6 +2297,14 @@ function messageNeedsEscalation(message, reply) {
 }
 
 async function sendEscalationEmail(env, guestName, propertyName, message, draft) {
+  const propInfo = getPropertyByName(propertyName);
+  const streetName = propInfo ? extractStreetName(propInfo.address) : null;
+  const displayName = streetName ? `${streetName} (${propertyName})` : propertyName;
+
+  const photoBlock = propInfo?.photo
+    ? `<img src="${propInfo.photo}" alt="${propertyName}" width="560" style="display:block;width:100%;max-width:560px;height:200px;object-fit:cover;border-radius:8px;margin-bottom:20px;" />`
+    : '';
+
   const draftBlock = draft
     ? `<p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Suggested reply (not sent):</p>
        <blockquote style="margin:0 0 20px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
@@ -1956,10 +2314,11 @@ async function sendEscalationEmail(env, guestName, propertyName, message, draft)
   await sendEmail(env.RESEND_API_KEY, {
     from: 'Indigo Palm Bot <bookings@indigopalm.co>',
     to:   'indigopalmco@gmail.com',
-    subject: `Guest needs a reply: ${guestName} at ${propertyName}`,
+    subject: `Guest needs a reply: ${guestName} at ${displayName}`,
     html: emailWrapper(`
+      ${photoBlock}
       <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Guest message</p>
-      <h2 style="margin:0 0 20px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${guestName} at ${propertyName}</h2>
+      <h2 style="margin:0 0 20px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${guestName} at ${displayName}</h2>
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Their message:</p>
       <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;border-left:3px solid #B67550;font-size:14px;color:#333;line-height:1.6;">${message.replace(/\n/g, '<br>')}</blockquote>
       ${draftBlock}
@@ -2024,4 +2383,871 @@ async function handleHostawayWebhook(request, env) {
   }
 
   return new Response('OK', { status: 200 });
+}
+
+// ── Airbnb Email Auto-Responder ───────────────────────────────────────────────
+// Cloudflare Email Routing delivers Airbnb notification emails directly to this
+// Worker via the `email` event. We parse the guest message, generate a Claude
+// reply in Eann's voice, then send it back to Airbnb via the reply+token address.
+//
+// Setup:
+//   1. Cloudflare Dashboard > Email Routing > enable for indigopalm.co
+//   2. Create rule: airbnb@indigopalm.co → route to Worker "indigo-palm-api"
+//   3. In Airbnb account settings, change notification email to airbnb@indigopalm.co
+//
+// Required secrets (already set): ANTHROPIC_API_KEY, RESEND_API_KEY
+
+const AIRBNB_PROPERTY_PATTERNS = [
+  { patterns: ['cozy cactus', 'cochran', '82381'],              key: 'cozy_cactus', name: 'The Cozy Cactus' },
+  { patterns: ['terra luz', 'casa moto', 'pacino', '49768'],    key: 'terra_luz',   name: 'Terra Luz'       },
+  { patterns: ['sundune', 'waverly', '5301', 'ps retreat', 'palm springs retreat'], key: 'sundune', name: 'The Sundune at Palm Springs' },
+];
+
+async function streamToText(stream) {
+  const reader = stream.getReader();
+  const chunks = [];
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+  }
+  const total = chunks.reduce((n, c) => n + c.length, 0);
+  const merged = new Uint8Array(total);
+  let off = 0;
+  for (const c of chunks) { merged.set(c, off); off += c.length; }
+  return new TextDecoder('utf-8', { fatal: false }).decode(merged);
+}
+
+function decodeQuotedPrintable(str) {
+  return str
+    .replace(/=\r?\n/g, '')
+    .replace(/=([0-9A-Fa-f]{2})/g, (_, h) => String.fromCharCode(parseInt(h, 16)));
+}
+
+function stripHtml(html) {
+  return html
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/p>/gi, '\n')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ').replace(/&#39;/g, "'").replace(/&quot;/g, '"')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+function parseEmailParts(rawEmail) {
+  const sep = rawEmail.indexOf('\r\n\r\n') !== -1 ? '\r\n\r\n' : '\n\n';
+  const sepIdx = rawEmail.indexOf(sep);
+  if (sepIdx === -1) return { plain: rawEmail, html: '' };
+
+  const headerSection = rawEmail.slice(0, sepIdx);
+  const body = rawEmail.slice(sepIdx + sep.length);
+
+  const ctMatch = headerSection.match(/^Content-Type:\s*([^\r\n;]+)/im);
+  const ct = ctMatch ? ctMatch[1].trim().toLowerCase() : 'text/plain';
+
+  if (!ct.includes('multipart')) {
+    const encMatch = headerSection.match(/^Content-Transfer-Encoding:\s*(\S+)/im);
+    const enc = encMatch ? encMatch[1].toLowerCase() : '';
+    let decoded = body;
+    if (enc === 'quoted-printable') decoded = decodeQuotedPrintable(body);
+    else if (enc === 'base64') { try { decoded = atob(body.replace(/\s/g, '')); } catch {} }
+    return ct.includes('html') ? { plain: '', html: decoded } : { plain: decoded, html: '' };
+  }
+
+  const boundaryMatch = headerSection.match(/boundary="?([^"\r\n;]+)"?/i);
+  if (!boundaryMatch) return { plain: body, html: '' };
+
+  const boundary = boundaryMatch[1].trim();
+  const parts = body.split(new RegExp('--' + boundary.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?:--)?'));
+
+  let plain = '', html = '';
+  for (const part of parts) {
+    const ps = part.indexOf('\r\n\r\n') !== -1 ? '\r\n\r\n' : '\n\n';
+    const pi = part.indexOf(ps);
+    if (pi === -1) continue;
+    const ph = part.slice(0, pi);
+    let pb = part.slice(pi + ps.length).replace(/\s+$/, '');
+
+    const penc = (ph.match(/Content-Transfer-Encoding:\s*(\S+)/i) || [])[1]?.toLowerCase() || '';
+    if (penc === 'quoted-printable') pb = decodeQuotedPrintable(pb);
+    else if (penc === 'base64') { try { pb = atob(pb.replace(/\s/g, '')); } catch {} }
+
+    if (/content-type:\s*text\/plain/i.test(ph)) plain = pb;
+    else if (/content-type:\s*text\/html/i.test(ph)) html = pb;
+  }
+  return { plain, html };
+}
+
+function extractGuestName(subject) {
+  let m = subject.match(/new message from ([^<\n]+?)(?:\s*[-|]|\s*$)/i);
+  if (m) return m[1].trim().split(' ')[0];
+  m = subject.match(/^([A-Z][a-z]+(?:\s[A-Z][a-z]+)?)\s+sent\s+/);
+  if (m) return m[1].trim().split(' ')[0];
+  m = subject.match(/message from ([A-Z][a-z]+)/i);
+  if (m) return m[1];
+  return null;
+}
+
+function detectProperty(subject, body) {
+  const text = (subject + ' ' + body).toLowerCase();
+  for (const prop of AIRBNB_PROPERTY_PATTERNS) {
+    if (prop.patterns.some(p => text.includes(p))) return prop;
+  }
+  return null;
+}
+
+async function extractGuestMessageWithClaude(env, emailText, subject) {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'x-api-key':         env.ANTHROPIC_API_KEY,
+      'anthropic-version': '2023-06-01',
+      'content-type':      'application/json',
+    },
+    body: JSON.stringify({
+      model:      'claude-haiku-4-5-20251001',
+      max_tokens: 600,
+      system: "Extract the guest's message from an Airbnb notification email. Return ONLY the guest's actual message text, no intro or commentary. If there is no guest message, return the string NO_MESSAGE.",
+      messages: [{ role: 'user', content: `Subject: ${subject}\n\nBody:\n${emailText.slice(0, 3000)}` }],
+    }),
+  });
+  if (!res.ok) return null;
+  const data = await res.json();
+  const text = data.content?.[0]?.text?.trim();
+  return (text && text !== 'NO_MESSAGE') ? text : null;
+}
+
+async function sendAirbnbReply(env, replyToAddress, propertyName, replyText) {
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${env.RESEND_API_KEY}`,
+      'Content-Type':  'application/json',
+    },
+    body: JSON.stringify({
+      from:    'Eann at Indigo Palm <bookings@indigopalm.co>',
+      to:      [replyToAddress],
+      subject: `Re: Your message about ${propertyName}`,
+      text:    replyText,
+    }),
+  });
+  if (!res.ok) {
+    console.error('Resend Airbnb reply error:', res.status, await res.text());
+    return false;
+  }
+  return true;
+}
+
+async function sendAirbnbEscalationEmail(env, guestName, propertyName, guestMessage, draft) {
+  const propInfo = getPropertyByName(propertyName);
+  const streetName = propInfo ? extractStreetName(propInfo.address) : null;
+  const displayName = streetName ? `${streetName} (${propertyName})` : propertyName;
+
+  const photoBlock = propInfo?.photo
+    ? `<img src="${propInfo.photo}" alt="${propertyName}" width="560" style="display:block;width:100%;max-width:560px;height:200px;object-fit:cover;border-radius:8px;margin-bottom:20px;" />`
+    : '';
+
+  const draftBlock = draft
+    ? `<p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Suggested reply (not sent):</p>
+       <blockquote style="margin:0 0 20px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
+       <p style="font-size:13px;color:#666;">Log into Airbnb to send, edit, or ignore this reply.</p>`
+    : `<p style="font-size:13px;color:#888;">Claude could not generate a reply. Respond directly in Airbnb.</p>`;
+
+  await sendEmail(env.RESEND_API_KEY, {
+    from:    'Indigo Palm Bot <bookings@indigopalm.co>',
+    to:      'indigopalmco@gmail.com',
+    subject: `Guest needs a reply: ${guestName} at ${displayName}`,
+    html: emailWrapper(`
+      ${photoBlock}
+      <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Airbnb guest message</p>
+      <h2 style="margin:0 0 20px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${guestName} at ${displayName}</h2>
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Their message:</p>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;border-left:3px solid #B67550;font-size:14px;color:#333;line-height:1.6;">${guestMessage.replace(/\n/g, '<br>')}</blockquote>
+      ${draftBlock}
+    `),
+  });
+}
+
+// ── Web Push (RFC 8291 + RFC 8292) ────────────────────────────────────────────
+
+function b64url(buf) {
+  return btoa(String.fromCharCode(...new Uint8Array(buf instanceof ArrayBuffer ? buf : buf.buffer)))
+    .replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+}
+
+function fromB64url(str) {
+  const s = str.replace(/-/g, '+').replace(/_/g, '/');
+  return Uint8Array.from(atob(s), c => c.charCodeAt(0));
+}
+
+function concatU8(...arrs) {
+  const total = arrs.reduce((n, a) => n + a.byteLength, 0);
+  const out = new Uint8Array(total);
+  let off = 0;
+  for (const a of arrs) {
+    const u = a instanceof Uint8Array ? a : new Uint8Array(a instanceof ArrayBuffer ? a : a.buffer);
+    out.set(u, off); off += u.byteLength;
+  }
+  return out;
+}
+
+async function hmacSha256(key, data) {
+  const k = await crypto.subtle.importKey('raw', key, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  return new Uint8Array(await crypto.subtle.sign('HMAC', k, data));
+}
+
+async function hkdfExtract(salt, ikm) {
+  return hmacSha256(salt, ikm);
+}
+
+async function hkdfExpand(prk, info, length) {
+  const t = await hmacSha256(prk, concatU8(info, new Uint8Array([1])));
+  return t.slice(0, length);
+}
+
+async function encryptWebPush(p256dhB64, authB64, plaintext) {
+  const ua_pub   = fromB64url(p256dhB64);
+  const auth_sec = fromB64url(authB64);
+  const msg      = new TextEncoder().encode(plaintext);
+
+  // Application server keypair
+  const asKP = await crypto.subtle.generateKey({ name: 'ECDH', namedCurve: 'P-256' }, true, ['deriveBits']);
+  const as_pub_raw = new Uint8Array(await crypto.subtle.exportKey('raw', asKP.publicKey));
+
+  // ECDH shared secret
+  const ua_pubKey = await crypto.subtle.importKey('raw', ua_pub, { name: 'ECDH', namedCurve: 'P-256' }, false, []);
+  const ecdh = new Uint8Array(await crypto.subtle.deriveBits({ name: 'ECDH', public: ua_pubKey }, asKP.privateKey, 256));
+
+  // RFC 8291 key derivation
+  const prk_key = await hkdfExtract(auth_sec, ecdh);
+  const key_info = concatU8(new TextEncoder().encode('WebPush: info\x00'), ua_pub, as_pub_raw);
+  const ikm = await hkdfExpand(prk_key, key_info, 32);
+
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const prk = await hkdfExtract(salt, ikm);
+  const cek   = await hkdfExpand(prk, new TextEncoder().encode('Content-Encoding: aes128gcm\x00'), 16);
+  const nonce = await hkdfExpand(prk, new TextEncoder().encode('Content-Encoding: nonce\x00'), 12);
+
+  const cekKey = await crypto.subtle.importKey('raw', cek, { name: 'AES-GCM' }, false, ['encrypt']);
+  const ct = new Uint8Array(await crypto.subtle.encrypt({ name: 'AES-GCM', iv: nonce }, cekKey, concatU8(msg, new Uint8Array([2]))));
+
+  const rs = new Uint8Array(4);
+  new DataView(rs.buffer).setUint32(0, 4096, false);
+  return concatU8(salt, rs, new Uint8Array([as_pub_raw.byteLength]), as_pub_raw, ct);
+}
+
+async function vapidJwt(privateKeyJwk, audience, subject) {
+  const hdr = b64url(new TextEncoder().encode(JSON.stringify({ typ: 'JWT', alg: 'ES256' })));
+  const pld = b64url(new TextEncoder().encode(JSON.stringify({ aud: audience, exp: Math.floor(Date.now() / 1000) + 43200, sub: subject })));
+  const msg = `${hdr}.${pld}`;
+  const key = await crypto.subtle.importKey('jwk', privateKeyJwk, { name: 'ECDSA', namedCurve: 'P-256' }, false, ['sign']);
+  const sig = await crypto.subtle.sign({ name: 'ECDSA', hash: 'SHA-256' }, key, new TextEncoder().encode(msg));
+  return `${msg}.${b64url(sig)}`;
+}
+
+async function getVapidKeys(env) {
+  let stored = await env.BOOKINGS.get('vapid_keys', { type: 'json' });
+  if (stored) return stored;
+  const kp = await crypto.subtle.generateKey({ name: 'ECDSA', namedCurve: 'P-256' }, true, ['sign']);
+  const pubRaw = new Uint8Array(await crypto.subtle.exportKey('raw', kp.publicKey));
+  const privJwk = await crypto.subtle.exportKey('jwk', kp.privateKey);
+  stored = { publicKey: b64url(pubRaw), privateKeyJwk: privJwk };
+  await env.BOOKINGS.put('vapid_keys', JSON.stringify(stored));
+  return stored;
+}
+
+async function sendWebPush(env, notification) {
+  const sub = await env.BOOKINGS.get('push_subscription', { type: 'json' });
+  if (!sub) return false;
+  const { publicKey, privateKeyJwk } = await getVapidKeys(env);
+  const audience = new URL(sub.endpoint).origin;
+  const jwt = await vapidJwt(privateKeyJwk, audience, 'mailto:indigopalmco@gmail.com');
+  const body = await encryptWebPush(sub.keys.p256dh, sub.keys.auth, JSON.stringify(notification));
+  const res = await fetch(sub.endpoint, {
+    method: 'POST',
+    headers: {
+      'Authorization': `vapid t=${jwt},k=${publicKey}`,
+      'Content-Type':  'application/octet-stream',
+      'Content-Encoding': 'aes128gcm',
+      'TTL': '86400',
+    },
+    body,
+  });
+  if (!res.ok) console.error('Web Push failed:', res.status, await res.text());
+  return res.ok;
+}
+
+// ── PWA: Inbox, Manifest, Service Worker, Push Subscribe ─────────────────────
+
+async function handleInboxPage(env) {
+  const list = await env.BOOKINGS.list({ prefix: 'airbnb_pending:' });
+  const pending = [];
+  for (const key of list.keys) {
+    const item = await env.BOOKINGS.get(key.name, { type: 'json' });
+    if (item && !item.sent) {
+      const id = key.name.replace('airbnb_pending:', '');
+      const ageMs = Date.now() - item.createdAt;
+      const minsLeft = Math.max(0, Math.round((10 * 60 * 1000 - ageMs) / 60000));
+      pending.push({ id, ...item, minsLeft });
+    }
+  }
+  pending.sort((a, b) => a.minsLeft - b.minsLeft);
+
+  const cards = pending.length === 0
+    ? `<div class="empty"><div class="empty-icon">✓</div><p>No pending replies</p></div>`
+    : pending.map(p => `
+      <div class="card">
+        <div class="card-header">
+          <span class="guest">${escapeHtml(p.guestName)}</span>
+          <span class="prop">${escapeHtml(p.propertyName)}</span>
+        </div>
+        <div class="msg">${escapeHtml(p.guestMessage.slice(0, 120))}${p.guestMessage.length > 120 ? '…' : ''}</div>
+        <div class="card-footer">
+          <span class="timer ${p.minsLeft <= 2 ? 'urgent' : ''}">${p.minsLeft > 0 ? `Auto-sends in ${p.minsLeft} min` : 'Sending soon…'}</span>
+          <a class="btn-review" href="/api/approve-reply?id=${p.id}">Review &amp; Send</a>
+        </div>
+      </div>`).join('');
+
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inbox — Indigo Palm</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#B67550">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IP Inbox">
+  <link rel="apple-touch-icon" href="/images/logo-icon-transparent.png">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#F5F3EE;min-height:100vh}
+    .topbar{background:#fff;border-bottom:1px solid #e8ddd0;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+    .topbar h1{font-family:Georgia,serif;font-size:18px;font-weight:400;color:#2C2C2C}
+    .badge{background:#B67550;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:99px;margin-left:8px}
+    .refresh{font-size:13px;color:#325CD9;text-decoration:none;padding:6px 0}
+    .list{padding:16px;max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+    .card{background:#fff;border-radius:14px;padding:16px;box-shadow:0 1px 6px rgba(0,0,0,.07)}
+    .card-header{display:flex;align-items:baseline;gap:8px;margin-bottom:8px}
+    .guest{font-size:15px;font-weight:700;color:#2C2C2C}
+    .prop{font-size:12px;color:#B67550;font-weight:600}
+    .msg{font-size:14px;color:#555;line-height:1.5;margin-bottom:12px}
+    .card-footer{display:flex;align-items:center;justify-content:space-between}
+    .timer{font-size:12px;color:#999}
+    .timer.urgent{color:#E05C2A;font-weight:600}
+    .btn-review{background:#325CD9;color:#fff;text-decoration:none;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600}
+    .empty{text-align:center;padding:60px 20px;color:#aaa}
+    .empty-icon{font-size:48px;margin-bottom:12px;color:#B67550}
+    .empty p{font-size:15px}
+    .notify-bar{background:#EEF2FF;border-radius:12px;padding:14px 16px;margin:0 16px 0;max-width:600px;margin-left:auto;margin-right:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .notify-bar p{font-size:13px;color:#325CD9;flex:1}
+    .btn-notify{background:#325CD9;color:#fff;border:none;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+    .btn-notify:disabled{background:#aaa}
+    #notify-status{font-size:12px;color:#888;text-align:center;padding:8px 20px;max-width:600px;margin:0 auto}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Inbox<span class="badge" id="count">${pending.length}</span></h1>
+    <a class="refresh" href="/inbox">Refresh</a>
+  </div>
+  <div id="notify-wrap" style="padding:16px 16px 0;max-width:600px;margin:0 auto;display:none">
+    <div class="notify-bar">
+      <p>Get push notifications when guests message you.</p>
+      <button class="btn-notify" id="notify-btn" onclick="subscribePush()">Enable</button>
+    </div>
+  </div>
+  <div id="notify-status"></div>
+  <div class="list">${cards}</div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(console.error);
+    }
+    async function subscribePush() {
+      const btn = document.getElementById('notify-btn');
+      btn.disabled = true; btn.textContent = 'Enabling…';
+      try {
+        const reg = await navigator.serviceWorker.ready;
+        // Unsubscribe any existing subscription first so only one is ever active
+        const existing = await reg.pushManager.getSubscription();
+        if (existing) await existing.unsubscribe();
+        const keyRes = await fetch('/api/vapid-public-key');
+        const { publicKey } = await keyRes.json();
+        const sub = await reg.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: urlB64ToUint8(publicKey),
+        });
+        await fetch('/api/push-subscribe', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(sub) });
+        document.getElementById('notify-wrap').style.display = 'none';
+        document.getElementById('notify-status').textContent = '✓ Notifications enabled on this device.';
+      } catch(e) {
+        btn.disabled = false; btn.textContent = 'Enable';
+        document.getElementById('notify-status').textContent = 'Could not enable: ' + e.message;
+      }
+    }
+    function urlB64ToUint8(b64) {
+      const pad = '='.repeat((4 - b64.length % 4) % 4);
+      const raw = atob(b64.replace(/-/g,'+').replace(/_/g,'/') + pad);
+      return Uint8Array.from(raw, c => c.charCodeAt(0));
+    }
+    async function checkNotifyState() {
+      if (!('Notification' in window) || !('serviceWorker' in navigator)) return;
+      const perm = Notification.permission;
+      if (perm === 'granted') {
+        const reg = await navigator.serviceWorker.ready;
+        const sub = await reg.pushManager.getSubscription();
+        if (sub) return; // already subscribed
+      }
+      if (perm !== 'denied') {
+        document.getElementById('notify-wrap').style.display = 'block';
+      }
+    }
+    checkNotifyState();
+    setTimeout(() => location.reload(), 60000); // auto-refresh every 60s
+  </script>
+</body>
+</html>`;
+  return new Response(html, { headers: { 'Content-Type': 'text/html;charset=utf-8' } });
+}
+
+function handleManifest() {
+  const manifest = {
+    name: 'Indigo Palm Inbox',
+    short_name: 'IP Inbox',
+    start_url: '/inbox',
+    display: 'standalone',
+    background_color: '#F5F3EE',
+    theme_color: '#B67550',
+    icons: [
+      { src: '/images/logo-icon-transparent.png', sizes: '192x192', type: 'image/png' },
+      { src: '/images/logo-icon-transparent.png', sizes: '512x512', type: 'image/png' },
+    ],
+  };
+  return new Response(JSON.stringify(manifest), { headers: { 'Content-Type': 'application/manifest+json' } });
+}
+
+function handleServiceWorker() {
+  const sw = `
+self.addEventListener('push', event => {
+  const data = event.data ? event.data.json() : {};
+  event.waitUntil(
+    self.registration.showNotification(data.title || 'Guest message', {
+      body: data.body || '',
+      icon: '/images/logo-icon-transparent.png',
+      badge: '/images/logo-icon-transparent.png',
+      tag: data.id || 'guest-msg',
+      renotify: true,
+      data: { url: data.url || '/inbox' },
+    })
+  );
+});
+
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  const url = event.notification.data && event.notification.data.url ? event.notification.data.url : '/inbox';
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(list => {
+      for (const c of list) {
+        if (c.url === url && 'focus' in c) return c.focus();
+      }
+      return clients.openWindow(url);
+    })
+  );
+});
+
+self.addEventListener('install', () => self.skipWaiting());
+self.addEventListener('activate', e => e.waitUntil(clients.claim()));
+`;
+  return new Response(sw, { headers: { 'Content-Type': 'application/javascript', 'Service-Worker-Allowed': '/' } });
+}
+
+async function handleVapidPublicKey(env) {
+  const keys = await getVapidKeys(env);
+  return new Response(JSON.stringify({ publicKey: keys.publicKey }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
+}
+
+async function handlePushSubscribe(request, env) {
+  let sub;
+  try { sub = await request.json(); } catch { return new Response('Bad request', { status: 400 }); }
+  await env.BOOKINGS.put('push_subscription', JSON.stringify(sub));
+  return new Response(JSON.stringify({ ok: true }), { headers: { 'Content-Type': 'application/json' } });
+}
+
+async function handleTestPush(env) {
+  const sub = await env.BOOKINGS.get('push_subscription', { type: 'json' });
+  if (!sub) {
+    return new Response(JSON.stringify({ error: 'No push subscription saved yet. Open /inbox and tap Enable first.' }), {
+      status: 400, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+  try {
+    await sendWebPush(env, {
+      title: 'Indigo Palm — Test',
+      body: 'Push notifications are working! You\'ll get notified when guests message.',
+      url: '/inbox',
+    });
+    return new Response(JSON.stringify({ ok: true, message: 'Test notification sent.' }), {
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } catch (err) {
+    return new Response(JSON.stringify({ error: err.message }), {
+      status: 500, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+}
+
+async function handleTestGuestMessage(env) {
+  const fakeGuest = 'Sarah';
+  const fakeProperty = { key: 'cozy_cactus', name: 'The Cozy Cactus' };
+  const fakeMessage = "Hi! So excited for our stay this weekend. Quick question — any chance we could do an early check-in around noon? We're driving in from LA and would love to drop bags and head to the pool. Also, does UberEats deliver to the house?";
+  const fakeReplyTo = 'reply+test-token-do-not-send@reply.airbnb.com';
+
+  let draft = '';
+  try {
+    draft = await callClaude(env, fakeGuest, fakeProperty.name, fakeProperty.key, fakeMessage);
+  } catch (e) {
+    draft = "Hey Sarah! So excited to have you. Early check-in at noon is usually tight since we need the full morning to get the house ready after any previous guests, but I'll check and let you know. And yes — UberEats delivers great to the house! Address is 82381 Cochran Dr, Indio 92201. See you soon!";
+  }
+
+  const id = crypto.randomUUID();
+  await env.BOOKINGS.put(`airbnb_pending:${id}`, JSON.stringify({
+    airbnbReplyAddress: fakeReplyTo,
+    propertyKey:  fakeProperty.key,
+    propertyName: fakeProperty.name,
+    guestName:    fakeGuest,
+    guestMessage: fakeMessage,
+    draft,
+    createdAt: Date.now(),
+    sent: false,
+    isTest: true,
+  }), { expirationTtl: 3600 });
+
+  const approveUrl = `https://indigopalm.co/api/approve-reply?id=${id}`;
+
+  await sendEmail(env.RESEND_API_KEY, {
+    from:    'Indigo Palm Bot <bookings@indigopalm.co>',
+    to:      'indigopalmco@gmail.com',
+    subject: `[TEST] Reply needed: ${fakeGuest} at ${fakeProperty.name}`,
+    html: emailWrapper(`
+      <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Test guest message</p>
+      <h2 style="margin:0 0 4px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${fakeGuest} — ${fakeProperty.name}</h2>
+      <p style="margin:0 0 20px;font-size:13px;color:#888;">Auto-sends in 10 minutes if you don't act. (This is a test — the reply address is fake and won't send to a real guest.)</p>
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Their message:</p>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;border-left:3px solid #B67550;font-size:14px;color:#333;line-height:1.6;">${fakeMessage.replace(/\n/g, '<br>')}</blockquote>
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Draft reply:</p>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
+      <a href="${approveUrl}" style="display:inline-block;padding:12px 28px;background:#325CD9;color:white;text-decoration:none;border-radius:6px;font-size:15px;font-weight:600;">Review &amp; Send</a>
+      <p style="margin:16px 0 0;font-size:12px;color:#aaa;">Tap "Review &amp; Send" to edit and send the reply. If you do nothing, it auto-sends in 10 minutes. (This test reply goes to a fake address — no real guest will receive it.)</p>
+    `),
+  });
+
+  try {
+    await sendWebPush(env, {
+      title: `${fakeGuest} — ${fakeProperty.name}`,
+      body:  fakeMessage.slice(0, 100) + '…',
+      url:   approveUrl,
+      id,
+    });
+  } catch (e) {
+    console.error('Test push failed:', e);
+  }
+
+  return new Response(JSON.stringify({ ok: true, id, approveUrl, draft }), {
+    headers: { 'Content-Type': 'application/json' },
+  });
+}
+
+// ── HTML escape helper ────────────────────────────────────────────────────────
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+async function handleApprovalPage(request, env) {
+  const url = new URL(request.url);
+  const id  = url.searchParams.get('id');
+  if (!id) return new Response('Missing id', { status: 400 });
+
+  const pending = await env.BOOKINGS.get(`airbnb_pending:${id}`, { type: 'json' });
+  if (!pending) {
+    return new Response(`<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Expired</title></head><body style="font-family:-apple-system,sans-serif;padding:40px 20px;text-align:center;background:#f5f3ee"><h2 style="color:#2C2C2C">This reply has already been sent or expired.</h2><p style="color:#888;margin-top:8px">Check Airbnb for the conversation.</p></body></html>`, { status: 200, headers: { 'Content-Type': 'text/html;charset=utf-8' } });
+  }
+  if (pending.sent) {
+    return new Response(`<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Already sent</title></head><body style="font-family:-apple-system,sans-serif;padding:40px 20px;text-align:center;background:#f5f3ee"><h2 style="color:#2C2C2C">Reply already sent.</h2></body></html>`, { status: 200, headers: { 'Content-Type': 'text/html;charset=utf-8' } });
+  }
+
+  const minutesLeft = Math.max(0, Math.round((10 * 60 * 1000 - (Date.now() - pending.createdAt)) / 60000));
+  const autoSendNote = minutesLeft > 0
+    ? `Auto-sends in ${minutesLeft} min if you don't act.`
+    : 'Auto-send pending — act quickly.';
+
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reply to ${escapeHtml(pending.guestName)}</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f3ee;padding:16px;min-height:100vh}
+    .card{background:#fff;border-radius:14px;padding:20px;max-width:560px;margin:0 auto;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+    .label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:#aaa;margin-bottom:6px}
+    .prop{font-size:13px;font-weight:600;color:#B67550;margin-bottom:18px}
+    .bubble{background:#f5f3ee;border-left:3px solid #B67550;padding:12px 14px;border-radius:0 8px 8px 0;font-size:14px;line-height:1.65;color:#333;margin-bottom:22px;white-space:pre-wrap}
+    .timer{font-size:12px;color:#999;margin-bottom:10px}
+    textarea{width:100%;border:1.5px solid #ddd;border-radius:10px;padding:12px;font-size:15px;line-height:1.6;resize:vertical;min-height:180px;font-family:inherit;color:#222;transition:border .15s}
+    textarea:focus{border-color:#325CD9;outline:none}
+    .btn-send{display:block;width:100%;margin-top:14px;padding:15px;background:#325CD9;color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;letter-spacing:.01em}
+    .btn-send:active{background:#2449b8}
+    .discard{display:block;text-align:center;margin-top:14px;color:#bbb;font-size:13px;text-decoration:none}
+    .discard:hover{color:#888}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="label">Guest message</div>
+    <div class="prop">${escapeHtml(pending.guestName)} — ${escapeHtml(pending.propertyName)}</div>
+    <div class="label">They said:</div>
+    <div class="bubble">${escapeHtml(pending.guestMessage)}</div>
+    <form method="POST" action="/api/approve-reply">
+      <input type="hidden" name="id" value="${escapeHtml(id)}">
+      <div class="label">Your reply (edit if needed):</div>
+      <div class="timer">${autoSendNote}</div>
+      <textarea name="reply">${escapeHtml(pending.draft)}</textarea>
+      <button type="submit" class="btn-send">Send Reply</button>
+    </form>
+    <a href="/api/discard-reply?id=${escapeHtml(id)}" class="discard">Don't send — I'll reply manually in Airbnb</a>
+  </div>
+</body>
+</html>`;
+
+  return new Response(html, { status: 200, headers: { 'Content-Type': 'text/html;charset=utf-8' } });
+}
+
+async function handleApprovalSubmit(request, env) {
+  let formData;
+  try { formData = await request.formData(); } catch { return new Response('Bad request', { status: 400 }); }
+
+  const id    = formData.get('id');
+  const reply = (formData.get('reply') || '').trim();
+  if (!id || !reply) return new Response('Missing fields', { status: 400 });
+
+  const pending = await env.BOOKINGS.get(`airbnb_pending:${id}`, { type: 'json' });
+  if (!pending) {
+    return new Response(`<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="font-family:-apple-system,sans-serif;padding:40px 20px;text-align:center;background:#f5f3ee"><h2>Already sent or expired.</h2></body></html>`, { status: 200, headers: { 'Content-Type': 'text/html;charset=utf-8' } });
+  }
+  if (pending.sent) {
+    return new Response(`<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="font-family:-apple-system,sans-serif;padding:40px 20px;text-align:center;background:#f5f3ee"><h2>Reply already sent.</h2></body></html>`, { status: 200, headers: { 'Content-Type': 'text/html;charset=utf-8' } });
+  }
+
+  if (!pending.isTest) {
+    const sent = await sendAirbnbReply(env, pending.airbnbReplyAddress, pending.propertyName, reply);
+    if (!sent) {
+      await sendAirbnbEscalationEmail(env, pending.guestName, pending.propertyName, pending.guestMessage, reply);
+    }
+  }
+  await env.BOOKINGS.delete(`airbnb_pending:${id}`);
+
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sent</title>
+  <style>body{font-family:-apple-system,sans-serif;background:#f5f3ee;padding:40px 20px;text-align:center}.card{background:#fff;border-radius:14px;padding:32px 24px;max-width:400px;margin:0 auto;box-shadow:0 2px 12px rgba(0,0,0,.08)}.check{font-size:48px;margin-bottom:16px}h2{color:#2C2C2C;font-weight:600;margin-bottom:8px}p{color:#888;font-size:14px}</style>
+</head>
+<body>
+  <div class="card">
+    <div class="check">✓</div>
+    <h2>${pending.isTest ? '[Test] Reply approved' : `Reply sent to ${escapeHtml(pending.guestName)}`}</h2>
+    <p>${pending.isTest ? 'This was a test — no message was sent to a real guest.' : 'Message delivered through Airbnb.'}</p>
+  </div>
+</body>
+</html>`;
+
+  return new Response(html, { status: 200, headers: { 'Content-Type': 'text/html;charset=utf-8' } });
+}
+
+async function handleDiscardReply(request, env) {
+  const url = new URL(request.url);
+  const id  = url.searchParams.get('id');
+  if (id) {
+    try { await env.BOOKINGS.delete(`airbnb_pending:${id}`); } catch {}
+  }
+  return new Response(`<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="font-family:-apple-system,sans-serif;padding:40px 20px;text-align:center;background:#f5f3ee"><div style="background:#fff;border-radius:14px;padding:32px 24px;max-width:400px;margin:0 auto"><h2 style="color:#2C2C2C;margin-bottom:8px">Draft discarded.</h2><p style="color:#888;font-size:14px">Reply manually in Airbnb when you're ready.</p></div></body></html>`, { status: 200, headers: { 'Content-Type': 'text/html;charset=utf-8' } });
+}
+
+async function handleAirbnbEmail(message, env) {
+  const from = (message.from || '').toLowerCase();
+  if (!from.includes('airbnb.com')) {
+    console.log('Email not from Airbnb, skipping:', from);
+    return;
+  }
+
+  const subject = message.headers.get('subject') || '';
+  const replyTo = message.headers.get('reply-to') || '';
+
+  const airbnbReplyMatch = replyTo.match(/reply\+[^@\s]+@reply\.airbnb\.com/i);
+  if (!airbnbReplyMatch) {
+    console.log('No Airbnb reply-to token, forwarding to Gmail. Subject:', subject);
+    try {
+      const rawEmail = await streamToText(message.raw);
+      const { plain, html } = parseEmailParts(rawEmail);
+      const bodyText = plain || stripHtml(html) || '(no body)';
+      await sendEmail(env.RESEND_API_KEY, {
+        from:    'Indigo Palm Bot <bookings@indigopalm.co>',
+        to:      'indigopalmco@gmail.com',
+        subject: `[Airbnb] ${subject}`,
+        html:    emailWrapper(`
+          <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Forwarded from Airbnb</p>
+          <h2 style="margin:0 0 20px;font-family:Georgia,serif;font-size:20px;font-weight:400;color:#2C2C2C;">${subject}</h2>
+          <pre style="font-family:inherit;font-size:14px;line-height:1.6;white-space:pre-wrap;color:#333;">${bodyText.slice(0, 4000)}</pre>
+        `),
+      });
+    } catch (e) {
+      console.error('Failed to forward Airbnb non-message email:', e);
+    }
+    return;
+  }
+  const airbnbReplyAddress = airbnbReplyMatch[0];
+
+  const rawEmail = await streamToText(message.raw);
+  const { plain, html } = parseEmailParts(rawEmail);
+  const bodyText = plain || stripHtml(html) || '';
+
+  const guestName    = extractGuestName(subject) || 'Guest';
+  const property     = detectProperty(subject, bodyText);
+  const guestMessage = await extractGuestMessageWithClaude(env, bodyText, subject);
+
+  if (!guestMessage) {
+    console.log('Could not extract guest message. Subject:', subject);
+    await sendAirbnbEscalationEmail(env, guestName, property?.name || 'Unknown property', bodyText.slice(0, 500) || '(empty body)', null);
+    return;
+  }
+
+  if (!property) {
+    await sendAirbnbEscalationEmail(env, guestName, 'Unknown property (check Airbnb)', guestMessage, null);
+    return;
+  }
+
+  let draft = null;
+  try {
+    draft = await callClaude(env, property.key, property.name, guestName, guestMessage, []);
+  } catch (err) {
+    console.error('Claude error in email handler:', err);
+  }
+
+  // Save pending reply to KV for approval / auto-send
+  const id = crypto.randomUUID();
+  const pendingData = {
+    airbnbReplyAddress,
+    propertyKey:  property.key,
+    propertyName: property.name,
+    guestName,
+    guestMessage,
+    draft:        draft || '',
+    createdAt:    Date.now(),
+    sent:         false,
+  };
+
+  try {
+    await env.BOOKINGS.put(
+      `airbnb_pending:${id}`,
+      JSON.stringify(pendingData),
+      { expirationTtl: 14400 } // 4 hours
+    );
+  } catch (err) {
+    console.error('KV write error:', err);
+    await sendAirbnbEscalationEmail(env, guestName, property.name, guestMessage, draft);
+    return;
+  }
+
+  // Send approval email to Eann
+  const approveUrl = `https://indigopalm.co/api/approve-reply?id=${id}`;
+  const escalateFlag = draft ? messageNeedsEscalation(guestMessage, draft) : true;
+  const flagNote = escalateFlag
+    ? `<p style="margin:0 0 16px;padding:10px 14px;background:#FFF3CD;border-left:3px solid #F0A500;font-size:13px;color:#555;border-radius:0 6px 6px 0;">Heads up: this message may need your personal attention (escalation keyword or uncertain reply).</p>`
+    : '';
+
+  await sendEmail(env.RESEND_API_KEY, {
+    from:    'Indigo Palm Bot <bookings@indigopalm.co>',
+    to:      'indigopalmco@gmail.com',
+    subject: `Reply needed: ${guestName} at ${property.name}`,
+    html: emailWrapper(`
+      <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">New guest message</p>
+      <h2 style="margin:0 0 4px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${guestName} — ${property.name}</h2>
+      <p style="margin:0 0 20px;font-size:13px;color:#888;">Auto-sends in 10 minutes if you don't act.</p>
+      ${flagNote}
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Their message:</p>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;border-left:3px solid #B67550;font-size:14px;color:#333;line-height:1.6;">${guestMessage.replace(/\n/g, '<br>')}</blockquote>
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Draft reply:</p>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${(draft || '(no draft generated)').replace(/\n/g, '<br>')}</blockquote>
+      <a href="${approveUrl}" style="display:inline-block;padding:12px 28px;background:#325CD9;color:white;text-decoration:none;border-radius:6px;font-size:15px;font-weight:600;">Review &amp; Send</a>
+      <p style="margin:16px 0 0;font-size:12px;color:#aaa;">Clicking "Review &amp; Send" opens a page where you can edit the reply before sending. If you do nothing, the draft auto-sends in 10 minutes.</p>
+    `),
+  });
+
+  // Send push notification to phone
+  try {
+    await sendWebPush(env, {
+      title: `${guestName} — ${property.name}`,
+      body:  guestMessage.slice(0, 100) + (guestMessage.length > 100 ? '…' : ''),
+      url:   `https://indigopalm.co/api/approve-reply?id=${id}`,
+      id,
+    });
+  } catch (e) {
+    console.error('Push notification failed:', e);
+  }
+
+  console.log(`Draft saved for ${guestName} at ${property.name}, id=${id}`);
+}
+
+async function processPendingAirbnbReplies(env) {
+  const TEN_MINUTES = 10 * 60 * 1000;
+  let list;
+  try {
+    list = await env.BOOKINGS.list({ prefix: 'airbnb_pending:' });
+  } catch (err) {
+    console.error('KV list error in processPendingAirbnbReplies:', err);
+    return;
+  }
+
+  for (const key of list.keys) {
+    let pending;
+    try {
+      pending = await env.BOOKINGS.get(key.name, { type: 'json' });
+    } catch { continue; }
+    if (!pending || pending.sent) continue;
+
+    const age = Date.now() - pending.createdAt;
+    if (age < TEN_MINUTES) continue;
+
+    // 10 minutes elapsed — auto-send
+    console.log(`Auto-sending reply for ${pending.guestName} at ${pending.propertyName}`);
+    try {
+      if (!pending.isTest) {
+        if (pending.draft) {
+          const sent = await sendAirbnbReply(env, pending.airbnbReplyAddress, pending.propertyName, pending.draft);
+          if (!sent) {
+            await sendAirbnbEscalationEmail(env, pending.guestName, pending.propertyName, pending.guestMessage, pending.draft);
+          }
+        } else {
+          await sendAirbnbEscalationEmail(env, pending.guestName, pending.propertyName, pending.guestMessage, null);
+        }
+      }
+    } catch (err) {
+      console.error('Auto-send error:', err);
+    }
+
+    try { await env.BOOKINGS.delete(key.name); } catch {}
+  }
 }

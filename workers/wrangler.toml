@@ -9,5 +9,5 @@ main = "newsletter-signup.js"
 
 # Routes - this worker will handle newsletter signups
 routes = [
-  { pattern = "newsletter.indigopalm.co/*", custom_domain = true }
+  { pattern = "newsletter.indigopalm.co/*", zone_name = "indigopalm.co" }
 ]

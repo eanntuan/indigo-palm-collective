@@ -17,9 +17,10 @@ binding = "BOOKINGS"
 id = "adf84125eb4b4a528e74f70fe721c057"
 
 [triggers]
-crons = ["0 9 * * *"]
+crons = ["0 9 * * *", "*/10 * * * *"]
 
 # Secrets (set once via CLI — never stored in this file):
-#   wrangler secret put ANTHROPIC_API_KEY      --name indigo-palm-api
-#   wrangler secret put HOSTAWAY_CLIENT_ID     --name indigo-palm-api  (value: 45747)
-#   wrangler secret put HOSTAWAY_CLIENT_SECRET --name indigo-palm-api
+#   wrangler secret put ANTHROPIC_API_KEY          --name indigo-palm-api
+#   wrangler secret put HOSTAWAY_CLIENT_ID         --name indigo-palm-api  (value: 45747)
+#   wrangler secret put HOSTAWAY_CLIENT_SECRET     --name indigo-palm-api
+#   wrangler secret put PINTEREST_ACCESS_TOKEN     --name indigo-palm-api  (app id: 1566200, ad account: 549770218152)
