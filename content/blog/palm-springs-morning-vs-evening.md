@@ -3,8 +3,8 @@ title: "How to Beat the Heat in Palm Springs: Morning vs Evening"
 date: 2026-05-03
 dateModified: 2026-05-03
 metaDescription: "How to beat Palm Springs heat: what to do in the morning, how to survive midday, and why desert evenings are the best part of any visit. A local's guide."
-ogImage: /blog/images/ps-via-sol-sunset.webp
-heroImage: /blog/images/ps-via-sol-sunset.webp
+ogImage: /blog/images/heyday-palm-springs.webp
+heroImage: /blog/images/heyday-palm-springs.webp
 heroAlt: "Palm Springs desert sunset with warm golden light over the Coachella Valley"
 keywords:
   - palm springs heat tips
@@ -33,7 +33,7 @@ layout: blog-post.njk
   "description": "How to structure your day in Palm Springs around desert heat: what to do in the morning, how to survive midday, and why evenings are underrated. A local's guide.",
   "author": {"@type": "Person", "name": "Eann Tuan"},
   "publisher": {"@type": "Organization", "name": "Indigo Palm Collective", "logo": {"@type": "ImageObject", "url": "https://indigopalm.co/images/logo-icon.png"}},
-  "image": "https://indigopalm.co/blog/images/ps-via-sol-sunset.webp",
+  "image": "https://indigopalm.co/blog/images/heyday-palm-springs.webp",
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://indigopalm.co/blog/palm-springs-morning-vs-evening/"}
 }
 </script>
@@ -55,7 +55,7 @@ The valley isn't hostile to visitors. But it does require a schedule adjustment 
 
 Here's how the day works here, and how to get the most out of it without becoming a cautionary tale.
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset light over Palm Springs with palm trees silhouetted against an orange sky" loading="lazy" width="1400" height="933">
+<img src="/blog/images/heyday-palm-springs.webp" alt="Desert sunset light over Palm Springs with palm trees silhouetted against an orange sky" loading="lazy" width="1400" height="933">
 
 ## The Desert Day: What's Happening
 

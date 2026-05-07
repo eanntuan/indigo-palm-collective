@@ -2,8 +2,8 @@
 title: "Inside The Cozy Cactus: Built for Families"
 date: 2026-03-10
 metaDescription: "From labeled drawers to Stokke high chairs, here is what makes The Cozy Cactus a family Airbnb in Indio where parents rest, not just survive."
-ogImage: /blog/images/cozy-cactus-exterior.webp
-heroImage: /blog/images/cozy-cactus-exterior.webp
+ogImage: /blog/images/cozy-cactus-living-room.webp
+heroImage: /blog/images/cozy-cactus-living-room.webp
 heroAlt: "The Cozy Cactus vacation rental exterior in Indio California near Coachella"
 keywords:
   - family vacation rental Indio
@@ -27,7 +27,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Inside The Cozy Cactus: Built for Families",
   "description": "From labeled drawers to Stokke high chairs, here is what makes The Cozy Cactus a family Airbnb in Indio where parents rest, not just survive.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-exterior.webp",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-living-room.webp",
   "datePublished": "2026-03-10",
   "dateModified": "2026-03-10",
   "author": {

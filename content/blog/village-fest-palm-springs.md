@@ -3,8 +3,8 @@ title: "Village Fest Palm Springs: What to Expect on a Thursday Night"
 date: 2026-05-03
 dateModified: 2026-05-03
 metaDescription: "Village Fest is Palm Springs' weekly Thursday night street fair on Palm Canyon Drive. What to eat, what to buy, and when to arrive for the best experience."
-ogImage: /blog/images/ps-palm-canyon-dr-evening.webp
-heroImage: /blog/images/ps-palm-street-blue-sky.webp
+ogImage: /blog/images/cheekys-palm-springs.webp
+heroImage: /blog/images/cheekys-palm-springs.webp
 heroAlt: "Palm Canyon Drive in Palm Springs with palm trees and mountain backdrop at golden hour"
 keywords:
   - village fest palm springs
@@ -33,7 +33,7 @@ layout: blog-post.njk
   "description": "Village Fest is Palm Springs' weekly Thursday night street fair on Palm Canyon Drive. What to eat, what to buy, and when to arrive for the best experience.",
   "author": {"@type": "Person", "name": "Eann Tuan"},
   "publisher": {"@type": "Organization", "name": "Indigo Palm Collective", "logo": {"@type": "ImageObject", "url": "https://indigopalm.co/images/logo-icon.png"}},
-  "image": "https://indigopalm.co/blog/images/ps-palm-street-blue-sky.webp",
+  "image": "https://indigopalm.co/blog/images/cheekys-palm-springs.webp",
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://indigopalm.co/blog/village-fest-palm-springs/"}
 }
 </script>

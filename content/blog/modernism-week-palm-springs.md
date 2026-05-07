@@ -3,8 +3,8 @@ title: "Modernism Week Palm Springs: What to Know"
 date: 2026-05-03
 dateModified: 2026-05-03
 metaDescription: "Modernism Week Palm Springs runs every February with home tours, bus tours, and parties. How to get tickets, what sells out first, and where to stay."
-ogImage: /blog/images/ps-mcm-neighborhood.webp
-heroImage: /blog/images/ps-mcm-neighborhood.webp
+ogImage: /blog/images/ps-blue-door-cacti.webp
+heroImage: /blog/images/ps-blue-door-cacti.webp
 heroAlt: "Mid-century modern neighborhood in Palm Springs with flat-roofline homes and mountain backdrop"
 keywords:
   - Modernism Week Palm Springs
@@ -28,7 +28,7 @@ layout: blog-post.njk
   "description": "Modernism Week Palm Springs runs every February with home tours, bus tours, and parties. How to get tickets, what sells out first, and where to stay.",
   "author": {"@type": "Person", "name": "Eann Tuan"},
   "publisher": {"@type": "Organization", "name": "Indigo Palm Collective", "logo": {"@type": "ImageObject", "url": "https://indigopalm.co/images/logo-icon.png"}},
-  "image": "https://indigopalm.co/blog/images/ps-mcm-neighborhood.webp",
+  "image": "https://indigopalm.co/blog/images/ps-blue-door-cacti.webp",
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://indigopalm.co/blog/modernism-week-palm-springs/"}
 }
 </script>
@@ -48,7 +48,7 @@ Every February, Palm Springs stops pretending to be a regular desert city and le
 
 The 2026 dates are February 12 through 22. There's also a shorter fall edition, October 15 through 18. The February run is the main event, with over 450 individual events across the eleven days.
 
-<img src="/blog/images/ps-mcm-neighborhood.webp" alt="Mid-century modern neighborhood in Palm Springs with flat-roofline homes and mountain backdrop" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-blue-door-cacti.webp" alt="Mid-century modern neighborhood in Palm Springs with flat-roofline homes and mountain backdrop" loading="lazy" width="1400" height="933">
 
 ## What Modernism Week Is
 

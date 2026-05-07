@@ -3,8 +3,8 @@ title: "Why Book Direct Instead of Airbnb"
 date: 2025-12-08
 dateModified: 2026-04-15
 metaDescription: "Booking a vacation rental direct saves you 14-16% in Airbnb service fees. The honest math, what you actually get, and when direct booking makes sense."
-ogImage: /blog/images/cozy-cactus-patio.webp
-heroImage: /blog/images/cozy-cactus-patio.webp
+ogImage: /blog/images/west-elm-dining.webp
+heroImage: /blog/images/west-elm-dining.webp
 heroAlt: "Shaded patio with desert landscaping at Cozy Cactus vacation rental in Indio California"
 keywords:
   - book vacation rental direct
@@ -38,7 +38,7 @@ layout: blog-post.njk
     "url": "https://indigopalm.co"
   },
   "description": "Booking a vacation rental direct saves you 14-16% in service fees. Here's the honest math, and when direct booking makes sense.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-patio.webp",
+  "image": "https://indigopalm.co/blog/images/west-elm-dining.webp",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://indigopalm.co/blog/why-book-direct-vacation-rental/"
@@ -122,7 +122,7 @@ layout: blog-post.njk
 
 <p>All of our properties have 190+ reviews on Airbnb you can cross-reference before booking. Our <a href="/booking-flow/?property=cozy-cactus">direct booking flow</a> uses Square for payment processing, same protections as any other online purchase.</p>
 
-<img src="/blog/images/cozy-cactus-patio.webp" alt="Shaded patio with string lights and desert landscaping at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy">
+<img src="/blog/images/west-elm-dining.webp" alt="Shaded patio with string lights and desert landscaping at The Cozy Cactus vacation rental in Indio California" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus patio. Book direct at indigopalm.co and skip the platform service fee entirely.</p>
 
 <h2>How to Find Properties That Accept Direct Bookings</h2>

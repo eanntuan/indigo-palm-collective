@@ -3,8 +3,8 @@ title: "Indian Palms Country Club Rentals: Coachella's Best Base"
 date: 2026-03-20
 dateModified: 2026-05-06
 metaDescription: "Indian Palms Country Club is 2.5 miles from the Coachella stage. Private pools, gated streets, no surge pricing. Why it's the smartest festival base."
-ogImage: /blog/images/cozy-cactus-aerial.webp
-heroImage: /blog/images/cozy-cactus-aerial.webp
+ogImage: /blog/images/indian-palms-front-entrance.webp
+heroImage: /blog/images/indian-palms-front-entrance.webp
 heroAlt: "Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop"
 keywords:
   - Indian Palms Country Club vacation rental
@@ -31,7 +31,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Indian Palms Country Club: Vacation Rental Guide",
   "description": "Indian Palms Country Club is 2.5 miles from the Coachella polo grounds. Private pools, gated streets, and a walk to the festival that skips traffic entirely.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-aerial.webp",
+  "image": "https://indigopalm.co/blog/images/indian-palms-front-entrance.webp",
   "datePublished": "2026-03-20",
   "dateModified": "2026-04-21",
   "author": {
@@ -77,7 +77,7 @@ layout: blog-post.njk
 
 <img src="/blog/images/cozy-cactus-exterior.webp" alt="Vacation rental in Indian Palms Country Club Indio CA with pool and mountain views" width="1400" height="933" loading="lazy">
 
-<img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop" width="1400" height="933" loading="lazy">
+<img src="/blog/images/indian-palms-front-entrance.webp" alt="Aerial view of Indian Palms Country Club neighborhood in Indio CA at sunset showing pool and desert mountain backdrop" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indian Palms Country Club from above. Empire Polo Club is 2.5 miles east.</p>
 
 <h2>What Is Indian Palms Country Club?</h2>

@@ -3,8 +3,8 @@ title: "Indian Canyons Palm Springs: What to Know Before You Go"
 date: 2026-05-03
 dateModified: 2026-05-03
 metaDescription: "Indian Canyons in Palm Springs: which canyon to hike, how long it takes, entry fees, parking, and the best time to visit the Agua Caliente tribal lands."
-ogImage: /blog/images/ps-desert-valley-view.webp
-heroImage: /blog/images/ps-desert-valley-view.webp
+ogImage: /blog/images/palm-canyon-oasis-trail.webp
+heroImage: /blog/images/palm-canyon-oasis-trail.webp
 heroAlt: "Desert canyon landscape near Palm Springs with rocky walls and native fan palms"
 keywords:
   - indian canyons palm springs
@@ -33,7 +33,7 @@ layout: blog-post.njk
   "description": "Indian Canyons in Palm Springs: which canyon to hike, how long it takes, entry fees, parking, and the best time to visit the Agua Caliente tribal lands.",
   "author": {"@type": "Person", "name": "Eann Tuan"},
   "publisher": {"@type": "Organization", "name": "Indigo Palm Collective", "logo": {"@type": "ImageObject", "url": "https://indigopalm.co/images/logo-icon.png"}},
-  "image": "https://indigopalm.co/blog/images/ps-desert-valley-view.webp",
+  "image": "https://indigopalm.co/blog/images/palm-canyon-oasis-trail.webp",
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://indigopalm.co/blog/indian-canyons-palm-springs/"}
 }
 </script>
@@ -55,7 +55,7 @@ It's the only place near Palm Springs where you can walk through a canyon with 2
 
 I've been several times. Here's what I'd want to know before the first visit.
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view near Palm Springs showing canyon terrain and mountain backdrop" loading="lazy" width="1400" height="933">
+<img src="/blog/images/palm-canyon-oasis-trail.webp" alt="Desert valley view near Palm Springs showing canyon terrain and mountain backdrop" loading="lazy" width="1400" height="933">
 
 ## The Basics
 

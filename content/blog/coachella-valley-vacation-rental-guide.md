@@ -3,8 +3,8 @@ title: "5 Things to Check in a Coachella Valley Rental"
 date: 2026-01-06
 dateModified: 2026-04-15
 metaDescription: "From pool access to honest reviews to a host who responds. Five things to check before booking a Coachella Valley vacation rental in Indio or Palm Springs."
-ogImage: /blog/images/cozy-cactus-pool-backyard.webp
-heroImage: /blog/images/cozy-cactus-pool-backyard.webp
+ogImage: /blog/images/palm-springs-hotel-pool.webp
+heroImage: /blog/images/palm-springs-hotel-pool.webp
 heroAlt: "Private pool and backyard at a Coachella Valley vacation rental in Indio California with lounge chairs and palm trees"
 keywords:
   - Coachella Valley vacation rental
@@ -28,7 +28,7 @@ layout: blog-post.njk
 
 <p>I've been hosting in the Coachella Valley for years and have stayed in enough rentals elsewhere to know where the gap is. The difference between a rental that looks good in photos and one that works when you're in it almost always comes down to five things. Most people skip at least three of them before booking.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Backyard and community pool area at the Cozy Cactus vacation rental in Indio California with lounge chairs and palm trees" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Backyard and community pool area at the Cozy Cactus vacation rental in Indio California with lounge chairs and palm trees" width="1400" height="933" loading="lazy">
 <p class="image-caption">The community pool at Indian Palms Country Club, steps from The Cozy Cactus. The difference between community and private pool access is bigger than it sounds.</p>
 
 <h2>1. Pool Access: Private vs. Community, and What the Difference Is</h2>
@@ -112,7 +112,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "5 Things to Check in a Coachella Valley Rental",
   "description": "From pool access to honest reviews to a host who responds. Five things worth checking before you book a Coachella Valley vacation rental.",
-  "image": "https://indigopalm.co/blog/images/cozy-cactus-pool-backyard.webp",
+  "image": "https://indigopalm.co/blog/images/palm-springs-hotel-pool.webp",
   "datePublished": "2026-01-06",
   "dateModified": "2026-04-15",
   "author": {

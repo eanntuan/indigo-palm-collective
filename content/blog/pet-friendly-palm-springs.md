@@ -2,8 +2,8 @@
 title: "Pet-Friendly Palm Springs: Honest Dog Guide"
 date: 2026-03-22
 metaDescription: "Palm Springs is dog-friendly if you know where to look. The real guide to pet-friendly vacation rentals, restaurants, trails, and parks nearby."
-ogImage: /blog/images/desert-dog-hero.webp
-heroImage: /blog/images/desert-dog-hero.webp
+ogImage: /blog/images/cozy-cactus-backyard.webp
+heroImage: /blog/images/cozy-cactus-backyard.webp
 heroAlt: "person and dog walking through the desert near Palm Springs California on a sunny day"
 keywords:
   - pet friendly Palm Springs
@@ -27,7 +27,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Pet-Friendly Palm Springs: Honest Dog Guide",
   "description": "Palm Springs is dog-friendly if you know where to look. The real guide to pet-friendly vacation rentals, restaurants, trails, and parks nearby.",
-  "image": "https://indigopalm.co/blog/images/desert-dog-hero.webp",
+  "image": "https://indigopalm.co/blog/images/cozy-cactus-backyard.webp",
   "datePublished": "2026-03-22",
   "dateModified": "2026-03-22",
   "author": {

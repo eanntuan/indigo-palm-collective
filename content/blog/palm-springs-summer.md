@@ -3,8 +3,8 @@ title: "Palm Springs in Summer: Is It Worth Visiting?"
 date: 2026-02-04
 dateModified: 2026-04-15
 metaDescription: "Yes, with caveats. Pool culture peaks in summer, rates drop 30-50%, crowds disappear. Here's how to do Palm Springs in the heat, month by month."
-ogImage: /blog/images/ps-via-sol-sunset.webp
-heroImage: /blog/images/ps-via-sol-sunset.webp
+ogImage: /blog/images/palm-springs-pool.webp
+heroImage: /blog/images/palm-springs-pool.webp
 heroAlt: "Desert sunset over a Palm Springs street with palm trees and San Jacinto Mountain silhouette at dusk"
 keywords:
   - Palm Springs in summer
@@ -31,7 +31,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs in Summer: Is It Worth Visiting?",
   "description": "Yes, with caveats. Pool culture peaks, rates drop 30-50%, crowds disappear. Here's how to do summer in the desert right, month by month.",
-  "image": "https://indigopalm.co/blog/images/ps-via-sol-sunset.webp",
+  "image": "https://indigopalm.co/blog/images/palm-springs-pool.webp",
   "datePublished": "2026-02-04",
   "dateModified": "2026-04-15",
   "author": {
@@ -75,7 +75,7 @@ layout: blog-post.njk
 
 <p>Summer in the desert runs on a completely different schedule than summer anywhere else. The people who find it miserable showed up without a plan and wandered around outside at 2pm in July. The people who love it are in the pool by 7am, napping through the worst heat, and back outside by 6pm when the temperature drops and the light turns that particular shade of gold-orange that only happens in desert summers. Rates are down 30-50% from spring. Restaurants that had 45-minute waits in March will seat you tonight. Here's how to make the most of it.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Summer sunset over a Palm Springs residential street with palm trees casting long shadows and mountains turning pink at dusk" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-pool.webp" alt="Summer sunset over a Palm Springs residential street with palm trees casting long shadows and mountains turning pink at dusk" width="1400" height="933" loading="lazy">
 <p class="image-caption">Summer evenings in Palm Springs are legitimately one of the best parts. The heat breaks, the light turns gold-orange, and the city finally exhales.</p>
 
 <h2>The Heat Is Real</h2>

@@ -2,8 +2,8 @@
 title: "Palm Springs vs Indio: 25 Miles, Very Different Trips"
 date: 2026-04-09
 metaDescription: "Indio is 25 miles from Palm Springs, 30-40% cheaper per night, and 2 miles from the Coachella stage. Here's which base makes more sense for your trip."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
+ogImage: /blog/images/blog-hero-palm-springs.webp
+heroImage: /blog/images/blog-hero-palm-springs.webp
 heroAlt: "Palm tree-lined boulevard with the San Jacinto Mountains rising behind it in Palm Springs, California"
 keywords:
   - palm springs vs indio
@@ -165,7 +165,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs vs Indio: Which Desert Town Fits You?",
   "description": "Indio is 25 miles from Palm Springs, 30-40% cheaper per night, and 2 miles from the Coachella stage. Here's how to pick the right base for your trip.",
-  "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp",
+  "image": "https://indigopalm.co/blog/images/blog-hero-palm-springs.webp",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan",

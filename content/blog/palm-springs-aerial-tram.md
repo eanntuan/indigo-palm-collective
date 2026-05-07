@@ -3,8 +3,8 @@ title: "Palm Springs Aerial Tram: What to Know"
 date: 2026-04-01
 dateModified: 2026-04-15
 metaDescription: "Palm Springs Aerial Tram: ticket prices, hours, what's at 8,516 feet, and when to go. Honest guide from a Coachella Valley local who's been up many times."
-ogImage: /blog/images/ps-aerial-tram-mountain-view.webp
-heroImage: /blog/images/ps-aerial-tram-mountain-view.webp
+ogImage: /blog/images/ps-aerial-tram-sunrise.webp
+heroImage: /blog/images/ps-aerial-tram-sunrise.webp
 heroAlt: "View from the top of the Palm Springs Aerial Tram at 8,516 feet with pine trees and San Jacinto peaks"
 keywords:
   - Palm Springs Aerial Tram
@@ -30,7 +30,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs Aerial Tram: What to Know Before You Go",
   "description": "Palm Springs Aerial Tram guide: ticket prices, hours, what's at 8,516 feet, and when to go. What to expect from a Coachella Valley local who's been up many times.",
-  "image": "https://indigopalm.co/blog/images/ps-aerial-tram-mountain-view.webp",
+  "image": "https://indigopalm.co/blog/images/ps-aerial-tram-sunrise.webp",
   "datePublished": "2026-04-01",
   "dateModified": "2026-04-15",
   "author": {
@@ -111,7 +111,7 @@ layout: blog-post.njk
 
 <h2>What's at the Top</h2>
 
-<img src="/blog/images/ps-aerial-tram-mountain-view.webp" alt="Observation deck at the Palm Springs Aerial Tram Mountain Station with pine trees and distant desert valley views" width="1600" height="1066" loading="lazy">
+<img src="/blog/images/ps-aerial-tram-sunrise.webp" alt="Observation deck at the Palm Springs Aerial Tram Mountain Station with pine trees and distant desert valley views" width="1600" height="1066" loading="lazy">
 
 <p>The Mountain Station is bigger than most people expect. When you step off the tram you're inside a building with observation decks, two restaurants (Peaks Restaurant for sit-down dining, Top of the Tram for quick service), a natural history museum, two documentary theaters, and a gift shop.</p>
 

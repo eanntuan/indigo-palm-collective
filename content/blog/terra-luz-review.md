@@ -2,8 +2,8 @@
 title: "Terra Luz Vacation Rental: An Honest Review"
 date: 2026-04-14
 metaDescription: "Terra Luz in Indio: 4.98 stars, 146 reviews. Private saltwater pool, Latin/Cuban design. What guests consistently love and what to know before booking."
-ogImage: /blog/images/terra-luz-pool-backyard.webp
-heroImage: /blog/images/terra-luz-pool-backyard.webp
+ogImage: /blog/images/IMG_6691.webp
+heroImage: /blog/images/IMG_6691.webp
 heroAlt: "Terra Luz private saltwater pool and backyard at vacation rental in Indio California"
 keywords:
   - Terra Luz review
@@ -37,7 +37,7 @@ relatedPosts:
   "@type": "BlogPosting",
   "headline": "Terra Luz Review: What to Expect at Indio's Private Pool Rental",
   "description": "Terra Luz in Indio: 4.98 stars, 146 reviews. Private saltwater pool, Latin/Cuban design. What guests consistently love and what to know before booking.",
-  "image": "https://indigopalm.co/blog/images/terra-luz-pool-backyard.webp",
+  "image": "https://indigopalm.co/blog/images/IMG_6691.webp",
   "datePublished": "2026-04-14",
   "dateModified": "2026-04-14",
   "author": {
@@ -81,7 +81,7 @@ relatedPosts:
 
 <p>I'm Eann. I own it.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz private saltwater pool with geometric tile and sun shelf in Indio California" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/IMG_6691.webp" alt="Terra Luz private saltwater pool with geometric tile and sun shelf in Indio California" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The private saltwater pool. Heated year-round, geometric tile border, sun shelf loungers. This is the part people come back for.</p>
 
 <h2>What Guests Consistently Say</h2>

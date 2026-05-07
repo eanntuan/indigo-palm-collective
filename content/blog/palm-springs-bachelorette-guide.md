@@ -2,8 +2,8 @@
 title: "Palm Springs Bachelorette Party: Real Guide"
 date: 2026-03-28
 metaDescription: "Desert bachelorette in Palm Springs: pools, restaurants, spas, 2 hours from LA. The honest guide to what to book, skip, and plan for your crew."
-ogImage: /blog/images/ps-street-bougainvillea.webp
-heroImage: /blog/images/ps-street-bougainvillea.webp
+ogImage: /blog/images/ps-palm-springs-sign.webp
+heroImage: /blog/images/ps-palm-springs-sign.webp
 heroAlt: "Colorful bougainvillea-lined street in Palm Springs California on a sunny day"
 keywords:
   - palm springs bachelorette party
@@ -30,7 +30,7 @@ layout: blog-post.njk
   "@type": "BlogPosting",
   "headline": "Palm Springs Bachelorette Party: Real Guide",
   "description": "Palm Springs bachelorette trips work well because the valley has pools, restaurants, spas, and a 2-hour drive from LA. Here's what to book and skip.",
-  "image": "https://indigopalm.co/blog/images/ps-street-bougainvillea.webp",
+  "image": "https://indigopalm.co/blog/images/ps-palm-springs-sign.webp",
   "datePublished": "2026-03-28",
   "dateModified": "2026-03-28",
   "author": {
