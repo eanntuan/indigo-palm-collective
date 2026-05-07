@@ -3,9 +3,9 @@ title: "BNP Paribas Open: Where to Eat in Indian Wells"
 date: 2026-03-25
 dateModified: 2026-05-03
 metaDescription: "Where to eat during the BNP Paribas Open: Nobu inside the stadium, best spots in Indian Wells and Palm Desert, and quick options between matches."
-ogImage: /blog/images/bnp-paribas-stadium-packed.webp
-heroImage: /blog/images/bnp-paribas-stadium-packed.webp
-heroAlt: "Packed stadium at the Indian Wells Tennis Garden during the BNP Paribas Open"
+ogImage: /blog/images/tennis-stadium-crowd.webp
+heroImage: /blog/images/tennis-stadium-crowd.webp
+heroAlt: "Packed outdoor tennis stadium during a professional tournament match"
 keywords:
   - BNP Paribas Open restaurants
   - where to eat Indian Wells tennis
