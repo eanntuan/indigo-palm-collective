@@ -1,8 +1,8 @@
 ---
-title: "Joshua Tree Day Trip from Indio"
+title: "Joshua Tree Day Trip from Indio: Itinerary, Entry Fees, Tips"
 date: 2026-01-30
-dateModified: 2026-04-15
-metaDescription: "Joshua Tree day trip from Indio or Palm Springs: which entrance to use, what to bring, entry fees, and a full-day itinerary from a Coachella Valley local."
+dateModified: 2026-05-10
+metaDescription: "Joshua Tree day trip from Indio: 45 min drive, Cottonwood entrance, $35 entry fee, full itinerary, and what to bring from a Coachella Valley local."
 ogImage: /blog/images/joshua-tree-national-park.webp
 heroImage: /blog/images/joshua-tree-national-park.webp
 heroAlt: "Joshua Tree National Park landscape with iconic Joshua trees and granite boulder formations under a clear blue sky"
@@ -29,7 +29,7 @@ layout: blog-post.njk
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Joshua Tree Day Trip from Indio and Palm Springs",
+  "headline": "Joshua Tree Day Trip from Indio: Itinerary, Entry Fees, Tips",
   "description": "Joshua Tree day trip from Indio or Palm Springs: which entrance, what to see, entry fees, what to bring, and a full-day itinerary from a Coachella Valley local.",
   "image": "https://indigopalm.co/blog/images/joshua-tree-national-park.webp",
   "datePublished": "2026-01-30",
@@ -64,7 +64,7 @@ layout: blog-post.njk
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Joshua Tree Day Trip from Indio and Palm Springs",
+      "name": "Joshua Tree Day Trip from Indio: Itinerary, Entry Fees, Tips",
       "item": "https://indigopalm.co/blog/joshua-tree-day-trip-from-indio/"
     }
   ]
