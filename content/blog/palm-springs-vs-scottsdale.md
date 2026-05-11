@@ -1,7 +1,8 @@
 ---
-title: "Palm Springs vs Scottsdale: Which Is Right for You?"
+title: "Palm Springs vs Scottsdale: Cost, Vibe, and Who Wins"
 date: 2026-03-16
-metaDescription: "Palm Springs vs Scottsdale: same weather, different vibe. How they differ on cost, driving distance, and which one fits your trip."
+dateModified: 2026-05-11
+metaDescription: "Palm Springs vs Scottsdale: Palm Springs is smaller and walkable, Scottsdale is larger and resort-focused. Here's the cost breakdown and which fits your trip."
 ogImage: /blog/images/scottsdale-resort-pool.webp
 heroImage: /blog/images/scottsdale-resort-pool.webp
 heroAlt: "luxury resort pool in Scottsdale Arizona desert vacation"
@@ -25,11 +26,11 @@ layout: blog-post.njk
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Palm Springs vs Scottsdale: Which One Is Right for Your Trip?",
+  "headline": "Palm Springs vs Scottsdale: Cost, Vibe, and Who Wins",
   "description": "Palm Springs vs Scottsdale compared on vibe, cost, driving distance, weather, and who each one fits best.",
   "image": "https://indigopalm.co/blog/images/ps-boulevard-palms-mountains.webp",
   "datePublished": "2026-03-16",
-  "dateModified": "2026-03-16",
+  "dateModified": "2026-05-11",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

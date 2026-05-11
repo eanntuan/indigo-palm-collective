@@ -1,7 +1,8 @@
 ---
-title: "Coachella Valley with Kids: What Actually Works"
+title: "Coachella Valley with Kids: Best Rentals, Activities, Tips"
 date: 2026-01-18
-metaDescription: "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters more than people think."
+dateModified: 2026-05-11
+metaDescription: "Coachella Valley with kids: best months to visit, family-friendly vacation rentals in Indio, and where to take toddlers and babies in the desert."
 ogImage: /blog/images/cozy-cactus-infant-gear.webp
 heroImage: /blog/images/cozy-cactus-infant-gear.webp
 heroAlt: "Baby and family gear laid out at Cozy Cactus vacation rental in Indio CA, pack n play stroller and infant supplies"
@@ -118,11 +119,11 @@ relatedPosts:
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Coachella Valley with Kids: A Practical Family Guide",
+  "headline": "Coachella Valley with Kids: Best Rentals, Activities, Tips",
   "description": "Coachella Valley with kids: what works for families with toddlers and babies, where to stay, what to skip, and why baby gear matters.",
   "image": "https://indigopalm.co/blog/images/cozy-cactus-infant-gear.webp",
   "datePublished": "2026-01-18",
-  "dateModified": "2026-01-18",
+  "dateModified": "2026-05-11",
   "author": {
     "@type": "Person",
     "name": "Eann Tuan"

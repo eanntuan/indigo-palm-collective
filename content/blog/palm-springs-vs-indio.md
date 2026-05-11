@@ -1,6 +1,7 @@
 ---
 title: "Palm Springs vs Indio: 25 Miles, Very Different Trips"
 date: 2026-02-05
+dateModified: 2026-05-11
 metaDescription: "Indio is 25 miles from Palm Springs, 30-40% cheaper per night, and 2 miles from the Coachella stage. Here's which base makes more sense for your trip."
 ogImage: /blog/images/blog-hero-palm-springs.webp
 heroImage: /blog/images/blog-hero-palm-springs.webp
@@ -24,6 +25,10 @@ layout: blog-post.njk
 ---
 
 <p>The most common question we get from people booking a desert trip: should you stay in Palm Springs or closer to Indio? It's a real question with a real answer, and the answer depends entirely on what your group wants from the trip. I own properties in both areas, so I have no incentive to push one over the other. Here's what actually matters.</p>
+
+<h2>How Far Is Indio from Palm Springs?</h2>
+
+<p>Indio is about 25 miles from Palm Springs, which is typically 30 to 40 minutes on the I-10 with no traffic. During Coachella or Stagecoach weekends, that same drive can take an hour or more heading back in the evenings. It's close enough to day-trip between the two, but far enough that staying in the wrong city will cost you real time over a festival weekend.</p>
 
 <h2>Palm Springs: What You're Getting</h2>
 
@@ -163,7 +168,7 @@ layout: blog-post.njk
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Palm Springs vs Indio: Which Desert Town Fits You?",
+  "headline": "Palm Springs vs Indio: 25 Miles, Very Different Trips",
   "description": "Indio is 25 miles from Palm Springs, 30-40% cheaper per night, and 2 miles from the Coachella stage. Here's how to pick the right base for your trip.",
   "image": "https://indigopalm.co/blog/images/blog-hero-palm-springs.webp",
   "author": {
@@ -181,7 +186,7 @@ layout: blog-post.njk
     }
   },
   "datePublished": "2026-02-05",
-  "dateModified": "2026-02-05",
+  "dateModified": "2026-05-11",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://indigopalm.co/blog/palm-springs-vs-indio/"
