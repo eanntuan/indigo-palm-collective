@@ -2453,7 +2453,7 @@ function parseEmailParts(rawEmail) {
     const enc = encMatch ? encMatch[1].toLowerCase() : '';
     let decoded = body;
     if (enc === 'quoted-printable') decoded = decodeQuotedPrintable(body);
-    else if (enc === 'base64') { try { decoded = atob(body.replace(/\s/g, '')); } catch {} }
+    else if (enc === 'base64') { try { const b64 = body.replace(/\s/g, ''); decoded = new TextDecoder('utf-8').decode(Uint8Array.from(atob(b64), c => c.charCodeAt(0))); } catch {} }
     return ct.includes('html') ? { plain: '', html: decoded } : { plain: decoded, html: '' };
   }
 
@@ -2473,7 +2473,7 @@ function parseEmailParts(rawEmail) {
 
     const penc = (ph.match(/Content-Transfer-Encoding:\s*(\S+)/i) || [])[1]?.toLowerCase() || '';
     if (penc === 'quoted-printable') pb = decodeQuotedPrintable(pb);
-    else if (penc === 'base64') { try { pb = atob(pb.replace(/\s/g, '')); } catch {} }
+    else if (penc === 'base64') { try { const b64 = pb.replace(/\s/g, ''); pb = new TextDecoder('utf-8').decode(Uint8Array.from(atob(b64), c => c.charCodeAt(0))); } catch {} }
 
     if (/content-type:\s*text\/plain/i.test(ph)) plain = pb;
     else if (/content-type:\s*text\/html/i.test(ph)) html = pb;
@@ -2676,7 +2676,14 @@ async function sendWebPush(env, notification) {
     },
     body,
   });
-  if (!res.ok) console.error('Web Push failed:', res.status, await res.text());
+  if (!res.ok) {
+    const body = await res.text();
+    console.error('Web Push failed:', res.status, body);
+    if (res.status === 404 || res.status === 410) {
+      await env.BOOKINGS.delete('push_subscription');
+      console.log('Deleted stale push_subscription from KV');
+    }
+  }
   return res.ok;
 }
 
@@ -3102,7 +3109,13 @@ async function handleAirbnbEmail(message, env) {
     try {
       const rawEmail = await streamToText(message.raw);
       const { plain, html } = parseEmailParts(rawEmail);
-      const bodyText = plain || stripHtml(html) || '(no body)';
+      const rawBodyText = plain || stripHtml(html) || '(no body)';
+      const bodyText = rawBodyText
+        .replace(/%opentrack%/gi, '')
+        .replace(/https?:\/\/\S{80,}/g, '[link]')
+        .replace(/[ \t]+$/gm, '')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
       await sendEmail(env.RESEND_API_KEY, {
         from:    'Indigo Palm Bot <bookings@indigopalm.co>',
         to:      'indigopalmco@gmail.com',
