@@ -2802,7 +2802,18 @@ async function handleInboxPage(env) {
       return Uint8Array.from(raw, c => c.charCodeAt(0));
     }
     async function checkNotifyState() {
-      if (!('Notification' in window) || !('serviceWorker' in navigator)) return;
+      const wrap = document.getElementById('notify-wrap');
+      const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+      const isStandalone = window.navigator.standalone === true;
+
+      if (!('Notification' in window) || !('serviceWorker' in navigator)) {
+        // Not supported — likely iOS Safari in browser tab
+        if (isIOS && !isStandalone) {
+          wrap.style.display = 'block';
+          wrap.innerHTML = '<div class="notify-bar"><p style="font-size:13px;margin:0">To get push notifications on iPhone: tap <strong>Share</strong> then <strong>Add to Home Screen</strong>, then open from there.</p></div>';
+        }
+        return;
+      }
       const perm = Notification.permission;
       if (perm === 'granted') {
         const reg = await navigator.serviceWorker.ready;
@@ -2810,7 +2821,7 @@ async function handleInboxPage(env) {
         if (sub) return; // already subscribed
       }
       if (perm !== 'denied') {
-        document.getElementById('notify-wrap').style.display = 'block';
+        wrap.style.display = 'block';
       }
     }
     checkNotifyState();
