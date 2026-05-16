@@ -2,5 +2,19 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /booking-flow/
+Disallow: /blog.html
+Disallow: /casa-moto.html
+Disallow: /cozy-cactus.html
+Disallow: /festivalguide.html
+Disallow: /ps-retreat.html
+Disallow: /terra-luz.html
+Disallow: /the-well.html
+Disallow: /blog/beyond-coachella-desert-escape.html
+Disallow: /blog/coachella-valley-insider-guide.html
+Disallow: /blog/indio-between-coachella-weekends.html
+Disallow: /blog/indio-local-gems.html
+Disallow: /blog/palm-springs-coffee-guide.html
+Disallow: /blog/terra-luz-origin-story.html
+Disallow: /blog/where-to-stay-coachella-2026.html
 
 Sitemap: https://indigopalm.co/sitemap.xml
