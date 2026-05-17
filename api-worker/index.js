@@ -505,6 +505,7 @@ export default {
     if (path === '/api/vapid-public-key') return handleVapidPublicKey(env);
     if (path === '/api/push-subscribe' && request.method === 'POST') return handlePushSubscribe(request, env);
     if (path === '/api/test-push') return handleTestPush(env);
+    if (path === '/api/test-email') return handleTestEmail(env);
     if (path === '/api/test-guest-message') return handleTestGuestMessage(env);
 
     // Approval page: GET /api/approve-reply?id=XXX
@@ -2895,6 +2896,73 @@ async function handlePushSubscribe(request, env) {
   return new Response(JSON.stringify({ ok: true }), { headers: { 'Content-Type': 'application/json' } });
 }
 
+async function handleTestEmail(env) {
+  const subject = 'Reservation confirmed - Sarah Martinez arrives Jun 14';
+  const bodyText = `RESERVATION FOR COZY CACTUS FAMILY GETAWAY!, JUN 14-17
+
+NEW BOOKING CONFIRMED! SARAH ARRIVES JUN 14.
+
+Sarah Martinez
+
+Identity verified
+
+Hi! Can't wait for our family trip. We have two little ones so we're really excited about the bunk beds!
+
+FAMILY FRIENDLY SALTWATER POOL GETAWAY!
+Entire home/apt
+
+Check-in     Checkout
+
+Sat, Jun 14  Tue, Jun 17
+
+4:00 PM      10:00 AM
+
+GUESTS
+
+4 adults, 2 children
+
+CONFIRMATION CODE
+HXYZ9ABCDE
+
+GUEST PAID
+
+$249.00 x 3 nights   $747.00
+
+Cleaning fee   $260.00
+
+Guest service fee   $0.00
+
+Occupancy taxes   $147.81
+
+TOTAL (USD)   $1,154.81
+
+HOST PAYOUT
+
+3 nights room fee   $747.00
+
+Cleaning fee   $260.00
+
+Host service fee (15.5%)   -$155.54
+
+YOU EARN   $851.46`;
+
+  try {
+    await sendEmail(env.RESEND_API_KEY, {
+      from:    'Indigo Palm Bot <bookings@indigopalm.co>',
+      to:      'indigopalmco@gmail.com',
+      subject: `[Airbnb] ${subject}`,
+      html:    emailWrapper(buildAirbnbConfirmationEmail(subject, bodyText)),
+    });
+    return new Response(JSON.stringify({ ok: true, message: 'Test confirmation email sent to indigopalmco@gmail.com.' }), {
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } catch (e) {
+    return new Response(JSON.stringify({ error: e.message }), {
+      status: 500, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+}
+
 async function handleTestPush(env) {
   const sub = await env.BOOKINGS.get('push_subscription', { type: 'json' });
   if (!sub) {
@@ -2988,6 +3056,164 @@ function escapeHtml(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
+}
+
+function fixEncoding(s) {
+  return (s || '')
+    .replace(/â€™/g, "'").replace(/â€œ/g, '"').replace(/â€/g, '"')
+    .replace(/â€‰/g, ' ').replace(/â€"/g, '–').replace(/â€"/g, '—')
+    .replace(/Ã©/g, 'é').replace(/Ã¨/g, 'è').replace(/Ã /g, 'à')
+    .replace(/[Â-ï][-¿]+/g, '').replace(/Â /g, ' ')
+    .trim();
+}
+
+function buildAirbnbMessageEmail(subject, bodyText) {
+  const e = escapeHtml;
+  const fix = fixEncoding;
+
+  const grab = (pattern, text, group = 1) => {
+    const m = text.match(pattern);
+    return m ? fix(m[group].trim()) : null;
+  };
+
+  const propertyName = grab(/RESERVATION FOR ([^\n,!]+)/i, bodyText);
+  const dates        = grab(/RESERVATION FOR [^\n]+,\s*([A-Z][a-z]+ \d+[^,\n]*)/i, bodyText);
+  const checkIn      = grab(/Check-in\s+Checkout[\s\S]{0,40}?(\w+day,?\s+\w+ \d+(?:,\s+\d{4})?)/i, bodyText);
+  const checkOut     = grab(/Check-in\s+Checkout[\s\S]{0,100}?(\w+day,?\s+\w+ \d+(?:,\s+\d{4})?)\s*(?:\d|$)/im, bodyText.slice(bodyText.search(/Check-in/i) + 20));
+  const checkInTime  = grab(/(\d+:\d+\s?[AP]M)/i, bodyText);
+  const guests       = grab(/GUESTS\s*\n([^\n]+)/i, bodyText);
+
+  // Extract all messages in the thread
+  const messages = [];
+  const msgPattern = /\n\s{2,}([A-Z][A-Z\s]+[A-Z])\s*\n\s*([\w\s]+)\n\s*([\s\S]+?)(?=\n\s{2,}[A-Z]{2,}|\nReply\n|\n[A-Z ]{4,}\n|$)/g;
+  let match;
+  while ((match = msgPattern.exec(bodyText)) !== null) {
+    const name = fix(match[1].trim());
+    const role = fix(match[2].trim());
+    const text = fix(match[3].replace(/\n/g, ' ').replace(/\s+/g, ' ').trim());
+    if (text.length > 3 && !text.startsWith('http') && name.length < 40) {
+      messages.push({ name, role, text });
+    }
+  }
+
+  const row = (label, value) => value ? `
+    <tr>
+      <td style="padding:10px 16px;color:#888;font-size:13px;white-space:nowrap;border-bottom:1px solid #f0ede8;">${e(label)}</td>
+      <td style="padding:10px 16px;font-size:14px;font-weight:500;color:#2C2C2C;border-bottom:1px solid #f0ede8;">${e(value)}</td>
+    </tr>` : '';
+
+  const msgBubble = ({ name, role, text }) => `
+    <div style="margin-bottom:12px;">
+      <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#888;">${e(name)} <span style="font-weight:400;color:#bbb;">${e(role)}</span></p>
+      <div style="background:#f7f5f1;border-left:3px solid #B67550;padding:12px 16px;border-radius:0 8px 8px 0;font-size:14px;color:#2C2C2C;line-height:1.6;">${e(text)}</div>
+    </div>`;
+
+  const latestSender = messages.length ? messages[messages.length - 1].name : null;
+  const headline = latestSender
+    ? `${latestSender} sent a message`
+    : propertyName || fix(subject);
+
+  return `
+    <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Forwarded from Airbnb</p>
+    <h2 style="margin:0 0 4px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${e(headline)}</h2>
+    ${propertyName ? `<p style="margin:0 0 24px;font-size:13px;color:#888;">${e(propertyName)}${dates ? ' · ' + e(dates) : ''}</p>` : '<div style="margin-bottom:24px"></div>'}
+
+    <table style="width:100%;border-collapse:collapse;border:1px solid #e8e4de;border-radius:10px;overflow:hidden;margin-bottom:24px;">
+      ${row('Check-in', checkIn ? checkIn + (checkInTime ? ' at ' + checkInTime : '') : null)}
+      ${row('Checkout', checkOut ? checkOut + ' at 10:00 AM' : null)}
+      ${row('Guests', guests)}
+    </table>
+
+    ${messages.length ? messages.map(msgBubble).join('') : `<p style="font-size:14px;color:#555;line-height:1.6;">${e(fix(bodyText).slice(0, 800))}</p>`}
+  `;
+}
+
+function buildAirbnbGenericEmail(subject, bodyText) {
+  const e = escapeHtml;
+  const fix = fixEncoding;
+  const cleaned = fix(bodyText)
+    .replace(/https?:\/\/\S+/g, '')
+    .replace(/\[[\s\S]{0,60}?\]/g, '')
+    .replace(/[ \t]+$/gm, '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
+  return `
+    <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Forwarded from Airbnb</p>
+    <h2 style="margin:0 0 20px;font-family:Georgia,serif;font-size:20px;font-weight:400;color:#2C2C2C;">${e(fix(subject))}</h2>
+    <div style="font-size:14px;line-height:1.7;color:#333;white-space:pre-wrap;">${e(cleaned.slice(0, 3000))}</div>
+  `;
+}
+
+function buildAirbnbConfirmationEmail(subject, bodyText) {
+  const e = escapeHtml;
+  const clean = s => (s || '').replace(/[Â-ï][-¿]+/g, c => {
+    try { return decodeURIComponent(escape(c)); } catch { return c; }
+  }).replace(/\s+/g, ' ').trim();
+
+  const grab = (pattern, text, group = 1) => {
+    const m = text.match(pattern);
+    return m ? clean(m[group]) : null;
+  };
+
+  const guestName   = grab(/reservation confirmed\s*[-–]\s*([^\n]+?)\s+arrives/i, subject)
+                   || grab(/([A-Z][a-z]+(?: [A-Z][a-z]+)+)\s*\n/m, bodyText);
+  const confCode    = grab(/CONFIRMATION CODE\s*\n([A-Z0-9]{6,12})/i, bodyText);
+  const checkIn     = grab(/Check-in\s+Checkout[\s\S]{0,30}?(\w+,\s+\w+\s+\d+)/i, bodyText);
+  const checkOut    = grab(/Check-in\s+Checkout[\s\S]{0,80}?\w+,\s+\w+\s+\d+[\s\S]{0,20}?(\w+,\s+\w+\s+\d+)/i, bodyText);
+  const checkInTime = grab(/(\d+:\d+[ \s]?[AP]M)\s/i, bodyText);
+  const guests      = grab(/GUESTS\s*\n([^\n]+)/i, bodyText);
+  const payout      = grab(/YOU EARN\s+\$?([\d,]+\.\d{2})/i, bodyText);
+  const guestTotal  = grab(/TOTAL \(USD\)\s+\$?([\d,]+\.\d{2})/i, bodyText);
+  const nightFee    = grab(/\$([\d,]+\.\d{2}) x \d+ nights?/i, bodyText);
+  const numNights   = grab(/\$[\d,]+\.\d{2} x (\d+) nights?/i, bodyText);
+  const cleaning    = grab(/Cleaning fee\s+\$?([\d,]+\.\d{2})/i, bodyText);
+  const serviceFee  = grab(/Host service fee[^\n]*\s+-?\$?([\d,]+\.\d{2})/i, bodyText);
+  const taxes       = grab(/Occupancy taxes\s+\$?([\d,]+\.\d{2})/i, bodyText);
+  const guestMsg    = grab(/(?:Hi!|Hello)[^\n]{0,200}/i, bodyText);
+  const propertyName = grab(/RESERVATION FOR ([^\n,!]+)/i, bodyText);
+
+  const row = (label, value) => value ? `
+    <tr>
+      <td style="padding:10px 16px;color:#888;font-size:13px;white-space:nowrap;border-bottom:1px solid #f0ede8;">${e(label)}</td>
+      <td style="padding:10px 16px;font-size:14px;font-weight:500;color:#2C2C2C;border-bottom:1px solid #f0ede8;">${e(value)}</td>
+    </tr>` : '';
+
+  const finRow = (label, value, bold = false) => value ? `
+    <tr>
+      <td style="padding:8px 16px;color:${bold ? '#2C2C2C' : '#666'};font-size:${bold ? '14px' : '13px'};font-weight:${bold ? '700' : '400'};border-top:${bold ? '2px solid #e8e4de' : 'none'};">${e(label)}</td>
+      <td style="padding:8px 16px;color:${bold ? '#2C2C2C' : '#666'};font-size:${bold ? '14px' : '13px'};font-weight:${bold ? '700' : '400'};text-align:right;border-top:${bold ? '2px solid #e8e4de' : 'none'};">$${e(value)}</td>
+    </tr>` : '';
+
+  return `
+    <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">New Booking</p>
+    <h2 style="margin:0 0 4px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">
+      ${guestName ? e(guestName) + ' is coming' : 'Reservation Confirmed'}
+    </h2>
+    ${propertyName ? `<p style="margin:0 0 24px;font-size:13px;color:#888;">${e(propertyName)}</p>` : '<div style="margin-bottom:24px"></div>'}
+
+    <table style="width:100%;border-collapse:collapse;border:1px solid #e8e4de;border-radius:10px;overflow:hidden;margin-bottom:20px;">
+      ${row('Confirmation', confCode)}
+      ${row('Check-in', checkIn ? checkIn + (checkInTime ? ' at ' + checkInTime : '') : null)}
+      ${row('Checkout', checkOut ? checkOut + ' at 10:00 AM' : null)}
+      ${row('Guests', guests)}
+    </table>
+
+    ${guestMsg ? `
+    <div style="background:#f7f5f1;border-left:3px solid #c8a97e;padding:14px 16px;border-radius:0 8px 8px 0;margin-bottom:20px;">
+      <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Guest message</p>
+      <p style="margin:0;font-size:14px;color:#2C2C2C;line-height:1.6;">${e(guestMsg)}</p>
+    </div>` : ''}
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:8px;">
+      ${finRow(nightFee && numNights ? `$${nightFee} × ${numNights} nights` : 'Room fee', nightFee ? (parseFloat(nightFee.replace(',','')) * parseInt(numNights||1)).toFixed(2) : null)}
+      ${finRow('Cleaning fee', cleaning)}
+      ${finRow('Occupancy taxes', taxes)}
+      ${finRow('Guest total', guestTotal)}
+      ${finRow('Host service fee', serviceFee ? '-' + serviceFee : null)}
+      ${finRow('Your payout', payout, true)}
+    </table>
+  `;
 }
 
 async function handleApprovalPage(request, env) {
@@ -3123,19 +3349,25 @@ async function handleAirbnbEmail(message, env) {
       const rawBodyText = plain || stripHtml(html) || '(no body)';
       const bodyText = rawBodyText
         .replace(/%opentrack%/gi, '')
-        .replace(/https?:\/\/\S{80,}/g, '[link]')
+        .replace(/https?:\/\/\S{60,}/g, '')
+        .replace(/\[[^\]]{60,}\]/g, '')
         .replace(/[ \t]+$/gm, '')
         .replace(/\n{3,}/g, '\n\n')
         .trim();
+
+      const isConfirmation = /reservation confirmed/i.test(subject);
+      const isMessageThread = /reservation for /i.test(bodyText);
+      const emailHtml = isConfirmation
+        ? buildAirbnbConfirmationEmail(subject, bodyText)
+        : isMessageThread
+        ? buildAirbnbMessageEmail(subject, bodyText)
+        : buildAirbnbGenericEmail(subject, bodyText);
+
       await sendEmail(env.RESEND_API_KEY, {
         from:    'Indigo Palm Bot <bookings@indigopalm.co>',
         to:      'indigopalmco@gmail.com',
         subject: `[Airbnb] ${subject}`,
-        html:    emailWrapper(`
-          <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Forwarded from Airbnb</p>
-          <h2 style="margin:0 0 20px;font-family:Georgia,serif;font-size:20px;font-weight:400;color:#2C2C2C;">${subject}</h2>
-          <pre style="font-family:inherit;font-size:14px;line-height:1.6;white-space:pre-wrap;color:#333;">${bodyText.slice(0, 4000)}</pre>
-        `),
+        html:    emailWrapper(emailHtml),
       });
     } catch (e) {
       console.error('Failed to forward Airbnb non-message email:', e);

@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "setup": "node setup.js",
     "generate": "node run.js",
     "get-boards": "node get-boards.js",
+    "create-pin": "node create-pin.js",
+    "batch": "node batch-from-csv.js",
     "oauth": "node oauth-helper.js"
   },
   "dependencies": {
