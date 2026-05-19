@@ -507,6 +507,9 @@ export default {
     if (path === '/api/test-push') return handleTestPush(env);
     if (path === '/api/test-email') return handleTestEmail(env);
     if (path === '/api/test-guest-message') return handleTestGuestMessage(env);
+    if (path === '/api/email-log') return handleEmailLog(env);
+    if (path === '/api/push-sub-status') return handlePushSubStatus(env);
+    if (path === '/api/simulate-inbound') return handleSimulateInbound(env);
 
     // Approval page: GET /api/approve-reply?id=XXX
     if (path === '/api/approve-reply' && request.method === 'GET') {
@@ -2420,9 +2423,24 @@ async function streamToText(stream) {
 }
 
 function decodeQuotedPrintable(str) {
-  return str
-    .replace(/=\r?\n/g, '')
-    .replace(/=([0-9A-Fa-f]{2})/g, (_, h) => String.fromCharCode(parseInt(h, 16)));
+  const unfolded = str.replace(/=\r?\n/g, '');
+  const bytes = [];
+  let i = 0;
+  while (i < unfolded.length) {
+    if (unfolded[i] === '=' && i + 2 < unfolded.length && /[0-9A-Fa-f]{2}/.test(unfolded.slice(i + 1, i + 3))) {
+      bytes.push(parseInt(unfolded.slice(i + 1, i + 3), 16));
+      i += 3;
+    } else {
+      const cc = unfolded.charCodeAt(i);
+      if (cc < 128) {
+        bytes.push(cc);
+      } else {
+        for (const b of new TextEncoder().encode(unfolded[i])) bytes.push(b);
+      }
+      i++;
+    }
+  }
+  return new TextDecoder('utf-8', { fatal: false }).decode(new Uint8Array(bytes));
 }
 
 function stripHtml(html) {
@@ -2498,6 +2516,21 @@ function detectProperty(subject, body) {
     if (prop.patterns.some(p => text.includes(p))) return prop;
   }
   return null;
+}
+
+function extractAirbnbThreadUrl(rawEmail) {
+  const patterns = [
+    /href="(https:\/\/www\.airbnb\.com\/hosting\/inbox[^"]+)"/i,
+    /href="(https:\/\/www\.airbnb\.com\/z\/q\/[^"]+)"/i,
+    /href="(https:\/\/www\.airbnb\.com\/hosting\/reservations[^"]+)"/i,
+    /(https:\/\/www\.airbnb\.com\/hosting\/inbox[^\s"<>\r\n]+)/i,
+    /(https:\/\/www\.airbnb\.com\/z\/q\/[^\s"<>\r\n]+)/i,
+  ];
+  for (const pat of patterns) {
+    const m = rawEmail.match(pat);
+    if (m) return m[1];
+  }
+  return 'https://www.airbnb.com/hosting/inbox';
 }
 
 async function extractGuestMessageWithClaude(env, emailText, subject) {
@@ -2819,7 +2852,18 @@ async function handleInboxPage(env) {
       if (perm === 'granted') {
         const reg = await navigator.serviceWorker.ready;
         const sub = await reg.pushManager.getSubscription();
-        if (sub) return; // already subscribed
+        if (sub) {
+          // Verify server still has the subscription (it deletes stale ones on 410)
+          try {
+            const r = await fetch('/api/push-sub-status');
+            const { active } = await r.json();
+            if (active) return; // All good — subscribed on both ends
+            // Server lost it — unsubscribe browser so re-registration can happen
+            await sub.unsubscribe();
+          } catch {
+            return; // Network error, assume fine
+          }
+        }
       }
       if (perm !== 'denied') {
         wrap.style.display = 'block';
@@ -3047,6 +3091,56 @@ async function handleTestGuestMessage(env) {
   });
 }
 
+async function handleSimulateInbound(env) {
+  // Simulates a real Airbnb guest message email hitting the Worker email() handler.
+  // Exercises: from-check, reply-to parse, property detection, Claude extraction, KV write, approval email, push.
+  const fakeBody = `From: automated@airbnb.com
+To: airbnb@indigopalm.co
+Subject: New message from Alex
+Reply-To: reply+simulatedtoken123@reply.airbnb.com
+Content-Type: text/plain; charset=utf-8
+
+Hi! We're arriving at The Sundune at Palm Springs (5301 E Waverly Dr) on Friday. Quick question — is there a good place to grab breakfast nearby? Also what's the best entrance to use?
+
+Thanks,
+Alex
+
+View the conversation: https://www.airbnb.com/hosting/inbox/folder/all?threadId=99999999`;
+
+  const encoder = new TextEncoder();
+  const bytes = encoder.encode(fakeBody);
+  const stream = new ReadableStream({
+    start(controller) {
+      controller.enqueue(bytes);
+      controller.close();
+    },
+  });
+
+  const fakeMessage = {
+    from: 'automated@airbnb.com',
+    headers: {
+      get(name) {
+        const n = name.toLowerCase();
+        if (n === 'subject') return 'New message from Alex';
+        if (n === 'reply-to') return 'reply+simulatedtoken123@reply.airbnb.com';
+        return '';
+      },
+    },
+    raw: stream,
+  };
+
+  try {
+    await handleAirbnbEmail(fakeMessage, env);
+    return new Response(JSON.stringify({ ok: true, message: 'Simulation complete. Check /api/email-log and your inbox/push.' }), {
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } catch (e) {
+    return new Response(JSON.stringify({ ok: false, error: e.message }), {
+      status: 500, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+}
+
 // ── HTML escape helper ────────────────────────────────────────────────────────
 
 function escapeHtml(str) {
@@ -3060,39 +3154,103 @@ function escapeHtml(str) {
 
 function fixEncoding(s) {
   return (s || '')
-    .replace(/â€™/g, "'").replace(/â€œ/g, '"').replace(/â€/g, '"')
-    .replace(/â€‰/g, ' ').replace(/â€"/g, '–').replace(/â€"/g, '—')
-    .replace(/Ã©/g, 'é').replace(/Ã¨/g, 'è').replace(/Ã /g, 'à')
-    .replace(/[Â-ï][-¿]+/g, '').replace(/Â /g, ' ')
+    // Smart quotes and apostrophes
+    .replace(/â€™/g, "'").replace(/â€œ/g, '“').replace(/â€/g, '”').replace(/â€/g, '“')
+    // Spaces and dashes
+    .replace(/â€‰/g, ' ').replace(/â€"/g, '–').replace(/â€"/g, '—')
+    // Accented chars
+    .replace(/Ã©/g, 'é').replace(/Ã¨/g, 'è').replace(/Ã /g, 'à').replace(/Ã¼/g, 'ü')
+    // Strip 4-byte emoji mojibake sequences like ðŸŠ (U+1F3E0 etc.)
+    .replace(/[ðÃ][^\x20-\x7E\n\t]{1,3}/g, '')
+    // Remaining multi-byte latin-1 debris
+    .replace(/Â\s/g, ' ').replace(/Â/g, '').replace(/[\x80-\x9F]/g, '')
     .trim();
 }
 
-function buildAirbnbMessageEmail(subject, bodyText) {
+// Section headers Airbnb uses — never treat these as message sender names
+const AIRBNB_SECTION_HEADERS = new Set([
+  'CHECK-IN', 'CHECKOUT', 'GUESTS', 'CONFIRMATION CODE', 'RESERVATION FOR',
+  'YOU EARN', 'TOTAL', 'CLEANING FEE', 'SERVICE FEE', 'OCCUPANCY TAXES',
+  'HOST SERVICE FEE', 'REPLY', 'GET THE APP', 'AIRBNB', 'MANAGE YOUR LISTING',
+  'FRIDAY', 'SATURDAY', 'SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY',
+  'JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY',
+  'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER',
+]);
+
+const AIRBNB_BOILERPLATE_CUTOFFS = [
+  /Get the app[\.\s]/i,
+  /The fastest, easiest way to Airbnb/i,
+  /Airbnb, Inc\.,?\s+888 Brannan/i,
+  /You can also respond by replying directly to this email/i,
+  /To ensure the security of your account/i,
+  /This message was sent to/i,
+  /Unsubscribe/i,
+];
+
+function truncateAtBoilerplate(text) {
+  let cutAt = text.length;
+  for (const pattern of AIRBNB_BOILERPLATE_CUTOFFS) {
+    const m = text.search(pattern);
+    if (m !== -1 && m < cutAt) cutAt = m;
+  }
+  return text.slice(0, cutAt).trimEnd();
+}
+
+function buildAirbnbMessageEmail(subject, bodyText, property) {
   const e = escapeHtml;
   const fix = fixEncoding;
+
+  const cleaned = truncateAtBoilerplate(bodyText);
 
   const grab = (pattern, text, group = 1) => {
     const m = text.match(pattern);
     return m ? fix(m[group].trim()) : null;
   };
 
-  const propertyName = grab(/RESERVATION FOR ([^\n,!]+)/i, bodyText);
-  const dates        = grab(/RESERVATION FOR [^\n]+,\s*([A-Z][a-z]+ \d+[^,\n]*)/i, bodyText);
-  const checkIn      = grab(/Check-in\s+Checkout[\s\S]{0,40}?(\w+day,?\s+\w+ \d+(?:,\s+\d{4})?)/i, bodyText);
-  const checkOut     = grab(/Check-in\s+Checkout[\s\S]{0,100}?(\w+day,?\s+\w+ \d+(?:,\s+\d{4})?)\s*(?:\d|$)/im, bodyText.slice(bodyText.search(/Check-in/i) + 20));
-  const checkInTime  = grab(/(\d+:\d+\s?[AP]M)/i, bodyText);
-  const guests       = grab(/GUESTS\s*\n([^\n]+)/i, bodyText);
+  const propertyName = grab(/RESERVATION FOR ([^\n,!]+)/i, cleaned);
+  const dates        = grab(/RESERVATION FOR [^\n]+,\s*([A-Z][a-z]+ \d+[^,\n]*)/i, cleaned);
 
-  // Extract all messages in the thread
+  // Check-in / checkout: find the two dates after the "Check-in  Checkout" header line
+  const checkinBlockMatch = cleaned.match(/Check-in\s+Checkout\s*\n([\s\S]{0,300})/i);
+  let checkIn = null, checkOut = null;
+  if (checkinBlockMatch) {
+    const block = checkinBlockMatch[1];
+    const dayMatches = [...block.matchAll(/([A-Z][a-z]+day,?\s+[A-Z][a-z]+ \d+(?:,\s*\d{4})?)/g)];
+    if (dayMatches[0]) checkIn  = fix(dayMatches[0][1]);
+    if (dayMatches[1]) checkOut = fix(dayMatches[1][1]);
+  }
+  const checkInTime = grab(/Check-in time[^\n]*?(\d+:\d+\s?[AP]M)/i, cleaned)
+                   || grab(/(\d+:\d+\s?[AP]M)/i, cleaned);
+
+  const guests = grab(/GUESTS\s*\n([^\n]+)/i, cleaned);
+
+  // Extract Airbnb conversation URL from raw bodyText before URL stripping
+  const airbnbConvUrl = (bodyText.match(/https:\/\/www\.airbnb\.com\/resv\/messaging\/[^\s"'<>)]+/)
+                     || bodyText.match(/https:\/\/www\.airbnb\.com\/rooms\/[^\s"'<>)]+messaging[^\s"'<>)]*/))?.[0] || null;
+
+  // Parse message thread: sender lines are "Firstname Lastname" (title case), not ALL CAPS headers
   const messages = [];
-  const msgPattern = /\n\s{2,}([A-Z][A-Z\s]+[A-Z])\s*\n\s*([\w\s]+)\n\s*([\s\S]+?)(?=\n\s{2,}[A-Z]{2,}|\nReply\n|\n[A-Z ]{4,}\n|$)/g;
+  // Look for blocks: a name line (title case, 2-4 words), optional role line, then message body
+  const msgPattern = /\n[ \t]*([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})\n[ \t]*(Guest|Host|Co-host)?[ \t]*\n?([\s\S]+?)(?=\n[ \t]*[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3}\n[ \t]*(?:Guest|Host|Co-host)|\nReply\b|$)/g;
   let match;
-  while ((match = msgPattern.exec(bodyText)) !== null) {
-    const name = fix(match[1].trim());
-    const role = fix(match[2].trim());
-    const text = fix(match[3].replace(/\n/g, ' ').replace(/\s+/g, ' ').trim());
-    if (text.length > 3 && !text.startsWith('http') && name.length < 40) {
-      messages.push({ name, role, text });
+  while ((match = msgPattern.exec(cleaned)) !== null) {
+    const rawName = match[1].trim();
+    const role    = (match[2] || '').trim();
+    const rawText = match[3];
+
+    // Skip all-caps section headers and short/URL lines
+    if (AIRBNB_SECTION_HEADERS.has(rawName.toUpperCase())) continue;
+    if (/^[A-Z\s]+$/.test(rawName) && rawName.length > 12) continue;
+
+    const text = fix(rawText
+      .replace(/^Reply\s*\[.*?\]\s*/gim, '')
+      .replace(/\[.*?\]/g, '')
+      .replace(/\n/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim());
+
+    if (text.length > 5 && !text.startsWith('http') && rawName.length < 50) {
+      messages.push({ name: fix(rawName), role, text });
     }
   }
 
@@ -3104,7 +3262,7 @@ function buildAirbnbMessageEmail(subject, bodyText) {
 
   const msgBubble = ({ name, role, text }) => `
     <div style="margin-bottom:12px;">
-      <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#888;">${e(name)} <span style="font-weight:400;color:#bbb;">${e(role)}</span></p>
+      <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#888;">${e(name)}${role ? ` <span style="font-weight:400;color:#bbb;">${e(role)}</span>` : ''}</p>
       <div style="background:#f7f5f1;border-left:3px solid #B67550;padding:12px 16px;border-radius:0 8px 8px 0;font-size:14px;color:#2C2C2C;line-height:1.6;">${e(text)}</div>
     </div>`;
 
@@ -3113,18 +3271,35 @@ function buildAirbnbMessageEmail(subject, bodyText) {
     ? `${latestSender} sent a message`
     : propertyName || fix(subject);
 
+  const photoBlock = property?.photo ? `
+    <img src="${e(property.photo)}" alt="${e(property.name || 'Property')}" width="600" height="220"
+      style="width:100%;height:220px;object-fit:cover;border-radius:8px;display:block;margin-bottom:24px;" />` : '';
+
+  const airbnbLinkBlock = (airbnbConvUrl || property?.airbnb) ? `
+    <div style="margin-bottom:24px;">
+      <a href="${e(airbnbConvUrl || property.airbnb)}"
+        style="display:inline-block;padding:10px 20px;background:#FF5A5F;color:#fff;font-size:13px;font-weight:600;border-radius:8px;text-decoration:none;letter-spacing:0.02em;">
+        Open in Airbnb
+      </a>
+    </div>` : '';
+
+  const hasDetails = checkIn || checkOut || guests;
+
   return `
+    ${photoBlock}
     <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Forwarded from Airbnb</p>
     <h2 style="margin:0 0 4px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${e(headline)}</h2>
-    ${propertyName ? `<p style="margin:0 0 24px;font-size:13px;color:#888;">${e(propertyName)}${dates ? ' · ' + e(dates) : ''}</p>` : '<div style="margin-bottom:24px"></div>'}
+    ${propertyName ? `<p style="margin:0 0 20px;font-size:13px;color:#888;">${e(propertyName)}${dates ? ' · ' + e(dates) : ''}</p>` : '<div style="margin-bottom:20px"></div>'}
 
-    <table style="width:100%;border-collapse:collapse;border:1px solid #e8e4de;border-radius:10px;overflow:hidden;margin-bottom:24px;">
+    ${airbnbLinkBlock}
+
+    ${hasDetails ? `<table style="width:100%;border-collapse:collapse;border:1px solid #e8e4de;border-radius:10px;overflow:hidden;margin-bottom:24px;">
       ${row('Check-in', checkIn ? checkIn + (checkInTime ? ' at ' + checkInTime : '') : null)}
       ${row('Checkout', checkOut ? checkOut + ' at 10:00 AM' : null)}
       ${row('Guests', guests)}
-    </table>
+    </table>` : ''}
 
-    ${messages.length ? messages.map(msgBubble).join('') : `<p style="font-size:14px;color:#555;line-height:1.6;">${e(fix(bodyText).slice(0, 800))}</p>`}
+    ${messages.length ? messages.map(msgBubble).join('') : `<p style="font-size:14px;color:#555;line-height:1.6;">${e(fix(cleaned).slice(0, 800))}</p>`}
   `;
 }
 
@@ -3254,6 +3429,8 @@ async function handleApprovalPage(request, env) {
     .btn-send:active{background:#2449b8}
     .discard{display:block;text-align:center;margin-top:14px;color:#bbb;font-size:13px;text-decoration:none}
     .discard:hover{color:#888}
+    .btn-airbnb{display:block;text-align:center;margin-top:10px;padding:11px;background:#fff;color:#FF5A5F;border:1.5px solid #FF5A5F;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none}
+    .btn-airbnb:active{background:#fff5f5}
   </style>
 </head>
 <body>
@@ -3269,6 +3446,7 @@ async function handleApprovalPage(request, env) {
       <textarea name="reply">${escapeHtml(pending.draft)}</textarea>
       <button type="submit" class="btn-send">Send Reply</button>
     </form>
+    <a href="${escapeHtml(pending.airbnbThreadUrl || 'https://www.airbnb.com/hosting/inbox')}" target="_blank" class="btn-airbnb">View on Airbnb</a>
     <a href="/api/discard-reply?id=${escapeHtml(id)}" class="discard">Don't send — I'll reply manually in Airbnb</a>
   </div>
 </body>
@@ -3330,15 +3508,57 @@ async function handleDiscardReply(request, env) {
   return new Response(`<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="font-family:-apple-system,sans-serif;padding:40px 20px;text-align:center;background:#f5f3ee"><div style="background:#fff;border-radius:14px;padding:32px 24px;max-width:400px;margin:0 auto"><h2 style="color:#2C2C2C;margin-bottom:8px">Draft discarded.</h2><p style="color:#888;font-size:14px">Reply manually in Airbnb when you're ready.</p></div></body></html>`, { status: 200, headers: { 'Content-Type': 'text/html;charset=utf-8' } });
 }
 
+// ─── Email Event Log ─────────────────────────────────────────────────────────
+
+async function logEmailEvent(env, event) {
+  try {
+    const existing = await env.BOOKINGS.get('email_log', { type: 'json' }) || [];
+    const next = [{ ts: Date.now(), ...event }, ...existing].slice(0, 30);
+    await env.BOOKINGS.put('email_log', JSON.stringify(next));
+  } catch (e) {
+    console.error('logEmailEvent failed:', e);
+  }
+}
+
+async function handleEmailLog(env) {
+  const log = await env.BOOKINGS.get('email_log', { type: 'json' }) || [];
+  const rows = log.map(e => {
+    const d = new Date(e.ts).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', hour12: true });
+    const outcomeColor = e.outcome === 'pushed' ? '#2a7a2a' : e.outcome?.startsWith('no_') || e.outcome?.includes('error') ? '#a00' : '#555';
+    return `<tr><td style="white-space:nowrap">${d}</td><td>${e.from || ''}</td><td style="max-width:280px;word-break:break-word">${e.subject || ''}</td><td style="color:${outcomeColor};font-weight:600">${e.outcome || ''}</td><td style="max-width:300px;word-break:break-word">${e.details || ''}</td></tr>`;
+  }).join('');
+  const html = `<!DOCTYPE html>
+<html><head><meta charset=utf-8><meta name="viewport" content="width=device-width,initial-scale=1"><title>Email Log</title>
+<style>body{font-family:system-ui,sans-serif;padding:16px;font-size:12px;background:#f5f3ee}h2{font-size:16px;margin:0 0 12px}table{border-collapse:collapse;width:100%;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08)}th,td{border:1px solid #e8e4de;padding:6px 10px;text-align:left;vertical-align:top}th{background:#ede9e3;font-weight:600}tr:hover{background:#faf8f5}p.note{color:#888;font-size:11px;margin-top:10px}</style></head>
+<body><h2>Email Log — last 30 events (PT)</h2>
+<table><tr><th>Time</th><th>From</th><th>Subject</th><th>Outcome</th><th>Details</th></tr>
+${rows || '<tr><td colspan=5 style="color:#888;text-align:center">No events yet — waiting for Airbnb emails</td></tr>'}
+</table>
+<p class=note>Auto-refreshes every 30s. Outcomes: <strong style="color:#2a7a2a">pushed</strong> = notification sent | <strong style="color:#a00">no_*</strong> = blocked before push</p>
+<script>setTimeout(()=>location.reload(), 30000)</script>
+</body></html>`;
+  return new Response(html, { headers: { 'Content-Type': 'text/html;charset=utf-8' } });
+}
+
+async function handlePushSubStatus(env) {
+  const sub = await env.BOOKINGS.get('push_subscription', { type: 'json' });
+  return new Response(JSON.stringify({ active: !!sub }), {
+    headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' },
+  });
+}
+
 async function handleAirbnbEmail(message, env) {
   const from = (message.from || '').toLowerCase();
   if (!from.includes('airbnb.com')) {
     console.log('Email not from Airbnb, skipping:', from);
+    await logEmailEvent(env, { from, subject: message.headers?.get?.('subject') || '', outcome: 'skipped_not_airbnb', details: `from: ${from}` });
     return;
   }
 
   const subject = message.headers.get('subject') || '';
   const replyTo = message.headers.get('reply-to') || '';
+
+  await logEmailEvent(env, { from, subject, outcome: 'received', details: `reply-to: ${replyTo.slice(0, 80)}` });
 
   const airbnbReplyMatch = replyTo.match(/reply\+[^@\s]+@reply\.airbnb\.com/i);
   if (!airbnbReplyMatch) {
@@ -3355,22 +3575,25 @@ async function handleAirbnbEmail(message, env) {
         .replace(/\n{3,}/g, '\n\n')
         .trim();
 
-      const isConfirmation = /reservation confirmed/i.test(subject);
-      const isMessageThread = /reservation for /i.test(bodyText);
+      const isConfirmation  = /reservation confirmed/i.test(subject);
+      const isMessageThread = /reservation for /i.test(rawBodyText);
+      const property        = isMessageThread ? detectProperty(subject, rawBodyText) : null;
       const emailHtml = isConfirmation
         ? buildAirbnbConfirmationEmail(subject, bodyText)
         : isMessageThread
-        ? buildAirbnbMessageEmail(subject, bodyText)
+        ? buildAirbnbMessageEmail(subject, rawBodyText, property)
         : buildAirbnbGenericEmail(subject, bodyText);
 
       await sendEmail(env.RESEND_API_KEY, {
         from:    'Indigo Palm Bot <bookings@indigopalm.co>',
         to:      'indigopalmco@gmail.com',
-        subject: `[Airbnb] ${subject}`,
+        subject: `[Airbnb] ${fixEncoding(subject)}`,
         html:    emailWrapper(emailHtml),
       });
+      await logEmailEvent(env, { from, subject, outcome: 'forwarded_no_reply_token', details: 'Not a guest message thread (no reply+ token)' });
     } catch (e) {
       console.error('Failed to forward Airbnb non-message email:', e);
+      await logEmailEvent(env, { from, subject, outcome: 'error_forwarding', details: e.message });
     }
     return;
   }
@@ -3379,6 +3602,7 @@ async function handleAirbnbEmail(message, env) {
   const rawEmail = await streamToText(message.raw);
   const { plain, html } = parseEmailParts(rawEmail);
   const bodyText = plain || stripHtml(html) || '';
+  const airbnbThreadUrl = extractAirbnbThreadUrl(rawEmail);
 
   const guestName    = extractGuestName(subject) || 'Guest';
   const property     = detectProperty(subject, bodyText);
@@ -3386,12 +3610,26 @@ async function handleAirbnbEmail(message, env) {
 
   if (!guestMessage) {
     console.log('Could not extract guest message. Subject:', subject);
+    await logEmailEvent(env, { from, subject, outcome: 'no_message_extracted', details: `guest: ${guestName}, body snippet: ${bodyText.slice(0, 100)}` });
     await sendAirbnbEscalationEmail(env, guestName, property?.name || 'Unknown property', bodyText.slice(0, 500) || '(empty body)', null);
+    await sendWebPush(env, {
+      title: `${guestName} — message (check email)`,
+      body: 'Could not parse message. Check inbox.',
+      url: 'https://indigopalm.co/inbox',
+      id: crypto.randomUUID(),
+    }).catch(e => console.error('Push failed on no-message path:', e));
     return;
   }
 
   if (!property) {
+    await logEmailEvent(env, { from, subject, outcome: 'no_property_detected', details: `guest: ${guestName}, msg: ${guestMessage.slice(0, 80)}` });
     await sendAirbnbEscalationEmail(env, guestName, 'Unknown property (check Airbnb)', guestMessage, null);
+    await sendWebPush(env, {
+      title: `${guestName} — unknown property`,
+      body: guestMessage.slice(0, 100),
+      url: 'https://indigopalm.co/inbox',
+      id: crypto.randomUUID(),
+    }).catch(e => console.error('Push failed on no-property path:', e));
     return;
   }
 
@@ -3406,13 +3644,14 @@ async function handleAirbnbEmail(message, env) {
   const id = crypto.randomUUID();
   const pendingData = {
     airbnbReplyAddress,
-    propertyKey:  property.key,
-    propertyName: property.name,
+    propertyKey:   property.key,
+    propertyName:  property.name,
     guestName,
     guestMessage,
-    draft:        draft || '',
-    createdAt:    Date.now(),
-    sent:         false,
+    draft:         draft || '',
+    airbnbThreadUrl,
+    createdAt:     Date.now(),
+    sent:          false,
   };
 
   try {
@@ -3423,6 +3662,7 @@ async function handleAirbnbEmail(message, env) {
     );
   } catch (err) {
     console.error('KV write error:', err);
+    await logEmailEvent(env, { from, subject, outcome: 'error_kv_write', details: err.message });
     await sendAirbnbEscalationEmail(env, guestName, property.name, guestMessage, draft);
     return;
   }
@@ -3448,13 +3688,15 @@ async function handleAirbnbEmail(message, env) {
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Draft reply:</p>
       <blockquote style="margin:0 0 24px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${(draft || '(no draft generated)').replace(/\n/g, '<br>')}</blockquote>
       <a href="${approveUrl}" style="display:inline-block;padding:12px 28px;background:#325CD9;color:white;text-decoration:none;border-radius:6px;font-size:15px;font-weight:600;">Review &amp; Send</a>
+      <a href="${airbnbThreadUrl}" style="display:inline-block;margin-left:12px;padding:12px 20px;background:#fff;color:#FF5A5F;text-decoration:none;border-radius:6px;font-size:15px;font-weight:600;border:1.5px solid #FF5A5F;">View on Airbnb</a>
       <p style="margin:16px 0 0;font-size:12px;color:#aaa;">Clicking "Review &amp; Send" opens a page where you can edit the reply before sending. If you do nothing, the draft auto-sends in 10 minutes.</p>
     `),
   });
 
   // Send push notification to phone
+  let pushOk = false;
   try {
-    await sendWebPush(env, {
+    pushOk = await sendWebPush(env, {
       title: `${guestName} — ${property.name}`,
       body:  guestMessage.slice(0, 100) + (guestMessage.length > 100 ? '…' : ''),
       url:   `https://indigopalm.co/api/approve-reply?id=${id}`,
@@ -3462,8 +3704,10 @@ async function handleAirbnbEmail(message, env) {
     });
   } catch (e) {
     console.error('Push notification failed:', e);
+    await logEmailEvent(env, { from, subject, outcome: 'error_push', details: e.message });
   }
 
+  await logEmailEvent(env, { from, subject, outcome: pushOk ? 'pushed' : 'push_failed_no_sub', details: `guest: ${guestName}, property: ${property.name}, id: ${id}` });
   console.log(`Draft saved for ${guestName} at ${property.name}, id=${id}`);
 }
 
