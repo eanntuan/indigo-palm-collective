@@ -70,13 +70,14 @@
       --faded-surf: #91AEAC;
       --copper: #BB7D49;
       --copper-dark: #9d6439;
+      --copper-text: #8C5828;
       --sunset-glow: #DB9773;
       --apricot: #E5C3AE;
       --golden-hour: #E0C37E;
       --coconut-milk: #F6F1E8;
       --white: #ffffff;
       --text: #2c2a26;
-      --muted: #7a7570;
+      --muted: #5c5854;
       --border: rgba(44,42,38,0.1);
     }
 
@@ -125,7 +126,7 @@
       font-weight: 600;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: var(--golden-hour);
+      color: var(--white);
       margin-bottom: 10px;
     }
     .hero h1 {
@@ -142,11 +143,12 @@
       max-width: 480px;
       margin: 0 auto 28px;
       line-height: 1.7;
+      font-weight: 400;
     }
     .hero-cta {
       display: inline-block;
       padding: 13px 28px;
-      background: var(--copper);
+      background: var(--copper-dark);
       color: var(--white);
       border-radius: 6px;
       font-size: 0.78rem;
@@ -156,7 +158,7 @@
       text-decoration: none;
       transition: background 0.2s;
     }
-    .hero-cta:hover { background: var(--copper-dark); }
+    .hero-cta:hover { background: var(--copper-text); }
 
     /* QUICK FACTS */
     .quick-facts {
@@ -201,7 +203,7 @@
       font-weight: 600;
       letter-spacing: 3.5px;
       text-transform: uppercase;
-      color: var(--copper);
+      color: var(--copper-text);
       margin-bottom: 6px;
     }
     .section-title {
@@ -265,7 +267,7 @@
       font-weight: 600;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: var(--copper);
+      color: var(--copper-text);
       margin-bottom: 8px;
     }
     .place-desc {
@@ -341,7 +343,7 @@
     .callout a {
       display: inline-block;
       padding: 11px 24px;
-      background: var(--copper);
+      background: var(--copper-dark);
       color: var(--white);
       border-radius: 6px;
       font-size: 0.75rem;
