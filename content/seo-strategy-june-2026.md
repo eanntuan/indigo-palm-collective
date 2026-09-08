@@ -2470,3 +2470,57 @@ Deferred this run — see note under "What was skipped" in the final report. Pri
 
 **Action items generated:** Pinterest Organic Social dip and the Terra Luz/Sundune/Cozy-Cactus visibility reshuffle are both one-week reads — flag for confirmation at the next check-in rather than acting on a single week of data. Separately, Eann asked mid-session why Terra Luz specifically isn't converting to bookings — a background investigation was dispatched covering Hostaway calendar/reservations, PriceLabs pricing, and renovation-status verification; findings will be logged here once that completes.
 
+---
+
+## PINTEREST PIN BATCH — 2026-09-08
+
+Generated 2026-09-08 from `/pinterest-pins` audit (fresh GSC data, `/tmp/gsc-2026-09-08.md`, 90-day window). Scored all 98 blog posts on GSC traction, booking intent, meta description length, hero image presence, and recency (1 point each). Top 5, 15 pins total.
+
+**Posts selected:**
+1. `palm-springs-vs-indio` — 5/5: 23 clicks / 7,975 impressions, comparison post (booking intent), 147-char meta, hero set, modified 2026-07-30
+2. `where-to-stay-coachella` — 5/5: 21 clicks / 8,668 impressions, direct festival-booking topic, 147-char meta, hero set, modified 2026-07-30
+3. `indian-palms-vacation-rental` — 5/5: 8 clicks / 1,774 impressions, property-specific, 155-char meta, hero set, modified 2026-07-13
+4. `coachella-2027-where-to-stay` — 5/5: 84 impressions (CTR-opportunity list), festival/booking topic, 150-char meta, hero set, modified 2026-07-30
+5. `palm-springs-vs-scottsdale` — 4/5 (tiebreak winner): 70 clicks / 4,001 impressions — highest GSC traction among the 4/5 tier, comparison post beats pure-editorial ties (`date-farms-indio-coachella-valley`, `indio-local-gems`) per the booking-intent tiebreak rule; only miss was meta length (163 chars, over the 155 cap)
+
+**Link destination:** Airbnb listing pages (Cozy Cactus / Terra Luz / Sundune room URLs), not blog URLs. Pinterest is at ~20K monthly views per `sabbir_context.md`, below the 25-30K switch threshold — standing rule is Airbnb until that threshold clears. Every link is still UTM-tagged (`utm_source=pinterest&utm_medium=organic&utm_campaign=...`) per the pin-level audit finding that tagged links convert ~3x better than untagged, even though Airbnb may strip unrecognized params on some views.
+
+**Title pattern applied:** concrete room/space + audience + location/fact, per the 2026-07-11 pin audit finding that narrative titles ("Meet the Host...") got zero clicks across 24 Terra Luz pins while concrete titles converted. No narrative-style titles in this batch.
+
+**TASK PIN-1: Produce and schedule 15 pins in Canva + Pinterest**
+Use the Indigo Palm Canva template. 3 pins per post. Export PNG, upload with title/description/board from spec below. Schedule 4-5/day — no batch drops. Never auto-publish to the Pinterest API (per `feedback_pinterest_no_autopublish` — deliver as copy-paste spec only).
+
+Preview renders generated and opened in Finder at `/tmp/pinterest-pins-preview/` (15 PNGs, named `[slug]-pin-[1-3].png`). Full spec with descriptions and links saved at `/tmp/pinterest-pin-specs-2026-09-08.md`.
+
+Pin specs (title / overlay / board / image / link):
+
+**palm-springs-vs-indio** (hero: `/blog/images/blog-hero-palm-springs.webp`)
+1. Practical — "Coachella Rental: Indio vs Palm Springs, 25 Miles Apart" | overlay: "Indio: 5-15 min to Coachella. Palm Springs: 30-60." | image: `blog-hero-palm-springs.webp` | board: Coachella Valley Travel | link: airbnb.com/rooms/610023395582313286 (utm_campaign=ps_vs_indio_practical)
+2. Emotional — "Private Pool and Hot Tub Backyard for Groups in Indio" | overlay: "More Pool. More Yard. Same Desert Sun." | image: `cozy-cactus-backyard.webp` | board: Indio CA Vacation Rentals | link: airbnb.com/rooms/610023395582313286 (utm_campaign=ps_vs_indio_emotional)
+3. Booking-intent — "Bringing 8 People to Coachella? Stay Walking Distance in Indio" | overlay: "Sleeps 8. Walk to the Polo Grounds. Private Pool." | image: `terra-luz-pool-backyard.webp` | board: Festival Lodging | link: airbnb.com/rooms/716871660845992276 (utm_campaign=ps_vs_indio_booking)
+
+**where-to-stay-coachella** (hero: `/blog/images/coachella-festival-crowd.webp`)
+1. Practical — "Coachella Lodging Cost: Rental vs Hotel vs Camping 2027" | overlay: "$1,500-2,400 for 6 People. Beats Every Hotel Option." | image: `coachella-festival-crowd.webp` | board: Festival Lodging | link: airbnb.com/rooms/610023395582313286 (utm_campaign=where_to_stay_coachella_practical)
+2. Emotional — "The 3pm Pool Break Between Coachella Sets in Indio" | overlay: "Leave the Heat. Come Back for Headliners. Repeat." | image: `terra-luz-pool-backyard.webp` | board: Desert Lifestyle | link: airbnb.com/rooms/716871660845992276 (utm_campaign=where_to_stay_coachella_emotional)
+3. Booking-intent — "Group of 6-8 Going to Coachella? Book Indian Palms Now" | overlay: "Private Pool House Beats a Hotel Room. Every Time." | image: `indian-palms-front-entrance.webp` | board: Coachella Valley Travel | link: airbnb.com/rooms/610023395582313286 (utm_campaign=where_to_stay_coachella_booking)
+
+**indian-palms-vacation-rental** (hero: `/blog/images/indian-palms-front-entrance.webp`)
+1. Practical — "Indian Palms Gate Code and Coachella Walk: What to Know" | overlay: "19-30 Minute Walk to Coachella. No Rideshare Needed." | image: `coachella-festival-map-2026.webp` | board: Festival Lodging | link: airbnb.com/rooms/610023395582313286 (utm_campaign=indian_palms_practical)
+2. Emotional — "Quiet Gated Neighborhood Steps from the Festival Gates" | overlay: "Neighbors on Porches. Coachella Down the Block." | image: `indian-palms-front-entrance.webp` | board: Coachella Valley Travel | link: airbnb.com/rooms/716871660845992276 (utm_campaign=indian_palms_emotional)
+3. Booking-intent — "Dog-Friendly Coachella Rental in Indian Palms, Indio" | overlay: "Bring the Dog. Walk to Coachella. Private Pool." | image: `terra-luz-pool-backyard.webp` | board: Dog-Friendly Travel | link: airbnb.com/rooms/716871660845992276 (utm_campaign=indian_palms_booking)
+
+**coachella-2027-where-to-stay** (hero: `/blog/images/festival-coachella-aerial.webp`)
+1. Practical — "Heated Pool Coachella Rental: What to Check Before Booking" | overlay: "April Nights Hit the 50s. Confirm the Pool Is Heated." | image: `cozy-cactus-pool-backyard.webp` | board: Festival Lodging | link: airbnb.com/rooms/610023395582313286 (utm_campaign=coachella_2027_practical)
+2. Emotional — "Saltwater Pool and Slushie Maker for Coachella Weekend" | overlay: "Sun Shelf. Slushie Maker. Your Own Pool at Coachella." | image: `terra-luz-pool-backyard.webp` | board: Desert Lifestyle | link: airbnb.com/rooms/716871660845992276 (utm_campaign=coachella_2027_emotional)
+3. Booking-intent — "Skip the Coachella Hotel: Private Home Walks to the Gates" | overlay: "Sleeps 8. Walking Distance. Book Before It Sells Out." | image: `cozy-cactus-exterior.webp` | board: Coachella Valley Travel | link: airbnb.com/rooms/610023395582313286 (utm_campaign=coachella_2027_booking)
+
+**palm-springs-vs-scottsdale** (hero: `/blog/images/scottsdale-resort-pool.webp`)
+1. Practical — "Palm Springs vs Scottsdale: 2 Hours vs 6 Hours from LA" | overlay: "From LA? Palm Springs Wins on Drive Time Alone." | image: `ps-boulevard-palms-mountains.webp` | board: Palm Springs Getaways | link: airbnb.com/rooms/1171049679026732503 (utm_campaign=ps_vs_scottsdale_practical)
+2. Emotional — "Walkable Palm Canyon Drive Weekend, Not a Resort Bubble" | overlay: "Real Streets. Real Restaurants. No Resort Gate." | image: `ps-via-sol-sunset.webp` | board: Palm Springs Getaways | link: airbnb.com/rooms/1171049679026732503 (utm_campaign=ps_vs_scottsdale_emotional)
+3. Booking-intent — "Palm Springs Bachelorette: Pool House Beats Bar Crawl" | overlay: "Private Pool. Great Backyard. One Good Dinner Out." | image: `cozy-cactus-pool-backyard.webp` | board: Bachelorette Destinations | link: airbnb.com/rooms/610023395582313286 (utm_campaign=ps_vs_scottsdale_booking)
+
+Full descriptions (150-300 chars each) are in `/tmp/pinterest-pin-specs-2026-09-08.md` — pull from there when uploading to Pinterest, this table only has title/overlay/board/link for scanning.
+
+**TASK PIN-2: Confirm all 15 pins are live**
+Check Pinterest profile — all 15 pins visible, correct board, correct link destination.
+
