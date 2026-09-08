@@ -2051,6 +2051,16 @@ Source: my-team-told-me-to-kill-facebook
 The Facebook post's highest-performing format was concrete over generic: a specific job title, a specific dollar figure, and a specific before/after moment, instead of vague motivational framing. This maps directly to Indigo Palm's guest testimonial and "who stays here" copy, which currently leans on generic descriptors. Flagging as not-actionable-yet: needs real guest specifics (profession, occasion, a concrete detail) that only exist in actual reviews/messages Eann has access to — can't fabricate specifics for real guests. Next time Eann pulls guest reviews or testimonials for a page, apply this formula instead of generic phrasing.
 Source: my-team-told-me-to-kill-facebook
 
+### New from Rachel — 2026-09-08
+
+One new post since the 8/12 check-in: `how-to-connect-claude-to-every-gmail` ("How to Connect Claude to every Gmail Account you own," 2026-08-22). Covers "gws" (Google Workspace CLI, github.com/googleworkspace/cli), a free open-source tool that connects Claude to multiple Google Workspace accounts at once — the built-in Gmail connector only handles one account and its tools are write-focused (can't reliably count/search/read mail in bulk).
+
+**Assessment:** potentially relevant to Sabbir's GSC/Gmail access (sabbirahmed31dec@gmail.com) and the Upwork-message pull the sabbir-tracker skill already does, since both currently rely on single-account Gmail connections. But setup is ~45 minutes of interactive Google security screens per the post, non-scriptable ("varies by machine"), and requires Eann present at the terminal for each account's OAuth flow — not something to execute unattended.
+
+**TASK RG-26: Evaluate gws (Google Workspace CLI) for multi-account Gmail access**
+If Sabbir-tracker or other skills ever need simultaneous access to more than one Gmail account (e.g. Sabbir's + the business inbox) without disconnecting the other, gws (github.com/googleworkspace/cli) is a free option worth a manual pilot. Flagging as not-actionable-yet: requires Eann's hands-on terminal setup and Google OAuth consent per account — cannot be scripted or executed by Claude alone.
+Source: how-to-connect-claude-to-every-gmail
+
 ### What changed on 2026-07-27 — GSC Check-in
 
 **Period:** 2026-04-28 to 2026-07-27 (90 days) vs. 2026-01-27 to 2026-04-27
@@ -2401,4 +2411,49 @@ Full pass completed. One fix applied and deployed (commit `d777c3f`, confirmed l
 2. `cozy-cactus-hot-tub.webp` used as the hero for `desert-hot-springs-day-trip.md` — cross-sell ambiguity (reads as a Cozy Cactus amenity photo on a post that isn't about Cozy Cactus).
 
 Neither of today's two PSL-inspo content updates touched `heroImage`/`heroPosition` — both were body-content additions to existing posts, not new posts or lead-topic changes, so no new hero needed. Next full pass due on/after 2026-09-11.
+
+---
+
+### What changed on 2026-09-08 — GSC Check-in
+
+**Period:** 2026-06-10 to 2026-09-08 (90 days) vs. 2026-03-11 to 2026-06-09
+
+**Overall:** 473 clicks, 62,235 impressions, 0.8% CTR, avg position 10.8 (prior period: 112 clicks, 17,001 impressions — +361 clicks, +45,234 impressions). Big jump vs. the 8/12 run — this is the first check-in since the credential outage (see below), so it covers a wider gap than usual.
+
+**Auth note:** GSC and GA4 API access broke between the 8/12 and this run — the stored Google OAuth token was missing the Search Console and Analytics scopes, then (after adding them) it turned out the whole integration was running through `etuan@netflix.com` on a Netflix-owned GCP project with an Internal-only OAuth consent screen and the two APIs never enabled. Rebuilt the integration from scratch on a new, Eann-owned GCP project (`noted-throne-488421-v4`), authorized as `eann.tuan@gmail.com`. `google_credentials.json` now points at the new project. This also fully decouples Indigo Palm's automation from Eann's work Google account — worth noting as a real risk that's now closed.
+
+**Device:** Mobile 309 clicks / 31,515 impr / 1.0% CTR / pos 8.4. Desktop 152 clicks / 30,158 impr / 0.5% CTR / pos 13.4. Tablet 12 clicks / 562 impr / 2.1% CTR / pos 7.3. Same mobile-outperforms-desktop pattern as every prior pull.
+
+**What's working:** `/blog/palm-springs-vs-scottsdale/` (70 clicks, 4,001 impr, 1.7% CTR, pos 6.8) has overtaken `/blog/palm-springs-surf-club/` (48 clicks, 10,143 impr, pos 8.9) as the top click-getter. `/blog/outdoor-furniture-desert-heat/` (37 clicks, 2.3% CTR), `/blog/indio-local-gems/` (28 clicks, 1.7% CTR), `/blog/date-farms-indio-coachella-valley/` (21 clicks) all holding steady growth.
+
+**New CTR-opportunity rewrites executed this run (title/meta only, no query-level position change expected — these were selected because their "Pages with Impressions but Low Clicks" diagnostic showed 100% of impressions at position ≤ 20, the highest-confidence signal, distinct from the two GSC-23/24 rewrites that already showed no measurable lift on similarly well-positioned pages):**
+- `grocery-stores-coachella-valley` — 631 impr, 1 click, 0.2% CTR, pos 8.6. Title changed from "Best Grocery Stores Near Palm Springs and Indio, CA" to "Grocery Stores Near Palm Springs & Indio: Which One" — leads with the actual decision the searcher is making instead of a generic category label. Meta rewritten to open with the four store names instead of burying them mid-sentence.
+- `indian-canyons-palm-springs` — 132 impr, 2 clicks, 1.5% CTR, pos 8.6, 100% of impressions ≤ pos 20. Title changed from "Indian Canyons Palm Springs: What to Know Before You Go" (generic) to "Indian Canyons Palm Springs: Trails, Fees & Timing" (names the three things a hiker actually needs before clicking).
+- Also found and fixed a duplicate `dateModified` frontmatter key on `indian-canyons-palm-springs.md` introduced by this edit — harmless to the build but cleaned up.
+
+**Held, not rewritten this run — per the 7/31 finding that title/meta rewrites on already-well-positioned pages (pos ≤ 12) haven't shown measurable lift twice in a row (GSC-23, GSC-24):** `modernism-week-palm-springs` (107 impr, pos 9.0, CTR already 1.9%), `indio-between-coachella-weekends` (111 impr, pos 11.9, CTR already 1.8%), `coachella-2027-where-to-stay` (84 impr, pos 6.7, CTR already 1.2%). These three already have above-baseline CTR for their position band — the diagnostic flagged them on the "100%/80% of impressions ≤ pos 20" rule alone, but that rule doesn't distinguish "good position, still weak CTR" from "good position, CTR already fine." Not spending another rewrite cycle on pages that aren't actually underperforming their position.
+
+**Standing content/authority-fix bucket (unchanged, no title work applies):** `best-restaurants-palm-springs` (1,166 impr, pos 33.6), `/blog/` index (223 impr, pos 16.4), `salton-sea-day-trip` (148 impr, pos 18.0), `coachella-valley-food-guide` (71 impr, pos 36.6). All need content depth/backlinks, not title churn.
+
+**Standing declines (unchanged):** `classpass-palm-springs` (331 impr — thin, branded), `airbnb rentals indio` (recurring 0-click pos-1 query, needs a manual GSC UI query→page cross-tab Eann has to run), `how far is indio from palm springs` (839 impr, 0.1% CTR — SERP-answered zero-click query, non-actionable).
+
+**Action items generated:** 2 title/meta rewrites shipped (above). No new content-gap or technical-SEO items surfaced this run.
+
+### Pinterest Check-in — 2026-09-08
+
+Deferred this run — see note under "What was skipped" in the final report. Priority this run went to fixing the Google credential/API-access outage, which blocked GSC/GA4 entirely; Pinterest's own API path was unaffected by that outage and wasn't re-checked today. Last live figures remain the 8/12 pull (46,935 impressions, 299 pin clicks, 267 outbound, 5 saves, 30 days to 8/12). Pick up at the next run.
+
+### GA4 Check-in — 2026-09-08
+
+**Period:** 2026-09-01 to 2026-09-08 (7 days) vs. 2026-08-24 to 2026-08-31
+
+**Overall:** 208 active users (+54 vs. prior week), 204 new, 238 sessions (+66), avg session duration 116s (+14s), 894 events (+237). Growth continues across the board, and average engagement time is finally moving up instead of down for the first time in several check-ins.
+
+**Traffic source mix:** Organic Search 105 sessions / 85 users, Direct 99 / 95, Unassigned 18, AI Assistant 15, Organic Social 8, Referral 3. AI Assistant traffic (15 sessions) is now a real, growing line item — up from the low single digits flagged in July. Organic Social (Pinterest) dropped to 8 sessions this week, well below its recent ~50-55% of Organic Search share — worth confirming this is a one-week dip and not a trend once Pinterest is re-checked next run.
+
+**High-bounce pages (50+ views, >60% bounce):** none cleared the 50-view threshold. Homepage `/` is healthiest it's been: 39 views, 44.0% bounce, 223s avg duration.
+
+**Property page visibility:** Terra Luz 11 views / Cozy Cactus 7 / Sundune 11. Notable shift — Terra Luz and Sundune have both overtaken Cozy Cactus this week, reversing the "Cozy Cactus dominates" pattern that held for the entire July-August run of check-ins. Cozy Cactus's own page also shows healthy engagement now (28.6% bounce, 161s), suggesting this week's numbers are a genuine mix shift, not a Cozy Cactus problem.
+
+**Action items generated:** Pinterest Organic Social dip and the Terra Luz/Sundune/Cozy-Cactus visibility reshuffle are both one-week reads — flag for confirmation at the next check-in rather than acting on a single week of data. Separately, Eann asked mid-session why Terra Luz specifically isn't converting to bookings — a background investigation was dispatched covering Hostaway calendar/reservations, PriceLabs pricing, and renovation-status verification; findings will be logged here once that completes.
 
