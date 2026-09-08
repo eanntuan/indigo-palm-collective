@@ -149,7 +149,7 @@ layout: blog-post.njk
 <p>Yes, up to two dogs with a $150 pet fee. Email indigopalmco@gmail.com to confirm before booking. The property has a grassy side yard for dog walks without leaving the property.</p>
 
 <h4>How far is Terra Luz from Coachella?</h4>
-<p>1.5-mile walking distance to the Empire Polo Club gates. Golf cart rides also run through the Indian Palms community during festival weekends. More details in the <a href="/blog/terra-luz-indio-local-guide/">Indio local guide</a>.</p>
+<p>Walking distance to the Empire Polo Club gates. Golf cart rides also run through the Indian Palms community during festival weekends. More details in the <a href="/blog/terra-luz-indio-local-guide/">Indio local guide</a>.</p>
 
 <h4>What's the outdoor curfew?</h4>
 <p>10pm per Indio city noise ordinance. Outdoor music and entertaining must wrap at 10.</p>
