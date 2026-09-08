@@ -2454,7 +2454,32 @@ This phase is now a permanent part of `/babysit-seo` (see updated `~/.claude/ski
 
 ### Pinterest Check-in — 2026-09-08
 
-Deferred this run — see note under "What was skipped" in the final report. Priority this run went to fixing the Google credential/API-access outage, which blocked GSC/GA4 entirely; Pinterest's own API path was unaffected by that outage and wasn't re-checked today. Last live figures remain the 8/12 pull (46,935 impressions, 299 pin clicks, 267 outbound, 5 saves, 30 days to 8/12). Pick up at the next run.
+Initially deferred earlier in this run (priority went to the Google credential outage), then completed later in the session once Eann raised the views-drop question directly and supplied two real exports (`Pinterest Analytics overview 20260809-20260908.csv`, `metrics_2026-08-09_to_2026-09-07.csv`) plus a live profile screenshot.
+
+**Monthly views: 12,685** (matches the profile screenshot's "12.7k" and the 30-day API impressions of 10,669 — different methodologies, same order of magnitude, not a data glitch). Down from the ~20K figure logged 2026-06-03 (now stale) and well below the 25-30K link-switch threshold — **not switching links off Airbnb**, unchanged.
+
+**Root cause of the drop — confirmed, not estimated, via 3 independent sources (analytics CSV, ads campaign CSV, and a live GA4 pull run mid-session):**
+1. One paid campaign (`C626758451852`, $7/day, $49 total spend, now status "Paused") drove 9,181 of ~11,700 total 30-day impressions, concentrated entirely in an Aug 9-15 spike. Impressions cratered to a flat 26-46/day the moment it paused (Aug 16) and have stayed there for 3+ weeks — a step-function cliff, not a gradual decline.
+2. Independently, organic posting also stopped in the same window — zero new pins in 19 days (last activity Aug 20), confirmed via the account audit below.
+3. **GA4 cross-check (new this run):** total site sessions did NOT move during the Aug 9-15 impression spike (steady 16-28 sessions/day the whole surrounding period) — meaning the extra paid impression volume didn't reliably convert to extra real site visits. Of the ~39 Pinterest-sourced GA4 sessions that did land during that week, 90% (35) hit a single page (`/cozy-cactus/`), and **zero** converted to a `book_now_click` event across the entire Aug 1–Sep 8 window, vs. 4 such events firing site-wide from other sources in the same week. Conclusion given to Eann directly: hold off on more ad spend until the destination page/UTM tracking is fixed — the paid funnel isn't currently measurable, let alone converting.
+
+**Account audit (via API, this run):**
+- Fixed directly: added keyword-rich descriptions to all 11 boards that had none.
+- Confirmed real gaps: **no dedicated Sundune board exists** (14 boards, none for Sundune — matches the GA4 visibility gap flagged in prior check-ins); bio contains a factual error (claims "private pools" for all 4 properties — only Terra Luz has one, and The Well isn't a bookable STR so the count should read 3, not 4); website_url stored as `http://` not `https://`; two boards (Mid-Century Modern Homes, Vacation Rental Host Tips) have had zero pins since Feb/Mar; "Terra Luz" and "Cozy cactus instagram" are near-duplicate boards splitting authority from their main counterparts (4 pins / 62 pins and 7 pins / 54 pins respectively).
+- Save rate is thin independent of the ad question: 8 saves / 10,669 impressions = 0.075%, which Pinterest's own algorithm reads as low-quality and throttles reach for — this is the deeper problem behind the account's flat organic baseline, not just posting frequency.
+- Bio is not actually character-limited (280/500 chars used) — the "..." in the profile screenshot is just UI truncation, not a real cutoff.
+
+**Punch list for Eann (Pinterest UI only, not API-writable):**
+1. Rewrite bio to: "Vacation rentals in Indio & Palm Springs | Coachella Valley 🏡 3 curated desert homes 🌴 Pools, hot tubs & mountain views ⛰️ Family-friendly to romantic escapes ✨ Perfect for Coachella, Stagecoach & desert getaways 📍 Book direct & save 15% → indigopalm.co"
+2. Create a dedicated Sundune board.
+3. Consolidate the two split-board pairs into their main counterparts.
+4. Pin something to (or delete) the two dead boards.
+5. Re-check Settings > Claimed Accounts for `indigopalm.co` (http vs https).
+6. Resume posting — 19 days of silence is compounding the ad-stop dip.
+
+**Pin batch generated this run:** see "PINTEREST PIN BATCH — 2026-09-08" below — 15 pins across the 5 highest-scoring posts from today's fresh GSC pull, spec at `/tmp/pinterest-pin-specs-2026-09-08.md`, not auto-published per standing rule.
+
+**Correction to standing figure:** prior notes estimated ad spend at "~$200/mo" — actual data shows $7/day for the one campaign that delivered. Use the real figure going forward.
 
 ### GA4 Check-in — 2026-09-08
 
