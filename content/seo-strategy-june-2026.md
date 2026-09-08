@@ -2439,6 +2439,19 @@ Neither of today's two PSL-inspo content updates touched `heroImage`/`heroPositi
 
 **Action items generated:** 2 title/meta rewrites shipped (above). No new content-gap or technical-SEO items surfaced this run.
 
+### GSC Alert Email Review — 2026-09-08
+
+**Emails reviewed:** 54 unique GSC alert/digest emails to `eann.tuan@gmail.com` (as `indigopalmco@gmail.com`, the verified GSC owner), covering 2026-04-19 to 2026-09-08. First time this inbox has been mined systematically rather than just the API pull.
+
+**Deficiencies found:**
+1. **Recurring "Excluded by noindex tag" / "Page with redirect" alerts, first flagged 2026-05-14, still live as of the 2026-08-23 email.** Root cause found by crawling every sitemap.xml URL directly (GSC's own emails don't list the specific URLs, only a UI report link): `where-to-stay-coachella-2026` and `bnp-paribas-open-vacation-rental-guide` are old post slugs converted to `noindex` `redirect.njk` pages pointing at their consolidated replacements (`where-to-stay-coachella`, `bnp-paribas-indian-wells-where-to-stay`), but were never removed from `sitemap.xml`. Submitting a noindex/redirect page in the sitemap generates this alert on every crawl. **Status: fixed this run** — both URLs removed from `sitemap.xml`, committed `ce913bc`. Monitor: check the Page indexing report in Search Console in ~1-2 weeks; the "Excluded by noindex tag" count should drop by 2 and stop recurring.
+2. **"Not found (404)" and "Alternate page with proper canonical tag," flagged 2026-08-07.** Crawled the full current sitemap — zero 404s or unexpected redirects found among the 108 live URLs, so this isn't a currently-live sitemap problem. Google most likely discovered a dead URL via an external backlink or an old internal link no longer in the sitemap (can't identify the exact URL without the Search Console UI's Page indexing report, which isn't exposed via the Search Analytics API this pipeline uses). "Alternate page with proper canonical tag" is very often benign — it means Google correctly recognized a duplicate/variant and picked the canonical, not necessarily an error. **Flagged for Eann:** open Search Console → Indexing → Pages → "Not found (404)" to get the specific URL list; if it's an old backlink, either 301-redirect it or ignore it (a stale external link 404ing isn't harmful to a site that isn't the one at fault).
+3. **"New owner for indigopalm.co" (2026-08-23) is informational, not a security concern** — confirms `indigopalmco@gmail.com` (an account Eann controls) as an existing verified owner. No action needed.
+
+**No deficiencies found in:** monthly performance digests (April 40 clicks/28 days → August 187 clicks/28 days, steady organic growth, consistent with the API pull's own trend), or the "Improve Google presence" onboarding email (informational, already acted on since the property is actively monitored).
+
+This phase is now a permanent part of `/babysit-seo` (see updated `~/.claude/skills/babysit-seo/SKILL.md`, Phase 0.5a) — it will re-run every invocation, not just today, since new alert emails can land at any time and closing the loop (alert → fix → confirm the metric moved) is the actual goal.
+
 ### Pinterest Check-in — 2026-09-08
 
 Deferred this run — see note under "What was skipped" in the final report. Priority this run went to fixing the Google credential/API-access outage, which blocked GSC/GA4 entirely; Pinterest's own API path was unaffected by that outage and wasn't re-checked today. Last live figures remain the 8/12 pull (46,935 impressions, 299 pin clicks, 267 outbound, 5 saves, 30 days to 8/12). Pick up at the next run.
