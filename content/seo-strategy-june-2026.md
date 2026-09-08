@@ -2479,7 +2479,9 @@ Initially deferred earlier in this run (priority went to the Google credential o
 
 **Pin batch generated this run:** see "PINTEREST PIN BATCH — 2026-09-08" below — 15 pins across the 5 highest-scoring posts from today's fresh GSC pull, spec at `/tmp/pinterest-pin-specs-2026-09-08.md`, not auto-published per standing rule.
 
-**Correction to standing figure:** prior notes estimated ad spend at "~$200/mo" — actual data shows $7/day for the one campaign that delivered. Use the real figure going forward.
+**Correction, refined:** the $7/day rate itself matches the ~$209.59/month figure logged in July (7 × ~$30/week ≈ that monthly rate when run continuously) — the old estimate wasn't wrong, the campaign just stopped running continuously (now "Paused" in `sabbir_context.md`, corrected). Don't project ~$200/mo forward until a fresh export confirms it's reactivated.
+
+**The deeper lever, found via pin-level detail (this is the one that matters most going forward):** the paid pin itself — a bedroom listing photo, "Cozy Airbnb Bedroom for Families in Palm Springs" — got 9,181 impressions and exactly **1 save (0.01%)**. Compare the account's one genuine organic winner: a DIY pin ("DIY Rattan Headboard Under $200 — IKEA IVAR Hack," Interior Design board) pulled 721 impressions almost entirely organically with a 6.5% pin-click rate, the best engagement in the account by far, on a 2-pin board nobody is promoting. **Diagnosis: content type, not title wording (already fixed per the 7/11 pin audit) or posting frequency, is now the binding constraint.** Property-marketing pins (room photos, "book this Airbnb" framing) are exactly the content type Pinterest users scroll past without saving; instructional/DIY content is what earns the save that feeds the algorithm's own distribution. More listing pins at the current mix will likely just add more near-zero-save pins — the next content push should shift mix toward DIY/how-to/design-tip pins styled after the rattan headboard pin, not more frequency or more paid reach.
 
 ### GA4 Check-in — 2026-09-08
 
