@@ -2342,6 +2342,27 @@ Real waste found and fixed anyway: three blog-card images shipping at 1.3-1.7 MB
 
 **Action items:** none auto-actionable (monthly-viewers pull remains Eann's manual task in Pinterest Business Hub; 12 consecutive check-ins open on this single item — this is now the single most standing open item in the doc).
 
+---
+
+## PINTEREST PIN BATCH — 2026-07-31
+
+Generated from /pinterest-pins audit. 15 pins, 5 posts, 3 angles each. Pin count is already well past the 50-60 "ad readiness" threshold (~101 pins live across the Terra Luz 51-pin batch and Cozy Cactus 50-pin batch, per `CONTENT_MASTER_TRACKER.md`), and the two organic batches produced only 4 total pin clicks combined. This batch does not reduce volume — Eann's call was to keep cadence and fix the one variable the data actually implicates: **every title in this batch, across all three angles (not just Practical), leads with concrete room/topic + audience + location, not a narrative hook.** Narrative language is confined to descriptions only.
+
+**Posts selected:**
+1. `palm-springs-vs-indio` — highest-traffic comparison post: 31 clicks / 6,267 impressions over the last 90 days (GSC, 2026-07-31 pull), strong booking intent
+2. `where-to-stay-coachella` — 11 clicks / 5,491 impressions, direct festival booking-intent post
+3. `indian-palms-vacation-rental` — 7 clicks / 1,448 impressions, property-specific, ties directly to Terra Luz and Cozy Cactus
+4. `palm-springs-vs-scottsdale` — 39 clicks / 2,339 impressions, best CTR (1.7%) of any comparison post, booking intent
+5. `stagecoach-2027-where-to-stay` — festival booking-intent, no current GSC traction yet (new/seasonal), included to build pin coverage ahead of the 2027 season the way `where-to-stay-coachella` already has
+
+**TASK PIN-1: Produce and schedule 15 pins in Canva + Pinterest**
+Use the Indigo Palm Canva template (`~/Downloads/Copy of Terra Luz Pinterest Templates - Eann.png`). 3 pins per post. Export PNG, upload with title/description/board from spec below. Schedule 4-5/day — no batch drops. Local previews already rendered to `/tmp/pinterest-pins-preview/` for visual review before Canva.
+
+Pin specs: see `/tmp/pinterest-pin-batch-2026-07-31.md` for the full 15-pin output (title, description, overlay text, image, board, UTM-tagged link for every pin).
+
+**TASK PIN-2: Confirm all 15 pins are live**
+Check Pinterest profile — all 15 pins visible, correct board, correct link destination (Airbnb, not indigopalm.co — monthly views have not yet hit the 25-30K link-switch threshold).
+
 ### GA4 Check-in — 2026-07-31
 
 **Period:** 2026-07-24 to 2026-07-31 (7 days), vs. 2026-07-16 to 2026-07-23
