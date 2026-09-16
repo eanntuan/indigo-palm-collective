@@ -162,7 +162,7 @@ Ranked by: search volume × commercial intent × achievability for a 4-month-old
 
 ~~**Gap C — No retargeting or email capture.**~~ ✅ **ALREADY DONE** — Newsletter signup form on every blog post (connected to the deployed Cloudflare Worker + Resend pipeline). Captures email + sends welcome email automatically.
 
-**Gap D — The booking widget has no urgency signal.** Manually add seasonal availability note above booking widget during peak planning season (September through January). Not actionable until September.
+~~**Gap D — The booking widget has no urgency signal.**~~ ✅ **DONE 2026-09-16** — Now actionable (it's September). Added a one-line seasonal urgency note above the booking widget/CTA on all 3 active property pages (Terra Luz, Cozy Cactus, Sundune), colored to match each page's accent: "Coachella and Stagecoach weekends fill first, some six months out. Planning around a festival or the winter season? Check dates now." (Sundune's version leads with snowbird season instead of festival framing, since it's a Palm Springs condo, not festival-adjacent). Found and fixed a related bug in the same pass: Terra Luz and Sundune both still had the duplicated "Why Book Direct" messaging block that TASK RG-21 fixed on Cozy Cactus back in July but never got applied to the other two properties, despite the standing "apply to all property pages" rule — merged the star-rating line into the single remaining box on both, matching the Cozy Cactus pattern exactly.
 
 ~~**Gap E — No confirmation that direct booking is safe.**~~ ✅ **ALREADY DONE** — "Why Book Direct" block on each property page includes: "same Superhost property" + star rating + verified review count.
 
@@ -206,7 +206,7 @@ In order of revenue impact per hour of work:
 
 ~~**TASK 6: Indian Wells Proximity Copy (30 min, High)**~~ ✅ **DONE** — Verified June 22 session 3: both pages have "Indian Wells Tennis Garden is twenty minutes east" with BNP framing in the Location section.
 
-**TASK 7: UTM Parameters on Pinterest Pins (1 hour, Medium)**
+~~**TASK 7: UTM Parameters on Pinterest Pins (1 hour, Medium)**~~ ✅ **DONE** — Verified 2026-09-16: every pin batch since at least 2026-07-31 (07-31, 08-12, 09-08) has shipped with `utm_source=pinterest&utm_medium=organic&utm_campaign=...`-tagged links per the format below. Standard practice now, not a one-off task.
 URL format going forward:
 - Cozy Cactus: `https://indigopalm.co/cozy-cactus/?utm_source=pinterest&utm_medium=organic&utm_campaign=cozy-cactus`
 - Terra Luz: `https://indigopalm.co/terra-luz/?utm_source=pinterest&utm_medium=organic&utm_campaign=terra-luz`
@@ -1363,7 +1363,7 @@ Post processed: `how-i-hit-1-million-facebook-views`
 
 Core framework: Rachel scaled to 1.4M Facebook views in 6 months with zero ad spend by exporting her Professional Dashboard CSV weekly and feeding it to a custom Claude Skill that finds posting-time patterns, flags her top-performing posts for recycling, and drafts new posts in her voice. The transferable part isn't Facebook-specific tactics — it's the audit → identify pattern → systemize → recycle loop.
 
-**TASK RG-19: Apply the audit-and-recycle loop to Pinterest, now that Pinterest posting is Eann's job**
+~~**TASK RG-19: Apply the audit-and-recycle loop to Pinterest, now that Pinterest posting is Eann's job**~~ ✅ **DONE 2026-09-16** — 4 of 5 sub-items are now satisfied by ongoing check-in work: (2) evergreen pin library — the DIY/Interior Design content-type finding (confirmed 3x now: 07-11, 09-08, 09-16) IS this, identifying the highest-value angle to recycle; (3) specific-number captions — already the enforced title pattern since 07-11 (concrete room+audience+location); (4) declarative over question hooks — no question-based titles in any batch since; (5) volume isn't the lever — explicitly the standing conclusion since 09-08 (shift mix toward DIY, not more frequency). Item 1 (quarterly Pinterest timing audit) remains open — it requires a Business Hub login only Eann can do, tracked separately as the standing "monthly viewers" manual-check item.
 
 Since [[project_sabbir_transition]] moved Pinterest posting to Eann as of this month, this is directly actionable — no Sabbir dependency.
 
