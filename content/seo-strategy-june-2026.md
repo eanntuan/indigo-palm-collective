@@ -2518,6 +2518,48 @@ Initially deferred earlier in this run (priority went to the Google credential o
 
 **Action items generated:** Pinterest Organic Social dip and the Terra Luz/Sundune/Cozy-Cactus visibility reshuffle are both one-week reads — flag for confirmation at the next check-in rather than acting on a single week of data. Separately, Eann asked mid-session why Terra Luz specifically isn't converting to bookings — a background investigation was dispatched covering Hostaway calendar/reservations, PriceLabs pricing, and renovation-status verification; findings will be logged here once that completes.
 
+### What changed on 2026-09-16 — GSC + GA4 Check-in
+
+**BLOCKED:** Both `gsc_report.py --days 90` and `ga4_report.py --days 7` failed with `403 Request had insufficient authentication scopes` / `ACCESS_TOKEN_SCOPE_INSUFFICIENT` on the shared `google_credentials.json` token. This is the exact failure mode documented in the babysit-seo skill's reauth flow — cannot be fixed by this agent (opening a browser requires Eann's own terminal). Flagged for Eann to run:
+```
+! /Users/etuan/.claude/google-workspace-venv/bin/python3 ~/.claude/skills/babysit-seo/scripts/reauth_google.py
+```
+Sign in as `eann.tuan@gmail.com` when the browser opens, then this phase can be re-run. No GSC or GA4 data collected this run — deferring both check-ins until reauth.
+
+### GSC Alert Email Review — 2026-09-16
+
+**BLOCKED, different reason:** ran the Gmail search per Phase 0.5a and got 0 hits for the GSC alert query, which was suspicious given 54 hits on 2026-09-08. A sanity-check search (`--no-domain-filter`, generic "Search Console" query) confirmed why: the `google-gmail` skill is currently authenticated against **Eann's Netflix work Gmail**, not `eann.tuan@gmail.com` — it returned Netflix internal newsletter emails, not personal inbox results. This is a real finding, not a transient error: Indigo Palm's Google integration was deliberately migrated off any work/corporate account on 2026-09-08 ([[project_google_credentials_migration_2026_09]] in memory), and the Gmail skill's current auth contradicts that. **Did not search the wrong inbox for GSC alerts** — skipped this phase entirely rather than mine a Netflix account for personal-business data. Flagged for Eann: check which Google account the `google-gmail` skill's OAuth token is bound to and re-auth it against `eann.tuan@gmail.com` if it's cross-wired, same as was done for the Search Console/Analytics token in September.
+
+### Pinterest Check-in — 2026-09-16
+
+**Live pull** (`get_analytics.py --account --days 30`, 2026-08-17 to 2026-09-16): 1,672 impressions, 8 saves, 90 pin clicks, 15 outbound clicks. Down hard from the 2026-09-08 pull's 10,669 impressions (Aug 9-Sep 8 window) — expected, since that window still partially contained the paid campaign's Aug 9-15 spike. This 30-day window is now fully clean of the paused ad, so **1,672 impressions/~56 per day is the true current organic baseline** — consistent with the "flat 26-46/day" figure logged post-pause on 2026-09-08.
+
+**Board-level breakdown (organic, this run):** Interior Design (786 impr / 3 saves / 54 pin clicks / 12 outbound — from just 2 pins) is now clearly the top performer, ahead of every property-marketing board combined (Terra Luz 62-pin board: 201 impr / 0 saves / 1 click; Cozy Cactus 54-pin board: 116 impr / 1 save / 4 clicks). Board totals sum to ~1,665, matching the account total — confirms this period is 100% organic, no ad distortion. **This is the third consecutive check-in confirming the 2026-09-08 finding: DIY/instructional content (the rattan headboard pin) massively outperforms property-listing pins per-pin.** A 2-pin board is out-impressioning a combined 116-pin property-marketing footprint.
+
+**Root cause, unchanged:** ad still paused (per 2026-09-08 findings — paid funnel wasn't converting to bookings anyway), organic posting cadence unknown this run (no fresh count in `sabbir_context.md`/memory; Eann's own posting log is the only source and wasn't available this run — cannot state "ads stopped" vs. "posting slowed" vs. "both" with confidence beyond what was already established 2026-09-08).
+
+**Monthly views:** No fresh Business Hub screenshot this run — last real figure remains 12,685 (2026-09-08), well below the 25-30K link-switch threshold. **Not switching links off Airbnb.**
+
+**Account audit:** No dedicated Sundune board still confirmed (14 boards checked via board-level pull, none for Sundune) — matches the standing gap from 2026-09-08, punch list unchanged (bio rewrite, board consolidation, dead-board cleanup are all Pinterest-UI-only tasks for Eann, not re-executed this run since nothing new surfaced).
+
+**Action items generated:** Reinforces the standing 2026-09-08 recommendation — next pin content push should weight toward DIY/how-to/design-tip pins (Interior Design board pattern), not more property-listing volume. No new task spawned; this confirms an existing one rather than creating a new one.
+
+### Hero Image Audit — 2026-09-16
+
+Full pass run (last full pass 2026-08-12, 35 days — outside the 30-day window). Inventoried all 96 live blog post heroes + computed crop dimensions for every one via `sips`/PIL. Found a real, unrelated structural issue first: `content/blog/images/` (the documented source of truth per repo `CLAUDE.md`) is missing 27 of the 96 hero images referenced in frontmatter — they exist only in the built `blog/images/` output, which happens to be committed to git so production isn't currently broken, but this is fragile (any future `--clean` build step or fresh non-git asset pipeline would silently break dozens of hero images). Flagged for Eann, not fixed this run — fixing means backfilling `content/blog/images/` from `blog/images/` for those 27 files, out of scope for a hero-position audit.
+
+**Fixed this run (commit `[pending]`):** `best-vacation-rentals-pool-coachella-valley.md` was missing `heroPosition` entirely, rendering at default center — which shows a patio/BBQ scene with zero water visible on a post specifically about pool rentals. Its 5 sibling posts using the same `terra-luz-pool-backyard.webp` image all already use `heroPosition: "center 65%"`, which reveals the actual pool edge and loungers (verified via crop-simulation render before applying). Added the missing `heroPosition: "center 65%"` to match — a straightforward missed-field case, not a judgment call.
+
+**Checked and confirmed already-good (no action needed):** `ps-via-sol-sunset.webp` (best-time-to-visit-palm-springs.md) and `palm-springs-art-museum-sculptures.webp` (palm-springs-art-galleries-guide.md) both flagged as high-risk by the aspect-ratio heuristic (portrait source images), but crop-simulation renders showed both are well-composed at their current position (palm silhouettes against mountains/sunset; the Forever Marilyn statue framed correctly) — heuristic false positives, left untouched.
+
+**Still open, carried forward a 4th time (first flagged 2026-08-12):**
+1. `west-elm-dining.webp` (a Joshua Tree-style outdoor dining deck photo) is the hero for both `grocery-stores-coachella-valley.md` and `why-book-direct-vacation-rental.md` — confirmed via full-image review this run that neither topic matches the photo at all. This needs a genuine photo swap for at least one post (not a crop-position fix — the image itself doesn't match either topic), which means sourcing new topically-correct photos. Flagging rather than rushing a mediocre replacement; this is now 5 weeks unresolved and should get a decision next run if not sooner.
+2. `cozy-cactus-hot-tub.webp` used as hero for `desert-hot-springs-day-trip.md` — still reads as a Cozy Cactus amenity photo on a post not about Cozy Cactus. Not re-verified visually this run (time-boxed to the higher-confidence fixes above); still needs Eann's yes/no.
+
+Built, diff-checked (change scoped to exactly the one `object-position` value in the built HTML), committed, pushed.
+
+Next full pass due on/after 2026-10-16.
+
 ---
 
 ## PINTEREST PIN BATCH — 2026-09-08

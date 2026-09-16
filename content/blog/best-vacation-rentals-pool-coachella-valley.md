@@ -5,6 +5,7 @@ dateModified: 2026-07-30
 metaDescription: "Which Coachella Valley rentals have a private pool, a hot tub, or a heated spa? The real breakdown by property, plus how to book direct."
 ogImage: /blog/images/terra-luz-pool-backyard.webp
 heroImage: /blog/images/terra-luz-pool-backyard.webp
+heroPosition: "center 65%"
 heroAlt: "Terra Luz private saltwater pool with in-water loungers and terracotta deck in Indio California"
 keywords:
   - best vacation rentals with pool Coachella Valley
