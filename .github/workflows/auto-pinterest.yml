@@ -19,7 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0 # full history — a push can bundle many commits, and
+                          # we diff against github.event.before, which a
+                          # shallow fetch may not include
 
       - uses: actions/setup-node@v4
         with:
@@ -41,7 +43,18 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             NEW="${{ github.event.inputs.slug }}"
           else
-            NEW=$(git diff --name-only HEAD~1 HEAD -- 'content/blog/*.md' | grep -v '^$' | xargs -I{} basename {} .md | tr '\n' ' ')
+            # Only pin genuinely NEW posts (git status "A"), never edits to
+            # existing ones — otherwise every content fix re-pins live posts.
+            # Compare against github.event.before (the pre-push SHA), not
+            # HEAD~1, so a multi-commit push is diffed as a whole and not
+            # just its last commit.
+            BEFORE="${{ github.event.before }}"
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              BEFORE="HEAD~1"
+            fi
+            NEW=$(git diff --name-status "$BEFORE" HEAD -- 'content/blog/*.md' \
+              | awk '$1 == "A" {print $2}' \
+              | xargs -r -I{} basename {} .md | tr '\n' ' ')
           fi
           echo "slugs=$NEW" >> $GITHUB_OUTPUT
           echo "New posts: $NEW"
