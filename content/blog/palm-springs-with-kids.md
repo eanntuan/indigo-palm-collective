@@ -152,7 +152,7 @@ layout: blog-post.njk
       "name": "How far is the Living Desert from Palm Springs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "About 20 minutes, in Palm Desert. It's a straightforward drive on Highway 111. Plan for it to be an anchor activity, not a quick stop: budget 2.5 to 3 hours to actually see it."
+        "text": "About 20 minutes, in Palm Desert. It's a straightforward drive on Highway 111. Plan for it to be an anchor activity, not a quick stop: budget 2.5 to 3 hours to see it."
       }
     },
     {
@@ -176,7 +176,7 @@ layout: blog-post.njk
 <p>I'd say 8 and up is the comfortable range. The tram car itself is fine for younger kids, but the destination at the top is cold, exposed, and alpine, which can be hard for very young children who aren't dressed for it or patient enough for the experience. Older kids who like heights and outdoor stuff tend to love it.</p>
 
 <h3>How far is the Living Desert from Palm Springs?</h3>
-<p>About 20 minutes, in Palm Desert. It's a straightforward drive on Highway 111. Plan for it to be an anchor activity, not a quick stop: budget 2.5 to 3 hours to actually see it.</p>
+<p>About 20 minutes, in Palm Desert. It's a straightforward drive on Highway 111. Plan for it to be an anchor activity, not a quick stop: budget 2.5 to 3 hours to see it.</p>
 
 <h3>Is The Sundune suitable for a family with a baby or toddler?</h3>
 <p>Yes. We keep a Pack 'n Play and high chair available, the community pool is a one-minute walk, and the two-bedroom layout gives parents actual separation from kids at night. With three king beds it fits a family of up to six comfortably, and for groups of seven or more the Cozy Cactus in Indio is the better fit.</p>
@@ -207,7 +207,7 @@ layout: blog-post.njk
       "name": "How far is the Living Desert from Palm Springs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "About 20 minutes, in Palm Desert via Highway 111. Plan for it to be an anchor activity: budget 2.5 to 3 hours to actually see it. Go before 10am because the heat arrives fast and the animals are most active in the morning."
+        "text": "About 20 minutes, in Palm Desert via Highway 111. Plan for it to be an anchor activity: budget 2.5 to 3 hours to see it. Go before 10am because the heat arrives fast and the animals are most active in the morning."
       }
     },
     {

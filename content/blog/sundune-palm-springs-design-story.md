@@ -53,7 +53,7 @@ layout: blog-post.njk
 
 <h2>The Rooms: What's Actually There</h2>
 
-<p>The Sundune is a 2-bedroom, 2-bathroom apartment with a balcony that has become central to how people actually use the space. Three king beds total across both rooms.</p>
+<p>The Sundune is a 2-bedroom, 2-bathroom apartment with a balcony that has become central to how people use the space. Three king beds total across both rooms.</p>
 
 <p>The primary bedroom is set up more like a hotel room: two kings, a designer surfboard mounted above them, an accent armchair, and an adjustable standing desk angled toward the pool view (palm trees included, for anyone working remotely who needs a reason to open their laptop without feeling punished for it).</p>
 
@@ -108,7 +108,7 @@ layout: blog-post.njk
 
 <p>What's not changing is the identity: coastal-desert, playful and nostalgic, a place that earns the word basecamp without needing to use it as a marketing term.</p>
 
-<p>You can browse full details and availability at <a href="/the-sundune/">The Sundune listing page</a>. For an honest guest perspective, read the <a href="/blog/sundune-palm-springs-review/">Sundune Palm Springs review</a>. If you're still sorting out your itinerary, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> breaks down which city makes a better base depending on what you're actually planning to do. And if the design process interests you, the <a href="/blog/terra-luz-origin-story/">Terra Luz origin story</a> shows how Dawn applied a completely different set of brand filters to a property in Indio and what that looks like from the inside.</p>
+<p>You can browse full details and availability at <a href="/the-sundune/">The Sundune listing page</a>. For an honest guest perspective, read the <a href="/blog/sundune-palm-springs-review/">Sundune Palm Springs review</a>. If you're still sorting out your itinerary, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> breaks down which city makes a better base depending on what you're planning to do. And if the design process interests you, the <a href="/blog/terra-luz-origin-story/">Terra Luz origin story</a> shows how Dawn applied a completely different set of brand filters to a property in Indio and what that looks like from the inside.</p>
 
 <h2>FAQ: The Sundune at Palm Springs</h2>
 

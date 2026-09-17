@@ -83,7 +83,7 @@ It's a real climb. Loose rock, steep sections, nothing technical but you'll work
 
 Murray Canyon is also inside <a href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer">Indian Canyons</a>, south of Palm Canyon. It gets fewer visitors and has a stream running through the lower section most of the year. In wet winters, there are small waterfalls near the top of the loop.
 
-This is a trail where you'll actually feel like you're in a canyon rather than on a hillside. The terrain is varied, with some creek crossings that can be muddy in early spring. Good choice if you've done South Lykken and want something that takes a bit more attention.
+This is a trail where you'll feel like you're in a canyon rather than on a hillside. The terrain is varied, with some creek crossings that can be muddy in early spring. Good choice if you've done South Lykken and want something that takes a bit more attention.
 
 ## CV Link: Flat, Paved, Leash-Friendly
 

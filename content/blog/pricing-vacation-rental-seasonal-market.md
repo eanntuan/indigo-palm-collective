@@ -87,7 +87,7 @@ layout: blog-post.njk
 
 <p>When guests book direct at indigopalm.co, there's no Airbnb 20% service fee. On a $1,250 booking that's $250 the guest keeps before taxes. You can pass some of that savings to the guest with a modest direct booking discount and still net more than you would through Airbnb. We've written out the full math on <a href="/blog/why-book-direct-vacation-rental/">why direct booking saves guests real money</a> if you want to see how it works in practice.</p>
 
-<p>For hosts trying to build a direct booking channel, pricing is actually a lever here. Your direct rate can be slightly lower than your Airbnb rate because you're not paying platform fees, and you can make that visible to repeat guests without confusing your Airbnb listing.</p>
+<p>For hosts trying to build a direct booking channel, pricing is a lever here. Your direct rate can be slightly lower than your Airbnb rate because you're not paying platform fees, and you can make that visible to repeat guests without confusing your Airbnb listing.</p>
 
 <h2>Checking Your Work</h2>
 

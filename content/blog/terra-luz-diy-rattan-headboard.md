@@ -81,7 +81,7 @@ layout: blog-post.njk
 
 <h3>5. Add sconces on either side</h3>
 
-<p>We added two brass sconces just outside the panel edges, not through the rattan. This serves two purposes: reading light where you actually need it, and visual anchoring that extends the headboard zone a few extra inches on each side without requiring larger panels. The sconces we used have adjustable swing arms, so guests can direct light toward the bed or up toward the art print above.</p>
+<p>We added two brass sconces just outside the panel edges, not through the rattan. This serves two purposes: reading light where you need it, and visual anchoring that extends the headboard zone a few extra inches on each side without requiring larger panels. The sconces we used have adjustable swing arms, so guests can direct light toward the bed or up toward the art print above.</p>
 
 <h2>What it looks like finished</h2>
 

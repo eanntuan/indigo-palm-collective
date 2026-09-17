@@ -70,7 +70,7 @@ layout: blog-post.njk
 <img src="/blog/images/terra-luz-primary-bedroom-trundle.webp" alt="Primary bedroom at Terra Luz with king bed frame and pull-out trundle bed extended on the floor, sage green walls, terracotta Talavera tile floor in Indio California" width="1600" height="1209" loading="lazy">
 <p class="image-caption">The trundle pulls out from under the king frame. Extra sleeping option without a cot taking up the room permanently.</p>
 
-<p>For the full property, including the pool, outdoor kitchen, and what the renovation actually cost, read <a href="/blog/terra-luz-what-i-built/">what I built at Terra Luz</a>. And if you're booking for Coachella or Stagecoach, the <a href="/blog/terra-luz-outdoor-living/">outdoor living post</a> covers the patio and pool situation in more detail. Book direct at <a href="/terra-luz/">indigopalm.co/terra-luz</a>.</p>
+<p>For the full property, including the pool, outdoor kitchen, and what the renovation cost, read <a href="/blog/terra-luz-what-i-built/">what I built at Terra Luz</a>. And if you're booking for Coachella or Stagecoach, the <a href="/blog/terra-luz-outdoor-living/">outdoor living post</a> covers the patio and pool situation in more detail. Book direct at <a href="/terra-luz/">indigopalm.co/terra-luz</a>.</p>
 
 <script type="application/ld+json">
 {

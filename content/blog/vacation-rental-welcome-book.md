@@ -15,7 +15,7 @@ keywords:
   - vacation rental guest guide
 articleSection: "Hosting Tips"
 readTime: "6 min read"
-excerpt: "Most welcome books fail because they're either 40-page PDFs no one opens or a sticky note on the fridge. Here's the 10-section format that actually works, from a 191-review host who has tried both."
+excerpt: "Most welcome books fail because they're either 40-page PDFs no one opens or a sticky note on the fridge. Here's the 10-section format that works, from a 191-review host who has tried both."
 layout: blog-post.njk
 ---
 

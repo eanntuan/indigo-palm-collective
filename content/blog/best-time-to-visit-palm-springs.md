@@ -29,7 +29,7 @@ faqItems:
   - q: "Is Palm Springs worth visiting in summer?"
     a: "Yes, but only with a clear strategy. Book a place with a private pool, plan outdoor activity before 9am and after 6pm, and treat the afternoon as an indoor hour. Hotel rates drop 40-50% from peak, pools are genuinely uncrowded, and Splash House in June and August gives summer a specific reason to visit beyond cheap prices. More detail at https://indigopalm.co/blog/best-time-to-visit-palm-springs/"
   - q: "When is Palm Springs cheapest to visit?"
-    a: "June through September is off-season pricing, with July as the cheapest month: rates at their lowest, availability at its widest, and the trade-off being 108 degree average highs. October hits a better sweet spot, where prices have dropped from peak but the heat has actually broken. The full price-versus-weather tradeoff is laid out at https://indigopalm.co/blog/best-time-to-visit-palm-springs/"
+    a: "June through September is off-season pricing, with July as the cheapest month: rates at their lowest, availability at its widest, and the trade-off being 108 degree average highs. October hits a better sweet spot, where prices have dropped from peak but the heat has broken. The full price-versus-weather tradeoff is laid out at https://indigopalm.co/blog/best-time-to-visit-palm-springs/"
   - q: "What events should I avoid in Palm Springs if I want fewer crowds?"
     a: "Coachella and Stagecoach in April, the BNP Paribas Open in March, and Modernism Week in February all spike rates across the entire valley, even if you're staying 20 miles from the venue. If you're not coming for those events, build your trip around the weeks before or after. The full event calendar and its rate impact is at https://indigopalm.co/blog/best-time-to-visit-palm-springs/"
   - q: "Is October a good time to visit Palm Springs?"
@@ -105,7 +105,7 @@ May is the transition month. Crowds thin and prices drop as temperatures climb t
 
 Summer is brutal, no way around it: at 2pm in July, stepping outside feels like standing in front of an open oven, and that's not rhetorical.
 
-And yet. The hotel rates can drop 50% from peak season. The pools are actually uncrowded. Desert evenings, once the sun drops, are warm and clear in a way that genuinely feels nice rather than punishing.
+And yet. The hotel rates can drop 50% from peak season. The pools are uncrowded. Desert evenings, once the sun drops, are warm and clear in a way that genuinely feels nice rather than punishing.
 
 ### Splash House
 

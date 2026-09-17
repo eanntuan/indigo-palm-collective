@@ -33,7 +33,7 @@ faqItems:
   - q: "What's the best neighborhood to stay in for Stagecoach 2027?"
     a: "Indian Palms Country Club in east Indio is the closest neighborhood, walking distance to the Empire Polo Club where Stagecoach takes place. Properties here let you return to your rental mid-afternoon during the heat window and still make the evening sets. More details at https://indigopalm.co/blog/stagecoach-2027-where-to-stay/"
   - q: "Is a vacation rental or hotel better for Stagecoach weekend?"
-    a: "For groups of four or more, a vacation rental wins on both cost and livability. Hotels near the venue run $400-800+ per night and you would need multiple rooms, while a house in Indian Palms gives you a full kitchen, private outdoor space, and a home base worth actually returning to. For solo travelers or couples, a hotel is a reasonable call. Full breakdown at https://indigopalm.co/blog/stagecoach-2027-where-to-stay/"
+    a: "For groups of four or more, a vacation rental wins on both cost and livability. Hotels near the venue run $400-800+ per night and you would need multiple rooms, while a house in Indian Palms gives you a full kitchen, private outdoor space, and a home base worth returning to. For solo travelers or couples, a hotel is a reasonable call. Full breakdown at https://indigopalm.co/blog/stagecoach-2027-where-to-stay/"
   - q: "Can I go back to my rental during the day at Stagecoach?"
     a: "Yes, if you're staying within 10-15 minutes of the Empire Polo Club in Indio. The 2-5pm window is when temperatures peak and main-stage programming slows, so groups in Indian Palms routinely do a pool break and return for the evening sets. This is one of the main reasons proximity matters more than property size for a festival rental. See https://indigopalm.co/blog/stagecoach-2027-where-to-stay/"
   - q: "Are there dog-friendly vacation rentals near Stagecoach 2027?"
@@ -87,7 +87,7 @@ faqItems:
 
 <h2><a href="/cozy-cactus/">The Cozy Cactus</a>: 3BR, Hot Tub, Game Room</h2>
 
-<p>Three bedrooms, two bathrooms, sleeps 8, with a private hot tub on the property and the heated community pools at Indian Palms Country Club steps from the back gate. The game room has foosball, ping pong, and a putting green, and the kitchen is stocked well enough to actually cook in. Covered patio out back.</p>
+<p>Three bedrooms, two bathrooms, sleeps 8, with a private hot tub on the property and the heated community pools at Indian Palms Country Club steps from the back gate. The game room has foosball, ping pong, and a putting green, and the kitchen is stocked well enough to cook in. Covered patio out back.</p>
 
 <p>Best for: groups of 4-8 who want a festival base with indoor activity options for the middle of the day when it's too hot to be outside.</p>
 
@@ -200,7 +200,7 @@ Indian Palms Country Club in east Indio is the closest neighborhood, walking dis
 
 #### Is a vacation rental or hotel better for Stagecoach weekend?
 
-For groups of four or more, a vacation rental wins on both cost and livability. Hotels near the venue run $400-800+ per night and you would need multiple rooms, while a house in Indian Palms gives you a full kitchen, private outdoor space, and a home base worth actually returning to. For solo travelers or couples, a hotel is a reasonable call. Full breakdown at https://indigopalm.co/blog/stagecoach-2027-where-to-stay/
+For groups of four or more, a vacation rental wins on both cost and livability. Hotels near the venue run $400-800+ per night and you would need multiple rooms, while a house in Indian Palms gives you a full kitchen, private outdoor space, and a home base worth returning to. For solo travelers or couples, a hotel is a reasonable call. Full breakdown at https://indigopalm.co/blog/stagecoach-2027-where-to-stay/
 
 #### Can I go back to my rental during the day at Stagecoach?
 

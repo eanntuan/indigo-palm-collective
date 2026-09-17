@@ -15,7 +15,7 @@ keywords:
   - airbnb star rating protection
 articleSection: "Hosting Tips"
 readTime: "5 min read"
-excerpt: "A bad review is not the problem. A bad response is. Here's the framework we use at Indigo Palm to respond to negative reviews in a way that protects our rating and actually helps future guests make a decision."
+excerpt: "A bad review is not the problem. A bad response is. Here's the framework we use at Indigo Palm to respond to negative reviews in a way that protects our rating and helps future guests make a decision."
 layout: blog-post.njk
 ---
 
@@ -97,7 +97,7 @@ layout: blog-post.njk
       "name": "Does a bad Airbnb review hurt your host rating?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A single bad review matters less than your response to it. At 100+ reviews, one 3-star rating barely moves a 4.9 average. What matters more is whether your public response signals competence and accountability, not defensiveness. Future guests read host responses before booking, and a well-written response to a negative review can actually increase trust."
+        "text": "A single bad review matters less than your response to it. At 100+ reviews, one 3-star rating barely moves a 4.9 average. What matters more is whether your public response signals competence and accountability, not defensiveness. Future guests read host responses before booking, and a well-written response to a negative review can increase trust."
       }
     },
     {

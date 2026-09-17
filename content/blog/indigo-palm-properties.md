@@ -1,7 +1,7 @@
 ---
 title: "4 Indigo Palm Vacation Rentals: Which One Is Yours?"
 date: 2026-07-02
-metaDescription: "Terra Luz, The Cozy Cactus, The Sundune. Three completely different Coachella Valley vacation rentals. Here's how to figure out which one actually fits your group."
+metaDescription: "Terra Luz, The Cozy Cactus, The Sundune. Three completely different Coachella Valley vacation rentals. Here's how to figure out which one fits your group."
 ogImage: /blog/images/terra-luz-outdoor-wide.webp
 heroImage: /blog/images/terra-luz-outdoor-wide.webp
 heroAlt: "Outdoor living area at Terra Luz vacation rental in Indio California, desert palms and string lights"

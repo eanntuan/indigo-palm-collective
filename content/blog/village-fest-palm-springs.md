@@ -102,7 +102,7 @@ The vendor booths selling mass-produced sunglasses, phone cases, and imported no
 <p>Produce from the local farm vendors. Imperial Valley and Coachella Valley farms sell citrus, peppers, and seasonal vegetables at prices better than any grocery store in Palm Springs. In winter, the citrus selection is particularly good. Dates are the other reliable buy, with vendors who will let you sample variety differences.</p>
 
 <h3>How do I get to Village Fest from Indio?</h3>
-<p>About 25-30 minutes west on I-10 from the Indian Palms area, then north into downtown Palm Springs. The lack of traffic on Palm Canyon Drive during the fair actually makes parking on side streets slightly easier than on a regular evening. Guests staying at <a href="/cozy-cactus/">The Cozy Cactus or Terra Luz</a> in Indio can make Village Fest a worthwhile Thursday evening trip.</p>
+<p>About 25-30 minutes west on I-10 from the Indian Palms area, then north into downtown Palm Springs. The lack of traffic on Palm Canyon Drive during the fair makes parking on side streets slightly easier than on a regular evening. Guests staying at <a href="/cozy-cactus/">The Cozy Cactus or Terra Luz</a> in Indio can make Village Fest a worthwhile Thursday evening trip.</p>
 
 ---
 

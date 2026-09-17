@@ -27,7 +27,7 @@ layout: blog-post.njk
 
 <p>Not the pool. Not the beds. A garlic press that was too small.</p>
 
-<p>It stung, partly because it felt petty and partly because it was fair. We'd advertised a fully equipped kitchen, and sure, the kitchen had equipment. It just wasn't stocked to the level a real cook would expect. After that we went through everything: full-size garlic press, a chef's knife that actually holds an edge, a sheet pan big enough for a whole chicken. We check every piece before each turnover now. That review was embarrassing and also the most useful thing that happened in year one.</p>
+<p>It stung, partly because it felt petty and partly because it was fair. We'd advertised a fully equipped kitchen, and sure, the kitchen had equipment. It just wasn't stocked to the level a real cook would expect. After that we went through everything: full-size garlic press, a chef's knife that holds an edge, a sheet pan big enough for a whole chicken. We check every piece before each turnover now. That review was embarrassing and also the most useful thing that happened in year one.</p>
 
 <p>If you say "fully stocked kitchen," you have to mean it the way a capable home cook would mean it, not just "we have spatulas."</p>
 

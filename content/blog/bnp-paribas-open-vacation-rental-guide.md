@@ -22,7 +22,7 @@ keywords:
 articleSection: "Travel Guide"
 property: all
 readTime: "7 min read"
-excerpt: "Indian Wells hotels are expensive and far from any kitchen. A private home in Indio puts you 20 minutes from the venue with a pool, real wifi, and dinner you can actually cook. Here's how to think through BNP Paribas Open accommodation."
+excerpt: "Indian Wells hotels are expensive and far from any kitchen. A private home in Indio puts you 20 minutes from the venue with a pool, real wifi, and dinner you can cook. Here's how to think through BNP Paribas Open accommodation."
 relatedPosts:
   - title: "BNP Paribas Open 2027: Where to Stay Near Indian Wells"
     url: /blog/bnp-paribas-indian-wells-where-to-stay/

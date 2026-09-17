@@ -33,7 +33,7 @@ faqItems:
   - q: "What is the Agua Caliente Cultural Museum in Palm Springs?"
     a: "It's a museum at 140 N Indian Canyon Dr focused on the history and culture of the Cahuilla people, whose ancestral territory covers the entire Coachella Valley. The building is well-designed and the exhibitions are clear, and it pairs easily with the Art Museum for a full air-conditioned afternoon. More on how to build that afternoon at https://indigopalm.co/blog/palm-springs-heat-activities/"
   - q: "What is Shots in the Night mini-golf in Palm Springs?"
-    a: "It's an evening mini-golf event at Indian Wells Golf Resort that runs Thursday through Saturday, starting about 30 minutes after sunset. Glow-in-the-dark targets, laser lights, food and drinks, and by that hour the temperature has actually dropped to something tolerable. About 20 minutes from central Palm Springs. See https://indigopalm.co/blog/palm-springs-heat-activities/ for the full summer day itinerary it fits into."
+    a: "It's an evening mini-golf event at Indian Wells Golf Resort that runs Thursday through Saturday, starting about 30 minutes after sunset. Glow-in-the-dark targets, laser lights, food and drinks, and by that hour the temperature has dropped to something tolerable. About 20 minutes from central Palm Springs. See https://indigopalm.co/blog/palm-springs-heat-activities/ for the full summer day itinerary it fits into."
 ---
 
 <p>June through September in the Coachella Valley is not a metaphor. The thermometer hits 110°F and the asphalt radiates heat back at you like a pizza oven. Every outdoor activity guide I've read underestimates this. Even early mornings can feel brutal by 9am.</p>

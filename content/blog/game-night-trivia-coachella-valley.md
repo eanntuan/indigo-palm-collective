@@ -75,7 +75,7 @@ layout: blog-post.njk
 
 <p>By July the math in the desert is simple: mornings and evenings belong to you, and the middle of the day belongs to the sun. So the fun migrates indoors and after dark, which is exactly when the valley's game scene comes alive. Trivia teams filling up back rooms, casino bingo halls buzzing, a table of people painting tiny orcs in Palm Desert.</p>
 
-<p>I moved out here from Culver City and assumed the desert shut down at night. It doesn't. There's a whole rotation of weekly game nights that most visitors never find because they're too busy chasing the same three midcentury photo spots. This is the honest list, organized by city, of where I'd actually send a guest looking for something to do on a Tuesday.</p>
+<p>I moved out here from Culver City and assumed the desert shut down at night. It doesn't. There's a whole rotation of weekly game nights that most visitors never find because they're too busy chasing the same three midcentury photo spots. This is the honest list, organized by city, of where I'd send a guest looking for something to do on a Tuesday.</p>
 
 <p>One caveat before you build a night around any of this: bar and lounge schedules shift constantly. Everything below is accurate as of 2026, but call ahead or check the venue's socials before you drive over, because trivia nights get moved and cancelled more than any restaurant reservation ever would.</p>
 

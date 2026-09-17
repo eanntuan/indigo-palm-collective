@@ -39,7 +39,7 @@ layout: blog-post.njk
 
 <p>Keep a cooler stocked. Order delivery or pick up something simple (more on where in a minute). Sleep at an hour that isn't 3am. The desert will still be there tomorrow. It literally cannot leave.</p>
 
-<p>If the rental pool isn't enough recovery and you want an actual spa day, both La Quinta and Palm Desert have real options 20 minutes from Indio: Well Spa+Salon at La Quinta Resort and the hammam/steam setup at JW Marriott Desert Springs. Our <a href="/blog/best-spas-coachella-valley-spa-day/">Coachella Valley spa day guide</a> covers pricing and what's actually worth booking.</p>
+<p>If the rental pool isn't enough recovery and you want an actual spa day, both La Quinta and Palm Desert have real options 20 minutes from Indio: Well Spa+Salon at La Quinta Resort and the hammam/steam setup at JW Marriott Desert Springs. Our <a href="/blog/best-spas-coachella-valley-spa-day/">Coachella Valley spa day guide</a> covers pricing and what's worth booking.</p>
 
 <img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Pool and hot tub at a Coachella Valley vacation rental on a sunny desert morning" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The most underrated Coachella activity: the pool at your rental on Monday morning</p>

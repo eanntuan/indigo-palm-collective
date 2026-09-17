@@ -14,7 +14,7 @@ keywords:
   - Well Spa La Quinta
   - Agua Caliente spa
   - spa day pass Palm Springs
-excerpt: "The Coachella Valley has real spa days, not just hotel amenities. Here's where non-guests can actually get in, what it costs, and which one fits which mood."
+excerpt: "The Coachella Valley has real spa days, not just hotel amenities. Here's where non-guests can get in, what it costs, and which one fits which mood."
 articleSection: "Local Guide"
 property: all
 readTime: "9 min read"

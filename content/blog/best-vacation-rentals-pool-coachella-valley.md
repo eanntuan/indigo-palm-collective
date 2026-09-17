@@ -48,7 +48,7 @@ layout: blog-post.njk
 
 <p>If you're coming for Coachella or Stagecoach (both in April), a heated pool is not a nice-to-have. It's the thing that determines whether you swim.</p>
 
-<p>May through September the water warms up on its own, and by July you might actually want it cooler. But for festival season and the shoulder months on either side, verify that the pool heats and ask if there's an extra fee. Some properties charge per-day heating fees that aren't obvious in the listing.</p>
+<p>May through September the water warms up on its own, and by July you might want it cooler. But for festival season and the shoulder months on either side, verify that the pool heats and ask if there's an extra fee. Some properties charge per-day heating fees that aren't obvious in the listing.</p>
 
 <h2>Size Matters More Than You Think</h2>
 

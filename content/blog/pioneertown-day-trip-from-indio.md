@@ -22,7 +22,7 @@ layout: blog-post.njk
 
 <p>Pioneertown doesn't look like a place that should exist. A dirt-street Old West town sitting in the high desert north of Joshua Tree, built in 1946 by a group of investors that included Roy Rogers and Dale Evans, meant to double as a working movie set and an actual town people could live in. More than fifty westerns got filmed on Mane Street through the 1950s. The town charter still forbids paving it, so you walk it the way the crews did.</p>
 
-<p>It's a full but doable day trip from Indio, or a half-day if you're staying in Palm Springs. Here's what's actually there, what it costs, and how to time it.</p>
+<p>It's a full but doable day trip from Indio, or a half-day if you're staying in Palm Springs. Here's what's there, what it costs, and how to time it.</p>
 
 <img src="/blog/images/pioneertown-mane-street-sign.webp" alt="Vintage Pioneertown sign on Mane Street in the California high desert" width="800" height="600" loading="lazy">
 <p class="image-caption">The Mane Street sign. Pioneertown has looked roughly like this since the 1940s.</p>

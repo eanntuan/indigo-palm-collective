@@ -23,7 +23,7 @@ layout: blog-post.njk
 
 <p>The second bedroom at Terra Luz was always going to be the bolder one. The primary bedroom has its own personality, but this room needed something louder. Not chaotic, just confident. Full of pattern, grounded by terracotta, and playful without being childish.</p>
 
-<p>Dawn Asher at The Olive Jar called it Wild Tropics. The brief was bold pattern meets grounding warmth, Latin and lush, the kind of room where you actually want to spend time when you're not at the pool. I think we landed it.</p>
+<p>Dawn Asher at The Olive Jar called it Wild Tropics. The brief was bold pattern meets grounding warmth, Latin and lush, the kind of room where you want to spend time when you're not at the pool. I think we landed it.</p>
 
 <img src="/blog/images/terra-luz-wild-tropics-hero.webp" alt="Wild Tropics bedroom at Terra Luz vacation rental in Indio California, with Kahlo Blue botanical wallpaper, terracotta tile headboard, and jute rug" width="4642" height="3203" loading="lazy">
 <p class="image-caption">The full room. Rebel Wall botanical wallpaper covers every wall inside the sleeping alcove, including the ceiling.</p>

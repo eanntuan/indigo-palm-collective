@@ -23,7 +23,7 @@ layout: blog-post.njk
 
 <p>Palm Springs has been a gathering place for LGBTQ+ travelers since the 1970s, when the gay community began buying up the midcentury motels along the main corridors. Today it's one of the most established LGBTQ+ destinations in the country, with a city government that's been majority LGBTQ+ for decades, an Arenas Road bar district that functions as the social hub, and a calendar of annual events that draws people from across California and well beyond.</p>
 
-<p>This is the practical guide: what's on Arenas Road, what the major annual events actually involve, and where to stay.</p>
+<p>This is the practical guide: what's on Arenas Road, what the major annual events involve, and where to stay.</p>
 
 <img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm tree-lined boulevard in Palm Springs with the San Jacinto Mountains at the end of the street at golden hour" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs. The city is small enough to walk most of the main bar district.</p>
