@@ -1,7 +1,7 @@
 ---
-title: "Palm Springs Art Galleries: A Downtown Walking Guide"
+title: "Palm Springs Art Galleries: Uptown to Backstreet Walk"
 date: 2026-07-11
-dateModified: 2026-07-11
+dateModified: 2026-09-16
 metaDescription: "Palm Springs art galleries worth the walk: Uptown Design District, Backstreet Art District, Janssen Artspace, and where to start downtown first."
 ogImage: /blog/images/palm-springs-art-museum-sculptures.webp
 heroImage: /blog/images/palm-springs-art-museum-sculptures.webp

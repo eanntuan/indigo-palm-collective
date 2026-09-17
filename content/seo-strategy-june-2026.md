@@ -2560,6 +2560,48 @@ Built, diff-checked (change scoped to exactly the one `object-position` value in
 
 Next full pass due on/after 2026-10-16.
 
+### What changed on 2026-09-16 (re-run) — GSC + GA4 Check-in — UNBLOCKED
+
+Eann re-ran `reauth_google.py` (signed in as `eann.tuan@gmail.com`) after the earlier check-in today was blocked on a 403. Both scripts now pull clean.
+
+**GSC (90 days, 2026-06-18 to 2026-09-16 vs. prior 90 days):** 530 clicks (+390), 67,729 impressions (+47,811), 0.8% CTR, avg position 10.5. Big jump driven by `palm-springs-vs-scottsdale` (79 clicks, 1.9% CTR) and `palm-springs-surf-club` (48 clicks, but only 0.5% CTR on 10,177 impressions — the widest impression/click gap on the site). Mobile CTR (1.0%) beats desktop (0.5%) again, consistent with prior check-ins — mobile experience is fine, desktop layout is the laggard.
+
+**CTR opportunities (rewrite queued):**
+- `how far is indio from palm springs`: 826 impr, 2 clicks, pos 6.0, 0.2% CTR → title/meta rewrite needed on whichever page ranks for this (cross-check against `/blog/palm-springs-vs-indio/`, currently ranking well elsewhere)
+- `palm springs wave pool price`: 149 impr, 2 clicks, pos 8.0 → same treatment
+
+**Weak pages (title/meta rewrite, ranking ≤20 but barely clicked):**
+- `/blog/grocery-stores-coachella-valley/`: 1,002 impr, 2 clicks, 0.2% CTR, pos 8.7 — 100% of impressions at pos ≤20, pure title/meta problem
+- `/blog/bnp-paribas-open-palm-springs/`: 430 impr, 2 clicks, pos 7.6 — same diagnosis
+- `/blog/palm-springs-poolside-bars-resort-dining/`: 244 impr, 1 click, pos 11.5 — same
+- `/blog/coachella-2027-where-to-stay/`: 100 impr, 1 click, pos 6.4 — same, and this one already has a live Pinterest pin batch (2026-09-08) driving to it, so a title fix could compound
+
+**Content/authority fix (buried past pos 20 on most of their impressions):**
+- `/blog/best-restaurants-palm-springs/`: 1,336 impr, 1 click — only 2% of impressions rank ≤20, this needs real content work not a title tweak
+- `/blog/salton-sea-day-trip/`, `/blog/` (blog index itself, pos 16.5 blended, 37% ≤20) — both flagged, blog index specifically worth a look since it's the hub page
+
+~~**TASK GSC-27: Title/meta rewrites for 5 CTR-weak pages (2026-09-16)**~~ ✅ **DONE 2026-09-16** — `coachella-2027-where-to-stay` and `indio-between-coachella-weekends` already had prior rewrites (GSC-5, GSC-16/20), skipped. Fixed the rest: **`bnp-paribas-open-palm-springs`** meta description was 183 chars (over the 155-char cap, getting truncated in the SERP) — trimmed to 153 chars, kept the distance/beds/pool facts. **`grocery-stores-coachella-valley`** title rewritten from vague "...Which One" to name-brand-first ("Trader Joe's, Whole Foods, or Stater Bros in Indio?", 51 chars) matching the meta's already-specific framing. **`palm-springs-poolside-bars-resort-dining`** title rewritten to lead with the number ("6 Palm Springs Resort Pools You Can Access Without a Room", 57 chars). **`palm-springs-art-galleries-guide`** title rewritten to name the actual districts ("Palm Springs Art Galleries: Uptown to Backstreet Walk", 53 chars) instead of generic "A Downtown Walking Guide". Skipped `game-night-trivia-coachella-valley` — only 51 impressions this period, too thin a sample to justify a rewrite (same precedent as `classpass-palm-springs` being declined twice for ~108-impr volume). Also flagged in passing: `grocery-stores-coachella-valley.md`'s `ogImage`/`heroImage` is `west-elm-dining.webp` — this is one of the two unresolved hero-image mismatches from today's Hero Image Audit (5 weeks open), not touched here since that's a photo-sourcing decision, not a title/meta fix. Built and verified via `npm run build` (clean, no errors). Measure CTR lift at the next GSC check-in (~2026-09-23+).
+
+**GA4 (7 days, 2026-09-09 to 2026-09-16 vs. prior 7 days):** 234 active users (+46), 270 sessions (+47), avg session duration 133s (+18s), 1,011 events (+141). No high-bounce pages found (50+ views, >60% bounce) — the prior high-bounce concern from earlier check-ins has cleared. Organic Search leads traffic (123 sessions) over Direct (70); Organic Social only 6 sessions — Pinterest isn't yet a meaningful GA4-tracked source despite the 90 pin clicks logged by the Pinterest API this period (worth checking UTM tagging is actually landing as `organic social` vs. some other channel bucket, since 90 pin clicks → 6 social sessions is a big drop-off even accounting for outbound-click vs. session differences).
+
+**Property page visibility:** Terra Luz 17 views / Cozy Cactus 15 / Sundune 9. Gap is narrower than prior check-ins — Sundune still trailing but not by a wide margin.
+
+### GSC Alert Email Review — 2026-09-16 (re-run) — UNBLOCKED
+
+Gmail confirmed authenticated as `eann.tuan@gmail.com` (verified via `users().getProfile()` before trusting results — returned the correct address). The earlier finding today (Gmail cross-wired to a work account) is resolved; same root fix (`reauth_google.py`) covered Gmail's scope too since all Google Workspace skills share one credentials file (see memory).
+
+**Emails reviewed:** 30 (2026-07-11 to 2026-09-09), all from `sc-noreply@google.com`.
+
+**Deficiencies found:**
+1. **Coverage — "Page with redirect"** (flagged 2026-08-23, and a near-identical notice 2026-07-27 that was marked "successfully fixed" 2026-07-27 same day). Status: **recurrence, now re-fixed.** Root cause: `content/blog/where-to-stay-coachella-2026.md` and `content/blog/bnp-paribas-open-vacation-rental-guide.md` are intentional 301-style redirect pages (`layout: redirect.njk`) that keep getting re-added to `sitemap.xml` — most recently by this morning's stashed-changes merge conflict resolution (commit `b841ab7`), which is exactly the kind of silent regression that caused this same alert twice before. Fix: already applied this morning (both URLs removed from `sitemap.xml` again). No further action needed this run. Monitor: re-check the GSC Coverage/Page Indexing report in 5-7 days (around 2026-09-21 to 09-23) to confirm Google stops re-flagging these two URLs; if it recurs a third time, consider adding a sitemap-generation guard (e.g. exclude any `.md` with `redirectTo` frontmatter from whatever script/step writes `sitemap.xml`) instead of relying on manual vigilance every merge.
+2. **No new alert categories** — no mobile usability, Core Web Vitals, manual action/security, or new-top-query emails in this window beyond the routine monthly performance digests and click-milestone congratulations, which are informational only.
+
+**No open deficiencies found beyond the redirect-sitemap recurrence above** — inbox is otherwise clean.
+
+**Action item queued:** add a sitemap-generation safeguard (skip `redirectTo` pages) as a Part 5 Technical SEO task so this stops being a manual catch every time a merge conflict touches `sitemap.xml`.
+
+~~**14. Sitemap re-adds redirect-stub pages after every merge conflict (3rd recurrence: 2026-07-27, 08-23, 09-16)**~~ ✅ **DONE 2026-09-16** — sitemap.xml is a manually-maintained static file (not Eleventy-generated), so there was no generation step to guard. Instead added `scripts/check-sitemap-redirects.js`, which scans `content/blog/*.md` for `redirectTo:` frontmatter and fails if any of those slugs appear in `sitemap.xml`. Wired as a build step in `.github/workflows/deploy.yml` before the Pages upload — a future accidental re-add now fails the deploy loudly instead of silently shipping and waiting for the next GSC alert email weeks later.
+
 ---
 
 ## PINTEREST PIN BATCH — 2026-09-08

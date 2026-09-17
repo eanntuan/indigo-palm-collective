@@ -1,6 +1,7 @@
 ---
-title: "Palm Springs Poolside Bars and Resort Dining Open to All"
+title: "6 Palm Springs Resort Pools You Can Access Without a Room"
 date: 2026-07-22
+dateModified: 2026-09-16
 metaDescription: "Get the Palm Springs resort pool day and poolside cocktail without booking a room: 6 spots welcoming walk-ins and day passes across the valley."
 ogImage: /blog/images/palm-springs-bar-cocktails.webp
 heroImage: /blog/images/palm-springs-bar-cocktails.webp
