@@ -254,12 +254,21 @@ function renderCalendar() {
                 if (!checkIn.value || (checkIn.value && checkOut.value)) {
                     checkIn.value  = dateStr;
                     checkOut.value = '';
-                    const next = new Date(dateObj);
-                    next.setDate(next.getDate() + 1);
-                    checkOut.min = next.toISOString().split('T')[0];
+                    const earliest = new Date(dateObj);
+                    earliest.setDate(earliest.getDate() + (selectedProperty?.minNights || 1));
+                    checkOut.min = earliest.toISOString().split('T')[0];
+                    updatePrice();
+                } else if (dateStr > checkIn.value && dateStr >= checkOut.min) {
+                    checkOut.value = dateStr;
                     updatePrice();
                 } else if (dateStr > checkIn.value) {
-                    checkOut.value = dateStr;
+                    // Below this property's minimum stay — restart the range from here
+                    // instead of silently accepting a too-short stay.
+                    checkIn.value  = dateStr;
+                    checkOut.value = '';
+                    const earliest = new Date(dateObj);
+                    earliest.setDate(earliest.getDate() + (selectedProperty?.minNights || 1));
+                    checkOut.min = earliest.toISOString().split('T')[0];
                     updatePrice();
                 } else {
                     checkIn.value  = dateStr;
@@ -298,10 +307,10 @@ function setupEventListeners() {
     const checkOut = document.getElementById('check-out');
 
     checkIn.addEventListener('change', () => {
-        const next = new Date(checkIn.value + 'T00:00:00');
-        next.setDate(next.getDate() + 1);
-        checkOut.min = next.toISOString().split('T')[0];
-        if (checkOut.value && checkOut.value <= checkIn.value) checkOut.value = '';
+        const earliest = new Date(checkIn.value + 'T00:00:00');
+        earliest.setDate(earliest.getDate() + (selectedProperty?.minNights || 1));
+        checkOut.min = earliest.toISOString().split('T')[0];
+        if (checkOut.value && checkOut.value < checkOut.min) checkOut.value = '';
         updatePrice();
         syncUrlDates();
         renderCalendar();
@@ -444,6 +453,11 @@ async function submitBookingRequest() {
     const agreeCheckbox = document.getElementById('agree-checkbox');
     if (agreeCheckbox && !agreeCheckbox.checked) {
         showMessage('Please read and agree to the rental agreement before submitting.', 'error');
+        return;
+    }
+
+    if (!priceEstimate) {
+        showMessage('Please select valid dates before submitting.', 'error');
         return;
     }
 

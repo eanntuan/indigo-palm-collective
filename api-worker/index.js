@@ -706,6 +706,48 @@ function toDateString(date) {
 
 // ── Pricing ───────────────────────────────────────────────────────────────────
 
+// PriceLabs is the source of truth for seasonal minimum-stay rules (e.g. the
+// 4-night Coachella/Stagecoach minimum) — it's what's actually synced to
+// Airbnb/VRBO. Pulls min_stay for the arrival date, with plPriceMapOut
+// populated as a side effect so callers don't need a second API round trip.
+// Falls back to the static per-property floor if PriceLabs is unavailable.
+async function fetchPriceLabsData(propertyId, checkIn, checkOut, env, plPriceMapOut) {
+  const config = PROPERTY_CONFIG[propertyId];
+  const pl = PRICELABS_LISTINGS[propertyId];
+  let effectiveMinNights = config.minNights;
+
+  try {
+    const plRes = await fetch('https://api.pricelabs.co/v1/listing_prices', {
+      method: 'POST',
+      headers: {
+        'X-API-Key': env.PRICELABS_API_KEY,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        listings: [{ id: pl.id, pms: pl.pms, dateFrom: checkIn, dateTo: checkOut }],
+      }),
+    });
+
+    if (plRes.ok) {
+      const plData = await plRes.json();
+      const listing = Array.isArray(plData) ? plData[0] : null;
+      if (listing && !listing.error_status && listing.data?.length > 0) {
+        for (const day of listing.data) {
+          if (plPriceMapOut) plPriceMapOut[day.date] = day.price;
+        }
+        const arrivalDay = listing.data.find(d => d.date === checkIn);
+        if (arrivalDay?.min_stay != null) {
+          effectiveMinNights = arrivalDay.min_stay;
+        }
+      }
+    }
+  } catch (e) {
+    console.error('PriceLabs API error, using static minNights fallback:', e);
+  }
+
+  return effectiveMinNights;
+}
+
 async function handlePricing(url, env) {
   const propertyId = url.searchParams.get('property');
   const checkIn    = url.searchParams.get('checkIn');
@@ -728,40 +770,14 @@ async function handlePricing(url, env) {
     });
   }
 
-  if (nights < config.minNights) {
-    return new Response(JSON.stringify({ success: false, error: `Minimum stay is ${config.minNights} nights` }), {
+  const plPriceMap = {};
+  const effectiveMinNights = await fetchPriceLabsData(propertyId, checkIn, checkOut, env, plPriceMap);
+  const hasPlData = Object.keys(plPriceMap).length > 0;
+
+  if (nights < effectiveMinNights) {
+    return new Response(JSON.stringify({ success: false, error: `Minimum stay is ${effectiveMinNights} nights` }), {
       status: 400, headers: CORS_HEADERS,
     });
-  }
-
-  // Try PriceLabs for real per-night prices
-  const pl = PRICELABS_LISTINGS[propertyId];
-  let plPriceMap = null;
-
-  try {
-    const plRes = await fetch('https://api.pricelabs.co/v1/listing_prices', {
-      method: 'POST',
-      headers: {
-        'X-API-Key': env.PRICELABS_API_KEY,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        listings: [{ id: pl.id, pms: pl.pms, dateFrom: checkIn, dateTo: checkOut }],
-      }),
-    });
-
-    if (plRes.ok) {
-      const plData = await plRes.json();
-      const listing = Array.isArray(plData) ? plData[0] : null;
-      if (listing && !listing.error_status && listing.data?.length > 0) {
-        plPriceMap = {};
-        for (const day of listing.data) {
-          plPriceMap[day.date] = day.price;
-        }
-      }
-    }
-  } catch (e) {
-    console.error('PriceLabs API error, using fallback:', e);
   }
 
   // Build per-night breakdown
@@ -868,6 +884,21 @@ async function handleBooking(request, env) {
     return new Response(JSON.stringify({ success: false, error: 'Missing required fields' }), {
       status: 400, headers: CORS_HEADERS,
     });
+  }
+
+  // Re-check the minimum-stay rule server-side (defense in depth — the browser
+  // already enforces this in /api/pricing, but never trust the client alone).
+  if (propertyId && PROPERTY_CONFIG[propertyId]) {
+    const start  = new Date(checkIn  + 'T00:00:00');
+    const end    = new Date(checkOut + 'T00:00:00');
+    const nights = Math.round((end - start) / (1000 * 60 * 60 * 24));
+    const effectiveMinNights = await fetchPriceLabsData(propertyId, checkIn, checkOut, env);
+
+    if (nights < effectiveMinNights) {
+      return new Response(JSON.stringify({ success: false, error: `Minimum stay is ${effectiveMinNights} nights` }), {
+        status: 400, headers: CORS_HEADERS,
+      });
+    }
   }
 
   // Validate discount code (but don't consume yet — consume on approve)
