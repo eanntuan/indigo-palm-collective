@@ -2602,6 +2602,34 @@ Gmail confirmed authenticated as `eann.tuan@gmail.com` (verified via `users().ge
 
 ~~**14. Sitemap re-adds redirect-stub pages after every merge conflict (3rd recurrence: 2026-07-27, 08-23, 09-16)**~~ ✅ **DONE 2026-09-16** — sitemap.xml is a manually-maintained static file (not Eleventy-generated), so there was no generation step to guard. Instead added `scripts/check-sitemap-redirects.js`, which scans `content/blog/*.md` for `redirectTo:` frontmatter and fails if any of those slugs appear in `sitemap.xml`. Wired as a build step in `.github/workflows/deploy.yml` before the Pages upload — a future accidental re-add now fails the deploy loudly instead of silently shipping and waiting for the next GSC alert email weeks later.
 
+### Pinterest Check-in — 2026-09-17
+
+**Account totals** (`get_analytics.py --account --days 30`, 2026-08-18 to 2026-09-17): 1,758 impressions, 9 saves, 95 pin clicks, 16 outbound clicks — essentially flat vs. yesterday's 1,672/8/90/15, consistent with the ~56/day organic-baseline finding from 2026-09-16 (no ad, no cadence change detected).
+
+**Board-level breakdown** (ran slow, >120s, completed in background): Interior Design still #1 — 840 impr / 3 saves / 57 pin clicks / 13 outbound from just **2 pins**, a **4th consecutive check-in** confirming DIY/interior content massively outperforms property-marketing pins per-pin. New signal this run: **Cozy cactus instagram** board (7 pins) jumped to 402 impr / 3 saves / 29 pin clicks — second-highest board, worth a look at what's driving it before the next content push (likely a specific pin catching traction, not a board-wide trend given only 7 pins). Terra Luz's 62-pin board remains flat (200 impr, 1 click) — the property-marketing-volume-doesn't-convert pattern holds.
+
+**Monthly views:** still last-known 12,685 (2026-09-08 Business Hub check), well below the 25-30K threshold. No fresh screenshot this run. **Not switching links.**
+
+**No new action items** — this reconfirms 2026-09-16's finding (DIY/interior-design content outperforming property-marketing pins) rather than surfacing anything new.
+
+### GA4 Check-in — 2026-09-17
+
+**Period:** 2026-09-10 to 2026-09-17 (7 days) vs. 2026-09-02 to 2026-09-09.
+
+**Overall:** 232 active users (+45), 228 new, 270 sessions (+50), avg session duration 129s (+5s), 1,008 events (+183). Growth continues, consistent with the last several check-ins.
+
+**Traffic source mix:** Organic Search 122 sessions / 95 users, Direct 72 / 68, Unassigned 15, AI Assistant 10, Cross-network 3, Organic Social 3, Referral 3. Organic Social (Pinterest) at just 3 sessions despite 95 pin clicks logged by the Pinterest API this same window — same gap flagged 2026-09-16 (90 pin clicks → 6 sessions then), now worse (95 clicks → 3 sessions). This is now two consecutive check-ins showing Pinterest pin-click volume not translating to GA4-tracked sessions. Worth a UTM/attribution check rather than assuming a third check-in will resolve it on its own.
+
+**High-bounce pages (50+ views, >60% bounce):** none — same as 2026-09-16.
+
+**Property page visibility:** Terra Luz 17 / Cozy Cactus 13 / Sundune 9 — same ordering as yesterday, gap stable.
+
+**Action item generated:** investigate why Pinterest pin clicks (95 this week per the Pinterest API) aren't showing up as Organic Social sessions in GA4 (only 3) — check whether pin link UTM parameters (`utm_source=pinterest&utm_medium=organic`) are surviving Airbnb's redirect/query-stripping, since Airbnb room pages are the click destination, not indigopalm.co directly — GA4 can only see sessions that land on indigopalm.co, so most of this "gap" may just be pin clicks going straight to Airbnb (expected) rather than a tracking bug. Flagging for the next Pinterest-heavy content review rather than treating as broken; not actionable as a code fix since the destination is Airbnb by design pending the 25-30K link-switch threshold.
+
+### PSL Newsletter Inspo — 2026-09-17 (subscription appears to have stopped)
+
+Searched `news@palmspringslife.com` with no date filter, then narrowed to `after:2026/08/15` including `in:anywhere` (spam/all mail): **zero emails found after 2026-08-14.** The most recent email in the inbox at all is from that date ("Celebrate Midcentury Architectural Achievements"). Prior runs mined this newsletter regularly through at least late July/early August, so a full month with nothing (not even in spam) is a real gap, not "nothing relevant this window." This wasn't previously flagged. Possible causes: the newsletter subscription lapsed (PSL may require re-confirmation), a filter/rule is silently routing it elsewhere, or PSL changed its sending address. Not something I can fix from here — flagging for Eann to check the `eann.tuan@gmail.com` inbox/spam directly and re-subscribe at palmspringslife.com if needed. No content mined or drafted this run.
+
 ---
 
 ## PINTEREST PIN BATCH — 2026-09-08
@@ -2655,4 +2683,18 @@ Full descriptions (150-300 chars each) are in `/tmp/pinterest-pin-specs-2026-09-
 
 **TASK PIN-2: Confirm all 15 pins are live**
 Check Pinterest profile — all 15 pins visible, correct board, correct link destination.
+
+---
+
+### What changed on 2026-09-17 — GSC Check-in
+
+**Period:** 2026-06-19 to 2026-09-17 (90 days) vs. prior 90 days. 525 clicks (+382), 67,310 impressions (+47,016), 0.8% CTR, avg position 10.5 — essentially flat vs. yesterday's 2026-09-16 pull (530/67,729), as expected one day later. Too early to see the GSC-27 title/meta rewrites move CTR (measure at ~2026-09-23+ per that task's note).
+
+**New candidate not previously flagged:** `/blog/stagecoach-2027-where-to-stay/` — 351 impr, 1 click, 0.3% CTR, pos 10.8 blended, but only 12.9% of impressions rank ≤20 — this is a content/authority gap, not a title/meta fix (a rewrite won't move a page that's mostly ranking past position 30). Flagging, not writing new content this run — a content overhaul is out of scope for a quick fix and the post already exists.
+
+**Everything else in this pull is unchanged from GSC-27 (2026-09-16), already actioned or already declined:** `grocery-stores-coachella-valley`, `bnp-paribas-open-palm-springs`, `palm-springs-poolside-bars-resort-dining`, `palm-springs-art-galleries-guide` all already rewritten yesterday; `game-night-trivia-coachella-valley` still too thin (51 impressions) to justify a rewrite, same precedent as before; `best-restaurants-palm-springs` and `salton-sea-day-trip` remain content/authority fixes, not title tweaks, already flagged 2026-09-16. No new title/meta rewrites executed this run — nothing new cleared the bar.
+
+### GSC Alert Email Review — 2026-09-17
+
+Re-checked Gmail (confirmed `eann.tuan@gmail.com` via `users().getProfile()`) for any GSC alert emails since the 2026-09-16 review (last reviewed through 2026-09-09). No new alert emails found in the gap. The sitemap-redirect recurrence flagged 2026-09-16 has its guard (`scripts/check-sitemap-redirects.js`) already live in `.github/workflows/deploy.yml` — verified the file and workflow step are both still present, not touched further. No open deficiencies.
 
