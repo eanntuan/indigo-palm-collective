@@ -2721,3 +2721,36 @@ Searched Gmail (confirmed `eann.tuan@gmail.com`) for GSC alert emails since 2026
 **High-bounce pages:** none found (no page hit both the 50+ views and >60% bounce threshold this period).
 **Property page visibility:** Terra Luz 18 views / Cozy Cactus 13 / Sundune 10 — reasonably balanced, no discoverability gap severe enough to flag.
 
+### What changed on 2026-09-19 — GSC Check-in
+
+**Period:** 2026-06-21 to 2026-09-19 (90 days) vs. prior 90 days. 535 clicks (+388), 68,263 impressions (+47,131), 0.8% CTR, avg position 10.4 — flat vs. yesterday, growth trend continues.
+
+**Title/meta rewrite candidates re-checked:** `grocery-stores-coachella-valley`, `bnp-paribas-open-palm-springs`, `palm-springs-poolside-bars-resort-dining`, `palm-springs-art-galleries-guide` all rewritten 2026-09-17, too soon to expect movement. `indio-between-coachella-weekends` and `game-night-trivia-coachella-valley` remain too thin (119 and 57 impressions) per standing precedent. No new title/meta rewrites executed — nothing new cleared the bar.
+
+**Content/authority bucket, unchanged:** `best-restaurants-palm-springs` (1,353 impr, pos 33.2), `stagecoach-2027-where-to-stay` (469 impr, pos 10.1 blended but only 12.5% ≤ pos 20), `palm-springs-with-kids` (259 impr, pos 48.6), `/blog/` index (238 impr, pos 16.7), `salton-sea-day-trip` (117 impr, pos 15.7). All need content depth, not title churn.
+
+### GSC Alert Email Review — 2026-09-19
+
+Searched Gmail (confirmed `eann.tuan@gmail.com`) for GSC alert emails since 2026-09-18. None found. No open deficiencies.
+
+### Pinterest Check-in — 2026-09-19
+
+**Monthly views:** 30-day API impressions 1,744 (ceiling, not calibrated to Business Hub Monthly Views) — flat vs. yesterday's 1,719. Well below the 25K link-switch threshold; link stays on Airbnb.
+**Engagement:** 8 saves, 89 pin clicks, 15 outbound clicks — flat vs. yesterday, normal day-to-day variance.
+**Action items:** none new — same standing gaps (Sundune board still doesn't exist, Interior Design 2-pin board still outperforming property-marketing boards, Pinterest-pin-clicks-to-GA4-Organic-Social gap persists).
+
+### GA4 Check-in — 2026-09-19
+
+**Period:** 2026-09-12 to 2026-09-19 (7 days) vs. prior 7 days. 185 active users (+4), 224 sessions (+12), avg session duration 129s (+3s) — growth continues, smaller week-over-week gain than recent runs.
+**Traffic mix:** Organic Search 123 sessions, Direct 59, Organic Social only 2 — despite 89 Pinterest pin clicks this window. Same persistent gap flagged since 2026-09-17; still not treated as a tracking bug (pins link to Airbnb, not indigopalm.co, per standing explanation) but now 3 consecutive check-ins — worth Eann's confirmation rather than a 4th assumption.
+**High-bounce pages:** none found.
+**Property page visibility:** Terra Luz 20 / Cozy Cactus 11 / Sundune 11 — balanced, no discoverability gap severe enough to flag.
+
+### PSL Newsletter Inspo — 2026-09-19
+
+Same 2 emails found as 2026-09-17 (both dated 2026-08-14), nothing new since. Gap now over 5 weeks — still flagged for Eann to check the subscription/spam directly. No content mined this run.
+
+### Hero Image Audit — 2026-09-19
+
+No full pass. Last full inventory 2026-09-16 (3 days, inside the 30-day window). No new blog posts published since then. Nothing to re-check. Next full pass due on/after 2026-10-16.
+
