@@ -361,13 +361,15 @@
 
             let detailsHtml = row('Check-in', fmtDate(b.checkIn))
                 + row('Check-out', fmtDate(b.checkOut))
+                + (b.pricing?.nights ? row('Nights', `${b.pricing.nights} night${b.pricing.nights !== 1 ? 's' : ''}`) : '')
                 + row('Guests', `${b.guests} guest${b.guests !== 1 ? 's' : ''}`)
                 + (b.poolHeat ? row('Pool Heat', `$${(b.poolHeatCost || 0).toFixed(2)}`) : '')
                 + (b.discountCode ? row('Promo Code', `${b.discountCode} (-$${(b.discountAmount || 0).toFixed(2)})`) : '')
                 + (b.agreedTotal ? row('Agreed Total', `$${b.agreedTotal.toFixed(2)}`) : '')
                 + row(b.agreedTotal ? 'Due Now' : 'Est. Total', `<strong>$${priceAfterDiscount.toFixed(2)}</strong>`)
-                + (b.securityDeposit ? row('(incl. security deposit)', `$${b.securityDeposit.toFixed(2)} refundable`) : '')
+                + (b.securityDeposit ? row('(incl. security deposit)', `$${b.securityDeposit.toFixed(2)} refundable 72 hrs after checkout`) : '')
                 + (b.remainingBalanceDue ? row('Balance Remaining', `$${b.remainingBalanceDue.toFixed(2)} due ${fmtDate(b.remainingBalanceDueDate)}`) : '')
+                + (b.cancellationPolicy ? row('Cancellation Policy', b.cancellationPolicy) : '')
                 + row('Submitted', new Date(b.submittedAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }));
 
             document.getElementById('booking-details').innerHTML = detailsHtml;
