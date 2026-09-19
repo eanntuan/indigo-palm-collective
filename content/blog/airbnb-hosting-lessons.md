@@ -17,6 +17,13 @@ property: cozy-cactus
 readTime: "7 min read"
 excerpt: "Hard-won hosting lessons from 191 Airbnb reviews and four years running rentals in Indio, CA. The details that move the needle on 5-star reviews."
 layout: blog-post.njk
+relatedPosts:
+  - title: "How to Write an Airbnb Listing Description That Books"
+    url: /blog/airbnb-listing-description/
+  - title: "How to Price a Vacation Rental in a Seasonal Market"
+    url: /blog/pricing-vacation-rental-seasonal-market/
+  - title: "How to Respond to a Bad Airbnb Review Without Losing Stars"
+    url: /blog/responding-to-bad-airbnb-reviews/
 ---
 
 <p>When I started hosting at <a href="/cozy-cactus/">The Cozy Cactus</a>, I thought the secret was somewhere obvious. Better pool. Nicer towels. A welcome bottle of wine. Four years and 191 reviews later, almost none of that is what guests write about.</p>

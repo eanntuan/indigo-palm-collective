@@ -23,6 +23,9 @@ property: all
 readTime: "7 min read"
 excerpt: "Palm Springs works as a bachelorette destination because it has private pools, great restaurants, day spas, and a short drive from LA or Phoenix. Here's what to book, and what to skip."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Terra Luz: A Bachelorette Rental in Indio, CA"
+    url: /blog/terra-luz-bachelorette-coachella/
 ---
 
 <p>Picture it: Saturday morning, nine of you, nobody has anywhere to be. The backyard pool is already warm from the sun. Someone made a pitcher of something cold. The mountains are right there, framed by the back gate like a painting nobody paid for. This is what bachelorette trips are reaching for when they book Palm Springs, and it's genuinely achievable if the planning is right. A desert bachelorette weekend is having a moment right now, and the Coachella Valley handles it better than almost any other destination.</p>

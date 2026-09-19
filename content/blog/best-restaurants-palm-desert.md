@@ -20,6 +20,9 @@ property: all
 readTime: "7 min read"
 excerpt: "Pink Cabana, Tía Carmen, Kitchen 86 on El Paseo. Palm Desert and Indian Wells are halfway between Palm Springs and Indio and have some of the best restaurants in the valley."
 layout: blog-post.njk
+relatedPosts:
+  - title: "6 Best Things to Do in Palm Desert: The Real Local List"
+    url: /blog/things-to-do-palm-desert/
 ---
 
 <p>Palm Desert and Indian Wells sit roughly halfway between Palm Springs and Indio along Highway 111, about 15 to 20 minutes from either. Most visitors either anchor in Palm Springs and never leave downtown, or stay near the festival grounds in Indio without venturing west. That leaves this stretch of the valley quietly to itself, which is part of why it has some of the best restaurants in the region.</p>

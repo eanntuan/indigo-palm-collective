@@ -23,6 +23,9 @@ property: ps-retreat
 readTime: "6 min read"
 excerpt: "A wave pool in the middle of the desert. What Palm Springs Surf Club is, who it's for, and what to book before you show up empty-handed."
 layout: blog-post.njk
+relatedPosts:
+  - title: "6 Palm Springs Resort Pools You Can Access Without a Room"
+    url: /blog/palm-springs-poolside-bars-resort-dining/
 ---
 
 <table class="comparison-table">

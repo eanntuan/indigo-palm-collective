@@ -28,6 +28,9 @@ property: ps-retreat
 readTime: "10 min read"
 excerpt: "From the best margaritas in the desert to drag shows on Arenas Road, here's where to drink in Palm Springs. 11 real spots organized by vibe. No sponsored picks."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Palm Springs LGBTQ+ Guide: Bars, Events, and Where to Stay"
+    url: /blog/palm-springs-lgbtq-guide/
 ---
 
 <p>I put this list together for guests at <a href="/the-sundune/">The Sundune</a>, my 2-bedroom condo in Palm Springs. These are the spots I'd tell a friend about, and I'm going to be clear about which ones need a car or a rideshare from the property, because a $30 Uber home at midnight changes the math.</p>

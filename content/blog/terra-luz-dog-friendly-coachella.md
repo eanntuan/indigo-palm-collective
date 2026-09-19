@@ -20,6 +20,11 @@ property: terra-luz
 readTime: "7 min read"
 excerpt: "Most desert rentals say no dogs. Terra Luz says yes, with a fenced side yard, pool, and outdoor kitchen. Here's what dog-friendly means here, and what it costs."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Pet-Friendly Vacation Rental in Coachella Valley: Terra Luz"
+    url: /blog/casa-moto-pet-friendly-desert/
+  - title: "Dog-Friendly Palm Springs: Rentals, Trails + What to Skip"
+    url: /blog/pet-friendly-palm-springs/
 ---
 
 <p>Search for a dog-friendly vacation rental near Coachella and you'll watch your options shrink fast. Plenty of desert homes have pools, plenty have space, and most of them quietly add "no pets" to the house rules. I get why. Tile cracks, yards aren't fenced, and one bad guest with a chewer turns into a policy for everyone after.</p>

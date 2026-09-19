@@ -19,6 +19,9 @@ property: terra-luz
 readTime: "9 min read"
 excerpt: "Inside Terra Luz: the Frida Kahlo blue pool, spa, three distinct bedrooms, and everything the host chose to put in this house and why. A full amenity breakdown before you book."
 layout: blog-post.njk
+relatedPosts:
+  - title: "How We Designed the Terra Luz Kitchen and Dining Room"
+    url: /blog/terra-luz-kitchen-dining/
 ---
 
 <p>The question I get most from guests is some version of: okay, but what's in there?</p>

@@ -24,6 +24,11 @@ property: all
 readTime: "8 min read"
 excerpt: "The honest food guide to the Coachella Valley: Papa Headz and One Stop in Indio, Yes Please in La Quinta, Thai Hot and Koffi in Palm Springs. Organized by city, no filler."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Best Pastries in Palm Springs: Specific Items Worth Seeking"
+    url: /blog/best-pastries-palm-springs/
+  - title: "Birthday Freebies in Palm Springs: Free Treats and Deals"
+    url: /blog/palm-springs-birthday-freebies/
 faqItems:
   - q: "What should I order at One Stop Taco Shop in Indio?"
     a: "The quesabirria with dipping broth is the move. The birria tacos are what built the reputation here, and the salsa is made in-house on corn tortillas with honest portions. Go early during festival weeks because lines build, and check hours before you drive since Coachella and Stagecoach season sometimes shifts them."

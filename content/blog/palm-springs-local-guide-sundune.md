@@ -21,6 +21,9 @@ property: ps-retreat
 readTime: "7 min read"
 excerpt: "Things to do in Palm Springs, from a local who eats here. Coffee, brunch, surf, botanical, dinner, and drinks: the guide we give Sundune guests."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Your Palm Springs Guide, From the Hosts of The Sundune"
+    url: /the-sundune/guide/
 ---
 
 <p>I'm a surfer from Culver City who ended up owning vacation rentals in the Coachella Valley. Not a Palm Springs local by any stretch, but I spend enough time here to say these recommendations are real. Not affiliate-coded, not algorithmic. This is the guide we give <a href="/the-sundune/">Sundune</a> guests.</p>

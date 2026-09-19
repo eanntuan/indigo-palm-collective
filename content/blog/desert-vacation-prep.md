@@ -22,6 +22,9 @@ property: all
 readTime: "6 min read"
 excerpt: "First-timer or returning desert guest, here's what to pack, what the heat means for your schedule, and how to make the most of every day."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Arriving in the Coachella Valley: Your First Afternoon"
+    url: /blog/arriving-coachella-valley-first-afternoon/
 ---
 
 <p>The Coachella Valley does one thing most people don't expect: it changes your pace. Not just slows it down. Changes it. The mornings are cool and still and pink at the edges. By 2pm it's 95 degrees and you're making decisions about shade. By evening the temperature drops 20 degrees and suddenly the whole day resets.</p>

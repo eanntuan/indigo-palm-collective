@@ -29,6 +29,10 @@ relatedPosts:
     url: /blog/cozy-cactus-review/
   - title: "Coachella Valley Insider Guide"
     url: /blog/coachella-valley-insider-guide/
+  - title: "BNP Paribas Open Palm Springs: Where to Stay in 2027"
+    url: /blog/bnp-paribas-open-palm-springs/
+  - title: "BNP Paribas Open: Best Restaurants Near Indian Wells"
+    url: /blog/bnp-paribas-open-restaurants/
 ---
 
 <p>The <a href="https://bnpparibasopen.com/" target="_blank" rel="noopener noreferrer"><strong>BNP Paribas Open</strong></a> is one of the largest tennis events in the world outside the Grand Slams, a combined Masters 1000 and WTA 1000 tournament held every March at the <a href="https://www.iwtg.net/" target="_blank" rel="noopener noreferrer"><strong>Indian Wells Tennis Garden</strong></a>. It draws 450,000-plus attendees over two weeks. The venue sits in Indian Wells, California, a small city that sits almost exactly between Palm Springs and Indio.</p>

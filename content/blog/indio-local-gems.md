@@ -23,6 +23,9 @@ heroImage: /blog/images/indio-sign-miles-ave.webp
 heroAlt: Colorful INDIO letter sign at Miles Avenue Park in Indio California with palm trees
 heroPosition: center 90%
 layout: blog-post.njk
+relatedPosts:
+  - title: "7 Game Night and Trivia Spots in the Coachella Valley"
+    url: /blog/game-night-trivia-coachella-valley/
 ---
 
 <p>You're parked outside a small roadside shop on Jackson Street. The sign is hand-painted, a little sun-faded, surrounded by fruiting date palms. Inside it smells like dried fruit and something caramel-warm. You're about to eat the best Medjool date of your life and wonder why nobody told you about this place.</p>

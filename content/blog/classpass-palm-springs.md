@@ -17,6 +17,9 @@ excerpt: "ClassPass works in Palm Springs, but the studio selection is thinner t
 articleSection: "Local Guide"
 readTime: "5 min read"
 layout: blog-post.njk
+relatedPosts:
+  - title: "Best Spas in the Coachella Valley for a Real Spa Day"
+    url: /blog/best-spas-coachella-valley-spa-day/
 ---
 
 If you're a regular <a href="https://classpass.com/" target="_blank" rel="noopener noreferrer"><strong>ClassPass</strong></a> user at home, the desert will work but the catalog is smaller. Palm Springs and the surrounding valley have a handful of solid studios on the platform. The selection narrows fast once you filter by time, class type, and availability, especially during Coachella or BNP Paribas weeks when visitors flood in and regulars keep their bookings.

@@ -26,6 +26,11 @@ property: all
 readTime: "8 min read"
 excerpt: "Hotels, camping, vacation rentals: a straight breakdown of every Coachella accommodation type from someone who lives here. No affiliate links, no sponsored takes."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Coachella 2027: Private Home, Walk to the Polo Grounds"
+    url: /blog/coachella-2027-where-to-stay/
+  - title: "Justin Bieber at Coachella 2026: What Happened"
+    url: /blog/justin-bieber-coachella-2026/
 faqItems:
   - q: "Is it better to stay in Palm Springs or Indio for Coachella?"
     a: "Indio, without question. The Empire Polo Club is in Indio, and festival traffic turns a 30-mile drive from Palm Springs into 60 to 90 minutes each direction, which adds up to somewhere between 6 and 9 hours of commuting over a three-day festival. The full breakdown is at https://indigopalm.co/blog/where-to-stay-coachella/"

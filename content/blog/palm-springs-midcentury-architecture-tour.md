@@ -21,6 +21,9 @@ property: ps-retreat
 readTime: "8 min read"
 excerpt: "A self-guided driving tour of Palm Springs midcentury architecture. Eight stops across Movie Colony, Vista Las Palmas, and Twin Palms, with golden hour timing and what to photograph."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Palm Springs Art Galleries: Uptown to Backstreet Walk"
+    url: /blog/palm-springs-art-galleries-guide/
 ---
 
 <p>Palm Springs has more midcentury modern architecture per square mile than anywhere else in the country. This is not marketing copy. The city became a weekend escape for Hollywood in the 1940s and 50s, and the architects who followed built in a style that fit the desert: flat roofs, wide overhangs, glass walls, carports instead of garages. Most of it is still standing, lived in, and walkable from the street.</p>

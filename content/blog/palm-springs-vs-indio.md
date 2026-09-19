@@ -22,6 +22,9 @@ property: all
 readTime: "8 min read"
 excerpt: "Neither is the wrong choice. But one is clearly right for your trip, depending on what you want. Here's the honest breakdown."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Palm Springs vs Scottsdale: Which One Is Right for Your Trip"
+    url: /blog/palm-springs-vs-scottsdale/
 faqItems:
   - q: "Should I stay in Palm Springs or Indio for Coachella?"
     a: "Indio is the right call. The Empire Polo Club is in Indio, and rentals in Indian Palms are walking distance to the festival grounds. From Palm Springs, that same trip is 30 minutes on a quiet day and closer to an hour on festival Saturday night. More on the comparison at https://indigopalm.co/blog/palm-springs-vs-indio/"

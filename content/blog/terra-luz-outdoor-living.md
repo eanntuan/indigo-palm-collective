@@ -21,6 +21,9 @@ property: terra-luz
 readTime: "7 min read"
 excerpt: "The thinking behind the Terra Luz outdoor space: an Orange Flambé color drench, a Frida Kahlo blue pool, a wood slat fence that turned a yard into a room, and a patio designed for groups who want to stay outside all day."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Outdoor Furniture That Survives 115-Degree Desert Heat"
+    url: /blog/outdoor-furniture-desert-heat/
 ---
 
 <p>Most vacation rental design starts inside and works out. You pick the couch, the rug, the kitchen tile, and then you get to the backyard and realize you have a concrete slab and a hose bib and not much of a plan. We did it the other way. The outdoor space at Terra Luz was the first conversation, and everything else followed from it.</p>

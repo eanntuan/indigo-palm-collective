@@ -29,6 +29,8 @@ relatedPosts:
     url: /blog/coachella-valley-insider-guide/
   - title: "Coachella Valley Vacation Rental Guide"
     url: /blog/coachella-valley-vacation-rental-guide/
+  - title: "Palm Springs with Kids: Complete Guide to a Family Trip"
+    url: /blog/palm-springs-with-kids/
 ---
 
 <p>It's 8am in Indio. Your toddler woke up early for once and you didn't fight it. You made coffee while he stared out at the backyard, completely absorbed by a lizard on the patio wall. Nobody is rushing anywhere. The sun is still low and soft and the pool hasn't heated past comfortable yet. This is the Coachella Valley with kids when it's working.</p>
