@@ -533,6 +533,7 @@ export default {
     if (path === '/api/email-log') return isAdminAuthorized(request, env) ? handleEmailLog(env) : unauthorizedJson();
     if (path === '/api/push-sub-status') return isAdminAuthorized(request, env) ? handlePushSubStatus(env) : unauthorizedJson();
     if (path === '/api/simulate-inbound') return isAdminAuthorized(request, env) ? handleSimulateInbound(env) : unauthorizedJson();
+    if (path === '/api/debug-square-webhooks') return isAdminAuthorized(request, env) ? handleDebugSquareWebhooks(env) : unauthorizedJson();
 
     // Approval page: GET /api/approve-reply?id=XXX
     if (path === '/api/approve-reply' && request.method === 'GET') {
@@ -1326,6 +1327,38 @@ async function handleConfirm(request, env) {
 }
 
 // ── Square Webhook ────────────────────────────────────────────────────────────
+
+// Temporary diagnostic: list Square's registered webhook subscriptions so we
+// can confirm one actually exists pointing at /api/webhook/square with
+// payment.updated enabled, without ever exposing the access token itself.
+async function handleDebugSquareWebhooks(env) {
+  const squareBaseUrl = env.SQUARE_SANDBOX === 'true'
+    ? 'https://connect.squareupsandbox.com'
+    : 'https://connect.squareup.com';
+  try {
+    const res = await fetch(`${squareBaseUrl}/v2/webhooks/subscriptions`, {
+      headers: { 'Authorization': `Bearer ${env.SQUARE_ACCESS_TOKEN}`, 'Square-Version': '2024-01-18' },
+    });
+    const data = await res.json();
+    const subscriptions = (data.subscriptions || []).map(s => ({
+      id: s.id,
+      name: s.name,
+      enabled: s.enabled,
+      notification_url: s.notification_url,
+      event_types: s.event_types,
+    }));
+    return new Response(JSON.stringify({
+      success: res.ok,
+      sandboxMode: env.SQUARE_SANDBOX === 'true',
+      subscriptions,
+      raw: res.ok ? undefined : data,
+    }, null, 2), { status: 200, headers: { 'Content-Type': 'application/json' } });
+  } catch (e) {
+    return new Response(JSON.stringify({ success: false, error: e.message }), {
+      status: 500, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+}
 
 async function handleSquareWebhook(request, env) {
   const body = await request.text();
