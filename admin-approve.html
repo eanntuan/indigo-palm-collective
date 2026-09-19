@@ -360,7 +360,10 @@
                 + row('Guests', `${b.guests} guest${b.guests !== 1 ? 's' : ''}`)
                 + (b.poolHeat ? row('Pool Heat', `$${(b.poolHeatCost || 0).toFixed(2)}`) : '')
                 + (b.discountCode ? row('Promo Code', `${b.discountCode} (-$${(b.discountAmount || 0).toFixed(2)})`) : '')
-                + row('Est. Total', `<strong>$${priceAfterDiscount.toFixed(2)}</strong>`)
+                + (b.agreedTotal ? row('Agreed Total', `$${b.agreedTotal.toFixed(2)}`) : '')
+                + row(b.agreedTotal ? 'Due Now' : 'Est. Total', `<strong>$${priceAfterDiscount.toFixed(2)}</strong>`)
+                + (b.securityDeposit ? row('(incl. security deposit)', `$${b.securityDeposit.toFixed(2)} refundable`) : '')
+                + (b.remainingBalanceDue ? row('Balance Remaining', `$${b.remainingBalanceDue.toFixed(2)} due ${fmtDate(b.remainingBalanceDueDate)}`) : '')
                 + row('Submitted', new Date(b.submittedAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }));
 
             document.getElementById('booking-details').innerHTML = detailsHtml;
