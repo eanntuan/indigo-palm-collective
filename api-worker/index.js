@@ -1917,6 +1917,9 @@ async function createSquarePaymentLink(accessToken, { bookingId, property, check
     body: JSON.stringify({
       idempotency_key: idempotencyKey,
       order: orderBody,
+      checkout_options: {
+        merchant_support_email: 'indigopalmco@gmail.com',
+      },
     }),
   });
 
