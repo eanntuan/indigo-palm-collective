@@ -2754,3 +2754,12 @@ Same 2 emails found as 2026-09-17 (both dated 2026-08-14), nothing new since. Ga
 
 No full pass. Last full inventory 2026-09-16 (3 days, inside the 30-day window). No new blog posts published since then. Nothing to re-check. Next full pass due on/after 2026-10-16.
 
+### GSC Check-in — 2026-09-19 (manual session, query-level pass)
+
+Manual 90-day pull (2026-06-21 to 2026-09-19): 539 clicks, 69,061 impressions, 0.8% CTR, pos 10.4 — consistent with the automated run above (small variance is normal, GSC data settles over ~48-72 hours). Cross-checked against today's automated GSC Check-in: `grocery-stores-coachella-valley`, `bnp-paribas-open-palm-springs`, `palm-springs-poolside-bars-resort-dining`, `palm-springs-art-galleries-guide` already rewritten 2026-09-17; `indio-between-coachella-weekends`, `game-night-trivia-coachella-valley` correctly held (too thin); `best-restaurants-palm-springs`, `stagecoach-2027-where-to-stay`, `palm-springs-with-kids`, `/blog/`, `salton-sea-day-trip` already logged as content-depth fixes, not title/meta. No duplicate action needed on any of those.
+
+**One net-new gap, caught at query level, not page level:** `palm-springs-vs-indio` has 22 clicks/8,232 impressions overall (healthy enough to be excluded from the automated "low-click pages" scan), but its single largest query — **"how far is indio from palm springs"** — pulls 829 impressions at position 5.9 and converts at only 0.4% CTR (3 clicks). Position 5.9 should be earning 4-6%+ CTR on a query this directly answerable. The June 22 title rewrite ("Indio vs. Palm Springs: 25 Miles Apart, Which to Pick") already leads with the distance but doesn't mirror the literal "how far" phrasing searchers are typing — likely why the SERP snippet isn't winning the click despite good position. Queued as TASK GSC-30 below.
+
+**TASK GSC-30: Rewrite `palm-springs-vs-indio` meta description to mirror "how far" query phrasing (15 min, High)**
+Current meta leads with the distance stat but not the literal question form. Rewrite meta description to open with something like "How far is Indio from Palm Springs? 25 miles, a 30-40 minute drive..." — mirroring the exact query phrasing tends to win more of the snippet's bolded-match real estate in search results. Re-check CTR on this specific query at the next GSC check-in ~1 week out (~2026-09-26+, per standard practice — CTR movement from a meta change needs Google to re-crawl and re-serve the new snippet first).
+
