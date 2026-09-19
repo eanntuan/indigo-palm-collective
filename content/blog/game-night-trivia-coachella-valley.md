@@ -133,7 +133,7 @@ layout: blog-post.njk
 
 <h2>Palm Desert</h2>
 
-<p>Palm Desert is where the game night scene gets genuinely nerdy, in the best sense. This is the end of the valley for people who'd rather roll dice or debate anime lore than answer pub-quiz questions about state capitals. It's also the closest cluster to our Indio properties, roughly 20 minutes from <a href="/things-to-do-indio-ca/">Indio</a>.</p>
+<p>Palm Desert is where the game night scene gets genuinely nerdy, in the best sense. This is the end of the valley for people who'd rather roll dice or debate anime lore than answer pub-quiz questions about state capitals. It's also the closest cluster to our Indio properties, roughly 20 minutes from <a href="/blog/things-to-do-indio-ca/">Indio</a>.</p>
 
 <h3>6. Murasaki Kakurega Manga Lounge</h3>
 

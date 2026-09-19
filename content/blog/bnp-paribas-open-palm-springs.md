@@ -26,8 +26,8 @@ relatedPosts:
     url: /blog/bnp-paribas-indian-wells-where-to-stay/
   - title: "Best Restaurants in Palm Springs"
     url: /blog/best-restaurants-palm-springs/
-  - title: "Things to Do in Palm Springs"
-    url: /blog/things-to-do-palm-springs/
+  - title: "3-Day Palm Springs Itinerary: Tram, Town, and Trails"
+    url: /blog/palm-springs-3-day-itinerary/
 ---
 
 <p>The <a href="https://bnpparibasopen.com/" target="_blank" rel="noopener noreferrer"><strong>BNP Paribas Open</strong></a> runs two weeks each March at the <a href="https://www.iwtg.net/" target="_blank" rel="noopener noreferrer"><strong>Indian Wells Tennis Garden</strong></a>, about 12 miles east of Palm Springs on Highway 111. It's one of the largest tennis events in the world outside the Grand Slams, combining an ATP Masters 1000 and a WTA 1000, which means the full top 10 from both tours show up. 450,000-plus people attend over those two weeks.</p>
