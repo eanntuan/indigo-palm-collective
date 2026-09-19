@@ -18,6 +18,11 @@ property: all
 readTime: "7 min read"
 excerpt: "Pioneertown was built in 1946 as a working movie set for Roy Rogers westerns. It's still standing, still free to walk, and about an hour from Indio."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Joshua Tree Day Trip from Indio"
+    url: /blog/joshua-tree-day-trip-from-indio/
+  - title: "Palm Springs to Idyllwild: 1 Hour, 30 Degrees Cooler"
+    url: /blog/idyllwild-day-trip-palm-springs/
 ---
 
 <p>Pioneertown doesn't look like a place that should exist. A dirt-street Old West town sitting in the high desert north of Joshua Tree, built in 1946 by a group of investors that included Roy Rogers and Dale Evans, meant to double as a working movie set and an actual town people could live in. More than fifty westerns got filmed on Mane Street through the 1950s. The town charter still forbids paving it, so you walk it the way the crews did.</p>

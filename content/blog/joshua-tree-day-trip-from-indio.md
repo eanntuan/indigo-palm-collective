@@ -24,6 +24,11 @@ property: all
 readTime: "8 min read"
 excerpt: "Which entrance to use, what to bring, best time of year, and how to plan a full Joshua Tree day trip from your Coachella Valley base."
 layout: blog-post.njk
+relatedPosts:
+  - title: "Pioneertown Day Trip from Indio: What to Know Before You Go"
+    url: /blog/pioneertown-day-trip-from-indio/
+  - title: "Palm Springs to Idyllwild: 1 Hour, 30 Degrees Cooler"
+    url: /blog/idyllwild-day-trip-palm-springs/
 faqItems:
   - q: "How far is Joshua Tree from Indio?"
     a: "The Cottonwood South Entrance is about 45 minutes from central Indio via I-10 east to CA-195 north, making it the closest and least crowded entrance for east valley visitors. The north and west entrances via Highway 62 are about 1 hour 15 minutes away. Full itinerary and entrance breakdown at https://indigopalm.co/blog/joshua-tree-day-trip-from-indio/"

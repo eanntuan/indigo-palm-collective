@@ -27,6 +27,8 @@ relatedPosts:
     url: /blog/best-hiking-palm-springs/
   - title: "Joshua Tree Day Trip from Indio"
     url: /blog/joshua-tree-day-trip-from-indio/
+  - title: "Pioneertown Day Trip from Indio: What to Know Before You Go"
+    url: /blog/pioneertown-day-trip-from-indio/
 ---
 
 <p>Somewhere around mile 30 on Highway 74, the ocotillo and creosote just stop. The road keeps climbing through switchbacks cut into granite, and the air coming through the vents goes from July-in-the-desert to cool, and then you're driving through a pine forest like someone flipped a set. That's the whole appeal of Idyllwild in one sentence: it's an hour from the pool and it doesn't feel like the same state.</p>
