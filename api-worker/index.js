@@ -534,6 +534,7 @@ export default {
     if (path === '/api/push-sub-status') return isAdminAuthorized(request, env) ? handlePushSubStatus(env) : unauthorizedJson();
     if (path === '/api/simulate-inbound') return isAdminAuthorized(request, env) ? handleSimulateInbound(env) : unauthorizedJson();
     if (path === '/api/debug-square-webhooks') return isAdminAuthorized(request, env) ? handleDebugSquareWebhooks(env) : unauthorizedJson();
+    if (path === '/api/manual-confirm-payment') return isAdminAuthorized(request, env) ? handleManualConfirmPayment(url, env) : unauthorizedJson();
 
     // Approval page: GET /api/approve-reply?id=XXX
     if (path === '/api/approve-reply' && request.method === 'GET') {
@@ -1415,22 +1416,28 @@ async function handleSquareWebhook(request, env) {
     return new Response('OK', { status: 200 });
   }
 
-  // Look up booking in KV
+  const result = await finalizeBookingConfirmation({ bookingId, orderId, totalPaid, env });
+  if (result.error) console.error('finalizeBookingConfirmation failed:', result.error);
+  return new Response('OK', { status: 200 });
+}
+
+// Runs everything that must happen once a booking's payment is confirmed
+// completed: guest + host emails, Hostaway reservation, iCal block, KV update,
+// welcome-guide scheduling. Shared by the live Square webhook and the manual
+// recovery route (handleManualConfirmPayment) so a missed webhook delivery
+// can be replayed exactly, idempotently (booking.status === 'confirmed' short-circuits).
+async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, env }) {
   const raw = await env.BOOKINGS.get(`booking:${bookingId}`);
-  if (!raw) {
-    console.error('Booking not found for id:', bookingId);
-    return new Response('OK', { status: 200 });
-  }
+  if (!raw) return { error: `Booking not found for id: ${bookingId}` };
   const booking = JSON.parse(raw);
 
-  // Avoid double-processing
   if (booking.status === 'confirmed') {
-    return new Response('OK', { status: 200 });
+    return { alreadyConfirmed: true, booking };
   }
 
   const { propertyId, name, email, checkIn, checkOut, guests } = booking;
   const info = PROPERTY_INFO[propertyId];
-  if (!info) return new Response('OK', { status: 200 });
+  if (!info) return { error: `Unknown propertyId on booking: ${propertyId}` };
 
   const nights = Math.round(
     (new Date(checkOut + 'T00:00:00') - new Date(checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24)
@@ -1508,7 +1515,75 @@ async function handleSquareWebhook(request, env) {
   }
 
   console.log(`Booking confirmed: ${bookingId}, Hostaway: ${hostawayReservationId}`);
-  return new Response('OK', { status: 200 });
+  return { confirmed: true, hostawayReservationId };
+}
+
+// Manual recovery: verify a payment independently via Square's Payments API
+// (not just trusting a screenshot) and replay finalizeBookingConfirmation for
+// a booking whose webhook delivery never arrived.
+async function handleManualConfirmPayment(url, env) {
+  const bookingId = url.searchParams.get('bookingId');
+  if (!bookingId) {
+    return new Response(JSON.stringify({ success: false, error: 'Missing bookingId' }), {
+      status: 400, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  const raw = await env.BOOKINGS.get(`booking:${bookingId}`);
+  if (!raw) {
+    return new Response(JSON.stringify({ success: false, error: 'Booking not found' }), {
+      status: 404, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+  const booking = JSON.parse(raw);
+  if (booking.status === 'confirmed') {
+    return new Response(JSON.stringify({ success: true, alreadyConfirmed: true }), {
+      status: 200, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  const squareBaseUrl = env.SQUARE_SANDBOX === 'true'
+    ? 'https://connect.squareupsandbox.com'
+    : 'https://connect.squareup.com';
+
+  // Search recent completed payments and find the one whose order carries
+  // this booking's reference_id.
+  const searchRes = await fetch(`${squareBaseUrl}/v2/payments?limit=100&sort_order=DESC`, {
+    headers: { 'Authorization': `Bearer ${env.SQUARE_ACCESS_TOKEN}`, 'Square-Version': '2024-01-18' },
+  });
+  if (!searchRes.ok) {
+    return new Response(JSON.stringify({ success: false, error: 'Square payments lookup failed' }), {
+      status: 502, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+  const searchData = await searchRes.json();
+  const payments = (searchData.payments || []).filter(p => p.status === 'COMPLETED' && p.order_id);
+
+  let matchedOrderId = null;
+  let matchedTotalPaid = null;
+  for (const p of payments) {
+    const orderRes = await fetch(`${squareBaseUrl}/v2/orders/${p.order_id}`, {
+      headers: { 'Authorization': `Bearer ${env.SQUARE_ACCESS_TOKEN}`, 'Square-Version': '2024-01-18' },
+    });
+    if (!orderRes.ok) continue;
+    const orderData = await orderRes.json();
+    if (orderData.order?.reference_id === bookingId) {
+      matchedOrderId = p.order_id;
+      matchedTotalPaid = (orderData.order?.total_money?.amount || 0) / 100;
+      break;
+    }
+  }
+
+  if (!matchedOrderId) {
+    return new Response(JSON.stringify({ success: false, error: 'No completed Square payment found referencing this booking in the last 100 payments' }), {
+      status: 404, headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  const result = await finalizeBookingConfirmation({ bookingId, orderId: matchedOrderId, totalPaid: matchedTotalPaid, env });
+  return new Response(JSON.stringify({ success: !result.error, ...result }), {
+    status: result.error ? 500 : 200, headers: { 'Content-Type': 'application/json' },
+  });
 }
 
 // ── Hostaway ───────────────────────────────────────────────────────────────────
