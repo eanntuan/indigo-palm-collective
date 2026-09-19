@@ -70,6 +70,21 @@ const PROPERTY_INFO = {
     welcomeGuide: 'https://indigopalm.co/terra-luz/welcome-guide.html',
     airbnb: 'https://www.airbnb.com/rooms/716871660845992276',
   },
+  // 'terra-luz' is the current live property key (booking-flow.js submits
+  // propertyId: 'terra-luz'); 'casa-moto' above is the pre-rebrand legacy
+  // key, kept only for whatever old records/links still reference it. This
+  // entry was missing entirely until 2026-09-19, which silently broke the
+  // guest-confirmation email, host notification, and Hostaway reservation
+  // creation for every paid Terra Luz booking (PROPERTY_INFO[propertyId]
+  // resolved to undefined and finalizeBookingConfirmation bailed out quietly).
+  'terra-luz': {
+    name: 'Terra Luz',
+    address: '49768 Pacino St, Indio, CA 92201',
+    mapsUrl: 'https://maps.google.com/?q=49768+Pacino+St,+Indio,+CA+92201',
+    photo: 'https://indigopalm.co/email-images/casa-moto.jpg',
+    welcomeGuide: 'https://indigopalm.co/terra-luz/welcome-guide.html',
+    airbnb: 'https://www.airbnb.com/rooms/716871660845992276',
+  },
   'ps-retreat': {
     name: 'PS Retreat',
     address: '5301 E Waverly Dr #184, Palm Springs, CA 92264',
@@ -110,6 +125,7 @@ const HOSTAWAY_LISTING_IDS = {
 const PROPERTY_URL_SLUGS = {
   'cozy-cactus': 'cozy-cactus',
   'casa-moto':   'terra-luz',
+  'terra-luz':   'terra-luz',
   'ps-retreat':  'ps-retreat',
   'the-well':    'the-well',
 };
