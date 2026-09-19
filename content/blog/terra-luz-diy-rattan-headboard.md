@@ -22,7 +22,7 @@ excerpt: "We needed a headboard that felt substantial and warm without crowding 
 layout: blog-post.njk
 ---
 
-<p>A king bed needs a headboard. That's not a design opinion, it's a visual fact: without one, a king sits in the middle of the room and floats. But most headboards built for a king are either expensive, boring, or both. What we needed for the Cali Room at <a href="/terra-luz/">Terra Luz</a> was something with real texture, something warm, something that read as intentional from the doorway and didn't cost $800.</p>
+<p>A king bed needs a headboard. That's a visual fact: without one, a king sits in the middle of the room and floats. But most headboards built for a king are either expensive, boring, or both. What we needed for the Cali Room at <a href="/terra-luz/">Terra Luz</a> was something with real texture, something warm, something that read as intentional from the doorway and didn't cost $800.</p>
 
 <p>Four <a href="https://www.ikea.com/us/en/p/ivar-door-10453072/">IKEA IVAR doors</a>, a couple of hours, and under $200. That's the whole story.</p>
 
@@ -159,7 +159,7 @@ layout: blog-post.njk
 
 ## Frequently Asked Questions
 
-<h4>Which IKEA product do you actually use for this headboard?</h4>
+<h4>Which IKEA product do you use for this headboard?</h4>
 <p>The IKEA IVAR door with the bamboo woven panel insert, sold in 2-packs (item 10453072). You need two 2-packs for a king bed. Buy both packs from the same production run if possible so the bamboo color matches. There's subtle variation between batches.</p>
 
 <h4>Does the headboard work on stucco walls, not just drywall?</h4>

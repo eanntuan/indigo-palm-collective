@@ -30,7 +30,7 @@ layout: blog-post.njk
 
 <p>Here's what you need to know before you go.</p>
 
-<h2>What It Actually Is</h2>
+<h2>What It Is</h2>
 
 <p>The Palm Springs Aerial Tram is the world's largest rotating tramway. The cars spin slowly during the ascent so everyone on board gets a full 360-degree view of Chino Canyon and the valley below. The tram runs along the sheer northeast face of Mount San Jacinto, which is one of the steepest mountain faces in North America.</p>
 

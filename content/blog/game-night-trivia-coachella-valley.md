@@ -137,7 +137,7 @@ layout: blog-post.njk
 
 <h3>6. Murasaki Kakurega Manga Lounge</h3>
 
-<p><a href="https://www.instagram.com/murasaki.kakurega/" target="_blank" rel="noopener"><strong>Murasaki Kakurega</strong></a> is a manga reading lounge first, but at night it runs anime trivia that goes deep, think Naruto and Boruto lore rather than surface-level stuff, so bring a friend who actually finished the series. Beyond trivia it hosts card games including Pokemon, Magic: The Gathering, and the One Piece Card Game, which makes it a soft landing whether you're a competitive player or just there for the vibe and a drink.</p>
+<p><a href="https://www.instagram.com/murasaki.kakurega/" target="_blank" rel="noopener"><strong>Murasaki Kakurega</strong></a> is a manga reading lounge first, but at night it runs anime trivia that goes deep, think Naruto and Boruto lore rather than surface-level stuff, so bring a friend who finished the series. Beyond trivia it hosts card games including Pokemon, Magic: The Gathering, and the One Piece Card Game, which makes it a soft landing whether you're a competitive player or just there for the vibe and a drink.</p>
 
 <img src="/blog/images/bootlegger-tiki-palm-springs.webp" alt="A dim tiki-style lounge interior in the Coachella Valley, the kind of low-lit room where evening game nights and themed trivia happen" width="1200" height="630" loading="lazy">
 <p class="image-caption">The valley's game nights lean into low-lit, themed rooms once the sun's down. Half the fun is the setting.</p>

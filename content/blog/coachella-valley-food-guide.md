@@ -68,7 +68,7 @@ faqItems:
 <img src="/blog/images/arriolas-tortilleria.webp" alt="Arriola's Tortilleria in Indio California, established 1927, known for handmade tortillas and traditional Mexican food" width="1400" height="933" loading="lazy">
 <p class="image-caption">Arriola's has been here since 1927. The handmade tortillas are the point. Get the beans and rice combo and taste what a fresh tortilla is.</p>
 
-<p>Established 1927. That's not a marketing claim, it's a fact that tells you something about what the food is like. Handmade tortillas, beans and rice done the way they've been done for decades, simple and correct. It's a place where the tortillas are genuinely good in a way that makes the packaged version seem like a different food category.</p>
+<p>Established 1927. That's a fact that tells you something about what the food is like. Handmade tortillas, beans and rice done the way they've been done for decades, simple and correct. It's a place where the tortillas are genuinely good in a way that makes the packaged version seem like a different food category.</p>
 
 <p>Get the beans and rice combo. Take tortillas back to the rental if you have a kitchen.</p>
 
@@ -167,7 +167,7 @@ faqItems:
 <h4>What is the best coffee near Indio, CA?</h4>
 <p>Indio itself has limited specialty coffee options. Yes Please in La Quinta is the closest quality stop, about 15 minutes south, with well-sourced espresso and good natural light. In Palm Springs, Koffi has been the local first recommendation for over 20 years and is worth the 30-minute drive if you are making a Palm Springs evening of it.</p>
 
-<h4>Are there good restaurants in Indio that locals actually eat at, not just festival visitors?</h4>
+<h4>Are there good restaurants in Indio that locals eat at, not just festival visitors?</h4>
 <p>Arriola's Tortilleria has been operating since 1927 and handmade tortillas are the whole point. El Tranvia is the breakfast institution locals mention quietly. One Stop Taco Shop and Papa Headz both built serious local followings before Coachella made Indio a destination. None of these are on the typical festival food list, which is exactly why they are the right answer.</p>
 
 <h4>What should I eat at Shields Date Garden in the Coachella Valley?</h4>

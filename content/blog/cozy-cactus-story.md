@@ -22,7 +22,7 @@ excerpt: "How a backup plan for a Honda Element became The Cozy Cactus: a family
 layout: blog-post.njk
 ---
 
-<p>The backyard at The Cozy Cactus has a hot tub that sits maybe 15 feet from a putting green, backed by a mural of cacti and desert color that I picked partly because I liked it and partly because kids would lose their minds over it. On any given weekend, there's a toddler losing their mind over it while their parents drink coffee on the patio and, for the first time all trip, actually feel like they're on vacation. That specific scene is why I bought the place.</p>
+<p>The backyard at The Cozy Cactus has a hot tub that sits maybe 15 feet from a putting green, backed by a mural of cacti and desert color that I picked partly because I liked it and partly because kids would lose their minds over it. On any given weekend, there's a toddler losing their mind over it while their parents drink coffee on the patio and, for the first time all trip, feel like they're on vacation. That specific scene is why I bought the place.</p>
 
 <p>What started off as a backup plan for my beloved 2005 Honda Element, turned into the beginning of what some may call an "Airbnb empire," yet I call "my retirement plan when I'm dead, ha." After Covid, I had way too much time on my hands and started dreaming of the next car after my Honda Element retired from surf camping duty. (As of writing this in February 2026, that car is still kickin' and I couldn't be happier.) Turns out brand new Teslas cost over $45k. I started thinking of all the things I could do with that $45k instead. I had a line of credit and savings from being quarantined at home during Covid.</p>
 
@@ -42,7 +42,7 @@ layout: blog-post.njk
 
 <p>I realized infant care was being treated as an afterthought. Something you tacked on if a guest requested it, not something you built into the foundation. That felt completely backwards. My friends with kids traveled with all. the. things. Between a pack n play, Joey's random binkie, Ellie's special baby shampoo, and the prized sound machine, it always seemed so exhausting to travel. As I was furnishing my rental, I tried to imagine myself as a tired mom scrolling through Airbnb, looking for a place where she could <em>maybe</em> have some rest. After all, traveling with kids is a trip, not a vacation, I hear!</p>
 
-<p>So when I bought the property that became The Cozy Cactus, I started there. How do families with young kids rest? Not "what makes a cute listing photo," but what makes a mom not want to leave by day two because it's too much work to stay?</p>
+<p>So when I bought the property that became The Cozy Cactus, I started there. How do families with young kids rest? Not what makes a cute listing photo: what makes a mom not want to leave by day two because it's too much work to stay?</p>
 
 <img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="The Cozy Cactus backyard with hot tub, putting green, and colorful mural designed for families" loading="lazy" width="800" height="533">
 <p class="image-caption">The backyard oasis: hot tub, putting green, and eye-catching mural where kids play while parents sip morning coffee</p>
@@ -97,7 +97,7 @@ layout: blog-post.njk
 <h3>I put out things you don't have to ask for.</h3>
 <p>Pool floaties in the garage. First aid kit in the kitchen drawer (labeled, of course). Extra outlets in every bedroom, because it's the worst when you're trying to charge your phone before going to bed and have to look under the bed, behind the bed to squeeze your arm to get to that hidden outlet. Stain remover under the kitchen sink because kids are chaos machines. Blackout curtains in every room because naps are sacred. The goal isn't perfection. It's anticipation. What do families need before they realize they need it?</p>
 
-<h2>What Guests Actually Say</h2>
+<h2>What Guests Say</h2>
 
 <p>A family of five checked out and told me it was "the first time we have truly rested during our vacation with our 3 children." They came back completely rejuvenated, not just exhausted in a different location. Another guest said my labeling system was unprecedented in 10 years of Airbnb stays. She wasn't exaggerating, she'd stayed in 40+ rentals. I have repeat guests. Groups of friends who come back for Coachella every year. Couples who stayed before they had kids, then came back with infants because they trusted the setup. Even grown men who just want a well-organized house with a good coffee bar and a clean pool. The Cozy Cactus is thoughtfully designed for humans who appreciate when someone cares.</p>
 

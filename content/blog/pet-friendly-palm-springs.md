@@ -102,7 +102,7 @@ faqItems:
 <p><strong>La Quinta</strong></p>
 
 <ul>
-    <li><strong>RD RNNR Libations Pints and Plates:</strong> A spacious dog-friendly patio with a dedicated pup menu. The PB Pooch Cup (peanut butter and whipped cream) is on the menu, which tells you the staff here actually thought about the dogs, not just the owners.</li>
+    <li><strong>RD RNNR Libations Pints and Plates:</strong> A spacious dog-friendly patio with a dedicated pup menu. The PB Pooch Cup (peanut butter and whipped cream) is on the menu, which tells you the staff here thought about the dogs, not just the owners.</li>
 </ul>
 
 <img src="/blog/images/cheekys-palm-springs.webp" alt="Outdoor restaurant patio in Palm Springs with casual seating, typical of dog-friendly dining spots in the Coachella Valley" width="1400" height="920" loading="lazy">

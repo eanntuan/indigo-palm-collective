@@ -24,7 +24,7 @@ excerpt: "A host's honest guide to Indio, CA for guests staying at Terra Luz. Wh
 layout: blog-post.njk
 ---
 
-<p>Most guests arrive at Terra Luz, drop their bags, and then ask: okay, what do we actually do out here?</p>
+<p>Most guests arrive at Terra Luz, drop their bags, and then ask: okay, what do we do out here?</p>
 
 <p>Indio is not Palm Springs. It doesn't have the same walkable downtown, the same quantity of boutique hotels, or the same density of Instagram-friendly architecture. What it does have is space, quiet roads, incredible food (mostly understated, mostly Latin), date farms you weren't expecting, and the Empire Polo Club walking distance from the front door. When Coachella or Stagecoach is on, the whole equation shifts. But the off-season Indio is worth knowing too.</p>
 

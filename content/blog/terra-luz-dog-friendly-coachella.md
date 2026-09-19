@@ -18,7 +18,7 @@ keywords:
 articleSection: "Property Story"
 property: terra-luz
 readTime: "7 min read"
-excerpt: "Most desert rentals say no dogs. Terra Luz says yes, with a fenced side yard, pool, and outdoor kitchen. Here's what dog-friendly actually means here, and what it costs."
+excerpt: "Most desert rentals say no dogs. Terra Luz says yes, with a fenced side yard, pool, and outdoor kitchen. Here's what dog-friendly means here, and what it costs."
 layout: blog-post.njk
 ---
 
@@ -29,7 +29,7 @@ layout: blog-post.njk
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Fenced backyard and pool at dog-friendly Terra Luz vacation rental in Indio California" width="1024" height="1536" loading="lazy">
 <p class="image-caption">The backyard at golden hour. The yard is enclosed, so your dog can be out there without anyone hovering at the door.</p>
 
-<h2>What Terra Luz Actually Offers Dogs</h2>
+<h2>What Terra Luz Offers Dogs</h2>
 
 <p>The thing that matters most is the yard. Terra Luz has a fenced backyard and a grassy side yard, which sounds basic until you've stayed somewhere that advertised a "yard" and handed you a patio with a decorative fence a beagle could clear. Here the gate latches and the fence is the real kind, so a dog can sniff around, nap in the shade, and burn off energy without a leash or a babysitter at the slider.</p>
 

@@ -111,7 +111,7 @@ faqItems:
 <img src="/blog/images/palm-springs-hotel-pool.webp" alt="A palm-lined pool in Palm Springs with lounge chairs on a bright summer afternoon" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Pool time in the morning and evening. Escape room and museums in the middle of the day. That's the strategy.</p>
 
-<h2>A Summer Day That Actually Works</h2>
+<h2>A Summer Day That Works</h2>
 
 <p>My suggested structure for a hot summer day in Palm Springs:</p>
 

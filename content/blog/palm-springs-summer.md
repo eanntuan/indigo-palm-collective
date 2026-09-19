@@ -1,5 +1,5 @@
 ---
-title: "Palm Springs in Summer: Is It Actually Worth Visiting?"
+title: "Palm Springs in Summer: Is It Worth Visiting?"
 date: 2025-11-13
 dateModified: 2026-07-30
 metaDescription: "Yes, with caveats. Pool culture peaks in summer, rates drop 30-50%, crowds disappear. Here's how to do Palm Springs in the heat, month by month."
@@ -221,4 +221,4 @@ layout: blog-post.njk
 <p>Some do, particularly in August when the heat is at its worst and foot traffic drops enough that a few weeks off makes financial sense for owners. It is not universal, but it happens often enough that calling ahead or checking the restaurant's website before planning a specific dinner is worth doing. The places that stay open year-round tend to be the more established spots with loyal local followings.</p>
 
 <h4>Is a private pool worth it for a summer Palm Springs trip?</h4>
-<p>More than any other season, yes. In spring the pool is a nice amenity. In summer it becomes the entire structure of the day: morning swim before the heat locks in, afternoon float during peak hours when going anywhere else is miserable, and evening soak after the temperature drops. Having pool access without fighting hotel crowds for chairs changes the trip from an exercise in heat tolerance to something that's actually restorative. Terra Luz in Indio has a fully private pool; Cozy Cactus, also in Indio, has a private hot tub plus community pool access; The Sundune in Palm Springs has access to the community pool at Palm Canyon Villas, with far fewer residents than any hotel. All book direct at <a href="https://indigopalm.co/blog/palm-springs-summer/">indigopalm.co</a>.</p>
+<p>More than any other season, yes. In spring the pool is a nice amenity. In summer it becomes the entire structure of the day: morning swim before the heat locks in, afternoon float during peak hours when going anywhere else is miserable, and evening soak after the temperature drops. Having pool access without fighting hotel crowds for chairs changes the trip from an exercise in heat tolerance to something restorative. Terra Luz in Indio has a fully private pool; Cozy Cactus, also in Indio, has a private hot tub plus community pool access; The Sundune in Palm Springs has access to the community pool at Palm Canyon Villas, with far fewer residents than any hotel. All book direct at <a href="https://indigopalm.co/blog/palm-springs-summer/">indigopalm.co</a>.</p>

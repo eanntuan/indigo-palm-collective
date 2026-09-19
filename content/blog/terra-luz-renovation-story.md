@@ -33,7 +33,7 @@ layout: blog-post.njk
 
 <p>I worked with Dawn Asher at <a href="https://theolivejar.co" target="_blank" rel="noopener noreferrer"><strong>The Olive Jar</strong></a> on the brand from the beginning. The thing she said early that changed everything: "Latin/Cuban is not boho." Both use rattan and warm tones, but boho is eclectic and maximalist, and what we were going for had more intention behind it. Old Havana patina. Wabi-sabi warmth. Materials that feel collected and lived-in, not assembled from a mood board.</p>
 
-<p>She set six brand filters for every decision: cocooned and soothing, vibrant and rejuvenating, cultured, rhythmic, effortless ease, grounded. Every furniture piece, paint color, and tile choice had to pass at least five of those six. Shopping gets slower when you're running everything through a filter, but you end up with rooms that actually hold together.</p>
+<p>She set six brand filters for every decision: cocooned and soothing, vibrant and rejuvenating, cultured, rhythmic, effortless ease, grounded. Every furniture piece, paint color, and tile choice had to pass at least five of those six. Shopping gets slower when you're running everything through a filter, but you end up with rooms that hold together.</p>
 
 <p>The color that anchors everything is Kahlo Blue, a cobalt that shows up as accent rather than base tone. Throw pillows, a closet interior, the pool water itself. It's present without being the whole story.</p>
 
@@ -174,7 +174,7 @@ layout: blog-post.njk
 
 
 
-<h4>What does the patio at Terra Luz actually look like in person?</h4>
+<h4>What does the patio at Terra Luz look like in person?</h4>
 <p>Bigger than the photos suggest. The patio is 1,148 square feet, which makes it larger than most of the interior living space. The pool deck was resurfaced with a cooling overlay in a lace finish called Orange Flambé that runs 20 to 30 degrees cooler than standard concrete on hot days. Antigua wicker rocking chairs line the back wall, there are in-pool loungers under a Desert Marigold umbrella, and an outdoor projector is mounted to the pergola for movies. The concrete fire pit coffee table from Neighbor works as a low table when the fire isn't on. See the full renovation breakdown at <a href="https://indigopalm.co/blog/terra-luz-renovation-story/">indigopalm.co</a>.</p>
 
 <h4>Is the Latin/Cuban design aesthetic at Terra Luz boho?</h4>

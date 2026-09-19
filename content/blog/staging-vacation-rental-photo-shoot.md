@@ -125,7 +125,7 @@ layout: blog-post.njk
 <p>Five days feels like a lot until it's Tuesday morning and you realize Day 5 was Saturday and Saturday was mostly driving to HomeGoods.</p>
 
 <div class="inline-cta">
-  <p>The photos from that week are live on the <a href="/terra-luz/">Terra Luz listing</a> now. If you're planning a Coachella Valley trip and want a property that photographs well because it actually lives well, that's the one.</p>
+  <p>The photos from that week are live on the <a href="/terra-luz/">Terra Luz listing</a> now. If you're planning a Coachella Valley trip and want a property that photographs well because it lives well, that's the one.</p>
 </div>
 
 <p>Start on Day 5. Do the list. The photos are worth it. For more on how the full Terra Luz renovation came together before the shoot, the <a href="/blog/terra-luz-renovation-story/">Terra Luz renovation story</a> covers every room from start to finish.</p>

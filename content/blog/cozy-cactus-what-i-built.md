@@ -130,7 +130,7 @@ layout: blog-post.njk
     },
     {
       "@type": "Question",
-      "name": "What does it actually cost to furnish a vacation rental from scratch?",
+      "name": "What does it cost to furnish a vacation rental from scratch?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "More than you think, less than you fear. The mix of West Elm and Facebook Marketplace kept costs manageable, but there were no shortcuts on the family gear and the kitchen setup. The $30 knife sharpener, the matching Tupperware lids, the bottle warmer: individually small, collectively the thing that separates a rental guests recommend from one they endure."
@@ -151,7 +151,7 @@ layout: blog-post.njk
 <h3>Is the baby gear at The Cozy Cactus really that different from other rentals?</h3>
 <p>Most rentals have a pack-n-play with the included foam insert, which is thin enough that babies sleep badly on it. The Cozy Cactus has a real crib mattress on the pack-n-play. That one detail has come up in reviews from parents who hadn't expected to sleep well on a trip with an infant. The Stokke high chair, sound machines in every room, and bottle warmer round out a setup that most rental properties treat as optional.</p>
 
-<h3>What does it actually cost to furnish a vacation rental from scratch?</h3>
+<h3>What does it cost to furnish a vacation rental from scratch?</h3>
 <p>More than you think, less than you fear. The mix of West Elm and Facebook Marketplace kept costs manageable, but there were no shortcuts on the family gear and the kitchen setup. The $30 knife sharpener, the matching Tupperware lids, the bottle warmer: individually small, collectively the thing that separates a rental guests recommend from one they endure.</p>
 
 <p>The Cozy Cactus is thoughtfully designed for humans who notice when someone cared. It started as a backup plan for a Honda Element and became something I'm proud of.</p>
@@ -189,7 +189,7 @@ layout: blog-post.njk
     },
     {
       "@type": "Question",
-      "name": "What does it actually cost to furnish a vacation rental from scratch?",
+      "name": "What does it cost to furnish a vacation rental from scratch?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "More than you think, less than you fear. The mix of West Elm and Facebook Marketplace kept costs manageable, but there were no shortcuts on the family gear and kitchen setup. The small details like matching Tupperware lids and a sharp knife separate a rental guests recommend from one they endure."

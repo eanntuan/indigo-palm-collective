@@ -277,7 +277,7 @@ layout: blog-post.njk
       "name": "What is the most unique coffee experience in Palm Springs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Coffeeism Co. is the outlier: owner Guillaume Galataud trained in Tokyo, Mexico City, and Melbourne, and the drinks include pineapple-espresso combinations and juice-spiked lattes that actually work. Mentosa Coffee at the Mojave Flea Trading Post is the other answer, with The Whisper (coconut, orange, cinnamon, vanilla cold foam) as the standout."
+        "text": "Coffeeism Co. is the outlier: owner Guillaume Galataud trained in Tokyo, Mexico City, and Melbourne, and the drinks include pineapple-espresso combinations and juice-spiked lattes that work. Mentosa Coffee at the Mojave Flea Trading Post is the other answer, with The Whisper (coconut, orange, cinnamon, vanilla cold foam) as the standout."
       }
     },
     {

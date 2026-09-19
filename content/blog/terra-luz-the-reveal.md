@@ -56,7 +56,7 @@ layout: blog-post.njk
 
 <p>The photos came in and I genuinely did not recognize the house.</p>
 
-<p>I've been in this property probably 30 times in the last year. I've slept there, stress-ordered furniture at midnight, argued with myself over rug sizes. And still, the first time I saw it fully shot by <a href="https://www.anchor-pictures.com/" target="_blank" rel="noopener"><strong>Anchor Photography</strong></a>, something clicked into place that spreadsheets and walk-throughs couldn't. It actually looked like what we'd been trying to build.</p>
+<p>I've been in this property probably 30 times in the last year. I've slept there, stress-ordered furniture at midnight, argued with myself over rug sizes. And still, the first time I saw it fully shot by <a href="https://www.anchor-pictures.com/" target="_blank" rel="noopener"><strong>Anchor Photography</strong></a>, something clicked into place that spreadsheets and walk-throughs couldn't. It finally looked like what we'd been trying to build.</p>
 
 <p>Here's the full room-by-room breakdown: what we did, what we bought, what didn't make the cut, and a few things that surprised even me.</p>
 
@@ -77,7 +77,7 @@ layout: blog-post.njk
 
 <h2>Entryway and Living Room</h2>
 
-<p>The entryway is intentional. A leather wall piece on one side, a foyer console and mirror opposite it, and a guest book engraved with "Terra Luz" that I'm quietly obsessed with. The idea was to give arriving guests a landing moment, somewhere to drop their bags and actually exhale before they find the pool.</p>
+<p>The entryway is intentional. A leather wall piece on one side, a foyer console and mirror opposite it, and a guest book engraved with "Terra Luz" that I'm quietly obsessed with. The idea was to give arriving guests a landing moment, somewhere to drop their bags and exhale before they find the pool.</p>
 
 <img src="/blog/images/terra-luz-living-room.webp" alt="Terra Luz living room with rattan furniture, tropical plants, and warm terracotta tones in Indio California" width="1024" height="1570" loading="lazy">
 <p class="image-caption">The living room. The faux palms are in blue pots, per Dawn's instruction. It works.</p>
@@ -167,7 +167,7 @@ layout: blog-post.njk
 
 <p>Terra Luz opens to guests May 21, 2026. Phase 2 in Summer 2026 covers exterior paint. Phase 3 in 2027 is the pass-through window from the kitchen to the patio, which will make the indoor-outdoor flow something worth writing about again.</p>
 
-<p>For now, the house is done. Not "done for now" done. Actually done, which felt like it would never happen and then happened all at once in the two weeks before the photo shoot.</p>
+<p>For now, the house is done. Not "done for now" done. Finished, which felt like it would never happen and then happened all at once in the two weeks before the photo shoot.</p>
 
 <p>If you want to see it in person, <a href="/terra-luz/">book directly at Terra Luz</a>. Direct bookings get 10% off on return stays, no coupon needed.</p>
 

@@ -262,7 +262,7 @@ layout: blog-post.njk
 <h3>Are there any good Japanese restaurants in Palm Springs?</h3>
 <p>Sandfish is an intimate omakase counter at 100 W Tahquitz Canyon Way with 15 to 20 seats, built around careful nigiri and small plates. It books out days in advance on weekends, so reserve before you arrive rather than after. Order the uni if it's on the menu that night.</p>
 
-<h3>What restaurants in Palm Springs do locals actually eat at, not just tourists?</h3>
+<h3>What restaurants in Palm Springs do locals eat at, not just tourists?</h3>
 <p>Rooster and the Pig on South Indian Canyon is the consistent local favorite: Vietnamese fusion, pork belly buns, and a cocktail list that earns its price. Les Filles Cafe in Cathedral City (five minutes from downtown) is a genuinely French cafe with serious croissants that most visitors never find. Escena Grill's golf course patio is another local-known spot that rarely shows up in tourist guides.</p>
 
 <h3>Where should I eat in Palm Springs before going to Coachella?</h3>
@@ -342,7 +342,7 @@ layout: blog-post.njk
     },
     {
       "@type": "Question",
-      "name": "What restaurants in Palm Springs do locals actually go to?",
+      "name": "What restaurants in Palm Springs do locals go to?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Rooster and the Pig on South Indian Canyon is the consistent local favorite: Vietnamese fusion, pork belly buns, and a cocktail list that earns its price. Les Filles Cafe in Cathedral City (five minutes from downtown) is a genuinely French cafe with serious croissants that most visitors never find. Escena Grill's golf course patio is another local spot that rarely shows up in tourist guides."

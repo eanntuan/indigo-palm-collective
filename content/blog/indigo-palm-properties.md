@@ -63,7 +63,7 @@ layout: blog-post.njk
 
 <p>This is the property for smaller groups: couples, or two friends who want the Uptown Design District within walking distance and a space that feels personal. The apartment sits in East Palm Springs near Waverly Drive, a short walk to Uptown, a quick drive to the downtown strip, close to hiking trailheads, and far enough from the loud blocks that you can sleep.</p>
 
-<p>No private pool (there's a community pool), offset by the fact that you're actually in Palm Springs, with Uptown walkable and downtown a short drive rather than the longer haul you'd make from Terra Luz or Cozy Cactus.</p>
+<p>No private pool (there's a community pool), offset by the fact that you're in Palm Springs, with Uptown walkable and downtown a short drive rather than the longer haul you'd make from Terra Luz or Cozy Cactus.</p>
 
 <p><strong>Book The Sundune direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a>: no platform fees.</strong></p>
 

@@ -23,7 +23,7 @@ layout: blog-post.njk
 
 <p>Palm Springs exists because of a hot spring. The Agua Caliente Band of Cahuilla Indians have used the mineral water under what's now downtown for centuries, and the resort town that grew up around it never really let go of the spa habit. That history means the valley has more legitimate day-spa options than most desert destinations, where "spa" usually means a hotel amenity locked behind a room key.</p>
 
-<p>Not every resort spa here takes walk-ins or day visitors. Some are guests-only, full stop, no matter how good the marketing photos look. Below are the ones that actually sell a day pass to the public, what they cost, and what you're getting for it. Prices and hours shift with season and demand, so call or check the booking page before you drive out.</p>
+<p>Not every resort spa here takes walk-ins or day visitors. Some are guests-only, full stop, no matter how good the marketing photos look. Below are the ones that sell a day pass to the public, what they cost, and what you're getting for it. Prices and hours shift with season and demand, so call or check the booking page before you drive out.</p>
 
 <h2>The Spa at Séc-hé, Downtown Palm Springs</h2>
 

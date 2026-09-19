@@ -25,7 +25,7 @@ layout: blog-post.njk
 relatedPosts:
   - title: "Stagecoach 2026: Where to Stay Near the Festival"
     url: /blog/stagecoach-2026-where-to-stay/
-  - title: "The Cozy Cactus Review: What Guests Actually Say"
+  - title: "The Cozy Cactus Review: What Guests Say"
     url: /blog/cozy-cactus-review/
   - title: "Where to Stay for Coachella"
     url: /blog/where-to-stay-coachella/

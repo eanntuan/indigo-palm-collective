@@ -37,7 +37,7 @@ relatedPosts:
 <img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard lined with palm trees and Santa Rosa Mountains in the background in March" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs in March. The Santa Rosa Mountains still have some snow at elevation, days run mid-70s, and the crowds from February are mostly gone. It's a good time to be here.</p>
 
-<h2>What the BNP Paribas Open Actually Is</h2>
+<h2>What the BNP Paribas Open Is</h2>
 
 <p>Context helps if you haven't been before. The BNP Paribas Open is a combined ATP Masters 1000 and WTA 1000 event, which makes it one of the most significant stops on both calendars outside the four Grand Slams. Players are required to compete unless injured, so the draws are genuine. Rafael Nadal won here 11 times. The Sinner-Alcaraz generation has been making it one of the most watched tournaments on tour.</p>
 

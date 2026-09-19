@@ -179,7 +179,7 @@ layout: blog-post.njk
     },
     {
       "@type": "Question",
-      "name": "How long does the Palm Springs midcentury architecture walk actually take?",
+      "name": "How long does the Palm Springs midcentury architecture walk take?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Plan 1.5 to 2 hours for the core route covering Via Norte, Via Escuela, Stevens Road, and the Ruth Hardy Park perimeter. Adding the Movie Colony or the Kaufmann Desert House exterior at 470 W Vista Chino adds another 45 minutes. The streets reward wandering and the architecture is dense enough that most people stop more than they expect."
@@ -211,7 +211,7 @@ layout: blog-post.njk
 <h4>Is the Palm Springs architecture walking tour accessible for people who don't know much about architecture?</h4>
 <p>Completely. The five features to learn beforehand are flat or butterfly roofs, breezeblock screen walls, deep eave overhangs, post-and-beam framing with floor-to-ceiling glass, and original door colors in turquoise, coral, or orange. Once those five things are in your head, you'll start seeing them on every block without needing any prior background. The Palm Springs Architectural Foundation website has free printable maps that label specific buildings if you want more structure.</p>
 
-<h4>How long does the Palm Springs midcentury architecture walk actually take?</h4>
+<h4>How long does the Palm Springs midcentury architecture walk take?</h4>
 <p>Plan 1.5 to 2 hours for the core route (Via Norte, Via Escuela, Stevens Road, and the Ruth Hardy Park perimeter), not counting getting coffee or stopping to photograph. If you add the Movie Colony or make the detour to the Kaufmann Desert House exterior at 470 W Vista Chino, add another 45 minutes. Most people underestimate the time because the streets reward wandering, and the architecture is dense enough that you'll stop more than you expect.</p>
 
 <h4>Do you need a car to do the Palm Springs architecture walk, or can you use transit?</h4>

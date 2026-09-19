@@ -29,7 +29,7 @@ relatedPosts:
     url: /blog/joshua-tree-day-trip-from-indio/
 ---
 
-<p>Somewhere around mile 30 on Highway 74, the ocotillo and creosote just stop. The road keeps climbing through switchbacks cut into granite, and the air coming through the vents goes from July-in-the-desert to actually cool, and then you're driving through a pine forest like someone flipped a set. That's the whole appeal of Idyllwild in one sentence: it's an hour from the pool and it doesn't feel like the same state.</p>
+<p>Somewhere around mile 30 on Highway 74, the ocotillo and creosote just stop. The road keeps climbing through switchbacks cut into granite, and the air coming through the vents goes from July-in-the-desert to cool, and then you're driving through a pine forest like someone flipped a set. That's the whole appeal of Idyllwild in one sentence: it's an hour from the pool and it doesn't feel like the same state.</p>
 
 <p>I get asked about this drive constantly by guests staying at <a href="/terra-luz/">Terra Luz</a> and <a href="/cozy-cactus/">The Cozy Cactus</a> in July and August, when the desert floor is 112 and everyone's looking for literally anywhere else. Idyllwild is the answer, and it's a real hiking destination, not just a place to sit in the shade and call it a day. Here's what to do once you're up there.</p>
 

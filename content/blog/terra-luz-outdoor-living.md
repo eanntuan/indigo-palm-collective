@@ -44,7 +44,7 @@ layout: blog-post.njk
 
 <p>Dawn pushed for a full color drench on the exterior wall. Meaning: not an accent, not a trim detail, the whole surface saturated in one bold color. The idea was that the orange-terracotta family inside the house (tile, pillows, the terracotta deck) would bleed outward. You'd stand in the living room and look through the glass doors and see the exterior wall and feel like you were still inside the same palette.</p>
 
-<p>That color ended up being Orange Flambé, but we didn't land there quickly. We tested five or six swatches directly on the wall and on painted boards at the pool edge, which was the only way to see what we were actually getting. Paint chips lie. A swatch on paper looks like one color in the store and something completely different against concrete block and terracotta tile in 100-degree afternoon sun.</p>
+<p>That color ended up being Orange Flambé, but we didn't land there quickly. We tested five or six swatches directly on the wall and on painted boards at the pool edge, which was the only way to see what we were getting. Paint chips lie. A swatch on paper looks like one color in the store and something completely different against concrete block and terracotta tile in 100-degree afternoon sun.</p>
 
 <p>We checked the swatches in three different light conditions: early morning when the sun is coming over the east roof, midday when everything bleaches out, and twilight when the desert light goes golden and shifts every color warmer. Most colors that look rich at noon go muddy at twilight or washed out in morning. Orange Flambé held across all three, which is why it won.</p>
 

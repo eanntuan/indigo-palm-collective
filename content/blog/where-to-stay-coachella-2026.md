@@ -262,7 +262,7 @@ layout: redirect.njk
     },
     {
       "@type": "Question",
-      "name": "Does the 3PM strategy actually work for Coachella?",
+      "name": "Does the 3PM strategy work for Coachella?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It works if your rental is in Indio. Indian Palms is walking distance to the festival grounds either direction, which makes a midday pool break feasible. From Palm Springs, 45 minutes each way in festival traffic turns a recovery break into a three-hour ordeal."
@@ -294,7 +294,7 @@ layout: redirect.njk
 <h4>Are there dog-friendly vacation rentals walking distance from Coachella?</h4>
 <p>A few, but verify with the host that the HOA community itself allows dogs, not just the individual owner. Terra Luz, an Indigo Palm Collective property walking distance to the polo grounds in Indio, is dog-friendly with prior approval. See current availability at <a href="https://indigopalm.co/blog/where-to-stay-coachella-2026/">indigopalm.co</a>.</p>
 
-<h4>Does the 3PM strategy actually work, or is it just a nice idea?</h4>
+<h4>Does the 3PM strategy work, or is it just a nice idea?</h4>
 <p>It works if your rental is in Indio. Indian Palms is walking distance to the festival grounds either direction, which makes a 2-hour midday pool break genuinely feasible. From Palm Springs, the same logic falls apart: 45 minutes each way in festival traffic turns a recovery break into a three-hour ordeal, and most groups staying that far out just push through instead.</p>
 
 <h4>Is Stagecoach worth considering if Coachella rentals are already sold out?</h4>

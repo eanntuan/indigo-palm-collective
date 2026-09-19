@@ -118,7 +118,7 @@ layout: blog-post.njk
       "name": "What is the single most important thing to pack for a desert vacation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sun protection that you'll actually use consistently. SPF 50+, a hat with a real brim, UV-blocking sunglasses. The desert sun reflects off sand, pavement, and pool surfaces simultaneously. People who burn in the desert almost always underestimated how fast it happens."
+        "text": "Sun protection that you'll use consistently. SPF 50+, a hat with a real brim, UV-blocking sunglasses. The desert sun reflects off sand, pavement, and pool surfaces simultaneously. People who burn in the desert almost always underestimated how fast it happens."
       }
     },
     {
@@ -152,7 +152,7 @@ layout: blog-post.njk
 <h2>Frequently Asked Questions</h2>
 
 <h3>What is the single most important thing to pack for a desert vacation?</h3>
-<p>Sun protection that you'll actually use consistently. SPF 50+, a hat with a real brim, UV-blocking sunglasses. The desert sun reflects off sand, pavement, and pool surfaces simultaneously. People who burn in the desert almost always underestimated how fast it happens.</p>
+<p>Sun protection that you'll use consistently. SPF 50+, a hat with a real brim, UV-blocking sunglasses. The desert sun reflects off sand, pavement, and pool surfaces simultaneously. People who burn in the desert almost always underestimated how fast it happens.</p>
 
 <h3>Do I need a car in the Coachella Valley?</h3>
 <p>Yes. The valley stretches 45 miles from Palm Springs to Indio and there's no meaningful public transit between cities. Rideshare exists but runs slow and expensive on busy festival weekends. Rent a car or bring your own. If you're based in Indio, many morning activities are a 10-15 minute drive.</p>

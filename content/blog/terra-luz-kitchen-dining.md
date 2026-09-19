@@ -61,7 +61,7 @@ layout: blog-post.njk
 <img src="/blog/images/terra-luz-kitchen-counter.webp" alt="Terra Luz kitchen with white gas range, graphic black and white tile backsplash, open wood shelving with ceramics and glassware, and coffee station at left" width="1600" height="1067" loading="lazy">
 <p class="image-caption">The gas range, open shelving, and graphic tile. The spice rack on the fridge panel is stocked. Coffee station sits to the left of the range.</p>
 
-<p>On the open shelves: amber glass tumblers, green glass tumblers, hand-thrown ceramic mugs in brown and blue with patterned glaze, and a driftwood piece on the top shelf that you'd only understand as decorative. There's a chess set tucked on the counter near the microwave because we had space and it felt right. The knives are serious knives in a wood block. It's a kitchen someone actually thought about.</p>
+<p>On the open shelves: amber glass tumblers, green glass tumblers, hand-thrown ceramic mugs in brown and blue with patterned glaze, and a driftwood piece on the top shelf that you'd only understand as decorative. There's a chess set tucked on the counter near the microwave because we had space and it felt right. The knives are serious knives in a wood block. It's a kitchen someone thought about.</p>
 
 <p>For coffee there's a Nespresso machine and a French press, with Cafe Bustelo in the cabinet. If you're the kind of person who noticed the Cafe Bustelo illustration on the shelf vignette, you'll appreciate finding the actual can in the kitchen. The coffee setup on the counter has a blue ceramic pour-over dripper and a Craft Coffee book propped against the tile, which is a little much but it scans correctly in the photos.</p>
 

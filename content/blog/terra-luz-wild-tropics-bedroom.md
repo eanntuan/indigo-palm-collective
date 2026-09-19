@@ -55,7 +55,7 @@ layout: blog-post.njk
 <img src="/blog/images/terra-luz-wild-tropics-curtains.webp" alt="Seating nook in the Wild Tropics bedroom at Terra Luz, with gold and cream striped curtains framing wallpapered alcove and navy velvet chairs" width="3201" height="4801" loading="lazy">
 <p class="image-caption">The curtains are goldenrod and cream stripe. They frame the nook without closing it off.</p>
 
-<p>Dawn's term for the curtains was "striped curtains frame the full wrap." The goldenrod and cream stripe is warm enough to bridge the blue wallpaper and the terracotta pendants, and the curtains hang from floor to ceiling so the nook has a stage-like quality. You can actually sit in there and have a conversation, which matters when you have eight people in a three-bedroom house and someone needs five minutes away from the group.</p>
+<p>Dawn's term for the curtains was "striped curtains frame the full wrap." The goldenrod and cream stripe is warm enough to bridge the blue wallpaper and the terracotta pendants, and the curtains hang from floor to ceiling so the nook has a stage-like quality. You can sit in there and have a conversation, which matters when you have eight people in a three-bedroom house and someone needs five minutes away from the group.</p>
 
 <img src="/blog/images/terra-luz-wild-tropics-nook.webp" alt="Navy blue velvet chairs and dark wood checkerboard side table in the Wild Tropics seating nook at Terra Luz vacation rental" width="4931" height="3297" loading="lazy">
 <p class="image-caption">Dark wood checkerboard side table, navy velvet, woven sconce. The sconce gives warm direct light without being overhead.</p>

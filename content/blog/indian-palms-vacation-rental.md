@@ -28,7 +28,7 @@ excerpt: "Indian Palms Country Club is one of the only neighborhoods in the Coac
 layout: blog-post.njk
 faqItems:
   - q: "Can you really walk to Coachella from Indian Palms Country Club?"
-    a: "Yes, and it's one of the only neighborhoods in the Coachella Valley where it's actually practical. The route from inside the community goes through the Monroe Gate onto Eisenhower Drive, and it's walkable from anywhere in Indian Palms. Full details at https://indigopalm.co/blog/indian-palms-vacation-rental/"
+    a: "Yes, and it's one of the only neighborhoods in the Coachella Valley where it's practical. The route from inside the community goes through the Monroe Gate onto Eisenhower Drive, and it's walkable from anywhere in Indian Palms. Full details at https://indigopalm.co/blog/indian-palms-vacation-rental/"
   - q: "What's the noise like at Indian Palms during Coachella and Stagecoach?"
     a: "You can hear the bass from the main stage outside, especially late at night, but it's not disruptive indoors with the windows closed. Some guests find it part of the experience. If you need complete quiet, Indian Palms probably isn't the right fit for festival weekend. More on what to expect: https://indigopalm.co/blog/indian-palms-vacation-rental/"
   - q: "How do I get into Indian Palms Country Club during festival weekend?"
@@ -131,7 +131,7 @@ faqItems:
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>Is Indian Palms Country Club actually walking distance to Coachella?</h3>
+<h3>Is Indian Palms Country Club walking distance to Coachella?</h3>
 <p>Yes. The walk from inside the community to the festival entrance at 49th and Monroe goes through the Monroe Gate onto Eisenhower Drive on a gravel pedestrian path. Closed-toe shoes are worth it.</p>
 
 <h3>Can anyone drive into Indian Palms during Coachella weekend?</h3>

@@ -26,7 +26,7 @@ layout: blog-post.njk
 relatedPosts:
   - title: "Palm Springs Midcentury Architecture: Self-Guided Walk"
     url: /blog/palm-springs-midcentury-architecture/
-  - title: "The Sundune at Palm Springs: What Staying There Actually Looks Like"
+  - title: "The Sundune at Palm Springs: What Staying There Looks Like"
     url: /blog/palm-springs-local-guide-sundune/
   - title: "Best Hiking Near Palm Springs: 8 Trails Worth the Drive"
     url: /blog/best-hiking-palm-springs/
@@ -39,7 +39,7 @@ Here's what differentiates them, and how to pick based on what you want from the
 <img src="/blog/images/palm-springs-neighborhood-map.webp" alt="Map overview of Palm Springs neighborhoods including Uptown, Downtown, Movie Colony, Warm Sands, and The Mesa" loading="lazy" width="1200" height="800">
 <p class="image-caption">Palm Springs is smaller than it looks on a map. Most neighborhoods are within a 10-minute drive of each other.</p>
 
-## How Palm Springs Is Actually Laid Out
+## How Palm Springs Is Laid Out
 
 Palm Springs runs roughly north to south along Palm Canyon Drive, which splits into North Palm Canyon and South Palm Canyon. Most of the city people think of sits between Vista Chino to the north and E Palm Canyon Drive to the south.
 
@@ -102,7 +102,7 @@ Stay north of Vista Chino only if you know where you're going. The stretches alo
 - **Family with kids, private outdoor space:** The Mesa
 - **Photography, views, design obsession:** Twin Palms
 
-If you're staying at [The Sundune at Palm Springs](/the-sundune), we're in the E Waverly Dr area near the Palm Canyon Villas, which puts you between the Mesa and Warm Sands. Close enough to Downtown for dinner, quiet enough to actually sleep.
+If you're staying at [The Sundune at Palm Springs](/the-sundune), we're in the E Waverly Dr area near the Palm Canyon Villas, which puts you between the Mesa and Warm Sands. Close enough to Downtown for dinner, quiet enough to sleep.
 
 <img src="/blog/images/sundune-palm-springs-condo.webp" alt="The Sundune at Palm Springs condo exterior with desert landscaping and clear blue sky" loading="lazy" width="1200" height="800">
 <p class="image-caption">The Sundune sits in a quiet mid-city area, about 10 minutes from Downtown Palm Springs and close to hiking access.</p>

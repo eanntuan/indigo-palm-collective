@@ -207,7 +207,7 @@ The CV Link's Palm Springs segment runs along the eastern edge of the city. The 
     },
     {
       "@type": "Question",
-      "name": "Is the Museum Trail in Palm Springs actually hard?",
+      "name": "Is the Museum Trail in Palm Springs hard?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. At 833 feet of gain over 1.6 miles, it's the steepest trail in Palm Springs proper by a significant margin. Most people run the lower section and hike the upper switchbacks. The trailhead is near the Palm Springs Art Museum. Despite the short distance, bring water and respect the grade. Do not treat it as a casual 1.6-mile run."

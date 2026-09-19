@@ -192,7 +192,7 @@ Excessive panting beyond what the exertion warrants, heavy drooling, slowing or 
 <h4>Is it safe to take a dog to Palm Springs in summer?</h4>
 <p>It's manageable with the right approach, but summer in the Coachella Valley is genuinely challenging for dogs. Pavement can reach 150°F even when the air feels bearable, and heat stress can develop faster than most people expect. The workable pattern is early morning walks before 8am, pool time during the heat of the day, and evening outings after 6 or 7pm when the temperature drops. Pool access and air conditioning are not optional extras in summer. They're the infrastructure that makes the trip safe.</p>
 
-<h4>What gear do I actually need to bring for a dog in desert heat?</h4>
+<h4>What gear do I need to bring for a dog in desert heat?</h4>
 <p>Three things make a real difference: a collapsible water bottle with a built-in bowl (dehydration sneaks up fast in desert dry air), dog booties for any pavement walk in warm weather, and a cooling bandana or vest that you wet down before heading out. A gel cooling mat and frozen treats for the afternoon stretch are worth adding. These aren't just nice to have in the Coachella Valley. They're the difference between a comfortable trip and a stressful one. See the full gear breakdown at <a href="https://indigopalm.co/blog/desert-dog-summer/">indigopalm.co/blog/desert-dog-summer/</a>.</p>
 
 <h4>What is the best time of year to visit Palm Springs with a dog?</h4>

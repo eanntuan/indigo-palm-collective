@@ -23,7 +23,7 @@ excerpt: "Skip the recycled lists. Here are 15 things worth doing in Indio, CA: 
 layout: blog-post.njk
 ---
 
-<p>If you Google "things to do in Indio, CA" right now, you'll get chain restaurants, a water park, and maybe a mention of Coachella. That's not wrong, it's just not the city. Indio is where the Coachella Valley gets real: working-class, date-palm-lined, with taquerias that don't have websites and music venues that opened without press releases.</p>
+<p>If you Google "things to do in Indio, CA" right now, you'll get chain restaurants, a water park, and maybe a mention of Coachella. None of that is wrong. It's just not the city. Indio is where the Coachella Valley gets real: working-class, date-palm-lined, with taquerias that don't have websites and music venues that opened without press releases.</p>
 
 <p>I've owned vacation rentals in Indio since 2022. These are the 15 things that keep coming back in reviews as the ones guests remember.</p>
 

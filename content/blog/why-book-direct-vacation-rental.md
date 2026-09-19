@@ -31,7 +31,7 @@ layout: blog-post.njk
 
 <h2>The Math, Honestly</h2>
 
-<p>Airbnb charges guests a 20% service fee on the subtotal (nightly rate plus cleaning fee, before taxes). On a $1,000 stay, that's $200 going to Airbnb, not the host, not toward anything you actually experience.</p>
+<p>Airbnb charges guests a 20% service fee on the subtotal (nightly rate plus cleaning fee, before taxes). On a $1,000 stay, that's $200 going to Airbnb, not the host, not toward anything you experience.</p>
 
 <p>The host is separately charged 3% on their end. So a $1,000 booking costs you $1,150 and nets the host about $970. Airbnb keeps around $180 from that one transaction. Book direct through the property's own website and that fee disappears.</p>
 
@@ -50,7 +50,7 @@ layout: blog-post.njk
 
 <p>For first-time bookings with unknown hosts somewhere unfamiliar, the platform infrastructure is worth something. But once you've stayed somewhere and you know the host responds fast and the house is what the photos showed? The calculation changes pretty quickly.</p>
 
-<h2>What You Actually Get with Direct Booking</h2>
+<h2>What You Get with Direct Booking</h2>
 
 <p>The fee savings are the obvious part. What's less obvious is how differently things go when something comes up mid-stay.</p>
 
@@ -58,7 +58,7 @@ layout: blog-post.njk
 
 <p><strong>More flexibility.</strong> Platform bookings are locked into platform rules. A direct booking host can often be flexible about check-in time, a late checkout, or small requests that would feel awkward to formalize through a booking interface.</p>
 
-<p><strong>A real person when things go sideways.</strong> The wifi goes down. You can't figure out the TV remote situation. On a platform booking you're often in a support queue talking to someone who has never seen the house. With a direct booking host who wants your repeat business, you get a faster response from someone who actually knows the property.</p>
+<p><strong>A real person when things go sideways.</strong> The wifi goes down. You can't figure out the TV remote situation. On a platform booking you're often in a support queue talking to someone who has never seen the house. With a direct booking host who wants your repeat business, you get a faster response from someone who knows the property.</p>
 
 <img src="/blog/images/cozy-cactus-living-room.webp" alt="Cozy Cactus vacation rental living room in Indio California with warm lighting and comfortable seating" width="1400" height="933" loading="lazy">
 <p class="image-caption">Inside The Cozy Cactus. When something needs attention, you reach the owner directly, not a support queue.</p>

@@ -27,7 +27,7 @@ relatedPosts:
     url: /blog/stagecoach-2027-where-to-stay/
   - title: "Palm Springs vs Indio: Which City Is Right for Your Trip?"
     url: /blog/palm-springs-vs-indio/
-  - title: "The Terra Luz Review: What Guests Actually Say"
+  - title: "The Terra Luz Review: What Guests Say"
     url: /blog/terra-luz-review/
 ---
 

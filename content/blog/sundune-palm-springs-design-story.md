@@ -51,7 +51,7 @@ layout: blog-post.njk
 <img src="/blog/images/ps-blue-door-cacti.webp" alt="Teal blue painted door with mature cacti flanking the entrance on a Palm Springs street" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The muted coastal tones that informed The Sundune palette are everywhere in Palm Springs, if you look for them.</p>
 
-<h2>The Rooms: What's Actually There</h2>
+<h2>The Rooms: What's There</h2>
 
 <p>The Sundune is a 2-bedroom, 2-bathroom apartment with a balcony that has become central to how people use the space. Three king beds total across both rooms.</p>
 

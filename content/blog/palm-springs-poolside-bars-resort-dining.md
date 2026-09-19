@@ -93,7 +93,7 @@ layout: blog-post.njk
 
 <p><a href="https://palmcanyonswimandsocial.com/" target="_blank" rel="noopener"><strong>Palm Canyon Swim &amp; Social</strong></a> is the adults-only poolside restaurant and bar at the ARRIVE hotel on North Palm Canyon, and it's the lowest-friction option on this whole list. As of 2026 the restaurant is open to the public with no reservation, first come first served, running an all-day brunch menu into mid-afternoon and drinks until late evening. Think green chile smash burger, breakfast burrito, a craft cocktail by the fire pits.</p>
 
-<p>The catch: sitting at the restaurant is walk-in, but actually swimming or claiming a lounge chair on the pool deck is reserved for hotel guests or the limited day passes they release. If pool time is the goal, call ahead to check pass availability. If you just want a drink in a good-looking courtyard, walk right in.</p>
+<p>The catch: sitting at the restaurant is walk-in, but swimming or claiming a lounge chair on the pool deck is reserved for hotel guests or the limited day passes they release. If pool time is the goal, call ahead to check pass availability. If you just want a drink in a good-looking courtyard, walk right in.</p>
 
 <h3>2. Ace Hotel &amp; Swim Club</h3>
 

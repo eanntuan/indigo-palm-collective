@@ -28,7 +28,7 @@ layout: blog-post.njk
 
 <p>Bombay Beach, Salvation Mountain, and Slab City are about 45 minutes east of Indio. Together they make up one of the stranger afternoons you can have in Southern California.</p>
 
-<h2>What the Salton Sea Actually Is</h2>
+<h2>What the Salton Sea Is</h2>
 
 <p>California's largest inland lake, sitting about 226 feet below sea level in the desert southeast of Indio. Created by accident in 1905 when an irrigation canal broke and flooded the basin for two years. By the 1950s it was a resort destination with yacht clubs and fishing tournaments. Then the water grew saltier, agricultural runoff accumulated, the ecosystem shifted, and most of the resorts were abandoned. The birds stayed because they had nowhere else to go.</p>
 

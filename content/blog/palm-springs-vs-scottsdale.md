@@ -26,7 +26,7 @@ faqItems:
   - q: "Is Palm Springs or Scottsdale better for golf?"
     a: "Scottsdale has more high-profile courses and hosts TPC Scottsdale, home of the Waste Management Phoenix Open. The Coachella Valley has over 100 courses, and Indian Wells hosts the BNP Paribas Open with the San Jacinto Mountains as backdrop. Serious golfers can argue either city depending on specific courses, but the scenery in Palm Springs is exceptional. Full comparison at https://indigopalm.co/blog/palm-springs-vs-scottsdale/"
   - q: "Which city has better walkability, Palm Springs or Scottsdale?"
-    a: "Palm Springs wins on walkability. Palm Canyon Drive is about a mile of independently owned restaurants, vintage shops, and boutique hotels you can actually walk between. Old Town Scottsdale is smaller and more bar-focused than its name suggests, and most of the city is suburban sprawl built around resort properties you rarely need to leave. Read the full breakdown at https://indigopalm.co/blog/palm-springs-vs-scottsdale/"
+    a: "Palm Springs wins on walkability. Palm Canyon Drive is about a mile of independently owned restaurants, vintage shops, and boutique hotels you can walk between. Old Town Scottsdale is smaller and more bar-focused than its name suggests, and most of the city is suburban sprawl built around resort properties you rarely need to leave. Read the full breakdown at https://indigopalm.co/blog/palm-springs-vs-scottsdale/"
   - q: "Is Palm Springs a good weekend trip from Los Angeles?"
     a: "Yes, and it's one of the easiest from Southern California. It's 2 to 2.5 hours east on the I-10, no state line, no flight. Scottsdale from LA is 5.5 to 6 hours by car or a short flight, which makes it more of a dedicated trip than a weekend getaway. For SoCal travelers, Palm Springs is the default answer on geography alone. More at https://indigopalm.co/blog/palm-springs-vs-scottsdale/"
   - q: "What kind of traveler is Scottsdale better for than Palm Springs?"
@@ -55,7 +55,7 @@ faqItems:
 
 <img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over a Palm Springs street with palm trees and San Jacinto Mountain silhouette" width="1400" height="933" loading="lazy">
 
-<h2>Weather: Which Is Actually Hotter?</h2>
+<h2>Weather: Which Is Hotter?</h2>
 
 <p>Both cities are hot in summer, but the heat profile is different. Palm Springs sits in a low desert valley at 479 feet elevation, surrounded by mountains. Summer highs regularly hit 110 to 115 degrees Fahrenheit, with very low humidity. It's a dry, intense heat. Shade and air conditioning make it bearable, and nights cool down significantly.</p>
 

@@ -25,7 +25,7 @@ layout: blog-post.njk
 relatedPosts:
   - title: "How Far Is Indio from Palm Springs?"
     url: /blog/palm-springs-vs-indio/
-  - title: "The Cozy Cactus Review: What Guests Actually Say"
+  - title: "The Cozy Cactus Review: What Guests Say"
     url: /blog/cozy-cactus-review/
   - title: "Coachella Valley Insider Guide"
     url: /blog/coachella-valley-insider-guide/
@@ -41,7 +41,7 @@ relatedPosts:
 <img src="/blog/images/indian-palms-front-entrance.webp" alt="Indian Palms Country Club entrance gate in Indio California, a neighborhood popular with BNP Paribas Open attendees" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indian Palms Country Club in Indio, about 20 minutes from the Indian Wells Tennis Garden. Quiet neighborhood, private pools common, good value for groups.</p>
 
-<h2>What the BNP Paribas Open Actually Is</h2>
+<h2>What the BNP Paribas Open Is</h2>
 
 <p>If you're coming specifically for the tennis, context helps. The BNP Paribas Open runs two full weeks in March, typically starting the first week. It's one of only nine Masters 1000 tournaments on the ATP Tour and a concurrent WTA 1000 event, meaning the full depth of the women's draw plays alongside the men's. Top-10 players from both tours attend.</p>
 
