@@ -22,31 +22,18 @@
 
         body {
             font-family: var(--font-sans);
-            background: var(--cream);
             color: var(--charcoal);
             line-height: 1.6;
             min-height: 100vh;
-        }
-
-        .hero-banner {
-            height: 200px;
-            background-image: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.45)), url('/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp');
+            background-image: linear-gradient(rgba(245,243,238,0.90), rgba(245,243,238,0.90)), url('/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp');
             background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: flex-end;
-            padding: 1.5rem 2rem;
-        }
-
-        .hero-banner span {
-            color: white;
-            font-family: var(--font-serif);
-            font-size: 1.4rem;
-            letter-spacing: 0.02em;
+            background-position: center top;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
         }
 
         .header {
-            background: white;
+            background: rgba(255,255,255,0.9);
             padding: 1.25rem 2rem;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
@@ -85,7 +72,7 @@
         }
 
         .card {
-            background: white;
+            background: rgba(255,255,255,0.94);
             border-radius: 12px;
             padding: 2rem;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
@@ -251,8 +238,6 @@
     </style>
 </head>
 <body>
-    <div class="hero-banner"><span>Terra Luz</span></div>
-
     <div class="header">
         <div class="header-inner">
             <a href="/" class="logo">Indigo Palm Collective</a>
