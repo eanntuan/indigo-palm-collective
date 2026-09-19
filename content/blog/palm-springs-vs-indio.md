@@ -20,7 +20,7 @@ keywords:
 articleSection: "Travel Guide"
 property: all
 readTime: "8 min read"
-excerpt: "Neither is the wrong choice. But one is clearly right for your trip, depending on what you want. Here's the honest breakdown."
+excerpt: "25 miles apart, and which one's right depends on what you want out of the trip. Here's the breakdown."
 layout: blog-post.njk
 relatedPosts:
   - title: "Palm Springs vs Scottsdale: Which One Is Right for Your Trip"
