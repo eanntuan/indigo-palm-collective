@@ -435,6 +435,15 @@ async function updatePrice() {
     }
 }
 
+function getAttribution() {
+    try {
+        const raw = localStorage.getItem('ip_attribution');
+        return raw ? JSON.parse(raw) : null;
+    } catch (e) {
+        return null;
+    }
+}
+
 async function submitBookingRequest() {
     const submitBtn = document.getElementById('submit-btn');
     const name = document.getElementById('guest-name').value.trim();
@@ -497,6 +506,7 @@ async function submitBookingRequest() {
                 poolHeat: poolHeatSelected,
                 poolHeatNights: poolHeatSelected ? poolHeatNights : 0,
                 poolHeatCost,
+                attribution: getAttribution(),
             }),
         });
 

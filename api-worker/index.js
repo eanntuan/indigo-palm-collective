@@ -896,7 +896,7 @@ async function handleBooking(request, env) {
   }
 
   const { property, propertyId, checkIn, checkOut, guests, name, email, phone,
-          specialRequests, pricing, discountCode, poolHeat, poolHeatNights, poolHeatCost } = body;
+          specialRequests, pricing, discountCode, poolHeat, poolHeatNights, poolHeatCost, attribution } = body;
 
   if (!property || !checkIn || !checkOut || !name || !email || !phone) {
     return new Response(JSON.stringify({ success: false, error: 'Missing required fields' }), {
@@ -967,6 +967,7 @@ async function handleBooking(request, env) {
     poolHeatNights: poolHeat ? (poolHeatNights || 0) : 0,
     poolHeatCost: poolHeat ? (poolHeatCost || 0) : 0,
     estimatedTotal,
+    attribution: attribution || null,
     submittedAt: new Date().toISOString(),
   };
 

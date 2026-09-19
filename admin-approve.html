@@ -345,6 +345,16 @@
             return `<tr><td>${label}</td><td>${value}</td></tr>`;
         }
 
+        function attributionRow(a) {
+            if (!a) return row('How They Found Us', 'No data (booked before attribution tracking, or ad blocker)');
+            const source = a.utmSource
+                ? `${a.utmSource}${a.utmMedium ? ' / ' + a.utmMedium : ''}${a.utmCampaign ? ' (' + a.utmCampaign + ')' : ''}`
+                : (a.referrer ? new URL(a.referrer).hostname.replace('www.', '') : 'Direct / no referrer');
+            const landed = a.landingPage || '/';
+            const when = a.firstTouchAt ? new Date(a.firstTouchAt).toLocaleDateString('en-US', { dateStyle: 'medium' }) : '';
+            return row('How They Found Us', `${source}<br><span style="color:#888;font-size:0.9em;">Landed on ${landed}${when ? ' — ' + when : ''}</span>`);
+        }
+
         function renderBooking() {
             document.getElementById('loading').style.display = 'none';
             document.getElementById('booking-ui').style.display = 'block';
@@ -370,7 +380,8 @@
                 + (b.securityDeposit ? row('(incl. security deposit)', `$${b.securityDeposit.toFixed(2)} refundable 72 hrs after checkout`) : '')
                 + (b.remainingBalanceDue ? row('Balance Remaining', `$${b.remainingBalanceDue.toFixed(2)} due ${fmtDate(b.remainingBalanceDueDate)}`) : '')
                 + (b.cancellationPolicy ? row('Cancellation Policy', b.cancellationPolicy) : '')
-                + row('Submitted', new Date(b.submittedAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }));
+                + row('Submitted', new Date(b.submittedAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }))
+                + attributionRow(b.attribution);
 
             document.getElementById('booking-details').innerHTML = detailsHtml;
 
