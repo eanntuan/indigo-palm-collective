@@ -1085,7 +1085,7 @@ async function handleApprove(request, env) {
     });
   }
 
-  const { id, token, overrideTotal, flatDiscount, notesToGuest } = body;
+  const { id, token, overrideTotal, flatDiscount, notesToGuest, lineItemLabel } = body;
 
   if (!id || !token) {
     return new Response(JSON.stringify({ success: false, error: 'Missing id or token' }), {
@@ -1165,6 +1165,7 @@ async function handleApprove(request, env) {
         ccFee,
         fmtDate,
         squareBaseUrl,
+        lineItemLabel: lineItemLabel || null,
       });
     } catch (e) {
       console.error('Square payment link failed:', e);
@@ -1849,7 +1850,7 @@ async function handleDiscount(url, env) {
   }), { status: 200, headers: CORS_HEADERS });
 }
 
-async function createSquarePaymentLink(accessToken, { bookingId, property, checkIn, checkOut, pricing, poolHeat, poolHeatNights, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate, squareBaseUrl = 'https://connect.squareup.com' }) {
+async function createSquarePaymentLink(accessToken, { bookingId, property, checkIn, checkOut, pricing, poolHeat, poolHeatNights, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate, squareBaseUrl = 'https://connect.squareup.com', lineItemLabel = null }) {
   // Fetch first location
   const locRes = await fetch(`${squareBaseUrl}/v2/locations`, {
     headers: { 'Authorization': `Bearer ${accessToken}`, 'Square-Version': '2024-01-18' },
@@ -1868,7 +1869,7 @@ async function createSquarePaymentLink(accessToken, { bookingId, property, check
 
   const lineItems = [
     {
-      name: `${property}: ${rateLabel}`,
+      name: lineItemLabel || `${property}: ${rateLabel}`,
       quantity: '1',
       base_price_money: money(pricing.total),
       note: `${fmtDate(checkIn)} to ${fmtDate(checkOut)}`,

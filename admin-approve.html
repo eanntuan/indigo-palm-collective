@@ -275,6 +275,12 @@
                 </div>
 
                 <div class="form-group">
+                    <label>Custom Payment Description (optional)</label>
+                    <input type="text" id="line-item-label" placeholder="Leave blank for the default nightly-rate label">
+                    <p class="hint">Overrides the line item name shown on the Square checkout page. Use this whenever the amount due isn't the full stay total (e.g. a deposit) so the label matches what's actually being charged.</p>
+                </div>
+
+                <div class="form-group">
                     <label>Note to Guest (optional)</label>
                     <textarea id="notes-to-guest" placeholder="Any message to include in their payment email..."></textarea>
                 </div>
@@ -409,6 +415,7 @@
             const override = parseFloat(document.getElementById('override-total').value);
             const flatDiscount = parseFloat(document.getElementById('flat-discount').value) || 0;
             const notesToGuest = document.getElementById('notes-to-guest').value.trim();
+            const lineItemLabel = document.getElementById('line-item-label').value.trim();
 
             try {
                 const res = await fetch('/api/approve', {
@@ -420,6 +427,7 @@
                         overrideTotal: (!isNaN(override) && override > 0) ? override : null,
                         flatDiscount,
                         notesToGuest,
+                        lineItemLabel: lineItemLabel || null,
                     }),
                 });
 
