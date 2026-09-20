@@ -37,11 +37,14 @@
       "@context": "https://schema.org",
       "@type": "VacationRental",
       "name": "Cozy Cactus",
+      "additionalType": "https://schema.org/House",
       "identifier": "https://indigopalm.co/cozy-cactus/",
       "description": "Family-friendly 3-bedroom vacation rental in Indio with a toy collection that has real range, coffee bar, private hot tub, access to three heated community pools at Indian Palms, and design built around families.",
       "url": "https://indigopalm.co/cozy-cactus/",
       "image": [
         "https://indigopalm.co/cozy-cactus/photos/CozyCactus2026-0004.webp",
+        "https://indigopalm.co/cozy-cactus/photos/CozyCactus2026-0010.webp",
+        "https://indigopalm.co/cozy-cactus/photos/CozyCactus2026-0040.webp",
         "https://indigopalm.co/cozy-cactus/photos/CozyCactus2026-0060.webp",
         "https://indigopalm.co/cozy-cactus/photos/CozyCactus2026-0095.webp",
         "https://indigopalm.co/cozy-cactus/photos/CozyCactus2026-0140.webp",
@@ -710,9 +713,11 @@
             left: 50%;
             transform: translateX(-50%);
             color: white;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             text-decoration: underline;
             opacity: 0.7;
+            padding: 0.5rem 1rem;
+            display: inline-block;
         }
         #lightbox-room-link:hover { opacity: 1; }
 
@@ -789,7 +794,7 @@
         .room-preview-section { margin-bottom: 3.5rem; }
         .room-preview-header { display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #e8ddd0; padding-bottom: 0.6rem; margin-bottom: 1.25rem; }
         .room-preview-header h3 { font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0; }
-        .room-preview-link { font-size: 0.8rem; color: #00877b; text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; white-space: nowrap; }
+        .room-preview-link { font-size: 0.85rem; color: #00877b; text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; white-space: nowrap; padding: 0.5rem 0; display: inline-block; }
         .room-preview-link:hover { text-decoration: underline; }
         .room-preview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
         @media (max-width: 600px) { .room-preview-grid { grid-template-columns: repeat(2, 1fr); } }

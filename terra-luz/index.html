@@ -39,6 +39,7 @@
       "@context": "https://schema.org",
       "@type": "VacationRental",
       "name": "Terra Luz",
+      "additionalType": "https://schema.org/House",
       "identifier": "https://indigopalm.co/terra-luz/",
       "description": "Sun-washed 3-bedroom vacation home in Indio with Kahlo blue pool, Latin cultural touches, terracotta courtyard, and pass-through kitchen window. A cocooned desert sanctuary near Coachella.",
       "url": "https://indigopalm.co/terra-luz/",
@@ -745,13 +746,15 @@
         }
 
         .room-preview-link {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             color: #B67550;
             text-decoration: none;
             letter-spacing: 0.08em;
             text-transform: uppercase;
             font-weight: 500;
             white-space: nowrap;
+            padding: 0.5rem 0;
+            display: inline-block;
         }
 
         .room-preview-link:hover {
@@ -811,13 +814,15 @@
         }
         #lightbox-room-link {
             color: #B67550;
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             text-decoration: none;
             text-align: center;
             font-weight: 500;
             margin-top: 0.4rem;
+            padding: 0.5rem 0;
+            display: inline-block;
         }
         #lightbox-room-link:hover { text-decoration: underline; }
         #lightbox-close {

@@ -41,7 +41,9 @@
       "name": "The Well",
       "description": "Minimalist 1-bedroom wellness retreat in Palm Springs with southwestern design, clean lines, warm wood, and intentional simplicity for design lovers sensitive to overwhelm.",
       "url": "https://indigopalm.co/the-well/",
-      "additionalType": "https://schema.org/Condominium",
+      "additionalType": "https://schema.org/Apartment",
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 1,
       "image": [
         "https://indigopalm.co/The%20Well/1TW_4W6A0294.jpg",
         "https://indigopalm.co/The%20Well/1TW_4W6A0294sage.jpg",
@@ -531,6 +533,12 @@
             gap: 2rem;
         }
 
+        .room-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
         .gallery-item {
             height: 300px;
             overflow: hidden;
@@ -648,6 +656,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .room-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .details-section {
                 padding: 3rem 5%;
             }
@@ -696,8 +708,12 @@
             .gallery-item {
                 height: 220px;
             }
+
+            .room-grid {
+                grid-template-columns: 1fr;
+            }
         }
-    
+
         .contact-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
         .contact-btn {
             display: inline-flex;
@@ -834,7 +850,7 @@
                 <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #d8d0c5; padding-bottom: 0.6rem; margin-bottom: 1.25rem;">
                     <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0;">Living Room</h3>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                <div class="room-grid">
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/1TW_4W6A0294.jpg" alt="The Well southwestern minimalist living room Palm Springs" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/3TW_DZ5A0901.jpg" alt="The Well open concept living area with wellness design" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/2TW_DZ5A0912.jpg" alt="Mid-century modern seating at The Well Palm Springs" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
@@ -846,7 +862,7 @@
                 <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #d8d0c5; padding-bottom: 0.6rem; margin-bottom: 1.25rem;">
                     <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0;">Kitchen &amp; Dining</h3>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                <div class="room-grid">
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/5TW_DZ5A0895.jpg" alt="The Well kitchen with modern appliances and clean design" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/4TW_DZ5A0923.jpg" alt="Dining space for remote workers at The Well" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/9TW_DZ5A0868.jpg" alt="Coffee station at The Well Palm Springs" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
@@ -858,7 +874,7 @@
                 <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #d8d0c5; padding-bottom: 0.6rem; margin-bottom: 1.25rem;">
                     <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0;">Bedroom</h3>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                <div class="room-grid">
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/6TW_4W6A0299.jpg" alt="The Well bedroom sanctuary with sage green palette" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/7TW_DZ5A0884.jpg" alt="Master bedroom at The Well with calming minimalist design" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/12TW_DZ5A0810.jpg" alt="Bedroom with mid-century sconce and warm lighting at The Well" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
@@ -870,7 +886,7 @@
                 <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #d8d0c5; padding-bottom: 0.6rem; margin-bottom: 1.25rem;">
                     <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0;">Bathroom &amp; Workspace</h3>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                <div class="room-grid">
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/13TW_DZ5A0828.jpg" alt="The Well bathroom with wellness-focused amenities" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/16TW_4W6A0319.jpg" alt="Remote work setup at The Well Palm Springs" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                     <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/18TW_DZ5A0839.jpg" alt="Outdoor space at The Well with desert landscaping" loading="lazy" width="800" height="533" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
