@@ -2760,6 +2760,14 @@ Manual 90-day pull (2026-06-21 to 2026-09-19): 539 clicks, 69,061 impressions, 0
 
 **One net-new gap, caught at query level, not page level:** `palm-springs-vs-indio` has 22 clicks/8,232 impressions overall (healthy enough to be excluded from the automated "low-click pages" scan), but its single largest query — **"how far is indio from palm springs"** — pulls 829 impressions at position 5.9 and converts at only 0.4% CTR (3 clicks). Position 5.9 should be earning 4-6%+ CTR on a query this directly answerable. The June 22 title rewrite ("Indio vs. Palm Springs: 25 Miles Apart, Which to Pick") already leads with the distance but doesn't mirror the literal "how far" phrasing searchers are typing — likely why the SERP snippet isn't winning the click despite good position. Queued as TASK GSC-30 below.
 
-**TASK GSC-30: Rewrite `palm-springs-vs-indio` meta description to mirror "how far" query phrasing (15 min, High)**
-Current meta leads with the distance stat but not the literal question form. Rewrite meta description to open with something like "How far is Indio from Palm Springs? 25 miles, a 30-40 minute drive..." — mirroring the exact query phrasing tends to win more of the snippet's bolded-match real estate in search results. Re-check CTR on this specific query at the next GSC check-in ~1 week out (~2026-09-26+, per standard practice — CTR movement from a meta change needs Google to re-crawl and re-serve the new snippet first).
+~~**TASK GSC-30: Rewrite `palm-springs-vs-indio` meta description to mirror "how far" query phrasing (15 min, High)**~~ ✅ **DONE 2026-09-19** — Meta now opens "How far is Indio from Palm Springs? 25 miles, a 30-40 minute drive...". Re-check CTR on this specific query at the next GSC check-in ~1 week out (~2026-09-26+, per standard practice — CTR movement from a meta change needs Google to re-crawl and re-serve the new snippet first).
+
+**TASK GSC-31: Title/meta rewrites, 4 more pages ranking well but under-converting (2026-09-19)** ✅ **DONE**
+From the 28-day GSC pull's title/meta rewrite candidate list — all 4 confirmed not previously touched, meta/title current state checked against actual post content before rewriting (caught and corrected one factual error of my own: a drafted $40 LAX shuttle price against the post's real $100-150 figure).
+- `lax-to-palm-springs` (258 impr, 0.8% CTR, pos 7.8) — meta now leads with the 2-hour/120-mile drive stat instead of "Honest trade-offs" filler.
+- `pet-friendly-palm-springs` (239 impr, 0.4% CTR, pos 12.0) — dropped "honest guide" filler, meta now leads with the actual constraint (most rentals don't allow pets, two of ours do).
+- `best-spas-coachella-valley-spa-day` (182 impr, 0 clicks, pos 9.2) — title now leads with the number (6) instead of vague "for a Real Spa Day".
+- `modernism-week-palm-springs` (96 impr, 1 click, pos 8.3) — meta was a pure booking pitch for what's likely informational search intent (people searching the event name want event info first); now leads with event facts (11 days each February, 450+ events) before the stay pitch.
+
+Re-check all 5 (including GSC-30) at the ~2026-09-26+ check-in.
 
