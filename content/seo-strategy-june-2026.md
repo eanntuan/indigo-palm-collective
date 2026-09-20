@@ -2771,3 +2771,15 @@ From the 28-day GSC pull's title/meta rewrite candidate list — all 4 confirmed
 
 Re-check all 5 (including GSC-30) at the ~2026-09-26+ check-in.
 
+### GEO Expansion — 2026-09-19
+
+GA4 already shows an "AI Assistant" referral channel (ChatGPT/Gemini/Perplexity) pulling 38 sessions/28 days with zero ad spend, so audited FAQPage JSON-LD coverage sitewide to find the next lever before assuming more posts needed it.
+
+**Finding: coverage was already comprehensive, not the gap it looked like.** All 98 blog posts have FAQPage schema (11 via the templated `faqItems` frontmatter, 87 via a hand-written inline `<script>` block that predates the template — both render identically, just two different authoring paths from different points in the site's history). 8 of 11 property/landing pages also already had it (all 5 property pages, `vacation-rentals/indio/`, `vacation-rentals/palm-springs/`, `vacation-rentals-with-private-pool/`).
+
+**The one real gap:** `book-direct/` had genuine FAQ-shaped content (booking-safety trust question, the actual savings math, cancellation policy) with no schema on it. Added a visible FAQ section plus matching JSON-LD, sourced from the page's own existing content and the confirmed sitewide 60-day cancellation policy, nothing invented. `quiz/` and `booking-flow/` also lack it but are transactional/tool pages with no natural FAQ content to hang schema on, so left alone rather than manufacturing filler.
+
+**Not fixed, flagged for the next content pass:** `book-direct/index.html` has a pre-existing "Four honest reasons to book direct" heading — the banned "honest" filler pattern, outside this task's scope.
+
+**Given coverage is already near-total, the GEO lever worth pulling next isn't more schema, it's the Quora queue** (392-question doc, cadence target 2-3/day) — that wasn't re-auditable from this pass (no write access confirmed), worth a dedicated check of actual posting pace against the target next.
+
