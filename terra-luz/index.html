@@ -1563,5 +1563,15 @@
   });
 })();
 </script>
+<script>
+(function(){
+  if (new URLSearchParams(location.search).get('utm_source') !== 'pinterest') return;
+  var gallery = document.querySelector('.gallery-section');
+  var details = document.querySelector('.details-section');
+  if (gallery && details && gallery.parentNode === details.parentNode) {
+    details.parentNode.insertBefore(gallery, details);
+  }
+})();
+</script>
 </body>
 </html>

@@ -294,10 +294,10 @@ Board-level audit (Pinterest Check-in — 2026-08-12) confirmed Sundune is the o
 8. Coachella/Stagecoach fan sites (festicket.com, festival survival guides) — get cited in "where to stay" roundups
 
 **Property Page Upgrades:**
-- Urgency signals during peak booking season (September-January): manually update notice above booking widget showing festival weekend availability
-- Superhost trust badge + "146 verified reviews — book here to skip the guest fee"
-- Email capture form: "Join the waitlist and we'll notify you when availability opens"
-- Pinterest landing experience: for `?utm_source=pinterest` traffic, gallery should come first, then booking button
+- Urgency signals during peak booking season (September-January): manually update notice above booking widget showing festival weekend availability — ⚠️ **FLAGGED 2026-09-20**: requires live festival-weekend availability per property, not something to auto-generate from static copy. Needs Eann/Hostaway calendar cross-check before writing the notice text.
+- Superhost trust badge + "146 verified reviews — book here to skip the guest fee" — ⚠️ **FLAGGED 2026-09-20**: the "146" figure is stale/wrong for Sundune (40 reviews per CLAUDE.md property table, not 146) and current Superhost status isn't verified live. Needs Eann to confirm current review counts + Superhost status per property before this copy ships anywhere.
+- ~~Email capture form: "Join the waitlist and we'll notify you when availability opens"~~ — ⚠️ **FLAGGED 2026-09-20**: confirmed not implemented (grepped `terra-luz/`, `cozy-cactus/`, `the-sundune/` for "waitlist"/"notify you when availability" — 0 matches; this is distinct from the general newsletter signup in Gap C, which does exist). Building this properly means a new form UI plus backend wiring (does the Resend/Worker pipeline support a distinct "waitlist" tag vs. the general newsletter list?) — a design/product decision, not a quick fix. Flagging for Eann rather than guessing at the backend semantics.
+- ~~Pinterest landing experience: for `?utm_source=pinterest` traffic, gallery should come first, then booking button~~ ✅ **DONE 2026-09-20** — confirmed not implemented (grepped all 3 active property pages for `utm_source`/`URLSearchParams` — 0 matches), then implemented: added a small inline script to `terra-luz/index.html`, `cozy-cactus/index.html`, `the-sundune/index.html` that checks `utm_source=pinterest` in the URL and, if present, moves `.gallery-section` to appear before `.details-section` (which holds the booking widget/CTA) in the DOM. No-op for every other visitor. The-well excluded (long-term rental, not part of the Pinterest funnel).
 
 ---
 
@@ -1624,7 +1624,7 @@ Generated 2026-07-13 for the two new PSL-inspired posts (not a full top-5 audit)
 1. `palm-springs-art-galleries-guide` — new post, no pins yet
 2. `idyllwild-day-trip-palm-springs` — new post, no pins yet
 
-**TASK PIN-3: Produce and schedule 6 pins in Canva + Pinterest**
+~~**TASK PIN-3: Produce and schedule 6 pins in Canva + Pinterest**~~ ⚠️ **FLAGGED 2026-09-20, see systemic note near TASK PIN-1/PIN-2 (Sept 8 batch)** — this batch also specs boards ("Palm Springs Getaways," "Desert Lifestyle," "Coachella Valley Travel") that don't exist on the live account. 4th occurrence of the same pattern, not a new finding.
 Use the Indigo Palm Canva template. Previews rendered to `/tmp/pinterest-pins-preview/`. Export PNG, upload with title/description/board from spec below. Schedule 4-5/day — no batch drops.
 
 PIN 1 (Practical) — palm-springs-art-galleries-guide
@@ -1675,8 +1675,7 @@ Image: idyllwild-town-panorama-mountains.webp
 Board: Coachella Valley Travel
 Link: https://indigopalm.co/blog/idyllwild-day-trip-palm-springs/?utm_source=pinterest&utm_medium=organic&utm_campaign=idyllwild_from_indio_stay
 
-**TASK PIN-4: Confirm all 6 pins are live**
-Check Pinterest profile — all 6 pins visible, correct board, correct link destination.
+~~**TASK PIN-4: Confirm all 6 pins are live**~~ ⚠️ **FLAGGED 2026-09-20, see systemic note near TASK PIN-1/PIN-2 (Sept 8 batch)** — Check Pinterest profile — all 6 pins visible, correct board, correct link destination.
 
 ---
 
@@ -2678,7 +2677,7 @@ Full descriptions (150-300 chars each) are in `/tmp/pinterest-pin-specs-2026-09-
 
 ~~**TASK PIN-2: Confirm all 15 pins are live**~~ ⚠️ **FLAGGED 2026-09-20, see systemic note below** — Check Pinterest profile — all 15 pins visible, correct board, correct link destination.
 
-**Systemic note (2026-09-20):** three consecutive pin-batch specs (2026-06-23, 2026-07-31, 2026-09-08) all planned pins into board names — "Coachella Valley Travel," "Indio CA Vacation Rentals," "Festival Lodging," "Desert Lifestyle," "Dog-Friendly Travel," "Palm Springs Getaways," "Bachelorette Destinations" — none of which exist on the live account per today's `--boards-summary` pull. The account's actual boards are named differently (Terra Luz | Palm Springs Luxury Airbnb, Cozy Cactus | Palm Springs Family Airbnb, Interior Design, BLOGS| Palm Springs Travel & Airbnb Tips, and others) and total ~199 pins across them, well past what these three specs alone would account for. This means either Eann has been posting pins into her own board structure without following these Canva-template specs board-for-board, or the specs were followed once and boards later got renamed/consolidated. Either way, none of the "Confirm all 15 pins are live" verification tasks above are honestly verifiable against these board names, and re-flagging them daily going forward isn't useful. Not marking them done (can't verify), not treating them as open tasks either (re-executing a Canva spec against boards that don't exist would just create more unmatched pins). Recommend: next `/pinterest-pins` batch should pull the CURRENT live board list first and assign pins to existing boards by default, only proposing a new board when the audit specifically calls for one (e.g. the still-open Sundune board gap, TASK PIN-1 near the top of this doc).
+**Systemic note (2026-09-20, updated):** four pin-batch specs (2026-06-23, 2026-07-13, 2026-07-31, 2026-09-08) all planned pins into board names — "Coachella Valley Travel," "Indio CA Vacation Rentals," "Festival Lodging," "Desert Lifestyle," "Dog-Friendly Travel," "Palm Springs Getaways," "Bachelorette Destinations" — none of which exist on the live account per today's `--boards-summary` pull. The account's actual boards are named differently (Terra Luz | Palm Springs Luxury Airbnb, Cozy Cactus | Palm Springs Family Airbnb, Interior Design, BLOGS| Palm Springs Travel & Airbnb Tips, and others) and total ~199 pins across them, well past what these three specs alone would account for. This means either Eann has been posting pins into her own board structure without following these Canva-template specs board-for-board, or the specs were followed once and boards later got renamed/consolidated. Either way, none of the "Confirm all 15 pins are live" verification tasks above are honestly verifiable against these board names, and re-flagging them daily going forward isn't useful. Not marking them done (can't verify), not treating them as open tasks either (re-executing a Canva spec against boards that don't exist would just create more unmatched pins). Recommend: next `/pinterest-pins` batch should pull the CURRENT live board list first and assign pins to existing boards by default, only proposing a new board when the audit specifically calls for one (e.g. the still-open Sundune board gap, TASK PIN-1 near the top of this doc).
 
 ---
 

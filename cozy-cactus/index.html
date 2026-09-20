@@ -1515,5 +1515,15 @@
         </div>
         <a href="/booking-flow/?property=cozy-cactus" id="book-now-mobile" class="mobile-cta-btn" onclick="gtag('event', 'book_now_click', {'property_name': 'Cozy Cactus', 'event_category': 'Booking', 'event_label': 'Mobile Sticky CTA', 'value': 1});">BOOK NOW</a>
     </div>
+<script>
+(function(){
+  if (new URLSearchParams(location.search).get('utm_source') !== 'pinterest') return;
+  var gallery = document.querySelector('.gallery-section');
+  var details = document.querySelector('.details-section');
+  if (gallery && details && gallery.parentNode === details.parentNode) {
+    details.parentNode.insertBefore(gallery, details);
+  }
+})();
+</script>
 </body>
 </html>
