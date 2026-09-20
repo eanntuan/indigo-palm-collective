@@ -610,8 +610,7 @@ Generated June 23, 2026 from /pinterest-pins audit. Top 5 posts by 5-factor SEO 
 
 **Previews:** 15 PNGs rendered at /tmp/pinterest-pins-preview/ — review in Finder before creating in Canva.
 
-**TASK PIN-1: Produce and schedule 15 pins in Canva + Pinterest**
-Open "Copy of Terra Luz Pinterest Templates - Eann" in Canva. 3 pins per post. Drop hero image as full-bleed background, add overlay text as white bold layer in upper third (dark scrim behind it if image is light), keep logo badge and terracotta footer bar in place. Export PNG, upload to Pinterest with title + description + board from spec below. Schedule 4-5/day using Pinterest native scheduler — no batch drops.
+~~**TASK PIN-1: Produce and schedule 15 pins in Canva + Pinterest**~~ ⚠️ **SUPERSEDED 2026-09-20** — Not executable by babysit-seo (requires manual Canva design work), and 3 months stale. Today's live board audit (`--boards-summary`) shows none of the board names spec'd below ("Coachella Valley Travel," "Festival Lodging," "Desert Lifestyle," "Indio CA Vacation Rentals," "Dog-Friendly Travel," "Palm Springs Getaways," "Bachelorette Destinations") exist on the account — the actual board structure has been reorganized multiple times since (current boards: Terra Luz | Palm Springs Luxury Airbnb, Cozy Cactus | Palm Springs Family Airbnb, Interior Design, BLOGS| Palm Springs Travel & Airbnb Tips, and others). This spec was either executed under different board names or superseded entirely by later pin batches (see the 2026-08-12 and later batches below). Not re-actionable as written; leaving the historical spec in place for reference but no longer tracking it as an open task.
 
 **Pin specs:**
 
@@ -710,8 +709,7 @@ Overlay text: Surf the wave pool, swim the desert pool, bachelorette done.
 
 ---
 
-**TASK PIN-2: Confirm all 15 pins are live**
-Check Pinterest profile. All 15 pins should be visible with correct board, correct link destination (indigopalm.co/blog/[slug]/), and overlay text matching specs above. Monthly views: currently ~20K, threshold to switch links to indigopalm.co is 25-30K.
+~~**TASK PIN-2: Confirm all 15 pins are live**~~ ⚠️ **SUPERSEDED 2026-09-20** — Moot given TASK PIN-1 above is superseded; monthly views reference (~20K) is also 3 months stale (current: ~1,750 impressions/30 days per today's check-in, well below the 25-30K threshold).
 
 ---
 
@@ -2355,13 +2353,11 @@ Generated from /pinterest-pins audit. 15 pins, 5 posts, 3 angles each. Pin count
 4. `palm-springs-vs-scottsdale` — 39 clicks / 2,339 impressions, best CTR (1.7%) of any comparison post, booking intent
 5. `stagecoach-2027-where-to-stay` — festival booking-intent, no current GSC traction yet (new/seasonal), included to build pin coverage ahead of the 2027 season the way `where-to-stay-coachella` already has
 
-**TASK PIN-1: Produce and schedule 15 pins in Canva + Pinterest**
-Use the Indigo Palm Canva template (`~/Downloads/Copy of Terra Luz Pinterest Templates - Eann.png`). 3 pins per post. Export PNG, upload with title/description/board from spec below. Schedule 4-5/day — no batch drops. Local previews already rendered to `/tmp/pinterest-pins-preview/` for visual review before Canva.
+~~**TASK PIN-1: Produce and schedule 15 pins in Canva + Pinterest**~~ ⚠️ **FLAGGED 2026-09-20, see systemic note below** — Use the Indigo Palm Canva template (`~/Downloads/Copy of Terra Luz Pinterest Templates - Eann.png`). 3 pins per post. Export PNG, upload with title/description/board from spec below. Schedule 4-5/day — no batch drops. Local previews already rendered to `/tmp/pinterest-pins-preview/` for visual review before Canva.
 
-Pin specs: see `/tmp/pinterest-pin-batch-2026-07-31.md` for the full 15-pin output (title, description, overlay text, image, board, UTM-tagged link for every pin).
+Pin specs: see `/tmp/pinterest-pin-batch-2026-07-31.md` for the full 15-pin output (title, description, overlay text, image, board, UTM-tagged link for every pin) — likely gone by now (tmp files don't survive 7 weeks).
 
-**TASK PIN-2: Confirm all 15 pins are live**
-Check Pinterest profile — all 15 pins visible, correct board, correct link destination (Airbnb, not indigopalm.co — monthly views have not yet hit the 25-30K link-switch threshold).
+~~**TASK PIN-2: Confirm all 15 pins are live**~~ ⚠️ **FLAGGED 2026-09-20, see systemic note below** — Check Pinterest profile — all 15 pins visible, correct board, correct link destination (Airbnb, not indigopalm.co — monthly views have not yet hit the 25-30K link-switch threshold).
 
 ### GA4 Check-in — 2026-07-31
 
@@ -2647,8 +2643,7 @@ Generated 2026-09-08 from `/pinterest-pins` audit (fresh GSC data, `/tmp/gsc-202
 
 **Title pattern applied:** concrete room/space + audience + location/fact, per the 2026-07-11 pin audit finding that narrative titles ("Meet the Host...") got zero clicks across 24 Terra Luz pins while concrete titles converted. No narrative-style titles in this batch.
 
-**TASK PIN-1: Produce and schedule 15 pins in Canva + Pinterest**
-Use the Indigo Palm Canva template. 3 pins per post. Export PNG, upload with title/description/board from spec below. Schedule 4-5/day — no batch drops. Never auto-publish to the Pinterest API (per `feedback_pinterest_no_autopublish` — deliver as copy-paste spec only).
+~~**TASK PIN-1: Produce and schedule 15 pins in Canva + Pinterest**~~ ⚠️ **FLAGGED 2026-09-20, see systemic note below** — Use the Indigo Palm Canva template. 3 pins per post. Export PNG, upload with title/description/board from spec below. Schedule 4-5/day — no batch drops. Never auto-publish to the Pinterest API (per `feedback_pinterest_no_autopublish` — deliver as copy-paste spec only).
 
 Preview renders generated and opened in Finder at `/tmp/pinterest-pins-preview/` (15 PNGs, named `[slug]-pin-[1-3].png`). Full spec with descriptions and links saved at `/tmp/pinterest-pin-specs-2026-09-08.md`.
 
@@ -2681,8 +2676,9 @@ Pin specs (title / overlay / board / image / link):
 
 Full descriptions (150-300 chars each) are in `/tmp/pinterest-pin-specs-2026-09-08.md` — pull from there when uploading to Pinterest, this table only has title/overlay/board/link for scanning.
 
-**TASK PIN-2: Confirm all 15 pins are live**
-Check Pinterest profile — all 15 pins visible, correct board, correct link destination.
+~~**TASK PIN-2: Confirm all 15 pins are live**~~ ⚠️ **FLAGGED 2026-09-20, see systemic note below** — Check Pinterest profile — all 15 pins visible, correct board, correct link destination.
+
+**Systemic note (2026-09-20):** three consecutive pin-batch specs (2026-06-23, 2026-07-31, 2026-09-08) all planned pins into board names — "Coachella Valley Travel," "Indio CA Vacation Rentals," "Festival Lodging," "Desert Lifestyle," "Dog-Friendly Travel," "Palm Springs Getaways," "Bachelorette Destinations" — none of which exist on the live account per today's `--boards-summary` pull. The account's actual boards are named differently (Terra Luz | Palm Springs Luxury Airbnb, Cozy Cactus | Palm Springs Family Airbnb, Interior Design, BLOGS| Palm Springs Travel & Airbnb Tips, and others) and total ~199 pins across them, well past what these three specs alone would account for. This means either Eann has been posting pins into her own board structure without following these Canva-template specs board-for-board, or the specs were followed once and boards later got renamed/consolidated. Either way, none of the "Confirm all 15 pins are live" verification tasks above are honestly verifiable against these board names, and re-flagging them daily going forward isn't useful. Not marking them done (can't verify), not treating them as open tasks either (re-executing a Canva spec against boards that don't exist would just create more unmatched pins). Recommend: next `/pinterest-pins` batch should pull the CURRENT live board list first and assign pins to existing boards by default, only proposing a new board when the audit specifically calls for one (e.g. the still-open Sundune board gap, TASK PIN-1 near the top of this doc).
 
 ---
 
