@@ -45,7 +45,7 @@ relatedPosts:
 
 <h2>Where to Stay</h2>
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs pool with palm trees and resort landscaping on a sunny afternoon, perfect for a bachelorette party weekend" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs pool with palm trees and resort landscaping on a sunny afternoon, the setting for a bachelorette party weekend" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Private pool access is the baseline for a bachelorette trip in the desert. Shared or community pools have hours and crowds.</p>
 
 <p>Private pool is non-negotiable for this kind of trip. Shared hotel or community pools have hours, no alcohol allowed, and a crowd of strangers. You want to be able to get in at noon with a pitcher of something and no one telling you to quiet down.</p>

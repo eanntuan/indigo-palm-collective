@@ -89,7 +89,7 @@ The desert sky at dusk is worth scheduling around. Because there's almost no lig
 
 **After 8pm:** Hot tub time. Staying at [The Cozy Cactus in Indio](/cozy-cactus/) or [The Sundune in Palm Springs](/the-sundune/), both have private outdoor spaces that genuinely come into their own at night. Sitting in a hot tub at 9pm when the air temperature has dropped and you can see stars is one of the better arguments for vacation rental over a hotel room.
 
-<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Hot tub at The Cozy Cactus vacation rental in Indio, perfect for evening use after the desert heat subsides" loading="lazy" width="1400" height="933">
+<img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Hot tub at The Cozy Cactus vacation rental in Indio, lit up for evening use after the desert heat subsides" loading="lazy" width="1400" height="933">
 
 ## One More Thing About Summer
 

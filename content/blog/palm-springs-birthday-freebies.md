@@ -64,7 +64,7 @@ No Sprinkles Cupcakes in the Coachella Valley as of 2026. The nearest locations 
 
 The birthday freebie landscape changes year to year as chains update their programs. The specific offers above were current as of early 2026, but check each brand's app or website before your trip to confirm nothing has changed.
 
-<img src="/blog/images/palm-springs-pool.webp" alt="Palm Springs pool under clear desert skies, perfect for a birthday trip to the Coachella Valley" width="1400" height="979" loading="lazy" decoding="async">
+<img src="/blog/images/palm-springs-pool.webp" alt="Palm Springs pool under clear desert skies on a Coachella Valley birthday trip" width="1400" height="979" loading="lazy" decoding="async">
 <p class="image-caption">A birthday in the desert deserves more than a chain restaurant. Stack the freebies and spend the savings on a pool day.</p>
 
 For more things to do in Palm Springs beyond the sugar tour, the [3-day Palm Springs itinerary](/blog/palm-springs-3-day-itinerary/) has a full day-by-day structure worth bookmarking. And if you want to know where to eat a proper birthday dinner, the [Palm Springs restaurants guide](/blog/best-restaurants-palm-springs/) covers the spots I'd recommend. For a morning coffee before hitting the birthday circuit, the [Palm Springs coffee guide](/blog/palm-springs-coffee-guide/) has the five best spots in the valley.

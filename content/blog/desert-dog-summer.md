@@ -73,7 +73,7 @@ In desert heat, dogs' appetites often drop. A dog who's been outside even briefl
 
 Their website is <a href="https://slaterandsullivans.com/" target="_blank" rel="noopener noreferrer"><strong>slaterandsullivans.com</strong></a> and the Palm Springs location is worth visiting if you want to see what's in stock. It's a small company doing genuine work, and it happens to be based in the same valley where heat-related pet issues come up most often.
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool and fenced backyard in Indio California, dog-friendly vacation rental perfect for desert heat" loading="lazy" width="1400" height="933">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool and fenced backyard in Indio California, dog-friendly vacation rental with shade for hot desert days" loading="lazy" width="1400" height="933">
 
 ## Gear Worth Packing
 

@@ -58,7 +58,7 @@ layout: blog-post.njk
 
 <p>Coachella runs the first two weekends of April. <a href="https://www.stagecoachfestival.com/" target="_blank" rel="noopener noreferrer"><strong>Stagecoach</strong></a> runs the last weekend. Same polo grounds in Indio. Completely different crowd, energy, and what-to-expect-at-midnight situation. If you've never compared the two directly, the <a href="/blog/stagecoach-2026-where-to-stay/">Stagecoach guide</a> is worth five minutes of your time before you book anything.</p>
 
-<p>The reason it matters for your rental: Stagecoach guests tend to drive in, pack coolers, and want outdoor space for tailgating. Coachella guests lean harder on late nights, are younger on average, and the noise at 2am in the neighborhood reads differently. Both work great with the right property. The property that's perfect for one crowd can feel wrong for the other.</p>
+<p>The reason it matters for your rental: Stagecoach guests tend to drive in, pack coolers, and want outdoor space for tailgating. Coachella guests lean harder on late nights, are younger on average, and the noise at 2am in the neighborhood reads differently. A house set up for tailgating and coolers suits Stagecoach; a house built for late nights and a crowd suits Coachella. Match the property to the festival, not the other way around.</p>
 
 <img src="/blog/images/indian-palms-front-entrance.webp" alt="Indian Palms Country Club entrance in Indio CA near Coachella festival grounds" width="1400" height="933" loading="lazy">
 
