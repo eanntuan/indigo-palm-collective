@@ -2783,3 +2783,55 @@ GA4 already shows an "AI Assistant" referral channel (ChatGPT/Gemini/Perplexity)
 
 **Given coverage is already near-total, the GEO lever worth pulling next isn't more schema, it's the Quora queue** (392-question doc, cadence target 2-3/day) — that wasn't re-auditable from this pass (no write access confirmed), worth a dedicated check of actual posting pace against the target next.
 
+### What changed on 2026-09-20 — GSC Check-in
+
+**Period:** 2026-06-22 to 2026-09-20 (90 days) vs. prior 90 days. 544 clicks (+394), 69,553 impressions (+48,101), 0.8% CTR, avg position 10.4 — flat vs. yesterday, growth trend continues.
+
+**CTR-opportunity candidates re-checked, nothing new cleared the bar:** `grocery-stores-coachella-valley`, `bnp-paribas-open-palm-springs`, `palm-springs-poolside-bars-resort-dining`, `palm-springs-art-galleries-guide` all rewritten 2026-09-17, still too soon for CTR to move. `palm-springs-vs-indio`'s "how far is indio" query (GSC-30, rewritten 2026-09-19) still shows 0.5% CTR/832 impressions — one day is nowhere near enough for Google to re-crawl and re-serve the new snippet, re-check at the ~2026-09-26 mark as already planned. `indio-between-coachella-weekends` has had 3 prior rewrites (GSC-5/16/20), not touching a 4th time on 115 impressions. `game-night-trivia-coachella-valley` still thin (57 impr), held per standing precedent. `coachella-2027-where-to-stay`, `palm-springs-morning-vs-evening`, `palm-springs-midcentury-architecture-tour`, `palm-springs-neighborhood-guide` all have no query-level data to target a rewrite at. No new title/meta rewrites executed this run.
+
+**Content/authority bucket, unchanged:** `best-restaurants-palm-springs` (1,369 impr, pos 33.2), `stagecoach-2027-where-to-stay` (550 impr, pos 9.9 blended but only 12.1% ≤ pos 20), `palm-springs-with-kids` (262 impr, pos 47.9), `/blog/` index (241 impr, pos 16.6), `salton-sea-day-trip` (112 impr, pos 15.2). All need content depth, not title churn — unchanged from prior runs.
+
+### GSC Alert Email Review — 2026-09-20
+
+Searched Gmail (`eann.tuan@gmail.com`) for GSC alert emails since 2026-09-17 (last reviewed 2026-09-19). None found. No open deficiencies.
+
+### Pinterest Check-in — 2026-09-20
+
+**Monthly views:** 30-day API impressions 1,750 (ceiling, not calibrated to Business Hub Monthly Views) — flat vs. 2026-09-19's 1,744, and vs. 2026-09-18's 1,719. Three straight days essentially flat (~1,720-1,750). Well below the 25K link-switch threshold; link stays on Airbnb.
+
+**Engagement:** 7 saves, 86 pin clicks, 15 outbound clicks over 30 days.
+
+**Board performance (`--boards-summary`, 30 days):** the previously-flagged anomaly holds and sharpens — the 2-pin "Interior Design" board leads every metric (900 impressions, 55 pin clicks, 12 outbound clicks) while the 62-pin "Terra Luz | Palm Springs Luxury Airbnb" board manages only 142 impressions and 1 pin click, and the 54-pin "Cozy Cactus | Palm Springs Family Airbnb" board gets 111 impressions and 3 pin clicks. On a per-pin basis, Interior Design is outperforming the flagship property boards by roughly two orders of magnitude. This has been flagged before as worth investigating (what's different about those 2 pins' hook/title/image) but still hasn't been acted on — restating since it's now a 3-run pattern, not a one-off.
+
+**Standing gaps, unchanged:** no dedicated Sundune board exists yet (PIN-1, still queued, needs Eann's board-creation session). "Mid-Century Modern Homes," "Terra Luz" (the smaller 4-pin board, distinct from the 62-pin one), and "Vacation Rental Host Tips" boards show zero activity in 30 days — dead weight, not actively hurting anything, but not contributing either.
+
+**Ads-on/ads-off + cadence read:** flat impressions across 3 consecutive days with no growth signal is consistent with the standing diagnosis from the 2026-09-08 account audit (paid funnel paused, organic save rate too low for the algorithm to expand reach on its own). Could not independently confirm today's actual new-pin count from this API surface (`--boards-summary` gives per-board totals, not per-pin creation dates) — cadence vs. the 4-5/day target needs the Google Sheet tracker or a direct account glance to confirm, flagging as a data gap rather than guessing.
+
+**Action items:** none new — same standing items (Sundune board, Interior Design pattern investigation, cadence confirmation) carried forward.
+
+### GA4 Check-in — 2026-09-20
+
+**Period:** 2026-09-13 to 2026-09-20 (7 days) vs. prior 7 days. 181 active users (+6), 224 sessions (+20), avg session duration 130s (-2s) — growth continues, roughly flat duration.
+
+**Traffic mix:** Organic Search 117 sessions, Direct 58, AI Assistant 10, Organic Social only 2 — despite 86 Pinterest pin clicks in the same window per the API. This is now the 4th consecutive check-in with this exact gap (first flagged 2026-09-17). Standing explanation remains "pins link to Airbnb, not indigopalm.co, so those clicks never reach GA4" — reasonable, but 4 check-ins in a row without confirming it is long enough that it's worth Eann actually checking a few live pins' destination URLs directly rather than continuing to assume it.
+
+**High-bounce pages:** none found (no page hit both the 50+ views and >60% bounce threshold this period).
+
+**Property page visibility:** Terra Luz 20 views / Cozy Cactus 9 / Sundune 11 — Cozy Cactus trails the other two by roughly half, consistent with prior runs, not a new or worsening gap.
+
+### PSL Newsletter Inspo — 2026-09-20
+
+Still nothing newer than Aug 14, 2026 (same 2 emails found on 2026-09-17 and 2026-09-19). Gap is now 37 days. This has been flagged for 3+ consecutive runs — reiterating per the Housekeeping rule: this is worth Eann actively checking (subscription lapsed, filtered to spam/promotions, or PSL simply changed cadence) rather than continuing to note it passively each day. No content mined this run.
+
+### Hero Image Audit — 2026-09-20
+
+No full pass. Last full inventory 2026-09-16 (4 days, inside the 30-day window). No new blog posts published since then (last new post remains from before that date). Nothing to re-check. Next full pass due on/after 2026-10-16.
+
+### Technical SEO Health Checks (Phase 0.8) — 2026-09-20
+
+**Broken links:** 0 found (110 pages, 3,093 internal targets checked, internal-only pass). Yesterday's 7 fixes are confirmed holding.
+**Alt-text/image attributes:** 962 images across 108 pages, 3 LOW findings only, 0 HIGH/MEDIUM (yesterday's 63 MEDIUM width/height fixes confirmed holding). The 3 LOW findings (`casa-moto-pet-friendly-desert`, `best-vacation-rentals-pool-coachella-valley`, `coachella-valley-weekend-getaway`, each flagged for "missing loading=lazy") were checked individually and are each the genuine first/hero image on their page, correctly set to `loading="eager"` for LCP — this is the documented checker false-positive (the Pinterest tracking pixel consumes one of the "first 2 images" hero-skip slots, pushing the real hero past the window). Not changed, these are correct as-is.
+**Orphan/weak pages:** 0 orphaned, 0 weakly linked (108 pages checked) — yesterday's fix of 5 orphans + 23 weakly-linked posts confirmed fully holding.
+
+All three checks clean. No action needed this run.
+
