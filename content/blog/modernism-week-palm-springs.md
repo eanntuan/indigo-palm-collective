@@ -2,7 +2,7 @@
 title: "Where to Stay for Modernism Week Palm Springs 2027"
 date: 2026-04-12
 dateModified: 2026-07-30
-metaDescription: "Designer condo in Palm Springs, ten minutes from Modernism Week venues. Book direct for 2027: shared pool, three king beds, no Airbnb service fee."
+metaDescription: "Modernism Week runs eleven days each February with 450+ events. What sells out first, how to get tickets, and where to stay minutes from the venues."
 ogImage: /blog/images/ps-blue-door-cacti.webp
 heroImage: /blog/images/ps-blue-door-cacti.webp
 heroAlt: "Mid-century modern neighborhood in Palm Springs with flat-roofline homes and mountain backdrop"

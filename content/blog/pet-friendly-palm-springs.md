@@ -2,7 +2,7 @@
 title: "Dog-Friendly Palm Springs: Rentals, Trails + What to Skip"
 date: 2026-01-03
 dateModified: 2026-07-30
-metaDescription: "Palm Springs is dog-friendly if you know where. The honest guide to pet-friendly vacation rentals, hiking trails, outdoor patios, and the limits most guides skip over."
+metaDescription: "Most Palm Springs vacation rentals don't allow pets. Which two do, plus dog-friendly trails, outdoor patios, and the restrictions most guides skip over."
 ogImage: /blog/images/cozy-cactus-backyard.webp
 heroImage: /blog/images/cozy-cactus-backyard.webp
 heroAlt: "person and dog walking through the desert near Palm Springs California on a sunny day"
