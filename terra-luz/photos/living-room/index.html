@@ -38,6 +38,7 @@
             --font-serif: 'Cormorant Garamond', serif;
             --font-sans: 'Work Sans', sans-serif;
         }
+        html, body { overflow-x: hidden; }
         body { font-family: var(--font-sans); color: var(--charcoal); line-height: 1.7; background-color: var(--cream); }
         nav {
             position: fixed; top: 0; width: 100%;
@@ -62,7 +63,22 @@
         .content-section { padding: 5rem 5%; max-width: 800px; margin: 0 auto; }
         .content-section p { font-size: 1.05rem; margin-bottom: 1.5rem; color: #333; }
         .photo-grid { padding: 0 5% 5rem; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-        .photo-grid img { width: 100%; height: 320px; object-fit: cover; display: block; }
+        .gallery-item { display: block; }
+        .gallery-img-wrap { height: 320px; overflow: hidden; cursor: zoom-in; border-radius: 8px; }
+        .gallery-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
+        .gallery-img-wrap:hover img { transform: scale(1.05); }
+
+        /* Lightbox — ported from /terra-luz/ so every gallery page shares one zoom pattern */
+        #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9999; align-items: center; justify-content: center; }
+        #lightbox.active { display: flex; flex-direction: column; justify-content: center; }
+        #lightbox-inner { display: flex; flex-direction: column; align-items: center; max-width: 92vw; }
+        #lightbox img { max-width: 92vw; max-height: 76vh; object-fit: contain; border-radius: 4px; box-shadow: 0 8px 40px rgba(0,0,0,0.6); display: block; }
+        #lightbox-close { position: fixed; top: 1.2rem; right: 1.5rem; color: white; font-size: 2.2rem; cursor: pointer; line-height: 1; opacity: 0.85; }
+        #lightbox-close:hover { opacity: 1; }
+        #lightbox-prev, #lightbox-next { position: fixed; top: 50%; transform: translateY(-50%); color: white; font-size: 2.5rem; cursor: pointer; padding: 0.5rem 1rem; opacity: 0.7; user-select: none; }
+        #lightbox-prev:hover, #lightbox-next:hover { opacity: 1; }
+        #lightbox-prev { left: 1rem; }
+        #lightbox-next { right: 1rem; }
         .cta-section { background: white; padding: 4rem 5%; text-align: center; }
         .cta-section h2 { font-family: var(--font-serif); font-size: 2rem; color: var(--terracotta); margin-bottom: 1rem; }
         .cta-section p { font-size: 1rem; color: #555; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
@@ -104,20 +120,59 @@
     </div>
 
     <div class="photo-grid">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0062.webp" alt="Terra Luz living room with rattan daybed and tropical plant at window in warm afternoon light" loading="lazy" decoding="async" width="800" height="320">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0066.webp" alt="Terra Luz living room walnut credenza with warm afternoon light and bookcase full of actual books" loading="lazy" decoding="async" width="800" height="320">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0068.webp" alt="Terra Luz living room wide view with rattan seating, jute rug, and terracotta accent walls" loading="lazy" decoding="async" width="800" height="320">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0072.webp" alt="Terra Luz living room rattan chairs and fan palms in blue pots beside the fireplace" loading="lazy" decoding="async" width="800" height="320">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0076.webp" alt="Terra Luz living room detail of Etsy artwork above the fireplace with warm desert afternoon light" loading="lazy" decoding="async" width="800" height="320">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0080.webp" alt="Terra Luz terracotta lime-wash TV niche with walnut credenza and tropical floor plants" loading="lazy" decoding="async" width="800" height="320">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0133.webp" alt="Terra Luz living room from hallway showing full rattan seating arrangement and bookcase" loading="lazy" decoding="async" width="800" height="320">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0380.webp" alt="Terra Luz living room with rattan furniture, tropical plants in blue pots, and warm afternoon desert light" loading="lazy" decoding="async" width="800" height="320">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0063.webp" alt="Terra Luz living room rattan console table with guitar player painting, white vase, and globe floor lamp" loading="lazy" width="1200" height="800">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0073.webp" alt="Terra Luz living room terracotta lime-wash TV niche with walnut rattan credenza and two fan palms in blue pots" loading="lazy" width="1200" height="800">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0075.webp" alt="Terra Luz living room sofa with green beaded pillow, linen pillow, globe floor lamp, and rattan console with framed art gallery wall" loading="lazy" width="1200" height="800">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0081.webp" alt="Terra Luz living room fan palm in blue ceramic pot beside walnut TV credenza with hallway to bedroom beyond" loading="lazy" width="1200" height="800">
-        <img src="/terra-luz/photos/living-room/TerraLuz2026-0550.webp" alt="Terra Luz open living and dining area showing sectional sofa, round coffee table, eight-seat dining table, rattan pendant light, and ceiling fan" loading="lazy" width="1200" height="800">
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0062.webp" alt="Terra Luz living room with rattan daybed and tropical plant at window in warm afternoon light" loading="lazy" decoding="async" width="800" height="320"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0066.webp" alt="Terra Luz living room walnut credenza with warm afternoon light and bookcase full of actual books" loading="lazy" decoding="async" width="800" height="320"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0068.webp" alt="Terra Luz living room wide view with rattan seating, jute rug, and terracotta accent walls" loading="lazy" decoding="async" width="800" height="320"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0072.webp" alt="Terra Luz living room rattan chairs and fan palms in blue pots beside the fireplace" loading="lazy" decoding="async" width="800" height="320"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0076.webp" alt="Terra Luz living room detail of Etsy artwork above the fireplace with warm desert afternoon light" loading="lazy" decoding="async" width="800" height="320"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0080.webp" alt="Terra Luz terracotta lime-wash TV niche with walnut credenza and tropical floor plants" loading="lazy" decoding="async" width="800" height="320"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0133.webp" alt="Terra Luz living room from hallway showing full rattan seating arrangement and bookcase" loading="lazy" decoding="async" width="800" height="320"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0380.webp" alt="Terra Luz living room with rattan furniture, tropical plants in blue pots, and warm afternoon desert light" loading="lazy" decoding="async" width="800" height="320"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0063.webp" alt="Terra Luz living room rattan console table with guitar player painting, white vase, and globe floor lamp" loading="lazy" width="1200" height="800"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0073.webp" alt="Terra Luz living room terracotta lime-wash TV niche with walnut rattan credenza and two fan palms in blue pots" loading="lazy" width="1200" height="800"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0075.webp" alt="Terra Luz living room sofa with green beaded pillow, linen pillow, globe floor lamp, and rattan console with framed art gallery wall" loading="lazy" width="1200" height="800"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0081.webp" alt="Terra Luz living room fan palm in blue ceramic pot beside walnut TV credenza with hallway to bedroom beyond" loading="lazy" width="1200" height="800"></div></div>
+        <div class="gallery-item"><div class="gallery-img-wrap"><img src="/terra-luz/photos/living-room/TerraLuz2026-0550.webp" alt="Terra Luz open living and dining area showing sectional sofa, round coffee table, eight-seat dining table, rattan pendant light, and ceiling fan" loading="lazy" width="1200" height="800"></div></div>
     </div>
+
+    <div id="lightbox" role="dialog" aria-modal="true">
+      <span id="lightbox-close" aria-label="Close">&times;</span>
+      <span id="lightbox-prev" aria-label="Previous">&#8249;</span>
+      <div id="lightbox-inner">
+        <img id="lightbox-img" src="" alt="">
+      </div>
+      <span id="lightbox-next" aria-label="Next">&#8250;</span>
+    </div>
+    <script>
+    (function() {
+      const items = Array.from(document.querySelectorAll('.gallery-item img'));
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      let current = 0;
+      function show(i) {
+        current = (i + items.length) % items.length;
+        lbImg.src = items[current].src;
+        lbImg.alt = items[current].alt;
+        lb.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      function close() {
+        lb.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      items.forEach((img, i) => img.closest('.gallery-item').addEventListener('click', () => show(i)));
+      document.getElementById('lightbox-close').addEventListener('click', close);
+      document.getElementById('lightbox-prev').addEventListener('click', () => show(current - 1));
+      document.getElementById('lightbox-next').addEventListener('click', () => show(current + 1));
+      lb.addEventListener('click', e => { if (e.target === lb) close(); });
+      document.addEventListener('keydown', e => {
+        if (!lb.classList.contains('active')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') show(current - 1);
+        if (e.key === 'ArrowRight') show(current + 1);
+      });
+    })();
+    </script>
 
     <section class="cta-section">
         <h2>Book Terra Luz</h2>
