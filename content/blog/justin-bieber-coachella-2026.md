@@ -82,7 +82,7 @@ layout: blog-post.njk
 
 <p>The smartest move after a festival like this one is to lock in your housing before the tickets even go on sale. Every year I watch groups scramble for rentals in March because they waited until the lineup dropped. The houses closest to the polo grounds go first. If you want walking distance to the <a href="https://empirepolo.com/" target="_blank" rel="noopener noreferrer"><strong>Empire Polo Club</strong></a>, both <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> are worth looking at now. Terra Luz has the private saltwater pool; the Cozy Cactus has a private hot tub and three heated community pools inside Indian Palms. Book either before the May 1 ticket rush puts everyone in booking mode at the same time.</p>
 
-<p>Read the <a href="/blog/where-to-stay-coachella-2026/">full Coachella 2026 accommodation guide</a> for a breakdown of what's close, what it costs, and why Indio is the right base. And if you're figuring out what to do in the valley between festival weekends, the <a href="/blog/indio-between-coachella-weekends/">Indio between Coachella weekends guide</a> has you covered.</p>
+<p>Read the <a href="/blog/where-to-stay-coachella/">full Coachella 2026 accommodation guide</a> for a breakdown of what's close, what it costs, and why Indio is the right base. And if you're figuring out what to do in the valley between festival weekends, the <a href="/blog/indio-between-coachella-weekends/">Indio between Coachella weekends guide</a> has you covered.</p>
 
 <h2>Frequently Asked Questions</h2>
 

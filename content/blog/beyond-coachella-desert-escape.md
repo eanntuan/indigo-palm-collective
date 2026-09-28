@@ -48,7 +48,7 @@ layout: blog-post.njk
 
 <p>Spring is the valley's most famous season. <strong>Coachella and Stagecoach</strong> draw hundreds of thousands of people. But even if you're not festival-bound, spring has serious appeal: desert blooms if the winter rains cooperated, hiking weather that's warm but not brutal, and BNP Paribas Open tennis in March.</p>
 
-<p>For more on making the most of festival season from a real home base, read <a href="/blog/where-to-stay-coachella-2026/">our Coachella accommodation guide</a>.</p>
+<p>For more on making the most of festival season from a real home base, read <a href="/blog/where-to-stay-coachella/">our Coachella accommodation guide</a>.</p>
 
 <h2>Summer (June – August): Peak Heat, Peak Pool Season</h2>
 

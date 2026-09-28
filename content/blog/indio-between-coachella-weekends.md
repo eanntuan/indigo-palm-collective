@@ -193,7 +193,7 @@ layout: blog-post.njk
 
 <p>If you're looking for a place to land between weekends, <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> are both in Indio, a short drive from the grounds. Terra Luz has a private saltwater pool; Cozy Cactus has a private hot tub and community pool steps away.</p>
 
-<p>If you're looking for a longer run of local recommendations, the kind of spots that reward repeat visits, take a look at the <a href="/blog/indio-local-gems/">full local gems guide</a>. And if you're still sorting out where to stay for the whole stretch, the <a href="/blog/where-to-stay-coachella-2026/">Coachella accommodation breakdown</a> has an honest take on every option from camping to vacation rental to hotel.</p>
+<p>If you're looking for a longer run of local recommendations, the kind of spots that reward repeat visits, take a look at the <a href="/blog/indio-local-gems/">full local gems guide</a>. And if you're still sorting out where to stay for the whole stretch, the <a href="/blog/where-to-stay-coachella/">Coachella accommodation breakdown</a> has an honest take on every option from camping to vacation rental to hotel.</p>
 
 <script type="application/ld+json">
 {

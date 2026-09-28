@@ -138,7 +138,7 @@ relatedPosts:
 
 <p>If you have questions about whether Terra Luz is the right fit for your group, email indigopalmco@gmail.com before booking. Honest answer guaranteed, including when the honest answer is no.</p>
 
-<p>Related reads: <a href="/blog/terra-luz-indio-local-guide/">What to do in Indio near Terra Luz</a> · <a href="/blog/terra-luz-the-reveal/">The full renovation, room by room</a> · <a href="/blog/where-to-stay-coachella-2026/">Where to stay for Coachella 2026</a></p>
+<p>Related reads: <a href="/blog/terra-luz-indio-local-guide/">What to do in Indio near Terra Luz</a> · <a href="/blog/terra-luz-the-reveal/">The full renovation, room by room</a> · <a href="/blog/where-to-stay-coachella/">Where to stay for Coachella 2026</a></p>
 
 <h3>FAQ: Terra Luz Amenities and Booking</h3>
 

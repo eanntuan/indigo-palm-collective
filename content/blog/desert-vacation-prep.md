@@ -84,7 +84,7 @@ relatedPosts:
 
 <p>The Valley is spread out. Indio and Palm Springs are about 25 miles apart. You will want a car. Rideshare exists but is slower and more expensive than you'd expect during busy weekends.</p>
 
-<p>If you're here for a festival (Coachella, Stagecoach), the calculus changes. Staying walkable to the venue is a different trip than staying in Palm Springs and commuting. We cover that in detail in our <a href="/blog/where-to-stay-coachella-2026/">Coachella accommodation guide</a>.</p>
+<p>If you're here for a festival (Coachella, Stagecoach), the calculus changes. Staying walkable to the venue is a different trip than staying in Palm Springs and commuting. We cover that in detail in our <a href="/blog/where-to-stay-coachella/">Coachella accommodation guide</a>.</p>
 
 <p>For everyday driving: gas up before you need to. The valley is large and not all areas have stations close together.</p>
 
