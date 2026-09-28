@@ -354,6 +354,7 @@
                 <button type="submit" style="padding:0.75rem 1.5rem;background:#B67550;color:#fff;border:none;border-radius:2px;font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">Subscribe</button>
             </form>
             <p id="blogEmailSuccess" style="display:none;color:#738561;font-size:0.9rem;margin-top:1rem;">You're in. Check your inbox.</p>
+            <p id="blogEmailError" style="display:none;color:#a6473c;font-size:0.85rem;margin-top:1rem;">Something went wrong on our end. Email <a href="mailto:indigopalmco@gmail.com?subject=Newsletter%20signup" style="color:inherit;text-decoration:underline;">indigopalmco@gmail.com</a> and we'll add you directly.</p>
         </div>
     </section>
     <script>
@@ -361,6 +362,8 @@
             e.preventDefault();
             const email = this.querySelector('input[name="email"]').value;
             const btn = this.querySelector('button');
+            const errorEl = document.getElementById('blogEmailError');
+            errorEl.style.display = 'none';
             btn.disabled = true; btn.textContent = 'Subscribing...';
             try {
                 const res = await fetch('https://newsletter.indigopalm.co/signup', {
@@ -368,7 +371,7 @@
                     headers: {'Content-Type':'application/json'},
                     body: JSON.stringify({email})
                 });
-                const data = await res.json();
+                const data = res.ok ? await res.json() : { success: false };
                 if (data.success) {
                     this.style.display = 'none';
                     document.getElementById('blogEmailSuccess').style.display = 'block';
@@ -376,8 +379,12 @@
                     if (typeof pintrk !== 'undefined') pintrk('track','lead');
                 } else {
                     btn.disabled = false; btn.textContent = 'Subscribe';
+                    errorEl.style.display = 'block';
                 }
-            } catch(err) { btn.disabled = false; btn.textContent = 'Subscribe'; }
+            } catch(err) {
+                btn.disabled = false; btn.textContent = 'Subscribe';
+                errorEl.style.display = 'block';
+            }
         });
     </script>
 

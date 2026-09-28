@@ -307,7 +307,7 @@
 <img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over Via Sol in Palm Springs with warm golden light and silhouetted palm trees" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The light in Palm Springs at the end of the day. It informs the whole color palette at The Sundune.</p>
 <h2>What's Still Being Decided</h2>
-<p>Honest answer: the design is still evolving. The balcony layout isn't finalized. The kitchen table situation has three options in play. The gallery wall placement needs an on-site day before we commit to anything. We're also warming up the lighting throughout: swapping cooler can lights for warmer bulbs and adding floor lamps with shades or frosted globes.</p>
+<p>The design is still evolving: the balcony layout isn't finalized, the kitchen table situation has three options in play, and the gallery wall placement needs an on-site day before we commit to anything. We're also warming up the lighting throughout, swapping cooler can lights for warmer bulbs and adding floor lamps with shades or frosted globes.</p>
 <p>That's just how a real renovation goes. You make the decisions you can make from afar, then you show up and measure things and adjust. Some things look different in person.</p>
 <p>What's not changing is the identity: coastal-desert, playful and nostalgic, a place that earns the word basecamp without needing to use it as a marketing term.</p>
 <p>You can browse full details and availability at <a href="/the-sundune/">The Sundune listing page</a>. For an honest guest perspective, read the <a href="/blog/sundune-palm-springs-review/">Sundune Palm Springs review</a>. If you're still sorting out your itinerary, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> breaks down which city makes a better base depending on what you're planning to do. And if the design process interests you, the <a href="/blog/terra-luz-origin-story/">Terra Luz origin story</a> shows how Dawn applied a completely different set of brand filters to a property in Indio and what that looks like from the inside.</p>
@@ -410,6 +410,7 @@
                 <button type="submit" style="padding:0.75rem 1.5rem;background:#B67550;color:#fff;border:none;border-radius:2px;font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">Subscribe</button>
             </form>
             <p id="blogEmailSuccess" style="display:none;color:#738561;font-size:0.9rem;margin-top:1rem;">You're in. Check your inbox.</p>
+            <p id="blogEmailError" style="display:none;color:#a6473c;font-size:0.85rem;margin-top:1rem;">Something went wrong on our end. Email <a href="mailto:indigopalmco@gmail.com?subject=Newsletter%20signup" style="color:inherit;text-decoration:underline;">indigopalmco@gmail.com</a> and we'll add you directly.</p>
         </div>
     </section>
     <script>
@@ -417,6 +418,8 @@
             e.preventDefault();
             const email = this.querySelector('input[name="email"]').value;
             const btn = this.querySelector('button');
+            const errorEl = document.getElementById('blogEmailError');
+            errorEl.style.display = 'none';
             btn.disabled = true; btn.textContent = 'Subscribing...';
             try {
                 const res = await fetch('https://newsletter.indigopalm.co/signup', {
@@ -424,7 +427,7 @@
                     headers: {'Content-Type':'application/json'},
                     body: JSON.stringify({email})
                 });
-                const data = await res.json();
+                const data = res.ok ? await res.json() : { success: false };
                 if (data.success) {
                     this.style.display = 'none';
                     document.getElementById('blogEmailSuccess').style.display = 'block';
@@ -432,8 +435,12 @@
                     if (typeof pintrk !== 'undefined') pintrk('track','lead');
                 } else {
                     btn.disabled = false; btn.textContent = 'Subscribe';
+                    errorEl.style.display = 'block';
                 }
-            } catch(err) { btn.disabled = false; btn.textContent = 'Subscribe'; }
+            } catch(err) {
+                btn.disabled = false; btn.textContent = 'Subscribe';
+                errorEl.style.display = 'block';
+            }
         });
     </script>
 

@@ -283,7 +283,7 @@
 <h2>During Festival Weeks</h2>
 <p>Coachella and Stagecoach week (mid-April through early May) is when ClassPass availability in the valley tightens the most. Visitors who are regulars know to book classes the moment they become available. The Indio-adjacent studios get busy because many festival attendees are staying nearby.</p>
 <p>BNP Paribas Open week in March is similar, particularly for studios in Palm Desert and Indian Wells. That crowd skews fitness-oriented and tends to book early.</p>
-<p>The honest version: if your ClassPass routine at home depends on last-minute availability, the desert during festival season won't work that way. Book your classes when you book your flights.</p>
+<p>If your ClassPass routine at home depends on last-minute availability, the desert during festival season won't work that way. Book your classes when you book your flights.</p>
 <h2>What to Do If Nothing's Available</h2>
 <p>The valley has several drop-in studios that don't use ClassPass at all. Palm Springs has yoga studios on Palm Canyon Drive that take walk-ins. Some resort fitness centers charge a day pass fee that's reasonable if you're already in the area. The Palm Springs Recreation Department has public facilities that are open to visitors.</p>
 <p>If you want something outdoor and the heat is tolerable, the Indian Canyons trails and the trails at Palm Springs offer solid morning hikes that don't require a reservation. The <a href="/blog/palm-springs-morning-vs-evening/">Palm Springs morning guide</a> covers some of this if you want the fuller picture on timing your outdoor time right.</p>
@@ -442,6 +442,7 @@
                 <button type="submit" style="padding:0.75rem 1.5rem;background:#B67550;color:#fff;border:none;border-radius:2px;font-size:0.8rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;">Subscribe</button>
             </form>
             <p id="blogEmailSuccess" style="display:none;color:#738561;font-size:0.9rem;margin-top:1rem;">You're in. Check your inbox.</p>
+            <p id="blogEmailError" style="display:none;color:#a6473c;font-size:0.85rem;margin-top:1rem;">Something went wrong on our end. Email <a href="mailto:indigopalmco@gmail.com?subject=Newsletter%20signup" style="color:inherit;text-decoration:underline;">indigopalmco@gmail.com</a> and we'll add you directly.</p>
         </div>
     </section>
     <script>
@@ -449,6 +450,8 @@
             e.preventDefault();
             const email = this.querySelector('input[name="email"]').value;
             const btn = this.querySelector('button');
+            const errorEl = document.getElementById('blogEmailError');
+            errorEl.style.display = 'none';
             btn.disabled = true; btn.textContent = 'Subscribing...';
             try {
                 const res = await fetch('https://newsletter.indigopalm.co/signup', {
@@ -456,7 +459,7 @@
                     headers: {'Content-Type':'application/json'},
                     body: JSON.stringify({email})
                 });
-                const data = await res.json();
+                const data = res.ok ? await res.json() : { success: false };
                 if (data.success) {
                     this.style.display = 'none';
                     document.getElementById('blogEmailSuccess').style.display = 'block';
@@ -464,8 +467,12 @@
                     if (typeof pintrk !== 'undefined') pintrk('track','lead');
                 } else {
                     btn.disabled = false; btn.textContent = 'Subscribe';
+                    errorEl.style.display = 'block';
                 }
-            } catch(err) { btn.disabled = false; btn.textContent = 'Subscribe'; }
+            } catch(err) {
+                btn.disabled = false; btn.textContent = 'Subscribe';
+                errorEl.style.display = 'block';
+            }
         });
     </script>
 
