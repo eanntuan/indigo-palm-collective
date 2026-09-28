@@ -2757,7 +2757,7 @@ Manual 90-day pull (2026-06-21 to 2026-09-19): 539 clicks, 69,061 impressions, 0
 
 ~~**TASK GSC-30: Rewrite `palm-springs-vs-indio` meta description to mirror "how far" query phrasing (15 min, High)**~~ ✅ **DONE 2026-09-19** — Meta now opens "How far is Indio from Palm Springs? 25 miles, a 30-40 minute drive...". Re-check CTR on this specific query at the next GSC check-in ~1 week out (~2026-09-26+, per standard practice — CTR movement from a meta change needs Google to re-crawl and re-serve the new snippet first).
 
-**TASK GSC-31: Title/meta rewrites, 4 more pages ranking well but under-converting (2026-09-19)** ✅ **DONE**
+~~**TASK GSC-31: Title/meta rewrites, 4 more pages ranking well but under-converting (2026-09-19)**~~ ✅ **DONE**
 From the 28-day GSC pull's title/meta rewrite candidate list — all 4 confirmed not previously touched, meta/title current state checked against actual post content before rewriting (caught and corrected one factual error of my own: a drafted $40 LAX shuttle price against the post's real $100-150 figure).
 - `lax-to-palm-springs` (258 impr, 0.8% CTR, pos 7.8) — meta now leads with the 2-hour/120-mile drive stat instead of "Honest trade-offs" filler.
 - `pet-friendly-palm-springs` (239 impr, 0.4% CTR, pos 12.0) — dropped "honest guide" filler, meta now leads with the actual constraint (most rentals don't allow pets, two of ours do).
@@ -2829,4 +2829,56 @@ No full pass. Last full inventory 2026-09-16 (4 days, inside the 30-day window).
 **Orphan/weak pages:** 0 orphaned, 0 weakly linked (108 pages checked) — yesterday's fix of 5 orphans + 23 weakly-linked posts confirmed fully holding.
 
 All three checks clean. No action needed this run.
+
+### What changed on 2026-09-28 — GSC Check-in
+
+**Housekeeping first:** found and dropped a stale git stash (`47f7db8`, the attribution-tracking feature) — verified byte-for-byte redundant with commit `f4150d4` (an ancestor of current HEAD) before dropping, not assumed. Also found an uncommitted `sitemap.xml` edit adding two redirect-stub URLs (`bnp-paribas-open-vacation-rental-guide`, `where-to-stay-coachella-2026`, both `layout: redirect.njk`) — reverted rather than committed, since submitting redirecting URLs in a sitemap is a mistake, not a fix (matches the existing TASK GSC-22 precedent at line 802 that already ruled this out once). Their canonical targets are already correctly in both the sitemap and the real blog card list. Correction: the real, live card list is `blog/index.html`, not the root `blog.html` (which is just a dead `noindex` redirect stub) — CLAUDE.md's "add card to blog.html" instruction is stale and should say `blog/index.html`; flagging for Eann, not editing the doc myself.
+
+**Period:** 2026-06-30 to 2026-09-28 (90 days) vs. prior 90 days. 584 clicks (+411), 71,736 impressions (+46,844), 0.8% CTR, avg position 10.2 — growth trend continues, CTR still flat.
+
+**GSC-30 re-check (was due ~2026-09-26+):** the "how far is indio from palm springs" meta rewrite (done 2026-09-19) has **not** moved CTR after 9 days — 835 impressions/0.4% CTR now vs. 832/0.5% one day post-rewrite. Recommend against a further cosmetic rewrite here; three attempts (June 22 title, June 26 meta, Sep 19 meta) across this query/page have not shifted CTR, so the ceiling is more likely structural (an easily-answered informational query where searchers may be satisfied by the SERP snippet itself, or Google not using our meta at all) than a copy problem. Leaving as-is rather than a low-confidence 4th attempt.
+
+**Other CTR-opportunity candidates, all re-checked, nothing new cleared the bar:** `bnp-paribas-open-palm-springs`, `palm-springs-poolside-bars-resort-dining`, `palm-springs-art-galleries-guide` (all rewritten 2026-09-17) still too soon. `indio-between-coachella-weekends` holds at no-4th-rewrite precedent (3 prior). `game-night-trivia-coachella-valley` still thin (76 impr). `/blog/where-to-stay-coachella/` (9,329 impr, 0.2% CTR, pos 8.6) and `/blog/palm-springs-surf-club/` (9,568 impr, 0.5% CTR, pos 8.8) both look like fresh CTR problems on a first read of the 90-day table, but both are long-since-rewritten, well-tracked top winners (surf-club: GSC-6 June 24, GSC-11 June 26; where-to-stay-coachella: GSC-2 June 22, GSC-13 June 26, plus a full structural refresh) that already carry the largest click volume on the site — not new problems, no further action queued.
+
+**Content/authority bucket, unchanged from 2026-09-20:** `best-restaurants-palm-springs` (1,382 impr, pos 32.6), `stagecoach-2027-where-to-stay` (649 impr, 11.8% of impressions ≤ pos 20), `/blog/` index (250 impr, pos 16.8), `palm-springs-with-kids` (250 impr, pos 45.4), `salton-sea-day-trip` (85 impr). New to this table (low volume, not urgent): `/vacation-rentals-with-private-pool/` (83 impr, pos 10.2) — first appearance in the low-click diagnostic, too small to prioritize yet.
+
+### GSC Alert Email Review — 2026-09-28
+
+Searched Gmail for GSC alert emails since 2026-09-20 (last reviewed then). None found. No open deficiencies.
+
+### Pinterest Check-in — 2026-09-28
+
+**30-day account totals:** 1,704 impressions, 5 saves, 69 pin clicks, 17 outbound clicks. Impressions down slightly vs. 2026-09-20's ~1,750 (essentially flat/noisy, not a real trend break). Well below the 25K link-switch threshold; link stays on Airbnb.
+
+**Board anomaly has sharpened further, now a persistent pattern across 4+ check-ins:** the 2-pin "Interior Design" board leads every metric (916 impressions, 49 pin clicks, 14 outbound clicks — 458 impr/pin) while the 62-pin flagship "Terra Luz | Palm Springs Luxury Airbnb" board manages only 95 impressions and 1 pin click (1.5 impr/pin). New data point this run: the small 7-pin "Cozy cactus instagram" board is the clear #2 performer (417 impressions, 13 pin clicks) — meaningfully outperforming the 54-pin "Cozy Cactus | Palm Springs Family Airbnb" flagship board (81 impressions, 2 pin clicks) too. This is no longer a one-off worth a passive note — two small, seemingly-incidental boards are dramatically outperforming both property flagship boards on a per-pin basis, across a month of data. Recommend actually opening the Interior Design and Cozy Cactus Instagram boards and comparing their pin hooks/titles/images against the flagship boards' — this has been flagged 4 times now without being investigated.
+
+**Quora:** no fresher count available than the June 26, 2026 sabbir_context.md snapshot (10 seed questions, 5-8 views each) — data gap, not re-verified this run.
+
+**FAQPage JSON-LD:** confirmed comprehensive as of 2026-09-19 (all 98 blog posts + 8/11 property/landing pages covered). No new posts published since, nothing new to check.
+
+### GA4 Check-in — 2026-09-28
+
+**Period:** 2026-09-21 to 2026-09-28 (7 days) vs. prior 7 days. 264 active users (+62), 294 sessions (+56), avg session duration 78s (**-52s**, a 40% drop from 130s).
+
+**Likely bot/crawler traffic inflating this week's numbers:** "Council Bluffs" is the #1 top city by active users (118 of 264 — 45% of all users), far ahead of Los Angeles (19), the site's actual expected top market. Council Bluffs, IA hosts major Google/Meta data centers — this is a classic signature of automated/crawler traffic that executes JS (and therefore fires GA4 tags) rather than real prospective guests. This lines up with the simultaneous 40% drop in avg session duration and the jump in Direct-channel sessions (173 vs. Organic Search's 91) — bots typically show near-zero engagement and no referrer. Recommend Eann treat this week's traffic/engagement numbers as unreliable until this is confirmed one way or the other (check GA4's bot-filtering settings are on, or segment out that city) rather than reading the raw growth as real.
+
+**High-bounce pages:** none found (no page hit both the 50+ views and >60% bounce threshold).
+
+**Property page visibility:** Terra Luz 15 views / Cozy Cactus 8 / Sundune 3 — Sundune trailing significantly this week; within normal week-to-week noise range for a 7-day window, not flagging as a new structural gap yet.
+
+### PSL Newsletter Inspo — 2026-09-28
+
+Still nothing newer than Aug 14, 2026. Gap is now **45 days** — well past the 30-day flag threshold and now the 4th+ consecutive run reporting the exact same latest email. Reiterating per the Housekeeping rule with more urgency than prior runs: this needs Eann to actually check the subscription (lapsed renewal, filtered to spam/promotions, or PSL genuinely stopped publishing) rather than continuing to note it passively. No content mined this run.
+
+### Hero Image Audit — 2026-09-28
+
+No full pass. Last full inventory 2026-09-16 (12 days, inside the 30-day window). No new blog posts published or modified since the 2026-09-20 check. Nothing to re-check. Next full pass due on/after 2026-10-16.
+
+### Technical SEO Health Checks (Phase 0.8) — 2026-09-28
+
+**Broken links:** 0 found (110 pages, 3,093 internal targets, internal-only pass).
+**Alt-text/image attributes:** 962 images across 108 pages, same 3 LOW findings as every prior run (`casa-moto-pet-friendly-desert`, `best-vacation-rentals-pool-coachella-valley`, `coachella-valley-weekend-getaway`, all "missing loading=lazy") — re-verified as the documented checker false-positive (genuine hero images correctly `loading="eager"`), not changed.
+**Orphan/weak pages:** 0 orphaned, 0 weakly linked (108 pages checked).
+
+All three checks clean, holding steady for 8 days straight. No action needed this run.
 
