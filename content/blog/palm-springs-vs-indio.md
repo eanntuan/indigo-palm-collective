@@ -3,8 +3,8 @@ title: "Indio vs. Palm Springs: 25 Miles Apart, Which to Pick"
 date: 2026-02-05
 dateModified: 2026-07-30
 metaDescription: "How far is Indio from Palm Springs? 25 miles, a 30-40 minute drive on the I-10. We own rentals in both cities, here's which one fits your trip."
-ogImage: /blog/images/blog-hero-palm-springs.webp
-heroImage: /blog/images/blog-hero-palm-springs.webp
+ogImage: /blog/images/ps-boulevard-palms-mountains.webp
+heroImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroAlt: "Palm tree-lined boulevard with the San Jacinto Mountains rising behind it in Palm Springs, California"
 keywords:
   - palm springs vs indio
