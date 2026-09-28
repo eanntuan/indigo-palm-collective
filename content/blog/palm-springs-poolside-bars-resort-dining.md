@@ -1,8 +1,8 @@
 ---
-title: "6 Palm Springs Resort Pools You Can Access Without a Room"
+title: "8 Palm Springs Resort Pools You Can Access Without a Room"
 date: 2026-07-22
-dateModified: 2026-09-16
-metaDescription: "Get the Palm Springs resort pool day and poolside cocktail without booking a room: 6 spots welcoming walk-ins and day passes across the valley."
+dateModified: 2026-09-28
+metaDescription: "Get the Palm Springs resort pool day and poolside cocktail without booking a room: 8 spots welcoming walk-ins and day passes across the valley."
 ogImage: /blog/images/palm-springs-bar-cocktails.webp
 heroImage: /blog/images/palm-springs-bar-cocktails.webp
 heroAlt: "Cocktails lined up on a Palm Springs bar, the poolside-resort drink you can order as a walk-in without booking a hotel room"
@@ -17,7 +17,7 @@ keywords:
 articleSection: "Local Guide"
 property: all
 readTime: "8 min read"
-excerpt: "Where to get the resort pool day and poolside cocktail without booking the room. Six Coachella Valley spots that welcome walk-ins and day passes."
+excerpt: "Where to get the resort pool day and poolside cocktail without booking the room. Eight Coachella Valley spots that welcome walk-ins and day passes."
 layout: blog-post.njk
 ---
 
@@ -33,7 +33,7 @@ layout: blog-post.njk
           "name": "Can you use a Palm Springs resort pool without staying there?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Often, yes, through a day pass. As of 2026, resorts like the Ace Hotel & Swim Club and Renaissance Esmeralda in Indian Wells sell pool day passes to non-guests, usually booked ahead on ResortPass or the hotel's own site, that get you a lounge chair, pool and hot tub access, and poolside food and drink. Passes and cabanas sell out on summer weekends, so reserve early and confirm the current price and any age limits before you drive over."
+            "text": "Often, yes, through a day pass. As of 2026, resorts like the Ace Hotel & Swim Club, The Saguaro Palm Springs, Hotel Zoso, and Renaissance Esmeralda in Indian Wells sell pool day passes to non-guests, usually booked ahead on ResortPass or the hotel's own site, that get you a lounge chair, pool and hot tub access, and poolside food and drink. Passes and cabanas sell out on summer weekends, so reserve early and confirm the current price and any age limits before you drive over."
           }
         },
         {
@@ -76,6 +76,8 @@ layout: blog-post.njk
   <table>
     <tr><th>Easiest walk-in</th><td>Palm Canyon Swim &amp; Social at ARRIVE, no reservation for the restaurant</td></tr>
     <tr><th>Best day pass</th><td>Ace Hotel &amp; Swim Club, pool + hot tub + poolside bites via day pass</td></tr>
+    <tr><th>Best pool party</th><td>The Saguaro Palm Springs, DJ pool parties Sat/Sun via ResortPass</td></tr>
+    <tr><th>Cheapest downtown pool</th><td>Hotel Zoso, walkable to Palm Canyon Drive, budget day pass</td></tr>
     <tr><th>Fanciest dinner</th><td>The Colony Club at Colony Palms, Michelin-listed, book on OpenTable</td></tr>
     <tr><th>Closest to Indio</th><td>H2O Pool Bar, Renaissance Esmeralda in Indian Wells (~20 min)</td></tr>
     <tr><th>Most under the radar</th><td>The Barn Kitchen at Sparrows Lodge, call ahead for a seat</td></tr>
@@ -110,6 +112,18 @@ layout: blog-post.njk
 
 <p>Colony Palms also sells a poolside day pass that covers a cushioned chaise and towel service if you want to make an afternoon of it, but the restaurant alone is worth the reservation. This is date-night territory, not flip-flops.</p>
 
+<h3>4. The Saguaro Palm Springs</h3>
+
+<p>1800 East Palm Canyon Drive. This is the colorful one, the pool everyone's seen a photo of even if they've never been to Palm Springs: bright orange, yellow, and pink cabana walls around a big central pool with two hot tubs. Day passes through ResortPass get you a wristband and the run of the pool deck, and weekend pool parties bring a live DJ, Saturdays 1 to 4pm and Sundays 11am to 4pm. Weekday bookings come with a food-and-beverage credit toward El Jefe, the on-site cantina doing tacos and margaritas.</p>
+
+<p>Pricing has run anywhere from around $40 to $65 depending on the day, so check ResortPass for the current rate before you commit. Passes sell out on pool-party weekends, so book a few days ahead rather than same-day.</p>
+
+<h3>5. Hotel Zoso</h3>
+
+<p>150 South Indian Canyon Drive, right downtown. The pool here skews toward a lively midweek or weekend hangout, shaded cabanas and daybeds, a poolside bar, and The Kitchen serving brunch through poolside lunch. Day pass access books through ResortPass, and the walkable downtown location means you can pair the pool with dinner or shopping on Palm Canyon Drive without moving the car.</p>
+
+<p>Standard day-pass rules apply: no outside food or drink, no speakers, no pool floats beyond child safety flotation. It's a good pick if the Saguaro's pool-party crowd is more scene than you're after but you still want a downtown walk-in option.</p>
+
 <hr style="border: none; border-top: 1px solid #ddd; margin: 3rem 0;">
 
 <p><strong>Or skip the day pass entirely.</strong> Here's my honest bias: the whole reason I bought places with pools is so my guests don't have to buy a stranger's lounge chair by the hour. <a href="/terra-luz/">Terra Luz</a> in Indio has a private pool that's yours alone, no day pass, no crowd, and spa heating if you want the hot tub going. <a href="/cozy-cactus/">The Cozy Cactus</a> pairs a shared community pool with a private hot tub in the backyard, and both sit walking distance from the Empire Polo Club for festival weekends. Book direct at <a href="https://indigopalm.co/">indigopalm.co</a> and you skip Airbnb's 20% guest service fee, which on a long weekend is real money back in the taco budget.</p>
@@ -121,7 +135,7 @@ layout: blog-post.njk
 
 <h2>Cathedral City</h2>
 
-<h3>4. Sol y Sombra at the Paloma Resort</h3>
+<h3>6. Sol y Sombra at the Paloma Resort</h3>
 
 <p>A little east of downtown, <a href="https://thepalomaresort.com/dining/" target="_blank" rel="noopener"><strong>Sol y Sombra</strong></a> sits in the historic mission-style Adobe at the Paloma Resort in Cathedral City, and it's a fully public restaurant, no resort stay required. The menu is Spanish-leaning tapas and paella built around the valley's own produce, and there's a misted patio for the warmer evenings. As of 2026 it runs dinner Tuesday through Saturday, and it takes reservations on OpenTable or by phone.</p>
 
@@ -129,7 +143,7 @@ layout: blog-post.njk
 
 <h2>Indian Wells, the closest resort pool to Indio</h2>
 
-<h3>5. H2O Pool Bar at Renaissance Esmeralda</h3>
+<h3>7. H2O Pool Bar at Renaissance Esmeralda</h3>
 
 <p>For anyone staying on the east end of the valley near Indio or Coachella, the <a href="https://www.marriott.com/en-us/hotels/pspsr-renaissance-esmeralda-resort-and-spa-indian-wells/overview/" target="_blank" rel="noopener"><strong>Renaissance Esmeralda</strong></a> in Indian Wells is the nearest big-resort pool, roughly 20 to 25 minutes west of our Indio rentals. It's known for a large sandy-beach pool, and the H2O Pool Bar handles cocktails and light poolside fare overlooking the water.</p>
 
@@ -140,7 +154,7 @@ layout: blog-post.njk
 
 <h2>The under-the-radar one</h2>
 
-<h3>6. The Barn Kitchen at Sparrows Lodge</h3>
+<h3>8. The Barn Kitchen at Sparrows Lodge</h3>
 
 <p><a href="https://sparrowslodge.com/" target="_blank" rel="noopener"><strong>The Barn Kitchen</strong></a> at Sparrows Lodge, a small midcentury property back on East Palm Canyon, is the sleeper pick. As of 2026 the kitchen serves lunch daily with sandwiches, salads, and small bites in a courtyard built around a flamingo-pink-umbrella pool, and on certain nights it does a family-style supper, Chicken Wednesdays and Steak Saturdays being the ones people talk about.</p>
 
@@ -163,7 +177,7 @@ layout: blog-post.njk
 <h2>Frequently Asked Questions</h2>
 
 <h3>Can you use a Palm Springs resort pool without staying there?</h3>
-<p>Often, yes, through a day pass. As of 2026, resorts like the Ace Hotel &amp; Swim Club and the Renaissance Esmeralda in Indian Wells sell pool day passes to non-guests, usually booked ahead on ResortPass or the hotel's own site, that get you a lounge chair, pool and hot tub access, and poolside food and drink. Passes and cabanas sell out on summer weekends, so reserve early and confirm the current price and any age limits before you drive over.</p>
+<p>Often, yes, through a day pass. As of 2026, resorts like the Ace Hotel &amp; Swim Club, The Saguaro Palm Springs, Hotel Zoso, and the Renaissance Esmeralda in Indian Wells sell pool day passes to non-guests, usually booked ahead on ResortPass or the hotel's own site, that get you a lounge chair, pool and hot tub access, and poolside food and drink. Passes and cabanas sell out on summer weekends, so reserve early and confirm the current price and any age limits before you drive over.</p>
 
 <h3>Which Palm Springs resort restaurants are open to the public?</h3>
 <p>Several. As of 2026, Palm Canyon Swim &amp; Social at the ARRIVE hotel takes walk-in diners with no reservation, the Colony Club at Colony Palms is a Michelin-listed restaurant open to the public and bookable on OpenTable, and Sol y Sombra at the Paloma Resort in Cathedral City is a fully public tapas spot. The Barn Kitchen at Sparrows Lodge welcomes non-guests too, though seating is limited, so call ahead. Menus and hours shift, so confirm before you go.</p>
