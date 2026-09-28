@@ -1031,36 +1031,47 @@ async function handleBooking(request, env) {
     <p style="margin:20px 0 0;font-size:14px;color:#888;">Questions? Reply here or email us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
 
-  try {
-    await Promise.all([
-      sendEmail(env.RESEND_API_KEY, {
-        from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
-        to:   'indigopalmco@gmail.com',
-        subject: `New Booking Request: ${property} (${fmtDate(checkIn)} – ${fmtDate(checkOut)})`,
-        html:  hostEmailHtml,
-        reply_to: email,
-      }),
-      sendEmail(env.RESEND_API_KEY, {
-        from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
-        to:   email,
-        cc:   'indigopalmco@gmail.com',
-        subject: `Booking Request Received: ${property}`,
-        html:  guestEmailHtml,
-      }),
-    ]);
+  // The booking record above is already durably saved in KV before either
+  // email is attempted, so a Resend outage never loses the lead's data. The
+  // real risk was Promise.all: if either send rejected, the guest saw a
+  // "failed" error even when their request WAS received and stored (and
+  // Promise.all rejects on the FIRST failure, so a guest-email success could
+  // still be reported as an outright failure if only the host email broke).
+  // Promise.allSettled means we always tell the guest the truth — the
+  // request went through — and log each side's outcome independently so a
+  // host-email failure (the side that actually risks a lead going unnoticed,
+  // since nothing else currently surfaces a 'pending' booking to Eann) is
+  // distinguishable from a guest-email failure in the Worker logs.
+  const [hostResult, guestResult] = await Promise.allSettled([
+    sendEmail(env.RESEND_API_KEY, {
+      from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+      to:   'indigopalmco@gmail.com',
+      subject: `New Booking Request: ${property} (${fmtDate(checkIn)} – ${fmtDate(checkOut)})`,
+      html:  hostEmailHtml,
+      reply_to: email,
+    }),
+    sendEmail(env.RESEND_API_KEY, {
+      from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
+      to:   email,
+      cc:   'indigopalmco@gmail.com',
+      subject: `Booking Request Received: ${property}`,
+      html:  guestEmailHtml,
+    }),
+  ]);
 
-    // Never return `token` here — the guest's own browser receives this response,
-    // and token is the host-only secret that authorizes /api/approve and
-    // /api/confirm-payment. It's mailed only to indigopalmco@gmail.com.
-    return new Response(JSON.stringify({ success: true, bookingId }), {
-      status: 200, headers: CORS_HEADERS,
-    });
-  } catch (err) {
-    console.error('Email send failed:', err);
-    return new Response(JSON.stringify({ success: false, error: 'Failed to send confirmation email' }), {
-      status: 500, headers: CORS_HEADERS,
-    });
+  if (hostResult.status === 'rejected') {
+    console.error(`Host notification email FAILED for booking ${bookingId} (booking is saved in KV, but Eann was not notified):`, hostResult.reason);
   }
+  if (guestResult.status === 'rejected') {
+    console.error(`Guest confirmation email failed for booking ${bookingId}:`, guestResult.reason);
+  }
+
+  // Never return `token` here — the guest's own browser receives this response,
+  // and token is the host-only secret that authorizes /api/approve and
+  // /api/confirm-payment. It's mailed only to indigopalmco@gmail.com.
+  return new Response(JSON.stringify({ success: true, bookingId }), {
+    status: 200, headers: CORS_HEADERS,
+  });
 }
 
 // ── Get Booking (for admin page) ──────────────────────────────────────────────
