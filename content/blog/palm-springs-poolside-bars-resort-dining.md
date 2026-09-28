@@ -16,7 +16,7 @@ keywords:
   - Coachella Valley resort restaurants
 articleSection: "Local Guide"
 property: all
-readTime: "8 min read"
+readTime: "9 min read"
 excerpt: "Where to get the resort pool day and poolside cocktail without booking the room. Eight Coachella Valley spots that welcome walk-ins and day passes."
 layout: blog-post.njk
 ---
