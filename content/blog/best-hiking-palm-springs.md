@@ -1,7 +1,8 @@
 ---
-title: "Best Hiking Near Palm Springs: 8 Trails Worth the Drive"
+title: "Best Hiking Near Palm Springs: 12 Trails Worth the Drive"
 date: 2025-12-25
-metaDescription: "Best hiking near Palm Springs: 8 trails with stats, fees, and real notes. Palm Canyon to San Jacinto Peak, dog-friendly picks, plus a swimmable waterfall."
+dateModified: 2026-09-28
+metaDescription: "Best hiking near Palm Springs: 12 trails with stats, fees, and real notes. Palm Canyon to San Jacinto Peak, dog-friendly picks, plus a swimmable waterfall."
 ogImage: /blog/images/coachella-valley-desert-hiking.webp
 heroImage: /blog/images/coachella-valley-desert-hiking.webp
 heroAlt: "Desert hiking trail through rocky canyon near Palm Springs California with blue sky overhead"
@@ -21,10 +22,14 @@ keywords:
   - hikes with waterfall Palm Springs
   - best hikes Coachella Valley
   - Coachella Valley things to do
+  - Art Smith Trail Palm Desert
+  - Chuckwalla Trail Rancho Mirage
+  - East Indio Hills Badlands
+  - Cathedral Canyon trail
 articleSection: "Travel Guide"
 property: all
-readTime: "12 min read"
-excerpt: "Eight hikes near Palm Springs with actual stats: distance, elevation, fees, and whether you can bring your dog. From a flat palm oasis loop to a 10,834-foot summit, here's what to know before you go."
+readTime: "15 min read"
+excerpt: "Twelve hikes near Palm Springs with actual stats: distance, elevation, fees, and whether you can bring your dog. From a flat palm oasis loop to a 10,834-foot summit, here's what to know before you go."
 layout: blog-post.njk
 relatedPosts:
   - title: "Joshua Tree Day Trip from Indio"
@@ -39,7 +44,7 @@ relatedPosts:
 
 <p>Hiking near Palm Springs is one of those things that surprises people who showed up for the pools and the architecture. The mountains are right there, and the canyons cut into them hold palm oases, seasonal waterfalls, and trails that feel nothing like the flat Mojave scrub around them. October through April is the window. Summer requires a 5am start and a serious conversation with yourself about heat.</p>
 
-<p>Here are eight trails worth knowing, with real stats so you can plan before you drive.</p>
+<p>Here are twelve trails worth knowing, with real stats so you can plan before you drive.</p>
 
 <div class="summary-box">
   <table>
@@ -47,11 +52,11 @@ relatedPosts:
     <tr><th>Best Season</th><td>November–April (avoid June–September heat)</td></tr>
     <tr><th>Closest Property</th><td><a href="/the-sundune/">The Sundune</a>, Palm Springs</td></tr>
     <tr><th>Entry Fees</th><td>Indian Canyons $12/person, Tahquitz Canyon $15/person, tram $32</td></tr>
-    <tr><th>Dog Friendly</th><td>Lykken Trail, Bump and Grind (leash required)</td></tr>
+    <tr><th>Dog Friendly</th><td>Lykken Trail, East Indio Hills Badlands (leash required); Chuckwalla's policy is disputed, check signage</td></tr>
   </table>
 </div>
 
-<h2>Quick Comparison: All 8 Trails</h2>
+<h2>Quick Comparison: All 12 Trails</h2>
 
 <div class="trail-table-wrapper" style="overflow-x:auto;">
 <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
@@ -123,12 +128,44 @@ relatedPosts:
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">No</td>
     </tr>
     <tr style="background:#faf8f5;">
-      <td style="padding:8px 10px;">San Jacinto Peak (Tram)</td>
-      <td style="padding:8px 10px;">Strenuous</td>
-      <td style="padding:8px 10px;">11 mi out-back</td>
-      <td style="padding:8px 10px;">2,620 ft</td>
-      <td style="padding:8px 10px;">$37/adult (tram) + free permit</td>
-      <td style="padding:8px 10px;">No</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">San Jacinto Peak (Tram)</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Strenuous</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">11 mi out-back</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">2,620 ft</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">$37/adult (tram) + free permit</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">No</td>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">East Indio Hills Badlands</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Moderate</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">5.1 mi loop</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">764 ft</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Free</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Yes (leash)</td>
+    </tr>
+    <tr style="background:#faf8f5;">
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Chuckwalla Trail (Rancho Mirage)</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Moderate</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">~2.1 mi loop</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">200-400 ft</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Free</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Disputed, check signage</td>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Art Smith Trail</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Hard</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">15.9 mi out-back</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">3,323 ft</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Free</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">No</td>
+    </tr>
+    <tr style="background:#faf8f5;">
+      <td style="padding:8px 10px;">Cathedral Canyon Trail</td>
+      <td style="padding:8px 10px;">Moderate</td>
+      <td style="padding:8px 10px;">~1.9 mi one-way</td>
+      <td style="padding:8px 10px;">Steep in sections</td>
+      <td style="padding:8px 10px;">Free</td>
+      <td style="padding:8px 10px;">Unclear, ask locally</td>
     </tr>
   </tbody>
 </table>
@@ -243,6 +280,50 @@ relatedPosts:
 <img src="/blog/images/ps-aerial-tram-sunrise.webp" alt="Sunrise view from the Palm Springs Aerial Tramway area with alpine light on granite peaks above the desert" width="1400" height="933" loading="lazy">
 <p class="image-caption">Early tram means early summit. The first clear morning after a rainstorm is the one worth waiting for.</p>
 
+<h2>9. East Indio Hills Badlands (Moderate)</h2>
+
+<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<strong>Distance:</strong> 5.1 mi loop &nbsp;|&nbsp; <strong>Elevation gain:</strong> 764 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> Yes, on leash
+</div>
+
+<p>This one is the closest trail on the list to Terra Luz and The Cozy Cactus, both minutes away in Indio. The trail crosses the San Andreas Fault itself, and the badlands terrain shows it: twisted, uplifted sedimentary rock formed millions of years ago and carved further by flash flooding. You'll drop into a few narrow slot canyons, cross sandy washes, and climb to a ridge with a full panoramic view of the Coachella Valley. Around the fourth mile, a sandstone formation shaped like a skull is one of the trail's more memorable landmarks.</p>
+
+<p>The trailhead sits at the edge of the Terra Lago Resort Golf Course, at the eastern end of Avenue 42 and the northern end of Golf Center Parkway. The route crosses a canal via a bridge before heading into the badlands proper. Trail markers exist but can be easy to lose where the path crosses broad, flat washes, so download the route beforehand. There's almost no shade, so go in the cooler months and carry more water than you think you need. Best November through April. <a href="https://www.alltrails.com/trail/us/california/east-indio-hills-badlands" target="_blank" rel="noopener noreferrer">East Indio Hills Badlands on AllTrails</a>.</p>
+
+<div class="inline-cta">
+  <p>This trailhead is a five-minute drive from <a href="/terra-luz/">Terra Luz</a> and <a href="/cozy-cactus/">The Cozy Cactus</a>, both in Indio. Do the hike in the morning, be back at the pool by lunch. <a href="/terra-luz/">Check availability →</a></p>
+</div>
+
+<h2>10. Chuckwalla Trail, Rancho Mirage (Moderate)</h2>
+
+<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<strong>Distance:</strong> ~2.1 mi loop &nbsp;|&nbsp; <strong>Elevation gain:</strong> ~200-400 ft (sources vary) &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> Check current signage
+</div>
+
+<p>The Chuckwalla Trail Loop starts and ends near the Ritz-Carlton in Rancho Mirage and wraps around the base of Mirada Estates before turning back toward the Cathedral City line. It's a short, steady climb through rocky, exposed desert terrain, no technical sections, just consistent elevation gain and open views of the western Coachella Valley the whole way around. Plan an hour to ninety minutes.</p>
+
+<p>Parking is behind Rancho Mirage City Hall, with trailhead access off Frank Sinatra Drive. There's zero shade on this loop, so this is a morning or late-afternoon trail, not a midday one. The city's own trail sources disagree on whether dogs are allowed here, some say leashed dogs are fine, the Desert Recreation District page says no, so check the trailhead signage on the day rather than assume either way. <a href="https://www.alltrails.com/trail/us/california/chuckwalla-trail-loop" target="_blank" rel="noopener noreferrer">Chuckwalla Trail Loop on AllTrails</a>.</p>
+
+<h2>11. Art Smith Trail (Hard)</h2>
+
+<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<strong>Distance:</strong> 15.9 mi out-and-back (shorter turnarounds possible) &nbsp;|&nbsp; <strong>Elevation gain:</strong> 3,323 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Hard &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> No
+</div>
+
+<p>Art Smith is the trail for hikers who've done the canyons and want something bigger. The full out-and-back runs nearly 16 miles with over 3,300 feet of gain, climbing through Santa Rosa and San Jacinto Mountains National Monument terrain toward Dunn Road. Most people don't do the whole thing in one push: turning around at the Hopalong Cassidy junction cuts it to roughly 8 miles and 1,650 feet, still a real workout with the same desert-canyon scenery, without the full commitment.</p>
+
+<p>The trailhead is across Highway 74 from the Santa Rosa San Jacinto National Monument Visitor Center, about 4 miles south of Highway 111 and a 15-minute drive from Indian Wells. No fee, no shade, and no water source on the trail, so this is an early-start, fully-stocked hike either way. <a href="https://www.alltrails.com/trail/us/california/art-smith-trail--3" target="_blank" rel="noopener noreferrer">Art Smith Trail on AllTrails</a>.</p>
+
+<h2>12. Cathedral Canyon Trail (Moderate)</h2>
+
+<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<strong>Distance:</strong> ~1.9 mi one-way (10.6 mi loop with Dunn Road Connector) &nbsp;|&nbsp; <strong>Elevation gain:</strong> Steep in sections (the connector segment loses over 1,000 ft one direction; 2,312 ft for the full loop) &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> Policy unclear, ask locally
+</div>
+
+<p>Cathedral Canyon starts at the far end of Cathedral City Cove and runs about 1.9 miles up to the Dunn Road intersection, easy walking through the lower stretch with a few steep, rutted pitches higher up. It's a good middle-distance option between the flat canyon oases and the all-day climbs like Art Smith. Hikers who want more can continue on the Dunn Road Connector for a longer loop that totals around 10.6 miles and 2,300 feet of gain, effectively linking up with the Art Smith trail system.</p>
+
+<p>Park along the paved street near the end of Foothill Road at Cathedral City Cove. There's no dedicated fee or facilities, and no clear published dog policy for this specific segment, ask at a local trail shop or the visitor center before bringing one. Best October through May, same as the rest of the Santa Rosa foothills. <a href="https://www.alltrails.com/trail/us/california/cathedral-canyon-and-dunn-road-connector-trail" target="_blank" rel="noopener noreferrer">Cathedral Canyon on AllTrails</a>.</p>
+
 <h2>When to Go</h2>
 
 <p>October through April is the hiking window. This is when temperatures at trail level are comfortable, the canyons have the best chance of water running, and the desert is at its most alive. February and March are the sweet spot: wildflowers in some years, cool mornings, long enough days to do a full canyon and still make brunch.</p>
@@ -268,9 +349,9 @@ relatedPosts:
 
 <h2>Where to Stay for Easy Trail Access</h2>
 
-<p>The Indian Canyons, Tahquitz Canyon, and the Lykken Trail are all within 10 minutes of central Palm Springs. The tram is 15 minutes from downtown. Bump and Grind is 20 minutes east in Palm Desert.</p>
+<p>The Indian Canyons, Tahquitz Canyon, and the Lykken Trail are all within 10 minutes of central Palm Springs. The tram is 15 minutes from downtown. Bump and Grind, Chuckwalla, Art Smith, and Cathedral Canyon are all 20 to 25 minutes east toward Palm Desert and Rancho Mirage. East Indio Hills Badlands is the outlier, closer to Indio than Palm Springs.</p>
 
-<p>If you're basing yourself for a hiking trip, <a href="/the-sundune/">The Sundune</a> in Palm Springs puts you closest to the mountain trails. If you want space to come back to after a hard morning, <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio has a private hot tub plus access to three heated community pools at Indian Palms. Both are under 30 minutes from every trail on this list. If you're bringing your dog, see the <a href="/blog/pet-friendly-palm-springs/">pet-friendly Palm Springs guide</a> for which trails and properties work for dogs.</p>
+<p>If you're basing yourself for a hiking trip, <a href="/the-sundune/">The Sundune</a> in Palm Springs puts you closest to the mountain trails. If you want space to come back to after a hard morning, <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> in Indio have private pools and are minutes from East Indio Hills Badlands, with every other trail on this list under 40 minutes away. If you're bringing your dog, see the <a href="/blog/pet-friendly-palm-springs/">pet-friendly Palm Springs guide</a> for which trails and properties work for dogs.</p>
 
 <script type="application/ld+json">
 {
