@@ -1,8 +1,14 @@
 #!/bin/bash
 # Purge Cloudflare cache for indigopalm.co
+# Requires CLOUDFLARE_API_TOKEN set in the environment (never hardcode it here).
 
-CLOUDFLARE_API_TOKEN="ZF-DBy3xDN4x3Dm9m2JUr32wpQihGiAZVjb6kK92"
 CLOUDFLARE_ZONE_ID="669c6881604295a9e32aa10f1c800e5c"
+
+if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+  echo "❌ CLOUDFLARE_API_TOKEN is not set. Export it before running this script:"
+  echo "   export CLOUDFLARE_API_TOKEN=\"your-token-here\""
+  exit 1
+fi
 
 echo "Purging Cloudflare cache for indigopalm.co..."
 
