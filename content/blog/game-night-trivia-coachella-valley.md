@@ -1,7 +1,7 @@
 ---
-title: "7 Game Night and Trivia Spots in the Coachella Valley"
+title: "Trivia Nights in the Coachella Valley: 7 Game Night Spots"
 date: 2026-07-21
-metaDescription: "Game night and trivia in the Coachella Valley: 7 spots for pub trivia, bingo, anime nights, and D&D across Palm Springs, Cathedral City, and Palm Desert."
+metaDescription: "Trivia nights and game night in the Coachella Valley: 7 spots for pub trivia, bingo, anime nights, and D&D in Palm Springs, Cathedral City, Palm Desert."
 ogImage: /blog/images/palm-springs-bar-cocktails.webp
 heroImage: /blog/images/palm-springs-bar-cocktails.webp
 heroAlt: "Cocktails lined up on a bar in Palm Springs at night, the kind of place that runs weekly trivia in the Coachella Valley"

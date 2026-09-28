@@ -1,8 +1,8 @@
 ---
-title: "8 Palm Springs Resort Pools You Can Access Without a Room"
+title: "Palm Springs Pool Bars: 8 Resorts, No Room Needed"
 date: 2026-07-22
 dateModified: 2026-09-28
-metaDescription: "Get the Palm Springs resort pool day and poolside cocktail without booking a room: 8 spots welcoming walk-ins and day passes across the valley."
+metaDescription: "Pool bars and poolside dining in Palm Springs without booking a room: 8 resorts that welcome walk-ins and day passes, from lounge chairs to cocktails."
 ogImage: /blog/images/palm-springs-bar-cocktails.webp
 heroImage: /blog/images/palm-springs-bar-cocktails.webp
 heroAlt: "Cocktails lined up on a Palm Springs bar, the poolside-resort drink you can order as a walk-in without booking a hotel room"
