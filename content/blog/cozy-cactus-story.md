@@ -112,47 +112,6 @@ layout: blog-post.njk
 
 <p>I'm not trying to win design awards, though we did get featured on a <a href="https://minoan.com/blog/host-spotlight-eann" target="_blank" rel="noopener noreferrer">Minoan blog post</a>! I'm trying to solve the problem of families who book a vacation rental and end up more exhausted than before they left. That's The Cozy Cactus. Families keep coming back. They don't just survive vacation. They enjoy it.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is The Cozy Cactus, exactly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A 3-bedroom, 2-bathroom vacation rental in Indian Palms Country Club, Indio, CA. It was built from the ground up for families with young kids: gear closet stocked before you arrive, labeled kitchen, private hot tub, putting green, and a game room that absorbs the 2pm-to-5pm desert heat window. Sleeps up to 8."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What makes it different from other Airbnbs in the area?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The intentionality in the setup. Most rentals have furniture and a pool. The Cozy Cactus has a Stokke high chair, a pack-n-play with a real crib mattress, sound machines in every bedroom, and a labeling system one guest called \"unprecedented in 10 years of Airbnb stays.\" The family infrastructure is built in, not bolted on."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is The Cozy Cactus good for Coachella and Stagecoach?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Indian Palms Country Club is walking distance to Empire Polo Club, straight up Eisenhower Drive on foot, no shuttles and no surge pricing. Guests leave from the front door and walk there. The backyard and hot tub become the decompression zone between festival days."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who designed The Cozy Cactus?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The design vision came from Dawn Asher of The Olive Jar, a brand strategist and interior designer based in the desert. She brought the six-filter framework that governs every detail, from paint colors to linens to the mural in the backyard. I executed it with too many trips to HomeGoods and a Honda Element that fits more than it should."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>What is The Cozy Cactus, exactly?</h3>

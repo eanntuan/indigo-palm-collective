@@ -107,47 +107,6 @@ layout: blog-post.njk
 <img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs California with the San Jacinto Mountains in the background on a clear desert day" width="1400" height="933" loading="lazy">
 <p class="image-caption">The San Jacinto Mountains behind Palm Springs. The valley floor is flat; the scale of the mountains doesn't register until you're standing here.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the best time of year for a Coachella Valley weekend getaway?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "October through April is the season, with spring (February through April) as peak and fall (October and November) as the underrated alternative. October is particularly good: mild temperatures, fewer crowds, lower prices. July and August are doable but require a pool and a willingness to go inside from noon to 5pm."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Indio or Palm Springs better for a weekend trip?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Depends on what you're after. Palm Springs has more walkable density, better restaurants per square mile, and the midcentury hotel experience. Indio is quieter, closer to the festival grounds, more neighborhood and less resort. For first-timers without a specific agenda, Palm Springs is more intuitive. For festival weekends or anyone who wants a base to explore the whole valley, Indio is better positioned."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many days do you need for a Coachella Valley trip?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Two full days (Friday arrival, Sunday departure) is enough to get a real sense of the valley, do a few activities, and not feel rushed. Three days is the comfortable version that lets you do both Indio and Palm Springs without choosing. Four or more days and you start hitting the long list: the Salton Sea, Joshua Tree day trip, the full Palm Springs design circuit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is there to do in the Coachella Valley besides Coachella?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Quite a lot: Palm Springs Aerial Tram, Indian Canyons hiking, Shields Date Garden, the Salton Sea day trip, the midcentury architecture circuit in Palm Springs, Joshua Tree National Park (90 minutes away), the restaurant and bar scene in Palm Springs and La Quinta, and the various date farms and roadside markets along Hwy 111. The valley is not just a festival destination."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>What is the best time of year for a Coachella Valley weekend getaway?</h3>

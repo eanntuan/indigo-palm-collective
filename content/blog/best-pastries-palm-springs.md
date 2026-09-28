@@ -74,47 +74,6 @@ For the full coffee and café picture beyond just pastries, the [Palm Springs co
 
 <img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Springs street with palm trees against a bright blue desert sky on a clear morning" loading="lazy" width="1400" height="933">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the best pastry in Palm Springs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The almond croissant at Koffi on N Palm Canyon Drive is the most consistent pick: proper lamination, dense almond filling, and sized like an actual croissant rather than a miniature version. Peninsula Pastries on S Palm Canyon Drive is the more French option, with imported flour and butter that makes a clear difference in the pain au chocolat."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What time do Palm Springs bakeries run out of pastries?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most of the best items are gone by 10am on weekends. The ideal window is 8 to 9:30am. Peninsula Pastries in particular sells out of the most popular items early on Saturdays. Arriving at opening gives you the full selection."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Peninsula Pastries open every day?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Peninsula Pastries is closed Monday through Wednesday. Hours are Thursday through Saturday 8:30am to 5pm, Sunday 8:30am to 4pm. If your trip runs Sunday through Tuesday, plan for Koffi or Townie Bagels instead."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I get a good bagel in Palm Springs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Townie Bagels on E Sunny Dunes Road is the place. Water-boiled in the New York style, chewy and dense with a crust that holds up. The olive and fennel bagel appears as a weekend special and is worth planning around. Expect a wait on weekend mornings."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>What is the best pastry in Palm Springs?</h3>

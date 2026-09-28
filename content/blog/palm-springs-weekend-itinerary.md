@@ -103,47 +103,6 @@ layout: blog-post.njk
 
 <p><a href="/the-sundune/">The Sundune</a> is our 2-bedroom in Palm Springs at 5301 E Waverly Drive. Close to the architecture neighborhoods, the right size for a couple or small group doing exactly this kind of long weekend. If you're planning a bachelorette, the <a href="/blog/palm-springs-bachelorette-guide/">Palm Springs bachelorette guide</a> covers the specifics: what to book, where to eat, and how to structure the weekend for a group.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How many days do you need in Palm Springs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Three days is the sweet spot. Two feels rushed if you want to hike and eat well. Four starts to feel padded. For festival weekends, plan around the festival schedule rather than a fixed city itinerary."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Palm Springs walkable?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Downtown is very walkable. For Indian Canyons, the Aerial Tram, or Joshua Tree, you need a car. Rentals close to the center of town get the most out of the walkability."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best time of year to visit Palm Springs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "October through April. Spring is the most popular for good reason: perfect temperatures and the full energy of the city. Summer works on a heat-adjusted schedule. Fall and winter offer lower rates and quieter streets."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you do a day trip from Palm Springs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Joshua Tree is about an hour away. The Palm Springs Aerial Tram is 15 minutes from downtown and worth a half-day. Build one day trip into the schedule and leave the others for the city itself."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>How many days do you need in Palm Springs?</h3>

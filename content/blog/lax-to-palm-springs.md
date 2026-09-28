@@ -78,47 +78,6 @@ layout: blog-post.njk
 <img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the Coachella Valley desert near Palm Springs at dusk" width="1200" height="1800" loading="lazy" decoding="async">
 <p class="image-caption">The valley at night. Worth staying for.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How long is the drive from LAX to Palm Springs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "About 2 hours without traffic, roughly 120 miles on the I-10 east. Friday afternoons or Sunday mornings can add 45 to 60 minutes. Check Google Maps before leaving the airport."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a shuttle from LAX to Palm Springs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shared shuttles run $100 to $150 per person and take 2.5 to 3 hours with stops. Best for solo travelers staying in walkable downtown Palm Springs who don't need a car."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it better to fly into LAX or PSP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PSP is more convenient if you can get a reasonable fare. LAX has more routes and often lower fares but adds the 2-hour drive. ONT is worth checking as a middle-ground. Run the numbers for your dates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you get to Palm Springs without a car?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can get there without one, but getting around the broader valley is difficult. Downtown Palm Springs is walkable; anywhere else requires a car or rideshare, and rideshare gets thin in the east valley after 10pm."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>How long is the drive from LAX to Palm Springs?</h3>

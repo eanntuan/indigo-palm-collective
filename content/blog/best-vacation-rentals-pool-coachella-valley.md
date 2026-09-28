@@ -114,47 +114,6 @@ layout: blog-post.njk
 <img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at Cozy Cactus vacation rental in Indio California, walking distance to the Coachella festival grounds" width="1400" height="933" loading="lazy">
 <p class="image-caption">The private hot tub at the Cozy Cactus, which is the detail that shows up most in guest reviews. The Indian Palms community pools are a short walk from the same backyard.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the best vacation rental with a private pool near Coachella?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Cozy Cactus and Terra Luz are both in Indian Palms, Indio, walking distance to the Empire Polo Club. Terra Luz is the one with the private pool: saltwater, with a tanning ledge, a heated spa, and a fully enclosed yard, which makes it a good option for guests with dogs or kids. The Cozy Cactus has a private hot tub in its own backyard and guest access to three heated community pools at Indian Palms, so it isn't a private-pool rental."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do vacation rental pools in the Coachella Valley need to be heated in April?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. April nights in the Coachella Valley can drop into the low 50s. An unheated pool is usable during the day but uncomfortably cold by evening. If you're coming for Coachella or Stagecoach, confirm the pool is heated and ask if there's an additional heating fee before you book."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's the difference between a private pool and a community pool in a vacation rental listing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A private pool is within the fenced perimeter of your rental: you control the hours, temperature (if heated), and who uses it. A community pool is a shared amenity in the HOA, available to residents and other guests in the community. Both get listed as \"pool access.\" Private is the better option for most group trips."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When is the best time to rent a pool house in the Coachella Valley?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "October and November are the best value: warm enough to use the pool in the afternoon, cool enough to want the hot tub at night, and far less demand than festival season. April (festival season) is the hardest to find and most expensive. Fall and spring shoulder months are the practical sweet spot for both availability and weather."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>What is the best vacation rental with a private pool near Coachella?</h3>

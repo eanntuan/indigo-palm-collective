@@ -169,47 +169,6 @@ layout: blog-post.njk
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta patio in Indio California, 7 minutes from the Coachella festival grounds" loading="lazy" decoding="async" width="1400" height="933">
 <p class="image-caption">Between weekends, this is where you come back to. Terra Luz in Indian Palms, Indio.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What should you do in Indio between Coachella weekends?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Spend the first day recovering by the pool. Then use the remaining days for the Salton Sea day trip (about 40 minutes south on Highway 86), a stop at Shields Date Garden for the date shake, and at least one evening at Rosemary HiFi in Old Town Indio. You don't need to fill every hour. The rental, the pool, and a couple of real meals will carry most of the week."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Shields Date Garden worth visiting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The date shake is the most-awarded in the valley, and the 17-acre grove and short film about date cultivation are genuinely worth the extra hour. It's been on Highway 111 since 1924. You're going to pass it anyway. Stop."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How far is the Salton Sea from Indio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "About 35 miles south on Highway 86, roughly a 40-minute drive. The east shore around Bombay Beach and Salvation Mountain is the most interesting part. Go in the morning before the heat peaks, bring water and snacks, and keep realistic expectations: it's strange and beautiful, not polished or comfortable."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best coffee shop in Indio during Coachella week?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Everbloom Coffee on Highway 111 in Indio. Two brothers run it, the drinks use real ingredients, and the honey lavender latte is worth ordering twice. Go before 10am on weekend mornings before the lines build up."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>What should you do in Indio between Coachella weekends?</h3>

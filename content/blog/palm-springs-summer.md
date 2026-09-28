@@ -91,47 +91,6 @@ layout: blog-post.njk
 
 <p>If you're booking summer morning activities, <a href="/blog/palm-springs-surf-club/"><strong>Palm Springs Surf Club</strong></a> is one of the best uses of the early window: book the first session, surf before 10am, and you're back at the pool by noon. And for timing all outdoor activities around the heat, the <a href="/blog/palm-springs-morning-vs-evening/">morning vs evening guide</a> gives you the full schedule logic.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is it too hot to visit Palm Springs in summer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on your heat tolerance and how you plan your days. Afternoon temperatures in July and August regularly hit 110-115°F. That's extreme and not safe for extended outdoor exposure. But mornings before 10am and evenings after 6pm are comfortable and often beautiful. Plan around the heat and a summer trip is very doable, significantly cheaper than spring, and more peaceful."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is there to do in Palm Springs in summer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Pool time is the centerpiece. Morning hikes and architecture walks before 10am, mid-afternoon museum and gallery visits, outdoor dining and exploring in the evenings. The Palm Springs Art Museum is genuinely good and air-conditioned. Spa treatments are popular for the same reason. Summer is when restaurants have their most relaxed, unhurried service."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Palm Springs cheaper in summer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, noticeably. Summer is off-season and most properties offer rates 30-50% lower than spring peak or festival weekends. If you want more house for your money, summer is when the valley offers real value."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the summer monsoon storms like in Palm Springs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Late summer brings occasional afternoon and evening thunderstorms from the Gulf of Mexico moisture pattern. They can be intense and brief, with real lightning and rain that drops fast. They're beautiful to watch from a covered patio or poolside. Avoid hiking in washes or canyons when storms are in the area since flash flooding happens quickly and without much warning."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>Is it too hot to visit Palm Springs in summer?</h3>

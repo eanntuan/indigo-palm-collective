@@ -119,6 +119,29 @@ layout: blog-post.njk
 
 <p><a href="/blog/terra-luz-origin-story/">Terra Luz</a> is our love letter to this place. Whether you're coming for Coachella, escaping winter, or just need a long weekend to reset, the Coachella Valley is waiting.</p>
 
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is the best time of year to visit the Coachella Valley outside of festival season?</h3>
+<p>October and November are the best-kept window in the valley. Temperatures drop to the mid-70s to low-80s by October, the summer crowds are gone, and prices are well below peak. November in particular hits a low-humidity sweet spot that makes every outdoor activity feel easier. The dates are being harvested at the farms along Highway 111, which is its own reason to come.</p>
+
+<h3>Is Indio worth visiting if you're not going to Coachella?</h3>
+<p>Yes. Indio is the most affordable base in the valley for families and groups, and it sits in the middle of everything: Joshua Tree is 45 minutes north, the Salton Sea is 30 minutes south, Palm Springs is 30 minutes west. The local food scene in Indio, particularly the birria and taco spots on and off Highway 111, is worth the trip independent of any festival.</p>
+
+<h3>How far is Joshua Tree from the Coachella Valley?</h3>
+<p>About 45 minutes from Indio and roughly an hour from Palm Springs, depending on which park entrance you're heading to. The Cottonwood entrance is closer to Indio. The North Entrance near Joshua Tree town is more accessible from Palm Springs. Either works as a day trip.</p>
+
+<h3>What is there to do in the Coachella Valley in summer?</h3>
+<p>Summer is pool season. The valley clears out, rates drop, and a private pool with no shared-space rules is the whole itinerary. Early morning Joshua Tree hikes are possible before 9am. The Palm Springs Art Museum and aerial tramway are the best midday options. Night swims when the air finally drops below 90°F are a specific pleasure that doesn't exist anywhere else.</p>
+
+<h3>How many days should I spend in the Coachella Valley?</h3>
+<p>Four days hits the full experience: one in Joshua Tree, one in Palm Springs for the architecture walk and brunch, and two at the house with pool time, a date farm stop, and at least one good local dinner. Two days is doable if you pick one focus. Three is the practical minimum if you want hiking, desert town wandering, and actual rest without feeling like you rushed the whole thing.</p>
+
+<h3>What is the closest airport to the Coachella Valley?</h3>
+<p>Palm Springs International Airport (PSP) is the right choice for this trip. It's 25 miles from Indio, about 30 minutes by car. Direct flights from most West Coast cities and several major hubs. Ontario (ONT) is about 90 miles west, roughly 90 minutes. LAX is 120 miles, 2 hours without traffic and longer on a Friday.</p>
+
+<h3>What is the most scenic road into the Coachella Valley from Los Angeles?</h3>
+<p>I-10 East is the default, about 2 hours from downtown LA. The more memorable approach: exit at Date Palm Drive in Cathedral City and take Highway 111 east through the valley floor. Palm Springs gives way to date farms, then the mountains close in as you approach Indio. It adds 20 minutes and the landscape tells you everything about where you're going before you arrive.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -179,39 +202,7 @@ layout: blog-post.njk
         "@type": "Answer",
         "text": "I-10 East is the default, about 2 hours from downtown LA. The more memorable approach: exit at Date Palm Drive in Cathedral City and take Highway 111 east through the valley floor. Palm Springs gives way to date farms, then the mountains start to close in as you approach Indio. It adds 20 minutes and the landscape tells you everything about where you're going before you arrive."
       }
-    }
-  ]
-}
-</script>
-
-<h2>Frequently Asked Questions</h2>
-
-<h3>What is the best time of year to visit the Coachella Valley outside of festival season?</h3>
-<p>October and November are the best-kept window in the valley. Temperatures drop to the mid-70s to low-80s by October, the summer crowds are gone, and prices are well below peak. November in particular hits a low-humidity sweet spot that makes every outdoor activity feel easier. The dates are being harvested at the farms along Highway 111, which is its own reason to come.</p>
-
-<h3>Is Indio worth visiting if you're not going to Coachella?</h3>
-<p>Yes. Indio is the most affordable base in the valley for families and groups, and it sits in the middle of everything: Joshua Tree is 45 minutes north, the Salton Sea is 30 minutes south, Palm Springs is 30 minutes west. The local food scene in Indio, particularly the birria and taco spots on and off Highway 111, is worth the trip independent of any festival.</p>
-
-<h3>How far is Joshua Tree from the Coachella Valley?</h3>
-<p>About 45 minutes from Indio and roughly an hour from Palm Springs, depending on which park entrance you're heading to. The Cottonwood entrance is closer to Indio. The North Entrance near Joshua Tree town is more accessible from Palm Springs. Either works as a day trip.</p>
-
-<h3>What is there to do in the Coachella Valley in summer?</h3>
-<p>Summer is pool season. The valley clears out, rates drop, and a private pool with no shared-space rules is the whole itinerary. Early morning Joshua Tree hikes are possible before 9am. The Palm Springs Art Museum and aerial tramway are the best midday options. Night swims when the air finally drops below 90°F are a specific pleasure that doesn't exist anywhere else.</p>
-
-<h3>How many days should I spend in the Coachella Valley?</h3>
-<p>Four days hits the full experience: one in Joshua Tree, one in Palm Springs for the architecture walk and brunch, and two at the house with pool time, a date farm stop, and at least one good local dinner. Two days is doable if you pick one focus. Three is the practical minimum if you want hiking, desert town wandering, and actual rest without feeling like you rushed the whole thing.</p>
-
-<h3>What is the closest airport to the Coachella Valley?</h3>
-<p>Palm Springs International Airport (PSP) is the right choice for this trip. It's 25 miles from Indio, about 30 minutes by car. Direct flights from most West Coast cities and several major hubs. Ontario (ONT) is about 90 miles west, roughly 90 minutes. LAX is 120 miles, 2 hours without traffic and longer on a Friday.</p>
-
-<h3>What is the most scenic road into the Coachella Valley from Los Angeles?</h3>
-<p>I-10 East is the default, about 2 hours from downtown LA. The more memorable approach: exit at Date Palm Drive in Cathedral City and take Highway 111 east through the valley floor. Palm Springs gives way to date farms, then the mountains close in as you approach Indio. It adds 20 minutes and the landscape tells you everything about where you're going before you arrive.</p>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+    },
     {
       "@type": "Question",
       "name": "Where should I stay in the Coachella Valley if I'm not going to a festival?",
@@ -270,3 +261,6 @@ layout: blog-post.njk
 
 <h4>Is it worth renting a house instead of a hotel in Palm Springs?</h4>
 <p>For groups of three or more staying four or more nights, a private rental house almost always wins: lower cost per person, a private pool instead of a shared one, a kitchen for some meals, and more room to spread out. Palm Springs hotels make sense for couples or solo travelers who want daily service and a walkable downtown scene. For everyone else, basing in Indio and day-tripping to Palm Springs (30 minutes away) saves money without sacrificing access.</p>
+
+<h4>How do I plan a long weekend in the Coachella Valley on a budget?</h4>
+<p>Visit in fall, October or November, when rates run 30-40% below Coachella-weekend pricing and the weather is some of the best all year. Basing in Indio instead of Palm Springs gets you a private pool for less than a comparable Palm Springs hotel room, and Joshua Tree only requires a national parks pass, no separate ticket needed. Booking direct at <a href="https://indigopalm.co">indigopalm.co</a> skips the Airbnb service fee too, saving $50-150 on a typical stay.</p>

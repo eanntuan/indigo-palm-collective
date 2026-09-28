@@ -125,47 +125,6 @@ relatedPosts:
 
 <p>Avoid Coachella and Stagecoach weekends in April unless you specifically want festival energy. Rentals are at peak prices and the valley is at peak capacity during those three weekends.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How many people does a Palm Springs bachelorette need?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most groups that work well in Palm Springs are 6 to 10 people. Smaller than that and the per-person rental cost gets high for a private-pool property. Larger than 12 and coordinating dinners and activities becomes a logistics problem. The sweet spot is 7 to 9: big enough to fill a house, small enough to make decisions without a committee."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When is the best time for a bachelorette party in Palm Springs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "October through April. Specifically November and March hit the right balance: warm enough for the pool, cool enough for outdoor walks, and not competing with Coachella or Stagecoach weekend pricing. Avoid mid-April (Coachella) unless you want festival energy. July and August work if your group is committed to pool time and air conditioning, but outdoor wandering gets genuinely difficult by 10am."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Palm Springs have good bachelorette party restaurants?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Cheeky's for brunch (go before 10am or after 12:30pm to manage the wait). Workshop Kitchen + Bar for a dinner with a serious cocktail list. Tropicale for the mid-century throwback vibe. Eight4Nine for a dinner that transitions into lounge. Reservations are necessary for groups of 4 or more on weekends."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Indio or Palm Springs better for a bachelorette party?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Palm Springs if downtown walkability matters to your group. Indio if you want a larger private pool for less money and don't mind being 7 to 10 minutes from Palm Springs restaurants by car. Most groups choose Palm Springs for the energy and the ability to walk to things, but the Indio math is worth running honestly if budget is a real consideration. The full breakdown is in the Palm Springs vs. Indio comparison."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>How many people does a Palm Springs bachelorette need?</h3>

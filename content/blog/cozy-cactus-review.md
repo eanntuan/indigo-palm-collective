@@ -97,55 +97,6 @@ relatedPosts:
 
 <p>The Cozy Cactus was built to give families somewhere to exhale. Somewhere that was already ready when they arrived, where the first night felt easy, and where the kids had something to do so the adults could sit on the patio with a glass of wine and feel, maybe for the first time in a while, like they were on vacation.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Does The Cozy Cactus have a private pool?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The hot tub is private and on the property. The pools are community access through Indian Palms Country Club, three heated pools with the nearest one steps from the back gate. If a private swimming pool is the priority, Terra Luz is 15 minutes away with a private saltwater pool and a heated spa. Spa heating is included; pool heating is $75 per night with a two-night minimum, or $400 per week."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is The Cozy Cactus pet-friendly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Guests traveling with dogs should look at Terra Luz, which is pet-friendly with prior approval and a $150 pet fee. The Cozy Cactus has a fully fenced backyard but does not accept pets."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the minimum stay at The Cozy Cactus?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Minimum stays vary by season. During Coachella and Stagecoach festival weekends, the minimum is typically four nights. Off-peak periods often allow two or three-night stays. Current minimums are always visible when you search your specific dates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How quickly does the host respond to questions?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Response time has consistently come up in guest reviews as a standout feature. Most questions get answered within the hour, including evenings and weekends. Pre-booking questions are welcome and often answered faster than through Airbnb's messaging system."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can The Cozy Cactus accommodate a group for Coachella?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It sleeps up to 8 across three bedrooms and works well for groups. The Indian Palms location is walking distance to Empire Polo Club, an easy walk up Eisenhower Drive. No shuttle, no surge pricing."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>Does The Cozy Cactus have a private pool?</h3>

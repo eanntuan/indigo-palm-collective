@@ -84,54 +84,13 @@ layout: blog-post.njk
 
 <p>Read the <a href="/blog/where-to-stay-coachella-2026/">full Coachella 2026 accommodation guide</a> for a breakdown of what's close, what it costs, and why Indio is the right base. And if you're figuring out what to do in the valley between festival weekends, the <a href="/blog/indio-between-coachella-weekends/">Indio between Coachella weekends guide</a> has you covered.</p>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Did Justin Bieber perform at Coachella 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. He appeared unannounced at the Sahara tent stage during Coachella 2026 weekend one, performing without a set list to a crowd that had no idea he was coming. The clips reached every platform within minutes. It was the most-talked-about surprise of the festival."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How far is the Coachella festival from vacation rentals in Indio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Empire Polo Club in Indio is the festival site. Properties in Indio like The Cozy Cactus and Terra Luz are 7 to 10 minutes away with no freeway driving. Properties in Palm Springs are 25 to 30 miles west, which can translate to 35 minutes on a normal day or 90 minutes on a peak festival Saturday afternoon."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When do Coachella 2027 tickets go on sale?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Generally May 1 of the prior year, about eight days after Coachella 2026 wrapped. They sell out fast. If you want good Indio rental options within 10 minutes of the grounds, lock in housing before the ticket sale date. The best properties book up before the lineup is even announced."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is a vacation rental better than a hotel for Coachella?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For a group of four or more, almost always yes. You get a private pool or hot tub to decompress in after long festival days, a full kitchen, and outdoor space for the late-night debrief. Hotel rooms have a midnight checkout energy that vacation rentals don't. The math on per-person cost usually favors the rental by weekend two."
-      }
-    }
-  ]
-}
-</script>
-
 <h2>Frequently Asked Questions</h2>
 
 <h3>Did Justin Bieber perform at Coachella 2026?</h3>
 <p>Yes. He appeared unannounced at the Sahara tent stage during Coachella 2026 weekend one, performing without a set list to a crowd that had no idea he was coming. The clips reached every platform within minutes. It was the most-talked-about surprise of the festival.</p>
 
 <h3>How far is the Coachella festival from vacation rentals in Indio?</h3>
-<p>The Empire Polo Club in Indio is the festival site. Properties in Indio like The Cozy Cactus and Terra Luz are 7 to 10 minutes away with no freeway driving. Properties in Palm Springs are 25 to 30 miles west, which can translate to 35 minutes on a normal day or 90 minutes on a peak festival Saturday afternoon.</p>
+<p>The Empire Polo Club in Indio is the festival site. Properties in Indio like The Cozy Cactus and Terra Luz, in the Indian Palms area, are walking distance to the grounds. Properties in Palm Springs are 25 to 30 miles west, which can translate to 35 minutes on a normal day or 90 minutes on a peak festival Saturday afternoon.</p>
 
 <h3>When do Coachella 2027 tickets go on sale?</h3>
 <p>Generally May 1 of the prior year, about eight days after Coachella 2026 wrapped. They sell out fast. If you want good Indio rental options within 10 minutes of the grounds, lock in housing before the ticket sale date. The best properties book up before the lineup is even announced.</p>
@@ -159,7 +118,7 @@ layout: blog-post.njk
       "name": "How far is the Coachella festival from vacation rentals in Indio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Empire Polo Club in Indio is the festival site. Properties in Indio like The Cozy Cactus and Terra Luz are 7 to 10 minutes away with no freeway driving. Properties in Palm Springs are 25 to 30 miles west, which can translate to 35 minutes on a normal day or 90 minutes on a peak festival Saturday afternoon."
+        "text": "The Empire Polo Club in Indio is the festival site. Properties in Indio like The Cozy Cactus and Terra Luz, in the Indian Palms area, are walking distance to the grounds. Properties in Palm Springs are 25 to 30 miles west, which can translate to 35 minutes on a normal day or 90 minutes on a peak festival Saturday afternoon."
       }
     },
     {
