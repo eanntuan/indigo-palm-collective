@@ -86,7 +86,7 @@ These are confirmed facts that have been corrected from prior AI errors. Apply t
 
 ## After Writing a Blog Post
 
-1. Add card to `blog.html` (static HTML, not auto-generated)
+1. Add card to `blog/index.html` (the live card list; `blog.html` at the repo root is a dead `noindex` redirect stub, not the real list)
 2. Add URL to `sitemap.xml`
-3. Commit: `git add content/blog/[slug].md content/blog/images/ blog.html sitemap.xml && git commit -m "Add [slug] post" && git push`
+3. Commit: `git add content/blog/[slug].md content/blog/images/ blog/index.html sitemap.xml && git commit -m "Add [slug] post" && git push`
 4. Remind user to run `/pinterest-pins [slug]`
