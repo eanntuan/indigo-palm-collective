@@ -2882,3 +2882,19 @@ No full pass. Last full inventory 2026-09-16 (12 days, inside the 30-day window)
 
 All three checks clean, holding steady for 8 days straight. No action needed this run.
 
+
+### Check-in 2026-09-28 (GSC + GA4 + Pinterest + technical)
+
+**GSC (90d, Jun 30 to Sep 28):** 587 clicks, 72,583 impressions, 0.8% CTR, avg position 10.2. Prior 90d: 173 clicks, 24,892 impressions. Mobile CTR 1.0% vs desktop 0.5%.
+
+**Working:** palm-springs-vs-scottsdale (88 clicks, pos 6.3), outdoor-furniture-desert-heat (2.2% CTR), homepage (2.2%).
+
+**CTR opportunities:** "how far is indio from palm springs" (845 imps, 3 clicks, pos 5.6), "palm springs wave pool price" (171 imps), palm-springs-surf-club (9,655 imps, 0.5% CTR). Title/meta rewrites queued for bnp-paribas-open-palm-springs, palm-springs-poolside-bars-resort-dining, indio-between-coachella-weekends, game-night-trivia-coachella-valley, palm-springs-art-galleries-guide.
+
+**Content/authority fix (not title):** best-restaurants-palm-springs (1,403 imps, 1 click, pos 32), palm-springs-with-kids (pos 45).
+
+**GA4 (7d):** 274 active users (+72), 304 sessions, avg session 81s (down from 130s). Direct 177, Organic Search 104, AI Assistant 6.
+
+**Pinterest (API, 30d):** 1,704 impressions, 5 saves, 69 pin clicks, 17 outbound clicks. Far under the 25K threshold, links stay on Airbnb.
+
+**Technical:** 0 broken internal links, 0 HIGH alt-text issues (3 LOW missing lazy), 1 orphan (/coachella-valley/, fixed: linked from homepage).
