@@ -1,7 +1,8 @@
 ---
-title: "6 Best Spas in the Coachella Valley: Prices & How to Book"
+title: "10 Best Spas in the Coachella Valley: Prices & How to Book"
 date: 2026-07-11
-metaDescription: "6 day-spa options across Palm Springs, Desert Hot Springs, La Quinta, and Palm Desert, with prices, reservation tips, and what makes each one worth it."
+dateModified: 2026-09-28
+metaDescription: "10 day-spa options across Palm Springs, Desert Hot Springs, La Quinta, Palm Desert, Rancho Mirage, and Indian Wells, with what to book and where."
 ogImage: /blog/images/palm-springs-hotel-pool.webp
 heroImage: /blog/images/palm-springs-hotel-pool.webp
 heroPosition: "center bottom"
@@ -14,10 +15,12 @@ keywords:
   - Well Spa La Quinta
   - Agua Caliente spa
   - spa day pass Palm Springs
+  - Indian Wells spa day pass
+  - Rancho Mirage spa
 excerpt: "The Coachella Valley has real spa days, not just hotel amenities. Here's where non-guests can get in, what it costs, and which one fits which mood."
 articleSection: "Local Guide"
 property: all
-readTime: "9 min read"
+readTime: "11 min read"
 layout: blog-post.njk
 ---
 
@@ -67,6 +70,30 @@ layout: blog-post.njk
 
 <p>Worth it if the architecture and quiet scale matter more to you than pool access, but go in knowing the pool isn't part of the deal.</p>
 
+<h2>Spa Las Palmas at Omni Rancho Las Palmas Resort & Spa, Rancho Mirage</h2>
+
+<p>41000 Bob Hope Drive, Rancho Mirage. This one's built for a full day out, not just a treatment. Beyond the spa's whirlpool, sauna, steam room, and relaxation lounge, a day pass through ResortPass also opens up the resort's Splashtopia water park, including a lazy river and two slides, plus a separate adults-only pool if the water park isn't the point of your visit. Pricing runs through ResortPass and moves with the date and package (spa-only access vs. pool-and-spa vs. cabana add-on), so check the live listing before you plan around a number.</p>
+
+<p>Good pick if you're bringing a mixed group, some people want a treatment, others just want a pool day, and you don't want to split up.</p>
+
+<h2>Aqua Serena Spa at Grand Hyatt Indian Wells Resort & Villas</h2>
+
+<p>44-600 Indian Wells Lane, Indian Wells. Formerly branded Hyatt Regency Indian Wells Resort & Spa, this is a 30,000-square-foot spa with 18 indoor and outdoor treatment rooms, a eucalyptus steam room, dry sauna, and a fountain-side patio that looks straight at the Santa Rosa Mountains. Day access books through ResortPass alongside the resort's seven pools and lazy river, so it works as either a quiet spa morning or a full pool day depending on which pass you pick.</p>
+
+<p>Closer to Indio than the Palm Springs spas on this list, roughly 15 minutes from Terra Luz and The Cozy Cactus, which makes it an easy add-on to a polo grounds or festival trip without driving into town.</p>
+
+<h2>Spa Esmeralda at Renaissance Esmeralda Resort & Spa, Indian Wells</h2>
+
+<p>44400 Indian Wells Lane, Indian Wells. A 13,000-square-foot spa built around a private garden with its own waterfall soak, plus a eucalyptus steam room and gender-specific relaxation lounges. The spa is 18-and-up, appointment-required, and open to day visitors through ResortPass or by booking direct. It sits a short walk from Spa Rosa and Aqua Serena Spa, both also in Indian Wells, if you want to compare properties before picking one.</p>
+
+<p>The garden setting is the differentiator here. It reads more like a private residence than a hotel spa wing.</p>
+
+<h2>Spa Rosa at Tommy Bahama Miramonte Resort & Spa, Indian Wells</h2>
+
+<p>45000 Indian Wells Lane, Indian Wells. The resort was known as Miramonte Resort & Spa until its Tommy Bahama rebrand, and the spa itself, formerly The Well Spa, is now Spa Rosa: 12,000 square feet with river-bench water therapy, a saltwater soaking pool, private cabanas, and treatments built around desert botanicals. A standalone spa day pass has run around $30 in past listings, though the resort's own site notes pricing shifts by day and availability, so confirm the current rate before booking. A 20% staff and house charge applies to treatments on top of whatever the day pass covers.</p>
+
+<p>Worth knowing if you already know the property as Miramonte. Same spa, same address, new name on the door.</p>
+
 <h2>What to Skip (or Book Differently)</h2>
 
 <p>Sensei Porcupine Creek in Rancho Mirage doesn't sell a standalone day pass. Spa access there comes bundled into overnight stays only, with spa credit built into the room rate, and the property is adults-only. If a Sensei spa day is the goal, an overnight stay is the actual product, not a side option.</p>
@@ -83,7 +110,7 @@ layout: blog-post.njk
 
 <h2>Where to Stay for a Spa-Focused Trip</h2>
 
-<p><a href="/the-sundune/">The Sundune</a> in Palm Springs puts you closest to Séc-hé, Santé Spa, and Estrella Spa, all within a short drive of downtown. If you'd rather base out toward Indio, <a href="/terra-luz/">Terra Luz</a> and <a href="/cozy-cactus/">The Cozy Cactus</a> are both closer to La Quinta and Palm Desert, putting Well Spa+Salon and JW Marriott Desert Springs within 20 minutes. For a lower-key trip that skips gym memberships and class packages entirely, see our <a href="/blog/classpass-palm-springs/">ClassPass in Palm Springs guide</a> for the fitness-studio side of desert wellness.</p>
+<p><a href="/the-sundune/">The Sundune</a> in Palm Springs puts you closest to Séc-hé, Santé Spa, and Estrella Spa, all within a short drive of downtown. If you'd rather base out toward Indio, <a href="/terra-luz/">Terra Luz</a> and <a href="/cozy-cactus/">The Cozy Cactus</a> are closer to the Indian Wells cluster, Aqua Serena Spa, Spa Esmeralda, and Spa Rosa are all within about 15 minutes, with Well Spa+Salon, JW Marriott Desert Springs, and Spa Las Palmas in Rancho Mirage also inside a 20-minute drive. For a lower-key trip that skips gym memberships and class packages entirely, see our <a href="/blog/classpass-palm-springs/">ClassPass in Palm Springs guide</a> for the fitness-studio side of desert wellness.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -94,7 +121,7 @@ layout: blog-post.njk
 <p>Yes. Sensei Porcupine Creek bundles spa access into overnight stays only, with no standalone day pass. Parker Palm Springs keeps its pool guests-only and generally books non-guests for individual treatments rather than full facility access.</p>
 
 <h3>How much does a spa day pass cost in the Coachella Valley?</h3>
-<p>Prices range from around $45 for a half-day pass at JW Marriott Desert Springs to $125-$165 for a full day at Séc-hé on a weekend. Well Spa+Salon at La Quinta Resort runs about $65 for facility access alone. Prices shift with season and day of week, so confirm current pricing before booking.</p>
+<p>Prices range from around $30 for a spa-only day pass at Spa Rosa in Indian Wells to $125-$165 for a full day at Séc-hé on a weekend. ResortPass properties like Spa Las Palmas, Aqua Serena Spa, and Spa Esmeralda price by date and package rather than a flat rate, so check the live listing before you book. Prices shift with season and day of week across the board, so confirm current pricing before driving out.</p>
 
 <h3>Do I need a reservation for a spa day, or can I walk in?</h3>
 <p>Reservations are required or strongly recommended at every spa on this list. Weekend slots at the most popular spots, especially Séc-hé and Two Bunch Palms, book up in advance. Walking in without a reservation is a real risk of getting turned away.</p>
@@ -128,7 +155,7 @@ layout: blog-post.njk
       "name": "How much does a spa day pass cost in the Coachella Valley?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Prices range from around $45 for a half-day pass at JW Marriott Desert Springs to $125-$165 for a full day at Séc-hé on a weekend. Well Spa+Salon at La Quinta Resort runs about $65 for facility access alone. Prices shift with season and day of week, so confirm current pricing before booking."
+        "text": "Prices range from around $30 for a spa-only day pass at Spa Rosa in Indian Wells to $125-$165 for a full day at Séc-hé on a weekend. ResortPass properties like Spa Las Palmas, Aqua Serena Spa, and Spa Esmeralda price by date and package rather than a flat rate, so check the live listing before you book. Prices shift with season and day of week across the board, so confirm current pricing before driving out."
       }
     },
     {
