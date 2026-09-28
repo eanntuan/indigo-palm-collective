@@ -61,7 +61,7 @@ layout: blog-post.njk
 <p>A few things I did that guests have raved about:</p>
 
 <h3>I labeled everything.</h3>
-<p>Where the batteries are. Where the extra linens go. Which drawer has the baby spoons. Which cabinet has the Tupperware lids (because that's always the mystery, right?). I didn't want guests hunting for things at 7am while their little ones are screaming for breakfast. One guest told me the labeling system was "unprecedented." I laughed when she said it, but I get it. To be honest, my own home is not as organized as my vacation rentals. If I, the homeowner, cannot find where the forks are, how do I expect a guest to?</p>
+<p>Where the batteries are. Where the extra linens go. Which drawer has the baby spoons. Which cabinet has the Tupperware lids (because that's always the mystery, right?). I didn't want guests hunting for things at 7am while their little ones are screaming for breakfast. One guest told me the labeling system was "unprecedented." I laughed when she said it, but I get it. My own home is not as organized as my vacation rentals. If I, the homeowner, cannot find where the forks are, how do I expect a guest to?</p>
 
 <img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Everything labeled: batteries, extra linens, baby spoons, exactly where you'd look for them</p>

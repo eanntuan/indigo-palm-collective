@@ -102,7 +102,7 @@ layout: blog-post.njk
 
 <h2>What's Still Being Decided</h2>
 
-<p>Honest answer: the design is still evolving. The balcony layout isn't finalized. The kitchen table situation has three options in play. The gallery wall placement needs an on-site day before we commit to anything. We're also warming up the lighting throughout: swapping cooler can lights for warmer bulbs and adding floor lamps with shades or frosted globes.</p>
+<p>The design is still evolving: the balcony layout isn't finalized, the kitchen table situation has three options in play, and the gallery wall placement needs an on-site day before we commit to anything. We're also warming up the lighting throughout, swapping cooler can lights for warmer bulbs and adding floor lamps with shades or frosted globes.</p>
 
 <p>That's just how a real renovation goes. You make the decisions you can make from afar, then you show up and measure things and adjust. Some things look different in person.</p>
 

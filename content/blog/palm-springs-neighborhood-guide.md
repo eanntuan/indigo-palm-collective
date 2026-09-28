@@ -107,7 +107,7 @@ If you're staying at [The Sundune at Palm Springs](/the-sundune), we're in the E
 <img src="/blog/images/sundune-palm-springs-condo.webp" alt="The Sundune at Palm Springs condo exterior with desert landscaping and clear blue sky" loading="lazy" width="1200" height="800">
 <p class="image-caption">The Sundune sits in a quiet mid-city area, about 10 minutes from Downtown Palm Springs and close to hiking access.</p>
 
-The honest version: Palm Springs is small enough that no neighborhood is truly inconvenient. The differences are more about vibe than logistics. Pick based on what you want your mornings to feel like, not just where the restaurants are.
+Palm Springs is small enough that no neighborhood is truly inconvenient. The differences are more about vibe than logistics. Pick based on what you want your mornings to feel like, not just where the restaurants are.
 
 ## Frequently Asked Questions
 

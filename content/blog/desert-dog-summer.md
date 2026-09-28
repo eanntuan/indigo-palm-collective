@@ -93,11 +93,11 @@ A few things that make a real difference in desert travel with dogs:
 
 ## The Right Season to Bring Your Dog
 
-Honest answer: October through April is when the Coachella Valley is genuinely great for dogs. Mild temperatures, comfortable pavement, plenty of outdoor options. Indian Canyons is dog-friendly on leash. The Coachella Valley Preserve has trails. Morning walks on residential streets feel like what they're supposed to feel like.
+October through April is when the Coachella Valley is great for dogs: mild temperatures, comfortable pavement, plenty of outdoor options. Indian Canyons is dog-friendly on leash, the Coachella Valley Preserve has trails, and morning walks on residential streets feel like what they're supposed to feel like.
 
 If you're visiting in summer and bringing your dog, it can work. But it requires discipline around timing, the right gear, and a willingness to keep your dog inside during the heat of the day. We see guests pull it off, and their dogs seem fine. We also see guests who underestimate it and have a stressful trip.
 
-The [pet-friendly Palm Springs](/blog/pet-friendly-palm-springs/) landscape is genuinely good here when the timing is right.
+The [pet-friendly Palm Springs](/blog/pet-friendly-palm-springs/) landscape is good here when the timing is right.
 
 ## Frequently Asked Questions
 

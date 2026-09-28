@@ -46,7 +46,7 @@ layout: blog-post.njk
 
 <h2>Airbnb Does Have Real Value</h2>
 
-<p>I want to be honest here because this isn't a full takedown of the platform. Airbnb's search and discovery are genuinely good. The review system, for all its weirdness, gives you a baseline of trust for hosts you've never heard of in cities you've never visited.</p>
+<p>This isn't a full takedown of the platform. Airbnb's search and discovery are good. The review system, for all its weirdness, gives you a baseline of trust for hosts you've never heard of in cities you've never visited.</p>
 
 <p>For first-time bookings with unknown hosts somewhere unfamiliar, the platform infrastructure is worth something. But once you've stayed somewhere and you know the host responds fast and the house is what the photos showed? The calculation changes pretty quickly.</p>
 

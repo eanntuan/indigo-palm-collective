@@ -64,7 +64,7 @@ layout: blog-post.njk
 
 <h2>The clothing rack and pendants</h2>
 
-<p>The room has no closet in the traditional sense. A wood clothing rack stands near the entry wall, which keeps the room functional without sacrificing floor space or interrupting the wallpaper with a closet door. When we photographed the room, we draped a satin orange and yellow batik kimono over the rack. Not a styling trick but a genuine piece in the house. It photographs well against the blue and it's there for guests to wear if they want.</p>
+<p>The room has no closet in the traditional sense. A wood clothing rack stands near the entry wall, which keeps the room functional without sacrificing floor space or interrupting the wallpaper with a closet door. When we photographed the room, we draped a satin orange and yellow batik kimono over the rack. It's a genuine piece in the house, not a styling trick. It photographs well against the blue and it's there for guests to wear if they want.</p>
 
 <p>The two terracotta pendant lamps flank the nightstands. They're wired as plug-in pendants on jute cord, DIY-installed, and the terracotta shade picks up the tile headboard directly. Dawn's brief called them "playful terracotta pendant lamps," which is accurate: they're not serious pendant fixtures, they're cheerful ones. The pair cost $110.</p>
 

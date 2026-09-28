@@ -41,7 +41,7 @@ layout: blog-post.njk
 
 <p>The two floating shelves above it hold framed prints: a Havana street scene in full color, a graphic cactus print in sage, a Cafe Bustelo illustration, and a pair of black and white photos that look like they came from a magazine shoot in 1960s Old Havana. There are trailing plants tucked between the frames, which keeps it from reading as staged. A globe floor lamp stands to the right with a warm white globe shade, and it lights the whole wall with soft glow in the evenings.</p>
 
-<p>The goal was to make this corner feel like it belongs to someone. Not a hotel styling exercise but a place where someone with a specific taste lives.</p>
+<p>The goal was to make this corner feel like it belongs to someone with a specific taste living there, not staged for a photo shoot.</p>
 
 <h2>The table that seats eight</h2>
 

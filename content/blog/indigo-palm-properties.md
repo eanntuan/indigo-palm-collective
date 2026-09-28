@@ -23,9 +23,9 @@ excerpt: "Terra Luz, The Cozy Cactus, The Sundune. Three completely different de
 layout: blog-post.njk
 ---
 
-<p>People ask me all the time which property they should book. My honest answer: it depends on what your group wants when you're not performing vacation.</p>
+<p>People ask me all the time which property they should book. It depends on what your group wants when you're not performing vacation.</p>
 
-<p>Indigo Palm Collective has three short-term rental properties in the Coachella Valley, each one designed with a very specific kind of guest in mind. They are genuinely different from each other, not just aesthetically, but structurally. Who they sleep, what they're near, what the vibe feels like at 9pm when everyone's tired. If you read through this, you'll know which one is yours before you even check availability.</p>
+<p>Indigo Palm Collective has three short-term rental properties in the Coachella Valley, each one designed with a very specific kind of guest in mind. They are different from each other, not just aesthetically, but structurally. Who they sleep, what they're near, what the vibe feels like at 9pm when everyone's tired. If you read through this, you'll know which one is yours before you even check availability.</p>
 
 <h2>Terra Luz: Indio, CA</h2>
 

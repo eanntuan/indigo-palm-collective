@@ -60,7 +60,7 @@ Coachella and Stagecoach week (mid-April through early May) is when ClassPass av
 
 BNP Paribas Open week in March is similar, particularly for studios in Palm Desert and Indian Wells. That crowd skews fitness-oriented and tends to book early.
 
-The honest version: if your ClassPass routine at home depends on last-minute availability, the desert during festival season won't work that way. Book your classes when you book your flights.
+If your ClassPass routine at home depends on last-minute availability, the desert during festival season won't work that way. Book your classes when you book your flights.
 
 ## What to Do If Nothing's Available
 
