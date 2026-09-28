@@ -302,6 +302,37 @@
                 <p class="section-title">Booking Approved</p>
                 <p style="color:#555;font-size:0.95rem;margin-bottom:1rem;">Payment link was sent to the guest.</p>
                 <div class="payment-link-box" id="payment-link-display"></div>
+
+                <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #f0ede6;">
+                    <p class="section-title">Guest Paid (Zelle / Other)</p>
+                    <div class="form-group">
+                        <label>Amount Received<span class="required-star">*</span></label>
+                        <input type="number" id="confirm-total-paid" min="0" step="0.01">
+                        <p class="hint">Defaults to the full total due. Edit if this was a partial payment (e.g. a 50% deposit).</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <select id="confirm-method">
+                            <option value="zelle">Zelle</option>
+                            <option value="check">Check</option>
+                            <option value="cash">Cash</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Note to Guest (optional)</label>
+                        <textarea id="confirm-note" placeholder="e.g. remaining balance due date, dogs approved..."></textarea>
+                    </div>
+                    <button class="btn-approve" id="confirm-payment-btn">Confirm Payment &amp; Send "You're Booked" Email</button>
+                    <div id="confirm-payment-status"></div>
+                </div>
+            </div>
+
+            <!-- Fully confirmed -->
+            <div class="card" id="confirmed-card" style="display:none;">
+                <p class="section-title">Booking Confirmed</p>
+                <p style="color:#555;font-size:0.95rem;margin-bottom:0.5rem;">Confirmation email sent to the guest.</p>
+                <p id="hostaway-status" style="font-size:0.9rem;"></p>
             </div>
         </div>
     </div>
@@ -310,6 +341,7 @@
         const params = new URLSearchParams(location.search);
         const bookingId = params.get('id');
         const token = params.get('token');
+        const adminKey = params.get('key') || '';
 
         let booking = null;
 
@@ -364,7 +396,7 @@
                 ? `<span class="approved-badge">Approved</span>` : '';
 
             document.getElementById('booking-title').innerHTML =
-                `${b.property}${statusBadge}`;
+                `${b.property}${b.status === 'confirmed' ? '<span class="approved-badge">Confirmed</span>' : statusBadge}`;
 
             const baseTotal = (b.pricing?.total || 0) + (b.poolHeatCost || 0);
             const priceAfterDiscount = Math.max(0, baseTotal - (b.discountAmount || 0));
@@ -392,18 +424,70 @@
 
             document.getElementById('guest-details').innerHTML = guestHtml;
 
-            if (b.status === 'approved') {
+            if (b.status === 'confirmed') {
+                document.getElementById('approval-form-card').style.display = 'none';
+                document.getElementById('approved-card').style.display = 'none';
+                document.getElementById('confirmed-card').style.display = 'block';
+                document.getElementById('hostaway-status').textContent = b.hostawayReservationId
+                    ? `Hostaway reservation #${b.hostawayReservationId} created.`
+                    : (b.hostawayError ? `Hostaway reservation failed: ${b.hostawayError}. Add it manually in Hostaway.` : `This property isn't synced to Hostaway.`);
+            } else if (b.status === 'approved') {
                 document.getElementById('approval-form-card').style.display = 'none';
                 document.getElementById('approved-card').style.display = 'block';
                 if (b.paymentLink) {
                     document.getElementById('payment-link-display').innerHTML =
                         `<a href="${b.paymentLink}" target="_blank">${b.paymentLink}</a>`;
                 }
+                const baseDue = (b.pricing?.total || 0) + (b.poolHeatCost || 0) - (b.discountAmount || 0);
+                document.getElementById('confirm-total-paid').value = Math.max(0, b.agreedTotal || baseDue).toFixed(2);
+                document.getElementById('confirm-payment-btn').addEventListener('click', confirmPayment);
             } else {
                 updateFinalTotal();
                 document.getElementById('override-total').addEventListener('input', updateFinalTotal);
                 document.getElementById('flat-discount').addEventListener('input', updateFinalTotal);
                 document.getElementById('approve-btn').addEventListener('click', approveBooking);
+            }
+        }
+
+        async function confirmPayment() {
+            const btn = document.getElementById('confirm-payment-btn');
+            const statusDiv = document.getElementById('confirm-payment-status');
+
+            const totalPaid = parseFloat(document.getElementById('confirm-total-paid').value);
+            const method = document.getElementById('confirm-method').value;
+            const note = document.getElementById('confirm-note').value.trim();
+
+            if (!totalPaid || totalPaid <= 0) {
+                statusDiv.innerHTML = `<div class="status-box error">Enter the amount received.</div>`;
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Confirming...';
+            statusDiv.innerHTML = '';
+
+            try {
+                const res = await fetch('/api/confirm-payment?key=' + encodeURIComponent(adminKey), {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: bookingId, token, totalPaid, method, note: note || null }),
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    booking.status = 'confirmed';
+                    booking.hostawayReservationId = data.hostawayReservationId;
+                    booking.hostawayError = data.hostawayError;
+                    renderBooking();
+                } else {
+                    statusDiv.innerHTML = `<div class="status-box error">${data.error || 'Something went wrong.'}</div>`;
+                    btn.disabled = false;
+                    btn.textContent = 'Confirm Payment & Send "You\'re Booked" Email';
+                }
+            } catch (e) {
+                statusDiv.innerHTML = `<div class="status-box error">Network error. Try again.</div>`;
+                btn.disabled = false;
+                btn.textContent = 'Confirm Payment & Send "You\'re Booked" Email';
             }
         }
 

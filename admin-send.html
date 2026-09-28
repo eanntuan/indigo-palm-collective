@@ -205,11 +205,17 @@
             <p class="subtitle">Use this when a guest has paid via Zelle, been booked outside the website, or anytime you need to manually fire the "You're Booked" email.</p>
 
             <div class="form-group">
+                <label for="admin-key">Admin Key<span class="required-star">*</span></label>
+                <input type="password" id="admin-key" placeholder="Required to send">
+                <p class="hint">Same admin key as the Inbox dashboard. Required server-side to send anything from this page.</p>
+            </div>
+
+            <div class="form-group">
                 <label for="property">Property<span class="required-star">*</span></label>
                 <select id="property">
                     <option value="">Select a property...</option>
                     <option value="cozy-cactus">The Cozy Cactus, Indio, CA</option>
-                    <option value="casa-moto">Casa Moto, Indio, CA</option>
+                    <option value="terra-luz">Terra Luz, Indio, CA</option>
                     <option value="ps-retreat">PS Retreat, Palm Springs, CA</option>
                     <option value="the-well">The Well, Palm Springs, CA</option>
                 </select>
@@ -271,10 +277,13 @@
     <script>
         const PROPERTY_NAMES = {
             'cozy-cactus': 'The Cozy Cactus',
-            'casa-moto': 'Casa Moto',
+            'terra-luz': 'Terra Luz',
             'ps-retreat': 'PS Retreat',
             'the-well': 'The Well',
         };
+
+        const adminKeyFromUrl = new URLSearchParams(location.search).get('key');
+        if (adminKeyFromUrl) document.getElementById('admin-key').value = adminKeyFromUrl;
 
         function fmtDate(d) {
             if (!d) return '';
@@ -329,6 +338,7 @@
             const btn = document.getElementById('send-btn');
             const statusDiv = document.getElementById('send-status');
 
+            const adminKey    = document.getElementById('admin-key').value.trim();
             const propertyId  = document.getElementById('property').value;
             const name        = document.getElementById('guest-name').value.trim();
             const email       = document.getElementById('guest-email').value.trim();
@@ -337,6 +347,11 @@
             const guests      = parseInt(document.getElementById('guests').value) || 2;
             const totalPaid   = document.getElementById('total-paid').value || null;
             const notes       = document.getElementById('notes').value.trim() || null;
+
+            if (!adminKey) {
+                statusDiv.innerHTML = `<div class="status-box error">Enter the admin key.</div>`;
+                return;
+            }
 
             if (!propertyId || !name || !email || !checkIn || !checkOut) {
                 statusDiv.innerHTML = `<div class="status-box error">Please fill in property, guest name, email, and dates.</div>`;
@@ -348,7 +363,7 @@
             statusDiv.innerHTML = '';
 
             try {
-                const res = await fetch('/api/confirm', {
+                const res = await fetch('/api/confirm?key=' + encodeURIComponent(adminKey), {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ propertyId, name, email, checkIn, checkOut, guests, totalPaid, notes }),
@@ -357,7 +372,10 @@
                 const data = await res.json();
 
                 if (data.success) {
-                    statusDiv.innerHTML = `<div class="status-box success">Confirmation sent to ${email}.</div>`;
+                    const hostawayNote = data.hostawayError
+                        ? `<br><strong>Hostaway reservation failed:</strong> ${data.hostawayError}. Add it manually in Hostaway.`
+                        : (data.hostawayReservationId ? `<br>Hostaway reservation #${data.hostawayReservationId} created.` : '');
+                    statusDiv.innerHTML = `<div class="status-box ${data.hostawayError ? 'error' : 'success'}">Confirmation sent to ${email}.${hostawayNote}</div>`;
                     btn.textContent = 'Sent!';
                 } else {
                     statusDiv.innerHTML = `<div class="status-box error">${data.error || 'Something went wrong.'}</div>`;

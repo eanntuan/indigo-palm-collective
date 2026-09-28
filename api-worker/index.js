@@ -154,11 +154,11 @@ const PROPERTY_STORY_BEATS = {
     welcome:   'The hot tub is best after 9pm. The patio string lights come on at dusk. The backyard is completely private.',
   },
   'terra-luz': {
-    confirmed: 'Saltwater pool, heated year-round. A kitchen built for people who actually cook. The design took two years and a brand strategist who cared about every decision.',
+    confirmed: 'Saltwater pool, heated year-round. The kitchen has a pass-through window straight to the patio, so whoever\'s cooking isn\'t stuck missing the pool.',
     welcome:   'The saltwater pool is heated and ready. The tortilla press is in the lower cabinet, next to the cast iron. The neighborhood is quiet.',
   },
   'casa-moto': {
-    confirmed: 'Saltwater pool, heated year-round. A kitchen built for people who actually cook. The design took two years and a brand strategist who cared about every decision.',
+    confirmed: 'Saltwater pool, heated year-round. The kitchen has a pass-through window straight to the patio, so whoever\'s cooking isn\'t stuck missing the pool.',
     welcome:   'The saltwater pool is heated and ready. The tortilla press is in the lower cabinet, next to the cast iron. The neighborhood is quiet.',
   },
   'ps-retreat': {
@@ -494,8 +494,12 @@ export default {
       return handleApprove(request, env);
     }
 
+    if (path === '/api/confirm-payment' && request.method === 'POST') {
+      return isAdminAuthorized(request, env) ? handleConfirmPayment(request, env) : unauthorizedJson();
+    }
+
     if (path === '/api/confirm' && request.method === 'POST') {
-      return handleConfirm(request, env);
+      return isAdminAuthorized(request, env) ? handleConfirm(request, env) : unauthorizedJson();
     }
 
     if (path === '/api/discount' && request.method === 'GET') {
@@ -977,7 +981,10 @@ async function handleBooking(request, env) {
     });
   }
 
-  const adminUrl = `https://indigopalm.co/admin-approve.html?id=${bookingId}&token=${token}`;
+  // key is the host-only admin secret, never sent to the guest — it's a second
+  // factor on /api/confirm-payment so a leaked/guessed booking token alone
+  // can't confirm a payment.
+  const adminUrl = `https://indigopalm.co/admin-approve.html?id=${bookingId}&token=${token}&key=${encodeURIComponent(env.ADMIN_DEBUG_KEY || '')}`;
 
   // Host email
   const hostEmailHtml = emailWrapper(`
@@ -1012,7 +1019,7 @@ async function handleBooking(request, env) {
     <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">Booking Request</p>
     <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">The desert's holding your spot.</h1>
     <p style="margin:0 0 14px;font-size:15px;color:#555;line-height:1.7;">Hi ${name.split(' ')[0]}, we got your request for <strong>${property}</strong>, ${fmtDate(checkIn)} to ${fmtDate(checkOut)}. We'll follow up within 24 hours with a payment link to make it official.</p>
-    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">We built Indigo Palm to create the kind of desert house people come back to on purpose. Not just a place with a pool, but a place that actually feels like somewhere. That starts the moment you decide to come.</p>
+    <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">We built and designed ${property} to be the kind of desert house people come to stay, the kind that feels lived-in the moment you walk through the door, where every corner was chosen on purpose. We've held your dates, pending payment, and can't wait to host you!</p>
     <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
       ${detailRow('Property', property)}
       ${detailRow('Check-in', fmtDate(checkIn))}
@@ -1042,7 +1049,10 @@ async function handleBooking(request, env) {
       }),
     ]);
 
-    return new Response(JSON.stringify({ success: true, bookingId, token }), {
+    // Never return `token` here — the guest's own browser receives this response,
+    // and token is the host-only secret that authorizes /api/approve and
+    // /api/confirm-payment. It's mailed only to indigopalmco@gmail.com.
+    return new Response(JSON.stringify({ success: true, bookingId }), {
       status: 200, headers: CORS_HEADERS,
     });
   } catch (err) {
@@ -1249,6 +1259,71 @@ async function handleApprove(request, env) {
   }
 }
 
+// ── Manual Payment Confirmation (Zelle / other off-platform payment) ─────────
+// Guest-facing counterpart to handleApprove: once Eann has personally verified
+// an off-platform payment (Zelle, check, cash), she confirms it here using the
+// same booking id+token from the "Review & Approve" email. This replays
+// finalizeBookingConfirmation exactly like the Square webhook does, so both
+// payment paths share one idempotent confirmation + Hostaway-creation path.
+async function handleConfirmPayment(request, env) {
+  let body;
+  try { body = await request.json(); } catch {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid JSON' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const { id, token, totalPaid, method, note } = body;
+
+  if (!id || !token || totalPaid == null) {
+    return new Response(JSON.stringify({ success: false, error: 'Missing id, token, or totalPaid' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const raw = await env.BOOKINGS.get(`booking:${id}`);
+  if (!raw) {
+    return new Response(JSON.stringify({ success: false, error: 'Booking not found' }), {
+      status: 404, headers: CORS_HEADERS,
+    });
+  }
+
+  const booking = JSON.parse(raw);
+  if (booking.token !== token) {
+    return new Response(JSON.stringify({ success: false, error: 'Invalid token' }), {
+      status: 403, headers: CORS_HEADERS,
+    });
+  }
+
+  if (booking.status === 'confirmed') {
+    return new Response(JSON.stringify({ success: true, alreadyConfirmed: true }), {
+      status: 200, headers: CORS_HEADERS,
+    });
+  }
+
+  // Payment can only be confirmed after the pricing/approval step — closes
+  // off skipping straight from a raw guest request to a paid, Hostaway-backed
+  // reservation.
+  if (booking.status !== 'approved') {
+    return new Response(JSON.stringify({ success: false, error: 'Booking must be approved before payment can be confirmed' }), {
+      status: 400, headers: CORS_HEADERS,
+    });
+  }
+
+  const result = await finalizeBookingConfirmation({
+    bookingId: id,
+    orderId: null,
+    totalPaid: parseFloat(totalPaid),
+    paymentMethod: method || 'zelle',
+    note: note || null,
+    env,
+  });
+
+  return new Response(JSON.stringify({ success: !result.error, ...result }), {
+    status: result.error ? 500 : 200, headers: CORS_HEADERS,
+  });
+}
+
 // ── Booking Confirmed ─────────────────────────────────────────────────────────
 
 async function handleConfirm(request, env) {
@@ -1313,10 +1388,12 @@ async function handleConfirm(request, env) {
 
     // Block calendar on Hostaway (Cozy Cactus + Casa Moto only)
     let hostawayReservationId = null;
+    let hostawayError = null;
     try {
       hostawayReservationId = await createHostawayReservation(env, { propertyId, name, email, checkIn, checkOut, guests });
     } catch (err) {
       console.error('Hostaway block failed (non-fatal):', err);
+      hostawayError = err.message;
     }
 
     // Block calendar via iCal feed (PS Retreat + The Well)
@@ -1335,7 +1412,7 @@ async function handleConfirm(request, env) {
       }
     }
 
-    return new Response(JSON.stringify({ success: true, hostawayReservationId }), { status: 200, headers: CORS_HEADERS });
+    return new Response(JSON.stringify({ success: true, hostawayReservationId, hostawayError }), { status: 200, headers: CORS_HEADERS });
   } catch (err) {
     console.error('Confirm email failed:', err);
     return new Response(JSON.stringify({ success: false, error: 'Failed to send email' }), {
@@ -1433,7 +1510,7 @@ async function handleSquareWebhook(request, env) {
     return new Response('OK', { status: 200 });
   }
 
-  const result = await finalizeBookingConfirmation({ bookingId, orderId, totalPaid, env });
+  const result = await finalizeBookingConfirmation({ bookingId, orderId, totalPaid, paymentMethod: 'square', env });
   if (result.error) console.error('finalizeBookingConfirmation failed:', result.error);
   return new Response('OK', { status: 200 });
 }
@@ -1443,7 +1520,7 @@ async function handleSquareWebhook(request, env) {
 // welcome-guide scheduling. Shared by the live Square webhook and the manual
 // recovery route (handleManualConfirmPayment) so a missed webhook delivery
 // can be replayed exactly, idempotently (booking.status === 'confirmed' short-circuits).
-async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, env }) {
+async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, paymentMethod = 'square', note = null, env }) {
   const raw = await env.BOOKINGS.get(`booking:${bookingId}`);
   if (!raw) return { error: `Booking not found for id: ${bookingId}` };
   const booking = JSON.parse(raw);
@@ -1462,7 +1539,7 @@ async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, env 
 
   // Send confirmation email to guest
   const heroUrl = await getPropertyHeroImageUrl(propertyId, env);
-  const html = buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes: null, heroUrl });
+  const html = buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes: note, heroUrl });
 
   await sendEmail(env.RESEND_API_KEY, {
     from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
@@ -1473,12 +1550,13 @@ async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, env 
   });
 
   // Notify host
+  const methodLabel = { square: 'Square', zelle: 'Zelle', check: 'check', cash: 'cash' }[paymentMethod] || paymentMethod;
   await sendEmail(env.RESEND_API_KEY, {
     from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
     to: 'indigopalmco@gmail.com',
     subject: `Payment received + booking confirmed: ${info.name} (${fmtDate(checkIn)} – ${fmtDate(checkOut)})`,
     html: emailWrapper(`
-      <h2 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 20px;">Payment received via Square</h2>
+      <h2 style="font-family:Georgia,serif;font-size:22px;font-weight:400;margin:0 0 20px;">Payment received via ${methodLabel}</h2>
       <table width="100%" cellpadding="0" cellspacing="0">
         ${detailRow('Property', info.name)}
         ${detailRow('Guest', name)}
@@ -1488,17 +1566,19 @@ async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, env 
         ${detailRow('Nights', String(nights))}
         ${detailRow('Guests', String(guests))}
         ${detailRow('Total Paid', `$${totalPaid.toFixed(2)}`)}
-        ${detailRow('Square Order', orderId)}
+        ${orderId ? detailRow('Square Order', orderId) : ''}
       </table>
     `),
   });
 
   // Create Hostaway reservation
   let hostawayReservationId = null;
+  let hostawayError = null;
   try {
     hostawayReservationId = await createHostawayReservation(env, { propertyId, name, email, checkIn, checkOut, guests });
   } catch (err) {
     console.error('Hostaway reservation failed (non-fatal):', err);
+    hostawayError = err.message;
   }
 
   // Block iCal calendar (ps-retreat, the-well)
@@ -1515,8 +1595,10 @@ async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, env 
     ...booking,
     status: 'confirmed',
     totalPaid,
-    squareOrderId: orderId,
+    paymentMethod,
+    squareOrderId: orderId || null,
     hostawayReservationId,
+    hostawayError,
     confirmedAt: new Date().toISOString(),
   }));
 
@@ -1532,7 +1614,7 @@ async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, env 
   }
 
   console.log(`Booking confirmed: ${bookingId}, Hostaway: ${hostawayReservationId}`);
-  return { confirmed: true, hostawayReservationId };
+  return { confirmed: true, hostawayReservationId, hostawayError };
 }
 
 // Manual recovery: verify a payment independently via Square's Payments API
@@ -1597,7 +1679,7 @@ async function handleManualConfirmPayment(url, env) {
     });
   }
 
-  const result = await finalizeBookingConfirmation({ bookingId, orderId: matchedOrderId, totalPaid: matchedTotalPaid, env });
+  const result = await finalizeBookingConfirmation({ bookingId, orderId: matchedOrderId, totalPaid: matchedTotalPaid, paymentMethod: 'square', env });
   return new Response(JSON.stringify({ success: !result.error, ...result }), {
     status: result.error ? 500 : 200, headers: { 'Content-Type': 'application/json' },
   });
