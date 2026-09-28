@@ -1,8 +1,8 @@
 ---
-title: "Best Coffee in the Coachella Valley: 10 Shops to Know"
+title: "Best Coffee in the Coachella Valley: 14 Shops to Know"
 date: 2025-12-28
-dateModified: 2026-06-10
-metaDescription: "From Indio to Palm Springs: 10 coffee shops across the Coachella Valley worth the stop. Where to go, what to order, and what makes each one worth it."
+dateModified: 2026-09-28
+metaDescription: "From Indio to Coachella: 14 coffee shops across the Coachella Valley worth the stop. Where to go, what to order, and what makes each one worth it."
 keywords:
   - Palm Springs coffee shops
   - best coffee Palm Springs
@@ -16,13 +16,17 @@ keywords:
   - Buena Matcha Palm Desert
   - Vintage Coffee House Indio
   - Coachella Valley things to do
+  - IW Coffee Indian Wells
+  - Rutina Coffee Palm Desert
+  - Sixth Street Coffee Coachella
+  - Espresso Self Desert Hot Springs
 ogImage: /blog/images/coffee-lattes-hero.webp
 heroImage: /blog/images/coffee-lattes-hero.webp
 heroAlt: "Coffee bar setup with mugs, pour-over kettle, and espresso gear at a Coachella Valley vacation rental"
 articleSection: Palm Springs Travel Guide
 property: all
 readTime: 4 min read
-excerpt: "Skip the hotel lobby drip. A local's guide to the 5 best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and why it matters."
+excerpt: "Skip the hotel lobby drip. A local's guide to the best coffee shops in Palm Springs and the Coachella Valley: where to go, what to order, and why it matters."
 layout: blog-post.njk
 ---
 
@@ -146,6 +150,46 @@ layout: blog-post.njk
 </div>
 
 <p>In Old Town La Quinta, a couple of blocks from Yes, Please (the dessert café at #4 on this list). Weekdays bring a laptop-and-coffee crowd; weekends shift toward visitors who found their way to Old Town for the shops. Dirty chais and cold brews are the consistent orders. The neighborhood itself is worth walking: slower, more residential than Palm Springs, the kind of place you discover you like when you meant to stop for 20 minutes.</p>
+
+<h2>11. Espresso Self, Desert Hot Springs</h2>
+<div class="shop-links">
+    <a href="https://maps.google.com/?q=66169+Pierson+Blvd,+Desert+Hot+Springs,+CA" target="_blank" rel="noopener">Google Maps</a>
+    <a href="https://www.instagram.com/espresso_self_dhs/" target="_blank" rel="noopener">@espresso_self_dhs</a>
+</div>
+
+<p>Desert Hot Springs doesn't come up in coffee conversations as often as Palm Springs proper, but Espresso Self is changing that. It's a straightforward espresso and frozen-drink counter that opened a couple years back and has built a real following since, with mobile ordering for the days you don't want to wait in line.</p>
+
+<p>Worth the detour if you're already heading up to the hot springs spas on the north end of the valley. It closes early, so plan a morning trip rather than an afternoon one.</p>
+
+<h2>12. IW Coffee, Indian Wells</h2>
+<div class="shop-links">
+    <a href="https://maps.google.com/?q=74995+CA-111,+Indian+Wells,+CA" target="_blank" rel="noopener">Google Maps</a>
+    <a href="https://www.instagram.com/iwcoffee/" target="_blank" rel="noopener">@iwcoffee</a>
+</div>
+
+<p>Tucked into the Bank of the West building on Highway 111, IW Coffee has been under new ownership since 2021 and leans into fresh-baked pastries: gluten-free muffins and cookies, bagels, breakfast sandwiches, avocado toast. The coffee is Joshua Tree-roasted, and the tea and chai selection goes deeper than most valley cafes bother with.</p>
+
+<p>Indian Wells sits between Palm Desert and La Quinta, so this one's a natural stop if you're out near the tennis gardens or making the drive along 111 toward the polo grounds.</p>
+
+<h2>13. Rutina Coffee, Palm Desert</h2>
+<div class="shop-links">
+    <a href="https://maps.google.com/?q=44855+San+Pablo+Ave,+Palm+Desert,+CA" target="_blank" rel="noopener">Google Maps</a>
+    <a href="https://www.instagram.com/rutinacoffee/" target="_blank" rel="noopener">@rutinacoffee</a>
+</div>
+
+<p>Rutina sits in the San Pablo Avenue shopping stretch in Palm Desert, a corridor that's turned into one of the valley's better food-and-coffee walks over the past few years. The name means "routine" in Spanish, and the concept is built around exactly that: a clean, focused menu meant to become part of your regular morning rather than a novelty stop.</p>
+
+<p>Pair it with a walk down San Pablo if you're staying long enough to make a morning of it. A good second stop if Buena Matcha, also on this list, is your first.</p>
+
+<h2>14. Sixth Street Coffee, Coachella</h2>
+<div class="shop-links">
+    <a href="https://maps.google.com/?q=1500+Sixth+St,+Coachella,+CA" target="_blank" rel="noopener">Google Maps</a>
+    <a href="https://www.instagram.com/sixth.street.coffee/" target="_blank" rel="noopener">@sixth.street.coffee</a>
+</div>
+
+<p>Coachella the city, not just the festival, has its own coffee shop worth knowing about. Sixth Street Coffee is set inside the historic Coachella Library building and has been a local fixture since 2019. The menu leans Latin: cortadito, horchata latte, oat-chata, a honey-con-canela drink that's become one of the shop's signatures.</p>
+
+<p>This is the closest coffee stop to the actual Empire Polo Club grounds on this list, worth remembering during festival season when everything closer to the venue gets slammed.</p>
 
 <h2>A Note on Timing</h2>
 
