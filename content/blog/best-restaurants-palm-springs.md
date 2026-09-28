@@ -1,8 +1,8 @@
 ---
-title: "Best Restaurants in Palm Springs: 15 Local Picks (2026)"
+title: "Best Restaurants in Palm Springs: 21 Local Picks (2026)"
 date: 2026-02-17
-dateModified: 2026-07-11
-metaDescription: "The 15 best restaurants in Palm Springs for 2026: Cheeky's bacon flight to Copley's estate patio. Local picks with addresses and hours included."
+dateModified: 2026-09-28
+metaDescription: "The 21 best restaurants in Palm Springs for 2026: Cheeky's bacon flight to Copley's estate patio. Local picks with addresses and hours included."
 ogImage: /blog/images/bar-cecil.webp
 heroImage: /blog/images/bar-cecil.webp
 heroPosition: bottom
@@ -23,13 +23,13 @@ keywords:
 articleSection: "Local Guide"
 property: ps-retreat
 readTime: "10 min read"
-excerpt: "15 Palm Springs restaurants worth your time in 2026, with addresses, hours, and what to order. From a Michelin-recommended industrial dining room to a Rat Pack-era supper club."
+excerpt: "21 Palm Springs restaurants worth your time in 2026, with addresses, hours, and what to order. From a Michelin-recommended industrial dining room to a Rat Pack-era supper club."
 layout: blog-post.njk
 ---
 
 <p>You're sitting outside at 8pm. The temperature is finally dropping below 90, and the San Jacinto Mountains are turning dark purple behind whoever is across the table from you. That two-hour window, after the heat breaks and before the night fully sets, is when Palm Springs dining makes the most sense. Everything tastes better outside in the desert when the air finally cooperates.</p>
 
-<p>These are the 15 places I keep coming back to, organized by neighborhood and meal. I've included addresses and rough hours for each one because nothing kills a vacation mood like driving somewhere that's closed. Verify hours before you go. Palm Springs restaurants shift seasonally, and some reduce days during summer.</p>
+<p>These are the 21 places I keep coming back to, organized by neighborhood and meal. I've included addresses and rough hours for each one because nothing kills a vacation mood like driving somewhere that's closed. Verify hours before you go. Palm Springs restaurants shift seasonally, and some reduce days during summer.</p>
 
 <div class="summary-box">
   <table>
@@ -228,6 +228,26 @@ layout: blog-post.njk
 
 <p><strong>572 N Indian Canyon Dr, Palm Springs, CA 92262.</strong> (760) 969-1818. Mon-Thu, Sun 8am-9pm, Fri-Sat 8am-10pm. Find them at <a href="https://colonypalmshotel.com/dining/overview/" target="_blank" rel="noopener">colonypalmshotel.com</a>.</p>
 
+<h2>Steak, Wine, and Plant-Based</h2>
+
+<h3>The Steakhouse at Agua Caliente</h3>
+
+<p><a href="https://www.aguacalientecasinos.com/dining/steakhouse/" target="_blank" rel="noopener noreferrer"><strong>The Steakhouse at Agua Caliente</strong></a> has held a Wine Spectator Award of Excellence every year since 2004, which says more about the wine list than any tasting note could. The room is casino fine dining done properly: mountain and downtown views from the outdoor patio, a menu built around dry-aged cuts, and service that matches the price point. This is the answer when a group wants a proper steak dinner in Palm Springs proper.</p>
+
+<p><strong>401 E Amado Rd, Palm Springs, CA 92262.</strong> (760) 883-1060. Sun-Thu 5-10pm, Fri-Sat 5-11pm, Sunday brunch 10am-2pm. Reservations recommended.</p>
+
+<h3>Canopy Wine Lounge</h3>
+
+<p><a href="https://www.canopypalmsprings.com/" target="_blank" rel="noopener noreferrer"><strong>Canopy Wine Lounge</strong></a> is the wine bar locals point to first. The list leans into small producers and sustainable winemaking rather than the usual by-the-glass suspects, and the food menu of light bites and shareable plates is built to support that, not compete with it. Downtown, walkable from most of the Uptown Design District restaurants above, and a good pre- or post-dinner stop.</p>
+
+<p><strong>175 N Palm Canyon Dr, Palm Springs, CA 92262.</strong> (760) 656-0054. Sun-Mon &amp; Thu 3-8:30pm, Fri-Sat 3-9:30pm, closed Tue-Wed. Happy hour daily 3-5pm.</p>
+
+<h3>Chef Tanya's Kitchen</h3>
+
+<p><a href="https://cheftanyaskitchen.com/" target="_blank" rel="noopener noreferrer"><strong>Chef Tanya's Kitchen</strong></a> is a fully plant-based deli and marketplace, and it won Best Vegetarian/Vegan in Palm Springs Life's 2026 reader survey for a reason. The El Cubano swaps seitan for the traditional pork on toasted ciabatta and it works. Everything is house-made, including the plant proteins, which is the difference between a vegan option and a place vegans actually choose. Good for guests with dietary restrictions who don't want to feel like an afterthought.</p>
+
+<p><strong>706 S Eugene Rd, Palm Springs, CA 92264.</strong> (760) 832-9007. Daily 11am-8pm.</p>
+
 <h2>Practical Notes</h2>
 
 <p>Palm Springs restaurants are busiest October through May. Hours thin out in summer, and a few spots close temporarily. Verify before making a trip.</p>
@@ -270,6 +290,9 @@ layout: blog-post.njk
 
 <h3>Where should I eat in Palm Springs if I only have one dinner?</h3>
 <p>Workshop Kitchen + Bar is the clearest answer: a converted 1926 building with exposed concrete, a seasonally driven menu, and one of the strongest cocktail programs in the Coachella Valley. Four-time Michelin recommended. Reserve in advance, especially on weekends. It's at 800 N Palm Canyon Dr in the Uptown Design District.</p>
+
+<h3>Where can I get a great steak or wine list in Palm Springs, or a fully plant-based meal?</h3>
+<p>The Steakhouse at Agua Caliente has held a Wine Spectator Award of Excellence every year since 2004, plus a serious dry-aged steak program inside the casino. Canopy Wine Lounge on Palm Canyon Dr is the wine bar locals point to first: a deep by-the-glass list and a small-plates menu built to match it. Chef Tanya's Kitchen is fully plant-based and won Best Vegetarian/Vegan in Palm Springs Life's 2026 reader survey.</p>
 
 <script type="application/ld+json">
 {
@@ -362,6 +385,14 @@ layout: blog-post.njk
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Workshop Kitchen + Bar is the clearest answer: a converted 1926 building with exposed concrete, a seasonally driven menu, and one of the strongest cocktail programs in the Coachella Valley. Four-time Michelin recommended. Reserve in advance, especially on weekends. It's at 800 N Palm Canyon Dr in the Uptown Design District."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I get a great steak or wine list in Palm Springs, or a fully plant-based meal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Steakhouse at Agua Caliente has held a Wine Spectator Award of Excellence every year since 2004, plus a serious dry-aged steak program inside the casino. Canopy Wine Lounge on Palm Canyon Dr is the wine bar locals point to first: a deep by-the-glass list and a small-plates menu built to match it. Chef Tanya's Kitchen is fully plant-based and won Best Vegetarian/Vegan in Palm Springs Life's 2026 reader survey."
       }
     }
   ]
