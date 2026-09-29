@@ -8,6 +8,8 @@
 .cta-btn-white,
 .cta-btn-outline-white,
 .mobile-cta-btn,
-.contact-btn {
+.contact-btn,
+.booking-widget-btn,
+.email-form button {
     border-radius: 999px;
 }
