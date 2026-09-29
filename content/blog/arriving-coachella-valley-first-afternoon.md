@@ -68,7 +68,7 @@ faqItems:
 
 <p>You're probably not cooking on the first night. That's fine.</p>
 
-<p>If you're in Indio, <a href="https://indigopalm.co/blog/terra-luz-indio-local-guide">our local guide covers the neighborhood in detail</a>, but the short answer for a first-night dinner is <strong>Habanero Mexican Grill on Highway 111</strong>. It's unpretentious, the margaritas are good, and the portions are serious. You'll be home before 9pm and that's probably the right call after a travel day.</p>
+<p>If you're in Indio, <a href="/blog/terra-luz-indio-local-guide/">our local guide covers the neighborhood in detail</a>, but the short answer for a first-night dinner is <strong>Habanero Mexican Grill on Highway 111</strong>. It's unpretentious, the margaritas are good, and the portions are serious. You'll be home before 9pm and that's probably the right call after a travel day.</p>
 
 <p>If you're in Palm Springs, <strong>Sherman's Deli &amp; Bakery</strong> on North Indian Canyon has been feeding people since 1963 and runs on the same logic: it's a lot of food for a fair price, and there's no reason to overthink dinner when you just got here.</p>
 
@@ -96,7 +96,7 @@ faqItems:
 
 <h2>Planning the Rest of the Trip</h2>
 
-<p>Once you're unpacked and fed, the valley opens up quickly. If you're in Indio, the <a href="https://indigopalm.co/blog/things-to-do-indio-ca">full guide to things to do in Indio and the surrounding area</a> is a good next read before bed. If you're splitting time between Indio and Palm Springs, the downtown strip, <a href="https://indigopalm.co/blog/indian-canyons-palm-springs/">the Indian Canyons</a>, and the <a href="https://indigopalm.co/blog/palm-springs-aerial-tram/">Aerial Tram</a> are all worth a half-day each.</p>
+<p>Once you're unpacked and fed, the valley opens up quickly. If you're in Indio, the <a href="/blog/things-to-do-indio-ca/">full guide to things to do in Indio and the surrounding area</a> is a good next read before bed. If you're splitting time between Indio and Palm Springs, the downtown strip, <a href="https://indigopalm.co/blog/indian-canyons-palm-springs/">the Indian Canyons</a>, and the <a href="https://indigopalm.co/blog/palm-springs-aerial-tram/">Aerial Tram</a> are all worth a half-day each.</p>
 
 <p>The best trips here tend to mix a few destination activities with a lot of time at the house. The house is part of the experience, not just where you sleep. You probably figured that out the moment you walked in.</p>
 
@@ -117,4 +117,4 @@ faqItems:
 <p>Temperatures regularly reach 110-115°F in July and August. Keep the house closed midday, stay hydrated, and plan outdoor activities for early morning or evening. The heat is manageable with the right habits and significantly less manageable without them.</p>
 
 <h3>Is there anything to do near vacation rentals in Indio besides Coachella?</h3>
-<p>Yes, and a lot of it is underrated. <a href="https://indigopalm.co/blog/date-farms-indio-coachella-valley/">The date farms along Shields Drive</a>, Joshua Tree National Park about 45 minutes north, the <a href="https://indigopalm.co/blog/salton-sea-day-trip/">Salton Sea</a> for a genuinely strange afternoon, and the Coachella Valley's restaurant scene are all worth building into the trip. See our <a href="https://indigopalm.co/blog/things-to-do-indio-ca">full Indio area guide</a> for specifics.</p>
+<p>Yes, and a lot of it is underrated. <a href="https://indigopalm.co/blog/date-farms-indio-coachella-valley/">The date farms along Shields Drive</a>, Joshua Tree National Park about 45 minutes north, the <a href="https://indigopalm.co/blog/salton-sea-day-trip/">Salton Sea</a> for a genuinely strange afternoon, and the Coachella Valley's restaurant scene are all worth building into the trip. See our <a href="/blog/things-to-do-indio-ca/">full Indio area guide</a> for specifics.</p>
