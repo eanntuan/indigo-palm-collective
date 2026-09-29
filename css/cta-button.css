@@ -10,6 +10,7 @@
 .mobile-cta-btn,
 .contact-btn,
 .booking-widget-btn,
-.email-form button {
+.email-form button,
+.email-form input[type="email"] {
     border-radius: 999px;
 }
