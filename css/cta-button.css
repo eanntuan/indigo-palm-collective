@@ -7,6 +7,7 @@
 .hero-cta,
 .cta-btn-white,
 .cta-btn-outline-white,
-.mobile-cta-btn {
+.mobile-cta-btn,
+.contact-btn {
     border-radius: 999px;
 }
