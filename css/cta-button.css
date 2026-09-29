@@ -1,0 +1,12 @@
+/* Shared CTA button shape — single source of truth for the capsule/pill
+   corner radius across every CTA-style button class used sitewide.
+   Loaded after each page's own <style> block so it wins the cascade
+   for this one property without touching per-page color/size rules. */
+.cta-button,
+.cta-btn-big,
+.hero-cta,
+.cta-btn-white,
+.cta-btn-outline-white,
+.mobile-cta-btn {
+    border-radius: 999px;
+}
