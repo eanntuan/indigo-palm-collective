@@ -1529,7 +1529,7 @@
 
 <script>
 (function() {
-  const items = Array.from(document.querySelectorAll('.gallery-item img'));
+  const items = Array.from(document.querySelectorAll('.gallery-img-wrap img'));
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lightbox-img');
   const lbCaption = document.getElementById('lightbox-caption');
@@ -1555,7 +1555,7 @@
     document.body.style.overflow = '';
   }
 
-  items.forEach((img, i) => img.closest('.gallery-item').addEventListener('click', () => show(i)));
+  items.forEach((img, i) => img.closest('.gallery-img-wrap').addEventListener('click', () => show(i)));
   document.getElementById('lightbox-close').addEventListener('click', close);
   document.getElementById('lightbox-prev').addEventListener('click', () => show(current - 1));
   document.getElementById('lightbox-next').addEventListener('click', () => show(current + 1));
