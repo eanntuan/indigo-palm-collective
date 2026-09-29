@@ -51,7 +51,7 @@ layout: blog-post.njk
 
 <h2>What to Look For in a Stagecoach Rental</h2>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indio California, 7 minutes from Stagecoach" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indio California, walking distance to Stagecoach" width="1400" height="933" loading="lazy">
 <p class="image-caption">A private pool changes the whole trip. After three days of dust and sun, having somewhere to decompress that's yours alone is genuinely the best thing.</p>
 
 <p>Stagecoach runs late April, which means daytime temps in Indio regularly hit 95-105 degrees Fahrenheit. Desert in late April, full stop. A rental with a private pool shifts from "nice to have" to essential for your group to enjoy the week.</p>
@@ -71,7 +71,7 @@ layout: blog-post.njk
 <img src="/blog/images/terra-luz-patio-full.webp" alt="Terra Luz covered patio and pool area at vacation rental in Indio California, with pergola lighting and terracotta deck" width="1400" height="933" loading="lazy">
 <p class="image-caption">Terra Luz in Indio has a saltwater pool with a sun shelf. It's one street over from the Indian Palms Country Club golf course.</p>
 
-<p>Indian Palms is a residential neighborhood in Indio that sits directly adjacent to Indian Palms Country Club. It's quiet, gated at certain entrances, and a short straight drive to the polo grounds with no freeway needed.</p>
+<p>Indian Palms is a residential neighborhood in Indio that sits directly adjacent to Indian Palms Country Club. It's quiet, gated at certain entrances, and a short straight walk to the polo grounds with no freeway needed.</p>
 
 <p>Both of our Indio properties are in this neighborhood. The Cozy Cactus has a private hot tub, community pool steps away, and sleeps 8. Terra Luz (our newer renovation) has a private saltwater pool with a sun shelf, a covered patio, and also sleeps 8. Both are walking distance to the festival gates via Eisenhower Drive.</p>
 

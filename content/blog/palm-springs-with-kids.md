@@ -118,7 +118,7 @@ layout: blog-post.njk
 
 <p>That's not an exhaustive itinerary. It's paced for real families with real kids who need naps and snacks and a flexible 3pm option.</p>
 
-<h2>The Honest Version</h2>
+<h2>What This Trip Actually Looks Like</h2>
 
 <p>Palm Springs is not a theme park trip. There's no single anchoring attraction that fills 8 hours by itself. What it is: a place with genuinely good weather, walkable streets, some specific activities that kids remember, and a pace that adults don't completely resent.</p>
 
@@ -182,7 +182,7 @@ layout: blog-post.njk
       "name": "What is the minimum stay at The Sundune for a family trip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The HOA at Palm Canyon Villas requires a 4-night minimum, and it applies to every rental in the complex. A school-break week works, a long weekend does not. Book direct at indigopalm.co with no service fee."
+        "text": "The HOA at Palm Canyon Villas requires a 4-night minimum on weekdays and a 5-night minimum on weekends, and it applies to every rental in the complex. A school-break week works, a long weekend does not. Book direct at indigopalm.co with no service fee."
       }
     },
     {
@@ -207,7 +207,7 @@ layout: blog-post.njk
 
 
 <h4>What is the minimum stay at The Sundune for a family trip?</h4>
-<p>The HOA at Palm Canyon Villas requires a 4-night minimum, and it applies to every rental in the complex, not just ours. Plan accordingly: a school-break week fits, a long weekend does not. Book direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> with no service fee.</p>
+<p>The HOA at Palm Canyon Villas requires a 4-night minimum on weekdays and a 5-night minimum on weekends, and it applies to every rental in the complex, not just ours. Plan accordingly: a school-break week fits, a long weekend does not. Book direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> with no service fee.</p>
 
 <h4>Can I bring a dog to Palm Springs vacation rentals in this area?</h4>
 <p>The Sundune is dog-friendly with prior approval, and the Cozy Cactus is not pet-friendly. If you're traveling with a dog, flag it when booking: The Sundune accepts dogs with advance notice, and the community grounds give enough room for a morning walk before the heat arrives. Terra Luz in Indio is also dog-friendly for families who want more space or a private pool.</p>

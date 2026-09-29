@@ -22,7 +22,7 @@ layout: blog-post.njk
 
 <p>Nobody had Justin Bieber on their <a href="https://www.coachella.com/" target="_blank" rel="noopener noreferrer"><strong>Coachella</strong></a> 2026 bingo card. He walked onto the Sahara tent stage unannounced, no set list, no hype buildup, and the crowd just went sideways. The clips hit every platform inside 20 minutes. Search trends spiked 2,300% before he'd finished the third song.</p>
 
-<p>I watched from my couch in Indio, which is exactly 7 minutes from where that happened. And sitting there, I kept thinking: there's a practical lesson buried in each of those five minutes. Five of them, specifically.</p>
+<p>I watched from my couch in Indio, walking distance from where that happened. And sitting there, I kept thinking: there's a practical lesson buried in each of those five minutes. Five of them, specifically.</p>
 
 <img src="/blog/images/festival-crowd-hands.webp" alt="Concert crowd with hands raised at a music festival at night" width="1800" height="1196" loading="lazy">
 

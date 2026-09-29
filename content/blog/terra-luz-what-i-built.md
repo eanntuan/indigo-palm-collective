@@ -136,7 +136,7 @@ relatedPosts:
 
 <p>Terra Luz books directly at <a href="/terra-luz/">indigopalm.co/terra-luz</a>. No Airbnb fees on top of the nightly rate. Return guests get 10% off, no code needed on the second stay.</p>
 
-<p>If you have questions about whether Terra Luz is the right fit for your group, email indigopalmco@gmail.com before booking. Honest answer guaranteed, including when the honest answer is no.</p>
+<p>If you have questions about whether Terra Luz is the right fit for your group, email indigopalmco@gmail.com before booking. I'll tell you straight, including when the answer is no.</p>
 
 <p>Related reads: <a href="/blog/terra-luz-indio-local-guide/">What to do in Indio near Terra Luz</a> · <a href="/blog/terra-luz-the-reveal/">The full renovation, room by room</a> · <a href="/blog/where-to-stay-coachella/">Where to stay for Coachella 2026</a></p>
 

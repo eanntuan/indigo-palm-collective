@@ -60,7 +60,7 @@ relatedPosts:
 
 <h2>Location</h2>
 
-<p>49768 Pacino St, Indio, CA. Inside the Indian Palms neighborhood, walking distance to <a href="https://empirepolo.com/" target="_blank" rel="noopener noreferrer"><strong>Empire Polo Club</strong></a> (Coachella/Stagecoach). 5 minutes to <a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a>, 30 minutes to downtown Palm Springs, 45 minutes to Joshua Tree.</p>
+<p>49768 Pacino St, Indio, CA. Inside the Indian Palms neighborhood, walking distance to <a href="https://empirepolo.com/" target="_blank" rel="noopener noreferrer"><strong>Empire Polo Club</strong></a> (Coachella/Stagecoach). 20 minutes to <a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a>, 30 minutes to downtown Palm Springs, 45 minutes to Joshua Tree.</p>
 
 <p>For festivals, this proximity is the main practical argument for booking in Indio vs Palm Springs. You leave the property and walk to the grounds, no festival-weekend gridlock that turns a drive into an hour-long crawl. The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> breaks down exactly what each location gets you, if you're still deciding.</p>
 

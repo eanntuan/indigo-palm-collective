@@ -123,10 +123,10 @@ relatedPosts:
 <p>March and November for everything in this guide: coffee without lines, outdoor dining without dying, hiking Indian Canyons in the morning and Boozehounds at night. October holds up nearly as well and often has better availability. Summer is fine if you're heat-adjusted and build your days around pool time and evenings, but the outdoor wandering energy changes a lot above 100 degrees.</p>
 
 <h3>How many days do you need in Palm Springs to experience it?</h3>
-<p>Four nights, which is also the HOA minimum at Palm Canyon Villas: one morning at Moorten and a slow coffee day, one full Surf Club day, one evening at Boozehounds with dinner at Rooster and the Pig, and a day left loose for the pool or whatever you stumble into. If Thursday falls in your window, VillageFest is a real reason to arrive early.</p>
+<p>Four nights, which is the HOA's weekday minimum at Palm Canyon Villas (weekends require five): one morning at Moorten and a slow coffee day, one full Surf Club day, one evening at Boozehounds with dinner at Rooster and the Pig, and a day left loose for the pool or whatever you stumble into. If Thursday falls in your window, VillageFest is a real reason to arrive early.</p>
 
 <img src="/blog/images/sundune-bedroom-surfboard-wall.webp" alt="The Sundune Palm Springs bedroom with surfboard mounted above the bed, tropical palm leaf wallpaper, and rattan headboard" width="1200" height="800" loading="lazy">
-<p class="image-caption">The Sundune has a 4-night minimum, which is enough time to do everything in this guide without rushing it.</p>
+<p class="image-caption">The Sundune has a 4-night weekday / 5-night weekend minimum, which is enough time to do everything in this guide without rushing it.</p>
 
 <h3>What should I know before my first Palm Springs trip?</h3>
 <p>Parking on Palm Canyon fills up fast on weekend mornings, so park once on a side street off Belardo or Cahuilla and walk everything from there. Most of the restaurants worth going to don't take reservations, so go early or late. If you're here in summer, outdoors before 10am and after 6pm is the rule. And bring sunscreen you'll use, not the tube sitting at the bottom of your bag from last year.</p>
@@ -202,7 +202,7 @@ relatedPosts:
       "name": "How many days do you need in Palm Springs to experience it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Five nights, matching the HOA minimum at Palm Canyon Villas: one morning at Moorten and a slow coffee day, one full Surf Club day, one evening at Boozehounds with dinner at Rooster and the Pig, plus two open days for the pool and anything you find along the way. If Thursday falls in your window, VillageFest is a real reason to arrive early."
+        "text": "The HOA minimum at Palm Canyon Villas is 4 nights on weekdays and 5 nights on weekends. Here's a five-night weekend itinerary: one morning at Moorten and a slow coffee day, one full Surf Club day, one evening at Boozehounds with dinner at Rooster and the Pig, plus two open days for the pool and anything you find along the way. If Thursday falls in your window, VillageFest is a real reason to arrive early."
       }
     },
     {
@@ -226,7 +226,7 @@ relatedPosts:
       "name": "What is the minimum stay at The Sundune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Five nights is the minimum, set by the Palm Canyon Villas HOA. It's the right amount of time to move through this guide without feeling rushed."
+        "text": "4 nights on weekdays, 5 nights on weekends, is the minimum set by the Palm Canyon Villas HOA. It's the right amount of time to move through this guide without feeling rushed."
       }
     },
     {
@@ -246,7 +246,7 @@ relatedPosts:
 <p>Yes, with prior approval. The Sundune accepts dogs on a case-by-case basis, so reach out before booking to confirm. The property has a private patio and access to a shared pool area, and Palm Springs has several dog-friendly parks and trails nearby including the Gene Autry Trail corridor. Book direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> and mention your dog in the inquiry.</p>
 
 <h4>What is the minimum stay at The Sundune?</h4>
-<p>Five nights is the minimum, which is set by the Palm Canyon Villas HOA. It sounds like a constraint until you're here: five nights is genuinely the right amount of time to move through this guide without feeling rushed.</p>
+<p>4 nights on weekdays, 5 nights on weekends, is the minimum set by the Palm Canyon Villas HOA. It sounds like a constraint until you're here: that's genuinely the right amount of time to move through this guide without feeling rushed.</p>
 
 <h4>Can you walk to Palm Springs restaurants from The Sundune?</h4>
 <p>Not the downtown ones. The Sundune sits on E Waverly Drive in Sunrise Park, and Palm Canyon Drive is roughly a ten-minute drive from the door. What you can walk to is the Uptown Design District, which has enough coffee and shops to fill a morning on its own. Everything else in this guide is short-drive territory, and Boozehounds and Rooster and the Pig are both under 10 minutes by car.</p>

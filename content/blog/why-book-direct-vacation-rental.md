@@ -22,9 +22,9 @@ excerpt: "Airbnb adds a 20% service fee on top of the nightly rate. Here's what 
 layout: blog-post.njk
 ---
 
-<p>You find a place you like. The nightly rate looks fine. Then you hit the checkout screen and $250/night is suddenly $310/night, and a four-night stay that looked like $1,000 is $1,240. You click back and check if you did something wrong. You didn't.</p>
+<p>You find a place you like. The nightly rate looks fine. Then you hit the checkout screen and $250/night is suddenly $300/night, and a four-night stay that looked like $1,000 is $1,200. You click back and check if you did something wrong. You didn't.</p>
 
-<p>That extra $140-200 is the <a href="https://www.airbnb.com/" target="_blank" rel="noopener noreferrer"><strong>Airbnb</strong></a> guest service fee. If you book vacation rentals more than once a year, it adds up. The fix is simple: book direct with the property owner.</p>
+<p>That extra $50-200 is the <a href="https://www.airbnb.com/" target="_blank" rel="noopener noreferrer"><strong>Airbnb</strong></a> guest service fee. If you book vacation rentals more than once a year, it adds up. The fix is simple: book direct with the property owner.</p>
 
 <img src="/blog/images/cozy-cactus-exterior.webp" alt="Exterior of The Cozy Cactus vacation rental in Indio California with desert landscaping and clear blue sky" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus, Indio. Same house, same host, lower total cost when you book direct.</p>
@@ -33,7 +33,7 @@ layout: blog-post.njk
 
 <p>Airbnb charges guests a 20% service fee on the subtotal (nightly rate plus cleaning fee, before taxes). On a $1,000 stay, that's $200 going to Airbnb, not the host, not toward anything you experience.</p>
 
-<p>The host is separately charged 3% on their end. So a $1,000 booking costs you $1,150 and nets the host about $970. Airbnb keeps around $180 from that one transaction. Book direct through the property's own website and that fee disappears.</p>
+<p>The host is separately charged 3% on their end. So a $1,000 booking costs you $1,200 and nets the host about $970. Airbnb keeps around $200 from that one transaction. Book direct through the property's own website and that fee disappears.</p>
 
 <h2>What That Looks Like on a Real Trip</h2>
 
@@ -80,7 +80,7 @@ layout: blog-post.njk
 
 <p>If you've stayed somewhere before and liked it, search the property name before rebooking through the platform. There's a decent chance you can book direct and skip the fee entirely.</p>
 
-<p>Our properties: <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio (3BR, 191+ reviews, private hot tub, good for families), <a href="/terra-luz/">Terra Luz</a> (3BR, private saltwater pool, Latin-inspired design, opening May 2026), and <a href="/the-sundune/">The Sundune</a> in Palm Springs (2BR, coastal-desert aesthetic, walk to the Uptown Design District, ten minutes to downtown). All available at indigopalm.co.</p>
+<p>Our properties: <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio (3BR, 191+ reviews, private hot tub, good for families), <a href="/terra-luz/">Terra Luz</a> (3BR, private saltwater pool, Latin-inspired design), and <a href="/the-sundune/">The Sundune</a> in Palm Springs (2BR, coastal-desert aesthetic, walk to the Uptown Design District, ten minutes to downtown). All available at indigopalm.co.</p>
 
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz private saltwater pool and covered patio at vacation rental in Indio California" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">Terra Luz in Indio. Booking direct means this is the same house, same host, and the fee savings go straight back in your pocket.</p>

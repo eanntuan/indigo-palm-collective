@@ -36,7 +36,7 @@ relatedPosts:
 <p>I own two vacation rentals inside the Indian Palms Country Club neighborhood, walking distance from the festival entrance. I've watched how this choice plays out every year since 2022. Here's what I know.</p>
 
 <img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio California, showing stage positions and desert surroundings" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Empire Polo Club from above. The streets east and south of the grounds are Indio. Indian Palms Country Club is less than a mile from the eastern fence line.</p>
+<p class="image-caption">The Empire Polo Club from above. The streets east and south of the grounds are Indio. Indian Palms Country Club is walking distance from the eastern fence line.</p>
 
 <h2>Weekend 1 vs Weekend 2: Does It Matter for Lodging?</h2>
 
@@ -55,7 +55,7 @@ relatedPosts:
 <img src="/blog/images/coachella-festival-crowd.webp" alt="Coachella festival crowd at Empire Polo Club in Indio California during afternoon sets with mountains in background" width="1400" height="933" loading="lazy">
 <p class="image-caption">Saturday afternoon at the polo grounds. By 3pm it's 95 degrees and you have five hours until the headliner. What you do with those five hours depends entirely on how close your rental is.</p>
 
-<p>The math on Indio vs Palm Springs isn't really about hotel rates. It's about what becomes possible when your base is 10 minutes away instead of 45.</p>
+<p>The real comparison isn't hotel rates: it's what a 10-minute base buys you that a 45-minute one doesn't.</p>
 
 <h2>The 3pm Problem (and Why Location Solves It)</h2>
 
@@ -90,7 +90,7 @@ relatedPosts:
 
 <p>Both are direct-book at <a href="https://indigopalm.co" target="_blank" rel="noopener noreferrer">indigopalm.co</a>. Booking direct saves the Airbnb service fee, which on a multi-night festival stay is a real number.</p>
 
-<h2>Indio vs Palm Springs: The Honest Version</h2>
+<h2>Indio vs Palm Springs: Who Each One Fits</h2>
 
 <p>Palm Springs isn't wrong for Coachella. It's wrong for certain people. If you're a couple who wants to be in a city, wander the downtown in the afternoon, and doesn't care about the mid-day festival return trip, Palm Springs has real appeal. The restaurant scene is better, the hotels are more polished, and the Coachella experience can work as a day-trip from there.</p>
 

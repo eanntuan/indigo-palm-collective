@@ -75,7 +75,7 @@ faqItems:
 
 <p>A 3-bedroom house with a private pool, a hot tub, and a yard big enough for a group to use runs meaningfully less than an equivalent space in Palm Springs. For family trips, friend groups, or anyone where square footage and outdoor space matter, Indio is where the rental math works in your favor.</p>
 
-<p>If you're attending Coachella or Stagecoach, Indio is the right call without much debate. <a href="/cozy-cactus/">The Cozy Cactus</a>, our 3-bedroom in the <a href="/blog/indian-palms-vacation-rental/">Indian Palms neighborhood</a>, is a short drive to the polo grounds. No surge pricing, no early departure to beat traffic, no standing in a rideshare line at midnight.</p>
+<p>If you're attending Coachella or Stagecoach, Indio is the right call without much debate. <a href="/cozy-cactus/">The Cozy Cactus</a>, our 3-bedroom in the <a href="/blog/indian-palms-vacation-rental/">Indian Palms neighborhood</a>, is walking distance to the polo grounds. No surge pricing, no early departure to beat traffic, no standing in a rideshare line at midnight.</p>
 
 <img src="/blog/images/cc-nook-vignette.webp" alt="Styled interior vignette at a Coachella Valley vacation rental with warm desert tones and comfortable furnishings" loading="lazy" width="1400" height="933">
 <p class="image-caption">Indio vacation rentals tend to have more living space per dollar. Inside and out.</p>
@@ -115,7 +115,7 @@ faqItems:
     <tr>
       <td>Festival proximity</td>
       <td>30–60 min to Empire Polo Club</td>
-      <td>5–15 min to Empire Polo Club</td>
+      <td>Walking distance to Empire Polo Club</td>
     </tr>
     <tr>
       <td>Architecture and design</td>

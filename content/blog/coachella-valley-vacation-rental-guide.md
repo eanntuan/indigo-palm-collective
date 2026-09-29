@@ -177,7 +177,7 @@ layout: blog-post.njk
       "name": "How close to the Coachella festival grounds should my rental be?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Close enough to walk is the real benchmark. Empire Polo Club is at 81800 Avenue 51 in Indio, and rentals within 3 miles, including Indian Palms Country Club, put the gates within walking distance, so you skip both the festival parking crawl and rideshare surge pricing. Anything marketed as \"Palm Springs area\" without a specific address could be 25-45 miles away. Always map the street address before committing."
+        "text": "Close enough to walk is the real benchmark. Empire Polo Club is at 81800 Avenue 51 in Indio, and rentals including Indian Palms Country Club put the gates within walking distance, so you skip both the festival parking crawl and rideshare surge pricing. Anything marketed as \"Palm Springs area\" without a specific address could be 25-45 miles away. Always map the street address before committing."
       }
     },
     {
@@ -212,7 +212,7 @@ layout: blog-post.njk
 
 
 <h4>How close to the Coachella festival grounds should my rental be?</h4>
-<p>Close enough to walk is the real benchmark, and a small handful of Indio neighborhoods clear it. Empire Polo Club is at 81800 Avenue 51 in Indio, and rentals within 3 miles put the gates in walking range, Indian Palms Country Club included, which means you skip the festival parking crawl and the rideshare surge both. Anything marketed as "Palm Springs area" without a specific address could be 25-45 miles from the venue. Always map the street address before committing.</p>
+<p>Close enough to walk is the real benchmark, and a small handful of Indio neighborhoods clear it. Empire Polo Club is at 81800 Avenue 51 in Indio, and rentals put the gates in walking range, Indian Palms Country Club included, which means you skip the festival parking crawl and the rideshare surge both. Anything marketed as "Palm Springs area" without a specific address could be 25-45 miles from the venue. Always map the street address before committing.</p>
 
 <h4>What does "private pool" mean in a Coachella Valley rental listing?</h4>
 <p>It means the pool belongs only to guests at that property: no posted hours, no shared access with neighbors, and no noise rules imposed by an HOA. This is different from a community pool, which is shared with all residents of the development and typically closes around 10pm. The photos often look similar, so check the listing description explicitly or ask the host directly.</p>

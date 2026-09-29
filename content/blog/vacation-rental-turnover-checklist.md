@@ -128,7 +128,7 @@ layout: blog-post.njk
 
 <p>Across 191 reviews and three properties at 4.93 to 4.98 stars, the cleanliness scores have held because of the checklist, not in spite of it. A cleaner without a specific list will do a good job most of the time. A cleaner with a room-by-room list will do a consistent job every time, and consistency is what the reviews measure.</p>
 
-<p>Hand this to your cleaner before the next turnover. Adjust the specifics for your property. The goal isn't a longer list, it's a list where nothing gets missed twice.</p>
+<p>Hand this to your cleaner before the next turnover. Adjust the specifics for your property. The goal is a list where nothing gets missed twice.</p>
 
 <script type="application/ld+json">
 {

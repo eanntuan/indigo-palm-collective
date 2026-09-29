@@ -44,13 +44,13 @@ faqItems:
 
 <p><a href="https://www.stagecoachfestival.com/" target="_blank" rel="noopener noreferrer"><strong>Stagecoach</strong></a> runs the last weekend of April at the <a href="https://empirepolo.com/" target="_blank" rel="noopener noreferrer"><strong>Empire Polo Club</strong></a> in Indio, California. Same grounds as Coachella, different crowd, three days of country music, and one of the more interesting accommodation puzzles in live events because your options range from literal dirt camping to houses with private pools within walking distance of the stage.</p>
 
-<p>I've hosted Stagecoach guests at my two Indio properties since 2022. Here's what I've seen work and what hasn't.</p>
+<p>I've hosted Stagecoach guests at Cozy Cactus since 2022. Here's what I've seen work and what hasn't.</p>
 
 <img src="/blog/images/stagecoach-festival-crowd.webp" alt="Stagecoach country music festival crowd at Empire Polo Club in Indio California with stage in background" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">Three days of country music at the Empire Polo Club. The crowd is different from Coachella, the heat is identical.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Pool and backyard at Cozy Cactus vacation rental in Indio CA, seven minutes from Stagecoach festival grounds at Empire Polo Club" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Cozy Cactus backyard. Seven minutes from the Stagecoach stage, no freeway. This is where festival weekends end well.</p>
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Pool and backyard at Cozy Cactus vacation rental in Indio CA, walking distance to Stagecoach festival grounds at Empire Polo Club" width="1400" height="933" loading="lazy">
+<p class="image-caption">The Cozy Cactus backyard. Walking distance to the Stagecoach stage, no freeway. This is where festival weekends end well.</p>
 
 <h2>The Festival: What You're Working With</h2>
 
@@ -82,7 +82,7 @@ faqItems:
 
 <p><strong>Outdoor space.</strong> Late April evenings in the Coachella Valley are genuinely beautiful: low 60s, light breeze, the kind of weather you want to be outside in. A house with a backyard and a hot tub or private pool makes those hours count.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indio California, minutes from Stagecoach festival grounds" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indio California, walking distance to Stagecoach festival grounds" width="1400" height="933" loading="lazy">
 <p class="image-caption">Terra Luz backyard and private saltwater pool. After three days in festival heat, this is where late April evenings belong.</p>
 
 <h2><a href="/cozy-cactus/">The Cozy Cactus</a>: 3BR, Hot Tub, Game Room</h2>

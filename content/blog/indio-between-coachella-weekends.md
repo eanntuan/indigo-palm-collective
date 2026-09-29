@@ -166,7 +166,7 @@ layout: blog-post.njk
 
 <p>And when you're done with all of it, the pool at <a href="/terra-luz/">Terra Luz</a> or <a href="/cozy-cactus/">The Cozy Cactus</a> will be waiting. Seven days between two festival weekends goes faster than you think. Use them.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta patio in Indio California, 7 minutes from the Coachella festival grounds" loading="lazy" decoding="async" width="1400" height="933">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta patio in Indio California, walking distance to the Coachella festival grounds" loading="lazy" decoding="async" width="1400" height="933">
 <p class="image-caption">Between weekends, this is where you come back to. Terra Luz in Indian Palms, Indio.</p>
 
 <h2>Frequently Asked Questions</h2>

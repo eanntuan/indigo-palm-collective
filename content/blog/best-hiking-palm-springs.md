@@ -351,7 +351,7 @@ relatedPosts:
 
 <p>The Indian Canyons, Tahquitz Canyon, and the Lykken Trail are all within 10 minutes of central Palm Springs. The tram is 15 minutes from downtown. Bump and Grind, Chuckwalla, Art Smith, and Cathedral Canyon are all 20 to 25 minutes east toward Palm Desert and Rancho Mirage. East Indio Hills Badlands is the outlier, closer to Indio than Palm Springs.</p>
 
-<p>If you're basing yourself for a hiking trip, <a href="/the-sundune/">The Sundune</a> in Palm Springs puts you closest to the mountain trails. If you want space to come back to after a hard morning, <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> in Indio have private pools and are minutes from East Indio Hills Badlands, with every other trail on this list under 40 minutes away. If you're bringing your dog, see the <a href="/blog/pet-friendly-palm-springs/">pet-friendly Palm Springs guide</a> for which trails and properties work for dogs.</p>
+<p>If you're basing yourself for a hiking trip, <a href="/the-sundune/">The Sundune</a> in Palm Springs puts you closest to the mountain trails. If you want space to come back to after a hard morning, <a href="/terra-luz/">Terra Luz</a> in Indio has a private pool, and <a href="/cozy-cactus/">The Cozy Cactus</a> has a private hot tub plus community pool access, both minutes from East Indio Hills Badlands, with every other trail on this list under 40 minutes away. If you're bringing your dog, see the <a href="/blog/pet-friendly-palm-springs/">pet-friendly Palm Springs guide</a> for which trails and properties work for dogs.</p>
 
 <h2>Frequently Asked Questions</h2>
 

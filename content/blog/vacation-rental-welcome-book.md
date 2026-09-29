@@ -43,7 +43,7 @@ layout: blog-post.njk
 
 <h3>4. House Rules</h3>
 
-<p>Be direct. Don't wrap rules in corporate language or hedge everything into softness. Guests respect clarity. Ours cover noise (quiet hours 10 PM to 8 AM), gatherings (no events or parties beyond the registered guest count), and pets (allowed at Terra Luz and The Sundune with prior approval, not at The Cozy Cactus). If there's a consequence for a broken rule, say so plainly. Guests who want to follow the rules, which is most of them, will appreciate knowing exactly what they are.</p>
+<p>Be direct. Don't wrap rules in corporate language or hedge everything into softness. Guests respect clarity. Ours cover noise (quiet hours 10 PM to 8 AM), gatherings (no events or parties beyond the registered guest count), and pets (Terra Luz is dog-friendly, The Sundune with prior approval, not at The Cozy Cactus). If there's a consequence for a broken rule, say so plainly. Guests who want to follow the rules, which is most of them, will appreciate knowing exactly what they are.</p>
 
 <h3>5. Emergency Contacts</h3>
 

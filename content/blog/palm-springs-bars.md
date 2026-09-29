@@ -167,7 +167,7 @@ relatedPosts:
 
 <h2>The Getting-Home Factor</h2>
 
-<p>If you're staying at <a href="/the-sundune/">The Sundune</a>, here's the honest breakdown. Downtown and Arenas Road are not walking distance from E Waverly Dr, so plan on a car or a rideshare for the bar night itself. What you can walk is the Uptown Design District, which is fine for a daytime coffee or a late-afternoon drink but isn't where the nightlife lives.</p>
+<p>If you're staying at <a href="/the-sundune/">The Sundune</a>, Downtown and Arenas Road are not walking distance from E Waverly Dr, so plan on a car or a rideshare for the bar night itself. What you can walk is the Uptown Design District, which is fine for a daytime coffee or a late-afternoon drink but isn't where the nightlife lives.</p>
 
 <p><strong>Short rideshare (5-10 min):</strong> Las Palmas Brewing, Village Pub, Sherman's Deli, Hunters and the rest of the Arenas Road bars, plus Bootlegger Tiki, Rooftop 262, Eight4Nine, La Perlita, Seymour's, and Toucans. Budget $10-16 one way depending on surge pricing.</p>
 

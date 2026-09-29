@@ -35,7 +35,7 @@ layout: blog-post.njk
 <img src="/blog/images/salton-sea.webp" alt="Salton Sea shoreline at golden hour with pelicans roosting on bleached wood near the water's edge" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Salton Sea at golden hour near Bombay Beach.</p>
 
-<h2>The Smell: Be Honest About It</h2>
+<h2>The Smell: What to Expect</h2>
 
 <p>Near the waterline, the combination of salt, algae, and decaying fish byproducts produces a sulfur-adjacent odor you'll notice the moment you step out of the car. In October through March it's manageable, especially if you stay back from the water. In summer it intensifies. You can visit Salvation Mountain and most of Bombay Beach without getting close to the shoreline, which helps.</p>
 

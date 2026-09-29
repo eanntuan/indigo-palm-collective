@@ -158,7 +158,7 @@ faqItems:
 
 <p><strong>First-timers who aren't sure what they want:</strong> A vacation rental in Indian Palms gives you the most options. You can walk to the festival or drive. You can stay at the grounds all day or come back to the pool at 3pm. You're not locked into camping logistics or shuttle schedules before you even know what you like.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool and terracotta backyard at vacation rental in Indio California, 7 minutes from Coachella" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool and terracotta backyard at vacation rental in Indio California, walking distance to Coachella" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus pool and backyard. The 3pm-recovery strategy only works if your rental is close enough to make it worth the trip.</p>
 
 <div class="booking-alert" style="background: #fff8e7; border-left: 3px solid #d4a017; padding: 1rem 1.2rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0;">

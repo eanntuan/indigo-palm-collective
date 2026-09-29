@@ -66,7 +66,7 @@ layout: blog-post.njk
 
 <p>Downtown Palm Springs is walkable, and the broader valley is not: Indio is 30 miles east, Joshua Tree 45 minutes out. Rideshare availability is good in Palm Springs proper during peak season but gets thin in the east valley and after hours. If you want flexibility to explore, rent a car.</p>
 
-<p>The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> covers the trade-offs between staying in the city versus closer to the Coachella grounds. If you're looking for a Palm Springs base with two bedrooms and room for six, <a href="/the-sundune/">The Sundune</a> is 15 minutes from downtown and 10 minutes from the tram.</p>
+<p>The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> covers the trade-offs between staying in the city versus closer to the Coachella grounds. If you're looking for a Palm Springs base with two bedrooms and room for six, <a href="/the-sundune/">The Sundune</a> is about 10 minutes from downtown and 10 minutes from the tram.</p>
 
 <h2>A Note on Festival Weekends</h2>
 
@@ -150,7 +150,7 @@ layout: blog-post.njk
       "name": "Where should I stay if I'm splitting time between Palm Springs and Coachella or Stagecoach?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Indio is the practical base for festival trips, cutting your drive to the polo grounds to minutes instead of 30-plus from downtown Palm Springs. Indigo Palm has properties in Indio and a Palm Springs condo for split itineraries: see indigopalm.co."
+        "text": "Indio is the practical base for festival trips, walking distance to the polo grounds instead of 30-plus minutes from downtown Palm Springs. Indigo Palm has properties in Indio and a Palm Springs condo for split itineraries: see indigopalm.co."
       }
     }
   ]
@@ -167,4 +167,4 @@ layout: blog-post.njk
 <p>Yes, and it's underused. Ontario International is about 1.5 hours from Palm Springs compared to 2 to 2.5 from LAX, with far less congestion and easier navigation. If fares into ONT are close to LAX pricing for your dates, it's worth taking seriously. It doesn't have LAX's route volume, but for West Coast travelers especially the comparison is worth running.</p>
 
 <h4>Where should I stay if I'm splitting time between Palm Springs and Coachella or Stagecoach?</h4>
-<p>Indio, which sits right next to the polo grounds, is the practical base for festival trips since it cuts your drive to the venue to minutes rather than 30-plus from downtown Palm Springs. Indigo Palm has properties in Indio within walking distance of the Coachella and Stagecoach grounds at indigopalm.co, and a Palm Springs condo (The Sundune) for the city-focused half of a split itinerary.</p>
+<p>Indio, which sits right next to the polo grounds, is the practical base for festival trips: it's walking distance to the venue rather than 30-plus minutes from downtown Palm Springs. Indigo Palm has properties in Indio within walking distance of the Coachella and Stagecoach grounds at indigopalm.co, and a Palm Springs condo (The Sundune) for the city-focused half of a split itinerary.</p>
