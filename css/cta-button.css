@@ -11,6 +11,9 @@
 .contact-btn,
 .booking-widget-btn,
 .email-form button,
-.email-form input[type="email"] {
+.email-form input[type="email"],
+.read-more,
+.newsletter-signup input,
+.newsletter-signup button {
     border-radius: 999px;
 }
