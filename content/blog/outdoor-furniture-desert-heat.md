@@ -21,7 +21,7 @@ excerpt: "Furnishing rentals in a climate that hits 115°F teaches you fast what
 layout: blog-post.njk
 ---
 
-<p>Outdoor furniture desert heat is a different category from "patio furniture." The Coachella Valley hits 115°F in peak summer. Direct sun exposure all day, no coastal breeze to moderate anything. UV index in July that would make a dermatologist faint. Whatever you put outside here gets tested hard, and it either holds up or it doesn't.</p>
+<p>Outdoor furniture desert heat is a different category from "patio furniture." The Coachella Valley hits 115°F in peak summer with direct sun exposure all day and no coastal breeze to moderate any of it; the UV index in July alone would make a dermatologist faint. Whatever you put outside here gets tested hard, and it either holds up or it doesn't.</p>
 
 <p>I've learned most of this the expensive way: buying things that looked good, watching them fail in one season, and replacing them with something that works. Across three properties in Indio and Palm Springs, I've now got a pretty clear picture of what survives and what doesn't.</p>
 
@@ -47,7 +47,7 @@ layout: blog-post.njk
 
 <p>Here's the wicker distinction that matters: all-weather resin wicker is engineered to handle UV and heat exposure. Natural wicker is not. Natural wicker will crack, fade, and fall apart in one desert summer, sometimes in one desert month. Real all-weather resin wicker is made from HDPE (high-density polyethylene) and is technically a plastic product that just looks like wicker. It works.</p>
 
-<p>When buying wicker-style outdoor furniture, read the material description carefully. "Wicker" alone tells you nothing. "All-weather resin wicker" or "HDPE wicker" is what you want.</p>
+<p>When buying wicker-style outdoor furniture, read the material description carefully: "wicker" alone tells you nothing, but "all-weather resin wicker" or "HDPE wicker" is what you want.</p>
 
 <img src="/blog/images/cozy-cactus-patio.webp" alt="Cozy Cactus vacation rental patio in Indio California with durable outdoor furniture and desert landscaping in summer heat" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The Cozy Cactus patio. Everything out here gets 115-degree summers. Nothing here was a bundle deal.</p>
@@ -62,7 +62,7 @@ layout: blog-post.njk
 
 <h3>Cheap Plastic Wicker</h3>
 
-<p>Not all-weather resin wicker. The stuff that looks similar but is thinner, lighter, and usually sold as part of a bundle set. It warps in heat and yellows in UV. One summer is often enough to make it look three years old. In the desert, it's usually one summer and done.</p>
+<p>Not all-weather resin wicker. The stuff that looks similar but is thinner, lighter, and usually sold as part of a bundle set. It warps in heat and yellows in UV; one summer is often enough to make it look three years old.</p>
 
 <h3>Particle Board</h3>
 
@@ -78,7 +78,7 @@ layout: blog-post.njk
 
 <h3>Big-Box Bundle Patio Sets</h3>
 
-<p>The $399 six-piece patio set from a home improvement store. You know the one. The cushions are polyester. The frame is painted aluminum that isn't powder-coated properly. The wicker is cheap resin, not HDPE. Everything about it is optimized for the photo and the price point, not for surviving heat. I bought one of these early on. It was gone in 18 months.</p>
+<p>The $399 six-piece patio set from a home improvement store. You know the one: the cushions are polyester, the frame is painted aluminum that isn't powder-coated properly, and the wicker is cheap resin, not HDPE. Everything about it is optimized for the photo and the price point, not for surviving heat. I bought one of these early on. It was gone in 18 months.</p>
 
 <p>Brands worth looking at instead: <a href="https://www.westelm.com/" target="_blank" rel="noopener noreferrer"><strong>West Elm</strong></a> carries outdoor teak and powder-coated aluminum with proper fabric specs. <a href="https://www.cb2.com/" target="_blank" rel="noopener noreferrer"><strong>CB2</strong></a> has some outdoor options that list materials clearly. <a href="https://www.potterybarn.com/" target="_blank" rel="noopener noreferrer"><strong>Pottery Barn</strong></a> is more expensive but tends to be transparent about construction. For cushion fabric specifically, look for anything certified <a href="https://www.sunbrella.com/" target="_blank" rel="noopener noreferrer">Sunbrella</a> in the product spec sheet.</p>
 
@@ -102,7 +102,7 @@ layout: blog-post.njk
 
 <h3>Umbrella Bases</h3>
 
-<p>A weighted base rated for wind is not optional in the Coachella Valley. Desert afternoons generate real gusts, especially from late spring through summer. An umbrella in a light base becomes a projectile. We learned this the obvious way. A weighted base rated for 30-35 mph winds (or higher) is the minimum for any property in the valley. The umbrella itself should be freestanding pole style rather than offset/cantilever if it's going to sit in a high-wind zone without a wall to buffer it.</p>
+<p>A weighted base rated for wind is not optional in the Coachella Valley. Desert afternoons generate real gusts, especially from late spring through summer, and an umbrella in a light base becomes a projectile; we learned that the obvious way. A weighted base rated for 30-35 mph winds (or higher) is the minimum for any property in the valley. The umbrella itself should be freestanding pole style rather than offset/cantilever if it's going to sit in a high-wind zone without a wall to buffer it.</p>
 
 <img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Pool and backyard at The Cozy Cactus vacation rental in Indio California with outdoor seating and desert landscaping" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The Cozy Cactus backyard. Outdoor furniture here has survived multiple Coachella Valley summers.</p>
@@ -111,7 +111,7 @@ layout: blog-post.njk
 
 <p>If you're furnishing a desert patio and you want it to look good for more than one season: powder-coated aluminum or teak for the frames, solution-dyed acrylic (Sunbrella or equivalent) for cushion fabric, all-weather HDPE resin if you want wicker, and concrete for anything that stays put. Avoid anything sold as a bundle, anything with chrome hardware, and any cushion that just says "polyester."</p>
 
-<p>For more on what goes into running a rental in the Coachella Valley, read the <a href="/blog/airbnb-hosting-lessons/">hosting lessons from 191 Airbnb reviews</a>. If you're looking for a desert rental where the outdoor space was designed to hold up, <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio is a good example of what this looks like in practice.</p>
+<p>For more on what goes into running a rental in the Coachella Valley, read the <a href="/blog/airbnb-hosting-lessons/">hosting lessons from 332 Airbnb reviews</a>. If you're looking for a desert rental where the outdoor space was designed to hold up, <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio is a good example of what this looks like in practice.</p>
 
 <img src="/blog/images/cozy-cactus-patio.webp" alt="Cozy Cactus vacation rental patio in Indio California with durable outdoor furniture after multiple desert summers" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">Furniture specced for desert conditions after a few seasons of real use. It just keeps working.</p>
@@ -129,6 +129,12 @@ layout: blog-post.njk
 
 <h3>How do I protect outdoor furniture from UV damage?</h3>
 <p>Start with UV-resistant materials: solution-dyed acrylic cushion fabric, powder-coated metal frames, and all-weather resin wicker. Store cushions inside or in covered outdoor storage when temperatures are consistently above 100 degrees. For wood furniture, annual oiling extends life and appearance. Covers help but are secondary to choosing materials rated for UV exposure from the start.</p>
+
+<h3>Does HDPE resin wicker hold up in desert heat?</h3>
+<p>Yes. HDPE (high-density polyethylene) resin wicker is engineered for UV and heat resistance. Look for "all-weather resin wicker" or "HDPE wicker" in product descriptions. Natural wicker and low-grade resin wicker both fail in one desert summer. If the listing doesn't specify HDPE, assume it's not rated for desert conditions.</p>
+
+<h3>How do umbrella bases need to be different for the Coachella Valley?</h3>
+<p>Desert afternoons generate real wind gusts, and an umbrella in a light base becomes a projectile. Use a weighted base rated for at least 30 to 35 mph winds. Freestanding pole-style umbrellas handle high-wind conditions more reliably than offset or cantilever styles, which have more leverage working against the base when gusts hit from the side.</p>
 
 <script type="application/ld+json">
 {
@@ -186,12 +192,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-
-<h4>Does HDPE resin wicker hold up in desert heat, or does it warp?</h4>
-<p>All-weather HDPE resin wicker holds up well in desert heat. HDPE (high-density polyethylene) is engineered for UV and heat resistance in a way that cheap thin-gauge resin wicker is not. The distinction that matters in product listings is "all-weather resin wicker" or "HDPE wicker" versus just "wicker," which can mean natural wicker (fails in one desert summer) or low-grade resin (warps and yellows). If the product description doesn't specify HDPE or all-weather resin, assume it's not rated for sustained desert conditions.</p>
-
-<h4>How do umbrella bases need to be different for the Coachella Valley?</h4>
-<p>Desert afternoons generate real wind gusts, especially from late spring through summer, and an umbrella in a light base becomes a projectile. A weighted base rated for at least 30 to 35 mph winds is the minimum for any outdoor setup in the Coachella Valley. Freestanding pole-style umbrellas handle high-wind conditions more reliably than offset or cantilever styles, which have more leverage working against the base when gusts come in from the side. This is one of those details that feels optional until it isn't. More on what goes into outdoor spaces at desert rentals is at <a href="https://indigopalm.co/blog/outdoor-furniture-desert-heat/">indigopalm.co</a>.</p>

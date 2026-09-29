@@ -48,7 +48,7 @@ relatedPosts:
 
 <h2>The patio and outdoor kitchen</h2>
 
-<p>The covered patio runs the full length of the back of the house. String lights overhead, an outdoor dining table that seats eight, and a sectional that faces the pool. West Elm outdoor furniture, Business and Pleasure throw pillows. It's set up for spending a full day outside without going back in except to use the bathroom. Evenings shift naturally here: guests gather around the fire pit for casual meals, grilled dinners, or order-in from local favorites like Desert Beer pizza. After dark with the inflatable movie screen up, pool lit, fire going, the patio becomes its own world. There's a curated watchlist in the house guide if you want it, nods to world travel like Casablanca or Buena Vista Social Club, and family flicks like Coco and Encanto that are genuinely fun for adults too.</p>
+<p>The covered patio runs the full length of the back of the house: string lights overhead, a West Elm outdoor dining table that seats eight, and a sectional facing the pool, dressed up with Business and Pleasure throw pillows. It's set up for spending a full day outside without going back in except to use the bathroom. Evenings shift naturally here: guests gather around the fire pit for casual meals, grilled dinners, or order-in from local favorites like Desert Beer pizza. After dark with the inflatable movie screen up, pool lit, fire going, the patio becomes its own world. There's a curated watchlist in the house guide if you want it, nods to world travel like Casablanca or Buena Vista Social Club, and family flicks like Coco and Encanto that are genuinely fun for adults too.</p>
 
 <img src="/blog/images/terra-luz-patio-full.webp" alt="Terra Luz covered patio in Indio California with outdoor dining, sectional seating, and pool view" width="1024" height="683" loading="lazy">
 <p class="image-caption">The patio. Outdoor curfew per city ordinance is 10pm. After that, the party moves inside.</p>
@@ -81,7 +81,7 @@ relatedPosts:
 
 <h2>The bedrooms</h2>
 
-<p>Three bedrooms, each with a different character. This was intentional. Most rental houses have three identical rooms with different colored pillows. Terra Luz has three rooms that feel like they belong to different people, which works well for groups where not everyone has the same taste. Low-profile furnishings and natural textures keep each room feeling airy despite the saturated moments. Bold without being loud, and each room means something different.</p>
+<p>Three bedrooms, each with a different character, and that's intentional. Most rental houses have three identical rooms with different colored pillows. Terra Luz has three rooms that feel like they belong to different people, which works well for groups where not everyone has the same taste. Low-profile furnishings and natural textures keep each room feeling airy despite the saturated moments. Bold without being loud, and each room means something different.</p>
 
 <h3>The primary bedroom</h3>
 
@@ -134,7 +134,7 @@ relatedPosts:
 
 <h2>Direct booking</h2>
 
-<p>Terra Luz books directly at <a href="/terra-luz/">indigopalm.co/terra-luz</a>. No Airbnb fees on top of the nightly rate. Return guests get 10% off, no code needed on the second stay.</p>
+<p>Terra Luz books directly at <a href="/terra-luz/">indigopalm.co/terra-luz</a>: no Airbnb fees on top of the nightly rate, and return guests get 10% off on the second stay, no code needed.</p>
 
 <p>If you have questions about whether Terra Luz is the right fit for your group, email indigopalmco@gmail.com before booking. I'll tell you straight, including when the answer is no.</p>
 
@@ -156,6 +156,15 @@ relatedPosts:
 
 <h4>What's the outdoor curfew?</h4>
 <p>10pm per Indio city noise ordinance. Outdoor music and entertaining must wrap at 10.</p>
+
+<h4>Can I book Terra Luz directly without Airbnb?</h4>
+<p>Yes, Terra Luz books directly at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>, which skips the Airbnb service fee (20% of the booking subtotal). Return guests get 10% off their second stay automatically, no code needed.</p>
+
+<h4>What's the check-in and check-out time?</h4>
+<p>Check-in is at 4pm, check-out is at 10am. Early check-in is possible when the calendar allows, so ask at least 48 hours in advance and the host will confirm based on the turnover schedule.</p>
+
+<h4>Does the outdoor kitchen have everything you need to cook full meals?</h4>
+<p>The outdoor kitchen has a gas grill, prep counter, and bar-height eating ledge, and the indoor kitchen window opens directly onto the patio so you can pass food through without walking back inside. The indoor kitchen is fully equipped with a gas range, full-size refrigerator, dishwasher, and enough cookware and utensils for a week of real cooking, not just reheating.</p>
 
 <p class="credit">Photography by <a href="https://www.anchor-pictures.com/" target="_blank" rel="noopener">Anchor Photography</a> | Interior design by <a href="https://theolivejar.co" target="_blank" rel="noopener">Dawn Asher at The Olive Jar</a></p>
 
@@ -231,15 +240,3 @@ relatedPosts:
   ]
 }
 </script>
-
-
-
-
-<h4>Can I book Terra Luz directly without Airbnb?</h4>
-<p>Yes, Terra Luz books directly at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>, which skips the Airbnb service fee (20% of the booking subtotal). Return guests get 10% off their second stay automatically, no code needed.</p>
-
-<h4>What's the check-in and check-out time?</h4>
-<p>Check-in is at 4pm, check-out is at 10am. Early check-in is possible when the calendar allows, so ask at least 48 hours in advance and the host will confirm based on the turnover schedule.</p>
-
-<h4>Does the outdoor kitchen have everything you need to cook full meals?</h4>
-<p>The outdoor kitchen has a gas grill, prep counter, and bar-height eating ledge, and the indoor kitchen window opens directly onto the patio so you can pass food through without walking back inside. The indoor kitchen is fully equipped with a gas range, full-size refrigerator, dishwasher, and enough cookware and utensils for a week of real cooking, not just reheating.</p>

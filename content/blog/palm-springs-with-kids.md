@@ -140,6 +140,15 @@ layout: blog-post.njk
 <h3>Is The Sundune suitable for a family with a baby or toddler?</h3>
 <p>Yes. We keep a Pack 'n Play and high chair available, the community pool is a one-minute walk, and the two-bedroom layout gives parents actual separation from kids at night. With three king beds it fits a family of up to six comfortably, and for groups of seven or more the Cozy Cactus in Indio is the better fit.</p>
 
+<h3>What is the minimum stay at The Sundune for a family trip?</h3>
+<p>The HOA at Palm Canyon Villas requires a 4-night minimum on weekdays and a 5-night minimum on weekends, and it applies to every rental in the complex, not just ours. Plan accordingly: a school-break week fits, a long weekend does not. Book direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> with no service fee.</p>
+
+<h3>Can I bring a dog to Palm Springs vacation rentals in this area?</h3>
+<p>The Sundune is dog-friendly with prior approval, and the Cozy Cactus is not pet-friendly. If you're traveling with a dog, flag it when booking: The Sundune accepts dogs with advance notice, and the community grounds give enough room for a morning walk before the heat arrives. Terra Luz in Indio is also dog-friendly for families who want more space or a private pool.</p>
+
+<h3>Is a car necessary for a family trip to Palm Springs?</h3>
+<p>It depends on your base. From The Sundune you can walk into the Uptown Design District for coffee, dessert, or an evening stroll without loading anyone into a car seat, though downtown Palm Canyon Drive is a ten-minute drive. For the bigger activities, a car is necessary: the Living Desert is 20 minutes in Palm Desert, Bear Creek Trail is 25 minutes in La Quinta, and Cabazon Dinosaurs are 30 minutes west on I-10. The practical rhythm is: walk for meals and evening, drive for the day's anchor activity.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -204,13 +213,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-<h4>What is the minimum stay at The Sundune for a family trip?</h4>
-<p>The HOA at Palm Canyon Villas requires a 4-night minimum on weekdays and a 5-night minimum on weekends, and it applies to every rental in the complex, not just ours. Plan accordingly: a school-break week fits, a long weekend does not. Book direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> with no service fee.</p>
-
-<h4>Can I bring a dog to Palm Springs vacation rentals in this area?</h4>
-<p>The Sundune is dog-friendly with prior approval, and the Cozy Cactus is not pet-friendly. If you're traveling with a dog, flag it when booking: The Sundune accepts dogs with advance notice, and the community grounds give enough room for a morning walk before the heat arrives. Terra Luz in Indio is also dog-friendly for families who want more space or a private pool.</p>
-
-<h4>Is a car necessary for a family trip to Palm Springs?</h4>
-<p>It depends on your base. From The Sundune you can walk into the Uptown Design District for coffee, dessert, or an evening stroll without loading anyone into a car seat, though downtown Palm Canyon Drive is a ten-minute drive. For the bigger activities, a car is necessary: the Living Desert is 20 minutes in Palm Desert, Bear Creek Trail is 25 minutes in La Quinta, and Cabazon Dinosaurs are 30 minutes west on I-10. The practical rhythm is: walk for meals and evening, drive for the day's anchor activity.</p>

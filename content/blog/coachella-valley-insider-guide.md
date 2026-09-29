@@ -153,6 +153,15 @@ relatedPosts:
 <h3>What is the best day trip from the Coachella Valley?</h3>
 <p>Joshua Tree for most people. Go for sunrise, hit the Cholla Cactus Garden trail, stop in the town of Joshua Tree for coffee and the weird art galleries, and be back at the pool by noon. If you've done Joshua Tree already, the Salton Sea offers a completely different experience: quieter, stranger, and more memorable than most California day trips.</p>
 
+<h3>Where is Painted Canyon and how do I get there?</h3>
+<p>Painted Canyon is near Mecca, California, about 25 minutes south of Indio. The Ladder Canyon trail runs through a slot canyon with actual metal ladders bolted into the walls for the steeper sections. It's free, open year-round, and rarely crowded because it doesn't appear on most Coachella Valley tourist lists. Go in the morning before the heat builds.</p>
+
+<h3>What is the wind like in the Coachella Valley and does it affect outdoor plans?</h3>
+<p>The valley winds up most afternoons, sometimes significantly, especially from spring through fall. The practical fix is to schedule hikes, outdoor dining, and activities before noon. Mornings are almost always calm, and the light is better for everything anyway. If you're visiting in April for festival season, expect afternoon winds on the polo grounds.</p>
+
+<h3>Is the Coachella Valley worth visiting in summer?</h3>
+<p>Yes, with adjusted expectations. Daytime temperatures regularly exceed 110°F in July and August, so outdoor activities shift to early morning and evening. The tradeoff: the valley empties out, rates drop significantly, pools are warm enough to use all day, and Joshua Tree is pleasant at dawn when the desert cools overnight. Some people prefer it. More on that in the <a href="/blog/beyond-coachella-desert-escape/">year-round desert escape guide</a>.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -217,15 +226,3 @@ relatedPosts:
   ]
 }
 </script>
-
-
-
-
-<h4>Where is Painted Canyon and how do I get there?</h4>
-<p>Painted Canyon is near Mecca, California, about 25 minutes south of Indio. The Ladder Canyon trail runs through a slot canyon with actual metal ladders bolted into the walls for the steeper sections. It's free, open year-round, and rarely crowded because it doesn't appear on most Coachella Valley tourist lists. Go in the morning before the heat builds.</p>
-
-<h4>What is the wind like in the Coachella Valley and does it affect outdoor plans?</h4>
-<p>The valley winds up most afternoons, sometimes significantly, especially from spring through fall. The practical fix is to schedule hikes, outdoor dining, and activities before noon. Mornings are almost always calm, and the light is better for everything anyway. If you're visiting in April for festival season, expect afternoon winds on the polo grounds.</p>
-
-<h4>Is the Coachella Valley worth visiting in summer?</h4>
-<p>Yes, with adjusted expectations. Daytime temperatures regularly exceed 110°F in July and August, so outdoor activities shift to early morning and evening. The tradeoff: the valley empties out, rates drop significantly, pools are warm enough to use all day, and Joshua Tree is pleasant at dawn when the desert cools overnight. Some people prefer it. More on that in the <a href="/blog/beyond-coachella-desert-escape/">year-round desert escape guide</a>.</p>

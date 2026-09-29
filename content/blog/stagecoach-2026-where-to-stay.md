@@ -137,6 +137,15 @@ layout: blog-post.njk
 <h3>How does driving to Stagecoach compare to rideshares?</h3>
 <p>If you're within 10 minutes of the grounds, driving is easy. Parking passes cost $30-50 per day and are worth buying in advance. Rideshares surge 2-3x after the headliner ends, which is the only time the wait and cost become significant. Groups often drive in and rideshare back, then reverse the next day.</p>
 
+<h3>Can you walk to Stagecoach from Indian Palms?</h3>
+<p>Yes. From Indian Palms in Indio, the walk to the Empire Polo Club goes straight up Eisenhower Drive. It's flat, well-lit, and a reasonable option if you'd rather skip the post-headliner rideshare surge entirely. Not every rental in the neighborhood will be equally close, so check the specific address against the festival gates before booking.</p>
+
+<h3>What is the best way to get to Stagecoach without a car?</h3>
+<p>Rideshares work well for getting there early in the day, but surge pricing kicks in hard right after the headliner ends, expect 2-3x normal rates in that 30-minute window. Many groups drive in for the day and rideshare back, then reverse it. If your rental is in Indian Palms, walking home from the headliner is a genuinely viable option that sidesteps the surge entirely.</p>
+
+<h3>Is it too hot to be outside at Stagecoach in April?</h3>
+<p>Late April in Indio runs 95-105 degrees Fahrenheit during the afternoon, which is real desert heat. The festival grounds have minimal shade, so peak heat hours between noon and 4pm are the hardest part of each day. Most experienced attendees leave the grounds during that window, cool off at their rental, and come back in the evening for the headliners, which is where a private pool at your accommodation earns its cost.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -201,16 +210,4 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-
-<h4>Can you walk to Stagecoach from Indian Palms?</h4>
-<p>Yes. From Indian Palms in Indio, the walk to the Empire Polo Club goes straight up Eisenhower Drive. It's flat, well-lit, and a reasonable option if you'd rather skip the post-headliner rideshare surge entirely. Not every rental in the neighborhood will be equally close, so check the specific address against the festival gates before booking.</p>
-
-<h4>What is the best way to get to Stagecoach without a car?</h4>
-<p>Rideshares work well for getting there early in the day, but surge pricing kicks in hard right after the headliner ends, expect 2-3x normal rates in that 30-minute window. Many groups drive in for the day and rideshare back, then reverse it. If your rental is in Indian Palms, walking home from the headliner is a genuinely viable option that sidesteps the surge entirely.</p>
-
-<h4>Is it too hot to be outside at Stagecoach in April?</h4>
-<p>Late April in Indio runs 95-105 degrees Fahrenheit during the afternoon, which is real desert heat. The festival grounds have minimal shade, so peak heat hours between noon and 4pm are the hardest part of each day. Most experienced attendees leave the grounds during that window, cool off at their rental, and come back in the evening for the headliners, which is where a private pool at your accommodation earns its cost.</p>
 

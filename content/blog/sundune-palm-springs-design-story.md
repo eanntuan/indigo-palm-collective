@@ -124,6 +124,15 @@ layout: blog-post.njk
 <h3>What makes The Sundune different from other Palm Springs vacation rentals?</h3>
 <p>The Sundune was built around a specific identity: surf culture meets desert warmth. The color palette, materials, and art direction all came from that brief. Dawn at The Olive Jar drove the design, so every room has a point of view rather than a general aesthetic. It functions as a basecamp you're genuinely happy to return to at the end of the day.</p>
 
+<h3>Is The Sundune dog-friendly?</h3>
+<p>Yes, with prior approval. The Sundune accepts dogs but requires you to request permission before booking rather than assuming it's included. Reach out through the listing or directly at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> to confirm before you book if you're traveling with a pet.</p>
+
+<h3>What is the minimum stay at The Sundune?</h3>
+<p>The HOA at Palm Canyon Villas requires a 4-night minimum on weekdays and a 5-night minimum on weekends, so short weekend stays aren't available here. Most guests book 5-7 nights, which works well for a longer desert escape or a remote work week.</p>
+
+<h3>Can you book The Sundune directly without Airbnb?</h3>
+<p>Yes. The Sundune is bookable directly at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a>, which avoids the Airbnb service fee. Indigo Palm Collective manages all four properties directly, so pricing and availability are the same without the platform markup.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -188,13 +197,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-<h4>Is The Sundune dog-friendly?</h4>
-<p>Yes, with prior approval. The Sundune accepts dogs but requires you to request permission before booking rather than assuming it's included. Reach out through the listing or directly at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> to confirm before you book if you're traveling with a pet.</p>
-
-<h4>What is the minimum stay at The Sundune?</h4>
-<p>The HOA at Palm Canyon Villas requires a 4-night minimum on weekdays and a 5-night minimum on weekends, so short weekend stays aren't available here. Most guests book 5-7 nights, which works well for a longer desert escape or a remote work week.</p>
-
-<h4>Can you book The Sundune directly without Airbnb?</h4>
-<p>Yes. The Sundune is bookable directly at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a>, which avoids the Airbnb service fee. Indigo Palm Collective manages all four properties directly, so pricing and availability are the same without the platform markup.</p>

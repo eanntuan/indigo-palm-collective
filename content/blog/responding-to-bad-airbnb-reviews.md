@@ -25,7 +25,7 @@ layout: blog-post.njk
 
 <img src="/blog/images/terra-luz-pool-umbrella.webp" alt="Terra Luz vacation rental pool with striped umbrella in Indio California" loading="lazy" decoding="async" width="800" height="533">
 
-<p>We run three properties in the Coachella Valley: Terra Luz (3BR/2BA, Indio, 4.98 stars), The Cozy Cactus (3BR/2BA, also Indio, 4.97 stars), and The Sundune (2BR/2BA, Palm Springs, 4.93 stars). Across all three we've collected 191 Airbnb reviews, and we've had to respond to a handful of negative ones. <a href="/blog/airbnb-hosting-lessons/">What that experience revealed</a> is that a calm, specific, honest response to a bad review can increase bookings, because it signals to future guests that you're the kind of host who takes things seriously without losing their composure.</p>
+<p>We run three properties in the Coachella Valley: Terra Luz (3BR/2BA, Indio, 4.98 stars), The Cozy Cactus (3BR/2BA, also Indio, 4.97 stars), and The Sundune (2BR/2BA, Palm Springs, 4.93 stars). Across all three we've collected 332 Airbnb reviews, and we've had to respond to a handful of negative ones. <a href="/blog/airbnb-hosting-lessons/">What that experience revealed</a> is that a calm, specific, honest response to a bad review can increase bookings, because it signals to future guests that you're the kind of host who takes things seriously without losing their composure.</p>
 
 <p>Here's the four-part framework we use.</p>
 
@@ -65,7 +65,7 @@ layout: blog-post.njk
 
 <h2>The ratings math, briefly</h2>
 
-<p>At 191 reviews across our three properties, a single 3-star rating barely moves the needle on a 4.97 or 4.98 average. The math just doesn't work that way at scale. What does move the needle is whether your response to that review makes the next ten guests more or less likely to book.</p>
+<p>At 332 reviews across our three properties, a single 3-star rating barely moves the needle on a 4.97 or 4.98 average. The math just doesn't work that way at scale. What does move the needle is whether your response to that review makes the next ten guests more or less likely to book.</p>
 
 <p>Think of every response as a message to your next thousand readers, not to the one person who left the review. That reframe changes how you write it entirely.</p>
 

@@ -39,7 +39,7 @@ faqItems:
     a: "The Cozy Cactus at Indian Palms is specifically set up for families with kids: pack-n-play, high chair, toys for ages 2 to 10, a private hot tub, and a community pool steps from the door. The neighborhood itself is quiet and residential, which makes it easier with kids than a hotel zone. More: https://indigopalm.co/blog/indian-palms-vacation-rental/"
 ---
 
-<p>There's a moment on festival Saturday when you step out of your front door, walk through a quiet palm-lined street, pass a neighbor sitting on their porch with coffee, and realize you're going to Coachella on foot. No shuttle line. No surge pricing. No standing in traffic. You're just walking there, like it's down the block. Because it mostly is.</p>
+<p>There's a moment on festival Saturday when you step out of your front door, walk through a quiet palm-lined street, pass a neighbor sitting on their porch with coffee, and realize you're going to Coachella on foot. No shuttle line, no surge pricing, no standing in traffic: you're just walking there, like it's down the block. Because it mostly is.</p>
 
 <p>That's Indian Palms Country Club. A gated residential neighborhood in Indio, walking distance to Empire Polo Club, made up of streets where people live. I own two vacation rentals here. Here's what staying in this community is like.</p>
 

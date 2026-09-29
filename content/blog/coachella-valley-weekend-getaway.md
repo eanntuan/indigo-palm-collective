@@ -47,7 +47,7 @@ layout: blog-post.njk
 
 <p>Palm Springs is the western anchor of the valley: midcentury architecture, a walkable downtown, and enough restaurant density that you can spend a Saturday without a car. Art galleries, the aerial tram, the Ace, the Parker. This is where you go if the design-hotel experience is the point of the trip.</p>
 
-<p>Indio is the eastern end. Quieter. Closer to the festival grounds (both Coachella and Stagecoach are here). More neighborhood, less resort. Better access to the date farms, the Salton Sea day trip, the local spots that don't show up in travel magazines. Cheaper. A different energy entirely.</p>
+<p>Indio is the eastern end: quieter, closer to the festival grounds (both Coachella and Stagecoach are here), more neighborhood than resort. It also has better access to the date farms, the Salton Sea day trip, and the local spots that don't show up in travel magazines. Cheaper, too, with a different energy entirely.</p>
 
 <p>They're about 25 miles apart. If you're coming for the festival, Indio is the obvious choice. If you're coming for the design-hotel experience and the Palm Canyon Drive restaurant scene, Palm Springs makes more sense. If you want a mix of both, base yourself in Indio and drive west for a day. The drive is 30 minutes with no traffic and the whole valley is accessible.</p>
 
@@ -60,7 +60,7 @@ layout: blog-post.njk
 
 <p>Here's the thing nobody tells you until you've experienced it: the afternoon in the desert, roughly 12pm to 5pm from May through September, is not the time to be outside doing things. It's the time to be somewhere with air conditioning and, ideally, a pool.</p>
 
-<p>The groups that have the best weekend trips structure their days around this. Mornings are for activities: hike, explore, drive, eat breakfast somewhere good. Early afternoon is the pool window. Late afternoon, when the light turns golden and the temperature starts dropping, is for going back out. Dinner outside. A walk. A bar. The valley at 7pm in spring is as good as anywhere in California.</p>
+<p>The groups that have the best weekend trips structure their days around this. Mornings are for activities: hike, explore, drive, eat breakfast somewhere good. Early afternoon is the pool window. Late afternoon, when the light turns golden and the temperature starts dropping, is for going back out. Dinner outside, a walk, maybe a bar. The valley at 7pm in spring is as good as anywhere in California.</p>
 
 <p>This rhythm sounds obvious once you know it. It doesn't occur to you until the first afternoon you're standing in a parking lot at 2pm wondering why you feel like you're being slowly cooked.</p>
 
@@ -70,9 +70,9 @@ layout: blog-post.njk
 
 <p>The activities list for the Coachella Valley is longer than most people expect, especially if you're used to thinking of it purely as a festival destination.</p>
 
-<p><a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a> on Hwy 111 in Indio is a non-negotiable stop. A Coachella Valley institution since 1924. They have date shakes, date products in every form imaginable, and a genuine piece of California agricultural history. Go before it gets hot. Buy the Medjool dates. The shield-shaped logo is everywhere for a reason.</p>
+<p><a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a> on Hwy 111 in Indio is a non-negotiable stop. A Coachella Valley institution since 1924. They have date shakes, date products in every form imaginable, and a genuine piece of California agricultural history. Go before it gets hot and buy the Medjool dates while you're there; the shield-shaped logo is everywhere for a reason.</p>
 
-<p><strong>Arriola's Tortilleria</strong> in Indio is the kind of place that turns a Saturday morning into a whole thing. Fresh tortillas made in front of you. Tacos. The line moves. Go hungry.</p>
+<p><strong>Arriola's Tortilleria</strong> in Indio is the kind of place that turns a Saturday morning into a whole thing. Fresh tortillas made right in front of you, tacos, and a line that keeps moving. Go hungry.</p>
 
 <p><a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tram</strong></a> is the trip nobody expects to love. You take a rotating gondola up 8,500 feet to the top of Mount San Jacinto. It's 30 to 40 degrees cooler at the top than in the valley below. In summer, this is the one outdoor activity that works. The views of the valley from up there are genuinely striking.</p>
 
@@ -120,6 +120,15 @@ layout: blog-post.njk
 
 <h3>What is there to do in the Coachella Valley besides Coachella?</h3>
 <p>Quite a lot: Palm Springs Aerial Tram, Indian Canyons hiking, Shields Date Garden, the Salton Sea day trip, the midcentury architecture circuit in Palm Springs, Joshua Tree National Park (90 minutes away), the restaurant and bar scene in Palm Springs and La Quinta, and the various date farms and roadside markets along Hwy 111. The valley is not just a festival destination.</p>
+
+<h3>Is a private pool worth it for a Coachella Valley rental?</h3>
+<p>In warm months (May through September), a private pool is the single feature that most affects how much you enjoy a Coachella Valley trip. The afternoon heat window from noon to 5pm is real, and a pool you don't share with strangers is what makes that window a highlight instead of a problem. For groups of four or more, the cost difference between a rental with a private pool and a mid-range hotel often narrows more than people expect, and you get a kitchen and full outdoor space on top of it.</p>
+
+<h3>Can you do a Coachella Valley weekend without a car?</h3>
+<p>Palm Springs proper is walkable if you're staying near the Palm Canyon Drive corridor, with restaurants, galleries, and some activities on foot. Outside of that, a car is effectively required. The valley spans 45 miles from Palm Springs to Indio, public transit between cities is limited, and most of the things worth doing (Indian Canyons, Shields Date Garden, the Aerial Tram, the date farms on Hwy 111) require driving. Rideshare works within Palm Springs but gets expensive for valley-wide exploring.</p>
+
+<h3>What should I pack for a Coachella Valley weekend in spring?</h3>
+<p>Layers matter more than people expect. Spring mornings in the valley can be in the 50s and 60s, and afternoons hit the high 80s or low 90s. A light jacket for early mornings and evenings, sunscreen that you will reapply, a hat with real coverage, and good walking shoes for any hiking. If you're staying at a rental with a pool, pack for that too, because you will end up in it. Sunglasses are not optional.</p>
 
 <script type="application/ld+json">
 {
@@ -185,14 +194,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-<h4>Is a private pool worth it for a Coachella Valley rental?</h4>
-<p>In warm months (May through September), a private pool is the single feature that most affects how much you enjoy a Coachella Valley trip. The afternoon heat window from noon to 5pm is real, and a pool you don't share with strangers is what makes that window a highlight instead of a problem. For groups of four or more, the cost difference between a rental with a private pool and a mid-range hotel often narrows more than people expect, and you get a kitchen and full outdoor space on top of it.</p>
-
-<h4>Can you do a Coachella Valley weekend without a car?</h4>
-<p>Palm Springs proper is walkable if you're staying near the Palm Canyon Drive corridor, with restaurants, galleries, and some activities on foot. Outside of that, a car is effectively required. The valley spans 45 miles from Palm Springs to Indio, public transit between cities is limited, and most of the things worth doing (Indian Canyons, Shields Date Garden, the Aerial Tram, the date farms on Hwy 111) require driving. Rideshare works within Palm Springs but gets expensive for valley-wide exploring.</p>
-
-<h4>What should I pack for a Coachella Valley weekend in spring?</h4>
-<p>Layers matter more than people expect. Spring mornings in the valley can be in the 50s and 60s, and afternoons hit the high 80s or low 90s. A light jacket for early mornings and evenings, sunscreen that you will reapply, a hat with real coverage, and good walking shoes for any hiking. If you're staying at a rental with a pool, pack for that too, because you will end up in it. Sunglasses are not optional. See the full guide at <a href="https://indigopalm.co/blog/coachella-valley-weekend-getaway/">indigopalm.co/blog/coachella-valley-weekend-getaway/</a>.</p>

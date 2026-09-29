@@ -95,6 +95,15 @@ The ClassPass app lets you save studios as favorites, which makes it faster to c
 <h3>What should I do if no ClassPass classes are available in Palm Springs?</h3>
 <p>Check for drop-in studios directly: several Palm Springs yoga and Pilates studios take walk-ins without ClassPass. Resort day-pass fitness centers are another option. If the heat is manageable, the Indian Canyons trails are open without reservation from October through May, and the [Palm Springs hiking guide](/blog/best-hiking-palm-springs/) has the full breakdown of what's available and when.</p>
 
+<h3>Does ClassPass work if I'm staying in Indio for Coachella or Stagecoach?</h3>
+<p>It works, but Indio has very few boutique fitness studios on ClassPass directly. The practical move is to search with a 15 to 20-mile radius centered on Palm Desert, which sits between Indio and Palm Springs and has the densest studio concentration in the valley. Plan for a 20-minute drive and book your slots 7 days out during festival weeks when morning availability disappears fast.</p>
+
+<h3>Is there a credit cost difference for ClassPass studios in Palm Springs versus a bigger city?</h3>
+<p>Club Pilates locations tend to run on the higher end of the ClassPass credit scale, which is consistent with how reformer Pilates studios price nationally. F45 and Hot Yoga Plus tend to be more credit-efficient. Check your plan's per-class credit cost before booking Pilates if you're on a limited credit plan, since one class can consume a significant share of a monthly allocation.</p>
+
+<h3>Do Palm Springs ClassPass studios fill up outside of festival season?</h3>
+<p>The catalog is thin enough year-round that popular time slots, particularly the 6am to 9am window, can sell out even during quiet weeks. The valley's visitor base skews toward fitness-conscious travelers, so demand for morning studio classes stays fairly consistent. Outside of festival season, you have more flexibility but still benefit from booking as soon as the 7-day window opens. More detail on timing and options at <a href="https://indigopalm.co/blog/classpass-palm-springs/">indigopalm.co/blog/classpass-palm-springs</a>.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -159,15 +168,3 @@ The ClassPass app lets you save studios as favorites, which makes it faster to c
   ]
 }
 </script>
-
-
-
-
-<h4>Does ClassPass work if I'm staying in Indio for Coachella or Stagecoach?</h4>
-<p>It works, but Indio has very few boutique fitness studios on ClassPass directly. The practical move is to search with a 15 to 20-mile radius centered on Palm Desert, which sits between Indio and Palm Springs and has the densest studio concentration in the valley. Plan for a 20-minute drive and book your slots 7 days out during festival weeks when morning availability disappears fast.</p>
-
-<h4>Is there a credit cost difference for ClassPass studios in Palm Springs versus a bigger city?</h4>
-<p>Club Pilates locations tend to run on the higher end of the ClassPass credit scale, which is consistent with how reformer Pilates studios price nationally. F45 and Hot Yoga Plus tend to be more credit-efficient. Check your plan's per-class credit cost before booking Pilates if you're on a limited credit plan, since one class can consume a significant share of a monthly allocation.</p>
-
-<h4>Do Palm Springs ClassPass studios fill up outside of festival season?</h4>
-<p>The catalog is thin enough year-round that popular time slots, particularly the 6am to 9am window, can sell out even during quiet weeks. The valley's visitor base skews toward fitness-conscious travelers, so demand for morning studio classes stays fairly consistent. Outside of festival season, you have more flexibility but still benefit from booking as soon as the 7-day window opens. More detail on timing and options at <a href="https://indigopalm.co/blog/classpass-palm-springs/">indigopalm.co/blog/classpass-palm-springs</a>.</p>

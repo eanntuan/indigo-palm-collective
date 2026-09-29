@@ -115,6 +115,14 @@ Dinner at a patio restaurant after 7pm when temperatures have dropped, a walk al
 
 Yes, meaningfully. The desert dry heat dissipates faster than humid heat. By 9pm in summer, temperatures drop from the afternoon peak by 20 to 30 degrees. A hot tub or patio at night when the air temperature is in the 90s feels legitimately pleasant after a 115-degree afternoon. That shift is part of why desert summer visitors come back.
 
+### Should I book a vacation rental or hotel if I'm visiting Palm Springs in summer?
+
+A vacation rental with a private pool is the correct answer for a summer trip. The midday window from 11am to 5pm is when you will be poolside regardless of what else you planned, and a private pool means you control the space rather than competing with other hotel guests. Properties at <a href="https://indigopalm.co">indigopalm.co</a> in Indio and Palm Springs include private outdoor spaces that are genuinely central to the summer experience rather than a bonus feature.
+
+### Is the Palm Springs Aerial Tram worth going up in summer?
+
+Yes, and it is one of the best midday options. The summit sits at 8,516 feet where temperatures run 30 to 40 degrees cooler than the valley floor, so a 115-degree summer day in Palm Springs becomes a 75-degree afternoon in the San Jacinto mountains above the tramway station. The first tram at 10am beats the crowds. Sunset rides in the evening combine the temperature advantage with the best light of the day.
+
 ---
 
 If you're planning a summer trip, the full <a href="/blog/palm-springs-summer/">Palm Springs in summer guide</a> goes deeper on month-by-month expectations, what restaurants close, and how to structure a heat-adjusted week. And for a running-specific angle on the morning window, the <a href="/blog/palm-springs-running-trails/">Palm Springs running trails guide</a> covers six routes worth waking up early for.
@@ -179,15 +187,3 @@ If you want a base that works with both sides of the day, [The Sundune](/the-sun
   ]
 }
 </script>
-
-
-
-
-<h4>What time does Palm Springs cool down enough to go outside in summer?</h4>
-<p>The shadow from the San Jacinto Mountains reaches the valley floor in the late afternoon, typically around 4:30 to 5pm in summer, which provides meaningful relief from radiant heat before the air temperature fully drops. By 6 or 7pm, most outdoor patios and streets are comfortable. Full shade plus dry air drops the perceived temperature fast, so the shift from "too hot" to "pleasant" happens more quickly here than in humid climates.</p>
-
-<h4>Should I book a vacation rental or hotel if I'm visiting Palm Springs in summer?</h4>
-<p>A vacation rental with a private pool is the correct answer for a summer trip. The midday window from 11am to 5pm is when you will be poolside regardless of what else you planned, and a private pool means you control the space rather than competing with other hotel guests. Properties at <a href="https://indigopalm.co">indigopalm.co</a> in Indio and Palm Springs include private outdoor spaces that are genuinely central to the summer experience rather than a bonus feature.</p>
-
-<h4>Is the Palm Springs Aerial Tram worth going up in summer?</h4>
-<p>Yes, and it is one of the best midday options. The summit sits at 8,516 feet where temperatures run 30 to 40 degrees cooler than the valley floor, so a 115-degree summer day in Palm Springs becomes a 75-degree afternoon in the San Jacinto mountains above the tramway station. The first tram at 10am beats the crowds. Sunset rides in the evening combine the temperature advantage with the best light of the day.</p>

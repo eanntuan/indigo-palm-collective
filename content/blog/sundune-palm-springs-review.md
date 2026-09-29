@@ -114,6 +114,12 @@ relatedPosts:
 <h3>How many nights should I stay at The Sundune?</h3>
 <p>Plan 4 nights, which is the HOA's weekday minimum at Palm Canyon Villas (5 nights on weekends): one morning for the architecture drive and Moorten Botanical Garden, one evening at Boozehounds after a slow brunch at Wilma and Frieda's, one day at Palm Springs Surf Club, and enough slack left over to sit by the pool. A Thursday arrival means VillageFest is your first night, which is a good way to start.</p>
 
+<h3>Is The Sundune good for a bachelorette trip?</h3>
+<p>For groups of up to six, yes. Three king beds across two bedrooms, a shared HOA pool, and a ten-minute drive to the bars and restaurants on Palm Canyon Drive covers the basics well. Larger bachelorette groups tend to be better served by the Indio properties, which have more sleeping capacity and private outdoor spaces built for that kind of trip.</p>
+
+<h3>How does The Sundune compare to staying in Indio for Coachella?</h3>
+<p>The Sundune puts you 30 to 45 minutes from the festival grounds on normal days, longer with festival traffic. If Coachella or Stagecoach attendance is the main point of your trip, the Cozy Cactus and Terra Luz in Indio are walking distance to the polo grounds and a more practical base. The Sundune makes sense if you're splitting time between the festival and Palm Springs itself.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -187,13 +193,3 @@ relatedPosts:
 }
 </script>
 
-
-
-<h4>What is the minimum stay at The Sundune?</h4>
-<p>The Palm Canyon Villas HOA sets a 4-night minimum on weekdays and a 5-night minimum on weekends, and it isn't flexible, so I can't shorten it even if I want to. A Thursday check-in clears the weekday minimum and lands you at VillageFest on your first evening, which is a good way to start. If you need a 2 or 3-night window, check the Indio properties at <a href="https://indigopalm.co">indigopalm.co</a> for different minimums.</p>
-
-<h4>Is The Sundune good for a bachelorette trip?</h4>
-<p>For groups of up to six, yes. Three king beds across two bedrooms, a shared HOA pool, and a ten-minute drive to the bars and restaurants on Palm Canyon Drive covers the basics well. Larger bachelorette groups tend to be better served by the Indio properties, which have more sleeping capacity and private outdoor spaces built for that kind of trip.</p>
-
-<h4>How does The Sundune compare to staying in Indio for Coachella?</h4>
-<p>The Sundune puts you 30 to 45 minutes from the festival grounds on normal days, longer with festival traffic. If Coachella or Stagecoach attendance is the main point of your trip, the Cozy Cactus and Terra Luz in Indio are walking distance to the polo grounds and a more practical base. The Sundune makes sense if you're splitting time between the festival and Palm Springs itself.</p>

@@ -43,11 +43,11 @@ relatedPosts:
 
 <p>Three things come up in reviews more than anything else:</p>
 
-<p><strong>The organization.</strong> Every drawer is labeled. Every cabinet. The pantry is stocked with the basics already there. I wanted guests to arrive and feel settled within the first ten minutes, not spend the first hour hunting for a spatula. For families especially, that small thing changes the energy of the whole trip. You're not piecing together someone else's half-finished kitchen. You're just... home.</p>
+<p><strong>The organization.</strong> Every drawer is labeled, every cabinet too, and the pantry's stocked with the basics already there. I wanted guests to arrive and feel settled within the first ten minutes, not spend the first hour hunting for a spatula. For families especially, that small thing changes the energy of the whole trip. You're not piecing together someone else's half-finished kitchen. You're just... home.</p>
 
 <p><strong>The baby gear.</strong> Stokke high chair, pack-n-play with a real crib mattress, baby monitor, sound machine, baby gate, outlet covers. Multiple guests with infants have written some version of "I was able to relax for the first time in months." That's the goal. I watched too many friends pack for trips like they were moving apartments, hauling every single thing their babies needed. I decided to just put it all here, so they didn't have to.</p>
 
-<p><strong>How quickly they hear back.</strong> Guests mention that questions get answered fast. I take this one seriously. When someone is traveling with young kids and something isn't working, they need a real response, quickly. Not a form reply. Not an automated message. A person who knows the house and can help.</p>
+<p><strong>How quickly they hear back.</strong> Guests mention that questions get answered fast. I take this one seriously. When someone is traveling with young kids and something isn't working, they need a real response, quickly, not a form reply or an automated message, but a person who knows the house and can help.</p>
 
 <img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Fully labeled kitchen drawers at The Cozy Cactus vacation rental Indio" width="1400" height="933" loading="lazy">
 <p class="image-caption">Every drawer labeled. Every cabinet stocked. The thing people mention most in reviews.</p>
@@ -63,7 +63,7 @@ relatedPosts:
 
 <h2>The Space Itself</h2>
 
-<p>Three bedrooms, two baths, sleeps 8 comfortably. Primary has a king and an en-suite bathroom. Second bedroom is a king. Third bedroom has twin beds (plus a trundle, good for kids). The game room has activities for when the desert heat hits its peak in the afternoon and everyone needs to be inside for a few hours.</p>
+<p>Three bedrooms, two baths, sleeps 8 comfortably: the primary has a king bed and an en-suite bathroom, the second is also a king, and the third has twin beds plus a trundle, good for kids. The game room has activities for when the desert heat hits its peak in the afternoon and everyone needs to be inside for a few hours.</p>
 
 <p>The kitchen is fully equipped for real cooking. Stocked pantry, sharpened knives, every pan size you'd reach for. I spent a lot of time in rental kitchens where you open the drawers and feel the absence of care. I wanted this one to feel like someone lived here and cooked here, because someone did.</p>
 
@@ -86,9 +86,9 @@ relatedPosts:
 
 <p><strong>Check-in is 4pm, checkout 11am.</strong> Early and late are available with advance notice when the schedule allows. I ask that you reach out in advance rather than day-of, since same-day turnovers don't usually leave room for flexibility.</p>
 
-<p><strong>The neighborhood is gated.</strong> Gate access and all check-in instructions go out 24 hours before arrival. Self check-in via smart lock.</p>
+<p><strong>The neighborhood is gated.</strong> Gate access and all check-in instructions go out 24 hours before arrival, with check-in itself self-serve via smart lock.</p>
 
-<p><strong>This is genuinely a family home.</strong> Not "family-friendly" as a phrase on a listing. Built from scratch around what families with young kids need, down to the sound machine on the nightstand and the outlet covers already in place. If you're traveling with people who matter most to you and you want a place that feels like it was ready for you, this is that place.</p>
+<p><strong>This is genuinely a family home</strong>, not "family-friendly" as a phrase on a listing but something built from scratch around what families with young kids need, down to the sound machine on the nightstand and the outlet covers already in place. If you're traveling with people who matter most to you and you want a place that feels like it was ready for you, this is that place.</p>
 
 <img src="/blog/images/cozy-cactus-infant-gear.webp" alt="Baby and infant gear at The Cozy Cactus Indio including Stokke high chair and pack-n-play" width="1400" height="933" loading="lazy">
 <p class="image-caption">The infant kit. Stokke high chair, real crib mattress, baby monitor. Everything guests with babies say they didn't have to pack.</p>
@@ -113,6 +113,18 @@ relatedPosts:
 
 <h3>Can The Cozy Cactus accommodate a group for Coachella?</h3>
 <p>It sleeps up to 8 across three bedrooms and works well for groups. The Indian Palms location is walking distance to Empire Polo Club, an easy walk up Eisenhower Drive. No shuttle, no surge pricing.</p>
+
+<h3>Can you book The Cozy Cactus directly without Airbnb?</h3>
+<p>Yes. Booking direct through <a href="https://indigopalm.co/cozy-cactus/">indigopalm.co</a> skips the Airbnb service fee, which is 20% of the booking subtotal. The host responds to pre-booking questions within the hour, and check-in is fully self-serve via smart lock with instructions sent 24 hours before arrival.</p>
+
+<h3>What bedrooms does The Cozy Cactus have, and how does it sleep 8?</h3>
+<p>The primary bedroom has a king and an en-suite bathroom. The second bedroom is also a king. The third bedroom has twin beds plus a trundle, which works well for kids. The game room doubles as overflow space when the afternoon desert heat drives everyone inside.</p>
+
+<h3>Is The Cozy Cactus walkable to Coachella or Stagecoach?</h3>
+<p>Yes, walking distance, straight up Eisenhower Drive. In April heat some guests still grab a ride, but the whole point is that you don't have to. That proximity is the real advantage of this location during festival weekends.</p>
+
+<h3>What makes The Cozy Cactus different from other Indio vacation rentals?</h3>
+<p>The level of organization guests describe in reviews is unusual: every drawer and cabinet labeled, a pre-stocked pantry, and a full infant kit (Stokke high chair, pack-n-play with real crib mattress, baby monitor, sound machine, baby gate, outlet covers) available on-site. It's built specifically for families with young children, which is a narrower and more intentional focus than most short-term rentals in the valley.</p>
 
 <p>That's what 4.97 stars across 146 stays looks like in practice. Not perfection in every sense. A specific kind of care that guests feel when they walk in the door, and that they write about when they leave.</p>
 
@@ -190,18 +202,3 @@ relatedPosts:
   ]
 }
 </script>
-
-
-
-
-<h4>Can you book The Cozy Cactus directly without Airbnb?</h4>
-<p>Yes. Booking direct through <a href="https://indigopalm.co/cozy-cactus/">indigopalm.co</a> skips the Airbnb service fee, which is 20% of the booking subtotal. The host responds to pre-booking questions within the hour, and check-in is fully self-serve via smart lock with instructions sent 24 hours before arrival.</p>
-
-<h4>What bedrooms does The Cozy Cactus have, and how does it sleep 8?</h4>
-<p>The primary bedroom has a king and an en-suite bathroom. The second bedroom is also a king. The third bedroom has twin beds plus a trundle, which works well for kids. The game room doubles as overflow space when the afternoon desert heat drives everyone inside.</p>
-
-<h4>Is The Cozy Cactus walkable to Coachella or Stagecoach?</h4>
-<p>Yes, walking distance, straight up Eisenhower Drive. In April heat some guests still grab a ride, but the whole point is that you don't have to. That proximity is the real advantage of this location during festival weekends.</p>
-
-<h4>What makes The Cozy Cactus different from other Indio vacation rentals?</h4>
-<p>The level of organization guests describe in reviews is unusual: every drawer and cabinet labeled, a pre-stocked pantry, and a full infant kit (Stokke high chair, pack-n-play with real crib mattress, baby monitor, sound machine, baby gate, outlet covers) available on-site. It's built specifically for families with young children, which is a narrower and more intentional focus than most short-term rentals in the valley.</p>

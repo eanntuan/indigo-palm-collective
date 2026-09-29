@@ -131,6 +131,18 @@ Downtown is the primary visitor core, from the 100 to 400 blocks of South Palm C
 
 The Mesa, southeast of Downtown, tends to work best for families. More outdoor space per property, quieter streets, and views back over the valley floor. Vacation rentals in The Mesa typically have larger lots and more usable backyard space than the compact Downtown properties.
 
+### Is it better to stay in Palm Springs or Indio for Coachella and Stagecoach?
+
+Palm Springs is about 25 miles from the Empire Polo Club, which is a 30 to 45 minute drive under normal conditions and longer on peak festival nights. Indian Palms in Indio is walking distance to the venue. Palm Springs has better restaurant and nightlife infrastructure, but accommodation rates spike to near-Indio levels during festival weekends, so the tradeoff rarely works out as cleanly as people expect. If maximizing time at the festival is the priority, proximity is worth more than city amenities. Terra Luz in Indio is walking distance to the polo grounds and books direct at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz/</a>.
+
+### What is Twin Palms like compared to other Palm Springs neighborhoods?
+
+Twin Palms sits south of central Palm Springs near the San Jacinto foothills and is one of the more architecturally significant residential areas in the city. It is walkable to nothing but 10 minutes by car from anywhere. Properties tend to have more outdoor space and better views than Downtown options. It suits travelers who want a design-forward property and quiet evenings over spontaneous bar-hopping, since every errand and meal requires getting in the car.
+
+### Is Palm Springs a good solo travel destination?
+
+Yes, particularly for travelers who like architecture, design, museums, and hiking at their own pace. Downtown and Uptown have solid solo infrastructure including the Thursday VillageFest street fair, the Palm Springs Art Museum, and walkable boutique shopping. The city is compact enough that a solo traveler can cover the highlights in a long weekend. One practical note: vacation rentals typically price by the full property rather than per person, so a hotel room or one-bedroom unit is usually more economical for solo trips unless you split costs with another person.
+
 <div class="cta-box">
   <h3>Stay in the Heart of It</h3>
   <p>The Sundune at Palm Springs puts you close to everything without being in the middle of it. Two bedrooms, a private patio, and the San Jacinto Mountains out the window.</p>
@@ -228,13 +240,3 @@ The Mesa, southeast of Downtown, tends to work best for families. More outdoor s
   ]
 }
 </script>
-
-
-<h4>Is it better to stay in Palm Springs or Indio for Coachella and Stagecoach?</h4>
-<p>Palm Springs is about 25 miles from the Empire Polo Club, which is a 30 to 45 minute drive under normal conditions and longer on peak festival nights. Indian Palms in Indio is walking distance to the venue. Palm Springs has better restaurant and nightlife infrastructure, but accommodation rates spike to near-Indio levels during festival weekends, so the tradeoff rarely works out as cleanly as people expect. If maximizing time at the festival is the priority, proximity is worth more than city amenities. Terra Luz in Indio is walking distance to the polo grounds and books direct at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz/</a>.</p>
-
-<h4>What is Twin Palms like compared to other Palm Springs neighborhoods?</h4>
-<p>Twin Palms sits south of central Palm Springs near the San Jacinto foothills and is one of the more architecturally significant residential areas in the city. It is walkable to nothing but 10 minutes by car from anywhere. Properties tend to have more outdoor space and better views than Downtown options. It suits travelers who want a design-forward property and quiet evenings over spontaneous bar-hopping, since every errand and meal requires getting in the car.</p>
-
-<h4>Is Palm Springs a good solo travel destination?</h4>
-<p>Yes, particularly for travelers who like architecture, design, museums, and hiking at their own pace. Downtown and Uptown have solid solo infrastructure including the Thursday VillageFest street fair, the Palm Springs Art Museum, and walkable boutique shopping. The city is compact enough that a solo traveler can cover the highlights in a long weekend. One practical note: vacation rentals typically price by the full property rather than per person, so a hotel room or one-bedroom unit is usually more economical for solo trips unless you split costs with another person.</p>

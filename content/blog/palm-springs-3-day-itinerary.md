@@ -93,6 +93,12 @@ layout: blog-post.njk
 <h3>How far is Joshua Tree from Palm Springs?</h3>
 <p>About 40 to 45 minutes from Palm Springs to the Cottonwood South Entrance via I-10, or slightly longer to the north and west entrances via Highway 62. It makes an easy day trip if you leave by 8am and return by mid-afternoon. See the full <a href="/blog/joshua-tree-day-trip-from-indio/">Joshua Tree day trip guide</a> for entrance options and what to bring.</p>
 
+<h3>What should I do in Palm Springs on my first afternoon?</h3>
+<p>Check into your rental, use the pool, and walk Palm Canyon Drive in the evening. The first afternoon is best treated as a decompression day, not a sightseeing day. Save the tram and the architecture walks for when you're settled. Dinner at Tropicale or anywhere on Palm Canyon is a good entry point into the city's pace.</p>
+
+<h3>Where should I eat in Palm Springs for a long weekend?</h3>
+<p>Tropicale on Calle Encilia for dinner on arrival night, it fits the mid-century mood of the city and takes reservations. For sushi, Sandfish on Indian Canyon. Koffi (1700 S Camino Real or the North location) for every morning coffee, it's the closest thing to a local institution the city has. Gelson's on Sunrise Way handles grocery needs if you want to cook one night. For a longer local list, the <a href="https://indigopalm.co/blog/palm-springs-3-day-itinerary/">full itinerary</a> covers logistics by day.</p>
+
 
 <script type="application/ld+json">
 {
@@ -150,15 +156,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-
-<h4>What should I do in Palm Springs on my first afternoon?</h4>
-<p>Check into your rental, use the pool, and walk Palm Canyon Drive in the evening. The first afternoon is best treated as a decompression day, not a sightseeing day. Save the tram and the architecture walks for when you're settled. Dinner at Tropicale or anywhere on Palm Canyon is a good entry point into the city's pace.</p>
-
-<h4>Is Palm Springs walkable?</h4>
-<p>Downtown is walkable, but the rest of the itinerary requires a car. The aerial tram, Joshua Tree, Sunnylands in Rancho Mirage, and most residential neighborhoods are not reachable on foot. Rideshare works in Palm Springs proper during peak season, though coverage thins out after midnight and east of the city. Rent bikes for the downtown neighborhoods if you want to cover more ground without driving.</p>
-
-<h4>Where should I eat in Palm Springs for a long weekend?</h4>
-<p>Tropicale on Calle Encilia for dinner on arrival night, it fits the mid-century mood of the city and takes reservations. For sushi, Sandfish on Indian Canyon. Koffi (1700 S Camino Real or the North location) for every morning coffee, it's the closest thing to a local institution the city has. Gelson's on Sunrise Way handles grocery needs if you want to cook one night. For a longer local list, the <a href="https://indigopalm.co/blog/palm-springs-3-day-itinerary/">full itinerary</a> covers logistics by day.</p>

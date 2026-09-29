@@ -54,7 +54,7 @@ layout: blog-post.njk
 <p class="image-caption">Papa Headz. Go early, they sell out.</p>
 
 <div class="item-heading"><span class="item-number">4</span><a href="https://onestoptacoshop.com/" target="_blank" rel="noopener noreferrer"><strong>One Stop Taco Shop</strong></a>: The Taco I Think About Between Visits</div>
-<p>Carne asada. Simple, charred right, in a tortilla that was made today. The line out front is the signal, not the deterrent. Go at 11am or after 2pm to beat the rush. This is the single recommendation I've given most in four years of hosting.</p>
+<p>Carne asada, simple and charred right, in a tortilla that was made today. The line out front is the signal, not the deterrent: go at 11am or after 2pm to beat the rush. This is the single recommendation I've given most in four years of hosting.</p>
 <div class="quick-info">
     <p><strong>Address:</strong> 84051 Indio Blvd, Indio, CA 92201</p>
 </div>
@@ -62,7 +62,7 @@ layout: blog-post.njk
 <p class="image-caption">One Stop Taco Shop. The line is the signal, not the deterrent.</p>
 
 <div class="item-heading"><span class="item-number">5</span>Thai Hot: Actual Thai Food, Actual Heat</div>
-<p>The Coachella Valley is not a Thai food destination, which makes Thai Hot a real find. Real heat, not California medium. Drunken noodles you'll still be thinking about three days later. Order spicy and mean it.</p>
+<p>The Coachella Valley is not a Thai food destination, which makes Thai Hot a real find. Real heat, not California medium, and drunken noodles you'll still be thinking about three days later. Order spicy and mean it.</p>
 <div class="quick-info">
     <p><strong>Address:</strong> 81944 US-111, Indio, CA 92201 · Mon–Fri 11am–3pm, 4–9pm</p>
 </div>
@@ -77,7 +77,7 @@ layout: blog-post.njk
 <p class="image-caption">Wild palms fed by the San Andreas Fault. Free, uncrowded, genuinely strange in the best way.</p>
 
 <div class="item-heading"><span class="item-number">7</span>Rosemary HiFi: A Listening Lounge That Opened in a City Nobody Expected</div>
-<p>Mexico City and Japanese-inspired vinyl listening lounge in Old Town Indio. Custom walnut bar, 1960s JBL speakers, natural wine and Las Palmas Brewing beer. The sound system will make you stop mid-sentence. Evenings only, check Instagram for event nights.</p>
+<p>A Mexico City and Japanese-inspired vinyl listening lounge in Old Town Indio, with a custom walnut bar, 1960s JBL speakers, and natural wine and Las Palmas Brewing beer on tap. The sound system will make you stop mid-sentence. Evenings only, check Instagram for event nights.</p>
 <div class="quick-info">
     <p><strong>Address:</strong> 45120 Oasis St, Indio, CA 92201 · Wed–Sun 4–11pm</p>
 </div>
@@ -104,7 +104,7 @@ layout: blog-post.njk
 <p>Most people only see the polo grounds during Coachella. But Empire Polo Club hosts polo matches and equestrian events throughout fall and winter, open to the public, often free, and a completely different side of what these grounds can be outside of festival season.</p>
 
 <div class="item-heading"><span class="item-number">13</span>The Indio Tamale Festival (December)</div>
-<p>If you're here in December, everything else is secondary. 30+ years running, claims the title of world's largest tamale festival. Sweet tamales, savory ones, fusion ones. Live music, complete chaos, the best single expression of what Indio is as a city.</p>
+<p>If you're here in December, everything else is secondary. Running 30+ years now, it claims the title of world's largest tamale festival: sweet tamales, savory ones, and fusion ones all show up. Live music, complete chaos, the best single expression of what Indio is as a city.</p>
 <div class="quick-info">
     <p><strong>When:</strong> First weekend of December · Old Town Indio</p>
 </div>
@@ -115,7 +115,7 @@ layout: blog-post.njk
 <p>Not technically Indio but close enough that any trip here without a Joshua Tree day is a missed opportunity. The Cholla Cactus Garden is 10 minutes inside the south entrance and requires almost no hiking. Go early morning or late afternoon. Midday in summer will hurt you.</p>
 
 <div class="item-heading"><span class="item-number">15</span>Eat Birria at Any Taqueria with a Line Out the Door</div>
-<p>I'm not giving a specific address because the best birria spot in Indio will have changed by the time you read this. The rule: line out the door on a weekday means legitimate. Birria tacos with consomé, order a quesabirria if they have it. This is not a food trend here. This is just food.</p>
+<p>I'm not giving a specific address because the best birria spot in Indio will have changed by the time you read this. The rule: line out the door on a weekday means legitimate; order the birria tacos with consomé, and get a quesabirria if they have it. This isn't a food trend here, just food.</p>
 
 <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 3rem 0;">
 

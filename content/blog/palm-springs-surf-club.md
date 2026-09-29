@@ -44,7 +44,7 @@ relatedPosts:
   </tbody>
 </table>
 
-<p>There is something genuinely funny about a surf club in the middle of the Sonoran Desert. The nearest ocean is two hours west. The average July temperature is 115°F. And yet Palm Springs Surf Club exists, and it works.</p>
+<p>There is something genuinely funny about a surf club in the middle of the Sonoran Desert: the nearest ocean is two hours west, and the average July temperature hits 115°F. And yet Palm Springs Surf Club exists, and it works.</p>
 
 <p>The facility is operated by BSR Wave Co (the parent company that runs similar operations elsewhere) and sits in Cathedral City, which is technically a separate city from Palm Springs but about 10 minutes from downtown and close enough that everyone calls it Palm Springs. It uses <a href="https://www.wavegarden.com/" target="_blank" rel="noopener noreferrer"><strong>Wavegarden Cove</strong></a> technology to generate real, surfable waves in a roughly 6,000 square foot pool. It opened to real surf sessions, drew the attention of surfers who live nowhere near a coast, and has been a regular stop for desert visitors ever since.</p>
 
@@ -59,15 +59,15 @@ relatedPosts:
 
 <p>PSSC offers several named session types, each calibrated for a different skill level:</p>
 
-<p><strong>Waikiki Wave</strong> is the beginner session. Soft-top boards, coaching included, waves gentle enough to learn on. Most first-timers stand up at least once. The instruction is structured, not "here's a board, good luck." This is where you start if you've never surfed.</p>
+<p><strong>Waikiki Wave</strong> is the beginner session: soft-top boards, coaching included, waves gentle enough to learn on. Most first-timers stand up at least once, and the instruction is structured, not "here's a board, good luck." This is where you start if you've never surfed.</p>
 
 <p><strong>Reform Wave Pass</strong> is the step up: still approachable, but more wave to work with. Good if you've got a session or two under your belt and want something with more push than the beginner pool.</p>
 
-<p><strong>Intermediate A-Frames and Lefts and Rights</strong> are proper surf sessions. A-Frames fire 6-wave sets with about 15 seconds between waves. Lefts and Rights run 6-wave sets with 22 seconds between. You're waiting, paddling, and riding like you would in the ocean. These are the sessions that feel like surfing rather than surviving it.</p>
+<p><strong>Intermediate A-Frames and Lefts and Rights</strong> are proper surf sessions: A-Frames fire 6-wave sets with about 15 seconds between waves, while Lefts and Rights run 6-wave sets with 22 seconds between. You're waiting, paddling, and riding like you would in the ocean: these are the sessions that feel like surfing rather than surviving it.</p>
 
 <p><strong>Advanced A-Frames</strong> are the same mechanics, steeper and faster. For surfers who want a challenge they'd recognize from a real beach break.</p>
 
-<p><strong>5 Slabs</strong> is the expert session. This is the hardest wave on site. Not the right place for a first-timer or an occasional surfer.</p>
+<p><strong>5 Slabs</strong> is the expert session and the hardest wave on site, not the right place for a first-timer or an occasional surfer.</p>
 
 <p><strong>Sampler Session</strong> gives you a mix of wave types across one booking. Good if you're not sure which tier fits you, or if you want to test a few levels in a single day.</p>
 
@@ -80,15 +80,15 @@ relatedPosts:
 
 <p>Think about this before you book.</p>
 
-<p><strong>If you surf or want to learn:</strong> This is genuinely your place. The beginner path is well-structured. The intermediate and advanced sessions are real surfing, not a novelty. The wave pool removes the variable of bad ocean conditions: you know what you're getting before you show up.</p>
+<p><strong>If you surf or want to learn:</strong> This is genuinely your place. The beginner path is well-structured, and the intermediate and advanced sessions are real surfing, not a novelty. The wave pool removes the variable of bad ocean conditions: you know what you're getting before you show up.</p>
 
-<p><strong>If you want a traditional pool day:</strong> This is not that. Palm Springs Surf Club is an active surf facility. The energy is physical and focused, not lounge-by-the-water relaxed. There is a separate restaurant, bar, and lounge area with chairs and cabana situations for non-surfers. That part is fine. But if you're expecting a beach club vibe where you sip drinks poolside and occasionally dip your feet in, you'll find the experience doesn't quite match that expectation.</p>
+<p><strong>If you want a traditional pool day:</strong> This is not that. Palm Springs Surf Club is an active surf facility, its energy physical and focused rather than lounge-by-the-water relaxed. There is a separate restaurant, bar, and lounge area with chairs and cabana situations for non-surfers. That part is fine. But if you're expecting a beach club vibe where you sip drinks poolside and occasionally dip your feet in, you'll find the experience doesn't quite match that expectation.</p>
 
 <p><strong>Groups with mixed interest levels:</strong> This works well. Surfers book sessions while non-surfers eat, drink, and watch from the venue's seating area. You split, do your respective things, meet up for food. Everyone gets a version of a good day without having to compromise on everything.</p>
 
 <h2>Prices and What to Book</h2>
 
-<p>Pricing is tiered by session type. As of 2026, approximate rates: Waikiki Wave (beginner) around $100. Reform Wave Pass and intermediate sessions (A-Frames, Lefts and Rights) in the $150-200 range. Advanced A-Frames around $200. 5 Slabs (expert) around $250. Sampler Sessions are priced separately.</p>
+<p>Pricing is tiered by session type. As of 2026, approximate rates run from $100 for the beginner Waikiki Wave up to $150-200 for the Reform Wave Pass and intermediate sessions (A-Frames, Lefts and Rights), $200 for Advanced A-Frames, and $250 for 5 Slabs (expert); Sampler Sessions are priced separately.</p>
 
 <p>Spectator tickets are available if you're coming to watch. Cabana rentals for the lounge side of the venue book separately. Check <a href="https://palmspringssurfclub.com" target="_blank" rel="noopener">palmspringssurfclub.com</a> for current pricing before you commit, as rates shift seasonally. Don't show up expecting to buy tickets at the door, especially on weekends.</p>
 
@@ -104,7 +104,7 @@ relatedPosts:
 
 <p><strong>Address:</strong> Palm Springs Surf Club (BSR Wave Co), 1500 S Gene Autry Trail, Cathedral City, CA 92234. About 10 minutes from downtown Palm Springs and about 25 to 30 minutes from Indio.</p>
 
-<p><strong>Parking:</strong> On-site parking is available. Peak season fees may apply. Check signage on arrival.</p>
+<p><strong>Parking:</strong> On-site parking is available, though peak season fees may apply, so check signage on arrival.</p>
 
 <p><strong>Food and drinks:</strong> No outside food, outside beverages, coolers, or glass containers are allowed on the venue grounds. Drifters, the on-site restaurant at <a href="https://palmspringssurfclub.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Surf Club</strong></a>, is open Thursday through Sunday: Thursday and Friday 11am-8pm, Saturday and Sunday 10am-8pm. Plan accordingly if you're visiting on a weekday and want a sit-down meal on-site.</p>
 

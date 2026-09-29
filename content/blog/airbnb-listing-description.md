@@ -1,7 +1,7 @@
 ---
 title: "How to Write an Airbnb Listing Description That Books"
 date: 2026-07-11
-metaDescription: "Five-section formula for writing Airbnb listing descriptions that convert. From a host with four Coachella Valley rentals and 191 five-star reviews."
+metaDescription: "Five-section formula for writing Airbnb listing descriptions that convert. From a host with four Coachella Valley rentals and 332 five-star reviews."
 ogImage: /blog/images/terra-luz-outdoor-wide.webp
 heroImage: /blog/images/terra-luz-outdoor-wide.webp
 heroAlt: "Terra Luz vacation rental outdoor living area with pool and string lights in Indio California"
@@ -21,7 +21,7 @@ layout: blog-post.njk
 
 <p>Most Airbnb listing descriptions fail for the same reason. They answer "what does this place have?" when the guest is asking something else: "is this right for my group?" Those are two very different questions, and the listing that answers the second one books at a higher rate.</p>
 
-<p>We run four properties across the Coachella Valley and Palm Springs under Indigo Palm Collective: Terra Luz, The Cozy Cactus, The Sundune, and The Well. Between them, we have 191 reviews and a collective rating that stays above 4.9. What <a href="/blog/airbnb-hosting-lessons/">four years of guest feedback taught us</a> is that the details guests respond to in person are the same details they respond to in the listing. The description either earns trust before they book, or it doesn't.</p>
+<p>We run four properties across the Coachella Valley and Palm Springs under Indigo Palm Collective: Terra Luz, The Cozy Cactus, The Sundune, and The Well. Between them, we have 332 reviews and a collective rating that stays above 4.9. What <a href="/blog/airbnb-hosting-lessons/">four years of guest feedback taught us</a> is that the details guests respond to in person are the same details they respond to in the listing. The description either earns trust before they book, or it doesn't.</p>
 
 <p>Here's the five-section formula we use. It's not complicated. It's just aimed at the right question.</p>
 

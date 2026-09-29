@@ -35,7 +35,7 @@ relatedPosts:
 
 <p>I put this list together for guests at <a href="/the-sundune/">The Sundune</a>, my 2-bedroom condo in Palm Springs. These are the spots I'd tell a friend about, and I'm going to be clear about which ones need a car or a rideshare from the property, because a $30 Uber home at midnight changes the math.</p>
 
-<p>This is not a sponsored list. Nobody paid me to include them. There are 11 spots below, organized by what you're looking for. Skip to your category.</p>
+<p>This isn't a sponsored list, and nobody paid me to include anyone here. Below are 11 spots organized by what you're looking for, so skip straight to your category if you already know what you want.</p>
 
 <img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Canyon Drive in Palm Springs lined with palm trees and backed by San Jacinto mountains at dusk" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Canyon Drive at dusk. Most of this list is within a few blocks of here or on Arenas Road, one block east.</p>
@@ -84,7 +84,7 @@ relatedPosts:
 
 <p>Midcentury Polynesian bar on North Palm Canyon that shakes classic tiki drinks using house-made juices and syrups. Their 1944 Mai Tai gets mentioned constantly on Yelp and TripAdvisor and the praise is earned. The space is small and intimate so reservations on weekends make sense.</p>
 
-<p>Hours: Mon-Thu 3-11pm, Fri-Sat 3pm-1am, Sun 3-11pm. Happy hour runs the first and last hour of the day. This is a slower-paced spot, not a dance bar. Good for a couple drinks and a real conversation.</p>
+<p>Hours: Mon-Thu 3-11pm, Fri-Sat 3pm-1am, Sun 3-11pm. Happy hour runs the first and last hour of the day; this is a slower-paced spot, not a dance bar, good for a couple drinks and a real conversation.</p>
 
 <img src="/blog/images/bootlegger-tiki-palm-springs.webp" alt="Bootlegger Tiki bar interior in Palm Springs with red-lit rum shelves and tropical tiki decor" width="1200" height="630" loading="lazy">
 <p class="image-caption">The bar at Bootlegger Tiki. Classic rum selection, tropical decor, intimate room. The 1944 Mai Tai is the drink everyone comes back for.</p>
@@ -94,7 +94,7 @@ relatedPosts:
 
 <p>Toucans has been running drag in Palm Springs longer than any other bar in the city. Over-the-top tiki decor, kitschy cocktails, and a crowd that is genuinely there to have fun. Weekly programming includes Freakqncy Fridays, Saturday drag brunch at 1pm, Saturday night shows, and Stars of the Desert Sundays.</p>
 
-<p>This is the place if you want spectacle along with your drinks. LGBTQ+ bar, all-welcoming crowd. Open until 2am on Fridays and Saturdays.</p>
+<p>This is the place if you want spectacle along with your drinks, an all-welcoming LGBTQ+ bar open until 2am on Fridays and Saturdays.</p>
 
 <img src="/blog/images/festival-concert-night.webp" alt="Palm Springs outdoor event at night with crowd and festive lighting" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs nightlife spans from quiet cocktail bars to full drag spectacle. Toucans and Hunters cover the latter.</p>
@@ -106,7 +106,7 @@ relatedPosts:
 <h3>Hunters</h3>
 <p><strong>302 E Arenas Rd, Palm Springs | 760-323-0700 | <a href="https://hunterspalmsprings.com/" target="_blank" rel="noopener">hunterspalmsprings.com</a></strong></p>
 
-<p>Hunters has been on Arenas Road since 1998. Dance floor, themed parties, open daily until 2am. Friday and Saturday nights the dance floor fills early. The floor fills early, the themes are campy and committed, and nobody checks who you came with at the door. Monday Latin Fever drag show starts at 10pm.</p>
+<p>Hunters has been on Arenas Road since 1998: dance floor, themed parties, open daily until 2am. Friday and Saturday nights the floor fills early, the themes campy and committed, and nobody checks who you came with at the door. Monday Latin Fever drag show starts at 10pm.</p>
 
 <p>One of the consistently recommended stops for first-time Palm Springs visitors alongside Toucans.</p>
 

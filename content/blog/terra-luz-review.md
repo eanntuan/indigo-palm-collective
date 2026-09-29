@@ -123,6 +123,11 @@ relatedPosts:
 <h3>How many nights should I book at Terra Luz?</h3>
 <p>Plan 3 nights minimum: one morning at Joshua Tree, one full pool day, one Palm Springs day trip. That structure leaves room for late mornings and actual rest without feeling rushed. Four nights is better if Joshua Tree, a La Quinta dinner, and a full day of doing nothing are all on your list.</p>
 
+<h3>What's the difference between a saltwater pool and a chlorine pool for a vacation rental stay?</h3>
+<p>Saltwater pools use a chlorine generator that produces chlorine from dissolved salt at much lower concentrations than traditional pools. The practical result for guests: no chemical smell, less eye and skin irritation after long afternoons in the water, and a softer feel. For a property where the pool is a primary feature, it's a meaningful quality distinction. You can see it at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>, where the spa runs heated on the house and pool heating is a $75-per-night add-on with a two-night minimum, or $400 for the week.</p>
+
+<h3>How far in advance should I book Terra Luz for festival weekends?</h3>
+<p>Six months minimum for Coachella and Stagecoach weekends, ideally at lineup announcement. Private-pool properties within walking distance of the Empire Polo Club represent a small slice of valley inventory, and they fill faster than general vacation rental search patterns would suggest. Guests who secure these properties are booking at announcement, not after spring break planning kicks in.</p>
 
 <script type="application/ld+json">
 {
@@ -156,15 +161,3 @@ relatedPosts:
   ]
 }
 </script>
-
-
-
-
-<h4>What's the difference between a saltwater pool and a chlorine pool for a vacation rental stay?</h4>
-<p>Saltwater pools use a chlorine generator that produces chlorine from dissolved salt at much lower concentrations than traditional pools. The practical result for guests: no chemical smell, less eye and skin irritation after long afternoons in the water, and a softer feel. For a property where the pool is a primary feature, it's a meaningful quality distinction. You can see it at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>, where the spa runs heated on the house and pool heating is a $75-per-night add-on with a two-night minimum, or $400 for the week.</p>
-
-<h4>Can I walk to Coachella or Stagecoach from Terra Luz?</h4>
-<p>Yes. The walk via Eisenhower Drive to the Empire Polo Club is genuinely short, which makes Terra Luz one of the few properties in the Coachella Valley where walking to the festival is genuinely practical rather than theoretical. For guests who want to avoid festival-weekend Uber surge pricing, this is the most underrated feature of the Indian Palms location.</p>
-
-<h4>How far in advance should I book Terra Luz for festival weekends?</h4>
-<p>Six months minimum for Coachella and Stagecoach weekends, ideally at lineup announcement. Private-pool properties within walking distance of the Empire Polo Club represent a small slice of valley inventory, and they fill faster than general vacation rental search patterns would suggest. Guests who secure these properties are booking at announcement, not after spring break planning kicks in.</p>

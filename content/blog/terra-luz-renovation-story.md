@@ -106,6 +106,12 @@ layout: blog-post.njk
 <h3>How much did the Terra Luz renovation cost?</h3>
 <p>The Version 1 renovation budget was $19,900, covering pool deck, all tile, wallpaper, paint, furniture, and Dawn's design fees. Version 2 (exterior paint, summer 2026) adds approximately $5,000. Version 3 (pass-through kitchen window, summer 2027) is estimated at $2,500 to $3,500.</p>
 
+<h3>What does the patio at Terra Luz look like?</h3>
+<p>Bigger than the photos suggest. The patio is 1,148 square feet, which makes it larger than most of the interior living space. The pool deck was resurfaced with a cooling overlay in a lace finish called Orange Flambé that runs 20 to 30 degrees cooler than standard concrete on hot days. Antigua wicker rocking chairs line the back wall, there are in-pool loungers under a Desert Marigold umbrella, and an outdoor projector is mounted to the pergola for movies. The concrete fire pit coffee table from Neighbor works as a low table when the fire isn't on.</p>
+
+<h3>Is the Latin/Cuban design at Terra Luz the same as boho?</h3>
+<p>No, and the distinction matters. Brand architect Dawn Asher at The Olive Jar made this explicit from the start: Latin/Cuban and boho both use rattan and warm tones, but boho is eclectic and maximalist, while the direction at Terra Luz was more specific: Old Havana patina, wabi-sabi warmth, materials that feel collected and lived-in rather than assembled from a mood board. Every furniture and finish decision ran through six brand filters: cocooned and soothing, vibrant and rejuvenating, cultured, rhythmic, effortless ease, grounded. The result holds together in a way generic boho rentals usually don't.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -170,12 +176,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-
-<h4>What does the patio at Terra Luz look like in person?</h4>
-<p>Bigger than the photos suggest. The patio is 1,148 square feet, which makes it larger than most of the interior living space. The pool deck was resurfaced with a cooling overlay in a lace finish called Orange Flambé that runs 20 to 30 degrees cooler than standard concrete on hot days. Antigua wicker rocking chairs line the back wall, there are in-pool loungers under a Desert Marigold umbrella, and an outdoor projector is mounted to the pergola for movies. The concrete fire pit coffee table from Neighbor works as a low table when the fire isn't on. See the full renovation breakdown at <a href="https://indigopalm.co/blog/terra-luz-renovation-story/">indigopalm.co</a>.</p>
-
-<h4>Is the Latin/Cuban design aesthetic at Terra Luz boho?</h4>
-<p>No, and the distinction matters. Brand architect Dawn Asher at The Olive Jar made this explicit from the start: Latin/Cuban and boho both use rattan and warm tones, but boho is eclectic and maximalist while the direction at Terra Luz was more specific: Old Havana patina, wabi-sabi warmth, materials that feel collected and lived-in rather than assembled from a mood board. Every furniture and finish decision ran through six brand filters: cocooned and soothing, vibrant and rejuvenating, cultured, rhythmic, effortless ease, grounded. The result holds together in a way that generic boho rentals usually don't.</p>

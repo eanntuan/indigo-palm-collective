@@ -1,8 +1,8 @@
 ---
-title: "191 Airbnb Reviews: What Four Years of Hosting Taught Us"
+title: "332 Airbnb Reviews: What Four Years of Hosting Taught Us"
 date: 2025-10-26
 dateModified: 2026-07-30
-metaDescription: "Hard-won hosting lessons from 191 Airbnb reviews and four years running rentals in Indio, CA. The details that move the needle on 5-star reviews."
+metaDescription: "Hard-won hosting lessons from 332 Airbnb reviews and four years running rentals in Indio, CA. The details that move the needle on 5-star reviews."
 ogImage: /blog/images/airbnb-hosting-welcome.webp
 heroImage: /blog/images/airbnb-hosting-welcome.webp
 heroAlt: "welcoming vacation rental front door with host tips for Airbnb success"
@@ -15,7 +15,7 @@ keywords:
 articleSection: "Hosting"
 property: cozy-cactus
 readTime: "7 min read"
-excerpt: "Hard-won hosting lessons from 191 Airbnb reviews and four years running rentals in Indio, CA. The details that move the needle on 5-star reviews."
+excerpt: "Hard-won hosting lessons from 332 Airbnb reviews and four years running rentals in Indio, CA. The details that move the needle on 5-star reviews."
 layout: blog-post.njk
 relatedPosts:
   - title: "How to Write an Airbnb Listing Description That Books"
@@ -26,7 +26,7 @@ relatedPosts:
     url: /blog/responding-to-bad-airbnb-reviews/
 ---
 
-<p>When I started hosting at <a href="/cozy-cactus/">The Cozy Cactus</a>, I thought the secret was somewhere obvious. Better pool. Nicer towels. A welcome bottle of wine. Four years and 191 reviews later, almost none of that is what guests write about.</p>
+<p>When I started hosting at <a href="/cozy-cactus/">The Cozy Cactus</a>, I thought the secret was somewhere obvious. Better pool. Nicer towels. A welcome bottle of wine. Four years and 332 reviews later, almost none of that is what guests write about.</p>
 
 <p>If you want the full picture of what makes a desert rental worth booking, the <a href="/blog/coachella-valley-vacation-rental-guide/">Coachella Valley vacation rental guide</a> covers what guests evaluate before committing.</p>
 
@@ -127,6 +127,12 @@ relatedPosts:
 <h3>Is it worth paying cleaners above market rate for a vacation rental?</h3>
 <p>Yes, without question. Cleanliness is the only factor you get zero credit for when it's right and lose everything over when it's wrong. Professional cleaners with a detailed checklist and consistent pay produce consistent results. It's the foundation everything else is built on.</p>
 
+<h3>What's the most cost-effective improvement a new Airbnb host can make?</h3>
+<p>Stock two of everything, then add one more: spare toilet paper behind every toilet, extra coffee filters inside the drawer, chargers at every bedside. The cost per restocking cycle is around $20-30, and the guest experience benefit is disproportionately large because running out of a basic consumable at 10pm feels like neglect regardless of how nice the property is.</p>
+
+<h3>How do listing photos affect guest reviews?</h3>
+<p>Staged listing photos create an expectation gap: guests arrive expecting the perfectly arranged room from the photos and find the real version, which feels like a letdown even when nothing is wrong. Photographing the property as guests will find it, same furniture, same art, nothing styled beyond what cleaning maintains, closes that gap before it becomes a complaint.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -183,12 +189,3 @@ relatedPosts:
   ]
 }
 </script>
-
-
-
-
-<h4>What's the most cost-effective improvement a new Airbnb host can make?</h4>
-<p>Stock two of everything, then add one more: spare toilet paper behind every toilet, extra coffee filters inside the drawer, chargers at every bedside. The cost per restocking cycle is around $20-30, and the guest experience benefit is disproportionately large because running out of a basic consumable at 10pm feels like neglect regardless of how nice the property is. See more at <a href="https://indigopalm.co/blog/airbnb-hosting-lessons/">indigopalm.co/blog/airbnb-hosting-lessons/</a>.</p>
-
-<h4>How do listing photos affect guest reviews?</h4>
-<p>Staged listing photos create an expectation gap: guests arrive expecting the perfectly arranged room from the photos and find the real version, which feels like a letdown even when nothing is wrong. Photographing the property as guests will find it, same furniture, same art, nothing styled beyond what cleaning maintains, closes that gap before it becomes a complaint.</p>

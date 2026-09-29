@@ -99,13 +99,13 @@ relatedPosts:
 
 <h2>Kid-Friendly Things to Do in the Coachella Valley</h2>
 
-<p><a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a> (Indio, 5 min): The on-site museum about date cultivation is surprisingly good with kids. The date shake is mandatory. Get two. For the full story on what to try and when to go, see our <a href="/blog/date-farms-indio-coachella-valley/">Coachella Valley date farms guide</a>.</p>
+<p><a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a> (Indio, 5 min): The on-site museum about date cultivation is surprisingly good with kids. The date shake is mandatory, so get two. For the full story on what to try and when to go, see our <a href="/blog/date-farms-indio-coachella-valley/">Coachella Valley date farms guide</a>.</p>
 
 <p><strong>Coachella Valley Preserve</strong> (Thousand Palms, 20 min): Wild palm oases fed by the San Andreas Fault. The McCallum Trail is easy, about 3 miles, and genuinely arresting for kids: fan palms growing wild out of the desert floor, fed by fault water underground. Free admission. Go in the morning before it heats up.</p>
 
-<p><strong>Joshua Tree National Park (45 min):</strong> The Cholla Cactus Garden near the south entrance is 10 minutes from the park gate and requires almost no hiking. Kids love the alien landscape. Go at 7am or late afternoon. Midday heat is not for small people. Joshua Tree also has a Junior Ranger Booklet: kids complete activities, answer questions about the park, and get a badge from a ranger at the end. It's $1 at the visitor center and keeps the 8-and-up crowd engaged for the whole visit.</p>
+<p><strong>Joshua Tree National Park (45 min):</strong> The Cholla Cactus Garden near the south entrance is 10 minutes from the park gate and requires almost no hiking. Kids love the alien landscape. Go at 7am or late afternoon; midday heat is not for small people. Joshua Tree also has a Junior Ranger Booklet: kids complete activities, answer questions about the park, and get a badge from a ranger at the end. It's $1 at the visitor center and keeps the 8-and-up crowd engaged for the whole visit.</p>
 
-<p><strong>Old Town Indio Farmers Market (Saturday mornings):</strong> Tamales, fresh citrus, local produce. Kids can eat their way through it. Runs 8am-noon, free to browse, genuinely good coffee from the corner stand.</p>
+<p><strong>Old Town Indio Farmers Market (Saturday mornings):</strong> Kids can eat their way through the tamales, fresh citrus, and local produce; it runs 8am-noon, free to browse, with genuinely good coffee from the corner stand.</p>
 
 <p>For the full list of things to do in the area, the <a href="/blog/things-to-do-indio-ca/">Indio local guide</a> covers 15 spots worth your time, most of which work fine with kids in tow.</p>
 
@@ -123,7 +123,7 @@ relatedPosts:
 
 <p>Things you do not need to bring to the Cozy Cactus: pack-n-play, high chair, baby monitor, sound machine, outlet covers, and baby gate are all there.</p>
 
-<p>Things worth bringing regardless: your kid's specific sleep sack or comfort item, formula or snacks they're particular about, sunscreen in quantities that reflect the desert reality. The Coachella Valley sun is not California-coast sun. It's direct and relentless. SPF 50+ on kids, reapplied after the pool.</p>
+<p>Things worth bringing regardless: your kid's specific sleep sack or comfort item, formula or snacks they're particular about, sunscreen in quantities that reflect the desert reality. The Coachella Valley sun is not California-coast sun: direct and relentless. SPF 50+ on kids, reapplied after the pool.</p>
 
 <p>A hat for every child. This is not a suggestion.</p>
 
@@ -154,6 +154,12 @@ relatedPosts:
 
 <h3>How early should we book a family rental near Indio for spring?</h3>
 <p>March and October book earliest in the valley. Families tend to repeat-book the same rental year over year, so supply for spring March weeks tightens by November. Book at least four to six months out if spring break is the target window.</p>
+
+<h3>Is Joshua Tree worth the drive from Indio with young kids?</h3>
+<p>Yes, with the right strategy. The Cholla Cactus Garden near the south entrance is 10 minutes from the park gate and requires almost no hiking, so even toddlers can do it. Go at 7am or late afternoon to avoid midday heat. For kids 8 and up, the $1 Junior Ranger Booklet at the visitor center keeps them engaged for the full visit and earns them an official badge from a ranger.</p>
+
+<h3>What's the difference between staying in Indio versus Palm Springs for a family trip?</h3>
+<p>Indio gives you more space per dollar: larger homes, private pools, bigger backyards, and walking distance to Coachella and Stagecoach venues. Palm Springs has more walkable restaurants and boutique shopping but shorter on private outdoor space at the same price point. For families with babies or toddlers who need a private pool and kitchen access, Indio tends to make more sense. For a smaller group that wants walkable evenings, Palm Springs is the better fit.</p>
 
 <p><a href="/cozy-cactus/">The Cozy Cactus</a> is built for exactly this trip. Three bedrooms, two bathrooms, private hot tub, game room, putting green, and a gear closet stocked for families with babies through school-age kids. Check availability: it books early for March and October.</p>
 
@@ -222,15 +228,3 @@ relatedPosts:
   ]
 }
 </script>
-
-
-
-
-<h4>Is Joshua Tree worth the drive from Indio with young kids?</h4>
-<p>Yes, with the right strategy. The Cholla Cactus Garden near the south entrance is 10 minutes from the park gate and requires almost no hiking, so even toddlers can do it. Go at 7am or late afternoon to avoid midday heat. For kids 8 and up, the $1 Junior Ranger Booklet at the visitor center keeps them engaged for the full visit and earns them an official badge from a ranger.</p>
-
-<h4>What indoor activities are there for kids in the Coachella Valley when it's too hot to be outside?</h4>
-<p>The Children's Discovery Museum of the Desert in Rancho Mirage is the strongest option, with 80+ hands-on exhibits across two floors, best for ages 2-10. The Living Desert Zoo in Palm Desert has shaded paths and younger-friendly animal encounters and pairs well with the museum since they're about 15 minutes apart. Both are worth booking on the same day trip.</p>
-
-<h4>What's the difference between staying in Indio versus Palm Springs for a family trip?</h4>
-<p>Indio gives you more space per dollar: larger homes, private pools, bigger backyards, and walking distance to Coachella and Stagecoach venues. Palm Springs has more walkable restaurants and boutique shopping but shorter on private outdoor space at the same price point. For families with babies or toddlers who need a private pool and kitchen access, Indio tends to make more sense. For a smaller group that wants walkable evenings, Palm Springs is the better fit. The full comparison is at <a href="https://indigopalm.co/blog/coachella-valley-with-kids/">indigopalm.co/blog/coachella-valley-with-kids/</a>.</p>

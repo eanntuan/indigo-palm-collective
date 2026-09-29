@@ -23,7 +23,7 @@ excerpt: "Stuck in Indio between Coachella weekends? Date shakes, the Salton Sea
 layout: blog-post.njk
 ---
 
-<p>So you're staying for both weekends. Smart. Slightly chaotic. Fully committed.</p>
+<p>So you're staying for both weekends: smart, slightly chaotic, fully committed.</p>
 
 <p>Weekend 1 ends April 13th. Weekend 2 starts April 18th. That's five days in Indio with no festival, no agenda, and probably a depleted phone battery and a vague sense that you've eaten nothing but overpriced festival burritos for three days. You could drive back to wherever you came from and turn around again (a lot of people do), but that seems like a lot of freeway for a mediocre outcome.</p>
 
@@ -35,9 +35,9 @@ layout: blog-post.njk
 
 <p>After three days of Coachella (the heat, the walking, the standing, the sleeping), your body is going to have opinions. And those opinions are going to involve horizontal surfaces and cold water.</p>
 
-<p>The single biggest advantage of staying in a private vacation rental instead of driving home is this: the pool. Use it. Spend Monday doing nothing except floating, eating something with vegetables in it, and napping. This is not laziness. This is strategy. You have a second full festival weekend in six days. The people who go hard during the break are the same people who are limping through Weekend 2 by Saturday night.</p>
+<p>The single biggest advantage of staying in a private vacation rental instead of driving home is this: the pool. Use it. Spend Monday doing nothing except floating, eating something with vegetables in it, and napping. This is not laziness. It's strategy: you've got a second full festival weekend in six days. The people who go hard during the break are the same people who are limping through Weekend 2 by Saturday night.</p>
 
-<p>Keep a cooler stocked. Order delivery or pick up something simple (more on where in a minute). Sleep at an hour that isn't 3am. The desert will still be there tomorrow. It literally cannot leave.</p>
+<p>Keep a cooler stocked, order delivery or pick up something simple (more on where in a minute), and sleep at an hour that isn't 3am. The desert will still be there tomorrow. It literally cannot leave.</p>
 
 <p>If the rental pool isn't enough recovery and you want an actual spa day, both La Quinta and Palm Desert have real options 20 minutes from Indio: Well Spa+Salon at La Quinta Resort and the hammam/steam setup at JW Marriott Desert Springs. Our <a href="/blog/best-spas-coachella-valley-spa-day/">Coachella Valley spa day guide</a> covers pricing and what's worth booking.</p>
 
@@ -183,11 +183,20 @@ layout: blog-post.njk
 <h3>What is the best coffee shop in Indio during Coachella week?</h3>
 <p>Everbloom Coffee on Highway 111 in Indio. Two brothers run it, the drinks use real ingredients, and the honey lavender latte is worth ordering twice. Go before 10am on weekend mornings before the lines build up.</p>
 
+<h3>Is El Tranvia in Coachella worth the drive from Indio?</h3>
+<p>Yes. El Tranvia has been serving barbacoa-style beef since 1969, which means they were doing quesabirria tacos long before the trend caught up to them. It's about 10 minutes from central Indio at 1221 6th St in Coachella city, the consomé for dipping is rich without being oily, and the tacos gobernador (shrimp and cheese) are worth the detour. Go before or after the lunch rush since the space is small.</p>
+
+<h3>What's the best day to visit the Salton Sea during the in-between week?</h3>
+<p>Tuesday or Wednesday tend to be quietest, but timing within the day matters more than the day of the week. Go in the morning before the heat peaks, bring water and snacks since food options along the sea are minimal, and allow about 90 minutes to two hours if you're doing Bombay Beach, Salvation Mountain, and the Sonny Bono Wildlife Refuge. The drive from Indio is about 40 minutes south on Highway 86.</p>
+
+<h3>Are vacation rentals near Coachella available for the full two-weekend stretch?</h3>
+<p>The most popular rentals near the polo grounds book the two-weekend block as a full stay, which is the most cost-effective approach for people staying for both weekends. Terra Luz and The Cozy Cactus at <a href="https://indigopalm.co">indigopalm.co</a> are both in Indio, walking distance to the Empire Polo Club, and accommodate the full stretch. Terra Luz gives you the private saltwater pool and heated spa; the Cozy Cactus gives you a private hot tub and three heated community pools inside the gates. Either works for the recovery days in between.</p>
+
 <h2>You're Already Here. Use That.</h2>
 
 <p>The in-between week exists in a strange liminal state that most Coachella coverage completely ignores. Every guide is about how to survive the festival itself. Nobody writes about the five days where you're living in the Coachella Valley like a person instead of a festival attendee.</p>
 
-<p>Those five days are good if you let them be. Eat the tamale. Drive to the Salton Sea. Watch a short film about date sex from 1950. Have a honey lavender latte in the morning and a record play through vintage speakers in the evening. Sleep in. Float in the pool.</p>
+<p>Those five days are good if you let them be. Eat the tamale, drive to the Salton Sea, watch a short film about date sex from 1950. Have a honey lavender latte in the morning and a record play through vintage speakers in the evening. Sleep in. Float in the pool.</p>
 
 <p>Weekend 2 will still be there on the 18th. It always is.</p>
 
@@ -259,14 +268,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-<h4>Is El Tranvia in Coachella worth the drive from Indio?</h4>
-<p>Yes. El Tranvia has been serving barbacoa-style beef since 1969, which means they were doing quesabirria tacos long before the trend caught up to them. It's about 10 minutes from central Indio at 1221 6th St in Coachella city, the consomé for dipping is rich without being oily, and the tacos gobernador (shrimp and cheese) are worth the detour. Go before or after the lunch rush since the space is small.</p>
-
-<h4>What's the best day to visit the Salton Sea during the in-between week?</h4>
-<p>Tuesday or Wednesday tend to be quietest, but timing within the day matters more than the day of the week. Go in the morning before the heat peaks, bring water and snacks since food options along the sea are minimal, and allow about 90 minutes to two hours if you're doing Bombay Beach, Salvation Mountain, and the Sonny Bono Wildlife Refuge. The drive from Indio is about 40 minutes south on Highway 86.</p>
-
-<h4>Are vacation rentals near Coachella available for the full two-weekend stretch?</h4>
-<p>The most popular rentals near the polo grounds book the two-weekend block as a full stay, which is the most cost-effective approach for people staying for both weekends. Terra Luz and The Cozy Cactus at <a href="https://indigopalm.co">indigopalm.co</a> are both in Indio, walking distance to the Empire Polo Club, and accommodate the full stretch. Terra Luz gives you the private saltwater pool and heated spa; the Cozy Cactus gives you a private hot tub and three heated community pools inside the gates. Either works for the recovery days in between.</p>

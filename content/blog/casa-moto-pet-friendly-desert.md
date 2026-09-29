@@ -39,7 +39,7 @@ layout: blog-post.njk
 
 <p>I've seen a lot of vacation rentals with "yards" that are really just patios with some decorative fencing that a motivated Labrador could clear in one jump. Or worse, "yards" that open directly onto a shared golf course with no real boundary at all.</p>
 
-<p>At Terra Luz, the backyard is properly enclosed. The gate latches. The fence is the real kind. A dog can be out there without someone standing at the door watching every move. If you've ever brought a dog on a trip, you know that's the difference between relaxing and not relaxing at all.</p>
+<p>At Terra Luz, the backyard is properly enclosed, with a gate that latches and a fence that's the real kind. A dog can be out there without someone standing at the door watching every move. If you've ever brought a dog on a trip, you know that's the difference between relaxing and not relaxing at all.</p>
 
 <p>The pool has a sun shelf. There's space to set up a shade spot. The outdoor area is designed so people spend time there, which means it's also designed so dogs can be out there.</p>
 
@@ -49,7 +49,7 @@ layout: blog-post.njk
 
 <p>She had a specific vision for them. Not a generic rubber mat from the pet aisle. Something that fit the overall design language of the property, something that felt intentional, something a guest would notice and think: oh, they thought about this.</p>
 
-<p>That sounds small. (It is small.) But that's the point. Pet-friendly rentals almost never have considered pet details. They have permission slips. The difference between those two things is exactly what we were trying to build at Terra Luz.</p>
+<p>That sounds small. (It is small.) But that's the point: pet-friendly rentals almost never have considered pet details, they have permission slips, and the difference between those two things is exactly what we were trying to build at Terra Luz.</p>
 
 <p>The mats are in. They photograph well. Dawn would tell you that's not the point, but it doesn't hurt.</p>
 
@@ -58,7 +58,7 @@ layout: blog-post.njk
 
 <h2>The Neighborhood Is Right for Dogs</h2>
 
-<p>Terra Luz is in Indian Palms, Indio. If you've never walked that neighborhood at sunrise, I can't fully describe it to you. The mountains are right there. The air smells like night-blooming jasmine in spring. The streets are quiet and wide.</p>
+<p>Terra Luz is in Indian Palms, Indio. If you've never walked that neighborhood at sunrise, I can't fully describe it to you. The mountains are right there, the air smells like night-blooming jasmine in spring, and the streets are quiet and wide.</p>
 
 <p>It's one of those neighborhoods where you set out for a quick 20-minute walk and come back an hour later because the light hit something interesting and the dog found three new smells and before I knew it we'd circled the whole east side.</p>
 
@@ -68,9 +68,9 @@ layout: blog-post.njk
 
 <p>This is the part that's hard to explain until you've experienced it.</p>
 
-<p>There's a category of Palm Springs-adjacent vacation rental that is beautiful in every photo and quietly hostile to dogs in person. Pristine white linen. A living room that feels like a showroom. Outdoor furniture that's obviously not meant to be touched. The kind of space where a 60-pound dog walking through the living room feels like a liability rather than a guest.</p>
+<p>There's a category of Palm Springs-adjacent vacation rental that is beautiful in every photo and quietly hostile to dogs in person: pristine white linen, a living room that feels like a showroom, outdoor furniture that's obviously not meant to be touched. The kind of space where a 60-pound dog walking through the living room feels like a liability rather than a guest.</p>
 
-<p>Terra Luz is deliberately not that. Dawn's design direction for the property is what she calls "bold without being loud." Latin and Cuban influences. Layered textures. A space that feels lived-in rather than staged. Woven materials, warm tones, surfaces that invite you to use the property rather than treat it like a museum.</p>
+<p>Terra Luz is deliberately not that. Dawn's design direction for the property is what she calls "bold without being loud," built on Latin and Cuban influences and layered textures, more lived-in than staged. Woven materials, warm tones, surfaces that invite you to use the property rather than treat it like a museum.</p>
 
 <p>For dog owners, that design philosophy matters more than any fine-print pet policy. A space that's meant to be lived in is a space where a dog fits naturally. The vibe does real work here.</p>
 
@@ -105,7 +105,7 @@ layout: blog-post.njk
 
 <p>If you're looking for a pet-friendly vacation rental in the Coachella Valley and tired of the listings that technically allow dogs but clearly weren't designed with them in mind, <a href="/terra-luz/">Terra Luz</a> is the different answer.</p>
 
-<p>Enclosed backyard. Thoughtful design. A neighborhood worth walking. A property that looks good when a dog is in the room.</p>
+<p>Enclosed backyard, thoughtful design, a neighborhood worth walking, a property that looks good when a dog's in the room.</p>
 
 <p>That's what pet-friendly means here.</p>
 

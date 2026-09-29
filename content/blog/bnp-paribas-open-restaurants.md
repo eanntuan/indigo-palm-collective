@@ -19,7 +19,7 @@ readTime: "7 min read"
 layout: blog-post.njk
 ---
 
-<a href="https://bnpparibasopen.com/" target="_blank" rel="noopener noreferrer"><strong>Indian Wells Tennis Garden</strong></a> has the best stadium food of any tennis tournament in the country. That's not a claim to take on faith. <a href="https://www.noburestaurants.com/indian-wells/home/" target="_blank" rel="noopener noreferrer"><strong>Nobu</strong></a> is literally inside the stadium. MOTO Pizza is a regular at the concession circuit. And the 2026 lineup added Sweetfin poke bowls, Beecher's Handmade Cheese, and a Peruvian rice bowl concept called Pacha Mamas. Most tournaments have hot dogs. This one has black cod miso courtside.
+<a href="https://bnpparibasopen.com/" target="_blank" rel="noopener noreferrer"><strong>Indian Wells Tennis Garden</strong></a> has the best stadium food of any tennis tournament in the country. That's not a claim to take on faith: <a href="https://www.noburestaurants.com/indian-wells/home/" target="_blank" rel="noopener noreferrer"><strong>Nobu</strong></a> is literally inside the stadium, and MOTO Pizza is a regular on the concession circuit. And the 2026 lineup added Sweetfin poke bowls, Beecher's Handmade Cheese, and a Peruvian rice bowl concept called Pacha Mamas. Most tournaments have hot dogs. This one has black cod miso courtside.
 
 This post is specifically about the food. For accommodation, the [BNP Paribas Open: Where to Stay](/blog/bnp-paribas-indian-wells-where-to-stay/) post covers that separately.
 
@@ -35,7 +35,7 @@ A limited package bundles a Front Box Seat ticket in Stadium 1 with a reserved t
 Hours during tournament are Sunday through Thursday 5pm to 9pm, Friday and Saturday 5pm to 10pm.
 
 **Ristorante Mamma Gina (Stadium 2)**
-Italian option in Stadium 2. Mamma Gina has been a valley institution for years. The tournament version brings their classics into the stadium dining context.
+Mamma Gina has been a valley institution for years, and this Italian spot in Stadium 2 brings their classics into the tournament dining lineup.
 
 **Molé Ingenious Mexican Kitchen (Stadium 2)**
 Mexican concept inside Stadium 2. Good option for a quick full meal between sessions.
@@ -47,7 +47,7 @@ Full-service dining in Stadium 1, the main show court. More casual than Nobu but
 
 ## Concessions Worth Knowing
 
-**MOTO Pizza** returns as a fan favorite year after year. Wood-fired pizza that's noticeably better than stadium pizza usually is. Worth tracking down on the grounds map.
+**MOTO Pizza** returns as a fan favorite year after year; the wood-fired pie is noticeably better than stadium pizza usually is, and worth tracking down on the grounds map.
 
 **Sweetfin** (new in 2026): California-style poke bowls. Easy to eat while moving between courts. If the sun is out and you want something light and cold, this is the move.
 
@@ -55,7 +55,7 @@ Full-service dining in Stadium 1, the main show court. More casual than Nobu but
 
 **Pacha Mamas** (new in 2026): Peruvian rice bowls with freshly grilled meats and vegetables. Different from everything else on the concourse.
 
-**Puesto** and **John's** are returning options from prior years. Puesto brings Mexican street food. John's is a Coachella Valley staple.
+**Puesto** (Mexican street food) and **John's** (a Coachella Valley staple) are both returning options from prior years.
 
 **Chef Tanya's Kitchen** is also on site, representing one of the valley's most recognizable plant-based restaurants.
 
@@ -113,6 +113,12 @@ For restaurant options beyond the tennis grounds, the [Palm Desert dining guide]
 <h3>Where should I eat near the Indian Wells Tennis Garden if I leave the grounds?</h3>
 <p>Kestrel at the Indian Wells Golf Resort is the closest off-site option, about a 5-minute drive. El Paseo Drive in Palm Desert is 10 minutes west and has the highest density of sit-down restaurants in the valley. La Quinta Village, 15 to 20 minutes east, works well for guests staying closer to Indio.</p>
 
+<h3>How far in advance should I book a table at Nobu during the BNP Paribas Open?</h3>
+<p>At least a few days ahead for weekend sessions, especially Friday and Saturday evenings. Walk-in availability exists during the week if you arrive right at the 5pm opening, but tournament weekends fill quickly. The Tanoshi Hour on Wednesday and Thursday (5pm to 6pm) is the easiest time to get a table and has specials on dishes, sake, and cocktails, making it the best value window of the tournament.</p>
+
+<h3>Is it worth staying in Indio for the BNP Paribas Open, or should I stay closer to Indian Wells?</h3>
+<p>Indio is 20 to 25 minutes east of the Indian Wells Tennis Garden on Highway 111 and works well for guests who want a full house with a pool at a lower nightly rate than the Palm Springs corridor. The drive back after evening sessions is against outgoing traffic, which makes the commute easier than it sounds. Properties like <a href="https://indigopalm.co/cozy-cactus/">The Cozy Cactus</a> and <a href="https://indigopalm.co/terra-luz/">Terra Luz</a> in Indio also put you close to the Coachella polo fields if your trip overlaps with festival season.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -169,12 +175,3 @@ For restaurant options beyond the tennis grounds, the [Palm Desert dining guide]
   ]
 }
 </script>
-
-
-
-
-<h4>How far in advance should I book a table at Nobu during the BNP Paribas Open?</h4>
-<p>At least a few days ahead for weekend sessions, especially Friday and Saturday evenings. Walk-in availability exists during the week if you arrive right at the 5pm opening, but tournament weekends fill quickly. The Tanoshi Hour on Wednesday and Thursday (5pm to 6pm) is the easiest time to get a table and has specials on dishes, sake, and cocktails, making it the best value window of the tournament.</p>
-
-<h4>Is it worth staying in Indio for the BNP Paribas Open, or should I stay closer to Indian Wells?</h4>
-<p>Indio is 20 to 25 minutes east of the Indian Wells Tennis Garden on Highway 111 and works well for guests who want a full house with a pool at a lower nightly rate than the Palm Springs corridor. The drive back after evening sessions is against outgoing traffic, which makes the commute easier than it sounds. Properties like <a href="https://indigopalm.co/cozy-cactus/">The Cozy Cactus</a> and <a href="https://indigopalm.co/terra-luz/">Terra Luz</a> in Indio also put you close to the Coachella polo fields if your trip overlaps with festival season.</p>

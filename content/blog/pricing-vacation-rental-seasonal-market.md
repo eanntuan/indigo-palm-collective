@@ -21,7 +21,7 @@ layout: blog-post.njk
 
 <p>A flat nightly rate is wrong almost every night. Set it based on what you want to earn and you'll be too cheap during Coachella weekend and too expensive in July, losing money in both directions at once. The Coachella Valley is one of the clearest examples of this problem in the US, because the swings are so sharp and so predictable that there's really no excuse for getting it wrong.</p>
 
-<p>We run <a href="/blog/indigo-palm-properties/">three properties</a>: Terra Luz (3BR/2BA, Indio), The Cozy Cactus (3BR/2BA, Indio), and The Sundune (2BR/2BA, Palm Springs). Across 191 reviews and a few years of adjustments, here's how we think about pricing across this market.</p>
+<p>We run <a href="/blog/indigo-palm-properties/">three properties</a>: Terra Luz (3BR/2BA, Indio), The Cozy Cactus (3BR/2BA, Indio), and The Sundune (2BR/2BA, Palm Springs). Across 332 reviews and a few years of adjustments, here's how we think about pricing across this market.</p>
 
 <img src="/blog/images/terra-luz-outdoor-wide.webp" alt="Terra Luz vacation rental pool and outdoor living area in Indio California, Coachella Valley" loading="lazy" decoding="async" width="800" height="533">
 
@@ -67,7 +67,7 @@ layout: blog-post.njk
 
 <p>Not good: major events. Coachella, Stagecoach, BNP Paribas, any festival or event that drives a sudden regional demand spike. The tool models demand based on historical data and current market signals, but it can't fully see the spike coming until it's already here. For those specific dates, set prices manually and lock them.</p>
 
-<p>Across 191 reviews and a few years of <a href="/blog/airbnb-hosting-lessons/">watching what affects guest behavior</a>, pricing is one of the things that feels strategic but is mostly just bookkeeping. Get the big windows right (festival, shoulder, summer), let the tool handle the middle, and don't over-optimize.</p>
+<p>Across 332 reviews and a few years of <a href="/blog/airbnb-hosting-lessons/">watching what affects guest behavior</a>, pricing is one of the things that feels strategic but is mostly just bookkeeping. Get the big windows right (festival, shoulder, summer), let the tool handle the middle, and don't over-optimize.</p>
 
 <h2>Setting Your Floor: Based on Costs, Not Hope</h2>
 

@@ -34,7 +34,7 @@ The Coachella Valley is about 45 miles long, and where you shop genuinely depend
 
 **Stater Bros** is the everyday workhorse for most Indio residents. There are multiple locations: one on Jackson Street, one near the Indian Palms Country Club area. It's a regional grocery chain, well-stocked, reasonably priced, and stays open late. If you need basics fast, this is where to go.
 
-**Food 4 Less** on Monroe Street is the budget option in Indio. Produce and staples are noticeably cheaper here. It can be crowded on weekends. No frills, but functional.
+**Food 4 Less** on Monroe Street is the budget option in Indio. Produce and staples run noticeably cheaper here, though weekends get crowded. No frills, but it gets the job done.
 
 **Walmart Supercenter** on Jackson Street covers everything at once if you need to stock a house for a week: groceries, sunscreen, pool toys, cleaning supplies. The selection is broader than most of the grocery stores. Not where I'd go for good produce, but it works.
 
@@ -48,9 +48,9 @@ Guests staying at [The Cozy Cactus or Terra Luz](/cozy-cactus/) in Indio are bes
 
 <a href="https://jensensfoods.com/choose-store/" target="_blank" rel="noopener noreferrer"><strong>Jensen's Fine Foods</strong></a> has two locations in Palm Springs, on North Palm Canyon and on South Palm Canyon. It's an independent upscale grocery that's been in the desert since 1946. Good deli counter, excellent cheese selection, and the best date selection in the valley if you want to bring some home. Prices are higher than Trader Joe's, but the quality matches.
 
-**Stater Bros** on East Vista Chino is the most utilitarian option in the city. Less character than Jensen's, better for stocking up on quantity. Good produce section.
+**Stater Bros** on East Vista Chino is the most utilitarian option in the city; it has less character than Jensen's, but makes up for it with quantity and a solid produce section.
 
-**Ralphs** on East Sunny Dunes is a standard Kroger-brand grocery. Reliable, nothing surprising. Good if you're near the south end of Palm Springs.
+**Ralphs** on East Sunny Dunes is a standard Kroger-brand grocery: reliable, nothing surprising, and a good pick if you're near the south end of Palm Springs.
 
 <img src="/blog/images/palm-springs-pool.webp" alt="Palm Springs pool and patio area on a clear sunny afternoon with palm trees and blue sky" loading="lazy" width="1400" height="979">
 
@@ -112,6 +112,14 @@ Costco in Rancho Mirage is the move for bulk hauls: olive oil, sparkling water, 
 ### Can I order groceries for delivery to a vacation rental in Indio?
 
 Yes. Instacart delivers from Stater Bros, Walmart, Ralphs, and most other valley chains. Some guests place an order for arrival day so the kitchen is stocked when they check in. For Cozy Cactus and Terra Luz stays, that's the most efficient way to skip the first-day grocery trip entirely.
+
+### Which grocery store has the best produce in the Coachella Valley?
+
+Sprouts Farmers Market, with locations in Palm Desert and Cathedral City, consistently has the best produce-to-price ratio in the valley. Jensen's Fine Foods in Palm Springs carries excellent quality but at a premium. What most visitors don't expect: a lot of Coachella Valley produce is grown locally, so freshness throughout the region is better than it would be in a grocery store back in LA or Phoenix. Ask a Sprouts employee which items are California-grown and they'll usually point you toward something good.
+
+### What is Jensen's Fine Foods and is it worth it?
+
+Jensen's is an independent upscale grocery that has been in the desert since 1946, with two Palm Springs locations on North and South Palm Canyon Drive. The deli counter, cheese section, and date selection are genuinely better than anything else in the valley at that tier. Prices are noticeably higher than Trader Joe's or Stater Bros, but for a special dinner, a good bottle of wine, or local dates to bring home, it earns the premium. It's not a full-shop-for-the-week store; it's a destination for the things that matter.
 
 *Eann hosts guests at Indigo Palm Collective properties in Indio and Palm Springs. She's done this grocery run more times than she can count.*
 
@@ -179,15 +187,3 @@ Yes. Instacart delivers from Stater Bros, Walmart, Ralphs, and most other valley
   ]
 }
 </script>
-
-
-
-
-<h4>Which grocery store has the best produce in the Coachella Valley?</h4>
-<p>Sprouts Farmers Market, with locations in Palm Desert and Cathedral City, consistently has the best produce-to-price ratio in the valley. Jensen's Fine Foods in Palm Springs carries excellent quality but at a premium. What most visitors don't expect: a lot of Coachella Valley produce is grown locally, so freshness throughout the region is better than it would be in a grocery store back in LA or Phoenix. Ask a Sprouts employee which items are California-grown and they'll usually point you toward something good.</p>
-
-<h4>Is Instacart available for vacation rentals in Indio and Palm Springs?</h4>
-<p>Yes. Instacart delivers from Stater Bros, Walmart, Ralphs, and most major valley chains to both Indio and Palm Springs addresses. Scheduling a delivery for your arrival day is the most efficient way to skip the first-day grocery run entirely, especially during Coachella and Stagecoach weekends when store traffic is significantly higher. Most guests who use it find a Thursday delivery window (the day before most festival weekends open) the most reliable for same-day slots. More logistics at <a href="https://indigopalm.co/blog/grocery-stores-coachella-valley/">indigopalm.co/blog/grocery-stores-coachella-valley/</a>.</p>
-
-<h4>What is Jensen's Fine Foods and is it worth it?</h4>
-<p>Jensen's is an independent upscale grocery that has been in the desert since 1946, with two Palm Springs locations on North and South Palm Canyon Drive. The deli counter, cheese section, and date selection are genuinely better than anything else in the valley at that tier. Prices are noticeably higher than Trader Joe's or Stater Bros, but for a special dinner, a good bottle of wine, or local dates to bring home, it earns the premium. It's not a full-shop-for-the-week store; it's a destination for the things that matter.</p>

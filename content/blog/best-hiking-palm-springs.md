@@ -373,6 +373,18 @@ relatedPosts:
 <h3>How hard is the hike to San Jacinto Peak from the tram?</h3>
 <p>It's 11 miles out-and-back with 2,620 feet of elevation gain starting at 8,516 feet. Strenuous, 6 to 8 hours total, free wilderness permit required. Take the first tram up. Snow is possible on the summit into May. Not for casual hikers without conditioning or appropriate gear.</p>
 
+<h3>How much does hiking in Palm Springs cost?</h3>
+<p>Indian Canyons is $12 per adult and covers Andreas Canyon, Palm Canyon, and Murray Canyon on the same ticket. Tahquitz Canyon is a separate $15 per adult. The Palm Springs Aerial Tramway runs around $37 per adult. Bump and Grind and the North Lykken Trail are both free.</p>
+
+<h3>What is the best hike near Palm Springs for panoramic valley views?</h3>
+<p>Bump and Grind in Palm Desert climbs 1,100 feet and spans the full Coachella Valley to the Salton Sea, free of charge. The Palm Springs Aerial Tramway puts you at 8,516 feet in 10 minutes. San Jacinto Peak via the tram reaches 10,834 feet, 11 miles and 2,620 feet of gain above the station.</p>
+
+<h3>Where is the Indian Canyons trailhead in Palm Springs?</h3>
+<p>The Indian Canyons entrance is at 38520 S Palm Canyon Drive, about 3 miles south of downtown Palm Springs. One $12 entry covers Andreas Canyon, Palm Canyon, and Murray Canyon. Tahquitz Canyon has a separate trailhead at 500 W Mesquite Ave and does not share a ticket.</p>
+
+<h3>Where should I stay in Palm Springs if I want to hike every day?</h3>
+<p>Central Palm Springs puts you within 10 to 15 minutes of every canyon trailhead and the tram. <a href="/the-sundune/">The Sundune</a> is an Indigo Palm property in Palm Springs, dog-friendly with prior approval, with a 4-night weekday, 5-night weekend minimum that fits naturally with a multi-day hiking itinerary.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -461,18 +473,3 @@ relatedPosts:
   ]
 }
 </script>
-
-
-
-
-<h4>How much does hiking in Palm Springs cost?</h4>
-<p>Indian Canyons is $12 per adult and covers Andreas Canyon, Palm Canyon, and Murray Canyon on the same ticket. Tahquitz Canyon is separate at $15 per adult with its own trailhead and no shared ticketing with Indian Canyons. The Palm Springs Aerial Tramway runs around $37 per adult. Bump and Grind and the North Lykken Trail are both free with no parking fee.</p>
-
-<h4>What is the best hike near Palm Springs for views of the whole valley?</h4>
-<p>Bump and Grind in Palm Desert climbs 1,100 feet and gives you a full panoramic view of the Coachella Valley floor, the Salton Sea, and the desert cities below, and it's free. For the most dramatic perspective, the Palm Springs Aerial Tramway puts you at 8,516 feet in 10 minutes, with the valley 6,000 feet straight down. San Jacinto Peak via the tram is the full version of that, 11 miles and 2,620 feet more of gain to 10,834 feet.</p>
-
-<h4>Where is the trailhead for Indian Canyons and how do I get there?</h4>
-<p>The Indian Canyons entrance is at 38520 S Palm Canyon Drive in Palm Springs, about 3 miles south of downtown. One entry fee ($12 per adult) covers Andreas Canyon, Palm Canyon, and Murray Canyon. Tahquitz Canyon has a completely separate trailhead at 500 W Mesquite Ave and does not share a ticket with Indian Canyons. These are common sources of confusion because both are on Agua Caliente Tribal Land.</p>
-
-<h4>Is Palm Springs a good base for a hiking trip to the area?</h4>
-<p>Yes, and specifically central Palm Springs puts you within 10 to 15 minutes of the canyon trailheads and the tram. Indio is 30 minutes east but still under an hour from every trail on this list. <a href="https://indigopalm.co/the-sundune/">The Sundune</a> in Palm Springs is the closest Indigo Palm property to the mountain trails, with a 4-night minimum that fits naturally with a multi-day hiking itinerary.</p>

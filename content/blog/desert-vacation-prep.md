@@ -35,7 +35,7 @@ relatedPosts:
 
 <p>Desert heat is real, not a suggestion. In spring and summer, temperatures in Indio and Palm Springs routinely hit 95-110°F between noon and 6pm. That's not "oh it's warm" territory. That's "let's be smart about this" territory.</p>
 
-<p>What works: be outside before 10am and after 5pm. Do the hiking, the farmer's market, the coffee shop crawl in the morning. Come back mid-afternoon. Use the pool. Nap if you need to. Go back out for dinner when the light turns golden and the heat breaks.</p>
+<p>What works: be outside before 10am and after 5pm. Do the hiking, the farmer's market, the coffee shop crawl in the morning. Come back mid-afternoon for pool time, or a nap if you need one. Go back out for dinner when the light turns golden and the heat breaks.</p>
 
 <p>Guests who fight the schedule spend the trip sweaty and frustrated. Guests who lean into it usually say it's the most relaxed vacation they've taken in years.</p>
 
@@ -58,9 +58,9 @@ relatedPosts:
 
 <h2>The Pool Is Not a Nice-To-Have</h2>
 
-<p>We say this every time: guests who treat the pool as the centerpiece of the trip rather than an add-on have better trips. It's where you debrief after a morning out. It's where Day 2 recovery happens. It's what makes 4pm in the desert livable.</p>
+<p>We say this every time: guests who treat the pool as the centerpiece of the trip rather than an add-on have better trips. It's where you debrief after a morning out, where Day 2 recovery happens, and honestly what makes 4pm in the desert livable.</p>
 
-<p>If you're doing a multi-night stay, block out at least one afternoon with no agenda beyond the pool. Float. Read something. Don't check your phone. The desert is very good at making you stop.</p>
+<p>If you're doing a multi-night stay, block out at least one afternoon with no agenda beyond the pool. Float, read something, and leave your phone alone. The desert is very good at making you stop.</p>
 
 <img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Hot tub and backyard at Cozy Cactus vacation rental in Indio California with community pool steps away" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The 3pm strategy. Pool first, headliner second. Works every time.</p>
@@ -82,7 +82,7 @@ relatedPosts:
 
 <h2>Driving vs. Walking</h2>
 
-<p>The Valley is spread out. Indio and Palm Springs are about 25 miles apart. You will want a car. Rideshare exists but is slower and more expensive than you'd expect during busy weekends.</p>
+<p>The Valley is spread out, Indio and Palm Springs about 25 miles apart, and you'll want a car. Rideshare exists but is slower and more expensive than you'd expect during busy weekends.</p>
 
 <p>If you're here for a festival (Coachella, Stagecoach), the calculus changes. Staying walkable to the venue is a different trip than staying in Palm Springs and commuting. We cover that in detail in our <a href="/blog/where-to-stay-coachella/">Coachella accommodation guide</a>.</p>
 
@@ -93,18 +93,18 @@ relatedPosts:
 
 <h2>Mornings Are the Whole Thing</h2>
 
-<p>The light in the Coachella Valley at 7am is unlike anywhere else. Pink and gold against the San Jacinto mountains. Completely still. Cool enough to walk without thinking about it.</p>
+<p>The light in the Coachella Valley at 7am is unlike anywhere else. Pink and gold against the San Jacinto mountains; completely still; cool enough to walk without thinking about it.</p>
 
 <p>Wake up early at least once, go outside with coffee before looking at your phone, and walk around the neighborhood while the mountains catch the sun.</p>
 
-<p>This is the part guests forget to plan for. It's free. It takes 20 minutes. It's usually the thing people remember most.</p>
+<p>This is the part guests forget to plan for. It costs nothing, takes twenty minutes, and is usually the thing people remember most.</p>
 
 <img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue desert sky" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The morning window. Don't waste it sleeping in.</p>
 
 <h2>One Last Thing</h2>
 
-<p>The desert has a way of slowing people down. Not everyone knows what to do when their nervous system finally stops running. Give it a day. By day two, most guests have figured out the pace. They stop trying to fill every hour. They sit by the pool longer than planned. They eat dinner slowly.</p>
+<p>The desert has a way of slowing people down. Not everyone knows what to do when their nervous system finally stops running. Give it a day. By day two, most guests have figured out the pace. They stop trying to fill every hour, sit by the pool longer than planned, and eat dinner slowly.</p>
 
 <p>That's the whole point. The house is set up for it. The desert helps.</p>
 
@@ -124,6 +124,15 @@ relatedPosts:
 
 <h3>What should I know about pool etiquette at vacation rentals?</h3>
 <p>Private pools are yours for the stay. Community pools have posted hours (typically closing at 10pm), shared lanes, and rules about glass and noise. Know which one your rental has before you book, and plan accordingly. If the pool is private and heated, it becomes the organizing principle of the trip in the best way.</p>
+
+<h3>What time of year is best to visit the Coachella Valley for a first trip?</h3>
+<p>October through April covers the most comfortable temperature range, with daytime highs of 70-85°F and cool evenings. Spring (March-April) overlaps with festival season, which brings energy but also crowds and higher rental rates. Summer is a legitimate option if you're prepared for 105-110°F afternoons and plan to center the trip around a private pool, mornings outdoors, and evening dining. Fall is underrated and often the quietest stretch to visit.</p>
+
+<h3>How far apart are Palm Springs and Indio, and does it matter where I stay?</h3>
+<p>About 25 miles and 25-35 minutes by car. For most first-time visitors, picking one end and doing day trips makes more sense than splitting a short stay between both. If festivals (Coachella, Stagecoach) are the reason for the trip, staying in Indio removes the commute problem entirely. If walkable dining and midcentury architecture are the draw, Palm Springs works better. Either way, you need a car.</p>
+
+<h3>Do vacation rentals with private pools make sense over Palm Springs hotels?</h3>
+<p>For groups of three or more, usually yes. A private pool changes the pacing of a desert trip in ways a hotel amenity pool doesn't: no chair competition, available at any hour, usable as the main afternoon activity when the heat peaks. Hotels are better for solo travelers or couples who want walkability and no cooking. During festival weekends, the cost advantage for Indio rentals is significant since Palm Springs hotel rates spike and the commute to venues adds time.</p>
 
 <p>If you're planning a trip, we have properties in both Indio (<a href="/cozy-cactus/">The Cozy Cactus</a>, <a href="/terra-luz/">Terra Luz</a>) and Palm Springs (<a href="/the-sundune/">The Sundune</a>) depending on which end of the valley fits your trip.</p>
 
@@ -175,15 +184,3 @@ relatedPosts:
   ]
 }
 </script>
-
-
-
-
-<h4>What time of year is best to visit the Coachella Valley for a first trip?</h4>
-<p>October through April covers the most comfortable temperature range, with daytime highs of 70-85°F and cool evenings. Spring (March-April) overlaps with festival season, which brings energy but also crowds and higher rental rates. Summer is a legitimate option if you're prepared for 105-110°F afternoons and plan to center the trip around a private pool, mornings outdoors, and evening dining. Fall is underrated and often the quietest stretch to visit.</p>
-
-<h4>How far apart are Palm Springs and Indio, and does it matter where I stay?</h4>
-<p>About 25 miles and 25-35 minutes by car. For most first-time visitors, picking one end and doing day trips makes more sense than splitting a short stay between both. If festivals (Coachella, Stagecoach) are the reason for the trip, staying in Indio removes the commute problem entirely. If walkable dining and midcentury architecture are the draw, Palm Springs works better. Either way, you need a car. <a href="https://indigopalm.co/blog/desert-vacation-prep/">More logistics here.</a></p>
-
-<h4>Do vacation rentals with private pools make sense over Palm Springs hotels?</h4>
-<p>For groups of three or more, usually yes. A private pool changes the pacing of a desert trip in ways a hotel amenity pool doesn't: no chair competition, available at any hour, usable as the main afternoon activity when the heat peaks. Hotels are better for solo travelers or couples who want walkability and no cooking. During festival weekends, the cost advantage for Indio rentals is significant since Palm Springs hotel rates spike and the commute to venues adds time.</p>

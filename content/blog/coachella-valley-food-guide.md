@@ -59,7 +59,7 @@ faqItems:
 
 <h3><a href="https://onestoptacoshop.com/" target="_blank" rel="noopener noreferrer">One Stop Taco Shop</a></h3>
 
-<p>The birria tacos are what you're here for. Get the quesabirria too and use the dipping broth. This is the move. One Stop is a no-frills taqueria, no atmosphere to speak of, corn tortillas, good salsa, generous portions. It's the kind of place where regulars show up multiple times a week because it consistently delivers exactly what it says it is.</p>
+<p>The birria tacos are what you're here for, and the move is ordering the quesabirria alongside them so you've got extra dipping broth for both. One Stop is a no-frills taqueria, no atmosphere to speak of, corn tortillas, good salsa, generous portions. It's the kind of place where regulars show up multiple times a week because it consistently delivers exactly what it says it is.</p>
 
 <p>Go early, especially during festival weeks when lines can build. Check their current hours before you go because festival season sometimes brings extended hours and sometimes the opposite.</p>
 
@@ -107,7 +107,7 @@ faqItems:
 
 <p>Yes Please is a specialty coffee shop with locations in both La Quinta and Palm Springs. The espresso is being taken seriously here: well-sourced, well-extracted, served without pretension. The La Quinta location is quieter than the Palm Springs one and has good natural light. If you're in Indio and want a coffee shop worth driving to, Yes Please La Quinta is a 15-minute drive and significantly better than anything in the immediate Indio area for specialty coffee.</p>
 
-<p>They also do good food. The small plates work. Worth knowing if you want something beyond coffee.</p>
+<p>They also do good food, and the small plates are worth ordering if you want something beyond coffee.</p>
 
 <h3><a href="https://www.lavenderbistro.com/" target="_blank" rel="noopener noreferrer">Lavender Bistro</a></h3>
 
@@ -128,7 +128,7 @@ faqItems:
 
 <h3><a href="https://www.yelp.com/biz/thai-hot-palm-springs" target="_blank" rel="noopener noreferrer">Thai Hot</a></h3>
 
-<p>Thai Hot is a Palm Springs institution. The name is honest: you can get this food hot, which is rarer than it should be at Thai restaurants in tourist-heavy areas. The pad see ew and larb are both strong. The curry holds up. The room is comfortable without being precious about it. Worth making a reservation for Friday and Saturday evenings because it fills up.</p>
+<p>Thai Hot is a Palm Springs institution. The name is honest: you can get this food hot, which is rarer than it should be at Thai restaurants in tourist-heavy areas. The pad see ew and larb are both strong; the curry holds up, and the room stays comfortable without turning precious about it. Worth making a reservation for Friday and Saturday evenings because it fills up.</p>
 
 <h3><a href="https://www.workshopkitchenbar.com/" target="_blank" rel="noopener noreferrer">Workshop Kitchen and Bar</a></h3>
 
@@ -140,7 +140,7 @@ faqItems:
 
 <h3><a href="https://www.roosterandthepig.com/" target="_blank" rel="noopener noreferrer">Rooster and the Pig</a></h3>
 
-<p>Vietnamese fusion, which sounds like a hedge but isn't. The pork belly bun is the order. The room is loud in a good way. USA Today named it one of the top 47 restaurants in the country, and it earns that. Rooster and the Pig holds up year after year without the decline that hits most popular spots. The portions are generous for the price point.</p>
+<p>Vietnamese fusion, which sounds like a hedge but isn't: the pork belly bun is the order, and the room is loud in a good way. USA Today named it one of the top 47 restaurants in the country, and it earns that. Rooster and the Pig holds up year after year without the decline that hits most popular spots. The portions are generous for the price point.</p>
 
 <img src="/blog/images/ps-mcm-neighborhood.webp" alt="Mid-century modern neighborhood street in Palm Springs California with flat-roofed homes and mountain backdrop" width="1400" height="933" loading="lazy">
 <p class="image-caption">Palm Springs residential streets. The restaurant scene is concentrated near downtown but worth the walk from a Palm Springs-area rental.</p>
@@ -149,7 +149,7 @@ faqItems:
 
 <p>The valley is 45 miles east to west. If you're in Indio, your food radius for everyday meals is Indio and La Quinta. Palm Springs is a 30-minute drive, which is worth doing for a specific evening but not for every meal. If you're in Palm Springs, you have walkable access to everything in the Palm Springs section above, and Indio is a 30-minute drive that's worth doing for the birria and the date shake.</p>
 
-<p>During Coachella and Stagecoach, all of Indio gets busier and some places extend hours. Some pop-ups appear. The reliable spots above will still be reliable. The pop-ups are hit or miss.</p>
+<p>During Coachella and Stagecoach, all of Indio gets busier and some places extend hours. Some pop-ups appear too, hit or miss as always, but the reliable spots above stay reliable.</p>
 
 <p>For more on what to do between meals, the <a href="/blog/things-to-do-indio-ca/">things to do in Indio guide</a> covers the full picture of what the east valley offers beyond festivals. And for the full restaurant landscape specifically near Coachella, the <a href="/blog/best-restaurants-palm-desert/">restaurants near Coachella guide</a> goes deeper on walking-distance and drive-distance options from the polo grounds.</p>
 

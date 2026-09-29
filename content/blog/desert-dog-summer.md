@@ -101,6 +101,10 @@ The [pet-friendly Palm Springs](/blog/pet-friendly-palm-springs/) landscape is g
 
 ## Frequently Asked Questions
 
+### Is it safe to take a dog to Palm Springs in summer?
+
+It's manageable with the right approach, but summer in the Coachella Valley is genuinely challenging for dogs. Pavement can reach 150°F even when the air feels bearable, and heat stress can develop faster than most people expect. The workable pattern is early morning walks before 8am, pool time during the heat of the day, and evening outings after 6 or 7pm when the temperature drops. Pool access and air conditioning are not optional extras in summer. They're the infrastructure that makes the trip safe.
+
 ### Which Indigo Palm Collective properties accept dogs?
 
 [Terra Luz](/terra-luz/) in Indio welcomes dogs with a pet fee, and [The Sundune](/the-sundune/) in Palm Springs welcomes dogs with prior approval and a pet fee. The Cozy Cactus does not accept pets.
@@ -109,6 +113,10 @@ The [pet-friendly Palm Springs](/blog/pet-friendly-palm-springs/) landscape is g
 
 Place the back of your hand on the pavement for 7 seconds. If you can't hold it there, your dog should not be walking on it. In summer, this eliminates most of the 10am-to-6pm window on asphalt. Grass and dirt paths run cooler, but they're not abundant in most Coachella Valley neighborhoods.
 
+### What gear do I need to bring for a dog in desert heat?
+
+Three things make a real difference: a collapsible water bottle with a built-in bowl (dehydration sneaks up fast in desert dry air), dog booties for any pavement walk in warm weather, and a cooling bandana or vest that you wet down before heading out. A gel cooling mat and frozen treats for the afternoon stretch are worth adding. These aren't just nice to have in the Coachella Valley. They're the difference between a comfortable trip and a stressful one.
+
 ### Are dogs allowed on trails at Indian Canyons?
 
 Yes, dogs on leash are permitted on the trails at Indian Canyons. Go before 9am in warm months. The canyon trail surfaces are rough in places, so a dog with thin paws or who isn't used to rocky terrain may need trail booties.
@@ -116,6 +124,10 @@ Yes, dogs on leash are permitted on the trails at Indian Canyons. Go before 9am 
 ### What are signs of heat stress in dogs?
 
 Excessive panting beyond what the exertion warrants, heavy drooling, slowing or stopping during walks, and glazed or disoriented behavior. The window between uncomfortable and emergency is shorter in the desert than most people expect. Get your dog into air conditioning and offer water immediately. If symptoms don't resolve within a few minutes, contact a vet.
+
+### What is the best time of year to visit Palm Springs with a dog?
+
+October through April is when the Coachella Valley is genuinely great for dogs. Pavement is comfortable, morning walks feel like what they're supposed to feel like, and outdoor options open up significantly: Indian Canyons, the Coachella Valley Preserve, and most restaurant patios are all usable without careful heat management. Summer can work, but it requires real planning. Spring and fall are the sweet spot for guests who want outdoor time with their dog without the constraints of peak heat.
 
 ---
 
@@ -185,15 +197,3 @@ Excessive panting beyond what the exertion warrants, heavy drooling, slowing or 
   ]
 }
 </script>
-
-
-
-
-<h4>Is it safe to take a dog to Palm Springs in summer?</h4>
-<p>It's manageable with the right approach, but summer in the Coachella Valley is genuinely challenging for dogs. Pavement can reach 150°F even when the air feels bearable, and heat stress can develop faster than most people expect. The workable pattern is early morning walks before 8am, pool time during the heat of the day, and evening outings after 6 or 7pm when the temperature drops. Pool access and air conditioning are not optional extras in summer. They're the infrastructure that makes the trip safe.</p>
-
-<h4>What gear do I need to bring for a dog in desert heat?</h4>
-<p>Three things make a real difference: a collapsible water bottle with a built-in bowl (dehydration sneaks up fast in desert dry air), dog booties for any pavement walk in warm weather, and a cooling bandana or vest that you wet down before heading out. A gel cooling mat and frozen treats for the afternoon stretch are worth adding. These aren't just nice to have in the Coachella Valley. They're the difference between a comfortable trip and a stressful one. See the full gear breakdown at <a href="https://indigopalm.co/blog/desert-dog-summer/">indigopalm.co/blog/desert-dog-summer/</a>.</p>
-
-<h4>What is the best time of year to visit Palm Springs with a dog?</h4>
-<p>October through April is when the Coachella Valley is genuinely great for dogs. Pavement is comfortable, morning walks feel like what they're supposed to feel like, and outdoor options open up significantly: Indian Canyons, the Coachella Valley Preserve, and most restaurant patios are all usable without careful heat management. Summer can work, but it requires real planning. Spring and fall are the sweet spot for guests who want outdoor time with their dog without the constraints of peak heat.</p>

@@ -25,7 +25,7 @@ excerpt: "Most people only think of the Coachella Valley during festival season.
 layout: blog-post.njk
 ---
 
-<p>October in the Coachella Valley: the crowds are gone, the dates are being harvested, and the light in the afternoon turns a specific shade of amber that makes you want to sit outside and not move. The pool is still warm enough to use. The nights drop to the low 60s. The mountains go pink at dusk. You will not want to leave.</p>
+<p>October in the Coachella Valley: the crowds are gone, the dates are being harvested, and the light in the afternoon turns a specific shade of amber that makes you want to sit outside and not move. The pool is still warm enough to use, the nights drop to the low 60s, and the mountains go pink at dusk. You will not want to leave.</p>
 
 <p>This is the version of the valley that festival-only visitors never see. I bought a house here and now I'm the person who can't stop talking about fall light and mid-week escapes where nothing is on the schedule except the pool and an early hike. The Coachella Valley is a place you <em>return to</em>, for the sun, the space, and the surprising amount of culture packed into this stretch of California.</p>
 
@@ -52,15 +52,15 @@ layout: blog-post.njk
 
 <h2>Summer (June – August): Peak Heat, Peak Pool Season</h2>
 
-<p>Let's not sugarcoat it: <strong>summer is 110-120°F.</strong> It's not for everyone. But if you embrace it, summer is glorious. Zero crowds: locals leave, tourists avoid it, you get restaurants and trails to yourself. Lower prices, more flexibility.</p>
+<p>Let's not sugarcoat it: <strong>summer is 110-120°F,</strong> and it's not for everyone. But embrace it, and summer turns glorious. Zero crowds: locals leave, tourists avoid it, you get restaurants and trails to yourself. Lower prices, more flexibility.</p>
 
 <p>The move in summer: pool days (just commit to it), early morning Joshua Tree hikes starting at 6 AM and done by 10 AM, indoor escapes to the Palm Springs Art Museum, and night swims when the air cools to 90°F and the pool stays warm.</p>
 
 <h2>Fall (September – November): The Secret Best Season</h2>
 
-<p>Controversial take: <strong>fall is the best time to visit the Coachella Valley.</strong> By October, temps drop to the 85-95°F range. By November? Mid-70s. Crisp mornings, golden light that lasts all day, perfect weather for the pool and cool enough for hiking.</p>
+<p>Controversial take: <strong>fall is the best time to visit the Coachella Valley.</strong> By October, temps drop to the 85-95°F range; by November, it's the mid-70s. Crisp mornings, golden light that lasts all day, perfect weather for the pool and cool enough for hiking.</p>
 
-<p>Off-season pricing means better rates and easier last-minute booking. It's harvest season, so dates are being picked and farmers markets are stacked. The fall light in the desert is unreal. Photographers know. Now you do too.</p>
+<p>Off-season pricing means better rates and easier last-minute booking. It's harvest season, so dates are being picked and farmers markets are stacked. The fall light in the desert is unreal, the kind photographers already know about. Now you do too.</p>
 
 <p>Fall activities: Joshua Tree camping in October or November (cool nights, clear skies, optimal for stargazing), date harvest tours at working farms, Indian Canyons or Ladder Canyon hikes without the risk of dying from heat exhaustion.</p>
 
@@ -141,6 +141,21 @@ layout: blog-post.njk
 
 <h3>What is the most scenic road into the Coachella Valley from Los Angeles?</h3>
 <p>I-10 East is the default, about 2 hours from downtown LA. The more memorable approach: exit at Date Palm Drive in Cathedral City and take Highway 111 east through the valley floor. Palm Springs gives way to date farms, then the mountains close in as you approach Indio. It adds 20 minutes and the landscape tells you everything about where you're going before you arrive.</p>
+
+<h3>Where should I stay in the Coachella Valley if I'm not going to a festival?</h3>
+<p>Renting a private home in Indio gives you the most space for the money: a full kitchen and outdoor living that makes a 4-day trip feel like an actual reset. <a href="/terra-luz/">Terra Luz</a> is a 3-bedroom Cuban-inspired house and the one with the private saltwater pool, while <a href="/cozy-cactus/">Cozy Cactus</a> is a family-oriented 3-bedroom with a private hot tub, three heated community pools at Indian Palms, and infant gear already stocked. Both are 30 minutes from Palm Springs and 45 minutes from Joshua Tree, so you're not trading access for affordability. Both book direct at <a href="https://indigopalm.co">indigopalm.co</a>, which skips the Airbnb service fee.</p>
+
+<h3>Can I bring my dog to a Coachella Valley vacation rental?</h3>
+<p>Terra Luz in Indio is dog-friendly and has a fenced terracotta patio and backyard well-suited for dogs. The Sundune in Palm Springs is also dog-friendly with prior approval, per the HOA. Cozy Cactus does not accept pets. If you're traveling with a dog, Terra Luz is the Indio option, see details at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>.</p>
+
+<h3>What's the best Coachella Valley rental for a family with young kids?</h3>
+<p>Cozy Cactus in Indio is set up specifically for families: infant gear already in the house (pack-n-play, high chair), a quiet residential street, community pool, and a fenced yard. It's 4.97 stars across 146 reviews. Easy-access Joshua Tree trails like Skull Rock and Barker Dam work well with kids, and date farm stops along Highway 111 are a genuinely interesting detour for younger travelers.</p>
+
+<h3>Is it worth renting a house instead of a hotel in Palm Springs?</h3>
+<p>For groups of three or more staying four or more nights, a private rental house almost always wins: lower cost per person, a private pool instead of a shared one, a kitchen for some meals, and more room to spread out. Palm Springs hotels make sense for couples or solo travelers who want daily service and a walkable downtown scene. For everyone else, basing in Indio and day-tripping to Palm Springs (30 minutes away) saves money without sacrificing access.</p>
+
+<h3>How do I plan a long weekend in the Coachella Valley on a budget?</h3>
+<p>Visit in fall, October or November, when rates run 30-40% below Coachella-weekend pricing and the weather is some of the best all year. Basing in Indio instead of Palm Springs gets you a private pool for less than a comparable Palm Springs hotel room, and Joshua Tree only requires a national parks pass, no separate ticket needed. Booking direct at <a href="https://indigopalm.co">indigopalm.co</a> skips the Airbnb service fee too, saving $50-150 on a typical stay.</p>
 
 <script type="application/ld+json">
 {
@@ -246,21 +261,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-
-<h4>Where should I stay in the Coachella Valley if I'm not going to a festival?</h4>
-<p>Renting a private home in Indio gives you the most space for the money: a full kitchen and outdoor living that makes a 4-day trip feel like an actual reset. <a href="/terra-luz/">Terra Luz</a> is a 3-bedroom Cuban-inspired house and the one with the private saltwater pool, while <a href="/cozy-cactus/">Cozy Cactus</a> is a family-oriented 3-bedroom with a private hot tub, three heated community pools at Indian Palms, and infant gear already stocked. Both are 30 minutes from Palm Springs and 45 minutes from Joshua Tree, so you're not trading access for affordability. Both book direct at <a href="https://indigopalm.co">indigopalm.co</a>, which skips the Airbnb service fee.</p>
-
-<h4>Can I bring my dog to a Coachella Valley vacation rental?</h4>
-<p>Terra Luz in Indio is dog-friendly and has a fenced terracotta patio and backyard well-suited for dogs. The Sundune in Palm Springs is also dog-friendly with prior approval, per the HOA. Cozy Cactus does not accept pets. If you're traveling with a dog, Terra Luz is the Indio option, see details at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>.</p>
-
-<h4>What's the best Coachella Valley rental for a family with young kids?</h4>
-<p>Cozy Cactus in Indio is set up specifically for families: infant gear already in the house (pack-n-play, high chair), a quiet residential street, community pool, and a fenced yard. It's 4.97 stars across 146 reviews. Easy-access Joshua Tree trails like Skull Rock and Barker Dam work well with kids, and date farm stops along Highway 111 are a genuinely interesting detour for younger travelers.</p>
-
-<h4>Is it worth renting a house instead of a hotel in Palm Springs?</h4>
-<p>For groups of three or more staying four or more nights, a private rental house almost always wins: lower cost per person, a private pool instead of a shared one, a kitchen for some meals, and more room to spread out. Palm Springs hotels make sense for couples or solo travelers who want daily service and a walkable downtown scene. For everyone else, basing in Indio and day-tripping to Palm Springs (30 minutes away) saves money without sacrificing access.</p>
-
-<h4>How do I plan a long weekend in the Coachella Valley on a budget?</h4>
-<p>Visit in fall, October or November, when rates run 30-40% below Coachella-weekend pricing and the weather is some of the best all year. Basing in Indio instead of Palm Springs gets you a private pool for less than a comparable Palm Springs hotel room, and Joshua Tree only requires a national parks pass, no separate ticket needed. Booking direct at <a href="https://indigopalm.co">indigopalm.co</a> skips the Airbnb service fee too, saving $50-150 on a typical stay.</p>

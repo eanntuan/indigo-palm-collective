@@ -87,6 +87,12 @@ layout: blog-post.njk
 <h3>Should I book a bachelorette in Indio or Palm Springs?</h3>
 <p>Indio suits groups who want a private home with a pool and spa as the center of the weekend, with outings by car. If you want walkable bars and nightlife within stumbling distance, Palm Springs is the better base. Terra Luz is built for the former.</p>
 
+<h3>Can you book Terra Luz directly without paying Airbnb fees?</h3>
+<p>Yes. Terra Luz books direct at <a href="/terra-luz/">indigopalm.co/terra-luz</a>, which skips the platform fee markup, so the same dates typically run cheaper than the Airbnb listing. Booking direct also makes it easy to coordinate details like pool heating, early check-in, or your group's headcount before you commit.</p>
+
+<h3>Is pool heating included at Terra Luz?</h3>
+<p>Pool heating is available for $75 per night, and it's worth requesting for visits from October through April when desert nights drop fast. In summer the water holds heat without it. Message me before booking if you want it arranged for a cooler-month weekend.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -152,14 +158,3 @@ layout: blog-post.njk
 }
 </script>
 
-
-
-
-<h4>Can you book Terra Luz directly without paying Airbnb fees?</h4>
-<p>Yes. Terra Luz books direct at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>, which skips the platform fee markup, so the same dates typically run cheaper than the Airbnb listing. Booking direct also makes it easy to coordinate the details that matter for a group trip: pool heating, early check-in, pet approval, or confirming your headcount before you commit.</p>
-
-<h4>What is the outdoor curfew at Terra Luz and how do groups handle it?</h4>
-<p>The Indian Palms community has a 10pm outdoor curfew, so the pool and backyard need to wind down by then. The inside of the house has no curfew, and the open kitchen and connected living space give the group room to keep the night going. Groups who know this going in typically just plan their loudest stretch before ten and move indoors after without much disruption.</p>
-
-<h4>Is pool heating included at Terra Luz, and when do you need it?</h4>
-<p>Pool heating is available for $75 per night and is worth requesting for any visit from October through April when desert nights drop significantly. In the summer months the water holds heat without it. If you want the pool warm for a cooler-month bachelorette weekend, message the host before booking so it can be arranged for your arrival.</p>

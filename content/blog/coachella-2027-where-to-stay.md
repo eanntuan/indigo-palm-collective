@@ -59,7 +59,7 @@ relatedPosts:
 
 <h2>The 3pm Problem (and Why Location Solves It)</h2>
 
-<p>Anyone who's done Coachella knows the 3pm hole. You've been on your feet since noon. The headliner isn't until 9. The desert is hitting 95 degrees and the afternoon acts aren't worth standing in direct sun for. You need to go somewhere, but if "somewhere" is 45 minutes away in festival traffic, you're not going anywhere. You're staying at the grounds, burning through your energy budget.</p>
+<p>Anyone who's done Coachella knows the 3pm hole: you've been on your feet since noon, but the headliner isn't until 9. The desert is hitting 95 degrees and the afternoon acts aren't worth standing in direct sun for. You need to go somewhere, but if "somewhere" is 45 minutes away in festival traffic, you're not going anywhere. You're staying at the grounds, burning through your energy budget.</p>
 
 <p>Rentals inside Indian Palms Country Club are walking distance, door to door, from the festival entrance. The groups staying there leave at 3, get in the pool, nap, eat a real meal, and come back for the evening sets refreshed. The groups in Palm Springs hotels are still figuring out logistics when the headliner starts.</p>
 
@@ -125,6 +125,15 @@ relatedPosts:
 <h3>How early should I book a Coachella 2027 vacation rental?</h3>
 <p>October or November 2026 for the best Indian Palms properties with private pools. By January 2027, walking-distance inventory at reasonable rates is mostly gone. Terra Luz is our private-pool option and the Cozy Cactus is the hot-tub-plus-community-pools option, and both open their calendars to direct bookings before Airbnb listings go live, so <a href="https://indigopalm.co" target="_blank" rel="noopener noreferrer">booking direct</a> early gives you first access.</p>
 
+<h3>Can I bring my dog to a Coachella vacation rental near the polo grounds?</h3>
+<p>Terra Luz inside Indian Palms Country Club is dog-friendly with a $150 pet fee and a two-dog maximum, plus a fully fenced backyard that makes festival logistics manageable when you're out for long hours. The Cozy Cactus in the same neighborhood is not pet-friendly. Confirm any pet policy before booking, and check that the yard is securely fenced if your dog will be alone during festival hours.</p>
+
+<h3>Is it better to rent a vacation home or stay in a hotel for Coachella?</h3>
+<p>For groups of four or more, a vacation rental with a kitchen and private pool almost always costs less in total once you account for food and rideshares over three days. Walking-distance Indio properties eliminate rideshare costs entirely and let you return mid-day to recover, which hotel guests 30-45 minutes away in Palm Springs cannot do. Booking direct at <a href="https://indigopalm.co" target="_blank" rel="noopener noreferrer">indigopalm.co</a> also removes the Airbnb service fee, which is 20% of the subtotal on a multi-night stay.</p>
+
+<h3>What does "heated pool" mean for an April Coachella rental?</h3>
+<p>April nights in the Coachella desert drop to the mid-50s, so an unheated pool is mostly decorative after sunset. Ask the host specifically whether pool heating is a standard included amenity or an add-on, what the nightly cost is if it's extra, and how much lead time is needed to warm the pool before arrival. A heated pool at 11pm after the headliner is a specific and very good thing.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -189,18 +198,6 @@ relatedPosts:
   ]
 }
 </script>
-
-
-
-
-<h4>Can I bring my dog to a Coachella vacation rental near the polo grounds?</h4>
-<p>Terra Luz inside Indian Palms Country Club is dog-friendly with a $150 pet fee and a two-dog maximum, plus a fully fenced backyard that makes festival logistics manageable when you're out for long hours. The Cozy Cactus in the same neighborhood is not pet-friendly. Confirm any pet policy before booking, and check that the yard is securely fenced if your dog will be alone during festival hours.</p>
-
-<h4>Is it better to rent a vacation home or stay in a hotel for Coachella?</h4>
-<p>For groups of four or more, a vacation rental with a kitchen and private pool almost always costs less in total once you account for food and rideshares over three days. Walking-distance Indio properties eliminate rideshare costs entirely and let you return mid-day to recover, which hotel guests 30-45 minutes away in Palm Springs cannot do. Booking direct at <a href="https://indigopalm.co" target="_blank" rel="noopener noreferrer">indigopalm.co</a> also removes the Airbnb service fee, which is 20% of the subtotal on a multi-night stay.</p>
-
-<h4>What does "heated pool" mean for an April Coachella rental?</h4>
-<p>April nights in the Coachella desert drop to the mid-50s, so an unheated pool is mostly decorative after sunset. Ask the host specifically whether pool heating is a standard included amenity or an add-on, what the nightly cost is if it's extra, and how much lead time is needed to warm the pool before arrival. A heated pool at 11pm after the headliner is a specific and very good thing.</p>
 
 <div style="background: #fff8e7; border-left: 3px solid #B67550; padding: 1.2rem 1.5rem; margin: 2rem 0; border-radius: 0 6px 6px 0;">
 <p style="margin-top: 0;"><strong>Book direct and skip Airbnb's 20% service fee.</strong> Same Superhost homes, direct contact with us, no platform markup.</p>

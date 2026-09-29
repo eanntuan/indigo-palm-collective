@@ -143,6 +143,14 @@ Very. At 833 feet of elevation gain over 1.6 miles, it's the steepest trail on t
 
 The CV Link's Palm Springs segment runs along the eastern edge of the city. The easiest access points are near the north end of Gene Autry Trail or from the trailhead off Garnet Avenue. The 4.6-mile segment is flat, paved, and leash-friendly, making it the best option for running with a dog or anyone who wants a predictable surface.
 
+### Is the Araby Trail suitable for trail running, or is it better for hiking?
+
+Araby Trail is runnable, but it demands respect. The 4.7-mile out-and-back climbs 403 meters on loose rock with steep sections, so most people run the lower half and power-hike the upper. Trailhead parking is small and fills before 7am on weekends, so arrive early. Not suitable for kids or dogs, and not a trail to attempt after 8am in warm months.
+
+### What is the best shaded trail near Palm Springs?
+
+Murray Canyon and Palm Canyon, both inside Indian Canyons, offer the most shade of any trails near Palm Springs. Canyon walls and native California fan palms block direct sun during the early morning window, and the $12 entry fee per adult keeps crowds lighter than the free mountain trails. Murray Canyon also has a seasonal stream running through the lower section most of the year, which makes the terrain feel distinctly different from the open desert.
+
 <div class="cta-box">
   <h3>Base Camp in Palm Springs</h3>
   <p>The Sundune at Palm Springs puts you close to Araby, the CV Link, and the Museum Trail. Wake up early, run, shower, and be at a coffee shop by 8am.</p>
@@ -232,10 +240,3 @@ The CV Link's Palm Springs segment runs along the eastern edge of the city. The 
   ]
 }
 </script>
-
-
-<h4>Is the Araby Trail suitable for trail running or is it better for hiking?</h4>
-<p>Araby Trail is runnable but it demands respect. The 4.7-mile out-and-back climbs 403 meters on loose rock with steep sections, so most people run the lower half and power-hike the upper. The trailhead parking is small and fills before 7am on weekends, so arrive early. Not suitable for kids or dogs, and not a trail to attempt after 8am in warm months.</p>
-
-<h4>What is the best trail near Palm Springs with shade?</h4>
-<p>Murray Canyon and Palm Canyon, both inside Indian Canyons, offer the most shade of any trails near Palm Springs. The canyon walls and native California fan palms block direct sun during the early morning window. There's a $12 entry fee per adult into Indian Canyons, which keeps crowds lighter than the free mountain trails. Murray Canyon also has a seasonal stream running through the lower section most of the year, which makes the terrain feel distinctly different from the open desert. Check https://indigopalm.co/blog/palm-springs-running-trails/ for the full comparison.</p>

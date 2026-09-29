@@ -143,6 +143,15 @@ layout: blog-post.njk
 <h3>What is the most scenic road to Terra Luz from Los Angeles?</h3>
 <p>I-10 East to Indio is the direct route, about 2 to 2.5 hours depending on LA traffic. The version worth doing once: exit at Date Palm Drive in Cathedral City and come through Highway 111 east, which drops you through Palm Springs and down the valley floor with the mountains shifting the whole way. By the time you hit Indio, the terracotta landscape makes sense in a way it doesn't from the freeway. It adds about 20 minutes.</p>
 
+<h3>Can I book Terra Luz directly without paying Airbnb fees?</h3>
+<p>Yes. Terra Luz books directly at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>, which avoids the Airbnb guest service fee (20% of the reservation total). Payments process through Square and booking confirmations go out via email. The same rates, same host, no platform markup.</p>
+
+<h3>What is the Indian Palms neighborhood like?</h3>
+<p>Indian Palms is a quiet gated community in Indio, residential rather than resort-y, with a golf course running through it. Guests who book Terra Luz for Coachella or Stagecoach appreciate that it's walking distance to the Empire Polo Club but completely removed from the festival-week foot traffic and noise. It's calm by default, which is the point.</p>
+
+<h3>Does the outdoor movie setup at Terra Luz work in summer?</h3>
+<p>The inflatable projector screen on the patio is most practical in spring and fall, when evenings cool to the 70s by 9pm. Summer nights in Indio stay warm (low 90s at dusk, dropping to the 80s after 10pm), so outdoor movie nights are doable but late-starting. The pergola provides overhead cover and the pool keeps the surrounding air a few degrees cooler than the open desert.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -207,13 +216,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-<h4>Can I book Terra Luz directly without paying Airbnb fees?</h4>
-<p>Yes. Terra Luz books directly at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>, which avoids the Airbnb guest service fee (20% of the reservation total). Payments process through Square and booking confirmations go out via email. The same rates, same host, no platform markup.</p>
-
-<h4>What is the Indian Palms neighborhood like?</h4>
-<p>Indian Palms is a quiet gated community in Indio, residential rather than resort-y, with a golf course running through it. Guests who book Terra Luz for Coachella or Stagecoach appreciate that it's walking distance to the Empire Polo Club but completely removed from the festival-week foot traffic and noise. It's calm by default, which is the point.</p>
-
-<h4>Does the outdoor movie setup at Terra Luz work in summer?</h4>
-<p>The inflatable projector screen on the patio is most practical in spring and fall, when evenings cool to the 70s by 9pm. Summer nights in Indio stay warm (low 90s at dusk, dropping to the 80s after 10pm), so outdoor movie nights are doable but late-starting. The pergola provides overhead cover and the pool keeps the surrounding air a few degrees cooler than the open desert.</p>

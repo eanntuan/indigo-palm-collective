@@ -83,6 +83,12 @@ For more things to do in Palm Springs beyond the sugar tour, the [3-day Palm Spr
 <h3>Where is the Cheesecake Factory near Palm Springs?</h3>
 <p>The Cheesecake Factory at The River shopping center in Rancho Mirage (71800 Highway 111) is about 15 to 20 minutes from Palm Springs. SocialPoints members receive a free birthday treat, historically a free slice with a purchase. It makes more sense as a dinner destination where the cheesecake becomes dessert.</p>
 
+<h3>Are there any birthday freebies valid for the whole month, not just the birthday day?</h3>
+<p>Crumbl Cookies and Nothing Bundt Cakes both give birthday rewards valid for the entire birthday month, which is useful if your trip doesn't land exactly on the date. Starbucks is birthday-day only, and The Cheesecake Factory has a shorter window, so check the terms for each program when you sign up. The month-long offers are the most flexible for a birthday trip where you're visiting on a nearby weekend.</p>
+
+<h3>Is there a Sprinkles Cupcakes in the Coachella Valley?</h3>
+<p>No Sprinkles location exists in the Coachella Valley as of 2026. The nearest locations are in greater Los Angeles, making it a road trip rather than a local stop. If Sprinkles is non-negotiable, factor in the drive, but the Palm Desert and Rancho Mirage options here cover similar territory without the trip. The birthday freebie landscape does change year to year, so check <a href="https://indigopalm.co/blog/palm-springs-birthday-freebies/">indigopalm.co/blog/palm-springs-birthday-freebies/</a> or each brand's app before your visit to confirm current offers.</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,12 +145,3 @@ For more things to do in Palm Springs beyond the sugar tour, the [3-day Palm Spr
   ]
 }
 </script>
-
-
-
-
-<h4>Are there any birthday freebies valid for the whole month, not just the birthday day?</h4>
-<p>Crumbl Cookies and Nothing Bundt Cakes both give birthday rewards valid for the entire birthday month, which is useful if your trip doesn't land exactly on the date. Starbucks is birthday-day only, and The Cheesecake Factory has a shorter window, so check the terms for each program when you sign up. The month-long offers are the most flexible for a birthday trip where you're visiting on a nearby weekend.</p>
-
-<h4>Is there a Sprinkles Cupcakes in the Coachella Valley?</h4>
-<p>No Sprinkles location exists in the Coachella Valley as of 2026. The nearest locations are in greater Los Angeles, making it a road trip rather than a local stop. If Sprinkles is non-negotiable, factor in the drive, but the Palm Desert and Rancho Mirage options here cover similar territory without the trip. The birthday freebie landscape does change year to year, so check <a href="https://indigopalm.co/blog/palm-springs-birthday-freebies/">indigopalm.co/blog/palm-springs-birthday-freebies/</a> or each brand's app before your visit to confirm current offers.</p>

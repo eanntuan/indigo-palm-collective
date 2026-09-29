@@ -37,7 +37,7 @@ Here's how to navigate it.
 
 The fair gets crowded by 7:30pm, especially on holiday weekends and during festival season. If you want to browse without bumping into people, earlier is better.
 
-Parking during Village Fest is the one frustrating part. Palm Canyon Drive is closed, which means side street parking fills up fast. Museum Way, Belardo Road, and Cahuilla Road are your best bets. There's also a city parking structure on Belardo that's often overlooked. Budget 10 to 15 minutes for parking if you're arriving after 6:30pm.
+Parking during Village Fest is the one frustrating part. Palm Canyon Drive is closed, which means side street parking fills up fast. Museum Way, Belardo Road, and Cahuilla Road are your best bets, though the city parking structure on Belardo often gets overlooked too. Budget 10 to 15 minutes for parking if you're arriving after 6:30pm.
 
 <img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage car on Palm Canyon Drive in Palm Springs, the setting for Village Fest Thursday night street fair" loading="lazy" width="1400" height="933">
 
@@ -59,9 +59,9 @@ The food is the honest highlight. A few vendors show up consistently:
 
 **Tamales:** There are usually one or two tamale vendors. The masa-to-filling ratio at the best one runs traditional: thick corn dough, modest pork or chicken filling, properly steamed. Worth it.
 
-**Kettle corn:** One dedicated vendor who's been there for years. The kettle corn is fresh and sized generously. Better than it sounds in the context of a street fair.
+**Kettle corn:** One dedicated vendor has held down the stand for years, and it shows: fresh, generously portioned, and better than you'd expect from a street fair booth.
 
-**Prepared food trucks:** These rotate. Thai, Mexican, and comfort food usually have a presence. Quality varies but the competition keeps most of them reasonable.
+**Prepared food trucks:** These rotate, usually landing somewhere between Thai, Mexican, and comfort food; quality varies, but the competition keeps most of them reasonable.
 
 The restaurants along Palm Canyon Drive stay open during Village Fest, and some of them put tables out on the street. Birba has sidewalk seating on Thursday nights. So does Eight4Nine. If you want a sit-down dinner alongside the fair atmosphere, either one is a good choice.
 
@@ -103,6 +103,15 @@ The vendor booths selling mass-produced sunglasses, phone cases, and imported no
 
 <h3>How do I get to Village Fest from Indio?</h3>
 <p>About 25-30 minutes west on I-10 from the Indian Palms area, then north into downtown Palm Springs. The lack of traffic on Palm Canyon Drive during the fair makes parking on side streets slightly easier than on a regular evening. Guests staying at <a href="/cozy-cactus/">The Cozy Cactus or Terra Luz</a> in Indio can make Village Fest a worthwhile Thursday evening trip.</p>
+
+<h3>Is Village Fest worth visiting in summer?</h3>
+<p>Yes. The fair runs every Thursday year-round and summer has its own appeal: smaller crowds, easier restaurant reservations, and a more local feel. Arrive at 6pm to catch the cooler part of the evening. The produce vendors, kettle corn stand, and tamale vendors stay consistent through summer even if the overall vendor count thins slightly.</p>
+
+<h3>What restaurants should I eat at near Village Fest?</h3>
+<p>Birba and Eight4Nine both put tables on the street facing the fair on Thursday nights. Cheeky's, Workshop Kitchen, and El Mirasol are all walkable from the fair's main stretch. Make a reservation before you arrive, especially in winter and spring, because the downtown options fill up on Thursday nights. The best sequence: walk the fair at 6pm, sit down to dinner at 7:30pm or 8pm.</p>
+
+<h3>Can I combine Village Fest with a Coachella or Stagecoach trip?</h3>
+<p>Yes, easily. Guests staying at <a href="/cozy-cactus/">The Cozy Cactus or Terra Luz</a> in Indio are about 25 to 30 minutes from Village Fest on a Thursday evening, making it a natural outing before or after a festival weekend. The Sundune in Palm Springs is a 10-minute drive from the fair for guests who want downtown access built in.</p>
 
 ---
 
@@ -180,15 +189,3 @@ The vendor booths selling mass-produced sunglasses, phone cases, and imported no
   ]
 }
 </script>
-
-
-
-
-<h4>Is Village Fest worth visiting in summer?</h4>
-<p>Yes. The fair runs every Thursday year-round and summer has its own appeal: smaller crowds, easier restaurant reservations, and a more local feel. Arrive at 6pm to catch the cooler part of the evening. The produce vendors, kettle corn stand, and tamale vendors stay consistent through summer even if the overall vendor count thins slightly.</p>
-
-<h4>What restaurants should I eat at near Village Fest?</h4>
-<p>Birba and Eight4Nine both put tables on the street facing the fair on Thursday nights. Cheeky's, Workshop Kitchen, and El Mirasol are all walkable from the fair's main stretch. Make a reservation before you arrive, especially in winter and spring, because the downtown options fill up on Thursday nights. The best sequence: walk the fair at 6pm, sit down to dinner at 7:30pm or 8pm.</p>
-
-<h4>Can I combine Village Fest with a Coachella or Stagecoach trip?</h4>
-<p>Yes, easily. Guests staying at <a href="/cozy-cactus/">The Cozy Cactus or Terra Luz</a> in Indio are about 25 to 30 minutes from Village Fest on a Thursday evening, making it a natural outing before or after a festival weekend. The Sundune in Palm Springs is a 10-minute drive from the fair for guests who want downtown access built in.</p>

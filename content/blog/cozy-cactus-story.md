@@ -18,7 +18,7 @@ keywords:
 articleSection: "Property Story"
 property: cozy-cactus
 readTime: "8 min read"
-excerpt: "How a backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents rest, now with 4.66 stars and 191+ reviews."
+excerpt: "How a backup plan for a Honda Element became The Cozy Cactus: a family vacation rental where parents rest, now with 4.66 stars and 332+ reviews."
 layout: blog-post.njk
 ---
 
@@ -36,7 +36,7 @@ layout: blog-post.njk
 <img src="/blog/images/cc-delivery-boxes.webp" alt="Stacks of delivery boxes filling a room during Cozy Cactus vacation rental setup" width="1400" height="1050" loading="lazy">
 <p class="image-caption">So. many. boxes. You wouldn't believe the amount of trash I've contributed to global warming. The installation process is no joke.</p>
 
-<p>As a frequent traveler myself, I have been to my share of Airbnbs, both decent and horrible at the same time. Why are the knives always SO dull and the kitchen so bare? Why are the beds so springy and outdated? When was the last time the floors were cleaned?</p>
+<p>As a frequent traveler myself, I have been to my share of Airbnbs, both decent and horrible at the same time. Why are the knives always SO dull and the kitchen so bare? Why are the beds so springy and outdated, and when's the last time anyone cleaned the floors?</p>
 
 <p>I slowly learned that not only do you get what you pay for (back when I was a poor college student, I booked Airbnbs with shared bathrooms… ew), but there is also an intentionality that some hosts approach hospitality with, and it can be as simple as adding a $30 knife sharpener for guests.</p>
 
@@ -61,7 +61,7 @@ layout: blog-post.njk
 <p>A few things I did that guests have raved about:</p>
 
 <h3>I labeled everything.</h3>
-<p>Where the batteries are. Where the extra linens go. Which drawer has the baby spoons. Which cabinet has the Tupperware lids (because that's always the mystery, right?). I didn't want guests hunting for things at 7am while their little ones are screaming for breakfast. One guest told me the labeling system was "unprecedented." I laughed when she said it, but I get it. My own home is not as organized as my vacation rentals. If I, the homeowner, cannot find where the forks are, how do I expect a guest to?</p>
+<p>I labeled where the batteries are, where the extra linens go, which drawer has the baby spoons, and which cabinet has the Tupperware lids (because that's always the mystery, right?). I didn't want guests hunting for things at 7am while their little ones are screaming for breakfast. One guest told me the labeling system was "unprecedented." I laughed when she said it, but I get it. My own home is not as organized as my vacation rentals. If I, the homeowner, cannot find where the forks are, how do I expect a guest to?</p>
 
 <img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Everything labeled: batteries, extra linens, baby spoons, exactly where you'd look for them</p>
@@ -105,12 +105,12 @@ layout: blog-post.njk
 
 <h2>What The Cozy Cactus Is</h2>
 
-<p>I wasn't trying to be revolutionary. I just wanted families to rest. Shoot. I wanted rest!! From the beginning, kids were the reason the house existed, not an afterthought. The Cozy Cactus is colorful: turquoise and coral and pineapple yellow, because why not? It's playful without being chaotic. The design is fem-leaning but appeals to everyone because good design isn't gendered, it's just good. The vibe is "organized chaos" except organized, so it's just… functional joy. The sanctuary here is practical: someone already handled the details, so parents can stop managing everything the moment they walk in. Where your little ones have what they need without you hunting for it at midnight. Where vacation means rest, not just a different location to be exhausted in.</p>
+<p>I wasn't trying to be revolutionary, I just wanted families to rest. Shoot, I wanted rest!! From the beginning, kids were the reason the house existed, not an afterthought. The Cozy Cactus is colorful: turquoise and coral and pineapple yellow, because why not? It's playful without being chaotic. The design is fem-leaning but appeals to everyone because good design isn't gendered, it's just good. The vibe is "organized chaos" except organized, so it's just… functional joy. The sanctuary here is practical: someone already handled the details, so parents can stop managing everything the moment they walk in. Where your little ones have what they need without you hunting for it at midnight. Where vacation means rest, not just a different location to be exhausted in.</p>
 
 <img src="/blog/images/cozy-cactus-mural.webp" alt="Colorful hand-painted mural on The Cozy Cactus backyard wall in Indio CA" loading="lazy" decoding="async" width="1400" height="934">
 <p class="image-caption">I joke that this mural was painted by a "local artist," aka yours truly. Took lots of measurements and painter's tape, but not too shabby!</p>
 
-<p>I'm not trying to win design awards, though we did get featured on a <a href="https://minoan.com/blog/host-spotlight-eann" target="_blank" rel="noopener noreferrer">Minoan blog post</a>! I'm trying to solve the problem of families who book a vacation rental and end up more exhausted than before they left. That's The Cozy Cactus. Families keep coming back. They don't just survive vacation. They enjoy it.</p>
+<p>I'm not trying to win design awards, though we did get featured on a <a href="https://minoan.com/blog/host-spotlight-eann" target="_blank" rel="noopener noreferrer">Minoan blog post</a>! I'm trying to solve the problem of families who book a vacation rental and end up more exhausted than before they left. That's The Cozy Cactus. Families keep coming back, and they don't just survive their vacation: they enjoy it.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -125,6 +125,18 @@ layout: blog-post.njk
 
 <h3>Who designed The Cozy Cactus?</h3>
 <p>The design vision came from Dawn Asher of The Olive Jar, a brand strategist and interior designer based in the desert. She brought the six-filter framework that governs every detail, from paint colors to linens to the mural in the backyard. I executed it with too many trips to HomeGoods and a Honda Element that fits more than it should.</p>
+
+<h3>Is it cheaper to book directly instead of through Airbnb?</h3>
+<p>Yes. Booking at <a href="https://indigopalm.co/cozy-cactus/">indigopalm.co/cozy-cactus/</a> skips the Airbnb guest service fee, which is 20% of the subtotal. The nightly rate is identical either way, and the booking flow takes about 3 minutes through Square. For festival weeks when base rates are already elevated, the savings are proportionally larger.</p>
+
+<h3>What ages is the baby gear designed for?</h3>
+<p>The Stokke high chair works from 6 months through roughly 3 years, and the pack-n-play covers newborn through 18 months or so. Infant-stage gear includes a Keekaroo changing table, bottle warmer, diaper pail, outlet covers, and cabinet locks. Kids' dishes and sippy cups extend the kitchen setup through the early toddler window. Beyond that age range, the house still works well as a family rental, the infant infrastructure just becomes less central.</p>
+
+<h3>Does the house have access to a pool?</h3>
+<p>Yes, two ways. The private backyard has a hot tub for the household's exclusive use. The Indian Palms Country Club community pool is a separate amenity available to guests through the property's HOA access. They serve different moods: the backyard is for post-festival decompression or morning coffee, the community pool for longer afternoon sessions with kids.</p>
+
+<h3>What is the best time of year to visit Indio with a family (outside of festival season)?</h3>
+<p>October through November and January through March are the sweet spots. Temperatures are warm but not punishing, typically 75-90 degrees, the desert roads are quiet, and rates are well below festival weeks. Summer (June through August) is cheap for good reason: 110-degree afternoons limit outdoor time to morning and evening. Spring festival weekends in April book 6-12 months out, so families who want Coachella proximity without the crowd should target the shoulder months on either side.</p>
 
 <p>If that's the kind of vacation you've been looking for, we'd love to be your landing spot. <a href="/cozy-cactus/">Come stay with us.</a></p>
 
@@ -174,18 +186,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-
-<h4>Is it cheaper to book directly instead of through Airbnb?</h4>
-<p>Yes. Booking at <a href="https://indigopalm.co/cozy-cactus/">indigopalm.co/cozy-cactus/</a> skips the Airbnb guest service fee, which is 20% of the subtotal. The nightly rate is identical either way, and the booking flow takes about 3 minutes through Square. For festival weeks when base rates are already elevated, the savings are proportionally larger.</p>
-
-<h4>What ages is the baby gear designed for?</h4>
-<p>The Stokke high chair works from 6 months through roughly 3 years, and the pack-n-play covers newborn through 18 months or so. Infant-stage gear includes a Keekaroo changing table, bottle warmer, diaper pail, outlet covers, and cabinet locks. Kids' dishes and sippy cups extend the kitchen setup through the early toddler window. Beyond that age range, the house still works well as a family rental, the infant infrastructure just becomes less central.</p>
-
-<h4>Does the house have access to a pool?</h4>
-<p>Yes, two ways. The private backyard has a hot tub for the household's exclusive use. The Indian Palms Country Club community pool is a separate amenity available to guests through the property's HOA access. They serve different moods: the backyard is for post-festival decompression or morning coffee, the community pool for longer afternoon sessions with kids.</p>
-
-<h4>What is the best time of year to visit Indio with a family (outside of festival season)?</h4>
-<p>October through November and January through March are the sweet spots. Temperatures are warm but not punishing, typically 75-90 degrees, the desert roads are quiet, and rates are well below festival weeks. Summer (June through August) is cheap for good reason: 110-degree afternoons limit outdoor time to morning and evening. Spring festival weekends in April book 6-12 months out, so families who want Coachella proximity without the crowd should target the shoulder months on either side.</p>

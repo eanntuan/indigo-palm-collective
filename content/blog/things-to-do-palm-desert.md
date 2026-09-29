@@ -94,6 +94,15 @@ layout: blog-post.njk
 <h3>What is the best time of year to visit Palm Desert?</h3>
 <p>November through April is the reliable window. March brings the BNP Paribas Open at nearby Indian Wells, which fills hotels but keeps the valley energized. January and February are quieter and cooler, with the occasional cold morning offset by clear skies and uncrowded courses and trails.</p>
 
+<h3>Is Palm Desert worth a day trip from Palm Springs?</h3>
+<p>Yes, especially if your visit overlaps with a Thursday between October and May, when the El Paseo Desert Art Walk runs. The two cities are 15 miles apart, about 20 minutes by car. A half-day loop covering the Living Desert Zoo in the morning and El Paseo in the afternoon is genuinely doable.</p>
+
+<h3>What's the best base for covering Palm Desert, Palm Springs, and Coachella?</h3>
+<p>Indio sits 20 minutes east of Palm Desert, 35 minutes from Palm Springs, and 5 to 10 minutes from the Coachella and Stagecoach festival grounds. <a href="https://indigopalm.co/">Indigo Palm Collective</a> has two 3-bedroom homes in Indio's Indian Palms neighborhood that work well as a valley base.</p>
+
+<h3>How long do you need at the Living Desert Zoo?</h3>
+<p>Three to four hours covers the main circuit at an unhurried pace. Half a day is the typical visit. In summer months, temperatures spike past 110 by midday, so arriving at opening (8am) is the only practical strategy from June through September.</p>
+
 
 <script type="application/ld+json">
 {
@@ -159,15 +168,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-
-<h4>Is Palm Desert worth a day trip from Palm Springs?</h4>
-<p>Yes, especially if your visit overlaps with a Thursday between October and May, when the El Paseo Desert Art Walk runs. The two cities are 15 miles apart on Highway 111, about 20 minutes by car, so a half-day loop that covers the Living Desert Zoo in the morning and El Paseo in the afternoon is genuinely doable. The Living Desert alone justifies the trip for anyone traveling with kids or anyone who hasn't been before.</p>
-
-<h4>What's the best base for covering Palm Desert, Palm Springs, and Coachella?</h4>
-<p>Indio sits 20 minutes east of Palm Desert, 35 minutes from Palm Springs, and 5 to 10 minutes from the Coachella and Stagecoach festival grounds. That makes it the most central option for a trip covering the full valley. <a href="https://indigopalm.co/">Indigo Palm Collective</a> has two 3-bedroom homes in Indio's Indian Palms neighborhood that work well as a valley base.</p>
-
-<h4>How long do you need at the Living Desert Zoo?</h4>
-<p>Three to four hours covers the main circuit at an unhurried pace. Half a day is the typical visit. If you're going with young kids and want to do the giraffe feeding station, that can add time depending on the queue, so arriving at opening (8am) gives you the most flexibility, and it's also the only strategy worth considering in summer months when temperatures spike past 110 by midday.</p>

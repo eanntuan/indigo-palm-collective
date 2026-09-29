@@ -193,6 +193,18 @@ layout: blog-post.njk
 
 <p>Yes. Head to <a href="/terra-luz/">indigopalm.co/terra-luz</a> to book directly and lock in the return guest discount on your next stay.</p>
 
+<h4>How far is Terra Luz from Coachella and Stagecoach?</h4>
+
+<p>Terra Luz is walking distance to the Empire Polo Club in Indio. Festival exit traffic on Monroe Street and Avenue 50 is real, though, so most guests still rideshare back after late sets rather than fight it on foot in the dark. Palm Springs is 25 minutes west on I-10 for a day trip between festival weekends.</p>
+
+<h4>Is the pool heated, and what does it cost?</h4>
+
+<p>Pool heating is available at $75 per night, added at booking. Spring visitors for Coachella or Stagecoach typically add it for evening swims, since desert nights cool fast in April. Summer guests often skip it because ambient temperatures keep the water warm on their own. Beach robes for six and Studio McGee pool towels are included.</p>
+
+<h4>What is the sleeping capacity and who is the property best for?</h4>
+
+<p>Terra Luz sleeps up to eight across three bedrooms, and the Wild Tropics bedroom has a twin trundle that makes it flexible for families or larger groups. It works well for friend groups heading to a festival, families who want a private pool, and mixed groups who each want their own room with a distinct vibe rather than identical hotel boxes. See the full layout at <a href="/terra-luz/">indigopalm.co/terra-luz</a>.</p>
+
 <p class="credit">Guest experience by <a href="https://theolivejar.co" target="_blank" rel="noopener">@TheOliveJar.co</a> | Photography by <a href="https://www.anchor-pictures.com/" target="_blank" rel="noopener">Anchor Photography</a></p>
 
 <script type="application/ld+json">
@@ -267,15 +279,3 @@ layout: blog-post.njk
   ]
 }
 </script>
-
-
-
-
-<h4>How far is Terra Luz from Coachella and Stagecoach?</h4>
-<p>Terra Luz is walking distance to the Empire Polo Club in Indio. Festival exit traffic on Monroe Street and Avenue 50 is real, though, so most guests still rideshare back after late sets rather than fight it on foot in the dark. Palm Springs is 25 minutes west on I-10 for a day trip between festival weekends.</p>
-
-<h4>Is the pool heated, and what does it cost?</h4>
-<p>Pool heating is available at $75 per night, added at booking. Spring visitors for Coachella or Stagecoach typically add it for evening swims, since desert nights cool fast in April. Summer guests often skip it because ambient temperatures keep the water warm on their own. Beach robes for six and Studio McGee pool towels are included.</p>
-
-<h4>What is the sleeping capacity and who is the property best for?</h4>
-<p>Terra Luz sleeps up to eight across three bedrooms, and the Wild Tropics bedroom has a twin trundle that makes it flexible for families or larger groups. It works well for friend groups heading to a festival, families who want a private pool, and mixed groups who each want their own room with a distinct vibe rather than identical hotel boxes. See the full layout at <a href="/terra-luz/">indigopalm.co/terra-luz</a>.</p>
