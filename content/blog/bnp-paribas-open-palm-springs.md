@@ -1,7 +1,7 @@
 ---
 title: "Where to Stay for the BNP Paribas Open, Palm Springs"
 date: 2026-06-22
-dateModified: 2026-09-16
+dateModified: 2026-10-01
 metaDescription: "Where to stay for the BNP Paribas Open 2027: The Sundune in Palm Springs sleeps 6 in 3 king beds, 12 miles from Indian Wells Tennis Garden, shared pool."
 ogImage: /blog/images/bnp-paribas-stadium-packed.webp
 heroImage: /blog/images/bnp-paribas-stadium-packed.webp
@@ -89,7 +89,7 @@ relatedPosts:
 
 <p><strong>Palm Springs Aerial Tramway.</strong> The tram runs from the desert floor at 2,643 feet to the San Jacinto Mountains at 8,516 feet. In March, there's usually snow at the top while it's 74 degrees at the bottom. The ride takes about 10 minutes each way and the mountain station has restaurants and hiking trails into the wilderness area. It's one of the more genuinely surprising things you can do in the Coachella Valley.</p>
 
-<p><strong>The architecture.</strong> Palm Springs went through a postwar development boom that produced an unusually concentrated inventory of mid-century modern houses by architects like Richard Neutra, Albert Frey, John Lautner, and William Cody. The Palm Springs Architectural Foundation runs tours and the Modernism Week events in February spill into early March most years. Driving around the Las Palmas, Movie Colony, and Vista Las Palmas neighborhoods to look at the houses is free and genuinely worth an afternoon.</p>
+<p><strong>The architecture.</strong> Palm Springs went through a postwar development boom that produced an unusually concentrated inventory of mid-century modern houses by architects like Richard Neutra, Albert Frey, John Lautner, and William Cody. The Palm Springs Historical Society runs guided walking tours, and the Modernism Week events in February spill into early March most years. Driving around the Las Palmas, Movie Colony, and Vista Las Palmas neighborhoods to look at the houses is free and genuinely worth an afternoon.</p>
 
 <img src="/blog/images/palm-springs-mcm-neighborhood.webp" alt="Palm Springs mid-century modern neighborhood with low-slung houses, desert landscaping, and mountain backdrop" width="1400" height="933" loading="lazy">
 <p class="image-caption">Mid-century modern Palm Springs. The postwar residential architecture here is unusually dense for a city this size. An afternoon driving the neighborhoods requires no tickets and no tour guide.</p>

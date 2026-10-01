@@ -15,7 +15,7 @@ keywords:
   - Modernism Week Palm Springs
   - Movie Colony Palm Springs
   - Vista Las Palmas Palm Springs
-dateModified: 2026-07-17
+dateModified: 2026-10-01
 articleSection: "Local Guide"
 property: ps-retreat
 readTime: "8 min read"
@@ -107,7 +107,7 @@ relatedPosts:
 
 <p>Downtown parking is free in most surface lots on Saturdays. The residential neighborhoods have street parking throughout. You will not struggle to park at any of the stops on this list. The bigger issue is that some streets in Vista Las Palmas and Old Las Palmas are narrow, so park once and walk a cluster rather than trying to move the car every block.</p>
 
-<p>The Palm Springs Architectural Foundation runs guided tours year-round that cover more ground with historical context. Their <a href="https://www.psarchitecturalfoundation.org/" target="_blank" rel="noopener">walking and bus tours</a> are worth booking if you want names and stories attached to what you're seeing.</p>
+<p>The Palm Springs Historical Society runs guided walking tours that cover more ground with historical context. Their <a href="https://pshistoricalsociety.org/collections/tours" target="_blank" rel="noopener">Modernist Treasures and Twin Palms Estates tours</a> are worth booking if you want names and stories attached to what you're seeing.</p>
 
 <h2>Modernism Week: The Amplified Version</h2>
 
@@ -133,7 +133,7 @@ relatedPosts:
 <p>Budget two to three hours for a relaxed driving tour with short walks at each stop. Photography-focused visitors tend to run longer. If you add the Art Museum stop, plan for an additional hour minimum. The route works as a half-day activity with time for coffee at the start and lunch afterward.</p>
 
 <h3>Do you need a guide, or can you do this tour alone?</h3>
-<p>You can do this entirely on your own with a map and this guide. The Palm Springs Architectural Foundation offers guided walking and bus tours year-round if you want names, dates, and architectural context attached to what you're seeing. Their tours cover additional properties and neighborhoods not included in this self-guided route.</p>
+<p>You can do this entirely on your own with a map and this guide. The Palm Springs Historical Society offers guided walking tours if you want names, dates, and architectural context attached to what you're seeing. Their tours cover additional properties and neighborhoods not included in this self-guided route.</p>
 
 <h3>Where should I park for the architecture tour?</h3>
 <p>For the Downtown starting point and Uptown Design District, use the public parking structure on Amado Road. For Vista Las Palmas and Old Las Palmas, street parking is available throughout but streets are narrow. Park once and walk a cluster of blocks rather than moving the car between stops.</p>
@@ -184,7 +184,7 @@ relatedPosts:
       "name": "Do you need a guide, or can you do this tour alone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can do this entirely on your own with a map and this guide. The Palm Springs Architectural Foundation offers guided walking and bus tours year-round if you want names, dates, and architectural context attached to what you're seeing. Their tours cover additional properties and neighborhoods not included in this self-guided route."
+        "text": "You can do this entirely on your own with a map and this guide. The Palm Springs Historical Society offers guided walking tours if you want names, dates, and architectural context attached to what you're seeing. Their tours cover additional properties and neighborhoods not included in this self-guided route."
       }
     },
     {

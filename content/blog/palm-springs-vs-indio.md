@@ -1,7 +1,7 @@
 ---
 title: "Indio vs. Palm Springs: 25 Miles Apart, Which to Pick"
 date: 2026-02-05
-dateModified: 2026-07-30
+dateModified: 2026-10-01
 metaDescription: "How far is Indio from Palm Springs? 25 miles, a 30-40 minute drive on the I-10. We own rentals in both cities, here's which one fits your trip."
 ogImage: /blog/images/ps-boulevard-palms-mountains.webp
 heroImage: /blog/images/ps-boulevard-palms-mountains.webp
@@ -51,7 +51,7 @@ faqItems:
 
 <p>Palm Springs is walkable in a way that almost nothing else in the desert is. You can park once, walk to dinner, <a href="/blog/palm-springs-coffee-guide/">get coffee in the morning without moving the car</a>, wander the architecture streets in the afternoon, and come back to your rental without ever touching your keys again. For the Coachella Valley, that is genuinely unusual.</p>
 
-<p>The midcentury modern architecture here lives up to the reputation. The residential streets off Palm Canyon Drive are lined with flat-roofed homes in terracotta, teal, and deep ochre, most of them unchanged since the 1950s and 60s. <a href="https://www.psarchitecturalfoundation.org/" target="_blank" rel="noopener noreferrer"><strong>The Palm Springs Architectural Foundation</strong></a> runs excellent walking tours if you want context for what you're seeing. Our <a href="/blog/palm-springs-midcentury-architecture/">self-guided architecture walk</a> covers the same territory on foot.</p>
+<p>The midcentury modern architecture here lives up to the reputation. The residential streets off Palm Canyon Drive are lined with flat-roofed homes in terracotta, teal, and deep ochre, most of them unchanged since the 1950s and 60s. <a href="https://pshistoricalsociety.org/collections/tours" target="_blank" rel="noopener noreferrer"><strong>The Palm Springs Historical Society</strong></a> runs guided walking tours if you want context for what you're seeing. Our <a href="/blog/palm-springs-midcentury-architecture/">self-guided architecture walk</a> covers the same territory on foot.</p>
 
 <p>Downtown Palm Springs has density: restaurants, galleries, a weekend street market, vintage shops, and <a href="/blog/palm-springs-bars/">a handful of bars that go reasonably late</a>. If your trip is about wandering and discovery, Palm Springs rewards that kind of itinerary.</p>
 

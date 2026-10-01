@@ -2,9 +2,11 @@
 title: "6 Best Public Golf Courses Near Palm Springs & Indio"
 date: 2026-09-28
 metaDescription: "6 public golf courses across the Coachella Valley, from the course in our own Indio neighborhood to PGA West, with holes, yardage, and price tier for each."
-ogImage: /blog/images/desert-ridge-hike-valley-view.webp
-heroImage: /blog/images/desert-ridge-hike-valley-view.webp
-heroAlt: "Desert valley view with mountains in the background, the kind of terrain that shapes every Coachella Valley golf course"
+dateModified: 2026-10-01
+ogImage: /blog/images/indian-palms-front-entrance.webp
+heroImage: /blog/images/indian-palms-front-entrance.webp
+heroPosition: "center 58%"
+heroAlt: "Indian Palms Country Club entrance sign in Indio reading Restaurant and Golf, with desert mountains behind it"
 keywords:
   - public golf courses Palm Springs
   - golf Indio
@@ -33,7 +35,8 @@ layout: blog-post.njk
   </table>
 </div>
 
-<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert valley and mountain view in the Coachella Valley, the shared backdrop behind every course on this list" loading="lazy" width="1400" height="1050">
+<img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of the Indian Palms neighborhood in Indio at sunset, tile rooftops and palms with desert mountains behind" loading="lazy" width="1400" height="933">
+<p class="image-caption">The Indian Palms neighborhood from above, tile roofs and palms with the mountains behind.</p>
 
 <h2>1. Indian Palms Country Club, Indio</h2>
 
@@ -82,7 +85,7 @@ layout: blog-post.njk
 
 <p>Book tee times as far ahead as you can for anything from December through April, the valley's cooler months are also its busiest golf months, and the good weekend slots at Desert Willow, Indian Wells, and PGA West go fast. Summer is the opposite problem: cheap twilight rates and nearly empty courses, if you can handle the heat starting before 9am.</p>
 
-<p>If Indian Palms is your course, you don't need a hotel at all. Book <a href="/terra-luz/">Terra Luz</a> or <a href="/cozy-cactus/">The Cozy Cactus</a> direct at <a href="https://indigopalm.co/">indigopalm.co</a>, skip Airbnb's 20% guest service fee, and walk to your tee time instead of driving to it. For the rest of the valley's courses, both properties put you within 20 minutes of everything on this list.</p>
+<p>If Indian Palms is your course, you don't need a hotel at all. Book <a href="/terra-luz/">Terra Luz</a> or <a href="/cozy-cactus/">The Cozy Cactus</a> direct at <a href="https://indigopalm.co/">indigopalm.co</a>, skip Airbnb's 20% guest service fee, and walk to your tee time instead of driving to it. For the rest of the valley's courses, both properties put you within 20 minutes of everything on this list. If you want the rest of the trip sorted too, the <a href="/coachella-valley/">Coachella Valley travel guide</a> pulls together where I'd eat, hike, and unwind between rounds.</p>
 
 <h2>Frequently Asked Questions</h2>
 

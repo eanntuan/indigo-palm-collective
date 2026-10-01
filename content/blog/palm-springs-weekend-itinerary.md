@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs Weekend Trip: A Well-Planned 3-Day Itinerary"
 date: 2025-11-16
-dateModified: 2026-01-23
+dateModified: 2026-10-01
 metaDescription: "Day 1: arrive and decompress. Day 2: architecture walk, coffee, and a hike. Day 3: farmers market and brunch. Three days in Palm Springs, planned well."
 ogImage: /blog/images/ps-mcm-house-palm-trees.webp
 heroImage: /blog/images/ps-mcm-house-palm-trees.webp
@@ -57,7 +57,7 @@ layout: blog-post.njk
 <img src="/blog/images/koffi-palm-springs.webp" alt="Koffi coffee shop in Palm Springs with outdoor patio seating and palm trees, a 20-year Palm Springs institution" width="1400" height="933" loading="lazy">
 <p class="image-caption">Koffi on N Palm Canyon Drive. Start every Palm Springs Saturday here.</p>
 
-<p>The residential streets south and east of downtown are the main event. Vista Las Palmas, the Movie Colony, and Old Las Palmas have the densest concentration of midcentury modern homes worth seeing. The streetscape is one of the best things you can do in Palm Springs on foot, and it's free. The <a href="https://www.psarchitecturalfoundation.org/" target="_blank" rel="noopener">Palm Springs Architectural Foundation</a> runs guided tours if you want names and histories attached to specific houses. Budget two hours minimum.</p>
+<p>The residential streets south and east of downtown are the main event. Vista Las Palmas, the Movie Colony, and Old Las Palmas have the densest concentration of midcentury modern homes worth seeing. The streetscape is one of the best things you can do in Palm Springs on foot, and it's free. The <a href="https://pshistoricalsociety.org/collections/tours" target="_blank" rel="noopener">Palm Springs Historical Society</a> runs guided walking tours if you want names and histories attached to specific houses. Budget two hours minimum.</p>
 
 <img src="/blog/images/ps-mcm-neighborhood.webp" alt="Midcentury modern residential street in Palm Springs with flat-roofed homes and San Jacinto Mountains visible at the end of the block" width="1400" height="933" loading="lazy">
 <p class="image-caption">The residential neighborhoods look like this. Slow down and look at the houses.</p>

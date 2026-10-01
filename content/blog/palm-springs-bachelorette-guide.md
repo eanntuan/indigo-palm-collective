@@ -1,6 +1,7 @@
 ---
 title: "Palm Springs Bachelorette Party: The Real Planning Guide"
 date: 2026-01-15
+dateModified: 2026-10-01
 metaDescription: "Desert bachelorette in Palm Springs: pools, restaurants, spas, 2 hours from LA. The honest guide to what to book, skip, and plan for your crew."
 ogImage: /blog/images/ps-palm-springs-sign.webp
 heroImage: /blog/images/ps-palm-springs-sign.webp
@@ -89,7 +90,7 @@ relatedPosts:
 <ul>
   <li><strong>Palm Springs Aerial Tram:</strong> 10-minute ride up to 8,500 feet with views of the entire valley. Takes about 2 hours round-trip. You want a light jacket at the top even in summer. Book in advance on weekends. Read the full guide at <a href="/blog/palm-springs-aerial-tram/">Everything to Know About the Palm Springs Aerial Tram.</a></li>
   <li><a href="https://palmspringssurfclub.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Surf Club:</strong></a> A wave pool about 20 minutes from downtown. They have lessons and open sessions. A genuinely fun 2-3 hour activity for a group that doesn't mind getting wet.</li>
-  <li><strong>Architecture Walk:</strong> Download the <a href="https://www.psarchitecturalfoundation.org/" target="_blank" rel="noopener">Palm Springs Modern Tours</a> map and walk the residential streets north of downtown. Takes 1.5-2 hours on foot. No tour guide needed.</li>
+  <li><strong>Architecture Walk:</strong> Buy the <a href="https://psmodcom.org/psmodcom-map/" target="_blank" rel="noopener">Palm Springs Modern Committee map</a> and walk the residential streets north of downtown. Takes 1.5-2 hours on foot. No tour guide needed.</li>
   <li><strong>Spa day:</strong> Several day spas in the area take group bookings. Agua Caliente Spa and Spa Resort Casino both have public thermal pools that work as a half-day activity without a full treatment booking.</li>
 </ul>
 

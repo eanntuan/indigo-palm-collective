@@ -62,7 +62,7 @@ relatedPosts:
 <p class="image-caption">A wave pool in the desert. It sounds gimmicky until you're in it.</p>
 
 <h3>Moorten Botanical Garden</h3>
-<p>If Surf Club is the active afternoon, <a href="https://moortenbotanicalgarden.com/" target="_blank" rel="noopener"><strong>Moorten Botanical Garden</strong></a> is the exhale. Walk it at golden hour, when the light hits everything sideways. Cacti and succulents from all over the world, a pace that feels almost ceremonial, small and quiet in a way that stays with you.</p>
+<p>If Surf Club is the active afternoon, <a href="http://www.moortenbotanicalgarden.com/" target="_blank" rel="noopener"><strong>Moorten Botanical Garden</strong></a> is the exhale. Walk it at golden hour, when the light hits everything sideways. Cacti and succulents from all over the world, a pace that feels almost ceremonial, small and quiet in a way that stays with you.</p>
 
 <img src="/blog/images/moorten-botanical-garden.webp" alt="Moorten Botanical Garden in Palm Springs with towering cacti and succulents from around the world under desert sky" width="1200" height="1200" loading="lazy">
 <p class="image-caption">Moorten at golden hour. Go slow. The place rewards it.</p>

@@ -191,7 +191,7 @@ layout: blog-post.njk
 
 <h3>Escena Grill</h3>
 
-<p><a href="https://escenagolf.com/dining/" target="_blank" rel="noopener noreferrer"><strong>Escena Grill</strong></a> is the golf club restaurant that's open to everyone, and the setting is genuinely one of the best in the city. The patio looks out over the course toward the San Jacinto Mountains and the view at dusk, when the mountains go from gold to purple, is something you'll take a photo of even if you're not a photo person. The food is California eclectic with a rotating seasonal menu. Dog-friendly patio. Go for the outdoor table and stay until the light changes.</p>
+<p><a href="https://escenagolf.com/grill/" target="_blank" rel="noopener noreferrer"><strong>Escena Grill</strong></a> is the golf club restaurant that's open to everyone, and the setting is genuinely one of the best in the city. The patio looks out over the course toward the San Jacinto Mountains and the view at dusk, when the mountains go from gold to purple, is something you'll take a photo of even if you're not a photo person. The food is California eclectic with a rotating seasonal menu. Dog-friendly patio. Go for the outdoor table and stay until the light changes.</p>
 
 <p><strong>1100 Clubhouse View, Palm Springs, CA 92262.</strong> (760) 992-0002. Hours vary seasonally: check escenagolf.com before you go. Reservations via OpenTable or phone. Find them at <a href="https://www.instagram.com/escenagrill/" target="_blank" rel="noopener">@escenagrill</a>.</p>
 

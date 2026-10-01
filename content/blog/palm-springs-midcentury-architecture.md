@@ -1,6 +1,7 @@
 ---
 title: "Palm Springs Midcentury Architecture: Self-Guided Walk"
 date: 2026-01-12
+dateModified: 2026-10-01
 metaDescription: "Palm Springs has the most intact collection of midcentury modern homes in the country. Here's how to walk it, what to look for, and which streets matter."
 ogImage: /blog/images/ps-mcm-neighborhood.webp
 heroImage: /blog/images/ps-mcm-neighborhood.webp
@@ -92,7 +93,7 @@ layout: blog-post.njk
 <p>If you want more context, a few options:</p>
 
 <ul>
-  <li><strong>Palm Springs Architectural Foundation:</strong> The <a href="https://www.psarchitecturalfoundation.org/" target="_blank" rel="noopener">PSAF website</a> has self-guided tour maps, docent-led walking tours on select weekends, and a property database. The maps are free and printable.</li>
+  <li><strong>Palm Springs Modern Committee:</strong> The <a href="https://psmodcom.org/psmodcom-map/" target="_blank" rel="noopener">PS ModCom map</a> is a foldout listing each building's address, architect, and year built, sold online and at the Palm Springs Visitor Center, and the <a href="https://psmodcom.org/mid-century-modern-tour-app/" target="_blank" rel="noopener">tour app</a> covers 80-plus landmarks.</li>
   <li><strong>Modernism Week:</strong> Held annually in February, <a href="https://modernismweek.com/" target="_blank" rel="noopener">Modernism Week</a> includes tours of homes that aren't otherwise publicly accessible. If you care about this stuff at all, it's worth planning a trip around. Tickets for the interior tours sell out months in advance.</li>
   <li><strong>Palm Springs Art Museum Architecture and Design Center:</strong> Small museum in a historic bank building on Museum Drive, with rotating exhibitions on desert architecture. Usually free on first Friday evenings.</li>
   <li><strong>Christopher Bunn's walking tour videos:</strong> Search YouTube for Palm Springs architecture walking tour. His videos are useful for identifying specific buildings before or after your walk.</li>
@@ -122,7 +123,7 @@ layout: blog-post.njk
 <p>October through April, early morning. The light is best before 9am, the streets are quiet, and the temperature is genuinely comfortable for walking. Summer mornings work too if you're out before 8am, but the window is narrow before the heat makes walking unpleasant. Avoid midday in any season for photography: flat overhead light kills the shadows that give the architecture its depth.</p>
 
 <h3>Is the Palm Springs architecture walking tour accessible for people who don't know much about architecture?</h3>
-<p>Completely. The five features to learn beforehand are flat or butterfly roofs, breezeblock screen walls, deep eave overhangs, post-and-beam framing with floor-to-ceiling glass, and original door colors in turquoise, coral, or orange. Once those five things are in your head, you'll start seeing them on every block without needing any prior background. The Palm Springs Architectural Foundation website has free printable maps that label specific buildings if you want more structure.</p>
+<p>Completely. The five features to learn beforehand are flat or butterfly roofs, breezeblock screen walls, deep eave overhangs, post-and-beam framing with floor-to-ceiling glass, and original door colors in turquoise, coral, or orange. Once those five things are in your head, you'll start seeing them on every block without needing any prior background. The Palm Springs Modern Committee sells a map that labels specific buildings if you want more structure.</p>
 
 <h3>How long does the Palm Springs midcentury architecture walk take?</h3>
 <p>Plan 1.5 to 2 hours for the core route (Via Norte, Via Escuela, Stevens Road, and the Ruth Hardy Park perimeter), not counting getting coffee or stopping to photograph. If you add the Movie Colony or make the detour to the Kaufmann Desert House exterior at 470 W Vista Chino, add another 45 minutes. Most people underestimate the time because the streets reward wandering, and the architecture is dense enough that you'll stop more than you expect.</p>
@@ -145,7 +146,7 @@ layout: blog-post.njk
       "name": "Is the Palm Springs architecture walking tour accessible for people who don't know much about architecture?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Completely. The five features to learn are flat or butterfly roofs, breezeblock screen walls, deep eave overhangs, post-and-beam framing with floor-to-ceiling glass, and original door colors in turquoise, coral, or orange. Once those five things are in your head, you'll see them on every block. The Palm Springs Architectural Foundation website has free printable maps that label specific buildings if you want more structure."
+        "text": "Completely. The five features to learn are flat or butterfly roofs, breezeblock screen walls, deep eave overhangs, post-and-beam framing with floor-to-ceiling glass, and original door colors in turquoise, coral, or orange. Once those five things are in your head, you'll see them on every block. The Palm Springs Modern Committee sells a map that labels specific buildings if you want more structure."
       }
     },
     {

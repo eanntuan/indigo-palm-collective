@@ -95,11 +95,11 @@ layout: blog-post.njk
 
 <h3>1. Quadz Video Bar</h3>
 
-<p>Tucked into the Arenas District, <a href="https://www.quadzpalmsprings.com/" target="_blank" rel="noopener"><strong>Quadz Video Bar</strong></a> runs Trivia Tuesdays and doubles as a karaoke spot the rest of the week, so the energy is loud and forgiving. The one I'd steer you toward is the Tiki-themed trivia night on Thursdays hosted by a local drag queen, which is more of a full evening than a quiz. It leans campy and it's better for it.</p>
+<p>Tucked into the Arenas District, <a href="https://www.quadz.bar/palmsprings/" target="_blank" rel="noopener"><strong>Quadz Video Bar</strong></a> runs Trivia Tuesdays and doubles as a karaoke spot the rest of the week, so the energy is loud and forgiving. The one I'd steer you toward is the Tiki-themed trivia night on Thursdays hosted by a local drag queen, which is more of a full evening than a quiz. It leans campy and it's better for it.</p>
 
 <h3>2. Plan B Live Entertainment &amp; Cocktails</h3>
 
-<p><a href="https://www.planbliveentertainment.com/" target="_blank" rel="noopener"><strong>Plan B</strong></a> puts trivia on Tuesday evenings alongside its regular live entertainment calendar, so the room already has momentum by the time the first question drops. It's a good landing spot if you want cocktails and a show baked into the same night rather than a quiet quiz.</p>
+<p><a href="https://www.visitgreaterpalmsprings.com/listing/plan-b-live-entertainment-&amp;-cocktails/28788/" target="_blank" rel="noopener"><strong>Plan B</strong></a> puts trivia on Tuesday evenings alongside its regular live entertainment calendar, so the room already has momentum by the time the first question drops. It's a good landing spot if you want cocktails and a show baked into the same night rather than a quiet quiz.</p>
 
 <h3>3. The Local on 50th</h3>
 

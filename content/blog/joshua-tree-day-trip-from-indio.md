@@ -64,7 +64,7 @@ faqItems:
 
 <h2>Entry Fee and Reservations</h2>
 
-<p>The park entrance fee is $35 per vehicle, valid for 7 days. An America the Beautiful annual pass ($80) covers Joshua Tree and pays for itself in three visits. Buy at the entrance or at <a href="https://store.usgs.gov/america-the-beautiful" target="_blank" rel="noopener">store.usgs.gov</a>.</p>
+<p>The park entrance fee is $35 per vehicle, valid for 7 days. An America the Beautiful annual pass ($80) covers Joshua Tree and pays for itself in three visits. Buy at the entrance or at <a href="https://store.usgs.gov/recreational-passes" target="_blank" rel="noopener">store.usgs.gov</a>.</p>
 
 <p>During peak periods, yes, you need a reservation. As of 2026, Joshua Tree requires timed entry on busy spring weekends. Coachella and Stagecoach weekends in April see the park fill up fast. Check the <a href="https://www.nps.gov/jotr/planyourvisit/index.htm" target="_blank" rel="noopener">official Joshua Tree NPS page</a> before you go. Rangers turn people away at the entrance. Weekday visits outside peak season are generally walk-up friendly. Day trips don't require overnight permits.</p>
 

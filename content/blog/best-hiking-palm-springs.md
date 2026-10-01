@@ -198,7 +198,7 @@ relatedPosts:
 
 <p>Plan 2 to 3 hours for a comfortable out-and-back that reaches far enough to feel the canyon open up. The trail continues much further for those who want more mileage. Go before 10am if you're visiting in spring: the light comes into the canyon at a low angle and the temperature is still in the 70s. Afternoon in late March means 90+ degrees and shadow-free stretches on the return.</p>
 
-<p>This is part of the <a href="https://www.aguacalientebands.com/tourism/indian-canyons" target="_blank" rel="noopener noreferrer">Indian Canyons</a> on Agua Caliente Tribal Land. The entry fee goes to the tribe. <a href="https://www.alltrails.com/trail/us/california/palm-canyon-trail--6" target="_blank" rel="noopener noreferrer">Palm Canyon Trail on AllTrails</a>.</p>
+<p>This is part of the <a href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer">Indian Canyons</a> on Agua Caliente Tribal Land. The entry fee goes to the tribe. <a href="https://www.alltrails.com/trail/us/california/palm-canyon-trail--6" target="_blank" rel="noopener noreferrer">Palm Canyon Trail on AllTrails</a>.</p>
 
 <img src="/blog/images/palm-canyon-oasis-trail.webp" alt="Hikers on the Palm Canyon trail surrounded by native California fan palms in the Indian Canyons near Palm Springs" width="1400" height="931" loading="lazy">
 <p class="image-caption">Inside Palm Canyon: thousands of native fan palms line the creek bed, the trunks charcoal grey and skirt-draped. The scale only becomes clear once you are inside.</p>

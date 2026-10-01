@@ -26,7 +26,7 @@ layout: blog-post.njk
 
 <p>That's it. That's the whole policy.</p>
 
-<p>I'd been around enough rentals (and traveled enough with my own dog) to know that's not really a pet-friendly experience. It's a liability disclaimer. So when <a href="https://theolivejarcreative.com" rel="noopener noreferrer">Dawn Asher of The Olive Jar</a> and I were working through the design direction for Terra Luz, I kept asking: what would this place need to feel right for a guest who shows up with a dog?</p>
+<p>I'd been around enough rentals (and traveled enough with my own dog) to know that's not really a pet-friendly experience. It's a liability disclaimer. So when <a href="https://theolivejar.co" rel="noopener noreferrer">Dawn Asher of The Olive Jar</a> and I were working through the design direction for Terra Luz, I kept asking: what would this place need to feel right for a guest who shows up with a dog?</p>
 
 <p>Turns out the list is longer than I expected.</p>
 
