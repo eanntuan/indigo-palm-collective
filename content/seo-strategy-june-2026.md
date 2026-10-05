@@ -2972,3 +2972,17 @@ Targeted re-check only (last full inventory 2026-09-16, inside the 30-day window
 **A fabricated organization turned up inside the dead links.** `psarchitecturalfoundation.org` failed DNS on 5 posts, and a search found no "Palm Springs Architectural Foundation" anywhere. Six posts (`palm-springs-midcentury-architecture`, `palm-springs-midcentury-architecture-tour`, `palm-springs-weekend-itinerary`, `palm-springs-vs-indio`, `palm-springs-bachelorette-guide`, `bnp-paribas-open-palm-springs`) credited it with free printable maps, docent tours, bus tours, and a property database. Rewrote each to a real source after fetching the pages: the Palm Springs Historical Society's guided walking tours (pshistoricalsociety.org lists walking and bike tours, not bus tours, and does not say they run year-round, so both claims were dropped) and the Palm Springs Modern Committee's sold map and tour app (the Visit Palm Springs self-guided tour is a driving route with turn-by-turn directions and no downloadable map, so the "free printable maps" claim was dropped too). `dateModified` bumped to 2026-10-01 on those six.
 
 **Left alone, 3 URLs, treated as sandbox/host flakiness rather than dead links:** `cartelcoffee.com` and `onestoptacoshop.com` (4 posts) both timed out from this machine and could not be verified either way, and `villagepubps.com` threw an SSL hostname mismatch although it is the venue's current site per search results and may be a transient cert problem. Re-check next week; if they fail again from a second network, verify by hand.
+
+### 2026-10-05 Check-in (partial: Google auth expired)
+
+**GSC / GA4 / GSC alert emails:** blocked, `invalid_grant: Token has been expired or revoked`. Needs Eann to run `! /Users/etuan/.claude/google-workspace-venv/bin/python3 ~/.claude/skills/babysit-seo/scripts/reauth_google.py` and sign in as eann.tuan@gmail.com. Re-run GSC, GA4 and Gmail alert mining after that.
+
+**Pinterest (API, 30 days to 2026-10-05):** 1,832 impressions, 4 saves, 59 pin clicks, 12 outbound clicks. Last known pin was dated 2026-08-20 (see TASK PIN-5), so these numbers are residual traffic from older pins. Link switch threshold (25K monthly views) is nowhere close; links stay on Airbnb.
+
+**Rachel Gainsburg:** no new posts since the 2026-09-21 entry.
+
+**Technical health (2026-10-05):** broken internal links/images 0 (112 pages, 3,138 targets), orphan pages 0 of 110, alt-text HIGH 0 / MEDIUM 0. Three LOW `loading="lazy"` flags are intentional `eager` hero-adjacent images, left as is.
+
+**Skipped:** PSL inspo and hero image audit, both ran 2026-10-01 (hero inventory not due until ~2026-10-31).
+
+**Open items:** reauth Google (above); TASK PIN-5 Pinterest restart is the single biggest lever and is Eann's manual task.
