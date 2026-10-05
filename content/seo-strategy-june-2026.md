@@ -2986,3 +2986,26 @@ Targeted re-check only (last full inventory 2026-09-16, inside the 30-day window
 **Skipped:** PSL inspo and hero image audit, both ran 2026-10-01 (hero inventory not due until ~2026-10-31).
 
 **Open items:** reauth Google (above); TASK PIN-5 Pinterest restart is the single biggest lever and is Eann's manual task.
+
+### 2026-10-05 Check-in addendum (after Google reauth)
+
+**GSC (90 days, 2026-07-07 to 2026-10-05):** 624 clicks (+428 vs prior 196), 74,918 impressions (+46,014), CTR 0.8%, avg position 10.0. Mobile CTR 1.0% vs desktop 0.6%, so the mobile experience is not the problem. Google's own milestone emails confirm 250 clicks/28 days on 2026-09-27 (180 on 2026-09-09).
+
+**What's working:** `/blog/palm-springs-vs-scottsdale/` (93 clicks, 2.0% CTR, pos 6.1; query "palm springs vs scottsdale" 11.5% CTR), homepage (2.7% CTR, pos 5.5), `/blog/outdoor-furniture-desert-heat/` (2.2%).
+
+**CTR opportunities (title/meta rewrites):**
+- "how far is indio from palm springs": 847 imps, 3 clicks, pos 5.3 (biggest single leak; target page needs the answer in title, e.g. "Indio to Palm Springs: 25 Miles, 30 Minutes")
+- `palm-springs-poolside-bars-resort-dining` (496 imps, 0.4%, 81% of impressions at pos ≤20), `bnp-paribas-open-palm-springs` (455 imps, 0.4%), `indio-between-coachella-weekends`, `salton-sea-day-trip`, `palm-springs-art-galleries-guide`
+- Content fix, not title: `best-restaurants-palm-springs` (1,410 imps, pos 31.5), `palm-springs-with-kids` (pos 43.3), `stagecoach-2027-where-to-stay` (714 imps, only 11% at pos ≤20)
+
+**GA4 (2026-09-28 to 10-05 vs prior week):** 285 active users (+78), 325 sessions (+85), avg session 87s (-35s). Organic Search 105 sessions, Direct 81, Email 22, Organic Social 2 (Pinterest is effectively idle). No page has 50+ views, so the high-bounce list is empty; watch `best-time-to-visit-palm-springs` (17 views, 81% bounce, 28s). Property views: Terra Luz 30, Cozy Cactus 20, Sundune 16; booking-flow pages 22 views total.
+
+**GSC alert email review (10 emails, 2026-08-07 to 09-27):**
+1. Indexing reasons "Not found (404)" + "Alternate page with proper canonical tag" (2026-08-07, sent to indigopalmco@gmail.com) and "Page with redirect" (2026-08-23). Status: internal link scan finds 0 broken links across 112 pages, so these are most likely old URLs (renames, Casa Moto to Terra Luz) that Google still remembers; redirect and canonical exclusions are expected. Fix: none needed unless the indexing report lists a URL that is in sitemap.xml. Monitor: Search Console Pages report, confirm the 404 and redirect counts are flat or falling. Manual (Eann): open the report and check that no sitemap URL appears in the 404 list.
+2. "New owner" (2026-08-23): indigopalmco@gmail.com added as owner of indigopalm.co. Likely Eann's own brand account (it also receives GSC mail); confirm and revoke if not recognized. Manual (Eann): Settings > Users and permissions.
+3. Remaining emails are performance digests/milestones (August: 187 clicks, 26.9K impressions). No manual actions, security, mobile usability or CWV alerts.
+
+**Action items generated:**
+1. Rewrite title/meta on the Indio-to-Palm-Springs distance page for "how far is indio from palm springs" (queued below).
+2. Title/meta rewrites for `palm-springs-poolside-bars-resort-dining` and `bnp-paribas-open-palm-springs`.
+3. Eann: verify the 404 list in GSC and the indigopalmco@gmail.com owner.
