@@ -34,8 +34,6 @@ Headline events listed for the fall run include the Premier Double Decker Archit
 
 Fall prices (confirm on the ticket site, since they come from event listings): the double-decker bus tour is $130, the Twin Palms home tour $40, the Frey House II tour $75 ($125 with reception), and Sinatra's Rat Pack bus tour $100. Frey House II tickets also work as museum day passes for the Palm Springs Art Museum and the Architecture and Design Center during the festival. Several tours were already sold out in early October, so book now if you're going. The official site doesn't publish shuttle or parking guidance, so plan on rideshare and check each event listing.
 
-<!-- EANN: add your own take -->
-
 Staying in the city makes a four-day festival easier. [The Sundune](/the-sundune/) is about ten minutes from the downtown core, and our [3-day Palm Springs itinerary](/blog/palm-springs-3-day-itinerary/) pairs well with a festival weekend.
 
 <img src="/blog/images/ps-blue-door-cacti.webp" alt="Mid-century modern neighborhood in Palm Springs with flat-roofline homes and mountain backdrop" loading="lazy" width="1400" height="933">
