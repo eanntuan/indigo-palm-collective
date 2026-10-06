@@ -44,7 +44,8 @@
       sec.appendChild(el('h2', '', host.getAttribute('data-heading') || HEAD[key]));
       sec.appendChild(el('div', 'ipr-stars', '★★★★★'));
       var s = data[key] && data[key].summary;
-      sec.appendChild(el('p', 'ipr-sub', s ? s.rating + ' stars from ' + s.count + ' reviews on Airbnb' : Math.floor(Math.min.apply(null, ratings) * 10) / 10 + '+ stars across our Airbnb stays'));
+      if (!s) { var all = Object.keys(data).map(function (k) { return data[k].summary; }), n = 0, sum = 0; all.forEach(function (x) { n += x.count; sum += x.count * parseFloat(x.rating); }); s = { rating: (sum / n).toFixed(2), count: n }; }
+      sec.appendChild(el('p', 'ipr-sub', s.rating + ' stars from ' + s.count + ' reviews on Airbnb'));
       var wrap = el('div', 'ipr-wrap'), track = el('div', 'ipr-track');
       list.forEach(function (r, i) {
         var c = el('article', 'ipr-card'), h = el('div', 'ipr-head');
