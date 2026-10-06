@@ -1,7 +1,7 @@
 ---
 title: "Box Canyon Hike Near Indio: Sheep Hole Oasis Guide"
-date: 2026-10-26
-dateModified: 2026-10-26
+date: 2026-10-19
+dateModified: 2026-10-19
 metaDescription: "Box canyon hike Indio guide: how to reach Sheep Hole Oasis in Mecca Hills, trail length, 4WD notes, water, heat, flash flood safety, and what to pack."
 ogImage: /blog/images/box-canyon-mecca-hills-badlands-salton-sea-hero.webp
 heroImage: /blog/images/box-canyon-mecca-hills-badlands-salton-sea-hero.webp

@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs Air Museum: Tickets, Hours & What to See"
-date: 2026-10-19
-dateModified: 2026-10-19
+date: 2026-10-12
+dateModified: 2026-10-12
 metaDescription: "Palm Springs Air Museum tickets, hours, and what to see: air-conditioned hangars, warbird rides, Saturday cockpit sits, and how long to plan for a hot day."
 ogImage: /blog/images/palm-springs-air-museum-1.webp
 heroImage: /blog/images/palm-springs-air-museum-1.webp

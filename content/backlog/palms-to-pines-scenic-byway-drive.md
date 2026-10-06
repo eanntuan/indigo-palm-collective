@@ -1,7 +1,7 @@
 ---
 title: "Palms to Pines Scenic Byway: Highway 74 Drive Guide"
-date: 2026-11-23
-dateModified: 2026-11-23
+date: 2026-11-16
+dateModified: 2026-11-16
 metaDescription: "Palms to Pines Scenic Byway guide: the Highway 74 drive from Palm Desert to Idyllwild, with vista points, chain rules, fuel stops, and fall color tips."
 ogImage: /blog/images/palms-to-pines-1.webp
 heroImage: /blog/images/palms-to-pines-1.webp

@@ -1,7 +1,7 @@
 ---
 title: "Best Ice Cream in Palm Springs and Coachella Valley"
-date: 2026-11-02
-dateModified: 2026-11-02
+date: 2026-10-26
+dateModified: 2026-10-26
 metaDescription: "Best ice cream in Palm Springs and the Coachella Valley: date shakes in Indio, gelato downtown, late-night scoops, plus kid and heat tips by city."
 ogImage: /blog/images/shields-date-garden.webp
 heroImage: /blog/images/shields-date-garden.webp

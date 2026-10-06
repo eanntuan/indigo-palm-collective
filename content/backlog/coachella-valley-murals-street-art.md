@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs Murals and Coachella Valley Street Art Route"
-date: 2026-12-28
-dateModified: 2026-12-28
+date: 2026-12-21
+dateModified: 2026-12-21
 metaDescription: "Palm Springs murals and Coachella Valley street art on a self-guided route: Coachella, Indio, Palm Desert, Desert Hot Springs, with parking and light tips."
 ogImage: /blog/images/indio-sign-miles-ave.webp
 heroImage: /blog/images/indio-sign-miles-ave.webp

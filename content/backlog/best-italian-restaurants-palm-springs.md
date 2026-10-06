@@ -1,7 +1,7 @@
 ---
 title: "Best Italian Restaurants in Palm Springs and the Valley"
-date: 2026-11-16
-dateModified: 2026-11-16
+date: 2026-11-09
+dateModified: 2026-11-09
 metaDescription: "Best Italian restaurants in Palm Springs and the Coachella Valley: red sauce classics, wood-oven pizza, patios, and group dinners, plus what to book ahead."
 ogImage: /blog/images/palm-desert-restaurant-patio.webp
 heroImage: /blog/images/palm-desert-restaurant-patio.webp

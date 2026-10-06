@@ -1,7 +1,7 @@
 ---
 title: "Thrift Stores Palm Springs & Vintage Shops: Local Guide"
-date: 2026-12-14
-dateModified: 2026-12-14
+date: 2026-12-07
+dateModified: 2026-12-07
 metaDescription: "Thrift stores in Palm Springs, plus vintage shops and consignment in Palm Desert: where to find midcentury furniture and how to get it home."
 ogImage: /blog/images/palm-springs-mcm-neighborhood.webp
 heroImage: /blog/images/palm-springs-mcm-neighborhood.webp

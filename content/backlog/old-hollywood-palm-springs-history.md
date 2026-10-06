@@ -1,7 +1,7 @@
 ---
 title: "Old Hollywood Palm Springs: History and Where to See It"
-date: 2026-11-30
-dateModified: 2026-11-30
+date: 2026-11-23
+dateModified: 2026-11-23
 metaDescription: "Old Hollywood Palm Springs history: why studio stars came, the Racquet Club and Sinatra's Twin Palms, plus the tours and hotels you can visit today."
 ogImage: /blog/images/palm-springs-mcm-neighborhood.webp
 heroImage: /blog/images/palm-springs-mcm-neighborhood.webp

@@ -1,7 +1,7 @@
 ---
 title: "Best Mexican Restaurants Palm Springs & Coachella Valley"
-date: 2026-10-12
-dateModified: 2026-10-12
+date: 2026-10-06
+dateModified: 2026-10-06
 metaDescription: "Best Mexican restaurants in Palm Springs and the Coachella Valley, city by city: Indio taquerias, a Michelin-listed spot, and a 1973 hacienda."
 ogImage: /blog/images/one-stop-taco-shop.webp
 heroImage: /blog/images/one-stop-taco-shop.webp

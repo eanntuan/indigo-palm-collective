@@ -1,7 +1,7 @@
 ---
 title: "Pickleball Coachella Valley: Where to Play, Free to Paid"
-date: 2026-12-07
-dateModified: 2026-12-07
+date: 2026-11-30
+dateModified: 2026-11-30
 metaDescription: "Pickleball Coachella Valley guide: public courts in Palm Springs and Indio, hotel courts with paid play, drop-in etiquette, and summer heat timing."
 ogImage: /blog/images/indian-palms-lifestyle-center.webp
 heroImage: /blog/images/indian-palms-lifestyle-center.webp

@@ -1,7 +1,7 @@
 ---
 title: "Best Wine Bars in Palm Springs: A Date Night Guide 2026"
-date: 2026-11-09
-dateModified: 2026-11-09
+date: 2026-11-02
+dateModified: 2026-11-02
 metaDescription: "Wine bars Palm Springs locals book: Canopy, Counter Reformation, V Wine Lounge, Ash & Vine and La Fe in Palm Desert, with hours and date night tips."
 ogImage: /blog/images/wine-bars-palm-springs-5.webp
 heroImage: /blog/images/wine-bars-palm-springs-5.webp

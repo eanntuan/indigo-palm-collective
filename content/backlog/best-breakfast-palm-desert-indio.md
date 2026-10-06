@@ -1,7 +1,7 @@
 ---
 title: "Best Breakfast Palm Desert & Indio: Where to Eat Early"
-date: 2026-12-21
-dateModified: 2026-12-21
+date: 2026-12-14
+dateModified: 2026-12-14
 metaDescription: "Best breakfast Palm Desert and Indio, from a 1957 diner counter to an all-night Highway 111 booth. Early openers, brunch waits, and festival-morning picks."
 ogImage: /blog/images/palm-desert-restaurant-patio.webp
 heroImage: /blog/images/palm-desert-restaurant-patio.webp
