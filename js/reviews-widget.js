@@ -1,6 +1,7 @@
 (function () {
   var CORAL = '#FF385C';
   var css = '.ipr{background:#0B0F3B;color:#fff;padding:56px 0 64px;text-align:center;font-family:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}'
+  + '.ipr.ipr-clear{background:transparent}'
   + '.ipr *{box-sizing:border-box}'
   + '.ipr h2{font-family:"Jost",system-ui,sans-serif;font-weight:500;font-size:clamp(26px,3.6vw,46px);line-height:1.15;color:' + CORAL + ';margin:0 16px 22px;letter-spacing:.2px}'
   + '.ipr-bigstars{display:flex;justify-content:center;gap:4px}'
@@ -77,7 +78,7 @@
       if (!list.length) return;
       list.sort(function (a, b) { return b.date.localeCompare(a.date); });
       list = list.slice(0, 12);
-      var sec = el('section', 'ipr');
+      var sec = el('section', 'ipr' + (host.hasAttribute('data-transparent') ? ' ipr-clear' : ''));
       sec.setAttribute('aria-label', 'Guest reviews');
       sec.appendChild(el('h2', '', host.getAttribute('data-heading') || HEAD[key]));
       var bs = stars(5, 'ipr-bigstars'); bs.setAttribute('role', 'img'); bs.setAttribute('aria-label', '5 out of 5 stars'); sec.appendChild(bs);
