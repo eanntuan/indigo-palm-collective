@@ -69,9 +69,6 @@
         .cta-section p { font-size: 1rem; color: #555; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
         .cta-button { display: inline-block; padding: 1rem 2.5rem; background-color: var(--teal); color: white; text-decoration: none; font-weight: 500; letter-spacing: 1.5px; font-size: 0.9rem; transition: background 0.3s; }
         .cta-button:hover { background-color: var(--teal-dark); }
-        footer { background-color: var(--charcoal); color: white; padding: 4rem 5%; text-align: center; }
-        footer .logo { font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1rem; letter-spacing: 1px; }
-        footer p { font-size: 0.9rem; opacity: 0.7; margin-top: 2rem; }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
             .hero { height: 50vh; padding: 2rem 5%; }
@@ -89,6 +86,16 @@
         #lightbox-prev, #lightbox-next { position: absolute; top: 50%; transform: translateY(-50%); color: #fff; font-size: 3rem; cursor: pointer; opacity: 0.7; padding: 0 1.5rem; user-select: none; }
         #lightbox-prev { left: 0; } #lightbox-next { right: 0; }
         #lightbox-prev:hover, #lightbox-next:hover { opacity: 1; }
+
+        /* Footer (matches main property page) */
+        footer { background: var(--cream); color: var(--charcoal); border-top: 1px solid #e8ddd0; padding: 3rem 5%; text-align: center; }
+        footer .logo { font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1rem; letter-spacing: 1px; }
+        footer p { font-size: 0.9rem; opacity: 0.7; margin-top: 2rem; }
+        .contact-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+        .contact-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 2rem; border-radius: 4px; font-weight: 600; font-size: 1rem; text-decoration: none; transition: opacity 0.2s; }
+        .contact-btn:hover { opacity: 0.85; }
+        .contact-btn.email { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
+        .contact-btn.instagram { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
 </head>
@@ -115,14 +122,40 @@
     </section>
 
     <div class="photo-grid">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0060.webp" alt="Cozy Cactus open-concept living room with gray linen sofas, kilim rug, built-in TV, and ceiling fan" loading="lazy" decoding="async" width="800" height="533">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0045.webp" alt="Cozy Cactus living room TV built-in niche with white cabinets, gold deer figurine, and trailing pothos" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0050.webp" alt="Cozy Cactus living room TV niche close-up with white built-in cabinets and gold hardware" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0070.webp" alt="Cozy Cactus dining area with round white table, tan leather chairs, gold round mirror, and foosball table" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0063.webp" alt="Cozy Cactus foosball table close-up with round dining table and leather chairs in background" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0067.webp" alt="Cozy Cactus game room with foosball table, abstract diptych art, and fiddle leaf tree" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0080.webp" alt="Cozy Cactus entry area with tile-top bench, gold round wall sconce, abstract art, and entry rug" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0085.webp" alt="Cozy Cactus wall detail with Joshua Tree desert landscape print and gold round mirror" loading="lazy" decoding="async" width="800" height="533">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0060.webp" alt="Cozy Cactus open-concept living room with gray linen sofas, kilim rug, built-in TV, and ceiling fan" loading="lazy" decoding="async" width="1201" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0041.webp" alt="Cozy Cactus open living room with gray sofas, built-in TV, and macrame wall hanging" loading="lazy" decoding="async" width="1800" height="1200">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0042.webp" alt="Cozy Cactus living room and foosball table from the dining side with abstract art and ceiling fans" loading="lazy" decoding="async" width="1800" height="1200">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0081.webp" alt="Cozy Cactus wide view of the living room with white sofas, kilim rug, and foosball table beyond" loading="lazy" decoding="async" width="1800" height="979">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0061.webp" alt="Cozy Cactus game room with foosball table, fiddle leaf tree, and abstract art next to the dining area" loading="lazy" decoding="async" width="1800" height="1202">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0062.webp" alt="Cozy Cactus foosball table and dining nook seen from the entry bench with a gold round mirror" loading="lazy" decoding="async" width="1800" height="1200">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0066.webp" alt="Cozy Cactus foosball table, abstract diptych art, and round dining table under the ceiling fan" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0072.webp" alt="Cozy Cactus game room with foosball table on a jute rug and two framed abstract prints" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0067.webp" alt="Cozy Cactus game room with foosball table, abstract diptych art, and fiddle leaf tree" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0068.webp" alt="Cozy Cactus framed abstract prints above the foosball table" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0070.webp" alt="Cozy Cactus dining area with round white table, tan leather chairs, gold round mirror, and foosball table" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0071.webp" alt="Cozy Cactus round dining table with two tan leather chairs under a large gold mirror" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0063.webp" alt="Cozy Cactus foosball table close-up with round dining table and leather chairs in background" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0065.webp" alt="Cozy Cactus round marble-top dining table with a coffee table book and leather chairs" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0087.webp" alt="Cozy Cactus foosball table close-up with fiddle leaf tree and abstract art" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0045.webp" alt="Cozy Cactus living room TV built-in niche with white cabinets, gold deer figurine, and trailing pothos" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0050.webp" alt="Cozy Cactus living room TV niche close-up with white built-in cabinets and gold hardware" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0043.webp" alt="Cozy Cactus macrame wall hanging above a walnut credenza with styled books and a green glass vase" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0053.webp" alt="Cozy Cactus walnut chevron credenza with macrame wall hanging, travel books, and a gold cactus" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0055.webp" alt="Cozy Cactus credenza styling with coffee table books, green glass vase, and a gold cactus" loading="lazy" decoding="async" width="1800" height="1200">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0047.webp" alt="Cozy Cactus gray sofa with teal chevron and kilim pillows below two abstract prints and a fiddle leaf tree" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0048.webp" alt="Cozy Cactus gray sofa with teal and mustard throw pillows and a fiddle leaf tree" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0049.webp" alt="Cozy Cactus sofa corner with patterned pillows and the foosball table behind" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0052.webp" alt="Cozy Cactus potted plant on a round gold side table next to the sofa" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0046.webp" alt="Cozy Cactus teal metal plant stand and potted palm by the front door" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0073.webp" alt="Cozy Cactus entry bench with a monstera plant and brass frame by the front door" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0077.webp" alt="Cozy Cactus entry bench and gold wall sconce with the living room beyond" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0079.webp" alt="Cozy Cactus upholstered entry bench with brass legs and a patterned entry rug" loading="lazy" decoding="async" width="1800" height="1200">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0080.webp" alt="Cozy Cactus entry area with tile-top bench, gold round wall sconce, abstract art, and entry rug" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0084.webp" alt="Cozy Cactus Hello Sunshine doormat and geometric entry rug inside the front door" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0082.webp" alt="Cozy Cactus Hello Sunshine coir doormat with teal border at the front step" loading="lazy" decoding="async" width="1800" height="1200">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0085.webp" alt="Cozy Cactus wall detail with Joshua Tree desert landscape print and gold round mirror" loading="lazy" decoding="async" width="1800" height="1303">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0088.webp" alt="Cozy Cactus illustrated house guide poster on a wooden hanger above a glass tray and guestbook" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0090.webp" alt="Cozy Cactus Be My Guest guestbook and glass tray in the entry area" loading="lazy" decoding="async" width="1200" height="1800">
     </div>
 
     
@@ -140,13 +173,28 @@
         <a href="/cozy-cactus/" class="cta-button">VIEW COZY CACTUS</a>
     </section>
 
-    <footer>
-        <div class="logo">Indigo Palm Collective</div>
-        <p>&copy; 2026 Indigo Palm Collective. Desert homes across Coachella Valley.</p>
-        <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.6;">Photography by <a href="https://www.thirdwallphoto.com/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Third Wall Photography</a>
-            &nbsp;&middot;&nbsp;
-            Styling by <a href="https://theolivejar.co" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">The Olive Jar</a></p>
-    </footer>
+    <footer id="contact">
+            <div class="footer-content">
+                <div class="logo">Indigo Palm Collective</div>
+                <p class="tagline">Four desert homes. Each one is different on purpose.</p>
+                <div class="contact-links" style="margin: 1.5rem 0;">
+                    <a href="mailto:indigopalmco@gmail.com" class="contact-btn email" onclick="window.gtag&&gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Footer'});">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        indigopalmco@gmail.com
+                    </a>
+                    <a href="https://www.instagram.com/_indigopalmco/" target="_blank" rel="noopener noreferrer" class="contact-btn instagram" onclick="window.gtag&&gtag('event', 'social_click', {'event_category': 'Contact', 'event_label': 'Footer Instagram'});">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        @indigopalmco
+                    </a>
+                    <a href="https://www.pinterest.com/indigopalmco/" target="_blank" rel="noopener noreferrer" class="contact-btn instagram" onclick="window.gtag&&gtag('event', 'social_click', {'event_category': 'Contact', 'event_label': 'Footer Pinterest'});">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                        Pinterest
+                    </a>
+                </div>
+                <p style="font-size: 0.9rem; color: #555;">&copy; 2026 Indigo Palm Collective. Desert homes across Coachella Valley.</p>
+                <p style="margin-top: 0.75rem; font-size: 0.85rem; color: #666;">Photography by <a href="https://www.thirdwallphoto.com/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Third Wall Photography</a> &nbsp;&middot;&nbsp; Styling by <a href="https://theolivejar.co" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">The Olive Jar</a></p>
+            </div>
+        </footer>
 
     <script>
     (function() {

@@ -176,7 +176,7 @@ relatedPosts:
 
 <h2>1. Andreas Canyon (Easy)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> 1.2 mi loop &nbsp;|&nbsp; <strong>Elevation gain:</strong> 177 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Easy &nbsp;|&nbsp; <strong>Fee:</strong> $12/adult (Indian Canyons entry) &nbsp;|&nbsp; <strong>Dogs:</strong> No
 </div>
 
@@ -190,7 +190,7 @@ relatedPosts:
 
 <h2>2. Palm Canyon (Easy to Moderate)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> ~4 mi out-and-back (extendable) &nbsp;|&nbsp; <strong>Elevation gain:</strong> 226 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Easy-Moderate &nbsp;|&nbsp; <strong>Fee:</strong> $12/adult &nbsp;|&nbsp; <strong>Dogs:</strong> No
 </div>
 
@@ -205,7 +205,7 @@ relatedPosts:
 
 <h2>3. Murray Canyon and the Seven Sisters Waterfall (Moderate)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> 3.7 mi out-and-back &nbsp;|&nbsp; <strong>Elevation gain:</strong> 450 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> $12/adult &nbsp;|&nbsp; <strong>Dogs:</strong> No
 </div>
 
@@ -221,7 +221,7 @@ relatedPosts:
 
 <h2>4. Tahquitz Canyon (Moderate, Guided)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> 2.0 mi loop &nbsp;|&nbsp; <strong>Elevation gain:</strong> 321 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> $15/adult, $7 ages 6-12 &nbsp;|&nbsp; <strong>Dogs:</strong> No
 </div>
 
@@ -236,7 +236,7 @@ relatedPosts:
 
 <h2>5. North Lykken Trail (Hard)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> 4.5 mi out-and-back &nbsp;|&nbsp; <strong>Elevation gain:</strong> 1,755 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Hard &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> Yes, on leash
 </div>
 
@@ -246,7 +246,7 @@ relatedPosts:
 
 <h2>6. Bump and Grind Trail (Moderate)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> 4.1 mi loop &nbsp;|&nbsp; <strong>Elevation gain:</strong> 1,105 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> No
 </div>
 
@@ -259,7 +259,7 @@ relatedPosts:
 
 <h2>7. Desert View Trail at the Tram (Easy)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> ~1.5 mi loop &nbsp;|&nbsp; <strong>Elevation gain:</strong> ~200 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Easy &nbsp;|&nbsp; <strong>Fee:</strong> ~$37/adult (tram ticket) &nbsp;|&nbsp; <strong>Dogs:</strong> No
 </div>
 
@@ -269,7 +269,7 @@ relatedPosts:
 
 <h2>8. San Jacinto Peak via the Tram (Strenuous)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> 11 mi out-and-back from tram station &nbsp;|&nbsp; <strong>Elevation gain:</strong> 2,620 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Strenuous &nbsp;|&nbsp; <strong>Fee:</strong> ~$37/adult (tram) + free wilderness permit &nbsp;|&nbsp; <strong>Dogs:</strong> No (state park wilderness)
 </div>
 
@@ -282,7 +282,7 @@ relatedPosts:
 
 <h2>9. East Indio Hills Badlands (Moderate)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> 5.1 mi loop &nbsp;|&nbsp; <strong>Elevation gain:</strong> 764 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> Yes, on leash
 </div>
 
@@ -296,7 +296,7 @@ relatedPosts:
 
 <h2>10. Chuckwalla Trail, Rancho Mirage (Moderate)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> ~2.1 mi loop &nbsp;|&nbsp; <strong>Elevation gain:</strong> ~200-400 ft (sources vary) &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> Check current signage
 </div>
 
@@ -306,7 +306,7 @@ relatedPosts:
 
 <h2>11. Art Smith Trail (Hard)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> 15.9 mi out-and-back (shorter turnarounds possible) &nbsp;|&nbsp; <strong>Elevation gain:</strong> 3,323 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Hard &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> No
 </div>
 
@@ -316,7 +316,7 @@ relatedPosts:
 
 <h2>12. Cathedral Canyon Trail (Moderate)</h2>
 
-<div style="background:#f5f0eb;border-left:3px solid #c8a97a;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> ~1.9 mi one-way (10.6 mi loop with Dunn Road Connector) &nbsp;|&nbsp; <strong>Elevation gain:</strong> Steep in sections (the connector segment loses over 1,000 ft one direction; 2,312 ft for the full loop) &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> Policy unclear, ask locally
 </div>
 

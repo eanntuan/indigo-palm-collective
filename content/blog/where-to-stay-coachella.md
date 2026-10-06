@@ -204,7 +204,7 @@ faqItems:
 <h4>When do Coachella 2027 vacation rentals go on sale?</h4>
 <p>Most private rentals don't have a formal sale date. Hosts list when they're ready, typically August to October 2026 for April 2027. Indian Palms properties with private pools and solid reviews are usually claimed by November or December, well before the January lineup announcement. Book the location first. You can adjust dates once the schedule is out.</p>
 
-<div style="background: #fff8e7; border-left: 3px solid #B67550; padding: 1.2rem 1.5rem; margin: 2rem 0; border-radius: 0 6px 6px 0;">
+<div style="background: #fff8e7; padding: 1.2rem 1.5rem; margin: 2rem 0; border-radius: 0 6px 6px 0;">
 <p style="margin-top: 0;"><strong>Book direct and skip Airbnb's 20% service fee.</strong> Same Superhost homes, direct contact with us, no platform markup.</p>
 <p><a href="/cozy-cactus/"><strong>The Cozy Cactus</strong></a>: 3BR/2BA, sleeps 8, private hot tub, game room, community pool<br><a href="/terra-luz/"><strong>Terra Luz</strong></a>: 3BR/2BA, sleeps 8, private saltwater pool, dog-friendly, Cuban-inspired design</p>
 <p style="margin-bottom: 0;">Both are in Indian Palms, Indio, walking distance to the Empire Polo Club.</p>

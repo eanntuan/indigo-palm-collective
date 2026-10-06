@@ -186,7 +186,7 @@ faqItems:
 
 <p>If you're in Indian Palms, yes, and it's worth planning around. The mid-afternoon heat window (roughly 2-5pm) is when the day programming slows and temperatures peak. Groups staying close to the grounds regularly go back to the rental for a pool break, then return for the evening sets. It only makes sense if your rental is genuinely close, which is one of the main reasons proximity matters more than property size for a Stagecoach rental.</p>
 
-<div style="background: #fff8e7; border-left: 3px solid #B67550; padding: 1.2rem 1.5rem; margin: 2rem 0; border-radius: 0 6px 6px 0;">
+<div style="background: #fff8e7; padding: 1.2rem 1.5rem; margin: 2rem 0; border-radius: 0 6px 6px 0;">
 <p style="margin-top: 0;"><strong>Book direct and skip Airbnb's 20% service fee.</strong> Same Superhost homes, direct contact with us, no platform markup.</p>
 <p><a href="/cozy-cactus/"><strong>The Cozy Cactus</strong></a>: 3BR/2BA, sleeps 8, private hot tub, game room, community pool<br><a href="/terra-luz/"><strong>Terra Luz</strong></a>: 3BR/2BA, sleeps 8, private saltwater pool, dog-friendly, Cuban-inspired design</p>
 <p style="margin-bottom: 0;">Both are in Indian Palms, Indio, walking distance to the Empire Polo Club.</p>

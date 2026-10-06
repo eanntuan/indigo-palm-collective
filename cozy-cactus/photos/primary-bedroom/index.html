@@ -69,9 +69,6 @@
         .cta-section p { font-size: 1rem; color: #555; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
         .cta-button { display: inline-block; padding: 1rem 2.5rem; background-color: var(--teal); color: white; text-decoration: none; font-weight: 500; letter-spacing: 1.5px; font-size: 0.9rem; transition: background 0.3s; }
         .cta-button:hover { background-color: var(--teal-dark); }
-        footer { background-color: var(--charcoal); color: white; padding: 4rem 5%; text-align: center; }
-        footer .logo { font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1rem; letter-spacing: 1px; }
-        footer p { font-size: 0.9rem; opacity: 0.7; margin-top: 2rem; }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
             .hero { height: 50vh; padding: 2rem 5%; }
@@ -89,6 +86,16 @@
         #lightbox-prev, #lightbox-next { position: absolute; top: 50%; transform: translateY(-50%); color: #fff; font-size: 3rem; cursor: pointer; opacity: 0.7; padding: 0 1.5rem; user-select: none; }
         #lightbox-prev { left: 0; } #lightbox-next { right: 0; }
         #lightbox-prev:hover, #lightbox-next:hover { opacity: 1; }
+
+        /* Footer (matches main property page) */
+        footer { background: var(--cream); color: var(--charcoal); border-top: 1px solid #e8ddd0; padding: 3rem 5%; text-align: center; }
+        footer .logo { font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1rem; letter-spacing: 1px; }
+        footer p { font-size: 0.9rem; opacity: 0.7; margin-top: 2rem; }
+        .contact-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+        .contact-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 2rem; border-radius: 4px; font-weight: 600; font-size: 1rem; text-decoration: none; transition: opacity 0.2s; }
+        .contact-btn:hover { opacity: 0.85; }
+        .contact-btn.email { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
+        .contact-btn.instagram { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
 </head>
@@ -115,13 +122,29 @@
     </section>
 
     <div class="photo-grid">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0095.webp" alt="Cozy Cactus primary bedroom wide view with pink accent wall, green velvet king headboard, macrame art, and en-suite bathroom" loading="lazy" decoding="async" width="800" height="533">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0100.webp" alt="Cozy Cactus primary bedroom sitting area with two green velvet chairs, floral pillows, and mustard knit pouf" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0105.webp" alt="Green velvet chair with floral navy pillow and pink tassel detail in Cozy Cactus primary bedroom" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0110.webp" alt="Cozy Cactus primary bedroom nightstand with gold lamp, pink accent wall, and fiddle leaf fig" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0115.webp" alt="Cozy Cactus primary bedroom sitting area with green velvet chair and navy graphic wallpaper closet detail" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0120.webp" alt="Green velvet chair detail with navy botanical graphic wallpaper and hanging plant in Cozy Cactus" loading="lazy" decoding="async" width="533" height="800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0090.webp" alt="Printworks Be My Guest guestbook and glass tray on nightstand at Cozy Cactus Indio vacation rental" loading="lazy" decoding="async" width="533" height="800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0095.webp" alt="Cozy Cactus primary bedroom wide view with pink accent wall, green velvet king headboard, macrame art, and en-suite bathroom" loading="lazy" decoding="async" width="1800" height="1200">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0094.webp" alt="Cozy Cactus primary bedroom with pink accent wall, green velvet king headboard, and sitting area by the patio doors" loading="lazy" decoding="async" width="1800" height="1200">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0096.webp" alt="Cozy Cactus primary bedroom mirrored closet doors reflecting the bed and green velvet chair" loading="lazy" decoding="async" width="1800" height="1331">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0097.webp" alt="Cozy Cactus primary bedroom sliding closet with built-in shelving, mirror doors, and mustard pouf" loading="lazy" decoding="async" width="1800" height="1331">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0098.webp" alt="Cozy Cactus green velvet chair and mustard knit pouf by the sliding patio door in the primary bedroom" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0100.webp" alt="Cozy Cactus primary bedroom sitting area with two green velvet chairs, floral pillows, and mustard knit pouf" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0101.webp" alt="Cozy Cactus primary bedroom macrame hammock art over the green velvet headboard with a long striped pillow" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0103.webp" alt="Cozy Cactus primary bed with green velvet headboard, white bedding, mustard throw, and bedside lamp" loading="lazy" decoding="async" width="1800" height="1200">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0104.webp" alt="Cozy Cactus macrame hammock wall art, pink wall, and mustard throw on the primary bed" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0102.webp" alt="Cozy Cactus white nightstand with gold lamp beside the primary bed and mustard quilt" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0099.webp" alt="Cozy Cactus primary bedroom open closet with woven baskets, shelving, and luggage rack" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0105.webp" alt="Green velvet chair with floral navy pillow and pink tassel detail in Cozy Cactus primary bedroom" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0106.webp" alt="Cozy Cactus round brass mirror above a black dresser with abstract art and a woven runner" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0110.webp" alt="Cozy Cactus primary bedroom nightstand with gold lamp, pink accent wall, and fiddle leaf fig" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0111.webp" alt="Cozy Cactus black dresser styled with abstract art, a woven runner, and small plants below a round mirror" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0112.webp" alt="Cozy Cactus round brass mirror reflecting the pink wall and macrame art in the primary bedroom" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0121.webp" alt="Cozy Cactus black dresser and round mirror at the foot of the primary bed" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0113.webp" alt="Cozy Cactus primary closet shelving with black vase, woven baskets, and navy graphic wallpaper" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0114.webp" alt="Cozy Cactus open primary closet with navy graphic wallpaper, baskets, and luggage rack" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0115.webp" alt="Cozy Cactus primary bedroom sitting area with green velvet chair and navy graphic wallpaper closet detail" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0117.webp" alt="Cozy Cactus closet nook with navy wallpaper, hanging planter, mustard flowers, and a black vase" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0120.webp" alt="Green velvet chair detail with navy botanical graphic wallpaper and hanging plant in Cozy Cactus" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/cozy-cactus/photos/CozyCactus2026-0126.webp" alt="Cozy Cactus framed botanical print trio by the primary bedroom door with the bed visible beyond" loading="lazy" decoding="async" width="1200" height="1800">
     </div>
 
     
@@ -139,13 +162,28 @@
         <a href="/cozy-cactus/" class="cta-button">VIEW COZY CACTUS</a>
     </section>
 
-    <footer>
-        <div class="logo">Indigo Palm Collective</div>
-        <p>&copy; 2026 Indigo Palm Collective. Desert homes across Coachella Valley.</p>
-        <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.6;">Photography by <a href="https://www.thirdwallphoto.com/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Third Wall Photography</a>
-            &nbsp;&middot;&nbsp;
-            Styling by <a href="https://theolivejar.co" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">The Olive Jar</a></p>
-    </footer>
+    <footer id="contact">
+            <div class="footer-content">
+                <div class="logo">Indigo Palm Collective</div>
+                <p class="tagline">Four desert homes. Each one is different on purpose.</p>
+                <div class="contact-links" style="margin: 1.5rem 0;">
+                    <a href="mailto:indigopalmco@gmail.com" class="contact-btn email" onclick="window.gtag&&gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Footer'});">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        indigopalmco@gmail.com
+                    </a>
+                    <a href="https://www.instagram.com/_indigopalmco/" target="_blank" rel="noopener noreferrer" class="contact-btn instagram" onclick="window.gtag&&gtag('event', 'social_click', {'event_category': 'Contact', 'event_label': 'Footer Instagram'});">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        @indigopalmco
+                    </a>
+                    <a href="https://www.pinterest.com/indigopalmco/" target="_blank" rel="noopener noreferrer" class="contact-btn instagram" onclick="window.gtag&&gtag('event', 'social_click', {'event_category': 'Contact', 'event_label': 'Footer Pinterest'});">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                        Pinterest
+                    </a>
+                </div>
+                <p style="font-size: 0.9rem; color: #555;">&copy; 2026 Indigo Palm Collective. Desert homes across Coachella Valley.</p>
+                <p style="margin-top: 0.75rem; font-size: 0.85rem; color: #666;">Photography by <a href="https://www.thirdwallphoto.com/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Third Wall Photography</a> &nbsp;&middot;&nbsp; Styling by <a href="https://theolivejar.co" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">The Olive Jar</a></p>
+            </div>
+        </footer>
 
     <script>
     (function() {
