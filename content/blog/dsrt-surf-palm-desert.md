@@ -3,9 +3,9 @@ title: "DSRT Surf Palm Desert: Prices, Hours + What to Know"
 date: 2026-10-06
 dateModified: 2026-10-06
 metaDescription: "DSRT Surf Palm Desert opened Sept 26. Learn-to-surf is $100 ($75 for locals), plus hours, wave levels, and how it compares to Palm Springs Surf Club."
-ogImage: /blog/images/pssc-wave-pool-reflection.webp
-heroImage: /blog/images/pssc-wave-pool-reflection.webp
-heroAlt: "A Wavegarden Cove surf lagoon at golden hour with mountains reflecting in still water, the same wave technology DSRT Surf uses in Palm Desert"
+ogImage: /blog/images/dsrt-surf-palm-desert-aerial.webp
+heroImage: /blog/images/dsrt-surf-palm-desert-aerial.webp
+heroAlt: "Aerial view of the DSRT Surf wave lagoon at Desert Willow Golf Resort in Palm Desert with the Santa Rosa Mountains behind it"
 keywords:
   - DSRT Surf Palm Desert
   - Palm Desert surf park
@@ -103,4 +103,4 @@ If you have $19,000 an hour lying around, you can rent the whole pool with left 
 
 <h2>Sources</h2>
 
-<p>Details come from <a href="https://thepalmdesertpost.com/dsrt-surf-opens-in-palm-desert-after-more-than-a-decade-of-development/" target="_blank" rel="noopener">The Palm Desert Post</a> (Sept. 28, 2026) and the <a href="https://desertoasisinsider.shop/blogs/things-to-do/dsrt-surf-palm-desert-development-tracker" target="_blank" rel="noopener">Desert Oasis Insider development tracker</a> (updated Sept. 27, 2026). Prices and hours can change fast in a soft opening, so confirm on the <a href="https://www.dsrtsurf.com/" target="_blank" rel="noopener">DSRT Surf site</a> before you book.</p>
+<p>Details come from <a href="https://thepalmdesertpost.com/dsrt-surf-opens-in-palm-desert-after-more-than-a-decade-of-development/" target="_blank" rel="noopener">The Palm Desert Post</a> (Sept. 28, 2026) and the <a href="https://desertoasisinsider.shop/blogs/things-to-do/dsrt-surf-palm-desert-development-tracker" target="_blank" rel="noopener">Desert Oasis Insider development tracker</a> (updated Sept. 27, 2026). Header photo: aerial of the DSRT Surf lagoon, courtesy of Wavegarden. Prices and hours can change fast in a soft opening, so confirm on the <a href="https://www.dsrtsurf.com/" target="_blank" rel="noopener">DSRT Surf site</a> before you book.</p>
