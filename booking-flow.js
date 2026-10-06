@@ -55,6 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
     readUrlParams();
 });
 
+// The Well is long-term only, so it is not offered in the booking form.
+const BOOKABLE = Object.values(PROPERTIES).filter(p => p.id !== 'the-well');
+const SLUG_ALIASES = { 'the-sundune': 'ps-retreat' };
+
 const PROPERTY_IMAGES = {
     'cozy-cactus': '/cozy-cactus/photos/CozyCactus2026-0004.webp',
     'terra-luz':   '/blog/images/terra-luz-pool-backyard.webp',
@@ -66,22 +70,44 @@ function renderPropertySelector() {
     const trigger = document.getElementById('property-trigger');
     const optionsEl = document.getElementById('property-options');
     const container = document.getElementById('property-selector');
+    const setOpen = open => {
+        container.classList.toggle('open', open);
+        trigger.setAttribute('aria-expanded', open);
+    };
+    const items = () => [...optionsEl.children];
+    const highlight = i => items().forEach((el, n) => el.classList.toggle('active', n === i));
 
-    Object.values(PROPERTIES).forEach(property => {
+    BOOKABLE.forEach(property => {
         const item = document.createElement('div');
         item.className = 'custom-option';
         item.dataset.value = property.id;
-        const img = PROPERTY_IMAGES[property.id] ? `<img src="${PROPERTY_IMAGES[property.id]}" alt="${property.name}" loading="lazy">` : '';
+        item.setAttribute('role', 'option');
+        const img = PROPERTY_IMAGES[property.id] ? `<img src="${PROPERTY_IMAGES[property.id]}" alt="" loading="lazy">` : '';
         item.innerHTML = `${img}<div class="custom-option-text"><span class="custom-option-name">${property.name}</span><span class="custom-option-meta">${property.bedrooms}BR/${property.bathrooms}BA &middot; ${property.minNights} night min</span></div>`;
         item.addEventListener('click', () => {
             selectProperty(property.id);
-            container.classList.remove('open');
+            setOpen(false);
+            trigger.focus();
         });
         optionsEl.appendChild(item);
     });
 
-    trigger.addEventListener('click', () => container.classList.toggle('open'));
-    document.addEventListener('click', e => { if (!container.contains(e.target)) container.classList.remove('open'); });
+    trigger.addEventListener('click', () => setOpen(!container.classList.contains('open')));
+    trigger.addEventListener('keydown', e => {
+        const open = container.classList.contains('open');
+        const cur = items().findIndex(el => el.classList.contains('active'));
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (!open) { setOpen(true); highlight(Math.max(items().findIndex(el => el.classList.contains('selected')), 0)); return; }
+            highlight((cur + (e.key === 'ArrowDown' ? 1 : -1) + items().length) % items().length);
+        } else if (e.key === 'Enter' && open && cur >= 0) {
+            e.preventDefault();
+            items()[cur].click();
+        } else if (e.key === 'Escape' || e.key === 'Tab') {
+            setOpen(false);
+        }
+    });
+    document.addEventListener('click', e => { if (!container.contains(e.target)) setOpen(false); });
 }
 
 function readUrlParams() {
@@ -91,11 +117,12 @@ function readUrlParams() {
     const pathSlug = bfIdx !== -1 ? pathParts[bfIdx + 1] : null;
 
     const params = new URLSearchParams(window.location.search);
-    const prop = pathSlug || params.get('property');
+    const raw = pathSlug || params.get('property');
+    const prop = SLUG_ALIASES[raw] || raw;
     const checkIn = params.get('checkIn');
     const checkOut = params.get('checkOut');
 
-    if (prop && PROPERTIES[prop]) {
+    if (prop && PROPERTIES[prop] && prop !== 'the-well') {
         selectProperty(prop);
     }
     if (checkIn) {
@@ -148,7 +175,7 @@ function selectProperty(propertyId) {
     // Update trigger to show selected property
     const trigger = document.getElementById('property-trigger');
     if (trigger) {
-        const img = PROPERTY_IMAGES[propertyId] ? `<img src="${PROPERTY_IMAGES[propertyId]}" alt="${selectedProperty.name}">` : '';
+        const img = PROPERTY_IMAGES[propertyId] ? `<img src="${PROPERTY_IMAGES[propertyId]}" alt="">` : '';
         trigger.innerHTML = `${img}<span>${selectedProperty.name}</span>`;
     }
     // Mark selected option

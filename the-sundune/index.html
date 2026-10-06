@@ -403,9 +403,32 @@
             display: flex;
             align-items: flex-end;
             padding: 4rem 5%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(110, 144, 173, 0.2);
+            z-index: 1;
+            pointer-events: none;
         }
 
         .hero-content {
+            position: relative;
+            z-index: 2;
             background: rgba(255, 255, 255, 0.95);
             padding: 3rem;
             max-width: 600px;
@@ -842,6 +865,19 @@
         .contact-btn.instagram { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
         </style>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "The Sundune, Palm Springs: living room, kitchen and primary bedroom",
+      "description": "A 16 second walk through The Sundune, a two-bedroom Palm Springs condo with three king beds, filmed by The Olive Jar.",
+      "thumbnailUrl": "https://indigopalm.co/the-sundune/photos/Sundune2026-0120.webp",
+      "uploadDate": "2026-10-06",
+      "duration": "PT16S",
+      "contentUrl": "https://indigopalm.co/the-sundune/video/sundune-hero.mp4"
+    }
+    </script>
+
     <!-- LodgingBusiness Structured Data -->
     <script type="application/ld+json">
     {
@@ -877,13 +913,29 @@
     }
     </script>
     <link rel="stylesheet" href="/css/cta-button.css">
+<link rel="stylesheet" href="/css/site-nav.css">
+<script src="/js/site-nav.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav class="ip-nav">
         <div class="container">
-            <a href="/" class="logo">Indigo Palm Collective</a>
-            <a href="/" class="back-link">← Back to Collection</a>
+            <a href="/" class="logo">
+                <span class="logo-text">Indigo Palm Collective</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/quiz/">Take the Quiz</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
     </nav>
 
@@ -901,6 +953,7 @@
 
     <!-- Hero Section -->
     <section class="hero" role="img" aria-label="The Sundune coastal-desert vacation condo ten minutes from downtown Palm Springs">
+        <video class="hero-video" muted loop playsinline preload="metadata" poster="/the-sundune/photos/Sundune2026-0120.webp" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
         <div class="hero-content">
             <div class="property-tag">COASTAL DESERT</div>
             <h1>The Sundune: Palm Springs Vacation Rental with 3 King Beds</h1>
@@ -1277,7 +1330,22 @@
 
     <!-- Footer -->
     <div data-reviews="the-sundune"></div>
-    <script src="/js/reviews-widget.js" defer></script>
+    <script>
+(function () {
+  var v = document.querySelector('.hero-video');
+  if (!v) return;
+  var c = navigator.connection || {};
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData || /^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) { v.remove(); return; }
+  var s = [['/the-sundune/video/sundune-hero-720.mp4', '(max-width: 800px)'], ['/the-sundune/video/sundune-hero.mp4']];
+  s.forEach(function (x) { var e = document.createElement('source'); e.src = x[0]; e.type = 'video/mp4'; if (x[1]) e.media = x[1]; v.appendChild(e); });
+  v.load();
+  var vis = true;
+  function sync() { if (vis && !document.hidden) v.play().catch(function () {}); else v.pause(); }
+  new IntersectionObserver(function (en) { vis = en[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v);
+  document.addEventListener('visibilitychange', sync);
+})();
+</script>
+<script src="/js/reviews-widget.js" defer></script>
 
     <footer id="contact">
         <div class="footer-content">

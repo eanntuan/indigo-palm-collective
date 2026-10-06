@@ -91,29 +91,6 @@
     }
 
     /* SITE NAV */
-    .site-nav {
-      background: var(--indigo-marine);
-      padding: 14px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .site-nav a {
-      color: rgba(255,255,255,0.75);
-      text-decoration: none;
-      font-size: 0.72rem;
-      letter-spacing: 2px;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
-    .site-nav .brand {
-      color: var(--white);
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.1rem;
-      font-weight: 400;
-      letter-spacing: 3px;
-    }
-
     /* HERO */
     .hero {
       background: var(--indigo-marine);
@@ -456,13 +433,31 @@
     }
   </style>
     <link rel="stylesheet" href="/css/cta-button.css">
+<link rel="stylesheet" href="/css/site-nav.css">
+<script src="/js/site-nav.js" defer></script>
 </head>
-<body>
+<body class="ip-nav-offset">
 
-<nav class="site-nav">
-  <a href="/" class="brand">Indigo Palm</a>
-  <a href="/the-sundune/">The Sundune</a>
-</nav>
+<nav class="ip-nav">
+        <div class="container">
+            <a href="/" class="logo">
+                <span class="logo-text">Indigo Palm Collective</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/quiz/">Take the Quiz</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
+        </div>
+    </nav>
 
 <header class="hero">
   <p class="eyebrow">The Sundune &bull; Palm Springs, CA</p>

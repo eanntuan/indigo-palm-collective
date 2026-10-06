@@ -408,11 +408,14 @@
             padding: 4rem 5%;
         }
 
-        .hero[role="img"] {
-            /* Accessibility for background image */
-        }
+        .hero { position: relative; overflow: hidden; }
+        .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease; z-index: 0; pointer-events: none; }
+        .hero-video.is-playing { opacity: 1; }
+        .hero.has-video::before { content: ""; position: absolute; inset: 0; background: rgba(0, 135, 123, 0.2); z-index: 1; pointer-events: none; }
 
         .hero-content {
+            position: relative;
+            z-index: 2;
             background: rgba(255, 255, 255, 0.95);
             padding: 3rem;
             max-width: 600px;
@@ -924,13 +927,60 @@
     }
     </script>
     <link rel="stylesheet" href="/css/cta-button.css">
+<link rel="stylesheet" href="/css/site-nav.css">
+<script src="/js/site-nav.js" defer></script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Cozy Cactus backyard putting green in Indio",
+      "description": "A slow pan across the Cozy Cactus backyard in Indio, California: the two-hole putting green, the painted block wall and the covered patio.",
+      "thumbnailUrl": "https://indigopalm.co/cozy-cactus/photos/CozyCactus2026-0004.webp",
+      "uploadDate": "2026-05-14",
+      "duration": "PT10S",
+      "contentUrl": "https://indigopalm.co/cozy-cactus/video/cozy-cactus-hero.mp4"
+    }
+    </script>
+<script>
+(function () {
+  var v = document.getElementById('heroVideo');
+  if (!v) return;
+  var c = navigator.connection || {};
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData || /^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) { v.remove(); return; }
+  function start() {
+    var small = matchMedia('(max-width: 800px)').matches;
+    v.src = small ? v.dataset.srcSmall : v.dataset.src;
+    v.addEventListener('playing', function () { v.classList.add('is-playing'); v.parentNode.classList.add('has-video'); }, { once: true });
+    var inView = true;
+    function sync() { if (inView && !document.hidden) v.play().catch(function () {}); else v.pause(); }
+    new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
+    document.addEventListener('visibilitychange', sync);
+    sync();
+  }
+  if (document.readyState === 'complete') start(); else addEventListener('load', start);
+})();
+</script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav class="ip-nav">
         <div class="container">
-            <a href="/" class="logo">Indigo Palm Collective</a>
-            <a href="/" class="back-link">← Back to Collection</a>
+            <a href="/" class="logo">
+                <span class="logo-text">Indigo Palm Collective</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/quiz/">Take the Quiz</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
     </nav>
 
@@ -948,6 +998,7 @@
 
     <!-- Hero Section -->
     <section class="hero" role="img" aria-label="Cozy Cactus vacation rental exterior in Indio California with community pool hot tub and desert mountain views">
+        <video class="hero-video" id="heroVideo" muted loop playsinline autoplay preload="metadata" poster="/cozy-cactus/photos/CozyCactus2026-0004.webp" aria-hidden="true" tabindex="-1" data-src="/cozy-cactus/video/cozy-cactus-hero.mp4" data-src-small="/cozy-cactus/video/cozy-cactus-hero-720.mp4"></video>
         <div class="hero-content">
             <div class="property-tag">FAMILY ADVENTURE</div>
             <h1>Cozy Cactus: Family Vacation Rental in Indio, CA</h1>

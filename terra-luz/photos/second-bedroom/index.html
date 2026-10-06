@@ -102,12 +102,28 @@
         }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
+<link rel="stylesheet" href="/css/site-nav.css">
+<script src="/js/site-nav.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav class="ip-nav">
         <div class="container">
-            <a href="/" class="logo">Indigo Palm Collective</a>
-            <a href="/terra-luz/" class="back-link">← Back to Terra Luz</a>
+            <a href="/" class="logo">
+                <span class="logo-text">Indigo Palm Collective</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/quiz/">Take the Quiz</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
     </nav>
 
@@ -133,6 +149,8 @@
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0370.webp" alt="Terra Luz wallpaper bedroom wide view showing jute rug, custom headboard wall, and full tropical wallpaper" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0560.webp" alt="Terra Luz wallpaper bedroom seating nook detail with woven sconce and checkerboard side table" loading="lazy" decoding="async" width="1024" height="707">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0561.webp" alt="Terra Luz wallpaper bedroom seating nook with two blue velvet chairs and Rebel Wall tropical wallpaper floor to ceiling" loading="lazy" decoding="async" width="880" height="1320">
+        <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0608.webp" alt="Terra Luz wallpaper bedroom with blue botanical wallpaper, king bed, and mustard pillow" loading="lazy" decoding="async" width="1800" height="1012">
+        <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0609.webp" alt="Terra Luz wallpaper bedroom reading corner with blue chairs, oval mirror, and orange robe on a wooden rack" loading="lazy" decoding="async" width="1800" height="1012">
     </div>
 
         <div id="lightbox" role="dialog" aria-modal="true">

@@ -849,21 +849,28 @@
         .email-form input[type="email"] {
             flex: 1;
             min-width: 250px;
-            padding: 1rem 1.5rem;
             border: 2px solid var(--terracotta);
-            border-radius: 0;
+            border-radius: 999px;
+            padding: 0 1.75rem;
+            height: 52px;
+            box-sizing: border-box;
             font-family: var(--font-sans);
             font-size: 1rem;
             background: white;
         }
 
-        .email-form input[type="email"]:focus {
-            outline: none;
+        .email-form input[type="email"]:focus,
+        .email-form button:focus-visible {
+            outline: 2px solid var(--charcoal);
+            outline-offset: 2px;
             border-color: var(--charcoal);
         }
 
         .email-form button {
-            padding: 1rem 3rem;
+            border-radius: 999px;
+            height: 52px;
+            box-sizing: border-box;
+            padding: 0 3rem;
             background-color: var(--terracotta);
             color: white;
             border: none;
@@ -2075,7 +2082,7 @@
         <div class="hero-content">
             <h1>Desert Vacation Rentals. Book Direct &amp; Save</h1>
             <p class="description">Four homes in the Coachella Valley. Each one different. Designed so the house just works and you don't have to think about it.</p>
-            <a href="#properties" class="cta-button">Find Your Property</a>
+            <a href="/booking-flow/" class="cta-button">Book Now</a>
             <p style="margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.75); letter-spacing: 0.03em;">4.97 stars across 300+ Airbnb reviews &nbsp;·&nbsp; Superhost</p>
         </div>
     </section>

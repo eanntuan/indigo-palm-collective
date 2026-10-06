@@ -102,12 +102,28 @@
         #lightbox-prev:hover, #lightbox-next:hover { opacity: 1; }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
+<link rel="stylesheet" href="/css/site-nav.css">
+<script src="/js/site-nav.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav class="ip-nav">
         <div class="container">
-            <a href="/" class="logo">Indigo Palm Collective</a>
-            <a href="/the-sundune/" class="back-link">← Back to The Sundune</a>
+            <a href="/" class="logo">
+                <span class="logo-text">Indigo Palm Collective</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/quiz/">Take the Quiz</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
     </nav>
 
@@ -145,6 +161,9 @@
         <img src="/the-sundune/photos/Sundune2026-0087.webp" alt="The Sundune Palm Springs primary bedroom desk by the window overlooking the pool and palm trees" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/the-sundune/photos/Sundune2026-0091.webp" alt="The Sundune Palm Springs primary bedroom desk with a laptop and a view of the community pool through the shutters" loading="lazy" decoding="async" width="1024" height="683">
         <img src="/the-sundune/photos/Sundune2026-0084.webp" alt="The Sundune Palm Springs primary bedroom desk with a pink lamp and hourglass on a wood tray, rust curtain behind" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/the-sundune/photos/Sundune2026-0300.webp" alt="The Sundune Palm Springs primary bedroom seen from the doorway with two king beds, wood longboard, and rust curtains" loading="lazy" decoding="async" width="1800" height="1013">
+        <img src="/the-sundune/photos/Sundune2026-0301.webp" alt="The Sundune Palm Springs primary bedroom king bed with knit throw, round wall light, and a standing mirror" loading="lazy" decoding="async" width="1800" height="1013">
+        <img src="/the-sundune/photos/Sundune2026-0302.webp" alt="The Sundune Palm Springs primary bedroom twin king beds with the surfboard above and a leafy plant beside the mirror" loading="lazy" decoding="async" width="1800" height="1013">
     </div>
 
     

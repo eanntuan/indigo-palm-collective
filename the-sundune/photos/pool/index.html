@@ -102,12 +102,28 @@
         #lightbox-prev:hover, #lightbox-next:hover { opacity: 1; }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
+<link rel="stylesheet" href="/css/site-nav.css">
+<script src="/js/site-nav.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav class="ip-nav">
         <div class="container">
-            <a href="/" class="logo">Indigo Palm Collective</a>
-            <a href="/the-sundune/" class="back-link">← Back to The Sundune</a>
+            <a href="/" class="logo">
+                <span class="logo-text">Indigo Palm Collective</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/quiz/">Take the Quiz</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
     </nav>
 
@@ -147,6 +163,7 @@
         <img src="/the-sundune/photos/Sundune2026-0259.webp" alt="The Sundune Palm Springs laptop on the balcony bar top beneath a hanging plant" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/the-sundune/photos/Sundune2026-0242.webp" alt="The Sundune Palm Springs washer and dryer behind louvered doors off the balcony" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/the-sundune/photos/Sundune2026-0292.webp" alt="The Sundune Palm Springs balcony at dusk with string lights and bar stools" loading="lazy" decoding="async" width="1024" height="1549">
+        <img src="/the-sundune/photos/Sundune2026-0299.webp" alt="The Sundune Palm Springs balcony bar stools against cement tile with string lights and palm trees beyond" loading="lazy" decoding="async" width="1800" height="1013">
     </div>
 
     

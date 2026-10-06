@@ -31,15 +31,7 @@ const EMAIL_TEMPLATE = `<!DOCTYPE html>
     <tr>
         <td style="padding: 40px 36px 0;">
             <h1 style="margin: 0 0 18px; font-family: Georgia, 'Times New Roman', serif; font-size: 26px; font-weight: 400; line-height: 1.35; color: #2C2C2C;">You're in. Welcome to our little corner of the desert.</h1>
-            <p style="margin: 0 0 12px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">I'm Eann. I own four vacation homes across the Coachella Valley, each one designed with a specific guest in mind:</p>
-            <ul style="margin: 0 0 14px; padding-left: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.9; color: #555;">
-                <li><a href="https://indigopalm.co/cozy-cactus/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-cozy-cactus" style="color: #B67550; text-decoration: none;">The Cozy Cactus</a> — built for families traveling with young kids</li>
-                <li><a href="https://indigopalm.co/terra-luz/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-terra-luz" style="color: #B67550; text-decoration: none;">Terra Luz</a> — Latin-inspired retreat with a Kahlo-blue pool and Old Havana warmth</li>
-                <li><a href="https://indigopalm.co/the-sundune/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-sundune" style="color: #B67550; text-decoration: none;">The Sundune</a> — two-bedroom in Palm Springs, 10 minutes from downtown</li>
-                <li><a href="https://indigopalm.co/the-well/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-the-well" style="color: #B67550; text-decoration: none;">The Well</a> — quiet one-bedroom for guests who need a real reset, minimum 28 nights</li>
-            </ul>
-            <p style="margin: 0 0 14px; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">Together they're Indigo Palm Collective. Four homes with four distinct personalities, owned and hosted by one person who answers messages.</p>
-            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">Expect to hear from me a few times a year: property news, last-minute deals, a restaurant worth the drive, a festival rental about to sell out. Short emails, always a reason to send them.</p>
+            <p style="margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7; color: #555;">My name is Eann, your neighborhood host of the Coachella Valley. Expect to hear from me a few times a year: property news, last-minute deals, a restaurant worth the drive, a festival rental about to sell out. The Indigo Palm Newsletter is your direct line and access point to exclusive content and deals. We can't wait to share all the goods with you! In the meantime, check out our <a href="https://indigopalm.co/?utm_source=newsletter&utm_medium=email&utm_campaign=welcome&utm_content=intro-portfolio#properties" style="color: #B67550; text-decoration: none;">portfolio of vacation homes in the desert</a>.</p>
         </td>
     </tr>
 
@@ -215,7 +207,7 @@ const EMAIL_TEMPLATE = `<!DOCTYPE html>
 </html>`;
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     if (request.method === 'OPTIONS') {
       return new Response(null, {
         headers: {
@@ -237,7 +229,7 @@ export default {
     try {
       const { email } = await request.json();
 
-      if (!email || !email.includes('@')) {
+      if (typeof email !== 'string' || email.length > 254 || !/^[^\s@<>"]+@[^\s@<>"]+\.[^\s@<>"]+$/.test(email)) {
         return new Response(JSON.stringify({
           success: false,
           error: 'Invalid email address'
@@ -247,11 +239,12 @@ export default {
         });
       }
 
-      saveToGoogleSheets(email, env).catch(err => console.error('Sheets save failed:', err));
+      const source = request.headers.get('Referer') || request.headers.get('Origin') || 'unknown';
+      ctx.waitUntil(saveToGoogleSheets(email, env).catch(err => console.error('Sheets save failed:', err)));
 
       await sendWelcomeEmail(email, env);
 
-      sendOwnerNotification(email, env).catch(err => console.error('Owner notification failed:', err));
+      ctx.waitUntil(sendOwnerNotification(email, source, env).catch(err => console.error('Owner notification failed:', err)));
 
       return new Response(JSON.stringify({
         success: true,
@@ -295,7 +288,7 @@ async function sendWelcomeEmail(email, env) {
   }
 }
 
-async function sendOwnerNotification(email, env) {
+async function sendOwnerNotification(email, source, env) {
   const response = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
@@ -305,8 +298,8 @@ async function sendOwnerNotification(email, env) {
     body: JSON.stringify({
       from: 'Indigo Palm Collective <hello@indigopalm.co>',
       to: ['indigopalmco@gmail.com'],
-      subject: `New signup: ${email}`,
-      html: `<p>New newsletter subscriber: <strong>${email}</strong></p>`,
+      subject: `New newsletter subscriber: ${email}`,
+      text: `New newsletter subscriber: ${email}\nSource: ${source}\nTime: ${new Date().toISOString()}`,
     }),
   });
   if (!response.ok) {

@@ -102,12 +102,28 @@
         }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
+<link rel="stylesheet" href="/css/site-nav.css">
+<script src="/js/site-nav.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav class="ip-nav">
         <div class="container">
-            <a href="/" class="logo">Indigo Palm Collective</a>
-            <a href="/terra-luz/" class="back-link">← Back to Terra Luz</a>
+            <a href="/" class="logo">
+                <span class="logo-text">Indigo Palm Collective</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/quiz/">Take the Quiz</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
     </nav>
 
@@ -145,6 +161,9 @@
         <img src="/terra-luz/photos/pool-patio/TerraLuz2026-0500.webp" alt="Terra Luz pool at twilight with string lights overhead and desert sky in Indio California" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/pool-patio/TerraLuz2026-0510.webp" alt="Terra Luz backyard at night with pool lit and string lights glowing across the patio" loading="lazy" decoding="async" width="1024" height="683">
         <img src="/terra-luz/photos/pool-patio/TerraLuz2026-0574.webp" alt="Terra Luz pool and patio wide view at dusk showing full outdoor living space" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/pool-patio/TerraLuz2026-0605.webp" alt="Terra Luz sliding glass door from the kitchen opening onto the patio with outdoor sectional" loading="lazy" decoding="async" width="1800" height="1012">
+        <img src="/terra-luz/photos/pool-patio/TerraLuz2026-0610.webp" alt="Terra Luz Frida-blue pool with tiled step and terracotta wall in daylight" loading="lazy" decoding="async" width="1800" height="1012">
+        <img src="/terra-luz/photos/pool-patio/TerraLuz2026-0611.webp" alt="Terra Luz pool with blue striped umbrella, white lounge chairs, and covered patio seating" loading="lazy" decoding="async" width="1800" height="1012">
     </div>
 
         <div id="lightbox" role="dialog" aria-modal="true">

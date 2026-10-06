@@ -1,0 +1,149 @@
+/* Shared site navigation. Mirrors the homepage (index.html) nav exactly; scoped to nav.ip-nav so page-level nav rules cannot leak in. */
+:where(nav.ip-nav, nav.ip-nav *) { margin: 0; padding: 0; box-sizing: border-box; }
+nav.ip-nav {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    display: block;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1.5rem 5%;
+    z-index: 1000;
+    border: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.6;
+    text-align: left;
+}
+nav.ip-nav .container {
+    max-width: 1400px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.ip-nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+}
+nav.ip-nav .logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+nav.ip-nav .logo:hover .logo-text { color: #B67550; }
+nav.ip-nav ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav.ip-nav li { list-style: none; margin: 0; padding: 0; font-size: inherit; color: inherit; }
+nav.ip-nav .logo, nav.ip-nav .logo-text { margin: 0; padding: 0; }
+nav.ip-nav a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+    letter-spacing: 0.5px;
+    text-transform: none;
+}
+nav.ip-nav a:hover { color: #B67550; }
+
+nav.ip-nav .mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+nav.ip-nav .mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+nav.ip-nav .mobile-menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(8px, 8px); }
+nav.ip-nav .mobile-menu-toggle.active span:nth-child(2) { opacity: 0; }
+nav.ip-nav .mobile-menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+
+nav.ip-nav .mobile-menu-close {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    z-index: 1001;
+    background: none;
+    border: none;
+}
+nav.ip-nav .mobile-menu-close::before,
+nav.ip-nav .mobile-menu-close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+nav.ip-nav .mobile-menu-close::before { transform: translate(-50%, -50%) rotate(45deg); }
+nav.ip-nav .mobile-menu-close::after { transform: translate(-50%, -50%) rotate(-45deg); }
+nav.ip-nav .mobile-menu-close:hover::before,
+nav.ip-nav .mobile-menu-close:hover::after { background-color: #B67550; }
+
+@media (max-width: 768px) {
+    nav.ip-nav { padding: 1rem 5%; }
+    nav.ip-nav .logo-text { font-size: 1.1rem; }
+    nav.ip-nav .mobile-menu-toggle { display: flex; }
+    nav.ip-nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 80%;
+        max-width: 300px;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        padding: 5rem 2rem;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: right 0.3s ease;
+    }
+    nav.ip-nav ul.active { right: 0; }
+    nav.ip-nav ul.active ~ .mobile-menu-close { display: block; }
+    nav.ip-nav .mobile-menu-close { position: fixed; }
+    nav.ip-nav ul li { border-bottom: 1px solid #F5F3EE; padding: 1.5rem 0; }
+    nav.ip-nav ul li:last-child { border-bottom: none; }
+    nav.ip-nav a { font-size: 1.1rem; display: block; }
+}
+
+/* Pages whose old nav was in-flow need room for the fixed nav. */
+body.ip-nav-offset { padding-top: 86px; }
+@media (max-width: 768px) { body.ip-nav-offset { padding-top: 76px; } }

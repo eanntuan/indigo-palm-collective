@@ -173,6 +173,7 @@
 
         /* Booking Form */
         .booking-form {
+            min-width: 0;
             background: white;
             border-radius: 12px;
             padding: 2.5rem;
@@ -211,13 +212,16 @@
             margin-left: 3px;
         }
 
-        .custom-select { position: relative; width: 100%; user-select: none; }
+        .custom-select { position: relative; width: 100%; -webkit-user-select: none; user-select: none; }
         .custom-select-trigger {
             display: flex; align-items: center; gap: 0.75rem;
             padding: 0.75rem 1rem; border: 2px solid #e0e0e0; border-radius: 8px;
             background: white; cursor: pointer; font-family: var(--font-sans);
             font-size: 0.95rem; color: #1a1a1a; transition: border-color 0.2s;
+            width: 100%; text-align: left; -webkit-appearance: none; appearance: none; touch-action: manipulation;
         }
+        .custom-select-trigger:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+        .custom-option.active { background: #faf8f5; }
         .custom-select-trigger:after {
             content: ''; margin-left: auto; flex-shrink: 0;
             width: 10px; height: 6px;
@@ -247,9 +251,10 @@
 
         .date-inputs {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
             gap: 1rem;
         }
+        .date-inputs input { min-width: 0; }
 
         input[type="date"],
         input[type="number"],
@@ -609,15 +614,30 @@
     </script>
     <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
+<link rel="stylesheet" href="/css/site-nav.css">
+<script src="/js/site-nav.js" defer></script>
 </head>
-<body>
-    <!-- Header -->
-    <div class="header">
-        <div class="header-content">
-            <a href="/" class="logo">Indigo Palm Collective</a>
-            <a href="/" class="back-link">← Back to Home</a>
+<body class="ip-nav-offset">
+    <nav class="ip-nav">
+        <div class="container">
+            <a href="/" class="logo">
+                <span class="logo-text">Indigo Palm Collective</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/quiz/">Take the Quiz</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
-    </div>
+    </nav>
 
     <!-- Property Hero -->
     <div class="booking-hero" id="booking-hero">
@@ -635,17 +655,17 @@
         <div class="booking-form">
             <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Book a Desert Vacation Rental | Indigo Palm Collective</h1>
             <h2>Request to Book</h2>
-            <p class="booking-intro">The desert has a way of doing something to people. It slows them down. Makes them look up. Makes them actually talk to the people they came with.<br><br>These houses were built around that idea. Rooms that feel like somewhere. Hot tubs under open sky. Mornings with nowhere to be.<br><br>Pick your property, send us your dates, and we'll take care of the rest. We'll be in touch within 24 hours.</p>
+            <p class="booking-intro">Pick your property, send us your dates, and we'll take care of the rest. We'll be in touch within 24 hours.</p>
 
             <form id="booking-form">
                 <!-- Property Selection -->
                 <div class="form-section">
-                    <label>Select Property</label>
+                    <label id="property-label">Select Property</label>
                     <div class="custom-select" id="property-selector">
-                        <div class="custom-select-trigger" id="property-trigger">
-                            <span class="trigger-placeholder">Select a property...</span>
-                        </div>
-                        <div class="custom-select-options" id="property-options"></div>
+                        <button type="button" class="custom-select-trigger" id="property-trigger" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="property-label property-trigger">
+                            <span class="trigger-placeholder">Select property</span>
+                        </button>
+                        <div class="custom-select-options" id="property-options" role="listbox" aria-labelledby="property-label"></div>
                     </div>
                 </div>
 
@@ -783,7 +803,7 @@
         </div>
     </div>
 
-    <script type="module" src="/booking-flow.js?v=3"></script>
+    <script type="module" src="/booking-flow.js?v=4"></script>
 
 <div id="agreement-overlay" role="dialog" aria-modal="true" aria-label="Rental Agreement">
   <div id="agreement-overlay-inner">

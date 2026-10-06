@@ -454,6 +454,27 @@
             padding-bottom: 4rem;
         }
 
+        .hero { position: relative; overflow: hidden; }
+        .hero-video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+        .hero-video.is-ready { opacity: 1; }
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(210, 99, 91, 0.2);
+            pointer-events: none;
+        }
+        .hero-content { position: relative; z-index: 1; }
+
         .hero-content {
             background: rgba(255, 255, 255, 0.95);
             padding: 3rem;
@@ -1004,18 +1025,35 @@
     }
     </script>
     <link rel="stylesheet" href="/css/cta-button.css">
+<link rel="stylesheet" href="/css/site-nav.css">
+<script src="/js/site-nav.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav class="ip-nav">
         <div class="container">
-            <a href="/" class="logo">Indigo Palm Collective</a>
-            <a href="/" class="back-link">← Back to Collection</a>
+            <a href="/" class="logo">
+                <span class="logo-text">Indigo Palm Collective</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="/#properties">Properties</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/quiz/">Take the Quiz</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
+        <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp" data-src-small="/terra-luz/video/terra-luz-hero-720.mp4" data-src="/terra-luz/video/terra-luz-hero.mp4"></video>
         <div class="hero-content">
             <div class="property-tag">LATIN CULTURE</div>
             <h1>Terra Luz: Latin Desert Vacation Rental near Coachella</h1>
@@ -1618,6 +1656,34 @@
   if (gallery && details && gallery.parentNode === details.parentNode) {
     details.parentNode.insertBefore(gallery, details);
   }
+})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"Terra Luz vacation rental tour, Indio CA","description":"A slow walk through the kitchen, primary bedroom, blue wallpaper bedroom and pool at Terra Luz, a Latin-inspired vacation rental in Indio, California.","thumbnailUrl":"https://indigopalm.co/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp","uploadDate":"2026-10-06","contentUrl":"https://indigopalm.co/terra-luz/video/terra-luz-hero.mp4","duration":"PT21S"}
+</script>
+<script>
+(function () {
+    var v = document.getElementById('heroVideo');
+    if (!v) return;
+    var c = navigator.connection || {};
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData || /^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) return;
+    var loaded = false, inView = true;
+    function sync() {
+        if (!loaded) return;
+        if (inView && !document.hidden) v.play().catch(function () {}); else v.pause();
+    }
+    function load() {
+        v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;
+        v.addEventListener('playing', function () { v.classList.add('is-ready'); }, { once: true });
+        loaded = true;
+        sync();
+    }
+    var start = function () { 'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 2500 }) : setTimeout(load, 1500); };
+    if (document.readyState === 'complete') start(); else addEventListener('load', start);
+    if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
+    }
+    document.addEventListener('visibilitychange', sync);
 })();
 </script>
 </body>
