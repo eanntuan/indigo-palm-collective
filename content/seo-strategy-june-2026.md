@@ -3009,3 +3009,17 @@ Targeted re-check only (last full inventory 2026-09-16, inside the 30-day window
 1. Rewrite title/meta on the Indio-to-Palm-Springs distance page for "how far is indio from palm springs" (queued below).
 2. Title/meta rewrites for `palm-springs-poolside-bars-resort-dining` and `bnp-paribas-open-palm-springs`.
 3. Eann: verify the 404 list in GSC and the indigopalmco@gmail.com owner.
+
+### 2026-10-06 Check-in
+
+**GSC (90 days to 2026-10-06):** 638 clicks (+441 vs prior 197), 75,509 impressions, CTR 0.8%, avg position 10.0. Mobile CTR 1.0% vs desktop 0.6%. Top page `/blog/palm-springs-vs-scottsdale/` (95 clicks, 2.0% CTR).
+
+**GA4 (2026-09-29 to 10-06):** 289 active users (+82), 327 sessions (+91), avg session 102s (flat). Organic Search 107 sessions, Direct 74.
+
+**Pinterest (API, 30 days):** 1,854 impressions, 4 saves, 63 pin clicks, 12 outbound clicks. Still residual traffic from pins last posted 2026-08-20 (TASK PIN-5, Eann). Links stay on Airbnb.
+
+**Technical health:** broken links 0, orphan pages 0, alt-text issues LOW only (intentional eager images).
+
+**Rewrites:** none this run. Poolside bars and 5 others were retitled 2026-09-28, BNP Paribas 2026-10-01, Indio distance page 2026-10-05; too early to read the effect, re-check GSC around 2026-10-19.
+
+**Skipped:** Rachel (no new posts since 2026-09-21), PSL inspo and hero audit (both ran 2026-10-01).
