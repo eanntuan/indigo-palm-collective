@@ -161,7 +161,7 @@ faqItems:
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool and terracotta backyard at vacation rental in Indio California, walking distance to Coachella" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Cozy Cactus pool and backyard. The 3pm-recovery strategy only works if your rental is close enough to make it worth the trip.</p>
 
-<div class="booking-alert" style="background: #fff8e7; border-left: 3px solid #d4a017; padding: 1rem 1.2rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0;">
+<div class="booking-alert" style="background: #fff8e7; border: 1px solid rgba(0,0,0,0.08); padding: 1rem 1.2rem; margin: 1.5rem 0; border-radius: 12px;">
 <p><strong>Planning for Coachella 2027?</strong> Indian Palms properties with private pools book out by November or December 2026. Lineup announcements typically drop in January, and most good rentals are gone before that. If you want walking distance to the grounds, book the house before you know who's headlining.</p>
 </div>
 
