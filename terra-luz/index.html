@@ -1670,7 +1670,7 @@
     var loaded = false, inView = true;
     function sync() {
         if (!loaded) return;
-        if (inView && !document.hidden) (v.playbackRate = .5, v.play()).catch(function () {}); else v.pause();
+        if (inView && !document.hidden) (v.playbackRate = 0.75, v.play()).catch(function () {}); else v.pause();
     }
     function load() {
         v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;

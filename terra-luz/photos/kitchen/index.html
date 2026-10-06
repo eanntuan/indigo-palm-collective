@@ -261,7 +261,7 @@
     var c = navigator.connection || {};
     if (matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData || /^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) return;
     var loaded = false, inView = true;
-    function slow() { v.playbackRate = 0.5; }
+    function slow() { v.playbackRate = 0.75; }
     function sync() {
         if (!loaded) return;
         if (inView && !document.hidden) { slow(); v.play().catch(function () {}); } else v.pause();
