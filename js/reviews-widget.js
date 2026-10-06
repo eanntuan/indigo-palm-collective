@@ -3,7 +3,7 @@
   var css = '.ipr{background:#0B0F3B;color:#fff;padding:56px 0 64px;text-align:center;font-family:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}'
   + '.ipr.ipr-clear{background:transparent}'
   + '.ipr *{box-sizing:border-box}'
-  + '.ipr h2{font-family:"Jost",system-ui,sans-serif;font-weight:500;font-size:clamp(26px,3.6vw,46px);line-height:1.15;color:' + CORAL + ';margin:0 16px 22px;letter-spacing:.2px}'
+  + '.ipr h2{font-family:"Jost",system-ui,sans-serif;font-weight:500;font-size:clamp(26px,3.6vw,46px);line-height:1.15;color:#fff;margin:0 16px 22px;letter-spacing:.2px}'
   + '.ipr-bigstars{display:flex;justify-content:center;gap:4px}'
   + '.ipr-bigstars svg{width:clamp(28px,3.2vw,40px);height:clamp(28px,3.2vw,40px);fill:' + CORAL + '}'
   + '.ipr-logo{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:6px;color:' + CORAL + '}'
