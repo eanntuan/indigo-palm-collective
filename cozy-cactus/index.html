@@ -397,8 +397,8 @@
 
         /* Hero Section */
         .hero {
-            margin-top: 80px;
-            height: 70vh;
+            margin-top: 0;
+            min-height: 70vh;
             background: linear-gradient(rgba(0, 135, 123, 0.2), rgba(0, 135, 123, 0.2)),
                         url('/cozy-cactus/photos/CozyCactus2026-0004.webp');
             background-size: cover;
@@ -807,7 +807,7 @@
         .room-preview-grid .gallery-img-wrap { height: 220px; }
 
         /* Inline description photos */
-        .inline-photo { display: block; width: 100%; max-width: 290px; border-radius: 10px; margin: 1.5rem auto; height: auto; }
+        .inline-photo { display: block; width: 100%; max-width: 580px; border-radius: 10px; margin: 1.5rem auto; height: auto; }
 
         .contact-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
         .contact-btn {
@@ -1016,7 +1016,16 @@
                 <h2>The house where the whole family actually exhales.</h2>
                 <p>"It's the first time we have truly rested during our vacation with our 3 children." That mom rebooked before checkout. You'll see the same thing said differently in review after review across 146 of them.</p>
 
-                <p>Pack-n-play is in the family amenities closet, ready when you need it. Sound machines in the kids' rooms. The labeled drawer system guests mention constantly is exactly what it sounds like: snack drawer has snacks, junk drawer has no junk. Stokke high chair at the dining table, coffee bar stocked and ready at 6am when the toddler decides that's morning now.</p>
+                <div class="expect-list">
+                    <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: #00877b; margin: 1.75rem 0 0.75rem;">What you can expect:</h3>
+                    <ul style="margin: 0 0 1.5rem; padding-left: 1.25rem; line-height: 1.9;">
+                        <li>A pack-n-play, Stokke high chair, baby bath tub, and more ready in the family amenities closet</li>
+                        <li>Sound machines in every room</li>
+                        <li>Labeled kitchen drawer system</li>
+                        <li>Fellow coffee bar, if you know, you know</li>
+                        <li>Ceiling fans in every bedroom</li>
+                    </ul>
+                </div>
 
                 <img src="/cozy-cactus/photos/CozyCactus2026-0176.webp" width="1800" height="1200" alt="Cozy Cactus kitchen island with strawberries on a cutting board and a teal glass pitcher, dining table with sage-green chairs beyond" class="inline-photo" loading="lazy" decoding="async">
 
@@ -1026,12 +1035,10 @@
 
                 <img src="/cozy-cactus/photos/CozyCactus2026-0004.webp" width="1800" height="1201" alt="Cozy Cactus backyard hot tub under the pergola with putting green and outdoor seating" class="inline-photo" loading="lazy" decoding="async">
 
-                <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: #00877b; margin: 2.5rem 0 1rem;">Why I Built It This Way</h3>
+                <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: #00877b; margin: 2.5rem 0 1rem;">Why I Designed It This Way</h3>
                 <p>I got tired of staying places that called themselves family-friendly and meant they had a pack-n-play somewhere in a closet, probably unfolded wrong. So I built what I actually wanted to stay in: every drawer labeled, every kid thing anticipated, every logistical headache handled before you arrive.</p>
 
                 <p>The moment I keep thinking about is 9pm, kids finally down, and you're in the hot tub watching the sky go dark over the mountains. Nothing left to figure out. That's the one I kept building toward.</p>
-
-                <p style="font-style: italic;">Eann</p>
 
                 <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: #00877b; margin: 2.5rem 0 1rem;">Location</h3>
                 <p>Cozy Cactus is inside Indian Palms Country Club, a gated community in Indio with walkable pickleball, tennis, golf, and a second community pool on site.</p>
@@ -1443,9 +1450,8 @@
       main.querySelector('h2').textContent = d.description_heading;
       const ps = main.querySelectorAll('p');
       if (ps[0]) ps[0].textContent = d.description_p1;
-      if (ps[1]) ps[1].textContent = d.description_p2;
-      if (ps[2]) ps[2].textContent = d.description_p3;
-      if (ps[3]) ps[3].textContent = d.description_p4;
+      if (ps[1]) ps[1].textContent = d.description_p3;
+      if (ps[2]) ps[2].textContent = d.description_p4;
     }
   }).catch(()=>{});
 </script>
