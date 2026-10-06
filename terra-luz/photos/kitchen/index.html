@@ -8,7 +8,7 @@
     <link rel="canonical" href="https://indigopalm.co/terra-luz/photos/kitchen/">
     <meta property="og:title" content="Terra Luz Kitchen | Indio CA Vacation Rental">
     <meta property="og:description" content="Functional, not fussy. A Chemex, an acacia block, Nespresso, and a nook with Caramel Apple walls and rattan chairs. The Terra Luz kitchen earns its keep.">
-    <meta property="og:image" content="https://indigopalm.co/terra-luz/photos/kitchen/TerraLuz2026-0309.webp">
+    <meta property="og:image" content="https://indigopalm.co/terra-luz/photos/kitchen/TerraLuz2026-0551.webp">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://indigopalm.co/terra-luz/photos/kitchen/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap"></noscript>
-    <link rel="preload" as="image" fetchpriority="high" href="/terra-luz/photos/kitchen/TerraLuz2026-0309.webp">
+    <link rel="preload" as="image" fetchpriority="high" href="/terra-luz/photos/kitchen/TerraLuz2026-0551.webp">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
@@ -51,11 +51,15 @@
         nav .back-link { text-decoration: none; color: var(--charcoal); font-weight: 400; font-size: 0.95rem; transition: color 0.3s; letter-spacing: 0.5px; }
         nav .back-link:hover { color: var(--terracotta); }
         .hero {
-            margin-top: 80px; height: 60vh;
-            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/terra-luz/photos/kitchen/TerraLuz2026-0309.webp');
+            margin-top: 80px; min-height: 60vh; position: relative; overflow: hidden;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/terra-luz/photos/kitchen/TerraLuz2026-0551.webp');
             background-size: cover; background-position: center 70%;
             display: flex; align-items: flex-end; padding: 4rem 5%;
         }
+        .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 70%; opacity: 0; transition: opacity 0.8s ease; }
+        .hero-video.is-ready { opacity: 1; }
+        .hero::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.2); pointer-events: none; }
+        .hero-content { position: relative; z-index: 1; }
         .hero-content { background: rgba(255,255,255,0.95); padding: 2.5rem; max-width: 560px; backdrop-filter: blur(10px); border-radius: 16px; }
         .room-tag { display: inline-block; background: #8A4A2E; color: white; padding: 0.4rem 1.2rem; font-size: 0.8rem; letter-spacing: 1px; font-weight: 500; margin-bottom: 1rem; border-radius: 16px; }
         .hero h1 { font-family: var(--font-serif); font-size: 3rem; color: var(--terracotta); margin-bottom: 0.5rem; font-weight: 600; }
@@ -96,7 +100,7 @@
         .contact-btn.email, .contact-btn.instagram { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
-            .hero { height: 50vh; padding: 2rem 5%; }
+            .hero { min-height: 50vh; padding: 2rem 5%; }
             .hero-content { padding: 1.5rem; }
             .content-section { padding: 3rem 5%; }
         }
@@ -128,6 +132,7 @@
     </nav>
 
     <section class="hero">
+        <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/terra-luz/photos/kitchen/TerraLuz2026-0551.webp" data-src-small="/terra-luz/video/terra-luz-kitchen-hero-720.mp4" data-src="/terra-luz/video/terra-luz-kitchen-hero.mp4"></video>
         <div class="hero-content">
             <div class="room-tag">TERRA LUZ</div>
             <h1>Kitchen</h1>
@@ -144,38 +149,38 @@
     </div>
 
     <div class="photo-grid">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0014.webp" alt="Terra Luz kitchen wide view with geometric tile backsplash, wood floating shelves, and natural light" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0018.webp" alt="Terra Luz kitchen counter with acacia chopping block and Chemex pour-over setup" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0020.webp" alt="Terra Luz kitchen floating wood shelves with curated objects above geometric tile backsplash" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0024.webp" alt="Terra Luz kitchen stove area with terracotta backsplash tile detail" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0028.webp" alt="Terra Luz kitchen with geometric tile backsplash and natural wood floating shelves" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0032.webp" alt="Terra Luz kitchen open counter with Nespresso machine and desert morning light" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0036.webp" alt="Terra Luz kitchen counter with terracotta backsplash and Chemex pour-over coffee setup" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0040.webp" alt="Terra Luz kitchen detail showing warm afternoon light on tile and wood surfaces" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0044.webp" alt="Terra Luz kitchen view from dining nook toward main counter and appliances" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0048.webp" alt="Terra Luz kitchen nook entry with capiz shell pendant and warm Caramel Apple walls" loading="lazy" decoding="async" width="1024" height="683">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0056.webp" alt="Terra Luz kitchen dining nook with round wood table, rattan chairs, and sage credenza" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0058.webp" alt="Terra Luz kitchen nook with Caramel Apple walls, round wood table, rattan chairs, and capiz shell pendant" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0083.webp" alt="Terra Luz kitchen sage credenza with Cuban and Latin art against Caramel Apple walls" loading="lazy" decoding="async" width="1024" height="1535">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0086.webp" alt="Terra Luz kitchen nook detail with rattan chair, capiz pendant, and warm desert afternoon light" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0249.webp" alt="Terra Luz kitchen counter and shelves with morning light and curated objects" loading="lazy" decoding="async" width="1024" height="683">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0269.webp" alt="Terra Luz kitchen dominos game set open on glass dining table with woven placemat" loading="lazy" width="1200" height="800">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0274.webp" alt="Terra Luz kitchen green bar credenza with Edifier speaker, amber glasses, and Cuba cookbook on terracotta wall" loading="lazy" width="1200" height="801">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0293.webp" alt="Terra Luz kitchen counter with Buenos Dias cookbook, strawberries, pan dulce, and blue mug on acacia board" loading="lazy" width="1200" height="800">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0319.webp" alt="Terra Luz kitchen Leigh Dierck handmade ceramic mugs in earth tones lined up on granite counter" loading="lazy" width="1200" height="800">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0320.webp" alt="Terra Luz kitchen with open cookbook on granite counter, geometric backsplash, retro microwave, and kitchen tools" loading="lazy" width="1200" height="1800">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0327.webp" alt="Terra Luz kitchen backsplash view showing microwave, open cookbook, glassware on floating wood shelves" loading="lazy" width="1200" height="1800">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0328.webp" alt="Terra Luz kitchen floating shelves with Leigh Dierck handmade mugs against geometric tile backsplash" loading="lazy" width="1200" height="1800">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0335.webp" alt="Terra Luz kitchen full view showing white gas stove, range hood, floating shelves, terracotta accent wall, and fridge" loading="lazy" width="1200" height="1800">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0551.webp" alt="Terra Luz kitchen island with three rattan bar stools, stainless fridge, open shelves, and terracotta accent wall" loading="lazy" width="1200" height="801">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0552.webp" alt="Terra Luz kitchen corner with gas stove, range hood, open wood shelves, and spice rack against geometric backsplash" loading="lazy" width="1200" height="1802">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0553.webp" alt="Terra Luz breakfast nook with glass round table, bistro chairs, capiz pendant light, and green credenza on terracotta walls" loading="lazy" width="1200" height="1803">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0567.webp" alt="Terra Luz breakfast nook with open plantation shutters looking out to backyard blue striped umbrella and pool" loading="lazy" width="1200" height="1851">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0568.webp" alt="Terra Luz kitchen island with rattan bar stools viewed from living area showing terracotta wall and pendant light" loading="lazy" width="1200" height="1409">
-            <img src="/terra-luz/photos/kitchen/TerraLuz2026-0052.webp" alt="Terra Luz dining table with rattan chairs reflected in a wood-framed mirror above a dark console" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0299.webp" alt="Terra Luz kitchen counter with pan dulce, a Nespresso pour, a clay mug, and the Buenos Dias cookbook" loading="lazy" decoding="async" width="1200" height="1800">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0603.webp" alt="Terra Luz kitchen wide view with white gas range, stainless fridge, sage credenza, and terracotta wall" loading="lazy" decoding="async" width="1800" height="1012">
-        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0604.webp" alt="Terra Luz kitchen dining nook with glass round table, rattan chairs, capiz pendant, and plantation shutters" loading="lazy" decoding="async" width="1800" height="1012">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0014.webp" alt="Blue patterned bowl of mangoes on a woven placemat on a glass dining table, rattan bistro chair beside it" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0018.webp" alt="Close-up of mangoes in a blue tulip-pattern bowl on a woven placemat, glass table and rattan chair behind" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0020.webp" alt="Floating shelves with framed Havana and cactus prints, plants and a cookbook above a sage green cabinet on a terracotta wall" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0024.webp" alt="Stack of cookbooks with a Cuba cookbook standing on top, next to a black shaker, on a sage green counter" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0028.webp" alt="Framed prints, a trailing plant and a Cuba cookbook on a wood shelf over a sage green cabinet with a small wood speaker" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0032.webp" alt="Rattan bistro chair with a green and white woven seat at a round glass table, terracotta wall and shutters behind" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0036.webp" alt="White range hood and white gas stove against black and white geometric tile, mugs on floating shelves, orange towel on the oven door" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0040.webp" alt="Floating wood shelves with glasses, a driftwood piece and plants on geometric tile above a microwave and granite counter" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0044.webp" alt="Wooden bowl of oranges on a teal woven table runner with a stack of coasters on a light wood table" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0048.webp" alt="Blurred bowl of oranges on a wood table in the foreground, with a patio sofa and orange brick wall beyond the glass doors" loading="lazy" decoding="async" width="1024" height="683">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0056.webp" alt="Sage green cabinet under shelves of framed Havana and cactus prints, with a round white floor lamp glowing beside a terracotta wall" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0058.webp" alt="Cactus print, framed black and white photos, a Cuba cookbook and wood speaker on a sage cabinet beside a round white floor lamp" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0083.webp" alt="Floating shelves of drinking glasses, a driftwood piece and a plant on geometric tile above a microwave, knife block and granite counter" loading="lazy" decoding="async" width="1024" height="1535">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0086.webp" alt="Stainless spring-neck faucet over a single-bowl sink on a granite counter, with two amber soap bottles and the living room blurred behind" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0249.webp" alt="Two wood cutting boards and a folded orange patterned towel on a granite counter, with a Buenos Dias cookbook in front" loading="lazy" decoding="async" width="1024" height="683">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0269.webp" alt="Dominos spilled from an open patterned box onto a glass table beside a woven placemat, with shutters behind" loading="lazy" width="1200" height="800">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0274.webp" alt="Wood speaker, amber glasses and a Cuba cookbook on a sage green cabinet top, resting on a round wood trivet" loading="lazy" width="1200" height="801">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0293.webp" alt="Pan dulce on a plate, a bowl of strawberries, a blue mug and a Buenos Dias cookbook on a wood board and granite counter" loading="lazy" width="1200" height="800">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0319.webp" alt="Five handmade ceramic mugs in rust, pink, green, tan and blue lined up on a granite counter, with a sofa blurred behind" loading="lazy" width="1200" height="800">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0320.webp" alt="Open cookbook showing a plated dish on a granite counter, with a cream microwave and geometric tile behind" loading="lazy" width="1200" height="1800">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0327.webp" alt="Open cookbook on a checkered cutting board beside a cream microwave, a green spatula crock and an olive oil bottle on granite" loading="lazy" width="1200" height="1800">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0328.webp" alt="Handmade mugs in rust, green, tan and blue on two floating wood shelves against geometric tile and an orange wall" loading="lazy" width="1200" height="1800">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0335.webp" alt="Kitchen corner with white range hood, floating shelves, gas stove, stainless fridge with spice rack, and granite counter in front" loading="lazy" width="1200" height="1800">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0551.webp" alt="Wide view of the open kitchen with granite island, rattan bar stool, white range, stainless fridge and open shelves on geometric tile" loading="lazy" width="1200" height="801">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0552.webp" alt="Kitchen with white gas range, white cabinets, granite counters and geometric tile, with a striped rug on the floor and fridge at right" loading="lazy" width="1200" height="1802">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0553.webp" alt="Dining nook with a glass round table, rattan bistro chairs, a capiz pendant light and a sage green cabinet on a terracotta wall" loading="lazy" width="1200" height="1803">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0567.webp" alt="Open plantation shutters over a dining nook window, with a blue striped umbrella and pool patio outside and a capiz pendant above" loading="lazy" width="1200" height="1851">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0568.webp" alt="Granite kitchen island with three rattan bar stools, an arched mirror at left and the terracotta kitchen wall in the distance" loading="lazy" width="1200" height="1409">
+            <img src="/terra-luz/photos/kitchen/TerraLuz2026-0052.webp" alt="Wood-framed mirror reflecting a dining table with wood chairs, a ceiling fan and sliding doors, above a console with a plant" loading="lazy" decoding="async" width="1024" height="1536">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0299.webp" alt="Hand pouring coffee from a black carafe into a clay mug, with pan dulce on a plate and a Buenos Dias cookbook on granite" loading="lazy" decoding="async" width="1200" height="1800">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0603.webp" alt="Kitchen view across the white gas range and stainless fridge to a sage green cabinet with framed prints on a terracotta wall" loading="lazy" decoding="async" width="1800" height="1012">
+        <img src="/terra-luz/photos/kitchen/TerraLuz2026-0604.webp" alt="Terracotta dining nook with a glass round table, rattan chairs and a capiz pendant by a plantation shutter window, stainless fridge at left" loading="lazy" decoding="async" width="1800" height="1012">
     </div>
 
         <div id="lightbox" role="dialog" aria-modal="true">
@@ -246,5 +251,37 @@
         });
     })();
     </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"Terra Luz kitchen, Indio CA","description":"A slow pan across the Terra Luz kitchen, from the range and green cabinets to the Caramel Apple dining nook and the patio beyond the sliding doors.","thumbnailUrl":"https://indigopalm.co/terra-luz/photos/kitchen/TerraLuz2026-0551.webp","uploadDate":"2026-10-06","contentUrl":"https://indigopalm.co/terra-luz/video/terra-luz-kitchen-hero.mp4","duration":"PT11S"}
+</script>
+<script>
+(function () {
+    var v = document.getElementById('heroVideo');
+    if (!v) return;
+    var c = navigator.connection || {};
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData || /^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) return;
+    var loaded = false, inView = true;
+    function slow() { v.playbackRate = 0.5; }
+    function sync() {
+        if (!loaded) return;
+        if (inView && !document.hidden) { slow(); v.play().catch(function () {}); } else v.pause();
+    }
+    function load() {
+        v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;
+        slow();
+        v.addEventListener('loadedmetadata', slow);
+        v.addEventListener('play', slow);
+        v.addEventListener('playing', function () { v.classList.add('is-ready'); }, { once: true });
+        loaded = true;
+        sync();
+    }
+    var start = function () { 'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 2500 }) : setTimeout(load, 1500); };
+    if (document.readyState === 'complete') start(); else addEventListener('load', start);
+    if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
+    }
+    document.addEventListener('visibilitychange', sync);
+})();
+</script>
 </body>
 </html>

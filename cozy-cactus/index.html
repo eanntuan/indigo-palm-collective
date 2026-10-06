@@ -952,7 +952,7 @@
     v.src = small ? v.dataset.srcSmall : v.dataset.src;
     v.addEventListener('playing', function () { v.classList.add('is-playing'); v.parentNode.classList.add('has-video'); }, { once: true });
     var inView = true;
-    function sync() { if (inView && !document.hidden) v.play().catch(function () {}); else v.pause(); }
+    function sync() { if (inView && !document.hidden) (v.playbackRate = .5, v.play()).catch(function () {}); else v.pause(); }
     new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
     document.addEventListener('visibilitychange', sync);
     sync();

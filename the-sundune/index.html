@@ -1340,7 +1340,7 @@
   s.forEach(function (x) { var e = document.createElement('source'); e.src = x[0]; e.type = 'video/mp4'; if (x[1]) e.media = x[1]; v.appendChild(e); });
   v.load();
   var vis = true;
-  function sync() { if (vis && !document.hidden) v.play().catch(function () {}); else v.pause(); }
+  function sync() { if (vis && !document.hidden) (v.playbackRate = .5, v.play()).catch(function () {}); else v.pause(); }
   new IntersectionObserver(function (en) { vis = en[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v);
   document.addEventListener('visibilitychange', sync);
 })();
