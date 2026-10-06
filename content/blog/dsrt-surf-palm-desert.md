@@ -49,8 +49,8 @@ relatedPosts:
 
 <p>The pitch is a menu. Before each session the wave gets picked: soft rollers for beginners, long intermediate walls, or barrels for people who already know what they're doing. The lagoon splits into two sections of up to 28 surfers each, and some sessions (the "pro barrel" ones) cap the headcount lower.</p>
 
-<img src="/blog/images/pssc-wave-pool-reflection.webp" alt="A Wavegarden Cove surf lagoon at golden hour reflecting mountains, similar to the technology used at DSRT Surf in Palm Desert" width="1816" height="1021" loading="lazy">
-<p class="image-caption">This is Palm Springs Surf Club, which uses the same Wavegarden system. I'll swap in my own DSRT photos after a visit.</p>
+<img src="/blog/images/dsrt-surf-lagoon-surfer.webp" alt="Aerial view of the DSRT Surf lagoon and Wavegarden Cove wave pool at Desert Willow Golf Resort in Palm Desert" width="1536" height="864" loading="lazy">
+<p class="image-caption">The DSRT Surf lagoon from above, sitting between two Desert Willow golf courses. Photo: Surfer.</p>
 
 <h2>Prices and Hours</h2>
 
