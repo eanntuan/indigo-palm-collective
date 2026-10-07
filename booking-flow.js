@@ -143,11 +143,13 @@ const PROPERTY_HEROES = {
     'terra-luz': {
         img: '/terra-luz/photos/TerraLuz2026-0312.webp',
         title: 'Terra Luz',
+        video: '/terra-luz/video/terra-luz-hero',
         sub: '3BR · Indio · Saltwater pool · Dog-friendly · Sleeps 8',
     },
     'ps-retreat': {
         img: '/images/sundune-hero-banner.webp',
         title: 'The Sundune',
+        video: '/the-sundune/video/sundune-hero',
         sub: '2BR · Palm Springs · Private pool · Three king beds',
     },
 };
@@ -169,6 +171,17 @@ function selectProperty(propertyId) {
             const subEl = document.getElementById('booking-hero-sub');
             if (titleEl) titleEl.textContent = hero.title;
             if (subEl) subEl.textContent = hero.sub;
+            const vid = document.getElementById('booking-hero-video');
+            const conn = navigator.connection || {};
+            vid.classList.remove('is-ready');
+            if (hero.video && !matchMedia('(prefers-reduced-motion: reduce)').matches && !conn.saveData && !/^(slow-2g|2g|3g)$/.test(conn.effectiveType || '')) {
+                vid.src = hero.video + (matchMedia('(max-width: 800px)').matches ? '-720.mp4' : '.mp4');
+                vid.defaultPlaybackRate = vid.playbackRate = 0.75;
+                vid.play().catch(() => {});
+            } else {
+                vid.pause();
+                vid.removeAttribute('src');
+            }
         }
     }
 

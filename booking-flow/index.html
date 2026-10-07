@@ -83,6 +83,9 @@
             transition: background-image 0.4s ease;
         }
 
+        #booking-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease; pointer-events: none; }
+        #booking-hero-video.is-ready { opacity: 1; }
+
         .booking-hero-overlay {
             position: absolute;
             inset: 0;
@@ -644,6 +647,7 @@
 
     <!-- Property Hero -->
     <div class="booking-hero" id="booking-hero">
+        <video id="booking-hero-video" muted loop playsinline preload="none" aria-hidden="true" onplaying="this.classList.add('is-ready')"></video>
         <div class="booking-hero-overlay"></div>
         <div class="booking-hero-text">
             <div class="booking-hero-eyebrow" id="booking-hero-title">Book Direct</div>
@@ -804,7 +808,7 @@
         </div>
     </div>
 
-    <script type="module" src="/booking-flow.js?v=4"></script>
+    <script type="module" src="/booking-flow.js?v=5"></script>
 
 <div id="agreement-overlay" role="dialog" aria-modal="true" aria-label="Rental Agreement">
   <div id="agreement-overlay-inner">
