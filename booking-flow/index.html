@@ -68,65 +68,68 @@
             line-height: 1.6;
         }
 
-        /* Hero banner */
+        /* Hero banner (matches property pages) */
         .booking-hero {
             width: 100%;
-            height: 70vh;
+            min-height: 70vh;
             background-image: url('/blog/images/terra-luz-pool-backyard.webp');
             background-size: cover;
-            background-position: center 50%;
+            background-position: center;
             position: relative;
             overflow: hidden;
-            opacity: 0.72;
-            transition: background-image 0.4s ease, opacity 0.4s ease;
+            display: flex;
+            align-items: flex-end;
+            padding: 4rem 5%;
+            transition: background-image 0.4s ease;
         }
 
         .booking-hero-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(to bottom, rgba(30,20,15,0.25) 0%, rgba(30,20,15,0.65) 100%);
+            background: rgba(0,0,0,0.2);
         }
 
         .booking-hero-text {
             position: relative;
             z-index: 1;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 0 2.5rem 1.75rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            color: white;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 3rem;
+            max-width: 600px;
         }
 
         .booking-hero-eyebrow {
-            font-size: 0.7rem;
-            letter-spacing: 0.18em;
+            display: inline-block;
+            background: var(--terracotta, #9c5b3f);
+            color: white;
+            padding: 0.4rem 1.2rem;
+            border-radius: 16px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
             text-transform: uppercase;
-            opacity: 0.75;
-            margin-bottom: 0.4rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
             font-family: var(--font-sans);
         }
 
-        #booking-hero-title {
+        .booking-hero-text h1 {
             font-family: var(--font-serif);
-            font-size: 2.4rem;
-            font-weight: 300;
-            margin-bottom: 0.3rem;
+            font-size: 3rem;
+            font-weight: 600;
             line-height: 1.15;
+            margin-bottom: 0.75rem;
+            color: var(--terracotta, #9c5b3f);
         }
 
-        #booking-hero-sub {
-            font-size: 0.88rem;
-            opacity: 0.8;
-            font-family: var(--font-sans);
-            letter-spacing: 0.02em;
-        }
+        .booking-hero-text .booking-intro { font-style: italic; font-weight: 300; font-size: 1.1rem; color: #555; margin: 0; padding: 0; border: 0; }
+
+        #booking-hero-sub { display: none; }
 
         @media (max-width: 600px) {
-            .booking-hero { height: 50vh; }
-            #booking-hero-title { font-size: 1.8rem; }
+            .booking-hero { min-height: 55vh; padding: 2rem 5%; }
+            .booking-hero-text { padding: 1.5rem; }
+            .booking-hero-text h1 { font-size: 2rem; }
         }
 
         /* Header */
@@ -643,9 +646,10 @@
     <div class="booking-hero" id="booking-hero">
         <div class="booking-hero-overlay"></div>
         <div class="booking-hero-text">
-            <div class="booking-hero-eyebrow">Indigo Palm Collective</div>
-            <div id="booking-hero-title">Book Direct</div>
-            <div id="booking-hero-sub">No Airbnb fees. Private pools, desert design, Coachella Valley.</div>
+            <div class="booking-hero-eyebrow" id="booking-hero-title">Book Direct</div>
+            <h1>Request to Book</h1>
+            <p class="booking-intro">Pick your property, send us your dates, and we'll take care of the rest. We'll be in touch within 24 hours.</p>
+            <div id="booking-hero-sub"></div>
         </div>
     </div>
 
@@ -653,9 +657,6 @@
     <div class="container">
         <!-- Booking Form -->
         <div class="booking-form">
-            <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Book a Desert Vacation Rental | Indigo Palm Collective</h1>
-            <h2>Request to Book</h2>
-            <p class="booking-intro">Pick your property, send us your dates, and we'll take care of the rest. We'll be in touch within 24 hours.</p>
 
             <form id="booking-form">
                 <!-- Property Selection -->
