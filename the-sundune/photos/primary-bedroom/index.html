@@ -50,11 +50,15 @@
         nav .back-link { text-decoration: none; color: var(--charcoal); font-weight: 400; font-size: 0.95rem; transition: color 0.3s; letter-spacing: 0.5px; }
         nav .back-link:hover { color: var(--blue); }
         .hero {
-            margin-top: 80px; height: 60vh;
+            margin-top: 80px; min-height: 60vh; position: relative; overflow: hidden;
             background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/the-sundune/photos/Sundune2026-0050.webp');
             background-size: cover; background-position: center;
             display: flex; align-items: flex-end; padding: 4rem 5%;
         }
+        .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 0.8s ease; }
+        .hero-video.is-ready { opacity: 1; }
+        .hero::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.2); pointer-events: none; }
+        .hero-content { position: relative; z-index: 1; }
         .hero-content { background: rgba(255,255,255,0.95); padding: 2.5rem; max-width: 560px; backdrop-filter: blur(10px); border-radius: 16px; }
         .room-tag { display: inline-block; background: #4A7A99; color: white; padding: 0.4rem 1.2rem; font-size: 0.8rem; letter-spacing: 1px; font-weight: 500; margin-bottom: 1rem; border-radius: 16px; }
         .hero h1 { font-family: var(--font-serif); font-size: 3rem; color: var(--blue); margin-bottom: 0.5rem; font-weight: 600; }
@@ -85,7 +89,7 @@
         .contact-btn.email, .contact-btn.instagram { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
-            .hero { height: 50vh; padding: 2rem 5%; }
+            .hero { min-height: 50vh; padding: 2rem 5%; }
             .hero-content { padding: 1.5rem; }
             .content-section { padding: 3rem 5%; }
         }
@@ -128,6 +132,7 @@
     </nav>
 
     <section class="hero">
+        <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/the-sundune/photos/Sundune2026-0050.webp" data-src-small="/the-sundune/video/the-sundune-primary-bedroom-hero-720.mp4?v=2" data-src="/the-sundune/video/the-sundune-primary-bedroom-hero.mp4?v=2"></video>
         <div class="hero-content">
             <div class="room-tag">THE SUNDUNE</div>
             <h1>Primary Bedroom</h1>
@@ -236,5 +241,37 @@
         });
     })();
     </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"The Sundune primary bedroom, Palm Springs CA","description":"A slow pan across the Sundune primary bedroom, from the doorway past the two king beds to the wood surfboard and the mirror.","thumbnailUrl":"https://indigopalm.co/the-sundune/photos/Sundune2026-0050.webp","uploadDate":"2026-10-06","contentUrl":"https://indigopalm.co/the-sundune/video/the-sundune-primary-bedroom-hero.mp4?v=2","duration":"PT6S"}
+</script>
+<script>
+(function () {
+    var v = document.getElementById('heroVideo');
+    if (!v) return;
+    var c = navigator.connection || {};
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData || /^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) return;
+    var loaded = false, inView = true;
+    function slow() { v.playbackRate = 0.75; }
+    function sync() {
+        if (!loaded) return;
+        if (inView && !document.hidden) { slow(); v.play().catch(function () {}); } else v.pause();
+    }
+    function load() {
+        v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;
+        slow();
+        v.addEventListener('loadedmetadata', slow);
+        v.addEventListener('play', slow);
+        v.addEventListener('playing', function () { v.classList.add('is-ready'); }, { once: true });
+        loaded = true;
+        sync();
+    }
+    var start = function () { 'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 2500 }) : setTimeout(load, 1500); };
+    if (document.readyState === 'complete') start(); else addEventListener('load', start);
+    if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
+    }
+    document.addEventListener('visibilitychange', sync);
+})();
+</script>
 </body>
 </html>
