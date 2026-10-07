@@ -141,13 +141,13 @@ const PROPERTY_HEROES = {
         sub: '3BR · Indio · Private hot tub · Game room · Sleeps 8',
     },
     'terra-luz': {
-        img: '/terra-luz/photos/TerraLuz2026-0312.webp',
+        img: '/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp',
         title: 'Terra Luz',
         video: '/terra-luz/video/terra-luz-hero',
         sub: '3BR · Indio · Saltwater pool · Dog-friendly · Sleeps 8',
     },
     'ps-retreat': {
-        img: '/images/sundune-hero-banner.webp',
+        img: '/the-sundune/photos/Sundune2026-0120.webp',
         title: 'The Sundune',
         video: '/the-sundune/video/sundune-hero',
         sub: '2BR · Palm Springs · Private pool · Three king beds',

@@ -80,10 +80,9 @@
             display: flex;
             align-items: flex-end;
             padding: 4rem 5%;
-            transition: background-image 0.4s ease;
         }
 
-        #booking-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease; pointer-events: none; }
+        #booking-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.2s ease; pointer-events: none; }
         #booking-hero-video.is-ready { opacity: 1; }
 
         .booking-hero-overlay {
@@ -657,6 +656,18 @@
         </div>
     </div>
 
+    <script>
+    (function () {
+        var m = { 'cozy-cactus': ['/cozy-cactus/photos/CozyCactus2026-0004.webp', 'The Cozy Cactus'], 'terra-luz': ['/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp', 'Terra Luz'], 'the-sundune': ['/the-sundune/photos/Sundune2026-0120.webp', 'The Sundune'], 'ps-retreat': ['/the-sundune/photos/Sundune2026-0120.webp', 'The Sundune'] };
+        var slug = (location.pathname.match(/booking-flow\/([^/]+)/) || [])[1] || new URLSearchParams(location.search).get('property');
+        var h = m[slug];
+        if (h) {
+            document.getElementById('booking-hero').style.backgroundImage = "url('" + h[0] + "')";
+            document.getElementById('booking-hero-title').textContent = h[1];
+        }
+    })();
+    </script>
+
     <!-- Main Container -->
     <div class="container">
         <!-- Booking Form -->
@@ -808,7 +819,7 @@
         </div>
     </div>
 
-    <script type="module" src="/booking-flow.js?v=5"></script>
+    <script type="module" src="/booking-flow.js?v=6"></script>
 
 <div id="agreement-overlay" role="dialog" aria-modal="true" aria-label="Rental Agreement">
   <div id="agreement-overlay-inner">
