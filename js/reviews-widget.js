@@ -9,7 +9,7 @@
   + '.ipr-logo{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:6px;color:' + CORAL + '}'
   + '.ipr-logo svg{width:34px;height:34px}'
   + '.ipr-logo span{font-weight:600;font-size:34px;line-height:1;letter-spacing:-.5px;margin-top:-3px}'
-  + '.ipr-serif h2{font-family:"Cormorant Garamond",serif;font-weight:600}'
+  + '.ipr-serif{background:transparent;color:#2c2c2c}.ipr-serif h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:2rem;color:#2c2c2c;margin-bottom:.5rem}.ipr-serif .ipr-sub{color:#595959;font-size:.95rem}'
 + '.ipr-sub{margin:10px 16px 36px;font-size:14px;color:rgba(255,255,255,.72)}'
   + '.ipr-wrap{position:relative;max-width:1400px;margin:0 auto;padding:0 28px}'
   + '.ipr-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 0;scroll-behavior:smooth;align-items:stretch}'
