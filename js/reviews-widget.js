@@ -9,7 +9,8 @@
   + '.ipr-logo{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:6px;color:' + CORAL + '}'
   + '.ipr-logo svg{width:34px;height:34px}'
   + '.ipr-logo span{font-weight:600;font-size:34px;line-height:1;letter-spacing:-.5px;margin-top:-3px}'
-  + '.ipr-sub{margin:10px 16px 36px;font-size:14px;color:rgba(255,255,255,.72)}'
+  + '.ipr-serif h2{font-family:"Cormorant Garamond",serif;font-weight:600}'
++ '.ipr-sub{margin:10px 16px 36px;font-size:14px;color:rgba(255,255,255,.72)}'
   + '.ipr-wrap{position:relative;max-width:1400px;margin:0 auto;padding:0 28px}'
   + '.ipr-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 0;scroll-behavior:smooth;align-items:stretch}'
   + '.ipr-track::-webkit-scrollbar{display:none}'
@@ -78,14 +79,14 @@
       if (!list.length) return;
       list.sort(function (a, b) { return b.date.localeCompare(a.date); });
       list = list.slice(0, 12);
-      var sec = el('section', 'ipr' + (host.hasAttribute('data-transparent') ? ' ipr-clear' : ''));
+      var sec = el('section', 'ipr' + (host.hasAttribute('data-transparent') ? ' ipr-clear' : '') + (host.hasAttribute('data-serif') ? ' ipr-serif' : ''));
       sec.setAttribute('aria-label', 'Guest reviews');
       sec.appendChild(el('h2', '', host.getAttribute('data-heading') || HEAD[key]));
       var bs = stars(5, 'ipr-bigstars'); bs.setAttribute('role', 'img'); bs.setAttribute('aria-label', '5 out of 5 stars'); sec.appendChild(bs);
       var logo = el('div', 'ipr-logo'); logo.appendChild(mark()); logo.appendChild(el('span', '', 'airbnb')); sec.appendChild(logo);
       var s = data[key] && data[key].summary;
       if (!s) { var n = 0, sum = 0; Object.keys(data).forEach(function (k) { var x = data[k].summary; n += x.count; sum += x.count * parseFloat(x.rating); }); s = { rating: (sum / n).toFixed(2), count: n }; }
-      sec.appendChild(el('p', 'ipr-sub', s.rating + ' stars from ' + s.count + ' reviews on Airbnb'));
+      sec.appendChild(el('p', 'ipr-sub', host.getAttribute('data-sub') || (s.rating + ' stars from ' + s.count + ' reviews on Airbnb')));
       var wrap = el('div', 'ipr-wrap'), track = el('div', 'ipr-track'), mores = [];
       track.setAttribute('tabindex', '0'); track.setAttribute('role', 'region'); track.setAttribute('aria-label', 'Guest reviews, scroll horizontally');
       list.forEach(function (r, i) {
