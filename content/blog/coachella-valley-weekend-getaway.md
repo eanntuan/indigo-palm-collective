@@ -1,8 +1,8 @@
 ---
-title: "Coachella Valley Weekend Getaway: The Honest Desert Guide"
+title: "Coachella Valley Weekend Getaway: When to Go, Where to Base"
 date: 2026-05-03
 dateModified: 2026-07-30
-metaDescription: "Brilliant from October to April, brutal in summer. The honest Coachella Valley weekend breakdown: best timing, which side to base yourself, and how to handle the afternoon heat."
+metaDescription: "Best October through April, brutal in summer. The honest weekend breakdown: timing, which side of the valley to base yourself, and how to handle the heat."
 ogImage: /blog/images/coachella-valley-map.webp
 heroImage: /blog/images/coachella-valley-map.webp
 heroAlt: "Coachella Valley map showing Palm Springs, Indio, and the surrounding desert for a weekend getaway in Southern California"

@@ -116,7 +116,7 @@ layout: blog-post.njk
 
 <h3>Tac/Quila</h3>
 
-<p><a href="https://tacquila.com/" target="_blank" rel="noopener noreferrer"><strong>Tac/Quila</strong></a> is a Michelin Guide-listed taqueria on North Palm Canyon that does Jalisco-style tacos alongside some genuinely surprising upscale versions: lobster tacos, seared ahi tuna, house-made tortillas. The margarita flight is the move if you're eating with a group. Seating is lively and the line moves. Reservations are recommended and the public parking lot behind the building is easier than street parking.</p>
+<p><a href="https://tacquila.com/" target="_blank" rel="noopener noreferrer"><strong>Tac/Quila</strong></a> is a Michelin Guide-listed taqueria on North Palm Canyon that does Jalisco-style tacos alongside some genuinely surprising upscale versions: lobster tacos, seared ahi tuna, house-made tortillas. The margarita flight is the move if you're eating with a group. Seating is lively and the line moves. Reservations are recommended and the public parking lot behind the building is easier than street parking. If tacos are the whole plan, I put together a longer list of the <a href="/blog/best-mexican-restaurants-palm-springs/">best Mexican restaurants in Palm Springs</a>.</p>
 
 <p><strong>415 N Palm Canyon Dr, Palm Springs, CA 92262.</strong> (760) 417-4471. Daily 11am-10pm. Find them at <a href="https://tacquila.com/" target="_blank" rel="noopener">tacquila.com</a>.</p>
 

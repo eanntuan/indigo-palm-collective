@@ -96,8 +96,9 @@ layout: blog-post.njk
 
 <div class="item-heading"><span class="item-number">11</span>Old Town Indio: Farmers Market on Saturday Mornings</div>
 <p>The Old Town Indio Certified Farmers Market runs Saturday mornings year-round. Local produce, date vendors, tamales, fresh citrus. It takes about 45 minutes, it's free to browse, and the coffee from the stand near the corner is better than most café coffee.</p>
+<p>Afterward, walk over to <a href="https://mzfreeze.com/" target="_blank" rel="noopener noreferrer">Mz. Freeze</a> on Towne Street, a women-owned shop making rolled ice cream to order with Mexican-inspired flavors, which <a href="https://www.palmspringslife.com/restaurants/mz-freeze-brings-rolled-ice-cream-to-downtown-indio-plus-4-other-new-openings/" target="_blank" rel="noopener">Palm Springs Life covered</a> as one of the newer downtown openings. It opens in the afternoon, so it works as a dessert stop after the market only if you're lingering; check hours before you go.</p>
 <div class="quick-info">
-    <p><strong>Where:</strong> Miles Ave at Fargo St, Old Town Indio · Saturdays 8am–noon (seasonal hours vary)</p>
+    <p><strong>Where:</strong> Miles Ave at Fargo St, Old Town Indio · Saturdays 8am–noon (seasonal hours vary) · Mz. Freeze at 45127 Towne St, Ste B</p>
 </div>
 
 <div class="item-heading"><span class="item-number">12</span><a href="https://empirepolo.com/" target="_blank" rel="noopener noreferrer"><strong>Empire Polo Club</strong></a> (Outside Festival Season)</div>

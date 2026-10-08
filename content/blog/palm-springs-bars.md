@@ -1,8 +1,8 @@
 ---
-title: "Best Bars in Palm Springs: Where Locals Drink in 2026"
+title: "Best Bars in Palm Springs: 11 Local Picks, Sorted by Vibe"
 date: 2026-03-04
 dateModified: 2026-08-12
-metaDescription: "From margaritas at La Perlita to drag at Toucans, here are the 11 best bars in Palm Springs for 2026. Real spots, no sponsored picks, organized by vibe."
+metaDescription: "Margaritas at La Perlita, drag at Toucans, and nine more bars in Palm Springs sorted by vibe. No sponsored picks, just where we drink. Updated for 2026."
 ogImage: /blog/images/palm-springs-bar-cocktails.webp
 heroImage: /blog/images/palm-springs-bar-cocktails.webp
 heroAlt: "bartender pouring a cocktail at a Palm Springs bar, colorful drinks and warm evening lighting"

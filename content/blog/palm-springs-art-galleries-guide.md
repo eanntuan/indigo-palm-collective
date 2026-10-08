@@ -1,8 +1,8 @@
 ---
-title: "Palm Springs Gallery District: Uptown and Backstreet"
+title: "Palm Springs Art Galleries: Uptown and Backstreet Districts"
 date: 2026-07-11
 dateModified: 2026-09-16
-metaDescription: "Palm Springs art galleries and gallery district: Uptown Design District, Backstreet Art District, Janssen Artspace, and where to start your walk downtown."
+metaDescription: "Palm Springs art galleries guide: the Uptown Design District, Backstreet Art District, Janssen Artspace, and where to start your walk downtown."
 ogImage: /blog/images/palm-springs-art-museum-sculptures.webp
 heroImage: /blog/images/palm-springs-art-museum-sculptures.webp
 heroPosition: "center 20%"

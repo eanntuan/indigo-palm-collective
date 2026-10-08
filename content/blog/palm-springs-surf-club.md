@@ -1,8 +1,8 @@
 ---
-title: "Palm Springs Surf Club Review: Wave Pool, Prices + Tips"
+title: "Palm Springs Surf Club Prices: $100-$250 Per Session"
 date: 2025-12-04
 dateModified: 2026-07-30
-metaDescription: "Day passes run $100-250, weekends book out weeks ahead, and walk-ins rarely get in. Honest review: whether it's worth it, how to snag a session, and what to skip."
+metaDescription: "Palm Springs Surf Club sessions run $100 for beginners up to $250 for experts. Weekends book weeks out, so here's how to snag a slot and what to skip."
 ogImage: /blog/images/pssc-wave-pool-reflection.webp
 heroImage: /blog/images/pssc-wave-pool-reflection.webp
 heroAlt: "Palm Springs Surf Club wave pool at golden hour with PSSC building and San Jacinto Mountains reflecting in still water"
@@ -88,7 +88,7 @@ relatedPosts:
 
 <h2>Prices and What to Book</h2>
 
-<p>Pricing is tiered by session type. As of 2026, approximate rates run from $100 for the beginner Waikiki Wave up to $150-200 for the Reform Wave Pass and intermediate sessions (A-Frames, Lefts and Rights), $200 for Advanced A-Frames, and $250 for 5 Slabs (expert); Sampler Sessions are priced separately.</p>
+<p>Pricing is tiered by session type. As of 2026, approximate rates run from $100 for the beginner Waikiki Wave up to $150-200 for the Reform Wave Pass and intermediate sessions (A-Frames, Lefts and Rights), $200 for Advanced A-Frames, and $250 for 5 Slabs (expert); Sampler Sessions are priced separately. If you'd rather surf a different wave pool in the valley, <a href="/blog/dsrt-surf-palm-desert/">DSRT Surf in Palm Desert</a> opened in September with a $100 learn-to-surf session.</p>
 
 <p>Spectator tickets are available if you're coming to watch. Cabana rentals for the lounge side of the venue book separately. Check <a href="https://palmspringssurfclub.com" target="_blank" rel="noopener">palmspringssurfclub.com</a> for current pricing before you commit, as rates shift seasonally. Don't show up expecting to buy tickets at the door, especially on weekends.</p>
 

@@ -2061,6 +2061,14 @@ One new post since the 8/12 check-in: `how-to-connect-claude-to-every-gmail` ("H
 If Sabbir-tracker or other skills ever need simultaneous access to more than one Gmail account (e.g. Sabbir's + the business inbox) without disconnecting the other, gws (github.com/googleworkspace/cli) is a free option worth a manual pilot. Flagging as not-actionable-yet: requires Eann's hands-on terminal setup and Google OAuth consent per account — cannot be scripted or executed by Claude alone.
 Source: how-to-connect-claude-to-every-gmail
 
+### New from Rachel — 2026-10-08
+
+Two new posts since the 9/21 check-in. `claude-cowork-now-runs-your-scheduled` (2026-10-07) covers Cowork scheduled tasks now running on Anthropic's cloud (Pro/Max) with the laptop closed, but only against cloud-reachable inputs (Google Drive, connectors). `my-ai-started-trash-talking-my-coos` (2026-10-06) is a personal Instinct-assistant story; skipped, its one rule ("never send without my explicit OK") is already standing policy here (never auto-send guest messages).
+
+**TASK RG-27: Evaluate moving a low-dependency cron to Cowork cloud tasks**
+Our 5 CronCreate jobs are session-bound and get recreated every session, and they depend on local scripts (~/.claude/skills, Google creds) and Hostaway/PriceLabs MCPs, so none can move as-is. Candidate for a pilot: the Monday competitor brief (WebSearch only, no local files), writing .md to a Drive _Inbox folder. Not actionable-yet: needs Eann to confirm Pro/Max plan, Cowork Scheduled page, and a Drive connector. Low priority, do not migrate the Hostaway/GSC jobs.
+Source: claude-cowork-now-runs-your-scheduled
+
 ### What changed on 2026-07-27 — GSC Check-in
 
 **Period:** 2026-04-28 to 2026-07-27 (90 days) vs. 2026-01-27 to 2026-04-27
@@ -3023,3 +3031,262 @@ Targeted re-check only (last full inventory 2026-09-16, inside the 30-day window
 **Rewrites:** none this run. Poolside bars and 5 others were retitled 2026-09-28, BNP Paribas 2026-10-01, Indio distance page 2026-10-05; too early to read the effect, re-check GSC around 2026-10-19.
 
 **Skipped:** Rachel (no new posts since 2026-09-21), PSL inspo and hero audit (both ran 2026-10-01).
+
+
+---
+
+## BABYSIT-SEO RUN — 2026-10-08
+
+### What changed on 2026-10-08 — GSC Check-in
+
+**Period:** 2026-07-10 to 2026-10-08 (90 days). Prior period 2026-04-10 to 2026-07-09. Source: `/tmp/gsc-2026-10-08.md`. The API auth worked, with no `invalid_grant`.
+
+**Overall:** 643 clicks, 75,526 impressions, 0.9% CTR, avg position 10.0.
+
+**vs. prior period:** +441 clicks (3.2x, from 202), +45,102 impressions (2.5x, from 30,424). CTR rose from 0.7% to 0.9%.
+
+**Device split:**
+
+| Device | Clicks | Impressions | CTR | Avg pos |
+|---|---|---|---|---|
+| Mobile | 418 | 40,414 | 1.0% | 8.2 |
+| Desktop | 206 | 34,348 | 0.6% | 12.1 |
+| Tablet | 19 | 764 | 2.5% | 7.1 |
+
+Desktop gets 45% of impressions but only 32% of clicks. It ranks about 4 positions lower (12.1 vs 8.2), so desktop is where the title and rank gap shows.
+
+**What's working (CTR 2% or higher and position 15 or better):**
+- `/blog/palm-springs-vs-scottsdale/`: 96 clicks, 2.0% CTR, pos 6.0. It is 15% of all clicks. The query "palm springs vs scottsdale" gets 11.4% CTR at pos 4.1.
+- `/blog/palm-springs-birthday-freebies/`: 9.5% CTR, pos 4.3, but only 243 impressions.
+- `/blog/desert-dog-summer/` (4.2%, pos 5.6), `/blog/outdoor-furniture-desert-heat/` (2.2%, pos 7.3), `/` (2.8%, pos 5.3), and `/blog/desert-hot-springs-day-trip/` (2.0%, pos 13.9).
+- The September Search Console digest names `palm-springs-vs-scottsdale` (+19 clicks), `date-farms-indio-coachella-valley` (+17) and `palm-springs-birthday-freebies` (+15) as the top growing pages.
+
+**Leaking pages (100+ impressions, CTR under 1%):** these 11 pages hold about 47,000 impressions, roughly 62% of the total, and return about 195 clicks.
+
+| Page | Impressions | Clicks | CTR | Pos |
+|---|---|---|---|---|
+| `where-to-stay-coachella` | 8,884 | 24 | 0.3% | 8.6 |
+| `palm-springs-surf-club` | 8,690 | 43 | 0.5% | 8.9 |
+| `palm-springs-vs-indio` | 8,462 | 22 | 0.3% | 6.5 |
+| `palm-springs-aerial-tram` | 4,856 | 29 | 0.6% | 12.3 |
+| `palm-springs-bars` | 4,161 | 29 | 0.7% | 12.2 |
+| `idyllwild-day-trip-palm-springs` | 3,887 | 14 | 0.4% | 7.5 |
+| `coachella-valley-weekend-getaway` | 2,384 | 12 | 0.5% | 10.8 |
+| `things-to-do-palm-desert` | 1,668 | 12 | 0.7% | 23.7 |
+| `best-restaurants-palm-springs` | 1,435 | 3 | 0.2% | 30.8 |
+| `grocery-stores-coachella-valley` | 1,319 | 3 | 0.2% | 8.7 |
+| `palm-springs-coffee-guide` | 865 | 7 | 0.8% | 9.7 |
+
+**CTR opportunities (position 3-15, CTR under 3%):**
+- "how far is indio from palm springs": 835 impressions, 4 clicks, pos 5.2. Rewrite the `palm-springs-vs-indio` title and meta. The current title already says "25 Miles Apart", so the rewrite did not move CTR (0.3% on 8,462 impressions). That points to an AI Overview or featured snippet answering the query. The new title leads with the answer plus a reason to click.
+- "indio food" (185 impressions) and "food indio" (107): 3 clicks together at pos 6.6-7.3. This probably maps to `indio-local-gems`, which has 1.6% CTR and 2,037 impressions.
+- "palm springs wave pool price": 172 impressions, 2 clicks, pos 7.5. Rewrite the `palm-springs-surf-club` title and meta.
+- `where-to-stay-coachella`: the biggest page by impressions at 0.3% CTR. The title is Coachella-2027-generic and the page is competing with hotel aggregators.
+- `palm-springs-morning-vs-evening`: 247 impressions, 0.8% CTR, pos 5.9, with no query data.
+
+**Weak pages (50+ impressions, under 3 clicks):**
+- `stagecoach-2027-where-to-stay`: 736 impressions, pos 9.9 blended. Only 10.8% of its impressions rank at pos 20 or better, so this is a content/authority problem, not a title problem.
+- `bnp-paribas-open-palm-springs`: 456 impressions, 2 clicks. 64.7% of impressions are at pos 20 or better, so rewrite the title.
+- `palm-springs-with-kids`: 249 impressions, pos 42.6, only 7% at pos 20 or better. Content fix.
+- `palm-springs-midcentury-architecture-tour`: 158 impressions, 2 clicks, no query data.
+- `indio-between-coachella-weekends`: 94 impressions, 1 click, 95.8% at pos 20 or better. Rewrite the title.
+- `salton-sea-day-trip`: 80 impressions, 1 click, 100% at pos 20 or better. Rewrite the title.
+- `palm-springs-neighborhood-guide`: 70 impressions, 1 click, no query data.
+- `palm-springs-art-galleries-guide`: 62 impressions, 1 click, 80% at pos 20 or better. Rewrite the title.
+- `coachella-2027-where-to-stay`: 51 impressions, 1 click, pos 5.6. It is new and still ramping.
+- `best-restaurants-palm-springs` (pos 30.8) and `things-to-do-palm-desert` (pos 23.7) are also content-depth issues, not title issues.
+
+**Action items generated:**
+1. Rewrite title and meta on the 6 title-fixable high-impression pages (below).
+2. Rewrite title only on `bnp-paribas-open-palm-springs`, `salton-sea-day-trip`, `palm-springs-art-galleries-guide` and `palm-springs-bars`.
+3. Content depth (not title) on `stagecoach-2027-where-to-stay`, `palm-springs-with-kids`, `best-restaurants-palm-springs` and `things-to-do-palm-desert`.
+4. Fix 2 internal links to `/the-sundune` (no trailing slash). See the alert review.
+5. Check desktop ranking separately, since desktop is 4 positions lower than mobile.
+
+---
+
+### GSC Alert Email Review — 2026-10-08
+
+**Emails reviewed:** 60 from `sc-noreply@google.com` across both inboxes (eann.tuan@gmail.com and indigopalmco@gmail.com), 2026-04-23 to 2026-10-06. I read in full the 6 most recent non-milestone alerts. Gmail search is `search_emails.py`, not `search_messages.py`.
+
+**Classification:**
+- Coverage or indexing alerts: 6 "New reasons", 4 "Some fixes failed", 1 "Page indexing issues successfully fixed" (2026-07-27, Redirect error, 5 pages) and 4 "validating".
+- Performance digests (Jun to Sep) and click milestones (50 to 250 clicks per 28 days).
+- Property ownership: 2 "New owner" emails (2026-05-06 and 2026-08-23).
+- None for manual action, security, mobile usability or Core Web Vitals.
+
+**Latest coverage alerts:**
+
+| Date | Reason flagged |
+|---|---|
+| 2026-07-27 | Excluded by 'noindex' tag |
+| 2026-08-07 | Not found (404); Alternate page with proper canonical tag |
+| 2026-08-23 | Page with redirect |
+
+The emails never name URLs. The URL list only exists in the GSC Pages report.
+
+**Live verification (2026-10-08):**
+- I fetched all 112 sitemap URLs. All returned 200, none has a noindex tag, and every canonical matches its own URL.
+- Sitemap `lastDownloaded` is 2026-10-05T01:36Z, which is 3 days old, so it is not stale (limit 30). It was last submitted 2026-09-19 with 0 errors and 0 warnings. The API's `indexed: 0` field is deprecated and should be ignored.
+- I crawled 145 unique internal link targets from those pages and 2 are not clean:
+  - `/the-sundune` (no trailing slash) returns a 301 to `/the-sundune/`. It is linked from `/blog/palm-springs-neighborhood-guide/` and `/blog/palm-springs-running-trails/`. This is a real source of "Page with redirect".
+  - `/api/availability` returns 400 with no parameters. It is called by the Cozy Cactus and Terra Luz pages and blocked in robots.txt, so it is not an issue.
+- Variants redirect correctly: http, www, `/index.html` and no-trailing-slash blog URLs all 301 to the canonical URL.
+- `/booking-flow/` has an intentional `noindex` meta tag, and robots.txt allows the crawl so Google can read it. This explains the 2026-07-27 "noindex" alert and is expected. It is not in the sitemap.
+- robots.txt is clean (`Disallow: /api/` and `/_content/` only).
+
+**Deficiencies found:**
+1. Page with redirect (flagged 2026-08-23). Status: still live, minor. Root cause: 2 internal links point at `/the-sundune` without a trailing slash. Fix: change both to `/the-sundune/` in `content/blog/palm-springs-neighborhood-guide.md` and `content/blog/palm-springs-running-trails.md`. Monitor: GSC Pages report "Page with redirect" count 7-14 days after deploy.
+2. Not found (404) and Alternate page with canonical (flagged 2026-08-07). Status: can't reproduce from the live site. The redirect and canonical exclusions are expected, since they are old or alternate URLs. Fix: none unless the GSC URL list contains a sitemap URL. Manual (Eann): open the Pages report, expand "Not found (404)" and confirm none of those URLs is a live page.
+3. noindex (flagged 2026-07-27). Status: intentional (`/booking-flow/`). Fix: none.
+4. New owner `indigopalmco@gmail.com` (flagged 2026-08-23 and 2026-05-06). Status: it is also a recipient of GSC mail, so probably Eann's brand account. Manual (Eann): Settings > Users and permissions, and revoke if not recognized.
+
+No manual action, security, mobile usability or CWV alerts exist. The 2026-07-27 "Redirect error" validation passed.
+
+---
+
+### Prioritized rewrite actions
+
+Files are `~/airbnb/indigopalm/content/blog/<slug>.md`. Edit the `.md`, not the HTML. Character counts are verified. Caveat: I have not confirmed every claim against the post body (see the tram and BNP notes).
+
+1. **`palm-springs-vs-indio.md`** (8,462 impressions, 0.3% CTR, pos 6.5)
+   - Title (55): `Indio to Palm Springs: 25 Miles, 30-40 Min Drive (2026)`
+   - Meta (149): `Indio is 25 miles from Palm Springs, about 30-40 minutes on the I-10. Drive times by hour, which city fits your trip, and why we own rentals in both.`
+   - Confirm the post body actually has the "by hour" drive times before using that phrase.
+2. **`where-to-stay-coachella.md`** (8,884 impressions, 0.3% CTR, pos 8.6)
+   - Title (52): `Where to Stay for Coachella 2027: Hotels vs. Rentals`
+   - Meta (152): `Coachella 2027 lodging compared: hotels, camping, glamping, and rentals near the grounds, with real drive times, walking distances, and group-size math.`
+3. **`palm-springs-surf-club.md`** (8,690 impressions, 0.5% CTR; "wave pool price" and "day pass price" queries)
+   - Title (55): `Palm Springs Surf Club Day Pass: Prices and Review 2026`
+   - Meta (146): `Palm Springs Surf Club day passes run $100-250 and weekends sell out weeks ahead. What a session costs, how to book it, and whether it's worth it.`
+   - The current meta is 162 characters and gets truncated. This version fixes that.
+4. **`palm-springs-aerial-tram.md`** (4,856 impressions, 0.6% CTR, pos 12.3; "tram tickets costco" already converts at 16.7%)
+   - Title (56): `Palm Springs Aerial Tram Tickets: Worth It? Costco Deal`
+   - Meta (146): `Is the Palm Springs Aerial Tram worth it? Ticket prices, the Costco discount, what's at 8,516 feet, the best time to ride, and how to skip crowds.`
+   - The current meta is 129 characters, too short. Verify the post covers the Costco discount before shipping.
+5. **`bnp-paribas-open-palm-springs.md`** (456 impressions, 0.4% CTR, 64.7% of impressions at pos 20 or better)
+   - Title (56): `BNP Paribas Open Where to Stay: Palm Springs Rental 2027`
+   - Meta (152): `Staying for the BNP Paribas Open? The Sundune in Palm Springs sleeps 6 with 3 kings and a shared pool, 12 miles from Indian Wells Tennis Garden.`
+   - Keep the "12 miles" that the existing meta already uses. Re-count the characters after the edit, as the meta may land slightly under 140.
+6. **`salton-sea-day-trip.md`** (80 impressions, 100% at pos 20 or better)
+   - Title (57): `Salton Sea Day Trip from Indio: Is Bombay Beach Worth It?`
+   - Meta is fine at 144 characters.
+7. **`palm-springs-art-galleries-guide.md`** (62 impressions, 80% at pos 20 or better)
+   - Title (55): `Palm Springs Art Galleries: Uptown and Backstreet Guide`
+   - Meta is fine at 154 characters.
+8. **`palm-springs-bars.md`** (4,161 impressions, 0.7% CTR, pos 12.2)
+   - Title (50): `Best Bars in Palm Springs: 11 Local Picks for 2026`
+   - Meta is fine at 152 characters.
+   - This is a low-confidence tweak, since the page needs rank (pos 12) more than a title change.
+9. **`idyllwild-day-trip-palm-springs.md`** (3,887 impressions, 0.4% CTR, pos 7.5)
+   - Title (54): `Palm Springs to Idyllwild: Day Trip Guide, 1 Hour Away`
+   - Meta is fine at 155 characters.
+10. **`palm-springs-neighborhood-guide.md` and `palm-springs-running-trails.md`**: change `/the-sundune` to `/the-sundune/`.
+11. **Content-depth queue (do not fix with titles):** `stagecoach-2027-where-to-stay`, `palm-springs-with-kids`, `best-restaurants-palm-springs`, `things-to-do-palm-desert`, `grocery-stores-coachella-valley` and `coachella-valley-weekend-getaway`. Each ranks too low or is too generic for a title tweak to move it.
+12. **Manual items for Eann:** (a) open GSC Pages > "Not found (404)" and "Page with redirect" and read the URL lists; (b) confirm the `indigopalmco@gmail.com` ownership.
+
+I did not edit any files, commit, or touch `content/seo-strategy-june-2026.md`.
+
+### Pinterest Check-in — 2026-10-08
+
+**30-day API totals (2026-09-08 to 2026-10-08):** 1,842 impressions, 5 saves, 62 pin clicks, 10 outbound clicks.
+
+**Threshold:** 1,842 total API impressions is about 7% of the 25K link-switch threshold. API impressions run at or above unique viewers, so the real figure is lower. The Pinterest threshold is nowhere near; keep links pointing to Airbnb. No link switch without Eann's sign-off.
+
+**Trend:** 30-day impressions were about 10.7K to 11.7K on 2026-09-08, so they are down about 83%. The ad campaign C626758451852 ($7/day, $49 total) stayed paused. Treat this as an organic-only baseline, and it is thinner than the earlier 26-46/day.
+
+**Save rate:** 5 saves / 1,842 impressions = 0.27%, up from 0.075% on 09-08 but on a tiny base. Outbound CTR is 0.54% (10/1,842). Pin-click-to-outbound is 16%.
+
+**Boards, 30 days (impressions / saves / pin clicks / outbound clicks):**
+
+| Board | Impr | Saves | PinClk | OutClk |
+|---|---|---|---|---|
+| Interior Design (2 pins) | 953 | 0 | 38 | 7 |
+| Cozy cactus instagram (7 pins) | 475 | 3 | 16 | 0 |
+| BLOGS (37 pins) | 151 | 2 | 4 | 3 |
+| Terra Luz \| Luxury Airbnb (62 pins) | 143 | 0 | 0 | 0 |
+| Cozy Cactus \| Family Airbnb (54 pins) | 64 | 0 | 3 | 0 |
+| Other 9 boards | 42 combined | 0 | 1 | 0 |
+
+- The 2-pin Interior Design board produced 52% of impressions, 61% of pin clicks and 7 of the 10 outbound clicks. Its 7 outbound clicks are the only real outbound signal.
+- The 62-pin Terra Luz board, the largest, got 143 impressions and 0 clicks. The 54-pin Cozy Cactus board got 64 impressions.
+- Board scan counts: 37 + 4 + 7 + 54 + 8 + 2 + 0 + 7 + 5 + 3 + 6 + 4 + 62 + 0 = about 199 pins. The 30-day total of 199 pins suggests no new pins landed lately.
+- The 4/4 pin-level analytics calls failed (the script warned "4/4 pin analytics calls failed"), so I have no top-pin breakdown and no organic vs paid split. Everything above is board-level only. The cause was not diagnosed.
+
+**Ads vs organic:** The campaign is paused, so assume this is all organic. The GA4 check backs this up. Pinterest-sourced traffic this week is near zero (see GA4). The 09-08 audit found zero `book_now_click` events from Pinterest traffic, and that funnel is still unfixed.
+
+**Cadence vs 4-5/day:** I cannot confirm posting pace from the API. 30-day impressions of about 60/day are consistent with little or no new posting. Verify against Eann's own pin log. The skill-referenced `~/airbnb/.context/sabbir_context.md` does not exist. Only the memory copy exists (`~/.claude/projects/-Users-etuan-Library-Mobile-Documents-com-apple-CloudDocs-Airbnb/memory/sabbir_context.md`).
+
+**Sabbir and Quora:** The latest Quora figures on file are from 2026-06-26 (802 total views, about 0.9 posts/day against a 2-3/day target, answers at 5-8 views). Nothing newer on file, so Quora status is stale by 3+ months. Pinterest is Eann's job. Sabbir's scope is Quora, GEO and Goodreads.
+
+**Pinterest action items:**
+1. Get Eann's real posting log and monthly-viewer figure from Pinterest Business Hub. The API cannot confirm cadence.
+2. Replicate the Interior Design board pattern (room-focused pins that earn clicks) on Terra Luz and Cozy Cactus. Those two big boards earned 0 and 3 pin clicks.
+3. Fix the pin analytics failures (4/4 calls failed) so the next run can show top pins and organic vs paid.
+4. Do not resume ads until UTM tracking and landing-page match are fixed (standing recommendation from 09-08).
+5. Still open from 09-08 and needing the Pinterest UI: bio fix (it claims private pools at all properties and 4 properties), no Sundune board, duplicate boards (Terra Luz at 4 pins, Cozy cactus instagram at 7 pins), 2 dead boards (Mid-Century Modern Homes and Vacation Rental Host Tips, both 0 pins). I did not re-verify the bio or board descriptions in this run.
+6. Get a fresh Quora status from Sabbir (stale since 2026-06-26).
+
+### GA4 Check-in — 2026-10-08
+
+The script ran without auth errors. Property 519325194, period 2026-10-01 to 2026-10-08 vs 2026-09-23 to 2026-09-30. Full report: `/tmp/ga4-2026-10-08.md`.
+
+**Overall:** 193 active users (+5), 196 new users (+9), 232 sessions (+12), 1,011 events (+11). Average session duration is 145s, down from 163s (-18s). Traffic is flat.
+
+**Source mix (232 sessions):** Organic Search 122 (53%), Direct 76 (33%), Referral 10, Cross-network 9, Unassigned 9, AI Assistant 2, Organic Social 1. Pinterest and social traffic is effectively nil: 1 organic social session. Organic search carries the site. Top cities: Los Angeles 27, Singapore 20, Seattle 10, San Jose 9, Ashburn 8. Singapore (20 users) and Ashburn (8) look like possible bot or data-center traffic, so treat the user count as inflated. About 6% of new vs returning sessions are unset (13 sessions with no type, 7 blank).
+
+**High-bounce pages (50+ views, >60% bounce):** only `/` (77 views, 62.5% bounce, 257s average duration). The long duration suggests this bounce rate is not alarming. Below the 50-view cutoff but worth a look: `/blog/best-time-to-visit-palm-springs/` (16 views, 61.1%, 72s), `/blog/palm-springs-bars/` (13 views, 58.3%, 22s), `/blog/palm-springs-aerial-tram/` (10 views, 60%), `/blog/lax-to-palm-springs/` (5 views, 83.3%), `/blog/indian-canyons-palm-springs/` (4 views, 100%, 0s), `/blog/best-hiking-palm-springs/` (3, 100%, 0s), `/blog/best-restaurants-palm-springs/` (3, 100%, 0s), `/blog/idyllwild-day-trip-palm-springs/` (4, 100%), `/cozy-cactus/welcome-guide` (5, 100%, 0s, a guest page, not a problem).
+
+**Property page visibility (7 days):** Cozy Cactus 30 views (25 on `/cozy-cactus/`), Terra Luz 20 (18 on `/terra-luz/`), Sundune 13. Property pages combined are 63 views, about 6% of the 1,011 events. Sundune remains the weakest and has the standing visibility gap. It has a 12.5% bounce rate, so visitors who arrive engage. The problem is getting them there. Booking flow views: `/booking-flow/` 12, `/booking-flow/cozy-cactus/` 11, `/booking-flow/terra-luz/` 8. The property pages bounce at 12.5% to 37.5%, which is healthy.
+
+**Engagement:** Strong pages by duration are `/blog/things-to-do-palm-desert/` (539s, 0% bounce), `/blog/dsrt-surf-palm-desert/` (362s), `/blog/indio-local-gems/` (263s, 0% bounce), `/blog/palm-springs-vs-scottsdale/` (206s, 30.8% bounce).
+
+**GA4 action items:**
+1. Sundune visibility: add internal links to `/the-sundune/` from the high-traffic blog posts (`best-time-to-visit-palm-springs`, `palm-springs-bars`, `palm-springs-aerial-tram`), since all three have 13+ views and no property path. Blog-to-property funnel is the main lever, and a dedicated Sundune Pinterest board is not in place.
+2. Add a property CTA to the 100% bounce posts (`indian-canyons-palm-springs`, `best-hiking-palm-springs`, `best-restaurants-palm-springs`, `idyllwild-day-trip-palm-springs`). Low views, so check the page is not broken first (0s duration may mean a tracking or load issue).
+3. Check `/blog/palm-springs-bars/` (58% bounce, 22s) and `/blog/best-golf-courses-palm-springs-indio/` (42.9%, 25s) for thin or mismatched content.
+4. Filter or annotate Singapore and Ashburn traffic in GA4 so user counts reflect real visitors.
+5. Booking intent exists: 31 booking-flow views against 63 property-page views. Confirm `book_now_click` and booking-flow completion events are firing, since the earlier Pinterest funnel audit found zero.
+
+Files: `/tmp/ga4-2026-10-08.md`, `/tmp/pin-boards-2026-10-08.txt` (empty, the board output was captured in the background task file `/private/tmp/claude-501/-Users-etuan-Library-Mobile-Documents-com-apple-CloudDocs-Airbnb/04e3f604-936d-41a5-a794-f6d01c6b78b4/tasks/bo5ch1v0n.output`).
+
+### Technical SEO Health Checks — 2026-10-08
+
+Phase "Technical SEO Health Checks", 2026-10-08. Nothing was edited, committed or pushed. No site files needed fixes.
+
+**Pull:** `git pull --rebase --autostash` reported up to date.
+
+**Internal broken links (`--skip-external`):** 0 broken. The scan covered 114 pages and 3,279 internal targets. The new `photos/` room sub pages, the `booking-flow/` stubs redirect and the video files produced no findings.
+
+**Alt text and image attributes:** 1,004 images on 112 pages. There were 0 HIGH, 0 MEDIUM and 3 LOW, all "missing loading=lazy":
+- `casa-moto-pet-friendly-desert` (`terra-luz-pool-backyard.webp`)
+- `best-vacation-rentals-pool-coachella-valley` (`cozy-cactus-pool-backyard.webp`)
+- `coachella-valley-weekend-getaway` (`coachella-valley-map.webp`)
+
+These look like the same 3 findings logged on 10-01 as checker false positives on intentionally eager hero images. I didn't open the three posts this run. No fix applied.
+
+**External links (full pass):** The last full pass was 2026-10-01 per the strategy doc, so I ran it today. It checked 275 unique URLs and found 8 findings, all MEDIUM. The report is `/tmp/broken-links-external-2026-10-08.md`. Last week's pass found 260 URLs and 17 findings.
+- **`onestoptacoshop.com/`** timed out on 4 posts: `best-mexican-restaurants-palm-springs`, `coachella-valley-food-guide`, `stagecoach-2027-where-to-stay` and `things-to-do-indio-ca`.
+- **`molekitchen.com/palm-desert`** dropped the connection in `best-mexican-restaurants-palm-springs`. A manual curl returned 200, so it is a false positive.
+- **`www.cartelcoffee.com/`** timed out in `best-restaurants-palm-springs`.
+- **`www.quadz.bar/palmsprings/`** failed the SSL certificate check in `game-night-trivia-coachella-valley`. This is the URL I fixed last week.
+- **`www.villagepubps.com/`** failed the SSL certificate check in `palm-springs-bars`.
+
+My manual curl re-checks returned 000 for almost every URL, including the Quadz and Village Pub variants without `www`, so this shell is probably blocking outbound traffic. I couldn't confirm any of these as truly dead.
+
+**Orphans:** 0 orphaned, 3 weakly linked (exactly 1 inbound link). They are queued, not fixed. Suggested sources to link from:
+1. `/blog/best-mexican-restaurants-palm-springs/`: link it from `coachella-valley-food-guide` and `best-restaurants-palm-springs`. Both mention Mexican food, and `things-to-do-indio-ca` and `palm-springs-bars` also mention Mexican food.
+2. `/blog/bnp-paribas-open-vacation-rental-guide/`: this is a `redirectTo` stub, a 1.6K file that redirects to `bnp-paribas-indian-wells-where-to-stay`. It doesn't need inbound links. Either drop it from the sitemap or leave the weak-link flag alone.
+3. `/blog/dsrt-surf-palm-desert/`: link it from `palm-springs-surf-club` and `things-to-do-palm-desert`. Neither currently links to it.
+
+**Proposed action items:**
+- Re-test the 5 flagged external URLs (`onestoptacoshop.com`, `cartelcoffee.com`, `quadz.bar`, `villagepubps.com`, `molekitchen.com`) from a normal network or browser before changing any link.
+- Add the 3 internal links above, and decide whether the BNP redirect stub belongs in the sitemap.
+
+Reports are in `/tmp/broken-links-2026-10-08.md`, `/tmp/broken-links-external-2026-10-08.md`, `/tmp/alt-text-2026-10-08.md` and `/tmp/orphan-pages-2026-10-08.md`.
+
+### Actions taken 2026-10-08
+
+- Title/meta rewrites, bare `/the-sundune` link fixes and orphan-link additions delegated to an agent (see commit).
+- Festival guides made date agnostic; Terra Luz festival guide photos halved.
+- Needs Eann: Pinterest Business Hub monthly-viewer figure, Pinterest UI cleanup (bio, Sundune board, duplicate/dead boards), Quora status from Sabbir, Halloween post yes/no, hiking post 12->13 trails yes/no, Cowork pilot (RG-27) yes/no.

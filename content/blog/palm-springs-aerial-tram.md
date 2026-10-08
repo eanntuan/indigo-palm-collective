@@ -1,8 +1,8 @@
 ---
-title: "Palm Springs Aerial Tram: Is It Worth It? (Honest Guide)"
+title: "Palm Springs Aerial Tram: $36.95 Tickets, Worth It?"
 date: 2026-01-21
 dateModified: 2026-06-22
-metaDescription: "Honest take: yes, worth it, with caveats. Ticket prices, what's at 8,516 feet, best time to go, and how to skip the worst crowds."
+metaDescription: "Yes, it's worth it, with caveats. Adult tickets are $36.95, the top sits at 8,516 feet, and timed tickets skip the line. Best time to go inside."
 ogImage: /blog/images/ps-aerial-tram-sunrise.webp
 heroImage: /blog/images/ps-aerial-tram-sunrise.webp
 heroAlt: "View from the top of the Palm Springs Aerial Tram at 8,516 feet with pine trees and San Jacinto peaks"

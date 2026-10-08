@@ -59,7 +59,7 @@ layout: blog-post.njk
 
 <h2>Golf</h2>
 
-<p>Palm Desert has over a dozen courses and is part of the broader Coachella Valley golf scene with more than 100 courses total. The Desert Willow Golf Resort is the city's own municipal course, a public option with two well-designed 18-hole layouts. Indian Wells Country Club and Big Horn Golf Club are private but relevant if you have member access. Greens fees at public courses run $50 to $150 depending on season and time of day.</p>
+<p>Palm Desert has over a dozen courses and is part of the broader Coachella Valley golf scene with more than 100 courses total. The Desert Willow Golf Resort is the city's own municipal course, a public option with two well-designed 18-hole layouts. Indian Wells Country Club and Big Horn Golf Club are private but relevant if you have member access. Greens fees at public courses run $50 to $150 depending on season and time of day. The newest thing on the Desert Willow property is a surf lagoon, covered in our <a href="/blog/dsrt-surf-palm-desert/">DSRT Surf Palm Desert guide</a>.</p>
 
 <h2>Where to Eat</h2>
 

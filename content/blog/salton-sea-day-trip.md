@@ -1,5 +1,5 @@
 ---
-title: "Salton Sea Day Trip from Indio: Bombay Beach, Worth It?"
+title: "Salton Sea Day Trip from Indio: Is Bombay Beach Worth It?"
 date: 2026-01-09
 dateModified: 2026-03-16
 metaDescription: "Bombay Beach, Salvation Mountain, Slab City from Indio. 45 minutes east, genuinely strange, not for everyone. Honest guide, including the smell."

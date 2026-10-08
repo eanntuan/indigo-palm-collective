@@ -1,8 +1,8 @@
 ---
-title: "Coachella 2027: Hotels vs. Rentals Near the Polo Grounds"
+title: "Where to Stay for Coachella: Hotels vs. Walkable Rentals"
 date: 2025-11-10
 dateModified: 2026-07-30
-metaDescription: "Hotels near the Coachella grounds, camping, glamping, and rentals compared. Why walkable Indian Palms rentals beat every option for groups of 4+."
+metaDescription: "Hotels, camping, glamping, and rentals near the Coachella grounds compared, plus why walkable Indian Palms rentals win for groups of 4 or more."
 ogImage: /blog/images/coachella-festival-crowd.webp
 heroImage: /blog/images/coachella-festival-crowd.webp
 heroAlt: "Crowd at Coachella Valley Music and Arts Festival at Empire Polo Club in Indio California"

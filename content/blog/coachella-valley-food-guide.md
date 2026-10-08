@@ -147,7 +147,7 @@ faqItems:
 
 <h2>How to Use This Guide</h2>
 
-<p>The valley is 45 miles east to west. If you're in Indio, your food radius for everyday meals is Indio and La Quinta. Palm Springs is a 30-minute drive, which is worth doing for a specific evening but not for every meal. If you're in Palm Springs, you have walkable access to everything in the Palm Springs section above, and Indio is a 30-minute drive that's worth doing for the birria and the date shake.</p>
+<p>The valley is 45 miles east to west. If you're in Indio, your food radius for everyday meals is Indio and La Quinta. Palm Springs is a 30-minute drive, which is worth doing for a specific evening (our <a href="/blog/best-mexican-restaurants-palm-springs/">Palm Springs Mexican food picks</a> are where I'd start) but not for every meal. If you're in Palm Springs, you have walkable access to everything in the Palm Springs section above, and Indio is a 30-minute drive that's worth doing for the birria and the date shake.</p>
 
 <p>During Coachella and Stagecoach, all of Indio gets busier and some places extend hours. Some pop-ups appear too, hit or miss as always, but the reliable spots above stay reliable.</p>
 

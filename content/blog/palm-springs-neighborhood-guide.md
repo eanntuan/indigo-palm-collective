@@ -102,7 +102,7 @@ Stay north of Vista Chino only if you know where you're going. The stretches alo
 - **Family with kids, private outdoor space:** The Mesa
 - **Photography, views, design obsession:** Twin Palms
 
-If you're staying at [The Sundune at Palm Springs](/the-sundune), we're in the E Waverly Dr area near the Palm Canyon Villas, which puts you between the Mesa and Warm Sands. Close enough to Downtown for dinner, quiet enough to sleep.
+If you're staying at [The Sundune at Palm Springs](/the-sundune/), we're in the E Waverly Dr area near the Palm Canyon Villas, which puts you between the Mesa and Warm Sands. Close enough to Downtown for dinner, quiet enough to sleep.
 
 <img src="/blog/images/sundune-palm-springs-condo.webp" alt="The Sundune at Palm Springs condo exterior with desert landscaping and clear blue sky" loading="lazy" width="1200" height="800">
 <p class="image-caption">The Sundune sits in a quiet mid-city area, about 10 minutes from Downtown Palm Springs and close to hiking access.</p>

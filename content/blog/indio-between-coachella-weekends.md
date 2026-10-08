@@ -1,5 +1,5 @@
 ---
-title: "Things to Do in Indio Between Coachella Weekends"
+title: "Things to Do in Indio Between Coachella Weekends: 5-Day Plan"
 date: 2026-01-27
 dateModified: 2026-07-30
 metaDescription: "Between Coachella weekends, Indio has date farms, the Salton Sea at golden hour, real taco spots, and a vinyl listening room. A 5-day local plan."

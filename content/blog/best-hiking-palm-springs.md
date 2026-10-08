@@ -1,8 +1,8 @@
 ---
-title: "Best Hiking Near Palm Springs: 12 Trails Worth the Drive"
+title: "Best Hiking Near Palm Springs: 13 Trails Worth the Drive"
 date: 2025-12-25
-dateModified: 2026-09-28
-metaDescription: "Best hiking near Palm Springs: 12 trails with stats, fees, and real notes. Palm Canyon to San Jacinto Peak, dog-friendly picks, plus a swimmable waterfall."
+dateModified: 2026-10-08
+metaDescription: "Best hiking near Palm Springs: 13 trails with stats, fees, and real notes. Palm Canyon to San Jacinto Peak, an Indio-area palm oasis, dog-friendly picks."
 ogImage: /blog/images/coachella-valley-desert-hiking.webp
 heroImage: /blog/images/coachella-valley-desert-hiking.webp
 heroAlt: "Desert hiking trail through rocky canyon near Palm Springs California with blue sky overhead"
@@ -26,10 +26,12 @@ keywords:
   - Chuckwalla Trail Rancho Mirage
   - East Indio Hills Badlands
   - Cathedral Canyon trail
+  - Sheep Hole Oasis hike
+  - Mecca Hills hiking
 articleSection: "Travel Guide"
 property: all
-readTime: "15 min read"
-excerpt: "Twelve hikes near Palm Springs with actual stats: distance, elevation, fees, and whether you can bring your dog. From a flat palm oasis loop to a 10,834-foot summit, here's what to know before you go."
+readTime: "16 min read"
+excerpt: "Thirteen hikes near Palm Springs with actual stats: distance, elevation, fees, and whether you can bring your dog. From a flat palm oasis loop to a 10,834-foot summit, here's what to know before you go."
 layout: blog-post.njk
 relatedPosts:
   - title: "Joshua Tree Day Trip from Indio"
@@ -44,7 +46,7 @@ relatedPosts:
 
 <p>Hiking near Palm Springs is one of those things that surprises people who showed up for the pools and the architecture. The mountains are right there, and the canyons cut into them hold palm oases, seasonal waterfalls, and trails that feel nothing like the flat Mojave scrub around them. October through April is the window. Summer requires a 5am start and a serious conversation with yourself about heat.</p>
 
-<p>Here are twelve trails worth knowing, with real stats so you can plan before you drive.</p>
+<p>Here are thirteen trails worth knowing, with real stats so you can plan before you drive.</p>
 
 <div class="summary-box">
   <table>
@@ -56,7 +58,7 @@ relatedPosts:
   </table>
 </div>
 
-<h2>Quick Comparison: All 12 Trails</h2>
+<h2>Quick Comparison: All 13 Trails</h2>
 
 <div class="trail-table-wrapper" style="overflow-x:auto;">
 <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
@@ -144,6 +146,14 @@ relatedPosts:
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Yes (leash)</td>
     </tr>
     <tr style="background:#faf8f5;">
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Sheep Hole Oasis (Mecca Hills)</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Moderate</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">2.9 mi loop</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">538 ft</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Free (BLM lists no fee)</td>
+      <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Not confirmed, ask BLM</td>
+    </tr>
+    <tr>
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Chuckwalla Trail (Rancho Mirage)</td>
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Moderate</td>
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">~2.1 mi loop</td>
@@ -151,7 +161,7 @@ relatedPosts:
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Free</td>
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Disputed, check signage</td>
     </tr>
-    <tr>
+    <tr style="background:#faf8f5;">
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Art Smith Trail</td>
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Hard</td>
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">15.9 mi out-back</td>
@@ -159,7 +169,7 @@ relatedPosts:
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">Free</td>
       <td style="padding:8px 10px;border-bottom:1px solid #e8e0d4;">No</td>
     </tr>
-    <tr style="background:#faf8f5;">
+    <tr>
       <td style="padding:8px 10px;">Cathedral Canyon Trail</td>
       <td style="padding:8px 10px;">Moderate</td>
       <td style="padding:8px 10px;">~1.9 mi one-way</td>
@@ -294,7 +304,26 @@ relatedPosts:
   <p>This trailhead is a five-minute drive from <a href="/terra-luz/">Terra Luz</a> and <a href="/cozy-cactus/">The Cozy Cactus</a>, both in Indio. Do the hike in the morning, be back at the pool by lunch. <a href="/terra-luz/">Check availability →</a></p>
 </div>
 
-<h2>10. Chuckwalla Trail, Rancho Mirage (Moderate)</h2>
+<h2>10. Sheep Hole Oasis, Mecca Hills (Moderate)</h2>
+
+<div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
+<strong>Distance:</strong> 2.9 mi loop (AllTrails) &nbsp;|&nbsp; <strong>Elevation gain:</strong> 538 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free (BLM lists none) &nbsp;|&nbsp; <strong>Dogs:</strong> Not confirmed, ask the BLM
+</div>
+
+<p>Sheep Hole Oasis is the wild card on this list. It sits in the Mecca Hills Wilderness about 15 miles southeast of Indio, in a corridor the BLM describes as a small southern section split off by Box Canyon Road, and it runs on a different logic than the Palm Springs canyons: no ticket booth, no ranger, no marked trail, just a worn route over a ridge and into a sandy wash. Palm Springs Life describes it as a path the Cahuilla and Chemehuevi traditionally used to link two fault-fed oases, and the water here rises along cracks from the San Andreas Fault.</p>
+
+<p>Set your expectations on the palms. Palm Springs Life counts six native fan palms in two small clusters less than 100 yards apart, so the walk through the badlands is the real draw and the palms are the reward at the end. The route climbs roughly 300 feet to a ridge with Salton Sea views to the south, according to that same piece, and AllTrails puts the whole loop at 1.5 to 2 hours. Hikers who want more can continue to Hidden Springs Oasis, where Palm Springs Life reports more than 30 fan palms around a small spring, after a short scramble over boulders.</p>
+
+<p>Getting there takes more planning than the other hikes here. The BLM says you reach the wilderness from the east on Highway 195 (Box Canyon Road) off Interstate 10, or from the south at Mecca on Highway 111. The BLM describes nearby Painted Canyon Road as four-wheel-drive access, and AllTrails calls the drive to this trailhead rough and sandy, so I would take a high-clearance vehicle and not a low sedan. Both roads close seasonally for weather. I could not find a published rule on 2WD for Box Canyon Road, so call the BLM Palm Springs office at 760-833-7100 for current conditions before you drive out.</p>
+
+<p>Friends of the Desert Mountains lists the nearby Grottos trailhead at 33.589100, -115.930060, so put those coordinates in an offline map. The BLM says cell service is little to none and there are no designated trails, which means downloading the route, bringing a hiking partner, and telling someone when you expect to be back. Carry at least a liter of water per person (more is better) plus electrolytes, because temperatures climb fast by early afternoon. AllTrails lists October through April as the best window, and I would skip it entirely in summer. Stay out of the washes if rain is anywhere in the forecast. <a href="https://www.alltrails.com/trail/us/california/hidden-spring-trail" target="_blank" rel="noopener noreferrer">Sheep Hole Oasis on AllTrails</a> | <a href="https://www.blm.gov/visit/mecca-hills-wilderness" target="_blank" rel="noopener noreferrer">BLM Mecca Hills Wilderness</a> | <a href="https://www.palmspringslife.com/outdoors/hiking-palm-springs/hiking-box-canyons-ancient-trail-to-sheep-hole-palms-and-hidden-springs-oasis/" target="_blank" rel="noopener noreferrer">Palm Springs Life trail report</a>.</p>
+
+<img src="/blog/images/box-canyon-mecca-hills-salton-sea-overlook.webp" alt="Mecca Hills badlands ridges with the Salton Sea and distant mountains on the horizon near Box Canyon, Coachella Valley" width="1600" height="1060" loading="lazy">
+<p class="image-caption">Mecca Hills badlands with the Salton Sea in the distance. Photo: BLM California / Wikimedia Commons, <a href="https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(28745912910).jpg" target="_blank" rel="noopener noreferrer">public domain</a>.</p>
+
+<p>If you are already planning a <a href="/blog/salton-sea-day-trip/">Salton Sea day trip</a>, this pairs with it, since the sea is just south of the Mecca Hills.</p>
+
+<h2>11. Chuckwalla Trail, Rancho Mirage (Moderate)</h2>
 
 <div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> ~2.1 mi loop &nbsp;|&nbsp; <strong>Elevation gain:</strong> ~200-400 ft (sources vary) &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> Check current signage
@@ -304,7 +333,7 @@ relatedPosts:
 
 <p>Parking is behind Rancho Mirage City Hall, with trailhead access off Frank Sinatra Drive. There's zero shade on this loop, so this is a morning or late-afternoon trail, not a midday one. The city's own trail sources disagree on whether dogs are allowed here, some say leashed dogs are fine, the Desert Recreation District page says no, so check the trailhead signage on the day rather than assume either way. <a href="https://www.alltrails.com/trail/us/california/chuckwalla-trail-loop" target="_blank" rel="noopener noreferrer">Chuckwalla Trail Loop on AllTrails</a>.</p>
 
-<h2>11. Art Smith Trail (Hard)</h2>
+<h2>12. Art Smith Trail (Hard)</h2>
 
 <div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> 15.9 mi out-and-back (shorter turnarounds possible) &nbsp;|&nbsp; <strong>Elevation gain:</strong> 3,323 ft &nbsp;|&nbsp; <strong>Difficulty:</strong> Hard &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> No
@@ -314,7 +343,7 @@ relatedPosts:
 
 <p>The trailhead is across Highway 74 from the Santa Rosa San Jacinto National Monument Visitor Center, about 4 miles south of Highway 111 and a 15-minute drive from Indian Wells. No fee, no shade, and no water source on the trail, so this is an early-start, fully-stocked hike either way. <a href="https://www.alltrails.com/trail/us/california/art-smith-trail--3" target="_blank" rel="noopener noreferrer">Art Smith Trail on AllTrails</a>.</p>
 
-<h2>12. Cathedral Canyon Trail (Moderate)</h2>
+<h2>13. Cathedral Canyon Trail (Moderate)</h2>
 
 <div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
 <strong>Distance:</strong> ~1.9 mi one-way (10.6 mi loop with Dunn Road Connector) &nbsp;|&nbsp; <strong>Elevation gain:</strong> Steep in sections (the connector segment loses over 1,000 ft one direction; 2,312 ft for the full loop) &nbsp;|&nbsp; <strong>Difficulty:</strong> Moderate &nbsp;|&nbsp; <strong>Fee:</strong> Free &nbsp;|&nbsp; <strong>Dogs:</strong> Policy unclear, ask locally
@@ -349,9 +378,9 @@ relatedPosts:
 
 <h2>Where to Stay for Easy Trail Access</h2>
 
-<p>The Indian Canyons, Tahquitz Canyon, and the Lykken Trail are all within 10 minutes of central Palm Springs. The tram is 15 minutes from downtown. Bump and Grind, Chuckwalla, Art Smith, and Cathedral Canyon are all 20 to 25 minutes east toward Palm Desert and Rancho Mirage. East Indio Hills Badlands is the outlier, closer to Indio than Palm Springs.</p>
+<p>The Indian Canyons, Tahquitz Canyon, and the Lykken Trail are all within 10 minutes of central Palm Springs. The tram is 15 minutes from downtown. Bump and Grind, Chuckwalla, Art Smith, and Cathedral Canyon are all 20 to 25 minutes east toward Palm Desert and Rancho Mirage. East Indio Hills Badlands and Sheep Hole Oasis are the outliers, closer to Indio than Palm Springs, with Sheep Hole about 15 miles southeast of town per the BLM.</p>
 
-<p>If you're basing yourself for a hiking trip, <a href="/the-sundune/">The Sundune</a> in Palm Springs puts you closest to the mountain trails. If you want space to come back to after a hard morning, <a href="/terra-luz/">Terra Luz</a> in Indio has a private pool, and <a href="/cozy-cactus/">The Cozy Cactus</a> has a private hot tub plus community pool access, both minutes from East Indio Hills Badlands, with every other trail on this list under 40 minutes away. If you're bringing your dog, see the <a href="/blog/pet-friendly-palm-springs/">pet-friendly Palm Springs guide</a> for which trails and properties work for dogs.</p>
+<p>If you're basing yourself for a hiking trip, <a href="/the-sundune/">The Sundune</a> in Palm Springs puts you closest to the mountain trails. If you want space to come back to after a hard morning, <a href="/terra-luz/">Terra Luz</a> in Indio has a private pool, and <a href="/cozy-cactus/">The Cozy Cactus</a> has a private hot tub plus community pool access, both minutes from East Indio Hills Badlands and a short drive from the Mecca Hills, with most of the other trails on this list under 40 minutes away. If you're bringing your dog, see the <a href="/blog/pet-friendly-palm-springs/">pet-friendly Palm Springs guide</a> for which trails and properties work for dogs.</p>
 
 <h2>Frequently Asked Questions</h2>
 

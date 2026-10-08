@@ -119,7 +119,7 @@ The reward is that you earn the view faster than any other trail in Palm Springs
 
 If you're visiting in May through September, run before 7am or after 6pm. In summer, even the easy trails get dangerous by mid-morning. This isn't an overstatement. Bring more water than you think you need, tell someone your route, and turn around if you feel wrong. The desert doesn't negotiate.
 
-If you're based at [The Sundune at Palm Springs](/the-sundune), the CV Link trailhead near our property is an easy starting point for a flat morning run before the heat arrives. And there's a shower waiting when you get back.
+If you're based at [The Sundune at Palm Springs](/the-sundune/), the CV Link trailhead near our property is an easy starting point for a flat morning run before the heat arrives. And there's a shower waiting when you get back.
 
 ## Frequently Asked Questions
 
