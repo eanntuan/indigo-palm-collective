@@ -90,3 +90,15 @@ These are confirmed facts that have been corrected from prior AI errors. Apply t
 2. Add URL to `sitemap.xml`
 3. Commit: `git add content/blog/[slug].md content/blog/images/ blog/index.html sitemap.xml && git commit -m "Add [slug] post" && git push`
 4. Remind user to run `/pinterest-pins [slug]`
+
+---
+
+## Image Sizing Rule (all pages, all properties)
+
+Reference: https://indigopalm.co/blog/dsrt-surf-palm-desert/ is the look Eann wants.
+
+- **In-copy photos:** full width of the text column (blog column is 800px max, about 736px of image), `height: auto`, natural aspect ratio, never cropped (no `object-fit: cover` on in-copy images). Landscape 3:2 to 16:9 only, so a photo lands about 410-490px tall. Rounded corners (16px), soft shadow, 2rem vertical margin, italic centered caption under it.
+- **Portrait photos:** never full column width (a 2:3 photo at 736px is over 1100px tall). Cap at `max-height: 560px`, `width: auto`, centered. Prefer a landscape alternative when one exists.
+- **Heroes:** full-bleed band about 480px tall on desktop (property room pages: `aspect-ratio: 16 / 8`, `min-height: 420px`, `max-height: 78vh`, `width: 100%`), cover-cropped from a wide landscape photo (1600px+ wide) showing the whole room or scene, never a detail close-up. Phones: about 55vh with `min-height`, not a fixed height.
+- **Always** set `width` and `height` attributes to the real pixel dimensions and `loading="lazy"` below the fold; WebP only.
+- **Never** shrink photos to a fraction of the column (earlier "1/3 size" attempts were rejected); the goal is that no single photo takes more than about half a screen of vertical space.
