@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/cozy-cactus-exterior.webp" alt="The Cozy Cactus vacation rental exterior in Indio near Coachella with colorful design and desert mountain views" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:top;" loading="eager" fetchpriority="high">
     </div>
     
@@ -257,10 +260,10 @@
             <p>The backyard at The Cozy Cactus has a hot tub that sits maybe 15 feet from a putting green, backed by a mural of cacti and desert color that I picked partly because I liked it and partly because kids would lose their minds over it. On any given weekend, there's a toddler losing their mind over it while their parents drink coffee on the patio and, for the first time all trip, feel like they're on vacation. That specific scene is why I bought the place.</p>
 <p>What started off as a backup plan for my beloved 2005 Honda Element, turned into the beginning of what some may call an "Airbnb empire," yet I call "my retirement plan when I'm dead, ha." After Covid, I had way too much time on my hands and started dreaming of the next car after my Honda Element retired from surf camping duty. (As of writing this in February 2026, that car is still kickin' and I couldn't be happier.) Turns out brand new Teslas cost over $45k. I started thinking of all the things I could do with that $45k instead. I had a line of credit and savings from being quarantined at home during Covid.</p>
 <p>One step led to another, and before I knew it, my now husband, Tyler, who is also a real estate agent (lucky me!) were driving out to Indio, CA on Easter day in 2022 to take a look at what would eventually become The Cozy Cactus. After talking to the seller, taking countless videos, and seeing the potential that this home had, we drove back to his aunt's house, excused ourselves to the living room, where we wrote our offer.</p>
-<img src="/blog/images/cc-easter-visit.webp" alt="Eann and Tyler visiting the Cozy Cactus property in Indio on Easter Sunday 2022 before purchasing" width="1400" height="1050" loading="lazy">
+<img class="squarish" src="/blog/images/cc-easter-visit.webp" alt="Eann and Tyler visiting the Cozy Cactus property in Indio on Easter Sunday 2022 before purchasing" width="1400" height="1050" loading="lazy">
 <p class="image-caption">When Tyler, my then boyfriend at the time, and I drove to Indio on Easter Sunday to check out what would become The Cozy Cactus. We had no idea what we were getting ourselves into!</p>
 <p>Before I knew it, AGAIN, I was researching sofa beds (I still haven't found a comfortable one…), stalking facebook marketplace for the best deals all around town, going to Marshall's, Ross, TJ Max, Homegoods, etc to see if I could find any non-generic wall art (everyone knows the <a href="https://www.wayfair.com/IDEA4WALL--Animals-Portrait-Of-A-Highland-Cow-Black-And-White-Modern-Art-Extra-Large-Framed-Wall-Pictures-FLCA0-L1318-K~SFTD1019.html" target="_blank">cow print</a>). My days turned into bopping all around LA picking up a $10 sound machine (I now know better that time is money), squishing a West Elm dining table in my Honda Element (there has been nothing this car cannot fit), and slowly piecing together a discombobulated Airbnb that I prayed to the Lord almighty was a good decision. A Tesla definitely would've been easier.</p>
-<img src="/blog/images/cc-delivery-boxes.webp" alt="Stacks of delivery boxes filling a room during Cozy Cactus vacation rental setup" width="1400" height="1050" loading="lazy">
+<img class="portrait" src="/blog/images/cc-delivery-boxes.webp" alt="Stacks of delivery boxes filling a room during Cozy Cactus vacation rental setup" width="1050" height="1400" loading="lazy">
 <p class="image-caption">So. many. boxes. You wouldn't believe the amount of trash I've contributed to global warming. The installation process is no joke.</p>
 <p>As a frequent traveler myself, I have been to my share of Airbnbs, both decent and horrible at the same time. Why are the knives always SO dull and the kitchen so bare? Why are the beds so springy and outdated, and when's the last time anyone cleaned the floors?</p>
 <p>I slowly learned that not only do you get what you pay for (back when I was a poor college student, I booked Airbnbs with shared bathrooms… ew), but there is also an intentionality that some hosts approach hospitality with, and it can be as simple as adding a $30 knife sharpener for guests.</p>
@@ -277,11 +280,11 @@
 <p>A few things I did that guests have raved about:</p>
 <h3>I labeled everything.</h3>
 <p>I labeled where the batteries are, where the extra linens go, which drawer has the baby spoons, and which cabinet has the Tupperware lids (because that's always the mystery, right?). I didn't want guests hunting for things at 7am while their little ones are screaming for breakfast. One guest told me the labeling system was "unprecedented." I laughed when she said it, but I get it. My own home is not as organized as my vacation rentals. If I, the homeowner, cannot find where the forks are, how do I expect a guest to?</p>
-<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored" loading="lazy" decoding="async" width="800" height="533">
+<img class="portrait" src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored" loading="lazy" decoding="async" width="1050" height="1400">
 <p class="image-caption">Everything labeled: batteries, extra linens, baby spoons, exactly where you'd look for them</p>
 <h3>I bought infant gear that works.</h3>
 <p>I bought elevated baby gear, including a <a href="https://www.target.com/p/stokke-clikk-high-chair-cloud-gray/-/A-78461786" target="_blank">Stokke high chair</a> that supports a toddler well. Sound machines in every bedroom because sleep matters. Shoot, I'm a grown woman, and I travel with my own sound machine! Outlet covers, cabinet locks, Keekaroo changing table, etc. Dawn curated a whole Family Kit for The Cozy Cactus, and it has proven to be widely successful. We added things you don't realize you need until 10pm on vacation: bottle warmer, bottle brush, changing pad, diaper pail. Those 11pm panicked messages were solvable problems, so we solved them before check-in.</p>
-<img src="/blog/images/cc-stokke-highchair.webp" alt="Stokke high chair at The Cozy Cactus dining area with modern curtains and fiddle leaf fig plant" loading="lazy" decoding="async" width="934" height="1400">
+<img class="portrait" src="/blog/images/cc-stokke-highchair.webp" alt="Stokke high chair at The Cozy Cactus dining area with modern curtains and fiddle leaf fig plant" loading="lazy" decoding="async" width="934" height="1400">
 <p class="image-caption">The craziest part of all this is that we are DINKWADS (Double Income, No Kids, With A Dog (and two cats)), so I had to lean on Dawn and my parent friends for advice on how to make homes family and baby friendly!</p>
 <img src="/blog/images/cozy-cactus-infant-gear.webp" alt="Baby gear at The Cozy Cactus including Stokke high chair, sound machine, pack n play, and changing station" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">Elevated baby gear: Stokke high chair, sound machines, pack-n-play. Everything families need, already there.</p>

@@ -51,7 +51,7 @@ layout: blog-post.njk
 
 <h2>What to Look For in a Stagecoach Rental</h2>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indio California, walking distance to Stagecoach" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indio California, walking distance to Stagecoach" width="1024" height="1536" loading="lazy">
 <p class="image-caption">A private pool changes the whole trip. After three days of dust and sun, having somewhere to decompress that's yours alone is genuinely the best thing.</p>
 
 <p>Stagecoach runs late April, which means daytime temps in Indio regularly hit 95-105 degrees Fahrenheit. Desert in late April, full stop. A rental with a private pool shifts from "nice to have" to essential for your group to enjoy the week.</p>

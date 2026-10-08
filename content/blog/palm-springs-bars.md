@@ -37,7 +37,7 @@ relatedPosts:
 
 <p>This isn't a sponsored list, and nobody paid me to include anyone here. Below are 11 spots organized by what you're looking for, so skip straight to your category if you already know what you want.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Canyon Drive in Palm Springs lined with palm trees and backed by San Jacinto mountains at dusk" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Canyon Drive in Palm Springs lined with palm trees and backed by San Jacinto mountains at dusk" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Palm Canyon Drive at dusk. Most of this list is within a few blocks of here or on Arenas Road, one block east.</p>
 
 <h2>Classic Desert Cocktail Bars</h2>
@@ -63,7 +63,7 @@ relatedPosts:
 
 <p>Full food menu if you want to eat up there. The mountain view at golden hour is worth arriving early for once.</p>
 
-<img src="/blog/images/ps-street-mountains.webp" alt="Palm Springs street view with San Jacinto Mountains in the background, evening light" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-mountains.webp" alt="Palm Springs street view with San Jacinto Mountains in the background, evening light" width="933" height="1400" loading="lazy">
 <p class="image-caption">The San Jacinto Mountains backdrop is the constant in Palm Springs nightlife. Rooftop 262 faces them directly.</p>
 
 <h2>Craft Beer</h2>
@@ -135,7 +135,7 @@ relatedPosts:
 
 <p>I tell guests: go once, tell me what you think. Everyone comes back with a story. It's been there forever and shows no signs of apologizing for it.</p>
 
-<img src="/blog/images/ps-desert-moonrise.webp" alt="Desert moonrise over the Coachella Valley near Palm Springs with clear dark skies" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-moonrise.webp" alt="Desert moonrise over the Coachella Valley near Palm Springs with clear dark skies" width="1200" height="1800" loading="lazy">
 <p class="image-caption">The valley at night. The Nest is worth the drive out to Indian Wells.</p>
 
 <h2>Indoor and Air-Conditioned</h2>

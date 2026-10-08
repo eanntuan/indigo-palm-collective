@@ -52,7 +52,7 @@ Palm Springs is the right backdrop for this because the city has the density. Th
 
 **Home Tours.** The individual home tours are where the festival earns its reputation. These are private residences, usually not open to the public any other time of year. Featured homes change annually. In 2026, The Marquee at Twin Palms (a 1957 home reimagined recently) and The Soleil House (a 1963 property redesigned by Trina Turk) were among the featured tours. Tickets range from $40 to $125 depending on the home and whether a reception is included.
 
-<img src="/blog/images/ps-orange-door-mcm.webp" alt="Orange door on a mid-century modern Palm Springs home with desert landscaping" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-orange-door-mcm.webp" alt="Orange door on a mid-century modern Palm Springs home with desert landscaping" loading="lazy" width="1800" height="1800">
 
 **Lectures and Screenings.** Many of these are free or low-cost. The <a href="https://www.psmuseum.org/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Art Museum</strong></a> runs programming throughout the festival, and there are usually architect-led walking tours of specific neighborhoods. These don't sell out the way bus tours do, so they're good to leave open for planning closer to arrival.
 
@@ -64,7 +64,7 @@ Tickets for Modernism Week go live November 1 at noon Pacific Time. That's when 
 
 Tickets are available at <a href="https://modernismweek.com" target="_blank" rel="noopener noreferrer"><strong>modernismweek.com</strong></a>. There's no official discount for buying multiple events, but purchasing a pass bundle sometimes makes sense if you're planning to attend five or more ticketed events.
 
-<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Teal door on a mid-century modern home in Palm Springs with cacti in front" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Teal door on a mid-century modern home in Palm Springs with cacti in front" loading="lazy" width="1200" height="1800">
 
 ## Navigating the Festival as a Visitor
 
@@ -94,7 +94,7 @@ Parking near event venues fills quickly on weekends. Downtown Palm Springs has a
 
 The full schedule for all 450+ events is posted at <a href="https://modernismweek.com" target="_blank" rel="noopener noreferrer">modernismweek.com</a> once the schedule preview goes live. For the 2027 festival that is October 25, 2026.
 
-<img src="/blog/images/ps-pink-door-midcentury.webp" alt="Pink door on a Palm Springs mid-century home with palm trees and blue sky" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-pink-door-midcentury.webp" alt="Pink door on a Palm Springs mid-century home with palm trees and blue sky" loading="lazy" width="1050" height="1400">
 
 ## Frequently Asked Questions
 

@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/palm-springs-hotel-pool.webp" alt="Resort pool and lounge chairs in Palm Springs with palm trees and mountains in the background" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center bottom;" loading="eager" fetchpriority="high">
     </div>
     
@@ -259,14 +262,14 @@
 <h2>The Spa at Séc-hé, Downtown Palm Springs</h2>
 <p>500 E Amado Rd, Palm Springs. This is the one with the actual mineral hot springs, the reason the whole city is here. It's open to the public with no hotel stay required, which is rare for a spa this good. A day pass runs somewhere in the $125-$165 range depending on the day of the week, with weekends priced higher than weekdays. The hydrotherapy circuit, salt caves, and private mineral soak option are the draw, along with the "Earthing Zone" loungers if you just want to sit and do nothing for an hour.</p>
 <p>Reservations are recommended, especially on weekends when locals and visitors both try to get in. This is the pick if you want one spa experience that's specifically about being in Palm Springs, not interchangeable with a spa day anywhere else.</p>
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs resort pool deck with loungers and desert mountain backdrop" loading="lazy" width="1400" height="933">
+<img class="squarish" src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs resort pool deck with loungers and desert mountain backdrop" loading="lazy" width="1400" height="1050">
 <h2>Two Bunch Palms, Desert Hot Springs</h2>
 <p>67425 Two Bunch Palms Trail, Desert Hot Springs, about 20 minutes north of downtown Palm Springs. This is an adults-only property built around a natural mineral spring that's been in continuous use for over a century, with six private outdoor soaking tubs and 19 treatment rooms spread across a quiet, low-key compound. Day visitors are welcome, but reservations are required and the property does not admit children even with a day pass. Hours run Monday through Thursday 10am to 6pm, Friday through Sunday 10am to 7pm.</p>
 <p>Old Hollywood used this place specifically because it's quiet and private, and that character has held up. If Séc-hé is the lively downtown version of a mineral soak, Two Bunch Palms is the version where nobody talks to you.</p>
 <h2>Well Spa+Salon at La Quinta Resort & Club</h2>
 <p>49-499 Eisenhower Drive, La Quinta. The spa building here is original to the resort's 1926 opening, Spanish-colonial architecture with tile work and courtyards that don't feel retrofitted for a modern spa the way a lot of resort spas do. A day facility pass runs around $65 per person, though that covers spa access only, not the resort's separate pool areas. There's an outdoor relaxation space with a fireplace that's worth the price on its own in the cooler months.</p>
 <p>Reservations are required and availability moves around based on resort occupancy. This one's the pick if you're staying in or near La Quinta and want something with more architectural character than a standard resort spa.</p>
-<img src="/blog/images/yes-please-la-quinta.webp" alt="La Quinta California desert landscape with mountains and palm trees" loading="lazy" width="1400" height="933">
+<img class="squarish" src="/blog/images/yes-please-la-quinta.webp" alt="La Quinta California desert landscape with mountains and palm trees" loading="lazy" width="1400" height="1050">
 <h2>JW Marriott Desert Springs Resort & Spa, Palm Desert</h2>
 <p>74855 Country Club Drive, Palm Desert. At 38,000 square feet this is the largest hotel spa in the Greater Palm Springs area, and it's built for volume without feeling like it. A full-day pass runs about $125, with a half-day pass around $45 if you just want a couple hours. The aromatic hammam, Finnish sauna, and Turkish steam room give it more range than most valley spas, and the "Mind Sync Chairs" are a genuinely odd, genuinely good addition if you've never tried one.</p>
 <p>Book through the spa's own site, Marriott's iDayPass program, or ResortPass. This is the pick if you want the most amenities per dollar and don't need the intimacy of a smaller property.</p>

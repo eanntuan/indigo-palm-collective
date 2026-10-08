@@ -73,7 +73,7 @@ relatedPosts:
 
 <p>Boards and wetsuits are available for rent on-site. You don't need to bring anything.</p>
 
-<img src="/blog/images/pssc-group-surf-session.webp" alt="Multiple surfers riding the Wavegarden wave at Palm Springs Surf Club with the PSSC building and mountains behind them" width="1400" height="933" loading="lazy">
+<img src="/blog/images/pssc-group-surf-session.webp" alt="Multiple surfers riding the Wavegarden wave at Palm Springs Surf Club with the PSSC building and mountains behind them" width="2000" height="1090" loading="lazy">
 <p class="image-caption">A group session in action. The Wavegarden Cove system generates waves from a central spine, so you get defined sets with waits between them, not a continuous wall of water.</p>
 
 <h2>Who It's For</h2>
@@ -94,7 +94,7 @@ relatedPosts:
 
 <p>Weekend surf sessions book out 1 to 2 weeks in advance in peak season (October through May). If you're planning a trip and want to surf, this is the first thing to book, not the last. Buy tickets online before you finalize any other plans for that day.</p>
 
-<img src="/blog/images/pssc-pool-lounge.webp" alt="PSSC lounge area with white umbrellas and teak chairs facing the wave pool with San Jacinto Mountains behind" width="1400" height="933" loading="lazy">
+<img src="/blog/images/pssc-pool-lounge.webp" alt="PSSC lounge area with white umbrellas and teak chairs facing the wave pool with San Jacinto Mountains behind" width="1900" height="980" loading="lazy">
 <p class="image-caption">The non-surf side of the venue. Lounge chairs, umbrellas, and a clear view of the wave pool. Not a bad place to wait out a session.</p>
 
 <img src="/blog/images/pssc-beginners-on-surfboard.webp" alt="Two girls and a guy smiling while lying on a surfboard together in the wave pool at Palm Springs Surf Club" width="1400" height="933" loading="lazy">

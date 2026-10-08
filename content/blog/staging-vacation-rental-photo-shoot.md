@@ -58,7 +58,7 @@ layout: blog-post.njk
 
 <p>Day 4 is cleaning, not guest-ready cleaning but photo cleaning. The difference is that a camera picks up things a guest never notices: smudges on stainless appliances, water spots on shower glass, lint on dark bedding, a single stray paper on any horizontal surface.</p>
 
-<img src="/blog/images/cc-delivery-boxes.webp" alt="Staging supplies and decor boxes arriving at vacation rental during photo shoot preparation week" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/cc-delivery-boxes.webp" alt="Staging supplies and decor boxes arriving at vacation rental during photo shoot preparation week" width="1050" height="1400" loading="lazy">
 <p class="image-caption">Day 4 also means any last staging supplies need to be in the house. If it's not here today, it's probably not making the shoot.</p>
 
 <p>Work room by room. Finish completely before moving on. If you bounce between rooms while something is still half-done, you'll miss things. I know because I missed things.</p>

@@ -89,7 +89,7 @@ relatedPosts:
 <img src="/blog/images/boozehounds-palm-springs.webp" alt="Boozehounds bar in Palm Springs with lively open atrium patio and guests enjoying cocktails at night" width="1200" height="603" loading="lazy">
 <p class="image-caption">Boozehounds. The name is the promise. End your night here.</p>
 
-<img src="/blog/images/palm-springs-marilyn-monroe-statue.webp" alt="Forever Marilyn Monroe statue on Palm Springs Art Museum Walk with San Jacinto Mountains visible in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-marilyn-monroe-statue.webp" alt="Forever Marilyn Monroe statue on Palm Springs Art Museum Walk with San Jacinto Mountains visible in the background" width="1200" height="900" loading="lazy">
 <p class="image-caption">Downtown Palm Springs after dark. Walk it at least once before you leave.</p>
 
 <hr style="border: none; border-top: 1px solid #ddd; margin: 3rem 0;">

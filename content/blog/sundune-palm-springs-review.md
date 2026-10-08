@@ -31,7 +31,7 @@ relatedPosts:
 
 <p>The Sundune is our 2BR/2BA condo in Palm Springs, close enough to the Uptown Design District to walk it and about ten minutes' drive from downtown Palm Canyon Drive. It has 4.93 stars across 40+ reviews on Airbnb. Here's what guests say about it, and what I'd tell you before you book.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard with tall palms and San Jacinto Mountains at sunset, near The Sundune Palm Springs vacation rental" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard with tall palms and San Jacinto Mountains at sunset, near The Sundune Palm Springs vacation rental" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Palm Springs in March or November: the mountains, the palms, the light. The Sundune sits inside all of this, with the Uptown Design District on foot and the rest of the city a short drive.</p>
 
 <h2>What Guests Say First</h2>
@@ -61,7 +61,7 @@ relatedPosts:
 
 <p>The design leans coastal-desert: sun-faded tones, clean lines, no clutter. It feels like Palm Springs without performing Palm Springs.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs street with bougainvillea and midcentury architecture near The Sundune vacation rental" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs street with bougainvillea and midcentury architecture near The Sundune vacation rental" width="1800" height="1350" loading="lazy">
 <p class="image-caption">A few blocks from the condo. Palm Springs in spring is the bougainvillea, the mountains, and light that makes everything look like a postcard.</p>
 
 <h2>What to Know Before You Book</h2>
@@ -80,7 +80,7 @@ relatedPosts:
 
 <p>Summer is honest: it's hot. 100+ degrees by late June. If you're coming in summer, you'll be pool-based and evening-out-based. The Sundune in summer is for guests who know the desert and plan accordingly. For summer desert trips, the <a href="/blog/palm-springs-summer/">Palm Springs in summer guide</a> covers what to do when it's that hot.</p>
 
-<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage pink Cadillac on a Palm Springs street with palm trees and blue sky, representing classic Palm Springs style near The Sundune" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage pink Cadillac on a Palm Springs street with palm trees and blue sky, representing classic Palm Springs style near The Sundune" width="1200" height="1800" loading="lazy">
 <p class="image-caption">This is the Palm Springs The Sundune gives you access to. The mid-century cars, the palms, the very specific aesthetic that's been here since the Rat Pack.</p>
 
 <h2>Booking</h2>

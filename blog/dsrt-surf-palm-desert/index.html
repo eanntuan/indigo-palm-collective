@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/dsrt-surf-palm-desert-aerial.webp" alt="Aerial view of the DSRT Surf wave lagoon at Desert Willow Golf Resort in Palm Desert with the Santa Rosa Mountains behind it" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -288,7 +291,7 @@
 <p>Phase two is expected to add a 139-room resort hotel and 57 villas, with no opening date I trust. The operators also claim the first surf lagoon with International Dark Sky certification and a turf-for-surf program aimed at net-zero water use. Those are their claims, and I haven't seen them audited.</p>
 <h2>Staying Nearby</h2>
 <p>Our Indio houses sit roughly 25 minutes from Desert Willow, depending on how Highway 111 is behaving, which makes a morning session and an afternoon at the pool a workable day. <a href="/terra-luz/">Terra Luz</a> has its own private pool for the cooldown afterward, and <a href="/cozy-cactus/">The Cozy Cactus</a> has a shared pool with a private hot tub for sore shoulders.</p>
-<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert ridge with valley and mountain views in the Coachella Valley near Palm Desert" width="1400" height="1050" loading="lazy">
+<img class="squarish" src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert ridge with valley and mountain views in the Coachella Valley near Palm Desert" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Palm Desert sits at the foot of the same ridgeline you see all over the valley.</p>
 <p>If you're building a Palm Desert day around it, my guide to <a href="/blog/things-to-do-palm-desert/">things to do in Palm Desert</a> covers lunch and El Paseo, and the <a href="/blog/best-golf-courses-palm-springs-indio/">public golf course roundup</a> includes Desert Willow's two courses, since they're the next fairway over.</p>
 <h2>Frequently Asked Questions</h2>

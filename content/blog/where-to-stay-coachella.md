@@ -81,7 +81,7 @@ faqItems:
 
 <p>Indio is where you want to be, and that's just geography.</p>
 
-<img src="/blog/images/coachella-valley-map.webp" alt="Map of Coachella Valley showing distances from Palm Springs, Palm Desert, La Quinta, and Indio to the Empire Polo Club festival grounds" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-map.webp" alt="Map of Coachella Valley showing distances from Palm Springs, Palm Desert, La Quinta, and Indio to the Empire Polo Club festival grounds" width="1440" height="990" loading="lazy">
 <p class="image-caption">The valley spread out. The polo grounds are at the eastern end. Every mile west adds commute time.</p>
 
 <h2>Option 1: On-Site Camping</h2>
@@ -94,7 +94,7 @@ faqItems:
 
 <p><strong>Good for:</strong> people who want full immersion regardless of comfort, groups of friends in their 20s who can recover on nothing, anyone who has done it before and already knows what they're signing up for.</p>
 
-<img src="/blog/images/coachella-camping.webp" alt="Coachella festival camping area with rows of tents and cars in the desert campground at Indio California" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-camping.webp" alt="Coachella festival camping area with rows of tents and cars in the desert campground at Indio California" width="1800" height="1012" loading="lazy">
 <p class="image-caption">The camping situation. Communal, authentic, dusty. It's a genuinely good experience for the right group.</p>
 
 <h2>Option 2: Hotels in Palm Springs</h2>
@@ -145,7 +145,7 @@ faqItems:
 
 <p><strong>Good for:</strong> couples or solo travelers who want on-site immersion with real comfort and are willing to pay for it. Less cost-effective once you're splitting more than two ways.</p>
 
-<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of the Coachella festival grounds at Empire Polo Club in Indio California showing stages and camping areas" width="1400" height="933" loading="lazy">
+<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of the Coachella festival grounds at Empire Polo Club in Indio California showing stages and camping areas" width="960" height="503" loading="lazy">
 <p class="image-caption">The full footprint of the festival grounds from above. Camping and glamping options are on the property. Everything else is off-site.</p>
 
 <h2>The Honest Breakdown by Group Type</h2>
@@ -158,7 +158,7 @@ faqItems:
 
 <p><strong>First-timers who aren't sure what they want:</strong> A vacation rental in Indian Palms gives you the most options. You can walk to the festival or drive. You can stay at the grounds all day or come back to the pool at 3pm. You're not locked into camping logistics or shuttle schedules before you even know what you like.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool and terracotta backyard at vacation rental in Indio California, walking distance to Coachella" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool and terracotta backyard at vacation rental in Indio California, walking distance to Coachella" width="1024" height="1536" loading="lazy">
 <p class="image-caption">The Cozy Cactus pool and backyard. The 3pm-recovery strategy only works if your rental is close enough to make it worth the trip.</p>
 
 <div class="booking-alert" style="background: #fff8e7; border: 1px solid rgba(0,0,0,0.08); padding: 1rem 1.2rem; margin: 1.5rem 0; border-radius: 12px;">

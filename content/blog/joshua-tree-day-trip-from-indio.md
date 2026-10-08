@@ -59,7 +59,7 @@ faqItems:
 
 <p>From Palm Springs, take the I-10 east to CA-62 north toward Yucca Valley (West Entrance) or Twentynine Palms (North Entrance). This is where most people picture Joshua Tree: large granite boulder formations, the classic Joshua tree-covered landscape, the bouldering areas. Skull Rock is an easy roadside stop. Hidden Valley is a short trail inside a natural enclosure of boulders. Keys View gives you an elevated overlook of the full Coachella Valley below, and on a clear day you can see the Salton Sea.</p>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Panoramic view of the Coachella Valley desert from elevation, looking south toward Indio and the Salton Sea" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Panoramic view of the Coachella Valley desert from elevation, looking south toward Indio and the Salton Sea" width="1800" height="1269" loading="lazy">
 <p class="image-caption">The view from Keys View on a clear day stretches all the way to the Salton Sea.</p>
 
 <h2>Entry Fee and Reservations</h2>
@@ -85,7 +85,7 @@ faqItems:
   <li><strong>Offline maps:</strong> Cell service is limited. Download your route on Google Maps or AllTrails before you enter.</li>
 </ul>
 
-<img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the desert landscape near Joshua Tree, the kind of light you get if you stay until evening" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the desert landscape near Joshua Tree, the kind of light you get if you stay until evening" width="1200" height="1800" loading="lazy">
 <p class="image-caption">Stay past sunset and this is what the drive back looks like.</p>
 
 <h2>A Full Day Itinerary from Indio</h2>
@@ -102,7 +102,7 @@ faqItems:
 
 <p><strong>1:00pm:</strong> Head back. On the way, stop at <a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a> in Indio for a date shake. Open since 1924, and the shake is worth every minute of the detour.</p>
 
-<img src="/blog/images/coachella-valley-map.webp" alt="Coachella Valley map showing Joshua Tree to the north, Indio at center, and Palm Springs to the west" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-map.webp" alt="Coachella Valley map showing Joshua Tree to the north, Indio at center, and Palm Springs to the west" width="1440" height="990" loading="lazy">
 <p class="image-caption">The Coachella Valley's geography: Joshua Tree is due north of Indio, making it the easiest national park day trip from the east valley.</p>
 
 <h2>Frequently Asked Questions</h2>
@@ -122,7 +122,7 @@ faqItems:
 <h3>What is the best Joshua Tree entrance to use from Palm Springs?</h3>
 <p>From Palm Springs, most people use the north or west entrances via Highway 62 toward Yucca Valley or Twentynine Palms. This puts you near Skull Rock, Hidden Valley, and the classic boulder landscape. From Indio or the east valley, the Cottonwood South Entrance is significantly closer and far less crowded.</p>
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Fan palm oasis at the Coachella Valley Preserve near Thousand Palms, a natural desert oasis fed by the San Andreas Fault" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/coachella-valley-preserve.webp" alt="Fan palm oasis at the Coachella Valley Preserve near Thousand Palms, a natural desert oasis fed by the San Andreas Fault" width="700" height="493" loading="lazy" decoding="async">
 <p class="image-caption">The Coachella Valley Preserve is another easy half-day from Indio if Joshua Tree isn't enough desert for you.</p>
 
 <p>For other day trip options, <a href="/blog/things-to-do-indio-ca/">the things to do in Indio guide</a> covers what else is close. If the Salton Sea is on your radar too, read the <a href="/blog/salton-sea-day-trip/">Salton Sea day trip guide</a> before you go. And if you need a base in Indio with a private saltwater pool to come back to after a full day in the park, <a href="/terra-luz/">Terra Luz</a> is pet-friendly and sleeps up to eight.</p>

@@ -143,6 +143,22 @@ permalink: "{{ page.fileSlug }}/index.html"
     </script>
     {% endif %}
 
+    {%- if heroVideo %}
+    <!-- JSON-LD: VideoObject (conditional, requires heroVideo frontmatter) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": {{ title | dump | safe }},
+      "description": {{ metaDescription | dump | safe }},
+      "thumbnailUrl": "https://indigopalm.co{{ heroImage }}",
+      "uploadDate": "{{ publishedDate }}",
+      "contentUrl": "https://indigopalm.co{{ heroVideo }}.mp4",
+      "duration": "PT11S"
+    }
+    </script>
+    {%- endif %}
+
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -225,6 +241,9 @@ permalink: "{{ page.fileSlug }}/index.html"
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -259,6 +278,12 @@ permalink: "{{ page.fileSlug }}/index.html"
         .contact-btn.instagram { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
         footer a { color: var(--terracotta); text-decoration: none; }
         footer a:hover { text-decoration: underline; }
+
+
+{%- if heroVideo %}
+        .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.2s ease; }
+        .hero-video.is-ready { opacity: 1; }
+{%- endif %}
 
 
         @media (max-width: 768px) {
@@ -296,8 +321,9 @@ permalink: "{{ page.fileSlug }}/index.html"
     </nav>
 
     {% if heroImage %}
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;{% if heroVideo %}position:relative;{% endif %}">
         <img src="{{ heroImage }}" alt="{{ heroAlt if heroAlt else title }}" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:{{ heroPosition if heroPosition else 'center' }};" loading="eager" fetchpriority="high">
+        {%- if heroVideo %}<video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="{{ heroImage }}" data-src-small="{{ heroVideo }}-720.mp4?v=1" data-src="{{ heroVideo }}.mp4?v=1" style="object-position:{{ heroPosition if heroPosition else 'center' }};"></video>{%- endif %}
     </div>
     {% endif %}
 
@@ -405,6 +431,37 @@ permalink: "{{ page.fileSlug }}/index.html"
             <p style="margin-top: 1rem; font-size: 0.8rem; color: #888;"><a href="/" style="color: inherit; text-decoration: none;">Home</a> &nbsp;&middot;&nbsp; <a href="/#properties" style="color: inherit; text-decoration: none;">Properties</a> &nbsp;&middot;&nbsp; <a href="/blog/" style="color: inherit; text-decoration: none;">Blog</a> &nbsp;&middot;&nbsp; <a href="/#contact" style="color: inherit; text-decoration: none;">Contact</a></p>
         </div>
     </footer>
+{%- if heroVideo %}
+    <script>
+    (function () {
+        var v = document.getElementById('heroVideo');
+        if (!v) return;
+        var c = navigator.connection || {};
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData || /^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) return;
+        var loaded = false, inView = true;
+        function slow() { v.playbackRate = 0.75; }
+        function sync() {
+            if (!loaded) return;
+            if (inView && !document.hidden) { slow(); v.play().catch(function () {}); } else v.pause();
+        }
+        function load() {
+            v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;
+            slow();
+            v.addEventListener('loadedmetadata', slow);
+            v.addEventListener('play', slow);
+            v.addEventListener('playing', function () { v.classList.add('is-ready'); }, { once: true });
+            loaded = true;
+            sync();
+        }
+        var start = function () { 'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 2500 }) : setTimeout(load, 1500); };
+        if (document.readyState === 'complete') start(); else addEventListener('load', start);
+        if ('IntersectionObserver' in window) {
+            new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
+        }
+        document.addEventListener('visibilitychange', sync);
+    })();
+    </script>
+    {%- endif %}
 
 </body>
 </html>

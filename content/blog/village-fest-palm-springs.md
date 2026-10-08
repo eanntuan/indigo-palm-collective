@@ -29,7 +29,7 @@ It runs from approximately 6pm to 10pm, year round. The booths stretch roughly f
 
 Here's how to navigate it.
 
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Canyon Drive in downtown Palm Springs lined with palm trees under a clear blue desert sky" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Canyon Drive in downtown Palm Springs lined with palm trees under a clear blue desert sky" loading="lazy" width="933" height="1400">
 
 ## When to Arrive
 
@@ -39,7 +39,7 @@ The fair gets crowded by 7:30pm, especially on holiday weekends and during festi
 
 Parking during Village Fest is the one frustrating part. Palm Canyon Drive is closed, which means side street parking fills up fast. Museum Way, Belardo Road, and Cahuilla Road are your best bets, though the city parking structure on Belardo often gets overlooked too. Budget 10 to 15 minutes for parking if you're arriving after 6:30pm.
 
-<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage car on Palm Canyon Drive in Palm Springs, the setting for Village Fest Thursday night street fair" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage car on Palm Canyon Drive in Palm Springs, the setting for Village Fest Thursday night street fair" loading="lazy" width="1200" height="1800">
 
 ## What's Worth Buying
 
@@ -65,7 +65,7 @@ The food is the honest highlight. A few vendors show up consistently:
 
 The restaurants along Palm Canyon Drive stay open during Village Fest, and some of them put tables out on the street. Birba has sidewalk seating on Thursday nights. So does Eight4Nine. If you want a sit-down dinner alongside the fair atmosphere, either one is a good choice.
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard with mountain views and evening light over the Coachella Valley" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard with mountain views and evening light over the Coachella Valley" loading="lazy" width="1800" height="1800">
 
 ## The Atmosphere
 
@@ -75,7 +75,7 @@ In winter and spring, the crowds are larger and the energy is up. In summer, it'
 
 The Thursday timing means it works well as a pre-dinner outing. Walk Village Fest for an hour, then grab a reservation nearby. Downtown Palm Springs dining options are dense along this stretch: <a href="https://www.cheekysf10.com/" target="_blank" rel="noopener noreferrer"><strong>Cheeky's</strong></a>, Workshop, Lulu's, El Mirasol are all walkable. For the full Palm Springs restaurant rundown, read the <a href="/blog/best-restaurants-palm-springs/">best restaurants in Palm Springs guide</a>.
 
-<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs street with bougainvillea blooms, the evening atmosphere around Village Fest on Palm Canyon Drive" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs street with bougainvillea blooms, the evening atmosphere around Village Fest on Palm Canyon Drive" loading="lazy" width="1800" height="1350">
 
 ## Getting There from Indio or the South Valley
 

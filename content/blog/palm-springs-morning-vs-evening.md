@@ -51,7 +51,7 @@ It's also when to explore the residential neighborhoods. The midcentury modern a
 
 A good start: coffee at <a href="https://kofficoffee.com/" target="_blank" rel="noopener noreferrer"><strong>Koffi</strong></a> on North Palm Canyon (opens at 6am daily), walk the neighborhoods, be back at your rental or at a shaded patio before 10:30am. The Koffi muffins are worth ordering even if you don't normally eat in the morning.
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Canyon Drive in Palm Springs lined with palm trees and mountain views early in the morning" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Canyon Drive in Palm Springs lined with palm trees and mountain views early in the morning" loading="lazy" width="1800" height="1800">
 
 ## Midday to Afternoon (11am to 5pm)
 
@@ -73,7 +73,7 @@ Dinner reservations at 7 or 8pm are more pleasant than 6pm in summer, because by
 
 The desert sky at dusk is worth scheduling around. Because there's almost no light pollution west of the valley and the air is extremely dry, sunsets here are saturated in a way that's hard to photograph without looking like you used a filter. Sunset point at the top of the <a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tram</strong></a>, or anywhere with an unobstructed western view, is worth stopping for. Our full <a href="/blog/palm-springs-aerial-tram/">Aerial Tram guide</a> covers timing, tickets, and what to expect at the top.
 
-<img src="/blog/images/ps-desert-moonrise.webp" alt="Desert moonrise over Palm Springs with the valley floor lit from below and mountains silhouetted" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-desert-moonrise.webp" alt="Desert moonrise over Palm Springs with the valley floor lit from below and mountains silhouetted" loading="lazy" width="1200" height="1800">
 
 <img src="/blog/images/koffi-palm-springs.webp" alt="Koffi coffee shop in Palm Springs, the go-to morning coffee stop before desert hiking" loading="lazy" width="1400" height="933">
 

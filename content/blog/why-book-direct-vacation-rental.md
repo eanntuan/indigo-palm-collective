@@ -82,7 +82,7 @@ layout: blog-post.njk
 
 <p>Our properties: <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio (3BR, 146 reviews, private hot tub, good for families), <a href="/terra-luz/">Terra Luz</a> (3BR, private saltwater pool, Latin-inspired design), and <a href="/the-sundune/">The Sundune</a> in Palm Springs (2BR, coastal-desert aesthetic, walk to the Uptown Design District, ten minutes to downtown). All available at indigopalm.co.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz private saltwater pool and covered patio at vacation rental in Indio California" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz private saltwater pool and covered patio at vacation rental in Indio California" width="1024" height="1536" loading="lazy" decoding="async">
 <p class="image-caption">Terra Luz in Indio. Booking direct means this is the same house, same host, and the fee savings go straight back in your pocket.</p>
 
 <h2>The Short Version</h2>

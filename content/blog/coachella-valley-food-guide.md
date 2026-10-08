@@ -50,7 +50,7 @@ faqItems:
 
 <p>I've eaten at all of these places or sent guests to them with confidence. I haven't padded the list. A shorter guide beats a long one with filler.</p>
 
-<img src="/blog/images/one-stop-taco-shop.webp" alt="One Stop Taco Shop in Indio California with colorful exterior and desert landscape" width="1400" height="933" loading="lazy">
+<img src="/blog/images/one-stop-taco-shop.webp" alt="One Stop Taco Shop in Indio California with colorful exterior and desert landscape" width="1800" height="1440" loading="lazy">
 <p class="image-caption">One Stop Taco Shop in Indio. Not a festival pop-up. A proper taqueria that's been here long before Coachella made Indio famous.</p>
 
 <h2>Indio</h2>
@@ -100,7 +100,7 @@ faqItems:
 
 <p>La Quinta is the city directly south of Indio. Quieter and more residential, with a village downtown area and a coffee scene that punches above its size.</p>
 
-<img src="/blog/images/yes-please-la-quinta.webp" alt="Yes Please coffee shop in La Quinta California with specialty espresso and a relaxed atmosphere" width="1400" height="933" loading="lazy">
+<img src="/blog/images/yes-please-la-quinta.webp" alt="Yes Please coffee shop in La Quinta California with specialty espresso and a relaxed atmosphere" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Yes Please in La Quinta. Serious espresso without any of the affectation. Worth the short drive from Indio.</p>
 
 <h3><a href="https://www.yespleaselaquinta.com/" target="_blank" rel="noopener noreferrer">Yes Please</a></h3>
@@ -119,7 +119,7 @@ faqItems:
 
 <p>One note first: if you're staying in Indio, Palm Springs restaurants are a 30-minute drive each direction. That's fine for a specific evening out, but it's not your everyday dining radius. Plan accordingly and use the Indio guide above for most meals.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Palm Springs street at golden hour with palm trees, mountain backdrop, and desert light" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Palm Springs street at golden hour with palm trees, mountain backdrop, and desert light" width="934" height="1400" loading="lazy">
 <p class="image-caption">Palm Springs at golden hour. The restaurant scene here is worth the drive for a specific evening. Not for every meal if you're based in Indio.</p>
 
 <h3><a href="https://kofficoffee.com/" target="_blank" rel="noopener noreferrer">Koffi</a></h3>

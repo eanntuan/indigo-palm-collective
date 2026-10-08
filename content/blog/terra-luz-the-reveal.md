@@ -3,8 +3,8 @@ title: "Terra Luz Reveal: Inside the Renovation, Room by Room"
 date: 2026-05-29
 metaDescription: "The full reveal of Terra Luz, our Indio vacation rental. Walk through every room, what we built, what we bought, what we skipped, and what surprised us."
 ogImage: /blog/images/terra-luz-exterior.webp
-heroImage: /blog/images/terra-luz-exterior.webp
-heroPosition: "center 70%"
+heroImage: /blog/images/terra-luz-front-entrance.webp
+heroPosition: "center 45%"
 heroAlt: "Terra Luz vacation rental exterior in Indio California with terracotta tones and lush landscaping"
 keywords:
   - Terra Luz vacation rental reveal
@@ -90,7 +90,7 @@ layout: blog-post.njk
 
 <p>The kitchen is functional, not fussy. A Chemex pour-over cone and an acacia chopping block are the main visual callouts. We didn't try to stage it as something it's not. Guests who cook will find what they need. Guests who don't will find the Nespresso.</p>
 
-<img src="/blog/images/terra-luz-kitchen.webp" alt="Terra Luz kitchen with wood accents, Chemex pour-over, and clean warm tones in Indio vacation rental" width="1024" height="1536" loading="lazy">
+<img src="/blog/images/terra-luz-kitchen.webp" alt="Terra Luz kitchen with wood accents, Chemex pour-over, and clean warm tones in Indio vacation rental" width="1024" height="683" loading="lazy">
 <p class="image-caption">Simple and stocked. The Chemex gets used more than I expected.</p>
 
 <p>The Ninja Slushie Maker is Phase 2. It was on the list, with the note that blue and orange would be the preferred colors. That's how specific these spreadsheets got.</p>

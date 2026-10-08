@@ -34,7 +34,7 @@ layout: blog-post.njk
 
 <p>These aren't glamorous changes, and they don't make good Instagram content, but they're the foundation everything else stands on. White walls, clean floors, modern light fixtures; suddenly, the house stops fighting you.</p>
 
-<img src="/blog/images/cochran-before.webp" alt="The Cozy Cactus before renovation, yellow walls and dated exterior" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/cochran-before.webp" alt="The Cozy Cactus before renovation, yellow walls and dated exterior" loading="lazy" decoding="async" width="1800" height="1350">
 <p class="image-caption">Before: yellow walls, grandma vibes, potential<br><small>Photo: Eann</small></p>
 
 <h2>The West Elm phase.</h2>
@@ -45,12 +45,12 @@ layout: blog-post.njk
 
 <p>Then came the Facebook Marketplace era. I was all over LA, picking up a $10 sound machine here (I now know that time is money, but at the time I was very proud of that $10 sound machine), cramming a West Elm dining table into my Honda Element there. (There has been nothing that car cannot fit. It remains one of its best qualities.) I hit garage sales, Marshalls, TJ Maxx, HomeGoods, and Ross, all in the name of finding the best deal on everything, one piece at a time.</p>
 
-<img src="/blog/images/car-storage.webp" alt="Honda Element packed with furniture and storage bins for The Cozy Cactus" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/car-storage.webp" alt="Honda Element packed with furniture and storage bins for The Cozy Cactus" loading="lazy" decoding="async" width="1050" height="1400">
 <p class="image-caption">The Honda Element: still fits everything, still the MVP<br><small>Photo: Eann</small></p>
 
 <p>Part of the thrill was the hunt. Buying new with white glove delivery is easy. Finding a foosball table on Marketplace and figuring out how to get it home is a story. I had a lot of stories by the end of this phase. And a house full of furniture.</p>
 
-<img src="/blog/images/foosball.webp" alt="Foosball table from Facebook Marketplace at The Cozy Cactus game room" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/foosball.webp" alt="Foosball table from Facebook Marketplace at The Cozy Cactus game room" loading="lazy" decoding="async" width="1050" height="1400">
 <p class="image-caption">The foosball table. I will not explain what getting this in and out of my car involved.<br><small>Photo: Eann</small></p>
 
 <h2>The tchotchke problem.</h2>
@@ -74,7 +74,7 @@ layout: blog-post.njk
 <img src="/blog/images/cc-bedroom-closet-wide.webp" alt="The Cozy Cactus bedroom after renovation with navy geometric wallpaper closet, emerald green velvet chair, and mustard pouf" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">After Dawn: the bedroom that makes guests photograph the closet before they unpack<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
-<img src="/blog/images/cc-bedroom-nook-full.webp" alt="Full Cozy Cactus bedroom with green velvet chair, mustard pouf, wallpaper nook, hammock on pink wall" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/cc-bedroom-nook-full.webp" alt="Full Cozy Cactus bedroom with green velvet chair, mustard pouf, wallpaper nook, hammock on pink wall" loading="lazy" decoding="async" width="1200" height="1800">
 <p class="image-caption">Green bed. Pink wall with a hammock. Mustard pouf. Navy wallpaper. It's a lot, and it's completely intentional.<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
 <p>Turns out she was right. Annoyingly, completely, repeatedly right. The house stopped feeling like a collection of things and started feeling like a place.</p>
@@ -90,7 +90,7 @@ layout: blog-post.njk
 <img src="/blog/images/familykit.webp" alt="Family Kit at The Cozy Cactus with organized baby gear, bottle warmer, sound machine, and infant supplies" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The Family Kit: solving the 11pm panic message before it happens<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
-<img src="/blog/images/family-closet.webp" alt="Organized family gear closet at The Cozy Cactus with pack n play, stroller, and baby supplies" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/family-closet.webp" alt="Organized family gear closet at The Cozy Cactus with pack n play, stroller, and baby supplies" loading="lazy" decoding="async" width="1200" height="1800">
 <p class="image-caption">All the things, so you don't have to bring all the things<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
 <h2>What it became.</h2>

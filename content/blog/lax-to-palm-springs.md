@@ -4,8 +4,8 @@ date: 2025-10-29
 dateModified: 2026-07-30
 metaDescription: "LAX to Palm Springs is about 2 hours by car without traffic, 120 miles on the I-10. Drive, shuttle, fly into PSP, or Amtrak, compared with real times and costs."
 ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroPosition: "center 70%"
+heroImage: /blog/images/ps-mcm-neighborhood.webp
+heroPosition: "center 40%"
 heroAlt: "Palm-lined boulevard in Palm Springs with San Jacinto mountains in the background on a clear day"
 keywords:
   - LAX to Palm Springs
@@ -29,7 +29,7 @@ layout: blog-post.njk
 
 <p>Getting from LAX to Palm Springs has more options than most people realize: drive, shared shuttle, fly directly into PSP, take Amtrak, or fly into Ontario (ONT) as a closer middle-ground. The right call depends on your group size, your luggage, and whether you'll need a car once you arrive.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard lined with tall palms and the San Jacinto mountains rising sharply in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard lined with tall palms and the San Jacinto mountains rising sharply in the background" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Palm Canyon Drive and the San Jacinto mountains, about 2 hours east of LAX on the I-10.</p>
 
 <h2>Option 1: Drive (Most Flexible, Most Common)</h2>
@@ -59,7 +59,7 @@ layout: blog-post.njk
 
 <p>Amtrak stops at North Palm Springs via the Sunset Limited route. Service is infrequent, the station is not central, and you'll still need a rideshare to reach your rental. Not recommended unless train travel is the point. Check <a href="https://www.amtrak.com/" target="_blank" rel="noopener">Amtrak.com</a> for schedules.</p>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Aerial view of the Coachella Valley desert floor with mountains on either side, seen from above Palm Springs" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Aerial view of the Coachella Valley desert floor with mountains on either side, seen from above Palm Springs" width="1800" height="1269" loading="lazy">
 <p class="image-caption">The Coachella Valley stretches east from Palm Springs toward Indio. Once you're in, a rental car opens up the whole thing.</p>
 
 <h2>Getting Around Once You're Here</h2>
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <p>During <a href="https://www.coachella.com/" target="_blank" rel="noopener noreferrer"><strong>Coachella</strong></a>, <a href="https://www.stagecoachfestival.com/" target="_blank" rel="noopener noreferrer"><strong>Stagecoach</strong></a>, and BNP Paribas Open weekends, the I-10 into the valley gets heavy. Friday afternoon inbound and Sunday evening outbound are the worst windows. Arrive Thursday evening or depart Monday morning and the drive is noticeably easier. Rideshare surges are real late at night during festival hours.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over the Coachella Valley, the view from Palm Springs at golden hour on a clear evening" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over the Coachella Valley, the view from Palm Springs at golden hour on a clear evening" width="934" height="1400" loading="lazy">
 <p class="image-caption">What you're driving toward.</p>
 
 <img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the Coachella Valley desert near Palm Springs at dusk" width="1200" height="1800" loading="lazy" decoding="async">

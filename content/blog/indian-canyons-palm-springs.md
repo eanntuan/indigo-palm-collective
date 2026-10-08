@@ -81,7 +81,7 @@ The trail conditions here change faster than most people expect. It can be 75 de
 - A hat with a brim
 - Snacks. The trading post sells overpriced granola bars. Bring your own.
 
-<img src="/blog/images/ps-street-mountains.webp" alt="Palm Springs street view with San Jacinto Mountains visible in the background" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-street-mountains.webp" alt="Palm Springs street view with San Jacinto Mountains visible in the background" loading="lazy" width="933" height="1400">
 
 ## Combining Indian Canyons with a Longer Day
 

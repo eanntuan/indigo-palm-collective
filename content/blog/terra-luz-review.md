@@ -3,8 +3,8 @@ title: "Terra Luz Vacation Rental in Indio: An Honest Review"
 date: 2026-02-14
 metaDescription: "Terra Luz in Indio: 4.98 stars, 146 reviews. Private saltwater pool, Latin/Cuban design. What guests consistently love and what to know before booking."
 ogImage: /blog/images/terra-luz-pool-backyard.webp
-heroImage: /blog/images/terra-luz-pool-backyard.webp
-heroPosition: "center 65%"
+heroImage: /blog/images/terra-luz-pool-umbrella.webp
+heroPosition: "center 55%"
 heroAlt: "Terra Luz saltwater pool with in-water loungers and Desert Marigold umbrella, Indio California"
 keywords:
   - Terra Luz review
@@ -36,7 +36,7 @@ relatedPosts:
 
 <p>I'm Eann. I own it.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers, Desert Marigold umbrella, and terracotta deck in Indio California" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers, Desert Marigold umbrella, and terracotta deck in Indio California" width="1024" height="1536" loading="lazy">
 <p class="image-caption">The private saltwater pool: geometric tile border, sun shelf loungers, and the spa off to one side. This is the part people come back for.</p>
 
 <h2>What Guests Consistently Say</h2>
@@ -55,7 +55,7 @@ relatedPosts:
 
 <p>The design carries through every room. This is not a house with a nice living room and forgotten bedrooms. Dawn's brief was to create something that feels like a destination in every space, not just where you take photos for Instagram.</p>
 
-<img src="/blog/images/terra-luz-wild-tropics-bedroom.webp" alt="Terra Luz second bedroom with Wild Tropics blue wallpaper floor to ceiling and Merola tile headboard in Indio California" width="1400" height="1050" loading="lazy" decoding="async">
+<img src="/blog/images/terra-luz-wild-tropics-bedroom.webp" alt="Terra Luz second bedroom with Wild Tropics blue wallpaper floor to ceiling and Merola tile headboard in Indio California" width="3202" height="4802" loading="lazy" decoding="async">
 <p class="image-caption">The Wild Tropics bedroom. Floor-to-ceiling wallpaper, tile headboard, terracotta pendants. The most photographed room in the house.</p>
 
 <h2>Location</h2>
@@ -64,7 +64,7 @@ relatedPosts:
 
 <p>For festivals, this proximity is the main practical argument for booking in Indio vs Palm Springs. You leave the property and walk to the grounds, no festival-weekend gridlock that turns a drive into an hour-long crawl. The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> breaks down exactly what each location gets you, if you're still deciding.</p>
 
-<img src="/blog/images/indian-palms-night-walk.webp" alt="Indian Palms neighborhood in Indio California at night near Terra Luz vacation rental" width="1400" height="933" loading="lazy">
+<img src="/blog/images/indian-palms-night-walk.webp" alt="Indian Palms neighborhood in Indio California at night near Terra Luz vacation rental" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The Indian Palms neighborhood at night. Quiet, gated, walking distance to the festival grounds.</p>
 
 <h2>What to Know Before You Book</h2>
@@ -91,7 +91,7 @@ relatedPosts:
 <img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of Indian Palms neighborhood in Indio showing vacation rental area near Coachella" width="1400" height="933" loading="lazy">
 <p class="image-caption">The Indian Palms area from above. Terra Luz and The Cozy Cactus are both in this neighborhood, about 15 minutes apart.</p>
 
-<img src="/blog/images/terra-luz-living-room.webp" alt="Terra Luz living room with terracotta lime-wash TV cove, walnut credenza, and tropical floor plants" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/terra-luz-living-room.webp" alt="Terra Luz living room with terracotta lime-wash TV cove, walnut credenza, and tropical floor plants" width="1024" height="1570" loading="lazy" decoding="async">
 <p class="image-caption">The design carries through every room. This is not a house with a nice living room and forgotten bedrooms.</p>
 
 <h2>The Bottom Line</h2>

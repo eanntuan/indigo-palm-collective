@@ -29,7 +29,7 @@ layout: blog-post.njk
 
 <p>This is the version of the valley that festival-only visitors never see. I bought a house here and now I'm the person who can't stop talking about fall light and mid-week escapes where nothing is on the schedule except the pool and an early hike. The Coachella Valley is a place you <em>return to</em>, for the sun, the space, and the surprising amount of culture packed into this stretch of California.</p>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Panoramic view of the Coachella Valley desert floor with mountains in the background and clear blue sky in Palm Springs CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Panoramic view of the Coachella Valley desert floor with mountains in the background and clear blue sky in Palm Springs CA" width="1800" height="1269" loading="lazy">
 <p class="image-caption">45 miles of valley, roughly 300 days of sun, and four seasons that feel nothing alike.</p>
 
 <h2>The Geography of It All</h2>
@@ -64,7 +64,7 @@ layout: blog-post.njk
 
 <p>Fall activities: Joshua Tree camping in October or November (cool nights, clear skies, optimal for stargazing), date harvest tours at working farms, Indian Canyons or Ladder Canyon hikes without the risk of dying from heat exhaustion.</p>
 
-<img src="/blog/images/coachella-valley-preserve.webp" alt="Coachella Valley Preserve fan palm oasis at golden hour with canyon walls and California desert palms near Palm Springs" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/coachella-valley-preserve.webp" alt="Coachella Valley Preserve fan palm oasis at golden hour with canyon walls and California desert palms near Palm Springs" width="700" height="493" loading="lazy" decoding="async">
 <p class="image-caption">The Coachella Valley Preserve. Native fan palms, spring-fed oasis, trails that look nothing like what most people picture when they hear "Coachella."</p>
 
 <h2>Joshua Tree: 45 Minutes From Terra Luz</h2>
@@ -84,10 +84,10 @@ layout: blog-post.njk
 
 <p>For a full Joshua Tree day trip breakdown from Indio, including best entry points by season and timing advice, read our <a href="/blog/joshua-tree-day-trip-from-indio/">Joshua Tree day trip guide</a>.</p>
 
-<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Hiker on desert ridge overlooking the Coachella Valley with mountain range stretching into the distance California" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Hiker on desert ridge overlooking the Coachella Valley with mountain range stretching into the distance California" width="1400" height="1050" loading="lazy" decoding="async">
 <p class="image-caption">Sunrise hike, back at the pool by 11 AM. Best of both worlds.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with terracotta deck and covered patio in Indio CA, ideal for a Coachella Valley desert escape" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with terracotta deck and covered patio in Indio CA, ideal for a Coachella Valley desert escape" width="1024" height="1536" loading="lazy">
 <p class="image-caption">Back at Terra Luz by 11 AM. The pool does not care what time you got up.</p>
 
 <h2>Palm Springs: Worth the 30-Minute Drive</h2>

@@ -52,7 +52,7 @@ relatedPosts:
     <p><strong>Don't skip:</strong> Medjool dates, dried citrus, local honey</p>
 </div>
 
-<img src="/blog/images/lg-desert-store.webp" alt="L&G Desert Store roadside sign with Coca-Cola panel and date palm against blue sky, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/lg-desert-store.webp" alt="L&G Desert Store roadside sign with Coca-Cola panel and date palm against blue sky, Indio CA" loading="lazy" decoding="async" width="1024" height="576">
 <p class="image-caption">The hand-painted sign you're looking for. Pull over immediately.</p>
 
 <div class="gem-heading">
@@ -114,7 +114,7 @@ relatedPosts:
     <p><strong>Tip:</strong> Arrive early Saturday. Lines get long by noon.</p>
 </div>
 
-<img src="/blog/images/indio-tamale-festival.webp" alt="Colorful pinata-style MERCADO sign arch over lowrider cars and festival crowd at the Indio Tamale Festival" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/indio-tamale-festival.webp" alt="Colorful pinata-style MERCADO sign arch over lowrider cars and festival crowd at the Indio Tamale Festival" loading="lazy" decoding="async" width="1600" height="773">
 <p class="image-caption">30+ years of tamales, live music, and absolute chaos (the good kind)</p>
 
 <p>If you're using Indio as your base for any of this, <a href="/cozy-cactus/">The Cozy Cactus</a> is within a few miles of most of these spots and has a private hot tub and community pool to come back to after a full day of eating and wandering.</p>
@@ -148,7 +148,7 @@ relatedPosts:
     <p><strong>Timing:</strong> Lunch rush is real. Go at 11am or after 2pm.</p>
 </div>
 
-<img src="/blog/images/one-stop-taco-shop.webp" alt="One Stop Taco Shop plate with carne asada tacos, rice, beans and fresh pico de gallo, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/one-stop-taco-shop.webp" alt="One Stop Taco Shop plate with carne asada tacos, rice, beans and fresh pico de gallo, Indio CA" loading="lazy" decoding="async" width="1800" height="1440">
 <p class="image-caption">The line is part of the experience. Trust it.</p>
 
 <div class="gem-heading">
@@ -197,7 +197,7 @@ relatedPosts:
 
 <p>If you're planning a trip around these spots, both of our Indio rentals put you within a 5-10 minute radius of most of them. <a href="/terra-luz/">Terra Luz</a> is in Indian Palms, right in the neighborhood where a lot of this happens.</p>
 
-<img src="/blog/images/terra-luz-exterior.webp" alt="Terra Luz vacation rental exterior with terracotta tones and desert landscaping in Indian Palms, Indio California" loading="lazy" decoding="async" width="1400" height="933">
+<img src="/blog/images/terra-luz-exterior.webp" alt="Terra Luz vacation rental exterior with terracotta tones and desert landscaping in Indian Palms, Indio California" loading="lazy" decoding="async" width="1024" height="1536">
 <p class="image-caption">Terra Luz in Indian Palms. Most of these spots are within a 10-minute drive.</p>
 
 <h2>Frequently Asked Questions</h2>

@@ -167,7 +167,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -227,6 +227,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -298,7 +301,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/one-stop-taco-shop.webp" alt="One Stop Taco Shop in Indio, California, with carne asada tacos and salsa" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -325,7 +328,7 @@
 <p>Indio is where I'd send you first, and it rarely shows up on a "best of Palm Springs" list. The two spots below are takeout-style places where you eat out of paper and nobody cares about the plating.</p>
 <h3>One Stop Taco Shop</h3>
 <p><a href="https://onestoptacoshop.com/" target="_blank" rel="noopener"><strong>One Stop Taco Shop</strong></a> sits at 84051 Indio Blvd, near Van Buren, and it is listed as a gas station business, which tells you how much energy goes into the décor. The menu runs asada, al pastor and cabeza tacos on handmade corn or flour tortillas, plus quesadillas, burritos, flautas, sopes, and aguas frescas like horchata and jamaica. Delivery-app prices put tacos around $5 each, though in-shop prices may differ.</p>
-<img src="/blog/images/one-stop-taco-shop.webp" alt="One Stop Taco Shop in Indio California serving carne asada tacos with salsa and rice" width="1800" height="1440" loading="lazy">
+<img class="squarish" src="/blog/images/one-stop-taco-shop.webp" alt="One Stop Taco Shop in Indio California serving carne asada tacos with salsa and rice" width="1800" height="1440" loading="lazy">
 <p class="image-caption">One Stop Taco Shop on Indio Blvd, in the middle of the Coachella Valley's taco belt.</p>
 <p>Check hours before you go, since online listings disagree, and the shop's phone is (760) 342-0874. Our <a href="/blog/indio-local-gems/">Indio local gems</a> guide covers the rest of the neighborhood.</p>
 <h3>Arriola's Tortilleria</h3>
@@ -358,7 +361,7 @@
 <p>Palm Springs has two answers to the question, and they could hardly differ more. One is a Michelin-listed taqueria with a tight menu, the other a family institution with a sprawling patio and live music. For the whole town, our <a href="/blog/best-restaurants-palm-springs/">Palm Springs restaurant guide</a> goes wider.</p>
 <h3>Tac/Quila</h3>
 <p><a href="https://tacquila.com/" target="_blank" rel="noopener"><strong>Tac/Quila</strong></a> is at 415 N Palm Canyon Dr and appears in the <a href="https://guide.michelin.com/us/en/california/palm-springs/restaurant/tac-quila" target="_blank" rel="noopener">Michelin Guide</a>, which describes the tortillas as made in house and the portions as generous. Michelin specifically recommends the pork tamale and the quesabirria short rib tacos served with consommé, and for dessert the tres leches cake or the churro ice cream sandwich. The menu also covers shrimp ceviche, mango habanero aguachile, vegan jackfruit enchiladas, and a tequila and mezcal list from small distilleries.</p>
-<img src="/blog/images/mexican-restaurants-palm-springs-1.webp" alt="Plate of carnitas, carne asada and al pastor tacos with lime, radish and salsa" width="1600" height="1200" loading="lazy">
+<img class="squarish" src="/blog/images/mexican-restaurants-palm-springs-1.webp" alt="Plate of carnitas, carne asada and al pastor tacos with lime, radish and salsa" width="1600" height="1200" loading="lazy">
 <p class="image-caption">Carnitas, carne asada and al pastor, the three fillings on most valley taqueria menus, shown here from an Oregon food truck. Photo: Larry Miller / <a href="https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noopener">CC BY-SA 2.0</a>.</p>
 <p>Michelin lists hours as 11am to 10pm daily, with indoor and patio seating, and reservations go through the restaurant at (760) 417-4471.</p>
 <h3>Las Casuelas Terraza</h3>

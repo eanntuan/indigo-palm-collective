@@ -34,7 +34,7 @@ layout: blog-post.njk
 
 <p>Reservations are recommended, especially on weekends when locals and visitors both try to get in. This is the pick if you want one spa experience that's specifically about being in Palm Springs, not interchangeable with a spa day anywhere else.</p>
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs resort pool deck with loungers and desert mountain backdrop" loading="lazy" width="1400" height="933">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Palm Springs resort pool deck with loungers and desert mountain backdrop" loading="lazy" width="1400" height="1050">
 
 <h2>Two Bunch Palms, Desert Hot Springs</h2>
 
@@ -48,7 +48,7 @@ layout: blog-post.njk
 
 <p>Reservations are required and availability moves around based on resort occupancy. This one's the pick if you're staying in or near La Quinta and want something with more architectural character than a standard resort spa.</p>
 
-<img src="/blog/images/yes-please-la-quinta.webp" alt="La Quinta California desert landscape with mountains and palm trees" loading="lazy" width="1400" height="933">
+<img src="/blog/images/yes-please-la-quinta.webp" alt="La Quinta California desert landscape with mountains and palm trees" loading="lazy" width="1400" height="1050">
 
 <h2>JW Marriott Desert Springs Resort & Spa, Palm Desert</h2>
 

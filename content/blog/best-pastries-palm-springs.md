@@ -42,7 +42,7 @@ The pain au chocolat is the flagship item. Proper layers, quality chocolate, not
 
 One important detail: Peninsula Pastries is closed Monday through Wednesday. Hours are Thursday through Saturday 8:30am to 5pm, Sunday 8:30am to 4pm. If your trip runs Sunday through Tuesday, plan accordingly.
 
-<img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Coffee shop interior in Palm Springs with warm lighting and pastry display" loading="lazy" width="1400" height="933">
+<img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Coffee shop interior in Palm Springs with warm lighting and pastry display" loading="lazy" width="1000" height="867">
 
 ## Townie Bagels: The Olive and Fennel Bagel
 
@@ -72,7 +72,7 @@ If you're staying at [The Sundune](/the-sundune/) in Palm Springs, Peninsula Pas
 
 For the full coffee and café picture beyond just pastries, the [Palm Springs coffee guide](/blog/palm-springs-coffee-guide/) covers the broader café scene.
 
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Springs street with palm trees against a bright blue desert sky on a clear morning" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Springs street with palm trees against a bright blue desert sky on a clear morning" loading="lazy" width="933" height="1400">
 
 <h2>Frequently Asked Questions</h2>
 

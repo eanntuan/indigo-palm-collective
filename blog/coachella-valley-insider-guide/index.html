@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm tree-lined street in Palm Springs CA with red bougainvillea and San Jacinto mountains" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center bottom;" loading="eager" fetchpriority="high">
     </div>
     
@@ -276,10 +279,10 @@
 <p>Palm Springs proper is about 30 minutes west of Indio, and it's worth exploring beyond the Instagram spots.</p>
 <p><a href="https://www.psmuseum.org/" target="_blank" rel="noopener noreferrer"><strong>The Palm Springs Art Museum</strong></a> is worth your time. Small enough to see in a couple hours, big enough to surprise you. The architecture alone is worth the visit.</p>
 <p><strong>Palm Canyon Drive</strong> is the main drag. Wander it. Pop into the vintage shops. Get an overpriced cocktail at a mid-century modern hotel bar. That's the Palm Springs experience and it delivers.</p>
-<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage silver Cadillac parked on a Palm Springs street with palm trees and mountains" loading="lazy" width="800" height="533">
+<img class="portrait" src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage silver Cadillac parked on a Palm Springs street with palm trees and mountains" loading="lazy" width="1200" height="1800">
 <p class="image-caption">Palm Springs has always had this energy. Some things don't change.</p>
 <p><a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>The Aerial Tramway</strong></a> takes you from desert floor to 8,500 feet in ten minutes. The temperature drops 30 degrees. In summer, that's the whole selling point. In winter, there's actual snow up there while it's 70 degrees below.</p>
-<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Mid-century modern home with teal door and palm trees in Palm Springs CA" loading="lazy" width="800" height="533">
+<img class="portrait" src="/blog/images/ps-midcentury-teal-door.webp" alt="Mid-century modern home with teal door and palm trees in Palm Springs CA" loading="lazy" width="1200" height="1800">
 <p class="image-caption">The mid-century architecture neighborhoods are worth an afternoon just walking and looking.</p>
 <h2>The Coachella Polo Fields (When There's No Festival)</h2>
 <p>The Empire Polo Club in Indio hosts polo matches from January through March. Real polo. Horses and mallets and everything. It's surprisingly accessible and fun to watch even if you don't know the rules (I still don't, fully).</p>
@@ -291,7 +294,7 @@
 <p>Is it beautiful? In a haunting, post-apocalyptic way, absolutely. Is it Instagram-pretty? No. Should you go? Yes. Once.</p>
 <p>Bombay Beach, the tiny community on the shore, has become an art installation of sorts. Rusted cars turned into sculptures. An abandoned drive-in. It's the kind of place that makes you feel something, even if you can't name what.</p>
 <h2>The Hiking Nobody Talks About</h2>
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Wide desert valley view from above with palm trees and mountains surrounding the Coachella Valley" loading="lazy" width="800" height="533">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Wide desert valley view from above with palm trees and mountains surrounding the Coachella Valley" loading="lazy" width="1800" height="1269">
 <p class="image-caption">The valley from above. Joshua Tree to the north, Salton Sea to the south, everything in between.</p>
 <p><a href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer"><strong>Indian Canyons</strong></a> in Palm Springs. Ancient Cahuilla trading routes lined with California fan palms. The Andreas Canyon trail follows a stream through a palm oasis. It feels like you walked through a portal into somewhere tropical.</p>
 <p><strong>Painted Canyon</strong> near Mecca (yes, there's a Mecca in California). Slot canyon. Ladder Canyon trail. You're literally climbing ladders bolted into canyon walls. It's free and it's one of the best hikes in Southern California. Not an exaggeration.</p>

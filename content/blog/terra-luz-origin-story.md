@@ -44,7 +44,7 @@ layout: blog-post.njk
 
 <p>The name fit like nothing else had.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard with San Jacinto mountain backdrop in the Coachella Valley at golden hour" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard with San Jacinto mountain backdrop in the Coachella Valley at golden hour" width="1800" height="1800" loading="lazy" decoding="async">
 <p class="image-caption">The desert that shaped it all. Terracotta earth, blazing light, and 300 days of sun.</p>
 
 <h2>The Rebrand Was More Than a Name Change</h2>
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <p>It's the kind of place where you can have a genuinely experiential getaway without the price tag or pretension of a resort. Float in a Kahlo blue pool under a Desert Marigold umbrella. Grill something ridiculous on the patio. Watch <em>Buena Vista Social Club</em> on an inflatable movie screen after dark. It all just fits.</p>
 
-<img src="/blog/images/indio-tamale-festival.webp" alt="Indio local festival with desert community gathering, food, and outdoor celebration" width="800" height="533" loading="lazy" decoding="async">
+<img src="/blog/images/indio-tamale-festival.webp" alt="Indio local festival with desert community gathering, food, and outdoor celebration" width="1600" height="773" loading="lazy" decoding="async">
 <p class="image-caption">Indio without the pretension. This is why we're here.</p>
 
 <h2>What Makes Terra Luz Different</h2>
@@ -91,7 +91,7 @@ layout: blog-post.njk
 
 <p>None of that is accidental. The details add up to something that's hard to describe when you're booking and obvious within an hour of arriving.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz Kahlo blue pool with desert landscaping and covered patio in Indio California" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz Kahlo blue pool with desert landscaping and covered patio in Indio California" width="1024" height="1536" loading="lazy" decoding="async">
 <p class="image-caption">The Kahlo blue pool. In-pool sun shelf. Pergola lights overhead. This is the whole point.</p>
 
 <h2>From Casa Moto to Terra Luz: What Changed, What Stayed</h2>
@@ -100,7 +100,7 @@ layout: blog-post.njk
 
 <p>What replaced it: Sunbaked Terracotta on every outdoor surface, a Kahlo Blue pool that stops you in your tracks, natural rattan and woven textures that feel collected over time, Cuban and Latin cultural details woven throughout, and a wabi-sabi warmth where patina is welcome and lived-in is the point.</p>
 
-<img src="/blog/images/terra-luz-living-niche.webp" alt="Terra Luz terracotta lime-wash TV niche with walnut credenza and tropical plants in the living room" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/terra-luz-living-niche.webp" alt="Terra Luz terracotta lime-wash TV niche with walnut credenza and tropical plants in the living room" width="1024" height="1536" loading="lazy" decoding="async">
 <p class="image-caption">Inside Terra Luz: every room was built to feel like a destination, not just a place to sleep.</p>
 
 <h2>Who This Place Is For</h2>
@@ -109,7 +109,7 @@ layout: blog-post.njk
 
 <p>If you're the kind of person who plays backgammon for three hours and doesn't check your email all weekend, you're going to be fine here.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over a quiet Coachella Valley neighborhood with warm terracotta tones and golden sky" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over a quiet Coachella Valley neighborhood with warm terracotta tones and golden sky" width="934" height="1400" loading="lazy" decoding="async">
 <p class="image-caption">The light that named it. Terra. Luz. Earth and light.</p>
 
 <h2>Book Your Terra Luz Stay</h2>

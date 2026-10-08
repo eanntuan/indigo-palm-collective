@@ -81,7 +81,7 @@ layout: blog-post.njk
 
 <p><strong>Cathedral City, CA</strong> (approx. 5 min from downtown Palm Springs). Find them at <a href="https://www.instagram.com/lesfillescafe/" target="_blank" rel="noopener">@lesfillescafe</a> for current hours.</p>
 
-<img src="/blog/images/lesfilles-cafe-cathedral-city.webp" alt="Owners of Les Filles Cafe standing behind the pastry counter in Cathedral City with croissants and French pastries in the foreground" width="1200" height="900" loading="lazy">
+<img src="/blog/images/lesfilles-cafe-cathedral-city.webp" alt="Owners of Les Filles Cafe standing behind the pastry counter in Cathedral City with croissants and French pastries in the foreground" width="4000" height="2667" loading="lazy">
 <p class="image-caption">The owners at Les Filles. That pastry case is the reason you go early.</p>
 
 <h3>Cartel Coffee Lab</h3>
@@ -90,7 +90,7 @@ layout: blog-post.njk
 
 <p><strong>1551 N Palm Canyon Dr, Palm Springs, CA 92262</strong> (inside Arrive Hotel). Find them at <a href="https://www.instagram.com/cartelcoffeecompany/" target="_blank" rel="noopener">@cartelcoffeecompany</a>.</p>
 
-<img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Cartel Coffee Lab at Arrive Hotel on North Palm Canyon Drive in Palm Springs" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Cartel Coffee Lab at Arrive Hotel on North Palm Canyon Drive in Palm Springs" width="1000" height="867" loading="lazy">
 <p class="image-caption">Cartel Coffee inside the Arrive Hotel. Worth the stop even just for the room.</p>
 
 <h2>Brunch</h2>
@@ -142,7 +142,7 @@ layout: blog-post.njk
 <img src="/blog/images/heyday-palm-springs.webp" alt="Casual outdoor dining patio at The Heyday restaurant on North Palm Canyon Drive in Palm Springs" width="1400" height="934" loading="lazy">
 <p class="image-caption">The Heyday. The smash burger is why you go. That's the whole brief.</p>
 
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined North Palm Canyon Drive in Palm Springs' Uptown Design District under a clear blue sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined North Palm Canyon Drive in Palm Springs' Uptown Design District under a clear blue sky" width="933" height="1400" loading="lazy">
 <p class="image-caption">The Uptown Design District runs north from about 500 N Palm Canyon. Most of the better independent restaurants are along this stretch.</p>
 
 <h2>Dinner</h2>
@@ -195,7 +195,7 @@ layout: blog-post.njk
 
 <p><strong>1100 Clubhouse View, Palm Springs, CA 92262.</strong> (760) 992-0002. Hours vary seasonally: check escenagolf.com before you go. Reservations via OpenTable or phone. Find them at <a href="https://www.instagram.com/escenagrill/" target="_blank" rel="noopener">@escenagrill</a>.</p>
 
-<img src="/blog/images/escena-grill-palm-springs.webp" alt="Escena Grill patio in Palm Springs at sunset with outdoor seating overlooking the golf course and San Jacinto Mountains glowing gold" width="1400" height="933" loading="lazy">
+<img src="/blog/images/escena-grill-palm-springs.webp" alt="Escena Grill patio in Palm Springs at sunset with outdoor seating overlooking the golf course and San Jacinto Mountains glowing gold" width="1364" height="706" loading="lazy">
 <p class="image-caption">The Escena patio at dusk. That view is the reason to go, and it looks exactly like this.</p>
 
 <h3>Purple Room Supper Club</h3>

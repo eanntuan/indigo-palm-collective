@@ -98,7 +98,7 @@ relatedPosts:
 
 <h2>Day 3: Brunch and Head Out</h2>
 
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue sky on a quiet Sunday morning" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue sky on a quiet Sunday morning" width="933" height="1400" loading="lazy">
 <p class="image-caption">Sunday morning in Palm Springs is the best time to walk the streets. Everything is quieter, the light is good, and the mountains are clear.</p>
 
 <p>Sunday morning deserves a slow start. Make coffee at the rental, go for a walk before checkout, take in the neighborhood before the weekend ends. Koffi on North Palm Canyon has the best coffee in the city. Order an iced latte, sit outside, and let the morning last a bit.</p>

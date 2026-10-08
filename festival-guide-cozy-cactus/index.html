@@ -41,7 +41,7 @@
         .hero {
             margin-top: 86px;
             position: relative;
-            height: 520px;
+            height: 480px;
             overflow: hidden;
         }
         .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
@@ -72,7 +72,8 @@
         ul li { margin-bottom: 0.5rem; font-size: 1.05rem; color: #444; }
         strong { color: var(--charcoal); }
 
-        .post-img { width: 100%; height: auto; border-radius: 10px; margin: 2rem 0 0.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); display: block; }
+        .post-img { width: 100%; height: auto; border-radius: 16px; margin: 2rem auto 0.5rem; box-shadow: 0 6px 24px rgba(0,0,0,0.12); display: block; }
+        .post-img.portrait { width: auto; max-width: 100%; max-height: 560px; }
         .caption { text-align: center; font-size: 0.9rem; color: #888; font-style: italic; margin-bottom: 2rem; }
 
         .map-img { width: 100%; max-width: 600px; height: auto; border-radius: 10px; margin: 2rem auto 0.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.12); display: block; border: 1px solid rgba(0,0,0,0.08); }
@@ -115,7 +116,7 @@
         footer a { color: var(--terracotta); text-decoration: none; }
 
         @media (max-width: 700px) {
-            .hero { height: 380px; }
+            .hero { height: 55vh; min-height: 380px; }
             .hero-overlay h1 { font-size: 2.2rem; }
             h2 { font-size: 1.9rem; }
             .two-col { grid-template-columns: 1fr; }
@@ -150,7 +151,7 @@
     </nav>
 
     <div class="hero">
-        <img src="/images/festival-coachella-aerial.webp" alt="Coachella festival grounds aerial view with mountains at sunset" width="1200" height="800">
+        <img src="/images/festival-coachella-aerial.webp" alt="Coachella festival grounds aerial view with mountains at sunset" width="960" height="503">
         <div class="hero-overlay">
             <p class="eyebrow">The Cozy Cactus at Indian Palms</p>
             <h1>Festival Guide</h1>
@@ -208,7 +209,7 @@
                 </div>
             </div>
 
-            <img src="/images/festival-pedestrian-map.webp" alt="Indian Palms Country Club pedestrian traffic map for festival weekend" width="800" height="1000" loading="lazy" class="map-img">
+            <img src="/images/festival-pedestrian-map.webp" alt="Indian Palms Country Club pedestrian traffic map for festival weekend" width="1048" height="1412" loading="lazy" class="map-img">
             <p class="caption">Indian Palms CC pedestrian traffic routes</p>
         </div>
     </section>
@@ -291,7 +292,7 @@
                 <p style="margin:0;">With hundreds of thousands of people in the area, cell service gets spotty. Plan ahead: save contacts, download maps offline, and coordinate meeting spots before you go in.</p>
             </div>
 
-            <img src="/images/festival-group-photo.webp" alt="Festival guests at The Cozy Cactus getting ready for Coachella" width="1000" height="1200" loading="lazy" class="post-img">
+            <img src="/images/festival-group-photo.webp" alt="Festival guests at The Cozy Cactus getting ready for Coachella" width="615" height="820" loading="lazy" class="post-img portrait">
             <p class="caption">Festival crew ready to roll</p>
         </div>
     </section>
@@ -302,7 +303,7 @@
             <p class="section-label">Inside the Community</p>
             <h2>Indian Palms</h2>
 
-            <img src="/images/festival-indian-palms-entrance.webp" alt="Indian Palms Country Club entrance sign in Indio, CA" width="1200" height="600" loading="lazy" class="post-img">
+            <img src="/images/festival-indian-palms-entrance.webp" alt="Indian Palms Country Club entrance sign in Indio, CA" width="1100" height="450" loading="lazy" class="post-img">
             <p class="caption">Indian Palms Country Club, Indio, CA</p>
 
             <p>Within the gated community, it's about a 0.7 mile walk to the front security gate, then an additional 0.3 miles to the Yellow Path. Signs throughout the community show the path to get there. You'll likely find community members offering golf cart rides or "tailgate taxis" to the front gate for some extra cash.</p>
@@ -405,7 +406,7 @@
                 <li>Hjorth between Ave. 49 and 50</li>
             </ul>
 
-            <img src="/images/festival-road-closures.png" alt="Road closure map for Coachella festival weekend in Indio" width="900" height="700" loading="lazy" class="map-img">
+            <img src="/images/festival-road-closures.png" alt="Road closure map for Coachella festival weekend in Indio" width="689" height="716" loading="lazy" class="map-img">
             <p class="caption">Road closure map for festival weekends</p>
 
         </div>

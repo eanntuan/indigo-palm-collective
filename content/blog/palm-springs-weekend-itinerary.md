@@ -30,7 +30,7 @@ layout: blog-post.njk
 
 <p>The biggest mistake people make is treating Palm Springs like any other city. The best version of this weekend is slower: coffee with time to finish it, architecture walks without a timed endpoint, pool hours that count as time well spent.</p>
 
-<img src="/blog/images/ps-orange-door-mcm.webp" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and clear blue sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-orange-door-mcm.webp" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and clear blue sky" width="1800" height="1800" loading="lazy">
 <p class="image-caption">You'll be stopping for photos like this within the first 20 minutes of walking the residential streets.</p>
 
 <h2>Friday: Arrive, Settle, Dinner Downtown</h2>
@@ -45,7 +45,7 @@ layout: blog-post.njk
 
 <p>Dinner on Friday works best somewhere on or near downtown Palm Canyon Drive. <a href="https://www.roosterandthepig.com/" target="_blank" rel="noopener noreferrer"><strong>Rooster and the Pig</strong></a> in the Uptown Design District is the move if you want something punchy. <a href="https://www.workshopkitchenbar.com/" target="_blank" rel="noopener noreferrer"><strong>Workshop Kitchen + Bar</strong></a> is the call if you want a more deliberate dinner. Full breakdown in the <a href="/blog/best-restaurants-palm-springs/">best restaurants in Palm Springs guide</a>. After dinner, walk the main drag. The shops stay open late and the street energy on a Friday night in the fall-through-spring season is genuinely good.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm tree-lined boulevard in downtown Palm Springs with San Jacinto Mountains at the end of the street" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm tree-lined boulevard in downtown Palm Springs with San Jacinto Mountains at the end of the street" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Downtown Palm Canyon Drive in the evening. Worth the walk even if you're just wandering.</p>
 
 <h2>Saturday: Architecture, Coffee, and a Hike</h2>
@@ -72,7 +72,7 @@ layout: blog-post.njk
 
 <p>Arenas Road, a few blocks east of Palm Canyon, has a cluster of bars and restaurants with a more neighborhood feel than the main strip. Cocktails somewhere along Arenas or in the Uptown Design District, then dinner with a reservation. Rosemary Hi-Fi, Yes Please, or Workshop are the calls depending on your appetite.</p>
 
-<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs residential street with vibrant pink bougainvillea spilling over a stucco wall and clear desert sky above" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-bougainvillea.webp" alt="Palm Springs residential street with vibrant pink bougainvillea spilling over a stucco wall and clear desert sky above" width="1800" height="1350" loading="lazy">
 <p class="image-caption">Saturday evening in Palm Springs. The residential streets are still worth walking between dinner spots.</p>
 
 <h2>Sunday: Farmers Market, Brunch, Drive Home</h2>

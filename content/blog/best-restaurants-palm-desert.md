@@ -30,7 +30,7 @@ relatedPosts:
 
 <p>El Paseo in Palm Desert is the main corridor, a mile-long boulevard with galleries, boutiques, and restaurants that feels more like a real neighborhood than a tourist strip. Indian Wells, just east, is the more residential city where a few destination restaurants have opened inside the hotels and resorts. This guide covers both.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in the Coachella Valley with San Jacinto Mountains in the background on a clear sunny day" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in the Coachella Valley with San Jacinto Mountains in the background on a clear sunny day" width="1800" height="1800" loading="lazy">
 <p class="image-caption">The valley corridor between Palm Springs and Indio. Most of Palm Desert's best restaurants sit along El Paseo or in the hotel district just east.</p>
 
 <h2>Dinner and Drinks</h2>
@@ -49,7 +49,7 @@ relatedPosts:
 
 <p>It's a resort restaurant, but it doesn't eat like one. Good for a longer dinner when you want something with a real culinary point of view.</p>
 
-<img src="/blog/images/indian-wells-tennis-garden-aerial.webp" alt="Aerial view of Indian Wells Tennis Garden surrounded by desert landscape and San Jacinto Mountains" width="1400" height="933" loading="lazy">
+<img src="/blog/images/indian-wells-tennis-garden-aerial.webp" alt="Aerial view of Indian Wells Tennis Garden surrounded by desert landscape and San Jacinto Mountains" width="1024" height="768" loading="lazy">
 <p class="image-caption">Indian Wells from above. The tennis garden anchors the city, but the hotel restaurants here have become their own destination.</p>
 
 <img src="/blog/images/palm-desert-el-paseo.webp" alt="El Paseo boulevard in Palm Desert California lined with palm trees galleries and restaurants on a sunny day" width="1400" height="933" loading="lazy" decoding="async">
@@ -75,7 +75,7 @@ relatedPosts:
 
 <p><a href="https://www.instagram.com/katsuyama_us/" target="_blank" rel="noopener noreferrer"><strong>Katsuyama</strong></a> is a Japanese izakaya on Country Club Drive, off the main El Paseo strip. The kitchen centers on ramen, including a tonkotsu that takes the broth seriously, alongside katsu and shareable plates. The energy is casual and neighborhood-forward. This is the kind of place you find because someone who lives nearby told you about it.</p>
 
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm-tree-lined street in the Coachella Valley with clear blue sky and desert landscaping" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm-tree-lined street in the Coachella Valley with clear blue sky and desert landscaping" width="933" height="1400" loading="lazy" decoding="async">
 <p class="image-caption">The valley between Palm Springs and Indio. Palm Desert sits right in the middle of it.</p>
 
 <img src="/blog/images/ps-mcm-house-palm-trees.webp" alt="Mid-century modern home with palm trees in the Coachella Valley desert on a clear sunny day" width="1400" height="933" loading="lazy" decoding="async">

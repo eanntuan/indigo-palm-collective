@@ -53,7 +53,20 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISODate();
   });
 
+  // Portrait/square photos get .portrait (max-height 560px, centered) per the Image Sizing Rule.
+  eleventyConfig.addTransform("portraitImages", (content, outputPath) => {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+    return content.replace(/<img\b[^>]*>/g, (tag) => {
+      const w = +(/\bwidth="(\d+)"/.exec(tag) || [])[1];
+      const h = +(/\bheight="(\d+)"/.exec(tag) || [])[1];
+      if (!w || !h || h < w * 0.72) return tag;
+      const c = h >= w * 0.9 ? "portrait" : "squarish";
+      return /\bclass="/.test(tag) ? tag.replace(/\bclass="/, `class="${c} `) : tag.replace("<img", `<img class="${c}"`);
+    });
+  });
+
   eleventyConfig.addPassthroughCopy({ "content/blog/images": "images" });
+  eleventyConfig.addPassthroughCopy({ "content/blog/videos": "videos" });
 
   return {
     dir: {

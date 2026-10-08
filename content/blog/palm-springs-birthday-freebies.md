@@ -22,7 +22,7 @@ Celebrating a birthday in the Coachella Valley means you can layer in free treat
 
 One note on geography: a few of these locations are in Palm Desert or Rancho Mirage, not Palm Springs proper. The cities are 15 to 20 minutes apart on Highway 111, which means you can reasonably hit multiple spots in an afternoon.
 
-<img src="/blog/images/yes-please-palm-springs.webp" alt="Colorful dessert display at a Palm Springs area restaurant with pastries and sweet treats" loading="lazy" width="1400" height="933">
+<img src="/blog/images/yes-please-palm-springs.webp" alt="Colorful dessert display at a Palm Springs area restaurant with pastries and sweet treats" loading="lazy" width="1400" height="1050">
 
 ## The Freebies Worth Signing Up For
 
@@ -40,7 +40,7 @@ Cold Stone has a location in the Coachella Valley area. Sign up for the My Cold 
 
 <a href="https://www.thecheesecakefactory.com/" target="_blank" rel="noopener noreferrer"><strong>The Cheesecake Factory</strong></a> (Rancho Mirage): The Cheesecake Factory at The River shopping center in Rancho Mirage (71800 Highway 111) participates in their birthday rewards program. Sign up for SocialPoints and members receive a free birthday treat. The offer historically has been a free slice of cheesecake with a purchase. This one requires an actual meal purchase, so it makes more sense as a dinner destination where the free cheesecake becomes the dessert course.
 
-<img src="/blog/images/yes-please-la-quinta.webp" alt="Restaurant table setup at Yes Please in La Quinta with outdoor desert ambiance" loading="lazy" width="1400" height="933">
+<img src="/blog/images/yes-please-la-quinta.webp" alt="Restaurant table setup at Yes Please in La Quinta with outdoor desert ambiance" loading="lazy" width="1400" height="1050">
 
 <a href="https://kofficoffee.com/" target="_blank" rel="noopener noreferrer"><strong>Koffi</strong></a> is a Palm Springs institution with four locations, including the flagship on Palm Canyon Drive. They don't have a formal birthday program as far as I can find, but if you're in the area, they're worth a stop on the way to any of the above spots. The almond croissant and coconut pineapple muffin are the items to get.
 

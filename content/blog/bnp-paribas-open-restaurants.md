@@ -23,7 +23,7 @@ layout: blog-post.njk
 
 This post is specifically about the food. For accommodation, the [BNP Paribas Open: Where to Stay](/blog/bnp-paribas-indian-wells-where-to-stay/) post covers that separately.
 
-<img src="/blog/images/indian-wells-tennis-garden-aerial.webp" alt="Aerial view of the Indian Wells Tennis Garden complex during the BNP Paribas Open with packed stadiums" loading="lazy" width="1400" height="933">
+<img src="/blog/images/indian-wells-tennis-garden-aerial.webp" alt="Aerial view of the Indian Wells Tennis Garden complex during the BNP Paribas Open with packed stadiums" loading="lazy" width="1024" height="768">
 
 ## Inside the Stadium: The Full Dining Lineup
 
@@ -43,7 +43,7 @@ Mexican concept inside Stadium 2. Good option for a quick full meal between sess
 **Porta Via (Stadium 1)**
 Full-service dining in Stadium 1, the main show court. More casual than Nobu but still table-service.
 
-<img src="/blog/images/bnp-paribas-stadium-packed.webp" alt="Packed Stadium 1 at the BNP Paribas Open in Indian Wells during a match" loading="lazy" width="1400" height="933">
+<img src="/blog/images/bnp-paribas-stadium-packed.webp" alt="Packed Stadium 1 at the BNP Paribas Open in Indian Wells during a match" loading="lazy" width="1280" height="640">
 
 ## Concessions Worth Knowing
 
@@ -61,7 +61,7 @@ Full-service dining in Stadium 1, the main show court. More casual than Nobu but
 
 **Veroni Charcuterie and Champagne Lounge** in the Circle of Palms: two-story open-air structure with charcuterie boards and premium drinks. Good option between afternoon and evening sessions.
 
-<img src="/blog/images/coachella-valley-map.webp" alt="Map of the Coachella Valley showing Indian Wells, Palm Desert, Palm Springs and surrounding cities" loading="lazy" width="1400" height="933">
+<img src="/blog/images/coachella-valley-map.webp" alt="Map of the Coachella Valley showing Indian Wells, Palm Desert, Palm Springs and surrounding cities" loading="lazy" width="1440" height="990">
 
 ## Off-Site: Eating Near the Tennis Garden
 
@@ -79,7 +79,7 @@ If you're staying in Indio at [The Cozy Cactus](/cozy-cactus/) or [Terra Luz](/t
 
 The practical approach for a full tournament day: eat breakfast at the rental, take food seriously inside the grounds at lunch (Nobu or Sweetfin), and then come back to the rental for dinner. The drive back through Palm Desert gives you options if you want to stop.
 
-<img src="/blog/images/escena-grill-palm-springs.webp" alt="Restaurant outdoor dining in Palm Springs area with mountain views and desert landscape" loading="lazy" width="1400" height="933">
+<img src="/blog/images/escena-grill-palm-springs.webp" alt="Restaurant outdoor dining in Palm Springs area with mountain views and desert landscape" loading="lazy" width="1364" height="706">
 
 ## Tournament Week Logistics for Dining
 

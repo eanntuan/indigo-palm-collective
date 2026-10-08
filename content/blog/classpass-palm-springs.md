@@ -26,7 +26,7 @@ If you're a regular <a href="https://classpass.com/" target="_blank" rel="noopen
 
 Worth knowing upfront: the Coachella Valley is spread across several cities. Palm Springs, Palm Desert, and Cathedral City all have different studio clusters. Searching "Palm Springs" in the app only returns what's in the city proper. Widen your search radius to pull in the full valley.
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard lined with palm trees and mountains in the background on a sunny morning" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard lined with palm trees and mountains in the background on a sunny morning" loading="lazy" width="1800" height="1800">
 
 ## What's Available on ClassPass
 
@@ -36,7 +36,7 @@ Worth knowing upfront: the Coachella Valley is spread across several cities. Pal
 
 **Hot Yoga Plus Palm Springs** is on ClassPass. Hot yoga in a desert where it's already 95 degrees outside is a real choice. The studio's indoor temperature is controlled, so the heat is consistent regardless of what's happening outside. If you've done hot yoga before, the class itself is the same format you know. The morning sessions before 9am sell out faster than afternoon classes.
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view from elevated point in Palm Springs with mountains and open sky" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view from elevated point in Palm Springs with mountains and open sky" loading="lazy" width="1800" height="1269">
 
 ## The 6-9am Window Matters
 
@@ -68,7 +68,7 @@ The valley has several drop-in studios that don't use ClassPass at all. Palm Spr
 
 If you want something outdoor and the heat is tolerable, the Indian Canyons trails and the trails at Palm Springs offer solid morning hikes that don't require a reservation. The [Palm Springs morning guide](/blog/palm-springs-morning-vs-evening/) covers some of this if you want the fuller picture on timing your outdoor time right.
 
-<img src="/blog/images/ps-desert-moonrise.webp" alt="Desert moonrise over Palm Springs with palm trees silhouetted against a pink and blue sky" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-desert-moonrise.webp" alt="Desert moonrise over Palm Springs with palm trees silhouetted against a pink and blue sky" loading="lazy" width="1200" height="1800">
 
 <img src="/blog/images/sundune-palm-springs-condo.webp" alt="The Sundune vacation rental in Palm Springs California, close to ClassPass fitness studios and hiking trails" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The Sundune in Palm Springs. An early morning class fits naturally into a stay here. Most studios are within a 10-minute drive.</p>

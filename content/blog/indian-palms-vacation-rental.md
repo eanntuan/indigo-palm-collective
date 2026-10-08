@@ -79,7 +79,7 @@ faqItems:
 
 <p>Golf cart rides are also available from community members during festival weekends. The going rate is roughly $5-10 per rider depending on group size. Your host will have current contact info in your welcome book.</p>
 
-<img src="/blog/images/indian-palms-night-walk.webp" alt="Nighttime walk back to Indian Palms Country Club from Coachella along lit community path in Indio CA" width="3024" height="4032" loading="lazy">
+<img src="/blog/images/indian-palms-night-walk.webp" alt="Nighttime walk back to Indian Palms Country Club from Coachella along lit community path in Indio CA" width="1400" height="1050" loading="lazy">
 <p class="image-caption">This is the walk back to Indian Palms at night. There's often neighbors selling waters and offering rides back to your home inside the community.</p>
 
 <h2>During Festival Weekends: Traffic and Parking</h2>
@@ -121,7 +121,7 @@ faqItems:
 
 <img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Backyard pool and patio at the Cozy Cactus vacation rental in Indian Palms Country Club Indio CA" width="1400" height="933" loading="lazy">
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indian Palms Country Club, Indio CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indian Palms Country Club, Indio CA" width="1024" height="1536" loading="lazy">
 
 <p><a href="/terra-luz/">Terra Luz</a> is a 3-bedroom Latin/Cuban-inspired vacation rental with a private saltwater pool, terracotta courtyard, and an aesthetic designed by brand architect Dawn Asher. It's our pet-friendly property. It sleeps up to 8.</p>
 

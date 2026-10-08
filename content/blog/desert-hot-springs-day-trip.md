@@ -27,7 +27,7 @@ layout: blog-post.njk
 
 <p>These are the seven spots worth knowing, from free to splurge.</p>
 
-<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert valley view from an elevated trail near Indio, California, with mountain ranges in the distance" width="1400" height="933" loading="lazy">
+<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert valley view from an elevated trail near Indio, California, with mountain ranges in the distance" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The drive to Desert Hot Springs crosses through this kind of landscape. About 20 minutes from Indio.</p>
 
 <h2>1. Two Bunch Palms Resort</h2>
@@ -42,7 +42,7 @@ layout: blog-post.njk
 
 <p><a href="https://azurepalmhotsprings.com/" target="_blank" rel="noopener noreferrer"><strong>Azure Palm Hot Springs</strong></a> is a boutique motel-style resort with six private mineral pools. The day pass model here is different from Two Bunch: you book a private outdoor mineral pool by the hour rather than access to a shared pool area. Good if you want the mineral experience without the communal setup. Rates are around $35 to $50 per hour for the pool, depending on size and season. Book online in advance; availability fills up on weekends.</p>
 
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Outdoor pool at a Palm Springs resort with mountain views, afternoon sun, and desert landscaping" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Outdoor pool at a Palm Springs resort with mountain views, afternoon sun, and desert landscaping" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The private pool model at Azure Palm runs differently from traditional spas. Worth it for the solo or couple experience.</p>
 
 <h2>3. Miracle Springs Resort</h2>
@@ -73,7 +73,7 @@ layout: blog-post.njk
 
 <p>El Morocco leans into a Moroccan-influenced aesthetic: tiled fountains, arched doorways, warm interior palette. Adults-only. The mineral pool is smaller than the resort properties but the setting is well-maintained and the vibe is deliberately boutique. Day pass availability varies by season; their spa menu includes a range of treatments from around $80 to $150. Best in the shoulder season when the crowds thin out.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Backyard pool and patio at Terra Luz vacation rental in Indio, desert landscaping and clear blue sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Backyard pool and patio at Terra Luz vacation rental in Indio, desert landscaping and clear blue sky" width="1024" height="1536" loading="lazy">
 <p class="image-caption">Terra Luz is your base. Desert Hot Springs is 20 minutes north.</p>
 
 <img src="/blog/images/desert-canyon-waterfall.webp" alt="Desert canyon waterfall near Palm Springs, the kind of landscape visible on the drive to Desert Hot Springs" width="1400" height="933" loading="lazy" decoding="async">

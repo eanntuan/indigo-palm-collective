@@ -2,10 +2,11 @@
 title: "Cozy Cactus Vacation Rental in Indio: An Honest Review"
 date: 2026-02-23
 metaDescription: "The Cozy Cactus in Indio: 4.97 stars, 146 reviews. Here's what guests consistently love, what to know before booking, and how it compares to other options."
-ogImage: /blog/images/cozy-cactus-review-hero.webp
-heroImage: /blog/images/cozy-cactus-review-hero.webp
-heroPosition: "center 60%"
-heroAlt: "desert vacation rental pool and outdoor patio at The Cozy Cactus in Indio California"
+ogImage: /blog/images/cozy-cactus-review-hero-golf.webp
+heroImage: /blog/images/cozy-cactus-review-hero-golf.webp
+heroVideo: /blog/videos/cozy-cactus-review-hero
+heroPosition: "center 55%"
+heroAlt: "backyard mini golf putting green with colorful block walls at The Cozy Cactus in Indio California"
 keywords:
   - Cozy Cactus review
   - Cozy Cactus Indio review
@@ -49,7 +50,7 @@ relatedPosts:
 
 <p><strong>How quickly they hear back.</strong> Guests mention that questions get answered fast. I take this one seriously. When someone is traveling with young kids and something isn't working, they need a real response, quickly, not a form reply or an automated message, but a person who knows the house and can help.</p>
 
-<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Fully labeled kitchen drawers at The Cozy Cactus vacation rental Indio" width="1400" height="933" loading="lazy">
+<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Fully labeled kitchen drawers at The Cozy Cactus vacation rental Indio" width="1050" height="1400" loading="lazy">
 <p class="image-caption">Every drawer labeled. Every cabinet stocked. The thing people mention most in reviews.</p>
 
 <h2>The Outdoor Space</h2>

@@ -35,7 +35,7 @@ Running in Palm Springs sounds like a bad idea until you do it at 6am in October
 
 It's also a genuinely bad idea at 10am in July. Timing is everything. Here's what you need to know before you go.
 
-<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert trail with rocky terrain in Palm Springs overlooking the Coachella Valley floor and mountains at sunrise" loading="lazy" width="1200" height="800">
+<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert trail with rocky terrain in Palm Springs overlooking the Coachella Valley floor and mountains at sunrise" loading="lazy" width="1400" height="1050">
 <p class="image-caption">Early morning is the window. Once the sun clears the mountains, the heat comes fast in the desert.</p>
 
 ## The Desert Running Rule
@@ -52,7 +52,7 @@ South Lykken is the most accessible mountain trail near Downtown Palm Springs. T
 
 This is a good warmup trail if you haven't run in desert terrain before. Loose gravel, some exposed sections, but nothing technical. Dogs are not allowed. Kids handle it fine.
 
-<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Rocky desert trail in Palm Springs with hikers and the Coachella Valley visible in the distance" loading="lazy" width="1200" height="800">
+<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Rocky desert trail in Palm Springs with hikers and the Coachella Valley visible in the distance" loading="lazy" width="1400" height="788">
 <p class="image-caption">The mountain trails near Palm Springs give you valley views within the first few minutes. Worth the early alarm.</p>
 
 ## Palm Canyon Oasis Trail: Flat, Shaded, Palms

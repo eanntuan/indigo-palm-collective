@@ -158,7 +158,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -218,6 +218,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -289,7 +292,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/palm-springs-mcm-neighborhood.webp" alt="Mid-century modern neighborhood in Palm Springs with tall palm trees and mountain backdrop" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -331,13 +334,13 @@
 <h2>A Note on the Heat</h2>
 <p>If this is your first summer trip to the Coachella Valley, the heat will still surprise you even if you read about it beforehand. A few practical things: keep the house closed from about noon to 4pm and let the A/C do its job. Drink water before you feel thirsty, especially if you're drinking alcohol. The difference between a day that feels great and a day that feels terrible is usually just hydration.</p>
 <p>The nights are legitimately beautiful. Warm, dry, and quiet in a way that's hard to find elsewhere. Plan to be outside after dark.</p>
-<img src="/blog/images/terra-luz-patio-evening-lights.webp" alt="Terra Luz covered patio at night with string lights, looking through sliding glass door into the lit interior" width="1200" height="1800" loading="lazy" decoding="async">
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Warm desert sunset over a Palm Springs neighborhood street with palm trees" width="934" height="1400" loading="lazy" decoding="async">
+<img class="portrait" src="/blog/images/terra-luz-patio-evening-lights.webp" alt="Terra Luz covered patio at night with string lights, looking through sliding glass door into the lit interior" width="1200" height="1800" loading="lazy" decoding="async">
+<img class="portrait" src="/blog/images/ps-via-sol-sunset.webp" alt="Warm desert sunset over a Palm Springs neighborhood street with palm trees" width="934" height="1400" loading="lazy" decoding="async">
 <p class="image-caption">The best hours are at the edges of the day. The valley rewards people who stay up a little later than they planned.</p>
 <h2>Planning the Rest of the Trip</h2>
 <p>Once you're unpacked and fed, the valley opens up quickly. If you're in Indio, the <a href="/blog/things-to-do-indio-ca/">full guide to things to do in Indio and the surrounding area</a> is a good next read before bed. If you're splitting time between Indio and Palm Springs, the downtown strip, <a href="https://indigopalm.co/blog/indian-canyons-palm-springs/">the Indian Canyons</a>, and the <a href="https://indigopalm.co/blog/palm-springs-aerial-tram/">Aerial Tram</a> are all worth a half-day each.</p>
 <p>The best trips here tend to mix a few destination activities with a lot of time at the house. The house is part of the experience, not just where you sleep. You probably figured that out the moment you walked in.</p>
-<img src="/blog/images/terra-luz-kitchen-portrait.webp" alt="Terra Luz kitchen in Indio with open shelving, warm wood tones, and terracotta accents" width="1200" height="1800" loading="lazy" decoding="async">
+<img class="portrait" src="/blog/images/terra-luz-kitchen-portrait.webp" alt="Terra Luz kitchen in Indio with open shelving, warm wood tones, and terracotta accents" width="1200" height="1800" loading="lazy" decoding="async">
 <h2>Frequently Asked Questions</h2>
 <h3>What should I do first when arriving at a Coachella Valley vacation rental?</h3>
 <p>Get groceries before you do anything else. Stater Bros in Indio and Trader Joe's in Palm Springs are the most convenient options. A stocked house makes every subsequent day easier.</p>

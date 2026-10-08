@@ -27,7 +27,7 @@ layout: blog-post.njk
 
 <p>The city has two things the others don't: El Paseo, the valley's best shopping street, and the Living Desert Zoo and Gardens, which is genuinely one of the better small zoos in California. Here's what's worth your time.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Desert California with desert mountains in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Desert California with desert mountains in the background" width="1800" height="1800" loading="lazy">
 
 <h2>The Living Desert Zoo and Gardens</h2>
 
@@ -65,7 +65,7 @@ layout: blog-post.njk
 
 <p>The short version: Kitchen 86 on El Paseo for lunch (sandwiches and salads in a small, casual space), Tía Carmen at the JW Marriott in Indian Wells for upscale Southwestern, and Café des Beaux-Arts on El Paseo, which has been on the same block for 30 years and still earns it. For the full restaurant breakdown on this stretch of the valley, read our <a href="/blog/best-restaurants-palm-desert/">Palm Desert restaurant guide</a>.</p>
 
-<img src="/blog/images/ps-street-mountains.webp" alt="Desert street in the Coachella Valley with mountain views and palm trees" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-mountains.webp" alt="Desert street in the Coachella Valley with mountain views and palm trees" width="933" height="1400" loading="lazy">
 
 <h2>Day Trips from Palm Desert</h2>
 

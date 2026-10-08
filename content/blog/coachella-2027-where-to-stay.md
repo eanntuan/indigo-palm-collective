@@ -35,7 +35,7 @@ relatedPosts:
 
 <p>I own two vacation rentals inside the Indian Palms Country Club neighborhood, walking distance from the festival entrance. I've watched how this choice plays out every year since 2022. Here's what I know.</p>
 
-<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio California, showing stage positions and desert surroundings" width="1400" height="933" loading="lazy">
+<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio California, showing stage positions and desert surroundings" width="960" height="503" loading="lazy">
 <p class="image-caption">The Empire Polo Club from above. The streets east and south of the grounds are Indio. Indian Palms Country Club is walking distance from the eastern fence line.</p>
 
 <h2>Weekend 1 vs Weekend 2: Does It Matter for Lodging?</h2>
@@ -96,7 +96,7 @@ relatedPosts:
 
 <p>For groups of four or more, the math shifts hard toward Indio. More space per dollar, private pools that don't require sharing with twelve other hotel guests, and the logistics of being close to the grounds compound over three days in ways that are hard to appreciate until day two. The <a href="/blog/palm-springs-vs-indio/">full comparison of Palm Springs vs Indio</a> covers this in detail for anyone who wants to think it through.</p>
 
-<img src="/blog/images/coachella-valley-map.webp" alt="Map of the Coachella Valley showing Palm Springs, Indio, and the location of the Empire Polo Club festival grounds" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-map.webp" alt="Map of the Coachella Valley showing Palm Springs, Indio, and the location of the Empire Polo Club festival grounds" width="1440" height="990" loading="lazy">
 <p class="image-caption">The valley geography. Palm Springs is the well-known western anchor; Indio is the eastern city where the festival is. The Indian Palms neighborhood sits a mile east of the polo grounds.</p>
 
 <h2>How to Book Direct and What It Saves</h2>

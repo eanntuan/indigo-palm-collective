@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/cozy-cactus-infant-gear.webp" alt="Baby and family gear laid out at Cozy Cactus vacation rental in Indio CA, pack n play stroller and infant supplies" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -284,7 +287,7 @@
   <li>Changing pad</li>
   <li>Stroller available on request</li>
 </ul>
-<img src="/blog/images/family-closet.webp" alt="Family vacation rental supply closet at Cozy Cactus Indio CA with pack n play stroller baby gear and travel supplies organized" width="1400" height="933" loading="lazy">
+<img class="portrait" src="/blog/images/family-closet.webp" alt="Family vacation rental supply closet at Cozy Cactus Indio CA with pack n play stroller baby gear and travel supplies organized" width="1200" height="1800" loading="lazy">
 <p class="image-caption">The family closet. Guests with under-2s typically arrive and say "oh thank god." That's the goal.<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 <p>The kitchen is stocked like someone cooks there: labeled drawers, full-size fridge, everything family-sized. You can make breakfast for a group without staging a scavenger hunt for the spatula.</p>
 <h2>What Kids Love at the Cozy Cactus</h2>

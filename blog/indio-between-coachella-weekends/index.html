@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/indio-between-coachella-weekends.webp" alt="Coachella Valley desert landscape between Indio date palms, the in-between week" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -298,7 +301,7 @@
     <p><strong>Order:</strong> Honey lavender latte, Madagascar vanilla, freshly squeezed lemonade if it's hot (it's April, it's hot)</p>
     <p><strong>Vibe:</strong> Small, intentional, not trying to be a Palm Springs aesthetic cafe</p>
 </div>
-<img src="/blog/images/one-stop-taco-shop.webp" alt="Overhead spread of tacos and tostadas on white plates from One Stop Taco Shop, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img class="squarish" src="/blog/images/one-stop-taco-shop.webp" alt="Overhead spread of tacos and tostadas on white plates from One Stop Taco Shop, Indio CA" loading="lazy" decoding="async" width="1800" height="1440">
 <p class="image-caption">The food scene between the polo grounds and the date farms is worth exploring</p>
 <h2>Day Trip: Shields Date Garden (Indio Is the Date Capital of the US. Act Like It.)</h2>
 <p>Nearly 95 percent of all dates grown in the United States come from the Coachella Valley. That fact deserves a moment. This whole region, the date palms, the groves, the roadside shakes, is the reason American dates exist the way they do. And the center of that history is <a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a> on Highway 111 in Indio.</p>
@@ -344,7 +347,7 @@
 <img src="/blog/images/rosemary-hifi.webp" alt="Rosemary HiFi interior with cobalt blue tile bar, walnut shelving with vinyl records and 1960s JBL speakers, Indio CA" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">1960s JBL speakers, natural wine, and a record collection where the liquor display should be</p>
 <p>And when you're done with all of it, the pool at <a href="/terra-luz/">Terra Luz</a> or <a href="/cozy-cactus/">The Cozy Cactus</a> will be waiting. Seven days between two festival weekends goes faster than you think. Use them.</p>
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta patio in Indio California, walking distance to the Coachella festival grounds" loading="lazy" decoding="async" width="1400" height="933">
+<img class="portrait" src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta patio in Indio California, walking distance to the Coachella festival grounds" loading="lazy" decoding="async" width="1024" height="1536">
 <p class="image-caption">Between weekends, this is where you come back to. Terra Luz in Indian Palms, Indio.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>What should you do in Indio between Coachella weekends?</h3>

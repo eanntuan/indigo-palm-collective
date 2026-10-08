@@ -181,7 +181,7 @@ relatedPosts:
 </table>
 </div>
 
-<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert hiking trail through rocky canyon near Palm Springs California with blue sky overhead" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert hiking trail through rocky canyon near Palm Springs California with blue sky overhead" width="1400" height="788" loading="lazy">
 <p class="image-caption">The desert is not uniformly dry. Getting out before 8am in the canyons is the whole strategy.</p>
 
 <h2>1. Andreas Canyon (Easy)</h2>

@@ -50,7 +50,7 @@
         nav .back-link { text-decoration: none; color: var(--charcoal); font-weight: 400; font-size: 0.95rem; transition: color 0.3s; letter-spacing: 0.5px; }
         nav .back-link:hover { color: var(--blue); }
         .hero {
-            margin-top: 80px; min-height: 60vh; position: relative; overflow: hidden;
+            margin-top: 80px; aspect-ratio: 16 / 8; width: 100%; box-sizing: border-box; min-height: 420px; max-height: 78vh; height: auto; position: relative; overflow: hidden;
             background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/the-sundune/photos/Sundune2026-0120.webp');
             background-size: cover; background-position: center;
             display: flex; align-items: flex-end; padding: 4rem 5%;
@@ -89,7 +89,7 @@
         .contact-btn.email, .contact-btn.instagram { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
-            .hero { min-height: 50vh; padding: 2rem 5%; }
+            .hero { aspect-ratio: auto; min-height: 55vh; max-height: none; padding: 2rem 5%; }
             .hero-content { padding: 1.5rem; }
             .content-section { padding: 3rem 5%; }
         }

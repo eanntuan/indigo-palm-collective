@@ -53,7 +53,7 @@ relatedPosts:
 
 <p>Walk along <strong>El Alameda</strong> and <strong>Via Lola</strong>. The homes are private, but almost all of them are visible from the street and the architecture is dense. Richard Neutra designed several homes in this area in the late 1940s and early 1950s. Look for the integration of indoor-outdoor space: the houses are designed to dissolve the wall between the living room and the yard.</p>
 
-<img src="/blog/images/ps-orange-door-mcm.webp" alt="Vibrant orange front door of a Palm Springs midcentury modern home with desert landscaping and a clear blue sky" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-orange-door-mcm.webp" alt="Vibrant orange front door of a Palm Springs midcentury modern home with desert landscaping and a clear blue sky" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Color was intentional on these doors. The architects and owners used it to mark entries and create focal points against white stucco.</p>
 
 <h2>Stop 3: Old Las Palmas (Via Monte Vista / Camino Norte)</h2>
@@ -74,7 +74,7 @@ relatedPosts:
 
 <p>Before window AC was standard, architects here needed a way to shade glass walls without losing the indoor-outdoor openness the style was built on. Breeze block, the perforated concrete masonry version you'll see everywhere in Vista Las Palmas, was the local answer: cheap, mass-producible, and available in dozens of geometric patterns. Wexler, Cody, and Krisel all used it constantly, on carports, pool enclosures, and room dividers, and the shadows it throws shift shape as the sun moves across the day. That's the detail worth stopping for. The same wall looks different at 10am and 5pm.</p>
 
-<img src="/blog/images/ps-pink-door-midcentury.webp" alt="Pink front door on a midcentury modern home in Palm Springs with cacti and desert plants lining the entry" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-pink-door-midcentury.webp" alt="Pink front door on a midcentury modern home in Palm Springs with cacti and desert plants lining the entry" width="1050" height="1400" loading="lazy">
 <p class="image-caption">Vista Las Palmas has this kind of streetscape for several blocks. It's worth walking slowly.</p>
 
 <h2>Stop 5: Twin Palms (Via Miraleste / Via Olivera)</h2>
@@ -89,7 +89,7 @@ relatedPosts:
 
 <p>Wexler also designed the Palm Springs airport terminal in 1965. If you're flying out of PSP, it's worth noticing. The steel construction is the same logic at a different scale.</p>
 
-<img src="/blog/images/modernism-week-palm-springs.webp" alt="Crowd gathered at a Palm Springs home tour during Modernism Week with midcentury architecture in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/modernism-week-palm-springs.webp" alt="Crowd gathered at a Palm Springs home tour during Modernism Week with midcentury architecture in the background" width="640" height="715" loading="lazy">
 <p class="image-caption">Modernism Week in February opens many private homes for tours. The line to get into the Kaufmann House alone is worth planning a trip around.</p>
 
 <h2>Stop 7: Uptown Design District (N Palm Canyon, Alejo to Tamarisk)</h2>
@@ -100,7 +100,7 @@ relatedPosts:
 
 <p>The <a href="https://www.psmuseum.org/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Art Museum</strong></a> at 101 Museum Drive includes an architectural wing and hosts permanent and rotating exhibitions on California modernism, including architecture. If the tour gets your interest up and you want context and deeper history, this is the place. There's also a sculpture garden that the building opens onto. Worth an hour minimum.</p>
 
-<img src="/blog/images/palm-springs-art-museum.webp" alt="Palm Springs Art Museum exterior with desert landscaping and the San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-art-museum.webp" alt="Palm Springs Art Museum exterior with desert landscaping and the San Jacinto Mountains in the background" width="800" height="1067" loading="lazy">
 <p class="image-caption">The Palm Springs Art Museum has a dedicated architecture exhibition. If you want names and dates attached to what you've been seeing, this is the next stop.</p>
 
 <h2>Parking and Logistics</h2>

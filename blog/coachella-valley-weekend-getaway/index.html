@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/coachella-valley-map.webp" alt="Coachella Valley map showing Palm Springs, Indio, and the surrounding desert for a weekend getaway in Southern California" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -257,7 +260,7 @@
             <p>The first time I drove out to the Coachella Valley for a weekend, I had no idea where anything was. I knew the Coachella music festival was somewhere near Palm Springs. I knew it was hot. I booked a hotel in Palm Desert because the name sounded like the right vibe, ate at the one restaurant on Yelp that had more than 100 reviews, and spent the whole second afternoon trapped inside because I hadn't accounted for the fact that it was 108 degrees and I had no pool.</p>
 <p>That was a long time ago. I own vacation rentals in the valley now. I've watched thousands of guests come through. The trips that go wrong tend to go wrong in the same ways, and most of them are easily avoidable with a bit of honest advance information.</p>
 <p>This is that information.</p>
-<img src="/blog/images/coachella-valley-map.webp" alt="Map of the Coachella Valley showing Palm Springs, Cathedral City, Palm Desert, La Quinta, and Indio along Interstate 10 in Southern California" width="1400" height="933" loading="eager">
+<img src="/blog/images/coachella-valley-map.webp" alt="Map of the Coachella Valley showing Palm Springs, Cathedral City, Palm Desert, La Quinta, and Indio along Interstate 10 in Southern California" width="1440" height="990" loading="eager">
 <p class="image-caption">The Coachella Valley runs about 45 miles from Cathedral City in the west to Coachella and Indio in the east. Palm Springs and Indio are the two most different ends of that spectrum.</p>
 <h2>When to Go</h2>
 <p>October through April is the season. That's when the weather cooperates and the valley is genuinely enjoyable to be outdoors in. Spring (February through April) is peak: wildflowers, mild temperatures, the full energy of the festival calendar.</p>
@@ -297,7 +300,7 @@
 <p>Every single group I've seen come through the valley: the festival crowds, the bachelorette parties, the family trips, the couples weekends. All of them have a better time when they have somewhere good to return to in the afternoon: water to get into, outdoor furniture that isn't an afterthought, and a kitchen that works.</p>
 <p>The desert rewards you when you build in recovery time. It's not a city trip where you go from thing to thing all day. It's a place where some of the best moments happen in the margins: a late afternoon in the pool when the light turns orange, dinner on the patio at 8pm when it's finally cool enough to be outside again, a morning walk before it gets hot.</p>
 <p>Plan for those moments and the weekend takes care of itself.</p>
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs California with the San Jacinto Mountains in the background on a clear desert day" width="1400" height="933" loading="lazy">
+<img class="portrait" src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs California with the San Jacinto Mountains in the background on a clear desert day" width="1800" height="1800" loading="lazy">
 <p class="image-caption">The San Jacinto Mountains behind Palm Springs. The valley floor is flat; the scale of the mountains doesn't register until you're standing here.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>What is the best time of year for a Coachella Valley weekend getaway?</h3>

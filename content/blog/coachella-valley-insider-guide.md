@@ -74,12 +74,12 @@ relatedPosts:
 
 <p><strong>Palm Canyon Drive</strong> is the main drag. Wander it. Pop into the vintage shops. Get an overpriced cocktail at a mid-century modern hotel bar. That's the Palm Springs experience and it delivers.</p>
 
-<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage silver Cadillac parked on a Palm Springs street with palm trees and mountains" loading="lazy" width="800" height="533">
+<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage silver Cadillac parked on a Palm Springs street with palm trees and mountains" loading="lazy" width="1200" height="1800">
 <p class="image-caption">Palm Springs has always had this energy. Some things don't change.</p>
 
 <p><a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>The Aerial Tramway</strong></a> takes you from desert floor to 8,500 feet in ten minutes. The temperature drops 30 degrees. In summer, that's the whole selling point. In winter, there's actual snow up there while it's 70 degrees below.</p>
 
-<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Mid-century modern home with teal door and palm trees in Palm Springs CA" loading="lazy" width="800" height="533">
+<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Mid-century modern home with teal door and palm trees in Palm Springs CA" loading="lazy" width="1200" height="1800">
 <p class="image-caption">The mid-century architecture neighborhoods are worth an afternoon just walking and looking.</p>
 
 <h2>The Coachella Polo Fields (When There's No Festival)</h2>
@@ -102,7 +102,7 @@ relatedPosts:
 
 <h2>The Hiking Nobody Talks About</h2>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Wide desert valley view from above with palm trees and mountains surrounding the Coachella Valley" loading="lazy" width="800" height="533">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Wide desert valley view from above with palm trees and mountains surrounding the Coachella Valley" loading="lazy" width="1800" height="1269">
 <p class="image-caption">The valley from above. Joshua Tree to the north, Salton Sea to the south, everything in between.</p>
 
 <p><a href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer"><strong>Indian Canyons</strong></a> in Palm Springs. Ancient Cahuilla trading routes lined with California fan palms. The Andreas Canyon trail follows a stream through a palm oasis. It feels like you walked through a portal into somewhere tropical.</p>

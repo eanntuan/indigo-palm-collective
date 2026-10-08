@@ -89,7 +89,7 @@ The date harvest runs roughly August through November, when fresh fruit is avail
 
 For the date shake specifically, there's no wrong time. Shield's serves them year round. That said, pulling up to Shield's on a 110-degree August afternoon with nowhere to be is a specific kind of Coachella Valley experience. I'd recommend it.
 
-<img src="/blog/images/one-stop-taco-shop.webp" alt="Local taco spot in Indio California near the Coachella Valley date farm corridor" loading="lazy" width="1400" height="933">
+<img src="/blog/images/one-stop-taco-shop.webp" alt="Local taco spot in Indio California near the Coachella Valley date farm corridor" loading="lazy" width="1800" height="1440">
 
 ## While You're in the Area
 

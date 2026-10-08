@@ -29,7 +29,7 @@ layout: blog-post.njk
 
 <p>Here's what I tell families before they arrive.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Canyon Drive in Palm Springs lined with tall palm trees and the San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Canyon Drive in Palm Springs lined with tall palm trees and the San Jacinto Mountains in the background" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Palm Canyon Drive, the main drag. Ten minutes by car from The Sundune, and the mountains are always in the frame.</p>
 
 <h2>The Activities Worth Planning Around</h2>
@@ -50,7 +50,7 @@ layout: blog-post.njk
 
 <p><strong>Address:</strong> 50770 Seminole Dr, Cabazon. <strong>Phone:</strong> 909-272-8164. <strong>Website:</strong> <a href="https://www.cabazondinosaurs.com" target="_blank" rel="noopener">cabazondinosaurs.com</a></p>
 
-<img src="/blog/images/ps-street-mountains.webp" alt="Residential street in Palm Springs with midcentury modern homes and the Santa Rosa Mountains visible in the distance" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-street-mountains.webp" alt="Residential street in Palm Springs with midcentury modern homes and the Santa Rosa Mountains visible in the distance" width="933" height="1400" loading="lazy">
 <p class="image-caption">The mountains are always in the background here. Even a walk around the neighborhood qualifies as scenery.</p>
 
 <h3>Palm Springs Air Museum</h3>
@@ -88,7 +88,7 @@ layout: blog-post.njk
 
 <p>For the full rundown on where to eat in Palm Springs, including spots beyond the kid-specific picks, the <a href="/blog/palm-springs-local-guide-sundune/">Sundune local guide</a> covers coffee, brunch, and dinner with more depth.</p>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Panoramic view of the Coachella Valley from Palm Springs with desert floor, palm trees, and mountains in every direction" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Panoramic view of the Coachella Valley from Palm Springs with desert floor, palm trees, and mountains in every direction" width="1800" height="1269" loading="lazy">
 <p class="image-caption">The valley from above. From up here, the whole itinerary makes geographic sense.</p>
 
 <h2>Where to Stay: Why The Sundune Makes Sense for Families</h2>

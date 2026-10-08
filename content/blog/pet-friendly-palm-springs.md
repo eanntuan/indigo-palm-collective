@@ -60,7 +60,7 @@ faqItems:
     <p><strong>Hours:</strong> Open daily, dawn to dusk</p>
 </div>
 
-<img src="/blog/images/ps-pink-door-midcentury.webp" alt="Pink midcentury modern front door in Palm Springs residential neighborhood, near Ruth Hardy Park" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-pink-door-midcentury.webp" alt="Pink midcentury modern front door in Palm Springs residential neighborhood, near Ruth Hardy Park" width="1050" height="1400" loading="lazy">
 <p class="image-caption">Ruth Hardy Park sits in the middle of a walkable neighborhood. Good for dogs, good for humans.</p>
 
 <p><strong>Palm Canyon Trail:</strong> Dogs on leash are allowed on most <a href="/blog/best-hiking-palm-springs/">Palm Springs-area trails</a>. Palm Canyon, maintained by the Agua Caliente tribe, requires an entry fee. The canyon is one of the largest natural fan palm oases in North America. Go early. Trail temperatures get brutal by 9am in summer. Bring more water than you think both of you need.</p>
@@ -120,7 +120,7 @@ faqItems:
     <p><strong>Practical heat tip:</strong> Booties exist and dogs will eventually accept them. Dog cooling vests also work well for short outdoor stints. Both are easier than explaining to a vet what happened.</p>
 </div>
 
-<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage Cadillac in Palm Springs, mid-century desert city style, bring your dog and explore" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage Cadillac in Palm Springs, mid-century desert city style, bring your dog and explore" width="1200" height="1800" loading="lazy">
 <p class="image-caption">October through April is peak dog season in Palm Springs. The vintage car scene is a bonus.</p>
 
 <h2>What to Bring</h2>
@@ -136,7 +136,7 @@ faqItems:
 
 <p>Our two dog-friendly properties: <a href="/terra-luz/">Terra Luz</a> in Indio (up to two dogs, fenced backyard, private saltwater pool) and <a href="/the-sundune/">The Sundune</a> in Palm Springs (one dog, shared HOA pool, Uptown Design District within walking distance). Both accept dogs with prior confirmation.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz fenced backyard and saltwater pool in Indio California, dog-friendly vacation rental in the Coachella Valley" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz fenced backyard and saltwater pool in Indio California, dog-friendly vacation rental in the Coachella Valley" width="1024" height="1536" loading="lazy">
 <p class="image-caption">Terra Luz in Indio. Fully fenced backyard, pool is dog-accessible, up to two dogs with a $150 fee and prior confirmation.</p>
 
 <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 3rem 0;">

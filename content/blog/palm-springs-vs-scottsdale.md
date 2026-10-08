@@ -37,7 +37,7 @@ faqItems:
 
 <p>I own vacation rentals in Palm Springs and the Coachella Valley. I've spent enough time in both cities to give you a straight comparison instead of a listicle of resorts.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs California with San Jacinto Mountains in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs California with San Jacinto Mountains in the background" width="1800" height="1800" loading="lazy">
 
 <h2>The Core Difference in Vibe</h2>
 
@@ -53,7 +53,7 @@ faqItems:
 
 <p>Most people asking "Palm Springs vs Scottsdale" are coming from Southern California. If that's you, Palm Springs is the obvious geographic answer. If you're visiting from the Midwest or Texas, Scottsdale is closer and often cheaper to fly into.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over a Palm Springs street with palm trees and San Jacinto Mountain silhouette" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over a Palm Springs street with palm trees and San Jacinto Mountain silhouette" width="934" height="1400" loading="lazy">
 
 <h2>Weather: Which Is Hotter?</h2>
 
@@ -89,7 +89,7 @@ faqItems:
 
 <p>Scottsdale has Camelback Mountain and Pinnacle Peak for hiking, both excellent. The Sonoran Desert is beautiful. But the dramatic elevation changes and unique ecosystems accessible from Palm Springs don't have a direct equivalent.</p>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view from Palm Springs California showing the Coachella Valley and mountain ranges" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view from Palm Springs California showing the Coachella Valley and mountain ranges" width="1800" height="1269" loading="lazy">
 
 <h2>The Short Answer</h2>
 

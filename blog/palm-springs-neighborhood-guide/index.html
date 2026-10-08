@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/palm-springs-neighborhood-map.webp" alt="Aerial view of Palm Springs neighborhoods with the San Jacinto Mountains in the background" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -256,7 +259,7 @@
         <div class="article-body">
             <p>The first time I drove into Palm Springs, I had no idea there were neighborhoods to choose from. I booked based on price and ended up fine, but I had no idea what I was missing. The area near the Marilyn Monroe statue and the area near the Museum Trail look like the same city on Google Maps. On the ground, they feel like different trips.</p>
 <p>Here's what differentiates them, and how to pick based on what you want from the trip.</p>
-<img src="/blog/images/palm-springs-neighborhood-map.webp" alt="Map overview of Palm Springs neighborhoods including Uptown, Downtown, Movie Colony, Warm Sands, and The Mesa" loading="lazy" width="1200" height="800">
+<img class="squarish" src="/blog/images/palm-springs-neighborhood-map.webp" alt="Map overview of Palm Springs neighborhoods including Uptown, Downtown, Movie Colony, Warm Sands, and The Mesa" loading="lazy" width="1033" height="820">
 <p class="image-caption">Palm Springs is smaller than it looks on a map. Most neighborhoods are within a 10-minute drive of each other.</p>
 <h2>How Palm Springs Is Laid Out</h2>
 <p>Palm Springs runs roughly north to south along Palm Canyon Drive, which splits into North Palm Canyon and South Palm Canyon. Most of the city people think of sits between Vista Chino to the north and E Palm Canyon Drive to the south.</p>
@@ -264,12 +267,12 @@
 <h2>Uptown: Design Lovers, Boutique Browsers</h2>
 <p>Uptown is roughly between Amado Road and Vista Chino on North Palm Canyon Drive. It's where the antique shops, design boutiques, and small galleries concentrate. The pace is slower here. People are browsing, not rushing.</p>
 <p>If you're coming to Palm Springs to hunt for mid-century furniture, explore independent clothing shops, or just walk a stretch where most storefronts are interesting, Uptown is the right base. It's also a good starting point for a self-guided architecture walk, since some of the most photogenic residential streets are nearby.</p>
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="North Palm Canyon Drive in Palm Springs with palm trees lining the boulevard and San Jacinto Mountains behind" loading="lazy" width="1200" height="800">
+<img class="portrait" src="/blog/images/ps-boulevard-palms-mountains.webp" alt="North Palm Canyon Drive in Palm Springs with palm trees lining the boulevard and San Jacinto Mountains behind" loading="lazy" width="1800" height="1800">
 <p class="image-caption">North Palm Canyon Drive runs through the heart of Uptown. The mountains behind it never stop being the backdrop.</p>
 <h2>Downtown: First-Timers, Nightlife, Walkability</h2>
 <p>Downtown is the area around the 100-400 blocks of South Palm Canyon Drive and the surrounding streets. This is where most visitors default to, and for good reason. Restaurants, bars, shops, and the Marilyn Monroe statue are all within walking distance. On Thursday nights, <a href="https://villagefest.org/" target="_blank" rel="noopener noreferrer"><strong>VillageFest</strong></a> turns Palm Canyon Drive into a street fair with food stalls and live art. More on what to expect in the <a href="/blog/village-fest-palm-springs/">VillageFest guide</a>.</p>
 <p>If it's your first time in Palm Springs and you're not sure which parts you'll like, staying near Downtown means you can walk to most things without a plan. The tradeoff: it's the busiest, noisiest part of the city, especially on weekends. If you want a quiet morning, you won't find it here.</p>
-<img src="/blog/images/palm-springs-marilyn-monroe-statue.webp" alt="Marilyn Monroe statue outside the Palm Springs Art Museum in downtown Palm Springs California" loading="lazy" width="1200" height="800">
+<img class="squarish" src="/blog/images/palm-springs-marilyn-monroe-statue.webp" alt="Marilyn Monroe statue outside the Palm Springs Art Museum in downtown Palm Springs California" loading="lazy" width="1200" height="900">
 <p class="image-caption">The Forever Marilyn statue near the Art Museum has become one of the most photographed spots in Downtown Palm Springs.</p>
 <h2>Movie Colony: Mid-Century Architecture, Celebrity History</h2>
 <p>Movie Colony is east of Downtown, roughly between Indian Canyon Drive and Sunrise Way. It was where Hollywood's Golden Age elite built weekend homes, and the architecture reflects that. Albert Frey designed the Movie Colony Hotel in 1935. L'Horizon, now a boutique hotel on East Palm Canyon, came from William F. Cody in 1952.</p>
@@ -280,7 +283,7 @@
 <h2>The Mesa: Scenic Views, Families, Quiet Mornings</h2>
 <p>The Mesa is southeast of Downtown, where Palm Canyon Drive starts to curve and rise slightly. The views back toward the valley floor are better here than anywhere else in central Palm Springs. It's less dense, and vacation rentals tend to have more outdoor space.</p>
 <p>For families who want a private backyard and a pool rather than walkability to restaurants, The Mesa delivers that. It's where a lot of longer-stay visitors end up.</p>
-<img src="/blog/images/ps-desert-valley-view.webp" alt="View from a hillside in Palm Springs looking out over the desert valley floor with mountains in the distance" loading="lazy" width="1200" height="800">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="View from a hillside in Palm Springs looking out over the desert valley floor with mountains in the distance" loading="lazy" width="1800" height="1269">
 <p class="image-caption">The Mesa and surrounding hillside areas offer the best valley views in Palm Springs proper.</p>
 <h2>Twin Palms: Design-Forward, Hillside, Secluded</h2>
 <p>Twin Palms sits south and slightly elevated from Downtown, near the base of the San Jacinto foothills. It's where architects designed some of Palm Springs' most striking private residences. Frank Sinatra's Twin Palms Estate is here, now available as a rental.</p>

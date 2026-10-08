@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/palm-springs-bar-cocktails.webp" alt="Cocktails lined up on a Palm Springs bar, the poolside-resort drink you can order as a walk-in without booking a hotel room" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -358,7 +361,7 @@
 <p>A few things I've learned sending guests to these places. Book any pool day pass or cabana ahead, ideally days out for a summer weekend, because they cap the number of non-guests and the good spots go first. Check the age policy, since a handful of these pools are adults-only and won't let kids in at all. And separate your two goals in your head: a walk-in lunch is easy and spontaneous, but a lounge-by-the-pool afternoon is a booking.</p>
 <p>For more valley food and drink beyond the resorts, my <a href="/blog/best-restaurants-palm-springs/">best restaurants in Palm Springs guide</a> and the <a href="/blog/palm-springs-bars/">Palm Springs bars roundup</a> both go deeper. And if you're doing this in July heat, the <a href="/blog/palm-springs-heat-activities/">summer heat activities guide</a> pairs a pool day with the indoor stuff for when it's genuinely too hot to be outside.</p>
 <p>The through-line is that you don't need to book a resort to feel like you're staying at one. Buy the day pass, grab the walk-in table, order the coconut cocktail. Then, ideally, come back to a place with a pool that's already yours. If you're staying with us, <a href="/the-sundune/">The Sundune</a> in Palm Springs has the shared HOA pool a short walk from the door, and the Indio houses have their own water. Either way, the desert's whole appeal in summer is spending the day half-submerged.</p>
-<img src="/blog/images/terra-luz-patio-evening-lights.webp" alt="Terra Luz patio in Indio strung with lantern lights in the evening, where a resort-style pool day winds down" width="1200" height="1800" loading="lazy">
+<img class="portrait" src="/blog/images/terra-luz-patio-evening-lights.webp" alt="Terra Luz patio in Indio strung with lantern lights in the evening, where a resort-style pool day winds down" width="1200" height="1800" loading="lazy">
 <p class="image-caption">Where the pool day ends: back at Terra Luz, lanterns on, nobody charging by the hour.</p>
 <h2>Frequently Asked Questions</h2>
 <h3>Can you use a Palm Springs resort pool without staying there?</h3>

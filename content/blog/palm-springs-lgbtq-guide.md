@@ -25,7 +25,7 @@ layout: blog-post.njk
 
 <p>This is the practical guide: what's on Arenas Road, what the major annual events involve, and where to stay.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm tree-lined boulevard in Palm Springs with the San Jacinto Mountains at the end of the street at golden hour" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm tree-lined boulevard in Palm Springs with the San Jacinto Mountains at the end of the street at golden hour" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Palm Springs. The city is small enough to walk most of the main bar district.</p>
 
 <h2>The Arenas Road District</h2>
@@ -46,7 +46,7 @@ layout: blog-post.njk
 
 <p><a href="https://toucanstikilounge.com/" target="_blank" rel="noopener noreferrer"><strong>Toucan's Tiki Lounge</strong></a> has been around since 1989 and leans into the tiki aesthetic: tropical drinks, neon lighting, an outdoor area with seating. Drag shows run throughout the week. The vibe is more neighborhood bar than nightclub. Good for early evening before the larger venues fill up.</p>
 
-<img src="/blog/images/bootlegger-tiki-palm-springs.webp" alt="Tiki bar interior in Palm Springs with dim lighting, tropical decor, and neon signs" width="1400" height="933" loading="lazy">
+<img src="/blog/images/bootlegger-tiki-palm-springs.webp" alt="Tiki bar interior in Palm Springs with dim lighting, tropical decor, and neon signs" width="1200" height="630" loading="lazy">
 <p class="image-caption">The tiki bar aesthetic shows up in a few Arenas Road spots. Toucan's is the most established version.</p>
 
 <h3>Bar Cecil</h3>
@@ -57,7 +57,7 @@ layout: blog-post.njk
 
 <p>Chill Bar on Arenas Road is a smaller, more casual video bar with cheap drinks and a neighborhood feel. Quadz Video Bar is nearby and similar in vibe. Neither of these is a destination, but if you're walking the strip and want to keep going, both work. Azul on E Amado Road has a rooftop and gets busy during events.</p>
 
-<img src="/blog/images/palm-springs-bar-cocktails.webp" alt="Cocktails being poured at a Palm Springs bar with warm lighting and patrons in the background" width="1400" height="933" loading="lazy">
+<img src="/blog/images/palm-springs-bar-cocktails.webp" alt="Cocktails being poured at a Palm Springs bar with warm lighting and patrons in the background" width="1400" height="980" loading="lazy">
 <p class="image-caption">The bar scene on Arenas Road runs later on weekends during event weekends. Midweek is quieter.</p>
 
 <h2>The Annual Events</h2>
@@ -80,7 +80,7 @@ layout: blog-post.njk
 
 <p>The Palm Springs International LGBTQ+ Film Festival runs for about a week in October at the Palm Springs Cultural Center and other venues. A focused cultural event rather than a party event. Screenings, filmmaker talks, and industry guests. Low-key compared to the bigger seasonal events but worth knowing if you're interested in queer cinema.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Palm Springs neighborhood at sunset with golden light on desert homes and palm trees lining the street" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Palm Springs neighborhood at sunset with golden light on desert homes and palm trees lining the street" width="934" height="1400" loading="lazy">
 <p class="image-caption">Palm Springs at sunset. The city is at its best in the October through April window.</p>
 
 <h2>Practical Notes</h2>

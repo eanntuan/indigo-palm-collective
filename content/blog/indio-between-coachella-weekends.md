@@ -95,7 +95,7 @@ layout: blog-post.njk
     <p><strong>Vibe:</strong> Small, intentional, not trying to be a Palm Springs aesthetic cafe</p>
 </div>
 
-<img src="/blog/images/one-stop-taco-shop.webp" alt="Overhead spread of tacos and tostadas on white plates from One Stop Taco Shop, Indio CA" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/one-stop-taco-shop.webp" alt="Overhead spread of tacos and tostadas on white plates from One Stop Taco Shop, Indio CA" loading="lazy" decoding="async" width="1800" height="1440">
 <p class="image-caption">The food scene between the polo grounds and the date farms is worth exploring</p>
 
 <h2>Day Trip: Shields Date Garden (Indio Is the Date Capital of the US. Act Like It.)</h2>
@@ -166,7 +166,7 @@ layout: blog-post.njk
 
 <p>And when you're done with all of it, the pool at <a href="/terra-luz/">Terra Luz</a> or <a href="/cozy-cactus/">The Cozy Cactus</a> will be waiting. Seven days between two festival weekends goes faster than you think. Use them.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta patio in Indio California, walking distance to the Coachella festival grounds" loading="lazy" decoding="async" width="1400" height="933">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta patio in Indio California, walking distance to the Coachella festival grounds" loading="lazy" decoding="async" width="1024" height="1536">
 <p class="image-caption">Between weekends, this is where you come back to. Terra Luz in Indian Palms, Indio.</p>
 
 <h2>Frequently Asked Questions</h2>

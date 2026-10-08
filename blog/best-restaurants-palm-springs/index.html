@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/bar-cecil.webp" alt="Bar Cecil interior in Palm Springs with moody lighting, plush seating, and vintage cocktail bar atmosphere" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:bottom;" loading="eager" fetchpriority="high">
     </div>
     
@@ -275,7 +278,7 @@
   <li><strong>South Indian Canyon / East Side:</strong> Rooster and the Pig, The Heyday. Less foot traffic, worth the detour.</li>
   <li><strong>Off the main grid:</strong> Escena Grill (golf club, west side), Copley's (North Palm Canyon, near the Design District), Purple Room (East Palm Canyon, different vibe entirely), Les Filles (Cathedral City, 5 minutes out).</li>
 </ul>
-<img src="/blog/images/palm-springs-neighborhood-map.webp" alt="Palm Springs restaurant neighborhood map showing Downtown Palm Canyon, Uptown Design District, South Indian Canyon, and surrounding areas" width="1033" height="820" loading="lazy">
+<img class="squarish" src="/blog/images/palm-springs-neighborhood-map.webp" alt="Palm Springs restaurant neighborhood map showing Downtown Palm Canyon, Uptown Design District, South Indian Canyon, and surrounding areas" width="1033" height="820" loading="lazy">
 <p class="image-caption">The four main zones. Uptown Design District (North Palm Canyon) has the most density of good independent spots.</p>
 <h2>Coffee and Breakfast</h2>
 <h3>Koffi North</h3>
@@ -289,12 +292,12 @@
 <h3>Les Filles Cafe</h3>
 <p><a href="https://www.instagram.com/lesfillescafe/" target="_blank" rel="noopener noreferrer"><strong>Les Filles Cafe</strong></a> is five minutes from downtown in Cathedral City and worth the drive. The espresso is serious, the croissants are the real reason you go early, and the whole place runs on an easy, unhurried rhythm that's hard to find anywhere on the main Palm Canyon stretch. A genuinely French cafe in the middle of the desert. You'll know you're in the right spot when the owners are out front.</p>
 <p><strong>Cathedral City, CA</strong> (approx. 5 min from downtown Palm Springs). Find them at <a href="https://www.instagram.com/lesfillescafe/" target="_blank" rel="noopener">@lesfillescafe</a> for current hours.</p>
-<img src="/blog/images/lesfilles-cafe-cathedral-city.webp" alt="Owners of Les Filles Cafe standing behind the pastry counter in Cathedral City with croissants and French pastries in the foreground" width="1200" height="900" loading="lazy">
+<img src="/blog/images/lesfilles-cafe-cathedral-city.webp" alt="Owners of Les Filles Cafe standing behind the pastry counter in Cathedral City with croissants and French pastries in the foreground" width="4000" height="2667" loading="lazy">
 <p class="image-caption">The owners at Les Filles. That pastry case is the reason you go early.</p>
 <h3>Cartel Coffee Lab</h3>
 <p><a href="https://www.cartelcoffee.com/" target="_blank" rel="noopener noreferrer"><strong>Cartel Coffee Lab</strong></a> is an Arizona-born specialty roaster with a location inside the Arrive Hotel. Direct trade, specific origins, excellent cold brew. The hotel itself is designed well enough to justify a look even if you're not a coffee person. The baristas know their sourcing.</p>
 <p><strong>1551 N Palm Canyon Dr, Palm Springs, CA 92262</strong> (inside Arrive Hotel). Find them at <a href="https://www.instagram.com/cartelcoffeecompany/" target="_blank" rel="noopener">@cartelcoffeecompany</a>.</p>
-<img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Cartel Coffee Lab at Arrive Hotel on North Palm Canyon Drive in Palm Springs" width="1400" height="933" loading="lazy">
+<img class="squarish" src="/blog/images/cartel-coffee-palm-springs.webp" alt="Cartel Coffee Lab at Arrive Hotel on North Palm Canyon Drive in Palm Springs" width="1000" height="867" loading="lazy">
 <p class="image-caption">Cartel Coffee inside the Arrive Hotel. Worth the stop even just for the room.</p>
 <h2>Brunch</h2>
 <h3>Cheeky's</h3>
@@ -323,7 +326,7 @@
 <p><strong>611 N Palm Canyon Dr, Palm Springs, CA 92262.</strong> Open daily from noon. Find them at <a href="https://www.instagram.com/the_heyday/" target="_blank" rel="noopener">@the_heyday</a>.</p>
 <img src="/blog/images/heyday-palm-springs.webp" alt="Casual outdoor dining patio at The Heyday restaurant on North Palm Canyon Drive in Palm Springs" width="1400" height="934" loading="lazy">
 <p class="image-caption">The Heyday. The smash burger is why you go. That's the whole brief.</p>
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined North Palm Canyon Drive in Palm Springs' Uptown Design District under a clear blue sky" width="1400" height="933" loading="lazy">
+<img class="portrait" src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined North Palm Canyon Drive in Palm Springs' Uptown Design District under a clear blue sky" width="933" height="1400" loading="lazy">
 <p class="image-caption">The Uptown Design District runs north from about 500 N Palm Canyon. Most of the better independent restaurants are along this stretch.</p>
 <h2>Dinner</h2>
 <h3>Rooster and the Pig</h3>
@@ -350,7 +353,7 @@
 <h3>Escena Grill</h3>
 <p><a href="https://escenagolf.com/grill/" target="_blank" rel="noopener noreferrer"><strong>Escena Grill</strong></a> is the golf club restaurant that's open to everyone, and the setting is genuinely one of the best in the city. The patio looks out over the course toward the San Jacinto Mountains and the view at dusk, when the mountains go from gold to purple, is something you'll take a photo of even if you're not a photo person. The food is California eclectic with a rotating seasonal menu. Dog-friendly patio. Go for the outdoor table and stay until the light changes.</p>
 <p><strong>1100 Clubhouse View, Palm Springs, CA 92262.</strong> (760) 992-0002. Hours vary seasonally: check escenagolf.com before you go. Reservations via OpenTable or phone. Find them at <a href="https://www.instagram.com/escenagrill/" target="_blank" rel="noopener">@escenagrill</a>.</p>
-<img src="/blog/images/escena-grill-palm-springs.webp" alt="Escena Grill patio in Palm Springs at sunset with outdoor seating overlooking the golf course and San Jacinto Mountains glowing gold" width="1400" height="933" loading="lazy">
+<img src="/blog/images/escena-grill-palm-springs.webp" alt="Escena Grill patio in Palm Springs at sunset with outdoor seating overlooking the golf course and San Jacinto Mountains glowing gold" width="1364" height="706" loading="lazy">
 <p class="image-caption">The Escena patio at dusk. That view is the reason to go, and it looks exactly like this.</p>
 <h3>Purple Room Supper Club</h3>
 <p><a href="https://www.purpleroompalmsprings.com/" target="_blank" rel="noopener noreferrer"><strong>Purple Room Supper Club</strong></a> is not subtle, and that's the point. The Purple Room runs on Rat Pack-era Palm Springs energy: live entertainment six nights a week, a dining room that glows, Frank's Bourbon Bar stocked with 75+ premium bourbons and scotches. The food is classic American supper club, chicken parmigiana and surf-and-turf territory. You go for the atmosphere, the show, and the bourbon. It's one of the most distinctly Palm Springs experiences in the city and nothing else is quite like it.</p>

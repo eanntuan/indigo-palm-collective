@@ -4,8 +4,8 @@ date: 2026-04-30
 dateModified: 2026-07-30
 metaDescription: "Which Coachella Valley rentals have a private pool, a hot tub, or a heated spa? The real breakdown by property, plus how to book direct."
 ogImage: /blog/images/terra-luz-pool-backyard.webp
-heroImage: /blog/images/terra-luz-pool-backyard.webp
-heroPosition: "center 65%"
+heroImage: /blog/images/terra-luz-pool-umbrella.webp
+heroPosition: "center 55%"
 heroAlt: "Terra Luz private saltwater pool with in-water loungers and terracotta deck in Indio California"
 keywords:
   - best vacation rentals with pool Coachella Valley
@@ -81,7 +81,7 @@ layout: blog-post.njk
 
 <p><a href="/the-sundune/">The Sundune</a> in Palm Springs: a second-floor condo with community pool access, balcony views overlooking the pool, and about 10 minutes to downtown Palm Springs. The community pool here is a different situation than a hotel pool: far fewer users, no posted hours closing you out at 10pm, more of a residents-only feel. The tradeoff for this one is location: Palm Springs proper means you're closer to the design hotels, restaurants, and midcentury architecture. Different energy than Indio.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers, Desert Marigold umbrella, and terracotta deck in Indio California" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers, Desert Marigold umbrella, and terracotta deck in Indio California" width="1024" height="1536" loading="lazy">
 <p class="image-caption">Terra Luz's saltwater pool. The enclosure was a deliberate design decision, not just an aesthetic one.</p>
 
 <h2>What to Check Before You Book</h2>

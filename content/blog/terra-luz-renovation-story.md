@@ -3,8 +3,8 @@ title: "Terra Luz Renovation: How We Rebuilt the House Room by Room"
 date: 2026-05-06
 metaDescription: "Terra Luz renovation: Wild Tropics wallpaper, terracotta tile, Kahlo Blue pool deck, and a Latin/Cuban design rebuilt room by room. What we made and why."
 ogImage: /blog/images/terra-luz-pool-backyard.webp
-heroImage: /blog/images/terra-luz-pool-backyard.webp
-heroPosition: "center 65%"
+heroImage: /blog/images/terra-luz-front-entrance.webp
+heroPosition: "center 45%"
 heroAlt: "Terra Luz private saltwater pool with Kahlo Blue water and terracotta patio in Indio California"
 keywords:
   - Terra Luz renovation
@@ -27,7 +27,7 @@ layout: blog-post.njk
 
 <p>The renovation took about four months, a brand architect, a handyman named Orlin who does things I genuinely didn't know were possible with lime wash, and more terracotta tile than I expected to order. Here's what we built, room by room.</p>
 
-<img src="/blog/images/terra-luz-exterior.webp" alt="Terra Luz vacation rental exterior in Indio California with terracotta walls and desert landscaping" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-exterior.webp" alt="Terra Luz vacation rental exterior in Indio California with terracotta walls and desert landscaping" width="1024" height="1536" loading="lazy">
 
 <h2>The Brief: Latin/Cuban, Not Boho</h2>
 
@@ -47,7 +47,7 @@ layout: blog-post.njk
 
 <p>The furniture out there: Antigua wicker rocking chairs along the back wall, in-pool loungers under a Desert Marigold umbrella, a concrete fire pit coffee table from Neighbor that doubles as a low table when the fire isn't on, and an outdoor projector mounted to the pergola for movie nights. The projector doesn't require any setup. You turn it on and it works, which I say because that's not always how it goes with outdoor AV.</p>
 
-<img src="/blog/images/terra-luz-pool-loungers.webp" alt="In-pool loungers at Terra Luz with Desert Marigold umbrella and Kahlo Blue saltwater pool" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-pool-loungers.webp" alt="In-pool loungers at Terra Luz with Desert Marigold umbrella and Kahlo Blue saltwater pool" width="1024" height="1536" loading="lazy">
 
 <h2>Second Bedroom: Wild Tropics</h2>
 
@@ -55,7 +55,7 @@ layout: blog-post.njk
 
 <p>The headboard is a tile panel: Merola Manises Decor tiles mounted on plywood, six tiles wide by five tall, rising from baseboard to about 65 inches. The terracotta and blue-white pattern in those tiles does its own thing against the wallpaper without competing. Terracotta pendant lamps, artisanal wood nightstands, a standing clothing rack instead of a dresser so the room doesn't feel boxed in at 115 square feet.</p>
 
-<img src="/blog/images/terra-luz-wild-tropics-bedroom.webp" alt="Second bedroom at Terra Luz with Wild Tropics blue wallpaper and Merola tile headboard" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-wild-tropics-bedroom.webp" alt="Second bedroom at Terra Luz with Wild Tropics blue wallpaper and Merola tile headboard" width="3202" height="4802" loading="lazy">
 
 <p>Dawn's reference for this room was the Pink Cabana at The Sands Hotel in Indian Wells. Lush, playful, Cuban. Not the kind of bedroom you forget you slept in.</p>
 
@@ -71,7 +71,7 @@ layout: blog-post.njk
 
 <p>The floor is 13x13 terracotta field tiles with Talavera DECO 4x4 accent dots at the intersections, sourced from La Tile and Stone. Up close it's detailed, from a distance it reads as a warm grid. A draped canopy floats over the king bed. There's also a twin rattan daybed staged as a separate lounge piece, not tucked under anything.</p>
 
-<img src="/blog/images/terra-luz-primary-bedroom.webp" alt="Primary bedroom at Terra Luz with sage walls, terracotta tile floor, and draped canopy" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-primary-bedroom.webp" alt="Primary bedroom at Terra Luz with sage walls, terracotta tile floor, and draped canopy" width="1024" height="707" loading="lazy">
 
 <h2>Kitchen and Living Room: The Warm Core</h2>
 
@@ -79,7 +79,7 @@ layout: blog-post.njk
 
 <p>In the living room, the TV cove got a terracotta lime-wash treatment on the alcove sides and ceiling, with two large tropical floor plants flanking it. The TV ends up reading as an architectural moment rather than a big screen dominating the wall, which sounds like a small distinction until you're sitting in the room. A full-length walnut credenza with sugar cane details sits below it.</p>
 
-<img src="/blog/images/terra-luz-living-room.webp" alt="Terra Luz living room with terracotta lime-wash TV cove, walnut credenza, and tropical plants" width="1400" height="933" loading="lazy">
+<img src="/blog/images/terra-luz-living-room.webp" alt="Terra Luz living room with terracotta lime-wash TV cove, walnut credenza, and tropical plants" width="1024" height="1570" loading="lazy">
 
 <h2>What It Cost and What It Took</h2>
 

@@ -4,7 +4,8 @@ date: 2026-02-05
 dateModified: 2026-10-01
 metaDescription: "Indio is about 25 miles from Palm Springs, 30-40 minutes on the I-10. We own rentals in both cities, so here is which one fits your trip, honestly."
 ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-boulevard-palms-mountains.webp
+heroImage: /blog/images/ps-mcm-neighborhood.webp
+heroPosition: "center 40%"
 heroAlt: "Palm tree-lined boulevard with the San Jacinto Mountains rising behind it in Palm Springs, California"
 keywords:
   - palm springs vs indio
@@ -46,7 +47,7 @@ faqItems:
 
 <h2>Palm Springs: What You're Getting</h2>
 
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue sky with mountain views in the distance" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue sky with mountain views in the distance" loading="lazy" width="933" height="1400">
 <p class="image-caption">The main drag in Palm Springs. Walkability like this is rare in the California desert.</p>
 
 <p>Palm Springs is walkable in a way that almost nothing else in the desert is. You can park once, walk to dinner, <a href="/blog/palm-springs-coffee-guide/">get coffee in the morning without moving the car</a>, wander the architecture streets in the afternoon, and come back to your rental without ever touching your keys again. For the Coachella Valley, that is genuinely unusual.</p>
@@ -55,7 +56,7 @@ faqItems:
 
 <p>Downtown Palm Springs has density: restaurants, galleries, a weekend street market, vintage shops, and <a href="/blog/palm-springs-bars/">a handful of bars that go reasonably late</a>. If your trip is about wandering and discovery, Palm Springs rewards that kind of itinerary.</p>
 
-<img src="/blog/images/ps-orange-door-mcm.webp" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and blue sky" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-orange-door-mcm.webp" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and blue sky" loading="lazy" width="1800" height="1800">
 <p class="image-caption">Every block in Palm Springs has a moment like this. Not curated. Just how the city looks.</p>
 
 <h3>The Real Limits of Staying in Palm Springs</h3>
@@ -148,7 +149,7 @@ faqItems:
 
 <p>The mistake people make is booking based on the name recognition of Palm Springs when what their group needs is space and proximity in Indio. And occasionally the reverse: booking Indio because it's cheaper, when a couple would have loved being 10 minutes from Palm Springs restaurants every night. Get clear on the trip first.</p>
 
-<img src="/blog/images/yes-please-palm-springs.webp" alt="Yes Please Books storefront in a Palm Springs neighborhood, the kind of discovery that comes from wandering on foot" loading="lazy" width="1400" height="933">
+<img src="/blog/images/yes-please-palm-springs.webp" alt="Yes Please Books storefront in a Palm Springs neighborhood, the kind of discovery that comes from wandering on foot" loading="lazy" width="1400" height="1050">
 <p class="image-caption">The walkable neighborhoods in Palm Springs reward wandering. You find places like this just by turning off the main drag.</p>
 
 <h2>Our Properties in Both Areas</h2>
@@ -157,7 +158,7 @@ faqItems:
 
 <p><a href="/terra-luz/">Terra Luz</a> is our Latin/Cuban-inspired 3-bedroom in Indio. Private saltwater pool with in-water loungers, terracotta deck, and a covered pergola with string lights. Different feel from the Cozy Cactus, same proximity advantage.</p>
 
-<img src="/blog/images/terra-luz-exterior.webp" alt="Terra Luz vacation rental exterior with terracotta tones and desert landscaping in Indian Palms, Indio California" loading="lazy" width="1400" height="933">
+<img src="/blog/images/terra-luz-exterior.webp" alt="Terra Luz vacation rental exterior with terracotta tones and desert landscaping in Indian Palms, Indio California" loading="lazy" width="1024" height="1536">
 <p class="image-caption">Terra Luz in Indian Palms, Indio. Same walking distance to the polo grounds as the Cozy Cactus, different aesthetic.</p>
 
 <p>In Palm Springs, <a href="/the-sundune/">The Sundune</a> is our 2-bedroom, three king beds, sleeps 6. Coastal-desert aesthetic, and the Uptown Design District is the part you can walk to. Downtown is about a ten-minute drive, so I won't pretend it's a walk. Good for couples or a small group who want Palm Springs as the base.</p>
@@ -188,7 +189,7 @@ faqItems:
 <h3>What should I know before deciding between Palm Springs and Indio?</h3>
 <p>The practical friction points differ. In Palm Springs: parking on Palm Canyon Drive is limited on weekends, most good restaurants don't take reservations, and rooms feel smaller than the photos suggest. In Indio: you drive everywhere, grocery stores are 5-10 minutes away (Stater Bros. on Monroe is the closest to Indian Palms), and festival weekends mean Monroe and Madison see heavy traffic from 2pm onward. Neither is a dealbreaker, just different planning math.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Golden hour sunset over a Palm Springs street with mountains turning purple behind the palm trees" loading="lazy" width="1400" height="933">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Golden hour sunset over a Palm Springs street with mountains turning purple behind the palm trees" loading="lazy" width="934" height="1400">
 <p class="image-caption">Palm Springs at sunset. Whether you're staying there or just visiting for the day, at least one evening like this is worth planning for.</p>
 
 <p>If you want a deeper look at the whole valley, our <a href="/blog/coachella-valley-insider-guide/">Coachella Valley insider guide</a> breaks down every city and neighborhood worth knowing about. The desert is bigger than most people realize when they book.</p>

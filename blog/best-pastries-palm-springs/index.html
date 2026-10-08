@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/koffi-palm-springs.webp" alt="Koffi coffee shop in Palm Springs with pastry case and outdoor seating area" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -266,7 +269,7 @@
 <p><a href="https://www.facebook.com/PeninsulaPastriesPalmSprings/" target="_blank" rel="noopener noreferrer"><strong>Peninsula Pastries</strong></a> at 611 S Palm Canyon Drive is the most French of the options in Palm Springs. They use imported French flour and Isigny Ste Mere butter, which sounds like marketing until you taste the lamination on the croissants. The difference from a general bakery is clear.</p>
 <p>The pain au chocolat is the flagship item. Proper layers, quality chocolate, not overly sweet. The blueberry cream cheese danish is close behind, with enough cream cheese to register but not enough to feel like dessert at 8am. The chocolate tongue (a chocolate-glazed twisted pastry) is a local favorite worth trying if it's in the case.</p>
 <p>One important detail: Peninsula Pastries is closed Monday through Wednesday. Hours are Thursday through Saturday 8:30am to 5pm, Sunday 8:30am to 4pm. If your trip runs Sunday through Tuesday, plan accordingly.</p>
-<img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Coffee shop interior in Palm Springs with warm lighting and pastry display" loading="lazy" width="1400" height="933">
+<img class="squarish" src="/blog/images/cartel-coffee-palm-springs.webp" alt="Coffee shop interior in Palm Springs with warm lighting and pastry display" loading="lazy" width="1000" height="867">
 <h2>Townie Bagels: The Olive and Fennel Bagel</h2>
 <p><a href="https://www.towniebagels.com/" target="_blank" rel="noopener noreferrer"><strong>Townie Bagels</strong></a> at 650 E Sunny Dunes Road is technically a bagel shop, not a pastry spot, but the olive and fennel bagel (a weekend special) is worth mentioning as a savory morning pastry alternative. It's water-boiled in the New York style, chewy and dense in a way that most bagels outside of New York fail to achieve. The black and white cookie is also available and better than it has any right to be: buttery, properly balanced between the chocolate and vanilla glaze sides.</p>
 <p>Townie fills up on weekend mornings. The wait is part of it.</p>
@@ -281,7 +284,7 @@
 <p>All of this points to the same conclusion: the best pastry window in Palm Springs is 7:30am to 9:30am. It's before the heat arrives, before the selection thins out, and before the weekend crowds make every parking spot a contest.</p>
 <p>If you're staying at <a href="/the-sundune/">The Sundune</a> in Palm Springs, Peninsula Pastries and Koffi are both an easy drive from the property. Pair an early pastry run with a walk on Palm Canyon before the shops open and you've structured a good desert morning. For restaurant options later in the day, the <a href="/blog/best-restaurants-palm-springs/">Palm Springs restaurant guide</a> covers the full dining picture.</p>
 <p>For the full coffee and café picture beyond just pastries, the <a href="/blog/palm-springs-coffee-guide/">Palm Springs coffee guide</a> covers the broader café scene.</p>
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Springs street with palm trees against a bright blue desert sky on a clear morning" loading="lazy" width="1400" height="933">
+<img class="portrait" src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Springs street with palm trees against a bright blue desert sky on a clear morning" loading="lazy" width="933" height="1400">
 <h2>Frequently Asked Questions</h2>
 <h3>What is the best pastry in Palm Springs?</h3>
 <p>The almond croissant at Koffi on N Palm Canyon Drive is the most consistent pick: proper lamination, dense almond filling, and sized like an actual croissant rather than a miniature version. Peninsula Pastries on S Palm Canyon Drive is the more French option, with imported flour and butter that makes a clear difference in the pain au chocolat.</p>

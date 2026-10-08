@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/bieber-coachella-stage.webp" alt="Performer on stage at Coachella 2026 with colorful smoke and lights at the Empire Polo Club in Indio CA" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -268,7 +271,7 @@
 <img src="/blog/images/festival-dj-stage.webp" alt="DJ performing on a brightly lit festival stage in front of a large crowd" width="1800" height="1012" loading="lazy">
 <p>The same thing happens with where you sleep. Staying in Indio versus staying in Palm Springs is not a minor logistical footnote. It's the whole shape of your festival day.</p>
 <p>Palm Springs is 25-30 miles west of the polo grounds, a 35-minute drive on a normal day; on a Coachella weekend Saturday at 5pm, that can stretch to 90. So if you're planning to go back to your rental mid-afternoon to avoid the peak heat, or shower before the headliner, or just not be trapped at the festival for 10 hours straight, Indio proximity matters a lot. Our two properties in <a href="/blog/indian-palms-vacation-rental/">Indio</a> are walking distance to the Empire Polo Club, no freeway needed. That's real time saved twice a day.</p>
-<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio CA" width="960" height="503" loading="lazy">
 <h2>3. Know the Crowd Before You Book.</h2>
 <p>The Bieber crowd at the Sahara tent was different from whoever was watching the folk act across the grounds at the same moment. Same wristbands, totally different experience. That gap between Coachella and Stagecoach is even wider.</p>
 <img src="/blog/images/coachella-festival-crowd.webp" alt="Festival crowd at Coachella in the Coachella Valley desert" width="1400" height="933" loading="lazy">

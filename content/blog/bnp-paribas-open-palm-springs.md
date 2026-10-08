@@ -34,7 +34,7 @@ relatedPosts:
 
 <p>Palm Springs works well as a base for a reason most tennis-focused guides skip: March is one of the best months in the desert, and there's enough outside the venue to build a real trip around. Mid-70s days, cool nights, full mountain views, walkable dining on Palm Canyon Drive. If you're coming from out of state and want a vacation that happens to include tennis rather than ten days of nothing but stadium seats, Palm Springs handles that better than a hotel in Indian Wells does.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard lined with palm trees and Santa Rosa Mountains in the background in March" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard lined with palm trees and Santa Rosa Mountains in the background in March" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Palm Springs in March. The Santa Rosa Mountains still have some snow at elevation, days run mid-70s, and the crowds from February are mostly gone. It's a good time to be here.</p>
 
 <h2>What the BNP Paribas Open Is</h2>
@@ -45,7 +45,7 @@ relatedPosts:
 
 <p>Match days run roughly 10am to 10pm, often with multiple courts going simultaneously. Most people spend 6 to 10 hours at the venue on a full match day. That's a long time in stadium seats, even in comfortable March temperatures, and it makes what you come back to each evening matter more than it might seem when you're booking.</p>
 
-<img src="/blog/images/indian-wells-tennis-garden-aerial.webp" alt="Aerial view of the Indian Wells Tennis Garden showing Stadium 1, practice courts, and the Santa Rosa Mountains during the BNP Paribas Open" width="1400" height="933" loading="lazy">
+<img src="/blog/images/indian-wells-tennis-garden-aerial.webp" alt="Aerial view of the Indian Wells Tennis Garden showing Stadium 1, practice courts, and the Santa Rosa Mountains during the BNP Paribas Open" width="1024" height="768" loading="lazy">
 <p class="image-caption">The Indian Wells Tennis Garden from above. The venue sits in Indian Wells between Palm Springs to the west and Indio to the east, roughly 12 miles from each city via Highway 111.</p>
 
 <h2>Tickets: What to Know Before You Buy</h2>
@@ -64,7 +64,7 @@ relatedPosts:
 
 <p>Our Palm Springs property is <a href="/the-sundune/"><strong>The Sundune</strong></a> at 5301 E Waverly Dr, a 2BR/2BA coastal-desert condo with three king beds, shared HOA pool access, and a full kitchen. It books direct at <a href="https://indigopalm.co/the-sundune/" target="_blank" rel="noopener noreferrer">indigopalm.co/the-sundune/</a>, which removes the 20% Airbnb service fee, and the HOA requires a 4-night minimum stay. City permit 068394.</p>
 
-<img src="/blog/images/sundune-pool-surfboard-float.webp" alt="Community pool at The Sundune vacation rental in Palm Springs with surfboard float on a clear desert day" width="1200" height="900" loading="lazy">
+<img src="/blog/images/sundune-pool-surfboard-float.webp" alt="Community pool at The Sundune vacation rental in Palm Springs with surfboard float on a clear desert day" width="3200" height="4800" loading="lazy">
 <p class="image-caption">The Sundune's community pool. March afternoons in Palm Springs hit mid-70s, so the pool gets used. After 8 hours in stadium seats, this is worth more than a hotel pool with posted hours and a crowd: this one has far fewer users and no schedule.</p>
 
 <p>The practical advantages for a BNP Paribas Open trip from Palm Springs:</p>
@@ -75,7 +75,7 @@ relatedPosts:
 
 <p><strong>Shared pool, full kitchen, ten minutes to Palm Canyon.</strong> The Uptown Design District is close enough to walk for coffee or a drink, and downtown Palm Canyon Drive, the main restaurant and shop corridor, is about a ten-minute drive. After a day at the venue that short hop matters more than it sounds in a listing, because you're picking a dinner spot in your own city rather than eating whatever is attached to a hotel lobby, even after 40+ round-trip miles.</p>
 
-<img src="/blog/images/sundune-living-room-wide.webp" alt="The Sundune Palm Springs vacation rental living room with mid-century modern furniture and natural light" width="1200" height="900" loading="lazy">
+<img src="/blog/images/sundune-living-room-wide.webp" alt="The Sundune Palm Springs vacation rental living room with mid-century modern furniture and natural light" width="4604" height="2919" loading="lazy">
 <p class="image-caption">The Sundune living room. Mid-century condo in central Palm Springs, 3 king beds, community pool access, dog-friendly with prior approval.</p>
 
 <h2>What to Do Besides Tennis</h2>

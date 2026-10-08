@@ -71,7 +71,7 @@ relatedPosts:
 
 <p>The kitchen is fully equipped: a full-size stainless steel refrigerator, a gas range, a dishwasher, and enough counter space to cook. Cafe Bustelo coffee grounds for drip coffee, a pour over, or a French press. Sunlight streams across the bar top in the morning and the kitchen window opens directly to the pool, so morning coffee flows effortlessly into poolside conversation. The breakfast nook alongside the window becomes the social heart of the house before most guests even realize it.</p>
 
-<img src="/blog/images/terra-luz-kitchen.webp" alt="Terra Luz vacation rental kitchen in Indio California with gas range, full refrigerator, and Cuban-inspired tile details" width="1024" height="1536" loading="lazy">
+<img src="/blog/images/terra-luz-kitchen.webp" alt="Terra Luz vacation rental kitchen in Indio California with gas range, full refrigerator, and Cuban-inspired tile details" width="1024" height="683" loading="lazy">
 <p class="image-caption">The kitchen. Fully stocked with cookware, utensils, and enough cabinet space for a week of groceries.</p>
 
 <p>The dining table seats eight and sits between the kitchen and the living room, close enough to the patio that the whole space feels connected when the sliding door is open. Decorative tile wall detail behind the table, cement-look floor tile. The same Old Havana logic runs through here: warm, grounded, a little more interesting than expected. Dinner calls are easy to answer from anywhere in the house.</p>

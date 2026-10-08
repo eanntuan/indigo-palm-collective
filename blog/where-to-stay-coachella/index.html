@@ -185,7 +185,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -245,6 +245,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -316,7 +319,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/coachella-festival-crowd.webp" alt="Crowd at Coachella Valley Music and Arts Festival at Empire Polo Club in Indio California" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -351,21 +354,21 @@
 <h2>The Location Question Comes First</h2>
 <p>The Coachella Valley runs 45 miles east to west. The <a href="https://empirepolo.com/" target="_blank" rel="noopener noreferrer"><strong>Empire Polo Club</strong></a> is in Indio, at the eastern end. Palm Springs is 30 miles west of that, which is 35 minutes on a normal day and 60-90 minutes each direction during festival weekend. For a three-day festival, that math adds up to somewhere between 6 and 9 hours of commuting.</p>
 <p>Indio is where you want to be, and that's just geography.</p>
-<img src="/blog/images/coachella-valley-map.webp" alt="Map of Coachella Valley showing distances from Palm Springs, Palm Desert, La Quinta, and Indio to the Empire Polo Club festival grounds" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-map.webp" alt="Map of Coachella Valley showing distances from Palm Springs, Palm Desert, La Quinta, and Indio to the Empire Polo Club festival grounds" width="1440" height="990" loading="lazy">
 <p class="image-caption">The valley spread out. The polo grounds are at the eastern end. Every mile west adds commute time.</p>
 <h2>Option 1: On-Site Camping</h2>
 <p>On-site camping is the original Coachella move. You're on the grounds, walk to every stage, skip all the traffic and shuttle coordination, and fall asleep surrounded by 10,000 people doing the same thing. There are two main setups: car camping, where your vehicle is right next to your tent and you have a car's worth of storage and defined territory, and tent-only camping, which is more compact, cheaper, and more communal. Both share shower facilities, both are dusty, and both are loud until well past midnight on Friday and Saturday.</p>
 <p>The people who love Coachella camping describe it as a community experience you can't replicate from a hotel room, and they're right. At 2am when the sets end, the campsite has its own energy. If you've never done it, I get the appeal.</p>
 <p>Here's the thing though: sleep quality is poor, the dust accumulates in a way that surprises first-timers, and car camping runs roughly $149 per person before fees, sells out months ahead, and once you add gear costs the per-person math shifts. If this is your first Coachella and you're not certain you can function on four broken hours in a field, book something with a bed and come back to camping when you know you want it.</p>
 <p><strong>Good for:</strong> people who want full immersion regardless of comfort, groups of friends in their 20s who can recover on nothing, anyone who has done it before and already knows what they're signing up for.</p>
-<img src="/blog/images/coachella-camping.webp" alt="Coachella festival camping area with rows of tents and cars in the desert campground at Indio California" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-camping.webp" alt="Coachella festival camping area with rows of tents and cars in the desert campground at Indio California" width="1800" height="1012" loading="lazy">
 <p class="image-caption">The camping situation. Communal, authentic, dusty. It's a genuinely good experience for the right group.</p>
 <h2>Option 2: Hotels in Palm Springs</h2>
 <p>Palm Springs has good hotels. Mid-century design, nice pools, walkable to restaurants. If you want the Palm Springs hotel experience as part of your trip, that makes sense and you should do it. If you're using a PS hotel as a base for the festival and only the festival, run the numbers first.</p>
 <p>Properties that run $120-180 on a normal April night price at $400-800 during festival weekends. That's standard surge across the whole market. Then on top of that: Uber surge from Palm Springs to the polo grounds runs $80-160 each way at peak hours. A couple doing rides in and out over three days is looking at $500-900 in transportation alone. The official Coachella shuttle is an option at roughly $150 per person for the weekend pass, but you're on the shuttle's schedule, not yours, and post-headliner waits can be long.</p>
 <p>Free day parking at the grounds closes at 3pm. After that, paid parking runs $40-100 per day, with the free lots being a significant walk from the main stages in the heat. If you're tallying this up and the number is making you wince, that's the right reaction.</p>
 <p><strong>Good for:</strong> people who want Palm Springs as part of the vacation, not just a launchpad. If you're building in an extra day before or after the festival, a PS hotel has more to offer in its immediate radius. For pure festival logistics, it's an expensive and tiring setup.</p>
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Pool at a Palm Springs hotel with palm trees and desert mountain backdrop, lounge chairs in the afternoon sun" width="1400" height="1050" loading="lazy">
+<img class="squarish" src="/blog/images/palm-springs-hotel-pool.webp" alt="Pool at a Palm Springs hotel with palm trees and desert mountain backdrop, lounge chairs in the afternoon sun" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Palm Springs hotels are genuinely nice. The question is whether you're paying to stay there or paying to commute from there.</p>
 <h2>Option 3: Hotels in Indio and La Quinta</h2>
 <p>If you want a hotel close to the festival, Indio and La Quinta have chain options 10-20 minutes from the grounds. The commute is manageable, rates are lower than Palm Springs, and you avoid the worst of surge pricing on rides. What you trade away: most of the chain hotels in this part of the valley are functional rather than pleasant, surge priced too (just less aggressively), and at standard business-hotel amenity level. You get a bed and a room.</p>
@@ -385,14 +388,14 @@
 <p>Goldenvoice offers glamping options on the festival property, ranging from Airstream trailers to safari tents, sold through the official <a href="https://www.coachella.com/" target="_blank" rel="noopener noreferrer"><strong>Coachella</strong></a> site and booked out early. The appeal is on-site proximity with real beds and some private amenities, which is genuinely a step up from tent camping if you want immersion without the dust situation.</p>
 <p>The trade-off is cost. Glamping on the festival grounds runs significantly more than either camping or a well-situated rental in Indian Palms. For groups of four or more doing the math, a house in Indian Palms usually wins on value while giving you more private outdoor space and a kitchen.</p>
 <p><strong>Good for:</strong> couples or solo travelers who want on-site immersion with real comfort and are willing to pay for it. Less cost-effective once you're splitting more than two ways.</p>
-<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of the Coachella festival grounds at Empire Polo Club in Indio California showing stages and camping areas" width="1400" height="933" loading="lazy">
+<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of the Coachella festival grounds at Empire Polo Club in Indio California showing stages and camping areas" width="960" height="503" loading="lazy">
 <p class="image-caption">The full footprint of the festival grounds from above. Camping and glamping options are on the property. Everything else is off-site.</p>
 <h2>The Honest Breakdown by Group Type</h2>
 <p><strong>Solo traveler or couple with a generous budget:</strong> On-site camping for the full experience, or a Palm Springs hotel if you want the city as part of the trip. Shuttle passes plus a well-rated hotel in Palm Springs is a comfortable setup if you're not watching the transportation math too closely.</p>
 <p><strong>Group of 4-8 prioritizing value and not spending the whole festival in an Uber:</strong> A vacation rental in Indian Palms is the strongest option. Per-person cost comes in below hotels, proximity cuts transportation costs to near zero, and having water to get into at 3pm is what makes the recovery hours genuinely work. <a href="/cozy-cactus/">The Cozy Cactus</a> sleeps 8 in Indio, walking distance to Empire Polo Club, with a private hot tub in the yard and three heated community pools a short walk away. <a href="/terra-luz/">Terra Luz</a>, our second Indio property, also sleeps 8 and is the one with the private saltwater pool.</p>
 <p><strong>Group with mixed energy levels:</strong> The flexibility of a private home matters here more than anything else. Half the group can leave at 3pm to rest. Half can stay through the headliner. Everyone meets back at the house on their own schedule without negotiating shared transportation. Hotels can't give you that.</p>
 <p><strong>First-timers who aren't sure what they want:</strong> A vacation rental in Indian Palms gives you the most options. You can walk to the festival or drive. You can stay at the grounds all day or come back to the pool at 3pm. You're not locked into camping logistics or shuttle schedules before you even know what you like.</p>
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool and terracotta backyard at vacation rental in Indio California, walking distance to Coachella" width="1400" height="933" loading="lazy">
+<img class="portrait" src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool and terracotta backyard at vacation rental in Indio California, walking distance to Coachella" width="1024" height="1536" loading="lazy">
 <p class="image-caption">The Cozy Cactus pool and backyard. The 3pm-recovery strategy only works if your rental is close enough to make it worth the trip.</p>
 <div class="booking-alert" style="background: #fff8e7; border: 1px solid rgba(0,0,0,0.08); padding: 1rem 1.2rem; margin: 1.5rem 0; border-radius: 12px;">
 <p><strong>Planning for Coachella 2027?</strong> Indian Palms properties with private pools book out by November or December 2026. Lineup announcements typically drop in January, and most good rentals are gone before that. If you want walking distance to the grounds, book the house before you know who's headlining.</p>

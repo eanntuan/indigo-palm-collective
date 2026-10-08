@@ -33,7 +33,7 @@ layout: blog-post.njk
 
 <p>Before I knew it, AGAIN, I was researching sofa beds (I still haven't found a comfortable one…), stalking facebook marketplace for the best deals all around town, going to Marshall's, Ross, TJ Max, Homegoods, etc to see if I could find any non-generic wall art (everyone knows the <a href="https://www.wayfair.com/IDEA4WALL--Animals-Portrait-Of-A-Highland-Cow-Black-And-White-Modern-Art-Extra-Large-Framed-Wall-Pictures-FLCA0-L1318-K~SFTD1019.html" target="_blank">cow print</a>). My days turned into bopping all around LA picking up a $10 sound machine (I now know better that time is money), squishing a West Elm dining table in my Honda Element (there has been nothing this car cannot fit), and slowly piecing together a discombobulated Airbnb that I prayed to the Lord almighty was a good decision. A Tesla definitely would've been easier.</p>
 
-<img src="/blog/images/cc-delivery-boxes.webp" alt="Stacks of delivery boxes filling a room during Cozy Cactus vacation rental setup" width="1400" height="1050" loading="lazy">
+<img src="/blog/images/cc-delivery-boxes.webp" alt="Stacks of delivery boxes filling a room during Cozy Cactus vacation rental setup" width="1050" height="1400" loading="lazy">
 <p class="image-caption">So. many. boxes. You wouldn't believe the amount of trash I've contributed to global warming. The installation process is no joke.</p>
 
 <p>As a frequent traveler myself, I have been to my share of Airbnbs, both decent and horrible at the same time. Why are the knives always SO dull and the kitchen so bare? Why are the beds so springy and outdated, and when's the last time anyone cleaned the floors?</p>
@@ -63,7 +63,7 @@ layout: blog-post.njk
 <h3>I labeled everything.</h3>
 <p>I labeled where the batteries are, where the extra linens go, which drawer has the baby spoons, and which cabinet has the Tupperware lids (because that's always the mystery, right?). I didn't want guests hunting for things at 7am while their little ones are screaming for breakfast. One guest told me the labeling system was "unprecedented." I laughed when she said it, but I get it. My own home is not as organized as my vacation rentals. If I, the homeowner, cannot find where the forks are, how do I expect a guest to?</p>
 
-<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored" loading="lazy" decoding="async" width="800" height="533">
+<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers with labels showing where batteries, linens, and baby supplies are stored" loading="lazy" decoding="async" width="1050" height="1400">
 <p class="image-caption">Everything labeled: batteries, extra linens, baby spoons, exactly where you'd look for them</p>
 
 <h3>I bought infant gear that works.</h3>

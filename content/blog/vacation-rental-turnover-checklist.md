@@ -3,9 +3,9 @@ title: "The Vacation Rental Turnover Checklist, Room by Room"
 date: 2026-07-09
 metaDescription: "The room-by-room turnover checklist we run between every guest at three Coachella Valley vacation rentals. Customize it and hand it to your cleaner."
 ogImage: /blog/images/terra-luz-cali-room-turnover.webp
-heroImage: /blog/images/terra-luz-cali-room-turnover.webp
+heroImage: /blog/images/terra-luz-kitchen-counter.webp
 heroAlt: "Terra Luz Cali Room bed made up with fresh linens and pillows, clean and staged between guests"
-heroPosition: "center 55%"
+heroPosition: "center 40%"
 keywords:
   - vacation rental turnover checklist
   - airbnb cleaning checklist

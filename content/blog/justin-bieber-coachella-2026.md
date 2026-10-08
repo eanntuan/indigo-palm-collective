@@ -48,7 +48,7 @@ layout: blog-post.njk
 
 <p>Palm Springs is 25-30 miles west of the polo grounds, a 35-minute drive on a normal day; on a Coachella weekend Saturday at 5pm, that can stretch to 90. So if you're planning to go back to your rental mid-afternoon to avoid the peak heat, or shower before the headliner, or just not be trapped at the festival for 10 hours straight, Indio proximity matters a lot. Our two properties in <a href="/blog/indian-palms-vacation-rental/">Indio</a> are walking distance to the Empire Polo Club, no freeway needed. That's real time saved twice a day.</p>
 
-<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio CA" width="1400" height="933" loading="lazy">
+<img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of Coachella festival grounds at Empire Polo Club in Indio CA" width="960" height="503" loading="lazy">
 
 <h2>3. Know the Crowd Before You Book.</h2>
 

@@ -39,7 +39,7 @@ relatedPosts:
 
 <p>Guests who fight the schedule spend the trip sweaty and frustrated. Guests who lean into it usually say it's the most relaxed vacation they've taken in years.</p>
 
-<img src="/blog/images/cc-closet-wallpaper.webp" alt="Styled open closet at The Cozy Cactus vacation rental in Indio California with organized shelves and patterned wallpaper" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/cc-closet-wallpaper.webp" alt="Styled open closet at The Cozy Cactus vacation rental in Indio California with organized shelves and patterned wallpaper" width="1200" height="1800" loading="lazy" decoding="async">
 <p class="image-caption">Morning before the heat shows up. A rental that has space for everything makes that first-hour calm possible.</p>
 
 <h2>What to Pack</h2>
@@ -77,7 +77,7 @@ relatedPosts:
 
 <p>For a full breakdown, our <a href="/blog/indio-local-gems/">Indio local gems guide</a> covers 10 spots that don't show up on the tourist maps. If you're staying closer to Palm Springs, <a href="/blog/palm-springs-coffee-guide/">this Palm Springs coffee guide</a> covers the best morning options.</p>
 
-<img src="/blog/images/indio-tamale-festival.webp" alt="Colorful food stalls at the Indio International Tamale Festival, a beloved Coachella Valley tradition" width="800" height="533" loading="lazy" decoding="async">
+<img src="/blog/images/indio-tamale-festival.webp" alt="Colorful food stalls at the Indio International Tamale Festival, a beloved Coachella Valley tradition" width="1600" height="773" loading="lazy" decoding="async">
 <p class="image-caption">The valley has real food traditions. Seek them out. Ask where locals eat.</p>
 
 <h2>Driving vs. Walking</h2>
@@ -99,7 +99,7 @@ relatedPosts:
 
 <p>This is the part guests forget to plan for. It costs nothing, takes twenty minutes, and is usually the thing people remember most.</p>
 
-<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue desert sky" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue desert sky" width="933" height="1400" loading="lazy" decoding="async">
 <p class="image-caption">The morning window. Don't waste it sleeping in.</p>
 
 <h2>One Last Thing</h2>
@@ -108,7 +108,7 @@ relatedPosts:
 
 <p>That's the whole point. The house is set up for it. The desert helps.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta patio under desert sky in Indio California" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta patio under desert sky in Indio California" width="1024" height="1536" loading="lazy" decoding="async">
 <p class="image-caption">The pool at Terra Luz. By day two, this is where the slowing-down happens.</p>
 
 <h2>Frequently Asked Questions</h2>

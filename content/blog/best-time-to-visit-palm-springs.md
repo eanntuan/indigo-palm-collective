@@ -3,7 +3,8 @@ title: "Best Time to Visit Palm Springs: Month-by-Month Guide"
 date: 2026-05-15
 metaDescription: "Best time to visit Palm Springs by season: peak weather, budget prices, or avoiding crowds. A real breakdown of every season with honest tradeoffs."
 ogImage: /blog/images/ps-via-sol-sunset.webp
-heroImage: /blog/images/ps-via-sol-sunset.webp
+heroImage: /blog/images/ps-desert-valley-view.webp
+heroPosition: "center 75%"
 heroAlt: "Palm Springs sunset over the desert with the San Jacinto Mountains glowing orange in the background"
 keywords:
   - best time to visit palm springs
@@ -55,7 +56,7 @@ People ask me when to visit Palm Springs like there's one correct answer. There 
   </table>
 </div>
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Palm Springs sunset with warm orange light over the desert valley and silhouetted palm trees" loading="lazy" width="1200" height="800">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Palm Springs sunset with warm orange light over the desert valley and silhouetted palm trees" loading="lazy" width="934" height="1400">
 <p class="image-caption">Desert sunsets don't require a specific season to be good. This is late October, which is as close to perfect as Palm Springs gets.</p>
 
 ## The Short Answer
@@ -78,7 +79,7 @@ January and February are when the city starts to wake up. The Palm Springs Inter
 
 If hiking is part of your plan, winter is ideal. The trails are cool enough for long days, and the lower desert has intermittent wildflowers after rain years.
 
-<img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the desert landscape near Palm Springs California with mountains silhouetted against the evening sky" loading="lazy" width="1200" height="800">
+<img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the desert landscape near Palm Springs California with mountains silhouetted against the evening sky" loading="lazy" width="1200" height="1800">
 <p class="image-caption">Winter nights in the desert are cold enough to need a jacket and clear enough for serious moonrise watching.</p>
 
 ## Spring: March to May
@@ -115,7 +116,7 @@ It's the reason summer in Palm Springs has real value beyond just cheap rates. T
 
 The summer playbook: book a rental with a private pool, plan outdoor activities before 9am and after 6pm, embrace the afternoon as an indoor reading hour. People who try to replicate their spring or fall trip itinerary in summer get in trouble. People who lean into the rhythm of the desert heat have a good time.
 
-<img src="/blog/images/palm-springs-summer-pool.webp" alt="Private pool at a Palm Springs vacation rental in summer with lounge chairs and desert landscaping under blue sky" loading="lazy" width="1200" height="800">
+<img src="/blog/images/palm-springs-summer-pool.webp" alt="Private pool at a Palm Springs vacation rental in summer with lounge chairs and desert landscaping under blue sky" loading="lazy" width="1400" height="787">
 <p class="image-caption">Summer in Palm Springs is a pool trip, not a hiking trip. Work with that and you'll be fine.</p>
 
 ## Fall: September to November
@@ -130,7 +131,7 @@ I've had what I'd call my favorite Palm Springs trips in early November. Everyth
 
 If you want the weather of spring without the crowds and prices of spring, October to mid-November is the answer. It won't stay a secret forever.
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view from the hills above Palm Springs in autumn with warm afternoon light on the mountains" loading="lazy" width="1200" height="800">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view from the hills above Palm Springs in autumn with warm afternoon light on the mountains" loading="lazy" width="1800" height="1269">
 <p class="image-caption">Fall afternoons have some of the best light in the desert. October in particular earns its reputation among photographers.</p>
 
 ## Month-by-Month Quick Reference

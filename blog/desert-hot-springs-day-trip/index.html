@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Outdoor hot tub at an Indio vacation rental at dusk, desert mountains in the background" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -257,7 +260,7 @@
             <p>Desert Hot Springs is one of those places guests mention they meant to visit and then ran out of time. It's 20 minutes from Terra Luz and The Cozy Cactus, the drive is a straight shot up Gene Autry Trail, and the mineral water there is the real thing: geothermal, naturally hot, no chemical tricks. If you have one afternoon with nothing locked in, this is a good way to spend it.</p>
 <p>The city sits on one of the largest underground reserves of hot mineral water in the world. Most of the hotels and resorts tap directly into it. Temperatures range from around 105 to 148 degrees Fahrenheit at the source, cooled down to something reasonable before you get in.</p>
 <p>These are the seven spots worth knowing, from free to splurge.</p>
-<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert valley view from an elevated trail near Indio, California, with mountain ranges in the distance" width="1400" height="933" loading="lazy">
+<img class="squarish" src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert valley view from an elevated trail near Indio, California, with mountain ranges in the distance" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The drive to Desert Hot Springs crosses through this kind of landscape. About 20 minutes from Indio.</p>
 <h2>1. Two Bunch Palms Resort</h2>
 <p><strong>$$$</strong> | Day passes available</p>
@@ -266,7 +269,7 @@
 <h2>2. Azure Palm Hot Springs</h2>
 <p><strong>$$</strong> | Day passes available</p>
 <p><a href="https://azurepalmhotsprings.com/" target="_blank" rel="noopener noreferrer"><strong>Azure Palm Hot Springs</strong></a> is a boutique motel-style resort with six private mineral pools. The day pass model here is different from Two Bunch: you book a private outdoor mineral pool by the hour rather than access to a shared pool area. Good if you want the mineral experience without the communal setup. Rates are around $35 to $50 per hour for the pool, depending on size and season. Book online in advance; availability fills up on weekends.</p>
-<img src="/blog/images/palm-springs-hotel-pool.webp" alt="Outdoor pool at a Palm Springs resort with mountain views, afternoon sun, and desert landscaping" width="1400" height="933" loading="lazy">
+<img class="squarish" src="/blog/images/palm-springs-hotel-pool.webp" alt="Outdoor pool at a Palm Springs resort with mountain views, afternoon sun, and desert landscaping" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The private pool model at Azure Palm runs differently from traditional spas. Worth it for the solo or couple experience.</p>
 <h2>3. Miracle Springs Resort</h2>
 <p><strong>$$</strong> | Day passes available</p>
@@ -285,7 +288,7 @@
 <h2>7. El Morocco Inn and Spa</h2>
 <p><strong>$$</strong> | Day passes for spa guests</p>
 <p>El Morocco leans into a Moroccan-influenced aesthetic: tiled fountains, arched doorways, warm interior palette. Adults-only. The mineral pool is smaller than the resort properties but the setting is well-maintained and the vibe is deliberately boutique. Day pass availability varies by season; their spa menu includes a range of treatments from around $80 to $150. Best in the shoulder season when the crowds thin out.</p>
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Backyard pool and patio at Terra Luz vacation rental in Indio, desert landscaping and clear blue sky" width="1400" height="933" loading="lazy">
+<img class="portrait" src="/blog/images/terra-luz-pool-backyard.webp" alt="Backyard pool and patio at Terra Luz vacation rental in Indio, desert landscaping and clear blue sky" width="1024" height="1536" loading="lazy">
 <p class="image-caption">Terra Luz is your base. Desert Hot Springs is 20 minutes north.</p>
 <img src="/blog/images/desert-canyon-waterfall.webp" alt="Desert canyon waterfall near Palm Springs, the kind of landscape visible on the drive to Desert Hot Springs" width="1400" height="933" loading="lazy" decoding="async">
 <p class="image-caption">The drive through the desert to Desert Hot Springs. Twenty minutes from Indio and a different world.</p>

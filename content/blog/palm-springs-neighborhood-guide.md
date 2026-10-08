@@ -36,7 +36,7 @@ The first time I drove into Palm Springs, I had no idea there were neighborhoods
 
 Here's what differentiates them, and how to pick based on what you want from the trip.
 
-<img src="/blog/images/palm-springs-neighborhood-map.webp" alt="Map overview of Palm Springs neighborhoods including Uptown, Downtown, Movie Colony, Warm Sands, and The Mesa" loading="lazy" width="1200" height="800">
+<img src="/blog/images/palm-springs-neighborhood-map.webp" alt="Map overview of Palm Springs neighborhoods including Uptown, Downtown, Movie Colony, Warm Sands, and The Mesa" loading="lazy" width="1033" height="820">
 <p class="image-caption">Palm Springs is smaller than it looks on a map. Most neighborhoods are within a 10-minute drive of each other.</p>
 
 ## How Palm Springs Is Laid Out
@@ -51,7 +51,7 @@ Uptown is roughly between Amado Road and Vista Chino on North Palm Canyon Drive.
 
 If you're coming to Palm Springs to hunt for mid-century furniture, explore independent clothing shops, or just walk a stretch where most storefronts are interesting, Uptown is the right base. It's also a good starting point for a self-guided architecture walk, since some of the most photogenic residential streets are nearby.
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="North Palm Canyon Drive in Palm Springs with palm trees lining the boulevard and San Jacinto Mountains behind" loading="lazy" width="1200" height="800">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="North Palm Canyon Drive in Palm Springs with palm trees lining the boulevard and San Jacinto Mountains behind" loading="lazy" width="1800" height="1800">
 <p class="image-caption">North Palm Canyon Drive runs through the heart of Uptown. The mountains behind it never stop being the backdrop.</p>
 
 ## Downtown: First-Timers, Nightlife, Walkability
@@ -60,7 +60,7 @@ Downtown is the area around the 100-400 blocks of South Palm Canyon Drive and th
 
 If it's your first time in Palm Springs and you're not sure which parts you'll like, staying near Downtown means you can walk to most things without a plan. The tradeoff: it's the busiest, noisiest part of the city, especially on weekends. If you want a quiet morning, you won't find it here.
 
-<img src="/blog/images/palm-springs-marilyn-monroe-statue.webp" alt="Marilyn Monroe statue outside the Palm Springs Art Museum in downtown Palm Springs California" loading="lazy" width="1200" height="800">
+<img src="/blog/images/palm-springs-marilyn-monroe-statue.webp" alt="Marilyn Monroe statue outside the Palm Springs Art Museum in downtown Palm Springs California" loading="lazy" width="1200" height="900">
 <p class="image-caption">The Forever Marilyn statue near the Art Museum has become one of the most photographed spots in Downtown Palm Springs.</p>
 
 ## Movie Colony: Mid-Century Architecture, Celebrity History
@@ -81,7 +81,7 @@ The Mesa is southeast of Downtown, where Palm Canyon Drive starts to curve and r
 
 For families who want a private backyard and a pool rather than walkability to restaurants, The Mesa delivers that. It's where a lot of longer-stay visitors end up.
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="View from a hillside in Palm Springs looking out over the desert valley floor with mountains in the distance" loading="lazy" width="1200" height="800">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="View from a hillside in Palm Springs looking out over the desert valley floor with mountains in the distance" loading="lazy" width="1800" height="1269">
 <p class="image-caption">The Mesa and surrounding hillside areas offer the best valley views in Palm Springs proper.</p>
 
 ## Twin Palms: Design-Forward, Hillside, Secluded

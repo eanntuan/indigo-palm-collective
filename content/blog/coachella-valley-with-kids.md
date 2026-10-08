@@ -76,7 +76,7 @@ relatedPosts:
   <li>Stroller available on request</li>
 </ul>
 
-<img src="/blog/images/family-closet.webp" alt="Family vacation rental supply closet at Cozy Cactus Indio CA with pack n play stroller baby gear and travel supplies organized" width="1400" height="933" loading="lazy">
+<img src="/blog/images/family-closet.webp" alt="Family vacation rental supply closet at Cozy Cactus Indio CA with pack n play stroller baby gear and travel supplies organized" width="1200" height="1800" loading="lazy">
 <p class="image-caption">The family closet. Guests with under-2s typically arrive and say "oh thank god." That's the goal.<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
 
 <p>The kitchen is stocked like someone cooks there: labeled drawers, full-size fridge, everything family-sized. You can make breakfast for a group without staging a scavenger hunt for the spatula.</p>

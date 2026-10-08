@@ -58,7 +58,7 @@ layout: blog-post.njk
 <div class="quick-info">
     <p><strong>Address:</strong> 84051 Indio Blvd, Indio, CA 92201</p>
 </div>
-<img src="/blog/images/one-stop-taco-shop.webp" alt="Carne asada tacos at One Stop Taco Shop Indio CA, best tacos in the Coachella Valley" width="1400" height="933" loading="lazy">
+<img src="/blog/images/one-stop-taco-shop.webp" alt="Carne asada tacos at One Stop Taco Shop Indio CA, best tacos in the Coachella Valley" width="1800" height="1440" loading="lazy">
 <p class="image-caption">One Stop Taco Shop. The line is the signal, not the deterrent.</p>
 
 <div class="item-heading"><span class="item-number">5</span>Thai Hot: Actual Thai Food, Actual Heat</div>
@@ -109,7 +109,7 @@ layout: blog-post.njk
 <div class="quick-info">
     <p><strong>When:</strong> First weekend of December · Old Town Indio</p>
 </div>
-<img src="/blog/images/indio-tamale-festival.webp" alt="Indio Tamale Festival December in Old Town Indio CA, largest tamale festival in the world" width="1400" height="933" loading="lazy">
+<img src="/blog/images/indio-tamale-festival.webp" alt="Indio Tamale Festival December in Old Town Indio CA, largest tamale festival in the world" width="1600" height="773" loading="lazy">
 <p class="image-caption">The Indio Tamale Festival. First weekend of December, Old Town Indio. Don't miss it.</p>
 
 <div class="item-heading"><span class="item-number">14</span>Joshua Tree National Park (Day Trip: 45 Min)</div>

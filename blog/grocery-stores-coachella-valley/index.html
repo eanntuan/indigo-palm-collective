@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/west-elm-dining.webp" alt="Shaded outdoor dining table on a covered patio overlooking desert rock formations, set for a home-cooked meal" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center 70%;" loading="eager" fetchpriority="high">
     </div>
     
@@ -269,7 +272,7 @@
 <p><strong>Stater Bros</strong> on East Vista Chino is the most utilitarian option in the city; it has less character than Jensen's, but makes up for it with quantity and a solid produce section.</p>
 <p><strong>Ralphs</strong> on East Sunny Dunes is a standard Kroger-brand grocery: reliable, nothing surprising, and a good pick if you're near the south end of Palm Springs.</p>
 <img src="/blog/images/palm-springs-pool.webp" alt="Palm Springs pool and patio area on a clear sunny afternoon with palm trees and blue sky" loading="lazy" width="1400" height="979">
-<img src="/blog/images/yes-please-palm-springs.webp" alt="Local Palm Springs market and food shop, a good stop for specialty grocery items in the Coachella Valley" loading="lazy" width="1400" height="933">
+<img class="squarish" src="/blog/images/yes-please-palm-springs.webp" alt="Local Palm Springs market and food shop, a good stop for specialty grocery items in the Coachella Valley" loading="lazy" width="1400" height="1050">
 <h2>Palm Desert and Cathedral City</h2>
 <p><strong>Whole Foods</strong> is in Palm Desert on El Paseo, the designer shopping corridor. It's exactly what you'd expect from a Whole Foods: wide prepared foods section, solid wine selection, expensive everything. If you're doing the El Paseo walk anyway, it makes sense to stop in.</p>
 <p><strong>Sprouts Farmers Market</strong> has multiple valley locations including Palm Desert and Cathedral City. Good produce, decent bulk section, and better prices than Whole Foods for most items. This is my personal go-to for produce when I'm in the mid-valley.</p>
@@ -279,7 +282,7 @@
 <p>During Coachella and Stagecoach weekends, grocery stores throughout the valley see noticeably higher traffic. Every checkout line is longer. Every parking lot is tighter.</p>
 <p>The best move during festival weeks: shop Thursday afternoon before the crowds arrive, or use Instacart for same-day delivery if you'd rather skip the store entirely. Most major chains in the valley support Instacart delivery.</p>
 <p><a href="/cozy-cactus/">Our properties in Indio</a> are within walking distance of a couple of quick-stop options, but for a full grocery run during festival season, Thursday is the window.</p>
-<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers at The Cozy Cactus vacation rental in Indio California" loading="lazy" width="1400" height="933">
+<img class="portrait" src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers at The Cozy Cactus vacation rental in Indio California" loading="lazy" width="1050" height="1400">
 <h2>Quick Reference</h2>
 <table>
 <thead>

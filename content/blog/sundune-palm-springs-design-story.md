@@ -4,7 +4,8 @@ date: 2025-11-19
 dateModified: 2026-07-30
 metaDescription: "The design story behind The Sundune at Palm Springs: coastal-desert vibes, sun-faded palettes, and a surf-inspired sanctuary a short drive from downtown."
 ogImage: /blog/images/ps-orange-door-mcm.webp
-heroImage: /blog/images/ps-orange-door-mcm.webp
+heroImage: /blog/images/ps-blue-door-cacti.webp
+heroPosition: "center 60%"
 heroAlt: "Vibrant orange mid-century modern door with desert landscaping in Palm Springs, California"
 keywords:
   - Palm Springs vacation rental design
@@ -59,7 +60,7 @@ layout: blog-post.njk
 
 <p>The second bedroom is the one people stop scrolling for. Sunset pink printed wallpaper, a birds-eye beach print, and a swivel chair Dawn specifically wanted to keep because it reads as playful rather than serious. It earns the attention.</p>
 
-<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Classic mid-century modern teal door with desert landscaping in a Palm Springs residential neighborhood" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-midcentury-teal-door.webp" alt="Classic mid-century modern teal door with desert landscaping in a Palm Springs residential neighborhood" width="1200" height="1800" loading="lazy" decoding="async">
 <p class="image-caption">The design filters behind The Sundune: coastal tones, warm materials, nothing loud.</p>
 
 <h2>The Balcony and Kitchen Flow</h2>
@@ -76,7 +77,7 @@ layout: blog-post.njk
 
 <p>The goal is thoughtfully collected over time, not overly styled. There is a real difference between a space where every piece was chosen deliberately and a space where every piece was chosen to match. We want the first one.</p>
 
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs with San Jacinto mountain backdrop and clear desert sky" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs with San Jacinto mountain backdrop and clear desert sky" width="1800" height="1800" loading="lazy" decoding="async">
 <p class="image-caption">Palm Springs at its quietest. The Sundune is a few minutes' drive from all of this.</p>
 
 <h2>The Basecamp Idea</h2>
@@ -97,7 +98,7 @@ layout: blog-post.njk
 
 <p>Same commitment to quality and intention. Completely different personalities. That is by design.</p>
 
-<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over Via Sol in Palm Springs with warm golden light and silhouetted palm trees" width="1400" height="933" loading="lazy" decoding="async">
+<img src="/blog/images/ps-via-sol-sunset.webp" alt="Desert sunset over Via Sol in Palm Springs with warm golden light and silhouetted palm trees" width="934" height="1400" loading="lazy" decoding="async">
 <p class="image-caption">The light in Palm Springs at the end of the day. It informs the whole color palette at The Sundune.</p>
 
 <h2>What's Still Being Decided</h2>

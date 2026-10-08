@@ -30,7 +30,7 @@ layout: blog-post.njk
 
 <p>Turns out the list is longer than I expected.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz private saltwater pool and enclosed backyard at pet-friendly vacation rental in Indio California Coachella Valley" width="1400" height="933" loading="eager">
+<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz private saltwater pool and enclosed backyard at pet-friendly vacation rental in Indio California Coachella Valley" width="1024" height="1536" loading="eager">
 <p class="image-caption">The backyard. Fully enclosed. This was a deliberate decision: the gate latches, the fence is solid, and dogs can be out there without anyone hovering.</p>
 
 <h2>The Backyard Is Genuinely Enclosed</h2>
@@ -111,7 +111,7 @@ layout: blog-post.njk
 
 <p>Once you've sorted the lodging, the <a href="/blog/coachella-valley-vacation-rental-guide/">complete Coachella Valley vacation rental guide</a> goes deeper on everything from booking timing to what to look for in any desert rental, dogs included.</p>
 
-<img src="/blog/images/ps-desert-valley-view.webp" alt="Coachella Valley desert view from above showing Indio and Palm Springs area where Terra Luz pet-friendly vacation rental is located" width="1400" height="933" loading="lazy">
+<img src="/blog/images/ps-desert-valley-view.webp" alt="Coachella Valley desert view from above showing Indio and Palm Springs area where Terra Luz pet-friendly vacation rental is located" width="1800" height="1269" loading="lazy">
 <p class="image-caption">The Coachella Valley. Terra Luz is in Indio, right in the middle of all of this. Close enough to Palm Springs, far enough to feel like its own place.</p>
 
 <script type="application/ld+json">

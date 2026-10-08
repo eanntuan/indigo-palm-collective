@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/bnp-paribas-stadium-packed.webp" alt="Packed Stadium 1 at the BNP Paribas Open in Indian Wells California during a professional tennis match" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -256,13 +259,13 @@
         <div class="article-body">
             <p>The <a href="https://bnpparibasopen.com/" target="_blank" rel="noopener noreferrer"><strong>BNP Paribas Open</strong></a> runs two weeks each March at the <a href="https://www.iwtg.net/" target="_blank" rel="noopener noreferrer"><strong>Indian Wells Tennis Garden</strong></a>, about 12 miles east of Palm Springs on Highway 111. It's one of the largest tennis events in the world outside the Grand Slams, combining an ATP Masters 1000 and a WTA 1000, which means the full top 10 from both tours show up. 450,000-plus people attend over those two weeks.</p>
 <p>Palm Springs works well as a base for a reason most tennis-focused guides skip: March is one of the best months in the desert, and there's enough outside the venue to build a real trip around. Mid-70s days, cool nights, full mountain views, walkable dining on Palm Canyon Drive. If you're coming from out of state and want a vacation that happens to include tennis rather than ten days of nothing but stadium seats, Palm Springs handles that better than a hotel in Indian Wells does.</p>
-<img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard lined with palm trees and Santa Rosa Mountains in the background in March" width="1400" height="933" loading="lazy">
+<img class="portrait" src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard lined with palm trees and Santa Rosa Mountains in the background in March" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Palm Springs in March. The Santa Rosa Mountains still have some snow at elevation, days run mid-70s, and the crowds from February are mostly gone. It's a good time to be here.</p>
 <h2>What the BNP Paribas Open Is</h2>
 <p>Context helps if you haven't been before. The BNP Paribas Open is a combined ATP Masters 1000 and WTA 1000 event, which makes it one of the most significant stops on both calendars outside the four Grand Slams. Players are required to compete unless injured, so the draws are genuine. Rafael Nadal won here 11 times. The Sinner-Alcaraz generation has been making it one of the most watched tournaments on tour.</p>
 <p>The venue itself is designed well for a desert setting: shaded concourses, permanent stadium courts, and outer courts that run early-round matches at close range. Stadium 1 holds just over 16,000. The outer courts during the first week put you within feet of top-10 players with a grounds pass. That proximity is something you don't get in the upper decks of a Grand Slam.</p>
 <p>Match days run roughly 10am to 10pm, often with multiple courts going simultaneously. Most people spend 6 to 10 hours at the venue on a full match day. That's a long time in stadium seats, even in comfortable March temperatures, and it makes what you come back to each evening matter more than it might seem when you're booking.</p>
-<img src="/blog/images/indian-wells-tennis-garden-aerial.webp" alt="Aerial view of the Indian Wells Tennis Garden showing Stadium 1, practice courts, and the Santa Rosa Mountains during the BNP Paribas Open" width="1400" height="933" loading="lazy">
+<img class="squarish" src="/blog/images/indian-wells-tennis-garden-aerial.webp" alt="Aerial view of the Indian Wells Tennis Garden showing Stadium 1, practice courts, and the Santa Rosa Mountains during the BNP Paribas Open" width="1024" height="768" loading="lazy">
 <p class="image-caption">The Indian Wells Tennis Garden from above. The venue sits in Indian Wells between Palm Springs to the west and Indio to the east, roughly 12 miles from each city via Highway 111.</p>
 <h2>Tickets: What to Know Before You Buy</h2>
 <p>Tickets go on sale at <a href="https://bnpparibasopen.com/" target="_blank" rel="noopener noreferrer">bnpparibasopen.com</a>. The general structure is grounds passes for outer court access and session tickets for Stadium 1 specific rounds. A few things worth knowing:</p>
@@ -272,13 +275,13 @@
 <p><strong>Parking costs $20-40 per day</strong> in general lots. If you're attending multiple sessions from Palm Springs, rideshare along the 111 corridor avoids that and removes the outer-lot walk in afternoon heat. Post-match surges are less severe than Coachella weekend because the crowd disperses over a longer window, but plan for a 10-15 minute wait after major evening sessions.</p>
 <h2>Staying in Palm Springs: The Sundune</h2>
 <p>Our Palm Springs property is <a href="/the-sundune/"><strong>The Sundune</strong></a> at 5301 E Waverly Dr, a 2BR/2BA coastal-desert condo with three king beds, shared HOA pool access, and a full kitchen. It books direct at <a href="https://indigopalm.co/the-sundune/" target="_blank" rel="noopener noreferrer">indigopalm.co/the-sundune/</a>, which removes the 20% Airbnb service fee, and the HOA requires a 4-night minimum stay. City permit 068394.</p>
-<img src="/blog/images/sundune-pool-surfboard-float.webp" alt="Community pool at The Sundune vacation rental in Palm Springs with surfboard float on a clear desert day" width="1200" height="900" loading="lazy">
+<img class="portrait" src="/blog/images/sundune-pool-surfboard-float.webp" alt="Community pool at The Sundune vacation rental in Palm Springs with surfboard float on a clear desert day" width="3200" height="4800" loading="lazy">
 <p class="image-caption">The Sundune's community pool. March afternoons in Palm Springs hit mid-70s, so the pool gets used. After 8 hours in stadium seats, this is worth more than a hotel pool with posted hours and a crowd: this one has far fewer users and no schedule.</p>
 <p>The practical advantages for a BNP Paribas Open trip from Palm Springs:</p>
 <p><strong>The drive to the venue is 12 miles east on Highway 111.</strong> In normal March traffic it's about 20 minutes. That's the same corridor as everything in the valley, so you're not fighting any unusual routing. Drive to the venue in the morning, rideshare back if you're staying for an evening session.</p>
 <p><strong>Three king beds means three couples or six people split that cost.</strong> At a price point where Indian Wells hotels are running $400-600 per night for a standard room during tournament week, a three-bed condo with community pool access divided six ways is a different math problem entirely.</p>
 <p><strong>Shared pool, full kitchen, ten minutes to Palm Canyon.</strong> The Uptown Design District is close enough to walk for coffee or a drink, and downtown Palm Canyon Drive, the main restaurant and shop corridor, is about a ten-minute drive. After a day at the venue that short hop matters more than it sounds in a listing, because you're picking a dinner spot in your own city rather than eating whatever is attached to a hotel lobby, even after 40+ round-trip miles.</p>
-<img src="/blog/images/sundune-living-room-wide.webp" alt="The Sundune Palm Springs vacation rental living room with mid-century modern furniture and natural light" width="1200" height="900" loading="lazy">
+<img src="/blog/images/sundune-living-room-wide.webp" alt="The Sundune Palm Springs vacation rental living room with mid-century modern furniture and natural light" width="4604" height="2919" loading="lazy">
 <p class="image-caption">The Sundune living room. Mid-century condo in central Palm Springs, 3 king beds, community pool access, dog-friendly with prior approval.</p>
 <h2>What to Do Besides Tennis</h2>
 <p>This is where Palm Springs earns the trip for first-timers. Indian Wells itself is a small city without much to do outside the venue. Palm Springs has layers.</p>

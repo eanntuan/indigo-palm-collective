@@ -112,7 +112,7 @@
       pintrk('load','2612901766308');
       pintrk('page');
     </script>
-    <noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
+    <noscript><img class="portrait" height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2612901766308&noscript=1"/></noscript>
     <!-- End Pinterest Tag -->
 
     <!-- Microsoft Clarity -->
@@ -172,6 +172,9 @@
         .article-body li { margin-bottom: 0.8rem; }
         .article-body blockquote { padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #555; }
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
+        .article-body img.squarish { max-height: 500px; }
+        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -243,7 +246,7 @@
     </nav>
 
     
-    <div style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
+    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
         <img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert hiking trail through rocky canyon near Palm Springs California with blue sky overhead" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center;" loading="eager" fetchpriority="high">
     </div>
     
@@ -387,7 +390,7 @@
   </tbody>
 </table>
 </div>
-<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert hiking trail through rocky canyon near Palm Springs California with blue sky overhead" width="1400" height="933" loading="lazy">
+<img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert hiking trail through rocky canyon near Palm Springs California with blue sky overhead" width="1400" height="788" loading="lazy">
 <p class="image-caption">The desert is not uniformly dry. Getting out before 8am in the canyons is the whole strategy.</p>
 <h2>1. Andreas Canyon (Easy)</h2>
 <div style="background:#f5f0eb;padding:12px 16px;margin:16px 0;font-size:0.9rem;">
@@ -501,7 +504,7 @@
 <p>Shoes with actual grip: the canyon floors are boulder-strewn in sections. Trail runners work. Sandals do not.</p>
 <p>A layer for the tram and summit hikes: Mountain Station at 8,516 feet runs 30 to 40 degrees cooler than the valley floor. Bring a fleece even in April.</p>
 <p>For everything else you might need for a desert day, the full packing list is in the <a href="/blog/desert-vacation-prep/">desert vacation prep guide</a>. It covers scheduling your day around the heat, what to eat before, and what to keep in the car for the return.</p>
-<img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Hiker on a desert ridge trail looking out over the Coachella Valley near Palm Springs California" width="1400" height="1050" loading="lazy">
+<img class="squarish" src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Hiker on a desert ridge trail looking out over the Coachella Valley near Palm Springs California" width="1400" height="1050" loading="lazy">
 <p class="image-caption">Start before 7am in spring and you get this: cool air, long shadows, and the whole valley laid out below you before the heat sets in.</p>
 <h2>Where to Stay for Easy Trail Access</h2>
 <p>The Indian Canyons, Tahquitz Canyon, and the Lykken Trail are all within 10 minutes of central Palm Springs. The tram is 15 minutes from downtown. Bump and Grind, Chuckwalla, Art Smith, and Cathedral Canyon are all 20 to 25 minutes east toward Palm Desert and Rancho Mirage. East Indio Hills Badlands and Sheep Hole Oasis are the outliers, closer to Indio than Palm Springs, with Sheep Hole about 15 miles southeast of town per the BLM.</p>

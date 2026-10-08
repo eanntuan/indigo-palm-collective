@@ -54,7 +54,7 @@ Guests staying at [The Cozy Cactus or Terra Luz](/cozy-cactus/) in Indio are bes
 
 <img src="/blog/images/palm-springs-pool.webp" alt="Palm Springs pool and patio area on a clear sunny afternoon with palm trees and blue sky" loading="lazy" width="1400" height="979">
 
-<img src="/blog/images/yes-please-palm-springs.webp" alt="Local Palm Springs market and food shop, a good stop for specialty grocery items in the Coachella Valley" loading="lazy" width="1400" height="933">
+<img src="/blog/images/yes-please-palm-springs.webp" alt="Local Palm Springs market and food shop, a good stop for specialty grocery items in the Coachella Valley" loading="lazy" width="1400" height="1050">
 
 ## Palm Desert and Cathedral City
 
@@ -74,7 +74,7 @@ The best move during festival weeks: shop Thursday afternoon before the crowds a
 
 [Our properties in Indio](/cozy-cactus/) are within walking distance of a couple of quick-stop options, but for a full grocery run during festival season, Thursday is the window.
 
-<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers at The Cozy Cactus vacation rental in Indio California" loading="lazy" width="1400" height="933">
+<img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Organized kitchen drawers at The Cozy Cactus vacation rental in Indio California" loading="lazy" width="1050" height="1400">
 
 ## Quick Reference
 
