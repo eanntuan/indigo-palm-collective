@@ -394,7 +394,7 @@
         <div class="container">
             <p class="section-label">Road Closures</p>
             <h2>Closed Streets</h2>
-            <p>Traffic around the polo fields gets heavy starting the Thursday before each weekend through the Monday after. For 2026: expect congestion <strong>April 9-13</strong> (Coachella W1), <strong>April 16-20</strong> (Coachella W2), and <strong>April 23-27</strong> (Stagecoach). The streets below are closed during festival hours.</p>
+            <p>Traffic around the polo fields gets heavy starting the Thursday before each weekend through the Monday after. Expect congestion across both Coachella weekends and the Stagecoach weekend (confirm this year's dates at <a href="https://www.coachella.com" target="_blank" rel="noopener">coachella.com</a> and <a href="https://www.stagecoachfestival.com" target="_blank" rel="noopener">stagecoachfestival.com</a>). The streets below are closed during festival hours.</p>
 
             <ul>
                 <li>Avenue 50 between Jackson and Madison</li>
@@ -456,7 +456,7 @@
             <div class="related-posts">
                 <h3>From the Indigo Palm Blog</h3>
                 <ul>
-                    <li><a href="/blog/where-to-stay-coachella-2026/">Where to Stay for Coachella 2026: An Honest Local Guide</a></li>
+                    <li><a href="/blog/where-to-stay-coachella/">Where to Stay for Coachella: An Honest Local Guide</a></li>
                     <li><a href="/blog/indio-between-coachella-weekends/">The In-Between Weekend: What to Do in Indio Between Coachella Weekends 1 and 2</a></li>
                     <li><a href="/blog/indio-local-gems/">10 Indio Gems Only Locals Know About</a></li>
                     <li><a href="/blog/things-to-do-indio-ca/">Things to Do in Indio, CA: A Local's Guide</a></li>
@@ -466,9 +466,10 @@
     </section>
 
     <footer>
-        <p style="margin-bottom:0.5rem;">&copy; 2026 Indigo Palm Collective. All rights reserved.</p>
+        <p style="margin-bottom:0.5rem;">&copy; <span id="yr"></span> Indigo Palm Collective. All rights reserved.</p>
         <p><a href="/">Home</a> · <a href="/#properties">Properties</a> · <a href="/blog/">Blog</a> · <a href="/#contact">Contact</a></p>
     </footer>
 
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
 </body>
 </html>
