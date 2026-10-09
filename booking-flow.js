@@ -136,7 +136,7 @@ function readUrlParams() {
 
 const PROPERTY_HEROES = {
     'cozy-cactus': {
-        img: '/cozy-cactus/video/cozy-cactus-hero-poster.webp',
+        img: '/cozy-cactus/video/cozy-cactus-hero-poster.webp?v=7',
         title: 'The Cozy Cactus',
         video: '/cozy-cactus/video/cozy-cactus-hero',
         sub: '3BR · Indio · Private hot tub · Game room · Sleeps 8',
