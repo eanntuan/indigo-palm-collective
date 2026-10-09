@@ -557,7 +557,9 @@
 
         .cal-day {
             text-align: center;
-            padding: 0.55rem 0;
+            height: 34px;
+            line-height: 34px;
+            padding: 0;
             font-size: 0.95rem;
             cursor: pointer;
             border-radius: 50%;
@@ -618,6 +620,12 @@
             color: #1a1a1a;
             font-weight: 700;
         }
+
+        /* One continuous pill: rounded caps where the band wraps to a new week */
+        .cal-day.in-range:nth-child(7n+1) { border-radius: 17px 0 0 17px; }
+        .cal-day.in-range:nth-child(7n) { border-radius: 0 17px 17px 0; }
+        .cal-day.sel-start:nth-child(7n),
+        .cal-day.sel-end:nth-child(7n+1) { background: radial-gradient(circle 17px at center, var(--accent-sage) 99%, transparent 100%); }
 
         @media (max-width: 968px) {
             .container {
