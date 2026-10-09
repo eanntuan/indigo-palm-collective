@@ -285,8 +285,11 @@ function renderCalendar() {
         else                cls += ' available';
         if (isSelStart)     cls += ' sel-start';
         if (isSelEnd)       cls += ' sel-end';
+        if (isSelStart && !checkOutVal) cls += ' sel-single';
         if (inRange)        cls += ' in-range';
         cell.className = cls;
+        const minN = selectedProperty?.minNights || 1;
+        if (!isPast && !isBlocked && minN > 1) cell.dataset.min = `${minN}-night minimum`;
 
         if (!isPast && !isBlocked) {
             cell.addEventListener('click', () => {

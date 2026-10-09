@@ -571,8 +571,27 @@
             color: #1a1a1a;
         }
 
-        .cal-day.available:hover {
-            background: var(--accent-hover-bg);
+        .cal-day.available:not(.sel-start):not(.sel-end):hover {
+            background: radial-gradient(circle 17px at center, #fff 0, #fff 15px, var(--accent-sage) 15px, var(--accent-sage) 17px, transparent 17.5px);
+        }
+        .cal-day.available.in-range:hover {
+            background: radial-gradient(circle 17px at center, #fff 0, #fff 15px, var(--accent-sage) 15px, var(--accent-sage) 17px, transparent 17.5px), var(--accent-range);
+        }
+
+        /* Airbnb-style tooltip with the minimum stay */
+        .cal-day { position: relative; }
+        .cal-day[data-min]:hover { z-index: 5; }
+        .cal-day[data-min]:hover::after {
+            content: attr(data-min);
+            position: absolute; bottom: calc(100% + 10px); left: 50%; transform: translateX(-50%);
+            background: #fff; color: #222; font-size: 0.95rem; font-weight: 500; line-height: 1.2;
+            padding: 0.8rem 1.1rem; border-radius: 8px; white-space: nowrap; pointer-events: none;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+        }
+        .cal-day[data-min]:hover::before {
+            content: ""; position: absolute; bottom: calc(100% + 4px); left: 50%; transform: translateX(-50%) rotate(45deg);
+            width: 12px; height: 12px; background: #fff; z-index: 6; pointer-events: none;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.08);
         }
 
         .cal-day.booked {
@@ -610,7 +629,7 @@
             border-radius: 0;
         }
 
-        .cal-day.sel-start.sel-end {
+        .cal-day.sel-single, .cal-day.sel-start.sel-end {
             background: radial-gradient(circle 17px at center, var(--accent-sage) 99%, transparent 100%);
         }
 
@@ -846,7 +865,7 @@
         </div>
     </div>
 
-    <script type="module" src="/booking-flow.js?v=8"></script>
+    <script type="module" src="/booking-flow.js?v=9"></script>
 
 <div id="agreement-overlay" role="dialog" aria-modal="true" aria-label="Rental Agreement">
   <div id="agreement-overlay-inner">
