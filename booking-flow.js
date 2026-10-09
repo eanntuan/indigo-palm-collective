@@ -136,8 +136,9 @@ function readUrlParams() {
 
 const PROPERTY_HEROES = {
     'cozy-cactus': {
-        img: '/cozy-cactus/photos/CozyCactus2026-0004.webp',
+        img: '/cozy-cactus/video/cozy-cactus-hero-poster.webp',
         title: 'The Cozy Cactus',
+        video: '/cozy-cactus/video/cozy-cactus-hero',
         sub: '3BR · Indio · Private hot tub · Game room · Sleeps 8',
     },
     'terra-luz': {
@@ -156,6 +157,7 @@ const PROPERTY_HEROES = {
 
 function selectProperty(propertyId) {
     selectedProperty = PROPERTIES[propertyId];
+    document.documentElement.dataset.property = propertyId;
 
     // Update URL to pretty path
     history.replaceState(null, '', '/booking-flow/' + propertyId + '/');
@@ -458,7 +460,7 @@ async function updatePrice() {
         const data = await res.json();
 
         if (!data.success) {
-            priceContent.innerHTML = `<div class="empty-state" style="color:#B67550;"><p>${data.error || 'Could not calculate price.'}</p></div>`;
+            priceContent.innerHTML = `<div class="empty-state" style="color:var(--accent-link);"><p>${data.error || 'Could not calculate price.'}</p></div>`;
             return;
         }
 
@@ -615,7 +617,7 @@ function renderPriceSummary() {
         </div>` : '';
 
     const discountRow = appliedDiscount ? `
-        <div class="price-row" style="color:#607c67;">
+        <div class="price-row" style="color:var(--accent-sage);">
             <span>Discount (${appliedDiscount.code})</span>
             <span>-$${discountAmount.toFixed(2)}</span>
         </div>` : '';
@@ -686,7 +688,7 @@ async function applyPromoCode() {
         if (data.success) {
             appliedDiscount = { code, ...data };
             msg.style.display = 'block';
-            msg.style.color = '#738561';
+            msg.style.color = 'var(--accent-sage-dark)';
             msg.textContent = `${data.label} applied!`;
             btn.textContent = 'Remove';
             btn.disabled = false;
