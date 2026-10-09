@@ -943,7 +943,7 @@
     }
     </script>
 <script>
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
   var v = document.getElementById('heroVideo');
   if (!v) return;
   var c = navigator.connection || {};
@@ -959,7 +959,7 @@
     sync();
   }
   if (document.readyState === 'complete') start(); else addEventListener('load', start);
-})();
+});
 </script>
 </head>
 <body>
