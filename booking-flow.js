@@ -288,6 +288,7 @@ function renderCalendar() {
         if (isSelStart && !checkOutVal) cls += ' sel-single';
         if (inRange)        cls += ' in-range';
         cell.className = cls;
+        cell.dataset.date = dateStr;
         const minN = selectedProperty?.minNights || 1;
         if (!isPast && !isBlocked && minN > 1) cell.dataset.min = `${minN}-night minimum`;
 
@@ -327,6 +328,41 @@ function renderCalendar() {
 
         grid.appendChild(cell);
     }
+    wireRangePreview(grid);
+}
+
+// Airbnb-style hover preview: after a check-in is picked, hovering later dates draws the pill up to that date
+let previewed = [];
+function clearRangePreview() {
+    previewed.forEach(([el, cls]) => { el.className = cls; });
+    previewed = [];
+}
+function wireRangePreview(grid) {
+    if (grid.dataset.preview) return;
+    grid.dataset.preview = '1';
+    grid.addEventListener('mouseleave', clearRangePreview);
+    grid.addEventListener('mouseover', e => {
+        const hov = e.target.closest('.cal-day[data-date]');
+        clearRangePreview();
+        const checkIn = document.getElementById('check-in').value;
+        const checkOut = document.getElementById('check-out');
+        if (!hov || !checkIn || checkOut.value || !hov.classList.contains('available')) return;
+        const end = hov.dataset.date;
+        if (end <= checkIn || (checkOut.min && end < checkOut.min)) return;
+        const cells = [...grid.querySelectorAll('.cal-day[data-date]')];
+        if (cells.some(c => c.dataset.date > checkIn && c.dataset.date < end && c.classList.contains('booked'))) return;
+        cells.forEach(c => {
+            const d = c.dataset.date;
+            let add = '';
+            if (d === checkIn) add = ' sel-start';
+            else if (d > checkIn && d < end) add = ' in-range';
+            else if (d === end) add = ' sel-end';
+            if (!add) return;
+            previewed.push([c, c.className]);
+            c.className += add;
+            if (add === ' sel-start') c.classList.remove('sel-single');
+        });
+    });
 }
 
 function syncUrlDates() {
