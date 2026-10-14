@@ -55,7 +55,7 @@ layout: blog-post.njk
 
 <h3>Palm Springs Air Museum</h3>
 
-<p>This one gets overlooked on family itineraries and shouldn't. The <a href="https://www.palmspringsairmuseum.org" target="_blank" rel="noopener">Air Museum</a> has a fully functional Boeing B-17 Flying Fortress that kids can go inside, plus a flight simulator to test their skills. It's not a passive walk-through exhibit. They can touch things and sit in things.</p>
+<p>This one gets overlooked on family itineraries and shouldn't. The <a href="https://www.palmspringsairmuseum.org" target="_blank" rel="noopener">Air Museum</a> has a fully functional Boeing B-17 Flying Fortress that kids can go inside, plus a flight simulator to test their skills. It's not a passive walk-through exhibit. They can touch things and sit in things. Tickets, hours, and the warbird rides are covered in my <a href="/blog/palm-springs-air-museum-guide/">Air Museum guide</a>.</p>
 
 <p>Good for ages 5 and up, though older kids (8+) will get the most out of it. Figure 90 minutes to 2 hours.</p>
 

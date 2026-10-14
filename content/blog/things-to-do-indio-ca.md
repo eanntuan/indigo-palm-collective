@@ -105,7 +105,7 @@ layout: blog-post.njk
 <p>Most people only see the polo grounds during Coachella. But Empire Polo Club hosts polo matches and equestrian events throughout fall and winter, open to the public, often free, and a completely different side of what these grounds can be outside of festival season.</p>
 
 <div class="item-heading"><span class="item-number">13</span>The Indio Tamale Festival (December)</div>
-<p>If you're here in December, everything else is secondary. Running 30+ years now, it claims the title of world's largest tamale festival: sweet tamales, savory ones, and fusion ones all show up. Live music, complete chaos, the best single expression of what Indio is as a city.</p>
+<p>If you're here in December, everything else is secondary. Running 30+ years now, it claims the title of world's largest tamale festival: sweet tamales, savory ones, and fusion ones all show up. Live music, complete chaos, the best single expression of what Indio is as a city. Palm Springs holds its Festival of Lights Parade the first Saturday of December too, and my <a href="/blog/palm-springs-christmas-events/">Palm Springs Christmas guide</a> has the plan for doing both.</p>
 <div class="quick-info">
     <p><strong>When:</strong> First weekend of December · Old Town Indio</p>
 </div>

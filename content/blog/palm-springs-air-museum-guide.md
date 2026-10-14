@@ -6,6 +6,7 @@ metaDescription: "Palm Springs Air Museum tickets, hours, and what to see: air-c
 ogImage: /blog/images/palm-springs-air-museum-1.webp
 heroImage: /blog/images/palm-springs-air-museum-1.webp
 heroAlt: "Palm Springs Air Museum frontage on Gene Autry Trail with a jet on static display and the San Jacinto Mountains behind"
+heroPosition: "center 75%"
 keywords:
   - palm springs air museum
   - palm springs air museum tickets

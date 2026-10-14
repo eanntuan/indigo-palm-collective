@@ -1,5 +1,5 @@
 # Indigo Palm Collective — SEO Strategy + 90-Day Playbook
-**Prepared:** June 18, 2026 | **Last updated:** July 23, 2026 (babysit-seo run) | Multi-agent audit (Google Search Console + Pinterest + Business Metrics)
+**Prepared:** June 18, 2026 | **Last updated:** October 14, 2026 (babysit-seo run) | Multi-agent audit (Google Search Console + Pinterest + Business Metrics)
 
 ---
 
@@ -3290,3 +3290,68 @@ Reports are in `/tmp/broken-links-2026-10-08.md`, `/tmp/broken-links-external-20
 - Title/meta rewrites, bare `/the-sundune` link fixes and orphan-link additions delegated to an agent (see commit).
 - Festival guides made date agnostic; Terra Luz festival guide photos halved.
 - Needs Eann: Pinterest Business Hub monthly-viewer figure, Pinterest UI cleanup (bio, Sundune board, duplicate/dead boards), Quora status from Sabbir, Halloween post yes/no, hiking post 12->13 trails yes/no, Cowork pilot (RG-27) yes/no.
+
+---
+
+### babysit-seo run 2026-10-14
+
+Run unattended while Eann was away (about 3 hours). Housekeeping: no stashes, `git pull --rebase` clean, tracked tree clean before work started.
+
+**Rachel Gainsburg:** RSS fetched, 20 items, every slug already processed (newest is the 2026-10-07 Cowork post). No new tasks.
+
+**GSC, GA4 and GSC alert-email mining: BLOCKED.** `gsc_report.py` and `ga4_report.py` both fail with `invalid_grant: Token has been expired or revoked`, and the Gmail alert search shares the same credential file. I did not try to work around it: the reauth needs a browser on Eann's machine.
+- Fix (Eann): `! /Users/etuan/.claude/google-workspace-venv/bin/python3 ~/.claude/skills/babysit-seo/scripts/reauth_google.py`, sign in as eann.tuan@gmail.com.
+- Probable root cause of the recurring breakage (hypothesis, not confirmed): the OAuth consent screen on GCP project `noted-throne-488421-v4` is probably in "Testing" status, which expires refresh tokens after 7 days. The cadence fits: reauth on 2026-10-05, last successful token refresh in the credentials file at 2026-10-12 16:18 UTC, `invalid_grant` by 2026-10-14. If so, setting the consent screen to "In production" (APIs & Services > OAuth consent screen > Publish app) stops the weekly expiry. An unverified-app warning will show at consent; that is fine for a single-owner project. Eann's call.
+- Last good data is still the 2026-10-08 check-in above. Title/meta rewrites from 2026-10-08 (commit `18aa8d9a`) cannot be measured until GSC is back; re-check CTR on `palm-springs-vs-indio`, `where-to-stay-coachella` and `palm-springs-surf-club` about 2026-10-22.
+
+### Pinterest Check-in 2026-10-14
+
+**30-day API totals (2026-09-14 to 2026-10-14):** 1,790 impressions, 4 saves, 46 pin clicks, 7 outbound clicks. Versus 2026-10-08 (1,842 / 5 / 62 / 10) that is flat to slightly down. About 7% of the 25K link-switch threshold, and API impressions overstate unique viewers, so links stay on Airbnb. No switch without Eann's sign-off.
+
+| Board (30 days) | Impr | Saves | PinClk | OutClk |
+|---|---|---|---|---|
+| Interior Design (2 pins) | 899 | 0 | 28 | 5 |
+| Cozy cactus instagram | 504 | 3 | 15 | 0 |
+| Terra Luz \| Luxury Airbnb (62 pins) | 149 | 0 | 0 | 0 |
+| BLOGS (37 pins) | 132 | 1 | 2 | 2 |
+| Cozy Cactus \| Family Airbnb (55 pins) | 47 | 0 | 1 | 0 |
+| Other 9 boards | 38 | 0 | 0 | 0 |
+
+- Posting cadence: board scan counts total 200 pins versus 199 on 2026-10-08 (the Cozy Cactus board went from 54 to 55). That suggests at most one new pin in six days against the 4-5/day target, so "posting slowed" is still the supported read, not "ads stopped" (campaign C626758451852 is paused and the board-level organic numbers match).
+- Pin-level analytics still fails (4/4 calls), so no top-pin breakdown. Cause undiagnosed.
+- TASK PIN-5 (restart posting, Interior Design pattern first) and the Pinterest UI cleanup from 2026-10-08 remain Eann's manual items.
+- New post pins drafted, not published (never auto-publish): `/tmp/pins-palm-springs-christmas-events.csv` with five branded images `/tmp/pin-palm-springs-christmas-events-1..5.webp` (1000x1500). Quora seed pairs: `/tmp/geo-seeder-palm-springs-christmas-2026-10-14.md`, pending for Eann/Sabbir at 2-3/day.
+
+### GA4 Check-in 2026-10-14
+
+Blocked by the same expired token (see above). No fresh pull. Last data is 2026-10-08. The 10-08 action items that were still open are done or covered: the high-traffic posts already carry property links (`best-time-to-visit-palm-springs` 2, `palm-springs-bars` 3, `palm-springs-aerial-tram` 2, `indian-canyons-palm-springs` 2, `best-hiking-palm-springs` 6, `best-restaurants-palm-springs` 3, `idyllwild-day-trip-palm-springs` 2).
+
+### Technical SEO Health Checks 2026-10-14
+
+- Internal links and images: 0 broken (117 pages, 3,378 targets) after this run's changes.
+- Alt text: 1,022 images, 0 HIGH, 0 MEDIUM, 3 LOW `loading="lazy"` flags, the same three intentional eager hero-adjacent images logged on 10-01 and 10-08. Left as is.
+- Orphans: 0 orphaned. Two weakly linked pages at the start (`halloween-2026-coachella-valley`, `palm-springs-air-museum-guide`); both now have contextual inbound links, re-run shows 0 weakly linked.
+- Bare internal links (the 2026-10-08 "Page with redirect" fix): no bare `/the-sundune` style links remain in `content/blog`. Only `404.html` still uses `/terra-luz` and `/the-well` without a trailing slash, which is harmless on an error page.
+- External link pass: not run (weekly cadence, last full pass 2026-10-08, next due on or after 2026-10-15).
+- Regression spot-check: 60-day cancellation copy still present on `/book-direct/`.
+
+### Palm Springs Life inspo 2026-10-14
+
+Feed pulled (25 items). Nothing new worth actioning since the 2026-10-08 run: "Hike of the Month: Bump and Grind Loop" is already in `best-hiking-palm-springs`; Bar Cecil, Beaton's, Mr. Lyon's and Workshop Kitchen are already covered in existing restaurant and bar posts; the rest is sponsored, real estate, history or out of area. Halloween was drafted and published on 2026-10-08. Newsletter silence: already resolved by the feed switch.
+
+### Hero Image Audit 2026-10-14 (new posts only, full inventory not due until about 2026-10-31)
+
+- `palm-springs-air-museum-guide`: crop simulated at 1400x480. At `center` the jet was clipped at the bottom with half the band empty sky. Fixed with `heroPosition: "center 75%"`, which shows the whole jet, the mountains and the palms.
+- `palm-springs-christmas-events` (new): `center 38%` keeps the sign and the snow on the ridge.
+- `halloween-2026-coachella-valley`: FLAGGED, not changed. The hero is a tight cocktail pour (a detail close-up, against the "whole scene" hero rule), and the center crop clips the bartender's hand. Topic fit is fine. Needs Eann's yes/no on swapping to a wider nightlife photo.
+
+### Actions taken 2026-10-14
+
+- **New post published:** `palm-springs-christmas-events` ("Palm Springs Christmas 2026: Parade, Tamales and Lights", about 1,900 words, 5 in-copy images, FAQPage JSON-LD, 11 sources), blog card and sitemap entry, commit `71780c6e`. Live at https://indigopalm.co/blog/palm-springs-christmas-events/
+- Inbound links to the new post added in `best-time-to-visit-palm-springs`, `things-to-do-indio-ca` and `palm-springs-aerial-tram`; inbound links to the two weakly linked posts added in `palm-springs-bars`, `best-time-to-visit-palm-springs` (Halloween), `palm-springs-with-kids` and `palm-springs-heat-activities` (Air Museum).
+- Hero position fix on `palm-springs-air-museum-guide`.
+
+**TASK XMAS-1: Refresh the Christmas post when 2026 schedules publish (added 2026-10-14)**
+Not actionable until about 2026-11-10 to 2026-11-15. Magic of Lights, WildLights and the El Paseo tree lighting had no confirmed 2026 dates on 2026-10-14 (the post labels them as last year's pattern). When each publishes, replace the "last year" wording with the confirmed dates and prices, re-verify the parade route end (Visit Palm Springs says Tachevah Road, Marching.com says Tamarisk Road) and the Dec 4 tree lighting venue (Frances Stevens Park in 2025), then bump `dateModified`. Also confirm the Tamale Festival hours (sources disagree: noon to 8 PM versus 10 AM to 7 PM) and which Tram station hosts the Dec 6 tree lighting.
+
+**Needs Eann:** (1) Google reauth plus the "In production" consent-screen decision above, so GSC, GA4 and Gmail alert mining can run again; (2) Halloween hero swap yes/no; (3) the still-open 2026-10-08 list: Pinterest Business Hub monthly-viewer figure, Pinterest UI cleanup, Quora status from Sabbir, hiking post 12 to 13 trails yes/no, RG-27 Cowork pilot yes/no, GSC Pages report URL lists for "Not found (404)" and "Page with redirect", and the `indigopalmco@gmail.com` ownership check.

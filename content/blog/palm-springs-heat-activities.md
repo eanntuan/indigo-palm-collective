@@ -70,7 +70,7 @@ faqItems:
 
 <p>If you've got kids, or you just like standing next to something enormous, the <a href="https://palmspringsairmuseum.org/" rel="noopener noreferrer" target="_blank">Palm Springs Air Museum</a> (745 N Gene Autry Trail, 760-778-6262) is one of the better places to burn a hot afternoon. More than 75 vintage aircraft, most of them WWII through modern military, and you can walk right up to them in the climate-controlled hangars without ropes or glass in the way.</p>
 
-<p>Admission runs $25 for adults and $23 for teens and seniors, and kids 12 and under get in free with a paid adult, with all ages 12 and under free through the summer season. It's open daily 10am to 5pm, and the volunteer docents are often veterans who flew these planes, which turns a look-at-the-exhibit visit into an actual conversation. Two to three hours goes fast in there.</p>
+<p>Admission runs $25 for adults and $23 for teens and seniors, and kids 12 and under get in free with a paid adult, with all ages 12 and under free through the summer season. It's open daily 10am to 5pm, and the volunteer docents are often veterans who flew these planes, which turns a look-at-the-exhibit visit into an actual conversation. Two to three hours goes fast in there, and my <a href="/blog/palm-springs-air-museum-guide/">Air Museum guide</a> goes deeper on what's inside the hangars.</p>
 
 <h2>Ice Skating at the Acrisure Arena (Berger Foundation IcePlex)</h2>
 

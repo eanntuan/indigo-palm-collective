@@ -85,7 +85,7 @@ layout: blog-post.njk
 
 <p><strong>Fall and spring:</strong> The most popular seasons overall. Wildflowers appear in spring. Fall foliage in the mountains. Comfortable temperatures at both elevations. Weekends fill up quickly. Go early or go on a weekday if you want to park without circling.</p>
 
-<p><strong>Winter:</strong> Snow at the top, mild desert weather below. The contrast is more dramatic than summer and the crowds are thinner than spring. Check snow conditions before heading out since heavy snowfall can close the outdoor trails temporarily.</p>
+<p><strong>Winter:</strong> Snow at the top, mild desert weather below. The contrast is more dramatic than summer and the crowds are thinner than spring. Check snow conditions before heading out since heavy snowfall can close the outdoor trails temporarily. The winter hours, Christmas Week schedule, and the Tram's December tree lighting are in my <a href="/blog/palm-springs-christmas-events/">Palm Springs Christmas guide</a>.</p>
 
 <p><strong>When to avoid:</strong> Saturday mornings in March and April during Coachella festival weekends. The tram is not immune to valley-wide congestion and parking fills up. If you're in the valley for a festival, aim for a weekday visit.</p>
 

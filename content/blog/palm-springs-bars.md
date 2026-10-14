@@ -101,7 +101,7 @@ relatedPosts:
 
 <h2>Gay Bars and Clubs</h2>
 
-<p>Arenas Road, one block east of Palm Canyon Drive, is the center of Palm Springs LGBTQ+ nightlife. It's dense, walkable, and the energy there on a Friday night is different from anywhere else in the desert. Worth a visit even if you're not specifically looking for a gay bar.</p>
+<p>Arenas Road, one block east of Palm Canyon Drive, is the center of Palm Springs LGBTQ+ nightlife. It's dense, walkable, and the energy there on a Friday night is different from anywhere else in the desert. Worth a visit even if you're not specifically looking for a gay bar. Halloween weekend turns the Arenas District into a two-night street party, and the details are in my <a href="/blog/halloween-2026-coachella-valley/">Halloween 2026 guide</a>.</p>
 
 <h3>Hunters</h3>
 <p><strong>302 E Arenas Rd, Palm Springs | 760-323-0700 | <a href="https://hunterspalmsprings.com/" target="_blank" rel="noopener">hunterspalmsprings.com</a></strong></p>

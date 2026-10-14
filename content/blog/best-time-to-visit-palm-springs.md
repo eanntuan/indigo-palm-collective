@@ -73,7 +73,7 @@ Now the longer version.
 **Crowds:** Moderate in December, building through February
 **Events:** Desert Modernism events, film festival build-up, holiday closures in December
 
-December is a mixed bag. Some restaurants and shops cut their hours around the holidays, and a lot of locals take the week between Christmas and New Year off. The weather is mild, the crowds haven't peaked yet, and rates are reasonable. It's the quiet version of Palm Springs, which some people prefer.
+December is a mixed bag. Some restaurants and shops cut their hours around the holidays, and a lot of locals take the week between Christmas and New Year off. The weather is mild, the crowds haven't peaked yet, and rates are reasonable. It's the quiet version of Palm Springs, which some people prefer. If you'd rather plan around the holiday events, my [Palm Springs Christmas guide](/blog/palm-springs-christmas-events/) has the 2026 dates for the parade, the tree lightings, and the tamale festival.
 
 January and February are when the city starts to wake up. The Palm Springs International Film Festival runs in early January and brings a real energy to Downtown. By February, the <a href="https://bnpparibasopen.com/" target="_blank" rel="noopener noreferrer"><strong>BNP Paribas Open</strong></a> tennis tournament in nearby Indian Wells is approaching, and hotel prices reflect it.
 
@@ -129,7 +129,7 @@ September still has full desert heat. If you're not prepared for that, wait unti
 
 I've had what I'd call my favorite Palm Springs trips in early November. Everything is open, nothing is overcrowded, and the desert has this amber late-afternoon light that photographers make entire careers chasing. Palm Springs Pride in early November draws a lively crowd without overwhelming the city. <a href="https://www.villagefestpalmsprings.com/" target="_blank" rel="noopener noreferrer"><strong>VillageFest</strong></a>, the weekly Thursday night street fair on Palm Canyon, runs year-round and is worth catching at least once.
 
-If you want the weather of spring without the crowds and prices of spring, October to mid-November is the answer. It won't stay a secret forever.
+If you want the weather of spring without the crowds and prices of spring, October to mid-November is the answer. It won't stay a secret forever. If you're coming for Halloween, my [Halloween 2026 guide](/blog/halloween-2026-coachella-valley/) lists what's on.
 
 <img src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view from the hills above Palm Springs in autumn with warm afternoon light on the mountains" loading="lazy" width="1800" height="1269">
 <p class="image-caption">Fall afternoons have some of the best light in the desert. October in particular earns its reputation among photographers.</p>
