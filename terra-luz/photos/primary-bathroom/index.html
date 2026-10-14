@@ -100,10 +100,42 @@
             .hero-content { padding: 1.5rem; }
             .content-section { padding: 3rem 5%; }
         }
-    </style>
+    img[id^="photo-"] { scroll-margin-top: 6rem; }
+</style>
     <link rel="stylesheet" href="/css/cta-button.css">
 <link rel="stylesheet" href="/css/site-nav.css?v=2">
 <script src="/js/site-nav.js?v=2" defer></script>
+<script type="application/ld+json" id="photo-gallery-ld">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "Terra Luz Primary Bathroom | Soaking Tub, Double Vanity | Indio CA",
+  "url": "https://indigopalm.co/terra-luz/photos/primary-bathroom/",
+  "image": [
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://indigopalm.co/terra-luz/photos/primary-bathroom/TerraLuz2026-0124.webp",
+      "caption": "The primary ensuite bathroom can be partitioned with these European linen blackout curtains, but it is also beautiful enough to keep these curtains ajar.",
+      "name": "Plant on a wood cabinet beside a long white curtain at the arched doorway, with the bathroom vanity and tub visible beyond",
+      "url": "https://indigopalm.co/terra-luz/photos/primary-bathroom/#photo-2654888243"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://indigopalm.co/terra-luz/photos/primary-bathroom/TerraLuz2026-0570.webp",
+      "caption": "Double vanity, which means nobody waits on the sink while someone else finishes their hair.",
+      "name": "Bathroom with a long vanity and vase of olive stems, soaking tub, glass shower enclosure, and a woven pendant against sage green walls",
+      "url": "https://indigopalm.co/terra-luz/photos/primary-bathroom/#photo-2654899764"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://indigopalm.co/terra-luz/photos/primary-bathroom/TerraLuz2026-0569.webp",
+      "caption": "Double sink, soaking tub, shower. What more do you need in a bathroom?!",
+      "name": "Soaking tub beside a glass-door walk-in shower and a glass block window, with a vanity and round mirror on the left",
+      "url": "https://indigopalm.co/terra-luz/photos/primary-bathroom/#photo-2654899823"
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <nav class="ip-nav">
@@ -148,12 +180,12 @@
         <img src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0350.webp" alt="Corner soaking tub with a bamboo caddy, a macrame wall shelf with towels, a woven pendant and a glass block window" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0122.webp" alt="Double vanity with white shaker cabinets, a round gold-framed mirror, a macrame shelf of towels and the soaking tub beyond" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0123.webp" alt="White vanity with brass pulls, a round gold-framed mirror and a vase of olive stems, seen past a foreground plant and curtain" loading="lazy" decoding="async" width="1024" height="1536">
-        <img data-caption="The primary ensuite bathroom can be partitioned with these European linen blackout curtains, but it is also beautiful enough to keep these curtains ajar." src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0124.webp" alt="Plant on a wood cabinet beside a long white curtain at the arched doorway, with the bathroom vanity and tub visible beyond" loading="lazy" decoding="async" width="1024" height="1536">
-        <img data-caption="Double vanity, which means nobody waits on the sink while someone else finishes their hair." src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0570.webp" alt="Bathroom with a long vanity and vase of olive stems, soaking tub, glass shower enclosure, and a woven pendant against sage green walls" loading="lazy" decoding="async" width="1024" height="683">
+        <img id="photo-2654888243" data-caption="The primary ensuite bathroom can be partitioned with these European linen blackout curtains, but it is also beautiful enough to keep these curtains ajar." src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0124.webp" alt="Plant on a wood cabinet beside a long white curtain at the arched doorway, with the bathroom vanity and tub visible beyond" loading="lazy" decoding="async" width="1024" height="1536">
+        <img id="photo-2654899764" data-caption="Double vanity, which means nobody waits on the sink while someone else finishes their hair." src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0570.webp" alt="Bathroom with a long vanity and vase of olive stems, soaking tub, glass shower enclosure, and a woven pendant against sage green walls" loading="lazy" decoding="async" width="1024" height="683">
             <img src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0125.webp" alt="White curtain hung across the arched bathroom doorway, with a wood cabinet, dried foliage and terracotta patterned floor tile" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0127.webp" alt="Vanity with brass half-moon pulls, a round gold-framed mirror, a vase of olive stems and folded white towels on the shelf" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0128.webp" alt="Vanity with round mirror, soaking tub and glass shower door, with a woven pendant and macrame shelf in the corner" loading="lazy" decoding="async" width="1024" height="1536">
-        <img data-caption="Double sink, soaking tub, shower. What more do you need in a bathroom?!" src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0569.webp" alt="Soaking tub beside a glass-door walk-in shower and a glass block window, with a vanity and round mirror on the left" loading="lazy" decoding="async" width="1024" height="1330">
+        <img id="photo-2654899823" data-caption="Double sink, soaking tub, shower. What more do you need in a bathroom?!" src="/terra-luz/photos/primary-bathroom/TerraLuz2026-0569.webp" alt="Soaking tub beside a glass-door walk-in shower and a glass block window, with a vanity and round mirror on the left" loading="lazy" decoding="async" width="1024" height="1330">
     </div>
 
         <div id="lightbox" role="dialog" aria-modal="true">
@@ -205,10 +237,12 @@
             lbImg.alt = items[current].alt;
             lbCaption.textContent = items[current].dataset.caption || items[current].alt || '';
             lb.classList.add('active');
+            history.replaceState(null, '', items[current].id ? '#' + items[current].id : location.pathname + location.search);
             document.body.style.overflow = 'hidden';
         }
         function close() {
             lb.classList.remove('active');
+            history.replaceState(null, '', location.pathname + location.search);
             document.body.style.overflow = '';
         }
         items.forEach((img, i) => img.addEventListener('click', () => show(i)));
@@ -222,6 +256,9 @@
             if (e.key === 'ArrowLeft') show(current - 1);
             if (e.key === 'ArrowRight') show(current + 1);
         });
+        function fromHash() { const k = items.findIndex(el => el.id && '#' + el.id === location.hash); if (k >= 0) show(k); }
+        window.addEventListener('hashchange', fromHash);
+        fromHash();
     })();
     </script>
 </body>

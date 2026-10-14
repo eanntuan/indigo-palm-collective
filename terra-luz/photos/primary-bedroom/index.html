@@ -103,10 +103,28 @@
             .hero-content { padding: 1.5rem; }
             .content-section { padding: 3rem 5%; }
         }
-    </style>
+    img[id^="photo-"] { scroll-margin-top: 6rem; }
+</style>
     <link rel="stylesheet" href="/css/cta-button.css">
 <link rel="stylesheet" href="/css/site-nav.css?v=2">
 <script src="/js/site-nav.js?v=2" defer></script>
+<script type="application/ld+json" id="photo-gallery-ld">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "Terra Luz Primary Bedroom | Indio CA Vacation Rental",
+  "url": "https://indigopalm.co/terra-luz/photos/primary-bedroom/",
+  "image": [
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://indigopalm.co/terra-luz/photos/primary-bedroom/TerraLuz2026-0129.webp",
+      "caption": "Look closer and the mirror's panes hold a tiny daybed and one of the leaf prints.",
+      "name": "Black-framed arched mirror reflecting the daybed, lamp and wall-mounted TV, with dried foliage beside it",
+      "url": "https://indigopalm.co/terra-luz/photos/primary-bedroom/#photo-2654888262"
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <nav class="ip-nav">
@@ -154,7 +172,7 @@
         <img src="/terra-luz/photos/primary-bedroom/TerraLuz2026-0108.webp" alt="Daybed with a rattan trundle, striped pillows and two framed leaf prints on a sage green wall, with a white lamp at left" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/primary-bedroom/TerraLuz2026-0112.webp" alt="Daybed with the trundle pulled out and white pillows, a tile fireplace surround and a white lamp behind, on a jute rug" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/primary-bedroom/TerraLuz2026-0116.webp" alt="Trundle bed with white linens and pillows, rattan side panel, and a tile-surround fireplace with a floor lamp beyond" loading="lazy" decoding="async" width="1024" height="1536">
-        <img data-caption="Look closer and the mirror&#x27;s panes hold a tiny daybed and one of the leaf prints." src="/terra-luz/photos/primary-bedroom/TerraLuz2026-0129.webp" alt="Black-framed arched mirror reflecting the daybed, lamp and wall-mounted TV, with dried foliage beside it" loading="lazy" decoding="async" width="1024" height="1536">
+        <img id="photo-2654888262" data-caption="Look closer and the mirror&#x27;s panes hold a tiny daybed and one of the leaf prints." src="/terra-luz/photos/primary-bedroom/TerraLuz2026-0129.webp" alt="Black-framed arched mirror reflecting the daybed, lamp and wall-mounted TV, with dried foliage beside it" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/primary-bedroom/TerraLuz2026-0362.webp" alt="Open journal, pen and a sleep mask on a knit blanket, with a wood cabinet with arched doors and a woven lamp behind" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/primary-bedroom/TerraLuz2026-0606.webp" alt="Primary bedroom with a bed, live-edge bench, rattan chair and wood nightstand, plantation shutters and a woven wall hanging" loading="lazy" decoding="async" width="1800" height="1012">
         <img src="/terra-luz/photos/primary-bedroom/TerraLuz2026-0607.webp" alt="Primary bedroom sitting area with a daybed with striped pillows, a tile fireplace under a wall-mounted TV, and sunlit curtained windows" loading="lazy" decoding="async" width="1800" height="1012">
@@ -212,10 +230,12 @@
             lbImg.alt = items[current].alt;
             lbCaption.textContent = items[current].dataset.caption || items[current].alt || '';
             lb.classList.add('active');
+            history.replaceState(null, '', items[current].id ? '#' + items[current].id : location.pathname + location.search);
             document.body.style.overflow = 'hidden';
         }
         function close() {
             lb.classList.remove('active');
+            history.replaceState(null, '', location.pathname + location.search);
             document.body.style.overflow = '';
         }
         items.forEach((img, i) => img.addEventListener('click', () => show(i)));
@@ -229,6 +249,9 @@
             if (e.key === 'ArrowLeft') show(current - 1);
             if (e.key === 'ArrowRight') show(current + 1);
         });
+        function fromHash() { const k = items.findIndex(el => el.id && '#' + el.id === location.hash); if (k >= 0) show(k); }
+        window.addEventListener('hashchange', fromHash);
+        fromHash();
     })();
     </script>
 <script type="application/ld+json">

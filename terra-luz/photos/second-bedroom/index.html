@@ -100,10 +100,35 @@
             .hero-content { padding: 1.5rem; }
             .content-section { padding: 3rem 5%; }
         }
-    </style>
+    img[id^="photo-"] { scroll-margin-top: 6rem; }
+</style>
     <link rel="stylesheet" href="/css/cta-button.css">
 <link rel="stylesheet" href="/css/site-nav.css?v=2">
 <script src="/js/site-nav.js?v=2" defer></script>
+<script type="application/ld+json" id="photo-gallery-ld">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "Terra Luz Wallpaper Bedroom | Indio CA Vacation Rental",
+  "url": "https://indigopalm.co/terra-luz/photos/second-bedroom/",
+  "image": [
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://indigopalm.co/terra-luz/photos/second-bedroom/TerraLuz2026-0560.webp",
+      "caption": "Wild Tropics wallpaper wraps the entire room (and closet)! Accented with terracotta tile headboard and grounded with natural textures: about as Old Havana as the desert gets.",
+      "name": "Bedroom with blue and cream tropical wallpaper, a bed with a gray knit throw, a ceiling fan and an orange robe on a wood clothing rack",
+      "url": "https://indigopalm.co/terra-luz/photos/second-bedroom/#photo-2654899581"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://indigopalm.co/terra-luz/photos/second-bedroom/TerraLuz2026-0561.webp",
+      "caption": "Striped Anthropologie curtains frame the wallpapered alcove, a small room inside the room with a West Elm sconce of its own and two chairs to sink into (and play checkers, if you dare!)",
+      "name": "Bed with white linens, a mustard pillow and a terracotta tile headboard beside a plantation shutter window, with a blue chair at left",
+      "url": "https://indigopalm.co/terra-luz/photos/second-bedroom/#photo-2654899402"
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <nav class="ip-nav">
@@ -147,8 +172,8 @@
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0217.webp" alt="Blue velvet armless chair with a striped pillow beside a dark wood chess table, against blue palm and cactus wallpaper" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0233.webp" alt="Mustard knit tassel pillow on white pillows against an orange terracotta tile headboard" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0370.webp" alt="Two cocktails on tile coasters and a My Tiny Atlas book on a walnut nightstand, with a blue velvet headboard behind" loading="lazy" decoding="async" width="1024" height="1536">
-        <img data-caption="Wild Tropics wallpaper wraps the entire room (and closet)! Accented with terracotta tile headboard and grounded with natural textures: about as Old Havana as the desert gets." src="/terra-luz/photos/second-bedroom/TerraLuz2026-0560.webp" alt="Bedroom with blue and cream tropical wallpaper, a bed with a gray knit throw, a ceiling fan and an orange robe on a wood clothing rack" loading="lazy" decoding="async" width="1024" height="707">
-        <img data-caption="Striped Anthropologie curtains frame the wallpapered alcove, a small room inside the room with a West Elm sconce of its own and two chairs to sink into (and play checkers, if you dare!)" src="/terra-luz/photos/second-bedroom/TerraLuz2026-0561.webp" alt="Bed with white linens, a mustard pillow and a terracotta tile headboard beside a plantation shutter window, with a blue chair at left" loading="lazy" decoding="async" width="880" height="1320">
+        <img id="photo-2654899581" data-caption="Wild Tropics wallpaper wraps the entire room (and closet)! Accented with terracotta tile headboard and grounded with natural textures: about as Old Havana as the desert gets." src="/terra-luz/photos/second-bedroom/TerraLuz2026-0560.webp" alt="Bedroom with blue and cream tropical wallpaper, a bed with a gray knit throw, a ceiling fan and an orange robe on a wood clothing rack" loading="lazy" decoding="async" width="1024" height="707">
+        <img id="photo-2654899402" data-caption="Striped Anthropologie curtains frame the wallpapered alcove, a small room inside the room with a West Elm sconce of its own and two chairs to sink into (and play checkers, if you dare!)" src="/terra-luz/photos/second-bedroom/TerraLuz2026-0561.webp" alt="Bed with white linens, a mustard pillow and a terracotta tile headboard beside a plantation shutter window, with a blue chair at left" loading="lazy" decoding="async" width="880" height="1320">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0608.webp" alt="Curtained alcove with two blue velvet chairs, a wall sconce and an orange robe on a wood rack, seen from the foot of the bed" loading="lazy" decoding="async" width="1800" height="1012">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0609.webp" alt="Bedroom door with an oval mirror, a curtained nook of two blue velvet chairs, a clothing rack and a shuttered window" loading="lazy" decoding="async" width="1800" height="1012">
     </div>
@@ -202,10 +227,12 @@
             lbImg.alt = items[current].alt;
             lbCaption.textContent = items[current].dataset.caption || items[current].alt || '';
             lb.classList.add('active');
+            history.replaceState(null, '', items[current].id ? '#' + items[current].id : location.pathname + location.search);
             document.body.style.overflow = 'hidden';
         }
         function close() {
             lb.classList.remove('active');
+            history.replaceState(null, '', location.pathname + location.search);
             document.body.style.overflow = '';
         }
         items.forEach((img, i) => img.addEventListener('click', () => show(i)));
@@ -219,6 +246,9 @@
             if (e.key === 'ArrowLeft') show(current - 1);
             if (e.key === 'ArrowRight') show(current + 1);
         });
+        function fromHash() { const k = items.findIndex(el => el.id && '#' + el.id === location.hash); if (k >= 0) show(k); }
+        window.addEventListener('hashchange', fromHash);
+        fromHash();
     })();
     </script>
 </body>
