@@ -17,13 +17,13 @@ keywords:
 articleSection: "Local Guide"
 property: all
 readTime: "8 min read"
-excerpt: "The Coachella Valley holiday calendar for 2026: a parade in Palm Springs, tamales in Indio, snow at the top of the Tram, and three light displays, each checked against the organizer."
+excerpt: "The Coachella Valley holiday calendar for 2026: a parade in Palm Springs, tamales in Indio, snow at the top of the Tram, and three light displays, with dates cross-checked against official listings."
 layout: blog-post.njk
 ---
 
 <p>By the first week of December the sun is down by about 5 PM, the valley cools into jacket weather, and every strand of string lights in the Coachella Valley starts earning its keep. This is the Christmas version of the desert, and it comes with a parade, a tamale festival, a drive-through light show on the same grounds as Coachella, and a tram ride up to real snow.</p>
 
-<p>I own rentals in both Indio and Palm Springs, so I pulled the dates into one place. Everything with a date below was checked against the organizer or venue page on October 14, 2026. A few of the big light displays haven't published their 2026 schedules yet, and I say so where that's the case instead of guessing.</p>
+<p>I own rentals in both Indio and Palm Springs, so I pulled the dates into one place. Every date below was cross-checked against city, organizer, and venue listings on October 14, 2026, though a few of those sites wouldn't open for me directly, so confirm before you buy tickets. Several of the big light displays haven't published their 2026 schedules yet, and I say so where that's the case instead of guessing.</p>
 
 <div class="quick-summary">
 <p><strong>Quick version:</strong></p>
