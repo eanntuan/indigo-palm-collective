@@ -140,18 +140,18 @@
     <div class="photo-grid">
         <img src="/cozy-cactus/photos/CozyCactus2026-0165.webp" alt="Cozy Cactus bathroom with cactus shower curtain, tub, and black fixtures" loading="lazy" decoding="async" width="1200" height="1800">
         <img src="/cozy-cactus/photos/CozyCactus2026-0160.webp" alt="Cozy Cactus bathroom vanity with succulent styling and black fixtures" loading="lazy" decoding="async" width="1200" height="1800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0163.webp" alt="Cozy Cactus bathroom vanity with mirror, black faucet, and plant styling" loading="lazy" decoding="async" width="1200" height="1800">
+        <img data-caption="The second bathroom has a second sink so you don&#x27;t have to share while brushing your teeth." src="/cozy-cactus/photos/CozyCactus2026-0163.webp" alt="Cozy Cactus bathroom vanity with mirror, black faucet, and plant styling" loading="lazy" decoding="async" width="1200" height="1800">
         <img src="/cozy-cactus/photos/CozyCactus2026-0167.webp" alt="Cozy Cactus bathroom floating wood shelves with trailing pothos plants and a cactus-themed book" loading="lazy" decoding="async" width="1800" height="1200">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0122.webp" alt="Cozy Cactus primary bathroom with double vanity, marble walk-in shower, and wall mirror" loading="lazy" decoding="async" width="1800" height="1298">
+        <img data-caption="Double sinks and matte black fixtures, with the glass-door shower just through the doorway. Soap and shower products are stocked, so leave the travel bottles at home." src="/cozy-cactus/photos/CozyCactus2026-0122.webp" alt="Cozy Cactus primary bathroom with double vanity, marble walk-in shower, and wall mirror" loading="lazy" decoding="async" width="1800" height="1298">
         <img src="/cozy-cactus/photos/CozyCactus2026-0123.webp" alt="Cozy Cactus primary bathroom vanity with black faucet, amber soap bottle, and potted plant" loading="lazy" decoding="async" width="1200" height="1800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0124.webp" alt="Cozy Cactus primary bathroom sink with black faucets and a mirror reflecting the bedroom" loading="lazy" decoding="async" width="1200" height="1800">
+        <img data-caption="Amber pump bottles sit beside the matte black faucet, and the mirror catches the pink wall and macrame hanging in the bedroom behind you." src="/cozy-cactus/photos/CozyCactus2026-0124.webp" alt="Cozy Cactus primary bathroom sink with black faucets and a mirror reflecting the bedroom" loading="lazy" decoding="async" width="1200" height="1800">
         <img src="/cozy-cactus/photos/CozyCactus2026-0158.webp" alt="Cozy Cactus bathroom vanity with terracotta vases, spider plants, and small cacti" loading="lazy" decoding="async" width="1200" height="1800">
         <img src="/cozy-cactus/photos/CozyCactus2026-0159.webp" alt="Cozy Cactus bathroom vanity with black faucet, amber soap bottle, and terracotta planters" loading="lazy" decoding="async" width="1800" height="1229">
         <img src="/cozy-cactus/photos/CozyCactus2026-0161.webp" alt="Cozy Cactus bathroom vanity with framed botanical print, black faucet, and amber soap bottle" loading="lazy" decoding="async" width="1200" height="1800">
         <img src="/cozy-cactus/photos/CozyCactus2026-0162.webp" alt="Cozy Cactus bathroom sink with black fixtures, cactus decor, and a framed botanical print" loading="lazy" decoding="async" width="1200" height="1800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0164.webp" alt="Cozy Cactus bathroom vanity and wide mirror with a framed botanical print by the door" loading="lazy" decoding="async" width="1800" height="1200">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0170.webp" alt="Cozy Cactus guest bathroom with white vanity, toilet, floating wood shelves, and an ocean sunset canvas" loading="lazy" decoding="async" width="1201" height="1800">
-        <img src="/cozy-cactus/photos/CozyCactus2026-0171.webp" alt="Cozy Cactus washer and dryer in the laundry closet with louvered doors" loading="lazy" decoding="async" width="1200" height="1800">
+        <img data-caption="Second sink connected to the bunk bedroom, so bedtime teeth-brushing never means crossing the house." src="/cozy-cactus/photos/CozyCactus2026-0164.webp" alt="Cozy Cactus bathroom vanity and wide mirror with a framed botanical print by the door" loading="lazy" decoding="async" width="1800" height="1200">
+        <img data-caption="The faux plants in the second bathroom bring some extra greenery." src="/cozy-cactus/photos/CozyCactus2026-0170.webp" alt="Cozy Cactus guest bathroom with white vanity, toilet, floating wood shelves, and an ocean sunset canvas" loading="lazy" decoding="async" width="1201" height="1800">
+        <img data-caption="Laundry closet with a washer and dryer, so wet swimsuits and sticky toddler clothes don&#x27;t have to wait for the drive home." src="/cozy-cactus/photos/CozyCactus2026-0171.webp" alt="Cozy Cactus washer and dryer in the laundry closet with louvered doors" loading="lazy" decoding="async" width="1200" height="1800">
     </div>
 
     
@@ -203,7 +203,7 @@
             current = (i + items.length) % items.length;
             lbImg.src = items[current].src;
             lbImg.alt = items[current].alt;
-            lbCaption.textContent = items[current].alt || '';
+            lbCaption.textContent = items[current].dataset.caption || items[current].alt || '';
             lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
