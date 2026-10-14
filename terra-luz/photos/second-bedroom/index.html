@@ -147,8 +147,8 @@
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0217.webp" alt="Blue velvet armless chair with a striped pillow beside a dark wood chess table, against blue palm and cactus wallpaper" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0233.webp" alt="Mustard knit tassel pillow on white pillows against an orange terracotta tile headboard" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0370.webp" alt="Two cocktails on tile coasters and a My Tiny Atlas book on a walnut nightstand, with a blue velvet headboard behind" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0560.webp" alt="Bedroom with blue and cream tropical wallpaper, a bed with a gray knit throw, a ceiling fan and an orange robe on a wood clothing rack" loading="lazy" decoding="async" width="1024" height="707">
-        <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0561.webp" alt="Bed with white linens, a mustard pillow and a terracotta tile headboard beside a plantation shutter window, with a blue chair at left" loading="lazy" decoding="async" width="880" height="1320">
+        <img data-caption="Wild Tropics wallpaper wraps the entire room (and closet)! Accented with terracotta tile headboard and grounded with natural textures: about as Old Havana as the desert gets." src="/terra-luz/photos/second-bedroom/TerraLuz2026-0560.webp" alt="Bedroom with blue and cream tropical wallpaper, a bed with a gray knit throw, a ceiling fan and an orange robe on a wood clothing rack" loading="lazy" decoding="async" width="1024" height="707">
+        <img data-caption="Striped Anthropologie curtains frame the wallpapered alcove, a small room inside the room with a West Elm sconce of its own and two chairs to sink into (and play checkers, if you dare!)" src="/terra-luz/photos/second-bedroom/TerraLuz2026-0561.webp" alt="Bed with white linens, a mustard pillow and a terracotta tile headboard beside a plantation shutter window, with a blue chair at left" loading="lazy" decoding="async" width="880" height="1320">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0608.webp" alt="Curtained alcove with two blue velvet chairs, a wall sconce and an orange robe on a wood rack, seen from the foot of the bed" loading="lazy" decoding="async" width="1800" height="1012">
         <img src="/terra-luz/photos/second-bedroom/TerraLuz2026-0609.webp" alt="Bedroom door with an oval mirror, a curtained nook of two blue velvet chairs, a clothing rack and a shuttered window" loading="lazy" decoding="async" width="1800" height="1012">
     </div>
@@ -200,7 +200,7 @@
             current = (i + items.length) % items.length;
             lbImg.src = items[current].src;
             lbImg.alt = items[current].alt;
-            lbCaption.textContent = items[current].alt || '';
+            lbCaption.textContent = items[current].dataset.caption || items[current].alt || '';
             lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
