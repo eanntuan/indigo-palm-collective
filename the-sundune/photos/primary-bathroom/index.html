@@ -144,14 +144,14 @@
     </div>
 
     <div class="photo-grid">
-        <img src="/the-sundune/photos/Sundune2026-0107.webp" alt="The Sundune Palm Springs primary bathroom white vanity with a gold-framed mirror, brass faucet, and framed coastal art" loading="lazy" decoding="async" width="1024" height="754">
-        <img src="/the-sundune/photos/Sundune2026-0118.webp" alt="The Sundune Palm Springs primary bathroom vanity with brass wall hooks and art, the bedroom reflected in the mirror" loading="lazy" decoding="async" width="1024" height="683">
+        <img data-caption="Crate and Barrel Stone Bath dispensers" src="/the-sundune/photos/Sundune2026-0107.webp" alt="The Sundune Palm Springs primary bathroom white vanity with a gold-framed mirror, brass faucet, and framed coastal art" loading="lazy" decoding="async" width="1024" height="754">
+        <img data-caption="I hope the art makes you smile as much as it does me: a bead-framed print above the hooks and a pink-sun landscape beside the mirror." src="/the-sundune/photos/Sundune2026-0118.webp" alt="The Sundune Palm Springs primary bathroom vanity with brass wall hooks and art, the bedroom reflected in the mirror" loading="lazy" decoding="async" width="1024" height="683">
         <img src="/the-sundune/photos/Sundune2026-0108.webp" alt="The Sundune Palm Springs primary bathroom brass wall hooks, framed art, and vanity corner" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/the-sundune/photos/Sundune2026-0114.webp" alt="The Sundune Palm Springs primary bathroom white sink with a brass faucet and gold-framed mirror" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0110.webp" alt="The Sundune Palm Springs primary bathroom emerald green herringbone tile shower with white towels" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0116.webp" alt="The Sundune Palm Springs primary bathroom glass shower with emerald green herringbone tile and a round mirror" loading="lazy" decoding="async" width="1024" height="1250">
+        <img data-caption="The towel bar is mounted right on the glass door, so a towel is there the second you step out." src="/the-sundune/photos/Sundune2026-0110.webp" alt="The Sundune Palm Springs primary bathroom emerald green herringbone tile shower with white towels" loading="lazy" decoding="async" width="1024" height="1536">
+        <img data-caption="Deep green herringbone tile has its moment here." src="/the-sundune/photos/Sundune2026-0116.webp" alt="The Sundune Palm Springs primary bathroom glass shower with emerald green herringbone tile and a round mirror" loading="lazy" decoding="async" width="1024" height="1250">
         <img src="/the-sundune/photos/Sundune2026-0113.webp" alt="The Sundune Palm Springs primary bathroom round mirror and glass shower with a built-in niche" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0080.webp" alt="The Sundune Palm Springs primary bathroom vanity alcove with gold wall lights and louvered closet doors, green shower tile beyond" loading="lazy" decoding="async" width="1024" height="685">
+        <img data-caption="We wanted to keep the neutral undertones, but with natural textures and a pop of color (green shower tile)" src="/the-sundune/photos/Sundune2026-0080.webp" alt="The Sundune Palm Springs primary bathroom vanity alcove with gold wall lights and louvered closet doors, green shower tile beyond" loading="lazy" decoding="async" width="1024" height="685">
         <img src="/the-sundune/photos/Sundune2026-0083.webp" alt="The Sundune Palm Springs primary bathroom vanity with gold lights and a woven wall hanging" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/the-sundune/photos/Sundune2026-0104.webp" alt="The Sundune Palm Springs primary bathroom closet with louvered doors and palm print lining" loading="lazy" decoding="async" width="1024" height="1536">
     </div>
@@ -205,7 +205,7 @@
             current = (i + items.length) % items.length;
             lbImg.src = items[current].src;
             lbImg.alt = items[current].alt;
-            lbCaption.textContent = items[current].alt || '';
+            lbCaption.textContent = items[current].dataset.caption || items[current].alt || '';
             lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }

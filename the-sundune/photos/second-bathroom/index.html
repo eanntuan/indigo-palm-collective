@@ -144,13 +144,13 @@
     </div>
 
     <div class="photo-grid">
-        <img src="/the-sundune/photos/Sundune2026-0040.webp" alt="The Sundune Palm Springs second bathroom with tropical palm leaf wallpaper, arched gold mirror, and gold faucet" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0038.webp" alt="The Sundune Palm Springs second bathroom white vanity with an arched gold mirror, brass light, and palm leaf wallpaper" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0039.webp" alt="The Sundune Palm Springs second bathroom blue-green tile shower beside the vanity and palm leaf wallpaper" loading="lazy" decoding="async" width="1024" height="742">
-        <img src="/the-sundune/photos/Sundune2026-0041.webp" alt="The Sundune Palm Springs second bathroom vanity detail with gold faucet, brass lights, and palm leaf wallpaper" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0042.webp" alt="The Sundune Palm Springs second bathroom shower with blue-green tile, gold fixture, and framed desert prints" loading="lazy" decoding="async" width="1024" height="683">
+        <img data-caption="I live for the details, like the Crate &amp; Barrel marble soap pump and canisters lined up beside the brass faucet." src="/the-sundune/photos/Sundune2026-0040.webp" alt="The Sundune Palm Springs second bathroom with tropical palm leaf wallpaper, arched gold mirror, and gold faucet" loading="lazy" decoding="async" width="1024" height="1536">
+        <img data-caption="The open shelf under the white vanity leaves room for a stack of towels, with a brown and white checkered mat on the floor in front." src="/the-sundune/photos/Sundune2026-0038.webp" alt="The Sundune Palm Springs second bathroom white vanity with an arched gold mirror, brass light, and palm leaf wallpaper" loading="lazy" decoding="async" width="1024" height="1536">
+        <img data-caption="We continue the retro coastal vibes in the second bathroom" src="/the-sundune/photos/Sundune2026-0039.webp" alt="The Sundune Palm Springs second bathroom blue-green tile shower beside the vanity and palm leaf wallpaper" loading="lazy" decoding="async" width="1024" height="742">
+        <img data-caption="The arched gold mirror throws the leaf wallpaper right back at you, under three clear glass globe lights (more globes!)" src="/the-sundune/photos/Sundune2026-0041.webp" alt="The Sundune Palm Springs second bathroom vanity detail with gold faucet, brass lights, and palm leaf wallpaper" loading="lazy" decoding="async" width="1024" height="1536">
+        <img data-caption="Beside the shower hang three small desert prints in light wood frames that set the tone for your stay." src="/the-sundune/photos/Sundune2026-0042.webp" alt="The Sundune Palm Springs second bathroom shower with blue-green tile, gold fixture, and framed desert prints" loading="lazy" decoding="async" width="1024" height="683">
         <img src="/the-sundune/photos/Sundune2026-0043.webp" alt="The Sundune Palm Springs second bathroom built-in shower niche with amber bottles" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0037.webp" alt="The Sundune Palm Springs hallway leading to the second bathroom with a woven wall hanging" loading="lazy" decoding="async" width="1024" height="1533">
+        <img data-caption="From the hallway, a macrame wall hanging on a branch leads your eye down to the guest bathroom&#x27;s arched mirror at the end." src="/the-sundune/photos/Sundune2026-0037.webp" alt="The Sundune Palm Springs hallway leading to the second bathroom with a woven wall hanging" loading="lazy" decoding="async" width="1024" height="1533">
     </div>
 
     
@@ -202,7 +202,7 @@
             current = (i + items.length) % items.length;
             lbImg.src = items[current].src;
             lbImg.alt = items[current].alt;
-            lbCaption.textContent = items[current].alt || '';
+            lbCaption.textContent = items[current].dataset.caption || items[current].alt || '';
             lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }

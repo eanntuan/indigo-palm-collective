@@ -144,17 +144,17 @@
     </div>
 
     <div class="photo-grid">
-        <img src="/the-sundune/photos/Sundune2026-0006.webp" alt="The Sundune Palm Springs second bedroom king bed against sunset pink scallop wallpaper with beach art and striped pillows" loading="lazy" decoding="async" width="1024" height="683">
+        <img data-caption="Sunset-pink wallpaper behind the king bed and two beach prints above it, as close to the ocean as a Palm Springs condo gets." src="/the-sundune/photos/Sundune2026-0006.webp" alt="The Sundune Palm Springs second bedroom king bed against sunset pink scallop wallpaper with beach art and striped pillows" loading="lazy" decoding="async" width="1024" height="683">
         <img src="/the-sundune/photos/Sundune2026-0033.webp" alt="The Sundune Palm Springs second bedroom king bed under two framed coastal prints with gold bedside lamps" loading="lazy" decoding="async" width="1024" height="683">
         <img src="/the-sundune/photos/Sundune2026-0034.webp" alt="The Sundune Palm Springs second bedroom king bed with pink scallop wallpaper and a woven rug" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0009.webp" alt="The Sundune Palm Springs second bedroom doorway view with a macrame wall hanging and the king bed beyond" loading="lazy" decoding="async" width="1024" height="683">
-        <img src="/the-sundune/photos/Sundune2026-0007.webp" alt="The Sundune Palm Springs second bedroom corner with wavy pendant lamp, rattan lounge chair, TV, and wood dresser" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0030.webp" alt="The Sundune Palm Springs second bedroom lounge corner with wavy pendant lamp, rattan chair, and dresser" loading="lazy" decoding="async" width="1024" height="1536">
+        <img data-caption="Everything about this room screams &quot;Palm Springs Coastal&quot;" src="/the-sundune/photos/Sundune2026-0009.webp" alt="The Sundune Palm Springs second bedroom doorway view with a macrame wall hanging and the king bed beyond" loading="lazy" decoding="async" width="1024" height="683">
+        <img data-caption="A woven pendant on a rope cord hangs over the corner armchair for another reading nook (are you sensing a pattern here :P)" src="/the-sundune/photos/Sundune2026-0007.webp" alt="The Sundune Palm Springs second bedroom corner with wavy pendant lamp, rattan lounge chair, TV, and wood dresser" loading="lazy" decoding="async" width="1024" height="1536">
+        <img data-caption="Grab the book you packed and never leave this corner." src="/the-sundune/photos/Sundune2026-0030.webp" alt="The Sundune Palm Springs second bedroom lounge corner with wavy pendant lamp, rattan chair, and dresser" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/the-sundune/photos/Sundune2026-0021.webp" alt="The Sundune Palm Springs second bedroom lounge chair with a checkerboard throw beside a ribbed dresser" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/the-sundune/photos/Sundune2026-0017.webp" alt="The Sundune Palm Springs second bedroom rattan lounge chair with a blue and rust checkerboard throw" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/the-sundune/photos/Sundune2026-0010.webp" alt="The Sundune Palm Springs second bedroom ribbed oak dresser with burl wood and air plants" loading="lazy" decoding="async" width="1024" height="1536">
         <img src="/the-sundune/photos/Sundune2026-0027.webp" alt="The Sundune Palm Springs second bedroom brass lamp and striped pillow against pink scallop wallpaper" loading="lazy" decoding="async" width="1024" height="1536">
-        <img src="/the-sundune/photos/Sundune2026-0031.webp" alt="The Sundune Palm Springs second bedroom linen curtains and shuttered window beside the king bed" loading="lazy" decoding="async" width="1024" height="683">
+        <img data-caption="Sheer curtains hang in front of white shutters, so you decide how early the morning gets in." src="/the-sundune/photos/Sundune2026-0031.webp" alt="The Sundune Palm Springs second bedroom linen curtains and shuttered window beside the king bed" loading="lazy" decoding="async" width="1024" height="683">
     </div>
 
     
@@ -206,7 +206,7 @@
             current = (i + items.length) % items.length;
             lbImg.src = items[current].src;
             lbImg.alt = items[current].alt;
-            lbCaption.textContent = items[current].alt || '';
+            lbCaption.textContent = items[current].dataset.caption || items[current].alt || '';
             lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
