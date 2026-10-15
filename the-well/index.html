@@ -574,14 +574,18 @@
             align-items: center;
             justify-content: center;
         }
-        #lightbox.active { display: flex; }
+        #lightbox.active { display: flex; flex-direction: column; gap: 0.9rem; }
         #lightbox img {
             max-width: 92vw;
-            max-height: 88vh;
+            max-height: 76vh;
             object-fit: contain;
             border-radius: 4px;
             box-shadow: 0 8px 40px rgba(0,0,0,0.6);
         }
+        #lightbox-caption { margin: 0; padding: 0 1rem; max-width: min(680px, 90vw); color: #f3ece4; font-size: 0.95rem; line-height: 1.45; text-align: center; }
+        #lightbox-caption:empty { display: none; }
+        .photo-caption { margin: 0.6rem 0.25rem 0; font-size: 0.9rem; font-style: italic; color: #6b5d52; line-height: 1.4; }
+        .inline-photo + .photo-caption { max-width: 580px; margin: -1rem auto 2rem; text-align: center; }
         #lightbox-close {
             position: fixed;
             top: 1.2rem;
@@ -795,10 +799,12 @@
                 <p>The Well was designed for the person who needs a reset and doesn't want to work for it. No clutter asking for your attention. No brainwork required. Southwestern minimalism through a mid-century modern lens: Navajo pattern work, meditative line motifs, the teal velvet couch that is exactly as good as it looks in photos.</p>
 
                 <img src="../The Well/2TW_DZ5A0912.jpg" alt="The Well living room with teal velvet sofa and mid-century modern design in Palm Springs" width="1024" height="683" loading="lazy" class="inline-photo">
+                <p class="photo-caption">This open concept living room is functional, aesthetically pleasing, and accommodating.</p>
 
                 <p>One bedroom, sleeps four. The kitchen is stocked for real home cooking, not just coffee and a box of cereal. A local restaurant guide doubles as a cookbook inspired by Palm Springs favorites. Smart storage keeps everything organized. Nothing has been added for filler. Every piece earned its place.</p>
 
                 <img src="../The Well/12TW_DZ5A0810.jpg" alt="The Well bedroom with sage green accent wall, blue patterned throw and calming minimalist design" width="1024" height="683" loading="lazy" class="inline-photo">
+                <p class="photo-caption">Bedroom with Hybrid Midnight Luxe king size mattress, Cozy Earth sheets, West Elm bed, and elevated design.</p>
 
                 <p>The outdoor space is yours: slow mornings with coffee, a meal under the desert sky, or just sitting and letting it be quiet. The Well is a long-term rental (28-night minimum). Reach out if you're looking for an extended stay in Palm Springs.</p>
 
@@ -876,9 +882,9 @@
                     <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0;">Living Room</h3>
                 </div>
                 <div class="room-grid">
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/2TW_DZ5A0912.jpg" alt="Open living room at The Well with teal velvet sofa, wood accents and a sage and terracotta palette" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/3TW_DZ5A0901.jpg" alt="Living and dining area at The Well with teal sofa, rattan and wood seating and a floor lamp" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/4TW_DZ5A0923.jpg" alt="Teal velvet couch with patterned pillows and a floating shelf at The Well in Palm Springs" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="This open concept living room is functional, aesthetically pleasing, and accommodating." src="../The Well/2TW_DZ5A0912.jpg" alt="Open living room at The Well with teal velvet sofa, wood accents and a sage and terracotta palette" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Warmth and grounding are the motifs of this design, so you always feel at home." src="../The Well/3TW_DZ5A0901.jpg" alt="Living and dining area at The Well with teal sofa, rattan and wood seating and a floor lamp" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Evenings split into two lights here: the salt lamp for mood and the arc floor lamp for reading, with the velvet sofa and throw blanket between them." src="../The Well/4TW_DZ5A0923.jpg" alt="Teal velvet couch with patterned pillows and a floating shelf at The Well in Palm Springs" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                 </div>
             </div>
 
@@ -888,9 +894,9 @@
                     <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0;">Kitchen &amp; Dining</h3>
                 </div>
                 <div class="room-grid">
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/5TW_DZ5A0895.jpg" alt="Round dining table with wood chairs in front of a hand-painted line mural at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/7TW_DZ5A0884.jpg" alt="White kitchen with stainless appliances opening to the dining nook at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/9TW_DZ5A0868.jpg" alt="Coffee station with kettle, green Keurig and wood serving boards at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Sit on the West Elm dining chairs circle around the table, with a hand-painted mural. This also works as a second desk when the laptop wants more elbow room." src="../The Well/5TW_DZ5A0895.jpg" alt="Round dining table with wood chairs in front of a hand-painted line mural at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="A quick walk into the kitchen after changing out Taylor Swift vinyls" src="../The Well/7TW_DZ5A0884.jpg" alt="White kitchen with stainless appliances opening to the dining nook at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Our coffee station is perfect for a quick cup of joe. We also have a French Press and drip coffee machine." src="../The Well/9TW_DZ5A0868.jpg" alt="Coffee station with kettle, green Keurig and wood serving boards at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                 </div>
             </div>
 
@@ -900,9 +906,9 @@
                     <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0;">Bedroom</h3>
                 </div>
                 <div class="room-grid">
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/12TW_DZ5A0810.jpg" alt="Bedroom at The Well with blue patterned throw, mid-century sconces and a woven pendant light" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/13TW_DZ5A0828.jpg" alt="Bedroom at The Well with built-in closet storage and a straw hat on the wall" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/15TW_DZ5A0853.jpg" alt="Built-in bedroom closet at The Well with hanging rail, shelves and a pull-out hamper" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Bedroom with Hybrid Midnight Luxe king size mattress, Cozy Earth sheets, West Elm bed, and elevated design." src="../The Well/12TW_DZ5A0810.jpg" alt="Bedroom at The Well with blue patterned throw, mid-century sconces and a woven pendant light" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Built-in custom closet with two hanging rails, drawers, and open shelves, so a longer stay doesn&#x27;t mean living out of a suitcase." src="../The Well/13TW_DZ5A0828.jpg" alt="Bedroom at The Well with built-in closet storage and a straw hat on the wall" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Behind the lower door is a tilt-out laundry hamper, so dirty clothes don&#x27;t end up on the bedroom floor, with a brass rail and open shelves for everything else." src="../The Well/15TW_DZ5A0853.jpg" alt="Built-in bedroom closet at The Well with hanging rail, shelves and a pull-out hamper" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                 </div>
             </div>
 
@@ -912,9 +918,9 @@
                     <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0;">Bathroom</h3>
                 </div>
                 <div class="room-grid">
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/16TW_4W6A0319.jpg" alt="Bathroom at The Well with sage green tile, walnut slat vanity and gold fixtures" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/17TW_DZ5A0843.jpg" alt="Floating walnut vanity with gold faucets and an arched mirror at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/18TW_DZ5A0839.jpg" alt="Walk-in shower with sage green tile and a wood shelf at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Green accent tile flows all the way through the bathroom with West Elm brass hardware." src="../The Well/16TW_4W6A0319.jpg" alt="Bathroom at The Well with sage green tile, walnut slat vanity and gold fixtures" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="West Elm Brass sconces flank the mirror over a floating wood-slat vanity, with sage green tile behind it so the morning routine starts somewhere calm." src="../The Well/17TW_DZ5A0843.jpg" alt="Floating walnut vanity with gold faucets and an arched mirror at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="We&#x27;ve added the shower shelf and faucet at the entrance of the shower, so you&#x27;re not spraying yourself with cold water when you&#x27;re ready to turn the water on." src="../The Well/18TW_DZ5A0839.jpg" alt="Walk-in shower with sage green tile and a wood shelf at The Well" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                 </div>
             </div>
 
@@ -924,9 +930,9 @@
                     <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: #3a2e25; font-weight: 500; margin: 0;">Outdoors &amp; Pool</h3>
                 </div>
                 <div class="room-grid">
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/1TW_4W6A0294.jpg" alt="Front patio at The Well with two wooden chairs and a woven rug" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/19TW_DZ5A0774.jpg" alt="Community pool at The Well complex with palm trees and mountain views" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                    <div class="gallery-img-wrap" style="height: 220px;"><img src="../The Well/21TW_DZ5A0779.jpg" alt="Community spa at The Well complex with lounge chairs and olive trees" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Two slat-back wood lounge chairs and a little black side table sit on a round woven rug just outside the sliding door." src="../The Well/1TW_4W6A0294.jpg" alt="Front patio at The Well with two wooden chairs and a woven rug" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Mountains rise behind the palm trees at the far side of the community pool at Palm Canyon Villas." src="../The Well/19TW_DZ5A0774.jpg" alt="Community pool at The Well complex with palm trees and mountain views" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
+                    <div class="gallery-img-wrap" style="height: 220px;"><img data-caption="Want to soothe your muscles? The spa is perfect for that!" src="../The Well/21TW_DZ5A0779.jpg" alt="Community spa at The Well complex with lounge chairs and olive trees" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
                 </div>
             </div>
 
@@ -963,7 +969,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; text-align: left;">
                 <a href="/blog/palm-springs-local-guide-sundune/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
                     <div style="aspect-ratio: 3/2; overflow: hidden;">
-                        <img src="../The Well/1TW_4W6A0294.jpg" alt="The Well Palm Springs: front patio with wooden chairs" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;">
+                        <img data-caption="Two slat-back wood lounge chairs and a little black side table sit on a round woven rug just outside the sliding door." src="../The Well/1TW_4W6A0294.jpg" alt="The Well Palm Springs: front patio with wooden chairs" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;">
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #607c67; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Local Guide</p>
@@ -972,7 +978,7 @@
                 </a>
                 <a href="/blog/palm-springs-coffee-guide/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
                     <div style="aspect-ratio: 3/2; overflow: hidden;">
-                        <img src="../The Well/7TW_DZ5A0884.jpg" alt="The Well Palm Springs: kitchen and dining nook" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;">
+                        <img data-caption="A quick walk into the kitchen after changing out Taylor Swift vinyls" src="../The Well/7TW_DZ5A0884.jpg" alt="The Well Palm Springs: kitchen and dining nook" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;">
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #607c67; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Coffee Guide</p>
@@ -981,7 +987,7 @@
                 </a>
                 <a href="/blog/beyond-coachella-desert-escape/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
                     <div style="aspect-ratio: 3/2; overflow: hidden;">
-                        <img src="../The Well/9TW_DZ5A0868.jpg" alt="The Well Palm Springs: coffee station" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;">
+                        <img data-caption="Our coffee station is perfect for a quick cup of joe. We also have a French Press and drip coffee machine." src="../The Well/9TW_DZ5A0868.jpg" alt="The Well Palm Springs: coffee station" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;">
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #607c67; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Desert Escape</p>
@@ -990,7 +996,7 @@
                 </a>
                 <a href="/blog/coachella-valley-insider-guide/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
                     <div style="aspect-ratio: 3/2; overflow: hidden;">
-                        <img src="../The Well/5TW_DZ5A0895.jpg" alt="The Well Palm Springs: dining nook with mural" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;">
+                        <img data-caption="Sit on the West Elm dining chairs circle around the table, with a hand-painted mural. This also works as a second desk when the laptop wants more elbow room." src="../The Well/5TW_DZ5A0895.jpg" alt="The Well Palm Springs: dining nook with mural" loading="lazy" width="1024" height="683" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s ease;">
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #607c67; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Insider Guide</p>
@@ -1114,6 +1120,7 @@
   <span id="lightbox-close" aria-label="Close">&times;</span>
   <span id="lightbox-prev" aria-label="Previous">&#8249;</span>
   <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-caption"></p>
   <span id="lightbox-next" aria-label="Next">&#8250;</span>
 </div>
 
@@ -1122,12 +1129,14 @@
   const items = Array.from(document.querySelectorAll('.gallery-img-wrap img'));
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lightbox-img');
+  const lbCap = document.getElementById('lightbox-caption');
   let current = 0;
 
   function show(i) {
     current = (i + items.length) % items.length;
     lbImg.src = items[current].src;
     lbImg.alt = items[current].alt;
+    lbCap.textContent = items[current].dataset.caption || '';
     lb.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
