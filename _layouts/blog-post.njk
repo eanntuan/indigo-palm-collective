@@ -152,7 +152,7 @@ permalink: "{{ page.fileSlug }}/index.html"
       "name": {{ title | dump | safe }},
       "description": {{ metaDescription | dump | safe }},
       "thumbnailUrl": "https://indigopalm.co{{ heroImage }}",
-      "uploadDate": "{{ publishedDate }}",
+      "uploadDate": "{{ date | isoDateTimePT }}",
       "contentUrl": "https://indigopalm.co{{ heroVideo }}.mp4",
       "duration": "PT11S"
     }

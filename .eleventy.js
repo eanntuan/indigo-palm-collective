@@ -53,6 +53,12 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISODate();
   });
 
+  // 9am Pacific on that calendar date, DST-aware (Google requires a timezone on VideoObject uploadDate).
+  eleventyConfig.addFilter("isoDateTimePT", (dateObj) => {
+    const d = DateTime.fromJSDate(dateObj, { zone: "utc" });
+    return DateTime.fromObject({ year: d.year, month: d.month, day: d.day, hour: 9 }, { zone: "America/Los_Angeles" }).toISO({ suppressMilliseconds: true });
+  });
+
   // Portrait/square photos get .portrait (max-height 560px, centered) per the Image Sizing Rule.
   eleventyConfig.addTransform("portraitImages", (content, outputPath) => {
     if (!outputPath || !outputPath.endsWith(".html")) return content;
