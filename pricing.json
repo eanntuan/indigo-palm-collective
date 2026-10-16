@@ -19,7 +19,7 @@
     "basePrice": 225,
     "cleaningFee": 250,
     "taxRate": 0.12,
-    "maxGuests": 6,
+    "maxGuests": 8,
     "minNights": 2,
     "peakDates": [
       { "start": "2026-04-10", "end": "2026-04-20", "multiplier": 1.5, "label": "Coachella Weekend 1" },

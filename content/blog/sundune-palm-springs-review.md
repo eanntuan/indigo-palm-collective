@@ -72,7 +72,7 @@ relatedPosts:
 
 <p><strong>Check-in/out:</strong> 4pm check-in, 11am checkout. Early and late available with advance notice when the schedule allows.</p>
 
-<p><strong>Pets:</strong> One pet welcome, $150 pet fee. Email us at <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking to confirm.</p>
+<p><strong>Pets:</strong> One pet welcome, $150 per pet per stay. Email us at <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking to confirm.</p>
 
 <h2>When to Come</h2>
 
@@ -100,7 +100,7 @@ relatedPosts:
 <p>Four comfortably, across two bedrooms with three king beds. The primary bedroom has two kings, the second bedroom has one, and all of them are real beds rather than air mattresses. For groups of five or more, our Indio properties with larger floor plans are the better fit.</p>
 
 <h3>Is The Sundune pet-friendly?</h3>
-<p>One pet is welcome with a $150 pet fee. Email us at indigopalmco@gmail.com before booking to confirm. The condo has a balcony but no fenced yard, so dogs that need a private outdoor run are better suited to <a href="/terra-luz/">Terra Luz</a> in Indio, which has a fully fenced backyard.</p>
+<p>One pet is welcome with a $150 per pet, per stay fee. Email us at indigopalmco@gmail.com before booking to confirm. The condo has a balcony but no fenced yard, so dogs that need a private outdoor run are better suited to <a href="/terra-luz/">Terra Luz</a> in Indio, which has a fully fenced backyard.</p>
 
 <h3>Is The Sundune walking distance to downtown Palm Springs?</h3>
 <p>Not downtown, no. Palm Canyon Drive is about a ten-minute drive from the condo. What is walkable is the Uptown Design District, which has its own coffee, shops, and restaurants, so most guests walk Uptown by day and drive down to the main strip for dinner.</p>
@@ -138,7 +138,7 @@ relatedPosts:
       "name": "Is The Sundune pet-friendly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "One pet is welcome with a $150 pet fee. Email indigopalmco@gmail.com before booking to confirm. The condo has a balcony but no fenced yard. Dogs needing a private outdoor run are better suited to Terra Luz in Indio, which has a fully fenced backyard."
+        "text": "One pet is welcome with a $150 per pet, per stay fee. Email indigopalmco@gmail.com before booking to confirm. The condo has a balcony but no fenced yard. Dogs needing a private outdoor run are better suited to Terra Luz in Indio, which has a fully fenced backyard."
       }
     },
     {

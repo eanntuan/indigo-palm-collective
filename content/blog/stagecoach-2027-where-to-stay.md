@@ -99,7 +99,7 @@ faqItems:
 
 <p>Best for: groups who want the private pool as the centerpiece of the festival weekend. Terra Luz launches in May 2026, so Stagecoach 2027 is its first full festival season.</p>
 
-<p>Dogs welcome (2 max, $150 pet fee).</p>
+<p>Dogs welcome (2 max, $150 per pet per stay).</p>
 
 <img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at night at The Cozy Cactus vacation rental in Indio California near Stagecoach festival grounds" width="1400" height="933" loading="lazy">
 <p class="image-caption">The private hot tub at The Cozy Cactus. Late April nights drop to the 50s. This is where Stagecoach weekends wind down.</p>
@@ -180,7 +180,7 @@ faqItems:
 <p>Indian Palms Country Club in east Indio is the best-positioned neighborhood, walking distance to the Empire Polo Club with no freeway. Close enough to return to your rental during the mid-afternoon heat window and still make the evening sets. Inventory is small, so the best private-pool options book well before spring.</p>
 
 <h4>Are there dog-friendly rentals near Stagecoach?</h4>
-<p>Yes, but the options are limited. <a href="https://indigopalm.co/terra-luz/">Terra Luz</a> in the Indian Palms neighborhood is dog-friendly (up to 2 dogs, $150 pet fee), has a private saltwater pool, and is walking distance from Empire Polo Club. It's one of the few dog-friendly properties with a fenced yard that close to the grounds, which matters when your dogs stay at the house during festival sessions.</p>
+<p>Yes, but the options are limited. <a href="https://indigopalm.co/terra-luz/">Terra Luz</a> in the Indian Palms neighborhood is dog-friendly (up to 2 dogs, $150 per pet per stay), has a private saltwater pool, and is walking distance from Empire Polo Club. It's one of the few dog-friendly properties with a fenced yard that close to the grounds, which matters when your dogs stay at the house during festival sessions.</p>
 
 <h4>Can I drive back to my rental during the day at Stagecoach?</h4>
 

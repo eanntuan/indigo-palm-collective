@@ -5,7 +5,7 @@
 ---
 
 ## TERRA LUZ
-*Indio CA | Latin/Cuban sanctuary | Sleeps 6 | Kahlo Blue pool + terracotta patio*
+*Indio CA | Latin/Cuban sanctuary | Sleeps 8 | Kahlo Blue pool + terracotta patio*
 *URL: https://indigopalm.co/terra-luz*
 
 ---
@@ -20,7 +20,7 @@ Link: https://indigopalm.co/terra-luz
 
 **PIN TL-2: Patio / exterior shot**
 Title: Old Havana Meets the Coachella Desert
-Description: Terracotta walls, Kahlo Blue pool, Desert Marigold accents — and a patio larger than most living rooms. Terra Luz in Indio CA is what happens when Latin/Cuban design takes the desert seriously. Sleeps 6. https://indigopalm.co/terra-luz
+Description: Terracotta walls, Kahlo Blue pool, Desert Marigold accents — and a patio larger than most living rooms. Terra Luz in Indio CA is what happens when Latin/Cuban design takes the desert seriously. Sleeps 8. https://indigopalm.co/terra-luz
 Board: Vacation Rental Design
 Link: https://indigopalm.co/terra-luz
 
@@ -28,7 +28,7 @@ Link: https://indigopalm.co/terra-luz
 
 **PIN TL-3: Pool at dusk, fire pit glowing**
 Title: Movie Night Hits Different With a Pool
-Description: Inflatable screen up, fire pit on, Kahlo Blue pool glowing. Terra Luz comes with a curated watchlist — Casablanca, Buena Vista Social Club, Palm Springs. Indio CA, sleeps 6. Opening June 2026. https://indigopalm.co/terra-luz
+Description: Inflatable screen up, fire pit on, Kahlo Blue pool glowing. Terra Luz comes with a curated watchlist — Casablanca, Buena Vista Social Club, Palm Springs. Indio CA, sleeps 8. Opening June 2026. https://indigopalm.co/terra-luz
 Board: Desert Getaways
 Link: https://indigopalm.co/terra-luz
 
@@ -44,7 +44,7 @@ Link: https://indigopalm.co/terra-luz
 
 **PIN TL-5: Pool with floats, daytime**
 Title: The Kind of Day You Forget to Check Your Phone
-Description: Shell-shaped pool floats, Kahlo Blue water, terracotta walls, no agenda. Terra Luz in Indio CA was designed for exactly this kind of afternoon. Sleeps 6. Opening June 2026. https://indigopalm.co/terra-luz
+Description: Shell-shaped pool floats, Kahlo Blue water, terracotta walls, no agenda. Terra Luz in Indio CA was designed for exactly this kind of afternoon. Sleeps 8. Opening June 2026. https://indigopalm.co/terra-luz
 Board: Desert Getaways
 Link: https://indigopalm.co/terra-luz
 
@@ -68,7 +68,7 @@ Link: https://indigopalm.co/terra-luz
 
 **PIN TL-8: Coachella/festival proximity**
 Title: Coachella Rental with a Kahlo Blue Pool
-Description: Two miles from Empire Polo Club, sleeps 6, Kahlo Blue pool, terracotta courtyard. Terra Luz is the Coachella base camp that actually feels like a cultural experience. Latin/Cuban design, Indio CA. https://indigopalm.co/terra-luz
+Description: Two miles from Empire Polo Club, sleeps 8, Kahlo Blue pool, terracotta courtyard. Terra Luz is the Coachella base camp that actually feels like a cultural experience. Latin/Cuban design, Indio CA. https://indigopalm.co/terra-luz
 Board: Coachella Accommodation
 Link: https://indigopalm.co/terra-luz
 
@@ -76,7 +76,7 @@ Link: https://indigopalm.co/terra-luz
 
 **PIN TL-9: Ninja Slushie machine / amenity detail**
 Title: The Amenity That Ends All Arguments
-Description: Ninja Slushie Max machine, Cuban roasted coffee, Kahlo Blue pool. Terra Luz thought through the parts of vacation that most rentals skip entirely. Indio CA, sleeps 6. https://indigopalm.co/terra-luz
+Description: Ninja Slushie Max machine, Cuban roasted coffee, Kahlo Blue pool. Terra Luz thought through the parts of vacation that most rentals skip entirely. Indio CA, sleeps 8. https://indigopalm.co/terra-luz
 Board: Vacation Rental Host Tips
 Link: https://indigopalm.co/terra-luz
 
@@ -92,14 +92,14 @@ Link: https://indigopalm.co/blog/terra-luz-origin-story.html
 ---
 
 ## THE SUNDUNE AT PALM SPRINGS
-*Palm Springs CA | Coastal-desert surf retreat | Sleeps 6 | MCM architecture + sunset balcony*
+*Palm Springs CA | Coastal-desert surf retreat | Sleeps 4 | MCM architecture + sunset balcony*
 *URL: https://indigopalm.co/the-sundune*
 
 ---
 
 **PIN SD-1: Balcony at sunset**
 Title: The Balcony You'll Never Want to Leave
-Description: Sunset dinners above the palm trees, morning coffee when the air still has that coastal desert chill. The Sundune at Palm Springs is built around this balcony. Sleeps 6. Opening June 2026. https://indigopalm.co/the-sundune
+Description: Sunset dinners above the palm trees, morning coffee when the air still has that coastal desert chill. The Sundune at Palm Springs is built around this balcony. Sleeps 4. Opening June 2026. https://indigopalm.co/the-sundune
 Board: Desert Getaways
 Link: https://indigopalm.co/the-sundune
 
@@ -115,7 +115,7 @@ Link: https://indigopalm.co/the-sundune
 
 **PIN SD-3: Standing desk / remote work angle**
 Title: Remote Work With a Desert View
-Description: Adjustable standing desk facing the pool and palm trees. The Sundune at Palm Springs was designed for the kind of work day that doesn't feel like one. No corporate feel. Sleeps 6. Opening June 2026. https://indigopalm.co/the-sundune
+Description: Adjustable standing desk facing the pool and palm trees. The Sundune at Palm Springs was designed for the kind of work day that doesn't feel like one. No corporate feel. Sleeps 4. Opening June 2026. https://indigopalm.co/the-sundune
 Board: Palm Springs Vacation Rentals
 Link: https://indigopalm.co/the-sundune
 
@@ -123,7 +123,7 @@ Link: https://indigopalm.co/the-sundune
 
 **PIN SD-4: MCM exterior / architecture**
 Title: Palm Springs Mid-Century. Surf Culture. One House.
-Description: Authentic MCM bones, layered textures, coastal-desert personality. The Sundune at Palm Springs is where design travelers stay when they're done with generic. Sleeps 6. Opening June 2026. https://indigopalm.co/the-sundune
+Description: Authentic MCM bones, layered textures, coastal-desert personality. The Sundune at Palm Springs is where design travelers stay when they're done with generic. Sleeps 4. Opening June 2026. https://indigopalm.co/the-sundune
 Board: Palm Springs Travel Guide
 Link: https://indigopalm.co/the-sundune
 
@@ -139,7 +139,7 @@ Link: https://indigopalm.co/the-sundune
 
 **PIN SD-6: Balcony morning**
 Title: Palm Springs for People Who Love Slow Mornings
-Description: Late breakfast on the balcony, afternoon in Joshua Tree, a cocktail somewhere with good lighting. The Sundune was designed for exactly that rhythm. Sleeps 6 in Palm Springs. Opening June 2026. https://indigopalm.co/the-sundune
+Description: Late breakfast on the balcony, afternoon in Joshua Tree, a cocktail somewhere with good lighting. The Sundune was designed for exactly that rhythm. Sleeps 4 in Palm Springs. Opening June 2026. https://indigopalm.co/the-sundune
 Board: Desert Getaways
 Link: https://indigopalm.co/the-sundune
 
@@ -163,7 +163,7 @@ Link: https://indigopalm.co/the-sundune
 
 **PIN SD-9: Coachella crossover**
 Title: Palm Springs Base Camp for Coachella Weekend Two
-Description: 25 minutes from Empire Polo Club. The Sundune at Palm Springs sleeps 6 with a sunset balcony, authentic MCM design, and enough space to actually decompress between sets. Opening June 2026. https://indigopalm.co/the-sundune
+Description: 25 minutes from Empire Polo Club. The Sundune at Palm Springs sleeps 4 with a sunset balcony, authentic MCM design, and enough space to actually decompress between sets. Opening June 2026. https://indigopalm.co/the-sundune
 Board: Coachella Accommodation
 Link: https://indigopalm.co/the-sundune
 

@@ -129,7 +129,7 @@ layout: blog-post.njk
 <p>Old Havana meets the Coachella Valley desert. The six brand filters Dawn set were: cocooned and soothing, vibrant and rejuvenating, cultured (Latin and Cuban), rhythmic, effortless ease, and grounded. Every furniture piece and paint color had to pass those filters, which is why the rooms feel coherent rather than assembled from a trend.</p>
 
 <h3>Is Terra Luz pet-friendly?</h3>
-<p>Yes. Two dogs maximum, $150 pet fee. The backyard is fully fenced, which is the main reason people ask. The saltwater pool is dog-accessible. Dog bowl and treats are in the kitchen.</p>
+<p>Yes. Two dogs maximum, $150 per pet per stay. The backyard is fully fenced, which is the main reason people ask. The saltwater pool is dog-accessible. Dog bowl and treats are in the kitchen.</p>
 
 <h3>What is the best time of year to stay at Terra Luz?</h3>
 <p>October through May covers the most comfortable range, with March, April, and November being the sweet spots for weather. Festival season (Coachella in April, Stagecoach in late April) books earliest. Summer stays are pool-focused by design; the house handles the heat well with covered patio shade and the outdoor projector for evening movie nights.</p>
@@ -138,7 +138,7 @@ layout: blog-post.njk
 <p>About 130 miles via I-10 East, which is 2 to 2.5 hours depending on traffic out of LA. Palm Springs International Airport (PSP) is the practical option if you're flying: 25 minutes from the house, easy direct flights from most West Coast cities. The address is 49768 Pacino St, Indio, CA 92201.</p>
 
 <h3>What should I know before booking Terra Luz?</h3>
-<p>Pool heating is $75 per day with a 2 night minimum and not included in the base rate; it's worth it October through April when nights drop. The house is dog-friendly with prior approval (two dogs max, $150 pet fee). Check-out is 10am. Indian Palms is a quiet gated community, walking distance to the Empire Polo Club (Coachella and Stagecoach grounds) and 30 minutes to downtown Palm Springs.</p>
+<p>Pool heating is $75 per day with a 2 night minimum and not included in the base rate; it's worth it October through April when nights drop. The house is dog-friendly with prior approval (two dogs max, $150 per pet per stay). Check-out is 10am. Indian Palms is a quiet gated community, walking distance to the Empire Polo Club (Coachella and Stagecoach grounds) and 30 minutes to downtown Palm Springs.</p>
 
 <h3>What is the most scenic road to Terra Luz from Los Angeles?</h3>
 <p>I-10 East to Indio is the direct route, about 2 to 2.5 hours depending on LA traffic. The version worth doing once: exit at Date Palm Drive in Cathedral City and come through Highway 111 east, which drops you through Palm Springs and down the valley floor with the mountains shifting the whole way. By the time you hit Indio, the terracotta landscape makes sense in a way it doesn't from the freeway. It adds about 20 minutes.</p>
@@ -194,7 +194,7 @@ layout: blog-post.njk
       "name": "Is Terra Luz pet-friendly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Two dogs maximum with prior approval, $150 pet fee. The backyard is fully fenced, the saltwater pool is dog-accessible, and a dog bowl and treats are stocked in the kitchen. The house is inside a quiet gated community in Indio, walking distance to the Empire Polo Club."
+        "text": "Yes. Two dogs maximum with prior approval, $150 per pet per stay. The backyard is fully fenced, the saltwater pool is dog-accessible, and a dog bowl and treats are stocked in the kitchen. The house is inside a quiet gated community in Indio, walking distance to the Empire Polo Club."
       }
     },
     {
@@ -210,7 +210,7 @@ layout: blog-post.njk
       "name": "What should I know before booking Terra Luz?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pool heating is $75 per day with a 2 night minimum, not included in the base rate, and worth it October through April when desert nights drop. The house is dog-friendly with prior approval (two dogs max, $150 fee). Check-out is 10am. The property is walking distance to the Empire Polo Club and 30 minutes to downtown Palm Springs."
+        "text": "Pool heating is $75 per day with a 2 night minimum, not included in the base rate, and worth it October through April when desert nights drop. The house is dog-friendly with prior approval (two dogs max, $150 per pet per stay). Check-out is 10am. The property is walking distance to the Empire Polo Club and 30 minutes to downtown Palm Springs."
       }
     }
   ]

@@ -26,7 +26,7 @@ faqItems:
   - q: "Is it safe to hike with a dog in Palm Springs?"
     a: "October through April, yes. Palm Canyon Trail inside Indian Canyons allows leashed dogs and is one of the best options, though there's a $12 entry fee. From May through September, pavement temperatures can hit 150 degrees, which causes serious paw burns in under 60 seconds, so keep outdoor time to before 8am or after 6pm. More on timing and preparation at https://indigopalm.co/blog/pet-friendly-palm-springs/"
   - q: "Can I bring two dogs to a Palm Springs vacation rental?"
-    a: "Most pet-friendly rentals cap at one small dog. Terra Luz in Indio is one of the few options that accepts up to two dogs, with a $150 flat pet fee, a fully fenced private backyard, and a saltwater pool. Prior email confirmation is required before booking. See the full breakdown at https://indigopalm.co/blog/pet-friendly-palm-springs/"
+    a: "Most pet-friendly rentals cap at one small dog. Terra Luz in Indio is one of the few options that accepts up to two dogs, with a $150 per pet, per stay fee, a fully fenced private backyard, and a saltwater pool. Prior email confirmation is required before booking. See the full breakdown at https://indigopalm.co/blog/pet-friendly-palm-springs/"
   - q: "What dog-friendly bars and restaurants are near Palm Springs?"
     a: "Boozehounds in Palm Springs is probably the most explicitly dog-forward spot, with a large patio, craft cocktails, and actual dog treats on hand. Cheeky's and Ernest Coffee are also solid options with dog-friendly outdoor seating. Full list at https://indigopalm.co/blog/pet-friendly-palm-springs/"
   - q: "Do dogs need prior approval for pet-friendly vacation rentals in the Coachella Valley?"
@@ -137,7 +137,7 @@ faqItems:
 <p>Our two dog-friendly properties: <a href="/terra-luz/">Terra Luz</a> in Indio (up to two dogs, fenced backyard, private saltwater pool) and <a href="/the-sundune/">The Sundune</a> in Palm Springs (one dog, shared HOA pool, Uptown Design District within walking distance). Both accept dogs with prior confirmation.</p>
 
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz fenced backyard and saltwater pool in Indio California, dog-friendly vacation rental in the Coachella Valley" width="1024" height="1536" loading="lazy">
-<p class="image-caption">Terra Luz in Indio. Fully fenced backyard, pool is dog-accessible, up to two dogs with a $150 fee and prior confirmation.</p>
+<p class="image-caption">Terra Luz in Indio. Fully fenced backyard, pool is dog-accessible, up to two dogs with a $150 per pet, per stay fee and prior confirmation.</p>
 
 <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 3rem 0;">
 
@@ -177,4 +177,4 @@ faqItems:
 <p>Palm Springs has more walkable dog-friendly infrastructure: Ruth Hardy dog park, Thursday VillageFest, and a higher density of patio restaurants. Indio is better if your dog needs space over stimulation. Terra Luz in Indio has a private fenced yard and private pool, which means significant outdoor time without constant leash management on busy streets. Palm Springs is the better base for evening walks and city activity with a dog, while Indio works better as a retreat.</p>
 
 <h4>What is the pet fee at Indigo Palm properties and is prior approval required?</h4>
-<p>Both pet-friendly properties charge a flat pet fee per stay and require email confirmation before booking at indigopalmco@gmail.com. Terra Luz in Indio accepts up to two dogs with a $150 fee. The Sundune in Palm Springs accepts one dog with a fee applied at checkout. Confirming before booking lets the host give you an accurate picture of whether the space works for your dog's size and needs. See both properties at <a href="https://indigopalm.co/blog/pet-friendly-palm-springs/">indigopalm.co/blog/pet-friendly-palm-springs/</a>.</p>
+<p>Both pet-friendly properties charge a per-pet fee per stay and require email confirmation before booking at indigopalmco@gmail.com. Terra Luz in Indio accepts up to two dogs with a $150 per pet, per stay fee. The Sundune in Palm Springs accepts one dog with a fee applied at checkout. Confirming before booking lets the host give you an accurate picture of whether the space works for your dog's size and needs. See both properties at <a href="https://indigopalm.co/blog/pet-friendly-palm-springs/">indigopalm.co/blog/pet-friendly-palm-springs/</a>.</p>

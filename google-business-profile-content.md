@@ -115,7 +115,7 @@ Yes! Cozy Cactus is specifically designed for families with a curated toy collec
 - Perfect for families
 
 ### Casa Moto (Indio)
-- 3 bedrooms, sleeps 6
+- 3 bedrooms, sleeps 8
 - Kahlo blue pool
 - Latin cultural design
 - Pass-through kitchen window
@@ -123,7 +123,7 @@ Yes! Cozy Cactus is specifically designed for families with a curated toy collec
 - Cocooned & rejuvenating
 
 ### PS Retreat (Palm Springs)
-- 3 bedrooms, sleeps 6
+- 2 bedrooms, sleeps 4
 - Mid-century modern architecture
 - Turquoise pool
 - "Bowling alley" primary suite

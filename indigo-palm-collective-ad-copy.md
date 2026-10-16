@@ -75,7 +75,7 @@ When they click ad → **indigopalm.co homepage** shows:
 
 **Property Grid:**
 1. **Cozy Cactus** - "Retro Modern • 3BR • Sleeps 8" → 70% booked ✅
-2. **Casa Moto** - "Modern Desert • 3BR • Sleeps 6" → 40% booked (needs help)
+2. **Casa Moto** - "Modern Desert • 3BR • Sleeps 8" → 40% booked (needs help)
 3. **PS Retreat** - "Mid-Century • 2BR • Sleeps 4" → 60% booked, festival dates ✅
 4. **The Well** - "Minimalist Calm • 4BR • Sleeps 8" → (Long-term rental note)
 

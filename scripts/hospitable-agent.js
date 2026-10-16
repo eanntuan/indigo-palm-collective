@@ -49,7 +49,7 @@ Key details:
 - Keyless entry, code changes per reservation
 - 3 pools, spa open year-round, pools heated Nov–Apr
 - Max occupancy: 4 adults
-- Pets allowed ($150 fee)
+- Pets allowed ($150 per pet per stay)
 - No parties, no smoking, quiet hours after 10pm
 - HOA minimum stay: 4 nights
 - Airport: 3 miles, Downtown PS: 5 miles, Target/Trader Joe's: 0.5 miles

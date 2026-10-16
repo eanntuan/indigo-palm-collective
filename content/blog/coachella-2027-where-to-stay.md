@@ -86,7 +86,7 @@ relatedPosts:
 
 <p><a href="/cozy-cactus/"><strong>The Cozy Cactus</strong></a> is our 3BR/2BA that sleeps 8. Private hot tub on the property, three heated community pools reachable through the country club, a putting green, game room with foosball and ping pong, fully stocked kitchen with a covered patio. Best for: groups of 4-8 who want indoor-outdoor flow and real recovery space. 4.97 stars across 146+ reviews.</p>
 
-<p><a href="/terra-luz/"><strong>Terra Luz</strong></a> is our 3BR/2BA that also sleeps 8. Latin-Cuban-inspired design, private saltwater pool with a sun shelf and Ninja slushie maker (non-negotiable in April), fully fenced backyard, terracotta patio with pergola. Best for: groups who want the private pool as the center of the weekend, not just a bonus. Dogs welcome (2 max, $150 fee). 4.98 stars across 146+ reviews.</p>
+<p><a href="/terra-luz/"><strong>Terra Luz</strong></a> is our 3BR/2BA that also sleeps 8. Latin-Cuban-inspired design, private saltwater pool with a sun shelf and Ninja slushie maker (non-negotiable in April), fully fenced backyard, terracotta patio with pergola. Best for: groups who want the private pool as the center of the weekend, not just a bonus. Dogs welcome (2 max, $150 per pet per stay). 4.98 stars across 146+ reviews.</p>
 
 <p>Both are direct-book at <a href="https://indigopalm.co" target="_blank" rel="noopener noreferrer">indigopalm.co</a>. Booking direct saves the Airbnb service fee, which on a multi-night festival stay is a real number.</p>
 
@@ -126,7 +126,7 @@ relatedPosts:
 <p>October or November 2026 for the best Indian Palms properties with private pools. By January 2027, walking-distance inventory at reasonable rates is mostly gone. Terra Luz is our private-pool option and the Cozy Cactus is the hot-tub-plus-community-pools option, and both open their calendars to direct bookings before Airbnb listings go live, so <a href="https://indigopalm.co" target="_blank" rel="noopener noreferrer">booking direct</a> early gives you first access.</p>
 
 <h3>Can I bring my dog to a Coachella vacation rental near the polo grounds?</h3>
-<p>Terra Luz inside Indian Palms Country Club is dog-friendly with a $150 pet fee and a two-dog maximum, plus a fully fenced backyard that makes festival logistics manageable when you're out for long hours. The Cozy Cactus in the same neighborhood is not pet-friendly. Confirm any pet policy before booking, and check that the yard is securely fenced if your dog will be alone during festival hours.</p>
+<p>Terra Luz inside Indian Palms Country Club is dog-friendly with a $150 per pet, per stay fee and a two-dog maximum, plus a fully fenced backyard that makes festival logistics manageable when you're out for long hours. The Cozy Cactus in the same neighborhood is not pet-friendly. Confirm any pet policy before booking, and check that the yard is securely fenced if your dog will be alone during festival hours.</p>
 
 <h3>Is it better to rent a vacation home or stay in a hotel for Coachella?</h3>
 <p>For groups of four or more, a vacation rental with a kitchen and private pool almost always costs less in total once you account for food and rideshares over three days. Walking-distance Indio properties eliminate rideshare costs entirely and let you return mid-day to recover, which hotel guests 30-45 minutes away in Palm Springs cannot do. Booking direct at <a href="https://indigopalm.co" target="_blank" rel="noopener noreferrer">indigopalm.co</a> also removes the Airbnb service fee, which is 20% of the subtotal on a multi-night stay.</p>
@@ -176,7 +176,7 @@ relatedPosts:
       "name": "Can I bring my dog to a Coachella vacation rental near the polo grounds?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Terra Luz inside Indian Palms Country Club is dog-friendly with a $150 pet fee and a two-dog maximum, with a fully fenced backyard. The Cozy Cactus in the same neighborhood is not pet-friendly. Always confirm the yard is securely fenced if your dog will be alone during festival hours."
+        "text": "Terra Luz inside Indian Palms Country Club is dog-friendly with a $150 per pet, per stay fee and a two-dog maximum, with a fully fenced backyard. The Cozy Cactus in the same neighborhood is not pet-friendly. Always confirm the yard is securely fenced if your dog will be alone during festival hours."
       }
     },
     {

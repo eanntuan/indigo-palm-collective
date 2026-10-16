@@ -12,7 +12,7 @@
 1. 3BR Indio Home w/ Heated Pool
 2. Casa Moto | Book Direct & Save
 3. March Mid-Week from $150/nt
-4. Private Pool • Sleeps 6
+4. Private Pool • Sleeps 8
 5. Walk to Old Town La Quinta
 6. Quiet Desert Retreat - Indio
 7. Remote Work Desert Escape
@@ -31,13 +31,13 @@
 ## 📝 Descriptions (90 characters max)
 
 ```
-1. Casa Moto: 3BR Indio home with heated pool, full kitchen, sleeps 6. March dates from $150/night. Book direct!
+1. Casa Moto: 3BR Indio home with heated pool, full kitchen, sleeps 8. March dates from $150/night. Book direct!
 
 2. Quiet desert retreat near Old Town La Quinta. Private heated pool, 3 bedrooms, modern amenities. Save 10%.
 
 3. Perfect for remote work or peaceful getaway. Heated pool, full kitchen, WiFi. Mid-week specials available.
 
-4. Skip Airbnb fees - book direct at indigopalm.co. Private pool, 3BR, sleeps 6. Use code WELCOME10 for 10% off.
+4. Skip Airbnb fees - book direct at indigopalm.co. Private pool, 3BR, sleeps 8. Use code WELCOME10 for 10% off.
 ```
 
 ---

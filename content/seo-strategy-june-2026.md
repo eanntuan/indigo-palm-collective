@@ -669,7 +669,7 @@ Overlay text: High 80s all day, then 60s by sunset, hot tub's ready.
 
 PIN 3 (Booking-intent) | Image: terra-luz-pool-backyard.webp | Board: Dog-Friendly Travel
 Title: Dog-Friendly Stagecoach Rental Near the Grounds
-Description: Terra Luz in Indian Palms is dog-friendly, has a private saltwater pool, and is walking distance from Empire Polo Club. Up to 2 dogs, $150 pet fee, fenced yard. Sleeps 8. Book direct at indigopalm.co and skip Airbnb's 20% service fee. Full details at the link.
+Description: Terra Luz in Indian Palms is dog-friendly, has a private saltwater pool, and is walking distance from Empire Polo Club. Up to 2 dogs, $150 per pet per stay, fenced yard. Sleeps 8. Book direct at indigopalm.co and skip Airbnb's 20% service fee. Full details at the link.
 Overlay text: Dogs welcome at the saltwater pool, 7 min from Stagecoach.
 
 ---

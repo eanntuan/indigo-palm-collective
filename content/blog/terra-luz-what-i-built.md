@@ -118,7 +118,7 @@ relatedPosts:
 
 <p><strong>Parking:</strong> Two cars in the driveway. Two cars in the garage. No overnight street parking, per HOA rules.</p>
 
-<p><strong>Dogs:</strong> Terra Luz is dog-friendly. Up to 2 dogs with a $150 pet fee. Confirm before booking by emailing indigopalmco@gmail.com. There's a grassy side yard for early morning walks without leaving the property.</p>
+<p><strong>Dogs:</strong> Terra Luz is dog-friendly. Up to 2 dogs with a $150 per pet, per stay fee. Confirm before booking by emailing indigopalmco@gmail.com. There's a grassy side yard for early morning walks without leaving the property.</p>
 
 <p><strong>Pool and spa heat:</strong> Spa heating is always complimentary. Pool heating is $75/day (2-day minimum) during November through May when desert nights get cold enough to matter. In summer, the pool stays warm from the sun.</p>
 
@@ -149,7 +149,7 @@ relatedPosts:
 <p>Eight guests: three bedrooms (one king primary plus twin daybed & twin trundle, one king Wild Tropics, one Cali Room with king plus trundle), two bathrooms. Two parking spaces in the driveway, two parking spots in the garage.</p>
 
 <h4>Is Terra Luz dog-friendly?</h4>
-<p>Yes, up to two dogs with a $150 pet fee. Email indigopalmco@gmail.com to confirm before booking. The property has a grassy side yard for dog walks without leaving the property.</p>
+<p>Yes, up to two dogs with a $150 per pet, per stay fee. Email indigopalmco@gmail.com to confirm before booking. The property has a grassy side yard for dog walks without leaving the property.</p>
 
 <h4>How far is Terra Luz from Coachella?</h4>
 <p>Walking distance to the Empire Polo Club gates. Golf cart rides also run through the Indian Palms community during festival weekends. More details in the <a href="/blog/terra-luz-indio-local-guide/">Indio local guide</a>.</p>
@@ -194,7 +194,7 @@ relatedPosts:
       "name": "Is Terra Luz dog-friendly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, up to two dogs with a $150 pet fee. Email indigopalmco@gmail.com to confirm before booking. The property has a grassy side yard for dog walks without leaving the property."
+        "text": "Yes, up to two dogs with a $150 per pet, per stay fee. Email indigopalmco@gmail.com to confirm before booking. The property has a grassy side yard for dog walks without leaving the property."
       }
     },
     {

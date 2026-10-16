@@ -2336,7 +2336,7 @@ EARLY CHECK-IN / LATE CHECKOUT
 
 ADDING GUESTS
 - Happy to add anyone within the 8-guest max. Send first and last name and we'll update the reservation.
-- Dogs: prior approval required. 2 dogs max, $150 per pet. Confirm before assuming.
+- Dogs: prior approval required. 2 dogs max, $150 per pet per stay. Confirm before assuming.
 
 POOL HEAT REQUESTS
 - If they ask about pool heat: $75/day (2-day min) or $400/week. Need 24hr notice before arrival. Let us know and we'll set it up.
@@ -2557,7 +2557,7 @@ Pool heat (Terra Luz):
 "Pool heat is $75/day (2-day min) or $400/week. If you want it warm for arrival, let me know at least 24 hours ahead and I'll get it set up. Hot tub is always free — just hit the Spa button on the wall."
 
 Adding a dog (Terra Luz or Sundune):
-"Yes, dogs are welcome with prior approval. [2 dogs max at Terra Luz, $150 per pet / etc.] Can you tell me a bit about them? Size, breed, and we should be good to go."
+"Yes, dogs are welcome with prior approval. [2 dogs max at Terra Luz, $150 per pet per stay / etc.] Can you tell me a bit about them? Size, breed, and we should be good to go."
 
 Late checkout:
 "10am is firm on my end because the cleaning crew comes right after. If you want a little more time in the morning, I can sometimes do 11am for an additional fee, just depends on the next booking. Want me to check?"
@@ -2717,6 +2717,8 @@ const AIRBNB_PROPERTY_PATTERNS = [
   { patterns: ['the well', 'villa ct', 'villa court', 'n villa', '510', '868862893900280104'],
     key: 'the_well', icalId: 'the-well', name: 'The Well' },
 ];
+
+const airbnbCheckoutTime = prop => ['sundune', 'the_well'].includes(prop?.key) ? '11:00 AM' : '10:00 AM';
 
 // Fallback: find which property has an active booking for this guest name
 async function detectPropertyFromActiveBooking(env, guestName) {
@@ -3666,7 +3668,7 @@ function buildAirbnbMessageEmail(subject, bodyText, property) {
 
     ${hasDetails ? `<table style="width:100%;border-collapse:collapse;border:1px solid #e8e4de;border-radius:10px;overflow:hidden;margin-bottom:24px;">
       ${row('Check-in', checkIn ? checkIn + (checkInTime ? ' at ' + checkInTime : '') : null)}
-      ${row('Checkout', checkOut ? checkOut + ' at 10:00 AM' : null)}
+      ${row('Checkout', checkOut ? checkOut + ' at ' + airbnbCheckoutTime(property) : null)}
       ${row('Guests', guests)}
     </table>` : ''}
 
@@ -3691,7 +3693,7 @@ function buildAirbnbGenericEmail(subject, bodyText) {
   `;
 }
 
-function buildAirbnbConfirmationEmail(subject, bodyText) {
+function buildAirbnbConfirmationEmail(subject, bodyText, property) {
   const e = escapeHtml;
   const isReminder = /reservation reminder/i.test(subject);
   const clean = s => (s || '').replace(/[Â-ï][-¿]+/g, c => {
@@ -3743,7 +3745,7 @@ function buildAirbnbConfirmationEmail(subject, bodyText) {
     <table style="width:100%;border-collapse:collapse;border:1px solid #e8e4de;border-radius:10px;overflow:hidden;margin-bottom:20px;">
       ${row('Confirmation', confCode)}
       ${row('Check-in', checkIn ? checkIn + (checkInTime ? ' at ' + checkInTime : '') : null)}
-      ${row('Checkout', checkOut ? checkOut + ' at 10:00 AM' : null)}
+      ${row('Checkout', checkOut ? checkOut + ' at ' + airbnbCheckoutTime(property) : null)}
       ${row('Guests', guests)}
     </table>
 
@@ -3962,7 +3964,7 @@ async function handleAirbnbEmail(message, env) {
         .replace(/\n{3,}/g, '\n\n')
         .trim();
       const emailHtml = (isConfirmation || isReservationReminder)
-        ? buildAirbnbConfirmationEmail(subject, bodyText)
+        ? buildAirbnbConfirmationEmail(subject, bodyText, detectProperty(subject, rawBodyText))
         : isMessageThread
         ? buildAirbnbMessageEmail(subject, rawBodyText, property)
         : buildAirbnbGenericEmail(subject, bodyText);

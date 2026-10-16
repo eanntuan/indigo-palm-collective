@@ -4,14 +4,14 @@
 **Focus**: Keywords people actually search for
 
 ```
-Luxury vacation rental in Indio with heated pool, 3BR/2BA, sleeps 6. Perfect for Coachella, Stagecoach, and desert getaways. Cuban-inspired design, chef's kitchen, walking distance to Old Town La Quinta dining. Book direct at indigopalm.co and save on fees.
+Luxury vacation rental in Indio with heated pool, 3BR/2BA, sleeps 8. Perfect for Coachella, Stagecoach, and desert getaways. Cuban-inspired design, chef's kitchen, walking distance to Old Town La Quinta dining. Book direct at indigopalm.co and save on fees.
 ```
 
 **Character count**: 279/350 ✅
 
 **Why this works**:
 - Opens with "luxury vacation rental in Indio" (exact search term)
-- Lists key features people filter for (heated pool, 3BR, sleeps 6)
+- Lists key features people filter for (heated pool, 3BR, sleeps 8)
 - Hits major search keywords: Coachella, Stagecoach, Old Town La Quinta
 - Ends with direct booking CTA
 
@@ -46,7 +46,7 @@ Escape to Casa Moto—a Cuban-soul sanctuary where vibrant color meets desert ca
 **Focus**: Capture festival traffic (your highest revenue dates)
 
 ```
-Your Coachella & Stagecoach home base. Casa Moto vacation rental: 15 mins from festival grounds, private heated pool, 3BR/2BA sleeps 6. Recharge between sets in this Cuban-inspired desert retreat. Full kitchen, outdoor living. Book direct: indigopalm.co
+Your Coachella & Stagecoach home base. Casa Moto vacation rental: 15 mins from festival grounds, private heated pool, 3BR/2BA sleeps 8. Recharge between sets in this Cuban-inspired desert retreat. Full kitchen, outdoor living. Book direct: indigopalm.co
 ```
 
 **Character count**: 281/350 ✅
@@ -65,7 +65,7 @@ Your Coachella & Stagecoach home base. Casa Moto vacation rental: 15 mins from f
 **Focus**: Balance of SEO + emotion
 
 ```
-Luxury vacation rental in Indio with heated pool & Cuban soul. 3BR/2BA, sleeps 6. Perfect for Coachella, Stagecoach & desert escapes. Vibrant design, chef's kitchen, steps from Old Town La Quinta dining. Your desert sanctuary. Book: indigopalm.co
+Luxury vacation rental in Indio with heated pool & Cuban soul. 3BR/2BA, sleeps 8. Perfect for Coachella, Stagecoach & desert escapes. Vibrant design, chef's kitchen, steps from Old Town La Quinta dining. Your desert sanctuary. Book: indigopalm.co
 ```
 
 **Character count**: 277/350 ✅
@@ -85,7 +85,7 @@ Luxury vacation rental in Indio with heated pool & Cuban soul. 3BR/2BA, sleeps 6
 **Focus**: What guests get, not what you have
 
 ```
-Sleep 6 in style at Casa Moto. Heated pool, full kitchen, 3 private bedrooms—everything you need for your Coachella weekend or desert escape. Cuban-inspired design, outdoor living, walking distance to Old Town La Quinta. Book direct & save: indigopalm.co
+Sleep 8 in style at Casa Moto. Heated pool, full kitchen, 3 private bedrooms—everything you need for your Coachella weekend or desert escape. Cuban-inspired design, outdoor living, walking distance to Old Town La Quinta. Book direct & save: indigopalm.co
 ```
 
 **Character count**: 282/350 ✅
@@ -101,7 +101,7 @@ Sleep 6 in style at Casa Moto. Heated pool, full kitchen, 3 private bedrooms—e
 ## My Recommendation: Version 4 (Hybrid)
 
 ```
-Luxury vacation rental in Indio with heated pool & Cuban soul. 3BR/2BA, sleeps 6. Perfect for Coachella, Stagecoach & desert escapes. Vibrant design, chef's kitchen, steps from Old Town La Quinta dining. Your desert sanctuary. Book: indigopalm.co
+Luxury vacation rental in Indio with heated pool & Cuban soul. 3BR/2BA, sleeps 8. Perfect for Coachella, Stagecoach & desert escapes. Vibrant design, chef's kitchen, steps from Old Town La Quinta dining. Your desert sanctuary. Book: indigopalm.co
 ```
 
 ### Why This One Wins:
