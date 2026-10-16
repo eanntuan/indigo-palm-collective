@@ -121,7 +121,7 @@ layout: blog-post.njk
 <p>The intentionality in the setup. Most rentals have furniture and a pool. The Cozy Cactus has a Stokke high chair, a pack-n-play with a real crib mattress, sound machines in every bedroom, and a labeling system one guest called "unprecedented in 10 years of Airbnb stays." The family infrastructure is built in, not bolted on.</p>
 
 <h3>Is The Cozy Cactus good for Coachella and Stagecoach?</h3>
-<p>Yes. Indian Palms Country Club is walking distance to Empire Polo Club, straight up Eisenhower Drive on foot, no shuttles and no surge pricing. Guests leave from the front door and walk there. The backyard and hot tub become the decompression zone between festival days.</p>
+<p>Yes. Indian Palms Country Club is walking distance to Empire Polo Club, straight up Eisenhower Drive on foot (members of the community offer rides to the Indian Palms front gate for a fee, saving yourself about 15 minutes of walking!), no shuttles and no surge pricing. Guests leave from the front door and walk there. The backyard and hot tub become the decompression zone between festival days.</p>
 
 <h3>Who designed The Cozy Cactus?</h3>
 <p>The design vision came from Dawn Asher of The Olive Jar, a brand strategist and interior designer based in the desert. She brought the six-filter framework that governs every detail, from paint colors to linens to the mural in the backyard. I executed it with too many trips to HomeGoods and a Honda Element that fits more than it should.</p>

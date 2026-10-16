@@ -195,7 +195,7 @@ layout: blog-post.njk
 
 <h4>How far is Terra Luz from Coachella and Stagecoach?</h4>
 
-<p>Terra Luz is walking distance to the Empire Polo Club in Indio. Festival exit traffic on Monroe Street and Avenue 50 is real, though, so most guests still rideshare back after late sets rather than fight it on foot in the dark. Palm Springs is 25 minutes west on I-10 for a day trip between festival weekends.</p>
+<p>Terra Luz is walking distance to the Empire Polo Club in Indio (members of the community offer rides to the Indian Palms front gate for a fee, saving yourself about 15 minutes of walking!). Festival exit traffic on Monroe Street and Avenue 50 is real, though, so most guests still rideshare back after late sets rather than fight it on foot in the dark. Palm Springs is 25 minutes west on I-10 for a day trip between festival weekends.</p>
 
 <h4>Is the pool heated, and what does it cost?</h4>
 

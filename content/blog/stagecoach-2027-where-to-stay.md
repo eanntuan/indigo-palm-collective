@@ -112,7 +112,7 @@ faqItems:
 
 <h2>Getting to the Festival</h2>
 
-<p>From Indio rentals within the Indian Palms neighborhood, you can walk to the grounds. If you're staying elsewhere, you'll rideshare or drive and park. Festival parking at the Empire Polo Club runs $30-50 per day. Rideshare surge is less dramatic than Coachella weekend (the crowd is smaller) but post-headliner pickup still involves a wait. Driving yourself and parking mid-day, then ridesharing back at the end of the night when everyone leaves at once, is often the smoothest split.</p>
+<p>From Indio rentals within the Indian Palms neighborhood, you can walk to the grounds (members of the community offer rides to the Indian Palms front gate for a fee, saving yourself about 15 minutes of walking!). If you're staying elsewhere, you'll rideshare or drive and park. Festival parking at the Empire Polo Club runs $30-50 per day. Rideshare surge is less dramatic than Coachella weekend (the crowd is smaller) but post-headliner pickup still involves a wait. Driving yourself and parking mid-day, then ridesharing back at the end of the night when everyone leaves at once, is often the smoothest split.</p>
 
 <p>For everything else about the area: the <a href="/blog/things-to-do-indio-ca/">Indio local guide</a> covers where to eat and what to do when you're not at the festival. <a href="https://onestoptacoshop.com/" target="_blank" rel="noopener noreferrer"><strong>One Stop Taco Shop</strong></a> is 10 minutes from the grounds and you should go for lunch on the day you arrive. That part is non-negotiable.</p>
 

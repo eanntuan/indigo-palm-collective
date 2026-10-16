@@ -58,7 +58,7 @@ faqItems:
 
 <h2>Can You Walk to Coachella from Indian Palms?</h2>
 
-<p>Yes. Indian Palms Country Club is one of the only neighborhoods in the Coachella Valley where walking to Coachella is practical. The route from your rental to the festival entrance runs on foot via Eisenhower Drive, and it lets you skip shuttles, surge pricing, and gridlocked roads entirely.</p>
+<p>Yes. Indian Palms Country Club is one of the only neighborhoods in the Coachella Valley where walking to Coachella is practical. The route from your rental to the festival entrance runs on foot via Eisenhower Drive (members of the community offer rides to the Indian Palms front gate for a fee, saving yourself about 15 minutes of walking!), and it lets you skip shuttles, surge pricing, and gridlocked roads entirely.</p>
 
 <img src="/blog/images/coachella-festival-map-2026.webp" alt="2026 Coachella festival map showing Indian Palms Front Gate 0.3 miles from Monroe Street entrance" width="1080" height="1350" loading="lazy">
 
