@@ -151,7 +151,7 @@ const PROPERTY_HEROES = {
         img: '/the-sundune/photos/Sundune2026-0120.webp',
         title: 'The Sundune',
         video: '/the-sundune/video/sundune-hero',
-        sub: '2BR · Palm Springs · Private pool · Three king beds',
+        sub: '2BR · Palm Springs · Community pool · Three king beds',
     },
 };
 
