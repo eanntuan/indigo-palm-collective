@@ -1059,7 +1059,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
 
     <!-- Hero Section -->
     <section class="hero">
-        <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp" data-src-small="/terra-luz/video/terra-luz-hero-720.mp4" data-src="/terra-luz/video/terra-luz-hero.mp4"></video>
+        <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp" data-src="/terra-luz/video/terra-luz-hero"></video>
         <div class="hero-content">
             <div class="property-tag">LATIN CULTURE</div>
             <h1>Terra Luz: Latin Desert Vacation Rental near Coachella</h1>
@@ -1666,9 +1666,6 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
   }
 })();
 </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoObject","name":"Terra Luz vacation rental tour, Indio CA","description":"A slow walk through the kitchen, primary bedroom, blue wallpaper bedroom and pool at Terra Luz, a Latin-inspired vacation rental in Indio, California.","thumbnailUrl":"https://indigopalm.co/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp","uploadDate":"2026-10-06T09:00:00-07:00","contentUrl":"https://indigopalm.co/terra-luz/video/terra-luz-hero.mp4","duration":"PT21S"}
-</script>
 <script>
 (function () {
     var v = document.getElementById('heroVideo');
@@ -1681,13 +1678,15 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
         if (inView && !document.hidden) (v.playbackRate = 0.75, v.play()).catch(function () {}); else v.pause();
     }
     function load() {
-        v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;
+        v.src = v.dataset.src + (matchMedia('(max-width: 800px)').matches ? '-720' : '') + '.mp4';
+        v.load();
         v.addEventListener('playing', function () { v.classList.add('is-ready'); }, { once: true });
         loaded = true;
         sync();
     }
-    var start = function () { 'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 2500 }) : setTimeout(load, 1500); };
-    if (document.readyState === 'complete') start(); else addEventListener('load', start);
+    var ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+    function start() { ev.forEach(function (e) { removeEventListener(e, start); }); load(); }
+    ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
     if ('IntersectionObserver' in window) {
         new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
     }

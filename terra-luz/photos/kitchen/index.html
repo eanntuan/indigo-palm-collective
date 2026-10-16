@@ -199,7 +199,7 @@
     </nav>
 
     <section class="hero">
-        <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/terra-luz/photos/kitchen/TerraLuz2026-0551.webp" data-src-small="/terra-luz/video/terra-luz-kitchen-hero-720.mp4" data-src="/terra-luz/video/terra-luz-kitchen-hero.mp4"></video>
+        <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/terra-luz/photos/kitchen/TerraLuz2026-0551.webp" data-src="/terra-luz/video/terra-luz-kitchen-hero"></video>
         <div class="hero-content">
             <div class="room-tag">TERRA LUZ</div>
             <h1>Kitchen</h1>
@@ -324,9 +324,6 @@
         fromHash();
     })();
     </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoObject","name":"Terra Luz kitchen, Indio CA","description":"A slow pan across the Terra Luz kitchen, from the range and green cabinets to the Caramel Apple dining nook and the patio beyond the sliding doors.","thumbnailUrl":"https://indigopalm.co/terra-luz/photos/kitchen/TerraLuz2026-0551.webp","uploadDate":"2026-10-06T09:00:00-07:00","contentUrl":"https://indigopalm.co/terra-luz/video/terra-luz-kitchen-hero.mp4","duration":"PT11S"}
-</script>
 <script>
 (function () {
     var v = document.getElementById('heroVideo');
@@ -340,7 +337,8 @@
         if (inView && !document.hidden) { slow(); v.play().catch(function () {}); } else v.pause();
     }
     function load() {
-        v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;
+        v.src = v.dataset.src + (matchMedia('(max-width: 800px)').matches ? '-720' : '') + '.mp4';
+        v.load();
         slow();
         v.addEventListener('loadedmetadata', slow);
         v.addEventListener('play', slow);
@@ -348,8 +346,9 @@
         loaded = true;
         sync();
     }
-    var start = function () { 'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 2500 }) : setTimeout(load, 1500); };
-    if (document.readyState === 'complete') start(); else addEventListener('load', start);
+    var ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+    function start() { ev.forEach(function (e) { removeEventListener(e, start); }); load(); }
+    ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
     if ('IntersectionObserver' in window) {
         new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
     }

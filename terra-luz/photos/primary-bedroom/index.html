@@ -177,7 +177,7 @@
     </nav>
 
     <section class="hero">
-        <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/terra-luz/photos/primary-bedroom/TerraLuz2026-0606.webp" data-src-small="/terra-luz/video/terra-luz-primary-bedroom-hero-720.mp4?v=2" data-src="/terra-luz/video/terra-luz-primary-bedroom-hero.mp4?v=2"></video>
+        <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/terra-luz/photos/primary-bedroom/TerraLuz2026-0606.webp" data-src="/terra-luz/video/terra-luz-primary-bedroom-hero" data-query="?v=2"></video>
         <div class="hero-content">
             <div class="room-tag">TERRA LUZ</div>
             <h1>Primary Bedroom</h1>
@@ -286,9 +286,6 @@
         fromHash();
     })();
     </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoObject","name":"Terra Luz primary bedroom, Indio CA","description":"A slow pan across the Terra Luz primary bedroom, from the sage green walls and rattan wall piece to the wood bed, sunlit tile floor, fireplace and daybed.","thumbnailUrl":"https://indigopalm.co/terra-luz/photos/primary-bedroom/TerraLuz2026-0606.webp","uploadDate":"2026-10-06T09:00:00-07:00","contentUrl":"https://indigopalm.co/terra-luz/video/terra-luz-primary-bedroom-hero.mp4?v=2","duration":"PT7S"}
-</script>
 <script>
 (function () {
     var v = document.getElementById('heroVideo');
@@ -302,7 +299,8 @@
         if (inView && !document.hidden) { slow(); v.play().catch(function () {}); } else v.pause();
     }
     function load() {
-        v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;
+        v.src = v.dataset.src + (matchMedia('(max-width: 800px)').matches ? '-720' : '') + '.mp4' + (v.dataset.query || '');
+        v.load();
         slow();
         v.addEventListener('loadedmetadata', slow);
         v.addEventListener('play', slow);
@@ -310,8 +308,9 @@
         loaded = true;
         sync();
     }
-    var start = function () { 'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 2500 }) : setTimeout(load, 1500); };
-    if (document.readyState === 'complete') start(); else addEventListener('load', start);
+    var ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+    function start() { ev.forEach(function (e) { removeEventListener(e, start); }); load(); }
+    ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
     if ('IntersectionObserver' in window) {
         new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
     }

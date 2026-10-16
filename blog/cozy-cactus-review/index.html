@@ -89,19 +89,6 @@
 
     <!-- JSON-LD: FAQPage (conditional — requires faqItems frontmatter) -->
     
-    <!-- JSON-LD: VideoObject (conditional, requires heroVideo frontmatter) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      "name": "Cozy Cactus Vacation Rental in Indio: An Honest Review",
-      "description": "The Cozy Cactus in Indio: 4.97 stars, 146 reviews. Here's what guests consistently love, what to know before booking, and how it compares to other options.",
-      "thumbnailUrl": "https://indigopalm.co/blog/images/cozy-cactus-review-hero-golf.webp",
-      "uploadDate": "2026-02-23T09:00:00-08:00",
-      "contentUrl": "https://indigopalm.co/blog/videos/cozy-cactus-review-hero.mp4",
-      "duration": "PT11S"
-    }
-    </script>
 
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -262,7 +249,7 @@
 
     
     <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;position:relative;">
-        <img src="/blog/images/cozy-cactus-review-hero-golf.webp" alt="backyard mini golf putting green with colorful block walls at The Cozy Cactus in Indio California" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center 55%;" loading="eager" fetchpriority="high"><video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/blog/images/cozy-cactus-review-hero-golf.webp" data-src-small="/blog/videos/cozy-cactus-review-hero-720.mp4?v=1" data-src="/blog/videos/cozy-cactus-review-hero.mp4?v=1" style="object-position:center 55%;"></video>
+        <img src="/blog/images/cozy-cactus-review-hero-golf.webp" alt="backyard mini golf putting green with colorful block walls at The Cozy Cactus in Indio California" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center 55%;" loading="eager" fetchpriority="high"><video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/blog/images/cozy-cactus-review-hero-golf.webp" data-src="/blog/videos/cozy-cactus-review-hero" data-query="?v=1" style="object-position:center 55%;"></video>
     </div>
     
 
@@ -515,7 +502,8 @@
             if (inView && !document.hidden) { slow(); v.play().catch(function () {}); } else v.pause();
         }
         function load() {
-            v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;
+            v.src = v.dataset.src + (matchMedia('(max-width: 800px)').matches ? '-720' : '') + '.mp4' + (v.dataset.query || '');
+            v.load();
             slow();
             v.addEventListener('loadedmetadata', slow);
             v.addEventListener('play', slow);
@@ -523,8 +511,9 @@
             loaded = true;
             sync();
         }
-        var start = function () { 'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 2500 }) : setTimeout(load, 1500); };
-        if (document.readyState === 'complete') start(); else addEventListener('load', start);
+        var ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+        function start() { ev.forEach(function (e) { removeEventListener(e, start); }); load(); }
+        ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
         if ('IntersectionObserver' in window) {
             new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
         }

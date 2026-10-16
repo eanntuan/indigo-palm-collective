@@ -870,19 +870,6 @@
 img[id^="photo-"] { scroll-margin-top: 6rem; }
 </style>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      "name": "The Sundune, Palm Springs: living room, kitchen and primary bedroom",
-      "description": "A 16 second walk through The Sundune, a two-bedroom Palm Springs condo with three king beds, filmed by The Olive Jar.",
-      "thumbnailUrl": "https://indigopalm.co/the-sundune/photos/Sundune2026-0120.webp",
-      "uploadDate": "2026-10-06T09:00:00-07:00",
-      "duration": "PT16S",
-      "contentUrl": "https://indigopalm.co/the-sundune/video/sundune-hero.mp4"
-    }
-    </script>
-
     <!-- LodgingBusiness Structured Data -->
     <script type="application/ld+json">
     {
@@ -949,7 +936,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
 
     <!-- Hero Section -->
     <section class="hero" role="img" aria-label="The Sundune coastal-desert vacation condo ten minutes from downtown Palm Springs">
-        <video class="hero-video" muted loop playsinline preload="metadata" poster="/the-sundune/photos/Sundune2026-0120.webp" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+        <video class="hero-video" muted loop playsinline preload="metadata" poster="/the-sundune/photos/Sundune2026-0120.webp" aria-hidden="true" tabindex="-1" disablepictureinpicture data-src="/the-sundune/video/sundune-hero"></video>
         <div class="hero-content">
             <div class="property-tag">COASTAL DESERT</div>
             <h1>The Sundune</h1>
@@ -1334,11 +1321,20 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
   if (!v) return;
   var c = navigator.connection || {};
   if (matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData || /^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) { v.remove(); return; }
-  var s = [['/the-sundune/video/sundune-hero-720.mp4', '(max-width: 800px)'], ['/the-sundune/video/sundune-hero.mp4']];
-  s.forEach(function (x) { var e = document.createElement('source'); e.src = x[0]; e.type = 'video/mp4'; if (x[1]) e.media = x[1]; v.appendChild(e); });
-  v.load();
-  var vis = true;
-  function sync() { if (vis && !document.hidden) (v.playbackRate = 0.75, v.play()).catch(function () {}); else v.pause(); }
+  var loaded = false, vis = true;
+  function sync() {
+    if (!loaded) return;
+    if (vis && !document.hidden) (v.playbackRate = 0.75, v.play()).catch(function () {}); else v.pause();
+  }
+  var ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+  function start() {
+    ev.forEach(function (e) { removeEventListener(e, start); });
+    v.src = v.dataset.src + (matchMedia('(max-width: 800px)').matches ? '-720' : '') + '.mp4';
+    v.load();
+    loaded = true;
+    sync();
+  }
+  ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
   new IntersectionObserver(function (en) { vis = en[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v);
   document.addEventListener('visibilitychange', sync);
 })();

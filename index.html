@@ -2073,11 +2073,20 @@
     <section class="hero">
         <!-- Video Background -->
         <div class="hero-video">
-            <video id="heroVideo" autoplay muted loop playsinline preload="none" poster="/hero-poster.webp" fetchpriority="high" aria-label="Desert vacation home video showcasing Cozy Cactus property in Indio">
-                <source src="/media/the-cozy-cactus-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <script>document.getElementById('heroVideo').playbackRate = 0.75;</script>
+            <video id="heroVideo" muted loop playsinline preload="none" poster="/hero-poster.webp" fetchpriority="high" data-src="/media/the-cozy-cactus-compressed" aria-label="Desert vacation home video showcasing Cozy Cactus property in Indio"></video>
+            <script>
+            (function () {
+                var v = document.getElementById('heroVideo'), ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+                function start() {
+                    ev.forEach(function (e) { removeEventListener(e, start); });
+                    v.src = v.dataset.src + '.mp4';
+                    v.defaultPlaybackRate = v.playbackRate = 0.75;
+                    v.load();
+                    v.play().catch(function () {});
+                }
+                ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
+            })();
+            </script>
         </div>
 
         <div class="hero-content">
@@ -2090,7 +2099,7 @@
 
     <!-- Properties Section -->
     <!--
-        HERO SECTION BACKGROUND: Local video (the cozy cactus.mp4 rotated to landscape)
+        HERO SECTION BACKGROUND: Local video (the cozy cactus video rotated to landscape)
 
         PROPERTY IMAGES - ALL REAL PHOTOS!
         - The Well: ../The Well/1TW_4W6A0294.jpg

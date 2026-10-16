@@ -331,7 +331,7 @@
     <li>Avoid Monroe between Ave 49-52 and Madison between Ave 50-52. No pedestrians allowed on those stretches.</li>
     <li>Use the <strong>Yellow Path at 49th and Monroe</strong> to enter the festival grounds</li>
 </ol>
-<p><video src="/blog/images/indian-palms-night-walk.mp4" autoplay muted loop playsinline style="width:100%;border-radius:8px;margin:2rem 0 0.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);"></video></p>
+<p><video data-src="/blog/images/indian-palms-night-walk" poster="/blog/images/indian-palms-night-walk-poster.webp" width="1080" height="1920" muted loop playsinline preload="none" style="width:100%;border-radius:8px;margin:2rem 0 0.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);"></video></p>
 <p class="image-caption">This is the yellow gravel path that leads up to the entrance of the festival (gravel the whole way, so wear comfy shoes!)</p>
 <ol start="5">
     <li>Plan <strong>19-30 minutes door-to-gate</strong> depending on where in Indian Palms you're staying</li>
@@ -545,6 +545,18 @@
             <p style="margin-top: 1rem; font-size: 0.8rem; color: #888;"><a href="/" style="color: inherit; text-decoration: none;">Home</a> &nbsp;&middot;&nbsp; <a href="/#properties" style="color: inherit; text-decoration: none;">Properties</a> &nbsp;&middot;&nbsp; <a href="/blog/" style="color: inherit; text-decoration: none;">Blog</a> &nbsp;&middot;&nbsp; <a href="/#contact" style="color: inherit; text-decoration: none;">Contact</a></p>
         </div>
     </footer>
+    <script>
+    (function () {
+        var v = document.querySelector('video[data-src]:not(#heroVideo)'), ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+        function start() {
+            ev.forEach(function (e) { removeEventListener(e, start); });
+            v.src = v.dataset.src + '.mp4';
+            v.load();
+            v.play().catch(function () {});
+        }
+        ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
+    })();
+    </script>
 
 </body>
 </html>

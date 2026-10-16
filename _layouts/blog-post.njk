@@ -143,22 +143,6 @@ permalink: "{{ page.fileSlug }}/index.html"
     </script>
     {% endif %}
 
-    {%- if heroVideo %}
-    <!-- JSON-LD: VideoObject (conditional, requires heroVideo frontmatter) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      "name": {{ title | dump | safe }},
-      "description": {{ metaDescription | dump | safe }},
-      "thumbnailUrl": "https://indigopalm.co{{ heroImage }}",
-      "uploadDate": "{{ date | isoDateTimePT }}",
-      "contentUrl": "https://indigopalm.co{{ heroVideo }}.mp4",
-      "duration": "PT11S"
-    }
-    </script>
-    {%- endif %}
-
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -323,7 +307,7 @@ permalink: "{{ page.fileSlug }}/index.html"
     {% if heroImage %}
     <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;{% if heroVideo %}position:relative;{% endif %}">
         <img src="{{ heroImage }}" alt="{{ heroAlt if heroAlt else title }}" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:{{ heroPosition if heroPosition else 'center' }};" loading="eager" fetchpriority="high">
-        {%- if heroVideo %}<video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="{{ heroImage }}" data-src-small="{{ heroVideo }}-720.mp4?v=1" data-src="{{ heroVideo }}.mp4?v=1" style="object-position:{{ heroPosition if heroPosition else 'center' }};"></video>{%- endif %}
+        {%- if heroVideo %}<video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="{{ heroImage }}" data-src="{{ heroVideo }}" data-query="?v=1" style="object-position:{{ heroPosition if heroPosition else 'center' }};"></video>{%- endif %}
     </div>
     {% endif %}
 
@@ -445,7 +429,8 @@ permalink: "{{ page.fileSlug }}/index.html"
             if (inView && !document.hidden) { slow(); v.play().catch(function () {}); } else v.pause();
         }
         function load() {
-            v.src = matchMedia('(max-width: 800px)').matches ? v.dataset.srcSmall : v.dataset.src;
+            v.src = v.dataset.src + (matchMedia('(max-width: 800px)').matches ? '-720' : '') + '.mp4' + (v.dataset.query || '');
+            v.load();
             slow();
             v.addEventListener('loadedmetadata', slow);
             v.addEventListener('play', slow);
@@ -453,12 +438,27 @@ permalink: "{{ page.fileSlug }}/index.html"
             loaded = true;
             sync();
         }
-        var start = function () { 'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 2500 }) : setTimeout(load, 1500); };
-        if (document.readyState === 'complete') start(); else addEventListener('load', start);
+        var ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+        function start() { ev.forEach(function (e) { removeEventListener(e, start); }); load(); }
+        ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
         if ('IntersectionObserver' in window) {
             new IntersectionObserver(function (e) { inView = e[0].isIntersecting; sync(); }, { rootMargin: '200px' }).observe(v.parentNode);
         }
         document.addEventListener('visibilitychange', sync);
+    })();
+    </script>
+    {%- endif %}
+{%- if '<video data-src' in content %}
+    <script>
+    (function () {
+        var v = document.querySelector('video[data-src]:not(#heroVideo)'), ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+        function start() {
+            ev.forEach(function (e) { removeEventListener(e, start); });
+            v.src = v.dataset.src + '.mp4';
+            v.load();
+            v.play().catch(function () {});
+        }
+        ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
     })();
     </script>
     {%- endif %}

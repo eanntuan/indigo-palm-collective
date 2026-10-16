@@ -70,7 +70,7 @@ faqItems:
     <li>Use the <strong>Yellow Path at 49th and Monroe</strong> to enter the festival grounds</li>
 </ol>
 
-<video src="/blog/images/indian-palms-night-walk.mp4" autoplay muted loop playsinline style="width:100%;border-radius:8px;margin:2rem 0 0.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);"></video>
+<video data-src="/blog/images/indian-palms-night-walk" poster="/blog/images/indian-palms-night-walk-poster.webp" width="1080" height="1920" muted loop playsinline preload="none" style="width:100%;border-radius:8px;margin:2rem 0 0.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1);"></video>
 <p class="image-caption">This is the yellow gravel path that leads up to the entrance of the festival (gravel the whole way, so wear comfy shoes!)</p>
 
 <ol start="5">

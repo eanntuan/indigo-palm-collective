@@ -934,18 +934,6 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     <link rel="stylesheet" href="/css/cta-button.css">
 <link rel="stylesheet" href="/css/site-nav.css?v=2">
 <script src="/js/site-nav.js?v=2" defer></script>
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      "name": "Cozy Cactus backyard putting green in Indio",
-      "description": "A slow pan across the Cozy Cactus backyard in Indio, California: the two-hole putting green, the painted block wall and the covered patio.",
-      "thumbnailUrl": "https://indigopalm.co/cozy-cactus/photos/CozyCactus2026-0004.webp",
-      "uploadDate": "2026-05-14T09:00:00-07:00",
-      "duration": "PT10S",
-      "contentUrl": "https://indigopalm.co/cozy-cactus/video/cozy-cactus-hero.mp4"
-    }
-    </script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var v = document.getElementById('heroVideo');
@@ -953,8 +941,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var c = navigator.connection || {};
   if (matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData || /^(slow-2g|2g|3g)$/.test(c.effectiveType || '')) { v.remove(); return; }
   function start() {
-    var small = matchMedia('(max-width: 800px)').matches;
-    v.src = small ? v.dataset.srcSmall : v.dataset.src;
+    ev.forEach(function (e) { removeEventListener(e, start); });
+    v.src = v.dataset.src + (matchMedia('(max-width: 800px)').matches ? '-720' : '') + '.mp4';
+    v.load();
     v.addEventListener('playing', function () { v.classList.add('is-playing'); v.parentNode.classList.add('has-video'); }, { once: true });
     var inView = true;
     function sync() { if (inView && !document.hidden) (v.playbackRate = 0.75, v.play()).catch(function () {}); else v.pause(); }
@@ -962,7 +951,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('visibilitychange', sync);
     sync();
   }
-  if (document.readyState === 'complete') start(); else addEventListener('load', start);
+  var ev = ['pointerdown', 'pointermove', 'touchstart', 'scroll', 'keydown'];
+  ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
 });
 </script>
 </head>
@@ -994,7 +984,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <!-- Hero Section -->
     <section class="hero" role="img" aria-label="Cozy Cactus vacation rental exterior in Indio California with community pool hot tub and desert mountain views">
-        <video class="hero-video" id="heroVideo" muted loop playsinline autoplay preload="metadata" poster="/cozy-cactus/photos/CozyCactus2026-0004.webp" aria-hidden="true" tabindex="-1" data-src="/cozy-cactus/video/cozy-cactus-hero.mp4" data-src-small="/cozy-cactus/video/cozy-cactus-hero-720.mp4"></video>
+        <video class="hero-video" id="heroVideo" muted loop playsinline preload="metadata" poster="/cozy-cactus/photos/CozyCactus2026-0004.webp" aria-hidden="true" tabindex="-1" data-src="/cozy-cactus/video/cozy-cactus-hero"></video>
         <div class="hero-content">
             <div class="property-tag">FAMILY ADVENTURE</div>
             <h1>The Cozy Cactus: Made for Families</h1>
