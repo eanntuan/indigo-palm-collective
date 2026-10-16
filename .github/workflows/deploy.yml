@@ -45,6 +45,7 @@ jobs:
           find . -maxdepth 1 -type f -name '*.md' ! -name PRIVACY_POLICY.md ! -name EULA.md -delete
           rm -rf tracking performance-data workers pinterest-automation content/backlog
           rm -f content/*.md
+          find . -maxdepth 1 -type f -name '*.js' ! -name attribution.js ! -name booking-flow.js ! -name booking-config.js ! -name dashboard-script.js ! -name '.eleventy.js' -delete
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
