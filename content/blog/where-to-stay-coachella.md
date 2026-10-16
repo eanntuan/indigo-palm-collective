@@ -118,7 +118,7 @@ faqItems:
 
 <h2>Option 4: Vacation Rentals in Indian Palms (Walkable to Festival)</h2>
 
-<p>Indian Palms Country Club is a gated neighborhood in Indio, walking distance to the polo grounds. The walk to the festival entrance is about 30 minutes via the Yellow Path (members of the community offer rides to the Indian Palms front gate for a fee, saving yourself about 15 minutes of walking!). That single fact changes the whole logistics picture for a group.</p>
+<p>Indian Palms Country Club is a gated neighborhood in Indio, walking distance to the polo grounds. The walk to the festival entrance is about 30 minutes via the Yellow Path (members of the community offer rides to the Indian Palms front gate for a small fee, saving yourself about 15 minutes of walking!). That single fact changes the whole logistics picture for a group.</p>
 
 <p>When your rental is walkable distance from the grounds, shuttles become optional. Half the group can head back to the house at 3pm while the others stay through headliners, then everyone meets back on their own schedule without coordinating shared rides. No surge pricing on the way home at 1am. If someone needs a break midday, they take it, no negotiation required.</p>
 

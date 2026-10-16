@@ -82,7 +82,7 @@ relatedPosts:
 
 <h2>The Two Properties: What Each One Is</h2>
 
-<p>Both of our Indio properties are inside Indian Palms Country Club, walking distance from the festival entrance via Eisenhower Drive, and that's a real walk rather than a marketing claim (members of the community offer rides to the Indian Palms front gate for a fee, saving yourself about 15 minutes of walking!).</p>
+<p>Both of our Indio properties are inside Indian Palms Country Club, walking distance from the festival entrance via Eisenhower Drive, and that's a real walk rather than a marketing claim (members of the community offer rides to the Indian Palms front gate for a small fee, saving yourself about 15 minutes of walking!).</p>
 
 <p><a href="/cozy-cactus/"><strong>The Cozy Cactus</strong></a> is our 3BR/2BA that sleeps 8. Private hot tub on the property, three heated community pools reachable through the country club, a putting green, game room with foosball and ping pong, fully stocked kitchen with a covered patio. Best for: groups of 4-8 who want indoor-outdoor flow and real recovery space. 4.97 stars across 146+ reviews.</p>
 
