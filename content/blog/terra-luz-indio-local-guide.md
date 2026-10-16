@@ -50,7 +50,7 @@ layout: blog-post.njk
 
 <h3>Breakfast and Coffee</h3>
 
-<p>The closest coffee worth driving to is Koffi, with a location in Palm Desert (about 15 minutes west). For something closer, the Starbucks in Indio gets the job done, but the better move on a slow morning is to use the Nespresso at the house and ease into it from the patio before the desert heats up.</p>
+<p>The closest coffee worth driving to is Koffi, with a location in Palm Desert (about 15 minutes west). For something closer, the Starbucks in Indio gets the job done, but the better move on a slow morning is to use the coffee maker at the house and ease into it from the patio before the desert heats up.</p>
 
 <p>For breakfast, <strong>Guadalajara Restaurant</strong> on Miles Ave serves a solid eggs and chorizo situation. <strong>Tacos El Gordo</strong> (if you're up for the drive west toward Palm Springs) is the destination option that guests mention most often in reviews. Breakfast burritos in the Coachella Valley hit different when they're wrapped in a flour tortilla from a proper tortilleria.</p>
 
@@ -98,7 +98,7 @@ layout: blog-post.njk
 
 <p>For specialty items (nicer wine, charcuterie, fresh bread), the Whole Foods in Palm Desert is 20 minutes west and worth the drive if you're stocking up for a longer stay. <a href="/blog/grocery-stores-coachella-valley/">Full grocery breakdown here</a> if you want to compare options before you arrive.</p>
 
-<p>The house has a Nespresso and a French press. Cafe Bustelo is on the counter. Bring your own beans if you're particular, but the setup is there.</p>
+<p>The house has a drip coffee maker and a French press. Cafe Bustelo is on the counter. Bring your own beans if you're particular, but the setup is there.</p>
 
 <img src="/blog/images/terra-luz-pool-loungers.webp" alt="Terra Luz pool with in-pool loungers and blue Kahlo pool tiles in Indio California vacation rental" width="1024" height="1536" loading="lazy">
 <p class="image-caption">The pool loungers are in the water by default. No float required.</p>

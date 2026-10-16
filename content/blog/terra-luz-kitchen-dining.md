@@ -63,7 +63,7 @@ layout: blog-post.njk
 
 <p>On the open shelves: amber glass tumblers, green glass tumblers, hand-thrown ceramic mugs in brown and blue with patterned glaze, and a driftwood piece on the top shelf that you'd only understand as decorative. There's a chess set tucked on the counter near the microwave because we had space and it felt right. The knives are serious knives in a wood block. It's a kitchen someone thought about.</p>
 
-<p>For coffee there's a Nespresso machine and a French press, with Cafe Bustelo in the cabinet. If you're the kind of person who noticed the Cafe Bustelo illustration on the shelf vignette, you'll appreciate finding the actual can in the kitchen. The coffee setup on the counter has a blue ceramic pour-over dripper and a Craft Coffee book propped against the tile, which is a little much but it scans correctly in the photos.</p>
+<p>For coffee there's a black drip coffee maker and a French press, with Cafe Bustelo in the cabinet. If you're the kind of person who noticed the Cafe Bustelo illustration on the shelf vignette, you'll appreciate finding the actual can in the kitchen. The coffee setup on the counter has a blue ceramic pour-over dripper and a Craft Coffee book propped against the tile, which is a little much but it scans correctly in the photos.</p>
 
 <img src="/blog/images/terra-luz-kitchen-dining-extra.webp" alt="Terra Luz kitchen and dining area at Terra Luz vacation rental in Indio California with terracotta walls, rattan chairs, and open plan layout" width="1600" height="1067" loading="lazy">
 <p class="image-caption">Kitchen and dining in the same sightline. The open plan keeps whoever is cooking part of the conversation.</p>
@@ -92,7 +92,7 @@ layout: blog-post.njk
       "name": "What appliances and coffee setup does the Terra Luz kitchen include?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The kitchen has a gas range with a white enamel range hood, granite countertops, and open wood shelving. For coffee, there's a Nespresso machine, a French press, and Cafe Bustelo stocked in the cabinet. The open shelves hold amber and green glass tumblers, hand-thrown ceramic mugs, and a proper knife set in a wood block."
+        "text": "The kitchen has a gas range with a white enamel range hood, granite countertops, and open wood shelving. For coffee, there's a drip coffee maker, a French press, and Cafe Bustelo stocked in the cabinet. The open shelves hold amber and green glass tumblers, hand-thrown ceramic mugs, and a proper knife set in a wood block."
       }
     },
     {

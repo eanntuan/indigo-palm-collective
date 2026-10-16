@@ -73,7 +73,7 @@ layout: blog-post.njk
 
 <p>The biggest structural change was the pool deck, handled by Tom at <strong>Concrete By Design</strong>. The original concrete was standard issue; what replaced it has a texture and warmth that photographs like Morocco. It runs the full length of the backyard, connecting the covered patio to the pool edge.</p>
 
-<p>The fire pit is still coming. We deferred it to Phase 2 along with the inflatable movie screen, which I'm genuinely still planning for. Both would require more infrastructure than we had bandwidth for before the May launch. The deck itself more than holds up in the meantime.</p>
+<p>The deck itself carries the backyard, and it more than holds up without any extras.</p>
 
 <h2>Entryway and Living Room</h2>
 
@@ -84,11 +84,11 @@ layout: blog-post.njk
 
 <p>The living room kept most of its bones but got reshuffled. We swapped in a walnut TV stand (Dawn approved, sourced in March), kept the original jute rug, and added two faux fan palms in blue pots. Dawn specifically called for blue to balance the terracotta and warm woods. The existing jute rug is staying for now because it earns its place, which is not something I expected to say about a holdover from before the redesign.</p>
 
-<p>Books fill the bookcase. Actual books, not staged filler. The artwork above the fireplace area is a large piece sourced from Etsy. There's a catch-all tray situation on the coffee table that I'll let guests sort out for themselves.</p>
+<p>Books fill the bookcase. Actual books, not staged filler. The large artwork on the living room wall is a piece sourced from Etsy. There's a catch-all tray situation on the coffee table that I'll let guests sort out for themselves.</p>
 
 <h2>Kitchen</h2>
 
-<p>The kitchen is functional, not fussy. A Chemex pour-over cone and an acacia chopping block are the main visual callouts. We didn't try to stage it as something it's not. Guests who cook will find what they need. Guests who don't will find the Nespresso.</p>
+<p>The kitchen is functional, not fussy. A Chemex pour-over cone and an acacia chopping block are the main visual callouts. We didn't try to stage it as something it's not. Guests who cook will find what they need. Guests who don't will find the drip coffee maker.</p>
 
 <img src="/blog/images/terra-luz-kitchen.webp" alt="Terra Luz kitchen with wood accents, Chemex pour-over, and clean warm tones in Indio vacation rental" width="1024" height="683" loading="lazy">
 <p class="image-caption">Simple and stocked. The Chemex gets used more than I expected.</p>
@@ -153,9 +153,7 @@ layout: blog-post.njk
 <p>Beach robes for six guests are stacked and ready. Pool towels in blue and white from Studio McGee. A palm print pool float and a tan stripe kids float, because not every guest will be an adult.</p>
 
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz pool backyard with outdoor sofa lounge, garden stool, and in-pool loungers at sunset in Indio California" width="1024" height="1536" loading="lazy">
-<p class="image-caption">Evening light on the patio. The fire pit is Phase 2. The vibe doesn't miss it yet.</p>
-
-<p>The fire pit and the inflatable movie screen are both still coming. Phase 2, once we understand how the operational rhythm settles. The outdoor space functions beautifully without them. The movie screen would make it absurd in the best way, and we'll get there.</p>
+<p class="image-caption">Evening light on the patio. It doesn't need anything added.</p>
 
 <h2>What We Didn't Buy (And Why)</h2>
 
@@ -187,7 +185,7 @@ layout: blog-post.njk
 
 <h4>What does Phase 2 include?</h4>
 
-<p>Exterior paint, the fire pit, and possibly the inflatable movie screen. Timeline: Summer 2026 for the paint, then we'll see what the season brings.</p>
+<p>Exterior paint, planned for Summer 2026. Phase 3 in 2027 is the pass-through window from the kitchen to the patio.</p>
 
 <h4>Can I book Terra Luz directly?</h4>
 
@@ -241,7 +239,7 @@ layout: blog-post.njk
       "name": "What does Phase 2 of the Terra Luz renovation include?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Phase 2 covers exterior paint and the fire pit, planned for Summer 2026. Phase 3 in 2027 is a pass-through window from the kitchen to the patio. The inflatable movie screen is also on the Phase 2 list."
+        "text": "Phase 2 covers exterior paint, planned for Summer 2026. Phase 3 in 2027 is a pass-through window from the kitchen to the patio."
       }
     },
     {
