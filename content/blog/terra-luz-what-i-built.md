@@ -48,7 +48,7 @@ relatedPosts:
 
 <h2>The patio and outdoor kitchen</h2>
 
-<p>The covered patio runs the full length of the back of the house: string lights overhead, a West Elm outdoor dining table that seats eight, and a sectional facing the pool, dressed up with Business and Pleasure throw pillows. It's set up for spending a full day outside without going back in except to use the bathroom. Evenings shift naturally here: guests gather around the fire pit for casual meals, grilled dinners, or order-in from local favorites like Desert Beer pizza. After dark with the inflatable movie screen up, pool lit, fire going, the patio becomes its own world. There's a curated watchlist in the house guide if you want it, nods to world travel like Casablanca or Buena Vista Social Club, and family flicks like Coco and Encanto that are genuinely fun for adults too.</p>
+<p>The covered patio runs the full length of the back of the house: string lights overhead, a West Elm outdoor dining table that seats eight, and a sectional facing the pool, dressed up with Business and Pleasure throw pillows. It's set up for spending a full day outside without going back in except to use the bathroom. Evenings shift naturally here: guests gather at the table for casual meals, grilled dinners off the outdoor kitchen, or order-in from local favorites like Desert Beer pizza. After dark with the pool lit, the patio becomes its own world. There's a curated watchlist in the house guide if you want it, nods to world travel like Casablanca or Buena Vista Social Club, and family flicks like Coco and Encanto that are genuinely fun for adults too.</p>
 
 <img src="/blog/images/terra-luz-patio-full.webp" alt="Terra Luz covered patio in Indio California with outdoor dining, sectional seating, and pool view" width="1024" height="683" loading="lazy">
 <p class="image-caption">The patio. Outdoor curfew per city ordinance is 10pm. After that, the party moves inside.</p>
@@ -128,7 +128,7 @@ relatedPosts:
 
 <h2>Who books this house</h2>
 
-<p>The groups that fit Terra Luz best: friend groups of 6-8, bachelorette trips, Coachella or Stagecoach weekends, and milestone birthday gatherings where the outdoor space is the point. The combination of pool, spa, outdoor kitchen, and enough bedrooms to give everyone their own space makes it work for groups that want to spend a lot of time at the house, not just sleep there. They want to be close to what's happening next, just enough to choose from without feeling rushed to chase it. For them, the real luxury is melting into the present: letting the afternoon unspool, watching the pool change color as the sun drops, ordering pizza and eating it next to a fire pit. They leave recalibrated.</p>
+<p>The groups that fit Terra Luz best: friend groups of 6-8, bachelorette trips, Coachella or Stagecoach weekends, and milestone birthday gatherings where the outdoor space is the point. The combination of pool, spa, outdoor kitchen, and enough bedrooms to give everyone their own space makes it work for groups that want to spend a lot of time at the house, not just sleep there. They want to be close to what's happening next, just enough to choose from without feeling rushed to chase it. For them, the real luxury is melting into the present: letting the afternoon unspool, watching the pool change color as the sun drops, ordering pizza and eating it by the pool. They leave recalibrated.</p>
 
 <p>It's also the right fit for anyone who cares about the design. This is not a generic desert rental with beige walls and IKEA furniture. The aesthetic is intentional and specific, unpretentious yet elevated, and the guests who book it tend to know that going in. If you want something neutral and forgettable, there are plenty of those. Terra Luz is not that.</p>
 
@@ -210,7 +210,7 @@ relatedPosts:
       "name": "What's the outdoor curfew at Terra Luz?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "10pm per Indio city noise ordinance. Outdoor music and entertaining must wrap at 10. After curfew, the party moves inside. Terra Luz has an inflatable movie screen and indoor seating for the full group."
+        "text": "10pm per Indio city noise ordinance. Outdoor music and entertaining must wrap at 10. After curfew, the party moves inside. Terra Luz has indoor seating for the full group."
       }
     },
     {
