@@ -91,7 +91,7 @@ faqItems:
 
 <p>Best for: groups of 4-8 who want a festival base with indoor activity options for the middle of the day when it's too hot to be outside.</p>
 
-<p>No pets. Check-in 4pm, checkout 11am.</p>
+<p>No pets. Check-in 4pm, checkout 10am.</p>
 
 <h2><a href="/terra-luz/">Terra Luz</a>: 3BR, Private Saltwater Pool, Sleeps 8</h2>
 

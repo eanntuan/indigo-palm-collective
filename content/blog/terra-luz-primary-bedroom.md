@@ -90,7 +90,7 @@ layout: blog-post.njk
       "name": "Does the primary bedroom at Terra Luz have its own bathroom?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, the primary has a private ensuite not shared with other guests. It has a soaking tub, separate walk-in shower, double vanity with gold hardware, and rattan pendant light. The pool is heated on request for $75 per night. Book direct at indigopalm.co/terra-luz/ to skip the Airbnb service fee."
+        "text": "Yes, the primary has a private ensuite not shared with other guests. It has a soaking tub, separate walk-in shower, double vanity with gold hardware, and rattan pendant light. The pool is heated on request for $75 per day, 2 night minimum. Book direct at indigopalm.co/terra-luz/ to skip the Airbnb service fee."
       }
     },
     {

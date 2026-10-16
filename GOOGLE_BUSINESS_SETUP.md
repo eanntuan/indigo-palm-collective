@@ -134,7 +134,7 @@ Once verified:
 Pre-populate your Q&A section (shows up in search):
 
 **Q**: "Is the pool heated?"
-**A**: "Yes! The pool is heated year-round and perfect for evening swims."
+**A**: "Yes! We can heat the pool for $75 per day with a 2 night minimum, perfect for evening swims."
 
 **Q**: "How far from Coachella?"
 **A**: "15 minutes from Coachella festival grounds."

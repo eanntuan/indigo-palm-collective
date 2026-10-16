@@ -112,7 +112,7 @@ relatedPosts:
 <p>I-10 East to the Gene Autry Trail exit drops you into Palm Springs in about 2 hours from downtown LA. The better way in: exit at Date Palm Drive in Cathedral City and take Highway 111 west, which brings you onto the main Palm Springs strip with the San Jacinto Mountains filling your windshield. Park on a side street off Belardo Road and you're already in the neighborhood.</p>
 
 <h3>How many nights should I stay at The Sundune?</h3>
-<p>Plan 4 nights, which is the HOA's weekday minimum at Palm Canyon Villas (5 nights on weekends): one morning for the architecture drive and Moorten Botanical Garden, one evening at Boozehounds after a slow brunch at Wilma and Frieda's, one day at Palm Springs Surf Club, and enough slack left over to sit by the pool. A Thursday arrival means VillageFest is your first night, which is a good way to start.</p>
+<p>Plan 4 nights, which is the HOA's minimum at Palm Canyon Villas: one morning for the architecture drive and Moorten Botanical Garden, one evening at Boozehounds after a slow brunch at Wilma and Frieda's, one day at Palm Springs Surf Club, and enough slack left over to sit by the pool. A Thursday arrival means VillageFest is your first night, which is a good way to start.</p>
 
 <h3>Is The Sundune good for a bachelorette trip?</h3>
 <p>For groups of up to six, yes. Three king beds across two bedrooms, a shared HOA pool, and a ten-minute drive to the bars and restaurants on Palm Canyon Drive covers the basics well. Larger bachelorette groups tend to be better served by the Indio properties, which have more sleeping capacity and private outdoor spaces built for that kind of trip.</p>
@@ -162,7 +162,7 @@ relatedPosts:
       "name": "What is the minimum stay at The Sundune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The HOA at Palm Canyon Villas sets a 4-night minimum on weekdays and a 5-night minimum on weekends, and it is not flexible. A Thursday check-in clears the weekday minimum and lands you at VillageFest on your first evening."
+        "text": "The HOA at Palm Canyon Villas sets a 4-night minimum, and it is not flexible. A Thursday check-in lands you at VillageFest on your first evening."
       }
     },
     {

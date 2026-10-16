@@ -91,7 +91,7 @@ layout: blog-post.njk
 <p>Yes. Terra Luz books direct at <a href="/terra-luz/">indigopalm.co/terra-luz</a>, which skips the platform fee markup, so the same dates typically run cheaper than the Airbnb listing. Booking direct also makes it easy to coordinate details like pool heating, early check-in, or your group's headcount before you commit.</p>
 
 <h3>Is pool heating included at Terra Luz?</h3>
-<p>Pool heating is available for $75 per night, and it's worth requesting for visits from October through April when desert nights drop fast. In summer the water holds heat without it. Message me before booking if you want it arranged for a cooler-month weekend.</p>
+<p>Pool heating is available for $75 per day with a 2 night minimum, and it's worth requesting for visits from October through April when desert nights drop fast. In summer the water holds heat without it. Message me before booking if you want it arranged for a cooler-month weekend.</p>
 
 <script type="application/ld+json">
 {
@@ -151,7 +151,7 @@ layout: blog-post.njk
       "name": "Is pool heating included at Terra Luz?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pool heating is available for $75 per night. It is worth requesting for visits from October through April when desert nights drop significantly. Message the host before booking to arrange it for your arrival."
+        "text": "Pool heating is available for $75 per day with a 2 night minimum. It is worth requesting for visits from October through April when desert nights drop significantly. Message the host before booking to arrange it for your arrival."
       }
     }
   ]

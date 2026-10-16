@@ -163,7 +163,7 @@ Cron triggers: `0 9 * * *` (daily) and `*/10 * * * *` (every 10 min) — see `[t
 ```
 Guest fills form
   → Selects property, dates, guests
-  → Optional: pool heat (Terra Luz only, $75/night, flat $400 for 7+ nights)
+  → Optional: pool heat (Terra Luz only, $75 per day, 2 night minimum, flat $400 for 7+ nights)
   → Optional: promo code
   → Submits
 

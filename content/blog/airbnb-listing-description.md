@@ -55,7 +55,7 @@ layout: blog-post.njk
 
 <p>Cover the basics: beds, baths, max occupancy, parking situation, pool type (private vs. shared, heated vs. not), pet policy, checkout time, and what access guests get. If there are restrictions that matter, say them here. A guest who discovers a pet policy surprise on arrival is worse than a guest who self-filtered at the listing stage.</p>
 
-<p>For Terra Luz: 3 bedrooms, 2 bathrooms, sleeps 8, private Kahlo blue saltwater pool with a heated spa (spa heating included, pool heating $75/night), private driveway parking, dog-friendly with prior approval. For The Cozy Cactus: 3 bedrooms, 2 bathrooms, sleeps 8, private hot tub plus access to three heated community pools at Indian Palms Country Club, game room, pack-and-play available, not pet-friendly. For The Sundune: 2 bedrooms, 2 bathrooms, three king beds, sleeps 6, balcony with views, assigned parking, shared HOA pool, ten minutes from downtown Palm Springs.</p>
+<p>For Terra Luz: 3 bedrooms, 2 bathrooms, sleeps 8, private Kahlo blue saltwater pool with a heated spa (spa heating included, pool heating $75 per day, 2 night minimum), private driveway parking, dog-friendly with prior approval. For The Cozy Cactus: 3 bedrooms, 2 bathrooms, sleeps 8, private hot tub plus access to three heated community pools at Indian Palms Country Club, game room, pack-and-play available, not pet-friendly. For The Sundune: 2 bedrooms, 2 bathrooms, three king beds, sleeps 6, balcony with views, assigned parking, shared HOA pool, ten minutes from downtown Palm Springs.</p>
 
 <p>Don't bury these details in paragraphs. Guests skim this section, not read it.</p>
 

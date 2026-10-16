@@ -53,7 +53,7 @@ layout: blog-post.njk
 <img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Coffee stop before gallery hopping in Palm Springs Uptown Design District" width="1000" height="867" loading="lazy">
 <p class="image-caption">Coffee first, galleries second. Uptown has enough sidewalk that pacing matters.</p>
 
-<p>If you're staying at <a href="/the-sundune/"><strong>The Sundune</strong></a>, our Palm Springs condo, both the downtown core and the Uptown Design District are a five-minute drive and an easy walk once you're parked. It's the only one of our properties that puts you inside the city instead of out in Indio, which matters if a gallery afternoon is the whole point of the trip.</p>
+<p>If you're staying at <a href="/the-sundune/"><strong>The Sundune</strong></a>, our Palm Springs condo, the Uptown Design District is an easy walk and the downtown core is about a ten-minute drive, then an easy walk once you're parked. It's the only one of our properties that puts you inside the city instead of out in Indio, which matters if a gallery afternoon is the whole point of the trip.</p>
 
 <h2>Beyond Downtown: Where the Working Artists Are</h2>
 

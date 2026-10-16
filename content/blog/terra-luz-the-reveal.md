@@ -199,7 +199,7 @@ layout: blog-post.njk
 
 <h4>Is the pool heated, and what does it cost?</h4>
 
-<p>Pool heating is available at $75 per night, added at booking. Spring visitors for Coachella or Stagecoach typically add it for evening swims, since desert nights cool fast in April. Summer guests often skip it because ambient temperatures keep the water warm on their own. Beach robes for six and Studio McGee pool towels are included.</p>
+<p>Pool heating is available at $75 per day with a 2 night minimum, added at booking. Spring visitors for Coachella or Stagecoach typically add it for evening swims, since desert nights cool fast in April. Summer guests often skip it because ambient temperatures keep the water warm on their own. Beach robes for six and Studio McGee pool towels are included.</p>
 
 <h4>What is the sleeping capacity and who is the property best for?</h4>
 
@@ -265,7 +265,7 @@ layout: blog-post.njk
       "name": "Is the Terra Luz pool heated?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pool heating is available at $75 per night, added at booking. Spring festival guests typically add it for evening swims since desert nights cool fast in April. Summer guests often skip it because ambient temperatures keep the water warm through the evening."
+        "text": "Pool heating is available at $75 per day with a 2 night minimum, added at booking. Spring festival guests typically add it for evening swims since desert nights cool fast in April. Summer guests often skip it because ambient temperatures keep the water warm through the evening."
       }
     },
     {

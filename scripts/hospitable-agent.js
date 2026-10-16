@@ -51,7 +51,7 @@ Key details:
 - Max occupancy: 4 adults
 - Pets allowed ($150 fee)
 - No parties, no smoking, quiet hours after 10pm
-- HOA minimum stay: 4 nights (weekday), 5 nights (weekends)
+- HOA minimum stay: 4 nights
 - Airport: 3 miles, Downtown PS: 5 miles, Target/Trader Joe's: 0.5 miles
 - Lost pool key: $300 replacement fee
 - WiFi: "The PS Retreat" (password in welcome guide)

@@ -154,12 +154,12 @@ const PROPERTY_STORY_BEATS = {
     welcome:   'The hot tub is best after 9pm. The patio string lights come on at dusk. The backyard is completely private.',
   },
   'terra-luz': {
-    confirmed: 'Saltwater pool, heated year-round. The kitchen has a pass-through window straight to the patio, so whoever\'s cooking isn\'t stuck missing the pool.',
-    welcome:   'The saltwater pool is heated and ready. The tortilla press is in the lower cabinet, next to the cast iron. The neighborhood is quiet.',
+    confirmed: 'Saltwater pool, heating is $75 per day with a 2 night minimum. The kitchen has a pass-through window straight to the patio, so whoever\'s cooking isn\'t stuck missing the pool.',
+    welcome:   'The saltwater pool is ready. The tortilla press is in the lower cabinet, next to the cast iron. The neighborhood is quiet.',
   },
   'casa-moto': {
-    confirmed: 'Saltwater pool, heated year-round. The kitchen has a pass-through window straight to the patio, so whoever\'s cooking isn\'t stuck missing the pool.',
-    welcome:   'The saltwater pool is heated and ready. The tortilla press is in the lower cabinet, next to the cast iron. The neighborhood is quiet.',
+    confirmed: 'Saltwater pool, heating is $75 per day with a 2 night minimum. The kitchen has a pass-through window straight to the patio, so whoever\'s cooking isn\'t stuck missing the pool.',
+    welcome:   'The saltwater pool is ready. The tortilla press is in the lower cabinet, next to the cast iron. The neighborhood is quiet.',
   },
   'ps-retreat': {
     confirmed: 'Ten minutes to downtown Palm Springs. Coffee, record shops, bookstores, a proper breakfast. The kind of location where you go out for one thing and end up gone for three hours.',
@@ -2249,7 +2249,7 @@ HOUSE RULES
 
 EARLY CHECK-IN / LATE CHECKOUT
 - Early check-in: officially 4pm, but message us day-of and we'll let you know if it's ready earlier. Cleaning crew starts around 10am and usually wraps by 1-2pm. No guarantee but we try.
-- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works for $50, depends on the next booking.
+- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works for an additional fee, depends on the next booking.
 
 ADDING GUESTS
 - Happy to add anyone within the 8-guest max. Just send first and last name and we'll update the reservation.
@@ -2332,7 +2332,7 @@ HOUSE RULES
 
 EARLY CHECK-IN / LATE CHECKOUT
 - Early check-in: officially 4pm, but message us day-of and we'll check if it's ready. Cleaning usually wraps by 1-2pm. No guarantee but we try.
-- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works for $50, depends on the next booking.
+- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works for an additional fee, depends on the next booking.
 
 ADDING GUESTS
 - Happy to add anyone within the 8-guest max. Send first and last name and we'll update the reservation.
@@ -2560,7 +2560,7 @@ Adding a dog (Terra Luz or Sundune):
 "Yes, dogs are welcome with prior approval. [One dog max / etc.] Can you tell me a bit about them? Size, breed, and we should be good to go."
 
 Late checkout:
-"10am is firm on my end because the cleaning crew comes right after. If you want a little more time in the morning, I can sometimes do 11am for $50 — just depends on the next booking. Want me to check?"
+"10am is firm on my end because the cleaning crew comes right after. If you want a little more time in the morning, I can sometimes do 11am for an additional fee, just depends on the next booking. Want me to check?"
 
 Noise/neighbors question:
 "Outdoor curfew is 10pm per city regulations — music off and everyone inside by then. The neighbors have always been great and we want to keep it that way. Inside the house after 10 is totally fine."

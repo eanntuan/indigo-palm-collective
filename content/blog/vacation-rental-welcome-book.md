@@ -35,7 +35,7 @@ layout: blog-post.njk
 
 <h3>2. Check-in and Check-out Instructions</h3>
 
-<p>Guests need specific information, not approximations. Include exact check-in and check-out times (we're 4 PM in and 11 AM out), the key code or lockbox combination, which door to use, and where to park. If parking has any quirks, spell them out. At our Indio properties, we note which spots are reserved and where overflow street parking sits.</p>
+<p>Guests need specific information, not approximations. Include exact check-in and check-out times (we're 4 PM in and 10 AM out in Indio, 11 AM out at The Sundune), the key code or lockbox combination, which door to use, and where to park. If parking has any quirks, spell them out. At our Indio properties, we note which spots are reserved and where overflow street parking sits.</p>
 
 <h3>3. How Things Work</h3>
 

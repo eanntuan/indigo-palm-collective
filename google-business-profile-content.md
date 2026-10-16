@@ -127,7 +127,7 @@ Yes! Cozy Cactus is specifically designed for families with a curated toy collec
 - Mid-century modern architecture
 - Turquoise pool
 - "Bowling alley" primary suite
-- Walking distance to downtown
+- About a 10 minute drive to downtown
 
 ### The Well (Palm Springs)
 - 1 bedroom, sleeps 2

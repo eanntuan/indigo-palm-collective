@@ -85,7 +85,7 @@ relatedPosts:
 
 <p><strong>No pets at this property.</strong> If you're traveling with a dog, <a href="/terra-luz/">Terra Luz</a> is pet-friendly ($150 fee, 2 dog max, fully fenced yard).</p>
 
-<p><strong>Check-in is 4pm, checkout 11am.</strong> Early and late are available with advance notice when the schedule allows. I ask that you reach out in advance rather than day-of, since same-day turnovers don't usually leave room for flexibility.</p>
+<p><strong>Check-in is 4pm, checkout 10am.</strong> Early and late are available with advance notice when the schedule allows. I ask that you reach out in advance rather than day-of, since same-day turnovers don't usually leave room for flexibility.</p>
 
 <p><strong>The neighborhood is gated.</strong> Gate access and all check-in instructions go out 24 hours before arrival, with check-in itself self-serve via smart lock.</p>
 

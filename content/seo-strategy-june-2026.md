@@ -814,7 +814,7 @@ All captions from RG-1 are pre-loaded in the Pinterest Pins tab. Add new content
 
 ~~**TASK RG-3: Quora answer template using thread prompt structure**~~ ✅ **DONE 2026-07-11** — Full prompt template written to `/tmp/rg3-quora-answer-template.md`: problem > pain > tactical solution > soft CTA structure, plus the cadence rule (5-7 existing high-volume questions/week, not self-created ones — ties to the June 26 Quora audit finding). Source: Lesson 3 (viral thread prompt).
 
-~~**TASK RG-4: Claude Project "Indigo Palm HQ"**~~ ✅ **DONE June 25** — Context doc written at `/tmp/indigo-palm-hq-claude-project.md`. Covers: About, Properties, Brand Voice (with banned phrases + sentence stacking rules), Guest Personas, Key Facts Never Get Wrong (Airbnb 20%, walking distance rule, pet policy per property, Sundune 5-night flat min, pool types), Content Goals, Owner bio, and the 30-day audit prompt. Eann: create Claude Project → paste this into Project Instructions → connect Gmail + Calendar connectors. Source: Lesson 10 (Claude Cowork 201).
+~~**TASK RG-4: Claude Project "Indigo Palm HQ"**~~ ✅ **DONE June 25** — Context doc written at `/tmp/indigo-palm-hq-claude-project.md`. Covers: About, Properties, Brand Voice (with banned phrases + sentence stacking rules), Guest Personas, Key Facts Never Get Wrong (Airbnb 20%, walking distance rule, pet policy per property, Sundune 4-night flat min, pool types), Content Goals, Owner bio, and the 30-day audit prompt. Eann: create Claude Project → paste this into Project Instructions → connect Gmail + Calendar connectors. Source: Lesson 10 (Claude Cowork 201).
 
 ---
 
@@ -2288,8 +2288,8 @@ Full `/audit-website` pass across 98 blog `.md` sources and the 5 hand-maintaine
 - The Cozy Cactus was given a **private pool** in 20+ places, including root `index.html` JSON-LD and a dozen image alt texts. It has a private hot tub plus three heated community pools at Indian Palms.
 - The Sundune was given a **private pool** in its own JSON-LD, both as a description and as a `LocationFeatureSpecification`. It is a shared HOA pool at Palm Canyon Villas.
 - The Sundune was described as **walkable to downtown Palm Springs** in about 25 places across the property page and 14 blog posts. Downtown is a ten-minute drive; the Uptown Design District is the walkable part. Fixed in prose and in every FAQPage JSON-LD copy so the two still match.
-- The Sundune was recommended at **3 nights, and in places 2**, against a 5-night HOA floor. Also `sleeps 4` corrected to 6 (three king beds).
-- Terra Luz pool heating was presented as a free year-round perk. The **spa** is complimentary; **pool** heating is $75/night. Also `sleeps 6` corrected to 8, and checkout 11am corrected to 10am.
+- The Sundune was recommended at **3 nights, and in places 2**, against a 4-night HOA floor. Also `sleeps 4` corrected to 6 (three king beds).
+- Terra Luz pool heating was presented as a free year-round perk. The **spa** is complimentary; **pool** heating is $75 per day with a 2 night minimum. Also `sleeps 6` corrected to 8, and checkout 11am corrected to 10am.
 - 24 instances of the retired name **"Casa Moto"** on a live indexed post. Renamed in copy, slug deliberately untouched since it is in `sitemap.xml` and would need a redirect.
 - **Airbnb service fee** stated as "14-20%" or "15-20%" in 7 places. Repo `CLAUDE.md` is explicit that it is 20% flat. Also corrected the `book-direct` dollar math, which claimed $150-210 of fees on a $1,500 subtotal where 20% is $300.
 - **Indian Palms to Empire Polo Club** quantified as mileage or a car trip in ~40 places ("1.5 miles", "19 minutes on foot", "7-minute drive from the stage"). Repo `CLAUDE.md` requires plain walking-distance framing. Palm Springs, Idyllwild, LAX and Sundune distances were left intact on purpose.
