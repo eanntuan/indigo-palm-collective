@@ -1131,7 +1131,7 @@
     const main = document.querySelector('.details-main');
     if (main) {
       main.querySelector('h2').textContent = d.description_heading;
-      const ps = main.querySelectorAll('p');
+      const ps = main.querySelectorAll('p:not(.photo-caption)');
       if (ps[0]) ps[0].textContent = d.description_p1;
       if (ps[1]) ps[1].textContent = d.description_p2;
       if (ps[2]) ps[2].textContent = d.description_p3;
