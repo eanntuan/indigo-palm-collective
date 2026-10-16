@@ -39,8 +39,9 @@ jobs:
       - name: Check sitemap for redirect-stub pages
         run: node scripts/check-sitemap-redirects.js
 
-      - name: Drop unused backup folders (Pages artifact limit is 1 GB)
-        run: rm -rf _image_backups pinterest-photos-cozy-cactus api-worker
+      - name: Keep internal files, secrets and backups out of the Pages artifact (limit 1 GB)
+        run: rm -rf _image_backups pinterest-photos-cozy-cactus api-worker functions-backup scripts node_modules test-hostaway-api.js all-reviews-compiled.txt
+          find . -maxdepth 1 -type f -name '*.md' ! -name PRIVACY_POLICY.md ! -name EULA.md -delete
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
