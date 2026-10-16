@@ -40,7 +40,7 @@ jobs:
         run: node scripts/check-sitemap-redirects.js
 
       - name: Drop unused backup folders (Pages artifact limit is 1 GB)
-        run: rm -rf _image_backups pinterest-photos-cozy-cactus
+        run: rm -rf _image_backups pinterest-photos-cozy-cactus api-worker
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
