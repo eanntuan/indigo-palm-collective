@@ -19,7 +19,7 @@ keywords:
 articleSection: "Family Travel"
 property: ps-retreat
 readTime: "7 min read"
-excerpt: "Palm Springs with kids works better than you'd think. Here's where to go, what to skip, and why a 2-bedroom inside the city is the right home base for a family of up to six."
+excerpt: "Palm Springs with kids works better than you'd think. Here's where to go, what to skip, and why a 2-bedroom inside the city is the right home base for a family of up to four."
 layout: blog-post.njk
 ---
 
@@ -93,7 +93,7 @@ layout: blog-post.njk
 
 <h2>Where to Stay: Why The Sundune Makes Sense for Families</h2>
 
-<p>The Sundune is a 2-bedroom condo in Palm Springs with three king beds, so it sleeps six: two adults and up to four kids fit without anyone on a couch. You get a kitchen, two separate sleeping spaces, and a shared HOA pool that's a one-minute walk from the front door.</p>
+<p>The Sundune is a 2-bedroom condo in Palm Springs with three king beds, so it sleeps four: two adults and two kids fit without anyone on a couch. You get a kitchen, two separate sleeping spaces, and a shared HOA pool that's a one-minute walk from the front door.</p>
 
 <p>We keep a Pack 'n Play and a high chair available. Those two things alone save the "what do we need to bring" conversation for a lot of families traveling with an infant or toddler.</p>
 
@@ -101,7 +101,7 @@ layout: blog-post.njk
 
 <p>That's different from the Cozy Cactus, which is in Indio, built for bigger groups with a private hot tub, access to three heated community pools at Indian Palms Country Club, and proximity to festival venues. The Sundune is smaller, sits inside Palm Springs proper, and suits a family that wants a city base rather than a whole house to themselves.</p>
 
-<p>If you're deciding between the two properties for a family trip, the short version: <a href="/the-sundune/">The Sundune</a> for a family of up to six who want to be in Palm Springs proper. <a href="/cozy-cactus/">The Cozy Cactus</a> for a group of seven or eight, or families who want more space, a private hot tub, and Indio/festival proximity. For a deeper look at which neighborhood in Palm Springs works best for families, the <a href="/blog/palm-springs-neighborhood-guide/">neighborhood guide</a> has an honest breakdown of The Mesa and why families tend to end up there.</p>
+<p>If you're deciding between the two properties for a family trip, the short version: <a href="/the-sundune/">The Sundune</a> for a family of up to four who want to be in Palm Springs proper. <a href="/cozy-cactus/">The Cozy Cactus</a> for a group of five to eight, or families who want more space, a private hot tub, and Indio/festival proximity. For a deeper look at which neighborhood in Palm Springs works best for families, the <a href="/blog/palm-springs-neighborhood-guide/">neighborhood guide</a> has an honest breakdown of The Mesa and why families tend to end up there.</p>
 
 <img src="/blog/images/palm-springs-hotel-pool.webp" alt="Outdoor pool area in Palm Springs with desert palm trees and blue sky, typical of the resort and rental scene in the Coachella Valley" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The shared HOA pool at The Sundune is a one-minute walk. After a morning at the Living Desert, that math works out perfectly.</p>
@@ -138,7 +138,7 @@ layout: blog-post.njk
 <p>About 20 minutes, in Palm Desert. It's a straightforward drive on Highway 111. Plan for it to be an anchor activity, not a quick stop: budget 2.5 to 3 hours to see it.</p>
 
 <h3>Is The Sundune suitable for a family with a baby or toddler?</h3>
-<p>Yes. We keep a Pack 'n Play and high chair available, the community pool is a one-minute walk, and the two-bedroom layout gives parents actual separation from kids at night. With three king beds it fits a family of up to six comfortably, and for groups of seven or more the Cozy Cactus in Indio is the better fit.</p>
+<p>Yes. We keep a Pack 'n Play and high chair available, the community pool is a one-minute walk, and the two-bedroom layout gives parents actual separation from kids at night. With three king beds it fits a family of up to four comfortably, and for groups of five or more the Cozy Cactus in Indio is the better fit.</p>
 
 <h3>What is the minimum stay at The Sundune for a family trip?</h3>
 <p>The HOA at Palm Canyon Villas requires a 4-night minimum, and it applies to every rental in the complex, not just ours. Plan accordingly: a school-break week fits, a long weekend does not. Book direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> with no service fee.</p>
@@ -183,7 +183,7 @@ layout: blog-post.njk
       "name": "Is The Sundune suitable for a family with a baby or toddler?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The Sundune keeps a Pack 'n Play and high chair available, the community pool is a one-minute walk, and the two-bedroom layout gives parents separation from kids at night. Three king beds mean it sleeps six, so for groups of seven or more the Cozy Cactus in Indio is the better fit with three bedrooms and a private hot tub."
+        "text": "Yes. The Sundune keeps a Pack 'n Play and high chair available, the community pool is a one-minute walk, and the two-bedroom layout gives parents separation from kids at night. Three king beds mean it sleeps four, so for groups of five or more the Cozy Cactus in Indio is the better fit with three bedrooms and a private hot tub."
       }
     },
     {

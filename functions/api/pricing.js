@@ -24,7 +24,7 @@ const PROPERTY_CONFIG = {
   'cozy-cactus': { basePrice: 250, cleaningFee: 150, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
   'casa-moto':   { basePrice: 275, cleaningFee: 150, taxRate: 0.12,  maxGuests: 6, minNights: 2 },
   'ps-retreat':  { basePrice: 225, cleaningFee: 150, taxRate: 0.135, maxGuests: 4, minNights: 2 },
-  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 8, minNights: 2 },
+  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 2, minNights: 2 },
 };
 
 // Fallback peak multipliers — only used when PriceLabs is unavailable

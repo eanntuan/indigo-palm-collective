@@ -2,7 +2,7 @@
 title: "Where to Stay for the BNP Paribas Open: 12 Miles Out"
 date: 2026-06-22
 dateModified: 2026-10-01
-metaDescription: "Where to stay for the BNP Paribas Open 2027: The Sundune in Palm Springs sleeps 6 in 3 king beds, 12 miles from Indian Wells Tennis Garden, shared pool."
+metaDescription: "Where to stay for the BNP Paribas Open 2027: The Sundune in Palm Springs sleeps 4 with 3 king beds, 12 miles from Indian Wells Tennis Garden, shared pool."
 ogImage: /blog/images/bnp-paribas-stadium-packed.webp
 heroImage: /blog/images/bnp-paribas-stadium-packed.webp
 heroAlt: "Packed Stadium 1 at the BNP Paribas Open in Indian Wells California during a professional tennis match"
@@ -71,7 +71,7 @@ relatedPosts:
 
 <p><strong>The drive to the venue is 12 miles east on Highway 111.</strong> In normal March traffic it's about 20 minutes. That's the same corridor as everything in the valley, so you're not fighting any unusual routing. Drive to the venue in the morning, rideshare back if you're staying for an evening session.</p>
 
-<p><strong>Three king beds means three couples or six people split that cost.</strong> At a price point where Indian Wells hotels are running $400-600 per night for a standard room during tournament week, a three-bed condo with community pool access divided six ways is a different math problem entirely.</p>
+<p><strong>Three king beds means two couples or four people split that cost.</strong> At a price point where Indian Wells hotels are running $400-600 per night for a standard room during tournament week, a three-bed condo with community pool access divided four ways is a different math problem entirely.</p>
 
 <p><strong>Shared pool, full kitchen, ten minutes to Palm Canyon.</strong> The Uptown Design District is close enough to walk for coffee or a drink, and downtown Palm Canyon Drive, the main restaurant and shop corridor, is about a ten-minute drive. After a day at the venue that short hop matters more than it sounds in a listing, because you're picking a dinner spot in your own city rather than eating whatever is attached to a hotel lobby, even after 40+ round-trip miles.</p>
 

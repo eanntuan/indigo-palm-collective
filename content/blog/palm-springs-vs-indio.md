@@ -161,7 +161,7 @@ faqItems:
 <img src="/blog/images/terra-luz-exterior.webp" alt="Terra Luz vacation rental exterior with terracotta tones and desert landscaping in Indian Palms, Indio California" loading="lazy" width="1024" height="1536">
 <p class="image-caption">Terra Luz in Indian Palms, Indio. Same walking distance to the polo grounds as the Cozy Cactus, different aesthetic.</p>
 
-<p>In Palm Springs, <a href="/the-sundune/">The Sundune</a> is our 2-bedroom, three king beds, sleeps 6. Coastal-desert aesthetic, and the Uptown Design District is the part you can walk to. Downtown is about a ten-minute drive, so I won't pretend it's a walk. Good for couples or a small group who want Palm Springs as the base.</p>
+<p>In Palm Springs, <a href="/the-sundune/">The Sundune</a> is our 2-bedroom, three king beds, sleeps 4. Coastal-desert aesthetic, and the Uptown Design District is the part you can walk to. Downtown is about a ten-minute drive, so I won't pretend it's a walk. Good for couples or a small group who want Palm Springs as the base.</p>
 
 <h2>Frequently Asked Questions</h2>
 

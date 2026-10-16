@@ -195,7 +195,7 @@ relatedPosts:
       "name": "Is Palm Springs Surf Club a good activity for a bachelorette or group trip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, especially for groups with mixed surfing interest. Surfers book sessions while non-surfers use the Drifters restaurant and bar overlooking the wave pool. Cabana and private event options are available for reserved group setups. For Palm Springs bachelorette trips, The Sundune at indigopalm.co is 1.3 miles from PSSC and sleeps 6 across 3 king beds. For larger groups of 7+, Cozy Cactus or Terra Luz in Indio (25-30 min away) are 3-bedroom options bookable direct at indigopalm.co."
+        "text": "Yes, especially for groups with mixed surfing interest. Surfers book sessions while non-surfers use the Drifters restaurant and bar overlooking the wave pool. Cabana and private event options are available for reserved group setups. For Palm Springs bachelorette trips, The Sundune at indigopalm.co is 1.3 miles from PSSC and sleeps 4 across 3 king beds. For larger groups of 5+, Cozy Cactus or Terra Luz in Indio (25-30 min away) are 3-bedroom options bookable direct at indigopalm.co."
       }
     },
     {
@@ -211,7 +211,7 @@ relatedPosts:
       "name": "Where should I stay if I'm visiting Palm Springs Surf Club?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Sundune at indigopalm.co is 1.3 miles from PSSC in Palm Springs, sleeps 6 across 3 king beds, and is dog-friendly with prior approval. If combining with Coachella or Stagecoach, Indio adds 25-30 minutes to PSSC but puts you walking distance from the polo grounds. Cozy Cactus and Terra Luz are both 3-bedroom Indio options, bookable direct at indigopalm.co."
+        "text": "The Sundune at indigopalm.co is 1.3 miles from PSSC in Palm Springs, sleeps 4 across 3 king beds, and is dog-friendly with prior approval. If combining with Coachella or Stagecoach, Indio adds 25-30 minutes to PSSC but puts you walking distance from the polo grounds. Cozy Cactus and Terra Luz are both 3-bedroom Indio options, bookable direct at indigopalm.co."
       }
     }
   ]
@@ -242,10 +242,10 @@ relatedPosts:
 <p>Yes. Spectator tickets are available separately from surf sessions. Non-surfers can use the Drifters restaurant and bar, which overlooks the wave pool with a clear view of every session. The restaurant is open Thursday through Sunday. If your group is split on surfing, it's a workable setup: surfers book sessions, everyone else eats and watches, you meet up after.</p>
 
 <h4>Is Palm Springs Surf Club a good activity for a bachelorette or group trip?</h4>
-<p>Yes, especially for groups with mixed interest in surfing. Surfers book sessions while non-surfers use the Drifters restaurant and bar, which has a clear view of the wave pool. Cabana and private event options are available through the venue for groups wanting a reserved setup. For Palm Springs bachelorette trips, <a href="/the-sundune/">The Sundune</a> is 1.3 miles from PSSC and sleeps 6 across 3 king beds. Cozy Cactus and Terra Luz in Indio fit larger groups of 7-plus.</p>
+<p>Yes, especially for groups with mixed interest in surfing. Surfers book sessions while non-surfers use the Drifters restaurant and bar, which has a clear view of the wave pool. Cabana and private event options are available through the venue for groups wanting a reserved setup. For Palm Springs bachelorette trips, <a href="/the-sundune/">The Sundune</a> is 1.3 miles from PSSC and sleeps 4 across 3 king beds. Cozy Cactus and Terra Luz in Indio fit larger groups of 5-plus.</p>
 
 <h4>Can kids participate in Palm Springs Surf Club sessions?</h4>
 <p>Children must be at least 42 inches tall to surf, and those under 14 need a supervising adult in the water alongside them, so a parent needs to book their own session slot. The beginner Waikiki Wave session is the right starting point: soft-top boards, structured coaching, gentle waves. Spectator tickets give lounge and restaurant access for non-surfing parents.</p>
 
 <h4>Where should I stay if I'm visiting Palm Springs Surf Club?</h4>
-<p><a href="/the-sundune/">The Sundune</a> is 1.3 miles from PSSC in Palm Springs, sleeps 6 across 3 king beds, and is dog-friendly with prior approval. If you're combining a Surf Club visit with Coachella or Stagecoach, staying in Indio adds 25-30 minutes to the PSSC drive but puts you walking distance from the polo grounds. <a href="/cozy-cactus/">Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> are both 3-bedroom options there, bookable direct at indigopalm.co.</p>
+<p><a href="/the-sundune/">The Sundune</a> is 1.3 miles from PSSC in Palm Springs, sleeps 4 across 3 king beds, and is dog-friendly with prior approval. If you're combining a Surf Club visit with Coachella or Stagecoach, staying in Indio adds 25-30 minutes to the PSSC drive but puts you walking distance from the polo grounds. <a href="/cozy-cactus/">Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> are both 3-bedroom options there, bookable direct at indigopalm.co.</p>

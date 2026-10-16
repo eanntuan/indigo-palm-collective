@@ -55,7 +55,7 @@ relatedPosts:
 
 <h2>The Condo</h2>
 
-<p>Two bedrooms, two bathrooms, three king beds, sleeps six comfortably. The kitchen is fully stocked for people who cook: real cookware, a coffee setup, enough counter space to use. Guests who cook breakfast here and drive out for dinner in the evening get the best of both.</p>
+<p>Two bedrooms, two bathrooms, three king beds, sleeps four comfortably. The kitchen is fully stocked for people who cook: real cookware, a coffee setup, enough counter space to use. Guests who cook breakfast here and drive out for dinner in the evening get the best of both.</p>
 
 <p>Community pool access is included with the complex. It's shared, so it comes with shared-pool etiquette and hours. If a private pool is the non-negotiable, our Indio properties are set up differently: <a href="/terra-luz/">Terra Luz</a> has a private saltwater pool with a heated spa, and <a href="/cozy-cactus/">The Cozy Cactus</a> has a private hot tub plus access to three heated community pools at Indian Palms Country Club.</p>
 
@@ -68,7 +68,7 @@ relatedPosts:
 
 <p><strong>Best for:</strong> Couples or two couples, solo travelers who want space, anyone who wants to do Palm Springs as a city rather than hide in a resort. The Sundune is at its best when you're planning to use Palm Springs itself, not just use it as a base for the festival grounds.</p>
 
-<p><strong>Less ideal for:</strong> Groups of 7 or more, families with babies who need a full gear setup, guests prioritizing a private pool. For those, Indio makes more sense. The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> breaks down exactly when each city is the better call.</p>
+<p><strong>Less ideal for:</strong> Groups of 5 or more, families with babies who need a full gear setup, guests prioritizing a private pool. For those, Indio makes more sense. The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> breaks down exactly when each city is the better call.</p>
 
 <p><strong>Check-in/out:</strong> 4pm check-in, 11am checkout. Early and late available with advance notice when the schedule allows.</p>
 
@@ -97,7 +97,7 @@ relatedPosts:
 <h2>FAQ: The Sundune Palm Springs</h2>
 
 <h3>How many people does The Sundune sleep?</h3>
-<p>Six comfortably, across two bedrooms with three king beds. The primary bedroom has two kings, the second bedroom has one, and all of them are real beds rather than air mattresses. For groups of seven or more, our Indio properties with larger floor plans are the better fit.</p>
+<p>Four comfortably, across two bedrooms with three king beds. The primary bedroom has two kings, the second bedroom has one, and all of them are real beds rather than air mattresses. For groups of five or more, our Indio properties with larger floor plans are the better fit.</p>
 
 <h3>Is The Sundune pet-friendly?</h3>
 <p>One pet is welcome with a $150 pet fee. Email us at indigopalmco@gmail.com before booking to confirm. The condo has a balcony but no fenced yard, so dogs that need a private outdoor run are better suited to <a href="/terra-luz/">Terra Luz</a> in Indio, which has a fully fenced backyard.</p>
@@ -115,7 +115,7 @@ relatedPosts:
 <p>Plan 4 nights, which is the HOA's minimum at Palm Canyon Villas: one morning for the architecture drive and Moorten Botanical Garden, one evening at Boozehounds after a slow brunch at Wilma and Frieda's, one day at Palm Springs Surf Club, and enough slack left over to sit by the pool. A Thursday arrival means VillageFest is your first night, which is a good way to start.</p>
 
 <h3>Is The Sundune good for a bachelorette trip?</h3>
-<p>For groups of up to six, yes. Three king beds across two bedrooms, a shared HOA pool, and a ten-minute drive to the bars and restaurants on Palm Canyon Drive covers the basics well. Larger bachelorette groups tend to be better served by the Indio properties, which have more sleeping capacity and private outdoor spaces built for that kind of trip.</p>
+<p>For groups of up to four, yes. Three king beds across two bedrooms, a shared HOA pool, and a ten-minute drive to the bars and restaurants on Palm Canyon Drive covers the basics well. Larger bachelorette groups tend to be better served by the Indio properties, which have more sleeping capacity and private outdoor spaces built for that kind of trip.</p>
 
 <h3>How does The Sundune compare to staying in Indio for Coachella?</h3>
 <p>The Sundune puts you 30 to 45 minutes from the festival grounds on normal days, longer with festival traffic. If Coachella or Stagecoach attendance is the main point of your trip, the Cozy Cactus and Terra Luz in Indio are walking distance to the polo grounds and a more practical base. The Sundune makes sense if you're splitting time between the festival and Palm Springs itself.</p>
@@ -130,7 +130,7 @@ relatedPosts:
       "name": "How many people does The Sundune sleep?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Six comfortably, across two bedrooms with three king beds total. All beds are actual sleeping arrangements, not air mattresses. For groups of seven or more, the Indio properties with larger floor plans are the better fit."
+        "text": "Four comfortably, across two bedrooms with three king beds total. All beds are actual sleeping arrangements, not air mattresses. For groups of five or more, the Indio properties with larger floor plans are the better fit."
       }
     },
     {
@@ -178,7 +178,7 @@ relatedPosts:
       "name": "Is The Sundune good for a bachelorette trip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For groups of up to six, yes. Three king beds, a shared HOA pool, and a ten-minute drive to Palm Canyon Drive covers the basics. Larger groups are better served by the Indio properties, which have more capacity and private outdoor spaces."
+        "text": "For groups of up to four, yes. Three king beds, a shared HOA pool, and a ten-minute drive to Palm Canyon Drive covers the basics. Larger groups are better served by the Indio properties, which have more capacity and private outdoor spaces."
       }
     },
     {

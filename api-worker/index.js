@@ -135,7 +135,7 @@ const PROPERTY_CONFIG = {
   'terra-luz':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
   'casa-moto':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
   'ps-retreat':  { basePrice: 280, cleaningFee: 200, taxRate: 0.135, maxGuests: 4, minNights: 2 },
-  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 8, minNights: 2 },
+  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 2, minNights: 2 },
 };
 
 const PEAK_DATES = [
@@ -2336,7 +2336,7 @@ EARLY CHECK-IN / LATE CHECKOUT
 
 ADDING GUESTS
 - Happy to add anyone within the 8-guest max. Send first and last name and we'll update the reservation.
-- Dogs: prior approval required. One dog max. Confirm before assuming.
+- Dogs: prior approval required. 2 dogs max, $150 per pet. Confirm before assuming.
 
 POOL HEAT REQUESTS
 - If they ask about pool heat: $75/day (2-day min) or $400/week. Need 24hr notice before arrival. Let us know and we'll set it up.
@@ -2557,7 +2557,7 @@ Pool heat (Terra Luz):
 "Pool heat is $75/day (2-day min) or $400/week. If you want it warm for arrival, let me know at least 24 hours ahead and I'll get it set up. Hot tub is always free — just hit the Spa button on the wall."
 
 Adding a dog (Terra Luz or Sundune):
-"Yes, dogs are welcome with prior approval. [One dog max / etc.] Can you tell me a bit about them? Size, breed, and we should be good to go."
+"Yes, dogs are welcome with prior approval. [2 dogs max at Terra Luz, $150 per pet / etc.] Can you tell me a bit about them? Size, breed, and we should be good to go."
 
 Late checkout:
 "10am is firm on my end because the cleaning crew comes right after. If you want a little more time in the morning, I can sometimes do 11am for an additional fee, just depends on the next booking. Want me to check?"
