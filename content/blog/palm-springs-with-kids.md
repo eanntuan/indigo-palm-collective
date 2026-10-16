@@ -144,7 +144,7 @@ layout: blog-post.njk
 <p>The HOA at Palm Canyon Villas requires a 4-night minimum, and it applies to every rental in the complex, not just ours. Plan accordingly: a school-break week fits, a long weekend does not. Book direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> with no service fee.</p>
 
 <h3>Can I bring a dog to Palm Springs vacation rentals in this area?</h3>
-<p>The Sundune is dog-friendly with prior approval, and the Cozy Cactus is not pet-friendly. If you're traveling with a dog, flag it when booking: The Sundune accepts dogs with advance notice, and the community grounds give enough room for a morning walk before the heat arrives. Terra Luz in Indio is also dog-friendly for families who want more space or a private pool.</p>
+<p>The Sundune is dog-friendly with prior approval, and the Cozy Cactus is not pet-friendly. If you're traveling with a dog, email us before you book: The Sundune accepts dogs with advance notice, and the community grounds give enough room for a morning walk before the heat arrives. Terra Luz in Indio is also dog-friendly for families who want more space or a private pool, and The Well in Palm Springs is dog-friendly too if it's just two of you.</p>
 
 <h3>Is a car necessary for a family trip to Palm Springs?</h3>
 <p>It depends on your base. From The Sundune you can walk into the Uptown Design District for coffee, dessert, or an evening stroll without loading anyone into a car seat, though downtown Palm Canyon Drive is a ten-minute drive. For the bigger activities, a car is necessary: the Living Desert is 20 minutes in Palm Desert, Bear Creek Trail is 25 minutes in La Quinta, and Cabazon Dinosaurs are 30 minutes west on I-10. The practical rhythm is: walk for meals and evening, drive for the day's anchor activity.</p>
@@ -199,7 +199,7 @@ layout: blog-post.njk
       "name": "Can I bring a dog to The Sundune or other Palm Springs vacation rentals in this area?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Sundune is dog-friendly with prior approval, the Cozy Cactus is not pet-friendly under any circumstances, and Terra Luz in Indio is dog-friendly with prior approval too. If traveling with a dog, flag it at booking. The Sundune accepts dogs with advance notice and the community grounds offer enough space for morning walks before the heat arrives."
+        "text": "The Sundune is dog-friendly with prior approval, the Cozy Cactus is not pet-friendly under any circumstances, and Terra Luz in Indio and The Well in Palm Springs are dog-friendly with prior approval too. If traveling with a dog, email us before you book. The Sundune accepts dogs with advance notice and the community grounds offer enough space for morning walks before the heat arrives."
       }
     },
     {

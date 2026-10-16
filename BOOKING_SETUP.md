@@ -11,7 +11,7 @@
 
 ### 2. **Checkout Page** (`checkout.html`)
 - Guest information form
-- Add-ons (early check-in, late checkout, mid-stay cleaning)
+- Add-ons (mid-stay cleaning)
 - Reservation summary sidebar
 - Promo code support (DIRECT10, DIRECT15)
 - Ready for Stripe integration

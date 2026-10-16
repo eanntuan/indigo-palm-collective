@@ -484,34 +484,6 @@
                 <h2 class="section-title">Add-ons</h2>
                 <p class="section-subtitle">Enjoy an exceptional stay by adding extras.</p>
 
-                <!-- Early Check-in -->
-                <div class="addon-card">
-                    <div class="addon-image">🔑</div>
-                    <div class="addon-details">
-                        <h3>Early Check-in</h3>
-                        <p>Arrive as early as 12pm instead of our standard 4pm check-in.</p>
-                        <p class="addon-price">$ 50.00 (one-time fee)</p>
-                    </div>
-                    <div class="addon-actions">
-                        <div class="addon-total">$ 50.00</div>
-                        <button class="addon-add-btn" onclick="toggleAddon(this, 'early-checkin', 50)">+ Add</button>
-                    </div>
-                </div>
-
-                <!-- Late Checkout -->
-                <div class="addon-card">
-                    <div class="addon-image">🌅</div>
-                    <div class="addon-details">
-                        <h3>Late Checkout</h3>
-                        <p>Enjoy the home until 12pm instead of our standard 10am checkout.</p>
-                        <p class="addon-price">$ 50.00 (one-time fee)</p>
-                    </div>
-                    <div class="addon-actions">
-                        <div class="addon-total">$ 50.00</div>
-                        <button class="addon-add-btn" onclick="toggleAddon(this, 'late-checkout', 50)">+ Add</button>
-                    </div>
-                </div>
-
                 <!-- Mid-Stay Cleaning -->
                 <div class="addon-card">
                     <div class="addon-image">🧹</div>
@@ -660,8 +632,6 @@
 
         // Addons tracker
         let addons = {
-            'early-checkin': { added: false, price: 50, name: 'Early Check-in' },
-            'late-checkout': { added: false, price: 50, name: 'Late Checkout' },
             'mid-stay-cleaning': { added: false, price: 100, name: 'Mid-Stay Cleaning' }
         };
 

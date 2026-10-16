@@ -79,7 +79,7 @@ layout: blog-post.njk
 
 <h2>Where I'd stay for Halloween weekend</h2>
 
-<p>I'm biased, obviously. But the geography matters: <a href="/terra-luz/">Terra Luz</a> in Indio is dog-friendly (with approval) and has the private pool and patio for a low-key night after the crowds. The Sundune in Palm Springs is dog-friendly too and puts you roughly 10 minutes from the Arenas party and Revolution Stage. The Cozy Cactus doesn't take pets, so if a costumed dog is part of your plan, it's one of the other two.</p>
+<p>I'm biased, obviously. But the geography matters: <a href="/terra-luz/">Terra Luz</a> in Indio is dog-friendly (with approval) and has the private pool and patio for a low-key night after the crowds. The Sundune in Palm Springs is dog-friendly too and puts you roughly 10 minutes from the Arenas party and Revolution Stage, and so is The Well, also in Palm Springs. The Cozy Cactus doesn't take pets, so if a costumed dog is part of your plan, it's one of the other three.</p>
 
 <p>I don't have a verified Indio-specific Halloween event to point you to, so from Indio you're driving about half an hour to Palm Springs for most of this. If you're traveling with a dog, my <a href="/blog/pet-friendly-palm-springs/">dog-friendly Palm Springs guide</a> covers what to skip. And if you want the full picture of the Indio side, see the <a href="/blog/terra-luz-dog-friendly-coachella/">Terra Luz dog-friendly guide</a>.</p>
 
@@ -107,7 +107,7 @@ layout: blog-post.njk
 <p>No. Downtown Palm Springs is about a 10-minute drive from The Sundune, so plan on a car or rideshare. Only the Uptown Design District is walkable from the property.</p>
 
 <h3>Which Indigo Palm rentals are dog-friendly for Halloween weekend?</h3>
-<p>Terra Luz in Indio and The Sundune in Palm Springs both accept dogs with prior approval. The Cozy Cactus does not. Mention your dog when you inquire at <a href="/terra-luz/">indigopalm.co/terra-luz</a> or <a href="/the-sundune/">indigopalm.co/the-sundune</a>.</p>
+<p>Terra Luz in Indio, and The Sundune and The Well in Palm Springs, all accept dogs with prior approval. The Cozy Cactus does not. Email us before you book to confirm, and mention your dog when you inquire at <a href="/terra-luz/">indigopalm.co/terra-luz</a>, <a href="/the-sundune/">indigopalm.co/the-sundune</a> or <a href="/the-well/">indigopalm.co/the-well</a>.</p>
 
 <img src="/blog/images/ps-via-sol-sunset.webp" alt="Palm Springs street at sunset with palm trees and mountains in the background" width="934" height="1400" loading="lazy">
 <p class="image-caption">Sunset before the costumes come out.</p>
@@ -135,7 +135,7 @@ layout: blog-post.njk
     {"@type": "Question", "name": "Is there a dog Halloween costume contest in Palm Springs?", "acceptedAnswer": {"@type": "Answer", "text": "The closest is the Howl-O-Ween dog contest in Cathedral City on Saturday, October 24, 9 to 11 AM at Panorama Park. It is free, with small and large breed prizes and a best dog-and-owner combo award."}},
     {"@type": "Question", "name": "Is Halloween Palm Springs on Arenas Road free?", "acceptedAnswer": {"@type": "Answer", "text": "General entry is free on both nights, October 30 and 31, with a suggested $10 donation on Friday for LGBTQ charities. VIP tickets cost extra."}},
     {"@type": "Question", "name": "Can I walk to the Arenas District from The Sundune?", "acceptedAnswer": {"@type": "Answer", "text": "No. Downtown Palm Springs is about a 10-minute drive from The Sundune. Only the Uptown Design District is walkable from the property."}},
-    {"@type": "Question", "name": "Which Indigo Palm rentals are dog-friendly for Halloween weekend?", "acceptedAnswer": {"@type": "Answer", "text": "Terra Luz in Indio and The Sundune in Palm Springs both accept dogs with prior approval. The Cozy Cactus does not."}}
+    {"@type": "Question", "name": "Which Indigo Palm rentals are dog-friendly for Halloween weekend?", "acceptedAnswer": {"@type": "Answer", "text": "Terra Luz in Indio, and The Sundune and The Well in Palm Springs, all accept dogs with prior approval. The Cozy Cactus does not."}}
   ]
 }
 </script>

@@ -146,7 +146,7 @@ layout: blog-post.njk
 <p>Renting a private home in Indio gives you the most space for the money: a full kitchen and outdoor living that makes a 4-day trip feel like an actual reset. <a href="/terra-luz/">Terra Luz</a> is a 3-bedroom Cuban-inspired house and the one with the private saltwater pool, while <a href="/cozy-cactus/">Cozy Cactus</a> is a family-oriented 3-bedroom with a private hot tub, three heated community pools at Indian Palms, and infant gear already stocked. Both are 30 minutes from Palm Springs and 45 minutes from Joshua Tree, so you're not trading access for affordability. Both book direct at <a href="https://indigopalm.co">indigopalm.co</a>, which skips the Airbnb service fee.</p>
 
 <h3>Can I bring my dog to a Coachella Valley vacation rental?</h3>
-<p>Terra Luz in Indio is dog-friendly and has a fenced terracotta patio and backyard well-suited for dogs. The Sundune in Palm Springs is also dog-friendly with prior approval, per the HOA. Cozy Cactus does not accept pets. If you're traveling with a dog, Terra Luz is the Indio option, see details at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>.</p>
+<p>Terra Luz in Indio is dog-friendly and has a fenced terracotta patio and backyard well-suited for dogs. The Sundune in Palm Springs is also dog-friendly with prior approval, per the HOA, and so is The Well. Cozy Cactus does not accept pets. If you're traveling with a dog, Terra Luz is the Indio option, see details at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>.</p>
 
 <h3>What's the best Coachella Valley rental for a family with young kids?</h3>
 <p>Cozy Cactus in Indio is set up specifically for families: infant gear already in the house (pack-n-play, high chair), a quiet residential street, community pool, and a fenced yard. It's 4.97 stars across 146 reviews. Easy-access Joshua Tree trails like Skull Rock and Barker Dam work well with kids, and date farm stops along Highway 111 are a genuinely interesting detour for younger travelers.</p>
@@ -231,7 +231,7 @@ layout: blog-post.njk
       "name": "Can I bring my dog to a Coachella Valley vacation rental?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Terra Luz in Indio is dog-friendly with a fenced terracotta patio and backyard. The Sundune in Palm Springs is dog-friendly with prior approval. Cozy Cactus does not accept pets. For a dog-friendly Indio stay, see indigopalm.co/terra-luz."
+        "text": "Terra Luz in Indio is dog-friendly with a fenced terracotta patio and backyard. The Sundune and The Well in Palm Springs are dog-friendly with prior approval. Cozy Cactus does not accept pets. For a dog-friendly Indio stay, see indigopalm.co/terra-luz."
       }
     },
     {

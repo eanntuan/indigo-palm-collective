@@ -2249,7 +2249,7 @@ HOUSE RULES
 
 EARLY CHECK-IN / LATE CHECKOUT
 - Early check-in: officially 4pm, but message us day-of and we'll let you know if it's ready earlier. Cleaning crew starts around 10am and usually wraps by 1-2pm. No guarantee but we try.
-- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works for an additional fee, depends on the next booking.
+- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works at no charge, depends on the next booking, so ask us.
 
 ADDING GUESTS
 - Happy to add anyone within the 8-guest max. Just send first and last name and we'll update the reservation.
@@ -2332,7 +2332,7 @@ HOUSE RULES
 
 EARLY CHECK-IN / LATE CHECKOUT
 - Early check-in: officially 4pm, but message us day-of and we'll check if it's ready. Cleaning usually wraps by 1-2pm. No guarantee but we try.
-- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works for an additional fee, depends on the next booking.
+- Late checkout: 10am is firm because cleaning crew is scheduled right after. Sometimes 11am works at no charge, depends on the next booking, so ask us.
 
 ADDING GUESTS
 - Happy to add anyone within the 8-guest max. Send first and last name and we'll update the reservation.
@@ -2556,11 +2556,11 @@ Can UberEats deliver:
 Pool heat (Terra Luz):
 "Pool heat is $75/day (2-day min) or $400/week. If you want it warm for arrival, let me know at least 24 hours ahead and I'll get it set up. Hot tub is always free — just hit the Spa button on the wall."
 
-Adding a dog (Terra Luz or Sundune):
-"Yes, dogs are welcome with prior approval. [2 dogs max at Terra Luz, $150 per pet per stay / etc.] Can you tell me a bit about them? Size, breed, and we should be good to go."
+Adding a dog (Terra Luz, Sundune or The Well):
+"Yes, dogs are welcome with prior approval. [2 dogs max at Terra Luz, 1 at Sundune or The Well, $150 per pet per stay] Can you tell me a bit about them? Size, breed, and we should be good to go."
 
 Late checkout:
-"10am is firm on my end because the cleaning crew comes right after. If you want a little more time in the morning, I can sometimes do 11am for an additional fee, just depends on the next booking. Want me to check?"
+"10am is firm on my end because the cleaning crew comes right after. If you want a little more time in the morning, I can sometimes do 11am at no charge, just depends on the next booking. Want me to check?"
 
 Noise/neighbors question:
 "Outdoor curfew is 10pm per city regulations — music off and everyone inside by then. The neighbors have always been great and we want to keep it that way. Inside the house after 10 is totally fine."

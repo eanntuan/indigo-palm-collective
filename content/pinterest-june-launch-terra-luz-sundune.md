@@ -12,7 +12,7 @@
 
 **PIN TL-1: Kahlo Blue pool + terracotta courtyard**
 Title: The Pool That Stops Your Scroll
-Description: A Kahlo Blue pool, terracotta courtyard walls, wicker chairs catching desert light, a pass-through kitchen window that turns the patio into a bar. Terra Luz in Indio CA — Latin/Cuban design, two miles from the polo grounds. https://indigopalm.co/terra-luz
+Description: A Kahlo Blue pool, terracotta courtyard walls, wicker chairs catching desert light, a pass-through kitchen window that turns the patio into a bar. Terra Luz in Indio CA — Latin/Cuban design, walking distance to the polo grounds. https://indigopalm.co/terra-luz
 Board: Desert Getaways
 Link: https://indigopalm.co/terra-luz
 
@@ -68,7 +68,7 @@ Link: https://indigopalm.co/terra-luz
 
 **PIN TL-8: Coachella/festival proximity**
 Title: Coachella Rental with a Kahlo Blue Pool
-Description: Two miles from Empire Polo Club, sleeps 8, Kahlo Blue pool, terracotta courtyard. Terra Luz is the Coachella base camp that actually feels like a cultural experience. Latin/Cuban design, Indio CA. https://indigopalm.co/terra-luz
+Description: Walking distance to Empire Polo Club, sleeps 8, Kahlo Blue pool, terracotta courtyard. Terra Luz is the Coachella base camp that actually feels like a cultural experience. Latin/Cuban design, Indio CA. https://indigopalm.co/terra-luz
 Board: Coachella Accommodation
 Link: https://indigopalm.co/terra-luz
 
