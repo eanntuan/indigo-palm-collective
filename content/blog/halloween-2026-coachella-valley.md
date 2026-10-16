@@ -3,9 +3,10 @@ title: "Halloween 2026 Palm Springs and Coachella Valley: 7 Events"
 date: 2026-10-08
 dateModified: 2026-10-08
 metaDescription: "Halloween 2026 in Palm Springs and the Coachella Valley: seven checked events from Oct 24 to Halloween night, with dog-friendly picks and where to sleep."
-ogImage: /blog/images/palm-springs-bar-cocktails.webp
-heroImage: /blog/images/palm-springs-bar-cocktails.webp
-heroAlt: "Cocktails on a bar in Palm Springs, the kind of night out that anchors Halloween weekend in the Arenas District"
+ogImage: /blog/images/cozy-cactus-aerial.webp
+heroImage: /blog/images/cozy-cactus-aerial.webp
+heroAlt: "Aerial view of an Indio neighborhood at sunset, with a purple and orange sky over the mountains of the Coachella Valley"
+heroPosition: "center 30%"
 keywords:
   - Halloween 2026 Palm Springs
   - Halloween events Coachella Valley
