@@ -2232,7 +2232,7 @@ WIFI
 POOL + HOT TUB
 - Community pool: shared with the neighborhood. Key in the welcome guide.
 - Hot tub: private, in the backyard. Luis services it Tuesday and Friday mornings via the side back gate.
-- No pool heat needed — the hot tub is separate and private.
+- Community pools are heated Nov through April, no request needed. The hot tub is separate and private.
 
 APPLIANCES + LOCATIONS
 - Dishwasher: under the sink, left side. Pods in cabinet above.
