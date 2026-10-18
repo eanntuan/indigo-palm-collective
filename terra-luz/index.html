@@ -1102,7 +1102,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
             <div class="property-tag">LATIN CULTURE</div>
             <h1>Terra Luz<span class="hero-subtitle">Old Havana Meets CA Desert</span></h1>
             <p class="location">Indio, California</p>
-            <p class="tagline">Cocooned. Vibrant. Distinctly somewhere.</p>
+            <p class="tagline">A Cuban courtyard that moved to Indio.</p>
         </div>
     </section>
 
@@ -1116,7 +1116,9 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                 <p>Cuban roasted coffee beans on the counter, Mexican dominos on the shelf, patterned robes in the closets. The Kitchen Terrace has a pass-through window that slides open toward the pool, so morning coffee becomes poolside conversation without anyone having to move. The whole thing was put together by Dawn Asher, and it shows, rattan and terracotta and zero generic anything.</p>
 
                 <img id="photo-2654899705" src="/terra-luz/photos/kitchen/TerraLuz2026-0567.webp" alt="Open plantation shutters over a dining nook window, with a blue striped umbrella and pool patio outside and a capiz pendant above" width="1200" height="1851" loading="lazy" class="inline-photo portrait">
-<p class="photo-caption">A sun-drenched dining corner where you can plan your set list for Coachella. Also, peep that Business &amp; Pleasure striped umbrella!</p>
+<p class="photo-caption" style="display:none">A sun-drenched dining corner where you can plan your set list for Coachella. Also, peep that Business &amp; Pleasure striped umbrella!</p>
+
+                <p>Designed by brand architect Dawn Asher, with a Kahlo blue saltwater pool, terracotta courtyard, and wabi-sabi warmth throughout. It's an aesthetic that feels collected over time rather than staged, the Coachella Valley's only vacation rental with a cohesive Old Havana design identity.</p>
 
 
                 <p>Comparing pool setups across our Indio properties? See the full breakdown of <a href="/vacation-rentals-with-private-pool/" style="color: #B67550;">vacation rentals with a private pool</a>.</p>
@@ -1567,7 +1569,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
       const ps = main.querySelectorAll('p');
       if (ps[0]) ps[0].textContent = d.description_p1;
       if (ps[1]) ps[1].textContent = d.description_p2;
-      if (ps[2]) ps[2].textContent = d.description_p3;
+      if (ps[2]) d.description_p3 ? ps[2].textContent = d.description_p3 : ps[2].remove();
       if (ps[3]) ps[3].textContent = d.description_p4;
     }
   }).catch(()=>{});
