@@ -271,6 +271,15 @@
         }
         .next-btn:hover { background: #6B3420; }
         .next-btn.visible { display: none; }
+        .quiz-email { display: none; max-width: 520px; margin: 1.5rem auto 0; padding: 1.5rem; background: #fff; text-align: center; }
+        .quiz-email.show { display: block; }
+        .quiz-email p { margin: 0 0 1rem; font-size: 0.95rem; line-height: 1.5; }
+        .quiz-email form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .quiz-email input { flex: 1 1 200px; padding: 0.8rem 1rem; border: 1px solid #ccc; border-radius: 999px; font: inherit; }
+        .quiz-email button { padding: 0.8rem 1.5rem; border: none; border-radius: 999px; background: var(--sage); color: #fff; font: 600 0.85rem var(--sans); letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; }
+        .quiz-email button:disabled { opacity: 0.6; }
+        .quiz-email .qe-note { margin: 0.75rem 0 0; font-size: 0.8rem; color: #595959; }
+
 
         /* RESULT */
         .result-card {
@@ -717,6 +726,15 @@
             </div>
         </div>
 
+        <div class="quiz-email" id="quiz-email">
+            <p id="qe-msg">Want more like this? Get Coachella Valley guides and new openings in your inbox.</p>
+            <form id="qe-form">
+                <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
+                <button type="submit">Send it</button>
+            </form>
+            <p class="qe-note" id="qe-note">Occasional emails, unsubscribe anytime. Or just skip this.</p>
+        </div>
+
     </div><!-- /quiz-wrap -->
 </div><!-- /screen-quiz -->
 
@@ -774,6 +792,31 @@
         }
     }
 
+
+    let winnerName = '';
+    document.getElementById('qe-form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const btn = this.querySelector('button'), email = this.email.value;
+        btn.disabled = true;
+        try {
+            const res = await fetch('https://newsletter.indigopalm.co/signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, source: 'quiz', result: winnerName })
+            });
+            const data = res.ok ? await res.json() : { success: false };
+            if (!data.success) throw 0;
+            this.style.display = 'none';
+            document.getElementById('qe-msg').textContent = 'Done. Check your inbox.';
+            document.getElementById('qe-note').style.display = 'none';
+            gtag('event', 'quiz_email_signup', { event_category: 'Quiz', result: winnerName });
+            if (typeof pintrk !== 'undefined') pintrk('track', 'lead');
+        } catch (err) {
+            btn.disabled = false;
+            document.getElementById('qe-note').textContent = 'Something went wrong. Try again in a minute.';
+        }
+    });
+
     function showResult() {
         if (answered[currentQ] === null) return;
 
@@ -788,6 +831,8 @@
 
         const names = { cc: 'Cozy Cactus', tl: 'Terra Luz', sd: 'The Sundune', tw: 'The Well' };
         gtag('event', 'quiz_complete', { event_category: 'Quiz', result: names[winner] });
+        winnerName = names[winner];
+        document.getElementById('quiz-email').classList.add('show');
 
         // Update progress to 100%
         document.getElementById('q-pct').textContent = '100%';
@@ -800,6 +845,7 @@
         scores = { cc: 0, tl: 0, sd: 0, tw: 0 };
         answered = new Array(TOTAL).fill(null);
 
+        document.getElementById('quiz-email').classList.remove('show');
         document.querySelectorAll('.result-card').forEach(c => c.classList.remove('active'));
         document.querySelectorAll('.question-card').forEach((c, i) => {
             c.classList.remove('active');
