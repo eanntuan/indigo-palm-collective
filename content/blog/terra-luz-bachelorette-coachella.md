@@ -30,7 +30,7 @@ layout: blog-post.njk
 
 <h2>Why Terra Luz Works for a Group</h2>
 
-<p>The thing most group rentals get wrong is the bedrooms. You book a place that sleeps eight and discover it's the same beige room four times over, so the people in the back bedroom feel like they drew the short straw. I set Terra Luz up so the three bedrooms each have their own character, which sounds small until you're the one assigning rooms at 11pm.</p>
+<p>The thing most group rentals get wrong is the bedrooms. You book a place that sleeps eight and find out it's the same beige room four times over, so the people in the back bedroom feel like they drew the short straw. I set Terra Luz up so the three bedrooms each have their own character, which sounds small until you're the one assigning rooms at 11pm.</p>
 
 <p>The primary is a king with an ensuite bathroom, so whoever needs the early-morning quiet or the private shower has it. The second bedroom, Wild Tropics, is a king with a bold botanical wallpaper that Dawn Asher at The Olive Jar pulled together. The third has two queens, which is the flexible room for a pair of friends or a sister who'd rather not share a bed. That's a comfortable sleep for six, and eight if two doubling up is fine for the weekend.</p>
 

@@ -1,14 +1,14 @@
 (function () {
   var CORAL = '#FF385C';
-  var css = '.ipr{background:#0B0F3B;color:#fff;padding:56px 0 64px;text-align:center;font-family:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}'
+  var css = '.ipr{background:#0B0F3B;color:#fff;padding:56px 0 64px;text-align:center;font-family:"Work Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}'
   + '.ipr.ipr-clear{background:transparent}'
   + '.ipr *{box-sizing:border-box}'
-  + '.ipr h2{font-family:"Jost",system-ui,sans-serif;font-weight:500;font-size:clamp(26px,3.6vw,46px);line-height:1.15;color:#fff;margin:0 16px 22px;letter-spacing:.2px}'
+  + '.ipr h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(26px,3.6vw,46px);line-height:1.15;color:#fff;margin:0 16px 22px;letter-spacing:.2px}'
   + '.ipr-bigstars{display:flex;justify-content:center;gap:4px}'
   + '.ipr-bigstars svg{width:clamp(28px,3.2vw,40px);height:clamp(28px,3.2vw,40px);fill:' + CORAL + '}'
   + '.ipr-logo{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:6px;color:' + CORAL + '}'
   + '.ipr-logo svg{width:34px;height:34px}'
-  + '.ipr-logo span{font-weight:600;font-size:34px;line-height:1;letter-spacing:-.5px;margin-top:-3px}'
+  + '.ipr-logo span{font-family:"Jost",system-ui,sans-serif;font-weight:600;font-size:34px;line-height:1;letter-spacing:-.5px;margin-top:-3px}'
   + '.ipr-serif{background:transparent;color:#2c2c2c}.ipr-serif h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:2rem;color:#2c2c2c;margin-bottom:.5rem}.ipr-serif .ipr-sub{color:#595959;font-size:.95rem}'
 + '.ipr-sub{margin:10px 16px 36px;font-size:14px;color:rgba(255,255,255,.72)}'
   + '.ipr-wrap{position:relative;max-width:1400px;margin:0 auto;padding:0 28px}'

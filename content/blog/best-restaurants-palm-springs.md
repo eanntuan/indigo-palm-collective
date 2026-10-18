@@ -244,7 +244,7 @@ layout: blog-post.njk
 
 <h3>Chef Tanya's Kitchen</h3>
 
-<p><a href="https://cheftanyaskitchen.com/" target="_blank" rel="noopener noreferrer"><strong>Chef Tanya's Kitchen</strong></a> is a fully plant-based deli and marketplace, and it won Best Vegetarian/Vegan in Palm Springs Life's 2026 reader survey for a reason. The El Cubano swaps seitan for the traditional pork on toasted ciabatta and it works. Everything is house-made, including the plant proteins, which is the difference between a vegan option and a place vegans actually choose. Good for guests with dietary restrictions who don't want to feel like an afterthought.</p>
+<p><a href="https://cheftanyaskitchen.com/" target="_blank" rel="noopener noreferrer"><strong>Chef Tanya's Kitchen</strong></a> is a fully plant-based deli and marketplace, and it won Best Vegetarian/Vegan in Palm Springs Life's 2026 reader survey for a reason. The El Cubano swaps seitan for the traditional pork on toasted ciabatta and it works. Everything is house-made, including the plant proteins, which is the difference between a vegan option and a place vegans choose. Good for guests with dietary restrictions who don't want to feel like an afterthought.</p>
 
 <p><strong>706 S Eugene Rd, Palm Springs, CA 92264.</strong> (760) 832-9007. Daily 11am-8pm.</p>
 

@@ -909,6 +909,23 @@
         .photo-caption { margin: 0.6rem 0.25rem 0; font-size: 0.9rem; font-style: italic; color: #6b5d52; line-height: 1.4; }
 .inline-photo + .photo-caption { max-width: 580px; margin: -1rem auto 2rem; text-align: center; }
 img[id^="photo-"] { scroll-margin-top: 6rem; }
+
+/* Mobile booking widget + sticky book bar (2026-10) */
+.mobile-cta-bar{display:none}
+@media (max-width:768px){
+.details-sidebar{display:flex;flex-direction:column;padding:1.5rem 1.25rem}
+.details-sidebar .direct-savings{order:1;margin:1.25rem 0 0.75rem !important}
+.details-sidebar .festival-note{order:2}
+.details-sidebar .avail-calendar{order:3}
+.details-sidebar .cta-button{order:4;min-height:48px;font-size:1rem}
+.details-sidebar .color-palette{order:5}
+.mobile-cta-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:999;background:#fff;border-top:1px solid rgba(0,0,0,0.12);padding:0.6rem 1.2rem calc(0.6rem + env(safe-area-inset-bottom));align-items:center;justify-content:space-between;gap:1rem;box-shadow:0 -4px 16px rgba(0,0,0,0.1);transition:transform 0.25s ease}
+.mobile-cta-bar.is-hidden,body:has(nav.ip-nav ul.active) .mobile-cta-bar{transform:translateY(110%)}
+.mobile-cta-bar .mobile-cta-text{font-size:0.85rem;color:#444;line-height:1.3}
+.mobile-cta-bar .mobile-cta-text strong{display:block;font-size:0.95rem;color:#1a1a1a}
+.mobile-cta-bar .mobile-cta-btn{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 1.4rem;background:var(--cta-color);color:#fff;text-decoration:none;font-weight:600;font-size:0.9rem;letter-spacing:0.5px;white-space:nowrap}
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+}
 </style>
 
     <!-- LodgingBusiness Structured Data -->
@@ -959,8 +976,12 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     }
     </script>
     <link rel="stylesheet" href="/css/cta-button.css">
-<link rel="stylesheet" href="/css/site-nav.css?v=2">
+<link rel="stylesheet" href="/css/site-nav.css?v=5">
+<link rel="stylesheet" href="/css/property-hero.css?v=2">
+<link rel="stylesheet" href="/css/room-gallery.css?v=3">
+<style>:root{--hero-accent:#9DB9CE;--cta-color:#3D5F78}</style>
 <script src="/js/site-nav.js?v=2" defer></script>
+<link rel="stylesheet" href="/css/faq.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -975,11 +996,12 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                 <span></span>
             </button>
             <ul id="navMenu">
-                <li><a href="/#properties">Properties</a></li>
+                <li class="has-dropdown"><a href="/#properties">Properties</a><ul class="nav-dropdown"><li><a href="/terra-luz/">Terra Luz</a></li><li><a href="/cozy-cactus/">The Cozy Cactus</a></li><li><a href="/the-sundune/">The Sundune</a></li><li><a href="/the-well/">The Well</a></li></ul></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/quiz/">Take the Quiz</a></li>
                 <li><a href="/#contact">Contact</a></li>
+                <li class="nav-cta"><a href="/booking-flow/?property=the-sundune" onclick="window.gtag&&gtag('event','book_now_click',{'property_name':'the-sundune','location':'nav'})">Check availability</a></li>
             </ul>
             <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
@@ -991,11 +1013,13 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     <!-- Hero Section -->
     <section class="hero" role="img" aria-label="The Sundune coastal-desert vacation condo ten minutes from downtown Palm Springs">
         <video class="hero-video" muted loop playsinline preload="metadata" poster="/the-sundune/photos/Sundune2026-0120.webp" aria-hidden="true" tabindex="-1" disablepictureinpicture data-src="/the-sundune/video/sundune-hero"></video>
+        <div class="hero-scrim"></div>
         <div class="hero-content">
-            <div class="property-tag">COASTAL DESERT</div>
-            <h1>The Sundune<span class="hero-subtitle">Coastal Calm in Palm Springs</span></h1>
-            <p class="location">Palm Springs, California</p>
-            <p class="tagline">Coastal, unhurried, ten minutes from Palm Canyon.</p>
+            <div class="property-tag">Palm Springs, California</div>
+            <h1>The Sundune</h1>
+            <p class="tagline">Fresh, nostalgic, and unhurried.</p>
+            <p class="hero-meta">&#11088; 4.93 &middot; 40 reviews on Airbnb</p>
+            <p class="hero-price">2BR · Sleeps 4 · <a href="/booking-flow/?property=the-sundune" class="hero-book-link">Book Direct &amp; Save →</a></p>
         </div>
     </section>
 
@@ -1073,11 +1097,11 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     <span>Coastal Desert</span>
                 </div>
 
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.8rem; color: #BB7D49; font-weight: 600; margin: 0 0 0.7rem;">Snowbird season and festival weekends both book out early here. Check your dates now instead of the week you want to travel.</p>
+                <p class="festival-note" style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #BB7D49; font-weight: 600; margin: 0 0 0.7rem;">Snowbird season and festival weekends both book out early here. Check your dates now instead of the week you want to travel.</p>
                 <a href="/booking-flow/?property=the-sundune" class="cta-button" onclick="gtag('event', 'check_availability_click', {'property_name': 'The Sundune', 'event_category': 'Booking', 'event_label': 'Property Page CTA', 'value': 1});">BOOK DIRECT</a>
 
-                <div style="margin: 1.2rem 0; padding: 1.1rem; background: #faf7f3; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08);">
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #BB7D49; margin: 0 0 0.7rem;">Why book direct?</p>
+                <div class="direct-savings" style="margin: 1.2rem 0; padding: 1.1rem; background: #faf7f3; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08);">
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: 0; color: #BB7D49; margin: 0 0 0.7rem;">Skip the 20% Airbnb fee</p>
                     <div style="font-family: 'Work Sans', sans-serif; font-size: 0.85rem; color: #3a3028;">
                         <div style="display: flex; justify-content: space-between; padding: 0.35rem 0; border-bottom: 1px solid #e8ddd0;">
                             <span>Book here</span>
@@ -1088,9 +1112,9 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                             <span style="font-weight: 600; color: #b34f3c;">+20% added</span>
                         </div>
                     </div>
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.78rem; color: #767676; margin: 0.7rem 0 0; line-height: 1.4;">Same house, same host. Typically $150–400 less on a full week.</p>
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.8rem; color: #666; margin: 0.5rem 0 0;">&#11088; 4.93 &middot; 40+ verified Airbnb reviews</p>
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.78rem; margin: 0.6rem 0 0;"><a href="/book-direct/" style="color: #B67550; font-weight: 600;">See the full comparison across all 3 properties &rarr;</a></p>
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #767676; margin: 0.7rem 0 0; line-height: 1.4;">Same house and same host, without the 20% that Airbnb adds at checkout.</p>
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #666; margin: 0.5rem 0 0;">&#11088; 4.93 &middot; 40+ verified Airbnb reviews</p>
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; margin: 0.6rem 0 0;"><a href="/book-direct/" style="color: #B67550; font-weight: 600;">See the full comparison across all 3 properties &rarr;</a></p>
                 </div>
 
                 <div class="color-palette">
@@ -1264,19 +1288,19 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     <section style="background: #fff; padding: 4rem 2rem; text-align: center;">
         <div style="max-width: 900px; margin: 0 auto;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 0.5rem; color: #2c2c2c;">What Guests Say</h2>
-            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 0.95rem;">4.93 stars on Airbnb, 40 reviews.</p>
+            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 1rem;">4.93 stars on Airbnb, 40 reviews.</p>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; text-align: left;">
                 <div style="background: #faf8f5; padding: 1.75rem; border-radius: 16px; ">
-                    <p style="color: #2c2c2c; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">"The condo had a <strong>cozy and welcoming vibe.</strong> Eann's <strong>kitchen was very well stocked</strong> and the space was immaculate. I've chosen many Airbnbs. <strong>This one is definitely in the top 3.</strong>"</p>
-                    <p style="color: #999; font-size: 0.8rem;">Priya M., November 2024</p>
+                    <p style="color: #2c2c2c; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">"The condo had a <strong>cozy and welcoming vibe.</strong> Eann's <strong>kitchen was very well stocked</strong> and the space was immaculate. I've chosen many Airbnbs. <strong>This one is definitely in the top 3.</strong>"</p>
+                    <p style="color: #999; font-size: 1rem;">Priya M., November 2024</p>
                 </div>
                 <div style="background: #faf8f5; padding: 1.75rem; border-radius: 16px; ">
-                    <p style="color: #2c2c2c; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">"Such an amazing space. The <strong>bed was incredibly comfortable,</strong> the <strong>kitchen was fully stocked and beautifully renovated.</strong> Eann was such a responsive host. We even had to <strong>extend our stay because we loved it so much.</strong>"</p>
-                    <p style="color: #999; font-size: 0.8rem;">Claire B., September 2024</p>
+                    <p style="color: #2c2c2c; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">"Such an amazing space. The <strong>bed was incredibly comfortable,</strong> the <strong>kitchen was fully stocked and beautifully renovated.</strong> Eann was such a responsive host. We even had to <strong>extend our stay because we loved it so much.</strong>"</p>
+                    <p style="color: #999; font-size: 1rem;">Claire B., September 2024</p>
                 </div>
                 <div style="background: #faf8f5; padding: 1.75rem; border-radius: 16px; ">
-                    <p style="color: #2c2c2c; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">"We loved our time here. It was so <strong>cute, clean, spotless</strong>. Eann thought of everything. We were the only ones at the community pool. <strong>It felt like a private pool.</strong>"</p>
-                    <p style="color: #999; font-size: 0.8rem;">Natalie W., September 2024</p>
+                    <p style="color: #2c2c2c; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">"We loved our time here. It was so <strong>cute, clean, spotless</strong>. Eann thought of everything. We were the only ones at the community pool. <strong>It felt like a private pool.</strong>"</p>
+                    <p style="color: #999; font-size: 1rem;">Natalie W., September 2024</p>
                 </div>
             </div>
         </div>
@@ -1286,7 +1310,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     <section style="background: #faf8f5; padding: 4rem 2rem; text-align: center;">
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 0.5rem; color: #2c2c2c;">From the Blog</h2>
-            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 0.95rem;">Palm Springs guides, design notes, and things worth knowing before you arrive.</p>
+            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 1rem;">Palm Springs guides, design notes, and things worth knowing before you arrive.</p>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; text-align: left;">
                 <a href="/blog/sundune-palm-springs-review/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
                     <div style="aspect-ratio: 3/2; overflow: hidden;">
@@ -1294,7 +1318,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #3D5F78; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Guest Reviews</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">What Guests Say About The Sundune</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">What Guests Say About The Sundune</p>
                     </div>
                 </a>
                 <a href="/blog/palm-springs-local-guide-sundune/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1303,7 +1327,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #3D5F78; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Local Guide</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">The Local's Guide to Palm Springs</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">The Local's Guide to Palm Springs</p>
                     </div>
                 </a>
                 <a href="/blog/palm-springs-surf-club/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1312,7 +1336,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #3D5F78; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Activity Guide</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">Palm Springs Surf Club: Hours, Prices &amp; Sessions</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">Palm Springs Surf Club: Hours, Prices &amp; Sessions</p>
                     </div>
                 </a>
                 <a href="/blog/palm-springs-heat-activities/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1321,7 +1345,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #3D5F78; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Summer Guide</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">Palm Springs When It's Too Hot: Indoor Activities</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">Palm Springs When It's Too Hot: Indoor Activities</p>
                     </div>
                 </a>
                 <a href="/blog/sundune-palm-springs-design-story/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1330,7 +1354,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #3D5F78; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Design Story</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">Inside The Sundune: A Palm Springs Coastal Design Story</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">Inside The Sundune: A Palm Springs Coastal Design Story</p>
                     </div>
                 </a>
                 <a href="/the-sundune/guide/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1339,7 +1363,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #3D5F78; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Guest Guide</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">Your Palm Springs Guide, From the Hosts of The Sundune</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">Your Palm Springs Guide, From the Hosts of The Sundune</p>
                     </div>
                 </a>
             </div>
@@ -1350,34 +1374,34 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     <section style="background: #fff; padding: 4rem 2rem;">
         <div style="max-width: 760px; margin: 0 auto;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: #2c2c2c; text-align: center; margin-bottom: 0.5rem;">Frequently Asked Questions</h2>
-            <p style="text-align: center; color: #595959; font-size: 0.95rem; margin-bottom: 2.5rem; font-family: 'Work Sans', sans-serif;">The questions I get most often, answered honestly.</p>
+            <p style="text-align: center; color: #595959; font-size: 1rem; margin-bottom: 2.5rem; font-family: 'Work Sans', sans-serif;">The questions I get most often, answered honestly.</p>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">What is the design vibe at The Sundune? <span style="font-size: 1.3rem; color: #6E90AD;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Coastal-desert. Sun-bleached textures, natural materials, copper fixtures and aloe-toned walls. Early-morning light through linen curtains, the pace of a long weekend that has nowhere to be. Not trendy, not overdone. The kind of place that feels like it's been there a while, even though we just finished it.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Coastal-desert. Sun-bleached textures, natural materials, copper fixtures and aloe-toned walls. Early-morning light through linen curtains, the pace of a long weekend that has nowhere to be. Not trendy, not overdone. The kind of place that feels like it's been there a while, even though we just finished it.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">Is The Sundune walkable to downtown Palm Springs? <span style="font-size: 1.3rem; color: #6E90AD;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Not downtown, no. Downtown Palm Springs and Palm Canyon Drive are about a ten-minute drive. The Uptown Design District is the walkable piece, so galleries, vintage stores, and coffee are all on foot from here.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Not downtown, no. Downtown Palm Springs and Palm Canyon Drive are about a ten-minute drive. The Uptown Design District is the walkable piece, so galleries, vintage stores, and coffee are all on foot from here.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">How close is The Sundune to downtown Palm Springs? <span style="font-size: 1.3rem; color: #6E90AD;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">About ten minutes by car to downtown and Palm Canyon Drive. The Uptown Design District is closer and easy on foot, which covers most of a lazy afternoon.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">About ten minutes by car to downtown and Palm Canyon Drive. The Uptown Design District is closer and easy on foot, which covers most of a lazy afternoon.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">How many guests does The Sundune sleep? <span style="font-size: 1.3rem; color: #6E90AD;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Up to 4 guests across 2 bedrooms, with 3 king beds total, a full kitchen, private balcony, and the shared HOA pool at Palm Canyon Villas.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Up to 4 guests across 2 bedrooms, with 3 king beds total, a full kitchen, private balcony, and the shared HOA pool at Palm Canyon Villas.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">Are pets allowed at The Sundune? <span style="font-size: 1.3rem; color: #6E90AD;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Dogs are welcome with prior approval, one dog maximum, and a $150 per pet, per stay fee. Email us at <a href="mailto:indigopalmco@gmail.com" style="color: #6E90AD;">indigopalmco@gmail.com</a> with your dog's breed and size before booking so we can confirm.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Dogs are welcome with prior approval, one dog maximum, and a $150 per pet, per stay fee. Email us at <a href="mailto:indigopalmco@gmail.com" style="color: #6E90AD;">indigopalmco@gmail.com</a> with your dog's breed and size before booking so we can confirm.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">What is the minimum stay at The Sundune? <span style="font-size: 1.3rem; color: #6E90AD;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">4 nights minimum, per the Palm Canyon Villas HOA requirement. Check-in at 4pm, checkout at 11am. Early check-in or late checkout sometimes works if the schedule is open, just ask ahead of time.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">4 nights minimum, per the Palm Canyon Villas HOA requirement. Check-in at 4pm, checkout at 11am. Early check-in or late checkout sometimes works if the schedule is open, just ask ahead of time.</p>
             </details>
             <details style="padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">How much do I save booking directly? <span style="font-size: 1.3rem; color: #6E90AD;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Airbnb charges guests a 20% service fee on the subtotal, which adds up fast on a four-night minimum. Booking direct cuts that out entirely, same house, no platform fee on top.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Airbnb charges guests a 20% service fee on the subtotal, which adds up fast on a four-night minimum. Booking direct cuts that out entirely, same house, no platform fee on top.</p>
             </details>
         </div>
     </section>
@@ -1408,7 +1432,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
   document.addEventListener('visibilitychange', sync);
 })();
 </script>
-<script src="/js/reviews-widget.js" defer></script>
+<script src="/js/reviews-widget.js?v=6" defer></script>
 
     <footer id="contact">
         <div class="footer-content">
@@ -1544,6 +1568,17 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     details.parentNode.insertBefore(gallery, details);
   }
 })();
+</script>
+    <!-- Mobile sticky CTA bar -->
+    <div class="mobile-cta-bar" aria-label="Book this property">
+        <div class="mobile-cta-text">
+            <strong>Book direct and skip Airbnb's 20% guest fee</strong>
+            Same host · 4-night minimum
+        </div>
+        <a href="/booking-flow/?property=the-sundune" class="mobile-cta-btn" onclick="gtag('event', 'book_now_click', {'property_name': 'The Sundune', 'event_category': 'Booking', 'event_label': 'Mobile Sticky CTA', 'location': 'sticky', 'value': 1});">BOOK NOW</a>
+    </div>
+<script>
+(function(){var b=document.querySelector('.mobile-cta-bar'),f=document.querySelector('footer');if(!b||!f||!('IntersectionObserver' in window))return;new IntersectionObserver(function(e){b.classList.toggle('is-hidden',e[0].isIntersecting)}).observe(f)})();
 </script>
 </body>
 </html>

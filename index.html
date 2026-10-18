@@ -241,6 +241,8 @@
             --sage-light: #adbab7;
             --sage-dark: #738561;
             --sunbaked-terracotta: #B67550;
+            --turquoise: #00877b;
+            --dusty-blue: #6E90AD;
             --kahlo-blue: #325CD9;
             --desert-marigold: #FEAD26;
             --cabana-rose: #DBAF9C;
@@ -338,6 +340,42 @@
             color: var(--terracotta);
         }
 
+        /* Properties dropdown */
+nav li.has-dropdown { position: relative; }
+nav ul.nav-dropdown {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    min-width: 200px;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0;
+    gap: 0;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+nav li.has-dropdown::after { content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 0.9rem; }
+nav li.has-dropdown:hover > ul.nav-dropdown,
+nav li.has-dropdown:focus-within > ul.nav-dropdown { opacity: 1; visibility: visible; transform: none; }
+nav ul.nav-dropdown li a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap; }
+nav ul.nav-dropdown li a:hover { background: var(--cream); }
+@media (max-width: 768px) {
+    nav li.has-dropdown::after { display: none; }
+    nav ul.nav-dropdown {
+        position: static; height: auto; width: auto; max-width: none; min-width: 0;
+        margin: 0.75rem 0 0; padding: 0 0 0 1rem; background: none; box-shadow: none; border-radius: 0;
+        opacity: 1; visibility: visible; transform: none; transition: none; flex-direction: column;
+    }
+    nav ul.nav-dropdown li { border-bottom: none; padding: 0; }
+    nav ul.nav-dropdown li a { font-size: 1rem; padding: 0.75rem 0; min-height: 44px; color: #555; }
+    nav ul.nav-dropdown li a:hover { background: none; }
+}
+
         /* Mobile Menu Toggle */
         .mobile-menu-toggle {
             display: none;
@@ -414,13 +452,13 @@
         /* Hero Section */
         .hero {
             margin-top: 80px;
-            min-height: 65vh;
+            min-height: 72vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            align-items: flex-end;
+            justify-content: flex-start;
+            text-align: left;
             background: linear-gradient(135deg, var(--sage) 0%, var(--sage-light) 100%);
-            padding: 2rem 5%;
+            padding: 110px 5% 3.5rem;
             position: relative;
             overflow: hidden;
         }
@@ -457,24 +495,37 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(115, 133, 97, 0.5);
+            background: linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.5) 50%, rgba(0,0,0,.1) 90%);
             z-index: 1;
         }
 
         .hero-content {
-            max-width: 900px;
+            max-width: 860px;
             position: relative;
             z-index: 2;
         }
 
+        .hero-eyebrow {
+            display: flex;
+            align-items: center;
+            gap: .9rem;
+            font-size: .8rem;
+            font-weight: 600;
+            letter-spacing: .22em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,.92);
+            margin-bottom: 1rem;
+        }
+        .hero-eyebrow::before { content: ''; width: 2rem; height: 1px; background: #fff; }
+
         .hero h1 {
             font-family: var(--font-serif);
-            font-size: 4.5rem;
+            font-size: clamp(2.25rem, 6.5vw, 4rem);
             font-weight: 300;
             margin-bottom: 1rem;
             color: white;
-            letter-spacing: 2px;
-            line-height: 1.2;
+            letter-spacing: 0;
+            line-height: 1.1;
         }
 
         .hero .tagline {
@@ -730,7 +781,7 @@
 
         /* The Well Styling */
         .property-card.the-well .property-tag { background-color: #4A6050; color: white; }
-        .property-card.the-well .property-title { color: var(--charcoal); }
+        .property-card.the-well .property-title { color: #4A6050; }
 
         /* Cozy Cactus Styling */
         .property-card.cozy-cactus .property-tag { background-color: #e39b96; color: white; }
@@ -1002,26 +1053,40 @@
         }
         .faq-question:hover { color: var(--terracotta); }
         .faq-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            margin-right: -0.75rem;
             font-size: 1.5rem;
             line-height: 1;
             flex-shrink: 0;
-            transition: transform 0.2s ease;
+            transition: transform 0.25s ease;
         }
+        .faq-question { min-height: 44px; }
         .faq-question[aria-expanded="true"] .faq-icon {
             transform: rotate(45deg);
         }
         .faq-answer {
-            display: none;
-            padding-bottom: 1.25rem;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s;
         }
         .faq-answer p {
             font-family: var(--font-sans);
-            font-size: 0.95rem;
-            line-height: 1.7;
+            font-size: 1rem;
+            line-height: 1.6;
             color: #555;
+            padding-bottom: 1.25rem;
         }
         .faq-answer a { color: var(--terracotta); }
-        .faq-item.open .faq-answer { display: block; }
+        .faq-item.open .faq-answer { max-height: 40rem; opacity: 1; visibility: visible; transition-delay: 0s; }
+        @media (prefers-reduced-motion: reduce) {
+            .faq-icon, .faq-answer { transition: none; }
+        }
 
         /* Direct Booking Section */
         .direct-booking {
@@ -1395,7 +1460,7 @@
 
             /* Adjust video overlay for better mobile readability */
             .hero::before {
-                background: rgba(115, 133, 97, 0.7);
+                background: linear-gradient(to top, rgba(0,0,0,.8) 0%, rgba(0,0,0,.45) 50%, rgba(0,0,0,.1) 85%);
             }
 
             /* Mobile Navigation */
@@ -1887,6 +1952,7 @@
         }
 
         .blog-preview-card {
+            min-width: 0;
             text-decoration: none;
             color: inherit;
             display: flex;
@@ -2041,6 +2107,75 @@
                 scroll-behavior: auto !important;
             }
         }
+
+        /* About photo (desktop: circle) */
+        .about-photo { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; object-position: center 12%; display: block; margin: 0 auto 2rem; }
+        .email-popup-close { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; top: 0.5rem; right: 0.5rem; }
+        .email-popup-overlay { height: 100dvh; touch-action: manipulation; cursor: pointer; }
+        .email-popup { cursor: auto; }
+
+        /* Mobile home refactor */
+        @media (max-width: 767px) {
+            /* 1. Property carousel */
+            .property-grid {
+                display: flex;
+                grid-template-columns: none;
+                gap: 1rem;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                overscroll-behavior-x: contain;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                margin: 0 -5%;
+                padding: 0.5rem 5% 1rem;
+                scroll-padding-left: 5%;
+            }
+            .property-grid::-webkit-scrollbar { display: none; }
+            .property-card-link { flex: 0 0 82%; min-width: 0; scroll-snap-align: start; height: auto; display: flex; }
+            .property-card { width: 100%; }
+            .property-card:hover { transform: none; }
+            .property-image { height: 220px; }
+            .property-tag { top: 12px; left: 12px; padding: 0.4rem 0.9rem; font-size: 0.75rem; }
+            .property-title { font-size: 1.6rem; }
+            .property-location { font-size: 1rem; margin-bottom: 0.75rem; }
+            .property-tagline { font-size: 1rem; }
+            .property-description { font-size: 1rem; line-height: 1.6; }
+            .property-link {
+                display: flex; align-items: center; justify-content: center;
+                align-self: stretch; min-height: 48px; padding: 0 1rem;
+                background: var(--terracotta); color: #fff; border: 0; border-radius: 8px;
+                font-size: 0.95rem; font-weight: 600;
+            }
+            .property-card-link:hover .property-link { color: #fff; background: #b8544a; }
+
+            /* 2. Why We Host */
+            .about { padding: 2rem 6%; }
+            .about-content { text-align: left; max-width: 100%; }
+            .about-photo { width: 100%; height: auto; aspect-ratio: 4 / 3; max-height: 420px; border-radius: 16px; margin: 0 0 1.5rem; object-position: center 20%; }
+            .about-content p { font-size: 1rem; line-height: 1.7; margin-bottom: 1.1rem; text-wrap: pretty; }
+            .about-content .philosophy-quote {
+                font-size: clamp(1.25rem, 5.5vw, 1.9rem); line-height: 1.35; text-wrap: balance;
+                text-align: center; margin: 1.5rem 0; padding: 0.5rem;
+            }
+
+            /* 3. Popup */
+            .email-popup-overlay { align-items: center; padding: max(0.75rem, env(safe-area-inset-top)) max(0.75rem, env(safe-area-inset-right)) max(0.75rem, env(safe-area-inset-bottom)) max(0.75rem, env(safe-area-inset-left)); box-sizing: border-box; }
+            .email-popup {
+                width: 100%; max-height: calc(100dvh - 1.5rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+                overflow-y: auto; box-sizing: border-box; padding: 2.75rem 1.25rem 1.25rem;
+            }
+            .email-popup h3 { font-size: 1.5rem; }
+            .email-popup .discount-badge { font-size: 1.1rem; padding: 0.35rem 1.1rem; margin-bottom: 0.6rem; }
+            .email-popup p { font-size: 1rem; margin-bottom: 1rem; line-height: 1.45; }
+            .email-popup-form { gap: 0.75rem; }
+            .email-popup-form input[type="email"] { width: 100%; box-sizing: border-box; min-height: 48px; font-size: 16px; padding: 0 1rem; }
+            .email-popup-form button { width: 100%; min-height: 48px; }
+            .email-popup .fine-print { margin-top: 0.75rem; margin-bottom: 0; font-size: 0.85rem; }
+
+            /* 4. Video */
+            .video-container { aspect-ratio: 16 / 9; width: 100%; height: auto; }
+            .yt-facade, .yt-facade img { width: 100%; height: 100%; object-fit: cover; }
+        }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
 </head>
@@ -2058,7 +2193,7 @@
                 <span></span>
             </button>
             <ul id="navMenu">
-                <li><a href="#properties">Properties</a></li>
+                <li class="has-dropdown"><a href="#properties">Properties</a><ul class="nav-dropdown"><li><a href="/terra-luz/">Terra Luz</a></li><li><a href="/cozy-cactus/">The Cozy Cactus</a></li><li><a href="/the-sundune/">The Sundune</a></li><li><a href="/the-well/">The Well</a></li></ul></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/quiz/">Take the Quiz</a></li>
@@ -2090,10 +2225,11 @@
         </div>
 
         <div class="hero-content">
-            <h1>Desert Vacation Rentals. Book Direct &amp; Save</h1>
-            <p class="description">Four homes in the Coachella Valley. Each one different. Designed so the house just works and you don't have to think about it.</p>
+            <div class="hero-eyebrow">Indigo Palm Collective</div>
+            <h1>Boutique vacation rentals across the Coachella Valley</h1>
+            <p class="description">Ready before you are.</p>
             <a href="/booking-flow/" class="cta-button">Book Now</a>
-            <p style="margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.75); letter-spacing: 0.03em;">4.97 stars across 300+ Airbnb reviews &nbsp;·&nbsp; Superhost</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.75); letter-spacing: 0.03em;">4.97 stars · 300+ reviews · Superhost</p>
         </div>
     </section>
 
@@ -2249,7 +2385,7 @@
         <h2>Book Direct. Pay the Host, Not the Platform.</h2>
         <p>Airbnb takes 20% of your subtotal in guest fees and VRBO isn't far behind, and you get nothing extra for it. Book directly and those savings stay with you, not them.</p>
         <a href="#" id="openBookingWidget" class="booking-widget-btn" style="display: inline-block; text-decoration: none; cursor: pointer;">Check Availability</a>
-        <p style="margin-top: 1rem; font-size: 0.95rem; opacity: 0.9;">Want to talk through it first? Email <a href="mailto:indigopalmco@gmail.com" style="color: inherit; text-decoration: underline;" onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Direct Booking Email', 'value': 1});">indigopalmco@gmail.com</a>. We're real people and we respond.</p>
+        <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.9;">Want to talk through it first? Email <a href="mailto:indigopalmco@gmail.com" style="color: inherit; text-decoration: underline;" onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Direct Booking Email', 'value': 1});">indigopalmco@gmail.com</a>. We're real people and we respond.</p>
         <div class="social-links">
             <a href="https://www.instagram.com/_indigopalmco/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow us on Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -2305,7 +2441,7 @@
             <p class="booking-widget-note">Use code <strong>DIRECT10</strong> for 10% off your direct booking</p>
 
             <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--cream);">
-                <p style="text-align: center; color: #595959; font-size: 0.95rem; margin-bottom: 1rem;">Also available:</p>
+                <p style="text-align: center; color: #595959; font-size: 1rem; margin-bottom: 1rem;">Also available:</p>
                 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                     <a href="mailto:indigopalmco@gmail.com?subject=Booking Inquiry: The Sundune&body=Hi! I would like to book The Sundune. Please send me availability and rates." style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: #3D5F78; color: white; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 0.9rem;" onclick="gtag('event', 'email_click', {'property_name': 'The Sundune', 'event_category': 'Booking', 'event_label': 'Property Email Inquiry', 'value': 1});">
                         <span>The Sundune</span>
@@ -2344,7 +2480,7 @@
         <h2 class="section-title">Why We Host</h2>
         <p class="section-subtitle">It started with one rental in Indio. Four houses later, the reason is still the same.</p>
         <div class="about-content">
-            <img src="/images/eann-portrait.webp" alt="Eann Tuan, host and founder of Indigo Palm Collective, sitting in one of her vacation rentals" width="240" height="240" loading="lazy" style="width: 240px; height: 240px; border-radius: 50%; object-fit: cover; object-position: center 12%; display: block; margin: 0 auto 2rem;">
+            <img src="/images/eann-portrait.webp" alt="Eann Tuan, host and founder of Indigo Palm Collective, sitting in one of her vacation rentals" width="240" height="240" loading="lazy" class="about-photo">
             <p>I started hosting because I kept renting places that had the basics, but nothing that wow'd me and made me want to come back. The kitchen knives were dull and barely usable, the junk drawer had only junk, and the coffee bar was a Keurig with a single packet of generic coffee. I'd stand in someone else's kitchen hunting for a serving bowl and tongs, and end up frustrated and just ordering out.</p>
 
             <div class="philosophy-quote">
@@ -2474,7 +2610,7 @@
     </section>
 
     </main>
-    <script src="/js/reviews-widget.js?v=5" defer></script>
+    <script src="/js/reviews-widget.js?v=6" defer></script>
 
     <footer id="contact">
         <div class="footer-content">
@@ -2504,9 +2640,9 @@
     </footer>
 
     <!-- Email Popup -->
-    <div class="email-popup-overlay" id="emailPopup">
+    <div class="email-popup-overlay" id="emailPopup" role="dialog" aria-modal="true" aria-label="10% off direct booking">
         <div class="email-popup">
-            <button class="email-popup-close" id="closePopup">&times;</button>
+            <button type="button" class="email-popup-close" id="closePopup" aria-label="Close">&times;</button>
             <div class="discount-badge">10% OFF</div>
             <h3>Skip Airbnb. Pay the Host.</h3>
             <p>Book directly and skip the platform fees. Drop your email and we'll send the discount code over.</p>
@@ -2514,7 +2650,7 @@
                 <input type="hidden" name="form-name" value="popup-signup">
                 <input type="hidden" name="discount-code" value="DIRECT10">
                 <label for="popupEmailInput" class="sr-only">Email address</label>
-                <input type="email" id="popupEmailInput" name="email" placeholder="Enter your email" required>
+                <input type="email" id="popupEmailInput" name="email" placeholder="Enter your email" autocomplete="email" inputmode="email" required>
                 <button type="submit">GET MY 10% OFF</button>
             </form>
             <p class="fine-print">No spam. Unsubscribe whenever.</p>

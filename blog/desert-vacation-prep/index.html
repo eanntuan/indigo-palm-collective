@@ -87,7 +87,7 @@
     }
     </script>
 
-    <!-- JSON-LD: FAQPage (conditional — requires faqItems frontmatter) -->
+    <!-- JSON-LD: FAQPage (conditional - requires faqItems frontmatter) -->
     
 
     <!-- Favicons -->
@@ -174,7 +174,19 @@
         .article-body img { width: 100%; height: auto; border-radius: 16px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
         .article-body img.portrait, .article-body img.squarish { display: block; width: auto; max-width: 100%; max-height: 560px; margin-left: auto; margin-right: auto; }
         .article-body img.squarish { max-height: 500px; }
-        @media (max-width: 768px) { .blog-hero { height: 55vh !important; min-height: 320px; } }
+        .blog-hero { position: relative; margin-top: 86px; min-height: clamp(480px, 52vh, 520px); display: flex; align-items: flex-end; overflow: hidden; background: #2a2a2a; color: #fff; }
+        .blog-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+        .blog-hero::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(to top, rgba(0,0,0,.8) 0%, rgba(0,0,0,.45) 42%, rgba(0,0,0,0) 80%); pointer-events: none; }
+        .blog-hero-inner { position: relative; z-index: 2; width: 100%; max-width: 800px; margin: 0 auto; padding: 0 2rem 2.5rem; text-align: left; }
+        .blog-eyebrow { display: flex; align-items: center; gap: .75rem; font-family: var(--font-sans); font-size: .8rem; font-weight: 500; text-transform: uppercase; letter-spacing: .2em; color: #fff; margin-bottom: 1rem; }
+        .blog-eyebrow::before { content: ""; width: 2rem; height: 1px; background: #fff; flex: none; }
+        .blog-hero h1 { font-family: var(--font-serif); font-weight: 600; font-size: clamp(2.25rem, 6vw, 3.75rem); line-height: 1.05; color: #fff; margin: 0; text-shadow: 0 2px 18px rgba(0,0,0,.35); overflow-wrap: break-word; }
+        .blog-hero .article-meta { color: rgba(255,255,255,.92); font-family: var(--font-sans); font-size: .95rem; margin-top: 1.1rem; }
+        .blog-hero .read-time { color: #fff; font-weight: 500; }
+        @media (max-width: 768px) { .blog-hero { min-height: 55vh; } .blog-hero-inner { padding: 6rem 1.25rem 1.75rem; } }
+        .article-body { overflow-wrap: break-word; }
+        .article-body table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .article-body video, .article-body iframe { max-width: 100%; height: auto; }
         .image-caption { text-align: center; font-size: 0.95rem; color: #666; font-style: italic; margin-top: -1rem; margin-bottom: 2rem; }
 
         .related-posts { margin: 3rem 0; padding: 2rem; background: white; border: 1px solid #e8ddd0; border-radius: 16px; }
@@ -211,16 +223,52 @@
         footer a:hover { text-decoration: underline; }
 
 
+        .article-body blockquote { border-left: 4px solid var(--terracotta); background: #fdf8f2; padding: 1rem 1.25rem; border-radius: 0 8px 8px 0; }
+        .article-body blockquote p:last-child { margin-bottom: 0; }
+        .article-body .callout, .article-body .caution { border-left: 4px solid var(--desert-marigold); background: #fff8e8; padding: 1rem 1.25rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+
+        .map-embed { position: relative; aspect-ratio: 16/9; margin: 2rem 0; border-radius: 16px; overflow: hidden; }
+        .map-embed iframe { width: 100%; height: 100%; border: 0; }
+        .map-embed .map-tap { display: none; }
+
+        .toc { margin: 0 0 2rem; background: #fff; border: 1px solid #e8ddd0; border-radius: 10px; }
+        .toc summary { cursor: pointer; padding: 0.9rem 1.25rem; min-height: 48px; font-weight: 600; display: flex; align-items: center; justify-content: space-between; list-style: none; }
+        .toc summary::-webkit-details-marker { display: none; }
+        .toc summary::after { content: "+"; color: var(--terracotta); font-size: 1.4rem; line-height: 1; }
+        .toc[open] summary::after { content: "\2212"; }
+        .article-body .toc ol { margin: 0; padding: 0 1.25rem 0.75rem 2.5rem; font-size: 1rem; line-height: 1.4; }
+        .article-body .toc li { margin: 0; }
+        .toc a { display: block; padding: 0.55rem 0; color: var(--charcoal); text-decoration: none; }
+        .toc a:hover { color: var(--terracotta); }
+        .article-body h2, .article-body h3 { scroll-margin-top: 110px; }
+
+        .share-bar { display: none; }
+
         @media (max-width: 768px) {
             article h1 { font-size: 2rem; }
-            .article-body { font-size: 1rem; }
-            .article-body h2 { font-size: 1.4rem; }
-            .article-body h3 { font-size: 1.2rem; }
+            .article-body { font-size: 1.0625rem; line-height: 1.7; }
+            .article-body h2 { font-size: 1.6rem; margin: 3rem 0 1.25rem; }
+            .article-body h3 { font-size: 1.3rem; margin: 2.25rem 0 0.9rem; }
             article { padding: 5rem 1.25rem 3rem; }
+            .blog-hero + article { padding-top: 2rem; }
+            .article-body ul, .article-body ol { margin: 1.75rem 0 1.75rem 1.25rem; }
+            .article-body li { margin-bottom: 1rem; }
+            .article-body blockquote, .article-body .callout, .article-body .caution { margin: 2rem 0; padding: 1rem; overflow-wrap: anywhere; }
+            .toc { position: sticky; top: 72px; z-index: 40; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+            .toc[open] ol { max-height: 60vh; overflow-y: auto; }
+            .map-embed iframe { pointer-events: none; }
+            .map-embed.active iframe { pointer-events: auto; }
+            .map-embed .map-tap { display: flex; position: absolute; inset: 0; align-items: center; justify-content: center; background: rgba(0,0,0,0.12); color: #fff; font-weight: 600; border: 0; width: 100%; cursor: pointer; font-family: var(--font-sans); font-size: 1rem; }
+            .map-embed.active .map-tap { display: none; }
+            .share-bar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; gap: 0.5rem; padding: 0.5rem 1rem calc(0.5rem + env(safe-area-inset-bottom)); background: rgba(255,255,255,0.97); border-top: 1px solid #e8ddd0; }
+            .share-bar a, .share-bar button { flex: 1; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 999px; font: 600 0.95rem var(--font-sans); text-decoration: none; cursor: pointer; }
+            .share-bar .pin { background: #E60023; color: #fff; border: 0; }
+            .share-bar .share { background: #fff; color: var(--charcoal); border: 1px solid #ccc; }
+            body { padding-bottom: 64px; }
         }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
-<link rel="stylesheet" href="/css/site-nav.css?v=2">
+<link rel="stylesheet" href="/css/site-nav.css?v=5">
 <script src="/js/site-nav.js?v=2" defer></script>
 </head>
 <body>
@@ -235,7 +283,7 @@
                 <span></span>
             </button>
             <ul id="navMenu">
-                <li><a href="/#properties">Properties</a></li>
+                <li class="has-dropdown"><a href="/#properties">Properties</a><ul class="nav-dropdown"><li><a href="/terra-luz/">Terra Luz</a></li><li><a href="/cozy-cactus/">The Cozy Cactus</a></li><li><a href="/the-sundune/">The Sundune</a></li><li><a href="/the-well/">The Well</a></li></ul></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/quiz/">Take the Quiz</a></li>
@@ -246,16 +294,18 @@
     </nav>
 
     
-    <div class="blog-hero" style="width:100%;height:480px;overflow:hidden;margin-top:86px;">
-        <img src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view with palm trees and mountain backdrop in Coachella Valley California" width="1400" height="480" style="width:100%;height:100%;object-fit:cover;object-position:center bottom;" loading="eager" fetchpriority="high">
-    </div>
+    <header class="blog-hero">
+        <img class="blog-hero-img" src="/blog/images/ps-desert-valley-view.webp" alt="Desert valley view with palm trees and mountain backdrop in Coachella Valley California" width="1400" height="480" style="object-position:center bottom;" loading="eager" fetchpriority="high">
+        <div class="blog-hero-inner">
+            <div class="blog-eyebrow">Travel Guide</div>
+            <h1>First-Time Desert Vacation Prep: What You Need to Know</h1>
+            <div class="article-meta">By Eann Tuan · February 2, 2026 · <span class="read-time">6 min read</span></div>
+        </div>
+    </header>
     
 
     <article >
-        <header>
-            <h1>First-Time Desert Vacation Prep: What You Need to Know</h1>
-            <div class="article-meta">By Eann Tuan · February 2, 2026 · <span class="read-time">6 min read</span></div>
-        </header>
+        
         <div class="article-body">
             <p>The Coachella Valley does one thing most people don't expect: it changes your pace. Not just slows it down. Changes it. The mornings are cool and still and pink at the edges. By 2pm it's 95 degrees and you're making decisions about shade. By evening the temperature drops 20 degrees and suddenly the whole day resets.</p>
 <p>We've hosted hundreds of guests across our properties. The ones who had the best trips understood one thing going in: the desert has a schedule, and your job is to work with it.</p>
@@ -382,7 +432,7 @@
         <div class="cta-box">
             <h3>Ready to Book?</h3>
             <p>Four properties across the Coachella Valley. Book direct and save on booking fees.</p>
-            <a href="/#properties" class="cta-button" onclick="gtag('event', 'blog_cta_click', {'event_category': 'Booking', 'event_label': 'Indigo Palm Collective — First-Time Desert Vacation Prep: What You Need to Know', 'value': 1});">See All Properties</a>
+            <a href="/#properties" class="cta-button" onclick="gtag('event', 'blog_cta_click', {'event_category': 'Booking', 'event_label': 'Indigo Palm Collective - First-Time Desert Vacation Prep: What You Need to Know', 'value': 1});">See All Properties</a>
         </div>
     </article>
 
@@ -464,6 +514,46 @@
             <p style="margin-top: 1rem; font-size: 0.8rem; color: #888;"><a href="/" style="color: inherit; text-decoration: none;">Home</a> &nbsp;&middot;&nbsp; <a href="/#properties" style="color: inherit; text-decoration: none;">Properties</a> &nbsp;&middot;&nbsp; <a href="/blog/" style="color: inherit; text-decoration: none;">Blog</a> &nbsp;&middot;&nbsp; <a href="/#contact" style="color: inherit; text-decoration: none;">Contact</a></p>
         </div>
     </footer>
+
+    <div class="share-bar" role="region" aria-label="Save and share">
+        <a class="pin" id="pinSave" href="https://www.pinterest.com/pin/create/button/" target="_blank" rel="noopener" onclick="window.gtag&&gtag('event','pinterest_save_click',{'event_category':'share','event_label':'First-Time Desert Vacation Prep: What You Need to Know'})">Save to Pinterest</a>
+        <button type="button" class="share" id="shareBtn">Share</button>
+    </div>
+    <script>
+    (function () {
+        var body = document.querySelector('.article-body');
+        if (!body) return;
+        var hs = body.querySelectorAll('h2');
+        if (hs.length >= 3) {
+            var toc = document.createElement('details'); toc.className = 'toc';
+            var list = '';
+            hs.forEach(function (h, i) {
+                if (!h.id) h.id = 'section-' + (i + 1);
+                list += '<li><a href="#' + h.id + '">' + h.textContent + '</a></li>';
+            });
+            toc.innerHTML = '<summary>Jump to section</summary><ol>' + list + '</ol>';
+            toc.addEventListener('click', function (e) {
+                if (e.target.tagName === 'A') toc.removeAttribute('open');
+            });
+            body.insertBefore(toc, body.firstChild);
+        }
+        body.querySelectorAll('iframe').forEach(function (f) {
+            var w = document.createElement('div'); w.className = 'map-embed';
+            f.parentNode.insertBefore(w, f); w.appendChild(f);
+            var b = document.createElement('button'); b.type = 'button'; b.className = 'map-tap'; b.textContent = 'Tap to explore the map';
+            b.addEventListener('click', function () { w.classList.add('active'); });
+            w.appendChild(b);
+        });
+        var img = document.querySelector('meta[property="og:image"]');
+        var pin = document.getElementById('pinSave');
+        pin.href = 'https://www.pinterest.com/pin/create/button/?url=' + encodeURIComponent(location.href.split('#')[0]) +
+            '&media=' + encodeURIComponent(img ? img.content : '') + '&description=' + encodeURIComponent(document.title);
+        document.getElementById('shareBtn').addEventListener('click', function () {
+            if (navigator.share) navigator.share({ title: document.title, url: location.href.split('#')[0] }).catch(function () {});
+            else if (navigator.clipboard) navigator.clipboard.writeText(location.href.split('#')[0]).then(function () { document.getElementById('shareBtn').textContent = 'Link copied'; });
+        });
+    })();
+    </script>
 
 </body>
 </html>

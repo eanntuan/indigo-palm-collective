@@ -675,7 +675,7 @@
         .cal-dow { text-align: center; font-size: 0.7rem; color: #aaa; padding-bottom: 0.4rem; }
         .cal-day { text-align: center; padding: 0.45rem 0; font-size: 0.85rem; cursor: pointer; border-radius: 50%; transition: background 0.15s; }
         .cal-day.available { font-weight: 700; color: #1a1a1a; }
-        .cal-day.available:hover { background: #f0ede6; }
+        @media (hover:hover) { .cal-day.available:not(.sel-start):not(.sel-end):not(.in-range):hover { background: #f0ede6; } }
         .cal-day.booked { color: #767676; text-decoration: line-through; cursor: default; font-weight: 400; }
         .cal-day.past { color: #767676; cursor: default; font-weight: 400; }
         .cal-day.empty { cursor: default; }
@@ -1023,6 +1023,35 @@
         .photo-caption { margin: 0.6rem 0.25rem 0; font-size: 0.9rem; font-style: italic; color: #6b5d52; line-height: 1.4; }
 .inline-photo + .photo-caption { max-width: 580px; margin: -1rem auto 2rem; text-align: center; }
 img[id^="photo-"] { scroll-margin-top: 6rem; }
+
+/* Mobile booking widget + sticky book bar (2026-10) */
+.mobile-cta-bar{display:none}
+@media (max-width:768px){
+.details-sidebar{display:flex;flex-direction:column;padding:1.5rem 1.25rem}
+.details-sidebar .direct-savings{order:1;margin:1.25rem 0 0.75rem !important}
+.details-sidebar .festival-note{order:2}
+.details-sidebar .avail-calendar{order:3}
+.details-sidebar .cta-button{order:4;min-height:48px;font-size:1rem}
+.details-sidebar .color-palette{order:5}
+.mobile-cta-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:999;background:#fff;border-top:1px solid rgba(0,0,0,0.12);padding:0.6rem 1.2rem calc(0.6rem + env(safe-area-inset-bottom));align-items:center;justify-content:space-between;gap:1rem;box-shadow:0 -4px 16px rgba(0,0,0,0.1);transition:transform 0.25s ease}
+.mobile-cta-bar.is-hidden,body:has(nav.ip-nav ul.active) .mobile-cta-bar{transform:translateY(110%)}
+.mobile-cta-bar .mobile-cta-text{font-size:0.85rem;color:#444;line-height:1.3}
+.mobile-cta-bar .mobile-cta-text strong{display:block;font-size:0.95rem;color:#1a1a1a}
+.mobile-cta-bar .mobile-cta-btn{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 1.4rem;background:var(--cta-color);color:#fff;text-decoration:none;font-weight:600;font-size:0.9rem;letter-spacing:0.5px;white-space:nowrap}
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+.cal-nav button{min-width:44px;min-height:44px;font-size:1.6rem}
+.cal-dow{font-size:0.8rem;color:#767676}
+.cal-day{min-height:44px;padding:0;display:flex;align-items:center;justify-content:center;font-size:16px}
+.cal-day.sel-start{background:radial-gradient(circle 20px at center,#B67550 99%,transparent 100%),linear-gradient(to right,transparent 50%,rgba(182,117,80,0.12) 50%)}
+.cal-day.sel-end{background:radial-gradient(circle 20px at center,#B67550 99%,transparent 100%),linear-gradient(to left,transparent 50%,rgba(182,117,80,0.12) 50%)}
+.cal-day.sel-start.sel-end{background:radial-gradient(circle 20px at center,#B67550 99%,transparent 100%)}
+.cal-legend{font-size:0.85rem;color:#666}
+}
+@media (max-width:400px){
+.avail-calendar{margin-left:calc(-1.25rem - 5vw);margin-right:calc(-1.25rem - 5vw)}
+.avail-calendar>:not(.cal-grid){margin-left:calc(1.25rem + 5vw);margin-right:calc(1.25rem + 5vw)}
+.avail-calendar>.cal-nav{margin-left:calc(0.75rem + 5vw);margin-right:calc(0.75rem + 5vw)}
+}
 </style>
 
     <!-- LodgingBusiness Structured Data -->
@@ -1069,8 +1098,12 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     }
     </script>
     <link rel="stylesheet" href="/css/cta-button.css">
-<link rel="stylesheet" href="/css/site-nav.css?v=2">
+<link rel="stylesheet" href="/css/site-nav.css?v=5">
+<link rel="stylesheet" href="/css/property-hero.css?v=2">
+<link rel="stylesheet" href="/css/room-gallery.css?v=3">
+<style>:root{--hero-accent:#E0A07A;--cta-color:#8A4A2E}</style>
 <script src="/js/site-nav.js?v=2" defer></script>
+<link rel="stylesheet" href="/css/faq.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -1085,11 +1118,12 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                 <span></span>
             </button>
             <ul id="navMenu">
-                <li><a href="/#properties">Properties</a></li>
+                <li class="has-dropdown"><a href="/#properties">Properties</a><ul class="nav-dropdown"><li><a href="/terra-luz/">Terra Luz</a></li><li><a href="/cozy-cactus/">The Cozy Cactus</a></li><li><a href="/the-sundune/">The Sundune</a></li><li><a href="/the-well/">The Well</a></li></ul></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/quiz/">Take the Quiz</a></li>
                 <li><a href="/#contact">Contact</a></li>
+                <li class="nav-cta"><a href="/booking-flow/?property=terra-luz" onclick="window.gtag&&gtag('event','book_now_click',{'property_name':'terra-luz','location':'nav'})">Check availability</a></li>
             </ul>
             <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
@@ -1098,11 +1132,13 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     <!-- Hero Section -->
     <section class="hero">
         <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="/terra-luz/photos/pool-patio/TerraLuz2026-0168.webp" data-src="/terra-luz/video/terra-luz-hero"></video>
+        <div class="hero-scrim"></div>
         <div class="hero-content">
-            <div class="property-tag">LATIN CULTURE</div>
-            <h1>Terra Luz<span class="hero-subtitle">Old Havana Meets CA Desert</span></h1>
-            <p class="location">Indio, California</p>
-            <p class="tagline">A Cuban courtyard that moved to Indio.</p>
+            <div class="property-tag">Indio, California</div>
+            <h1>Terra Luz</h1>
+            <p class="tagline">A Cuban courtyard that moved to the Desert.</p>
+            <p class="hero-meta">&#11088; 4.98 &middot; 146 reviews on Airbnb</p>
+            <p class="hero-price">3BR · Sleeps 8 · <a href="/booking-flow/?property=terra-luz" class="hero-book-link">Book Direct &amp; Save →</a></p>
         </div>
     </section>
 
@@ -1189,7 +1225,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     <span>Kahlo Blue Statement</span>
                 </div>
 
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.8rem; color: #B67550; font-weight: 600; margin: 0 0 0.7rem;">Coachella and Stagecoach weekends fill first, some six months out. Planning around a festival or the winter season? Check dates now.</p>
+                <p class="festival-note" style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #B67550; font-weight: 600; margin: 0 0 0.7rem;">Coachella and Stagecoach weekends fill first, some six months out. Planning around a festival or the winter season? Check dates now.</p>
                 <div class="avail-calendar">
                     <h4>Check Availability</h4>
                     <div class="cal-nav">
@@ -1198,6 +1234,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                         <button id="cal-next" type="button">&#8250;</button>
                     </div>
                     <div class="cal-grid" id="cal-grid"><div class="cal-loading">Loading...</div></div>
+<p class="cal-min-note" id="cal-min-note" aria-live="polite" style="margin:0.5rem 0 0;font-size:0.8rem;color:#555;min-height:1.3em;">2-night minimum stay</p>
                     <div class="cal-legend">
                         <span><span class="dot" style="background:#B67550;"></span> Selected</span>
                         <span><span class="dot" style="background:#ddd;"></span> Booked</span>
@@ -1205,8 +1242,8 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                 </div>
                 <a href="/booking-flow/?property=terra-luz" id="book-now-btn" class="cta-button" onclick="gtag('event', 'book_now_click', {'property_name': 'Terra Luz', 'event_category': 'Booking', 'event_label': 'Property Page CTA', 'value': 1});">BOOK NOW</a>
 
-                <div style="margin: 1.2rem 0; padding: 1.1rem; background: #fdf8f3; border-radius: 16px; ">
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #B67550; margin: 0 0 0.7rem;">Why book direct?</p>
+                <div class="direct-savings" style="margin: 1.2rem 0; padding: 1.1rem; background: #fdf8f3; border-radius: 16px; ">
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: 0; color: #B67550; margin: 0 0 0.7rem;">Skip the 20% Airbnb fee</p>
                     <div style="font-family: 'Work Sans', sans-serif; font-size: 0.85rem; color: #3a3028;">
                         <div style="display: flex; justify-content: space-between; padding: 0.35rem 0; border-bottom: 1px solid #edd9c8;">
                             <span>Book here</span>
@@ -1217,9 +1254,9 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                             <span style="font-weight: 600; color: #b34f3c;">+20% added</span>
                         </div>
                     </div>
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.78rem; color: #767676; margin: 0.7rem 0 0; line-height: 1.4;">Same house, same host. Typically $150–400 less on a full week.</p>
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.8rem; color: #666; margin: 0.5rem 0 0;">&#11088; 4.98 &middot; 146+ verified Airbnb reviews</p>
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.78rem; margin: 0.6rem 0 0;"><a href="/book-direct/" style="color: #B67550; font-weight: 600;">See the full comparison across all 3 properties &rarr;</a></p>
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #767676; margin: 0.7rem 0 0; line-height: 1.4;">Same house and same host, without the 20% that Airbnb adds at checkout.</p>
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #666; margin: 0.5rem 0 0;">&#11088; 4.98 &middot; 146+ verified Airbnb reviews</p>
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; margin: 0.6rem 0 0;"><a href="/book-direct/" style="color: #B67550; font-weight: 600;">See the full comparison across all 3 properties &rarr;</a></p>
                 </div>
 
                 <div class="color-palette">
@@ -1365,7 +1402,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     <section style="background: #faf8f5; padding: 4rem 2rem; text-align: center;">
         <div style="max-width: 1000px; margin: 0 auto;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 0.5rem; color: #2c2c2c;">Browse by Room</h2>
-            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 0.95rem;">Every room, up close.</p>
+            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 1rem;">Every room, up close.</p>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; text-align: left;">
                 <a href="/terra-luz/photos/living-room/" style="text-decoration: none; color: #2c2c2c; display: block; border-radius: 16px; overflow: hidden; background: white;">
                     <div style="height: 200px; overflow: hidden;">
@@ -1373,7 +1410,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1rem 1.25rem 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;">Living Room</p>
-                        <p style="font-weight: 500; font-size: 0.95rem; line-height: 1.4;">Sectional, rattan pendant light, good afternoon light.</p>
+                        <p style="font-weight: 500; font-size: 1rem; line-height: 1.4;">Sectional, rattan pendant light, good afternoon light.</p>
                     </div>
                 </a>
                 <a href="/terra-luz/photos/kitchen/" style="text-decoration: none; color: #2c2c2c; display: block; border-radius: 16px; overflow: hidden; background: white;">
@@ -1382,7 +1419,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1rem 1.25rem 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;">Kitchen</p>
-                        <p style="font-weight: 500; font-size: 0.95rem; line-height: 1.4;">Gas stove, geometric tile backsplash, fully stocked for real cooking.</p>
+                        <p style="font-weight: 500; font-size: 1rem; line-height: 1.4;">Gas stove, geometric tile backsplash, fully stocked for real cooking.</p>
                     </div>
                 </a>
                 <a href="/terra-luz/photos/pool-patio/" style="text-decoration: none; color: #2c2c2c; display: block; border-radius: 16px; overflow: hidden; background: white;">
@@ -1391,7 +1428,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1rem 1.25rem 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;">Pool &amp; Patio</p>
-                        <p style="font-weight: 500; font-size: 0.95rem; line-height: 1.4;">Kahlo blue saltwater pool, covered lounge, string lights at night.</p>
+                        <p style="font-weight: 500; font-size: 1rem; line-height: 1.4;">Kahlo blue saltwater pool, covered lounge, string lights at night.</p>
                     </div>
                 </a>
                 <a href="/terra-luz/photos/primary-bathroom/" style="text-decoration: none; color: #2c2c2c; display: block; border-radius: 16px; overflow: hidden; background: white;">
@@ -1400,7 +1437,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1rem 1.25rem 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;">Primary Bathroom</p>
-                        <p style="font-weight: 500; font-size: 0.95rem; line-height: 1.4;">Sage green walls, soaking tub, glass shower, rattan pendant.</p>
+                        <p style="font-weight: 500; font-size: 1rem; line-height: 1.4;">Sage green walls, soaking tub, glass shower, rattan pendant.</p>
                     </div>
                 </a>
                 <a href="/terra-luz/photos/second-bathroom/" style="text-decoration: none; color: #2c2c2c; display: block; border-radius: 16px; overflow: hidden; background: white;">
@@ -1409,7 +1446,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1rem 1.25rem 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;">Second Bathroom</p>
-                        <p style="font-weight: 500; font-size: 0.95rem; line-height: 1.4;">Blush hand-painted wall, gold mirrors, brass fixtures.</p>
+                        <p style="font-weight: 500; font-size: 1rem; line-height: 1.4;">Blush hand-painted wall, gold mirrors, brass fixtures.</p>
                     </div>
                 </a>
                 <a href="/terra-luz/photos/primary-bedroom/" style="text-decoration: none; color: #2c2c2c; display: block; border-radius: 16px; overflow: hidden; background: white;">
@@ -1418,7 +1455,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1rem 1.25rem 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;">Primary Bedroom</p>
-                        <p style="font-weight: 500; font-size: 0.95rem; line-height: 1.4;">King bed, ensuite bath with soaking tub, slider to the backyard.</p>
+                        <p style="font-weight: 500; font-size: 1rem; line-height: 1.4;">King bed, ensuite bath with soaking tub, slider to the backyard.</p>
                     </div>
                 </a>
                 <a href="/terra-luz/photos/second-bedroom/" style="text-decoration: none; color: #2c2c2c; display: block; border-radius: 16px; overflow: hidden; background: white;">
@@ -1427,7 +1464,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1rem 1.25rem 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;">Second Bedroom</p>
-                        <p style="font-weight: 500; font-size: 0.95rem; line-height: 1.4;">King bed, tropical wallpaper, quieter than you'd expect.</p>
+                        <p style="font-weight: 500; font-size: 1rem; line-height: 1.4;">King bed, tropical wallpaper, quieter than you'd expect.</p>
                     </div>
                 </a>
                 <a href="/terra-luz/photos/third-bedroom/" style="text-decoration: none; color: #2c2c2c; display: block; border-radius: 16px; overflow: hidden; background: white;">
@@ -1436,7 +1473,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1rem 1.25rem 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem;">Third Bedroom</p>
-                        <p style="font-weight: 500; font-size: 0.95rem; line-height: 1.4;">King bed, Kahlo blue accent wall, small floating desk.</p>
+                        <p style="font-weight: 500; font-size: 1rem; line-height: 1.4;">King bed, Kahlo blue accent wall, small floating desk.</p>
                     </div>
                 </a>
             </div>
@@ -1447,7 +1484,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     <section style="background: #faf8f5; padding: 4rem 2rem; text-align: center;">
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 0.5rem; color: #2c2c2c;">From Our Blog</h2>
-            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 0.95rem;">The story behind the house, and what's worth knowing about Indio.</p>
+            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 1rem;">The story behind the house, and what's worth knowing about Indio.</p>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; text-align: left;">
                 <a href="/blog/terra-luz-review/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
                     <div style="aspect-ratio: 3/2; overflow: hidden;">
@@ -1455,7 +1492,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Guest Reviews</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">What to Expect at Terra Luz: The Review</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">What to Expect at Terra Luz: The Review</p>
                     </div>
                 </a>
                 <a href="/blog/terra-luz-origin-story/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1464,7 +1501,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Origin Story</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">The Story Behind Terra Luz</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">The Story Behind Terra Luz</p>
                     </div>
                 </a>
                 <a href="/blog/palm-springs-vs-indio/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1473,7 +1510,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Planning Guide</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">Palm Springs vs. Indio: Which to Stay In</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">Palm Springs vs. Indio: Which to Stay In</p>
                     </div>
                 </a>
                 <a href="/blog/where-to-stay-coachella-2026/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1482,7 +1519,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Festival Guide</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">Where to Stay for Coachella 2026</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">Where to Stay for Coachella 2026</p>
                     </div>
                 </a>
                 <a href="/blog/terra-luz-renovation-story/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1491,7 +1528,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #7A4A2F; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Renovation Story</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">Terra Luz Renovation: How We Rebuilt the House Room by Room</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">Terra Luz Renovation: How We Rebuilt the House Room by Room</p>
                     </div>
                 </a>
             </div>
@@ -1502,37 +1539,37 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     <section style="background: #fff; padding: 4rem 2rem;">
         <div style="max-width: 760px; margin: 0 auto;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: #2c2c2c; text-align: center; margin-bottom: 0.5rem;">Frequently Asked Questions</h2>
-            <p style="text-align: center; color: #595959; font-size: 0.95rem; margin-bottom: 2.5rem; font-family: 'Work Sans', sans-serif;">The things people ask.</p>
+            <p style="text-align: center; color: #595959; font-size: 1rem; margin-bottom: 2.5rem; font-family: 'Work Sans', sans-serif;">The things people ask.</p>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">Is Terra Luz pet-friendly? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Yes, up to 2 dogs, $150 per pet per stay. Fenced backyard, dog bowl and treats included. Pets stay off the furniture and can't be left alone in the house. Email <a href="mailto:indigopalmco@gmail.com" style="color: #B67550;">indigopalmco@gmail.com</a> before booking to confirm your pup is good to go.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Yes, up to 2 dogs, $150 per pet per stay. Fenced backyard, dog bowl and treats included. Pets stay off the furniture and can't be left alone in the house. Email <a href="mailto:indigopalmco@gmail.com" style="color: #B67550;">indigopalmco@gmail.com</a> before booking to confirm your pup is good to go.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">How far is Terra Luz from Coachella and Stagecoach? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Walking distance to Empire Polo Club. One of the closest vacation rentals to the festival grounds in the Coachella Valley, and the walk means no shuttles, no surge pricing at midnight.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Walking distance to Empire Polo Club. One of the closest vacation rentals to the festival grounds in the Coachella Valley, and the walk means no shuttles, no surge pricing at midnight.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">What makes Terra Luz unique? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Design-wise: Dawn Asher of The Olive Jar did the whole thing, and it's Latin/Cuban-inspired in a specific, deliberate way, not generic boho. Kahlo blue saltwater pool, terracotta courtyard, things that feel like they were collected over years. As far as I know, it's the only vacation rental in the Coachella Valley with an actual Old Havana design identity.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Design-wise: Dawn Asher of The Olive Jar did the whole thing, and it's Latin/Cuban-inspired in a specific, deliberate way, not generic boho. Kahlo blue saltwater pool, terracotta courtyard, things that feel like they were collected over years. As far as I know, it's the only vacation rental in the Coachella Valley with an actual Old Havana design identity.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">How many guests does Terra Luz sleep? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Up to 8 guests in 3 bedrooms, on three king beds plus a twin trundle. Full kitchen, living and dining areas, private saltwater pool with a tanning ledge and heated spa, and a covered outdoor patio. It's a real house, not a cramped rental.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Up to 8 guests in 3 bedrooms, on three king beds plus a twin trundle. Full kitchen, living and dining areas, private saltwater pool with a tanning ledge and heated spa, and a covered outdoor patio. It's a real house, not a cramped rental.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">What is the minimum stay at Terra Luz? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">2 nights minimum. Check-in is 4pm, checkout is 10am. Early check-in or late checkout can sometimes happen if the calendar is clear, just ask ahead of time.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">2 nights minimum. Check-in is 4pm, checkout is 10am. Early check-in or late checkout can sometimes happen if the calendar is clear, just ask ahead of time.</p>
             </details>
             <details style="padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">How much do I save booking directly? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Airbnb tacks a 20% guest service fee onto your subtotal and VRBO isn't far behind. Booking direct means you pay what you see, and you have my number if anything comes up.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Airbnb tacks a 20% guest service fee onto your subtotal and VRBO isn't far behind. Booking direct means you pay what you see, and you have my number if anything comes up.</p>
             </details>
         </div>
     </section>
 
     <!-- Footer -->
-    <div data-reviews="terra-luz"></div>
-    <script src="/js/reviews-widget.js?v=5" defer></script>
+    <div data-reviews="terra-luz" data-serif></div>
+    <script src="/js/reviews-widget.js?v=6" defer></script>
 
     <footer id="contact">
         <div class="footer-content">
@@ -1580,6 +1617,35 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     let calYear = today.getFullYear(), calMonth = today.getMonth();
     let blockedDates = new Set(), checkInVal = '', checkOutVal = '';
 
+    const MIN_NIGHTS = 2; // booking-config.js minNights for this property
+    const noteEl = document.getElementById('cal-min-note'), baseNote = noteEl ? noteEl.textContent : '';
+    const addDays = (ds, n) => { const [y, m, d] = ds.split('-').map(Number); return new Date(Date.UTC(y, m - 1, d + n)).toISOString().slice(0, 10); };
+    let previewed = [];
+    function clearPreview() {
+        previewed.forEach(([el, c]) => { el.className = c; });
+        previewed = [];
+        if (noteEl) noteEl.textContent = baseNote;
+    }
+    // Hover preview: pill from check-in to hovered date, stretched to the minimum stay; never across a booked date
+    const calGrid = document.getElementById('cal-grid');
+    calGrid.addEventListener('mouseleave', clearPreview);
+    calGrid.addEventListener('mouseover', e => {
+        const hov = e.target.closest('.cal-day.available[data-date]');
+        clearPreview();
+        if (!hov || !checkInVal || checkOutVal || hov.dataset.date <= checkInVal) return;
+        const minEnd = addDays(checkInVal, MIN_NIGHTS), end = hov.dataset.date < minEnd ? minEnd : hov.dataset.date;
+        const cells = [...calGrid.querySelectorAll('.cal-day[data-date]')];
+        if (cells.some(c => c.dataset.date > checkInVal && c.dataset.date <= end && c.classList.contains('booked'))) return;
+        if (end !== hov.dataset.date && noteEl) noteEl.textContent = `${MIN_NIGHTS}-night minimum, earliest check-out ${new Date(minEnd + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+        cells.forEach(c => {
+            const d = c.dataset.date;
+            const add = d === checkInVal ? ' sel-start' : d === end ? ' sel-end' : d > checkInVal && d < end ? ' in-range' : '';
+            if (!add) return;
+            previewed.push([c, c.className]);
+            c.className += add;
+        });
+    });
+
     async function init() {
         try {
             const res = await fetch('/api/availability?property=terra-luz');
@@ -1593,6 +1659,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
         const grid = document.getElementById('cal-grid');
         const label = document.getElementById('cal-month-label');
         if (!grid) return;
+        clearPreview();
         const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
         label.textContent = `${months[calMonth]} ${calYear}`;
         const frag = document.createDocumentFragment();
@@ -1618,11 +1685,12 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
             if (dateStr === checkOutVal) cls += ' sel-end';
             if (checkInVal && checkOutVal && dateStr > checkInVal && dateStr < checkOutVal) cls += ' in-range';
             cell.className = cls;
+            cell.dataset.date = dateStr;
             if (!isPast && !isBlocked) {
                 cell.addEventListener('click', () => {
                     if (!checkInVal || (checkInVal && checkOutVal)) {
                         checkInVal = dateStr; checkOutVal = '';
-                    } else if (dateStr > checkInVal) {
+                    } else if (dateStr >= addDays(checkInVal, MIN_NIGHTS)) {
                         checkOutVal = dateStr;
                     } else {
                         checkInVal = dateStr; checkOutVal = '';
@@ -1638,12 +1706,10 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
 
     function updateBookBtn() {
         const btn = document.getElementById('book-now-btn');
-        if (!btn) return;
-        if (checkInVal && checkOutVal) {
-            btn.href = `/booking-flow/?property=terra-luz&checkIn=${checkInVal}&checkOut=${checkOutVal}`;
-        } else {
-            btn.href = '/booking-flow/?property=terra-luz';
-        }
+        const mobileBtn = document.getElementById('book-now-mobile');
+        const url = (checkInVal && checkOutVal) ? `/booking-flow/?property=terra-luz&checkIn=${checkInVal}&checkOut=${checkOutVal}` : '/booking-flow/?property=terra-luz';
+        if (btn) btn.href = url;
+        if (mobileBtn) mobileBtn.href = url;
     }
 
     document.getElementById('cal-prev').addEventListener('click', () => {
@@ -1745,6 +1811,17 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     }
     document.addEventListener('visibilitychange', sync);
 })();
+</script>
+    <!-- Mobile sticky CTA bar -->
+    <div class="mobile-cta-bar" aria-label="Book this property">
+        <div class="mobile-cta-text">
+            <strong>Book direct and skip Airbnb's 20% guest fee</strong>
+            Same host, same house
+        </div>
+        <a href="/booking-flow/?property=terra-luz" id="book-now-mobile" class="mobile-cta-btn" onclick="gtag('event', 'book_now_click', {'property_name': 'Terra Luz', 'event_category': 'Booking', 'event_label': 'Mobile Sticky CTA', 'location': 'sticky', 'value': 1});">BOOK NOW</a>
+    </div>
+<script>
+(function(){var b=document.querySelector('.mobile-cta-bar'),f=document.querySelector('footer');if(!b||!f||!('IntersectionObserver' in window))return;new IntersectionObserver(function(e){b.classList.toggle('is-hidden',e[0].isIntersecting)}).observe(f)})();
 </script>
 </body>
 </html>

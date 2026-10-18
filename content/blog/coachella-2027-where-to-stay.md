@@ -97,7 +97,7 @@ relatedPosts:
 <p>For groups of four or more, the math shifts hard toward Indio. More space per dollar, private pools that don't require sharing with twelve other hotel guests, and the logistics of being close to the grounds compound over three days in ways that are hard to appreciate until day two. The <a href="/blog/palm-springs-vs-indio/">full comparison of Palm Springs vs Indio</a> covers this in detail for anyone who wants to think it through.</p>
 
 <img src="/blog/images/coachella-valley-map.webp" alt="Map of the Coachella Valley showing Palm Springs, Indio, and the location of the Empire Polo Club festival grounds" width="1440" height="990" loading="lazy">
-<p class="image-caption">The valley geography. Palm Springs is the well-known western anchor; Indio is the eastern city where the festival is. The Indian Palms neighborhood sits a mile east of the polo grounds.</p>
+<p class="image-caption">The valley geography. Palm Springs is the well-known western anchor; Indio is the eastern city where the festival is. The Indian Palms neighborhood is about a 30 minute walk from the polo grounds via the Yellow Path.</p>
 
 <h2>How to Book Direct and What It Saves</h2>
 

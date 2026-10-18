@@ -187,77 +187,68 @@
 
         /* Hero */
         .hero {
-            margin-top: 80px;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.5) 100%);
-            padding: 10rem 5% 8rem;
-            text-align: center;
             position: relative;
-            overflow: hidden;
+            min-height: 60vh;
+            background: url('/images/sundune-hero-banner.webp') center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 110px 5% 4rem;
         }
-
-        .hero::before {
+        .hero::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: url('/images/sundune-hero-banner.webp') center/cover no-repeat;
-            opacity: 1;
-            z-index: -1;
+            background: linear-gradient(to top, rgba(0,0,0,.72) 0%, rgba(0,0,0,.35) 42%, rgba(0,0,0,0) 78%);
         }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 760px;
-            margin: 0 auto;
-        }
-
+        .hero-content { position: relative; z-index: 1; max-width: 880px; color: #fff; text-align: left; }
         .hero-tag {
-            display: inline-block;
-            background: var(--sage-cactus);
-            color: white;
-            padding: 0.4rem 1.2rem;
-            font-size: 0.8rem;
-            letter-spacing: 1.5px;
-            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: .8rem;
+            line-height: 1;
+            font-weight: 500;
+            letter-spacing: .2em;
             text-transform: uppercase;
-            margin-bottom: 1.5rem;
         }
-
+        .hero-tag::before { content: ''; width: 2rem; height: 2px; background: #fff; flex: none; }
         .hero h1 {
             font-family: var(--font-serif);
-            font-size: clamp(3rem, 7vw, 5rem);
-            color: #ffffff;
+            font-size: clamp(2.5rem, 7vw, 4.25rem);
+            color: #fff;
             font-weight: 600;
             line-height: 1.05;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1rem;
         }
-
         .hero .subhead {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.82);
-            font-weight: 300;
-            max-width: 520px;
-            margin: 0 auto 2.5rem;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, .92);
+            font-weight: 400;
             line-height: 1.6;
+            max-width: 38rem;
+            margin: 0 0 1.75rem;
         }
-
         .hero-cta {
             display: inline-block;
-            background: var(--sunbaked-terracotta);
-            color: white;
-            padding: 1.1rem 2.8rem;
-            font-size: 0.95rem;
+            background: #fff;
+            color: var(--indigo-palm);
+            padding: .9rem 2rem;
+            font-size: .9rem;
             font-weight: 600;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             text-transform: uppercase;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: background .3s, transform .2s;
         }
+        .hero-cta:hover { background: #f0ede6; transform: translateY(-2px); }
 
-        .hero-cta:hover {
-            background: #9a5e3a;
-            transform: translateY(-2px);
-        }
+
+
+
+
+
 
         /* Breadcrumb */
         .breadcrumb {
@@ -719,14 +710,17 @@
                 padding: 3.5rem 5%;
             }
 
-            .hero {
-                padding: 5rem 5% 4rem;
-            }
+            .hero { min-height: 55vh; padding: 96px 6% 2.5rem; }
+            .hero h1 { font-size: clamp(2.5rem, 11vw, 3rem); }
+            .hero-tag { gap: .5rem; font-size: .68rem; letter-spacing: .12em; }
+            .hero-tag::before { width: 1.25rem; }
+            .hero::after { background: linear-gradient(to top, rgba(0,0,0,.8) 0%, rgba(0,0,0,.55) 60%, rgba(0,0,0,.25) 100%); }
         }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
-<link rel="stylesheet" href="/css/site-nav.css?v=2">
+<link rel="stylesheet" href="/css/site-nav.css?v=5">
 <script src="/js/site-nav.js?v=2" defer></script>
+<link rel="stylesheet" href="/css/faq.css">
 </head>
 <body>
 
@@ -742,7 +736,7 @@
                 <span></span>
             </button>
             <ul id="navMenu">
-                <li><a href="/#properties">Properties</a></li>
+                <li class="has-dropdown"><a href="/#properties">Properties</a><ul class="nav-dropdown"><li><a href="/terra-luz/">Terra Luz</a></li><li><a href="/cozy-cactus/">The Cozy Cactus</a></li><li><a href="/the-sundune/">The Sundune</a></li><li><a href="/the-well/">The Well</a></li></ul></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/quiz/">Take the Quiz</a></li>
@@ -752,17 +746,9 @@
         </div>
     </nav>
 
-    <!-- Breadcrumb -->
-    <div class="breadcrumb" style="margin-top: 80px;">
-        <div class="breadcrumb-inner">
-            <a href="/">Home</a>
-            <span class="sep">&#8250;</span>
-            <span class="current">Book Direct</span>
-        </div>
-    </div>
 
     <!-- Hero -->
-    <section class="hero" style="padding-top: 6rem; padding-bottom: 5rem;">
+    <section class="hero">
         <div class="hero-content">
             <div class="hero-tag">Skip the Platform Fee</div>
             <h1>Book Direct.<br>Skip the Fee.</h1>
@@ -770,6 +756,15 @@
             <a href="/booking-flow/" class="hero-cta" onclick="gtag('event', 'book_direct_hero_cta', {'event_category': 'Booking', 'event_label': 'Hero CTA'});">Check Availability</a>
         </div>
     </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-inner">
+            <a href="/">Home</a>
+            <span class="sep">&#8250;</span>
+            <span class="current">Book Direct</span>
+        </div>
+    </div>
 
     <!-- Fee Comparison -->
     <section class="comparison-section">

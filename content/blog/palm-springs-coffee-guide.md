@@ -149,7 +149,7 @@ layout: blog-post.njk
     <a href="https://www.instagram.com/mainstreetcoffeelq/" target="_blank" rel="noopener">@mainstreetcoffeelq</a>
 </div>
 
-<p>In Old Town La Quinta, a couple of blocks from Yes, Please (the dessert café at #4 on this list). Weekdays bring a laptop-and-coffee crowd; weekends shift toward visitors who found their way to Old Town for the shops. Dirty chais and cold brews are the consistent orders. The neighborhood itself is worth walking: slower, more residential than Palm Springs, the kind of place you discover you like when you meant to stop for 20 minutes.</p>
+<p>In Old Town La Quinta, a couple of blocks from Yes, Please (the dessert café at #4 on this list). Weekdays bring a laptop-and-coffee crowd; weekends shift toward visitors who found their way to Old Town for the shops. Dirty chais and cold brews are the consistent orders. The neighborhood itself is worth walking: slower, more residential than Palm Springs, the kind of place you find you like when you meant to stop for 20 minutes.</p>
 
 <h2>11. Espresso Self, Desert Hot Springs</h2>
 <div class="shop-links">

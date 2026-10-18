@@ -1,0 +1,12 @@
+/* Room preview grids: minmax(0,1fr) stops intrinsic image width from stretching tracks past the viewport. */
+.room-preview-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:600px){.room-preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.room-preview-grid .gallery-img-wrap{min-width:0;width:100%}
+/* Tap target for "See all photos" */
+@media(max-width:768px){.room-preview-link{display:inline-flex;align-items:center;min-height:44px;padding:0 0.25rem}}
+/* Phones: each room becomes a horizontal swipe carousel */
+@media(max-width:600px){
+.room-preview-grid{display:flex;gap:0.75rem;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none}
+.room-preview-grid::-webkit-scrollbar{display:none}
+.room-preview-grid .gallery-img-wrap{flex:0 0 78%;height:auto;aspect-ratio:4/5;scroll-snap-align:start}
+}

@@ -307,53 +307,58 @@
         }
 
         /* Hero */
+
+
+
+
+
         .hero {
-            margin-top: 80px;
-            min-height: 70vh;
-            background: linear-gradient(rgba(75, 0, 130, 0.25), rgba(75, 0, 130, 0.25)),
-                        url('/blog/images/terra-luz-pool-backyard.webp');
-            background-size: cover;
-            background-position: center;
+            position: relative;
+            min-height: 60vh;
+            background: url('/blog/images/terra-luz-pool-backyard.webp') center/cover no-repeat;
             display: flex;
             align-items: flex-end;
-            padding: 4rem 5%;
+            padding: 110px 5% 4rem;
         }
-
-        .hero-content {
-            background: rgba(255, 255, 255, 0.96);
-            padding: 3rem;
-            max-width: 620px;
-            backdrop-filter: blur(10px);
-            border-radius: 16px;
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,.72) 0%, rgba(0,0,0,.35) 42%, rgba(0,0,0,0) 78%);
         }
-
+        .hero-content { position: relative; z-index: 1; max-width: 880px; color: #fff; text-align: left; }
         .page-tag {
-            display: inline-block;
-            background: var(--sage-cactus);
-            color: white;
-            padding: 0.5rem 1.5rem;
-            font-size: 0.8rem;
-            letter-spacing: 1.5px;
-            font-weight: 600;
-            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            color: #fff;
             margin-bottom: 1rem;
+            font-size: .8rem;
+            line-height: 1;
+            font-weight: 500;
+            letter-spacing: .2em;
+            text-transform: uppercase;
         }
-
+        .page-tag::before { content: ''; width: 2rem; height: 2px; background: #fff; flex: none; }
         .hero h1 {
             font-family: var(--font-serif);
-            font-size: 3.2rem;
-            color: var(--indigo-palm);
+            font-size: clamp(2.5rem, 7vw, 4.25rem);
+            color: #fff;
             margin-bottom: 1rem;
             font-weight: 600;
-            line-height: 1.1;
+            line-height: 1.05;
         }
-
         .hero .subhead {
             font-size: 1.1rem;
-            color: #444;
-            line-height: 1.7;
+            color: rgba(255, 255, 255, .92);
+            line-height: 1.6;
+            max-width: 38rem;
             margin-bottom: 1.75rem;
         }
+        .hero .btn-primary { background: #fff; color: var(--indigo-palm); }
+        .hero .btn-primary:hover { background: #f0ede6; }
+        .hero .btn-secondary { color: #fff; border-color: #fff; }
+        .hero .btn-secondary:hover { background: #fff; color: var(--indigo-palm); }
 
         .hero-ctas {
             display: flex;
@@ -480,7 +485,7 @@
         }
 
         .why-card p {
-            font-size: 0.95rem;
+            font-size: 1rem;
             line-height: 1.7;
             color: #444;
         }
@@ -542,7 +547,7 @@
         }
 
         .property-card p {
-            font-size: 0.95rem;
+            font-size: 1rem;
             line-height: 1.7;
             color: #444;
             margin-bottom: 1.25rem;
@@ -825,8 +830,11 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.3rem; }
-            .hero-content { padding: 2rem; }
+        .hero { min-height: 55vh; padding: 96px 6% 2.5rem; }
+        .hero h1 { font-size: clamp(2.5rem, 11vw, 3rem); }
+        .page-tag { gap: .5rem; font-size: .68rem; letter-spacing: .12em; }
+        .page-tag::before { width: 1.25rem; }
+        .hero::before { background: linear-gradient(to top, rgba(0,0,0,.8) 0%, rgba(0,0,0,.55) 60%, rgba(0,0,0,.25) 100%); }
             .section-title { font-size: 2rem; }
             .properties-grid { grid-template-columns: 1fr; }
             .fee-comparison { flex-direction: column; }
@@ -835,8 +843,9 @@
         }
     </style>
     <link rel="stylesheet" href="/css/cta-button.css">
-<link rel="stylesheet" href="/css/site-nav.css?v=2">
+<link rel="stylesheet" href="/css/site-nav.css?v=5">
 <script src="/js/site-nav.js?v=2" defer></script>
+<link rel="stylesheet" href="/css/faq.css">
 </head>
 <body>
 
@@ -852,7 +861,7 @@
                 <span></span>
             </button>
             <ul id="navMenu">
-                <li><a href="/#properties">Properties</a></li>
+                <li class="has-dropdown"><a href="/#properties">Properties</a><ul class="nav-dropdown"><li><a href="/terra-luz/">Terra Luz</a></li><li><a href="/cozy-cactus/">The Cozy Cactus</a></li><li><a href="/the-sundune/">The Sundune</a></li><li><a href="/the-well/">The Well</a></li></ul></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/quiz/">Take the Quiz</a></li>
@@ -862,14 +871,6 @@
         </div>
     </nav>
 
-    <!-- Breadcrumb -->
-    <div class="breadcrumb" style="margin-top: 80px;">
-        <div class="breadcrumb-inner">
-            <a href="/">Home</a>
-            <span class="sep">&#8250;</span>
-            <span class="current">Vacation Rentals with Private Pool</span>
-        </div>
-    </div>
 
     <!-- Hero -->
     <section class="hero" role="img" aria-label="Terra Luz private saltwater pool in Indio California at a vacation rental near Coachella">
@@ -883,6 +884,15 @@
             </div>
         </div>
     </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-inner">
+            <a href="/">Home</a>
+            <span class="sep">&#8250;</span>
+            <span class="current">Vacation Rentals with Private Pool</span>
+        </div>
+    </div>
 
     <!-- Why Private Pool Section -->
     <section class="section why-pool">
@@ -950,7 +960,7 @@
                     <div class="property-card-body">
                         <div class="property-card-tag">Latin / Cuban-Inspired &middot; Indio</div>
                         <h2>Terra Luz</h2>
-                        <div class="rating-line"><strong>4.98 stars</strong> &middot; 146 Airbnb reviews &middot; Guest Favorite</div>
+                        <div class="rating-line"><strong>4.98 stars</strong> &middot; 146 Airbnb reviews</div>
                         <p>Private saltwater pool in Kahlo blue with in-water sun shelf loungers. The indoor-outdoor flow is the design: big sliding doors, shaded outdoor dining, pool steps from the living room. Dog-friendly, walking distance to Empire Polo Club, and the kind of backyard where you actually use a swimsuit every day.</p>
                         <div class="property-stats">
                             <div class="stat-item">3 BR / 2 BA <span>Bedrooms / Baths</span></div>

@@ -1,0 +1,9 @@
+/* Hero overlay for room photo pages (terra-luz, cozy-cactus, the-sundune /photos/*). */
+section.hero{align-items:flex-end;padding:110px 5% 4rem}
+section.hero::after{background:linear-gradient(to top,rgba(0,0,0,.72) 0%,rgba(0,0,0,.35) 42%,rgba(0,0,0,0) 78%)}
+section.hero .hero-content{background:none;backdrop-filter:none;border-radius:0;padding:0;max-width:760px;color:#fff;text-align:left}
+section.hero .room-tag{display:flex;align-items:center;gap:.75rem;background:none;color:#fff;padding:0;margin:0 0 1rem;border-radius:0;font:500 .8rem/1 var(--font-sans,'Work Sans',sans-serif);letter-spacing:.2em;text-transform:uppercase}
+section.hero .room-tag::before{content:"";width:2rem;height:2px;background:#fff;flex:none}
+section.hero h1{font-family:var(--font-serif,'Cormorant Garamond',serif);font-weight:600;font-size:clamp(2.5rem,7vw,4.25rem);line-height:1.05;color:#fff;margin:0}
+section.hero .sub{font:400 clamp(1rem,2.6vw,1.25rem)/1.45 var(--font-sans,'Work Sans',sans-serif);font-style:normal;color:rgba(255,255,255,.92);margin:1rem 0 0;max-width:34rem}
+@media(max-width:768px){section.hero{padding:96px 6% 2.5rem}section.hero .room-tag{gap:.5rem;font-size:.68rem;letter-spacing:.12em}section.hero .room-tag::before{width:1.25rem}}

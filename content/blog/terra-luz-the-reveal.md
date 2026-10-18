@@ -102,7 +102,7 @@ layout: blog-post.njk
 <img src="/blog/images/terra-luz-dining.webp" alt="Terra Luz dining room with dining table for eight, Cuban artwork, and warm pendant lighting in Indio California" width="1024" height="1536" loading="lazy">
 <p class="image-caption">The dining room. Cuban prints, a gold pendant light, a Cafe Bustelo poster, and a dominos set waiting for takers.</p>
 
-<p>The artwork is where the cultural identity really lands: a Cuban street print, a cactus print, a Havana sunset piece, a Cafe Bustelo digital download printed and framed. The bar shelves above the credenza hold an Edifier tabletop speaker and a growing collection of catch-all objects that won't stay curated, and that's fine.</p>
+<p>The artwork is where the cultural identity really lands: a Cuban street print, a cactus print, a Havana sunset piece, a Cafe Bustelo digital download printed and framed. The bar shelves above the credenza hold an Edifier tabletop speaker and a growing collection of catch-all objects that won't stay arranged, and that's fine.</p>
 
 <p>The nook table is one I'd pulled from The Sundune during a refresh there. It fits the corner perfectly, and reusing it instead of buying new was exactly the kind of practical decision that doesn't appear in mood boards but shows up in the profit margins.</p>
 

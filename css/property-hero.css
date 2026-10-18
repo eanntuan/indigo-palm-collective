@@ -1,0 +1,16 @@
+/* Shared hero + nav CTA for the four property pages. Per-page colors: --hero-accent, --cta-color. */
+section.hero{align-items:flex-end;min-height:72vh;padding:110px 5% 4rem}
+section.hero .hero-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to top,rgba(0,0,0,.72) 0%,rgba(0,0,0,.35) 42%,rgba(0,0,0,0) 78%)}
+section.hero .hero-content{position:relative;z-index:2;background:none;backdrop-filter:none;border-radius:0;padding:0;max-width:760px;color:#fff;text-align:left}
+section.hero .property-tag{display:flex;align-items:center;gap:.75rem;background:none;color:#fff;padding:0;margin:0 0 1rem;border-radius:0;font:500 .8rem/1 var(--font-sans,'Work Sans',sans-serif);letter-spacing:.2em;text-transform:uppercase}
+section.hero .property-tag::before{content:"";width:2rem;height:2px;background:var(--hero-accent,#fff);flex:none}
+section.hero h1{font-family:var(--font-serif,'Cormorant Garamond',serif);font-weight:600;font-size:clamp(2.75rem,8.5vw,4.75rem);line-height:1.02;color:#fff;margin:0}
+section.hero h1 .hero-subtitle{display:block;font-size:clamp(1rem,4.6vw,1.6rem);font-weight:500;font-style:italic;white-space:nowrap;margin-top:.6rem;color:rgba(255,255,255,.92)}
+section.hero .tagline{font-family:var(--font-serif,'Cormorant Garamond',serif);font-style:normal;font-weight:500;font-size:clamp(1.1rem,3.4vw,1.4rem);line-height:1.35;color:#fff;margin:1.25rem 0 0;max-width:34rem}
+section.hero .hero-meta,section.hero .hero-price{font:400 .9rem/1.4 var(--font-sans,'Work Sans',sans-serif);color:rgba(255,255,255,.9);margin:.9rem 0 0}
+section.hero .hero-book-link{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:768px){section.hero .property-tag{gap:.5rem;font-size:.68rem;letter-spacing:.12em}section.hero .property-tag::before{width:1.25rem}section.hero{min-height:62vh;padding:96px 6% 2.5rem}section.hero .hero-content{padding:0}}
+
+nav.ip-nav li.nav-cta a{display:inline-block;padding:.55rem 1.2rem;border:1.5px solid var(--cta-color,#8A4A2E);border-radius:6px;color:var(--cta-color,#8A4A2E);font-weight:500;line-height:1.2;transition:background .2s,color .2s}
+nav.ip-nav li.nav-cta a:hover{background:var(--cta-color,#8A4A2E);color:#fff}
+@media(max-width:768px){nav.ip-nav ul li.nav-cta{padding:1.25rem 0;border-bottom:none}nav.ip-nav li.nav-cta a{display:block;text-align:center;background:var(--cta-color,#8A4A2E);color:#fff;padding:.9rem 1rem;font-size:1.05rem}}

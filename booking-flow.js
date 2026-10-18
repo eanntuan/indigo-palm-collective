@@ -1,8 +1,8 @@
 // booking-flow.js
 // Direct booking system using Cloudflare Pages Functions
-// /api/availability — fetches iCal blocked dates server-side
-// /api/pricing — fetches live base price from PriceLabs + applies peak multipliers
-// /api/booking — sends booking request email via Resend
+// /api/availability: fetches iCal blocked dates server-side
+// /api/pricing: fetches live base price from PriceLabs + applies peak multipliers
+// /api/booking: sends booking request email via Resend
 
 import { PROPERTIES } from '/booking-config.js?v=3';
 
@@ -11,6 +11,8 @@ let blockedDates = new Set();
 let priceEstimate = null;
 let appliedDiscount = null; // { code, type, amount, discountAmount, label }
 let poolHeatSelected = false;
+let lastPoolOn = false;
+const lastAmts = {};
 
 function calcPoolHeatCost(nights) {
     if (!nights || nights < 2) return 0;
@@ -308,7 +310,7 @@ function renderCalendar() {
                     checkOut.value = dateStr;
                     updatePrice();
                 } else if (dateStr > checkIn.value) {
-                    // Below this property's minimum stay — restart the range from here
+                    // Below this property's minimum stay, restart the range from here
                     // instead of silently accepting a too-short stay.
                     checkIn.value  = dateStr;
                     checkOut.value = '';
@@ -328,14 +330,20 @@ function renderCalendar() {
 
         grid.appendChild(cell);
     }
+    const note = document.getElementById('cal-min-note');
+    if (note) note.textContent = minStayNote();
     wireRangePreview(grid);
 }
 
-// Airbnb-style hover preview: after a check-in is picked, hovering later dates draws the pill up to that date
+// Airbnb-style hover preview: after a check-in is picked, hovering a later date draws the pill up to it,
+// stretched to the minimum stay when the hovered date is too close. Never spans a booked date.
 let previewed = [];
+const minStayNote = () => (selectedProperty?.minNights || 1) > 1 ? `${selectedProperty.minNights}-night minimum stay` : '';
 function clearRangePreview() {
     previewed.forEach(([el, cls]) => { el.className = cls; });
     previewed = [];
+    const note = document.getElementById('cal-min-note');
+    if (note) note.textContent = minStayNote();
 }
 function wireRangePreview(grid) {
     if (grid.dataset.preview) return;
@@ -345,18 +353,19 @@ function wireRangePreview(grid) {
         const hov = e.target.closest('.cal-day[data-date]');
         clearRangePreview();
         const checkIn = document.getElementById('check-in').value;
-        const checkOut = document.getElementById('check-out');
-        if (!hov || !checkIn || checkOut.value || !hov.classList.contains('available')) return;
-        const end = hov.dataset.date;
-        if (end <= checkIn || (checkOut.min && end < checkOut.min)) return;
+        if (!hov || !checkIn || document.getElementById('check-out').value || !hov.classList.contains('available') || hov.dataset.date <= checkIn) return;
+        const [y, m, d] = checkIn.split('-').map(Number);
+        const minEnd = new Date(Date.UTC(y, m - 1, d + (selectedProperty?.minNights || 1))).toISOString().slice(0, 10);
+        const end = hov.dataset.date < minEnd ? minEnd : hov.dataset.date;
         const cells = [...grid.querySelectorAll('.cal-day[data-date]')];
-        if (cells.some(c => c.dataset.date > checkIn && c.dataset.date < end && c.classList.contains('booked'))) return;
+        if (cells.some(c => c.dataset.date > checkIn && c.dataset.date <= end && c.classList.contains('booked'))) return;
+        if (end !== hov.dataset.date) {
+            const note = document.getElementById('cal-min-note');
+            if (note) note.textContent = `${selectedProperty.minNights}-night minimum, earliest check-out ${new Date(minEnd + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+        }
         cells.forEach(c => {
-            const d = c.dataset.date;
-            let add = '';
-            if (d === checkIn) add = ' sel-start';
-            else if (d > checkIn && d < end) add = ' in-range';
-            else if (d === end) add = ' sel-end';
+            const dt = c.dataset.date;
+            const add = dt === checkIn ? ' sel-start' : dt === end ? ' sel-end' : dt > checkIn && dt < end ? ' in-range' : '';
             if (!add) return;
             previewed.push([c, c.className]);
             c.className += add;
@@ -403,7 +412,9 @@ function setupEventListeners() {
     document.getElementById('apply-promo').addEventListener('click', applyPromoCode);
 
     // Agreement toggle expand/collapse
-    document.getElementById('agreement-toggle').addEventListener('click', () => {
+    const agreementToggle = document.getElementById('agreement-toggle');
+    agreementToggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); agreementToggle.click(); } });
+    agreementToggle.addEventListener('click', () => {
         const body = document.getElementById('agreement-body');
         const arrow = document.getElementById('agreement-arrow');
         const open = body.style.display === 'block';
@@ -649,10 +660,11 @@ function renderPriceSummary() {
     const poolHeatLabel = poolHeatNights >= 7
         ? `Pool heating (7+ nights flat rate)`
         : `Pool heating (${poolHeatNights} &times; $75)`;
-    const poolHeatRow = poolHeatSelected && poolHeatCost > 0 ? `
-        <div class="price-row">
-            <span>${poolHeatLabel}</span>
-            <span>$${poolHeatCost.toFixed(2)}</span>
+    const showPoolRow = selectedProperty?.id === 'casa-moto';
+    const poolHeatRow = showPoolRow ? `
+        <div class="price-row pool-row ${lastPoolOn ? '' : 'is-off'}">
+            <span>${poolHeatCost > 0 ? poolHeatLabel : 'Pool heating'}</span>
+            <span data-amt="pool">$${poolHeatCost.toFixed(2)}</span>
         </div>` : '';
 
     const discountRow = appliedDiscount ? `
@@ -674,20 +686,38 @@ function renderPriceSummary() {
         <div class="price-breakdown">
             <div class="price-row">
                 <span>${nights} night${nights !== 1 ? 's' : ''} &times; $${allInNightly}/night</span>
-                <span>$${accomTotal.toFixed(2)}</span>
+                <span data-amt="accom">$${accomTotal.toFixed(2)}</span>
             </div>
             ${poolHeatRow}
             ${discountRow}
             <div class="price-row">
                 <strong>Total</strong>
-                <strong>$${finalTotal.toFixed(2)}</strong>
+                <strong data-amt="total">$${finalTotal.toFixed(2)}</strong>
             </div>
             ${airbnbLink}
         </div>
-        <div style="margin-top:1rem;padding:0.85rem 1rem;background:#F5F3EE;border-radius:8px;font-size:0.82rem;line-height:1.6;color:#555;">
+        <div style="margin-top:1rem;padding:0.85rem 1rem;background:transparent;border-top:1px solid #B85A38;border-radius:0;font-size:0.82rem;line-height:1.6;color:#555;">
             <strong style="color:#2C2C2C;">Zelle (no fee):</strong> 214-606-1340 (MPT Industries)<br>
             <strong style="color:#2C2C2C;">Credit card:</strong> Square link sent after approval (3% fee)
         </div>`;
+
+    // Fade the pool row and tween amounts from their previous values
+    const poolOn = poolHeatCost > 0;
+    const row = priceContent.querySelector('.pool-row');
+    if (row && poolOn !== lastPoolOn) requestAnimationFrame(() => row.classList.toggle('is-off', !poolOn));
+    lastPoolOn = poolOn;
+    priceContent.querySelectorAll('[data-amt]').forEach(el => {
+        const key = el.dataset.amt, to = parseFloat(el.textContent.replace('$', '')), from = lastAmts[key] ?? to;
+        lastAmts[key] = to;
+        if (from === to || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        const t0 = performance.now();
+        const step = now => {
+            const p = Math.min(1, (now - t0) / 400);
+            el.textContent = `$${(from + (to - from) * (1 - Math.pow(1 - p, 3))).toFixed(2)}`;
+            if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+    });
 
     // Show promo code section
     document.getElementById('promo-section').style.display = 'block';

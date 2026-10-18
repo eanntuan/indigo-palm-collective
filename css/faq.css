@@ -1,0 +1,32 @@
+/* Shared FAQ accordion polish (native details/summary). Text stays untouched so FAQPage JSON-LD stays in sync. */
+details.faq-item>summary,
+details[style*="border-bottom"]>summary { min-height: 44px; list-style: none; cursor: pointer; align-items: center; gap: 1rem; line-height: 1.4; }
+details.faq-item>summary::-webkit-details-marker,
+details[style*="border-bottom"]>summary::-webkit-details-marker { display: none; }
+details.faq-item>summary>span:last-child,
+details[style*="border-bottom"]>summary>span:last-child { display: inline-flex !important; align-items: center; justify-content: center; flex: 0 0 44px; width: 44px; height: 44px; margin: -0.6rem -0.75rem -0.6rem 0; font-size: 1.5rem !important; line-height: 1 !important; transition: transform 0.25s ease; }
+details.faq-item[open]>summary>span:last-child,
+details[style*="border-bottom"][open]>summary>span:last-child { transform: rotate(45deg); }
+details.faq-item>p,
+details[style*="border-bottom"]>p { font-size: 1rem !important; line-height: 1.6 !important; }
+@supports (interpolate-size: allow-keywords) {
+details.faq-item,
+details[style*="border-bottom"] { interpolate-size: allow-keywords; }
+details.faq-item::details-content,
+details[style*="border-bottom"]::details-content { block-size: 0; opacity: 0; overflow: clip; transition: block-size 0.3s ease, opacity 0.3s ease, content-visibility 0.3s allow-discrete; }
+details.faq-item[open]::details-content,
+details[style*="border-bottom"][open]::details-content { block-size: auto; opacity: 1; }
+}
+@keyframes faq-open { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@supports not selector(::details-content) {
+details.faq-item[open]>p,
+details[style*="border-bottom"][open]>p { animation: faq-open 0.25s ease; }
+}
+@media (prefers-reduced-motion: reduce) {
+details.faq-item::details-content,
+details[style*="border-bottom"]::details-content,
+details.faq-item>summary>span:last-child,
+details[style*="border-bottom"]>summary>span:last-child,
+details.faq-item[open]>p,
+details[style*="border-bottom"][open]>p { transition: none !important; animation: none !important; }
+}

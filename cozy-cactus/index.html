@@ -818,7 +818,7 @@
         .cal-dow { text-align: center; font-size: 0.7rem; color: #aaa; padding-bottom: 0.4rem; }
         .cal-day { text-align: center; padding: 0.45rem 0; font-size: 0.85rem; cursor: pointer; border-radius: 50%; transition: background 0.15s; }
         .cal-day.available { font-weight: 700; color: #1a1a1a; }
-        .cal-day.available:hover { background: #f0ede6; }
+        @media (hover:hover) { .cal-day.available:not(.sel-start):not(.sel-end):not(.in-range):hover { background: #f0ede6; } }
         .cal-day.booked { color: #767676; text-decoration: line-through; cursor: default; font-weight: 400; }
         .cal-day.past { color: #767676; cursor: default; font-weight: 400; }
         .cal-day.empty { cursor: default; }
@@ -877,53 +877,38 @@
         }
         .hero-book-link:hover { text-decoration: underline; }
 
-        /* Sticky mobile CTA bar */
-        .mobile-cta-bar {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            .mobile-cta-bar {
-                display: flex;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                z-index: 999;
-                background: white;
-                border-top: 1px solid rgba(0,135,123,0.2);
-                padding: 0.9rem 1.2rem;
-                align-items: center;
-                justify-content: space-between;
-                gap: 1rem;
-                box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
-            }
-            .mobile-cta-bar .mobile-cta-text {
-                font-size: 0.8rem;
-                color: #444;
-                line-height: 1.3;
-            }
-            .mobile-cta-bar .mobile-cta-text strong {
-                display: block;
-                font-size: 0.9rem;
-                color: #1a1a1a;
-            }
-            .mobile-cta-bar .mobile-cta-btn {
-                flex-shrink: 0;
-                display: inline-block;
-                padding: 0.75rem 1.4rem;
-                background: #00877b;
-                color: white;
-                text-decoration: none;
-                font-weight: 600;
-                font-size: 0.85rem;
-                letter-spacing: 0.5px;
-                white-space: nowrap;
-            }
-            body { padding-bottom: 72px; }
-        }
         .photo-caption { margin: 0.6rem 0.25rem 0; font-size: 0.9rem; font-style: italic; color: #6b5d52; line-height: 1.4; }
 .inline-photo + .photo-caption { max-width: 580px; margin: -1rem auto 2rem; text-align: center; }
 img[id^="photo-"] { scroll-margin-top: 6rem; }
+
+/* Mobile booking widget + sticky book bar (2026-10) */
+.mobile-cta-bar{display:none}
+@media (max-width:768px){
+.details-sidebar{display:flex;flex-direction:column;padding:1.5rem 1.25rem}
+.details-sidebar .direct-savings{order:1;margin:1.25rem 0 0.75rem !important}
+.details-sidebar .festival-note{order:2}
+.details-sidebar .avail-calendar{order:3}
+.details-sidebar .cta-button{order:4;min-height:48px;font-size:1rem}
+.details-sidebar .color-palette{order:5}
+.mobile-cta-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:999;background:#fff;border-top:1px solid rgba(0,0,0,0.12);padding:0.6rem 1.2rem calc(0.6rem + env(safe-area-inset-bottom));align-items:center;justify-content:space-between;gap:1rem;box-shadow:0 -4px 16px rgba(0,0,0,0.1);transition:transform 0.25s ease}
+.mobile-cta-bar.is-hidden,body:has(nav.ip-nav ul.active) .mobile-cta-bar{transform:translateY(110%)}
+.mobile-cta-bar .mobile-cta-text{font-size:0.85rem;color:#444;line-height:1.3}
+.mobile-cta-bar .mobile-cta-text strong{display:block;font-size:0.95rem;color:#1a1a1a}
+.mobile-cta-bar .mobile-cta-btn{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 1.4rem;background:var(--cta-color);color:#fff;text-decoration:none;font-weight:600;font-size:0.9rem;letter-spacing:0.5px;white-space:nowrap}
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+.cal-nav button{min-width:44px;min-height:44px;font-size:1.6rem}
+.cal-dow{font-size:0.8rem;color:#767676}
+.cal-day{min-height:44px;padding:0;display:flex;align-items:center;justify-content:center;font-size:16px}
+.cal-day.sel-start{background:radial-gradient(circle 20px at center,#00877b 99%,transparent 100%),linear-gradient(to right,transparent 50%,rgba(0,135,123,0.12) 50%)}
+.cal-day.sel-end{background:radial-gradient(circle 20px at center,#00877b 99%,transparent 100%),linear-gradient(to left,transparent 50%,rgba(0,135,123,0.12) 50%)}
+.cal-day.sel-start.sel-end{background:radial-gradient(circle 20px at center,#00877b 99%,transparent 100%)}
+.cal-legend{font-size:0.85rem;color:#666}
+}
+@media (max-width:400px){
+.avail-calendar{margin-left:calc(-1.25rem - 5vw);margin-right:calc(-1.25rem - 5vw)}
+.avail-calendar>:not(.cal-grid){margin-left:calc(1.25rem + 5vw);margin-right:calc(1.25rem + 5vw)}
+.avail-calendar>.cal-nav{margin-left:calc(0.75rem + 5vw);margin-right:calc(0.75rem + 5vw)}
+}
 </style>
 
     <!-- LodgingBusiness Structured Data -->
@@ -977,7 +962,10 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
     }
     </script>
     <link rel="stylesheet" href="/css/cta-button.css">
-<link rel="stylesheet" href="/css/site-nav.css?v=2">
+<link rel="stylesheet" href="/css/site-nav.css?v=5">
+<link rel="stylesheet" href="/css/property-hero.css?v=2">
+<link rel="stylesheet" href="/css/room-gallery.css?v=3">
+<style>:root{--hero-accent:#5CC6BA;--cta-color:#00877b}</style>
 <script src="/js/site-nav.js?v=2" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -1000,6 +988,7 @@ document.addEventListener('DOMContentLoaded', function () {
   ev.forEach(function (e) { addEventListener(e, start, { passive: true }); });
 });
 </script>
+<link rel="stylesheet" href="/css/faq.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -1014,11 +1003,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 <span></span>
             </button>
             <ul id="navMenu">
-                <li><a href="/#properties">Properties</a></li>
+                <li class="has-dropdown"><a href="/#properties">Properties</a><ul class="nav-dropdown"><li><a href="/terra-luz/">Terra Luz</a></li><li><a href="/cozy-cactus/">The Cozy Cactus</a></li><li><a href="/the-sundune/">The Sundune</a></li><li><a href="/the-well/">The Well</a></li></ul></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/quiz/">Take the Quiz</a></li>
                 <li><a href="/#contact">Contact</a></li>
+                <li class="nav-cta"><a href="/booking-flow/?property=cozy-cactus" onclick="window.gtag&&gtag('event','book_now_click',{'property_name':'cozy-cactus','location':'nav'})">Check availability</a></li>
             </ul>
             <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu"></button>
         </div>
@@ -1030,13 +1020,13 @@ document.addEventListener('DOMContentLoaded', function () {
     <!-- Hero Section -->
     <section class="hero" role="img" aria-label="Cozy Cactus vacation rental exterior in Indio California with community pool hot tub and desert mountain views">
         <video class="hero-video" id="heroVideo" muted loop playsinline preload="metadata" poster="/cozy-cactus/photos/CozyCactus2026-0004.webp" aria-hidden="true" tabindex="-1" data-src="/cozy-cactus/video/cozy-cactus-hero"></video>
+        <div class="hero-scrim"></div>
         <div class="hero-content">
-            <div class="property-tag">FAMILY ADVENTURE</div>
-            <h1>The Cozy Cactus<span class="hero-subtitle">Made for Families</span></h1>
-            <p class="location">Indio, California</p>
+            <div class="property-tag">Indio, California</div>
+            <h1>The Cozy Cactus</h1>
             <p class="tagline">The vacation rental where parents get some rest.</p>
-            <p style="font-size: 0.9rem; color: #00877b; font-weight: 600; margin-bottom: 1rem;">&#11088; 4.97 &middot; 146 reviews &middot; Airbnb Guest Favorite</p>
-            <p class="hero-price">3BR · Sleeps 8 · <a href="/booking-flow/?property=cozy-cactus" class="hero-book-link">Book direct: no Airbnb fee →</a></p>
+            <p class="hero-meta">&#11088; 4.97 &middot; 146 reviews &middot; Airbnb Guest Favorite</p>
+            <p class="hero-price">3BR · Sleeps 8 · <a href="/booking-flow/?property=cozy-cactus" class="hero-book-link">Book Direct &amp; Save →</a></p>
         </div>
     </section>
 
@@ -1127,7 +1117,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <span>Colorful, Kid-Ready</span>
                 </div>
 
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.8rem; color: #00877b; font-weight: 600; margin: 0 0 0.7rem;">Coachella and Stagecoach weekends fill first, some six months out. Planning around a festival or the winter season? Check dates now.</p>
+                <p class="festival-note" style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #00877b; font-weight: 600; margin: 0 0 0.7rem;">Coachella and Stagecoach weekends fill first, some six months out. Planning around a festival or the winter season? Check dates now.</p>
                 <div class="avail-calendar">
                     <h4>Check Availability</h4>
                     <div class="cal-nav">
@@ -1136,6 +1126,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <button id="cal-next" type="button">&#8250;</button>
                     </div>
                     <div class="cal-grid" id="cal-grid"><div class="cal-loading">Loading...</div></div>
+<p class="cal-min-note" id="cal-min-note" aria-live="polite" style="margin:0.5rem 0 0;font-size:0.8rem;color:#555;min-height:1.3em;">2-night minimum stay</p>
                     <div class="cal-legend">
                         <span><span class="dot" style="background:#00877b;"></span> Selected</span>
                         <span><span class="dot" style="background:#ddd;"></span> Booked</span>
@@ -1143,8 +1134,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
                 <a href="/booking-flow/" id="book-now-btn" class="cta-button" onclick="gtag('event', 'book_now_click', {'property_name': 'Cozy Cactus', 'event_category': 'Booking', 'event_label': 'Property Page CTA', 'value': 1});">BOOK NOW</a>
 
-                <div style="margin: 1.2rem 0; padding: 1.1rem; background: #f4faf9; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08);">
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #00877b; margin: 0 0 0.7rem;">Why book direct?</p>
+                <div class="direct-savings" style="margin: 1.2rem 0; padding: 1.1rem; background: #f4faf9; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08);">
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1.1rem; font-weight: 700; letter-spacing: 0; color: #00877b; margin: 0 0 0.7rem;">Skip the 20% Airbnb fee</p>
                     <div style="font-family: 'Work Sans', sans-serif; font-size: 0.85rem; color: #3a3028;">
                         <div style="display: flex; justify-content: space-between; padding: 0.35rem 0; border-bottom: 1px solid #d4ede9;">
                             <span>Book here</span>
@@ -1155,9 +1146,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             <span style="font-weight: 600; color: #b34f3c;">+20% added</span>
                         </div>
                     </div>
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.78rem; color: #767676; margin: 0.7rem 0 0; line-height: 1.4;">Same house, same host. Typically $150–400 less on a full week.</p>
-                    <p style="font-size: 0.8rem; color: #666; margin: 0.7rem 0 0; font-family: 'Work Sans', sans-serif;">&#11088; 4.97 &middot; 146+ verified Airbnb reviews</p>
-                    <p style="font-family: 'Work Sans', sans-serif; font-size: 0.78rem; margin: 0.6rem 0 0;"><a href="/book-direct/" style="color: #B67550; font-weight: 600;">See the full comparison across all 3 properties &rarr;</a></p>
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #767676; margin: 0.7rem 0 0; line-height: 1.4;">Same house and same host, without the 20% that Airbnb adds at checkout.</p>
+                    <p style="font-size: 1rem; color: #666; margin: 0.7rem 0 0; font-family: 'Work Sans', sans-serif;">&#11088; 4.97 &middot; 146+ verified Airbnb reviews</p>
+                    <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; margin: 0.6rem 0 0;"><a href="/book-direct/" style="color: #B67550; font-weight: 600;">See the full comparison across all 3 properties &rarr;</a></p>
                 </div>
 
                 <div class="color-palette">
@@ -1286,13 +1277,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <!-- Guest Reviews -->
     <div data-reviews="cozy-cactus" data-serif data-heading="What Guests Say" data-sub="4.97 stars, 146 reviews on Airbnb. Airbnb Guest Favorite."></div>
-    <script src="/js/reviews-widget.js?v=5" defer></script>
+    <script src="/js/reviews-widget.js?v=6" defer></script>
 
     <!-- From Our Blog -->
     <section style="background: #faf8f5; padding: 4rem 2rem; text-align: center;">
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 0.5rem; color: #2c2c2c;">From the Blog</h2>
-            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 0.95rem;">How this house got built, and what to know about Indio before you arrive.</p>
+            <p style="color: #595959; margin-bottom: 2.5rem; font-size: 1rem;">How this house got built, and what to know about Indio before you arrive.</p>
             <style>.blog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:left}@media(max-width:1000px){.blog-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.blog-grid{grid-template-columns:1fr}}</style>
             <div class="blog-grid">
                 <a href="/blog/cozy-cactus-review/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1301,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #00877b; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Guest Reviews</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">What Guests Actually Say: The Cozy Cactus Review</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">What Guests Actually Say: The Cozy Cactus Review</p>
                     </div>
                 </a>
                 <a href="/blog/cozy-cactus-origin-story/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1310,7 +1301,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #00877b; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Origin Story</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">How I Bought My First Vacation Rental in Indio, CA</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">How I Bought My First Vacation Rental in Indio, CA</p>
                     </div>
                 </a>
                 <a href="/blog/cozy-cactus-what-i-built/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1319,7 +1310,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #00877b; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Property Story</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">Inside The Cozy Cactus: A Vacation Home Built for Families</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">Inside The Cozy Cactus: A Vacation Home Built for Families</p>
                     </div>
                 </a>
                 <a href="/blog/coachella-valley-with-kids/" style="text-decoration: none; color: #2c2c2c; background: white; border-radius: 16px; display: block; overflow: hidden; transition: transform 0.2s ease; box-shadow: 0 1px 4px rgba(0,0,0,0.06);">
@@ -1328,7 +1319,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     <div style="padding: 1.25rem;">
                         <p style="font-size: 0.7rem; color: #00877b; font-weight: 600; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;">Family Guide</p>
-                        <p style="font-weight: 500; line-height: 1.4; font-size: 0.95rem;">Coachella Valley with Kids: What Actually Works</p>
+                        <p style="font-weight: 500; line-height: 1.4; font-size: 1rem;">Coachella Valley with Kids: What Actually Works</p>
                     </div>
                 </a>
             </div>
@@ -1339,30 +1330,30 @@ document.addEventListener('DOMContentLoaded', function () {
     <section style="background: #fff; padding: 4rem 2rem;">
         <div style="max-width: 760px; margin: 0 auto;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: #2c2c2c; text-align: center; margin-bottom: 0.5rem;">Frequently Asked Questions</h2>
-            <p style="text-align: center; color: #595959; font-size: 0.95rem; margin-bottom: 2.5rem; font-family: 'Work Sans', sans-serif;">The stuff people ask before they book.</p>
+            <p style="text-align: center; color: #595959; font-size: 1rem; margin-bottom: 2.5rem; font-family: 'Work Sans', sans-serif;">The stuff people ask before they book.</p>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">How far is Cozy Cactus from Coachella and Stagecoach? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Walking distance to the Empire Polo Club, out through the gate and up Eisenhower Drive on foot. During festival weekends, community members within Indian Palms run golf cart rides.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Walking distance to the Empire Polo Club, out through the gate and up Eisenhower Drive on foot. During festival weekends, community members within Indian Palms run golf cart rides.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">Is Cozy Cactus good for families with young children? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">It's built specifically for families with young kids. Pack-n-play, sound machines, Stokke high chair, a real toy collection, art supplies, a baby bath, outlet covers, a fully fenced backyard, and the labeled drawer system guests mention constantly. One parent called it "the first vacation where I rested" and rebooked before checkout.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">It's built specifically for families with young kids. Pack-n-play, sound machines, Stokke high chair, a real toy collection, art supplies, a baby bath, outlet covers, a fully fenced backyard, and the labeled drawer system guests mention constantly. One parent called it "the first vacation where I rested" and rebooked before checkout.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">Does Cozy Cactus have a pool and hot tub? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">No private pool here, but there is a private hot tub in the backyard plus three heated community pools at Indian Palms, the closest one steps from the backyard gate. The covered patio has a rope sofa, swivel lounge chairs and a Traeger grill, with a 2-hole putting green running along the side yard.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">No private pool here, but there is a private hot tub in the backyard plus three heated community pools at Indian Palms, the closest one steps from the backyard gate. The covered patio has a rope sofa, swivel lounge chairs and a Traeger grill, with a 2-hole putting green running along the side yard.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">Are pets allowed at Cozy Cactus? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">No pets at Cozy Cactus. If you're traveling with dogs, <a href="/terra-luz/" style="color: #B67550;">Terra Luz</a> in Indio takes up to 2 dogs with a $150 per pet, per stay fee. Email <a href="mailto:indigopalmco@gmail.com" style="color: #B67550;">indigopalmco@gmail.com</a> to confirm before booking.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">No pets at Cozy Cactus. If you're traveling with dogs, <a href="/terra-luz/" style="color: #B67550;">Terra Luz</a> in Indio takes up to 2 dogs with a $150 per pet, per stay fee. Email <a href="mailto:indigopalmco@gmail.com" style="color: #B67550;">indigopalmco@gmail.com</a> to confirm before booking.</p>
             </details>
             <details style="border-bottom: 1px solid #e8e4df; padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">What is the minimum stay at Cozy Cactus? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">2-night minimum. Check-in at 4pm, checkout at 10am. Early check-in or late checkout sometimes works depending on the schedule, so just ask ahead of time.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">2-night minimum. Check-in at 4pm, checkout at 10am. Early check-in or late checkout sometimes works depending on the schedule, so just ask ahead of time.</p>
             </details>
             <details style="padding: 1.25rem 0;">
                 <summary style="font-family: 'Work Sans', sans-serif; font-size: 1rem; font-weight: 500; color: #2c2c2c; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none;">How much do I save booking directly? <span style="font-size: 1.3rem; color: #B67550;">+</span></summary>
-                <p style="font-family: 'Work Sans', sans-serif; font-size: 0.95rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Roughly 20% compared to booking on Airbnb or VRBO, since Airbnb adds a 20% guest service fee to your subtotal and we skip all of that when you book direct.</p>
+                <p style="font-family: 'Work Sans', sans-serif; font-size: 1rem; color: #555; line-height: 1.7; margin-top: 1rem; padding-right: 1rem;">Roughly 20% compared to booking on Airbnb or VRBO, since Airbnb adds a 20% guest service fee to your subtotal and we skip all of that when you book direct.</p>
             </details>
         </div>
     </section>
@@ -1478,6 +1469,35 @@ document.addEventListener('DOMContentLoaded', function () {
     let calYear = today.getFullYear(), calMonth = today.getMonth();
     let blockedDates = new Set(), checkInVal = '', checkOutVal = '';
 
+    const MIN_NIGHTS = 2; // booking-config.js minNights for this property
+    const noteEl = document.getElementById('cal-min-note'), baseNote = noteEl ? noteEl.textContent : '';
+    const addDays = (ds, n) => { const [y, m, d] = ds.split('-').map(Number); return new Date(Date.UTC(y, m - 1, d + n)).toISOString().slice(0, 10); };
+    let previewed = [];
+    function clearPreview() {
+        previewed.forEach(([el, c]) => { el.className = c; });
+        previewed = [];
+        if (noteEl) noteEl.textContent = baseNote;
+    }
+    // Hover preview: pill from check-in to hovered date, stretched to the minimum stay; never across a booked date
+    const calGrid = document.getElementById('cal-grid');
+    calGrid.addEventListener('mouseleave', clearPreview);
+    calGrid.addEventListener('mouseover', e => {
+        const hov = e.target.closest('.cal-day.available[data-date]');
+        clearPreview();
+        if (!hov || !checkInVal || checkOutVal || hov.dataset.date <= checkInVal) return;
+        const minEnd = addDays(checkInVal, MIN_NIGHTS), end = hov.dataset.date < minEnd ? minEnd : hov.dataset.date;
+        const cells = [...calGrid.querySelectorAll('.cal-day[data-date]')];
+        if (cells.some(c => c.dataset.date > checkInVal && c.dataset.date <= end && c.classList.contains('booked'))) return;
+        if (end !== hov.dataset.date && noteEl) noteEl.textContent = `${MIN_NIGHTS}-night minimum, earliest check-out ${new Date(minEnd + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+        cells.forEach(c => {
+            const d = c.dataset.date;
+            const add = d === checkInVal ? ' sel-start' : d === end ? ' sel-end' : d > checkInVal && d < end ? ' in-range' : '';
+            if (!add) return;
+            previewed.push([c, c.className]);
+            c.className += add;
+        });
+    });
+
     async function init() {
         try {
             const res = await fetch('/api/availability?property=cozy-cactus');
@@ -1491,6 +1511,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const grid = document.getElementById('cal-grid');
         const label = document.getElementById('cal-month-label');
         if (!grid) return;
+        clearPreview();
         const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
         label.textContent = `${months[calMonth]} ${calYear}`;
         const frag = document.createDocumentFragment();
@@ -1516,11 +1537,12 @@ document.addEventListener('DOMContentLoaded', function () {
             if (dateStr === checkOutVal) cls += ' sel-end';
             if (checkInVal && checkOutVal && dateStr > checkInVal && dateStr < checkOutVal) cls += ' in-range';
             cell.className = cls;
+            cell.dataset.date = dateStr;
             if (!isPast && !isBlocked) {
                 cell.addEventListener('click', () => {
                     if (!checkInVal || (checkInVal && checkOutVal)) {
                         checkInVal = dateStr; checkOutVal = '';
-                    } else if (dateStr > checkInVal) {
+                    } else if (dateStr >= addDays(checkInVal, MIN_NIGHTS)) {
                         checkOutVal = dateStr;
                     } else {
                         checkInVal = dateStr; checkOutVal = '';
@@ -1606,14 +1628,6 @@ document.addEventListener('DOMContentLoaded', function () {
 })();
 </script>
 
-    <!-- Mobile sticky CTA bar -->
-    <div class="mobile-cta-bar" aria-label="Book this property">
-        <div class="mobile-cta-text">
-            <strong>Book direct</strong>
-            No Airbnb fee · Same host
-        </div>
-        <a href="/booking-flow/?property=cozy-cactus" id="book-now-mobile" class="mobile-cta-btn" onclick="gtag('event', 'book_now_click', {'property_name': 'Cozy Cactus', 'event_category': 'Booking', 'event_label': 'Mobile Sticky CTA', 'value': 1});">BOOK NOW</a>
-    </div>
 <script>
 (function(){
   if (new URLSearchParams(location.search).get('utm_source') !== 'pinterest') return;
@@ -1623,6 +1637,17 @@ document.addEventListener('DOMContentLoaded', function () {
     details.parentNode.insertBefore(gallery, details);
   }
 })();
+</script>
+    <!-- Mobile sticky CTA bar -->
+    <div class="mobile-cta-bar" aria-label="Book this property">
+        <div class="mobile-cta-text">
+            <strong>Book direct and skip Airbnb's 20% guest fee</strong>
+            Same host, same house
+        </div>
+        <a href="/booking-flow/?property=cozy-cactus" id="book-now-mobile" class="mobile-cta-btn" onclick="gtag('event', 'book_now_click', {'property_name': 'Cozy Cactus', 'event_category': 'Booking', 'event_label': 'Mobile Sticky CTA', 'location': 'sticky', 'value': 1});">BOOK NOW</a>
+    </div>
+<script>
+(function(){var b=document.querySelector('.mobile-cta-bar'),f=document.querySelector('footer');if(!b||!f||!('IntersectionObserver' in window))return;new IntersectionObserver(function(e){b.classList.toggle('is-hidden',e[0].isIntersecting)}).observe(f)})();
 </script>
 </body>
 </html>

@@ -53,7 +53,7 @@ layout: blog-post.njk
 
 <p>This is the section guests scan when they're comparing two properties side by side. Bullet format works here. Dense prose does not.</p>
 
-<p>Cover the basics: beds, baths, max occupancy, parking situation, pool type (private vs. shared, heated vs. not), pet policy, checkout time, and what access guests get. If there are restrictions that matter, say them here. A guest who discovers a pet policy surprise on arrival is worse than a guest who self-filtered at the listing stage.</p>
+<p>Cover the basics: beds, baths, max occupancy, parking situation, pool type (private vs. shared, heated vs. not), pet policy, checkout time, and what access guests get. If there are restrictions that matter, say them here. A guest who hits a pet policy surprise on arrival is worse than a guest who self-filtered at the listing stage.</p>
 
 <p>For Terra Luz: 3 bedrooms, 2 bathrooms, sleeps 8, private Kahlo blue saltwater pool with a heated spa (spa heating included, pool heating $75 per day, 2 night minimum), private driveway parking, dog-friendly with prior approval. For The Cozy Cactus: 3 bedrooms, 2 bathrooms, sleeps 8, private hot tub plus access to three heated community pools at Indian Palms Country Club, game room, pack-and-play available, not pet-friendly. For The Sundune: 2 bedrooms, 2 bathrooms, three king beds, sleeps 4, balcony with views, assigned parking, shared HOA pool, ten minutes from downtown Palm Springs.</p>
 
@@ -75,7 +75,7 @@ layout: blog-post.njk
 
 <p>Airbnb charges guests a 20% service fee on the booking subtotal. On a $1,250 stay, that's $250 added on before taxes. Booking directly through our site at <a href="/">indigopalm.co</a> removes that fee entirely. The guest keeps $250. We get paid the same. Airbnb gets nothing from the transaction.</p>
 
-<p>Most guests don't know this is an option. We tell them in the listing. Not aggressively, not in a way that violates Airbnb's terms, but as a plain fact near the end of the description. Something like: "We also accept direct bookings at indigopalm.co, which skips the Airbnb service fee." That sentence earns more direct bookings per year than any other single line of copy we've tested. If you want to understand <a href="/blog/why-book-direct-vacation-rental/">the math on what guests save</a>, we've broken it down in full.</p>
+<p>Most guests don't know this is an option. We tell them in the listing, as a plain fact near the end of the description. Something like: "We also accept direct bookings at indigopalm.co, which skips the Airbnb service fee." That sentence earns more direct bookings per year than any other single line of copy we've tested. If you want to understand <a href="/blog/why-book-direct-vacation-rental/">the math on what guests save</a>, we've broken it down in full.</p>
 
 <h2>What Not to Include</h2>
 

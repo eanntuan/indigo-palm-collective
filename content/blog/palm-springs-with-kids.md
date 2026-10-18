@@ -71,7 +71,7 @@ layout: blog-post.njk
 
 <p>Worth mentioning, with a caveat: this one works best for kids 8 and up. The <a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tram</strong></a> climbs 6,000 feet to the top of Mount San Jacinto, and the experience at the top (cold, exposed, alpine) can be overwhelming for very young kids who just want to run around in warm weather.</p>
 
-<p>For older kids who can handle the elevation change and have some patience for stunning views, it's legitimately one of the best things to do in the whole valley. Just read the room before committing to the ticket price.</p>
+<p>For older kids who can handle the elevation change and have some patience for the views, it's legitimately one of the best things to do in the whole valley. Just read the room before committing to the ticket price.</p>
 
 <img src="/blog/images/ps-aerial-tram-mountain-view.webp" alt="View from the Palm Springs Aerial Tram looking down into the Coachella Valley desert from Mount San Jacinto" width="1400" height="933" loading="lazy">
 <p class="image-caption">The view from the tram. The elevation change from desert floor to alpine is 6,000 feet in about 10 minutes. Worth it for the right age group.</p>

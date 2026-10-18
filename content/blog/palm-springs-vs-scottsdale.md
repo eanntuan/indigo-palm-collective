@@ -45,7 +45,7 @@ faqItems:
 
 <p>Scottsdale is a sprawling Phoenix suburb built around its resorts. The resort experience is excellent: massive pool complexes, well-regarded golf courses, high-end spas. But outside the resort properties, the city is mostly strip malls and chain restaurants. Old Town Scottsdale is the walkable core, but it's smaller and more bar-focused than the name implies.</p>
 
-<p>Neither is better in the abstract. If you want a self-contained resort experience where you rarely leave the property, Scottsdale does that better. If you want a place with actual street life, art, and things to discover on foot, Palm Springs wins.</p>
+<p>Neither is better in the abstract. If you want a self-contained resort experience where you rarely leave the property, Scottsdale does that better. If you want a place with actual street life, art, and things to find on foot, Palm Springs wins.</p>
 
 <h2>Driving Distance from LA vs Phoenix</h2>
 

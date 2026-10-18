@@ -89,32 +89,43 @@
 
         /* HERO */
         .quiz-hero {
-            text-align: center;
-            padding: 4rem 5% 3rem;
-            max-width: 680px;
-            margin: 0 auto;
+            position: relative;
+            min-height: 45vh;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+        .quiz-hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 55%; }
+        .quiz-hero-inner {
+            position: relative; z-index: 1; width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.6) 50%, rgba(0,0,0,.2) 90%);
+            padding: 7rem max(5%, calc((100% - 1100px) / 2)) 3rem;
         }
         .quiz-hero .eyebrow {
-            font-size: 0.75rem;
+            display: flex; align-items: center; gap: 1rem;
+            font-size: 0.8rem;
             font-weight: 600;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: var(--terracotta-dark);
+            color: #fff;
             margin-bottom: 1rem;
         }
+        .quiz-hero .eyebrow::before { content: ""; width: 2rem; height: 1px; background: #fff; flex: none; }
         .quiz-hero h1 {
             font-family: var(--serif);
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 400;
-            line-height: 1.15;
+            font-size: clamp(2.5rem, 7vw, 4.25rem);
+            font-weight: 600;
+            line-height: 1.05;
             margin-bottom: 1rem;
-            color: var(--charcoal);
+            color: #fff;
+            max-width: 780px;
         }
         .quiz-hero p {
             font-size: 1rem;
-            color: #595959;
+            color: rgba(255,255,255,.92);
             line-height: 1.6;
-            margin-bottom: 2rem;
+            max-width: 560px;
+            margin-bottom: 1.75rem;
         }
         .start-btn {
             display: inline-block;
@@ -398,10 +409,12 @@
 
         @media (max-width: 480px) {
             .question-card, .result-body { padding: 1.75rem; }
-            .quiz-hero { padding: 2.5rem 5% 2rem; }
+            .quiz-hero { min-height: 55vh; }
+            .quiz-hero-inner { padding: 5rem 5% 2rem; }
+            .quiz-hero .eyebrow { font-size: 0.72rem; letter-spacing: 0.16em; }
         }
     </style>
-<link rel="stylesheet" href="/css/site-nav.css?v=2">
+<link rel="stylesheet" href="/css/site-nav.css?v=5">
 <script src="/js/site-nav.js?v=2" defer></script>
 </head>
 <body class="ip-nav-offset">
@@ -417,7 +430,7 @@
                 <span></span>
             </button>
             <ul id="navMenu">
-                <li><a href="/#properties">Properties</a></li>
+                <li class="has-dropdown"><a href="/#properties">Properties</a><ul class="nav-dropdown"><li><a href="/terra-luz/">Terra Luz</a></li><li><a href="/cozy-cactus/">The Cozy Cactus</a></li><li><a href="/the-sundune/">The Sundune</a></li><li><a href="/the-well/">The Well</a></li></ul></li>
                 <li><a href="/#about">About</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/quiz/">Take the Quiz</a></li>
@@ -430,10 +443,13 @@
 <!-- SCREEN: Intro -->
 <div id="screen-intro" class="screen active">
     <div class="quiz-hero">
-        <p class="eyebrow">The Indigo Palm Quiz</p>
-        <h1>Which desert home is calling your name?</h1>
-        <p>Six questions. We'll match you to the Indigo Palm property that fits how you actually travel, not how you think you're supposed to.</p>
-        <button class="start-btn" onclick="startQuiz()">Find My Match</button>
+        <img class="quiz-hero-bg" src="/blog/images/terra-luz-patio-full.webp" alt="Terra Luz saltwater pool with in-water loungers, striped umbrella and terracotta deck in Indio" width="1024" height="683" fetchpriority="high">
+        <div class="quiz-hero-inner">
+            <p class="eyebrow">The Indigo Palm Quiz</p>
+            <h1>Which desert home is calling your name?</h1>
+            <p>Six questions. We'll match you to the Indigo Palm property that fits how you actually travel, not how you think you're supposed to.</p>
+            <button class="start-btn" onclick="startQuiz()">Find My Match</button>
+        </div>
     </div>
 </div>
 
