@@ -270,7 +270,7 @@
             display: none;
         }
         .next-btn:hover { background: #6B3420; }
-        .next-btn.visible { display: block; }
+        .next-btn.visible { display: none; }
 
         /* RESULT */
         .result-card {
@@ -725,6 +725,7 @@
     let currentQ = 0;
     let scores = { cc: 0, tl: 0, sd: 0, tw: 0 };
     let answered = new Array(TOTAL).fill(null);
+    let advancing = false;
 
     function startQuiz() {
         document.getElementById('screen-intro').classList.remove('active');
@@ -748,8 +749,14 @@
         const prop = el.dataset.property;
         answered[currentQ] = prop;
 
-        const nextBtn = card.querySelector('.next-btn');
-        nextBtn.classList.add('visible');
+        gtag('event', 'quiz_answer', { event_category: 'Quiz', question: currentQ + 1, answer: prop });
+
+        if (advancing) return;
+        advancing = true;
+        setTimeout(() => {
+            advancing = false;
+            currentQ === TOTAL - 1 ? showResult() : nextQuestion();
+        }, 350);
     }
 
     function nextQuestion() {
@@ -797,7 +804,6 @@
         document.querySelectorAll('.question-card').forEach((c, i) => {
             c.classList.remove('active');
             c.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
-            c.querySelector('.next-btn').classList.remove('visible');
         });
         document.querySelectorAll('.question-card')[0].classList.add('active');
         updateProgress();
