@@ -73,7 +73,7 @@ relatedPosts:
 
 <p><strong>Three king beds means two couples or four people split that cost.</strong> At a price point where Indian Wells hotels are running $400-600 per night for a standard room during tournament week, a three-bed condo with community pool access divided four ways is a different math problem entirely.</p>
 
-<p><strong>Shared pool, full kitchen, ten minutes to Palm Canyon.</strong> The Uptown Design District is close enough to walk for coffee or a drink, and downtown Palm Canyon Drive, the main restaurant and shop corridor, is about a ten-minute drive. After a day at the venue that short hop matters more than it sounds in a listing, because you're picking a dinner spot in your own city rather than eating whatever is attached to a hotel lobby, even after 40+ round-trip miles.</p>
+<p><strong>Shared pool, full kitchen, ten minutes to Palm Canyon.</strong> The Uptown Design District is a short drive for coffee or a drink, and downtown Palm Canyon Drive, the main restaurant and shop corridor, is about a ten-minute drive. After a day at the venue that short hop matters more than it sounds in a listing, because you're picking a dinner spot in your own city rather than eating whatever is attached to a hotel lobby, even after 40+ round-trip miles.</p>
 
 <img src="/blog/images/sundune-living-room-wide.webp" alt="The Sundune Palm Springs vacation rental living room with mid-century modern furniture and natural light" width="4604" height="2919" loading="lazy">
 <p class="image-caption">The Sundune living room. Mid-century condo in central Palm Springs, 3 king beds, community pool access, dog-friendly with prior approval.</p>

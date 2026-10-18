@@ -104,7 +104,7 @@ faqItems:
 
 <p>For more on the Palm Springs side of this comparison, the <a href="/blog/palm-springs-neighborhood-guide/">Palm Springs neighborhood guide</a> breaks down which part of the city fits which kind of trip. And if you're weighing a vacation rental against a resort stay, the <a href="/blog/palm-springs-vs-indio/">Palm Springs vs Indio comparison</a> gets into the specifics of where in the valley to base yourself.</p>
 
-<p>Our Palm Springs property, <a href="/the-sundune/">The Sundune</a>, is a two-bedroom condo you can walk from into the Uptown Design District, with the residential architecture neighborhoods and downtown both a short drive rather than a stroll. For visitors coming from Southern California who want to be in the city itself instead of behind a resort gate, without the resort price tag, it's the right fit.</p>
+<p>Our Palm Springs property, <a href="/the-sundune/">The Sundune</a>, is a two-bedroom condo a short drive from the Uptown Design District, with the residential architecture neighborhoods and downtown both a quick car ride away. For visitors coming from Southern California who want to be in the city itself instead of behind a resort gate, without the resort price tag, it's the right fit.</p>
 
 <h2>Frequently Asked Questions</h2>
 

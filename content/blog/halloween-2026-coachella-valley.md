@@ -104,7 +104,7 @@ layout: blog-post.njk
 <p>General entry is free on both nights, October 30 and 31, with a suggested $10 donation on Friday for LGBTQ charities. VIP tickets cost extra and are sold through the event's website.</p>
 
 <h3>Can I walk to the Arenas District from The Sundune?</h3>
-<p>No. Downtown Palm Springs is about a 10-minute drive from The Sundune, so plan on a car or rideshare. Only the Uptown Design District is walkable from the property.</p>
+<p>No. Downtown Palm Springs is about a 10-minute drive from The Sundune, so plan on a car or rideshare. The Uptown Design District is a short drive too.</p>
 
 <h3>Which Indigo Palm rentals are dog-friendly for Halloween weekend?</h3>
 <p>Terra Luz in Indio, and The Sundune and The Well in Palm Springs, all accept dogs with prior approval. The Cozy Cactus does not. Email us before you book to confirm, and mention your dog when you inquire at <a href="/terra-luz/">indigopalm.co/terra-luz</a>, <a href="/the-sundune/">indigopalm.co/the-sundune</a> or <a href="/the-well/">indigopalm.co/the-well</a>.</p>
@@ -134,7 +134,7 @@ layout: blog-post.njk
     {"@type": "Question", "name": "Are there Halloween events for kids in the Coachella Valley?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Cathedral City Spooktacular on Sunday, October 25 is free and runs noon to 3 PM. Howl-O-Ween at The Living Desert on Saturday, October 31 runs 9 AM to 1 PM and is included with zoo admission."}},
     {"@type": "Question", "name": "Is there a dog Halloween costume contest in Palm Springs?", "acceptedAnswer": {"@type": "Answer", "text": "The closest is the Howl-O-Ween dog contest in Cathedral City on Saturday, October 24, 9 to 11 AM at Panorama Park. It is free, with small and large breed prizes and a best dog-and-owner combo award."}},
     {"@type": "Question", "name": "Is Halloween Palm Springs on Arenas Road free?", "acceptedAnswer": {"@type": "Answer", "text": "General entry is free on both nights, October 30 and 31, with a suggested $10 donation on Friday for LGBTQ charities. VIP tickets cost extra."}},
-    {"@type": "Question", "name": "Can I walk to the Arenas District from The Sundune?", "acceptedAnswer": {"@type": "Answer", "text": "No. Downtown Palm Springs is about a 10-minute drive from The Sundune. Only the Uptown Design District is walkable from the property."}},
+    {"@type": "Question", "name": "Can I walk to the Arenas District from The Sundune?", "acceptedAnswer": {"@type": "Answer", "text": "No. Downtown Palm Springs is about a 10-minute drive from The Sundune, and the Uptown Design District is a short drive as well, so plan on a car or rideshare."}},
     {"@type": "Question", "name": "Which Indigo Palm rentals are dog-friendly for Halloween weekend?", "acceptedAnswer": {"@type": "Answer", "text": "Terra Luz in Indio, and The Sundune and The Well in Palm Springs, all accept dogs with prior approval. The Cozy Cactus does not."}}
   ]
 }

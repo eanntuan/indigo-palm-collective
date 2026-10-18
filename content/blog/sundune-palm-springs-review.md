@@ -1,7 +1,7 @@
 ---
 title: "The Sundune Palm Springs: What 40 Guests Say"
 date: 2026-02-26
-metaDescription: "The Sundune Palm Springs: 4.93 stars across 40 stays. What guests say about the 2BR condo, the Uptown location, shared pool access, and what to expect."
+metaDescription: "The Sundune Palm Springs: 4.93 stars across 40 stays. What guests say about the 2BR condo, the Uptown area, shared pool access, and what to expect."
 ogImage: /blog/images/sundune-palm-springs-condo.webp
 heroImage: /blog/images/sundune-palm-springs-condo.webp
 heroAlt: "Palm Springs midcentury modern vacation rental pool and patio"
@@ -29,14 +29,14 @@ relatedPosts:
     url: /blog/palm-springs-vs-indio/
 ---
 
-<p>The Sundune is our 2BR/2BA condo in Palm Springs, close enough to the Uptown Design District to walk it and about ten minutes' drive from downtown Palm Canyon Drive. It has 4.93 stars across 40+ reviews on Airbnb. Here's what guests say about it, and what I'd tell you before you book.</p>
+<p>The Sundune is our 2BR/2BA condo in Palm Springs, a short drive from the Uptown Design District and about ten minutes from downtown Palm Canyon Drive. It has 4.93 stars across 40+ reviews on Airbnb. Here's what guests say about it, and what I'd tell you before you book.</p>
 
 <img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard with tall palms and San Jacinto Mountains at sunset, near The Sundune Palm Springs vacation rental" width="1800" height="1800" loading="lazy">
-<p class="image-caption">Palm Springs in March or November: the mountains, the palms, the light. The Sundune sits inside all of this, with the Uptown Design District on foot and the rest of the city a short drive.</p>
+<p class="image-caption">Palm Springs in March or November: the mountains, the palms, the light. The Sundune sits inside all of this, with the Uptown Design District and the rest of the city a short drive away.</p>
 
 <h2>What Guests Say First</h2>
 
-<p>Quiet, and the fact that you're in Palm Springs proper rather than out at the valley edge. Guests can walk into the Uptown Design District for coffee or a wander, and downtown is a ten-minute drive when they want the main strip. For a Palm Springs trip, that combination is rare at a price point that includes two bedrooms and real privacy.</p>
+<p>Quiet, and the fact that you're in Palm Springs proper rather than out at the valley edge. Guests drive over to the Uptown Design District for coffee or a wander, and downtown is a ten-minute drive when they want the main strip. For a Palm Springs trip, that combination is rare at a price point that includes two bedrooms and real privacy.</p>
 
 <p>The second thing: the beds. I spent more on the mattresses than felt reasonable at the time. Reviews keep mentioning them, which means it was reasonable.</p>
 
@@ -44,10 +44,10 @@ relatedPosts:
 
 <h2>Location</h2>
 
-<p>The Sundune is in a midcentury neighborhood that hasn't been overdeveloped. The Uptown Design District, with its coffee, galleries, and vintage shops, is the part you can do on foot. Downtown Palm Canyon Drive, the Marilyn Monroe statue, and the weekend <a href="https://www.villagefestpalmsprings.com/" target="_blank" rel="noopener noreferrer"><strong>VillageFest</strong></a> street market are all about ten minutes by car. The <a href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer"><strong>Indian Canyons</strong></a> trailheads are about 10 minutes by car.</p>
+<p>The Sundune is in a midcentury neighborhood that hasn't been overdeveloped. The Uptown Design District, with its coffee, galleries, and vintage shops, is a short drive away. Downtown Palm Canyon Drive, the Marilyn Monroe statue, and the weekend <a href="https://www.villagefestpalmsprings.com/" target="_blank" rel="noopener noreferrer"><strong>VillageFest</strong></a> street market are all about ten minutes by car. The <a href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer"><strong>Indian Canyons</strong></a> trailheads are about 10 minutes by car.</p>
 
 <img src="/blog/images/ps-mcm-neighborhood.webp" alt="Palm Springs midcentury modern neighborhood street with low profile homes and San Jacinto Mountains backdrop" width="1400" height="933" loading="lazy">
-<p class="image-caption">The neighborhood around The Sundune. Quiet and residential, with the Uptown shops in walking range and downtown a quick drive.</p>
+<p class="image-caption">The neighborhood around The Sundune. Quiet and residential, with the Uptown shops a short drive away and downtown about ten minutes out.</p>
 
 <p>If you're here for the BNP Paribas Open at Indian Wells, The Sundune is about 20 minutes to the venue. That puts it on par with most options in the valley. If you want to mix city access with tournament attendance, Palm Springs is the right base.</p>
 
@@ -103,7 +103,7 @@ relatedPosts:
 <p>One pet is welcome with a $150 per pet, per stay fee. Email us at indigopalmco@gmail.com before booking to confirm. The condo has a balcony but no fenced yard, so dogs that need a private outdoor run are better suited to <a href="/terra-luz/">Terra Luz</a> in Indio, which has a fully fenced backyard.</p>
 
 <h3>Is The Sundune walking distance to downtown Palm Springs?</h3>
-<p>Not downtown, no. Palm Canyon Drive is about a ten-minute drive from the condo. What is walkable is the Uptown Design District, which has its own coffee, shops, and restaurants, so most guests walk Uptown by day and drive down to the main strip for dinner.</p>
+<p>Not downtown, no, and not Uptown either. Palm Canyon Drive is about a ten-minute drive from the condo, and the Uptown Design District, with its own coffee, shops, and restaurants, is a short drive, so most guests drive Uptown by day and down to the main strip for dinner.</p>
 
 <h3>When is the best time to stay at The Sundune?</h3>
 <p>March is the best month: mid-70s to low-80s, open restaurant tables, the desert at its most comfortable. October and November are nearly as good. The Sundune in summer works for guests who know the desert and plan accordingly, staying pool-based in the afternoon and out in the evening.</p>
@@ -146,7 +146,7 @@ relatedPosts:
       "name": "Is The Sundune walking distance to downtown Palm Springs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Downtown, no. Palm Canyon Drive is roughly a ten-minute drive away. The Uptown Design District is the walkable part, with its own coffee, shops, and restaurants."
+        "text": "No. Palm Canyon Drive is roughly a ten-minute drive away, and the Uptown Design District, with its own coffee, shops, and restaurants, is a short drive."
       }
     },
     {

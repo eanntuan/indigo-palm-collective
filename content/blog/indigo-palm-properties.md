@@ -61,9 +61,9 @@ layout: blog-post.njk
 
 <p>The Sundune is a 2-bedroom, 2-bath apartment in Palm Springs, not a house, intentionally. The design leans coastal-desert: sun-faded surf culture meets Palm Springs retro. Distressed denim blues, warm sand tones, a balcony that catches the morning light before the heat arrives. It's the quietest property in the portfolio, the one that doesn't try to entertain you indoors: it trusts Palm Springs to do that.</p>
 
-<p>This is the property for smaller groups: couples, or two friends who want the Uptown Design District within walking distance and a space that feels personal. The apartment sits in East Palm Springs near Waverly Drive, a short walk to Uptown, a quick drive to the downtown strip, close to hiking trailheads, and far enough from the loud blocks that you can sleep.</p>
+<p>This is the property for smaller groups: couples, or two friends who want the Uptown Design District close by and a space that feels personal. The apartment sits in East Palm Springs near Waverly Drive, a short drive to Uptown and about ten minutes to the downtown strip, close to hiking trailheads, and far enough from the loud blocks that you can sleep.</p>
 
-<p>No private pool (there's a community pool), offset by the fact that you're in Palm Springs, with Uptown walkable and downtown a short drive rather than the longer haul you'd make from Terra Luz or Cozy Cactus.</p>
+<p>No private pool (there's a community pool), offset by the fact that you're in Palm Springs, with Uptown a short drive and downtown about ten minutes out rather than the longer haul you'd make from Terra Luz or Cozy Cactus.</p>
 
 <p><strong>Book The Sundune direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a>: no platform fees.</strong></p>
 
@@ -78,7 +78,7 @@ layout: blog-post.njk
 <ul>
   <li><strong>Group of 6–8, wants a wow moment when you walk in:</strong> Terra Luz</li>
   <li><strong>Family with kids under 10, needs it to be functional:</strong> The Cozy Cactus</li>
-  <li><strong>2–4 people, want Palm Springs proper and walkability:</strong> The Sundune</li>
+  <li><strong>2–4 people, want Palm Springs proper:</strong> The Sundune</li>
   <li><strong>Long-stay, slow pace, extended desert time:</strong> The Well</li>
 </ul>
 
@@ -118,7 +118,7 @@ layout: blog-post.njk
       "name": "Is there an Indigo Palm property in Palm Springs proper?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The Sundune is a 2-bedroom, 2-bath apartment in Palm Springs with a coastal-desert aesthetic: sun-faded surf culture meets Palm Springs retro. It has a balcony, a community pool, walkable access to the Uptown Design District and hiking trails, and a quick drive to the downtown strip. Best for couples or small groups of 2–4 who want to be in the city rather than the desert suburbs."
+        "text": "Yes. The Sundune is a 2-bedroom, 2-bath apartment in Palm Springs with a coastal-desert aesthetic: sun-faded surf culture meets Palm Springs retro. It has a balcony, a community pool, a short drive to the Uptown Design District, and about ten minutes to the downtown strip. Best for couples or small groups of 2–4 who want to be in the city rather than the desert suburbs."
       }
     },
     {

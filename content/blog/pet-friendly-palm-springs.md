@@ -22,7 +22,7 @@ excerpt: "Palm Springs is surprisingly dog-friendly, if you know where to go. Th
 layout: blog-post.njk
 faqItems:
   - q: "Which Indigo Palm properties are dog-friendly?"
-    a: "Terra Luz in Indio, and The Sundune and The Well in Palm Springs, all accept dogs with prior approval. Terra Luz takes up to two dogs and has a private saltwater pool with a fully fenced backyard. The Sundune accepts one dog, sits a short walk from the Uptown Design District with the downtown strip about ten minutes by car, and has a shared HOA pool. The Well accepts one dog too, though it's a long-term rental with a 28-night minimum. The Cozy Cactus is not pet-friendly, no exceptions. Details at https://indigopalm.co/blog/pet-friendly-palm-springs/"
+    a: "Terra Luz in Indio, and The Sundune and The Well in Palm Springs, all accept dogs with prior approval. Terra Luz takes up to two dogs and has a private saltwater pool with a fully fenced backyard. The Sundune accepts one dog, sits a short drive from the Uptown Design District with the downtown strip about ten minutes by car, and has a shared HOA pool. The Well accepts one dog too, though it's a long-term rental with a 28-night minimum. The Cozy Cactus is not pet-friendly, no exceptions. Details at https://indigopalm.co/blog/pet-friendly-palm-springs/"
   - q: "Is it safe to hike with a dog in Palm Springs?"
     a: "October through April, yes. Palm Canyon Trail inside Indian Canyons allows leashed dogs and is one of the best options, though there's a $12 entry fee. From May through September, pavement temperatures can hit 150 degrees, which causes serious paw burns in under 60 seconds, so keep outdoor time to before 8am or after 6pm. More on timing and preparation at https://indigopalm.co/blog/pet-friendly-palm-springs/"
   - q: "Can I bring two dogs to a Palm Springs vacation rental?"
@@ -44,7 +44,7 @@ faqItems:
 
 <p>Most vacation rentals in the area don't allow pets because one bad incident in a carpeted rental creates a problem that costs more than a summer of bookings to fix. The ones that do allow pets have usually thought it through.</p>
 
-<p>We have three pet-friendly properties. <a href="/terra-luz/">Terra Luz</a> in Indio accepts up to two dogs (pet fee applies): 3-bedroom, private saltwater pool, fully fenced backyard. <a href="/the-sundune/">The Sundune</a> in Palm Springs accepts one pet (pet fee applies): the Uptown Design District is walkable, downtown is a ten-minute drive, and there's a shared HOA pool. <a href="/the-well/">The Well</a> in Palm Springs accepts one dog (pet fee applies): a one-bedroom with its own outdoor space, though it's a long-term rental with a 28-night minimum. Email <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking to confirm your situation.</p>
+<p>We have three pet-friendly properties. <a href="/terra-luz/">Terra Luz</a> in Indio accepts up to two dogs (pet fee applies): 3-bedroom, private saltwater pool, fully fenced backyard. <a href="/the-sundune/">The Sundune</a> in Palm Springs accepts one pet (pet fee applies): the Uptown Design District is a short drive, downtown is about ten minutes by car, and there's a shared HOA pool. <a href="/the-well/">The Well</a> in Palm Springs accepts one dog (pet fee applies): a one-bedroom with its own outdoor space, though it's a long-term rental with a 28-night minimum. Email <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking to confirm your situation.</p>
 
 <div class="callout">
     <p><strong>The real test for a pet-friendly rental:</strong> Does it have outdoor space? Tile or concrete floors (not carpet)? A fenced yard or pool area? These things matter more than whether it says "pets allowed" in the headline.</p>
@@ -134,7 +134,7 @@ faqItems:
     <li>Tick and flea prevention. Desert vegetation carries both.</li>
 </ul>
 
-<p>Our three dog-friendly properties: <a href="/terra-luz/">Terra Luz</a> in Indio (up to two dogs, fenced backyard, private saltwater pool), <a href="/the-sundune/">The Sundune</a> in Palm Springs (one dog, shared HOA pool, Uptown Design District within walking distance) and <a href="/the-well/">The Well</a> in Palm Springs (one dog, 28-night minimum). All three accept dogs with prior confirmation.</p>
+<p>Our three dog-friendly properties: <a href="/terra-luz/">Terra Luz</a> in Indio (up to two dogs, fenced backyard, private saltwater pool), <a href="/the-sundune/">The Sundune</a> in Palm Springs (one dog, shared HOA pool, Uptown Design District a short drive away) and <a href="/the-well/">The Well</a> in Palm Springs (one dog, 28-night minimum). All three accept dogs with prior confirmation.</p>
 
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz fenced backyard and saltwater pool in Indio California, dog-friendly vacation rental in the Coachella Valley" width="1024" height="1536" loading="lazy">
 <p class="image-caption">Terra Luz in Indio. Fully fenced backyard, pool is dog-accessible, up to two dogs with a $150 per pet, per stay fee and prior confirmation.</p>
@@ -144,7 +144,7 @@ faqItems:
 <h2>Frequently Asked Questions</h2>
 
 <h3>Can you bring a dog to Palm Springs vacation rentals?</h3>
-<p>Most vacation rentals in the area do not allow pets. The ones that do have usually set up for it: tile or concrete floors, a fenced outdoor space, and a pet deposit or fee. We have three pet-friendly properties. Terra Luz in Indio accepts up to two dogs with a fenced backyard and private saltwater pool. The Sundune in Palm Springs accepts one dog and has a shared HOA pool, with the Uptown Design District close enough to walk and downtown roughly ten minutes out by car. The Well in Palm Springs accepts one dog too, with a 28-night minimum. Email indigopalmco@gmail.com before booking to confirm your situation.</p>
+<p>Most vacation rentals in the area do not allow pets. The ones that do have usually set up for it: tile or concrete floors, a fenced outdoor space, and a pet deposit or fee. We have three pet-friendly properties. Terra Luz in Indio accepts up to two dogs with a fenced backyard and private saltwater pool. The Sundune in Palm Springs accepts one dog and has a shared HOA pool, with the Uptown Design District a short drive away and downtown roughly ten minutes out by car. The Well in Palm Springs accepts one dog too, with a 28-night minimum. Email indigopalmco@gmail.com before booking to confirm your situation.</p>
 
 <h3>Is the Palm Canyon trail dog-friendly?</h3>
 <p>Dogs on leash are allowed on most Palm Springs area trails, including Palm Canyon inside Indian Canyons. The entry fee is around $12 per adult and the canyon is one of the largest natural fan palm oases in North America. Go before 8am in any warm month. Pavement temperatures can hit 150 degrees by midday, which is dangerous for paws in 60 seconds.</p>
@@ -164,7 +164,7 @@ faqItems:
 
 <p>If you want more on the area, read our <a href="/blog/palm-springs-local-guide-sundune/">local Palm Springs guide</a>, written by someone who eats here, not just visits.</p>
 
-<p>We have three pet-friendly properties. <a href="/the-sundune/">The Sundune</a> in Palm Springs accepts one pet (pet fee applies): a shared HOA pool, and Uptown's shops and restaurants an easy walk away rather than downtown, which is a short drive. <a href="/terra-luz/">Terra Luz</a> in Indio accepts up to two dogs (pet fee applies) with a fully fenced backyard and private saltwater pool. <a href="/the-well/">The Well</a> in Palm Springs accepts one dog (pet fee applies), with a 28-night minimum. Email us at <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking to confirm your situation.</p>
+<p>We have three pet-friendly properties. <a href="/the-sundune/">The Sundune</a> in Palm Springs accepts one pet (pet fee applies): a shared HOA pool, with Uptown's shops and restaurants a short drive away and downtown about ten minutes by car. <a href="/terra-luz/">Terra Luz</a> in Indio accepts up to two dogs (pet fee applies) with a fully fenced backyard and private saltwater pool. <a href="/the-well/">The Well</a> in Palm Springs accepts one dog (pet fee applies), with a 28-night minimum. Email us at <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking to confirm your situation.</p>
 
 
 

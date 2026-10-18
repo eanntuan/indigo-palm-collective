@@ -115,11 +115,11 @@ relatedPosts:
 
 <p>For a neighborhood-by-neighborhood breakdown of where to sleep based on your trip type, the <a href="/blog/palm-springs-neighborhood-guide/">Palm Springs neighborhood guide</a> covers Movie Colony, Vista Las Palmas, Uptown, and more with honest trade-offs.</p>
 
-<p>The Sundune is 10 minutes from downtown Palm Springs and within walking distance of the Uptown Design District. If you're staying with us, you're already positioned to do this tour on arrival day without a car for most of it. More on the neighborhood in the <a href="/blog/palm-springs-local-guide-sundune/">Sundune local guide.</a></p>
+<p>The Sundune is 10 minutes from downtown Palm Springs and a short drive from the Uptown Design District. If you're staying with us, you're already positioned to do this tour on arrival day. More on the neighborhood in the <a href="/blog/palm-springs-local-guide-sundune/">Sundune local guide.</a></p>
 
 <h2>Where to Stay</h2>
 
-<p><a href="/the-sundune/">The Sundune</a> is 10 minutes from downtown Palm Springs, walking distance from the Uptown Design District, and close to the main architectural neighborhoods this tour covers. It's a midcentury-influenced two-bedroom condo in a gated community with a pool. The right base for doing this properly.</p>
+<p><a href="/the-sundune/">The Sundune</a> is 10 minutes from downtown Palm Springs, a short drive from the Uptown Design District, and close to the main architectural neighborhoods this tour covers. It's a midcentury-influenced two-bedroom condo in a gated community with a pool. The right base for doing this properly.</p>
 
 <h2>Frequently Asked Questions</h2>
 

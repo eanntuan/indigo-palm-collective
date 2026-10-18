@@ -40,7 +40,7 @@ layout: blog-post.njk
 
 <h2>Day 2: Downtown, Architecture, and the Art Museum</h2>
 
-<p>If you're staying at <a href="/the-sundune/">The Sundune</a>, Koffi and the rest of the Uptown Design District are an easy walk, downtown Palm Canyon Drive is about ten minutes by car, and the aerial tram road is roughly the same. One note before you book: the HOA at Palm Canyon Villas sets a 4-night minimum, so treat these three days as the spine of a longer stay rather than the whole trip.</p>
+<p>If you're staying at <a href="/the-sundune/">The Sundune</a>, Koffi and the rest of the Uptown Design District are a short drive, downtown Palm Canyon Drive is about ten minutes by car, and the aerial tram road is roughly the same. One note before you book: the HOA at Palm Canyon Villas sets a 4-night minimum, so treat these three days as the spine of a longer stay rather than the whole trip.</p>
 
 <p>Morning: coffee at Koffi (1700 S Camino Real or the North Palm Springs location). It's the closest thing to a local institution the city has. Then walk downtown.</p>
 

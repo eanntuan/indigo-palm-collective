@@ -141,7 +141,7 @@ relatedPosts:
 <p>4 nights is the minimum set by the Palm Canyon Villas HOA. It sounds like a constraint until you're here: that's the right amount of time to move through this guide without feeling rushed.</p>
 
 <h3>Can you walk to Palm Springs restaurants from The Sundune?</h3>
-<p>Not the downtown ones. The Sundune sits on E Waverly Drive in Sunrise Park, and Palm Canyon Drive is roughly a ten-minute drive from the door. What you can walk to is the Uptown Design District, which has enough coffee and shops to fill a morning on its own. Everything else in this guide is short-drive territory, and Boozehounds and Rooster and the Pig are both under 10 minutes by car.</p>
+<p>Not really. The Sundune sits on E Waverly Drive in Sunrise Park, and Palm Canyon Drive is roughly a ten-minute drive from the door. Uptown Design District is a short drive and has enough coffee and shops to fill a morning on its own. Everything else in this guide is short-drive territory, and Boozehounds and Rooster and the Pig are both under 10 minutes by car.</p>
 
 <p>For more Coachella Valley intel, the <a href="/blog/indio-local-gems/">Indio local gems guide</a> covers the other end of the valley: different energy, just as worth knowing. If you want a full two-day structure for your first Palm Springs visit, the <a href="/blog/palm-springs-weekend-itinerary/">Palm Springs weekend itinerary</a> maps it out hour by hour. And if you're still deciding where to stay: <a href="/the-sundune/">The Sundune</a> is exactly what it sounds like.</p>
 
@@ -243,7 +243,7 @@ relatedPosts:
       "name": "Can you walk to Palm Springs restaurants from The Sundune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not to the downtown restaurants, no. The Sundune is on E Waverly Drive in the Sunrise Park neighborhood, and Palm Canyon Drive is about a ten-minute drive. The Uptown Design District is the part you can do on foot. Boozehounds and Rooster and the Pig are both under 10 minutes by car."
+        "text": "Not to restaurants, no. The Sundune is on E Waverly Drive in the Sunrise Park neighborhood, and Palm Canyon Drive is about a ten-minute drive. The Uptown Design District is a short drive, and so is everything else. Boozehounds and Rooster and the Pig are both under 10 minutes by car."
       }
     }
   ]

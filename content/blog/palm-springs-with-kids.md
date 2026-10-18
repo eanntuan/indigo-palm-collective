@@ -97,7 +97,7 @@ layout: blog-post.njk
 
 <p>We keep a Pack 'n Play and a high chair available. Those two things alone save the "what do we need to bring" conversation for a lot of families traveling with an infant or toddler.</p>
 
-<p>Being inside the city is the underrated part. The Uptown Design District is walkable for a coffee or an aimless afternoon wander, and downtown Palm Canyon Drive, with the restaurants and ice cream and enough foot traffic to keep kids looking around, is a ten-minute drive rather than an expedition across the valley.</p>
+<p>Being inside the city is the underrated part. The Uptown Design District is a short drive for a coffee or an aimless afternoon wander, and downtown Palm Canyon Drive, with the restaurants and ice cream and enough foot traffic to keep kids looking around, is a ten-minute drive rather than an expedition across the valley.</p>
 
 <p>That's different from the Cozy Cactus, which is in Indio, built for bigger groups with a private hot tub, access to three heated community pools at Indian Palms Country Club, and proximity to festival venues. The Sundune is smaller, sits inside Palm Springs proper, and suits a family that wants a city base rather than a whole house to themselves.</p>
 
@@ -147,7 +147,7 @@ layout: blog-post.njk
 <p>The Sundune is dog-friendly with prior approval, and the Cozy Cactus is not pet-friendly. If you're traveling with a dog, email us before you book: The Sundune accepts dogs with advance notice, and the community grounds give enough room for a morning walk before the heat arrives. Terra Luz in Indio is also dog-friendly for families who want more space or a private pool, and The Well in Palm Springs is dog-friendly too if it's just two of you.</p>
 
 <h3>Is a car necessary for a family trip to Palm Springs?</h3>
-<p>It depends on your base. From The Sundune you can walk into the Uptown Design District for coffee, dessert, or an evening stroll without loading anyone into a car seat, though downtown Palm Canyon Drive is a ten-minute drive. For the bigger activities, a car is necessary: the Living Desert is 20 minutes in Palm Desert, Bear Creek Trail is 25 minutes in La Quinta, and Cabazon Dinosaurs are 30 minutes west on I-10. The practical rhythm is: walk for meals and evening, drive for the day's anchor activity.</p>
+<p>It depends on your base. From The Sundune the Uptown Design District is a short drive for coffee or dessert, and downtown Palm Canyon Drive is about ten minutes by car. For the bigger activities, a car is necessary: the Living Desert is 20 minutes in Palm Desert, Bear Creek Trail is 25 minutes in La Quinta, and Cabazon Dinosaurs are 30 minutes west on I-10. The practical rhythm is: short drives for meals and evenings, longer ones for the day's anchor activity.</p>
 
 <script type="application/ld+json">
 {
@@ -207,7 +207,7 @@ layout: blog-post.njk
       "name": "Is a car necessary for a family trip to Palm Springs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mostly yes. From The Sundune you can walk into the Uptown Design District for coffee or dessert, but downtown Palm Canyon Drive is a ten-minute drive, and the bigger activities need the car too: Living Desert is 20 minutes away in Palm Desert, Bear Creek Trail is 25 minutes in La Quinta, and Cabazon Dinosaurs are 30 minutes west on I-10. The practical rhythm is walking for meals and evenings, driving for the day's anchor activity."
+        "text": "Mostly no. From The Sundune the Uptown Design District is a short drive for coffee or dessert, downtown Palm Canyon Drive is about ten minutes by car, and the bigger activities need the car too: Living Desert is 20 minutes away in Palm Desert, Bear Creek Trail is 25 minutes in La Quinta, and Cabazon Dinosaurs are 30 minutes west on I-10. The practical rhythm is short drives for meals and evenings, longer ones for the day's anchor activity."
       }
     }
   ]

@@ -53,7 +53,7 @@ layout: blog-post.njk
 <img src="/blog/images/cartel-coffee-palm-springs.webp" alt="Coffee stop before gallery hopping in Palm Springs Uptown Design District" width="1000" height="867" loading="lazy">
 <p class="image-caption">Coffee first, galleries second. Uptown has enough sidewalk that pacing matters.</p>
 
-<p>If you're staying at <a href="/the-sundune/"><strong>The Sundune</strong></a>, our Palm Springs condo, the Uptown Design District is an easy walk and the downtown core is about a ten-minute drive, then an easy walk once you're parked. It's the only one of our properties that puts you inside the city instead of out in Indio, which matters if a gallery afternoon is the whole point of the trip.</p>
+<p>If you're staying at <a href="/the-sundune/"><strong>The Sundune</strong></a>, our Palm Springs condo, the Uptown Design District is a short drive and the downtown core is about ten minutes by car, then an easy walk once you're parked. It's the only one of our properties that puts you inside the city instead of out in Indio, which matters if a gallery afternoon is the whole point of the trip.</p>
 
 <h2>Beyond Downtown: Where the Working Artists Are</h2>
 
@@ -110,7 +110,7 @@ layout: blog-post.njk
       "name": "Where should I stay for a Palm Springs gallery-focused trip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Sundune puts you inside Palm Springs itself, a five-minute drive from both downtown and the Uptown Design District. If you're combining galleries with a broader Coachella Valley trip, Cozy Cactus or Terra Luz in Indio are about 25 minutes out and work well as a home base."
+        "text": "The Sundune puts you inside Palm Springs itself, a short drive from the Uptown Design District and about ten minutes from downtown. If you're combining galleries with a broader Coachella Valley trip, Cozy Cactus or Terra Luz in Indio are about 25 minutes out and work well as a home base."
       }
     }
   ]
@@ -135,6 +135,6 @@ layout: blog-post.njk
 <p>A monthly evening event at Backstreet Art District, the first Wednesday of every month from about 5 to 7pm, where the working artist-owners open their studios alongside their galleries. It happens every month regardless of holidays.</p>
 
 <h3>Where should I stay for a Palm Springs gallery-focused trip?</h3>
-<p>The Sundune puts you inside Palm Springs itself, a five-minute drive from both downtown and the Uptown Design District. If you're combining galleries with a broader Coachella Valley trip, Cozy Cactus or Terra Luz in Indio are about 25 minutes out and work well as a home base.</p>
+<p>The Sundune puts you inside Palm Springs itself, a short drive from the Uptown Design District and about ten minutes from downtown. If you're combining galleries with a broader Coachella Valley trip, Cozy Cactus or Terra Luz in Indio are about 25 minutes out and work well as a home base.</p>
 
 <p>I still haven't made it to every gallery on this list in one visit, and I've had years to try. That's kind of the point. Palm Springs rewards the slow version of a trip more than the checklist version. If you're planning the rest of your stay around midcentury architecture too, the <a href="/blog/palm-springs-midcentury-architecture/">Palm Springs midcentury architecture walk</a> pairs naturally with a gallery day, and if you're building a trip around <a href="/blog/modernism-week-palm-springs/">Modernism Week</a> specifically, most of these galleries run extended hours and special shows that week.</p>
