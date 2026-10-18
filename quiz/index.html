@@ -145,42 +145,29 @@
         }
         .start-btn:hover { background: #4f6755; }
 
-        /* PROGRESS */
-        .progress-wrap {
-            max-width: 640px;
-            margin: 0 auto 2rem;
-            padding: 0 5%;
-        }
-        .progress-top {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.8rem;
+        /* STEP TRACKER */
+        .step-tracker {
+            background: white;
+            padding: 1.75rem 2.5rem 0;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
             color: #595959;
-            margin-bottom: 0.5rem;
         }
-        .progress-bar {
-            height: 3px;
-            background: #ddd;
-            border-radius: 2px;
-            overflow: hidden;
-        }
-        .progress-fill {
-            height: 100%;
-            background: var(--terracotta-dark);
-            border-radius: 2px;
-            transition: width 0.4s ease;
-        }
+        .quiz-wrap.is-result { max-width: 1120px; }
+        .step-tracker.hidden { display: none; }
 
         /* QUIZ CARD */
         .quiz-wrap {
             max-width: 640px;
             margin: 0 auto;
-            padding: 0 5% 4rem;
+            padding: 2rem 5% 4rem;
         }
 
         .question-card {
             background: white;
-            padding: 2.5rem;
+            padding: 1rem 2.5rem 2.5rem;
             display: none;
             animation: fadeUp 0.35s ease;
         }
@@ -203,35 +190,46 @@
         .options {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 0.85rem;
         }
 
         .option {
             display: flex;
             align-items: flex-start;
             gap: 1rem;
-            padding: 1rem 1.25rem;
-            border: 1.5px solid #e8e4df;
+            padding: 1.1rem 1.25rem;
+            min-height: 56px;
+            border: 1px solid #EFECE6;
+            border-radius: 14px;
             cursor: pointer;
-            transition: border-color 0.15s, background 0.15s;
-            background: white;
+            background-color: #fff;
             text-align: left;
             width: 100%;
             font-family: var(--sans);
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 250ms ease, border-color 250ms ease, transform 250ms ease, box-shadow 250ms ease;
         }
-        .option:hover {
-            border-color: var(--terracotta);
-            background: #fdf9f6;
+        @media (hover: hover) {
+            .option:hover {
+                background-color: #F1F3EE;
+                border-color: #d5dcd3;
+                transform: translateY(-1px);
+                box-shadow: 0 6px 18px rgba(96,124,103,.12);
+            }
         }
-        .option.selected {
-            border-color: var(--terracotta-dark);
-            background: #fdf9f6;
+        .option:active { background-color: #F1F3EE; transform: scale(.992); }
+        .option:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+        .option.selected,
+        .option.selected:hover {
+            background-color: #F1F3EE;
+            border-color: var(--sage);
+            box-shadow: 0 0 0 1px var(--sage);
         }
         .option-letter {
             flex-shrink: 0;
-            width: 28px;
-            height: 28px;
-            border: 1.5px solid #ccc;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #d9d5cd;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -239,18 +237,24 @@
             font-size: 0.75rem;
             font-weight: 600;
             color: #595959;
-            transition: border-color 0.15s, background 0.15s, color 0.15s;
+            background-color: #fff;
+            transition: background-color 250ms ease, border-color 250ms ease, color 250ms ease;
         }
         .option.selected .option-letter {
-            border-color: var(--terracotta-dark);
-            background: var(--terracotta-dark);
+            border-color: var(--sage);
+            background-color: var(--sage);
             color: white;
         }
         .option-text {
             font-size: 0.95rem;
             line-height: 1.5;
             color: var(--charcoal);
-            padding-top: 2px;
+            padding-top: 4px;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .option, .option-letter { transition: none; }
+            .option:hover, .option:active { transform: none; }
+            .question-card, .result-card { animation: none; }
         }
 
         .next-btn {
@@ -281,38 +285,41 @@
         .quiz-email .qe-note { margin: 0.75rem 0 0; font-size: 0.8rem; color: #595959; }
 
 
-        /* RESULT */
+        /* RESULT: split magazine layout */
         .result-card {
             background: white;
             display: none;
             animation: fadeUp 0.35s ease;
             overflow: hidden;
+            position: relative;
         }
         .result-card.active { display: block; }
 
         .result-hero-img {
             width: 100%;
-            height: 260px;
+            height: 48vh;
+            max-height: 460px;
+            min-height: 220px;
             object-fit: cover;
             display: block;
         }
 
-        .result-body {
-            padding: 2.5rem;
-        }
+        .result-body { padding: 2rem 1.5rem 2.25rem; }
 
         .result-eyebrow {
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.12em;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.16em;
             text-transform: uppercase;
-            margin-bottom: 0.5rem;
+            color: #595959;
+            margin-bottom: 0.9rem;
         }
         .result-name {
             font-family: var(--serif);
-            font-size: 2.2rem;
+            font-size: clamp(2rem, 4vw, 2.8rem);
             font-weight: 400;
-            margin-bottom: 0.25rem;
+            line-height: 1.1;
+            margin-bottom: 0.4rem;
         }
         .result-location {
             font-size: 0.85rem;
@@ -321,11 +328,12 @@
         }
         .result-tagline {
             font-family: var(--serif);
-            font-size: 1.2rem;
+            font-size: clamp(1.6rem, 3vw, 2.4rem);
             font-style: italic;
-            color: #595959;
-            margin-bottom: 1.25rem;
-            line-height: 1.4;
+            font-weight: 400;
+            color: #B85A38;
+            margin-bottom: 1.5rem;
+            line-height: 1.25;
         }
         .result-desc {
             font-size: 0.95rem;
@@ -342,83 +350,88 @@
         .btn-primary {
             display: block;
             text-align: center;
-            padding: 1rem;
+            padding: 1rem 1.5rem;
+            background: var(--sage);
+            border: 1.5px solid var(--sage);
+            border-radius: 999px;
             color: white;
             text-decoration: none;
             font-family: var(--sans);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            transition: opacity 0.2s;
+            transition: background-color 0.2s, color 0.2s;
         }
-        .btn-primary:hover { opacity: 0.88; }
-        .btn-secondary {
-            display: block;
-            text-align: center;
-            padding: 0.9rem;
-            border: 1.5px solid var(--charcoal);
-            color: var(--charcoal);
-            text-decoration: none;
-            font-family: var(--sans);
-            font-size: 0.85rem;
-            font-weight: 500;
-            cursor: pointer;
-            background: white;
-            transition: background 0.2s;
-            width: 100%;
-        }
-        .btn-secondary:hover { background: var(--cream); }
+        .btn-primary:hover { background: #4f6755; border-color: #4f6755; }
+        .btn-primary + .btn-primary { background: transparent; color: var(--sage); }
+        .btn-primary + .btn-primary:hover { background: #F1F3EE; color: #4f6755; }
 
         .share-row {
-            margin-top: 1.5rem;
-            text-align: center;
+            margin-top: 1.75rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid #EFECE6;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem 1rem;
         }
         .share-row p {
-            font-size: 0.8rem;
+            font-size: 0.72rem;
             color: #595959;
-            margin-bottom: 0.75rem;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
         }
-        .share-btns {
-            display: flex;
-            gap: 0.75rem;
-            justify-content: center;
-        }
+        .share-btns { display: flex; gap: 0.5rem; }
         .share-btn {
-            padding: 0.5rem 1.25rem;
-            font-size: 0.8rem;
+            padding: 0.5rem 1.1rem;
+            font-size: 0.78rem;
             font-weight: 600;
-            border: 1.5px solid #ddd;
+            border: 1px solid #d9d5cd;
+            border-radius: 999px;
             background: white;
             cursor: pointer;
             font-family: var(--sans);
-            transition: border-color 0.15s;
+            transition: border-color 0.15s, background-color 0.15s;
         }
-        .share-btn:hover { border-color: var(--charcoal); }
+        .share-btn:hover { border-color: var(--sage); background: #F1F3EE; }
 
-        .retake-row {
-            text-align: center;
-            margin-top: 1.5rem;
-        }
-        .retake-link {
-            font-size: 0.85rem;
-            color: #595959;
-            cursor: pointer;
-            text-decoration: underline;
-            background: none;
+        .btn-secondary {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0;
             border: none;
+            background: none;
+            color: #595959;
             font-family: var(--sans);
+            font-size: 0.85rem;
+            text-decoration: underline;
+            cursor: pointer;
+            align-self: flex-start;
         }
-        .retake-link:hover { color: var(--charcoal); }
+        .btn-secondary:hover { color: var(--charcoal); }
+
+        @media (min-width: 900px) {
+            .result-card.active { padding-left: 54%; min-height: 640px; }
+            .result-hero-img {
+                position: absolute; left: 0; top: 0; bottom: 0;
+                width: 54%; height: 100%; max-height: none; min-height: 0;
+            }
+            .result-body {
+                padding: 3.25rem 3rem;
+                display: flex; flex-direction: column; justify-content: center;
+                min-height: 640px;
+            }
+        }
 
         /* HIDDEN */
         .screen { display: none; }
         .screen.active { display: block; }
 
         @media (max-width: 480px) {
-            .question-card, .result-body { padding: 1.75rem; }
+            .question-card { padding: 1.5rem 1.25rem 1.75rem; }
+            .step-tracker { padding: 1.25rem 1.25rem 0; }
             .quiz-hero { min-height: 55vh; }
             .quiz-hero-inner { padding: 5rem 5% 2rem; }
             .quiz-hero .eyebrow { font-size: 0.72rem; letter-spacing: 0.16em; }
@@ -465,17 +478,8 @@
 
 <!-- SCREEN: Quiz -->
 <div id="screen-quiz" class="screen">
-    <div class="progress-wrap">
-        <div class="progress-top">
-            <span id="q-counter">Question 1 of 6</span>
-            <span id="q-pct">0%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
-        </div>
-    </div>
-
-    <div class="quiz-wrap">
+    <div class="quiz-wrap" id="quiz-wrap">
+        <p class="step-tracker" id="q-counter">Question 1 of 6</p>
 
         <!-- Q1 -->
         <div class="question-card active" data-q="0">
@@ -628,14 +632,14 @@
                  alt="Cozy Cactus vacation rental in Indio"
                  loading="eager" width="640" height="260">
             <div class="result-body">
-                <p class="result-eyebrow" style="color: #00877b;">Your match</p>
+                <p class="result-eyebrow">Your match</p>
                 <h2 class="result-name">The Cozy Cactus</h2>
                 <p class="result-location">Indio, CA &middot; 3BR/2BA &middot; Sleeps 8</p>
                 <p class="result-tagline">"Where parents finally rest on vacation."</p>
                 <p class="result-desc">You don't need a picture-perfect house. You need a house that actually thought about you. Cozy Cactus has a pack-n-play already set up, sound machines in every room, a putting green, a community pool steps away, and a labeling system guests rave about in every review. You'll spend less time managing logistics and more time actually being on vacation.</p>
                 <div class="result-actions">
-                    <a href="/cozy-cactus/" class="btn-primary" style="background: #00877b;" onclick="gtag('event','quiz_cta_click',{property:'cozy-cactus'})">View Cozy Cactus</a>
-                    <a href="https://www.airbnb.com/h/cozy-cactus" target="_blank" class="btn-primary" style="background: #595959;" onclick="gtag('event','quiz_book_click',{property:'cozy-cactus'})">Check Availability on Airbnb</a>
+                    <a href="/cozy-cactus/" class="btn-primary" onclick="gtag('event','quiz_cta_click',{property:'cozy-cactus'})">View Cozy Cactus</a>
+                    <a href="https://www.airbnb.com/h/cozy-cactus" target="_blank" class="btn-primary" onclick="gtag('event','quiz_book_click',{property:'cozy-cactus'})">Check Availability on Airbnb</a>
                     <button class="btn-secondary" onclick="retakeQuiz()">Retake the quiz</button>
                 </div>
                 <div class="share-row">
@@ -654,14 +658,14 @@
                  alt="Terra Luz saltwater pool with terracotta deck and covered patio in Indio California"
                  loading="eager" width="1024" height="1536">
             <div class="result-body">
-                <p class="result-eyebrow" style="color: #8A4A2E;">Your match</p>
+                <p class="result-eyebrow">Your match</p>
                 <h2 class="result-name">Terra Luz</h2>
                 <p class="result-location">Indio, CA &middot; 3BR/2BA &middot; Kahlo Blue Pool</p>
                 <p class="result-tagline">"A place you'll feel before you can describe."</p>
                 <p class="result-desc">Terra Luz is a Latin/Cuban-inspired sanctuary designed from the ground up terracotta courtyard, Kahlo blue saltwater pool, wabi-sabi warmth collected over time rather than staged overnight. It's walking distance to Empire Polo Club, no shuttle required. It's the kind of house where the aesthetic does the heavy lifting, and the photos ask themselves. You know a good stay when you're in one. This is it.</p>
                 <div class="result-actions">
-                    <a href="/terra-luz/" class="btn-primary" style="background: #8A4A2E;" onclick="gtag('event','quiz_cta_click',{property:'terra-luz'})">View Terra Luz</a>
-                    <a href="/terra-luz/#booking" class="btn-primary" style="background: #595959;" onclick="gtag('event','quiz_book_click',{property:'terra-luz'})">Check Availability</a>
+                    <a href="/terra-luz/" class="btn-primary" onclick="gtag('event','quiz_cta_click',{property:'terra-luz'})">View Terra Luz</a>
+                    <a href="/terra-luz/#booking" class="btn-primary" onclick="gtag('event','quiz_book_click',{property:'terra-luz'})">Check Availability</a>
                     <button class="btn-secondary" onclick="retakeQuiz()">Retake the quiz</button>
                 </div>
                 <div class="share-row">
@@ -680,14 +684,14 @@
                  alt="The Sundune Palm Springs living room with camel sofa, orange front door, and balcony"
                  loading="eager" width="1024" height="649">
             <div class="result-body">
-                <p class="result-eyebrow" style="color: #3D5F78;">Your match</p>
+                <p class="result-eyebrow">Your match</p>
                 <h2 class="result-name">The Sundune</h2>
                 <p class="result-location">Palm Springs, CA &middot; 2BR/2BA &middot; Coastal Desert</p>
                 <p class="result-tagline">"For people who've earned the slow trip."</p>
                 <p class="result-desc">The Sundune sits in Palm Springs proper farmers markets, independent coffee shops, art galleries, and a very specific kind of afternoon light that makes you forget what day it is. Coastal desert meets mid-century calm. You come here to do less and feel more. The kind of trip you plan for yourself, not for anyone's feed.</p>
                 <div class="result-actions">
-                    <a href="/the-sundune/" class="btn-primary" style="background: #3D5F78;" onclick="gtag('event','quiz_cta_click',{property:'the-sundune'})">View The Sundune</a>
-                    <a href="mailto:indigopalmco@gmail.com?subject=Sundune Inquiry" class="btn-primary" style="background: #595959;" onclick="gtag('event','quiz_book_click',{property:'the-sundune'})">Inquire to Book</a>
+                    <a href="/the-sundune/" class="btn-primary" onclick="gtag('event','quiz_cta_click',{property:'the-sundune'})">View The Sundune</a>
+                    <a href="mailto:indigopalmco@gmail.com?subject=Sundune Inquiry" class="btn-primary" onclick="gtag('event','quiz_book_click',{property:'the-sundune'})">Inquire to Book</a>
                     <button class="btn-secondary" onclick="retakeQuiz()">Retake the quiz</button>
                 </div>
                 <div class="share-row">
@@ -706,14 +710,14 @@
                  alt="The Well vacation rental in Palm Springs"
                  loading="eager" width="640" height="260">
             <div class="result-body">
-                <p class="result-eyebrow" style="color: #4A6050;">Your match</p>
+                <p class="result-eyebrow">Your match</p>
                 <h2 class="result-name">The Well</h2>
                 <p class="result-location">Palm Springs, CA &middot; 1BR/1BA &middot; Sleeps 2</p>
                 <p class="result-tagline">"Quiet done right."</p>
                 <p class="result-desc">The Well is for people who know exactly what they need and don't require anyone to understand it. One bedroom, Palm Springs address, clean lines, and enough quiet that you'll actually finish what you came here to think about. Minimalist by design, not by accident. You travel light, you sleep well, and you leave clearer than you arrived.</p>
                 <div class="result-actions">
-                    <a href="/the-well/" class="btn-primary" style="background: #4A6050;" onclick="gtag('event','quiz_cta_click',{property:'the-well'})">View The Well</a>
-                    <a href="mailto:indigopalmco@gmail.com?subject=The Well Inquiry" class="btn-primary" style="background: #595959;" onclick="gtag('event','quiz_book_click',{property:'the-well'})">Inquire to Book</a>
+                    <a href="/the-well/" class="btn-primary" onclick="gtag('event','quiz_cta_click',{property:'the-well'})">View The Well</a>
+                    <a href="mailto:indigopalmco@gmail.com?subject=The Well Inquiry" class="btn-primary" onclick="gtag('event','quiz_book_click',{property:'the-well'})">Inquire to Book</a>
                     <button class="btn-secondary" onclick="retakeQuiz()">Retake the quiz</button>
                 </div>
                 <div class="share-row">
@@ -753,10 +757,10 @@
     }
 
     function updateProgress() {
-        const pct = Math.round((currentQ / TOTAL) * 100);
-        document.getElementById('q-counter').textContent = 'Question ' + (currentQ + 1) + ' of ' + TOTAL;
-        document.getElementById('q-pct').textContent = pct + '%';
-        document.getElementById('progress-fill').style.width = pct + '%';
+        const c = document.getElementById('q-counter');
+        c.classList.remove('hidden');
+        c.textContent = 'Question ' + (currentQ + 1) + ' of ' + TOTAL;
+        document.getElementById('quiz-wrap').classList.remove('is-result');
     }
 
     function selectOption(el) {
@@ -834,10 +838,11 @@
         winnerName = names[winner];
         document.getElementById('quiz-email').classList.add('show');
 
-        // Update progress to 100%
-        document.getElementById('q-pct').textContent = '100%';
-        document.getElementById('progress-fill').style.width = '100%';
-        document.getElementById('q-counter').textContent = 'Your result';
+        // Result screen: the card's own "Your match" eyebrow takes the tracker slot
+        const c = document.getElementById('q-counter');
+        c.textContent = 'Your match';
+        c.classList.add('hidden');
+        document.getElementById('quiz-wrap').classList.add('is-result');
     }
 
     function retakeQuiz() {
