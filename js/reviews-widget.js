@@ -7,6 +7,7 @@
   + '.ipr-bigstars{display:flex;justify-content:center;gap:4px}'
   + '.ipr-bigstars svg{width:clamp(28px,3.2vw,40px);height:clamp(28px,3.2vw,40px);fill:' + CORAL + '}'
   + '.ipr-logo{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:6px;color:' + CORAL + '}'
+  + '.ipr:not(.ipr-serif) .ipr-bigstars svg{fill:#fff}.ipr:not(.ipr-serif) .ipr-logo{color:#fff}'
   + '.ipr-logo svg{width:34px;height:34px}'
   + '.ipr-logo span{font-family:"Jost",system-ui,sans-serif;font-weight:600;font-size:34px;line-height:1;letter-spacing:-.5px;margin-top:-3px}'
   + '.ipr-serif{background:transparent;color:#2c2c2c}.ipr-serif h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:2rem;color:#2c2c2c;margin-bottom:.5rem}.ipr-serif .ipr-sub{color:#595959;font-size:.95rem}'
