@@ -472,6 +472,14 @@
             line-height: 1.1;
         }
 
+        .hero h1 .hero-subtitle {
+            display: block;
+            font-size: clamp(1rem, 4.6vw, 1.75rem);
+            font-weight: 500;
+            white-space: nowrap;
+            margin-top: 0.4rem;
+        }
+
         .hero .location {
             color: var(--turquoise);
             font-size: 1.1rem;
@@ -1024,7 +1032,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <video class="hero-video" id="heroVideo" muted loop playsinline preload="metadata" poster="/cozy-cactus/photos/CozyCactus2026-0004.webp" aria-hidden="true" tabindex="-1" data-src="/cozy-cactus/video/cozy-cactus-hero"></video>
         <div class="hero-content">
             <div class="property-tag">FAMILY ADVENTURE</div>
-            <h1>The Cozy Cactus: Made for Families</h1>
+            <h1>The Cozy Cactus<span class="hero-subtitle">Made for Families</span></h1>
             <p class="location">Indio, California</p>
             <p class="tagline">The vacation rental where parents get some rest.</p>
             <p style="font-size: 0.9rem; color: #00877b; font-weight: 600; margin-bottom: 1rem;">&#11088; 4.97 &middot; 146 reviews &middot; Airbnb Guest Favorite</p>

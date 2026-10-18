@@ -491,6 +491,14 @@
             line-height: 1.1;
         }
 
+        .hero h1 .hero-subtitle {
+            display: block;
+            font-size: clamp(1rem, 4.6vw, 1.75rem);
+            font-weight: 500;
+            white-space: nowrap;
+            margin-top: 0.4rem;
+        }
+
         .hero .location {
             color: var(--dusty-blue);
             font-size: 1.1rem;
@@ -985,7 +993,7 @@ img[id^="photo-"] { scroll-margin-top: 6rem; }
         <video class="hero-video" muted loop playsinline preload="metadata" poster="/the-sundune/photos/Sundune2026-0120.webp" aria-hidden="true" tabindex="-1" disablepictureinpicture data-src="/the-sundune/video/sundune-hero"></video>
         <div class="hero-content">
             <div class="property-tag">COASTAL DESERT</div>
-            <h1>The Sundune</h1>
+            <h1>The Sundune<span class="hero-subtitle">Coastal Calm in Palm Springs</span></h1>
             <p class="location">Palm Springs, California</p>
             <p class="tagline">Coastal, unhurried, ten minutes from Palm Canyon.</p>
         </div>

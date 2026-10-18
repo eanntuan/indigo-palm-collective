@@ -367,6 +367,14 @@
             line-height: 1.1;
         }
 
+        .hero h1 .hero-subtitle {
+            display: block;
+            font-size: clamp(1rem, 4.6vw, 1.75rem);
+            font-weight: 500;
+            white-space: nowrap;
+            margin-top: 0.4rem;
+        }
+
         .hero .location {
             color: var(--charcoal);
             font-size: 1.1rem;
@@ -793,7 +801,7 @@
     <section class="hero" role="img" aria-label="The Well wellness retreat with southwestern minimalist design in Palm Springs">
         <div class="hero-content">
             <div class="property-tag">WELLNESS RETREAT</div>
-            <h1>The Well: Minimalist Palm Springs Retreat</h1>
+            <h1>The Well<span class="hero-subtitle">Minimalist Palm Springs Retreat</span></h1>
             <p class="location">Palm Springs, California</p>
             <p class="tagline">Where minimalism feels like a hug.</p>
         </div>
