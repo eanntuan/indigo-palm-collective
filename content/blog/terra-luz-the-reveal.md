@@ -2,10 +2,10 @@
 title: "Terra Luz Reveal: Inside the Renovation, Room by Room"
 date: 2026-05-29
 metaDescription: "The full reveal of Terra Luz, our Indio vacation rental. Walk through every room, what we built, what we bought, what we skipped, and what surprised us."
-ogImage: /blog/images/terra-luz-exterior.webp
-heroImage: /blog/images/terra-luz-front-entrance.webp
-heroPosition: "center 45%"
-heroAlt: "Terra Luz vacation rental exterior in Indio California with terracotta tones and lush landscaping"
+ogImage: /blog/images/terra-luz-wild-tropics-nook-wide.webp
+heroImage: /blog/images/terra-luz-wild-tropics-nook-wide.webp
+heroPosition: "center 70%"
+heroAlt: "Terra Luz Wild Tropics bedroom nook in Indio California with two blue velvet chairs against botanical wallpaper"
 keywords:
   - Terra Luz vacation rental reveal
   - Indio vacation rental renovation

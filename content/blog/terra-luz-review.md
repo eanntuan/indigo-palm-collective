@@ -2,10 +2,10 @@
 title: "Terra Luz Vacation Rental in Indio: An Honest Review"
 date: 2026-02-14
 metaDescription: "Terra Luz in Indio: 4.98 stars, 146 reviews. Private saltwater pool, Latin/Cuban design. What guests consistently love and what to know before booking."
-ogImage: /blog/images/terra-luz-pool-backyard.webp
-heroImage: /blog/images/terra-luz-pool-umbrella.webp
-heroPosition: "center 55%"
-heroAlt: "Terra Luz saltwater pool with in-water loungers and Desert Marigold umbrella, Indio California"
+ogImage: /blog/images/terra-luz-primary-bedroom-wide-3x2.webp
+heroImage: /blog/images/terra-luz-primary-bedroom-wide-3x2.webp
+heroPosition: "center 60%"
+heroAlt: "Terra Luz primary bedroom in Indio California with sage green walls, terracotta tile floor, king bed and ceiling fan"
 keywords:
   - Terra Luz review
   - Terra Luz Indio review

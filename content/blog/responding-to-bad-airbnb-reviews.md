@@ -2,10 +2,10 @@
 title: "How to Respond to a Bad Airbnb Review Without Losing Stars"
 date: 2026-07-14
 metaDescription: "How to respond to a negative Airbnb review without making it worse. A 4.98-star host shares the exact response framework we use at Indigo Palm."
-ogImage: /blog/images/terra-luz-pool-umbrella.webp
-heroImage: /blog/images/terra-luz-pool-umbrella.webp
-heroAlt: "Terra Luz vacation rental pool with umbrella in Indio California on a sunny desert day"
-heroPosition: "center 50%"
+ogImage: /blog/images/terra-luz-third-bedroom-rattan-wide.webp
+heroImage: /blog/images/terra-luz-third-bedroom-rattan-wide.webp
+heroAlt: "Sunlit Terra Luz guest bedroom with a made bed, rattan headboard and terracotta tile floor in Indio California"
+heroPosition: "center 55%"
 keywords:
   - how to respond to bad airbnb review
   - responding to negative vacation rental review

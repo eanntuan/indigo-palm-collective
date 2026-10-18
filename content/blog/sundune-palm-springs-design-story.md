@@ -3,10 +3,10 @@ title: "Inside The Sundune: A Palm Springs Coastal Design Story"
 date: 2025-11-19
 dateModified: 2026-07-30
 metaDescription: "The design story behind The Sundune at Palm Springs: coastal-desert vibes, sun-faded palettes, and a surf-inspired sanctuary a short drive from downtown."
-ogImage: /blog/images/ps-orange-door-mcm.webp
-heroImage: /blog/images/ps-blue-door-cacti.webp
-heroPosition: "center 60%"
-heroAlt: "Vibrant orange mid-century modern door with desert landscaping in Palm Springs, California"
+ogImage: /blog/images/sundune-bedroom-palm-wallpaper-surfboard-hero.webp
+heroImage: /blog/images/sundune-bedroom-palm-wallpaper-surfboard-hero.webp
+heroPosition: "center 55%"
+heroAlt: "Sundune bedroom with blue palm-leaf wallpaper, rattan headboard, white linens, and a wooden surfboard mounted on the wall"
 keywords:
   - Palm Springs vacation rental design
   - The Sundune Palm Springs

@@ -3,10 +3,10 @@ title: "5 Things to Check Before Booking a Coachella Valley Rental"
 date: 2025-11-07
 dateModified: 2026-07-30
 metaDescription: "From pool access to honest reviews to a host who responds. Five things to check before booking a Coachella Valley vacation rental in Indio or Palm Springs."
-ogImage: /blog/images/palm-springs-hotel-pool.webp
-heroImage: /blog/images/palm-springs-hotel-pool.webp
-heroPosition: "center bottom"
-heroAlt: "Private pool and backyard at a Coachella Valley vacation rental in Indio California with lounge chairs and palm trees"
+ogImage: /blog/images/palm-springs-community-pool-palms.webp
+heroImage: /blog/images/palm-springs-community-pool-palms.webp
+heroPosition: "center 40%"
+heroAlt: "Turquoise community pool at a Palm Springs condo complex, surrounded by tall palm trees, landscaped walkways and two-story buildings"
 keywords:
   - Coachella Valley vacation rental
   - best vacation rental Indio CA

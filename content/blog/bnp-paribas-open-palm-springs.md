@@ -3,9 +3,10 @@ title: "Where to Stay for the BNP Paribas Open: 12 Miles Out"
 date: 2026-06-22
 dateModified: 2026-10-01
 metaDescription: "Where to stay for the BNP Paribas Open 2027: The Sundune in Palm Springs sleeps 4 with 3 king beds, 12 miles from Indian Wells Tennis Garden, shared pool."
-ogImage: /blog/images/bnp-paribas-stadium-packed.webp
-heroImage: /blog/images/bnp-paribas-stadium-packed.webp
-heroAlt: "Packed Stadium 1 at the BNP Paribas Open in Indian Wells California during a professional tennis match"
+ogImage: /blog/images/palm-springs-downtown-palm-canyon-drive-hero.webp
+heroImage: /blog/images/palm-springs-downtown-palm-canyon-drive-hero.webp
+heroAlt: "Downtown Palm Springs shopping and dining street with tall palm trees, Spanish-style buildings, and blue sky"
+heroPosition: "center 40%"
 keywords:
   - BNP Paribas Open Palm Springs
   - BNP Paribas Open where to stay

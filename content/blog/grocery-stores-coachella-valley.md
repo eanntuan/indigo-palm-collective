@@ -3,10 +3,10 @@ title: "Trader Joe's, Whole Foods, or Stater Bros in Indio?"
 date: 2026-04-06
 dateModified: 2026-09-16
 metaDescription: "Trader Joe's, Whole Foods, Jensen's, or Stater Bros? Here's which grocery store to hit first, based on where your rental is in the Coachella Valley."
-ogImage: /blog/images/west-elm-dining.webp
-heroImage: /blog/images/west-elm-dining.webp
-heroAlt: "Shaded outdoor dining table on a covered patio overlooking desert rock formations, set for a home-cooked meal"
-heroPosition: "center 70%"
+ogImage: /blog/images/cozy-cactus-kitchen-strawberries-counter.webp
+heroImage: /blog/images/cozy-cactus-kitchen-strawberries-counter.webp
+heroAlt: "Fresh strawberries on a cutting board beside a rattan tray and glass pitcher on a speckled stone kitchen counter"
+heroPosition: "center 55%"
 keywords:
   - grocery stores near palm springs
   - trader joes palm springs

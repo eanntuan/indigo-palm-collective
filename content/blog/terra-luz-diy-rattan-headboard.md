@@ -2,9 +2,9 @@
 title: "DIY Rattan Headboard for Under $200: The IKEA IVAR Door Hack"
 date: 2026-06-12
 metaDescription: "How we built a wall-to-wall bamboo panel headboard from IKEA IVAR doors for under $200. Full step-by-step, cost breakdown, and what we'd do differently."
-ogImage: /blog/images/terra-luz-cali-room-hero.webp
-heroImage: /blog/images/terra-luz-cali-room-wide.webp
-heroAlt: "Wall-to-wall rattan cane panel headboard made from IKEA cabinet doors in the Cali Room at Terra Luz vacation rental in Indio California"
+ogImage: /blog/images/terra-luz-cali-room-headboard-sunlit.webp
+heroImage: /blog/images/terra-luz-cali-room-headboard-sunlit.webp
+heroAlt: "Cali Room bed at Terra Luz in Indio with a wall-to-wall rattan panel headboard, amber pillows, and wall sconces"
 heroPosition: "center 55%"
 keywords:
   - diy rattan headboard ikea hack

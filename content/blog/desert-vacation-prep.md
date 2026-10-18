@@ -2,10 +2,10 @@
 title: "First-Time Desert Vacation Prep: What You Need to Know"
 date: 2026-02-02
 metaDescription: "First time in the Coachella Valley? What to pack, what to expect, and how to make the most of desert heat, morning light, and pool days when you arrive."
-ogImage: /blog/images/ps-desert-valley-view.webp
-heroImage: /blog/images/ps-desert-valley-view.webp
-heroPosition: "center bottom"
-heroAlt: "Desert valley view with palm trees and mountain backdrop in Coachella Valley California"
+ogImage: /blog/images/box-canyon-mecca-hills-salton-sea-overlook.webp
+heroImage: /blog/images/box-canyon-mecca-hills-salton-sea-overlook.webp
+heroPosition: "center 12%"
+heroAlt: "Eroded desert badlands in the foreground with the Salton Sea and a distant mountain range stretching across the horizon"
 keywords:
   - desert vacation tips
   - Coachella Valley vacation

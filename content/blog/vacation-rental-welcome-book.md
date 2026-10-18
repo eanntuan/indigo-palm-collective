@@ -2,10 +2,10 @@
 title: "Vacation Rental Welcome Book: What to Include and Skip"
 date: 2026-07-07
 metaDescription: "Everything that belongs in a vacation rental welcome book, and what to leave out. The 10-section template from a 191-review host in the Coachella Valley."
-ogImage: /blog/images/terra-luz-kitchen-hero.webp
-heroImage: /blog/images/terra-luz-kitchen-hero.webp
-heroAlt: "Terra Luz vacation rental kitchen in Indio California with marble waterfall island and open layout"
-heroPosition: "center 60%"
+ogImage: /blog/images/cozy-cactus-entry-bench-rug.webp
+heroImage: /blog/images/cozy-cactus-entry-bench-rug.webp
+heroAlt: "Entryway at The Cozy Cactus in Indio with a gold-framed bench, potted monstera, and a colorful rug on tile"
+heroPosition: "center 70%"
 keywords:
   - vacation rental welcome book
   - airbnb welcome book template

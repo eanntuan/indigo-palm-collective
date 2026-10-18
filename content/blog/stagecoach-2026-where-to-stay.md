@@ -2,9 +2,10 @@
 title: "Stagecoach 2026: Best Places to Stay Near Indio, CA"
 date: 2026-02-08
 metaDescription: "Stagecoach 2026 (April 25-27, Indio) with Post Malone headlining. Honest guide to where to stay, how far is too far, and what to know about the drive home."
-ogImage: /blog/images/cozy-cactus-aerial.webp
-heroImage: /blog/images/cozy-cactus-aerial.webp
-heroAlt: "Aerial view of a private pool vacation rental in Indio California near the Stagecoach and Coachella festival grounds"
+ogImage: /blog/images/cozy-cactus-covered-patio-putting-green.webp
+heroImage: /blog/images/cozy-cactus-covered-patio-putting-green.webp
+heroAlt: "Covered patio at The Cozy Cactus in Indio with wicker seating, string lights, and a putting green beside a painted wall"
+heroPosition: "center 60%"
 keywords:
   - stagecoach 2026 where to stay
   - stagecoach festival accommodation

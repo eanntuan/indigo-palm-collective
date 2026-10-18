@@ -3,10 +3,10 @@ title: "Indio From Palm Springs: 30-40 Min Drive, Which to Pick"
 date: 2026-02-05
 dateModified: 2026-10-01
 metaDescription: "Indio is about 25 miles from Palm Springs, 30-40 minutes on the I-10. We own rentals in both cities, so here is which one fits your trip, honestly."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-mcm-neighborhood.webp
-heroPosition: "center 40%"
-heroAlt: "Palm tree-lined boulevard with the San Jacinto Mountains rising behind it in Palm Springs, California"
+ogImage: /blog/images/mexican-restaurants-palm-springs-2.webp
+heroImage: /blog/images/mexican-restaurants-palm-springs-2.webp
+heroPosition: "center 60%"
+heroAlt: "Downtown Palm Springs street corner with terracotta and yellow Spanish-style buildings, tall palms and a blue sky above"
 keywords:
   - palm springs vs indio
   - where to stay coachella valley

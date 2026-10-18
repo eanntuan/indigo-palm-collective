@@ -3,10 +3,10 @@ title: "How to Get from LAX to Palm Springs: Every Option Compared"
 date: 2025-10-29
 dateModified: 2026-07-30
 metaDescription: "LAX to Palm Springs is about 2 hours by car without traffic, 120 miles on the I-10. Drive, shuttle, fly into PSP, or Amtrak, compared with real times and costs."
-ogImage: /blog/images/ps-boulevard-palms-mountains.webp
-heroImage: /blog/images/ps-mcm-neighborhood.webp
-heroPosition: "center 40%"
-heroAlt: "Palm-lined boulevard in Palm Springs with San Jacinto mountains in the background on a clear day"
+ogImage: /blog/images/box-canyon-road-mecca-hills.webp
+heroImage: /blog/images/box-canyon-road-mecca-hills.webp
+heroPosition: "center 70%"
+heroAlt: "Two-lane desert road with a yellow center line curving past a tilted rocky hillside under a deep blue sky"
 keywords:
   - LAX to Palm Springs
   - how to get from LAX to Palm Springs

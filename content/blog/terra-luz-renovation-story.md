@@ -2,10 +2,10 @@
 title: "Terra Luz Renovation: How We Rebuilt the House Room by Room"
 date: 2026-05-06
 metaDescription: "Terra Luz renovation: Wild Tropics wallpaper, terracotta tile, Kahlo Blue pool deck, and a Latin/Cuban design rebuilt room by room. What we made and why."
-ogImage: /blog/images/terra-luz-pool-backyard.webp
-heroImage: /blog/images/terra-luz-front-entrance.webp
-heroPosition: "center 45%"
-heroAlt: "Terra Luz private saltwater pool with Kahlo Blue water and terracotta patio in Indio California"
+ogImage: /blog/images/terra-luz-kitchen-orange-wall-wide.webp
+heroImage: /blog/images/terra-luz-kitchen-orange-wall-wide.webp
+heroPosition: "center 50%"
+heroAlt: "Terra Luz kitchen in Indio California with geometric tile backsplash, terracotta orange walls and sage green cabinet"
 keywords:
   - Terra Luz renovation
   - vacation rental renovation

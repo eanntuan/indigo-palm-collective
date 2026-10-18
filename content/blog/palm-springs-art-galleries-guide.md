@@ -3,10 +3,10 @@ title: "Palm Springs Art Galleries: Uptown and Backstreet Districts"
 date: 2026-07-11
 dateModified: 2026-09-16
 metaDescription: "Palm Springs art galleries guide: the Uptown Design District, Backstreet Art District, Janssen Artspace, and where to start your walk downtown."
-ogImage: /blog/images/palm-springs-art-museum-sculptures.webp
-heroImage: /blog/images/palm-springs-mcm-neighborhood.webp
-heroPosition: "center 40%"
-heroAlt: "Forever Marilyn statue on Museum Way next to the Palm Springs Art Museum, palm trees and mountains behind it"
+ogImage: /blog/images/tropicale-palm-springs.webp
+heroImage: /blog/images/tropicale-palm-springs.webp
+heroPosition: "center 75%"
+heroAlt: "Coral pink mid-century building with a teal Tropicale sign in Palm Springs, framed by palm trees under blue sky"
 keywords:
   - Palm Springs art galleries
   - Uptown Design District galleries

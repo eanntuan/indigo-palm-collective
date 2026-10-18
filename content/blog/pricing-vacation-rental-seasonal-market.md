@@ -2,9 +2,9 @@
 title: "How to Price a Vacation Rental in a Seasonal Market"
 date: 2026-07-16
 metaDescription: "Pricing a vacation rental in a market with extreme seasonality. What we do before Coachella, between festivals, and through dead summer at Indigo Palm."
-ogImage: /blog/images/terra-luz-outdoor-wide.webp
-heroImage: /blog/images/terra-luz-outdoor-wide.webp
-heroAlt: "Terra Luz vacation rental outdoor pool area in Indio California, Coachella Valley desert"
+ogImage: /blog/images/terra-luz-primary-bedroom-daybed-3x2.webp
+heroImage: /blog/images/terra-luz-primary-bedroom-daybed-3x2.webp
+heroAlt: "Terra Luz primary bedroom suite in Indio California with sage green walls, fireplace sitting area, daybed with trundle and king bed"
 heroPosition: "center 60%"
 keywords:
   - how to price vacation rental

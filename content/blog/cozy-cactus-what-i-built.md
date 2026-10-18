@@ -2,10 +2,10 @@
 title: "Inside The Cozy Cactus: A Vacation Home Built for Families"
 date: 2025-12-07
 metaDescription: "From labeled drawers to Stokke high chairs, here is what makes The Cozy Cactus a family Airbnb in Indio where parents rest, not just survive."
-ogImage: /blog/images/cozy-cactus-exterior.webp
-heroImage: /blog/images/cozy-cactus-exterior.webp
-heroPosition: top
-heroAlt: "The Cozy Cactus vacation rental exterior in Indio California near Coachella"
+ogImage: /blog/images/cozy-cactus-living-room-foosball.webp
+heroImage: /blog/images/cozy-cactus-living-room-foosball.webp
+heroAlt: "Open living room at The Cozy Cactus in Indio with a foosball table, white sofa, and colorful abstract art"
+heroPosition: "center 55%"
 keywords:
   - family vacation rental Indio
   - Coachella family Airbnb

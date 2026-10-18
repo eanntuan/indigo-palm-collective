@@ -2,9 +2,9 @@
 title: "How to Write an Airbnb Listing Description That Books"
 date: 2026-07-11
 metaDescription: "Five-section formula for writing Airbnb listing descriptions that convert. From a host with four Coachella Valley rentals and 332 five-star reviews."
-ogImage: /blog/images/terra-luz-outdoor-wide.webp
-heroImage: /blog/images/terra-luz-outdoor-wide.webp
-heroAlt: "Terra Luz vacation rental outdoor living area with pool and string lights in Indio California"
+ogImage: /blog/images/terra-luz-wild-tropics-wide-3x2.webp
+heroImage: /blog/images/terra-luz-wild-tropics-wide-3x2.webp
+heroAlt: "Terra Luz second bedroom in Indio California with blue Wild Tropics wallpaper, terracotta tile headboard and white bedding"
 heroPosition: "center 60%"
 keywords:
   - how to write airbnb listing
