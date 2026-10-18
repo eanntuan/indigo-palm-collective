@@ -38,7 +38,7 @@ layout: blog-post.njk
 </div>
 
 <div class="item-heading"><span class="item-number">2</span><a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a>: The Date Shake That Started Everything</div>
-<p>Open since 1924 on Highway 111. The date shake is one of the best things you'll eat in the Coachella Valley: cold, thick, made with actual Shields dates. The on-site museum about date cultivation is genuinely worth the stop, especially with kids who want to look at things.</p>
+<p>Open since 1924 on Highway 111. The date shake is one of the best things you'll eat in the Coachella Valley: cold, thick, made with actual Shields dates. The on-site museum about date cultivation is worth the stop, especially with kids who want to look at things.</p>
 <div class="quick-info">
     <p><strong>Address:</strong> 80-225 Hwy 111, Indio, CA 92201 · Daily 9am–5pm</p>
 </div>
@@ -74,7 +74,7 @@ layout: blog-post.njk
     <p><strong>Best season:</strong> October–April</p>
 </div>
 <img src="/blog/images/coachella-valley-desert-hiking.webp" alt="Desert hiking trail in the Coachella Valley near Indio CA with rock formations and clear blue sky" width="1400" height="788" loading="lazy">
-<p class="image-caption">Wild palms fed by the San Andreas Fault. Free, uncrowded, genuinely strange in the best way.</p>
+<p class="image-caption">Wild palms fed by the San Andreas Fault. Free, uncrowded, strange in the best way.</p>
 
 <div class="item-heading"><span class="item-number">7</span>Rosemary HiFi: A Listening Lounge That Opened in a City Nobody Expected</div>
 <p>A Mexico City and Japanese-inspired vinyl listening lounge in Old Town Indio, with a custom walnut bar, 1960s JBL speakers, and natural wine and Las Palmas Brewing beer on tap. The sound system will make you stop mid-sentence. Evenings only, check Instagram for event nights.</p>

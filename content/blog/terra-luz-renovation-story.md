@@ -25,7 +25,7 @@ layout: blog-post.njk
 
 <p>When I bought this house, it was called Casa Moto. Beige walls, basic fixtures, a pool that looked like every other pool in the neighborhood. Nothing wrong with it, nothing memorable about it either.</p>
 
-<p>The renovation took about four months, a brand architect, a handyman named Orlin who does things I genuinely didn't know were possible with lime wash, and more terracotta tile than I expected to order. Here's what we built, room by room.</p>
+<p>The renovation took about four months, a brand architect, a handyman named Orlin who does things I didn't know were possible with lime wash, and more terracotta tile than I expected to order. Here's what we built, room by room.</p>
 
 <img src="/blog/images/terra-luz-exterior.webp" alt="Terra Luz vacation rental exterior in Indio California with terracotta walls and desert landscaping" width="1024" height="1536" loading="lazy">
 

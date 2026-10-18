@@ -50,14 +50,14 @@ faqItems:
 <img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm tree-lined street in Palm Springs under a clear blue sky with mountain views in the distance" loading="lazy" width="933" height="1400">
 <p class="image-caption">The main drag in Palm Springs. Walkability like this is rare in the California desert.</p>
 
-<p>Palm Springs is walkable in a way that almost nothing else in the desert is. You can park once, walk to dinner, <a href="/blog/palm-springs-coffee-guide/">get coffee in the morning without moving the car</a>, wander the architecture streets in the afternoon, and come back to your rental without ever touching your keys again. For the Coachella Valley, that is genuinely unusual.</p>
+<p>Palm Springs is walkable in a way that almost nothing else in the desert is. You can park once, walk to dinner, <a href="/blog/palm-springs-coffee-guide/">get coffee in the morning without moving the car</a>, wander the architecture streets in the afternoon, and come back to your rental without ever touching your keys again. For the Coachella Valley, that is unusual.</p>
 
 <p>The midcentury modern architecture here lives up to the reputation. The residential streets off Palm Canyon Drive are lined with flat-roofed homes in terracotta, teal, and deep ochre, most of them unchanged since the 1950s and 60s. <a href="https://pshistoricalsociety.org/collections/tours" target="_blank" rel="noopener noreferrer"><strong>The Palm Springs Historical Society</strong></a> runs guided walking tours if you want context for what you're seeing. Our <a href="/blog/palm-springs-midcentury-architecture/">self-guided architecture walk</a> covers the same territory on foot.</p>
 
 <p>Downtown Palm Springs has density: restaurants, galleries, a weekend street market, vintage shops, and <a href="/blog/palm-springs-bars/">a handful of bars that go reasonably late</a>. If your trip is about wandering and discovery, Palm Springs rewards that kind of itinerary.</p>
 
 <img src="/blog/images/ps-orange-door-mcm.webp" alt="Vibrant orange front door of a midcentury modern home in Palm Springs with desert garden and blue sky" loading="lazy" width="1800" height="1800">
-<p class="image-caption">Every block in Palm Springs has a moment like this. Not curated. Just how the city looks.</p>
+<p class="image-caption">Every block in Palm Springs has a moment like this, and nobody staged it.</p>
 
 <h3>The Real Limits of Staying in Palm Springs</h3>
 
@@ -85,7 +85,7 @@ faqItems:
 
 <p>You will drive more. Coffee, dinner, and most things worth doing require getting in the car. There is no walking from your rental to a row of restaurants the way you can in Palm Springs. If spontaneous on-foot wandering is central to your trip, Indio won't give you that.</p>
 
-<p>The city is grittier. There are genuinely good local restaurants and real hidden spots (the <a href="/blog/indio-local-gems/">best spots to eat and explore in Indio</a> are worth knowing before you go), but it takes more intention to find them than it does in downtown Palm Springs.</p>
+<p>The city is grittier. There are good local restaurants and real hidden spots (the <a href="/blog/indio-local-gems/">best spots to eat and explore in Indio</a> are worth knowing before you go), but it takes more intention to find them than it does in downtown Palm Springs.</p>
 
 <h2>Palm Springs vs Indio: Side by Side</h2>
 

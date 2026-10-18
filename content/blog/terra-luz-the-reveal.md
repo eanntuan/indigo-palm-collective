@@ -54,7 +54,7 @@ layout: blog-post.njk
 }
 </script>
 
-<p>The photos came in and I genuinely did not recognize the house.</p>
+<p>The photos came in and I did not recognize the house.</p>
 
 <p>I've been in this property probably 30 times in the last year. I've slept there, stress-ordered furniture at midnight, argued with myself over rug sizes. And still, the first time I saw it fully shot by <a href="https://www.anchor-pictures.com/" target="_blank" rel="noopener"><strong>Anchor Photography</strong></a>, something clicked into place that spreadsheets and walk-throughs couldn't. It finally looked like what we'd been trying to build.</p>
 

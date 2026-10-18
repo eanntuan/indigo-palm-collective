@@ -80,7 +80,7 @@ faqItems:
 
 <p><strong>Distance from the polo grounds.</strong> Walking distance means you can go back to the house mid-day to rest or recharge during the heat of the afternoon. 30+ minutes means you're committing to long days in the sun. Our two Indio properties, <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a>, are both walking distance to the Empire Polo Club. That proximity becomes meaningful by day two.</p>
 
-<p><strong>Outdoor space.</strong> Late April evenings in the Coachella Valley are genuinely beautiful: low 60s, light breeze, the kind of weather you want to be outside in. A house with a backyard and a hot tub or private pool makes those hours count.</p>
+<p><strong>Outdoor space.</strong> Late April evenings in the Coachella Valley are beautiful: low 60s, light breeze, the kind of weather you want to be outside in. A house with a backyard and a hot tub or private pool makes those hours count.</p>
 
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indio California, walking distance to Stagecoach festival grounds" width="1024" height="1536" loading="lazy">
 <p class="image-caption">Terra Luz backyard and private saltwater pool. After three days in festival heat, this is where late April evenings belong.</p>
@@ -184,7 +184,7 @@ faqItems:
 
 <h4>Can I drive back to my rental during the day at Stagecoach?</h4>
 
-<p>If you're in Indian Palms, yes, and it's worth planning around. The mid-afternoon heat window (roughly 2-5pm) is when the day programming slows and temperatures peak. Groups staying close to the grounds regularly go back to the rental for a pool break, then return for the evening sets. It only makes sense if your rental is genuinely close, which is one of the main reasons proximity matters more than property size for a Stagecoach rental.</p>
+<p>If you're in Indian Palms, yes, and it's worth planning around. The mid-afternoon heat window (roughly 2-5pm) is when the day programming slows and temperatures peak. Groups staying close to the grounds regularly go back to the rental for a pool break, then return for the evening sets. It only makes sense if your rental is close, which is one of the main reasons proximity matters more than property size for a Stagecoach rental.</p>
 
 <div style="background: #fff8e7; padding: 1.2rem 1.5rem; margin: 2rem 0; border-radius: 0 6px 6px 0;">
 <p style="margin-top: 0;"><strong>Book direct and skip Airbnb's 20% service fee.</strong> Same Superhost homes, direct contact with us, no platform markup.</p>

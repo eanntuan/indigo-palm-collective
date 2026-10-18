@@ -40,7 +40,7 @@ Worth knowing upfront: the Coachella Valley is spread across several cities. Pal
 
 ## The 6-9am Window Matters
 
-Between June and September, the pavement in Palm Springs hits temperatures that make outdoor activity genuinely risky by mid-morning. Even in spring and fall, by 10am it's warm enough that a workout outside stops feeling refreshing and starts feeling like survival.
+Between June and September, the pavement in Palm Springs hits temperatures that make outdoor activity risky by mid-morning. Even in spring and fall, by 10am it's warm enough that a workout outside stops feeling refreshing and starts feeling like survival.
 
 The practical window for ClassPass in the desert is 6am to 9am. Classes in that window are the most popular and the most likely to fill up. If you're planning to work out during a festival week (Coachella, Stagecoach, BNP Paribas), assume every early morning slot is contested and book as soon as the schedule opens, usually 7 days out for most studios.
 

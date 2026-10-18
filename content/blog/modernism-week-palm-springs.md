@@ -66,7 +66,7 @@ Tickets are available at <a href="https://modernismweek.com" target="_blank" rel
 
 <img src="/blog/images/ps-midcentury-teal-door.webp" alt="Teal door on a mid-century modern home in Palm Springs with cacti in front" loading="lazy" width="1200" height="1800">
 
-## Navigating the Festival as a Visitor
+## Attending the Festival as a Visitor
 
 The events are spread across the city. Palm Canyon Drive is walkable, but many of the home tours and neighborhood walks are in residential areas that require driving or rideshare. If you're planning multiple events in a day, map them out in advance and cluster what you can.
 
@@ -76,7 +76,7 @@ The Uptown Design District, roughly the stretch of Palm Canyon north of Alejo, c
 
 ## Staying in a Mid-Century Home
 
-Part of what makes Modernism Week different from a typical festival is that you can sleep in the thing you're celebrating. Palm Springs has a high concentration of genuinely original mid-century homes available as vacation rentals, with the flat rooflines, post-and-beam construction, and indoor-outdoor flow intact.
+Part of what makes Modernism Week different from a typical festival is that you can sleep in the thing you're celebrating. Palm Springs has a high concentration of original mid-century homes available as vacation rentals, with the flat rooflines, post-and-beam construction, and indoor-outdoor flow intact.
 
 [The Sundune](/the-sundune/) is a two-bedroom condo in Palm Springs, coastal-desert in aesthetic rather than strict mid-century, which is a nice counterweight to a week spent looking at post-and-beam rooflines. Starting your morning at the pool and driving ten minutes to a double-decker bus tour of the city's architectural history beats commuting in from the valley edge, and you're inside city limits for the whole festival instead of losing an hour each way.
 

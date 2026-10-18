@@ -44,7 +44,7 @@ relatedPosts:
   </tbody>
 </table>
 
-<p>There is something genuinely funny about a surf club in the middle of the Sonoran Desert: the nearest ocean is two hours west, and the average July temperature hits 115°F. And yet Palm Springs Surf Club exists, and it works.</p>
+<p>There is something funny about a surf club in the middle of the Sonoran Desert: the nearest ocean is two hours west, and the average July temperature hits 115°F. And yet Palm Springs Surf Club exists, and it works.</p>
 
 <p>The facility is operated by BSR Wave Co (the parent company that runs similar operations elsewhere) and sits in Cathedral City, which is technically a separate city from Palm Springs but about 10 minutes from downtown and close enough that everyone calls it Palm Springs. It uses <a href="https://www.wavegarden.com/" target="_blank" rel="noopener noreferrer"><strong>Wavegarden Cove</strong></a> technology to generate real, surfable waves in a roughly 6,000 square foot pool. It opened to real surf sessions, drew the attention of surfers who live nowhere near a coast, and has been a regular stop for desert visitors ever since.</p>
 
@@ -80,7 +80,7 @@ relatedPosts:
 
 <p>Think about this before you book.</p>
 
-<p><strong>If you surf or want to learn:</strong> This is genuinely your place. The beginner path is well-structured, and the intermediate and advanced sessions are real surfing, not a novelty. The wave pool removes the variable of bad ocean conditions: you know what you're getting before you show up.</p>
+<p><strong>If you surf or want to learn:</strong> This is your place. The beginner path is well-structured, and the intermediate and advanced sessions are real surfing, not a novelty. The wave pool removes the variable of bad ocean conditions: you know what you're getting before you show up.</p>
 
 <p><strong>If you want a traditional pool day:</strong> This is not that. Palm Springs Surf Club is an active surf facility, its energy physical and focused rather than lounge-by-the-water relaxed. There is a separate restaurant, bar, and lounge area with chairs and cabana situations for non-surfers. That part is fine. But if you're expecting a beach club vibe where you sip drinks poolside and occasionally dip your feet in, you'll find the experience doesn't quite match that expectation.</p>
 
@@ -127,7 +127,7 @@ relatedPosts:
 <p>If you're combining the Surf Club with a Coachella or Stagecoach trip, the <a href="/blog/where-to-stay-coachella/">Coachella accommodation guide</a> covers the full logistics: why Indio beats Palm Springs for festival weekends, what walkable distance to the polo grounds means, and the booking windows that matter.</p>
 
 <img src="/blog/images/pssc-restaurant-pool-view.webp" alt="PSSC restaurant terrace with diners overlooking the wave pool lounge and desert mountains at Palm Springs Surf Club" width="1400" height="933" loading="lazy">
-<p class="image-caption">The restaurant at PSSC overlooks the full venue. If you're bringing people who aren't surfing, this is where they'll be. Solid food and a genuinely good view.</p>
+<p class="image-caption">The restaurant at PSSC overlooks the full venue. If you're bringing people who aren't surfing, this is where they'll be. Solid food and a good view.</p>
 
 <script type="application/ld+json">
 {
@@ -171,7 +171,7 @@ relatedPosts:
       "name": "How far is Palm Springs Surf Club from downtown Palm Springs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "About 10 minutes by car. It's technically in Cathedral City, but the border between the two cities is seamless. From Indio, it's approximately 25 to 30 minutes west on I-10."
+        "text": "About 10 minutes by car. It's technically in Cathedral City, but you can't tell where one city ends and the other begins. From Indio, it's approximately 25 to 30 minutes west on I-10."
       }
     },
     {
@@ -233,7 +233,7 @@ relatedPosts:
 <p>It depends what you want. There's a restaurant, bar, and seating area where non-surfers can watch while others surf. Works well for mixed groups. But if nobody in your group surfs and you're not interested in lessons, a private rental pool is probably a better use of your afternoon.</p>
 
 <h3>How far is Palm Springs Surf Club from downtown Palm Springs?</h3>
-<p>About 10 minutes by car. It's technically in Cathedral City, but the border is seamless and everyone calls it Palm Springs. From Indio, it's approximately 25 to 30 minutes west on I-10.</p>
+<p>About 10 minutes by car. It's technically in Cathedral City, but there's no visible border and everyone calls it Palm Springs. From Indio, it's approximately 25 to 30 minutes west on I-10.</p>
 
 <h3>What is the best time of year to go?</h3>
 <p>October through May. The weather cooperates, the mountain backdrop looks good, and the full experience makes sense when it's not 110 degrees outside. Summer works if you book the earliest available morning session. Check the website for seasonal hours before planning.</p>

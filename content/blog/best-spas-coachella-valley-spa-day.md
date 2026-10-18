@@ -52,7 +52,7 @@ layout: blog-post.njk
 
 <h2>JW Marriott Desert Springs Resort & Spa, Palm Desert</h2>
 
-<p>74855 Country Club Drive, Palm Desert. At 38,000 square feet this is the largest hotel spa in the Greater Palm Springs area, and it's built for volume without feeling like it. A full-day pass runs about $125, with a half-day pass around $45 if you just want a couple hours. The aromatic hammam, Finnish sauna, and Turkish steam room give it more range than most valley spas, and the "Mind Sync Chairs" are a genuinely odd, genuinely good addition if you've never tried one.</p>
+<p>74855 Country Club Drive, Palm Desert. At 38,000 square feet this is the largest hotel spa in the Greater Palm Springs area, and it's built for volume without feeling like it. A full-day pass runs about $125, with a half-day pass around $45 if you just want a couple hours. The aromatic hammam, Finnish sauna, and Turkish steam room give it more range than most valley spas, and the "Mind Sync Chairs" are an odd and good addition if you've never tried one.</p>
 
 <p>Book through the spa's own site, Marriott's iDayPass program, or ResortPass. This is the pick if you want the most amenities per dollar and don't need the intimacy of a smaller property.</p>
 

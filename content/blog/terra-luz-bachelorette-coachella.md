@@ -17,7 +17,7 @@ keywords:
 articleSection: "Travel Guide"
 property: terra-luz
 readTime: "7 min read"
-excerpt: "Why Terra Luz works for a bachelorette or group trip in the desert: three distinct bedrooms, a pool that photographs well, a spa for the slow morning, and walking distance to Empire Polo Club. Honest logistics included."
+excerpt: "Why Terra Luz works for a bachelorette or group trip in the desert: three distinct bedrooms, a pool that photographs well, a spa for the slow morning, and walking distance to Empire Polo Club. Logistics included."
 layout: blog-post.njk
 ---
 
@@ -42,7 +42,7 @@ layout: blog-post.njk
 <img src="/blog/images/terra-luz-patio-full.webp" alt="Covered patio at Terra Luz with West Elm furniture and outdoor kitchen, group entertaining space Indio California" width="1024" height="683" loading="lazy">
 <p class="image-caption">The covered patio with the outdoor kitchen. Most of the food and most of the talking happens here.</p>
 
-<h2>The Honest Logistics</h2>
+<h2>The Logistics</h2>
 
 <p>The house sleeps eight and is most comfortable for a group of six to eight. Smaller than that and you're paying for space you won't use, larger and you're past what the beds and bathrooms can carry well. There's parking for four cars, so a group arriving in two or three vehicles is covered without anyone hunting for a spot on the street.</p>
 
@@ -53,7 +53,7 @@ layout: blog-post.njk
 
 <h2>What to Do When You're Here</h2>
 
-<p>The honest shape of a good weekend here is one anchor pool day, one slow spa morning, and a couple of outings stitched around them. A pool day needs no planning beyond stocking the fridge before you arrive, since the closest decent grocery run is a few minutes out and you won't want to leave once you've settled in.</p>
+<p>The shape of a good weekend here is one anchor pool day, one slow spa morning, and a couple of outings stitched around them. A pool day needs no planning beyond stocking the fridge before you arrive, since the closest decent grocery run is a few minutes out and you won't want to leave once you've settled in.</p>
 
 <p>For going out, Old Town Indio has the closest dinner options, and Palm Springs is about thirty minutes west when the group wants the walkable bars, the vintage shops, and the part of the valley that's built for crowds. A day trip there is the move if your group's idea of a good time leans toward downtown energy. For the full breakdown of where to eat and what's worth the drive, I keep a running <a href="/blog/terra-luz-indio-local-guide/">local guide to Indio</a> that I send every guest.</p>
 

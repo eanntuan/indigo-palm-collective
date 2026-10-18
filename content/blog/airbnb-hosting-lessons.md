@@ -96,7 +96,7 @@ relatedPosts:
 
 <p>Everything else in this post is optional. Cleanliness is not.</p>
 
-<p>You get zero credit for a clean property because guests expect it the way they expect the door to lock. But one miss, one hair on the soap dish, colors the whole stay. A guest who had a genuinely 9-out-of-10 experience will still open their review with the hygiene issue they spotted.</p>
+<p>You get zero credit for a clean property because guests expect it the way they expect the door to lock. But one miss, one hair on the soap dish, colors the whole stay. A guest who had a 9-out-of-10 experience will still open their review with the hygiene issue they spotted.</p>
 
 <p>We pay our cleaners above local market rate and keep a checklist that gets updated any time a guest mentions something specific. Cut corners on cleaning and none of the other investments matter. It's the floor everything else stands on.</p>
 

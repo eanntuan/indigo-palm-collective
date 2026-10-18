@@ -78,7 +78,7 @@ relatedPosts:
 
 <p>March is the best month in Palm Springs: mid-70s to low-80s, clear skies, open restaurant tables that disappear in festival season. October and November are nearly as good. December through February is quieter and cooler, which some guests prefer.</p>
 
-<p>Summer is honest: it's hot. 100+ degrees by late June. If you're coming in summer, you'll be pool-based and evening-out-based. The Sundune in summer is for guests who know the desert and plan accordingly. For summer desert trips, the <a href="/blog/palm-springs-summer/">Palm Springs in summer guide</a> covers what to do when it's that hot.</p>
+<p>Summer is hot: 100+ degrees by late June. If you're coming in summer, you'll be pool-based and evening-out-based. The Sundune in summer is for guests who know the desert and plan accordingly. For summer desert trips, the <a href="/blog/palm-springs-summer/">Palm Springs in summer guide</a> covers what to do when it's that hot.</p>
 
 <img src="/blog/images/ps-vintage-cadillac.webp" alt="Vintage pink Cadillac on a Palm Springs street with palm trees and blue sky, representing classic Palm Springs style near The Sundune" width="1200" height="1800" loading="lazy">
 <p class="image-caption">This is the Palm Springs The Sundune gives you access to. The mid-century cars, the palms, the very specific aesthetic that's been here since the Rat Pack.</p>

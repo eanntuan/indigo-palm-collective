@@ -75,7 +75,7 @@ layout: blog-post.njk
 
 <p>By July the math in the desert is simple: mornings and evenings belong to you, and the middle of the day belongs to the sun. So the fun migrates indoors and after dark, which is exactly when the valley's game scene comes alive. Trivia teams filling up back rooms, casino bingo halls buzzing, a table of people painting tiny orcs in Palm Desert.</p>
 
-<p>I moved out here from Culver City and assumed the desert shut down at night. It doesn't. There's a whole rotation of weekly game nights that most visitors never find because they're too busy chasing the same three midcentury photo spots. This is the honest list, organized by city, of where I'd send a guest looking for something to do on a Tuesday.</p>
+<p>I moved out here from Culver City and assumed the desert shut down at night. It doesn't. There's a whole rotation of weekly game nights that most visitors never find because they're too busy chasing the same three midcentury photo spots. This is the list, organized by city, of where I'd send a guest looking for something to do on a Tuesday.</p>
 
 <p>One caveat before you build a night around any of this: bar and lounge schedules shift constantly. Everything below is accurate as of 2026, but call ahead or check the venue's socials before you drive over, because trivia nights get moved and cancelled more than any restaurant reservation ever would.</p>
 
@@ -91,7 +91,7 @@ layout: blog-post.njk
 
 <h2>Palm Springs</h2>
 
-<p>Palm Springs is where the trivia scene is thickest, and Tuesday is the night. You could genuinely bar-hop trivia across three venues in a single evening if you were feeling ambitious and a little foolish.</p>
+<p>Palm Springs is where the trivia scene is thickest, and Tuesday is the night. You could bar-hop trivia across three venues in a single evening if you were feeling ambitious and a little foolish.</p>
 
 <h3>1. Quadz Video Bar</h3>
 
@@ -110,7 +110,7 @@ layout: blog-post.njk
 
 <hr style="border: none; border-top: 1px solid #ddd; margin: 3rem 0;">
 
-<p><strong>Rather stay in?</strong> Honestly, some of the best game nights happen back at the rental after a long pool day, when nobody wants to put shoes back on. <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio has a dedicated game room with foosball, which turns a group of tired adults into a tournament bracket within about ten minutes. <a href="/terra-luz/">Terra Luz</a> down the road has a long kitchen table and a lantern-strung patio that's made for cards once the heat lets go for the evening. Both are walking distance to the Empire Polo Club, so festival weekends work too. Book direct and skip Airbnb's 20% guest service fee at <a href="https://indigopalm.co/">indigopalm.co</a>.</p>
+<p><strong>Rather stay in?</strong> Some of the best game nights happen back at the rental after a long pool day, when nobody wants to put shoes back on. <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio has a dedicated game room with foosball, which turns a group of tired adults into a tournament bracket within about ten minutes. <a href="/terra-luz/">Terra Luz</a> down the road has a long kitchen table and a lantern-strung patio that's made for cards once the heat lets go for the evening. Both are walking distance to the Empire Polo Club, so festival weekends work too. Book direct and skip Airbnb's 20% guest service fee at <a href="https://indigopalm.co/">indigopalm.co</a>.</p>
 
 <img src="/blog/images/cc-foosball-room.webp" alt="The game room at The Cozy Cactus in Indio with a foosball table, set up for a night in after a pool day" width="1800" height="1201" loading="lazy">
 <p class="image-caption">The game room at The Cozy Cactus. The foosball table has settled more than one debate about who's driving to get tacos.</p>
@@ -133,7 +133,7 @@ layout: blog-post.njk
 
 <h2>Palm Desert</h2>
 
-<p>Palm Desert is where the game night scene gets genuinely nerdy, in the best sense. This is the end of the valley for people who'd rather roll dice or debate anime lore than answer pub-quiz questions about state capitals. It's also the closest cluster to our Indio properties, roughly 20 minutes from <a href="/blog/things-to-do-indio-ca/">Indio</a>.</p>
+<p>Palm Desert is where the game night scene gets nerdy, in the best sense. This is the end of the valley for people who'd rather roll dice or debate anime lore than answer pub-quiz questions about state capitals. It's also the closest cluster to our Indio properties, roughly 20 minutes from <a href="/blog/things-to-do-indio-ca/">Indio</a>.</p>
 
 <h3>6. Murasaki Kakurega Manga Lounge</h3>
 

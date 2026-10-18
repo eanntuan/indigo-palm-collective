@@ -252,7 +252,7 @@ relatedPosts:
 
 <p>The Lykken Trail is the city hike of Palm Springs: it starts from a free parking lot at the end of Ramon Road and climbs the ridge directly above downtown. The urban grid falls away fast. By the first major switchback, you're high enough to see the full valley spread south: the Salton Sea on a clear day, the Santa Rosa Mountains to the east, and the row of Palm Springs pools glinting below. The San Jacinto wall rises above you to the west, close enough to feel like a separate weather system.</p>
 
-<p>At 1,755 feet of elevation gain over 4.5 miles, this is a real workout and genuinely hard in warm weather. The trail connects to the Museum Trail for additional route options, and you can link up with the South Lykken for a longer ridge traverse. Dogs are allowed on leash, which makes this the best free dog-friendly hike close to downtown Palm Springs. Start by 7am in spring. <a href="https://www.alltrails.com/trail/us/california/palm-springs-museum-and-north-lykken-trail" target="_blank" rel="noopener">North Lykken on AllTrails</a>.</p>
+<p>At 1,755 feet of elevation gain over 4.5 miles, this is a real workout and hard going in warm weather. The trail connects to the Museum Trail for additional route options, and you can link up with the South Lykken for a longer ridge traverse. Dogs are allowed on leash, which makes this the best free dog-friendly hike close to downtown Palm Springs. Start by 7am in spring. <a href="https://www.alltrails.com/trail/us/california/palm-springs-museum-and-north-lykken-trail" target="_blank" rel="noopener">North Lykken on AllTrails</a>.</p>
 
 <h2>6. Bump and Grind Trail (Moderate)</h2>
 
@@ -359,7 +359,7 @@ relatedPosts:
 
 <p>May and September are shoulder months. Possible, but warm. Go before 8am on any trail with real elevation, before 7am in May.</p>
 
-<p>June through August: genuinely dangerous on exposed trails for most people. The temperature rise between 6am and 9am in canyon bottoms can be 20 degrees. Many locals skip hiking entirely in summer and use pools instead. If you go, 5am is not a suggestion. Andreas Canyon and the tram hikes are the most viable summer options.</p>
+<p>June through August: dangerous on exposed trails for most people. The temperature rise between 6am and 9am in canyon bottoms can be 20 degrees. Many locals skip hiking entirely in summer and use pools instead. If you go, 5am is not a suggestion. Andreas Canyon and the tram hikes are the most viable summer options.</p>
 
 <h2>What to Bring</h2>
 

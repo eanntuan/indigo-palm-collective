@@ -26,7 +26,7 @@ layout: blog-post.njk
 
 This is the post I wish existed when I first started hosting here. Every few weeks a guest asks some version of "where should we shop?" right after they land, usually while sitting in the Costco parking lot in Rancho Mirage having already bought too much.
 
-The Coachella Valley is about 45 miles long, and where you shop genuinely depends on where you're staying. Here's the breakdown.
+The Coachella Valley is about 45 miles long, and where you shop depends on where you're staying. Here's the breakdown.
 
 <img src="/blog/images/cozy-cactus-family-kitchen.webp" alt="Fully stocked kitchen at The Cozy Cactus vacation rental in Indio California" loading="lazy" width="1400" height="933">
 
@@ -62,7 +62,7 @@ Guests staying at [The Cozy Cactus or Terra Luz](/cozy-cactus/) in Indio are bes
 
 **Sprouts Farmers Market** has multiple valley locations including Palm Desert and Cathedral City. Good produce, decent bulk section, and better prices than Whole Foods for most items. This is my personal go-to for produce when I'm in the mid-valley.
 
-**Costco** is in Rancho Mirage on Bob Hope Drive. If you're feeding a large group for multiple nights, this is worth the detour. Kirkland olive oil, bulk snacks, large packs of sparkling water, that kind of haul. The prepared rotisserie chickens at $5 remain one of the best value-per-calorie options in the desert. Just know that Costco Rancho Mirage is genuinely packed on weekends, especially during Coachella and Stagecoach season.
+**Costco** is in Rancho Mirage on Bob Hope Drive. If you're feeding a large group for multiple nights, this is worth the detour. Kirkland olive oil, bulk snacks, large packs of sparkling water, that kind of haul. The prepared rotisserie chickens at $5 remain one of the best value-per-calorie options in the desert. Just know that Costco Rancho Mirage is packed on weekends, especially during Coachella and Stagecoach season.
 
 <img src="/blog/images/indio-sign-miles-ave.webp" alt="Indio city sign on Miles Avenue, near the main grocery shopping corridor for Coachella Valley vacation rentals" loading="lazy" width="1400" height="933">
 
@@ -119,7 +119,7 @@ Sprouts Farmers Market, with locations in Palm Desert and Cathedral City, consis
 
 ### What is Jensen's Fine Foods and is it worth it?
 
-Jensen's is an independent upscale grocery that has been in the desert since 1946, with two Palm Springs locations on North and South Palm Canyon Drive. The deli counter, cheese section, and date selection are genuinely better than anything else in the valley at that tier. Prices are noticeably higher than Trader Joe's or Stater Bros, but for a special dinner, a good bottle of wine, or local dates to bring home, it earns the premium. It's not a full-shop-for-the-week store; it's a destination for the things that matter.
+Jensen's is an independent upscale grocery that has been in the desert since 1946, with two Palm Springs locations on North and South Palm Canyon Drive. The deli counter, cheese section, and date selection are better than anything else in the valley at that tier. Prices are noticeably higher than Trader Joe's or Stater Bros, but for a special dinner, a good bottle of wine, or local dates to bring home, it earns the premium. Skip it for the weekly shop and go for the things that matter.
 
 *Eann hosts guests at Indigo Palm Collective properties in Indio and Palm Springs. She's done this grocery run more times than she can count.*
 

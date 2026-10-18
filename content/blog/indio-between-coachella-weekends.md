@@ -104,9 +104,9 @@ layout: blog-post.njk
 
 <p>Floyd and Bess Shields opened it on Christmas Day 1924, and Floyd spent the next decades breeding exclusive date varieties (the Blonde and the Brunette) that are grown nowhere else in the world. He also developed date crystals in 1936 (a kind of powdered date sugar), which became the key ingredient in what is still the most famous thing Shields sells: the date shake.</p>
 
-<p>The date shake is the reason you go. It's thick, it's sweet without being cloying, and it tastes exactly like the desert should taste. The Coachella Valley Independent has given Shields the Best Date Shake award in their readers' poll every single year for a decade. That's not a streak you break accidentally.</p>
+<p>The date shake is the reason you go. It's thick and sweet without being cloying, and it tastes exactly like the desert should taste. The Coachella Valley Independent has given Shields the Best Date Shake award in their readers' poll every single year for a decade. That's not a streak you break accidentally.</p>
 
-<p>While you're there: the cafe does date-forward food (dates stuffed with cheese and prosciutto, date pancakes, date burger) and the gift shop sells things you will use. The 17-acre botanical garden and date grove is worth walking through. And yes, they still screen the short film "The Romance and Sex Life of the Date," narrated by Floyd Shields himself and largely unchanged since the 1950s. You should watch it. Floyd is deadpan and earnest in equal measure, and the whole thing is genuinely charming.</p>
+<p>While you're there: the cafe does date-forward food (dates stuffed with cheese and prosciutto, date pancakes, date burger) and the gift shop sells things you will use. The 17-acre botanical garden and date grove is worth walking through. And yes, they still screen the short film "The Romance and Sex Life of the Date," narrated by Floyd Shields himself and largely unchanged since the 1950s. You should watch it. Floyd is deadpan and earnest in equal measure, and the whole thing is charming.</p>
 
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=80225+Highway+111,+Indio,+CA" target="_blank" rel="noopener">80225 Highway 111, Indio, CA ↗</a></p>
@@ -146,7 +146,7 @@ layout: blog-post.njk
 
 <h2>One More: Rosemary HiFi (The Indio You Didn't Know Existed)</h2>
 
-<p>Somewhere between the date shake and the Salton Sea, squeeze in an evening at <a href="https://www.rosemaryhifi.com/" target="_blank" rel="noopener noreferrer"><strong>Rosemary HiFi</strong></a>. It's in Old Town Indio, it's the Coachella Valley's first vinyl listening lounge, and there is nothing else like it in the desert.</p>
+<p>Somewhere between the date shake and the Salton Sea, squeeze in an evening at <a href="https://www.rosemaryhifi.com/" target="_blank" rel="noopener noreferrer"><strong>Rosemary HiFi</strong></a>. It's in Old Town Indio and it's the Coachella Valley's first vinyl listening lounge, and there is nothing else like it in the desert.</p>
 
 <p>The setup: a custom walnut bar where the usual backlit liquor display has been replaced by the owner's record collection, played through 1960s JBL speakers. Las Palmas Brewing beers on tap. Natural wines, earthy and sulfate-free, served chilled. The kind of sound system that makes you stop mid-conversation to listen to whatever is playing, which is either rude or the entire point depending on how you think about it.</p>
 
@@ -175,7 +175,7 @@ layout: blog-post.njk
 <p>Spend the first day recovering by the pool. Then use the remaining days for the Salton Sea day trip (about 40 minutes south on Highway 86), a stop at Shields Date Garden for the date shake, and at least one evening at Rosemary HiFi in Old Town Indio. You don't need to fill every hour. The rental, the pool, and a couple of real meals will carry most of the week.</p>
 
 <h3>Is Shields Date Garden worth visiting?</h3>
-<p>Yes. The date shake is the most-awarded in the valley, and the 17-acre grove and short film about date cultivation are genuinely worth the extra hour. It's been on Highway 111 since 1924. You're going to pass it anyway. Stop.</p>
+<p>Yes. The date shake is the most-awarded in the valley, and the 17-acre grove and short film about date cultivation are worth the extra hour. It's been on Highway 111 since 1924. You're going to pass it anyway. Stop.</p>
 
 <h3>How far is the Salton Sea from Indio?</h3>
 <p>About 35 miles south on Highway 86, roughly a 40-minute drive. The east shore around Bombay Beach and Salvation Mountain is the most interesting part. Go in the morning before the heat peaks, bring water and snacks, and keep realistic expectations: it's strange and beautiful, not polished or comfortable.</p>
@@ -222,7 +222,7 @@ layout: blog-post.njk
       "name": "Is Shields Date Garden worth visiting?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The date shake is the most-awarded in the valley, and the 17-acre grove and short film about date cultivation are genuinely worth the extra hour. It's been on Highway 111 since 1924. You're going to pass it anyway. Stop."
+        "text": "Yes. The date shake is the most-awarded in the valley, and the 17-acre grove and short film about date cultivation are worth the extra hour. It's been on Highway 111 since 1924. You're going to pass it anyway. Stop."
       }
     },
     {

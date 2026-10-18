@@ -126,7 +126,7 @@ layout: blog-post.njk
 
 <hr style="border: none; border-top: 1px solid #ddd; margin: 3rem 0;">
 
-<p><strong>Or skip the day pass entirely.</strong> Here's my honest bias: the whole reason I bought places with pools is so my guests don't have to buy a stranger's lounge chair by the hour. <a href="/terra-luz/">Terra Luz</a> in Indio has a private pool that's yours alone, no day pass, no crowd, and spa heating if you want the hot tub going. <a href="/cozy-cactus/">The Cozy Cactus</a> pairs a shared community pool with a private hot tub in the backyard, and both sit walking distance from the Empire Polo Club for festival weekends. Book direct at <a href="https://indigopalm.co/">indigopalm.co</a> and you skip Airbnb's 20% guest service fee, which on a long weekend is real money back in the taco budget.</p>
+<p><strong>Or skip the day pass entirely.</strong> My bias: the whole reason I bought places with pools is so my guests don't have to buy a stranger's lounge chair by the hour. <a href="/terra-luz/">Terra Luz</a> in Indio has a private pool that's yours alone, no day pass, no crowd, and spa heating if you want the hot tub going. <a href="/cozy-cactus/">The Cozy Cactus</a> pairs a shared community pool with a private hot tub in the backyard, and both sit walking distance from the Empire Polo Club for festival weekends. Book direct at <a href="https://indigopalm.co/">indigopalm.co</a> and you skip Airbnb's 20% guest service fee, which on a long weekend is real money back in the taco budget.</p>
 
 <img src="/blog/images/terra-luz-pool-umbrella.webp" alt="Private pool with umbrella and loungers at Terra Luz vacation rental in Indio, an alternative to a Palm Springs resort day pass" width="1600" height="1067" loading="lazy">
 <p class="image-caption">The Terra Luz pool. No pass, no reservation, no fighting a stranger for the shaded chair.</p>
@@ -158,7 +158,7 @@ layout: blog-post.njk
 
 <p><a href="https://sparrowslodge.com/" target="_blank" rel="noopener"><strong>The Barn Kitchen</strong></a> at Sparrows Lodge, a small midcentury property back on East Palm Canyon, is the sleeper pick. As of 2026 the kitchen serves lunch daily with sandwiches, salads, and small bites in a courtyard built around a flamingo-pink-umbrella pool, and on certain nights it does a family-style supper, Chicken Wednesdays and Steak Saturdays being the ones people talk about.</p>
 
-<p>The important caveat: seating for non-hotel guests is limited, so this is the one place on the list where you genuinely have to call ahead and reserve, especially for the family-style dinners. Show up unannounced and you may not get in. Plan it, and it's one of the more charming meals in town.</p>
+<p>The important caveat: seating for non-hotel guests is limited, so this is the one place on the list where you have to call ahead and reserve, especially for the family-style dinners. Show up unannounced and you may not get in. Plan it, and it's one of the more charming meals in town.</p>
 
 <img src="/blog/images/bootlegger-tiki-palm-springs.webp" alt="Dim tiki-style resort lounge interior in Palm Springs, the kind of poolside-adjacent bar that serves walk-in guests" width="1200" height="630" loading="lazy">
 <p class="image-caption">Not every resort bar is out by the water. Some of the best drinks are in the dark little lounges off the pool deck.</p>
@@ -167,7 +167,7 @@ layout: blog-post.njk
 
 <p>A few things I've learned sending guests to these places. Book any pool day pass or cabana ahead, ideally days out for a summer weekend, because they cap the number of non-guests and the good spots go first. Check the age policy, since a handful of these pools are adults-only and won't let kids in at all. And separate your two goals in your head: a walk-in lunch is easy and spontaneous, but a lounge-by-the-pool afternoon is a booking.</p>
 
-<p>For more valley food and drink beyond the resorts, my <a href="/blog/best-restaurants-palm-springs/">best restaurants in Palm Springs guide</a> and the <a href="/blog/palm-springs-bars/">Palm Springs bars roundup</a> both go deeper. And if you're doing this in July heat, the <a href="/blog/palm-springs-heat-activities/">summer heat activities guide</a> pairs a pool day with the indoor stuff for when it's genuinely too hot to be outside.</p>
+<p>For more valley food and drink beyond the resorts, my <a href="/blog/best-restaurants-palm-springs/">best restaurants in Palm Springs guide</a> and the <a href="/blog/palm-springs-bars/">Palm Springs bars roundup</a> both go deeper. And if you're doing this in July heat, the <a href="/blog/palm-springs-heat-activities/">summer heat activities guide</a> pairs a pool day with the indoor stuff for when it's too hot to be outside.</p>
 
 <p>The through-line is that you don't need to book a resort to feel like you're staying at one. Buy the day pass, grab the walk-in table, order the coconut cocktail. Then, ideally, come back to a place with a pool that's already yours. If you're staying with us, <a href="/the-sundune/">The Sundune</a> in Palm Springs has the shared HOA pool a short walk from the door, and the Indio houses have their own water. Either way, the desert's whole appeal in summer is spending the day half-submerged.</p>
 

@@ -44,7 +44,7 @@ layout: blog-post.njk
 
 <p>Morning: coffee at Koffi (1700 S Camino Real or the North Palm Springs location). It's the closest thing to a local institution the city has. Then walk downtown.</p>
 
-<p>Palm Springs Architecture: the city's mid-century modern heritage is genuinely distinctive and worth slowing down for. The Kaufmann Desert House (designed by Richard Neutra, 1946) is on Tahquitz Canyon Way, privately owned but visible from the street. The Tramway Gas Station, designed by Albert Frey, is at the gateway to the tram road and is now the Palm Springs Visitor Center. The Sunnylands estate in Rancho Mirage, where presidents have stayed, offers guided tours by reservation.</p>
+<p>Palm Springs Architecture: the city's mid-century modern heritage is distinctive and worth slowing down for. The Kaufmann Desert House (designed by Richard Neutra, 1946) is on Tahquitz Canyon Way, privately owned but visible from the street. The Tramway Gas Station, designed by Albert Frey, is at the gateway to the tram road and is now the Palm Springs Visitor Center. The Sunnylands estate in Rancho Mirage, where presidents have stayed, offers guided tours by reservation.</p>
 
 <p>The <a href="https://www.psmuseum.org/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Art Museum</strong></a> is on Museum Drive, about a block off Palm Canyon. Its collection skews toward 20th-century American and California art, with some excellent pieces and a good architecture and design section covering the valley's modernist legacy. Admission is $17.50 for adults. Closed Tuesdays.</p>
 

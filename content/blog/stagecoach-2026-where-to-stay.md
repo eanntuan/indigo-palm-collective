@@ -52,7 +52,7 @@ layout: blog-post.njk
 <h2>What to Look For in a Stagecoach Rental</h2>
 
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz saltwater pool with in-water loungers and terracotta deck in Indio California, walking distance to Stagecoach" width="1024" height="1536" loading="lazy">
-<p class="image-caption">A private pool changes the whole trip. After three days of dust and sun, having somewhere to decompress that's yours alone is genuinely the best thing.</p>
+<p class="image-caption">A private pool changes the whole trip. After three days of dust and sun, having somewhere to decompress that's yours alone is the best thing.</p>
 
 <p>Stagecoach runs late April, which means daytime temps in Indio regularly hit 95-105 degrees Fahrenheit. Desert in late April, full stop. A rental with a private pool shifts from "nice to have" to essential for your group to enjoy the week.</p>
 
@@ -79,7 +79,7 @@ layout: blog-post.njk
 
 <h2>Camping vs. Staying Off-Site</h2>
 
-<p>Stagecoach offers on-site camping, and a segment of the crowd does the full camping weekend. The experience is genuinely different: you walk out of your tent and you're already there, no commute, full immersion. The downside is that desert camping in late April in Indio means sleeping in serious heat, sharing bathrooms with a few thousand other people, and no pool.</p>
+<p>Stagecoach offers on-site camping, and a segment of the crowd does the full camping weekend. The experience is different: you walk out of your tent and you're already there, no commute, full immersion. The downside is that desert camping in late April in Indio means sleeping in serious heat, sharing bathrooms with a few thousand other people, and no pool.</p>
 
 <p>For a first Stagecoach, I'd generally recommend a rental over camping unless you're drawn to that total-immersion experience and know what you're signing up for. The ability to step away in the afternoon, take a real shower, cool off in the pool, and come back to the grounds refreshed changes how you feel by day 3.</p>
 
@@ -97,7 +97,7 @@ layout: blog-post.njk
 <h2>Where to Eat Before and After Shows</h2>
 
 <img src="/blog/images/indio-sign-miles-ave.webp" alt="Indio California city sign on Miles Avenue, gateway to the Coachella Valley desert" width="650" height="434" loading="lazy">
-<p class="image-caption">Indio is a working city, not a resort town. The food is genuinely good if you know where to go.</p>
+<p class="image-caption">Indio is a working city, not a resort town. The food is good if you know where to go.</p>
 
 <p>Indio has solid food options that most festival-goers miss because they don't look. A few that are worth knowing:</p>
 
@@ -117,11 +117,11 @@ layout: blog-post.njk
   <li><strong>Parking passes:</strong> Buy these in advance. On-site parking sells out and day-of lots require cash or exact change.</li>
   <li><strong>Sunscreen:</strong> Desert sun in late April is aggressive. SPF 50+ minimum, reapply mid-afternoon.</li>
   <li><strong>Layers for night:</strong> Once the sun drops, temps fall fast. It's 100 degrees at 4pm and 62 degrees at midnight. Bring something warm.</li>
-  <li><strong>Hats:</strong> Not a style choice, a survival tool. The polo grounds have minimal shade during daylight hours.</li>
+  <li><strong>Hats:</strong> Treat them as survival gear, since the polo grounds have minimal shade during daylight hours.</li>
   <li><strong>Cash and portable chargers:</strong> Cell service gets congested. Offline maps help. A portable battery for your phone is worth more than almost anything else you pack.</li>
 </ul>
 
-<p>Stagecoach is a genuinely good festival. The crowd is friendly, the production is well-run, and the desert setting at night, with the mountains lit up against the sky, is hard to replicate anywhere else. Staying in the right place just means you get to enjoy the whole thing without the commute overhead eating your energy.</p>
+<p>Stagecoach is a good festival. The crowd is friendly, the production is well-run, and the desert setting at night, with the mountains lit up against the sky, is hard to replicate anywhere else. Staying in the right place just means you get to enjoy the whole thing without the commute overhead eating your energy.</p>
 
 <h2>FAQ: Stagecoach 2026</h2>
 
@@ -141,7 +141,7 @@ layout: blog-post.njk
 <p>Yes. From Indian Palms in Indio, the walk to the Empire Polo Club goes straight up Eisenhower Drive. It's flat, well-lit, and a reasonable option if you'd rather skip the post-headliner rideshare surge entirely. Not every rental in the neighborhood will be equally close, so check the specific address against the festival gates before booking.</p>
 
 <h3>What is the best way to get to Stagecoach without a car?</h3>
-<p>Rideshares work well for getting there early in the day, but surge pricing kicks in hard right after the headliner ends, expect 2-3x normal rates in that 30-minute window. Many groups drive in for the day and rideshare back, then reverse it. If your rental is in Indian Palms, walking home from the headliner is a genuinely viable option that sidesteps the surge entirely.</p>
+<p>Rideshares work well for getting there early in the day, but surge pricing kicks in hard right after the headliner ends, expect 2-3x normal rates in that 30-minute window. Many groups drive in for the day and rideshare back, then reverse it. If your rental is in Indian Palms, walking home from the headliner is a viable option that sidesteps the surge entirely.</p>
 
 <h3>Is it too hot to be outside at Stagecoach in April?</h3>
 <p>Late April in Indio runs 95-105 degrees Fahrenheit during the afternoon, which is real desert heat. The festival grounds have minimal shade, so peak heat hours between noon and 4pm are the hardest part of each day. Most experienced attendees leave the grounds during that window, cool off at their rental, and come back in the evening for the headliners, which is where a private pool at your accommodation earns its cost.</p>

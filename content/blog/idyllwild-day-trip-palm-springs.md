@@ -78,7 +78,7 @@ relatedPosts:
 
 <h3>The Tram Route, If You Want to Arrive on Foot</h3>
 
-<p>There's one more way to get to Idyllwild that has nothing to do with a car. The Palm Springs Aerial Tramway drops you at 8,516 feet, and a 10.6-mile point-to-point trail runs from the tram's Long Valley station down through Saddle Junction into town. It's a serious day, six hours or more, one-way, and you'll need a car shuttled to the Idyllwild end or a very patient friend. Not a casual add-on to a beach day, but worth knowing it exists if you're already staying near <a href="/the-sundune/">The Sundune</a> in Palm Springs and the tram is basically in your backyard.</p>
+<p>There's one more way to get to Idyllwild that has nothing to do with a car. The Palm Springs Aerial Tramway drops you at 8,516 feet, and a 10.6-mile point-to-point trail runs from the tram's Long Valley station down through Saddle Junction into town. It's a serious day, six hours or more, one-way, and you'll need a car shuttled to the Idyllwild end or a very patient friend. It's no casual add-on to a beach day, but it's worth knowing about if you're already staying near <a href="/the-sundune/">The Sundune</a> in Palm Springs and the tram is basically in your backyard.</p>
 
 <img src="/blog/images/ps-aerial-tram-mountain-view.webp" alt="Palm Springs Aerial Tramway car ascending the San Jacinto mountains toward the Idyllwild trail network" width="1600" height="1066" loading="lazy">
 <p class="image-caption">The tram gets you to 8,516 feet in about 10 minutes. Getting to Idyllwild from there on foot takes the rest of the day.</p>
@@ -98,7 +98,7 @@ relatedPosts:
 
 <p><a href="https://cafearoma-idyllwild.com/" target="_blank" rel="noopener"><strong>Cafe Aroma</strong></a> is the other anchor, a mountain bistro with a wooded patio that's been a local institution long enough to have its own history, and it's dog-friendly if you brought one along. For something faster and less formal, the <strong>Lumber Mill Bar and Grill</strong> does a burger locals argue about (order the Bigfoot), and <strong>Mama's Egg House</strong> covers brunch if you're heading up early instead of coming down late.</p>
 
-<p>If you're staying at Terra Luz or The Cozy Cactus in Indio, this whole loop, drive up, hike, eat, drive back, runs about 70 minutes each way on Highway 74, which makes it a genuinely doable day trip without feeling like you spent it all in the car. It's one of the few ways to escape a 110-degree afternoon in the valley without leaving the region entirely.</p>
+<p>If you're staying at Terra Luz or The Cozy Cactus in Indio, this whole loop, drive up, hike, eat, drive back, runs about 70 minutes each way on Highway 74, which makes it a doable day trip without feeling like you spent it all in the car. It's one of the few ways to escape a 110-degree afternoon in the valley without leaving the region entirely.</p>
 
 <h2>Frequently Asked Questions</h2>
 

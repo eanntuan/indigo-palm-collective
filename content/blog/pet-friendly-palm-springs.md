@@ -42,7 +42,7 @@ faqItems:
 
 <h2>Start With Where You're Staying</h2>
 
-<p>Most vacation rentals in the area don't allow pets, not because hosts don't like dogs, but because one bad incident in a carpeted rental creates a problem that costs more than a summer of bookings to fix. The ones that do allow pets have usually thought it through.</p>
+<p>Most vacation rentals in the area don't allow pets because one bad incident in a carpeted rental creates a problem that costs more than a summer of bookings to fix. The ones that do allow pets have usually thought it through.</p>
 
 <p>We have three pet-friendly properties. <a href="/terra-luz/">Terra Luz</a> in Indio accepts up to two dogs (pet fee applies): 3-bedroom, private saltwater pool, fully fenced backyard. <a href="/the-sundune/">The Sundune</a> in Palm Springs accepts one pet (pet fee applies): the Uptown Design District is walkable, downtown is a ten-minute drive, and there's a shared HOA pool. <a href="/the-well/">The Well</a> in Palm Springs accepts one dog (pet fee applies): a one-bedroom with its own outdoor space, though it's a long-term rental with a 28-night minimum. Email <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking to confirm your situation.</p>
 

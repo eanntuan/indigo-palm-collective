@@ -40,7 +40,7 @@ relatedPosts:
 
 <h2>Mane Street Is Free</h2>
 
-<p>This is the part people don't expect: there's no entrance fee. Pioneertown isn't a state park or a paid attraction, it's an unincorporated community with a historic movie-set main street you're free to walk. The Mane Street Historic District is on the National Register of Historic Places, and most of the false-front buildings from the 1940s are still standing, including the Pioneertown Post Office, reportedly the most photographed post office in the country.</p>
+<p>This is the part people don't expect: there's no entrance fee. Pioneertown is an unincorporated community with a historic movie-set main street you're free to walk. The Mane Street Historic District is on the National Register of Historic Places, and most of the false-front buildings from the 1940s are still standing, including the Pioneertown Post Office, reportedly the most photographed post office in the country.</p>
 
 <p>Shops along the street run mid-day to sundown, mostly on weekends, and several close Tuesday and Wednesday along with the restaurant. If you're coming on a weekday, call ahead or plan around Pappy &amp; Harriet's, which stays open more consistently.</p>
 

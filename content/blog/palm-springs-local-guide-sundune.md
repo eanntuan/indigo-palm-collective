@@ -79,7 +79,7 @@ relatedPosts:
 <h2>Dinner</h2>
 
 <h3>Rooster &amp; The Pig</h3>
-<p>Most visitors drive past this one because it sits in an unassuming strip mall. Don't. <a href="https://www.roosterandthepig.com/" target="_blank" rel="noopener"><strong>Rooster &amp; The Pig</strong></a> is Vietnamese-American and genuinely good, specific and thoughtful in a way that makes you want to order the whole menu. USA Today named it one of the top 47 restaurants in the country, which sounds like a weird brag until you eat there and understand it.</p>
+<p>Most visitors drive past this one because it sits in an unassuming strip mall. Don't. <a href="https://www.roosterandthepig.com/" target="_blank" rel="noopener"><strong>Rooster &amp; The Pig</strong></a> is Vietnamese-American and very good, the kind of cooking that makes you want to order the whole menu. USA Today named it one of the top 47 restaurants in the country, which sounds like a weird brag until you eat there and understand it.</p>
 
 <h2>Drinks</h2>
 
@@ -138,7 +138,7 @@ relatedPosts:
 <p>Yes, with prior approval. The Sundune accepts dogs on a case-by-case basis, so reach out before booking to confirm. The property has a private patio and access to a shared pool area, and Palm Springs has several dog-friendly parks and trails nearby including the Gene Autry Trail corridor. Book direct at <a href="https://indigopalm.co/the-sundune/">indigopalm.co/the-sundune</a> and mention your dog in the inquiry.</p>
 
 <h3>What is the minimum stay at The Sundune?</h3>
-<p>4 nights is the minimum set by the Palm Canyon Villas HOA. It sounds like a constraint until you're here: that's genuinely the right amount of time to move through this guide without feeling rushed.</p>
+<p>4 nights is the minimum set by the Palm Canyon Villas HOA. It sounds like a constraint until you're here: that's the right amount of time to move through this guide without feeling rushed.</p>
 
 <h3>Can you walk to Palm Springs restaurants from The Sundune?</h3>
 <p>Not the downtown ones. The Sundune sits on E Waverly Drive in Sunrise Park, and Palm Canyon Drive is roughly a ten-minute drive from the door. What you can walk to is the Uptown Design District, which has enough coffee and shops to fill a morning on its own. Everything else in this guide is short-drive territory, and Boozehounds and Rooster and the Pig are both under 10 minutes by car.</p>

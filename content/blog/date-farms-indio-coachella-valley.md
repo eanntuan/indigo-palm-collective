@@ -34,7 +34,7 @@ If you're staying at [The Cozy Cactus or Terra Luz](/cozy-cactus/) in Indio, you
 
 ## Shield's Date Garden
 
-<a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shield's Date Garden</strong></a> is the one everyone knows, and for good reason. It's been operating on Highway 111 in Indio since 1924. The garden itself covers 30 acres of date palms, and the on-site shop is genuinely worth a stop.
+<a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shield's Date Garden</strong></a> is the one everyone knows, and for good reason. It's been operating on Highway 111 in Indio since 1924. The garden itself covers 30 acres of date palms, and the on-site shop is worth a stop.
 
 The main draw is the date shake. It's made with vanilla ice cream and whole pitted dates blended right in, and it's the kind of thing you'll think about afterward. Thick, cold, with a caramel depth that artificial flavoring can't get close to. The medium size is enough. I made the mistake of ordering a large once.
 

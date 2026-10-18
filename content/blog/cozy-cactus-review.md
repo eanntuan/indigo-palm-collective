@@ -48,7 +48,7 @@ relatedPosts:
 
 <p><strong>The baby gear.</strong> Stokke high chair, pack-n-play with a real crib mattress, baby monitor, sound machine, baby gate, outlet covers. Multiple guests with infants have written some version of "I was able to relax for the first time in months." That's the goal. I watched too many friends pack for trips like they were moving apartments, hauling every single thing their babies needed. I decided to just put it all here, so they didn't have to.</p>
 
-<p><strong>How quickly they hear back.</strong> Guests mention that questions get answered fast. I take this one seriously. When someone is traveling with young kids and something isn't working, they need a real response, quickly, not a form reply or an automated message, but a person who knows the house and can help.</p>
+<p><strong>How quickly they hear back.</strong> Guests mention that questions get answered fast. I take this one seriously. When someone is traveling with young kids and something isn't working, they need a real response, quickly, from a person who knows the house and can help.</p>
 
 <img src="/blog/images/cozy-cactus-labeled-drawers.webp" alt="Fully labeled kitchen drawers at The Cozy Cactus vacation rental Indio" width="1050" height="1400" loading="lazy">
 <p class="image-caption">Every drawer labeled. Every cabinet stocked. The thing people mention most in reviews.</p>
@@ -89,7 +89,7 @@ relatedPosts:
 
 <p><strong>The neighborhood is gated.</strong> Gate access and all check-in instructions go out 24 hours before arrival, with check-in itself self-serve via smart lock.</p>
 
-<p><strong>This is genuinely a family home</strong>, not "family-friendly" as a phrase on a listing but something built from scratch around what families with young kids need, down to the sound machine on the nightstand and the outlet covers already in place. If you're traveling with people who matter most to you and you want a place that feels like it was ready for you, this is that place.</p>
+<p><strong>This is a family home</strong>, built from scratch around what families with young kids need, down to the sound machine on the nightstand and the outlet covers already in place. If you're traveling with people who matter most to you and you want a place that feels like it was ready for you, this is that place.</p>
 
 <img src="/blog/images/cozy-cactus-infant-gear.webp" alt="Baby and infant gear at The Cozy Cactus Indio including Stokke high chair and pack-n-play" width="1400" height="933" loading="lazy">
 <p class="image-caption">The infant kit. Stokke high chair, real crib mattress, baby monitor. Everything guests with babies say they didn't have to pack.</p>

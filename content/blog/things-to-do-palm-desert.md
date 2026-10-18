@@ -25,7 +25,7 @@ layout: blog-post.njk
 
 <p>Palm Desert sits roughly in the middle of the Coachella Valley, about 15 minutes east of Palm Springs and 20 minutes west of Indio. It's where people go when they want a more low-key version of the valley, less nightlife-focused than Palm Springs, less festival-adjacent than Indio. It earns that reputation.</p>
 
-<p>The city has two things the others don't: El Paseo, the valley's best shopping street, and the Living Desert Zoo and Gardens, which is genuinely one of the better small zoos in California. Here's what's worth your time.</p>
+<p>The city has two things the others don't: El Paseo, the valley's best shopping street, and the Living Desert Zoo and Gardens, which is one of the better small zoos in California. Here's what's worth your time.</p>
 
 <img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Desert California with desert mountains in the background" width="1800" height="1800" loading="lazy">
 
@@ -49,7 +49,7 @@ layout: blog-post.njk
 
 <h2><a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer">Shields Date Garden</a></h2>
 
-<p>Technically in Indio (20 minutes east), but worth mentioning because most people hear about it in the Palm Desert context. Shields has been growing and selling Medjool dates since 1924. The retail shop sells date shakes, date bread, and dates in every variety. There's also a short but genuinely charming film about the sex life of the date palm that's been screening there since the 1950s. Go, buy a date shake, watch the film.</p>
+<p>Technically in Indio (20 minutes east), but worth mentioning because most people hear about it in the Palm Desert context. Shields has been growing and selling Medjool dates since 1924. The retail shop sells date shakes, date bread, and dates in every variety. There's also a short but charming film about the sex life of the date palm that's been screening there since the 1950s. Go, buy a date shake, watch the film.</p>
 
 <img src="/blog/images/shields-date-garden.webp" alt="Shields Date Garden sign and palm trees in Indio California" width="1400" height="933" loading="lazy">
 
@@ -76,7 +76,7 @@ layout: blog-post.njk
 
 <h2>When to Visit</h2>
 
-<p>October through May is the season. The valley is genuinely pleasant: daytime highs in the 70s and 80s, cool evenings, green courses. June through September, highs regularly exceed 110 degrees, the Living Desert cuts its hours, some restaurants trim their days, and El Paseo goes quiet. Prices drop 30 to 50 percent, which is the trade. If you're going in summer, <a href="/blog/palm-springs-summer/">read our summer guide</a> first.</p>
+<p>October through May is the season. The valley is pleasant: daytime highs in the 70s and 80s, cool evenings, green courses. June through September, highs regularly exceed 110 degrees, the Living Desert cuts its hours, some restaurants trim their days, and El Paseo goes quiet. Prices drop 30 to 50 percent, which is the trade. If you're going in summer, <a href="/blog/palm-springs-summer/">read our summer guide</a> first.</p>
 
 <p>If you're spending more than a day in the valley, our properties in Indio give you a useful base: <a href="/cozy-cactus/">The Cozy Cactus</a> (3BR, private hot tub, community pool) and <a href="/terra-luz/">Terra Luz</a> (3BR, private saltwater pool, Latin/Cuban design) are both 20 minutes east of Palm Desert in Indian Palms. Either makes a comfortable home base for a valley trip that includes Palm Desert, Palm Springs, and Indio.</p>
 
@@ -86,7 +86,7 @@ layout: blog-post.njk
 <p>The Living Desert Zoo and Gardens. It's the one attraction in Palm Desert with no equivalent elsewhere in the valley: 1,200 acres of desert zoo and botanical garden, with African and North American desert animals in an intimate format. Half a day is enough, and it earns the admission price in cooler months.</p>
 
 <h3>Is El Paseo in Palm Desert worth visiting?</h3>
-<p>Yes, particularly if your visit overlaps with a Thursday from October through May. The Desert Art Walk keeps galleries open late and puts music on the street, which makes El Paseo genuinely lively rather than just a shopping district. Even outside of Art Walk evenings, it's a pleasant mile-long stretch to walk with good dining options built in.</p>
+<p>Yes, particularly if your visit overlaps with a Thursday from October through May. The Desert Art Walk keeps galleries open late and puts music on the street, which makes El Paseo lively rather than just a shopping district. Even outside of Art Walk evenings, it's a pleasant mile-long stretch to walk with good dining options built in.</p>
 
 <h3>How far is Palm Desert from Palm Springs?</h3>
 <p>About 15 miles, or 20 minutes on Highway 111. From Indio, Palm Desert is roughly 20 minutes west. Most Coachella Valley visitors end up driving this corridor at some point, and Palm Desert makes a natural midday stop between the two ends of the valley.</p>
@@ -95,7 +95,7 @@ layout: blog-post.njk
 <p>November through April is the reliable window. March brings the BNP Paribas Open at nearby Indian Wells, which fills hotels but keeps the valley energized. January and February are quieter and cooler, with the occasional cold morning offset by clear skies and uncrowded courses and trails.</p>
 
 <h3>Is Palm Desert worth a day trip from Palm Springs?</h3>
-<p>Yes, especially if your visit overlaps with a Thursday between October and May, when the El Paseo Desert Art Walk runs. The two cities are 15 miles apart, about 20 minutes by car. A half-day loop covering the Living Desert Zoo in the morning and El Paseo in the afternoon is genuinely doable.</p>
+<p>Yes, especially if your visit overlaps with a Thursday between October and May, when the El Paseo Desert Art Walk runs. The two cities are 15 miles apart, about 20 minutes by car. A half-day loop covering the Living Desert Zoo in the morning and El Paseo in the afternoon is doable.</p>
 
 <h3>What's the best base for covering Palm Desert, Palm Springs, and Coachella?</h3>
 <p>Indio sits 20 minutes east of Palm Desert, 35 minutes from Palm Springs, and 5 to 10 minutes from the Coachella and Stagecoach festival grounds. <a href="https://indigopalm.co/">Indigo Palm Collective</a> has two 3-bedroom homes in Indio's Indian Palms neighborhood that work well as a valley base.</p>
@@ -122,7 +122,7 @@ layout: blog-post.njk
       "name": "Is El Paseo in Palm Desert worth visiting?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, particularly if your visit overlaps with a Thursday from October through May. The Desert Art Walk keeps galleries open late and puts music on the street, making El Paseo genuinely lively. Even outside of Art Walk evenings, it's a pleasant mile-long stretch to walk with good dining options built in."
+        "text": "Yes, particularly if your visit overlaps with a Thursday from October through May. The Desert Art Walk keeps galleries open late and puts music on the street, making El Paseo lively. Even outside of Art Walk evenings, it's a pleasant mile-long stretch to walk with good dining options built in."
       }
     },
     {
@@ -146,7 +146,7 @@ layout: blog-post.njk
       "name": "Is Palm Desert worth a day trip from Palm Springs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, especially if your visit overlaps with a Thursday between October and May, when the El Paseo Desert Art Walk runs. The two cities are 15 miles apart, about 20 minutes by car. A half-day loop covering the Living Desert Zoo in the morning and El Paseo in the afternoon is genuinely doable."
+        "text": "Yes, especially if your visit overlaps with a Thursday between October and May, when the El Paseo Desert Art Walk runs. The two cities are 15 miles apart, about 20 minutes by car. A half-day loop covering the Living Desert Zoo in the morning and El Paseo in the afternoon is doable."
       }
     },
     {

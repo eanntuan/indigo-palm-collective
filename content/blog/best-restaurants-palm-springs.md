@@ -77,7 +77,7 @@ layout: blog-post.njk
 
 <h3>Les Filles Cafe</h3>
 
-<p><a href="https://www.instagram.com/lesfillescafe/" target="_blank" rel="noopener noreferrer"><strong>Les Filles Cafe</strong></a> is five minutes from downtown in Cathedral City and worth the drive. The espresso is serious, the croissants are the real reason you go early, and the whole place runs on an easy, unhurried rhythm that's hard to find anywhere on the main Palm Canyon stretch. A genuinely French cafe in the middle of the desert. You'll know you're in the right spot when the owners are out front.</p>
+<p><a href="https://www.instagram.com/lesfillescafe/" target="_blank" rel="noopener noreferrer"><strong>Les Filles Cafe</strong></a> is five minutes from downtown in Cathedral City and worth the drive. The espresso is serious, the croissants are the real reason you go early, and the whole place runs on an easy, unhurried rhythm that's hard to find anywhere on the main Palm Canyon stretch. A French cafe in the middle of the desert. You'll know you're in the right spot when the owners are out front.</p>
 
 <p><strong>Cathedral City, CA</strong> (approx. 5 min from downtown Palm Springs). Find them at <a href="https://www.instagram.com/lesfillescafe/" target="_blank" rel="noopener">@lesfillescafe</a> for current hours.</p>
 
@@ -97,7 +97,7 @@ layout: blog-post.njk
 
 <h3>Cheeky's</h3>
 
-<p><a href="https://www.cheekysf10.com/" target="_blank" rel="noopener noreferrer"><strong>Cheeky's</strong></a> is the Palm Springs brunch institution, and it earns the reputation. The menu rotates weekly around seasonal ingredients, which is part of why regulars keep showing up. The bacon flight is four preparations of the same ingredient and it works: each one is genuinely different. The frittata is usually excellent. The outdoor patio has mountain views. Michelin-recommended.</p>
+<p><a href="https://www.cheekysf10.com/" target="_blank" rel="noopener noreferrer"><strong>Cheeky's</strong></a> is the Palm Springs brunch institution, and it earns the reputation. The menu rotates weekly around seasonal ingredients, which is part of why regulars keep showing up. The bacon flight is four preparations of the same ingredient and it works: each one is different. The frittata is usually excellent. The outdoor patio has mountain views. Michelin-recommended.</p>
 
 <p>Walk-ins only. Weekend waits are real. Weekdays before 9am are manageable. Saturday at 9am is a line. Plan accordingly.</p>
 
@@ -116,7 +116,7 @@ layout: blog-post.njk
 
 <h3>Tac/Quila</h3>
 
-<p><a href="https://tacquila.com/" target="_blank" rel="noopener noreferrer"><strong>Tac/Quila</strong></a> is a Michelin Guide-listed taqueria on North Palm Canyon that does Jalisco-style tacos alongside some genuinely surprising upscale versions: lobster tacos, seared ahi tuna, house-made tortillas. The margarita flight is the move if you're eating with a group. Seating is lively and the line moves. Reservations are recommended and the public parking lot behind the building is easier than street parking. If tacos are the whole plan, I put together a longer list of the <a href="/blog/best-mexican-restaurants-palm-springs/">best Mexican restaurants in Palm Springs</a>.</p>
+<p><a href="https://tacquila.com/" target="_blank" rel="noopener noreferrer"><strong>Tac/Quila</strong></a> is a Michelin Guide-listed taqueria on North Palm Canyon that does Jalisco-style tacos alongside some surprising upscale versions: lobster tacos, seared ahi tuna, house-made tortillas. The margarita flight is the move if you're eating with a group. Seating is lively and the line moves. Reservations are recommended and the public parking lot behind the building is easier than street parking. If tacos are the whole plan, I put together a longer list of the <a href="/blog/best-mexican-restaurants-palm-springs/">best Mexican restaurants in Palm Springs</a>.</p>
 
 <p><strong>415 N Palm Canyon Dr, Palm Springs, CA 92262.</strong> (760) 417-4471. Daily 11am-10pm. Find them at <a href="https://tacquila.com/" target="_blank" rel="noopener">tacquila.com</a>.</p>
 
@@ -191,7 +191,7 @@ layout: blog-post.njk
 
 <h3>Escena Grill</h3>
 
-<p><a href="https://escenagolf.com/grill/" target="_blank" rel="noopener noreferrer"><strong>Escena Grill</strong></a> is the golf club restaurant that's open to everyone, and the setting is genuinely one of the best in the city. The patio looks out over the course toward the San Jacinto Mountains and the view at dusk, when the mountains go from gold to purple, is something you'll take a photo of even if you're not a photo person. The food is California eclectic with a rotating seasonal menu. Dog-friendly patio. Go for the outdoor table and stay until the light changes.</p>
+<p><a href="https://escenagolf.com/grill/" target="_blank" rel="noopener noreferrer"><strong>Escena Grill</strong></a> is the golf club restaurant that's open to everyone, and the setting is one of the best in the city. The patio looks out over the course toward the San Jacinto Mountains and the view at dusk, when the mountains go from gold to purple, is something you'll take a photo of even if you're not a photo person. The food is California eclectic with a rotating seasonal menu. Dog-friendly patio. Go for the outdoor table and stay until the light changes.</p>
 
 <p><strong>1100 Clubhouse View, Palm Springs, CA 92262.</strong> (760) 992-0002. Hours vary seasonally: check escenagolf.com before you go. Reservations via OpenTable or phone. Find them at <a href="https://www.instagram.com/escenagrill/" target="_blank" rel="noopener">@escenagrill</a>.</p>
 
@@ -283,7 +283,7 @@ layout: blog-post.njk
 <p>Sandfish is an intimate omakase counter at 100 W Tahquitz Canyon Way with 15 to 20 seats, built around careful nigiri and small plates. It books out days in advance on weekends, so reserve before you arrive rather than after. Order the uni if it's on the menu that night.</p>
 
 <h3>What restaurants in Palm Springs do locals eat at, not just tourists?</h3>
-<p>Rooster and the Pig on South Indian Canyon is the consistent local favorite: Vietnamese fusion, pork belly buns, and a cocktail list that earns its price. Les Filles Cafe in Cathedral City (five minutes from downtown) is a genuinely French cafe with serious croissants that most visitors never find. Escena Grill's golf course patio is another local-known spot that rarely shows up in tourist guides.</p>
+<p>Rooster and the Pig on South Indian Canyon is the consistent local favorite: Vietnamese fusion, pork belly buns, and a cocktail list that earns its price. Les Filles Cafe in Cathedral City (five minutes from downtown) is a French cafe with serious croissants that most visitors never find. Escena Grill's golf course patio is another local-known spot that rarely shows up in tourist guides.</p>
 
 <h3>Where should I eat in Palm Springs before going to Coachella?</h3>
 <p>Tac/Quila is the best pre-Coachella meal: a Michelin Guide-listed taqueria with Jalisco-style tacos, house-made tortillas, and a margarita flight. Fast enough that you won't be late, good enough to remember. Open daily from 11am at 415 N Palm Canyon Dr. The Coachella grounds are in Indio, about 30-45 minutes from Palm Springs.</p>
@@ -368,7 +368,7 @@ layout: blog-post.njk
       "name": "What restaurants in Palm Springs do locals go to?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rooster and the Pig on South Indian Canyon is the consistent local favorite: Vietnamese fusion, pork belly buns, and a cocktail list that earns its price. Les Filles Cafe in Cathedral City (five minutes from downtown) is a genuinely French cafe with serious croissants that most visitors never find. Escena Grill's golf course patio is another local spot that rarely shows up in tourist guides."
+        "text": "Rooster and the Pig on South Indian Canyon is the consistent local favorite: Vietnamese fusion, pork belly buns, and a cocktail list that earns its price. Les Filles Cafe in Cathedral City (five minutes from downtown) is a French cafe with serious croissants that most visitors never find. Escena Grill's golf course patio is another local spot that rarely shows up in tourist guides."
       }
     },
     {

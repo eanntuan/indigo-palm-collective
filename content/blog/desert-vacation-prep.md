@@ -67,7 +67,7 @@ relatedPosts:
 
 <h2>Food: Skip the Chains</h2>
 
-<p>The Coachella Valley has genuinely good food, and most of it isn't on the main drag. A few places worth knowing:</p>
+<p>The Coachella Valley has good food, and most of it isn't on the main drag. A few places worth knowing:</p>
 
 <p><a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer"><strong>Shields Date Garden</strong></a> in Indio has been there since 1924. Date shakes are not a gimmick. Get one.</p>
 

@@ -34,7 +34,7 @@ layout: blog-post.njk
 
 <h2>Option 1: Drive (Most Flexible, Most Common)</h2>
 
-<p>LAX to Palm Springs is roughly 120 miles. Without traffic, the drive takes about 2 hours on the I-10 East. The desert opens up around Banning and Beaumont before you drop into the Coachella Valley. The last stretch is genuinely beautiful.</p>
+<p>LAX to Palm Springs is roughly 120 miles. Without traffic, the drive takes about 2 hours on the I-10 East. The desert opens up around Banning and Beaumont before you drop into the Coachella Valley. The last stretch is beautiful.</p>
 
 <p>The catch is LA traffic. Leave on a Friday afternoon and that 2-hour drive becomes 3 to 3.5 hours. Leave on a Tuesday at 10am and it's a clean 2 hours. <a href="https://maps.google.com/?q=lax+to+palm+springs" target="_blank" rel="noopener">Check Google Maps</a> before you leave the airport, not before you board the plane. Driving makes the most sense for groups of two or more with luggage, or anyone planning to explore beyond Palm Springs proper.</p>
 
@@ -49,7 +49,7 @@ layout: blog-post.njk
 
 <h2>Option 3: Fly into ONT (Ontario International)</h2>
 
-<p>Ontario International Airport is about 1.5 hours from Palm Springs versus 2 to 2.5 from LAX. It's significantly less congested, easier to navigate, and often has lower fares for the same routes. If airfare to ONT is close to LAX pricing, it's a genuinely good middle-ground option. Worth checking whenever you're comparing.</p>
+<p>Ontario International Airport is about 1.5 hours from Palm Springs versus 2 to 2.5 from LAX. It's significantly less congested, easier to navigate, and often has lower fares for the same routes. If airfare to ONT is close to LAX pricing, it's a good middle-ground option. Worth checking whenever you're comparing.</p>
 
 <h2>Option 4: Shared Shuttle</h2>
 

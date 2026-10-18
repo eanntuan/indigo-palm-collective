@@ -23,11 +23,11 @@ excerpt: "Pool shows up in a thousand listings. Here's what separates a desert p
 layout: blog-post.njk
 ---
 
-<p>The first time a guest mentioned the pool in a review, I read it three times. Not because it was unusually nice, but because I realized I'd spent months obsessing over the indoor design and almost no time thinking about whether the outdoor space was any good.</p>
+<p>The first time a guest mentioned the pool in a review, I read it three times because I realized I'd spent months obsessing over the indoor design and almost no time thinking about whether the outdoor space was any good.</p>
 
 <p>In the Coachella Valley, the pool is the whole point.</p>
 
-<p>I own three vacation rentals in the desert now. I've watched groups arrive, toss their bags, and immediately ask where the pool is before anyone looks at the kitchen. I've also booked plenty of rentals myself and learned the hard way that "private pool" can mean almost anything: a thoughtfully designed backyard with a sun shelf, good shade, and a heated spa, or a 10-by-15 above-ground stock tank with a single lounge chair that's technically a pool if you squint hard enough.</p>
+<p>I own three vacation rentals in the desert now. I've watched groups arrive, toss their bags, and immediately ask where the pool is before anyone looks at the kitchen. I've also booked plenty of rentals myself and learned the hard way that "private pool" can mean almost anything: a backyard with a sun shelf, good shade, and a heated spa, or a 10-by-15 above-ground stock tank with a single lounge chair that's technically a pool if you squint hard enough.</p>
 
 <p>So here's what I've learned about what makes a pool rental worth booking out here.</p>
 
@@ -36,7 +36,7 @@ layout: blog-post.njk
 
 <h2>Private vs. Shared: The First Filter</h2>
 
-<p>The Coachella Valley has a lot of rental communities built around shared amenities. That works fine for some trips, and it's a genuine pain for others. Shared pools make sense if you're going to Coachella and want the communal chaos. They're a headache if you're here for a bachelorette weekend or a family trip where you want the pool at 11pm without navigating community rules.</p>
+<p>The Coachella Valley has a lot of rental communities built around shared amenities. That works fine for some trips, and it's a genuine pain for others. Shared pools make sense if you're going to Coachella and want the communal chaos. They're a headache if you're here for a bachelorette weekend or a family trip where you want the pool at 11pm without checking community rules.</p>
 
 <p>When listings say "pool access," read carefully. That can mean a private pool steps from your back door, a community pool shared with other guests in the HOA, or a resort pool that technically comes with your booking. All three get the same label. They're not the same experience at all.</p>
 
@@ -44,7 +44,7 @@ layout: blog-post.njk
 
 <h2>Heated Pool: Not Optional in the Desert (Certain Times of Year)</h2>
 
-<p>March and April in the Coachella Valley are stunning and also cold at night, sometimes dropping into the low 50s. An unheated pool in April is a pool you'll look at but not use, which is a different kind of disappointment than a bad pool.</p>
+<p>March and April in the Coachella Valley are clear and sunny and also cold at night, sometimes dropping into the low 50s. An unheated pool in April is a pool you'll look at but not use, which is a different kind of disappointment than a bad pool.</p>
 
 <p>If you're coming for Coachella or Stagecoach (both in April), a heated pool is not a nice-to-have. It's the thing that determines whether you swim.</p>
 
@@ -52,7 +52,7 @@ layout: blog-post.njk
 
 <h2>Size Matters More Than You Think</h2>
 
-<p>There's a wide range of what counts as a pool in the desert. Some are genuinely large. Some are plunge pools: deep, maybe 12 feet long, fine for cooling off but not for playing with a group of six.</p>
+<p>There's a wide range of what counts as a pool in the desert. Some are large. Some are plunge pools: deep, maybe 12 feet long, fine for cooling off but not for playing with a group of six.</p>
 
 <p>For six or more people, I'd look for at least 30 feet. That's where multiple people can be in the water at the same time without it feeling like a crowded elevator. The three heated community pools our Cozy Cactus guests use at Indian Palms are all full-length, and the hot tub in that backyard is private to the house, which is the combination that comes up most in guest reviews: a real swimming pool a short walk away and warm water at your back door whenever you want it.</p>
 
@@ -107,7 +107,7 @@ layout: blog-post.njk
 
 <p>The best pool rentals here, the ones with private heated pools, decent size, good shade, and a backyard that feels like someone thought about it, book out for festival season by October or November the year before. April is the hardest month to find anything. May through September is more available because the heat scares people off, which I don't think it should if you have a good setup and plan your days around it.</p>
 
-<p>Fall and winter are often the best value, full stop. October and November in the desert are genuinely ideal: warm enough for the pool in the afternoon, cool enough to want the hot tub in the evening, and the crowds are gone. If you have any flexibility on timing, fall is the answer.</p>
+<p>Fall and winter are often the best value, full stop. October and November in the desert are ideal: warm enough for the pool in the afternoon, cool enough to want the hot tub in the evening, and the crowds are gone. If you have any flexibility on timing, fall is the answer.</p>
 
 <p>For a full breakdown of what to look for in any Coachella Valley rental beyond just the pool, the <a href="/blog/coachella-valley-vacation-rental-guide/">complete vacation rental guide</a> covers timing, neighborhoods, what to ask, and what to skip.</p>
 

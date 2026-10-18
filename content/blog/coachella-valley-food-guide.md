@@ -68,7 +68,7 @@ faqItems:
 <img src="/blog/images/papa-headz.webp" alt="Papa Headz smash burger restaurant in Indio California, a local favorite in the Coachella Valley" width="1400" height="933" loading="lazy">
 <p class="image-caption">Papa Headz. The double with special sauce. If you're a smash burger person, this is your spot in Indio.</p>
 
-<p>The smash burgers here are genuinely the thing. Double patty, proper sear, the special sauce works. Counter service, quick turnaround, the kind of quality that builds a serious local following in a market where the competition is mostly chains. Papa Headz would be a solid neighborhood burger spot in any city. In Indio, it's the best burger in the area by a significant margin.</p>
+<p>The smash burgers here are the thing. Double patty, proper sear, the special sauce works. Counter service, quick turnaround, the kind of quality that builds a serious local following in a market where the competition is mostly chains. Papa Headz would be a solid neighborhood burger spot in any city. In Indio, it's the best burger in the area by a significant margin.</p>
 
 <p>Call ahead on busy festival weekends. The line gets real.</p>
 
@@ -77,7 +77,7 @@ faqItems:
 <img src="/blog/images/arriolas-tortilleria.webp" alt="Arriola's Tortilleria in Indio California, established 1927, known for handmade tortillas and traditional Mexican food" width="1400" height="933" loading="lazy">
 <p class="image-caption">Arriola's has been here since 1927. The handmade tortillas are the point. Get the beans and rice combo and taste what a fresh tortilla is.</p>
 
-<p>Established 1927. That's a fact that tells you something about what the food is like. Handmade tortillas, beans and rice done the way they've been done for decades, simple and correct. It's a place where the tortillas are genuinely good in a way that makes the packaged version seem like a different food category.</p>
+<p>Established 1927. That's a fact that tells you something about what the food is like. Handmade tortillas, beans and rice done the way they've been done for decades, simple and correct. It's a place where the tortillas are good in a way that makes the packaged version seem like a different food category.</p>
 
 <p>Get the beans and rice combo. Take tortillas back to the rental if you have a kitchen.</p>
 
@@ -111,7 +111,7 @@ faqItems:
 
 <h3><a href="https://www.lavenderbistro.com/" target="_blank" rel="noopener noreferrer">Lavender Bistro</a></h3>
 
-<p>Lavender Bistro is the La Quinta brunch institution. The French toast and eggs benedict are what people come back for. Get there early on weekends because the wait gets real, and the wait is outside in the parking lot, which is fine in March but less appealing in July. This is a genuinely good brunch spot in a market where good brunch spots are rarer than they should be.</p>
+<p>Lavender Bistro is the La Quinta brunch institution. The French toast and eggs benedict are what people come back for. Get there early on weekends because the wait gets real, and the wait is outside in the parking lot, which is fine in March but less appealing in July. This is a good brunch spot in a market where good brunch spots are rarer than they should be.</p>
 
 <h2>Palm Springs</h2>
 
@@ -128,7 +128,7 @@ faqItems:
 
 <h3><a href="https://www.yelp.com/biz/thai-hot-palm-springs" target="_blank" rel="noopener noreferrer">Thai Hot</a></h3>
 
-<p>Thai Hot is a Palm Springs institution. The name is honest: you can get this food hot, which is rarer than it should be at Thai restaurants in tourist-heavy areas. The pad see ew and larb are both strong; the curry holds up, and the room stays comfortable without turning precious about it. Worth making a reservation for Friday and Saturday evenings because it fills up.</p>
+<p>Thai Hot is a Palm Springs institution. The name is accurate: you can get this food hot, which is rarer than it should be at Thai restaurants in tourist-heavy areas. The pad see ew and larb are both strong; the curry holds up, and the room stays comfortable without turning precious about it. Worth making a reservation for Friday and Saturday evenings because it fills up.</p>
 
 <h3><a href="https://www.workshopkitchenbar.com/" target="_blank" rel="noopener noreferrer">Workshop Kitchen and Bar</a></h3>
 

@@ -85,7 +85,7 @@ layout: blog-post.njk
 
 <p>I labeled everything: every drawer, every cabinet, every shelf, where the batteries are, which drawer has the baby spoons, where the Tupperware lids are. The lids even match the containers, something one guest called "unprecedented" in 10 years of Airbnb stays. She'd been to 40+ rentals. Forty. And matching Tupperware lids were unprecedented. (My own home is not this organized. My guests live better than I do.)</p>
 
-<p>I bought a <a href="https://www.target.com/p/stokke-clikk-high-chair-cloud-gray/-/A-78461786" target="_blank">Stokke high chair</a> instead of the wobbly plastic disaster from the clearance aisle. Sound machines in every bedroom. (I travel with my own. I am a grown adult. Zero shame.) Dawn curated a full Family Kit: bottle warmer, bottle brush, changing pad, diaper pail, cabinet locks, Keekaroo changing table. All the things you desperately need at 10pm on night one when you left yours at home.</p>
+<p>I bought a <a href="https://www.target.com/p/stokke-clikk-high-chair-cloud-gray/-/A-78461786" target="_blank">Stokke high chair</a> instead of the wobbly plastic disaster from the clearance aisle. Sound machines in every bedroom. (I travel with my own. I am a grown adult. Zero shame.) Dawn put together a full Family Kit: bottle warmer, bottle brush, changing pad, diaper pail, cabinet locks, Keekaroo changing table. All the things you desperately need at 10pm on night one when you left yours at home.</p>
 
 <img src="/blog/images/familykit.webp" alt="Family Kit at The Cozy Cactus with organized baby gear, bottle warmer, sound machine, and infant supplies" loading="lazy" decoding="async" width="800" height="533">
 <p class="image-caption">The Family Kit: solving the 11pm panic message before it happens<br><small>Photo: Third Wall Photography | Styling: The Olive Jar</small></p>
@@ -122,7 +122,7 @@ layout: blog-post.njk
 <h3>Can I book The Cozy Cactus without going through Airbnb?</h3>
 <p>Yes. The Cozy Cactus books direct at <a href="https://indigopalm.co/cozy-cactus/">indigopalm.co/cozy-cactus</a>, which skips the Airbnb service fee. On a multi-night stay that difference adds up to a meaningful amount on the same property at the same nightly rate.</p>
 
-<p>The Cozy Cactus is thoughtfully designed for humans who notice when someone cared. It started as a backup plan for a Honda Element and became something I'm proud of.</p>
+<p>The Cozy Cactus is designed for humans who notice when someone cared. It started as a backup plan for a Honda Element and became something I'm proud of.</p>
 
 <p>If that sounds like what you need, <a href="/cozy-cactus/">you know where to find us</a>. And if you want the full origin story, the Easter Sunday purchase, the Facebook Marketplace era, all of it, read <a href="/blog/cozy-cactus-story/">the complete story of how The Cozy Cactus came to be</a>. For more on what to do in the valley with younger kids, the <a href="/blog/coachella-valley-with-kids/">Coachella Valley with kids guide</a> covers the family-friendly angle in more depth.</p>
 

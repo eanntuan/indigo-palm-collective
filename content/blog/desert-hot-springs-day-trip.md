@@ -33,7 +33,7 @@ layout: blog-post.njk
 <h2>1. Two Bunch Palms Resort</h2>
 <p><strong>$$$</strong> | Day passes available</p>
 
-<p><a href="https://twobunchpalms.com/" target="_blank" rel="noopener noreferrer"><strong>Two Bunch Palms</strong></a> is the most well-known mineral spa in the area, and the one that earns that reputation. Two Bunch Palms has been operating since the 1940s and the grounds feel it: mature palms, rock grottos, a genuinely unhurried pace. Day passes run around $80 to $140 depending on season and day of week. That gets you access to the main mineral pool and grotto. Spa treatments book out, so plan ahead if that's the goal.</p>
+<p><a href="https://twobunchpalms.com/" target="_blank" rel="noopener noreferrer"><strong>Two Bunch Palms</strong></a> is the most well-known mineral spa in the area, and the one that earns that reputation. Two Bunch Palms has been operating since the 1940s and the grounds feel it: mature palms, rock grottos, an unhurried pace. Day passes run around $80 to $140 depending on season and day of week. That gets you access to the main mineral pool and grotto. Spa treatments book out, so plan ahead if that's the goal.</p>
 
 <p>They have a specific approach to quiet here. No phones at the pools, no loud conversations. If you're coming with someone who needs to be on a call every 30 minutes, this is not the right spot.</p>
 
@@ -53,7 +53,7 @@ layout: blog-post.njk
 <h2>4. Hacienda Hot Springs Inn</h2>
 <p><strong>$$</strong> | Day passes available (call ahead)</p>
 
-<p>Smaller than Miracle Springs and more personal. Hacienda has been running since 1946 and leans into the old Desert Hot Springs motel aesthetic rather than fighting it. Two outdoor mineral pools, adults-only, genuinely relaxed. Day passes are sometimes available but not always listed online. Call ahead at (760) 288-0466 to confirm. Worth the extra step if you prefer somewhere quieter than the larger resorts.</p>
+<p>Smaller than Miracle Springs and more personal. Hacienda has been running since 1946 and leans into the old Desert Hot Springs motel aesthetic rather than fighting it. Two outdoor mineral pools, adults-only, relaxed. Day passes are sometimes available but not always listed online. Call ahead at (760) 288-0466 to confirm. Worth the extra step if you prefer somewhere quieter than the larger resorts.</p>
 
 <h2>5. Desert Shores Vacation Rentals Area</h2>
 <p><strong>$</strong> | Public access</p>
@@ -66,7 +66,7 @@ layout: blog-post.njk
 <h2>6. Sam's Family Spa</h2>
 <p><strong>$</strong> | Day passes available</p>
 
-<p>Sam's Family Spa is the longest-running resort in Desert Hot Springs, open since 1957. Unpretentious, well-maintained, and genuinely affordable: day passes run around $20 to $30 per person. Four mineral pools including an Olympic-size pool and a children's wading pool. If you're visiting with kids or just want a no-fuss soaking option without a reservation process, Sam's is the call.</p>
+<p>Sam's Family Spa is the longest-running resort in Desert Hot Springs, open since 1957. Unpretentious, well-maintained, and affordable: day passes run around $20 to $30 per person. Four mineral pools including an Olympic-size pool and a children's wading pool. If you're visiting with kids or just want a no-fuss soaking option without a reservation process, Sam's is the call.</p>
 
 <h2>7. El Morocco Inn and Spa</h2>
 <p><strong>$$</strong> | Day passes for spa guests</p>
@@ -112,7 +112,7 @@ layout: blog-post.njk
 <p>Not easily. The resorts are spread across a low-density desert city, rideshare coverage in Desert Hot Springs is limited compared to Palm Springs, and there's no direct public transit connection from Indio. A car is the practical requirement for a day trip. The drive from Indio takes about 20 minutes and is a straight shot up Gene Autry Trail with no complicated routing involved.</p>
 
 <h3>What's the difference between the mineral pools at the resorts and a regular hot tub?</h3>
-<p>Desert Hot Springs mineral water is geothermal: it comes up naturally hot from underground, around 105 to 148 degrees at the source, then gets cooled to a soakable temperature. It's not heated tap water with chemicals added. The mineral content includes silica and trace elements, and regular visitors claim skin and muscle benefits that don't come from a chlorinated hot tub. Whether you notice a difference depends on the person, but the source water is genuinely distinct.</p>
+<p>Desert Hot Springs mineral water is geothermal: it comes up naturally hot from underground, around 105 to 148 degrees at the source, then gets cooled to a soakable temperature. It's not heated tap water with chemicals added. The mineral content includes silica and trace elements, and regular visitors claim skin and muscle benefits that don't come from a chlorinated hot tub. Whether you notice a difference depends on the person, but the source water is distinct.</p>
 
 <p>Both <a href="/terra-luz/">Terra Luz</a> and <a href="/cozy-cactus/">The Cozy Cactus</a> are 20 minutes from Desert Hot Springs. Terra Luz has a private saltwater pool, and the Cozy Cactus has a private hot tub plus three heated community pools at Indian Palms, so the daily swim is covered either way. Desert Hot Springs handles the mineral soak.</p>
 

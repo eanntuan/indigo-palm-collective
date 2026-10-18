@@ -26,7 +26,7 @@ layout: blog-post.njk
 
 <p>You're standing in the living room of a house built in 1957. The floor-to-ceiling glass faces the San Jacinto mountains at exactly the angle the architect calculated for the morning light. The roofline is flat. The overhang is deep enough to kill the direct sun in summer but let the low winter sun through. The pool is the center of the floor plan, not an afterthought tacked on later. Whoever designed this solved the desert in a way that hasn't been improved on since.</p>
 
-<p>Palm Springs has more intact midcentury modern homes than anywhere in the United States. Not the most famous individual buildings, but the most of them, still standing, still lived in, largely unchanged. I own a vacation rental here and have walked these streets more times than I can count because they're one of the best things to do in this city. This is a practical guide for someone who wants to understand what they're looking at and make the most of a few hours on foot.</p>
+<p>Palm Springs has more intact midcentury modern homes than anywhere in the United States. Most of them aren't famous, but they're still standing, still lived in, largely unchanged. I own a vacation rental here and have walked these streets more times than I can count because they're one of the best things to do in this city. This is a practical guide for someone who wants to understand what they're looking at and make the most of a few hours on foot.</p>
 
 <h2>Why Palm Springs Has This Much MCM</h2>
 
@@ -84,7 +84,7 @@ layout: blog-post.njk
 <img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm-lined boulevard in Palm Springs with San Jacinto Mountains in background on a clear morning" width="2711" height="2711" loading="lazy">
 <p class="image-caption">Early morning light in Palm Springs is the best light for architecture. The mountains are sharp, the shadows are long, and the streets are quiet before 9am.</p>
 
-<p>Early morning is best: 7am to 9am in warm months, 8am to 10am in winter. The light is low and directional, which makes flat architectural surfaces read with depth and shadow. Midday light flattens everything. Late afternoon is second best, and the golden hour before sunset is genuinely beautiful if you're there in fall or spring.</p>
+<p>Early morning is best: 7am to 9am in warm months, 8am to 10am in winter. The light is low and directional, which makes flat architectural surfaces read with depth and shadow. Midday light flattens everything. Late afternoon is second best, and the golden hour before sunset is beautiful if you're there in fall or spring.</p>
 
 <p>Avoid midday in summer (May-September). Daytime temps regularly hit 105-110 degrees. If you're visiting in summer, do the walk early and save the afternoon for the pool. The architecture will still be there at 7am.</p>
 
@@ -106,7 +106,7 @@ layout: blog-post.njk
 
 <p>The walk ends naturally back near downtown Palm Canyon Drive, which puts you within a few blocks of everything: <a href="https://kofficoffee.com/" target="_blank" rel="noopener noreferrer"><strong>Koffi</strong></a> for coffee, <a href="https://www.cheekysf10.com/" target="_blank" rel="noopener noreferrer"><strong>Cheeky's</strong></a> if you want brunch, the Village Green for a shaded break before heading to the car.</p>
 
-<p>A few related things to know: The <a href="/blog/palm-springs-weekend-itinerary/">Palm Springs weekend itinerary</a> has a full two-day structure if this is your first time in the city. If you want a driving tour instead of a walking tour, the <a href="/blog/palm-springs-midcentury-architecture-tour/">Palm Springs midcentury driving tour guide</a> covers 8 specific stops with real street names and golden hour timing. And if you're planning a longer stay in the area and want to understand the differences between Palm Springs and Indio, <a href="/blog/palm-springs-vs-indio/">the comparison guide</a> covers the trade-offs honestly.</p>
+<p>A few related things to know: The <a href="/blog/palm-springs-weekend-itinerary/">Palm Springs weekend itinerary</a> has a full two-day structure if this is your first time in the city. If you want a driving tour instead of a walking tour, the <a href="/blog/palm-springs-midcentury-architecture-tour/">Palm Springs midcentury driving tour guide</a> covers 8 specific stops with real street names and golden hour timing. And if you're planning a longer stay in the area and want to understand the differences between Palm Springs and Indio, <a href="/blog/palm-springs-vs-indio/">the comparison guide</a> covers the trade-offs.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -120,7 +120,7 @@ layout: blog-post.njk
 <p>George and Robert Alexander built over 2,000 homes in Palm Springs between 1955 and 1965, hiring architects including William Krisel to design plans at scale. The result was affordable midcentury modern housing across entire neighborhoods, not just custom estates for the wealthy. That democratic spread is why Palm Springs has so much intact MCM: it wasn't only for the rich, so there was much more of it to survive.</p>
 
 <h3>What is the best time of year to walk the Palm Springs architecture neighborhoods?</h3>
-<p>October through April, early morning. The light is best before 9am, the streets are quiet, and the temperature is genuinely comfortable for walking. Summer mornings work too if you're out before 8am, but the window is narrow before the heat makes walking unpleasant. Avoid midday in any season for photography: flat overhead light kills the shadows that give the architecture its depth.</p>
+<p>October through April, early morning. The light is best before 9am, the streets are quiet, and the temperature is comfortable for walking. Summer mornings work too if you're out before 8am, but the window is narrow before the heat makes walking unpleasant. Avoid midday in any season for photography: flat overhead light kills the shadows that give the architecture its depth.</p>
 
 <h3>Is the Palm Springs architecture walking tour accessible for people who don't know much about architecture?</h3>
 <p>Completely. The five features to learn beforehand are flat or butterfly roofs, breezeblock screen walls, deep eave overhangs, post-and-beam framing with floor-to-ceiling glass, and original door colors in turquoise, coral, or orange. Once those five things are in your head, you'll start seeing them on every block without needing any prior background. The Palm Springs Modern Committee sells a map that labels specific buildings if you want more structure.</p>

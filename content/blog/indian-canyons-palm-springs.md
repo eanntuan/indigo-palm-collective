@@ -23,7 +23,7 @@ excerpt: "Indian Canyons is the easiest full-day outdoors activity near Palm Spr
 layout: blog-post.njk
 ---
 
-Most people who visit Palm Springs spend their time on Palm Canyon Drive, then wonder if they should do the <a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tram</strong></a>. Both are fine. But <a href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer"><strong>Indian Canyons</strong></a>, which sits at the southern edge of the city on Agua Caliente Band of Cahuilla Indians tribal land, is genuinely different from everything else you can do in the area.
+Most people who visit Palm Springs spend their time on Palm Canyon Drive, then wonder if they should do the <a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tram</strong></a>. Both are fine. But <a href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer"><strong>Indian Canyons</strong></a>, which sits at the southern edge of the city on Agua Caliente Band of Cahuilla Indians tribal land, is different from everything else you can do in the area.
 
 It's the only place near Palm Springs where you can walk through a canyon with 2,000-year-old native fan palms, a stream running through it, and actual shade. In a desert where shade is scarce and the landscape often feels post-apocalyptic by 11am, that matters.
 

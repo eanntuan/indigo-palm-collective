@@ -5,7 +5,7 @@ dateModified: 2026-07-30
 metaDescription: "Palm Springs wins for walkable boutique weekends. Scottsdale wins for resort pools and group golf. Full cost comparison plus honest picks for each traveler type."
 ogImage: /blog/images/scottsdale-resort-pool.webp
 heroImage: /blog/images/scottsdale-resort-pool.webp
-heroAlt: "luxury resort pool in Scottsdale Arizona desert vacation"
+heroAlt: "resort pool in Scottsdale Arizona desert vacation"
 keywords:
   - Palm Springs vs Scottsdale
   - Palm Springs or Scottsdale
@@ -22,7 +22,7 @@ excerpt: "Both are desert cities with pools, golf, and warm winters. But they at
 layout: blog-post.njk
 faqItems:
   - q: "Does Palm Springs or Scottsdale have better access to nature and hiking?"
-    a: "Palm Springs has a clear edge on this. The Palm Springs Aerial Tram climbs from desert floor to 8,516 feet in 10 minutes, Joshua Tree National Park is 40 minutes out, and the Salton Sea is 45 minutes. Scottsdale has Camelback Mountain and Pinnacle Peak, both genuinely good hikes, but nothing that matches the range of ecosystems and elevation changes accessible from Palm Springs. More detail at https://indigopalm.co/blog/palm-springs-vs-scottsdale/"
+    a: "Palm Springs has a clear edge on this. The Palm Springs Aerial Tram climbs from desert floor to 8,516 feet in 10 minutes, Joshua Tree National Park is 40 minutes out, and the Salton Sea is 45 minutes. Scottsdale has Camelback Mountain and Pinnacle Peak, both good hikes, but nothing that matches the range of ecosystems and elevation changes accessible from Palm Springs. More detail at https://indigopalm.co/blog/palm-springs-vs-scottsdale/"
   - q: "Is Palm Springs or Scottsdale better for golf?"
     a: "Scottsdale has more high-profile courses and hosts TPC Scottsdale, home of the Waste Management Phoenix Open. The Coachella Valley has over 100 courses, and Indian Wells hosts the BNP Paribas Open with the San Jacinto Mountains as backdrop. Serious golfers can argue either city depending on specific courses, but the scenery in Palm Springs is exceptional. Full comparison at https://indigopalm.co/blog/palm-springs-vs-scottsdale/"
   - q: "Which city has better walkability, Palm Springs or Scottsdale?"
@@ -43,7 +43,7 @@ faqItems:
 
 <p>Palm Springs is a small city. Its walkable downtown, Palm Canyon Drive, runs about a mile. There are independently owned restaurants, vintage shops, mid-century modern houses converted into boutique hotels, and an art museum worth visiting. The city has a distinct personality: retro, art-focused, gay-friendly, with a long history as a Hollywood escape. It feels like somewhere, not anywhere.</p>
 
-<p>Scottsdale is a sprawling Phoenix suburb built around luxury resort infrastructure. The resort experience is genuinely excellent: massive pool complexes, well-regarded golf courses, high-end spas. But outside the resort properties, the city is mostly strip malls and chain restaurants. Old Town Scottsdale is the walkable core, but it's smaller and more bar-focused than the name implies.</p>
+<p>Scottsdale is a sprawling Phoenix suburb built around its resorts. The resort experience is excellent: massive pool complexes, well-regarded golf courses, high-end spas. But outside the resort properties, the city is mostly strip malls and chain restaurants. Old Town Scottsdale is the walkable core, but it's smaller and more bar-focused than the name implies.</p>
 
 <p>Neither is better in the abstract. If you want a self-contained resort experience where you rarely leave the property, Scottsdale does that better. If you want a place with actual street life, art, and things to discover on foot, Palm Springs wins.</p>
 
@@ -61,7 +61,7 @@ faqItems:
 
 <p>Scottsdale is at 1,257 feet and sees similar summer highs. The key difference: Arizona has a monsoon season from July through September. Afternoon thunderstorms, elevated humidity, and flash flood risks are real. The heat feels heavier.</p>
 
-<p>Spring and fall are ideal in both cities. October through April is prime time. If you're going in summer, both are genuinely hot. Read our <a href="/blog/palm-springs-summer/">guide to Palm Springs in summer</a> if you're planning a warm-weather visit.</p>
+<p>Spring and fall are ideal in both cities. October through April is prime time. If you're going in summer, both are hot. Read our <a href="/blog/palm-springs-summer/">guide to Palm Springs in summer</a> if you're planning a warm-weather visit.</p>
 
 <h2>Cost Comparison</h2>
 

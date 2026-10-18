@@ -56,7 +56,7 @@ layout: blog-post.njk
 
 <h3>Lunch and Dinner</h3>
 
-<p>The date shake at <strong>Shields Date Garden</strong> (about 20 minutes west in Indio/Palm Desert border territory) is the one I'd feel bad if guests skipped. It's been there since 1924, the shakes are aggressively sweet in the best way, and the date garden tour is free and interesting if you've got 20 minutes to spare. Not a restaurant, but a stop worth building around.</p>
+<p>The date shake at <strong>Shields Date Garden</strong> (about 20 minutes west in Indio/Palm Desert border territory) is the one I'd feel bad if guests skipped. It's been there since 1924, the shakes are aggressively sweet in the best way, and the date garden tour is free and interesting if you've got 20 minutes to spare. A stop worth building around, even though it's not a restaurant.</p>
 
 <p>For dinner, <strong>El Mexicali Cafe</strong> in Old Town Indio is the neighborhood fixture. The red enchiladas are what regulars order. It's BYOB, cash-friendly, and has been open long enough that the plastic tablecloths are load-bearing. <strong>Old Town Tavern</strong> in Old Town Indio gives you something closer to a bar-with-food situation if the group wants a beer alongside dinner.</p>
 
@@ -147,10 +147,10 @@ layout: blog-post.njk
 <p>Yes, without question. Indio doesn't have the walkability of Palm Springs or enough density to make rideshare reliable for regular use. Most things on this guide are 10 to 30 minutes from Terra Luz by car. Uber and Lyft work during festival weekends when demand is high, though surge pricing is real and wait times stretch. For Coachella and Stagecoach, book rides in advance and know that the golf cart option within Indian Palms is worth using over rideshare for short trips to the festival gate.</p>
 
 <h4>How far is Indio from Joshua Tree National Park?</h4>
-<p>About 40 minutes northeast via Highway 62. It's a comfortable day trip in spring or fall if you leave early, before the desert heat arrives. Summer mornings before 9am are workable, but afternoon heat makes the park genuinely dangerous. Guests staying at Terra Luz who aren't doing festival sets all day often use a lighter day for a Joshua Tree morning run. The <a href="/blog/joshua-tree-day-trip-from-indio/">full day trip guide with route and timing is here</a>.</p>
+<p>About 40 minutes northeast via Highway 62. It's a comfortable day trip in spring or fall if you leave early, before the desert heat arrives. Summer mornings before 9am are workable, but afternoon heat makes the park dangerous. Guests staying at Terra Luz who aren't doing festival sets all day often use a lighter day for a Joshua Tree morning run. The <a href="/blog/joshua-tree-day-trip-from-indio/">full day trip guide with route and timing is here</a>.</p>
 
 <h4>What is the Salton Sea like and is it worth visiting?</h4>
-<p>It's 30 minutes southeast of Indio and genuinely strange in a way that earns at least one visit. The bird population is significant, the Bombay Beach murals are interesting, and the whole place has an end-of-the-world atmosphere that sparks more conversation than a standard scenic stop. It's not everyone's thing, but the guests who go tend to talk about it for the rest of the trip. Pair it with a late morning departure from Terra Luz and you're back by early afternoon.</p>
+<p>It's 30 minutes southeast of Indio and strange in a way that earns at least one visit. The bird population is significant, the Bombay Beach murals are interesting, and the whole place has an end-of-the-world atmosphere that sparks more conversation than a standard scenic stop. It's not everyone's thing, but the guests who go tend to talk about it for the rest of the trip. Pair it with a late morning departure from Terra Luz and you're back by early afternoon.</p>
 
 <p class="credit">Photography by <a href="https://www.anchor-pictures.com/" target="_blank" rel="noopener">Anchor Photography</a> | Interior design by <a href="https://theolivejar.co" target="_blank" rel="noopener">Dawn Asher at The Olive Jar</a></p>
 

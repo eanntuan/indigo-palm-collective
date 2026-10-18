@@ -70,7 +70,7 @@ layout: blog-post.njk
 
 <p>Indio also has an emerging food scene that doesn't get enough credit. <a href="https://www.papaheadz.com/" target="_blank" rel="noopener noreferrer"><strong>Papa Headz</strong></a> for smash burgers, <a href="https://www.everbloom.coffee/" target="_blank" rel="noopener noreferrer"><strong>Everbloom</strong></a> for matcha that rivals anything in LA, L&amp;G Desert Store where you can buy fresh tamales and Medjool dates grown a few miles away. See the full rundown in the <a href="/blog/indio-local-gems/">Indio local gems guide</a>.</p>
 
-<p>It's the kind of place where you can have a genuinely experiential getaway without the price tag or pretension of a resort. Float in a Kahlo blue pool under a Desert Marigold umbrella. Grill something ridiculous on the patio. Watch <em>Buena Vista Social Club</em> on an inflatable movie screen after dark. It all just fits.</p>
+<p>It's the kind of place where you can have a real getaway without the price tag or pretension of a resort. Float in a Kahlo blue pool under a Desert Marigold umbrella. Grill something ridiculous on the patio. Watch <em>Buena Vista Social Club</em> on an inflatable movie screen after dark. It all just fits.</p>
 
 <img src="/blog/images/indio-tamale-festival.webp" alt="Indio local festival with desert community gathering, food, and outdoor celebration" width="1600" height="773" loading="lazy" decoding="async">
 <p class="image-caption">Indio without the pretension. This is why we're here.</p>

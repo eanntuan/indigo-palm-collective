@@ -86,7 +86,7 @@ layout: blog-post.njk
   <li>DIY Curtain rod for closet: $10</li>
 </ul>
 
-<p>None of these are luxury price points. The wallpaper was the real investment and it's the thing that makes the room. Everything else is sourced to support it without competing.</p>
+<p>None of these are high-priced pieces. The wallpaper was the real investment and it's the thing that makes the room. Everything else is sourced to support it without competing.</p>
 
 <h2>Who this room works well for</h2>
 

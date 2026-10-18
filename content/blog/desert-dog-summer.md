@@ -23,7 +23,7 @@ excerpt: "The Coachella Valley hits 110 degrees and pavement can blister paws by
 layout: blog-post.njk
 ---
 
-The Coachella Valley is dog-friendly in a real way. Most short-term rentals allow pets, patios are everywhere, and in the right season, bringing your dog here is a genuinely good idea. But in summer, the desert becomes a different place, and the rules that apply to dogs in mild climates don't apply here.
+The Coachella Valley is dog-friendly in a real way. Most short-term rentals allow pets, patios are everywhere, and in the right season, bringing your dog here is a good idea. But in summer, the desert becomes a different place, and the rules that apply to dogs in mild climates don't apply here.
 
 Pavement temperatures in the Coachella Valley routinely hit 150 degrees in summer, even when the air temperature is "only" 105. A dog walking on asphalt at 10am in July can sustain paw burns in under a minute. That's not hyperbole. Veterinary practices in the valley see this every summer.
 
@@ -51,7 +51,7 @@ The rule I follow for our guests at [The Cozy Cactus and Terra Luz](/cozy-cactus
 
 ## What TO Do
 
-**Early morning walks.** Before 8am is the sweet spot in summer. The pavement has had all night to release heat, the air temperature is at its daily low, and the desert light is genuinely pleasant. In spring and fall, the window extends to about 10am.
+**Early morning walks.** Before 8am is the sweet spot in summer. The pavement has had all night to release heat, the air temperature is at its daily low, and the desert light is pleasant. In spring and fall, the window extends to about 10am.
 
 **Pool time.** Terra Luz in Indio has a private saltwater pool, and The Sundune in Palm Springs has access to the community pool at Palm Canyon Villas. Terra Luz, The Sundune and The Well all welcome dogs with a pet fee, and we ask you to email us before you book to confirm. Most dogs figure out the steps quickly. A dog who's been floating in a pool for 20 minutes on a hot afternoon is a calm, happy dog for the rest of the evening. Rinse them off after with fresh water to remove the chlorine.
 
@@ -103,7 +103,7 @@ The [pet-friendly Palm Springs](/blog/pet-friendly-palm-springs/) landscape is g
 
 ### Is it safe to take a dog to Palm Springs in summer?
 
-It's manageable with the right approach, but summer in the Coachella Valley is genuinely challenging for dogs. Pavement can reach 150°F even when the air feels bearable, and heat stress can develop faster than most people expect. The workable pattern is early morning walks before 8am, pool time during the heat of the day, and evening outings after 6 or 7pm when the temperature drops. Pool access and air conditioning are not optional extras in summer. They're the infrastructure that makes the trip safe.
+It's manageable with the right approach, but summer in the Coachella Valley is challenging for dogs. Pavement can reach 150°F even when the air feels bearable, and heat stress can develop faster than most people expect. The workable pattern is early morning walks before 8am, pool time during the heat of the day, and evening outings after 6 or 7pm when the temperature drops. Pool access and air conditioning are not optional extras in summer. They're the infrastructure that makes the trip safe.
 
 ### Which Indigo Palm Collective properties accept dogs?
 
@@ -127,7 +127,7 @@ Excessive panting beyond what the exertion warrants, heavy drooling, slowing or 
 
 ### What is the best time of year to visit Palm Springs with a dog?
 
-October through April is when the Coachella Valley is genuinely great for dogs. Pavement is comfortable, morning walks feel like what they're supposed to feel like, and outdoor options open up significantly: Indian Canyons, the Coachella Valley Preserve, and most restaurant patios are all usable without careful heat management. Summer can work, but it requires real planning. Spring and fall are the sweet spot for guests who want outdoor time with their dog without the constraints of peak heat.
+October through April is when the Coachella Valley works best for dogs. Pavement is comfortable, morning walks feel like what they're supposed to feel like, and outdoor options open up significantly: Indian Canyons, the Coachella Valley Preserve, and most restaurant patios are all usable without careful heat management. Summer can work, but it requires real planning. Spring and fall are the sweet spot for guests who want outdoor time with their dog without the constraints of peak heat.
 
 ---
 
@@ -143,7 +143,7 @@ October through April is when the Coachella Valley is genuinely great for dogs. 
       "name": "Is it safe to take a dog to Palm Springs in summer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Manageable with planning, but genuinely challenging. Pavement reaches 150°F even in moderate air temps, and heat stress develops faster than expected. Walk before 8am and after 6pm, use pool time during the day. Pool access and AC are essential, not optional. Terra Luz has a private saltwater pool; The Sundune has community pool access at Palm Canyon Villas. Details at indigopalm.co/blog/desert-dog-summer/"
+        "text": "Manageable with planning, but challenging. Pavement reaches 150°F even in moderate air temps, and heat stress develops faster than expected. Walk before 8am and after 6pm, use pool time during the day. Pool access and AC are essential, not optional. Terra Luz has a private saltwater pool; The Sundune has community pool access at Palm Canyon Villas. Details at indigopalm.co/blog/desert-dog-summer/"
       }
     },
     {

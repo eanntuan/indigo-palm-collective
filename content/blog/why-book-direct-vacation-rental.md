@@ -87,7 +87,7 @@ layout: blog-post.njk
 
 <h2>The Short Version</h2>
 
-<p>Use Airbnb to find new places. Use the host's website to book the ones you trust. That's genuinely it.</p>
+<p>Use Airbnb to find new places. Use the host's website to book the ones you trust. That's it.</p>
 
 <p>If you're planning a trip to the Coachella Valley, browse all our properties at indigopalm.co. No service fee, same houses, and if anything goes sideways, you're talking to us directly, not a support ticket.</p>
 
@@ -116,7 +116,7 @@ layout: blog-post.njk
 <p>You lose Airbnb's guest guarantee, but your credit card's buyer protection still applies. For properties with a real website, verifiable reviews, and payment through a legitimate processor like Square or Stripe, the practical protection level is roughly equivalent. The risk is real with unknown hosts, minimal with established ones who have hundreds of verifiable reviews.</p>
 
 <h3>When does it NOT make sense to book direct?</h3>
-<p>For a first-time booking with an unknown host in an unfamiliar city, the platform infrastructure is worth the fee. Airbnb's search, review system, and mediation process are genuinely useful when you have no prior relationship with the host. Direct booking makes the most sense when you've already vetted the property or stayed there before, and you know the host is responsive and the listing is accurate. You can book direct at <a href="https://indigopalm.co">indigopalm.co</a> for any Indigo Palm Collective property after checking our Airbnb reviews.</p>
+<p>For a first-time booking with an unknown host in an unfamiliar city, the platform infrastructure is worth the fee. Airbnb's search, review system, and mediation process are useful when you have no prior relationship with the host. Direct booking makes the most sense when you've already vetted the property or stayed there before, and you know the host is responsive and the listing is accurate. You can book direct at <a href="https://indigopalm.co">indigopalm.co</a> for any Indigo Palm Collective property after checking our Airbnb reviews.</p>
 
 <script type="application/ld+json">
 {
@@ -144,7 +144,7 @@ layout: blog-post.njk
       "name": "When does it NOT make sense to book a vacation rental direct?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For a first-time booking with an unknown host in an unfamiliar city, the platform fee is worth paying. Airbnb's search, review system, and mediation process are genuinely useful when you have no prior relationship with the host. Direct booking makes most sense when you've already vetted the property or stayed there before and know the host is responsive."
+        "text": "For a first-time booking with an unknown host in an unfamiliar city, the platform fee is worth paying. Airbnb's search, review system, and mediation process are useful when you have no prior relationship with the host. Direct booking makes most sense when you've already vetted the property or stayed there before and know the host is responsive."
       }
     }
   ]

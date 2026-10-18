@@ -2,7 +2,7 @@
 title: "Coachella Valley Year-Round: Life Beyond Festival Season"
 date: 2025-12-16
 dateModified: 2026-07-30
-metaDescription: "The Coachella Valley isn't just festival weekends. Joshua Tree is 30 minutes east, Salton Sea is south, and hot springs the festival crowd never finds."
+metaDescription: "The Coachella Valley has more than festival weekends. Joshua Tree is 30 minutes east, Salton Sea is south, and hot springs the festival crowd never finds."
 ogImage: /blog/images/cozy-cactus-pool.webp
 heroImage: /blog/images/cozy-cactus-pool.webp
 heroAlt: "Pool at a desert vacation rental in the Coachella Valley, California"
@@ -36,7 +36,7 @@ layout: blog-post.njk
 
 <p>The <strong>Coachella Valley</strong> is a 45-mile-long valley in the Colorado Desert, stretching from Palm Springs in the northwest to the Salton Sea in the southeast. It includes Palm Springs, Cathedral City, Rancho Mirage, Palm Desert, Indian Wells, La Quinta, Indio, and Coachella.</p>
 
-<p><a href="/blog/terra-luz-origin-story/">Terra Luz is located in Indio</a>, right in the heart of the valley. That puts you 30 minutes from Palm Springs, 45 minutes from Joshua Tree, 15 minutes from La Quinta. You're not isolated, but you're also not in the chaos. Indio sits at this sweet spot of residential quiet, local authenticity, and easy access to everything else.</p>
+<p><a href="/blog/terra-luz-origin-story/">Terra Luz is located in Indio</a>, right in the heart of the valley. That puts you 30 minutes from Palm Springs, 45 minutes from Joshua Tree, 15 minutes from La Quinta. You're close to everything and out of the chaos. Indio sits at this sweet spot of residential quiet, local authenticity, and easy access to everything else.</p>
 
 <h2>Winter (December – February): Snowbird Season</h2>
 
@@ -111,7 +111,7 @@ layout: blog-post.njk
 
 <p><strong>Day 4:</strong> Sleep in. Lazy breakfast at the house. Pool float marathon. One last swim. Pack. (Or stay another night. We won't judge.)</p>
 
-<h2>The Desert Isn't Just for Coachella</h2>
+<h2>The Desert Beyond Coachella</h2>
 
 <p>The Coachella Valley has this reputation as a festival destination. It's also a winter escape, a remote work haven, a Joshua Tree base camp. A place where you can float in a pool with a drink in hand and feel like you've left your life behind, if only for a few days.</p>
 
@@ -149,7 +149,7 @@ layout: blog-post.njk
 <p>Terra Luz in Indio is dog-friendly and has a fenced terracotta patio and backyard well-suited for dogs. The Sundune in Palm Springs is also dog-friendly with prior approval, per the HOA, and so is The Well. Cozy Cactus does not accept pets. If you're traveling with a dog, Terra Luz is the Indio option, see details at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>.</p>
 
 <h3>What's the best Coachella Valley rental for a family with young kids?</h3>
-<p>Cozy Cactus in Indio is set up specifically for families: infant gear already in the house (pack-n-play, high chair), a quiet residential street, community pool, and a fenced yard. It's 4.97 stars across 146 reviews. Easy-access Joshua Tree trails like Skull Rock and Barker Dam work well with kids, and date farm stops along Highway 111 are a genuinely interesting detour for younger travelers.</p>
+<p>Cozy Cactus in Indio is set up specifically for families: infant gear already in the house (pack-n-play, high chair), a quiet residential street, community pool, and a fenced yard. It's 4.97 stars across 146 reviews. Easy-access Joshua Tree trails like Skull Rock and Barker Dam work well with kids, and date farm stops along Highway 111 are an interesting detour for younger travelers.</p>
 
 <h3>Is it worth renting a house instead of a hotel in Palm Springs?</h3>
 <p>For groups of three or more staying four or more nights, a private rental house almost always wins: lower cost per person, a private pool instead of a shared one, a kitchen for some meals, and more room to spread out. Palm Springs hotels make sense for couples or solo travelers who want daily service and a walkable downtown scene. For everyone else, basing in Indio and day-tripping to Palm Springs (30 minutes away) saves money without sacrificing access.</p>

@@ -21,7 +21,7 @@ layout: blog-post.njk
 
 <p>Most vacation rental welcome books fail in one of two ways. The first: a 40-page Canva PDF packed with every possible piece of information, formatted beautifully, and opened by approximately no one. The second: a sticky note on the fridge with the wifi password and a vague "text us if you need anything." Guests muddle through and occasionally leave reviews that mention they couldn't figure out the pool heater.</p>
 
-<p>We've hosted 191 stays across our three Coachella Valley properties, and we've tried versions of both. What works sits squarely in the middle: a focused, scannable guide that covers the ten things guests genuinely need, in the order they need them.</p>
+<p>We've hosted 191 stays across our three Coachella Valley properties, and we've tried versions of both. What works sits squarely in the middle: a focused, scannable guide that covers the ten things guests need, in the order they need them.</p>
 
 <p>Here's the template we use, what we've cut, and why.</p>
 

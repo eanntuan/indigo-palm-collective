@@ -43,7 +43,7 @@ In winter, the valley is mild enough all day. December through February you can 
 
 ## The Morning Window (6am to 10am)
 
-The morning is the best outdoor time of day in Palm Springs, full stop. The air is clear, the light is directional and gold, and the temperature is genuinely comfortable even in July.
+The morning is the best outdoor time of day in Palm Springs, full stop. The air is clear, the light is directional and gold, and the temperature is comfortable even in July.
 
 This is when to hike. [Indian Canyons](/blog/indian-canyons-palm-springs/) opens at 8am and the trail into Palm Canyon is significantly more pleasant at 8am than at 11am. [The Aerial Tram](/blog/palm-springs-aerial-tram/) gets busy later in the morning, so first tram at 10am beats the crowds. [Best hiking trails in Palm Springs](/blog/best-hiking-palm-springs/) are all better done before 10am in warm months.
 
@@ -57,7 +57,7 @@ A good start: coffee at <a href="https://kofficoffee.com/" target="_blank" rel="
 
 Pool time. Or indoor time. This is not a knock on the destination. This is just what the desert does.
 
-Every vacation rental in the valley has a pool for a reason. This window is when you use it. Or you nap. Or you go to a museum. The <a href="https://www.psmuseum.org/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Art Museum</strong></a> is air-conditioned and genuinely good (the glass collection and permanent modernist sculpture are worth an hour). The Spa Resort Casino has a spa and indoor pools. Movie theaters are everywhere.
+Every vacation rental in the valley has a pool for a reason. This window is when you use it. Or you nap. Or you go to a museum. The <a href="https://www.psmuseum.org/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Art Museum</strong></a> is air-conditioned and good (the glass collection and permanent modernist sculpture are worth an hour). The Spa Resort Casino has a spa and indoor pools. Movie theaters are everywhere.
 
 If you're eating lunch, do it in a shaded patio or inside. Most restaurants on Palm Canyon Drive have covered patios. Shade versus direct sun makes about a 20-degree difference in perceived temperature.
 
@@ -87,7 +87,7 @@ The desert sky at dusk is worth scheduling around. Because there's almost no lig
 
 **5pm:** The city comes alive again. Drive somewhere scenic, do a patio dinner, visit Village Fest on Thursday nights, walk Palm Canyon Drive when the light is right.
 
-**After 8pm:** Hot tub time. Staying at [The Cozy Cactus in Indio](/cozy-cactus/) or [The Sundune in Palm Springs](/the-sundune/), both have private outdoor spaces that genuinely come into their own at night. Sitting in a hot tub at 9pm when the air temperature has dropped and you can see stars is one of the better arguments for vacation rental over a hotel room.
+**After 8pm:** Hot tub time. Staying at [The Cozy Cactus in Indio](/cozy-cactus/) or [The Sundune in Palm Springs](/the-sundune/), the Cozy Cactus has a private hot tub and the Sundune has a balcony bar top facing the pool, and both are better after dark. Sitting in a hot tub at 9pm when the air temperature has dropped and you can see stars is one of the better arguments for vacation rental over a hotel room.
 
 <img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Hot tub at The Cozy Cactus vacation rental in Indio, lit up for evening use after the desert heat subsides" loading="lazy" width="1400" height="933">
 
@@ -105,7 +105,7 @@ Early morning. The hour from 7am to 9am is when the light is right, the temperat
 
 ### Is Palm Springs too hot in the summer to visit?
 
-It depends on your planning. Afternoons in July and August hit 110 to 115 degrees, which is not safe for extended outdoor exposure. But mornings before 10am and evenings after 6pm are genuinely comfortable, and the pool fills the rest. Rates drop 30 to 50 percent from spring. If you structure your days around the heat, summer in the desert is one of the better kept secrets in California travel.
+It depends on your planning. Afternoons in July and August hit 110 to 115 degrees, which is not safe for extended outdoor exposure. But mornings before 10am and evenings after 6pm are comfortable, and the pool fills the rest. Rates drop 30 to 50 percent from spring. If you structure your days around the heat, summer in the desert is one of the better kept secrets in California travel.
 
 ### What should I do in Palm Springs in the evening?
 
@@ -117,7 +117,7 @@ Yes, meaningfully. The desert dry heat dissipates faster than humid heat. By 9pm
 
 ### Should I book a vacation rental or hotel if I'm visiting Palm Springs in summer?
 
-A vacation rental with a private pool is the correct answer for a summer trip. The midday window from 11am to 5pm is when you will be poolside regardless of what else you planned, and a private pool means you control the space rather than competing with other hotel guests. Properties at <a href="https://indigopalm.co">indigopalm.co</a> in Indio and Palm Springs include private outdoor spaces that are genuinely central to the summer experience rather than a bonus feature.
+A rental with its own pool or hot tub is the right call for a summer trip. The midday window from 11am to 5pm is when you will be poolside regardless of what else you planned, and <a href="/terra-luz/">Terra Luz</a> in Indio has a private saltwater pool, <a href="/cozy-cactus/">The Cozy Cactus</a> a private hot tub with community pool access, and <a href="/the-sundune/">The Sundune</a> a shared HOA pool steps from the door.
 
 ### Is the Palm Springs Aerial Tram worth going up in summer?
 
@@ -127,7 +127,7 @@ Yes, and it is one of the best midday options. The summit sits at 8,516 feet whe
 
 If you're planning a summer trip, the full <a href="/blog/palm-springs-summer/">Palm Springs in summer guide</a> goes deeper on month-by-month expectations, what restaurants close, and how to structure a heat-adjusted week. And for a running-specific angle on the morning window, the <a href="/blog/palm-springs-running-trails/">Palm Springs running trails guide</a> covers six routes worth waking up early for.
 
-If you want a base that works with both sides of the day, [The Sundune](/the-sundune/) is our Palm Springs property: close to morning coffee and hiking, with a private outdoor space that genuinely comes into its own after dark.
+If you want a base that works with both sides of the day, [The Sundune](/the-sundune/) is our Palm Springs property: close to morning coffee and hiking, with a private outdoor space that comes into its own after dark.
 
 *Eann is the founder of Indigo Palm Collective, operating vacation rentals in Indio and Palm Springs. She's given this same advice in approximately two hundred welcome messages.*
 
@@ -173,7 +173,7 @@ If you want a base that works with both sides of the day, [The Sundune](/the-sun
       "name": "How hot does it get in Palm Springs at night in the summer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nighttime lows in July and August typically land between 80 and 90 degrees Fahrenheit. By 9pm, you've usually dropped 20 to 30 degrees from the afternoon peak. Desert dry air makes 85 degrees at night feel genuinely comfortable around a pool or hot tub, very different from humid coastal heat at the same temperature."
+        "text": "Nighttime lows in July and August typically land between 80 and 90 degrees Fahrenheit. By 9pm, you've usually dropped 20 to 30 degrees from the afternoon peak. Desert dry air makes 85 degrees at night feel comfortable around a pool or hot tub, very different from humid coastal heat at the same temperature."
       }
     },
     {
@@ -181,7 +181,7 @@ If you want a base that works with both sides of the day, [The Sundune](/the-sun
       "name": "Is Palm Springs worth visiting in summer if it's so hot?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, if you restructure your day around the heat rather than fight it. Rates drop 30 to 50 percent from spring peaks, crowds thin out, and the morning and evening windows are genuinely excellent. The visitors who say summer was miserable almost always pushed outdoor activities into midday. The visitors who say it was their best trip leaned into the morning-pool-evening rhythm."
+        "text": "Yes, if you restructure your day around the heat rather than fight it. Rates drop 30 to 50 percent from spring peaks, crowds thin out, and the morning and evening windows are excellent. The visitors who say summer was miserable almost always pushed outdoor activities into midday. The visitors who say it was their best trip leaned into the morning-pool-evening rhythm."
       }
     }
   ]

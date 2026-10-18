@@ -21,7 +21,7 @@ keywords:
 articleSection: "Travel Guide"
 property: ps-retreat
 readTime: "6 min read"
-excerpt: "When the thermometer hits 110°F in Palm Springs, you need a plan that isn't a hiking trail. Here's what to do when the desert floor is genuinely brutal."
+excerpt: "When the thermometer hits 110°F in Palm Springs, you need a plan that isn't a hiking trail. Here's what to do when the desert floor is brutal."
 layout: blog-post.njk
 faqItems:
   - q: "What is there to do in Palm Springs in the summer heat?"
@@ -38,7 +38,7 @@ faqItems:
 
 <p>June through September in the Coachella Valley is not a metaphor. The thermometer hits 110°F and the asphalt radiates heat back at you like a pizza oven. Every outdoor activity guide I've read underestimates this. Even early mornings can feel brutal by 9am.</p>
 
-<p>I own <a href="/the-sundune/">The Sundune</a>, a vacation rental in Palm Springs. Guests ask me constantly what to do when the heat makes being outside genuinely uncomfortable. Here's what I tell them.</p>
+<p>I own <a href="/the-sundune/">The Sundune</a>, a vacation rental in Palm Springs. Guests ask me constantly what to do when the heat makes being outside uncomfortable. Here's what I tell them.</p>
 
 <img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard with towering palm trees and San Jacinto Mountain backdrop under a clear desert sky" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Looks beautiful. At 2pm in July it's 108°F. Have a plan.</p>
@@ -62,9 +62,9 @@ faqItems:
 
 <h2>Agua Caliente Cultural Museum</h2>
 
-<p>This is a newer one and genuinely worth your time. The Agua Caliente Cultural Museum (140 N Indian Canyon Dr, 760-778-1079, <a href="https://accmuseum.org" rel="noopener noreferrer" target="_blank">accmuseum.org</a>) focuses on the history and culture of the Cahuilla people, whose ancestral territory covers the entire Coachella Valley.</p>
+<p>This is a newer one and worth your time. The Agua Caliente Cultural Museum (140 N Indian Canyon Dr, 760-778-1079, <a href="https://accmuseum.org" rel="noopener noreferrer" target="_blank">accmuseum.org</a>) focuses on the history and culture of the Cahuilla people, whose ancestral territory covers the entire Coachella Valley.</p>
 
-<p>The building itself is well-designed, the exhibitions are clear and thoughtful, and the AC works. I say that last part not as a joke: the museum took their time getting this right, and the quality shows. It's a short drive from Palm Canyon, making it easy to pair with the Art Museum or a coffee stop for a full afternoon out of the heat.</p>
+<p>The building itself is well-designed, the exhibitions are clear and easy to follow, and the AC works. I say that last part not as a joke: the museum took their time getting this right, and the quality shows. It's a short drive from Palm Canyon, making it easy to pair with the Art Museum or a coffee stop for a full afternoon out of the heat.</p>
 
 <h2>Palm Springs Air Museum: 75 Planes in a Cooled Hangar</h2>
 
@@ -76,7 +76,7 @@ faqItems:
 
 <p>This one is a little unexpected, which is exactly why I like it. You can skate on the same ice where the Coachella Valley Firebirds train at <a href="https://acrisurearena.com/" target="_blank" rel="noopener noreferrer"><strong>Acrisure Arena</strong></a>. The Berger Foundation IcePlex is at 75702 Varner Rd in Palm Desert (760-318-7388, <a href="https://bergerfoundationiceplex.com/public-skating/" rel="noopener noreferrer" target="_blank">bergerfoundationiceplex.com/public-skating/</a>).</p>
 
-<p>Public skating runs $15 a session, $5 for skate rental. Pre-register online before you go. It's about 20 minutes from The Sundune. Going from 108°F outside to an ice rink at 55°F is, genuinely, one of the better temperature contrasts you'll experience. Bring a light layer.</p>
+<p>Public skating runs $15 a session, $5 for skate rental. Pre-register online before you go. It's about 20 minutes from The Sundune. Going from 108°F outside to an ice rink at 55°F is one of the better temperature contrasts you'll experience. Bring a light layer.</p>
 
 <img src="/blog/images/ps-desert-valley-view.webp" alt="Coachella Valley stretching toward the horizon from above Palm Springs on a clear summer day" width="1800" height="1269" loading="lazy">
 <p class="image-caption">The valley in summer. Down there it's 110°F. Up at the tram it's 30 degrees cooler. More on that below.</p>
@@ -104,7 +104,7 @@ faqItems:
 
 <h2>Your Home Base: The Community Pool at The Sundune</h2>
 
-<p>Worth naming directly: The Sundune has a community pool about a one-minute walk from the front door. Summer mornings before 10am and evenings after 6pm are genuinely pleasant. The pool is the right answer for the shoulder hours: morning coffee, then pool, then leave for the escape room or museum during the midday heat, then back for an evening swim.</p>
+<p>Worth naming directly: The Sundune has a community pool about a one-minute walk from the front door. Summer mornings before 10am and evenings after 6pm are pleasant. The pool is the right answer for the shoulder hours: morning coffee, then pool, then leave for the escape room or museum during the midday heat, then back for an evening swim.</p>
 
 <p>That rhythm works better than trying to fight the heat. Let the afternoon be what it is. Be cool and comfortable, then get out when the day cools down.</p>
 
@@ -125,7 +125,7 @@ faqItems:
 
 <p>You won't feel like you wasted a day in the desert. You'll feel like you figured out how to use it properly.</p>
 
-<p>For more on navigating the Coachella Valley in summer, including what the temperature means month by month, see the full guide to <a href="/blog/palm-springs-summer/">Palm Springs in summer</a>. And when you're ready to eat, the <a href="/blog/best-restaurants-palm-springs/">best restaurants in Palm Springs</a> guide covers spots worth building an evening around.</p>
+<p>For more on the Coachella Valley in summer, including what the temperature means month by month, see the full guide to <a href="/blog/palm-springs-summer/">Palm Springs in summer</a>. And when you're ready to eat, the <a href="/blog/best-restaurants-palm-springs/">best restaurants in Palm Springs</a> guide covers spots worth building an evening around.</p>
 
 <h2>Quick Reference</h2>
 

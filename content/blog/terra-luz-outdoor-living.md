@@ -39,13 +39,13 @@ relatedPosts:
 
 <p>The color shifts through the day. At noon it's electric. By late afternoon it goes warm and a little purple. At night with the pool light on it looks like something from a film set in Havana in 1958. The terracotta deck around it is warm enough that the two colors fight each other in the best way, and the Talavera tile border along the pool edge ties back to the same tile we used on the kitchen backsplash inside.</p>
 
-<p>In-pool loungers are built into the shallow end. Not floats, not inflatables. Permanent built-in ledge seating that puts you horizontal in the water with zero effort. In 108-degree heat, this is not a luxury. It's the point of the pool.</p>
+<p>In-pool loungers are built into the shallow end as permanent ledge seating, no floats or inflatables, that puts you horizontal in the water with zero effort. In 108-degree heat, that's the point of the pool.</p>
 
 <h2>Color drenching the exterior: Orange Flambé</h2>
 
 <p>The block wall that wraps the backyard was beige. Not bad beige, just nothing beige. And the whole point of the outdoor space was that it should feel like an extension of the interior, the same warmth, the same deliberateness, not a place where the design stopped at the sliding door.</p>
 
-<p>Dawn pushed for a full color drench on the exterior wall. Meaning: not an accent, not a trim detail, the whole surface saturated in one bold color. The idea was that the orange-terracotta family inside the house (tile, pillows, the terracotta deck) would bleed outward. You'd stand in the living room and look through the glass doors and see the exterior wall and feel like you were still inside the same palette.</p>
+<p>Dawn pushed for a full color drench on the exterior wall. Meaning the whole surface saturated in one bold color, with no accent or trim detail. The idea was that the orange-terracotta family inside the house (tile, pillows, the terracotta deck) would bleed outward. You'd stand in the living room and look through the glass doors and see the exterior wall and feel like you were still inside the same palette.</p>
 
 <p>That color ended up being Orange Flambé, but we didn't land there quickly. We tested five or six swatches directly on the wall and on painted boards at the pool edge, which was the only way to see what we were getting. Paint chips lie. A swatch on paper looks like one color in the store and something completely different against concrete block and terracotta tile in 100-degree afternoon sun.</p>
 
@@ -84,7 +84,7 @@ relatedPosts:
 
 <h2>A few things that are easy to miss</h2>
 
-<p>The blue and white striped umbrella over the in-pool lounger area provides shade without blocking the pool view from the patio. The striped pattern runs through the outdoor space: umbrella, pool towels, some of the pillows. It's not a "look," it's more of a thread. Once you notice it you can't unsee it.</p>
+<p>The blue and white striped umbrella over the in-pool lounger area provides shade without blocking the pool view from the patio. The striped pattern runs through the outdoor space: umbrella, pool towels, some of the pillows. It reads as a thread more than a "look." Once you notice it you can't unsee it.</p>
 
 <p>There's a Sonos speaker wired to the patio from the indoor system. The same speaker that plays inside continues outside when you open the glass doors. You don't have to re-pair or switch inputs. It's a small thing that matters when you're moving in and out all day with a group of eight.</p>
 

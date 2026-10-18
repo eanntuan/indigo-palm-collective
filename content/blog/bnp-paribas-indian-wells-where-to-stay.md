@@ -77,7 +77,7 @@ relatedPosts:
 
 <p>Full kitchen access matters more than people expect going in. Stadium food at major tennis events is expensive and the food quality reflects a captive audience. Being able to make breakfast, pack snacks, and come back to a real dinner each evening adds up to real savings over a week. Stock the kitchen on arrival day and you'll use it every day after.</p>
 
-<p>The trade-off: Indio requires a car. You're not walking to dinner or wandering a downtown after the match. The food scene is worth knowing before you arrive, because it's genuinely good but not self-evident. The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> covers the restaurant and lifestyle differences in detail.</p>
+<p>The trade-off: Indio requires a car. You're not walking to dinner or wandering a downtown after the match. The food scene is worth knowing before you arrive, because it's good but not self-evident. The <a href="/blog/palm-springs-vs-indio/">Palm Springs vs. Indio comparison</a> covers the restaurant and lifestyle differences in detail.</p>
 
 <p><strong>Good for:</strong> groups of four or more, families, people who want private outdoor space and a kitchen, anyone prioritizing recovery comfort over walkable city access. <a href="/cozy-cactus/">The Cozy Cactus</a> is our 3BR/2BA in Indio with a private hot tub, community pool steps away, and game room. <a href="/terra-luz/">Terra Luz</a>, our second Indio property, sleeps 8 with a Latin-inspired design and private saltwater pool.</p>
 
@@ -96,7 +96,7 @@ relatedPosts:
 
 <p><strong>Proximity to a grocery store.</strong> You want to stock the kitchen on day one without a 20-minute detour. Most Indio rentals in Indian Palms are 10-15 minutes from a full grocery store. Ask or check the map.</p>
 
-<p><strong>Outdoor space for evenings.</strong> March in the desert is one of the genuinely beautiful weather windows. Mid-70s to low-80s during the day, cool evenings with a light jacket, no humidity. A covered patio with decent outdoor furniture gets used every night. It's worth prioritizing in a listing.</p>
+<p><strong>Outdoor space for evenings.</strong> March in the desert is one of the beautiful weather windows. Mid-70s to low-80s during the day, cool evenings with a light jacket, no humidity. A covered patio with decent outdoor furniture gets used every night. It's worth prioritizing in a listing.</p>
 
 <h2>Stadium Logistics Worth Knowing</h2>
 
@@ -143,7 +143,7 @@ relatedPosts:
 <p>A grounds pass is worth it, and for the first week it's arguably the better experience. The outer courts put you within feet of top-10 players in early rounds, which is closer access than you get at a Grand Slam. The sharpest strategy is a grounds pass for most days plus one or two Stadium 1 session tickets for a quarterfinal or later, when the draws are down to players you'll recognize on every point.</p>
 
 <h3>How many days should I plan to attend the BNP Paribas Open?</h3>
-<p>Four to five days covers the best of the tournament for a first visit: two days on the outer courts during early rounds, one or two Stadium 1 sessions once the draw thins, and a day or two for the broader desert. If you're traveling from out of state, five to seven days makes more sense to justify the trip, especially given that March is one of the genuinely good weather windows in the Coachella Valley.</p>
+<p>Four to five days covers the best of the tournament for a first visit: two days on the outer courts during early rounds, one or two Stadium 1 sessions once the draw thins, and a day or two for the broader desert. If you're traveling from out of state, five to seven days makes more sense to justify the trip, especially given that March is one of the good weather windows in the Coachella Valley.</p>
 
 <script type="application/ld+json">
 {

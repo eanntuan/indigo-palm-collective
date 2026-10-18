@@ -23,11 +23,11 @@ excerpt: "Every Thursday night, Palm Canyon Drive closes to cars and becomes a s
 layout: blog-post.njk
 ---
 
-Every Thursday night, the City of Palm Springs closes a long stretch of Palm Canyon Drive to traffic, sets up booths down the center of the street, and calls it <a href="https://www.villagefestpalmsprings.com/" target="_blank" rel="noopener noreferrer"><strong>Village Fest</strong></a>. It's been running since 1991. In a city that's spent decades carefully managing its identity as a destination, Village Fest is one of the most genuinely local things you can do here.
+Every Thursday night, the City of Palm Springs closes a long stretch of Palm Canyon Drive to traffic, sets up booths down the center of the street, and calls it <a href="https://www.villagefestpalmsprings.com/" target="_blank" rel="noopener noreferrer"><strong>Village Fest</strong></a>. It's been running since 1991. In a city that's spent decades carefully managing its identity as a destination, Village Fest is one of the most local things you can do here.
 
 It runs from approximately 6pm to 10pm, year round. The booths stretch roughly from Amado Road north to Andreas Road, about four blocks. The crowd is a mix of tourists who stumbled onto it and locals who've been coming for years. Vendors range from produce and handmade jewelry to vintage finds, tamales, and kettle corn.
 
-Here's how to navigate it.
+Here's how to get through it.
 
 <img src="/blog/images/ps-palm-street-blue-sky.webp" alt="Palm Canyon Drive in downtown Palm Springs lined with palm trees under a clear blue desert sky" loading="lazy" width="933" height="1400">
 
@@ -47,7 +47,7 @@ The produce vendors are the most reliable stop. Local farms from the Imperial Va
 
 Date vendors also show up regularly. If you haven't done the full [date farm experience in Indio](/blog/date-farms-indio-coachella-valley/), Village Fest is a good introduction. Sample boxes are common and the vendors are usually happy to explain variety differences.
 
-The art and jewelry booths vary week to week. Some are genuinely interesting local work; some are import trinkets. Walk past first before buying anything, because the same vendor in a different spot might have something better.
+The art and jewelry booths vary week to week. Some are interesting local work; some are import trinkets. Walk past first before buying anything, because the same vendor in a different spot might have something better.
 
 The vintage and resale section is inconsistent but occasionally turns up something worth stopping for. Midcentury Palm Springs has a lot of estates, and some of that turns up at markets like this.
 

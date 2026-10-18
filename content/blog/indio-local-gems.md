@@ -140,7 +140,7 @@ relatedPosts:
     One Stop Taco Shop: The Taco I Think About Between Visits
 </div>
 
-<p>There are taco spots all over the Coachella Valley and most of them are fine. One Stop Taco Shop in Indio is not fine. It's the one I crave when I'm back in LA, the one I route trips around, the one I've sent more guests to than anywhere else on this list. The carne asada is the move: simple, a little charred, the right amount of salty, served in a tortilla that hasn't been sitting in a warmer for two hours. The line out front isn't a warning sign. It's the sign, so get in it.</p>
+<p>There are taco spots all over the Coachella Valley and most of them are fine. One Stop Taco Shop in Indio is not fine. It's the one I crave when I'm back in LA, the one I route trips around, the one I've sent more guests to than anywhere else on this list. The carne asada is the move: simple, a little charred, the right amount of salty, served in a tortilla that hasn't been sitting in a warmer for two hours. The line out front is a good sign, so get in it.</p>
 
 <div class="quick-info">
     <p><strong>Address:</strong> <a href="https://maps.google.com/?q=84051+Indio+Blvd,+Indio,+CA+92201" target="_blank" rel="noopener">84051 Indio Blvd, Indio, CA 92201 ↗</a></p>
@@ -227,10 +227,10 @@ relatedPosts:
 <p>Terra Luz in Indian Palms is the closest vacation rental neighborhood to the Empire Polo Club, close enough that many guests walk to the venue rather than deal with shuttles or traffic (members of the community offer rides to the Indian Palms front gate for a small fee, saving yourself about 15 minutes of walking!). The Cozy Cactus is also in Indio with a private hot tub and community pool, also walking distance to the polo grounds and easier to book during non-festival weekends. Both properties are at <a href="https://indigopalm.co">indigopalm.co</a>.</p>
 
 <h3>Is the Coachella Valley Preserve free and how hard is the hike?</h3>
-<p>Free admission, and the main McCallum Trail is an easy 3-mile out-and-back with minimal elevation gain, accessible to most fitness levels. The trailhead is about 20 minutes from central Indio at 29200 Thousand Palms Canyon Rd. Go between October and April, before 9am in any other season, and bring more water than you think you need because the sun is genuinely intense even on mild days.</p>
+<p>Free admission, and the main McCallum Trail is an easy 3-mile out-and-back with minimal elevation gain, accessible to most fitness levels. The trailhead is about 20 minutes from central Indio at 29200 Thousand Palms Canyon Rd. Go between October and April, before 9am in any other season, and bring more water than you think you need because the sun is intense even on mild days.</p>
 
 <h3>Does Indio have good coffee shops or is it just restaurants?</h3>
-<p>There are a few solid options. Saguaro Coffee in Old Town Indio roasts its own beans and makes syrups in house, The Vintage Coffee House nearby is the low-key local classic with a dog-friendly patio, and if you're willing to drive 10 minutes to the city of Coachella, Sixth Street Coffee does horchata cold brew and honey-canela lattes that are worth the detour. None of them have the volume of options you'd find in Palm Springs, but the quality is genuinely good.</p>
+<p>There are a few solid options. Saguaro Coffee in Old Town Indio roasts its own beans and makes syrups in house, The Vintage Coffee House nearby is the low-key local classic with a dog-friendly patio, and if you're willing to drive 10 minutes to the city of Coachella, Sixth Street Coffee does horchata cold brew and honey-canela lattes that are worth the detour. None of them have the volume of options you'd find in Palm Springs, but the quality is good.</p>
 
 <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 3rem 0;">
 

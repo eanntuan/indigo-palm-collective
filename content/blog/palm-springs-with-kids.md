@@ -55,7 +55,7 @@ layout: blog-post.njk
 
 <h3>Palm Springs Air Museum</h3>
 
-<p>This one gets overlooked on family itineraries and shouldn't. The <a href="https://www.palmspringsairmuseum.org" target="_blank" rel="noopener">Air Museum</a> has a fully functional Boeing B-17 Flying Fortress that kids can go inside, plus a flight simulator to test their skills. It's not a passive walk-through exhibit. They can touch things and sit in things. Tickets, hours, and the warbird rides are covered in my <a href="/blog/palm-springs-air-museum-guide/">Air Museum guide</a>.</p>
+<p>This one gets overlooked on family itineraries and shouldn't. The <a href="https://www.palmspringsairmuseum.org" target="_blank" rel="noopener">Air Museum</a> has a fully functional Boeing B-17 Flying Fortress that kids can go inside, plus a flight simulator to test their skills. It's hands-on: they can touch things and sit in things. Tickets, hours, and the warbird rides are covered in my <a href="/blog/palm-springs-air-museum-guide/">Air Museum guide</a>.</p>
 
 <p>Good for ages 5 and up, though older kids (8+) will get the most out of it. Figure 90 minutes to 2 hours.</p>
 
@@ -69,7 +69,7 @@ layout: blog-post.njk
 
 <h3>Palm Springs Aerial Tram</h3>
 
-<p>Worth mentioning, with a caveat: this one works best for kids 8 and up. The <a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tram</strong></a> climbs 6,000 feet to the top of Mount San Jacinto, and the experience at the top (cold, exposed, genuinely alpine) can be overwhelming for very young kids who just want to run around in warm weather.</p>
+<p>Worth mentioning, with a caveat: this one works best for kids 8 and up. The <a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tram</strong></a> climbs 6,000 feet to the top of Mount San Jacinto, and the experience at the top (cold, exposed, alpine) can be overwhelming for very young kids who just want to run around in warm weather.</p>
 
 <p>For older kids who can handle the elevation change and have some patience for stunning views, it's legitimately one of the best things to do in the whole valley. Just read the room before committing to the ticket price.</p>
 
@@ -101,7 +101,7 @@ layout: blog-post.njk
 
 <p>That's different from the Cozy Cactus, which is in Indio, built for bigger groups with a private hot tub, access to three heated community pools at Indian Palms Country Club, and proximity to festival venues. The Sundune is smaller, sits inside Palm Springs proper, and suits a family that wants a city base rather than a whole house to themselves.</p>
 
-<p>If you're deciding between the two properties for a family trip, the short version: <a href="/the-sundune/">The Sundune</a> for a family of up to four who want to be in Palm Springs proper. <a href="/cozy-cactus/">The Cozy Cactus</a> for a group of five to eight, or families who want more space, a private hot tub, and Indio/festival proximity. For a deeper look at which neighborhood in Palm Springs works best for families, the <a href="/blog/palm-springs-neighborhood-guide/">neighborhood guide</a> has an honest breakdown of The Mesa and why families tend to end up there.</p>
+<p>If you're deciding between the two properties for a family trip, the short version: <a href="/the-sundune/">The Sundune</a> for a family of up to four who want to be in Palm Springs proper. <a href="/cozy-cactus/">The Cozy Cactus</a> for a group of five to eight, or families who want more space, a private hot tub, and Indio/festival proximity. For a deeper look at which neighborhood in Palm Springs works best for families, the <a href="/blog/palm-springs-neighborhood-guide/">neighborhood guide</a> has a breakdown of The Mesa and why families tend to end up there.</p>
 
 <img src="/blog/images/palm-springs-hotel-pool.webp" alt="Outdoor pool area in Palm Springs with desert palm trees and blue sky, typical of the resort and rental scene in the Coachella Valley" width="1400" height="1050" loading="lazy">
 <p class="image-caption">The shared HOA pool at The Sundune is a one-minute walk. After a morning at the Living Desert, that math works out perfectly.</p>
@@ -118,9 +118,9 @@ layout: blog-post.njk
 
 <p>That's not an exhaustive itinerary. It's paced for real families with real kids who need naps and snacks and a flexible 3pm option.</p>
 
-<h2>What This Trip Actually Looks Like</h2>
+<h2>What This Trip Looks Like</h2>
 
-<p>Palm Springs is not a theme park trip. There's no single anchoring attraction that fills 8 hours by itself. What it is: a place with genuinely good weather, walkable streets, some specific activities that kids remember, and a pace that adults don't completely resent.</p>
+<p>Palm Springs is not a theme park trip. There's no single anchoring attraction that fills 8 hours by itself. What it is: a place with good weather, walkable streets, some specific activities that kids remember, and a pace that adults don't completely resent.</p>
 
 <p>The families who leave happiest are the ones who came in knowing that. They picked two or three things to do each day, built in pool time, and didn't try to turn it into Disneyland.</p>
 

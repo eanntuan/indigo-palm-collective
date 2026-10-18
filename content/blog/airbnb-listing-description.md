@@ -43,7 +43,7 @@ layout: blog-post.njk
 
 <img src="/blog/images/terra-luz-wild-tropics-main.webp" alt="Wild Tropics bedroom at Terra Luz vacation rental in Indio California with canopy bed and ceiling art" loading="lazy" decoding="async" width="800" height="552">
 
-<p>For The Cozy Cactus, the differentiator isn't a room. It's the operational detail: labeled drawers, a Stokke high chair, a game room that functions as a game room. The property works for families, not just photographs well for them. That distinction matters to parents who've been burned by "family-friendly" listings that turned out to be decorated adult spaces with one token high chair.</p>
+<p>For The Cozy Cactus, the differentiator is the operational detail, not a room: labeled drawers, a Stokke high chair, a game room that functions as a game room. The property works for families, not just photographs well for them. That distinction matters to parents who've been burned by "family-friendly" listings that turned out to be decorated adult spaces with one token high chair.</p>
 
 <p>For The Sundune in Palm Springs, it's being inside the city instead of out at the valley edge. The Uptown Design District is close enough to walk for coffee and shops, and downtown Palm Canyon Drive is a ten-minute drive rather than a half-hour commute in from Indio or Cathedral City. Most desert rentals at this price sit much farther out, so I say the drive time plainly instead of implying you can walk to dinner.</p>
 

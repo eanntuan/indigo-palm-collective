@@ -48,7 +48,7 @@ relatedPosts:
 
 <h2>The patio and outdoor kitchen</h2>
 
-<p>The covered patio runs the full length of the back of the house: string lights overhead, a West Elm outdoor dining table that seats eight, and a sectional facing the pool, dressed up with Business and Pleasure throw pillows. It's set up for spending a full day outside without going back in except to use the bathroom. Evenings shift naturally here: guests gather at the table for casual meals, grilled dinners off the outdoor kitchen, or order-in from local favorites like Desert Beer pizza. After dark with the pool lit, the patio becomes its own world. There's a curated watchlist in the house guide if you want it, nods to world travel like Casablanca or Buena Vista Social Club, and family flicks like Coco and Encanto that are genuinely fun for adults too.</p>
+<p>The covered patio runs the full length of the back of the house: string lights overhead, a West Elm outdoor dining table that seats eight, and a sectional facing the pool, dressed up with Business and Pleasure throw pillows. It's set up for spending a full day outside without going back in except to use the bathroom. Evenings shift naturally here: guests gather at the table for casual meals, grilled dinners off the outdoor kitchen, or order-in from local favorites like Desert Beer pizza. After dark with the pool lit, the patio becomes its own world. There's a watchlist in the house guide if you want it, nods to world travel like Casablanca or Buena Vista Social Club, and family flicks like Coco and Encanto that are fun for adults too.</p>
 
 <img src="/blog/images/terra-luz-patio-full.webp" alt="Terra Luz covered patio in Indio California with outdoor dining, sectional seating, and pool view" width="1024" height="683" loading="lazy">
 <p class="image-caption">The patio. Outdoor curfew per city ordinance is 10pm. After that, the party moves inside.</p>
@@ -103,7 +103,7 @@ relatedPosts:
 
 <h3>The Cali Room</h3>
 
-<p>King bed with a DIY trundle that pulls out from underneath, built from plywood with caster wheels to fit under a king frame with 14 inches of clearance. The headboard is IKEA rattan cabinet doors mounted wall-to-wall, reads as a custom built-in. Behind the stained louvered bifold doors: a Frida Kahlo blue lime-washed workstation with a floating wall to wall desk, West Elm woven chair, and TV mounted above. The room balances fun and function, patterned terracotta tile floors accented with pops of cobalt blue, a playful design moment that stays genuinely practical: couples, families with one kid, or anyone in the group who needs a place to get work done.</p>
+<p>King bed with a DIY trundle that pulls out from underneath, built from plywood with caster wheels to fit under a king frame with 14 inches of clearance. The headboard is IKEA rattan cabinet doors mounted wall-to-wall, reads as a custom built-in. Behind the stained louvered bifold doors: a Frida Kahlo blue lime-washed workstation with a floating wall to wall desk, West Elm woven chair, and TV mounted above. The room balances fun and function, patterned terracotta tile floors accented with pops of cobalt blue, a playful design moment that stays practical: couples, families with one kid, or anyone in the group who needs a place to get work done.</p>
 
 <img src="/blog/images/terra-luz-cali-room-main.webp" alt="Terra Luz Cali Room in Indio California with king bed and DIY trundle both extended, IKEA IVAR rattan panel headboard, amber pillows, blue shibori curtains, and Talavera tile floor" width="1310" height="1600" loading="lazy">
 <p class="image-caption">The Cali Room. King plus trundle, Kahlo Blue workstation behind the bifold doors.</p>
@@ -128,9 +128,9 @@ relatedPosts:
 
 <h2>Who books this house</h2>
 
-<p>The groups that fit Terra Luz best: friend groups of 6-8, bachelorette trips, Coachella or Stagecoach weekends, and milestone birthday gatherings where the outdoor space is the point. The combination of pool, spa, outdoor kitchen, and enough bedrooms to give everyone their own space makes it work for groups that want to spend a lot of time at the house, not just sleep there. They want to be close to what's happening next, just enough to choose from without feeling rushed to chase it. For them, the real luxury is melting into the present: letting the afternoon unspool, watching the pool change color as the sun drops, ordering pizza and eating it by the pool. They leave recalibrated.</p>
+<p>The groups that fit Terra Luz best: friend groups of 6-8, bachelorette trips, Coachella or Stagecoach weekends, and milestone birthday gatherings where the outdoor space is the point. The combination of pool, spa, outdoor kitchen, and enough bedrooms to give everyone their own space makes it work for groups that want to spend a lot of time at the house, not just sleep there. They want to be close to what's happening next, just enough to choose from without feeling rushed to chase it. For them, the real draw is melting into the present: letting the afternoon unspool, watching the pool change color as the sun drops, ordering pizza and eating it by the pool. They leave recalibrated.</p>
 
-<p>It's also the right fit for anyone who cares about the design. This is not a generic desert rental with beige walls and IKEA furniture. The aesthetic is intentional and specific, unpretentious yet elevated, and the guests who book it tend to know that going in. If you want something neutral and forgettable, there are plenty of those. Terra Luz is not that.</p>
+<p>It's also the right fit for anyone who cares about the design. This is not a generic desert rental with beige walls and IKEA furniture. The aesthetic is intentional and specific, unpretentious but put together, and the guests who book it tend to know that going in. If you want something neutral and forgettable, there are plenty of those. Terra Luz is not that.</p>
 
 <h2>Direct booking</h2>
 

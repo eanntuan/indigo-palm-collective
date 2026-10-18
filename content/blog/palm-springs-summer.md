@@ -35,19 +35,19 @@ layout: blog-post.njk
 
 <h2>The Heat Is Real</h2>
 
-<p>Let's not soften this. July and August afternoon temperatures in the Coachella Valley regularly hit 110 to 120 degrees Fahrenheit. The pavement radiates heat and the air feels thick with it. Walking outside between roughly 11am and 4pm isn't comfortable, and for long stretches it isn't safe if you're not used to it. Pets and small children are genuinely at risk.</p>
+<p>Let's not soften this. July and August afternoon temperatures in the Coachella Valley regularly hit 110 to 120 degrees Fahrenheit. The pavement radiates heat and the air feels thick with it. Walking outside between roughly 11am and 4pm isn't comfortable, and for long stretches it isn't safe if you're not used to it. Pets and small children are at risk.</p>
 
 <p>The "dry heat" thing is real: 115°F in Palm Springs feels different from 90°F in Miami. No humidity means the evaporation works, but it's still 115 degrees. Hydration is serious, not a wellness platitude: bring a large water bottle and drink before you're thirsty.</p>
 
 <h2>What Summer Is Good For</h2>
 
-<p><strong>Pool culture peaks.</strong> In spring, the pool is a nice feature. In summer, the pool becomes the entire architecture of the day. Morning swim before the heat arrives, back in the pool when the afternoon sun peaks, and staying until the light shifts around 5pm. A private pool at a rental house means you're not fighting for a chair or sharing the water with strangers. It's one of the more genuinely relaxing vacation formats I know of, and the desert heat makes it impossible to feel guilty about just floating for three hours.</p>
+<p><strong>Pool culture peaks.</strong> In spring, the pool is a nice feature. In summer, the pool becomes the entire architecture of the day. Morning swim before the heat arrives, back in the pool when the afternoon sun peaks, and staying until the light shifts around 5pm. A private pool at a rental house means you're not fighting for a chair or sharing the water with strangers. It's one of the more relaxing vacation formats I know of, and the desert heat makes it impossible to feel guilty about just floating for three hours.</p>
 
 <p><strong>Rates drop significantly.</strong> Summer is off-peak for most Palm Springs properties. You can often get a rental that would cost $400 a night in April for $180 in July. Hotels follow the same pattern. If you're flexible on season and your priority is value, summer is when the Coachella Valley makes financial sense.</p>
 
 <p><strong>Crowds disappear.</strong> Restaurants are easier to get into, the roads are quieter, and the shops aren't slammed, which adds up to a more local version of the city. The places that had 45-minute waits in March are running at half capacity in August. That alone changes the quality of the trip for people who find peak-season crowds exhausting.</p>
 
-<p><strong>The evenings are genuinely special.</strong> After 6pm, the temperature drops enough to sit outside comfortably. By 7pm or 8pm it's often in the mid-90s, which after a day of 115 feels almost cool. The light during desert summer sunsets turns a shade of gold-pink-orange that doesn't happen in any other season. Rooftop bars and outdoor patios come alive at dusk. Some summer evenings in Palm Springs are better than anything the spring crowds are there for.</p>
+<p><strong>The evenings are special.</strong> After 6pm, the temperature drops enough to sit outside comfortably. By 7pm or 8pm it's often in the mid-90s, which after a day of 115 feels almost cool. The light during desert summer sunsets turns a shade of gold-pink-orange that doesn't happen in any other season. Rooftop bars and outdoor patios come alive at dusk. Some summer evenings in Palm Springs are better than anything the spring crowds are there for.</p>
 
 <img src="/blog/images/ps-desert-moonrise.webp" alt="Full moon rising over the desert horizon near Palm Springs with mountain silhouette at dusk" width="1200" height="1800" loading="lazy">
 <p class="image-caption">Desert moonrises in summer. The sky has no light pollution competition once the city quiets down.</p>
@@ -61,7 +61,7 @@ layout: blog-post.njk
 
 <p><strong>6am to 10am:</strong> The golden window. This is when you hike, walk the architecture neighborhoods, get coffee, do the farmers market, or do anything that requires being outside. The air is clear and cool; the city feels like yours. Do not save this time for sleeping in.</p>
 
-<p><strong>10am to 5pm:</strong> Pool, AC, or both: Palm Springs museums and galleries are air-conditioned and genuinely good, and the <a href="https://www.psmuseum.org/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Art Museum</strong></a> is worth a few hours. Spa treatments make sense in summer in a way they don't in spring. Napping counts. The pool is valid for this entire window.</p>
+<p><strong>10am to 5pm:</strong> Pool, AC, or both: Palm Springs museums and galleries are air-conditioned and good, and the <a href="https://www.psmuseum.org/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Art Museum</strong></a> is worth a few hours. Spa treatments make sense in summer in a way they don't in spring. Napping counts. The pool is valid for this entire window.</p>
 
 <p><strong>5pm to 10pm:</strong> Back outside for happy hour at an outdoor bar, dinner on a patio, and evening walks when the light is at its best. Golf in the early morning is popular for the same reason: start at 6am, finish by 10am, the rest of the day is yours.</p>
 
@@ -77,7 +77,7 @@ layout: blog-post.njk
 
 <p><strong>July and August:</strong> This is the real push, when 110 to 115+ degree afternoons are normal and the pool-and-evening schedule stops being optional and becomes non-negotiable. Rates are lowest and crowds are thinnest during these two months. People who plan around the heat tend to love it; those who don't tend to spend one day and leave.</p>
 
-<p><strong>September:</strong> The valley starts to cool. By late September, afternoon highs are coming down into the 100-105 range. Monsoon season is active: August and September sometimes bring dramatic afternoon and evening lightning storms with brief intense rain. They're genuinely beautiful from a pool or a patio. The caveat: desert roads can flash flood fast during heavy rain, so don't hike washes or canyon trails when storms are active.</p>
+<p><strong>September:</strong> The valley starts to cool. By late September, afternoon highs are coming down into the 100-105 range. Monsoon season is active: August and September sometimes bring dramatic afternoon and evening lightning storms with brief intense rain. They're beautiful from a pool or a patio. The caveat: desert roads can flash flood fast during heavy rain, so don't hike washes or canyon trails when storms are active.</p>
 
 <p><strong>October:</strong> Peak season starts returning, so crowds come back and rates rise, but the weather is ideal with temperatures in the 80s and 90s. If you can visit October, that's the sweet spot.</p>
 
@@ -97,7 +97,7 @@ layout: blog-post.njk
 <p>It depends on your heat tolerance and how you plan your days. Afternoon temperatures in July and August regularly hit 110-115°F. That's extreme and not safe for extended outdoor exposure. But mornings before 10am and evenings after 6pm are comfortable and often beautiful. Plan around the heat and a summer trip is very doable, significantly cheaper than spring, and more peaceful.</p>
 
 <h3>What is there to do in Palm Springs in summer?</h3>
-<p>Pool time is the centerpiece. Morning hikes and architecture walks before 10am, mid-afternoon museum and gallery visits, outdoor dining and exploring in the evenings. The Palm Springs Art Museum is genuinely good and air-conditioned. Spa treatments are popular for the same reason. Summer is when restaurants have their most relaxed, unhurried service.</p>
+<p>Pool time is the centerpiece. Morning hikes and architecture walks before 10am, mid-afternoon museum and gallery visits, outdoor dining and exploring in the evenings. The Palm Springs Art Museum is good and air-conditioned. Spa treatments are popular for the same reason. Summer is when restaurants have their most relaxed, unhurried service.</p>
 
 <h3>Is Palm Springs cheaper in summer?</h3>
 <p>Yes, noticeably. Summer is off-season and most properties offer rates 30-50% lower than spring peak or festival weekends. If you want more house for your money, summer is when the valley offers real value.</p>
@@ -132,7 +132,7 @@ layout: blog-post.njk
       "name": "What is there to do in Palm Springs in summer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pool time is the centerpiece. Morning hikes and architecture walks before 10am, mid-afternoon museum and gallery visits, outdoor dining and exploring in the evenings. The Palm Springs Art Museum is genuinely good and air-conditioned. Spa treatments are popular for the same reason. Summer is when restaurants have their most relaxed, unhurried service."
+        "text": "Pool time is the centerpiece. Morning hikes and architecture walks before 10am, mid-afternoon museum and gallery visits, outdoor dining and exploring in the evenings. The Palm Springs Art Museum is good and air-conditioned. Spa treatments are popular for the same reason. Summer is when restaurants have their most relaxed, unhurried service."
       }
     },
     {

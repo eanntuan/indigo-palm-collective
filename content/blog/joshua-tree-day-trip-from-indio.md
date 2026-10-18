@@ -35,7 +35,7 @@ faqItems:
   - q: "Do I need a reservation for Joshua Tree National Park?"
     a: "On busy spring weekends, yes. The park requires timed entry during peak periods, including Coachella and Stagecoach weekends in April when rangers turn people away at the entrance. Weekday visits outside peak season are generally walk-up friendly. Check the NPS page before you go, and read the full planning guide at https://indigopalm.co/blog/joshua-tree-day-trip-from-indio/"
   - q: "What's the best time of year to visit Joshua Tree?"
-    a: "October through April is the reliable window, with spring and fall being the strongest months. Spring brings wildflowers and comfortable hiking temperatures, fall is quieter with strong afternoon light, and winter is genuinely underrated with fewer crowds and good January light. Summer works only with a very early start and leaving by noon. More timing details at https://indigopalm.co/blog/joshua-tree-day-trip-from-indio/"
+    a: "October through April is the reliable window, with spring and fall being the strongest months. Spring brings wildflowers and comfortable hiking temperatures, fall is quieter with strong afternoon light, and winter is underrated with fewer crowds and good January light. Summer works only with a very early start and leaving by noon. More timing details at https://indigopalm.co/blog/joshua-tree-day-trip-from-indio/"
   - q: "What should I bring on a Joshua Tree day trip?"
     a: "Bring at least 1 gallon of water per person since there's no potable water inside most of the park, along with all your food, sunscreen, a hat, and closed-toe shoes for even the shortest trails. Cell service drops out almost immediately after entering, so download offline maps on Google Maps or AllTrails before you go. Full packing list at https://indigopalm.co/blog/joshua-tree-day-trip-from-indio/"
   - q: "Can you do both Joshua Tree entrances in one day?"
@@ -134,7 +134,7 @@ faqItems:
 <h4>What is the best time of year to visit Joshua Tree?</h4>
 <p>October through April is the reliable window. Spring brings wildflowers in good rain years and comfortable hiking temperatures. Fall is quieter with strong afternoon light. Both reward early starts.</p>
 
-<p>Summer visits require real planning. The higher elevations are cooler than the valley floor, but midday is still brutal. Arrive at first light and leave by noon. Winter is genuinely good and underrated: less crowded, manageable temperatures for hiking, and very good light in January and February.</p>
+<p>Summer visits require real planning. The higher elevations are cooler than the valley floor, but midday is still brutal. Arrive at first light and leave by noon. Winter is good and underrated: less crowded, manageable temperatures for hiking, and very good light in January and February.</p>
 
 <h4>Is Joshua Tree a good day trip with kids?</h4>
 <p>Yes, with planning. Cottonwood Spring Oasis is flat and shaded, the Cholla Cactus Garden loop is short, and Hidden Valley is a 1-mile boulder-enclosed trail most kids find interesting. The main logistics point: there is no food or potable water inside most of the park, so bring more of both than you think you need, plus closed-toe shoes for everyone. Cell service drops out almost immediately after entering, so download offline maps before you go.</p>

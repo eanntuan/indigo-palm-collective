@@ -52,7 +52,7 @@ relatedPosts:
 <h3>Seymour's</h3>
 <p><strong>233 E Palm Canyon Dr, Palm Springs | Hidden behind Mr. Lyons | <a href="https://www.seymoursf10.com/" target="_blank" rel="noopener">seymoursf10.com</a></strong></p>
 
-<p>Seymour's is a cocktail bar hidden behind Mr. Lyons restaurant, accessible through an unmarked side entrance that makes finding it feel deliberate. Moody lighting, a large outdoor patio with bocce ball, and drinks that are genuinely well-made. Hours are 6pm to midnight daily.</p>
+<p>Seymour's is a cocktail bar hidden behind Mr. Lyons restaurant, accessible through an unmarked side entrance that makes finding it feel deliberate. Moody lighting, a large outdoor patio with bocce ball, and drinks that are well-made. Hours are 6pm to midnight daily.</p>
 
 <p>The design salvages elements from the original 1938 building and mixes them with eclectic modern pieces. It feels like Palm Springs before Palm Springs was trendy, which is either nostalgic or ironic depending on how you're feeling. Either way it works.</p>
 
@@ -92,7 +92,7 @@ relatedPosts:
 <h3>Toucans Tiki Lounge</h3>
 <p><strong>2100 N Palm Canyon Dr, Palm Springs | 760-416-7584 | <a href="https://toucanstikilounge.com/" target="_blank" rel="noopener">toucanstikilounge.com</a></strong></p>
 
-<p>Toucans has been running drag in Palm Springs longer than any other bar in the city. Over-the-top tiki decor, kitschy cocktails, and a crowd that is genuinely there to have fun. Weekly programming includes Freakqncy Fridays, Saturday drag brunch at 1pm, Saturday night shows, and Stars of the Desert Sundays.</p>
+<p>Toucans has been running drag in Palm Springs longer than any other bar in the city. Over-the-top tiki decor, kitschy cocktails, and a crowd that is there to have fun. Weekly programming includes Freakqncy Fridays, Saturday drag brunch at 1pm, Saturday night shows, and Stars of the Desert Sundays.</p>
 
 <p>This is the place if you want spectacle along with your drinks, an all-welcoming LGBTQ+ bar open until 2am on Fridays and Saturdays.</p>
 

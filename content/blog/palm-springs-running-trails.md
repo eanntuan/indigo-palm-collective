@@ -33,7 +33,7 @@ relatedPosts:
 
 Running in Palm Springs sounds like a bad idea until you do it at 6am in October and realize you've just had the best run of your year. The San Jacinto Mountains behind you, the valley floor still cool, the light doing that pink-orange thing it does in the desert before the sun fully arrives. It's one of those experiences that makes you understand why people keep coming back here.
 
-It's also a genuinely bad idea at 10am in July. Timing is everything. Here's what you need to know before you go.
+It's also a bad idea at 10am in July. Timing is everything. Here's what you need to know before you go.
 
 <img src="/blog/images/desert-ridge-hike-valley-view.webp" alt="Desert trail with rocky terrain in Palm Springs overlooking the Coachella Valley floor and mountains at sunrise" loading="lazy" width="1400" height="1050">
 <p class="image-caption">Early morning is the window. Once the sun clears the mountains, the heat comes fast in the desert.</p>
@@ -89,7 +89,7 @@ This is a trail where you'll feel like you're in a canyon rather than on a hills
 
 **Distance:** 4.6 miles (Palm Springs segment) | **Elevation gain:** 26 meters | **Difficulty:** Easy
 
-The <a href="https://coachellavalleylink.com/" target="_blank" rel="noopener noreferrer"><strong>CV Link</strong></a> is a paved multi-use path running through the Coachella Valley, connecting Palm Springs to other valley cities over time. The Palm Springs segment runs along the eastern edge of the city. It's flat, it's wide, and leashed dogs are welcome.
+The <a href="https://coachellavalleylink.com/" target="_blank" rel="noopener noreferrer"><strong>CV Link</strong></a> is a paved multi-use path running through the Coachella Valley, connecting Palm Springs to other valley cities over time. The Palm Springs segment runs along the eastern edge of the city. It's flat and wide, and leashed dogs are welcome.
 
 This is the best option if you're running with a dog, pushing a stroller, or just want a predictable surface after a few days on loose desert rock. It lacks the drama of the mountain trails, but the views are still the Coachella Valley on one side and the San Jacinto Mountains on the other.
 
@@ -133,7 +133,7 @@ The CV Link is the only trail on this list that allows leashed dogs. The mountai
 
 ### Is it safe to run in Palm Springs in summer?
 
-On the right schedule, yes. The summer window is before 7am or after 6pm. By 9am in July, even the easy trails are becoming genuinely dangerous. Hydration is serious: the dry air means you're losing water faster than you feel it. Bring more than you think you need, turn around if you feel wrong, and stick to the shaded canyon trails when the temperature is already pushing 90 at sunrise.
+On the right schedule, yes. The summer window is before 7am or after 6pm. By 9am in July, even the easy trails are becoming dangerous. Hydration is serious: the dry air means you're losing water faster than you feel it. Bring more than you think you need, turn around if you feel wrong, and stick to the shaded canyon trails when the temperature is already pushing 90 at sunrise.
 
 ### How steep is the Museum Trail in Palm Springs?
 

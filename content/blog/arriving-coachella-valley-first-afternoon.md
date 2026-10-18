@@ -55,7 +55,7 @@ faqItems:
 
 <p>Every first-time desert guest wants to jump in the pool the moment they arrive. In winter and spring, go ahead. In summer, the answer is more complicated.</p>
 
-<p>The water will be warm. The sun from 11am to 4pm will be brutal. Getting in is fine; the getting out part, standing on a deck that's been absorbing heat for six hours, is not. The sweet spot is 5:30pm onward, once the sun drops behind the fence line and the air starts to shift. By 7 or 8pm, the pool is genuinely perfect and you'll end up staying out until you didn't mean to.</p>
+<p>The water will be warm. The sun from 11am to 4pm will be brutal. Getting in is fine; the getting out part, standing on a deck that's been absorbing heat for six hours, is not. The sweet spot is 5:30pm onward, once the sun drops behind the fence line and the air starts to shift. By 7 or 8pm, the pool is the best it will be all day and you'll end up staying out until you didn't mean to.</p>
 
 <p>If you arrive in the afternoon during summer, unpack, get the groceries, and wait. The pool isn't going anywhere.</p>
 
@@ -117,4 +117,4 @@ faqItems:
 <p>Temperatures regularly reach 110-115°F in July and August. Keep the house closed midday, stay hydrated, and plan outdoor activities for early morning or evening. The heat is manageable with the right habits and significantly less manageable without them.</p>
 
 <h3>Is there anything to do near vacation rentals in Indio besides Coachella?</h3>
-<p>Yes, and a lot of it is underrated. <a href="https://indigopalm.co/blog/date-farms-indio-coachella-valley/">The date farms along Shields Drive</a>, Joshua Tree National Park about 45 minutes north, the <a href="https://indigopalm.co/blog/salton-sea-day-trip/">Salton Sea</a> for a genuinely strange afternoon, and the Coachella Valley's restaurant scene are all worth building into the trip. See our <a href="/blog/things-to-do-indio-ca/">full Indio area guide</a> for specifics.</p>
+<p>Yes, and a lot of it is underrated. <a href="https://indigopalm.co/blog/date-farms-indio-coachella-valley/">The date farms along Shields Drive</a>, Joshua Tree National Park about 45 minutes north, the <a href="https://indigopalm.co/blog/salton-sea-day-trip/">Salton Sea</a> for a strange afternoon, and the Coachella Valley's restaurant scene are all worth building into the trip. See our <a href="/blog/things-to-do-indio-ca/">full Indio area guide</a> for specifics.</p>

@@ -33,7 +33,7 @@ layout: blog-post.njk
 
 <h2>When to Go</h2>
 
-<p>October through April is the season. That's when the weather cooperates and the valley is genuinely enjoyable to be outdoors in. Spring (February through April) is peak: wildflowers, mild temperatures, the full energy of the festival calendar.</p>
+<p>October through April is the season. That's when the weather cooperates and the valley is enjoyable to be outdoors in. Spring (February through April) is peak: wildflowers, mild temperatures, the full energy of the festival calendar.</p>
 
 <p>Fall (October and November) is the underrated option. The crowds are gone, the prices are lower, and the days are warm without being brutal. Mornings and evenings are legitimately comfortable. If you can go in October, you should.</p>
 
@@ -74,7 +74,7 @@ layout: blog-post.njk
 
 <p><strong>Arriola's Tortilleria</strong> in Indio is the kind of place that turns a Saturday morning into a whole thing. Fresh tortillas made right in front of you, tacos, and a line that keeps moving. Go hungry.</p>
 
-<p><a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tram</strong></a> is the trip nobody expects to love. You take a rotating gondola up 8,500 feet to the top of Mount San Jacinto. It's 30 to 40 degrees cooler at the top than in the valley below. In summer, this is the one outdoor activity that works. The views of the valley from up there are genuinely striking.</p>
+<p><a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tram</strong></a> is the trip nobody expects to love. You take a rotating gondola up 8,500 feet to the top of Mount San Jacinto. It's 30 to 40 degrees cooler at the top than in the valley below. In summer, this is the one outdoor activity that works. The views of the valley from up there are striking.</p>
 
 <p><a href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer"><strong>Indian Canyons</strong></a>, just south of downtown Palm Springs, are worth at least a few hours on a cool morning. Tall palms in canyon bottoms, rock formations, actual running water in some seasons. One of the better hikes in Southern California that most people don't know about. For a full trail breakdown, read our <a href="/blog/indian-canyons-palm-springs/">Indian Canyons hiking guide</a>.</p>
 
@@ -100,7 +100,7 @@ layout: blog-post.njk
 
 <p>Every single group I've seen come through the valley: the festival crowds, the bachelorette parties, the family trips, the couples weekends. All of them have a better time when they have somewhere good to return to in the afternoon: water to get into, outdoor furniture that isn't an afterthought, and a kitchen that works.</p>
 
-<p>The desert rewards you when you build in recovery time. It's not a city trip where you go from thing to thing all day. It's a place where some of the best moments happen in the margins: a late afternoon in the pool when the light turns orange, dinner on the patio at 8pm when it's finally cool enough to be outside again, a morning walk before it gets hot.</p>
+<p>The desert rewards you when you build in recovery time. Some of the best moments happen in the margins: a late afternoon in the pool when the light turns orange, dinner on the patio at 8pm when it's finally cool enough to be outside again, a morning walk before it gets hot.</p>
 
 <p>Plan for those moments and the weekend takes care of itself.</p>
 

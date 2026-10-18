@@ -34,7 +34,7 @@ layout: blog-post.njk
 
 <p>The Palm Springs Aerial Tram is the world's largest rotating tramway. The cars spin slowly during the ascent so everyone on board gets a full 360-degree view of Chino Canyon and the valley below. The tram runs along the sheer northeast face of Mount San Jacinto, which is one of the steepest mountain faces in North America.</p>
 
-<p>It opened in 1963. The current cars, which hold about 80 people, were installed in 2000. There are no stops between the base and the summit: you ride up, you spend time at the top, you come back down. The engineering is genuinely impressive even if you're not the type to care about that sort of thing.</p>
+<p>It opened in 1963. The current cars, which hold about 80 people, were installed in 2000. There are no stops between the base and the summit: you ride up, you spend time at the top, you come back down. The engineering is impressive even if you're not the type to care about that sort of thing.</p>
 
 <img src="/blog/images/ps-aerial-tram-car.webp" alt="Palm Springs Aerial Tram car ascending the cliffs of Chino Canyon with the Coachella Valley spreading out below" width="1280" height="853" loading="lazy">
 
@@ -118,7 +118,7 @@ layout: blog-post.njk
 <p>Two to three hours is the right minimum. The tram ride is 10 minutes each way. Add wait time for departures, 30 minutes of buffer, and at least an hour for the Desert View Trail at the top. If you're planning any serious hiking in the San Jacinto Wilderness, plan for a full day and check with the rangers about current trail conditions.</p>
 
 <h3>Is the Palm Springs Aerial Tram worth it?</h3>
-<p>Yes. The elevation change from 2,643 feet to 8,516 feet in 10 minutes is genuinely dramatic, and the view from the top reframes the entire geography of the valley. At $37 per adult it's a real cost, but the experience is not a tourist trap: the scenery, trails, and temperature contrast are all genuine. I've sent many guests up there who had been to Palm Springs multiple times and never done it. The reaction is always some version of "why did I wait."</p>
+<p>Yes. The elevation change from 2,643 feet to 8,516 feet in 10 minutes is dramatic, and the view from the top reframes the entire geography of the valley. At $37 per adult it's a real cost, but the experience is not a tourist trap: the scenery, trails, and temperature contrast are all genuine. I've sent many guests up there who had been to Palm Springs multiple times and never done it. The reaction is always some version of "why did I wait."</p>
 
 <h3>Can you hike at the top of the Palm Springs Aerial Tram?</h3>
 <p>Yes. The Mountain Station at 8,516 feet sits at the edge of Mount San Jacinto State Park with over 50 miles of trails. The Desert View Trail is a two-mile loop accessible to most fitness levels. The trail to San Jacinto Peak at 10,834 feet is a serious full-day undertaking requiring ranger check-in. Dogs are allowed on the trails, leashed.</p>
@@ -133,7 +133,7 @@ layout: blog-post.njk
 <p>The Mountain Station has two options: Peaks Restaurant for sit-down dining with valley views, and Top of the Tram for quick service. Dining packages that bundle a tram ticket with a meal credit run $27.50 to $43 per person and are worth considering if you're planning to eat up there anyway. The summit also has a gift shop and two documentary theaters, so there's enough to fill two to three hours without stepping outside at all. For where to stay in Palm Springs near the tram, see <a href="https://indigopalm.co/blog/palm-springs-aerial-tram/">the full guide at indigopalm.co</a>.</p>
 
 <h3>What happens if you're afraid of heights?</h3>
-<p>The tram cars are fully enclosed with large windows, so you're not exposed to open air at any point. The rotation is slow and gradual during ascent, and the views are dramatic but not vertigo-inducing for most people. The sheer face of Chino Canyon drops away below you as you climb, which is genuinely impressive, though some people find the window-to-floor drop disorienting. If cable cars or ski gondolas are manageable for you, the tram typically is too.</p>
+<p>The tram cars are fully enclosed with large windows, so you're not exposed to open air at any point. The rotation is slow and gradual during ascent, and the views are dramatic but not vertigo-inducing for most people. The sheer face of Chino Canyon drops away below you as you climb, which is impressive, though some people find the window-to-floor drop disorienting. If cable cars or ski gondolas are manageable for you, the tram typically is too.</p>
 
 <img src="/blog/images/ps-mcm-neighborhood.webp" alt="Palm Springs midcentury modern neighborhood with flat-roofed homes and the San Jacinto Mountains rising behind, near the tram base" width="1800" height="1200" loading="lazy" decoding="async">
 <p class="image-caption">The valley you're leaving behind. Ten minutes up and the temperature drops 30 degrees.</p>
@@ -142,7 +142,7 @@ layout: blog-post.njk
 
 <p>Yes. It's the most dramatic 10 minutes you'll spend in the Coachella Valley. I've taken guests up there who've been coming to Palm Springs for years and never done it, and the reaction is always some version of "why did I wait so long."</p>
 
-<p>The view from the top changes what you understand about the geography. You can see the whole valley spread out below, the Salton Sea to the south, the San Gorgonio Pass to the west. It puts everything in context in a way that a map doesn't. At $37 per adult it's not cheap, but it's not a tourist trap either. The scenery is real, the elevation change is real, and the trails are genuinely good.</p>
+<p>The view from the top changes what you understand about the geography. You can see the whole valley spread out below, the Salton Sea to the south, the San Gorgonio Pass to the west. It puts everything in context in a way that a map doesn't. At $37 per adult it's not cheap, but it's not a tourist trap either. The scenery is real, the elevation change is real, and the trails are good.</p>
 
 <h2>Quick Reference</h2>
 
@@ -178,7 +178,7 @@ layout: blog-post.njk
       "name": "Is the Palm Springs Aerial Tram worth it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The elevation change from 2,643 feet to 8,516 feet in 10 minutes is genuinely dramatic, and the view from the top reframes the entire geography of the valley. At $37 per adult it is a real cost, but the experience is not a tourist trap: the scenery, trails, and temperature contrast are all genuine."
+        "text": "Yes. The elevation change from 2,643 feet to 8,516 feet in 10 minutes is dramatic, and the view from the top reframes the entire geography of the valley. At $37 per adult it is a real cost, but the experience is not a tourist trap: the scenery, trails, and temperature contrast are all genuine."
       }
     },
     {

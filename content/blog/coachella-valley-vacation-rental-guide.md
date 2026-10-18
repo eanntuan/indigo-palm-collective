@@ -34,7 +34,7 @@ layout: blog-post.njk
 
 <h2>1. Pool Access: Private vs. Community, and What the Difference Is</h2>
 
-<p>In the Coachella Valley, every rental seems to have "a pool." That's not the thing to look for. The thing to look for is which kind, because they are genuinely different experiences and the listing photos won't make that obvious.</p>
+<p>In the Coachella Valley, every rental seems to have "a pool." Look for which kind, because they are different experiences and the listing photos won't make that obvious.</p>
 
 <p>Community pools are shared with the whole neighborhood. Posted hours, usually closing around 10pm. Rules about noise, food, and glass. On a hot Coachella weekend with a dozen other rental guests plus full-time residents, a community pool is a fine, modest, not-particularly-relaxing experience. It's not bad. It's just not the same as a pool that belongs to your house for the week.</p>
 
@@ -64,7 +64,7 @@ layout: blog-post.njk
 
 <h2>3. Check the Actual Location, Not Just the City Name</h2>
 
-<p>"Palm Springs" is used as a shorthand for the entire Coachella Valley, which is a 45-mile stretch running from Desert Hot Springs in the north down to Coachella in the east. A listing that says "Palm Springs area" could mean downtown Palm Springs, Cathedral City (right next door, different vibe), Desert Hot Springs (20 minutes north, genuinely different market), Palm Desert, or Rancho Mirage. These are not interchangeable.</p>
+<p>"Palm Springs" is used as a shorthand for the entire Coachella Valley, which is a 45-mile stretch running from Desert Hot Springs in the north down to Coachella in the east. A listing that says "Palm Springs area" could mean downtown Palm Springs, Cathedral City (right next door, different vibe), Desert Hot Springs (20 minutes north, a different market), Palm Desert, or Rancho Mirage. These are not interchangeable.</p>
 
 <p>Before you get attached to a listing, open the address in Google Maps and check the real distance to wherever you're going: the festival grounds, the BNP Paribas venue, a restaurant, the tram. "Near Palm Springs" can mean a 10-minute drive or a 40-minute drive depending on which part of which city you're in.</p>
 
