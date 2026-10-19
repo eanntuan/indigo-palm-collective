@@ -155,7 +155,7 @@ relatedPosts:
 
 <p>Two more from that same survey stood out to me. The Roost Country Club won with a Blue Coconut Breeze Martini, Malibu rum and blue curaçao stirred with coconut cream, basically a beach vacation poured into a glass. Foxy's Kitchen and Bar in Rancho Mirage earned it with the Mrs. Foxy's Lemon Drop, vodka and lemon juice brightened with elderflower and a touch of simple syrup, served in a room with a live jazz duo on Tuesdays and Thursdays.</p>
 
-<p>None of these are a quick walk or a $10 rideshare from The Sundune the way most of my list is, so treat them as a day-trip or a special-occasion stop rather than a Friday-night default. The full reader survey, including every other category winner, lives at <a href="https://www.palmspringslife.com/best" target="_blank" rel="noopener">palmspringslife.com/best</a>.</p>
+<p>None of these are a short, cheap rideshare from The Sundune the way most of my list is, so treat them as a day-trip or a special-occasion stop rather than a Friday-night default. The full reader survey, including every other category winner, lives at <a href="https://www.palmspringslife.com/best" target="_blank" rel="noopener">palmspringslife.com/best</a>.</p>
 
 <h2>Late Night</h2>
 

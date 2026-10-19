@@ -3355,3 +3355,49 @@ Feed pulled (25 items). Nothing new worth actioning since the 2026-10-08 run: "H
 Not actionable until about 2026-11-10 to 2026-11-15. Magic of Lights, WildLights and the El Paseo tree lighting had no confirmed 2026 dates on 2026-10-14 (the post labels them as last year's pattern). When each publishes, replace the "last year" wording with the confirmed dates and prices, re-verify the parade route end (Visit Palm Springs says Tachevah Road, Marching.com says Tamarisk Road) and the Dec 4 tree lighting venue (Frances Stevens Park in 2025), then bump `dateModified`. Also confirm the Tamale Festival hours (sources disagree: noon to 8 PM versus 10 AM to 7 PM) and which Tram station hosts the Dec 6 tree lighting.
 
 **Needs Eann:** (1) Google reauth plus the "In production" consent-screen decision above, so GSC, GA4 and Gmail alert mining can run again; (2) Halloween hero swap yes/no; (3) the still-open 2026-10-08 list: Pinterest Business Hub monthly-viewer figure, Pinterest UI cleanup, Quora status from Sabbir, hiking post 12 to 13 trails yes/no, RG-27 Cowork pilot yes/no, GSC Pages report URL lists for "Not found (404)" and "Page with redirect", and the `indigopalmco@gmail.com` ownership check.
+
+### babysit-seo run 2026-10-19 (Daily SEO Sprint)
+
+Housekeeping: no stashes; `git pull --rebase` refused because the tree already held 174 uncommitted built-output files (blog HTML, feeds, sitemap) from before this run. Local main equals origin/main, so no pull was needed. Those files are not mine and were left uncommitted.
+
+**Rachel Gainsburg:** feed fetched, newest post is 2026-10-07 and already processed. No new tasks.
+
+**Google auth is back** (GSC, GA4 and Gmail all ran with no `invalid_grant`).
+
+### What changed on 2026-10-19: GSC Check-in
+
+**Period:** 2026-07-20 to 2026-10-17 (90 days). **Overall:** 722 clicks, 82,910 impressions, 0.9% CTR, avg position 9.8. **vs. prior period:** +475 clicks, +48,211 impressions.
+
+**What's working:** `palm-springs-vs-scottsdale` (93 clicks, pos 5.7, query "palm springs vs scottsdale" 10.2% CTR), `palm-springs-birthday-freebies` (8.3% CTR), homepage 3.2% CTR.
+
+**CTR opportunities:** "how far is indio from palm springs" 875 imps, 6 clicks, pos 4.8 (`palm-springs-vs-indio`, title rewritten 2026-10-08, too soon to judge). "indio food" and "food indio" (176 and 131 imps, pos 5.8 to 7.2) are covered by an existing post and need a query-to-page check before any rewrite.
+
+**Weak pages:** `bnp-paribas-open-palm-springs` already retitled 2026-10-08. `palm-springs-running-trails` (249 imps, 0.4%, 100% of impressions at pos 20 or better) has a keyword-first title already and no query data, so no speculative rewrite. `stagecoach-2027-where-to-stay` (823 imps, 0.2%) and `palm-springs-with-kids` (pos 39.9) stay in the content/authority bucket.
+
+**Re-check due about 2026-10-22:** CTR on `palm-springs-vs-indio`, `where-to-stay-coachella`, `palm-springs-surf-club` (the 10-08 rewrites). The 90-day table still shows 0.3%, 0.3%, 0.6%, but that window is mostly pre-rewrite.
+
+### GSC Alert Email Review: 2026-10-19
+
+0 emails from search-console-noreply@google.com since 2026-10-08. No open deficiencies found.
+
+### Pinterest Check-in 2026-10-19
+
+30-day API totals (2026-09-19 to 2026-10-19): 1,617 impressions, 3 saves, 43 pin clicks, 6 outbound clicks. Down about 10% from 2026-10-14 (1,790). Still residual traffic from old pins; TASK PIN-5 (restart posting) remains Eann's. About 6% of the 25K threshold, links stay on Airbnb. The `--boards-summary` call exceeded the 2-minute limit this run and was not read.
+
+### GA4 Check-in 2026-10-19
+
+**Period:** 2026-10-12 to 2026-10-19. 369 active users (+100), 419 sessions, 105s avg session (was 250s). Channels: Direct 256, Organic Search 149, AI Assistant 5, Organic Social 3. Property pages: Terra Luz 119 views (33.3% bounce), Cozy Cactus 83 (46.3%), Sundune 77 (47.2%), The Well 53. No page has 50+ views with over 60% bounce. `/booking-flow/ps-retreat/` is 69.2% on 22 views, below the bar. The Direct surge (256 sessions) is unexplained and unverified; could be bot traffic, not confirmed.
+
+### Technical SEO Health Checks 2026-10-19
+
+Run with `/opt/homebrew/bin/python3` (bs4 is missing from `/usr/bin/python3` and the google-workspace venv, so the scripts fail with the default interpreter). Broken links: 0 (117 pages, 3,861 targets). Alt text: 0 HIGH, 0 MEDIUM, 2 LOW lazy-load flags on intentional eager images. Orphans: 0; 1 weakly linked (`bnp-paribas-open-vacation-rental-guide`, a redirect stub, expected). External pass not run (weekly, due).
+
+### audit-website 2026-10-19
+
+Em dashes 0, banned phrases 0, Airbnb fee percentages correct, no polo club mileage claims for Indian Palms. One HIGH fixed: `palm-springs-bars.md` said the bar list was a "quick walk" from The Sundune; reworded to a short rideshare (Sundune is not walkable). MEDIUM, not auto-fixed: "honest" appears in 40 posts (needs reading for standalone filler).
+
+### Actions taken 2026-10-19
+
+- `palm-springs-bars.md`: Sundune walkability wording fixed (source only; GitHub Actions rebuilds the HTML on push, `npm` is not on PATH in this shell).
+- No new posts (no GSC query with 200+ imps and no matching post).
+- **Needs Eann:** the 174 uncommitted built-output files in the working tree (review and commit or discard), `pip install beautifulsoup4` into the default python so the SEO scripts run unattended, Halloween hero swap yes/no and the other 2026-10-14 open items.
