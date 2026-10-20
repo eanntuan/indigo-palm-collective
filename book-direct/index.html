@@ -491,7 +491,7 @@
 
         .properties-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
             margin-top: 2.5rem;
         }
@@ -581,7 +581,7 @@
 
         .reasons-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
             margin-top: 2.5rem;
         }
@@ -693,10 +693,15 @@
         .contact-btn.instagram { background: rgba(0,0,0,0.05); color: var(--charcoal); border: 1px solid rgba(0,0,0,0.15); }
 
         /* Responsive */
+        @media (max-width: 1100px) {
+            .properties-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 900px) {
             .comparison-grid,
-            .steps-grid,
-            .properties-grid {
+            .steps-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -706,6 +711,10 @@
         }
 
         @media (max-width: 600px) {
+            .properties-grid {
+                grid-template-columns: 1fr;
+            }
+
             section {
                 padding: 3.5rem 5%;
             }
@@ -751,10 +760,10 @@
     <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-tag">Skip the Platform Fee</div>
+            <div class="hero-tag">Four Desert Homes</div>
             <h1>Book Direct.<br>Skip the Fee.</h1>
-            <p class="subhead">Same house, same host, without the 20% Airbnb service charge added at checkout.</p>
-            <a href="/booking-flow/" class="hero-cta" onclick="gtag('event', 'book_direct_hero_cta', {'event_category': 'Booking', 'event_label': 'Hero CTA'});">Check Availability</a>
+            <p class="subhead">Same homes, same host, no Airbnb service fee.</p>
+            <a href="#homes" class="hero-cta" onclick="gtag('event', 'book_direct_hero_cta', {'event_category': 'Booking', 'event_label': 'Hero CTA'});">Choose a Home</a>
         </div>
     </section>
 
@@ -767,77 +776,11 @@
         </div>
     </div>
 
-    <!-- Fee Comparison -->
-    <section class="comparison-section">
-        <div class="section-inner">
-            <div class="section-label">What You're Paying</div>
-            <h2 class="section-title">The fee Airbnb buries at checkout</h2>
-            <p class="section-body">Airbnb and VRBO don't advertise the service fee prominently because it makes the price look higher than it is. You see $250/night until you reach checkout, where 20% gets tacked on. That's just how it works on their platform. We don't charge it here.</p>
-
-            <div class="comparison-grid">
-                <div class="comparison-card direct">
-                    <div class="card-label">Book at indigopalm.co</div>
-                    <h3>What you see is what you pay</h3>
-                    <ul class="comparison-list">
-                        <li><span class="icon">&#10003;</span> No service fee, ever</li>
-                        <li><span class="icon">&#10003;</span> Direct messages to the host, no Airbnb inbox in the middle</li>
-                        <li><span class="icon">&#10003;</span> Flexible payment options</li>
-                        <li><span class="icon">&#10003;</span> Same price guarantee, same properties</li>
-                        <li><span class="icon">&#10003;</span> Host knows you're coming and preps accordingly</li>
-                    </ul>
-                </div>
-                <div class="comparison-card platform">
-                    <div class="card-label">Book on Airbnb or VRBO</div>
-                    <h3>The price climbs at checkout</h3>
-                    <ul class="comparison-list">
-                        <li><span class="icon">&#10007;</span> 20% service fee added at checkout</li>
-                        <li><span class="icon">&#10007;</span> Messages routed through Airbnb inbox, not directly to host</li>
-                        <li><span class="icon">&#10007;</span> No flexibility on payment timing</li>
-                        <li><span class="icon">&#10007;</span> Platform takes a cut on both sides</li>
-                        <li><span class="icon">&#10007;</span> Dispute resolution goes through Airbnb, not the host</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="dollar-example">
-                <div class="ex-label">Real Example</div>
-                <p class="ex-math">$300/night &times; 5 nights = <strong>$1,500 base.</strong> Airbnb adds <strong>$300 in service fees</strong> on top of that. Book here: <strong>$0 in service fees.</strong></p>
-                <p class="ex-note">On a longer stay like a full Coachella weekend, the difference typically lands between $300 and $500 depending on your nightly rate. That's real money, and it just goes to Airbnb for the privilege of using their booking form.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-section">
-        <div class="section-inner">
-            <div class="section-label">Three Steps</div>
-            <h2 class="section-title">Booking direct is straightforward</h2>
-
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Choose your property</h3>
-                    <p>Three Coachella Valley vacation rentals, each with a distinct feel. Cozy Cactus for families, Terra Luz for groups who want a private pool and Latin-inspired character, and The Sundune for a boutique Palm Springs stay.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Check your dates</h3>
-                    <p>Pick dates on the availability calendar, get the actual price with no platform markup, and ask any questions directly. No filter through an Airbnb inbox, just a real reply.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Book at indigopalm.co</h3>
-                    <p>Pay securely through the booking flow, get confirmation details, and that's it. No Airbnb service fee, no hidden platform charge.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Properties -->
-    <section class="properties-section">
+    <section class="properties-section" id="homes">
         <div class="section-inner">
-            <div class="section-label">The Properties</div>
-            <h2 class="section-title">Three houses across Coachella Valley</h2>
+            <div class="section-label">Choose a Home</div>
+            <h2 class="section-title">Four homes across Coachella Valley</h2>
 
             <div class="properties-grid">
                 <a href="/booking-flow/?property=cozy-cactus" class="property-card" onclick="gtag('event', 'property_card_click', {'event_category': 'Booking', 'event_label': 'Cozy Cactus'});">
@@ -845,9 +788,9 @@
                         <img src="/cozy-cactus/photos/CozyCactus2026-0004.webp" alt="Cozy Cactus vacation rental backyard with pergola and outdoor seating in Indio CA" loading="lazy" width="1800" height="1201">
                     </div>
                     <div class="card-body">
-                        <span class="prop-tag">Family Rental &middot; Indio</span>
+                        <span class="prop-tag">Family &middot; Indio</span>
                         <h3>Cozy Cactus</h3>
-                        <p class="prop-desc">3BR family rental in Indio, walking distance to Coachella. Built for families who want everything thought of before they arrive: labeled drawers, infant gear, hot tub, putting green.</p>
+                        <p class="prop-desc">3BR in Indio, walking distance to Coachella. Hot tub, putting green, sleeps 8.</p>
                         <span class="book-link">Book Cozy Cactus &rarr;</span>
                     </div>
                 </a>
@@ -859,7 +802,7 @@
                     <div class="card-body">
                         <span class="prop-tag">Private Pool &middot; Indio</span>
                         <h3>Terra Luz</h3>
-                        <p class="prop-desc">3BR Latin-inspired rental with a private pool in Indio. Bold character, easy pace, pet-friendly. The backyard is at its best in the evenings.</p>
+                        <p class="prop-desc">3BR in Indio with a private saltwater pool. Dog-friendly, sleeps 8.</p>
                         <span class="book-link">Book Terra Luz &rarr;</span>
                     </div>
                 </a>
@@ -871,10 +814,36 @@
                     <div class="card-body">
                         <span class="prop-tag">Boutique &middot; Palm Springs</span>
                         <h3>The Sundune</h3>
-                        <p class="prop-desc">2BR boutique rental in Palm Springs. Quieter and more considered than the big Airbnb party houses. Good for couples or two who want Palm Springs done right.</p>
+                        <p class="prop-desc">2BR in Palm Springs with a shared community pool and hot tub. Sleeps 4, 4-night minimum.</p>
                         <span class="book-link">Book The Sundune &rarr;</span>
                     </div>
                 </a>
+
+                <a href="/booking-flow/?property=the-well" class="property-card" onclick="gtag('event', 'property_card_click', {'event_category': 'Booking', 'event_label': 'The Well'});">
+                    <div class="card-img">
+                        <img src="/images/the-well-card.webp" alt="The Well living room with teal velvet sofa and mid-century modern design in Palm Springs" loading="lazy" width="1024" height="683">
+                    </div>
+                    <div class="card-body">
+                        <span class="prop-tag">Monthly &middot; Palm Springs</span>
+                        <h3>The Well</h3>
+                        <p class="prop-desc">1BR in Palm Springs for one or two. Monthly stays, 28-night minimum.</p>
+                        <span class="book-link">Book The Well &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Comparison -->
+    <section class="comparison-section">
+        <div class="section-inner">
+            <div class="section-label">What You Save</div>
+            <h2 class="section-title">No service fee, ever</h2>
+            <p class="section-body">Airbnb and VRBO add a 20% service fee at checkout. Here you pay the nightly rate you see.</p>
+
+            <div class="dollar-example">
+                <div class="ex-label">Example</div>
+                <p class="ex-math">$300/night &times; 5 nights = <strong>$1,500 base.</strong> Airbnb adds <strong>$300 in service fees</strong> on top of that. Book here: <strong>$0 in service fees.</strong></p>
             </div>
         </div>
     </section>
@@ -882,25 +851,21 @@
     <!-- Why Direct -->
     <section class="why-section">
         <div class="section-inner">
-            <div class="section-label">Why It Matters Beyond the Fee</div>
-            <h2 class="section-title">Four reasons to book direct</h2>
+            <div class="section-label">Why Book Direct</div>
+            <h2 class="section-title">Three reasons beyond the fee</h2>
 
             <div class="reasons-grid">
                 <div class="reason">
-                    <h3>You talk to the actual host</h3>
-                    <p>When you book through Airbnb, every message routes through their platform, where it can sit for hours and gets screened against their policies before it even reaches me. Book direct and you have my real contact info, a faster reply, and a conversation that goes somewhere.</p>
+                    <h3>Talk to the host</h3>
+                    <p>Message me directly instead of through Airbnb's inbox, and expect a faster reply.</p>
                 </div>
                 <div class="reason">
-                    <h3>Flexible check-in and checkout conversations are possible</h3>
-                    <p>Airbnb sets the times, and that's that. When you book direct, early check-in or a slightly late checkout is something we can talk about depending on the schedule. I can't promise yes every time, but I can have the conversation with you, which is more than the platform allows.</p>
+                    <h3>Ask about early or late</h3>
+                    <p>Early check-in or late check-out is sometimes free when the calendar allows, so just ask.</p>
                 </div>
                 <div class="reason">
-                    <h3>Better prep on my end</h3>
-                    <p>When a booking comes in directly, I know more about who's staying before they arrive. That means I can prep the right things: leave the pack-n-play out if you're coming with an infant, have the fridge stocked if you mention an early arrival, or set the pool heat ahead of time. Airbnb strips a lot of that context out.</p>
-                </div>
-                <div class="reason">
-                    <h3>The review system works differently</h3>
-                    <p>Airbnb's review process is managed by Airbnb, which means disputes, removals, and pressure to leave five stars in both directions. Direct bookings don't have that dynamic. If something's wrong, we just talk about it, fix it if we can, and move on. It's a cleaner relationship for everyone.</p>
+                    <h3>A better-prepared stay</h3>
+                    <p>I know who's coming, so I can leave the pack-n-play out, stock the fridge or set the pool heat ahead of time.</p>
                 </div>
             </div>
         </div>
@@ -915,12 +880,7 @@
 
                 <details class="faq-item">
                     <summary>Is it safe to book direct instead of through Airbnb? <span class="faq-icon">+</span></summary>
-                    <p>Yes. You pay securely through the booking flow at indigopalm.co, get the same confirmation details you'd get on Airbnb, and reach the same host directly if anything comes up. The only difference is Airbnb's 20% guest service fee never gets added at checkout.</p>
-                </details>
-
-                <details class="faq-item">
-                    <summary>How much do I save by booking direct? <span class="faq-icon">+</span></summary>
-                    <p>Airbnb and VRBO add a 20% service fee at checkout that isn't part of the listed nightly rate. On a $1,500 base (5 nights at $300), that's $300 in fees you skip entirely by booking here. Same house, same host, same rates, no platform markup.</p>
+                    <p>Yes. You pay securely through the booking flow at indigopalm.co and get the same confirmation details you'd get on Airbnb.</p>
                 </details>
 
                 <details class="faq-item">
@@ -929,8 +889,8 @@
                 </details>
 
                 <details class="faq-item">
-                    <summary>Do I get the same house and the same reviews if I book direct? <span class="faq-icon">+</span></summary>
-                    <p>Yes, it's the identical property with the identical reviews you'd see on Airbnb. Booking direct doesn't change the house, the host, or the standards, it just removes the platform's service fee from your total.</p>
+                    <summary>Is it the same house and the same reviews? <span class="faq-icon">+</span></summary>
+                    <p>Yes. It's the identical property with the identical reviews you'd see on Airbnb.</p>
                 </details>
 
             </div>
@@ -940,7 +900,7 @@
     <!-- CTA -->
     <section class="cta-section">
         <h2>Ready to skip the fee?</h2>
-        <p>Pick your property, check availability, and book at the price you see, with no Airbnb service charge added at checkout.</p>
+        <p>Pick a home, check your dates, and book at the price you see.</p>
         <a href="/booking-flow/" class="cta-btn-big" onclick="gtag('event', 'book_direct_bottom_cta', {'event_category': 'Booking', 'event_label': 'Bottom CTA'});">Check Availability</a>
     </section>
 
@@ -955,15 +915,7 @@
           "name": "Is it safe to book direct instead of through Airbnb?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. You pay securely through the booking flow at indigopalm.co, get the same confirmation details you'd get on Airbnb, and reach the same host directly if anything comes up. The only difference is Airbnb's 20% guest service fee never gets added at checkout."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much do I save by booking direct?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Airbnb and VRBO add a 20% service fee at checkout that isn't part of the listed nightly rate. On a $1,500 base (5 nights at $300), that's $300 in fees you skip entirely by booking here. Same house, same host, same rates, no platform markup."
+            "text": "Yes. You pay securely through the booking flow at indigopalm.co and get the same confirmation details you'd get on Airbnb."
           }
         },
         {
@@ -976,10 +928,10 @@
         },
         {
           "@type": "Question",
-          "name": "Do I get the same house and the same reviews if I book direct?",
+          "name": "Is it the same house and the same reviews?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, it's the identical property with the identical reviews you'd see on Airbnb. Booking direct doesn't change the house, the host, or the standards, it just removes the platform's service fee from your total."
+            "text": "Yes. It's the identical property with the identical reviews you'd see on Airbnb."
           }
         }
       ]
