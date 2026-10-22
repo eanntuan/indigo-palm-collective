@@ -28,7 +28,7 @@ layout: blog-post.njk
 
 <h2>Day 1: Aerial Tram and Arrival Day</h2>
 
-<p>Do the aerial tram first. The <a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tramway</strong></a> leaves from the valley floor at 2,643 feet and drops you at the Mountain Station at 8,516 feet in about 10 minutes. At the top, the temperature is typically 30 to 40 degrees cooler than the desert below. There are hiking trails ranging from easy walks to serious backcountry routes in the San Jacinto Wilderness.</p>
+<p>Do the aerial tram first. The <a href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer"><strong>Palm Springs Aerial Tramway</strong></a> leaves from the valley floor at 2,643 feet and drops you at the Mountain Station at 8,516 feet in about 10 minutes. At the top, the temperature is typically 30 to 40 degrees cooler than the desert below. There are hiking trails ranging from easy walks to serious backcountry routes in the San Jacinto Wilderness. If you want more hiking beyond the tram, our guide to the <a href="/blog/best-hiking-palm-springs/">best hiking in Palm Springs</a> covers 13 trails around the valley, most of them an easy drive from downtown.</p>
 
 <p>Book tickets in advance, especially on weekends. The first tram departs at 10am on weekdays, 8am on weekends. Go early. By noon the line is long and the crowds at the top increase. The ride costs about $31 for adults. Budget 2 to 3 hours for the full experience including hiking.</p>
 
