@@ -605,6 +605,8 @@ async function submitBookingRequest() {
         const data = await res.json();
         if (!data.success) throw new Error(data.error || 'Submission failed');
 
+        if (window.gtag) gtag('event', 'booking_request', {'property_name': selectedProperty.name, 'property_id': selectedProperty.id, 'check_in': checkIn, 'check_out': checkOut, 'guests': guests});
+
         submitBtn.textContent = 'Request Sent!';
         showMessage(
             `Got it. We'll review your request for ${selectedProperty.name} and send a payment link within 24 hours. The desert's not going anywhere.`,
@@ -640,7 +642,7 @@ function renderPriceSummary() {
     const allInNightly = (accomTotal / nights).toFixed(2);
 
     // Update pool heat price label
-    if (selectedProperty?.id === 'casa-moto') {
+    if (selectedProperty?.id === 'terra-luz') {
         const label = document.getElementById('pool-heat-price');
         if (label) {
             if (!poolHeatSelected) {
@@ -660,7 +662,7 @@ function renderPriceSummary() {
     const poolHeatLabel = poolHeatNights >= 7
         ? `Pool heating (7+ nights flat rate)`
         : `Pool heating (${poolHeatNights} &times; $75)`;
-    const showPoolRow = selectedProperty?.id === 'casa-moto';
+    const showPoolRow = selectedProperty?.id === 'terra-luz';
     const poolHeatRow = showPoolRow ? `
         <div class="price-row pool-row ${lastPoolOn ? '' : 'is-off'}">
             <span>${poolHeatCost > 0 ? poolHeatLabel : 'Pool heating'}</span>
