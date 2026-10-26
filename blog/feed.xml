@@ -6,7 +6,15 @@
     <atom:link href="https://indigopalm.co/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Coachella Valley travel guides and vacation rental stories from Indigo Palm Collective.</description>
     <language>en-us</language>
-    <lastBuildDate>2026-10-19T00:00:00Z</lastBuildDate>
+    <lastBuildDate>2026-10-26T00:00:00Z</lastBuildDate>
+    <item>
+        <title>Best Ice Cream in Palm Springs and Coachella Valley</title>
+        <link>https://indigopalm.co/blog/best-ice-cream-coachella-valley/</link>
+        <guid>https://indigopalm.co/blog/best-ice-cream-coachella-valley/</guid>
+        <pubDate>2026-10-26T00:00:00Z</pubDate>
+        <description>Best ice cream in Palm Springs and the Coachella Valley: date shakes in Indio, gelato downtown, late-night scoops, plus kid and heat tips by city.</description>
+        <enclosure url="https://indigopalm.co/blog/images/shields-date-garden.webp" type="image/webp"/>
+    </item>
     <item>
         <title>Box Canyon Hike Near Indio: Sheep Hole Oasis Guide</title>
         <link>https://indigopalm.co/blog/box-canyon-sheep-hole-oasis-hike/</link>
