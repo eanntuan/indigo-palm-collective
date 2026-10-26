@@ -72,10 +72,9 @@ Used in blog frontmatter (`property:`), Worker routes, CMS config, and booking-f
 These are confirmed facts that have been corrected from prior AI errors. Apply them in every piece of copy, JSON-LD, FAQ, and blog post.
 
 ### Airbnb service fee
-**Correct:** Airbnb charges guests a **20% service fee** on the booking subtotal (nightly rate + cleaning fee, before taxes).
-**Wrong:** "8–14%", "14–16%", "14.5%", or any other range. These are outdated or simply incorrect.
-- Use in copy: "Airbnb's 20% guest service fee" or "skips the 20% Airbnb service fee"
-- Math example for a $1,250 subtotal: $250 service fee (20%), total $1,500 before taxes
+**Correct:** Do not state a fixed guest fee or a guaranteed guest saving. Eann's reported 15.5% is a HOST service fee, not a discount guests get by booking direct.
+**Wrong:** "20% guest service fee", "skip the 20%", "save 20%", or any other fixed percentage presented as a guest saving.
+- Use in copy: ask guests to compare the full total for the same dates on both platforms.
 
 ### Indian Palms Country Club → Empire Polo Club
 **Correct:** Indian Palms Country Club (where Terra Luz and Cozy Cactus are located in Indio) is **walking distance** to the Empire Polo Club / Coachella and Stagecoach festival grounds.

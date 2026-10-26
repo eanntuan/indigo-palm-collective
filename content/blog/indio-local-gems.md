@@ -252,7 +252,7 @@ relatedPosts:
       "name": "Where is the best place to stay in Indio to walk to Coachella or Stagecoach?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Terra Luz in Indian Palms is the closest vacation rental neighborhood to the Empire Polo Club, close enough that many guests walk to the venue rather than deal with shuttles. The Cozy Cactus is also in Indio with a private hot tub and community pool. Both properties book direct at indigopalm.co with no service fee."
+        "text": "Terra Luz in Indian Palms is the closest vacation rental neighborhood to the Empire Polo Club, close enough that many guests walk to the venue rather than deal with shuttles. The Cozy Cactus is also in Indio with a private hot tub and community pool. Both properties book direct at indigopalm.co."
       }
     },
     {
