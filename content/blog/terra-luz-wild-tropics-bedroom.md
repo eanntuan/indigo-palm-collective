@@ -21,7 +21,7 @@ excerpt: "The Wild Tropics bedroom at Terra Luz has floor-to-ceiling Rebel Wall 
 layout: blog-post.njk
 ---
 
-<p>The second bedroom at Terra Luz was always going to be the bolder one. The primary bedroom has its own personality, but this room needed something louder. Not chaotic, just confident. Full of pattern, grounded by terracotta, and playful without being childish.</p>
+<p>Wild Tropics is the boldest bedroom at Terra Luz: tropical wallpaper, a king bed, a custom tile headboard, and a separate seating nook. Here’s how the room came together.</p>
 
 <p>Dawn Asher at The Olive Jar called it Wild Tropics. The brief was bold pattern meets grounding warmth, Latin and lush, the kind of room where you want to spend time when you're not at the pool. I think we landed it.</p>
 

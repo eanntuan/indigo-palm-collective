@@ -18,7 +18,7 @@ readTime: "5 min read"
 layout: blog-post.njk
 ---
 
-<p>The primary bedroom at Terra Luz is 267 square feet, which sounds like a lot until you remember the house itself reads large and open. We wanted guests to walk through the door and feel like they'd arrived somewhere complete, not like they'd stepped into the large-but-generic room of a vacation house. The goal was a casita. A room that could stand on its own.</p>
+<p>The primary bedroom has a king bed, sage green walls, and its own bathroom with a soaking tub. We wanted it to feel like a small suite within the house. Here’s how we chose the tile, colors, and furniture.</p>
 
 <p>That's harder than it sounds. A room that size can easily go hollow. Too much floor, not enough warmth, everything floating rather than anchored. Too much bold and you've built a headache instead of a retreat. We had a clear vision and still went through five rounds of tile samples and more green paint swatches than I want to admit before we got there.</p>
 
@@ -98,7 +98,7 @@ layout: blog-post.njk
       "name": "How many people can sleep in the Terra Luz primary bedroom?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Three. The king bed sleeps two, and a trundle pulls from under the frame for a third. A rattan daybed along the back wall can accommodate a smaller adult or older child. Across all three bedrooms, Terra Luz sleeps up to eight guests total."
+        "text": "The primary has a king bed and a twin trundle. The Cali Room also has a twin trundle. Terra Luz accommodates up to eight guests across all three bedrooms."
       }
     },
     {

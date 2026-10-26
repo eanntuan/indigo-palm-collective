@@ -127,7 +127,7 @@ layout: blog-post.njk
 <p>The design vision came from Dawn Asher of The Olive Jar, a brand strategist and interior designer based in the desert. She brought the six-filter framework that governs every detail, from paint colors to linens to the mural in the backyard. I executed it with too many trips to HomeGoods and a Honda Element that fits more than it should.</p>
 
 <h3>Is it cheaper to book directly instead of through Airbnb?</h3>
-<p>Yes. Booking at <a href="https://indigopalm.co/cozy-cactus/">indigopalm.co/cozy-cactus/</a> skips the Airbnb guest service fee, which is 20% of the subtotal. The nightly rate is identical either way, and the booking flow takes about 3 minutes through Square. For festival weeks when base rates are already high, the savings are proportionally larger.</p>
+<p>Yes. <a href="/cozy-cactus/">Book The Cozy Cactus on our website</a>. Check your dates, full total, and booking terms before confirming.</p>
 
 <h3>What ages is the baby gear designed for?</h3>
 <p>The Stokke high chair works from 6 months through roughly 3 years, and the pack-n-play covers newborn through 18 months or so. Infant-stage gear includes a Keekaroo changing table, bottle warmer, diaper pail, outlet covers, and cabinet locks. Kids' dishes and sippy cups extend the kitchen setup through the early toddler window. Beyond that age range, the house still works well as a family rental, the infant infrastructure just becomes less central.</p>
@@ -156,7 +156,7 @@ layout: blog-post.njk
       "name": "Is it cheaper to book The Cozy Cactus directly instead of through Airbnb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Booking at indigopalm.co/cozy-cactus/ skips the Airbnb guest service fee, which is 20% of the subtotal. The nightly rate is the same either way. For festival weeks when base rates are high, the savings are proportionally larger."
+        "text": "Yes. Book The Cozy Cactus on our website. Check your dates, full total, and booking terms before confirming."
       }
     },
     {
@@ -164,7 +164,7 @@ layout: blog-post.njk
       "name": "What ages is the baby gear at The Cozy Cactus designed for?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The gear covers newborn through early toddler, roughly 0-3 years. Stokke high chair for 6 months to 3 years, pack-n-play for newborn through 18 months, plus Keekaroo changing table, bottle warmer, diaper pail, outlet covers, cabinet locks, kids' dishes, and sippy cups. Sound machines are in every bedroom."
+        "text": "The Stokke high chair works from 6 months through roughly 3 years, and the pack-n-play covers newborn through 18 months or so. Infant-stage gear includes a Keekaroo changing table, bottle warmer, diaper pail, outlet covers, and cabinet locks. Kids' dishes and sippy cups extend the kitchen setup through the early toddler window. Beyond that age range, the house still works well as a family rental, the infant infrastructure just becomes less central."
       }
     },
     {
@@ -180,7 +180,7 @@ layout: blog-post.njk
       "name": "When is the best time to visit Indio with a family outside of festival season?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "October through November and January through March are the best windows. Temperatures run 75-90 degrees, the desert is quiet, and rates drop well below festival weeks. Summer averages 110-degree afternoons, which limits outdoor time significantly. Spring Coachella weekends book 6-12 months in advance."
+        "text": "October through November and January through March are the sweet spots. Temperatures run warm, typically 75-90 degrees, the desert roads are quiet, and rates are well below festival weeks. Summer (June through August) is cheap for good reason: 110-degree afternoons limit outdoor time to morning and evening. Spring festival weekends in April book 6-12 months out, so families who want Coachella proximity without the crowd should target the shoulder months on either side."
       }
     }
   ]

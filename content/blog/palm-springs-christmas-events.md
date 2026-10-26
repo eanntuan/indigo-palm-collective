@@ -95,7 +95,7 @@ layout: blog-post.njk
 
 <h2>Where I'd stay for the holidays</h2>
 
-<p>I can't see your dates from here, so check each calendar before you plan around anything above. Booking direct also skips Airbnb's 20% guest service fee, and the <a href="/book-direct/">book direct page</a> shows the math.</p>
+<p>Check each home’s calendar for your dates. Our <a href="/book-direct/">direct-booking page</a> explains how to compare the full total.</p>
 
 <h3>Indio: Terra Luz and The Cozy Cactus</h3>
 <p>Both sit inside Indian Palms Country Club, which puts you near the tamale festival and the Magic of Lights grounds, with Palm Springs about 30 to 40 minutes west. <a href="/terra-luz/">Terra Luz</a> is a 3BR/2BA with a saltwater pool, complimentary spa heating, and optional pool heating for $75 a night (2-night minimum) or $400 a week with 24 hours' notice, which is worth knowing when the nights hit the low 40s. It's dog-friendly with approval.</p>

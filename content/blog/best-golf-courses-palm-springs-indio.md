@@ -85,7 +85,7 @@ layout: blog-post.njk
 
 <p>Book tee times as far ahead as you can for anything from December through April, the valley's cooler months are also its busiest golf months, and the good weekend slots at Desert Willow, Indian Wells, and PGA West go fast. Summer is the opposite problem: cheap twilight rates and nearly empty courses, if you can handle the heat starting before 9am.</p>
 
-<p>If Indian Palms is your course, you don't need a hotel at all. Book <a href="/terra-luz/">Terra Luz</a> or <a href="/cozy-cactus/">The Cozy Cactus</a> direct at <a href="https://indigopalm.co/">indigopalm.co</a>, skip Airbnb's 20% guest service fee, and walk to your tee time instead of driving to it. For the rest of the valley's courses, both properties put you within 20 minutes of everything on this list. If you want the rest of the trip sorted too, the <a href="/coachella-valley/">Coachella Valley travel guide</a> pulls together where I'd eat, hike, and unwind between rounds.</p>
+<p>Terra Luz and The Cozy Cactus are both inside Indian Palms Country Club. Check dates and full totals on our website. Our <a href="/coachella-valley/">Coachella Valley guide</a> has ideas for the rest of your trip.</p>
 
 <h2>Frequently Asked Questions</h2>
 

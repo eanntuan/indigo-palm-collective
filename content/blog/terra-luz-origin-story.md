@@ -144,7 +144,7 @@ layout: blog-post.njk
 <p>I-10 East to Indio is the direct route, about 2 to 2.5 hours depending on LA traffic. The version worth doing once: exit at Date Palm Drive in Cathedral City and come through Highway 111 east, which drops you through Palm Springs and down the valley floor with the mountains shifting the whole way. By the time you hit Indio, the terracotta landscape makes sense in a way it doesn't from the freeway. It adds about 20 minutes.</p>
 
 <h3>Can I book Terra Luz directly without paying Airbnb fees?</h3>
-<p>Yes. Terra Luz books directly at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>, which avoids the Airbnb guest service fee (20% of the reservation total). Payments process through Square and booking confirmations go out via email. The same rates, same host, no platform markup.</p>
+<p>Yes. <a href="/terra-luz/">Check dates and full totals for Terra Luz</a> on our website. Email us with questions before booking.</p>
 
 <h3>What is the Indian Palms neighborhood like?</h3>
 <p>Indian Palms is a quiet gated community in Indio, residential rather than resort-y, with a golf course running through it. Guests who book Terra Luz for Coachella or Stagecoach appreciate that it's walking distance to the Empire Polo Club but completely removed from the festival-week foot traffic and noise. It's calm by default, which is the point.</p>
@@ -162,7 +162,7 @@ layout: blog-post.njk
       "name": "Can I book Terra Luz directly without paying Airbnb fees?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Terra Luz books directly at indigopalm.co/terra-luz, which avoids the Airbnb guest service fee (20% of the reservation total). Payments process through Square and booking confirmations go out via email. Same rates, same host, no platform markup."
+        "text": "Yes. Check dates and full totals for Terra Luz on our website. Email us with questions before booking."
       }
     },
     {
@@ -170,7 +170,7 @@ layout: blog-post.njk
       "name": "What is the Indian Palms neighborhood like?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Indian Palms is a quiet gated community in Indio with a golf course running through it. It's walking distance to the Empire Polo Club (Coachella and Stagecoach grounds) but is completely removed from festival-week foot traffic and noise. Calm by default, residential rather than resort-y."
+        "text": "Indian Palms is a quiet gated community in Indio, residential rather than resort-y, with a golf course running through it. Guests who book Terra Luz for Coachella or Stagecoach appreciate that it's walking distance to the Empire Polo Club but completely removed from the festival-week foot traffic and noise. It's calm by default, which is the point."
       }
     },
     {
@@ -178,7 +178,7 @@ layout: blog-post.njk
       "name": "Does the outdoor movie setup at Terra Luz work in summer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The inflatable projector screen is most practical in spring and fall when evenings cool to the 70s by 9pm. Summer nights stay warm (low 90s at dusk, dropping to the 80s after 10pm), so outdoor movies are doable but late-starting. The pool keeps the surrounding patio air a few degrees cooler than open desert."
+        "text": "The inflatable projector screen on the patio is most practical in spring and fall, when evenings cool to the 70s by 9pm. Summer nights in Indio stay warm (low 90s at dusk, dropping to the 80s after 10pm), so outdoor movie nights are doable but late-starting. The pergola provides overhead cover and the pool keeps the surrounding air a few degrees cooler than the open desert."
       }
     },
     {
@@ -186,7 +186,7 @@ layout: blog-post.njk
       "name": "What does Terra Luz mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Terra means earth in Spanish, luz means light. Together they describe the design identity of the house: grounded in terracotta and natural materials, filled with light from the pool and 300-plus days of Coachella Valley sun. The name came from brand strategist Dawn Asher during a full rebrand from the previous name, Casa Moto."
+        "text": "Terra Luz is a vibrant Indio cabana retreat blending Old Havana character and desert warmth, with a one-of-a-kind, color-drenched pool and patio made for slow, sun-soaked days."
       }
     },
     {
@@ -194,7 +194,7 @@ layout: blog-post.njk
       "name": "Is Terra Luz pet-friendly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Two dogs maximum with prior approval, $150 per pet per stay. The backyard is fully fenced, the saltwater pool is dog-accessible, and a dog bowl and treats are stocked in the kitchen. The house is inside a quiet gated community in Indio, walking distance to the Empire Polo Club."
+        "text": "Yes. Two dogs maximum, $150 per pet per stay. The backyard is fully fenced, which is the main reason people ask. The saltwater pool is dog-accessible. Dog bowl and treats are in the kitchen."
       }
     },
     {
@@ -202,7 +202,7 @@ layout: blog-post.njk
       "name": "How far is Terra Luz from Los Angeles?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "About 130 miles via I-10 East, roughly 2 to 2.5 hours depending on LA traffic. Palm Springs International Airport (PSP) is 25 minutes from the house with direct flights from most West Coast cities. The address is 49768 Pacino St, Indio, CA 92201."
+        "text": "About 130 miles via I-10 East, which is 2 to 2.5 hours depending on traffic out of LA. Palm Springs International Airport (PSP) is the practical option if you're flying: 25 minutes from the house, easy direct flights from most West Coast cities. The address is 49768 Pacino St, Indio, CA 92201."
       }
     },
     {
@@ -210,7 +210,7 @@ layout: blog-post.njk
       "name": "What should I know before booking Terra Luz?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Pool heating is $75 per day with a 2 night minimum, not included in the base rate, and worth it October through April when desert nights drop. The house is dog-friendly with prior approval (two dogs max, $150 per pet per stay). Check-out is 10am. The property is walking distance to the Empire Polo Club and 30 minutes to downtown Palm Springs."
+        "text": "Pool heating is $75 per day with a 2 night minimum and not included in the base rate; it's worth it October through April when nights drop. The house is dog-friendly with prior approval (two dogs max, $150 per pet per stay). Check-out is 10am. Indian Palms is a quiet gated community, walking distance to the Empire Polo Club (Coachella and Stagecoach grounds) and 30 minutes to downtown Palm Springs."
       }
     }
   ]

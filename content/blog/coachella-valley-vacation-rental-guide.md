@@ -77,7 +77,7 @@ layout: blog-post.njk
 
 <p>The nightly rate you see in search results is not what you'll pay, and the gap between those two numbers is worth understanding before you start comparing listings.</p>
 
-<p>Airbnb adds a 20% service fee on the guest side. It shows up in the booking flow, not in the search results. A listing showing $250/night becomes roughly $300 before cleaning fees and taxes.</p>
+<p>Compare the full total for your exact dates. Include cleaning, taxes, and any extras rather than comparing nightly rates alone.</p>
 
 <p>Cleaning fees are set by the host and vary a lot in the valley. For a 3-bedroom, $100-150 is on the low end and $200-300 is common, especially for properties with professional cleaning standards. For a 2-night stay, a $250 cleaning fee adds a lot to the per-night cost. Spread over 7 nights, that same fee works out to $35/night, which is much more reasonable. The math changes significantly depending on how long you're staying.</p>
 
@@ -117,10 +117,10 @@ layout: blog-post.njk
 <p>Map the street address before you commit. "Near Palm Springs" or "near Coachella" can mean a 10-minute walk or a 45-minute drive depending on which city and which part of it. Indian Palms Country Club in Indio is one of the few neighborhoods close enough to walk to the festival grounds.</p>
 
 <h3>Are Airbnb fees in the Coachella Valley higher than other markets?</h3>
-<p>Airbnb platform fees are standard (20% on the guest side) valley-wide, but cleaning fees in the desert tend to run higher than comparable markets because properties often need more intensive cleaning after sandy, sunny stays. Run the total for your exact dates before comparing listings.</p>
+<p>Check cleaning fees, taxes, and extras for each property. The total for the same stay is the useful comparison.</p>
 
 <h3>What's the difference between booking direct and booking on Airbnb?</h3>
-<p>Booking direct skips the 20% Airbnb guest service fee and often gets you faster communication with the host. Some properties offer direct booking discounts for multi-night stays. You trade some platform protections for a more direct relationship with the host and lower cost.</p>
+<p>You can book our homes on our website and contact us directly with questions. Check the full total and terms before choosing a booking option.</p>
 
 <h3>Is it worth messaging a host before booking?</h3>
 <p>Yes, and the response tells you more than the listing does. A host who replies within an hour with a direct answer is showing you how they'll handle check-in day, a broken AC, or a pool question at 9pm. A three-day response previews exactly that.</p>
@@ -135,7 +135,7 @@ layout: blog-post.njk
 <p>From October through April, yes. Desert night temperatures regularly drop below 55°F, and an unheated pool is cold enough that most guests don't use it despite what the listing photos suggest. If a listing says "pool" without specifying heated, ask before you book. Some properties charge a nightly fee for heating, and ours is one of them: at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a> the spa heat is included, while heating the pool is $75 a night with a two-night minimum or $400 for a full week.</p>
 
 <h3>How do I compare two vacation rentals fairly when the nightly rates look similar?</h3>
-<p>Calculate the full total for your exact dates, including the Airbnb service fee (20%), cleaning fee, and local taxes, before comparing any two listings. A listing showing $220/night with a $300 cleaning fee is more expensive per night on a 3-night stay than a $250/night listing with a $120 cleaning fee. The advertised nightly rate is a starting point, not a price.</p>
+<p>Use the same dates and guest count when comparing listings. A lower nightly rate can still lead to a higher total once cleaning and extras are included.</p>
 
 <p>If you're planning a stay in Indio, we'd love to have you. <a href="/cozy-cactus/">The Cozy Cactus</a> and <a href="/terra-luz/">Terra Luz</a> were both built with these considerations at the center, and either one is a good starting point for your search.</p>
 
@@ -165,7 +165,7 @@ layout: blog-post.njk
       "name": "Are Airbnb fees in the Coachella Valley higher than other markets?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Airbnb platform fees are standard (20% on the guest side) valley-wide, but cleaning fees in the desert tend to run higher than comparable markets because properties often need more intensive cleaning after sandy, sunny stays. Run the total for your exact dates before comparing listings."
+        "text": "Check cleaning fees, taxes, and extras for each property. The total for the same stay is the useful comparison."
       }
     },
     {
@@ -173,7 +173,7 @@ layout: blog-post.njk
       "name": "What's the difference between booking direct and booking on Airbnb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Booking direct skips the 20% Airbnb guest service fee and often gets you faster communication with the host. Some properties offer direct booking discounts for multi-night stays. You trade some platform protections for a more direct relationship with the host and lower cost."
+        "text": "You can book our homes on our website and contact us directly with questions. Check the full total and terms before choosing a booking option."
       }
     },
     {
@@ -189,7 +189,7 @@ layout: blog-post.njk
       "name": "How close to the Coachella festival grounds should my rental be?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Close enough to walk is the real benchmark. Empire Polo Club is at 81800 Avenue 51 in Indio, and rentals including Indian Palms Country Club put the gates within walking distance, so you skip both the festival parking crawl and rideshare surge pricing. Anything marketed as \"Palm Springs area\" without a specific address could be 25-45 miles away. Always map the street address before committing."
+        "text": "Close enough to walk is the real benchmark, and a small handful of Indio neighborhoods clear it. Empire Polo Club is at 81800 Avenue 51 in Indio, and rentals put the gates in walking range, Indian Palms Country Club included, which means you skip the festival parking crawl and the rideshare surge both. Anything marketed as \"Palm Springs area\" without a specific address could be 25-45 miles from the venue. Always map the street address before committing."
       }
     },
     {
@@ -197,7 +197,7 @@ layout: blog-post.njk
       "name": "What does 'private pool' mean in a Coachella Valley rental listing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A private pool belongs only to guests at that property: no shared access, no posted hours, and no HOA noise rules. A community pool is shared with all residents of the development and typically closes around 10pm. Photos often look similar, so check the description or ask the host directly."
+        "text": "It means the pool belongs only to guests at that property: no posted hours, no shared access with neighbors, and no noise rules imposed by an HOA. This is different from a community pool, which is shared with all residents of the development and typically closes around 10pm. The photos often look similar, so check the listing description explicitly or ask the host directly."
       }
     },
     {
@@ -205,7 +205,7 @@ layout: blog-post.njk
       "name": "Is a heated pool necessary for a desert vacation rental?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "From October through April, yes. Desert nights regularly drop below 55°F and an unheated pool is too cold for most guests despite the listing photos. If a listing says 'pool' without specifying heated, ask before booking. Some properties charge a nightly heating fee; others include it in the base rate."
+        "text": "From October through April, yes. Desert night temperatures regularly drop below 55°F, and an unheated pool is cold enough that most guests don't use it despite what the listing photos suggest. If a listing says \"pool\" without specifying heated, ask before you book. Some properties charge a nightly fee for heating, and ours is one of them: at indigopalm.co/terra-luz the spa heat is included, while heating the pool is $75 a night with a two-night minimum or $400 for a full week."
       }
     },
     {
@@ -213,7 +213,7 @@ layout: blog-post.njk
       "name": "How do I compare two vacation rentals fairly when the nightly rates look similar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Calculate the full total for your exact dates including the Airbnb service fee (20%), cleaning fee, and taxes before comparing. A $220/night listing with a $300 cleaning fee costs more per night on a 3-night stay than a $250/night listing with a $120 cleaning fee. The advertised rate is a starting point, not a price."
+        "text": "Use the same dates and guest count when comparing listings. A lower nightly rate can still lead to a higher total once cleaning and extras are included."
       }
     }
   ]

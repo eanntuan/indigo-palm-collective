@@ -22,7 +22,7 @@ excerpt: "The Cali Room at Terra Luz has a king bed, a trundle Eann built from p
 layout: blog-post.njk
 ---
 
-<p>This was the hardest room to brief. The <a href="/blog/terra-luz-primary-bedroom/">primary suite</a> has a clear identity. The <a href="/blog/terra-luz-wild-tropics-bedroom/">Wild Tropics bedroom</a> is overtly bold. The third bedroom had to work for more configurations, more guest types, and more use cases without feeling like it was designed to please everyone and ended up pleasing no one. Clean but not empty. Flexible but not generic. And one pop of Frida Kahlo blue to remind you that you're still at Terra Luz.</p>
+<p>The Cali Room has a king bed, rattan headboard, and a blue workstation hidden behind bifold doors. Here’s how we made room for both sleep and work.</p>
 
 <p>Dawn Asher, our brand lead at <a href="https://www.instagram.com/theolivejar.co/">The Olive Jar</a>, called the vibe California coastal meets desert. That's why we call it the Cali Room.</p>
 

@@ -6,31 +6,31 @@ permalink: "{{ page.fileSlug }}/index.html"
     name: "The Cozy Cactus",
     url: "/booking-flow/?property=cozy-cactus",
     cta: "Book The Cozy Cactus",
-    tagline: "Family-friendly 3BR in Indio with community pool, private hot tub, and baby gear that actually works. Book direct and save on booking fees."
+    tagline: "A family stay in Indio with baby gear, a private hot tub, and shared community pools. Check your dates and full total."
   },
   "terra-luz": {
     name: "Terra Luz",
     url: "/booking-flow/?property=terra-luz",
     cta: "Book Terra Luz",
-    tagline: "Private pool and spa, Latin-inspired design, and a cocooned calm that guests keep coming back for. Book direct and save on booking fees."
+    tagline: "A private saltwater pool, heated spa, and three king bedrooms for couples and friends. Family-friendly, too."
   },
   "ps-retreat": {
     name: "The Sundune at Palm Springs",
     url: "/booking-flow/?property=ps-retreat",
     cta: "Book The Sundune",
-    tagline: "Coastal-desert vibe in the heart of Palm Springs. A short drive to downtown, a community pool, and exactly the reset you need."
+    tagline: "Two bedrooms, three king beds, and a shared pool and spa in Palm Springs. Sleeps up to four."
   },
   "the-well": {
     name: "The Well",
     url: "/booking-flow/?property=the-well",
     cta: "Book The Well",
-    tagline: "A quiet, intimate retreat in Palm Springs for solo travelers and remote workers who need a real reset."
+    tagline: "A furnished one-bedroom condo for two in Palm Springs. Available for stays of at least 28 nights."
   },
   "all": {
     name: "Indigo Palm Collective",
     url: "/#properties",
     cta: "See All Properties",
-    tagline: "Four properties across the Coachella Valley. Book direct and save on booking fees."
+    tagline: "Four homes in Indio and Palm Springs. Find the one that fits your trip."
   }
 } %}
 {% set prop = propertyMap[property] if property and propertyMap[property] else propertyMap["all"] %}
@@ -395,7 +395,7 @@ permalink: "{{ page.fileSlug }}/index.html"
     <section style="background:#F6F1E9;padding:3rem 2rem;text-align:center;border-top:1px solid #e8e0d5;">
         <div style="max-width:480px;margin:0 auto;">
             <p style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;color:#2a2a2a;margin-bottom:0.5rem;">One email a month.</p>
-            <p style="font-size:0.9rem;color:#666;margin-bottom:1.5rem;line-height:1.6;">What's worth knowing in the desert. New posts, last-minute availability, the occasional deal that doesn't make it to Airbnb. Nothing else.</p>
+            <p style="font-size:0.9rem;color:#666;margin-bottom:1.5rem;line-height:1.6;">Local guides and new availability, sent occasionally.</p>
             <style>
                 #blogEmailForm{display:flex;gap:0.5rem;justify-content:center;flex-wrap:wrap}
                 #blogEmailForm input,#blogEmailForm button{box-sizing:border-box;height:48px;border-radius:999px;font-size:0.9rem;margin:0}
@@ -446,7 +446,7 @@ permalink: "{{ page.fileSlug }}/index.html"
     <footer id="contact">
         <div class="footer-content">
             <div class="logo">Indigo Palm Collective</div>
-            <p class="tagline">Four homes in the desert. Each one built around you.</p>
+            <p class="tagline">Four homes in Indio and Palm Springs.</p>
             <div class="contact-links" style="margin: 1.5rem 0;">
                 <a href="mailto:indigopalmco@gmail.com" class="contact-btn email" onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Footer'});">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>

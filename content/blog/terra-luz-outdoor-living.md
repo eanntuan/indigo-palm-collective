@@ -26,7 +26,7 @@ relatedPosts:
     url: /blog/outdoor-furniture-desert-heat/
 ---
 
-<p>Most vacation rental design starts inside and works out. You pick the couch, the rug, the kitchen tile, and then you get to the backyard and realize you have a concrete slab and a hose bib and not much of a plan. We did it the other way. The outdoor space at Terra Luz was the first conversation, and everything else followed from it.</p>
+<p>Terra Luz’s backyard has a private saltwater pool, spa, shaded seating, and an outdoor kitchen. Terracotta walls and a wood-slat fence tie it together. Here’s how we planned the space.</p>
 
 <p>Dawn Asher at The Olive Jar asked early on: what do you want people to do here? The answer was clear. We wanted guests who never felt like they had to go anywhere. Wake up, coffee, pool. Cook outside, eat outside, stay outside until the 10pm curfew pushes everyone back in. The design brief for every decision was: does this make it easier to spend the whole day outdoors?</p>
 

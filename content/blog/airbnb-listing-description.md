@@ -73,7 +73,7 @@ layout: blog-post.njk
 
 <h2>Section 5: Why Book Direct</h2>
 
-<p>Airbnb charges guests a 20% service fee on the booking subtotal. On a $1,250 stay, that's $250 added on before taxes. Booking directly through our site at <a href="/">indigopalm.co</a> removes that fee entirely. The guest keeps $250. We get paid the same. Airbnb gets nothing from the transaction.</p>
+<p>If you compare our website with Airbnb, use the full total for the same dates and guest count. Include cleaning, taxes, and extras. A nightly rate by itself isn’t enough to compare.</p>
 
 <p>Most guests don't know this is an option. We tell them in the listing, as a plain fact near the end of the description. Something like: "We also accept direct bookings at indigopalm.co, which skips the Airbnb service fee." That sentence earns more direct bookings per year than any other single line of copy we've tested. If you want to understand <a href="/blog/why-book-direct-vacation-rental/">the math on what guests save</a>, we've broken it down in full.</p>
 
@@ -95,7 +95,7 @@ layout: blog-post.njk
       "name": "How do I write an Airbnb listing description that gets bookings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Write your Airbnb listing description in five sections: who the property is for (specific guest type, not generic), the one thing you do better than anyone nearby, practical specifics in scannable format (beds, baths, pool, parking, pets), location with named landmarks not drive times, and a note about direct booking to skip the 20% Airbnb service fee. Most listings fail because they describe the property instead of answering the guest's real question: is this right for my group?"
+        "text": "Compare the full totals for the same dates and guest count, including cleaning, taxes, and extras. Email us with questions before booking."
       }
     },
     {

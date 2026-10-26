@@ -155,7 +155,7 @@ relatedPosts:
       "name": "How far is Palm Springs from the BNP Paribas Open?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "About 20 minutes west on Highway 111. Indian Wells Tennis Garden sits roughly between Palm Springs and Indio, making both about equal in drive time. Palm Springs gives you walkable restaurants and a city atmosphere. Indio gives you more space per dollar and private pools at most vacation rental price points during tournament week."
+        "text": "About 20 minutes west on Highway 111. Indian Wells Tennis Garden is roughly between Palm Springs and Indio, making both about equal in drive time to the venue. Palm Springs gives you walkable access to restaurants and a city atmosphere. Indio gives you more space per dollar and private pools at most vacation rental price points during tournament week."
       }
     },
     {
@@ -163,7 +163,7 @@ relatedPosts:
       "name": "When should I book accommodation for the BNP Paribas Open?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By November of the preceding year for the best properties. The valley's top vacation rentals fill for tournament week before the calendar turns. If you're reading this in January for the current-year tournament, check Palm Desert and Rancho Mirage, both 15-20 minutes from the venue with more remaining availability."
+        "text": "By November of the preceding year for the best properties. The valley's top vacation rentals in both Palm Springs and Indio fill for tournament weeks before the calendar turns. If you're reading this in January for the current-year tournament, check Palm Desert and Rancho Mirage for remaining availability. Both are 15 to 20 minutes from the venue and often have properties that haven't been claimed yet."
       }
     },
     {
@@ -171,7 +171,7 @@ relatedPosts:
       "name": "Is a private pool worth the extra cost for a BNP Paribas Open trip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, particularly in March when desert nights drop to the low 50s. After 8-10 hours in stadium seats, a heated private pool with no schedule or shared-space rules is a different recovery experience than a hotel pool. For groups over a full tournament week, the daily return makes the higher rate work."
+        "text": "Yes, particularly in March when desert nights drop to the low 50s. After 8 to 10 hours in stadium seats, a heated private pool with no schedule or shared-space etiquette is a different recovery experience than a hotel pool. Properties with private heated pools command higher rates, but the daily return on a full tournament week makes the math work for groups."
       }
     },
     {
@@ -179,7 +179,7 @@ relatedPosts:
       "name": "Should I stay in Palm Springs or Indio for the BNP Paribas Open?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Couples and solo travelers tend to prefer Palm Springs: walkable dining, a city atmosphere, and a shorter logistics list. Groups of four or more usually get more value in Indio: larger houses, private pools, full kitchen access, and rates that don't spike as sharply during tournament week. Drive time to the venue is comparable from either direction."
+        "text": "Couples and solo travelers tend to prefer Palm Springs: walkable dining, a more established city feel, and a shorter list of logistics. Groups of four or more usually get more value in Indio: larger houses, private pools, full kitchen access, and rates that don't spike as sharply during tournament week. The drive to the venue is comparable from either direction."
       }
     },
     {
@@ -187,7 +187,7 @@ relatedPosts:
       "name": "How much does parking cost at the BNP Paribas Open, and is rideshare a better option?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "General parking runs $20-40 per day. Rideshare works well since the BNP crowd staggers departures more than a concert, but plan for a 15-20 minute wait after Stadium 1 evening sessions. Driving is easier for morning sessions; rideshare or a pickup plan is smarter for late-night departures."
+        "text": "General parking runs $20-40 per day depending on the lot. Rideshare works well for most sessions since the BNP Paribas Open crowd staggers departures more than a concert crowd, but plan for a 15-20 minute wait after evening Stadium 1 sessions when everyone leaves simultaneously. Driving and parking is often easier for morning sessions; rideshare or an alternate pickup plan is smarter for late-night departures."
       }
     },
     {
@@ -195,7 +195,7 @@ relatedPosts:
       "name": "Is a grounds pass worth it, or should I buy Stadium 1 tickets for every session?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A grounds pass is worth it. The outer courts in the first week put you within feet of top-10 players, closer than any Grand Slam. The smart move is a grounds pass for most days plus one or two Stadium 1 session tickets for a quarterfinal or later, when the draws are down to players you'll recognize."
+        "text": "A grounds pass is worth it, and for the first week it's arguably the better experience. The outer courts put you within feet of top-10 players in early rounds, which is closer access than you get at a Grand Slam. The sharpest strategy is a grounds pass for most days plus one or two Stadium 1 session tickets for a quarterfinal or later, when the draws are down to players you'll recognize on every point."
       }
     },
     {
@@ -203,7 +203,7 @@ relatedPosts:
       "name": "How many days should I plan to attend the BNP Paribas Open?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Four to five days covers the best of the tournament for a first visit: two days on outer courts during early rounds, one or two Stadium 1 sessions once the draw thins, and time for the broader desert. If traveling from out of state, five to seven days makes more sense given March is one of the best weather windows in the Coachella Valley."
+        "text": "Four to five days covers the best of the tournament for a first visit: two days on the outer courts during early rounds, one or two Stadium 1 sessions once the draw thins, and a day or two for the broader desert. If you're traveling from out of state, five to seven days makes more sense to justify the trip, especially given that March is one of the good weather windows in the Coachella Valley."
       }
     }
   ]
@@ -211,7 +211,7 @@ relatedPosts:
 </script>
 
 <div style="background: #fff8e7; padding: 1.2rem 1.5rem; margin: 2rem 0; border-radius: 0 6px 6px 0;">
-<p style="margin-top: 0;"><strong>Book direct and skip Airbnb's 20% service fee.</strong> Same Superhost homes, direct contact with us, no platform markup.</p>
+<p style="margin-top: 0;"><a href="/book-direct/">Check dates and full totals</a>, or email us with questions before booking.</p>
 <p><a href="/the-sundune/"><strong>The Sundune</strong></a>, 2BR/2BA in Palm Springs, 20 min from Indian Wells Tennis Garden, shared HOA pool at Palm Canyon Villas<br><a href="/cozy-cactus/"><strong>The Cozy Cactus</strong></a>, 3BR/2BA in Indio, sleeps 8, private hot tub, three heated community pools, game room<br><a href="/terra-luz/"><strong>Terra Luz</strong></a>, 3BR/2BA in Indio, sleeps 8, private saltwater pool, dog-friendly</p>
 <p style="margin-bottom: 0;">All three book out early for BNP Paribas week. Check availability now.</p>
 </div>

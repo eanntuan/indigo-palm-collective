@@ -19,7 +19,7 @@ readTime: "5 min read"
 layout: blog-post.njk
 ---
 
-<p>Most vacation rental kitchens look exactly the same. White cabinets, stainless steel appliances, a generic backsplash tile that nobody chose with any real intention. They're functional in the way airport restaurants are functional: nothing wrong, nothing memorable.</p>
+<p>Terra Luz’s kitchen and dining room bring together patterned tile, warm colors, and a view of the pool. Here’s how we chose the pieces and made the space work for cooking and meals together.</p>
 
 <p>We didn't want that. The dining room at Terra Luz needed to tell the same story as the rest of the house, which means Old Havana warmth, grounded materials, and design choices specific enough that you could only be in one place.</p>
 

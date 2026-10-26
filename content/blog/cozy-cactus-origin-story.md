@@ -99,7 +99,7 @@ layout: blog-post.njk
 <p>No, The Cozy Cactus does not allow pets. It was designed with families and young children as the primary guest, and keeping it pet-free is part of that commitment. If you're traveling with a dog, the sister properties Terra Luz (Indio, private pool) and The Sundune (Palm Springs, requires prior approval) are both dog-friendly. See all options at <a href="https://indigopalm.co/cozy-cactus/">indigopalm.co/cozy-cactus</a>.</p>
 
 <h3>Can I book The Cozy Cactus directly without paying Airbnb's service fee?</h3>
-<p>Yes. Book directly at <a href="https://indigopalm.co/cozy-cactus/">indigopalm.co/cozy-cactus</a> to skip the Airbnb service fee, which is 20% of the booking subtotal. You get the same smart-lock check-in, digital guidebook, and host communication. For festival weekends, direct inventory sometimes holds availability after Airbnb shows sold out, so it's worth checking both if you're booking close in.</p>
+<p>Yes. <a href="/cozy-cactus/">Check dates and full totals for The Cozy Cactus</a> on our website. Email us if you have questions before booking.</p>
 
 <h3>What are the community pools like at Indian Palms?</h3>
 <p>Indian Palms Country Club has three community pools accessible to guests, with the closest reachable through the back gate of the property without crossing any streets. The pools are shared (not private), but the Coachella Valley sun keeps them comfortable from March through November without any heating needed. If a fully private pool is the priority, the sister property Terra Luz in Indio has a private pool on-site.</p>
@@ -116,7 +116,7 @@ layout: blog-post.njk
       "name": "Is The Cozy Cactus pet friendly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, The Cozy Cactus does not allow pets. It was designed for families with young children, and keeping it pet-free is part of that commitment. Sister properties Terra Luz (Indio) and The Sundune (Palm Springs) are both dog-friendly. See options at indigopalm.co/cozy-cactus."
+        "text": "No, The Cozy Cactus does not allow pets. It was designed with families and young children as the primary guest, and keeping it pet-free is part of that commitment. If you're traveling with a dog, the sister properties Terra Luz (Indio, private pool) and The Sundune (Palm Springs, requires prior approval) are both dog-friendly. See all options at indigopalm.co/cozy-cactus."
       }
     },
     {
@@ -124,7 +124,7 @@ layout: blog-post.njk
       "name": "Can I book The Cozy Cactus directly without paying Airbnb's service fee?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Book directly at indigopalm.co/cozy-cactus to skip the Airbnb service fee, which is 20% of the booking subtotal. You get the same smart-lock check-in, digital guidebook, and host communication. For festival weekends, direct inventory sometimes holds availability after Airbnb shows sold out."
+        "text": "Yes. Check dates and full totals for The Cozy Cactus on our website. Email us if you have questions before booking."
       }
     },
     {
@@ -132,7 +132,7 @@ layout: blog-post.njk
       "name": "What are the community pools like at Indian Palms Country Club?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Indian Palms Country Club has three community pools accessible to Cozy Cactus guests, with the closest reachable through the property's back gate without crossing streets. The pools are shared, not private, but comfortable from March through November without heating. Terra Luz (sister property) has a private on-site pool if that's the priority."
+        "text": "Indian Palms Country Club has three community pools accessible to guests, with the closest reachable through the back gate of the property without crossing any streets. The pools are shared (not private), but the Coachella Valley sun keeps them comfortable from March through November without any heating needed. If a fully private pool is the priority, the sister property Terra Luz in Indio has a private pool on-site."
       }
     }
   ]

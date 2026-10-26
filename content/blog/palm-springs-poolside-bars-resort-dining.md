@@ -33,7 +33,7 @@ layout: blog-post.njk
           "name": "Can you use a Palm Springs resort pool without staying there?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Often, yes, through a day pass. As of 2026, resorts like the Ace Hotel & Swim Club, The Saguaro Palm Springs, Hotel Zoso, and Renaissance Esmeralda in Indian Wells sell pool day passes to non-guests, usually booked ahead on ResortPass or the hotel's own site, that get you a lounge chair, pool and hot tub access, and poolside food and drink. Passes and cabanas sell out on summer weekends, so reserve early and confirm the current price and any age limits before you drive over."
+            "text": "Often, yes, through a day pass. As of 2026, resorts like the Ace Hotel & Swim Club, The Saguaro Palm Springs, Hotel Zoso, and the Renaissance Esmeralda in Indian Wells sell pool day passes to non-guests, usually booked ahead on ResortPass or the hotel's own site, that get you a lounge chair, pool and hot tub access, and poolside food and drink. Passes and cabanas sell out on summer weekends, so reserve early and confirm the current price and any age limits before you drive over."
           }
         },
         {
@@ -41,7 +41,7 @@ layout: blog-post.njk
           "name": "Which Palm Springs resort restaurants are open to the public?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Several. As of 2026, Palm Canyon Swim & Social at the ARRIVE hotel takes walk-in diners with no reservation, the Colony Club at Colony Palms is a Michelin-listed restaurant open to the public and bookable on OpenTable, and Sol y Sombra at the Paloma Resort in Cathedral City is a fully public tapas spot. The Barn Kitchen at Sparrows Lodge welcomes non-guests too, but seating is limited, so call ahead. Menus and hours shift, so confirm before you go."
+            "text": "Several. As of 2026, Palm Canyon Swim & Social at the ARRIVE hotel takes walk-in diners with no reservation, the Colony Club at Colony Palms is a Michelin-listed restaurant open to the public and bookable on OpenTable, and Sol y Sombra at the Paloma Resort in Cathedral City is a fully public tapas spot. The Barn Kitchen at Sparrows Lodge welcomes non-guests too, though seating is limited, so call ahead. Menus and hours shift, so confirm before you go."
           }
         },
         {
@@ -57,7 +57,7 @@ layout: blog-post.njk
           "name": "Where can I get the resort pool day near Indio and Coachella?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The closest resort pool experience to Indio is in Indian Wells, about 20 to 25 minutes west. The Renaissance Esmeralda runs a sandy-beach pool with the H2O Pool Bar and sells day passes to non-guests through ResortPass and Marriott's day pass site. If you are staying at one of our Indio rentals near Indian Palms, it is an easy afternoon out, though the private pool at Terra Luz or the shared pool and private hot tub at The Cozy Cactus cover most of the craving without the drive."
+            "text": "For a swim at home in Indio, Terra Luz has a private pool and spa; The Cozy Cactus has shared community pools and a private hot tub. Check the property details before choosing."
           }
         }
       ]
@@ -126,7 +126,7 @@ layout: blog-post.njk
 
 <hr style="border: none; border-top: 1px solid #ddd; margin: 3rem 0;">
 
-<p><strong>Or skip the day pass entirely.</strong> My bias: the whole reason I bought places with pools is so my guests don't have to buy a stranger's lounge chair by the hour. <a href="/terra-luz/">Terra Luz</a> in Indio has a private pool that's yours alone, no day pass, no crowd, and spa heating if you want the hot tub going. <a href="/cozy-cactus/">The Cozy Cactus</a> pairs a shared community pool with a private hot tub in the backyard, and both sit walking distance from the Empire Polo Club for festival weekends. Book direct at <a href="https://indigopalm.co/">indigopalm.co</a> and you skip Airbnb's 20% guest service fee, which on a long weekend is real money back in the taco budget.</p>
+<p>Prefer to stay home? Terra Luz has a private pool and spa. The Cozy Cactus has a private hot tub and shared community pools. <a href="/#properties">Compare the homes</a> and check dates and full totals.</p>
 
 <img src="/blog/images/terra-luz-pool-umbrella.webp" alt="Private pool with umbrella and loungers at Terra Luz vacation rental in Indio, an alternative to a Palm Springs resort day pass" width="1600" height="1067" loading="lazy">
 <p class="image-caption">The Terra Luz pool. No pass, no reservation, no fighting a stranger for the shaded chair.</p>
@@ -186,4 +186,4 @@ layout: blog-post.njk
 <p>It depends on the spot. Palm Canyon Swim &amp; Social at ARRIVE is first come, first served for the restaurant, while the Colony Club and Sol y Sombra both take reservations and fill up on weekends. If your plan involves lounging by the pool rather than just eating, that is a separate day pass you almost always need to book in advance. When in doubt, call the venue the morning you plan to go.</p>
 
 <h3>Where can I get the resort pool day near Indio and Coachella?</h3>
-<p>The closest resort pool experience to Indio is in Indian Wells, about 20 to 25 minutes west, where the Renaissance Esmeralda runs a sandy-beach pool with the H2O Pool Bar and sells day passes to non-guests. If you're staying at one of our Indio rentals near Indian Palms, it's an easy afternoon out, though the private pool at <a href="/terra-luz/">Terra Luz</a> or the shared pool and private hot tub at <a href="/cozy-cactus/">The Cozy Cactus</a> cover most of the craving without the drive. Book either direct at <a href="https://indigopalm.co/">indigopalm.co</a> to skip Airbnb's 20% guest service fee.</p>
+<p>For a swim at home in Indio, Terra Luz has a private pool and spa; The Cozy Cactus has shared community pools and a private hot tub. <a href="/#properties">Check the property details</a> before choosing.</p>

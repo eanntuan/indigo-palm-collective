@@ -83,7 +83,7 @@ relatedPosts:
 <h3>What days are Pioneertown shops closed?</h3>
 <p>Most shops and the restaurant at Pappy &amp; Harriet's are closed Tuesdays and Wednesdays. Weekends are when Mane Street is fully open and most active.</p>
 
-<p>Both <a href="/terra-luz/">Terra Luz</a> and <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio make a workable base for the drive north. Book direct at <a href="https://indigopalm.co">indigopalm.co</a> and skip Airbnb's 20% guest service fee.</p>
+<p>Terra Luz and The Cozy Cactus are our Indio homes. <a href="/#properties">Compare the properties</a> and check dates and full totals on our website.</p>
 
 <script type="application/ld+json">
 {
@@ -111,7 +111,7 @@ relatedPosts:
       "name": "Do I need a reservation for Pappy & Harriet's?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not for a regular dinner, though weekend nights get busy and a reservation helps. For a ticketed show, everyone attending needs a ticket bought in advance through their site."
+        "text": "Not for a regular dinner, though weekend nights get busy and a reservation helps. For a ticketed show, yes, everyone attending needs a ticket bought in advance through their site."
       }
     },
     {
@@ -119,7 +119,7 @@ relatedPosts:
       "name": "Can I combine Pioneertown with a Joshua Tree day trip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The park's north and west entrances off Highway 62 are a short detour from Pioneertown Road, so many visitors combine both in one long day."
+        "text": "Yes. The park's north and west entrances off Highway 62 are a short detour from Pioneertown Road, so many visitors do both in one long day. See our Joshua Tree day trip guide for entrance details."
       }
     },
     {

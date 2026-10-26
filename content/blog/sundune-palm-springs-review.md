@@ -29,7 +29,7 @@ relatedPosts:
     url: /blog/palm-springs-vs-indio/
 ---
 
-<p>The Sundune is our 2BR/2BA condo in Palm Springs, a short drive from the Uptown Design District and about ten minutes from downtown Palm Canyon Drive. It has 4.93 stars across 40+ reviews on Airbnb. Here's what guests say about it, and what I'd tell you before you book.</p>
+<p>The Sundune is a two-bedroom Palm Springs condo with three king beds, a private balcony, and a shared pool and spa. It sleeps up to four. Here’s what to know before booking.</p>
 
 <img src="/blog/images/ps-boulevard-palms-mountains.webp" alt="Palm Springs boulevard with tall palms and San Jacinto Mountains at sunset, near The Sundune Palm Springs vacation rental" width="1800" height="1800" loading="lazy">
 <p class="image-caption">Palm Springs in March or November: the mountains, the palms, the light. The Sundune sits inside all of this, with the Uptown Design District and the rest of the city a short drive away.</p>
@@ -138,7 +138,7 @@ relatedPosts:
       "name": "Is The Sundune pet-friendly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "One pet is welcome with a $150 per pet, per stay fee. Email indigopalmco@gmail.com before booking to confirm. The condo has a balcony but no fenced yard. Dogs needing a private outdoor run are better suited to Terra Luz in Indio, which has a fully fenced backyard."
+        "text": "One pet is welcome with a $150 per pet, per stay fee. Email us at indigopalmco@gmail.com before booking to confirm. The condo has a balcony but no fenced yard, so dogs that need a private outdoor run are better suited to Terra Luz in Indio, which has a fully fenced backyard."
       }
     },
     {
@@ -146,7 +146,7 @@ relatedPosts:
       "name": "Is The Sundune walking distance to downtown Palm Springs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Palm Canyon Drive is roughly a ten-minute drive away, and the Uptown Design District, with its own coffee, shops, and restaurants, is a short drive."
+        "text": "Not downtown, no, and not Uptown either. Palm Canyon Drive is about a ten-minute drive from the condo, and the Uptown Design District, with its own coffee, shops, and restaurants, is a short drive, so most guests drive Uptown by day and down to the main strip for dinner."
       }
     },
     {
@@ -154,7 +154,7 @@ relatedPosts:
       "name": "When is the best time to stay at The Sundune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "March is the best month: mid-70s to low-80s, open restaurant tables, the desert at its most comfortable. October and November are nearly as good. Summer works for guests who plan around heat, staying pool-based in the afternoon and out in the evening."
+        "text": "March is the best month: mid-70s to low-80s, open restaurant tables, the desert at its most comfortable. October and November are nearly as good. The Sundune in summer works for guests who know the desert and plan accordingly, staying pool-based in the afternoon and out in the evening."
       }
     },
     {
@@ -162,7 +162,7 @@ relatedPosts:
       "name": "What is the minimum stay at The Sundune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The HOA at Palm Canyon Villas sets a 4-night minimum, and it is not flexible. A Thursday check-in lands you at VillageFest on your first evening."
+        "text": "March is the best month: mid-70s to low-80s, open restaurant tables, the desert at its most comfortable. October and November are nearly as good. The Sundune in summer works for guests who know the desert and plan accordingly, staying pool-based in the afternoon and out in the evening."
       }
     },
     {
@@ -178,7 +178,7 @@ relatedPosts:
       "name": "Is The Sundune good for a bachelorette trip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For groups of up to four, yes. Three king beds, a shared HOA pool, and a ten-minute drive to Palm Canyon Drive covers the basics. Larger groups are better served by the Indio properties, which have more capacity and private outdoor spaces."
+        "text": "For groups of up to four, yes. Three king beds across two bedrooms, a shared HOA pool, and a ten-minute drive to the bars and restaurants on Palm Canyon Drive covers the basics well. Larger bachelorette groups tend to be better served by the Indio properties, which have more sleeping capacity and private outdoor spaces built for that kind of trip."
       }
     },
     {
@@ -186,7 +186,7 @@ relatedPosts:
       "name": "What is the most scenic drive to The Sundune from Los Angeles?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "I-10 East to Gene Autry Trail gets you there in about 2 hours from downtown LA. For a better arrival, exit at Date Palm Drive in Cathedral City and take Highway 111 west, which brings you onto the Palm Springs strip with the San Jacinto Mountains filling your windshield."
+        "text": "I-10 East to the Gene Autry Trail exit drops you into Palm Springs in about 2 hours from downtown LA. The better way in: exit at Date Palm Drive in Cathedral City and take Highway 111 west, which brings you onto the main Palm Springs strip with the San Jacinto Mountains filling your windshield. Park on a side street off Belardo Road and you're already in the neighborhood."
       }
     }
   ]

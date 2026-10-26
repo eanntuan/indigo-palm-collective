@@ -33,7 +33,7 @@ relatedPosts:
     url: /blog/coachella-valley-vacation-rental-guide/
 ---
 
-<p>I'm Eann, and I built The Cozy Cactus for one specific person: the tired parent scrolling Airbnb at midnight, hoping to find a place where she might rest.</p>
+<p>The Cozy Cactus is a family stay in Indio with baby gear, labeled drawers, a private hot tub, and shared community pools. Here’s what’s in the house and what to know before booking.</p>
 
 <p>After 146 guest stays and a 4.97 rating, I can tell you what that person keeps writing in her review when she leaves. The same three things, over and over, from strangers who don't know each other. That consistency means something. Here's what it is.</p>
 
@@ -116,7 +116,7 @@ relatedPosts:
 <p>It sleeps up to 8 across three bedrooms and works well for groups. The Indian Palms location is walking distance to Empire Polo Club, an easy walk up Eisenhower Drive (members of the community offer rides to the Indian Palms front gate for a small fee, saving yourself about 15 minutes of walking!). No shuttle, no surge pricing.</p>
 
 <h3>Can you book The Cozy Cactus directly without Airbnb?</h3>
-<p>Yes. Booking direct through <a href="https://indigopalm.co/cozy-cactus/">indigopalm.co</a> skips the Airbnb service fee, which is 20% of the booking subtotal. The host responds to pre-booking questions within the hour, and check-in is fully self-serve via smart lock with instructions sent 24 hours before arrival.</p>
+<p>Yes. <a href="/cozy-cactus/">Check dates and full totals</a> on our website, or email us if you have questions before booking.</p>
 
 <h3>What bedrooms does The Cozy Cactus have, and how does it sleep 8?</h3>
 <p>The primary bedroom has a king and an en-suite bathroom. The second bedroom is also a king. The third bedroom has twin beds plus a trundle, which works well for kids. The game room doubles as overflow space when the afternoon desert heat drives everyone inside.</p>
@@ -141,7 +141,7 @@ relatedPosts:
       "name": "Does The Cozy Cactus have a private pool?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The hot tub is private and on the property. The pools are community access through Indian Palms Country Club, three heated pools with the nearest one steps from the back gate. If a private swimming pool is the priority, Terra Luz is 15 minutes away with a private saltwater pool and a heated spa. Spa heating is included; pool heating is $75 per night with a two-night minimum, or $400 per week."
+        "text": "The hot tub is private and on the property. The pools are community access through Indian Palms Country Club, three heated pools with the nearest one steps from the back gate. If a private swimming pool is the priority, Terra Luz is 15 minutes away with a private saltwater pool and a heated spa. Spa heating is included, and pool heating runs $75 per night with a two-night minimum or $400 per week."
       }
     },
     {
@@ -149,7 +149,7 @@ relatedPosts:
       "name": "Is The Cozy Cactus pet-friendly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Guests traveling with dogs should look at Terra Luz, which is pet-friendly with prior approval and a pet fee. The Cozy Cactus has a fully fenced backyard but does not accept pets."
+        "text": "No. Guests traveling with dogs should look at Terra Luz, which is pet-friendly with prior approval and a $150 per pet, per stay fee. The Cozy Cactus has a fully fenced backyard but does not accept pets."
       }
     },
     {
@@ -157,7 +157,7 @@ relatedPosts:
       "name": "What is the minimum stay at The Cozy Cactus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Minimum stays vary by season. During Coachella and Stagecoach festival weekends, the minimum is typically four nights. Off-peak periods often allow two or three-night stays. Current minimums are visible when you search your specific dates at indigopalm.co/cozy-cactus/."
+        "text": "Minimum stays vary by season. During Coachella and Stagecoach festival weekends, the minimum is typically four nights. Off-peak periods often allow two or three-night stays. Current minimums are always visible when you search your specific dates."
       }
     },
     {
@@ -165,7 +165,7 @@ relatedPosts:
       "name": "How quickly does the host respond to questions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Response time consistently comes up in guest reviews as a standout feature. Most questions get answered within the hour, including evenings and weekends. Pre-booking questions are welcome and often answered faster than through Airbnb's messaging system."
+        "text": "Response time has consistently come up in guest reviews as a standout feature. Most questions get answered within the hour, including evenings and weekends. Pre-booking questions are welcome and often answered faster than through Airbnb's messaging system."
       }
     },
     {
@@ -173,7 +173,7 @@ relatedPosts:
       "name": "Can The Cozy Cactus accommodate a group for Coachella?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It sleeps up to 8 across three bedrooms and works well for groups. The Indian Palms location is walking distance from Empire Polo Club, an easy walk up Eisenhower Drive. No shuttle, no surge pricing from a distant base."
+        "text": "It sleeps up to 8 across three bedrooms and works well for groups. The Indian Palms location is walking distance to Empire Polo Club, an easy walk up Eisenhower Drive (members of the community offer rides to the Indian Palms front gate for a small fee, saving yourself about 15 minutes of walking!). No shuttle, no surge pricing."
       }
     },
     {
@@ -181,7 +181,7 @@ relatedPosts:
       "name": "Can you book The Cozy Cactus directly without Airbnb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Booking direct at indigopalm.co/cozy-cactus/ skips the Airbnb service fee (20% of the booking subtotal). Check-in is self-serve via smart lock with instructions sent 24 hours before arrival."
+        "text": "Yes. Check dates and full totals on our website, or email us if you have questions before booking."
       }
     },
     {
@@ -189,7 +189,7 @@ relatedPosts:
       "name": "What bedrooms does The Cozy Cactus have and how does it sleep 8?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The primary bedroom has a king and en-suite bathroom. The second bedroom is a king. The third has twin beds plus a trundle, good for kids. A game room provides additional activity space during peak desert heat hours."
+        "text": "The primary bedroom has a king and an en-suite bathroom. The second bedroom is also a king. The third bedroom has twin beds plus a trundle, which works well for kids. The game room doubles as overflow space when the afternoon desert heat drives everyone inside."
       }
     },
     {

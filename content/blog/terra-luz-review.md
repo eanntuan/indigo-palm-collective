@@ -32,7 +32,7 @@ relatedPosts:
     url: /blog/coachella-valley-vacation-rental-guide/
 ---
 
-<p>Terra Luz launched in 2026 with an existing 146-review track record from its previous listing, carrying a 4.98 rating into the rebrand. The property went through a full design renovation (Latin/Cuban aesthetic, directed by Dawn Asher of <a href="https://theolivejar.co" target="_blank" rel="noopener noreferrer"><strong>The Olive Jar</strong></a>) and relaunched under the Indigo Palm Collective umbrella in May 2026. This is what the property is, what guests consistently highlight, and what you should know before booking.</p>
+<p>Terra Luz is a three-bedroom home in Indio with a private saltwater pool, heated spa, and Cuban-inspired interiors. This guide covers the rooms, amenities, and what to know before booking.</p>
 
 <p>I'm Eann. I own it.</p>
 
@@ -51,7 +51,7 @@ relatedPosts:
 
 <h2>The Indoor Space</h2>
 
-<p>Three bedrooms, two baths, sleeps 8. Primary bedroom has a king and en-suite bath. Second bedroom is a king. Third bedroom has trundle beds, which works well for kids or a third couple. The kitchen is full-size with stocked spices and basics, Keurig and pour-over setup, and a Ninja slushie maker (the reason I get asked about this specific appliance more than anything else).</p>
+<p>Three bedrooms, two bathrooms, and a maximum of eight guests. Every bedroom has a king bed. The primary and Cali rooms each have a twin trundle; the primary also has an en-suite bathroom. The kitchen is full-size with stocked spices and basics, Keurig and pour-over setup, and a Ninja slushie maker (the reason I get asked about this specific appliance more than anything else).</p>
 
 <p>The design carries through every room. This is not a house with a nice living room and forgotten bedrooms. Dawn's brief was to create something that feels like a destination in every space, not just where you take photos for Instagram.</p>
 
@@ -89,7 +89,7 @@ relatedPosts:
 <p>If you're choosing between them based on outdoor water access, Terra Luz has the private pool. If you're traveling with an infant or young kids and want dedicated baby gear, Cozy Cactus is built more specifically for that. Both are walking distance to the polo grounds. A more detailed comparison is in the <a href="/blog/palm-springs-vs-indio/">area guide</a>.</p>
 
 <img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial view of Indian Palms neighborhood in Indio showing vacation rental area near Coachella" width="1400" height="933" loading="lazy">
-<p class="image-caption">The Indian Palms area from above. Terra Luz and The Cozy Cactus are both in this neighborhood, about 15 minutes apart.</p>
+<p class="image-caption">Indian Palms Country Club in Indio, where both homes are located.</p>
 
 <img src="/blog/images/terra-luz-living-room.webp" alt="Terra Luz living room with terracotta lime-wash TV cove, walnut credenza, and tropical floor plants" width="1024" height="1570" loading="lazy" decoding="async">
 <p class="image-caption">The design carries through every room. This is not a house with a nice living room and forgotten bedrooms.</p>
@@ -139,7 +139,7 @@ relatedPosts:
       "name": "What's the difference between a saltwater pool and a chlorine pool for a vacation rental stay?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Saltwater pools generate chlorine at much lower concentrations than traditional pools, meaning no chemical smell, less skin and eye irritation, and a softer feel. For a property where the pool is the main feature, it's a real distinction. Terra Luz's saltwater pool is at indigopalm.co/terra-luz, where the spa heating is included and pool heating is available for $75 per night with a two-night minimum, or $400 per week."
+        "text": "Saltwater pools use a chlorine generator that produces chlorine from dissolved salt at much lower concentrations than traditional pools. The practical result for guests: no chemical smell, less eye and skin irritation after long afternoons in the water, and a softer feel. For a property where the pool is a primary feature, it's a meaningful quality distinction. You can see it at indigopalm.co/terra-luz, where the spa runs heated on the house and pool heating is a $75-per-night add-on with a two-night minimum, or $400 for the week."
       }
     },
     {
@@ -155,7 +155,7 @@ relatedPosts:
       "name": "How far in advance should I book Terra Luz for Coachella or Stagecoach weekends?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Six months minimum, ideally at lineup announcement. Private-pool rentals within walking distance of the Empire Polo Club are a small slice of valley inventory and fill faster than typical vacation rental search patterns suggest. Book direct at indigopalm.co/terra-luz to hold dates without an Airbnb service fee."
+        "text": "Six months minimum for Coachella and Stagecoach weekends, ideally at lineup announcement. Private-pool properties within walking distance of the Empire Polo Club represent a small slice of valley inventory, and they fill faster than general vacation rental search patterns would suggest. Guests who secure these properties are booking at announcement, not after spring break planning kicks in."
       }
     }
   ]

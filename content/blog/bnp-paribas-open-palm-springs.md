@@ -63,7 +63,7 @@ relatedPosts:
 
 <h2>Staying in Palm Springs: The Sundune</h2>
 
-<p>Our Palm Springs property is <a href="/the-sundune/"><strong>The Sundune</strong></a> at 5301 E Waverly Dr, a 2BR/2BA coastal-desert condo with three king beds, shared HOA pool access, and a full kitchen. It books direct at <a href="https://indigopalm.co/the-sundune/" target="_blank" rel="noopener noreferrer">indigopalm.co/the-sundune/</a>, which removes the 20% Airbnb service fee, and the HOA requires a 4-night minimum stay. City permit 068394.</p>
+<p>The Sundune is a two-bedroom Palm Springs condo with three king beds, a full kitchen, and shared pool access. It sleeps up to four and has a four-night minimum. <a href="/the-sundune/">Check dates and full totals.</a></p>
 
 <img src="/blog/images/sundune-pool-surfboard-float.webp" alt="Community pool at The Sundune vacation rental in Palm Springs with surfboard float on a clear desert day" width="3200" height="4800" loading="lazy">
 <p class="image-caption">The Sundune's community pool. March afternoons in Palm Springs hit mid-70s, so the pool gets used. After 8 hours in stadium seats, this is worth more than a hotel pool with posted hours and a crowd: this one has far fewer users and no schedule.</p>
@@ -153,7 +153,7 @@ relatedPosts:
       "name": "When is the BNP Paribas Open 2027?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The 2026 tournament ran March 6-16. The 2027 dates are typically announced in fall of the preceding year, usually the same first-two-weeks-of-March window. Check bnpparibasopen.com for confirmed 2027 dates once they're released."
+        "text": "Context helps if you haven't been before. The BNP Paribas Open is a combined ATP Masters 1000 and WTA 1000 event, which makes it one of the most significant stops on both calendars outside the four Grand Slams. Players are required to compete unless injured, so the draws are genuine. Rafael Nadal won here 11 times. The Sinner-Alcaraz generation has been making it one of the most watched tournaments on tour."
       }
     },
     {
@@ -161,7 +161,7 @@ relatedPosts:
       "name": "How far is Palm Springs from Indian Wells Tennis Garden?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "12 miles west via Highway 111, about 20 minutes in normal March traffic. Indian Wells sits between Palm Springs and Indio, making both roughly equidistant from the venue. Palm Springs offers walkable city access and more to do on non-match days. Indio offers more space per dollar and pool access at most price points for larger groups."
+        "text": "12 miles west via Highway 111, about 20 minutes in normal March traffic. Indian Wells sits between Palm Springs and Indio, making both roughly equidistant. Palm Springs gives you walkable city access and more to do on non-match days. Indio gives you more space per dollar and pool access at most price points for larger groups."
       }
     },
     {
@@ -177,7 +177,7 @@ relatedPosts:
       "name": "How do I get tickets to the BNP Paribas Open?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Directly at bnpparibasopen.com. Grounds passes for the first week and Stadium 1 session tickets for quarterfinals and later are the categories to prioritize. Semis and finals sell out quickly. Grounds passes for weekday first-round sessions are usually available closer to the tournament start."
+        "text": "Directly at bnpparibasopen.com. Grounds passes for the first week and Stadium 1 session tickets for quarterfinals and later are the categories to prioritize. Semis and finals sell out fast. Grounds passes for weekday first-round sessions are usually available closer to the tournament start."
       }
     },
     {
@@ -185,7 +185,7 @@ relatedPosts:
       "name": "Is Palm Springs walking distance to the BNP Paribas Open?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, it's a 12-mile drive. Indian Wells Tennis Garden is in Indian Wells, not in Palm Springs. You need a car or rideshare for each match day. The drive is easy along Highway 111, and rideshare return after evening sessions works without major wait times."
+        "text": "No, it's a 12-mile drive. Indian Wells Tennis Garden is in Indian Wells, not in Palm Springs. You need a car or rideshare for each match day. The drive is easy along the 111, and rideshare return after evening sessions works without major wait times compared to events like Coachella."
       }
     },
     {
@@ -193,7 +193,7 @@ relatedPosts:
       "name": "What is there to do in Palm Springs in March besides the BNP Paribas Open?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Indian Canyons for hiking (Palm Canyon trail is the easiest and most impressive), the Palm Springs Aerial Tramway for mountain access from the desert floor, mid-century architecture touring in Las Palmas and Movie Colony, and Palm Canyon Drive for restaurants and bars. March is the best weather month in the desert for all of it."
+        "text": "Indian Canyons for hiking (Palm Canyon trail is the easiest and most impressive), the Palm Springs Aerial Tramway for mountain access from the desert floor, mid-century architecture touring in Las Palmas and Movie Colony, and Palm Canyon Drive for restaurants and bars. March is the best month in the desert for all of it. Days are warm without being hot, nights are jacket-comfortable, the crowds from Modernism Week in February have largely cleared out."
       }
     }
   ]

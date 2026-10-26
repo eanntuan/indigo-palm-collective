@@ -201,7 +201,7 @@ layout: blog-post.njk
 
 <h4>What is the sleeping capacity and who is the property best for?</h4>
 
-<p>Terra Luz sleeps up to eight across three bedrooms, and the Wild Tropics bedroom has a twin trundle that makes it flexible for families or larger groups. It works well for friend groups heading to a festival, families who want a private pool, and mixed groups who each want their own room with a distinct vibe rather than identical hotel boxes. See the full layout at <a href="/terra-luz/">indigopalm.co/terra-luz</a>.</p>
+<p>Terra Luz sleeps up to eight across three bedrooms, and the primary and Cali bedrooms each have a twin trundle that makes it flexible for families or larger groups. It works well for friend groups heading to a festival, families who want a private pool, and mixed groups who each want their own room with a distinct vibe rather than identical hotel boxes. See the full layout at <a href="/terra-luz/">indigopalm.co/terra-luz</a>.</p>
 
 <p class="credit">Guest experience by <a href="https://theolivejar.co" target="_blank" rel="noopener">@TheOliveJar.co</a> | Photography by <a href="https://www.anchor-pictures.com/" target="_blank" rel="noopener">Anchor Photography</a></p>
 
@@ -271,7 +271,7 @@ layout: blog-post.njk
       "name": "What is the sleeping capacity at Terra Luz and who is it best for?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Terra Luz sleeps up to eight across three bedrooms. The Wild Tropics bedroom has a twin trundle, making it flexible for families or larger groups. It works well for friend groups, families wanting a private pool, and festival goers who want a base close to Empire Polo Club."
+        "text": "Terra Luz sleeps up to eight across three bedrooms. The primary and Cali bedrooms each have a twin trundle, making it flexible for families or larger groups. It works well for friend groups, families wanting a private pool, and festival goers who want a base close to Empire Polo Club."
       }
     }
   ]

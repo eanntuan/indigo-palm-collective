@@ -24,7 +24,7 @@ relatedPosts:
     url: /blog/terra-luz-kitchen-dining/
 ---
 
-<p>The question I get most from guests is some version of: okay, but what's in there?</p>
+<p>Here’s what you’ll find at Terra Luz, from the private pool and spa to the three king bedrooms. Use this walkthrough to see whether the house fits your group.</p>
 
 <p>The Airbnb listing covers the basics. What it doesn't cover is why the pool is that specific shade of blue, why there are three bedrooms with completely different personalities, or what you'll find on the kitchen counter when you arrive. That's what this post is for. If you're deciding between Terra Luz and something else, or if you've already booked and want to know what you're walking into, this is the full walkthrough.</p>
 
@@ -158,7 +158,7 @@ relatedPosts:
 <p>10pm per Indio city noise ordinance. Outdoor music and entertaining must wrap at 10.</p>
 
 <h4>Can I book Terra Luz directly without Airbnb?</h4>
-<p>Yes, Terra Luz books directly at <a href="https://indigopalm.co/terra-luz/">indigopalm.co/terra-luz</a>, which skips the Airbnb service fee (20% of the booking subtotal). Return guests get 10% off their second stay automatically, no code needed.</p>
+<p>Yes. <a href="/terra-luz/">Check dates and full totals for Terra Luz</a> on our website. Email us with questions before booking.</p>
 
 <h4>What's the check-in and check-out time?</h4>
 <p>Check-in is at 4pm, check-out is at 10am. Early check-in is possible when the calendar allows, so ask at least 48 hours in advance and the host will confirm based on the turnover schedule.</p>
@@ -218,7 +218,7 @@ relatedPosts:
       "name": "Can I book Terra Luz directly without Airbnb?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Terra Luz books directly at indigopalm.co/terra-luz, which skips the Airbnb service fee of 20%. Return guests get 10% off their second stay automatically, no code needed."
+        "text": "Compare the full totals for the same dates and guest count, including cleaning, taxes, and extras. Email us with questions before booking."
       }
     },
     {

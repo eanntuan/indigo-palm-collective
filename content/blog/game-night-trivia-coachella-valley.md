@@ -32,7 +32,7 @@ layout: blog-post.njk
           "name": "Where is trivia night in Palm Springs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tuesday is the big trivia night in Palm Springs. As of 2026, Quadz Video Bar in the Arenas District runs Trivia Tuesdays, The Local on 50th does trivia around 7pm on Tuesdays, and Plan B Live Entertainment and Cocktails hosts trivia on Tuesday evenings too. Quadz also runs a Tiki-themed trivia night on Thursdays hosted by a local drag queen. Bar schedules move around, so call ahead to confirm before you build a night around it."
+            "text": "Tuesday is the big trivia night in Palm Springs. As of 2026, Quadz Video Bar in the Arenas District runs Trivia Tuesdays, The Local on 50th does trivia around 7pm on Tuesdays, and Plan B hosts trivia on Tuesday evenings too. Quadz also runs a Tiki-themed trivia night on Thursdays hosted by a local drag queen. Because bar schedules move around, call ahead to confirm before you build a night around it."
           }
         },
         {
@@ -40,7 +40,7 @@ layout: blog-post.njk
           "name": "Where can I play bingo in the Coachella Valley?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Agua Caliente casinos run the most reliable bingo. As of 2026, the Palm Springs location does Hot Spot Bingo on Mondays in the lounge, hosted by comedy duo Deven Green and Handsome Ned, where you play on your phone and prizes include free slot play. The Cathedral City location runs bingo on Wednesdays hosted by Eagle 106.9, with prizes ranging from gift cards to concert tickets. Playoffs Sports Lounge in Desert Hot Springs also folds bingo into its Rainbow Wednesdays drag night."
+            "text": "The Agua Caliente casinos run the most reliable bingo. As of 2026, the Palm Springs location does Hot Spot Bingo on Mondays in the lounge, hosted by Deven Green and Handsome Ned, where you play on your phone and prizes include free slot play. The Cathedral City location runs bingo on Wednesdays hosted by Eagle 106.9, with prizes from gift cards up to concert tickets. Playoffs Sports Lounge in Desert Hot Springs also folds bingo into its Rainbow Wednesdays drag night."
           }
         },
         {
@@ -48,7 +48,7 @@ layout: blog-post.njk
           "name": "Is there board game or D&D night near Palm Springs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, head to Palm Desert. The Dragon's Den runs the valley's longest-running weekly tabletop event every Thursday, covering miniature painting, Dungeons and Dragons, and Warhammer, hosted by mother-son duo Mindy and Jake Conant. Murasaki Kakurega Manga Lounge nearby runs anime trivia at night and hosts card games including Pokemon, Magic: The Gathering, and the One Piece Card Game. Confirm current times before you go, as of 2026 these schedules still shift."
+            "text": "Yes, and it's in Palm Desert. The Dragon's Den runs the valley's longest-running weekly tabletop event every Thursday, covering miniature painting, Dungeons and Dragons, and Warhammer, hosted by mother-son duo Mindy and Jake Conant. Murasaki Kakurega Manga Lounge nearby runs anime trivia at night and hosts card games including Pokemon, Magic: The Gathering, and the One Piece Card Game. Confirm current times before you go, since as of 2026 these schedules still shift."
           }
         },
         {
@@ -56,7 +56,7 @@ layout: blog-post.njk
           "name": "What is there to do in Palm Springs when it is too hot to be outside?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Summer evenings are when the valley's indoor game scene earns its keep. Trivia nights at bars like Quadz, The Local on 50th, and Plan B run after dark when it finally cools off. Casino bingo at Agua Caliente is fully indoor and air conditioned. For a slower night, the tabletop and anime scene in Palm Desert at The Dragon's Den and Murasaki Kakurega runs into the evening. Or skip going out entirely and run your own game night at the rental after a pool day."
+            "text": "Summer evenings are when the valley's indoor game scene earns its keep. Trivia at bars like Quadz, The Local on 50th, and Plan B runs after dark when it finally cools off, and casino bingo at Agua Caliente is fully indoor and air conditioned. For a slower night, the tabletop and anime scene in Palm Desert runs into the evening. Or skip going out and run your own game night at the rental after a pool day. For more warm-weather ideas, the Palm Springs bars guide pairs well with this one."
           }
         },
         {
@@ -64,7 +64,7 @@ layout: blog-post.njk
           "name": "Which Indigo Palm property is best for a game night in?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Cozy Cactus in Indio has a dedicated game room with foosball, which makes it the easy pick for a group that wants to stay in after a day by the pool. Terra Luz, also in Indio, has a big kitchen table and a lantern-lit patio that works for cards once the sun drops. All three properties are stocked for a low-key night in. Book direct at indigopalm.co."
+            "text": "The Cozy Cactus has foosball and board games for a family night in. Terra Luz has space for cards around the table or on the patio. Choose your home and check dates and full totals."
           }
         }
       ]
@@ -110,7 +110,7 @@ layout: blog-post.njk
 
 <hr style="border: none; border-top: 1px solid #ddd; margin: 3rem 0;">
 
-<p><strong>Rather stay in?</strong> Some of the best game nights happen back at the rental after a long pool day, when nobody wants to put shoes back on. <a href="/cozy-cactus/">The Cozy Cactus</a> in Indio has a dedicated game room with foosball, which turns a group of tired adults into a tournament bracket within about ten minutes. <a href="/terra-luz/">Terra Luz</a> down the road has a long kitchen table and a lantern-strung patio that's made for cards once the heat lets go for the evening. Both are walking distance to the Empire Polo Club, so festival weekends work too. Book direct and skip Airbnb's 20% guest service fee at <a href="https://indigopalm.co/">indigopalm.co</a>.</p>
+<p>Staying in? The Cozy Cactus has foosball and board games. Terra Luz has a kitchen table and patio for a game of cards. <a href="/#properties">Compare the homes and check your dates.</a></p>
 
 <img src="/blog/images/cc-foosball-room.webp" alt="The game room at The Cozy Cactus in Indio with a foosball table, set up for a night in after a pool day" width="1800" height="1201" loading="lazy">
 <p class="image-caption">The game room at The Cozy Cactus. The foosball table has settled more than one debate about who's driving to get tacos.</p>
@@ -172,4 +172,4 @@ layout: blog-post.njk
 <p>Summer evenings are when the valley's indoor game scene earns its keep. Trivia at bars like Quadz, The Local on 50th, and Plan B runs after dark when it finally cools off, and casino bingo at Agua Caliente is fully indoor and air conditioned. For a slower night, the tabletop and anime scene in Palm Desert runs into the evening. Or skip going out and run your own game night at the rental after a pool day. For more warm-weather ideas, the <a href="/blog/palm-springs-bars/">Palm Springs bars guide</a> pairs well with this one.</p>
 
 <h3>Which property is best for a game night in?</h3>
-<p>The Cozy Cactus in Indio has a dedicated game room with foosball, which makes it the easy pick for a group that wants to stay in after a day by the pool. Terra Luz, also in Indio, has a long kitchen table and a lantern-lit patio that works for cards once the sun drops. All three properties are stocked for a low-key night in, and you can book any of them direct at <a href="https://indigopalm.co/">indigopalm.co</a> to skip Airbnb's 20% guest service fee.</p>
+<p>The Cozy Cactus has foosball and board games for a family night in. Terra Luz has space for cards around the table or on the patio. <a href="/#properties">Choose your home</a> and check dates and full totals.</p>
