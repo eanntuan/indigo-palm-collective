@@ -1,7 +1,7 @@
 ---
 title: "Halloween 2026 Palm Springs and Coachella Valley: 7 Events"
 date: 2026-10-08
-dateModified: 2026-10-08
+dateModified: 2026-10-27
 metaDescription: "Halloween 2026 in Palm Springs and the Coachella Valley: seven checked events from Oct 24 to Halloween night, with dog-friendly picks and where to sleep."
 ogImage: /blog/images/cozy-cactus-aerial.webp
 heroImage: /blog/images/cozy-cactus-aerial.webp
@@ -77,6 +77,9 @@ layout: blog-post.njk
 
 <p>Dog owners, one thing I can confirm from the zoo's calendar: it lists a "Dog Day at the Zoo" on Friday, October 30, where you add a dog ticket to your own. Palm Springs Life describes a howl-themed costume photo day with different hours, and I couldn't match those details, so check the zoo's page for the current hours and dog pricing before you go.</p>
 
+<h3>Halloween Chili Tasting and Car Show, Palm Springs Air Museum</h3>
+<p>Saturday, October 31, 10 AM to 3:30 PM at the <a href="https://palmspringsairmuseum.org/halloween-chili-car-show/" target="_blank" rel="noopener"><strong>Palm Springs Air Museum</strong></a> (745 N Gene Autry Trail), where volunteers serve several chili recipes next to a lot of classic cars. The museum calls it a family event, and it doesn't post an admission price on the events page, so check before you go. Our <a href="/blog/palm-springs-air-museum-guide/">Air Museum guide</a> covers the hangars if you want to make a morning of it.</p>
+
 <h2>Where I'd stay for Halloween weekend</h2>
 
 <p>I'm biased, obviously. But the geography matters: <a href="/terra-luz/">Terra Luz</a> in Indio is dog-friendly (with approval) and has the private pool and patio for a low-key night after the crowds. The Sundune in Palm Springs is dog-friendly too and puts you roughly 10 minutes from the Arenas party and Revolution Stage, and so is The Well, also in Palm Springs. The Cozy Cactus doesn't take pets, so if a costumed dog is part of your plan, it's one of the other three.</p>
@@ -121,6 +124,7 @@ layout: blog-post.njk
 <li><a href="https://www.halloweenpalmsprings.com/" target="_blank" rel="noopener">Halloween Palm Springs</a></li>
 <li><a href="https://feverup.com/en/palm-springs-ca-us/candlelight" target="_blank" rel="noopener">Fever, Candlelight Palm Springs</a></li>
 <li><a href="https://www.psunderground.com/upcoming-experiences" target="_blank" rel="noopener">PS Underground, Upcoming Experiences</a></li>
+<li><a href="https://palmspringsairmuseum.org/signature-events/" target="_blank" rel="noopener">Palm Springs Air Museum, Signature Events</a></li>
 <li><a href="https://www.livingdesert.org/events/upcoming-zoo-events/" target="_blank" rel="noopener">The Living Desert, Events Calendar</a></li>
 <li><a href="https://bergerfoundationiceplex.com/upcoming-events/" target="_blank" rel="noopener">Berger Foundation Iceplex, Events</a></li>
 </ul>
