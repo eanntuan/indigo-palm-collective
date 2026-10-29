@@ -3401,3 +3401,48 @@ Em dashes 0, banned phrases 0, Airbnb fee percentages correct, no polo club mile
 - `palm-springs-bars.md`: Sundune walkability wording fixed (source only; GitHub Actions rebuilds the HTML on push, `npm` is not on PATH in this shell).
 - No new posts (no GSC query with 200+ imps and no matching post).
 - **Needs Eann:** the 174 uncommitted built-output files in the working tree (review and commit or discard), `pip install beautifulsoup4` into the default python so the SEO scripts run unattended, Halloween hero swap yes/no and the other 2026-10-14 open items.
+
+### babysit-seo run 2026-10-29 (Daily SEO Sprint)
+
+Housekeeping: no stashes, `git pull --rebase` already up to date (HEAD 2cbb9d88). Tree holds 135 untracked files (screenshots, duplicate-numbered images, `.claude/`, `.firebase/`) that are not mine and were left alone.
+
+**Rachel Gainsburg:** newest post still 2026-10-07, already processed. No new tasks.
+
+### What changed on 2026-10-29: GSC Check-in
+
+**Period:** 2026-07-30 to 2026-10-27 (90 days). **Overall:** 782 clicks, 88,788 impressions, 0.9% CTR, avg position 9.7. **vs. prior period:** +502 clicks, +50,471 impressions.
+
+**What's working:** `palm-springs-vs-scottsdale` (93 clicks, pos 5.7, 10.2% CTR on its head query), `palm-springs-birthday-freebies` (7.7% CTR), `halloween-2026-coachella-valley` (38 clicks, 2.9% CTR), homepage 3.4% CTR.
+
+**CTR opportunities:** "how far is indio from palm springs" 976 imps, 6 clicks, pos 4.7 (title rewritten 2026-10-08, still too early to read). `palm-springs-vs-indio` (9,982 imps, 0.3%), `where-to-stay-coachella` (9,401, 0.3%) and `palm-springs-surf-club` (7,131, 0.6%) all still show low CTR in the 90-day window, which is mostly pre-rewrite. Re-check with a 14-day window around 2026-11-05.
+
+**Weak pages:** `bnp-paribas-open-palm-springs` (498 imps, 0.4%, already retitled 10-08), `palm-springs-running-trails` (397, 0.5%), `palm-springs-air-museum-guide` (291, 0.7%, 83% of imps at pos 20 or better), `palm-springs-with-kids` (pos 38.8, authority bucket). No query-level evidence for new rewrites, so none made.
+
+### GSC Alert Email Review: 2026-10-29
+
+0 emails from search-console-noreply@google.com in the last 12 days. No open deficiencies found.
+
+### Pinterest Check-in 2026-10-29
+
+30-day API totals (2026-09-29 to 2026-10-29): 1,408 impressions, 4 saves, 45 pin clicks, 6 outbound clicks. Down from 1,617 on 2026-10-19. Residual traffic from old pins only; TASK PIN-5 (restart posting) remains Eann's. About 5.6% of the 25K threshold, links stay on Airbnb. Ads-vs-posting split: cadence is the cause (no new pins), spend was already paused.
+
+### GA4 Check-in 2026-10-29
+
+**Period:** 2026-10-22 to 2026-10-29. 385 active users (+156), 438 sessions, 110s avg session. Channels: Organic Search 147, Direct 94, AI Assistant 7, Organic Social 3. Direct is down from 256 sessions last week, consistent with the earlier spike being bot traffic (unverified). Homepage bounce is 63.0% on 36 views, just under the 50-view bar.
+
+### Palm Springs Life inspo 2026-10-29
+
+Feed live (newest item 2026-10-29). Only new travel-relevant item is the Air Museum Halloween chili cook-off and car show, already added to the Halloween post in commit 2cbb9d88. Restaurant and shop profiles overlap existing posts. No new post.
+
+### Technical SEO Health Checks 2026-10-29
+
+Run with `/opt/homebrew/bin/python3` (bs4 missing from the default interpreter). Broken links: 0 (121 pages, 3,941 internal targets; external pass not run, weekly pass due). Alt text: 0 HIGH, 0 MEDIUM, 3 LOW lazy-load flags on intentional eager images. Orphans: 0; 3 weakly linked.
+
+### audit-website 2026-10-29
+
+Em dashes: 0 in `content/blog/*.md`. Banned-word grep hits are all proper nouns or geography (Oasis Date Gardens, Oasis St, Sheep Hole Oasis, "palm oasis" as a place type), no violations. Hero image full inventory not due until about 2026-10-31.
+
+### Actions taken 2026-10-29
+
+- No site files changed and no new posts (no GSC query with 200+ imps lacking a post). Strategy doc only.
+- **Needs Eann:** `pip install beautifulsoup4` into the default python (SEO scripts fail unattended), the 135 untracked files in the working tree, and the open 2026-10-14 items (Halloween hero swap, Pinterest Business Hub figure, Quora status).
