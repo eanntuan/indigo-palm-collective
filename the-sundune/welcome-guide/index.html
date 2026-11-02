@@ -330,6 +330,9 @@
       color: var(--white);
     }
 
+    /* ── PARKING/WIFI SWITCH: html.temp = carport #555 unavailable + temporary wifi ── */
+    html.temp .std-only, html:not(.temp) .temp-only { display: none !important; }
+
     /* ── WIFI BLOCK ── */
     .wifi-block {
       background: var(--teal);
@@ -774,6 +777,15 @@
   <!-- ══════════════════════════════════════════
        WELCOME
   ══════════════════════════════════════════ -->
+  <script>
+    // Flip to false once Abin Thomas leaves. ?parking=temp or ?parking=555 overrides for previews.
+    (function() {
+      var TEMP_MODE = true;
+      var q = new URLSearchParams(location.search).get('parking');
+      if (q) TEMP_MODE = q === 'temp';
+      document.documentElement.classList.toggle('temp', TEMP_MODE);
+    })();
+  </script>
   <section class="tab-panel active" id="tab-welcome">
     <header class="site-header">
       <a href="https://indigopalm.co" class="brand">Indigo Palm Collective</a>
@@ -819,7 +831,7 @@
         </div>
         <div class="info-row">
           <span class="info-label">Parking</span>
-          <span class="info-val">Lot 5, Carport #555</span>
+          <span class="info-val"><span class="std-only">Lot 5, Carport #555</span><span class="temp-only">Lot 5, guest spaces G572-578</span></span>
         </div>
         <div class="info-row">
           <span class="info-label">Host</span>
@@ -884,7 +896,7 @@
       </div>
 
       <div class="callout">
-        <strong>Lot 5, Carport #555.</strong> Address: <a href="https://maps.google.com/?q=5301+E+Waverly+Dr,+Palm+Springs,+CA+92264" target="_blank" rel="noopener">5301 E Waverly Dr, Palm Springs, CA 92264 ↗</a>
+        <strong class="std-only">Lot 5, Carport #555.</strong><strong class="temp-only">Lot 5, guest spaces G572-578.</strong> <span class="temp-only">Carport #555 is not available for this stay. </span>Address: <a href="https://maps.google.com/?q=5301+E+Waverly+Dr,+Palm+Springs,+CA+92264" target="_blank" rel="noopener">5301 E Waverly Dr, Palm Springs, CA 92264 ↗</a>
       </div>
 
       <img src="step-0-driving-aerial-map.webp" alt="Aerial map of Palm Canyon Villas showing where to enter off Golf Club Drive, park in Lot 5, and walk to unit 184" loading="lazy" width="1200" height="936" style="width:100%;height:auto;border-radius:10px;margin-bottom:20px;">
@@ -896,11 +908,17 @@
           </div>
           <p class="step-item-caption"><strong>Step 1.</strong> Turn at the Golf Club Drive light. Enter Lot 5.</p>
         </div>
-        <div class="step-item">
+        <div class="step-item std-only">
           <div class="step-item-img">
             <img src="step-2-parking-spot-555.webp" alt="Carport 555 at Palm Canyon Villas" loading="lazy" width="899" height="1200">
           </div>
           <p class="step-item-caption"><strong>Step 2.</strong> Park in Carport #555.</p>
+        </div>
+        <div class="step-item temp-only">
+          <div class="step-item-img">
+            <img src="step-2-guest-parking.webp" alt="Palm Canyon Villas guest parking sign in Lot 5" loading="lazy" width="900" height="1200">
+          </div>
+          <p class="step-item-caption"><strong>Step 2.</strong> Park in a guest space labeled G572-578, not a carport.</p>
         </div>
         <div class="step-item">
           <div class="step-item-img">
@@ -923,7 +941,7 @@
       </div>
 
       <p style="font-size:0.82rem;color:var(--muted);margin:20px 0 8px;">
-        Second car? Guest spaces <strong>G572-578</strong> are also in Lot 5. Lot 4 has guest parking too and is actually slightly closer to the unit. Waverly Dr works as a backup if both are full.
+        <span class="std-only">Second car? Guest spaces <strong>G572-578</strong> are also in Lot 5.</span><span class="temp-only">Guest spaces <strong>G572-578</strong> are in Lot 5, and carport #555 is not available for this stay.</span> Lot 4 has guest parking too and is actually slightly closer to the unit. Waverly Dr works as a backup if both are full.
       </p>
 
       <img src="/the-sundune/photos/Sundune2026-0003.webp" alt="Entry hallway of The Sundune looking into the living room, with gallery wall, bold abstract mural wallpaper, and warm wood floors" class="guide-img" loading="lazy" width="1024" height="683">
@@ -1004,7 +1022,8 @@
 
       <div class="wifi-block">
         <p class="wifi-label">Wifi Network</p>
-        <p class="wifi-name">Indigo Palm Collective</p>
+        <p class="wifi-name"><span class="std-only">Indigo Palm Collective</span><span class="temp-only">The PS Retreat</span></p>
+        <p class="wifi-name temp-only" style="font-size:1.1rem;">Password: palmsprings</p>
         <p class="wifi-note">Both TVs have Roku with Netflix already loaded. For everything else, log into your own streaming apps, it's all in there.</p>
       </div>
 
