@@ -577,6 +577,20 @@ nav ul.nav-dropdown li a:hover { background: var(--cream); }
             line-height: 1.8;
         }
 
+        /* Hero availability search */
+        .hero-search { display: flex; flex-wrap: wrap; gap: .75rem; align-items: stretch; max-width: 820px; }
+        .hs-field { flex: 1 1 170px; display: flex; flex-direction: column; gap: .2rem; background: #fff; border-radius: 16px; padding: .6rem 1rem; color: var(--charcoal); text-align: left; }
+        .hs-field span { font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; opacity: .65; }
+        .hs-field input, .hs-field select { border: 0; background: transparent; font: inherit; font-size: 1rem; color: inherit; padding: 0; min-height: 28px; outline: none; }
+        .hs-guests { flex: 0 1 130px; }
+        .hs-btn { flex: 0 0 auto; min-height: 56px; padding: 0 2rem; border: 2px solid #fff; border-radius: 16px; background: transparent; color: #fff; font: inherit; font-weight: 500; letter-spacing: 1.5px; cursor: pointer; transition: all .3s ease; }
+        .hs-btn:hover { background: #fff; color: var(--charcoal); }
+        .hs-results { margin-top: 1rem; max-width: 820px; color: #fff; font-size: .95rem; }
+        .hs-results a { display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 1.1rem; margin-bottom: .5rem; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.4); border-radius: 14px; color: #fff; text-decoration: none; }
+        .hs-results a:hover { background: rgba(255,255,255,.25); }
+        .hs-skip { display: inline-block; margin-top: 1rem; color: rgba(255,255,255,.85); font-size: .85rem; text-decoration: underline; }
+        @media (max-width: 600px) { .hs-guests, .hs-btn { flex: 1 1 100%; } }
+
         .cta-button {
             display: inline-block;
             padding: 1rem 3rem;
@@ -2260,10 +2274,64 @@ nav ul.nav-dropdown li a:hover { background: var(--cream); }
             <div class="hero-eyebrow">Indigo Palm Collective</div>
             <h1>Boutique vacation rentals across the Coachella Valley</h1>
             <p class="description">Desert getaways and longer stays.</p>
-            <a href="/booking-flow/" class="cta-button">Book Now</a>
+            <form class="hero-search" id="heroSearch" novalidate>
+                <label class="hs-field"><span>Check-in</span><input type="date" id="hsIn" required></label>
+                <label class="hs-field"><span>Check-out</span><input type="date" id="hsOut" required></label>
+                <label class="hs-field hs-guests"><span>Guests</span><select id="hsGuests" aria-label="Guests"></select></label>
+                <button type="submit" class="hs-btn">Search</button>
+            </form>
+            <div class="hs-results" id="hsResults" aria-live="polite"></div>
+            <a href="/booking-flow/" class="hs-skip">Or pick a home first</a>
             <p style="margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.75); letter-spacing: 0.03em;">4.97 stars · 300+ reviews · Superhost</p>
         </div>
     </section>
+
+    <script>
+(function () {
+    var HOMES = [
+        { slug: 'terra-luz', name: 'Terra Luz', max: 8, min: 1, meta: 'Indio · Saltwater pool · Dog-friendly' },
+        { slug: 'cozy-cactus', name: 'The Cozy Cactus', max: 8, min: 1, meta: 'Indio · Private hot tub · Game room' },
+        { slug: 'ps-retreat', name: 'The Sundune', max: 4, min: 4, meta: 'Palm Springs · Community pool' }
+    ];
+    var f = document.getElementById('heroSearch'), inn = document.getElementById('hsIn'), out = document.getElementById('hsOut'),
+        g = document.getElementById('hsGuests'), box = document.getElementById('hsResults');
+    for (var i = 1; i <= 8; i++) g.add(new Option(i + (i === 1 ? ' guest' : ' guests'), i, i === 2, i === 2));
+    function iso(d) { return d.toISOString().slice(0, 10); }
+    inn.min = iso(new Date());
+    inn.addEventListener('change', function () {
+        var d = new Date(inn.value + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + 1);
+        out.min = iso(d);
+        if (!out.value || out.value <= inn.value) out.value = iso(d);
+    });
+    function nights(a, b) { return Math.round((new Date(b) - new Date(a)) / 864e5); }
+    f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!inn.value || !out.value || out.value <= inn.value) { box.textContent = 'Pick a check-in and a later check-out date.'; return; }
+        var n = nights(inn.value, out.value), guests = +g.value;
+        box.textContent = 'Checking availability...';
+        Promise.all(HOMES.map(function (h) {
+            if (guests > h.max || n < h.min) return Promise.resolve(null);
+            return fetch('/api/availability?property=' + h.slug).then(function (r) { return r.json(); }).then(function (d) {
+                var blocked = new Set(d.blockedDates || []), c = new Date(inn.value + 'T00:00:00Z');
+                for (var k = 0; k < n; k++, c.setUTCDate(c.getUTCDate() + 1)) if (blocked.has(iso(c))) return null;
+                return h;
+            }).catch(function () { return h; });
+        })).then(function (list) {
+            var ok = list.filter(Boolean);
+            if (window.gtag) gtag('event', 'hero_search', { nights: n, guests: guests, results: ok.length });
+            box.innerHTML = '';
+            if (!ok.length) { box.textContent = 'No home is open for those dates. Try nearby dates, or '; var a = document.createElement('a'); a.href = '/booking-flow/'; a.style.cssText = 'display:inline;padding:0;background:none;border:0;text-decoration:underline'; a.textContent = 'browse every home'; box.appendChild(a); return; }
+            ok.forEach(function (h) {
+                var a = document.createElement('a');
+                a.href = '/booking-flow/' + h.slug + '/?checkIn=' + inn.value + '&checkOut=' + out.value + '&guests=' + guests;
+                var l = document.createElement('span'), r = document.createElement('span');
+                l.textContent = h.name + ' · ' + h.meta; r.textContent = 'See price →';
+                a.appendChild(l); a.appendChild(r); box.appendChild(a);
+            });
+        });
+    });
+})();
+</script>
 
     <!-- Properties Section -->
     <!--

@@ -123,9 +123,14 @@ function readUrlParams() {
     const prop = SLUG_ALIASES[raw] || raw;
     const checkIn = params.get('checkIn');
     const checkOut = params.get('checkOut');
+    const guestsParam = parseInt(params.get('guests'));
 
     if (prop && PROPERTIES[prop] && prop !== 'the-well') {
         selectProperty(prop);
+    }
+    if (guestsParam) {
+        const gi = document.getElementById('guests');
+        gi.value = Math.min(guestsParam, parseInt(gi.max) || guestsParam);
     }
     if (checkIn) {
         document.getElementById('check-in').value = checkIn;
