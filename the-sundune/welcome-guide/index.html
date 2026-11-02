@@ -778,9 +778,9 @@
        WELCOME
   ══════════════════════════════════════════ -->
   <script>
-    // Flip to false once Abin Thomas leaves. ?parking=temp or ?parking=555 overrides for previews.
+    // Temp mode (no #555, PS Retreat wifi) runs through July 2027, then flips automatically. ?parking=temp or ?parking=555 overrides for previews.
     (function() {
-      var TEMP_MODE = true;
+      var TEMP_MODE = new Date() < new Date(2027, 7, 1);
       var q = new URLSearchParams(location.search).get('parking');
       if (q) TEMP_MODE = q === 'temp';
       document.documentElement.classList.toggle('temp', TEMP_MODE);
