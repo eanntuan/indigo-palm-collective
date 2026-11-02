@@ -3446,3 +3446,39 @@ Em dashes: 0 in `content/blog/*.md`. Banned-word grep hits are all proper nouns 
 
 - No site files changed and no new posts (no GSC query with 200+ imps lacking a post). Strategy doc only.
 - **Needs Eann:** `pip install beautifulsoup4` into the default python (SEO scripts fail unattended), the 135 untracked files in the working tree, and the open 2026-10-14 items (Halloween hero swap, Pinterest Business Hub figure, Quora status).
+
+### babysit-seo run 2026-11-02
+
+Housekeeping: no stashes, HEAD 176c075f equals origin/main. `api-worker/index.js` (welcome-terra-luz go-link) and `sitemap.xml` have uncommitted edits that are not mine; left alone.
+
+**Rachel Gainsburg:** all 20 feed items (newest 2026-10-07) already processed. No new tasks.
+
+### What changed on 2026-11-02: GSC Check-in
+
+**Period:** 2026-08-03 to 2026-10-31 (90 days). **Overall:** 828 clicks, 91,259 impressions, 0.9% CTR, avg position 9.6. **vs. prior period:** +532 clicks, +51,026 impressions.
+
+**What's working:** `palm-springs-vs-scottsdale` (94 clicks, pos 5.6), `halloween-2026-coachella-valley` (65 clicks, 2.7% CTR), `palm-springs-birthday-freebies` (7.4% CTR), homepage (3.5% CTR).
+
+**CTR opportunities:** "how far is indio from palm springs" 999 imps, 6 clicks, pos 4.7 (retitled 2026-10-08, re-check with a 14-day window around 2026-11-05). `palm-springs-vs-indio` (10,120 imps, 0.3%) and `where-to-stay-coachella` (9,382, 0.3%) still low in the 90-day window. `bnp-paribas-open-restaurants` (465 imps, 95.5% at pos 20 or better, 0.2% CTR) is the one new rewrite candidate.
+
+**Weak pages:** `palm-springs-with-kids` (pos 37.6, authority fix), `cozy-cactus` (80 imps, pos 12.2).
+
+### GSC Alert Email Review: 2026-11-02
+
+0 emails from search-console-noreply@google.com in the last 14 days. No open deficiencies found.
+
+### Pinterest Check-in 2026-11-02
+
+30-day API totals (2026-10-03 to 2026-11-02): 1,377 impressions, 3 saves, 46 pin clicks, 8 outbound clicks (1,408 on 2026-10-29). No new pins, so cadence is the cause; spend was already paused. About 5.5% of the 25K threshold, links stay on Airbnb. TASK PIN-5 (restart posting) remains Eann's.
+
+### GA4 Check-in 2026-11-02
+
+**Period:** 2026-10-26 to 2026-11-02. 267 active users (+31), 312 sessions, 93s avg session. Organic Search 176, Direct 81, AI Assistant 8, Organic Social 4. No page has 50+ views with over 60% bounce. Property pages: Sundune 9, Terra Luz 6, Cozy Cactus 6 views.
+
+### Technical SEO Health Checks 2026-11-02
+
+Broken links 0 (121 pages, internal only; weekly external pass not run). Alt text 0 HIGH, 0 MEDIUM. Orphans: 2 HIGH, both false positives. `best-restaurants-near-coachella` and `things-to-do-palm-springs` are redirect stubs (commit 6f3b8861) that the uncommitted `sitemap.xml` edit lists, along with `where-to-stay-coachella-2026` and `bnp-paribas-open-vacation-rental-guide`, also redirects. Redirect stubs should not be in the sitemap, so those 24 added lines should be dropped before commit.
+
+### Other phases 2026-11-02
+
+Palm Springs Life feed fetch returned no items from this shell (blocked or empty), so no inspo pass. Hero image full inventory is overdue (last full pass 2026-10-01) and queued. Em dashes in `content/blog/*.md`: 0. No new posts (no GSC query with 200+ imps lacking a post).
