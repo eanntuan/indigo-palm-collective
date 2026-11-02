@@ -195,7 +195,7 @@ const GO_LINKS = {
   'cc':                  'https://indigopalm.co/cozy-cactus/?utm_source=reddit&utm_medium=social&utm_campaign=community',
   'tl':                  'https://indigopalm.co/terra-luz/?utm_source=reddit&utm_medium=social&utm_campaign=community',
   'sd':                  'https://indigopalm.co/the-sundune/?utm_source=reddit&utm_medium=social&utm_campaign=community',
-  'welcome-terra-luz':   'https://indigopalm.co/welcome-guide-terra-luz/',
+  'welcome-terra-luz':   'https://indigopalm.co/terra-luz/welcome-guide.html?utm_source=airbnb&utm_medium=message&utm_campaign=guest-comms',
   'farewell-indio':      'https://indigopalm.co/farewell-guide-indio/?utm_source=checkout-message&utm_medium=hostaway&utm_campaign=farewell',
   'farewell-cozy-cactus': 'https://indigopalm.co/cozy-cactus/farewell.html?utm_source=checkout-message&utm_medium=hostaway&utm_campaign=farewell',
   'farewell-terra-luz':  'https://indigopalm.co/terra-luz/farewell.html?utm_source=checkout-message&utm_medium=hostaway&utm_campaign=farewell',
