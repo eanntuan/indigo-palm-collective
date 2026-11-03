@@ -1,7 +1,7 @@
 ---
 title: "BNP Paribas Open 2027: Where to Stay Near Indian Wells"
 date: 2025-12-10
-dateModified: 2026-07-30
+dateModified: 2026-11-03
 metaDescription: "Palm Springs or Indio for the BNP Paribas Open 2027? Private vacation rentals near Indian Wells Tennis Garden, what to look for, and why a private pool matters after a full day in stadium seats."
 ogImage: /blog/images/bnp-paribas-stadium-packed.webp
 heroImage: /blog/images/bnp-paribas-stadium-packed.webp
@@ -44,6 +44,14 @@ relatedPosts:
 
 <img src="/blog/images/indian-palms-front-entrance.webp" alt="Indian Palms Country Club entrance gate in Indio California, a neighborhood popular with BNP Paribas Open attendees" width="1400" height="933" loading="lazy">
 <p class="image-caption">Indian Palms Country Club in Indio, about 20 minutes from the Indian Wells Tennis Garden. Quiet neighborhood, private pools common, good value for groups.</p>
+
+<h2>Coming for the WTA Finals in November 2026?</h2>
+
+<p>The Tennis Garden gets a second big tournament this year. The <a href="https://www.wtatennis.com/tournaments/808/wta-finals/2026" target="_blank" rel="noopener noreferrer"><strong>WTA Finals</strong></a>, the season-ending championship for the top women's singles players and doubles teams, run November 8 to 15, 2026, after the event was relocated from Riyadh.</p>
+
+<p>Round-robin matches fill Sunday, November 8 through Friday the 13th, with the semifinals Saturday and the final Sunday the 15th. Sessions are in Stadium 2, so even a cheap seat sits far closer to the court than a cheap seat in Stadium 1 does in March. Per the <a href="https://www.wtatennis.com/news/4526239/how-to-get-tickets-for-the-2026-wta-finals-in-indian-wells" target="_blank" rel="noopener noreferrer">WTA's ticket guide</a>, single sessions start at $75 for the first two days and climb to $130 for the final, and the Championship Weekend package starts at $290.</p>
+
+<p>The Palm Springs versus Indio math below works the same as it does in March, with one November twist: desert evenings get cool enough that an unheated pool turns into scenery. At <a href="/terra-luz/">Terra Luz</a> we heat the private pool for $75 a day, and <a href="/cozy-cactus/">The Cozy Cactus</a> has a private hot tub, which is where I'd want to end a long day of round-robin matches.</p>
 
 <h2>What the BNP Paribas Open Is</h2>
 
