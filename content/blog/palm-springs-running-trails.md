@@ -119,7 +119,7 @@ The reward is that you earn the view faster than any other trail in Palm Springs
 
 If you're visiting in May through September, run before 7am or after 6pm. In summer, even the easy trails get dangerous by mid-morning. This isn't an overstatement. Bring more water than you think you need, tell someone your route, and turn around if you feel wrong. The desert doesn't negotiate.
 
-If you're based at [The Sundune at Palm Springs](/the-sundune/), the CV Link trailhead near our property is an easy starting point for a flat morning run before the heat arrives. And there's a shower waiting when you get back.
+If you're based at [The Sundune at Palm Springs](/the-sundune/), the CV Link is a short drive from the condo and an easy place to start a flat morning run before the heat arrives, with a shower waiting when you get back.
 
 ## Frequently Asked Questions
 
@@ -226,7 +226,7 @@ Murray Canyon and Palm Canyon, both inside Indian Canyons, offer the most shade 
       "name": "What is the CV Link and is it good for running in Palm Springs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The CV Link is a paved multi-use path along the eastern edge of Palm Springs, covering 4.6 miles with minimal elevation change. It's the best option for running with a leashed dog and for anyone who wants flat predictable terrain. Access points are near Gene Autry Trail and Garnet Avenue. The Sundune at Palm Springs is a short walk from the trailhead."
+        "text": "The CV Link is a paved multi-use path along the eastern edge of Palm Springs, covering 4.6 miles with minimal elevation change. It's the best option for running with a leashed dog and for anyone who wants flat predictable terrain. Access points are near Gene Autry Trail and Garnet Avenue. The Sundune at Palm Springs is a short drive from the trailhead."
       }
     },
     {

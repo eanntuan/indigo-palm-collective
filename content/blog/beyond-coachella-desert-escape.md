@@ -155,7 +155,7 @@ layout: blog-post.njk
 <p>For groups of three or more staying four or more nights, a private rental house almost always wins: lower cost per person, a private pool instead of a shared one, a kitchen for some meals, and more room to spread out. Palm Springs hotels make sense for couples or solo travelers who want daily service and a walkable downtown scene. For everyone else, basing in Indio and day-tripping to Palm Springs (30 minutes away) saves money without sacrificing access.</p>
 
 <h3>How do I plan a long weekend in the Coachella Valley on a budget?</h3>
-<p>Visit in fall, October or November, when rates run 30-40% below Coachella-weekend pricing and the weather is some of the best all year. Basing in Indio instead of Palm Springs gets you a private pool for less than a comparable Palm Springs hotel room, and Joshua Tree only requires a national parks pass, no separate ticket needed. Booking direct at <a href="https://indigopalm.co">indigopalm.co</a> skips the Airbnb service fee too, saving $50-150 on a typical stay.</p>
+<p>Visit in fall, October or November, when rates run 30-40% below Coachella-weekend pricing and the weather is some of the best all year. Basing in Indio instead of Palm Springs gets you a private pool for less than a comparable Palm Springs hotel room, and Joshua Tree only requires a national parks pass, no separate ticket needed. Booking direct at <a href="https://indigopalm.co">indigopalm.co</a> skips the Airbnb service fee too.</p>
 
 <script type="application/ld+json">
 {
@@ -255,7 +255,7 @@ layout: blog-post.njk
       "name": "How do I plan a long weekend in the Coachella Valley on a budget?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Visit in fall (October or November) when rates are 30-40% below Coachella-weekend pricing and weather is ideal. Base in Indio rather than Palm Springs for better value with private pools. Joshua Tree requires only a national parks pass. Booking direct at indigopalm.co skips the Airbnb service fee, saving $50-150 on a typical stay."
+        "text": "Visit in fall (October or November) when rates are 30-40% below Coachella-weekend pricing and weather is ideal. Base in Indio rather than Palm Springs for better value with private pools. Joshua Tree requires only a national parks pass. Booking direct at indigopalm.co skips the Airbnb service fee."
       }
     }
   ]

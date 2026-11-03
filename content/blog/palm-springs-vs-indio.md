@@ -149,7 +149,7 @@ faqItems:
 
 <p>The mistake people make is booking based on the name recognition of Palm Springs when what their group needs is space and proximity in Indio. And occasionally the reverse: booking Indio because it's cheaper, when a couple would have loved being 10 minutes from Palm Springs restaurants every night. Get clear on the trip first.</p>
 
-<img src="/blog/images/yes-please-palm-springs.webp" alt="Yes Please Books storefront in a Palm Springs neighborhood, the kind of discovery that comes from wandering on foot" loading="lazy" width="1400" height="1050">
+<img src="/blog/images/yes-please-palm-springs.webp" alt="Yes Please Books storefront in a Palm Springs neighborhood, the kind of shop you find by wandering on foot" loading="lazy" width="1400" height="1050">
 <p class="image-caption">The walkable neighborhoods in Palm Springs reward wandering. You find places like this just by turning off the main drag.</p>
 
 <h2>Our Properties in Both Areas</h2>
