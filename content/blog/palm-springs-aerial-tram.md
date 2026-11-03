@@ -5,7 +5,8 @@ dateModified: 2026-06-22
 metaDescription: "Yes, it's worth it, with caveats. Adult tickets are $36.95, the top sits at 8,516 feet, and timed tickets skip the line. Best time to go inside."
 ogImage: /blog/images/ps-aerial-tram-sunrise.webp
 heroImage: /blog/images/ps-aerial-tram-sunrise.webp
-heroAlt: "View from the top of the Palm Springs Aerial Tram at 8,516 feet with pine trees and San Jacinto peaks"
+heroPosition: "center 70%"
+heroAlt: "Palm Springs Aerial Tram gondola climbing above the clouds at sunrise on Mount San Jacinto"
 keywords:
   - Palm Springs Aerial Tram
   - Palm Springs Aerial Tramway tickets

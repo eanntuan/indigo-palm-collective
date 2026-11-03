@@ -4,6 +4,7 @@ date: 2026-06-18
 metaDescription: "Inside Terra Luz: the Frida Kahlo blue pool, spa, outdoor kitchen, three distinct bedrooms, and everything I chose to put in this house and why. The full amenity breakdown from the host."
 ogImage: /blog/images/terra-luz-hero.webp
 heroImage: /blog/images/terra-luz-hero.webp
+heroPosition: "center 75%"
 heroAlt: "Terra Luz vacation rental in Indio California, a Cuban-inspired 3-bedroom home with a Frida Kahlo blue pool"
 keywords:
   - terra luz vacation rental amenities

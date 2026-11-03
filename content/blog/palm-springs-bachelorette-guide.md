@@ -5,8 +5,8 @@ dateModified: 2026-10-01
 metaDescription: "Desert bachelorette in Palm Springs: pools, restaurants, spas, 2 hours from LA. The honest guide to what to book, skip, and plan for your crew."
 ogImage: /blog/images/ps-palm-springs-sign.webp
 heroImage: /blog/images/ps-palm-springs-sign.webp
-heroPosition: bottom
-heroAlt: "Colorful bougainvillea-lined street in Palm Springs California on a sunny day"
+heroPosition: "center 35%"
+heroAlt: "Palm Springs welcome sign framed by fan palms and desert landscaping"
 keywords:
   - palm springs bachelorette party
   - bachelorette party palm springs
