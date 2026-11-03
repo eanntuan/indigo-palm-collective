@@ -117,7 +117,7 @@ relatedPosts:
 
 <p><strong>Towels and linens:</strong> provided, hotel-quality. Standard Textile hospitality grade pool towels are separate from bath towels. There are enough for eight guests plus extras.</p>
 
-<p><strong>Parking:</strong> Two cars in the driveway. Two cars in the garage. No overnight street parking, per HOA rules.</p>
+<p><strong>Parking:</strong> room for four cars, two in the driveway and two in the garage, since the HOA doesn't allow overnight street parking.</p>
 
 <p><strong>Dogs:</strong> Terra Luz is dog-friendly. Up to 2 dogs with a $150 per pet, per stay fee. Confirm before booking by emailing indigopalmco@gmail.com. There's a grassy side yard for early morning walks without leaving the property.</p>
 

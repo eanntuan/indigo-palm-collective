@@ -3482,3 +3482,45 @@ Broken links 0 (121 pages, internal only; weekly external pass not run). Alt tex
 ### Other phases 2026-11-02
 
 Palm Springs Life feed fetch returned no items from this shell (blocked or empty), so no inspo pass. Hero image full inventory is overdue (last full pass 2026-10-01) and queued. Em dashes in `content/blog/*.md`: 0. No new posts (no GSC query with 200+ imps lacking a post).
+
+### babysit-seo run 2026-11-03 (Daily SEO Sprint)
+
+Housekeeping: dropped `stash@{0}` (2026-11-02 autostash). Its only content was the 24 `sitemap.xml` lines adding four `redirectTo` stubs, which the 2026-11-02 run had already said to drop. Untracked files were left alone.
+
+**Rachel Gainsburg:** newest feed item is still 2026-10-07, already processed. No new tasks.
+
+### What changed on 2026-11-03: GSC Check-in
+
+**Period:** 2026-08-04 to 2026-11-01 (90 days). **Overall:** 842 clicks, 91,871 impressions, 0.9% CTR, avg position 9.6. **vs. prior period:** +539 clicks, +51,071 impressions. Mobile CTR is 1.1% and desktop 0.6%.
+
+**What's working:** `palm-springs-vs-scottsdale` (96 clicks, pos 5.6), `halloween-2026-coachella-valley` (65 clicks, 2.7%), `palm-springs-birthday-freebies` (7.4%), homepage (3.7%).
+
+**CTR opportunities:** "how far is indio from palm springs" (995 imps, pos 4.6, 0.6%). Its re-check with a 14-day window is still due around 2026-11-05. The Halloween queries are seasonal and done now. `bnp-paribas-open-palm-springs` (502 imps, 0.4%) and `pioneertown-day-trip-from-indio` (248 imps, 0.8%, pos 8.8) are title/meta candidates. Pioneertown is new on the list.
+
+**Weak pages:** `palm-springs-with-kids` (pos 37.3, authority problem, no quick fix).
+
+### GSC Alert Email Review: 2026-11-03
+
+4 emails in the last 14 days. Both are "350 clicks in 28 days" (11-02) and "300 clicks" (10-21) milestone notices, and each arrived twice. No open deficiencies.
+
+### Pinterest Check-in 2026-11-03
+
+30-day API totals: 1,375 impressions, 3 saves, 46 pin clicks, 9 outbound. This is flat because no new pins have been posted. Still about 5.5% of the 25K threshold, and links stay on Airbnb. PIN-5 is still Eann's.
+
+### GA4 Check-in 2026-11-03
+
+**Period:** 2026-10-27 to 2026-11-03. 279 active users (+35), 319 sessions, 82s avg session (-14s). Organic Search 192 sessions, Direct 78, AI Assistant 7, Organic Social 3. No page has 50+ views with over 60% bounce. Property page views: Sundune 19, Terra Luz 7, Cozy Cactus 6. Sundune's views include the welcome-guide pages.
+
+### PSL feed, Hero Images, Technical checks 2026-11-03
+
+**PSL:** the feed is reachable again with a browser user agent. One item was relevant: "What to Expect as WTA Finals Come to Indian Wells Tennis Garden, Nov. 8–15, 2026." I added a WTA Finals section to `bnp-paribas-indian-wells-where-to-stay`, sourced from WTA's own ticket guide (dates, Stadium 2, session prices from $75 to $130), with Terra Luz pool heat and the Cozy Cactus hot tub as the stay angle. Committed as c41b2c65. Nothing was copied from PSL.
+
+**Hero image full inventory** (overdue since 2026-10-01) ran in commit cfd9e16a. It added or adjusted `heroPosition` on `palm-springs-aerial-tram`, `palm-springs-bachelorette-guide`, `palm-springs-midcentury-architecture` and `terra-luz-what-i-built`, and rewrote two heroAlts to match the actual photo.
+
+**Technical:** 0 internal broken links, 0 HIGH/MEDIUM alt text, 0 orphans. Four pages are weakly linked: `best-ice-cream-coachella-valley`, `best-wine-bars-palm-springs`, `box-canyon-sheep-hole-oasis-hike`, `/vacation-rentals/palm-springs/`. The weekly external pass (last run 2026-10-08) flagged 44, but a browser-UA retest cleared pstramway.com, psmodcom.org, the Berger Iceplex, Mole Kitchen, Sparrows, the Sands, the Golf Bar and CDMoD. PSL and West Elm block bots. Five links are still down from the 10-08 list or new: `onestoptacoshop.com` (521), `triopalmsprings.com`, `quadz.bar`, `villagepubps.com`, `cartelcoffee.com`. Check these in a real browser before changing anything. Note that the scripts need the google-workspace venv python (bs4) and `/opt/homebrew/bin` on PATH for npm.
+
+**audit-website:** commit 61c88270 fixed 3 CRITICAL issues. It removed a fixed "$50-150 saving" claim in `beyond-coachella-desert-escape`, and it corrected the claims that the Sundune is walkable to the CV Link trailhead (`palm-springs-running-trails`) and to the architecture walk zone (`palm-springs-weekend-itinerary`). It also fixed 2 HIGH items. The remaining HIGH (parking sentence stacking in `terra-luz-what-i-built`) was fixed in this commit. About 110 MEDIUM findings are queued unfixed, mostly caption stacking and "Honest" in titles. The `pet-friendly-palm-springs.md:180` Sundune pet fee says "applied at checkout" instead of $150, and `indian-palms-vacation-rental.md:166` leaves out the email-first step for dogs.
+
+**Cron health:** the Cron Log shows 9 of 11 expected rows missing for 10-31 to 11-02. The launchd logs show those jobs did fire but died with `API Error: 502 upstream ... i/o timeout` from the inference gateway (exit=1). That's an infrastructure outage, not a scheduling problem. The 11-02 Daily Briefing and Bookings Sprint exited 0.
+
+**Hero yes/no for Eann (from the 2026-11-03 inventory; 109 heroes audited):** (1) `pet-friendly-palm-springs` uses a Cozy Cactus backyard photo, and Cozy Cactus doesn't allow pets; (2) `sundune-palm-springs-review` hero is a Heyday hotel photo, not the Sundune; (3) `classpass-palm-springs` and `desert-dog-summer` heroes show visible Unsplash+ watermarks, a licensing problem; (4) `terra-luz-kitchen-dining` shows the patio instead of the kitchen; (5) `palm-springs-art-galleries-guide` shows Tropicale, a restaurant; (6) the near-black night hero on `where-to-stay-coachella-2026`; (7) the pixelated map crop on `coachella-valley-weekend-getaway`; (8) move `terra-luz-cali-room-bedroom` to 70%; (9) four posts share one cocktail photo, so `palm-springs-poolside-bars-resort-dining` needs its own.
