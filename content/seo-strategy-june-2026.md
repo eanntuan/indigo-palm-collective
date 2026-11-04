@@ -3524,3 +3524,19 @@ Housekeeping: dropped `stash@{0}` (2026-11-02 autostash). Its only content was t
 **Cron health:** the Cron Log shows 9 of 11 expected rows missing for 10-31 to 11-02. The launchd logs show those jobs did fire but died with `API Error: 502 upstream ... i/o timeout` from the inference gateway (exit=1). That's an infrastructure outage, not a scheduling problem. The 11-02 Daily Briefing and Bookings Sprint exited 0.
 
 **Hero yes/no for Eann (from the 2026-11-03 inventory; 109 heroes audited):** (1) `pet-friendly-palm-springs` uses a Cozy Cactus backyard photo, and Cozy Cactus doesn't allow pets; (2) `sundune-palm-springs-review` hero is a Heyday hotel photo, not the Sundune; (3) `classpass-palm-springs` and `desert-dog-summer` heroes show visible Unsplash+ watermarks, a licensing problem; (4) `terra-luz-kitchen-dining` shows the patio instead of the kitchen; (5) `palm-springs-art-galleries-guide` shows Tropicale, a restaurant; (6) the near-black night hero on `where-to-stay-coachella-2026`; (7) the pixelated map crop on `coachella-valley-weekend-getaway`; (8) move `terra-luz-cali-room-bedroom` to 70%; (9) four posts share one cocktail photo, so `palm-springs-poolside-bars-resort-dining` needs its own.
+
+### babysit-seo run 2026-11-04 (Daily SEO Sprint)
+
+**GSC (90d, 2026-08-05 to 2026-11-02):** 853 clicks, 92,461 impressions, 0.9% CTR, avg position 9.6 (+547 clicks vs prior). Mobile CTR 1.1%, desktop 0.7%. "how far is indio from palm springs" is still 1,001 imps at 0.6% CTR, pos 4.6. The 14-day re-check of the 2026-10-08 retitle is due 2026-11-05. `bnp-paribas-open-palm-springs` and `pioneertown-day-trip-from-indio` stay title/meta candidates, but their query rows are too sparse to justify an edit yet, so none was made.
+
+**GSC alert emails:** the only new one is the October performance digest (11-03). No open deficiencies.
+
+**Pinterest (30d API):** 1,297 impressions, 3 saves, 39 pin clicks, 8 outbound clicks. No new pins have been posted, so it is declining. Links stay on Airbnb. PIN-5 is still Eann's.
+
+**GA4 (7d):** 255 active users (+18), 292 sessions, 79s avg session (-24s). Organic Search 181, Direct 83, AI Assistant 6. No page has 50+ views with over 60% bounce.
+
+**Technical:** 0 broken internal links, 0 HIGH/MEDIUM alt text, 3 LOW missing lazy (`casa-moto-pet-friendly-desert`, `best-vacation-rentals-pool-coachella-valley`, `coachella-valley-weekend-getaway`). The 2 orphans flagged HIGH (`best-restaurants-near-coachella`, `things-to-do-palm-springs`) are `redirectTo` stubs. The uncommitted sitemap entries for them were discarded, as the 11-03 run said to do.
+
+**audit-website:** 0 em dashes, 0 banned phrases, 0 fee or distance errors. One CRITICAL fixed: `cozy-cactus-origin-story` said the shared pools need no heating from March to November, but they are heated November through April. The audit also found 4 Sundune "walk" mentions, which are all about the pool or "short drive" wording and are fine.
+
+**Rachel / PSL / Hero:** not rerun, since the 11-03 run covered them and the hero yes/no list is still open for Eann.
