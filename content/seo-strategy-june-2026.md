@@ -3540,3 +3540,21 @@ Housekeeping: dropped `stash@{0}` (2026-11-02 autostash). Its only content was t
 **audit-website:** 0 em dashes, 0 banned phrases, 0 fee or distance errors. One CRITICAL fixed: `cozy-cactus-origin-story` said the shared pools need no heating from March to November, but they are heated November through April. The audit also found 4 Sundune "walk" mentions, which are all about the pool or "short drive" wording and are fine.
 
 **Rachel / PSL / Hero:** not rerun, since the 11-03 run covered them and the hero yes/no list is still open for Eann.
+
+### babysit-seo run 2026-11-08 (Daily SEO Sprint)
+
+**BLOCKED: GSC and GA4.** Both fail with 403 "insufficient authentication scopes". `~/.claude/google_credentials.json` was rewritten 2026-11-08 15:18, and its scopes now cover only Gmail/Docs/Sheets/Drive/Slides/Calendar/Tasks/Meet. `webmasters.readonly` and `analytics.readonly` are gone. Eann needs to run `reauth_google.py` (see the babysit-seo skill), signed in as eann.tuan@gmail.com. The re-check of "how far is indio from palm springs" (due 2026-11-05) is still pending until that's done.
+
+**GSC alert emails:** 0 in the last 6 days. No open deficiencies.
+
+**Pinterest (30d API):** 1,318 impressions, 3 saves, 44 pin clicks, 9 outbound. Interior Design (664) and Cozy cactus instagram (377) carry the account, and the cadence is still zero new pins. Links stay on Airbnb, and PIN-5 is still Eann's.
+
+**Rachel:** the newest item is still 2026-10-07. Nothing new.
+
+**PSL feed:** live, 11 items since 11-02. The Pride/Arenas District piece (11-04) is already covered by `palm-springs-lgbtq-guide`, and Pride weekend ends today, so I made no edit. Adobe Grill (La Quinta Resort) and rePlay at the Plaza Theatre are weak fits, so I skipped them. The WTA Finals section went in on 11-03.
+
+**Hero:** not rerun. The 11-03 inventory is current and its 9 yes/no items are still open for Eann.
+
+**Technical:** 0 broken internal links and 0 HIGH/MEDIUM alt text. The 3 LOW missing-lazy images are unchanged. Commit 4f7d2184 had re-added four `redirectTo` stubs to `sitemap.xml` (`best-restaurants-near-coachella`, `bnp-paribas-open-vacation-rental-guide`, `things-to-do-palm-springs`, `where-to-stay-coachella-2026`). That's the same regression the 11-02/11-03/11-04 runs dropped, so I removed them again. Whatever re-adds them needs a fix that skips `layout: redirect.njk` files.
+
+**audit-website:** 0 em dashes, 0 banned phrases (the "oasis" hits are all literal palm oases or trail names), and 0 fee or Polo-distance errors. I fixed one CRITICAL: `pet-friendly-palm-springs` gave the Sundune pet fee as "applied at checkout", and it now says $150 per pet, per stay. MEDIUM for Eann: `booking-flow.html:612` says "unauthorized pet fee of $150 per night" for Cozy Cactus violations. That's a penalty clause and differs from the pet fee, so I left it as is. Copy changed since 11-04: only `booking-widget.html` and `checkout.html` (the merged PR #2 pricing config), with no prose changes.
