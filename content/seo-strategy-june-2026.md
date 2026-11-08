@@ -3543,9 +3543,9 @@ Housekeeping: dropped `stash@{0}` (2026-11-02 autostash). Its only content was t
 
 ### babysit-seo run 2026-11-08 (Daily SEO Sprint)
 
-**BLOCKED: GSC and GA4.** Both fail with 403 "insufficient authentication scopes". `~/.claude/google_credentials.json` was rewritten 2026-11-08 15:18, and its scopes now cover only Gmail/Docs/Sheets/Drive/Slides/Calendar/Tasks/Meet. `webmasters.readonly` and `analytics.readonly` are gone. Eann needs to run `reauth_google.py` (see the babysit-seo skill), signed in as eann.tuan@gmail.com. The re-check of "how far is indio from palm springs" (due 2026-11-05) is still pending until that's done.
+**BLOCKED: GSC, GA4, Sheets, and the GSC email search.** `~/.claude/google_credentials.json` was overwritten 2026-11-08 15:18 with an **etuan@netflix.com** token on the Netflix OAuth client (687323208640), not the eann.tuan@gmail.com token on `noted-throne-488421-v4`. GSC and GA4 return 403 insufficient scopes, and the Indigo Palm Sheet returns 403 "caller does not have permission", so the Cron Log row and cron-health check could not run. `google_credentials.bak.json` and `google_credentials_netflix.json` are both Netflix-client tokens too, so there is nothing to restore. This is the second time a Netflix workspace setup has written over the shared path. Eann needs to run `reauth_google.py` (see the babysit-seo skill), signed in as eann.tuan@gmail.com. The re-check of "how far is indio from palm springs" (due 2026-11-05) is still pending until that's done.
 
-**GSC alert emails:** 0 in the last 6 days. No open deficiencies.
+**GSC alert emails:** invalid this run. The search went to the Netflix inbox. Rerun after reauth.
 
 **Pinterest (30d API):** 1,318 impressions, 3 saves, 44 pin clicks, 9 outbound. Interior Design (664) and Cozy cactus instagram (377) carry the account, and the cadence is still zero new pins. Links stay on Airbnb, and PIN-5 is still Eann's.
 
