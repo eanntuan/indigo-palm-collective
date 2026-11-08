@@ -30,7 +30,7 @@ export const PROPERTIES = {
     bathrooms: 2,
     maxGuests: 8,
     minNights: 2,
-    basePrice: 225,
+    basePrice: 275,
     cleaningFee: 250,
     taxRate: 0.12,
     airbnbListingId: '716871660845992276',

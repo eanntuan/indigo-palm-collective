@@ -16,7 +16,7 @@
   },
   "casa-moto": {
     "name": "Casa Moto",
-    "basePrice": 225,
+    "basePrice": 275,
     "cleaningFee": 250,
     "taxRate": 0.12,
     "maxGuests": 8,
@@ -45,7 +45,7 @@
     "cleaningFee": 200,
     "taxRate": 0.135,
     "maxGuests": 2,
-    "minNights": 2,
+    "minNights": 28,
     "peakDates": [
       { "start": "2026-04-10", "end": "2026-04-20", "multiplier": 1.4, "label": "Coachella Weekend 1" },
       { "start": "2026-04-17", "end": "2026-04-27", "multiplier": 1.4, "label": "Coachella Weekend 2" },

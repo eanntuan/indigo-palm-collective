@@ -750,7 +750,10 @@ async function fetchPriceLabsData(propertyId, checkIn, checkOut, env, plPriceMap
         }
         const arrivalDay = listing.data.find(d => d.date === checkIn);
         if (arrivalDay?.min_stay != null) {
-          effectiveMinNights = arrivalDay.min_stay;
+          // strictMinNights (The Well): the static minimum is a floor PriceLabs can raise but not lower.
+          effectiveMinNights = config.strictMinNights
+            ? Math.max(config.minNights, arrivalDay.min_stay)
+            : arrivalDay.min_stay;
         }
       }
     }

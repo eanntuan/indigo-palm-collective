@@ -16,7 +16,8 @@ export const PROPERTY_CONFIG = {
   // 18% applied once to accommodation + cleaning. 18% is the owner-configured
   // rate, not a verified statutory rate.
   'ps-retreat':  { basePrice: 300, cleaningFee: 200, taxRate: 0.18,  maxGuests: 4, minNights: 4, pricingMode: 'flat' },
-  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 2, minNights: 2 },
+  // The Well: long-term only. 28 nights is a hard floor that PriceLabs cannot lower.
+  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 2, minNights: 28, strictMinNights: true },
 };
 
 export const PEAK_DATES = [
