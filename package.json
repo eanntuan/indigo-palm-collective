@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "netlify dev",
     "build": "eleventy --input=content/blog --output=blog",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/*.test.mjs",
     "deploy": "netlify deploy --prod"
   },
   "dependencies": {

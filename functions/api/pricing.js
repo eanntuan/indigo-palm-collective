@@ -15,15 +15,17 @@ const CORS_HEADERS = {
 const PRICELABS_LISTINGS = {
   'cozy-cactus': { id: '123646',             pms: 'hostaway'  },
   'casa-moto':   { id: '123633',             pms: 'hostaway'  },
-  'ps-retreat':  { id: '1470484',            pms: 'smartbnb'  },
+  // ps-retreat (The Sundune) intentionally omitted: flat pricing, never queries PriceLabs.
   'the-well':    { id: '868862893900280104', pms: 'airbnb'    },
 };
 
 // Static fallback config (used when PriceLabs sync is off or API fails)
 const PROPERTY_CONFIG = {
-  'cozy-cactus': { basePrice: 250, cleaningFee: 150, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
-  'casa-moto':   { basePrice: 275, cleaningFee: 150, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
-  'ps-retreat':  { basePrice: 225, cleaningFee: 150, taxRate: 0.135, maxGuests: 4, minNights: 4 },
+  'cozy-cactus': { basePrice: 250, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
+  'casa-moto':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
+  // The Sundune: flat $300/night every night, $200 cleaning, 18% (owner-configured)
+  // applied once to accommodation + cleaning. No PriceLabs, no peak multipliers.
+  'ps-retreat':  { basePrice: 300, cleaningFee: 200, taxRate: 0.18,  maxGuests: 4, minNights: 4, pricingMode: 'flat' },
   'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 2, minNights: 2 },
 };
 
@@ -42,13 +44,14 @@ export async function onRequestGet({ request, env }) {
   const checkIn = url.searchParams.get('checkIn');
   const checkOut = url.searchParams.get('checkOut');
 
-  if (!propertyId || !PRICELABS_LISTINGS[propertyId] || !checkIn || !checkOut) {
+  if (!propertyId || !PROPERTY_CONFIG[propertyId] || !checkIn || !checkOut) {
     return new Response(JSON.stringify({ success: false, error: 'Missing required params' }), {
       status: 400, headers: CORS_HEADERS,
     });
   }
 
   const config = PROPERTY_CONFIG[propertyId];
+  const flat = config.pricingMode === 'flat';
   const start = new Date(checkIn + 'T00:00:00');
   const end = new Date(checkOut + 'T00:00:00');
   const nights = Math.round((end - start) / (1000 * 60 * 60 * 24));
@@ -69,7 +72,7 @@ export async function onRequestGet({ request, env }) {
   const pl = PRICELABS_LISTINGS[propertyId];
   let plPriceMap = null;
 
-  try {
+  if (!flat && pl) try {
     const plRes = await fetch('https://api.pricelabs.co/v1/listing_prices', {
       method: 'POST',
       headers: {
@@ -111,7 +114,10 @@ export async function onRequestGet({ request, env }) {
     let peakLabel = null;
     let source = 'pricelabs';
 
-    if (plPriceMap && plPriceMap[dateStr] != null) {
+    if (flat) {
+      rate = config.basePrice;
+      source = 'flat';
+    } else if (plPriceMap && plPriceMap[dateStr] != null) {
       rate = plPriceMap[dateStr];
     } else {
       // Fallback: base price + peak multipliers
@@ -132,8 +138,12 @@ export async function onRequestGet({ request, env }) {
   }
 
   const cleaningFee = config.cleaningFee;
-  const taxAmount = (subtotal + cleaningFee) * config.taxRate;
-  const total = subtotal + cleaningFee + taxAmount;
+  let taxAmount = (subtotal + cleaningFee) * config.taxRate;
+  let total = subtotal + cleaningFee + taxAmount;
+  if (flat) {
+    taxAmount = Math.round(taxAmount * 100) / 100;
+    total = Math.round((subtotal + cleaningFee + taxAmount) * 100) / 100;
+  }
 
   return new Response(JSON.stringify({
     success: true,
@@ -145,7 +155,7 @@ export async function onRequestGet({ request, env }) {
       taxRate: config.taxRate,
       taxAmount,
       total,
-      source: plPriceMap ? 'pricelabs' : 'fallback',
+      source: flat ? 'flat' : (plPriceMap ? 'pricelabs' : 'fallback'),
     },
   }), { status: 200, headers: CORS_HEADERS });
 }

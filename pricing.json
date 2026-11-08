@@ -31,17 +31,13 @@
   },
   "ps-retreat": {
     "name": "The Sundune at Palm Springs",
-    "basePrice": 280,
+    "basePrice": 300,
     "cleaningFee": 200,
-    "taxRate": 0.135,
+    "taxRate": 0.18,
     "maxGuests": 4,
     "minNights": 4,
-    "peakDates": [
-      { "start": "2026-04-10", "end": "2026-04-20", "multiplier": 1.4, "label": "Coachella Weekend 1" },
-      { "start": "2026-04-17", "end": "2026-04-27", "multiplier": 1.4, "label": "Coachella Weekend 2" },
-      { "start": "2026-11-25", "end": "2026-11-30", "multiplier": 1.2, "label": "Thanksgiving" },
-      { "start": "2026-12-20", "end": "2027-01-04", "multiplier": 1.3, "label": "Holiday season" }
-    ]
+    "pricingMode": "flat",
+    "peakDates": []
   },
   "the-well": {
     "name": "The Well",
