@@ -296,23 +296,23 @@ describe('other properties keep their existing pricing', () => {
     }
   });
 
-  test('nightly base prices unchanged in every config', () => {
+  test('nightly base prices match in every config (Terra Luz $275)', () => {
     assert.deepEqual(
       Object.fromEntries(Object.entries(PROPERTY_CONFIG).map(([k, v]) => [k, v.basePrice])),
       { 'cozy-cactus': 250, 'terra-luz': 275, 'casa-moto': 275, 'ps-retreat': 300, 'the-well': 300 },
     );
     assert.equal(PROPERTIES['cozy-cactus'].basePrice, 250);
-    assert.equal(PROPERTIES['terra-luz'].basePrice, 225);
+    assert.equal(PROPERTIES['terra-luz'].basePrice, 275);
     assert.equal(PROPERTIES['the-well'].basePrice, 300);
     const json = JSON.parse(readFileSync(path.join(ROOT, 'pricing.json'), 'utf8'));
     assert.equal(json['cozy-cactus'].basePrice, 250);
-    assert.equal(json['casa-moto'].basePrice, 225);
+    assert.equal(json['casa-moto'].basePrice, 275);
     assert.equal(json['the-well'].basePrice, 300);
     assert.equal(json['cozy-cactus'].peakDates.length, 5);
     for (const f of ['booking-widget.html', 'checkout.html']) {
       const p = htmlProperties(f);
       assert.equal(p['cozy-cactus'].basePrice, 250);
-      assert.equal(p['casa-moto'].basePrice, 225);
+      assert.equal(p['casa-moto'].basePrice, 275);
       assert.equal(p['the-well'].basePrice, 300);
       assert.equal(p['the-well'].cleaningFee, 200);
       assert.equal(p['the-well'].taxRate, 0.135);
@@ -353,10 +353,11 @@ describe('other properties keep their existing pricing', () => {
     assert.equal(tl.body.pricing.subtotal, 1925);
     assert.equal(tl.body.pricing.total, oldTotal(1925, 250, 0.12));
 
-    const tw = await workerPricing('the-well', '2027-02-28', '2027-03-07');
-    assert.equal(tw.body.pricing.subtotal, 2100);
+    const tw = await workerPricing('the-well', '2027-03-01', '2027-03-29'); // 28 nights
+    assert.equal(tw.status, 200);
+    assert.equal(tw.body.pricing.subtotal, 8400);
     assert.equal(tw.body.pricing.cleaningFee, 200);
-    assert.equal(tw.body.pricing.total, oldTotal(2100, 200, 0.135));
+    assert.equal(tw.body.pricing.total, oldTotal(8400, 200, 0.135));
   });
 
   test('Pages Function still applies PriceLabs/peaks for Cozy Cactus', async () => {
@@ -376,5 +377,71 @@ describe('other properties keep their existing pricing', () => {
     assert.equal(q.subtotal, 750);
     assert.equal(q.cleaningFee, 250);
     assert.equal(q.total, oldTotal(750, 250, 0.12));
+  });
+});
+
+// ── The Well: 28-night minimum ───────────────────────────────────────────────
+
+describe('The Well 28-night minimum', () => {
+  test('28 in every config', () => {
+    const json = JSON.parse(readFileSync(path.join(ROOT, 'pricing.json'), 'utf8'));
+    assert.equal(PROPERTY_CONFIG['the-well'].minNights, 28);
+    assert.equal(PROPERTIES['the-well'].minNights, 28);
+    assert.equal(json['the-well'].minNights, 28);
+    assert.equal(htmlProperties('booking-widget.html')['the-well'].minNights, 28);
+  });
+
+  test('worker rejects 27 nights (PriceLabs down) and accepts 28', async () => {
+    const short = await workerPricing('the-well', '2027-03-01', '2027-03-28');
+    assert.equal(short.status, 400);
+    assert.match(short.body.error, /Minimum stay is 28 nights/);
+    const ok = await workerPricing('the-well', '2027-03-01', '2027-03-29');
+    assert.equal(ok.status, 200);
+  });
+
+  test('PriceLabs cannot lower The Well below 28 nights, but can raise it', async () => {
+    let minStay = 2;
+    priceLabsResponder = (l) => ({
+      id: l.id,
+      data: eachDate(l.dateFrom, l.dateTo).map(date => ({ date, price: 300, min_stay: minStay })),
+    });
+    const short = await workerPricing('the-well', '2027-03-01', '2027-03-04');
+    assert.equal(short.status, 400);
+    assert.match(short.body.error, /Minimum stay is 28 nights/);
+
+    minStay = 30;
+    const raised = await workerPricing('the-well', '2027-03-01', '2027-03-29');
+    assert.equal(raised.status, 400);
+    assert.match(raised.body.error, /Minimum stay is 30 nights/);
+  });
+
+  test('booking request for a short The Well stay is rejected', async () => {
+    const req = new Request('https://indigopalm.co/api/booking', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        property: 'The Well', propertyId: 'the-well',
+        checkIn: '2027-03-01', checkOut: '2027-03-08',
+        name: 'Test Guest', email: 'guest@example.com', phone: '555-0100',
+      }),
+    });
+    const res = await worker.fetch(req, ENV, { waitUntil() {} });
+    assert.equal(res.status, 400);
+    assert.match((await res.json()).error, /Minimum stay is 28 nights/);
+  });
+
+  test('Pages Function rejects 27 nights for The Well', async () => {
+    const p = await pagesFnPricing('the-well', '2027-03-01', '2027-03-28');
+    assert.equal(p.status, 400);
+    assert.match(p.body.error, /Minimum stay is 28 nights/);
+  });
+
+  test('Terra Luz still lets PriceLabs lower its minimum (unchanged)', async () => {
+    priceLabsResponder = (l) => ({
+      id: l.id,
+      data: eachDate(l.dateFrom, l.dateTo).map(date => ({ date, price: 300, min_stay: 1 })),
+    });
+    const one = await workerPricing('terra-luz', '2027-03-01', '2027-03-02');
+    assert.equal(one.status, 200);
   });
 });

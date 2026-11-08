@@ -26,7 +26,7 @@ const PROPERTY_CONFIG = {
   // The Sundune: flat $300/night every night, $200 cleaning, 18% (owner-configured)
   // applied once to accommodation + cleaning. No PriceLabs, no peak multipliers.
   'ps-retreat':  { basePrice: 300, cleaningFee: 200, taxRate: 0.18,  maxGuests: 4, minNights: 4, pricingMode: 'flat' },
-  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 2, minNights: 2 },
+  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 2, minNights: 28 },
 };
 
 // Fallback peak multipliers — only used when PriceLabs is unavailable
