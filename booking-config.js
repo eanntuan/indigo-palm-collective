@@ -45,9 +45,12 @@ export const PROPERTIES = {
     bathrooms: 2,
     maxGuests: 4,
     minNights: 4,
-    basePrice: 180,
+    // Flat $300/night, no seasonal/peak pricing. 18% is the owner-configured
+    // rate applied once to accommodation + cleaning.
+    basePrice: 300,
     cleaningFee: 200,
-    taxRate: 0.135,
+    taxRate: 0.18,
+    pricingMode: 'flat',
     airbnbListingId: '1171049679026732503',
     availabilitySource: 'ical'
   },
@@ -77,8 +80,12 @@ export function calculateBookingPrice(propertyId, checkIn, checkOut, guests) {
 
   const subtotal = property.basePrice * nights;
   const cleaningFee = property.cleaningFee;
-  const taxAmount = (subtotal + cleaningFee) * property.taxRate;
-  const total = subtotal + cleaningFee + taxAmount;
+  let taxAmount = (subtotal + cleaningFee) * property.taxRate;
+  let total = subtotal + cleaningFee + taxAmount;
+  if (property.pricingMode === 'flat') {
+    taxAmount = Math.round(taxAmount * 100) / 100;
+    total = Math.round((subtotal + cleaningFee + taxAmount) * 100) / 100;
+  }
 
   return {
     nights,

@@ -11,6 +11,8 @@
 //   wrangler secret put RESEND_API_KEY
 //   wrangler secret put ADMIN_DEBUG_KEY   (gates /inbox + internal debug/test endpoints)
 
+import { PROPERTY_CONFIG, isFlatPricing, buildQuote, calcCardFee, countNights } from './pricing-core.js';
+
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
@@ -49,7 +51,7 @@ const PRICELABS_LISTINGS = {
   'cozy-cactus': { id: '123646',             pms: 'hostaway' },
   'terra-luz':   { id: '123633',             pms: 'hostaway' },
   'casa-moto':   { id: '123633',             pms: 'hostaway' },
-  'ps-retreat':  { id: '1470484',            pms: 'smartbnb' },
+  // ps-retreat (The Sundune) intentionally omitted: flat pricing, never queries PriceLabs.
   'the-well':    { id: '868862893900280104', pms: 'airbnb'   },
 };
 
@@ -130,21 +132,7 @@ const PROPERTY_URL_SLUGS = {
   'the-well':    'the-well',
 };
 
-const PROPERTY_CONFIG = {
-  'cozy-cactus': { basePrice: 250, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
-  'terra-luz':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
-  'casa-moto':   { basePrice: 275, cleaningFee: 250, taxRate: 0.12,  maxGuests: 8, minNights: 2 },
-  'ps-retreat':  { basePrice: 280, cleaningFee: 200, taxRate: 0.135, maxGuests: 4, minNights: 4 },
-  'the-well':    { basePrice: 300, cleaningFee: 200, taxRate: 0.135, maxGuests: 2, minNights: 2 },
-};
-
-const PEAK_DATES = [
-  { start: '2026-04-10', end: '2026-04-20', multiplier: 1.5, label: 'Coachella W1' },
-  { start: '2026-04-17', end: '2026-04-27', multiplier: 1.5, label: 'Coachella W2' },
-  { start: '2026-04-24', end: '2026-05-04', multiplier: 1.3, label: 'Stagecoach'   },
-  { start: '2026-11-25', end: '2026-11-30', multiplier: 1.2, label: 'Thanksgiving' },
-  { start: '2026-12-20', end: '2027-01-04', multiplier: 1.3, label: 'Holiday'      },
-];
+// PROPERTY_CONFIG and PEAK_DATES live in ./pricing-core.js (shared with tests).
 
 // Property-specific story beats — used in automated emails to paint a picture
 // of what's waiting. Confirmed = after payment. Welcome = 2 days before.
@@ -738,6 +726,9 @@ async function fetchPriceLabsData(propertyId, checkIn, checkOut, env, plPriceMap
   const pl = PRICELABS_LISTINGS[propertyId];
   let effectiveMinNights = config.minNights;
 
+  // Flat-priced properties (The Sundune) never call PriceLabs: static minNights.
+  if (isFlatPricing(propertyId) || !pl) return effectiveMinNights;
+
   try {
     const plRes = await fetch('https://api.pricelabs.co/v1/listing_prices', {
       method: 'POST',
@@ -781,10 +772,7 @@ async function handlePricing(url, env) {
     });
   }
 
-  const config = PROPERTY_CONFIG[propertyId];
-  const start  = new Date(checkIn  + 'T00:00:00');
-  const end    = new Date(checkOut + 'T00:00:00');
-  const nights = Math.round((end - start) / (1000 * 60 * 60 * 24));
+  const nights = countNights(checkIn, checkOut);
 
   if (nights < 1) {
     return new Response(JSON.stringify({ success: false, error: 'Invalid date range' }), {
@@ -802,40 +790,11 @@ async function handlePricing(url, env) {
     });
   }
 
-  // Build per-night breakdown
-  const nightly = [];
-  let subtotal = 0;
-  const cur = new Date(start);
-
-  for (let i = 0; i < nights; i++) {
-    const dateStr = cur.toISOString().split('T')[0];
-    let rate, peakLabel = null;
-
-    if (plPriceMap && plPriceMap[dateStr] != null) {
-      rate = plPriceMap[dateStr];
-    } else {
-      let multiplier = 1;
-      for (const peak of PEAK_DATES) {
-        if (dateStr >= peak.start && dateStr < peak.end && peak.multiplier > multiplier) {
-          multiplier = peak.multiplier;
-          peakLabel = peak.label;
-        }
-      }
-      rate = Math.round(config.basePrice * multiplier);
-    }
-
-    subtotal += rate;
-    nightly.push({ date: dateStr, rate, peakLabel });
-    cur.setDate(cur.getDate() + 1);
-  }
-
-  const cleaningFee = config.cleaningFee;
-  const taxAmount   = (subtotal + cleaningFee) * config.taxRate;
-  const total       = subtotal + cleaningFee + taxAmount;
+  const pricing = buildQuote(propertyId, checkIn, checkOut, hasPlData ? plPriceMap : null);
 
   return new Response(JSON.stringify({
     success: true,
-    pricing: { nights, nightly, subtotal, cleaningFee, taxRate: config.taxRate, taxAmount, total },
+    pricing,
   }), { status: 200, headers: CORS_HEADERS });
 }
 
@@ -1182,7 +1141,7 @@ async function handleApprove(request, env) {
     : { total: finalTotal, nights: 0, subtotal: finalTotal, cleaningFee: 0, taxRate: 0, taxAmount: 0 };
 
   // Generate Square payment link (includes 3% CC fee as line item)
-  const ccFee = Math.round(finalTotal * 0.03 * 100) / 100;
+  const ccFee = calcCardFee(finalTotal);
   const ccTotal = finalTotal + ccFee;
 
   let paymentLink = null;
