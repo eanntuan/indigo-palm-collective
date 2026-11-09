@@ -86,3 +86,40 @@ export async function copyToGmailSent(env, message) {
 }
 
 export const _resetGmailTokenCache = () => { cached = { token: null, exp: 0 }; };
+
+// Admin-only diagnostic: runs the token refresh and one real insert and reports exactly
+// where it fails. Never returns tokens or secrets.
+export async function diagnoseGmailSent(env) {
+  const out = { configured: gmailSentConfigured(env), have: {
+    GOOGLE_CLIENT_ID: !!env.GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET: !!env.GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN: !!env.GOOGLE_REFRESH_TOKEN,
+  } };
+  if (!out.configured) return out;
+  const rt = String(env.GOOGLE_REFRESH_TOKEN);
+  out.refreshTokenLooksRight = rt.startsWith('1//');
+  out.refreshTokenLength = rt.length;
+  out.hasWhitespace = { id: /\s/.test(env.GOOGLE_CLIENT_ID), secret: /\s/.test(env.GOOGLE_CLIENT_SECRET), token: /\s/.test(rt) };
+  _resetGmailTokenCache();
+  let token;
+  try {
+    const res = await fetch(TOKEN_URL, {
+      method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ client_id: env.GOOGLE_CLIENT_ID, client_secret: env.GOOGLE_CLIENT_SECRET, refresh_token: rt, grant_type: 'refresh_token' }),
+    });
+    const j = await res.json().catch(() => ({}));
+    out.token = { status: res.status, ok: res.ok && !!j.access_token, error: j.error || null, error_description: j.error_description || null, scope: j.scope || null };
+    token = j.access_token;
+  } catch (e) { out.token = { ok: false, error: String(e.message || e) }; }
+  if (!token) return out;
+  try {
+    const raw = buildRawMessage({
+      from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>', to: 'guest-test@example.com',
+      subject: 'Test: Gmail Sent copy from the Worker', html: '<p>If you can read this in Sent, the Gmail Sent copy works.</p>',
+    });
+    const res = await fetch(INSERT_URL, {
+      method: 'POST', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ raw: b64url(raw), labelIds: ['SENT'] }),
+    });
+    out.insert = { status: res.status, ok: res.ok, body: (await res.text()).slice(0, 400) };
+  } catch (e) { out.insert = { ok: false, error: String(e.message || e) }; }
+  return out;
+}

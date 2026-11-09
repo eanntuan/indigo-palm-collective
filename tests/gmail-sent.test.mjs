@@ -30,3 +30,17 @@ test('header injection through guest-supplied values is neutralised', () => {
   const head = raw.split('\r\n\r\n')[0];
   assert.doesNotMatch(head, /^Bcc:/m);
 });
+
+import { diagnoseGmailSent } from '../api-worker/gmail-sent.js';
+
+test('diagnostic reports a bad refresh token without leaking secrets', async () => {
+  const real = globalThis.fetch;
+  globalThis.fetch = async () => new Response(JSON.stringify({ error: 'invalid_grant', error_description: 'Bad Request' }), { status: 400 });
+  try {
+    const out = await diagnoseGmailSent({ GOOGLE_CLIENT_ID: 'cid', GOOGLE_CLIENT_SECRET: 'SECRET-VALUE', GOOGLE_REFRESH_TOKEN: '04abc' });
+    assert.equal(out.refreshTokenLooksRight, false);
+    assert.equal(out.token.ok, false);
+    assert.equal(out.token.error, 'invalid_grant');
+    assert.doesNotMatch(JSON.stringify(out), /SECRET-VALUE|04abc/);
+  } finally { globalThis.fetch = real; }
+});
