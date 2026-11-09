@@ -28,7 +28,7 @@ layout: blog-post.njk
 
 <p>This is that information.</p>
 
-<img src="/blog/images/coachella-valley-map.webp" alt="Map of the Coachella Valley showing Palm Springs, Cathedral City, Palm Desert, La Quinta, and Indio along Interstate 10 in Southern California" width="1440" height="990" loading="eager">
+<img src="/blog/images/coachella-valley-map.webp" loading="lazy" alt="Map of the Coachella Valley showing Palm Springs, Cathedral City, Palm Desert, La Quinta, and Indio along Interstate 10 in Southern California" width="1440" height="990" loading="eager">
 <p class="image-caption">The Coachella Valley runs about 45 miles from Cathedral City in the west to Coachella and Indio in the east. Palm Springs and Indio are the two most different ends of that spectrum.</p>
 
 <h2>When to Go</h2>
