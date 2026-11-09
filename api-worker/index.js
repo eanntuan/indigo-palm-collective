@@ -1562,7 +1562,7 @@ async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, paym
 
   // Send confirmation email to guest
   const heroUrl = await getPropertyHeroImageUrl(propertyId, env);
-  const html = buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes: note, heroUrl });
+  const html = buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes: note, heroUrl, securityDeposit: booking.securityDeposit || 0 });
 
   await sendEmail(env.RESEND_API_KEY, {
     from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
@@ -1588,6 +1588,7 @@ async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, paym
         ${detailRow('Check-out', fmtDate(checkOut))}
         ${detailRow('Nights', String(nights))}
         ${detailRow('Guests', String(guests))}
+        ${booking.securityDeposit > 0 && totalPaid > booking.securityDeposit ? detailRow('Includes security deposit', `$${booking.securityDeposit.toFixed(2)} (refund after checkout)`) : ''}
         ${detailRow('Total Paid', `$${totalPaid.toFixed(2)}`)}
         ${orderId ? detailRow('Square Order', orderId) : ''}
       </table>
@@ -1769,7 +1770,7 @@ async function createHostawayReservation(env, { propertyId, name, email, checkIn
   return data.result?.id ?? null;
 }
 
-function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl }) {
+function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl, securityDeposit = 0 }) {
   const firstName = name.split(' ')[0];
   const confirmedBeat = PROPERTY_STORY_BEATS[propertyId]?.confirmed || '';
 
@@ -1794,6 +1795,7 @@ function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nig
       ${detailRow('Check-out', fmtDate(checkOut))}
       ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
       ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
+      ${securityDeposit > 0 && parseFloat(totalPaid) > securityDeposit ? detailRow('Paid toward your stay', `$${(parseFloat(totalPaid) - securityDeposit).toFixed(2)}`) + detailRow('Refundable security deposit', `$${securityDeposit.toFixed(2)}`) : ''}
       ${detailRow('Total Paid', totalPaid ? `$${parseFloat(totalPaid).toFixed(2)}` : 'N/A')}
     </table>
 

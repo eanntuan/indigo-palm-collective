@@ -551,3 +551,18 @@ describe('security deposit', () => {
     assert.equal(cfg.json.amounts.firstCharge, 1397.71);
   });
 });
+
+describe('confirmation email shows the deposit on its own row', () => {
+  test('guest email splits stay payment and deposit; host email notes the refund', async () => {
+    await seedBooking();
+    await call('POST', '/api/approve', { id: 'bk1', token: 'hosttoken' });
+    const { payToken } = await getBooking();
+    await call('POST', '/api/autopay/enroll', { id: 'bk1', t: payToken, sourceId: 'cnon:x', plan: 'full' });
+    const html = emails.filter(e => /booked|desert is yours|Payment received/i.test(e.html) && String(e.to).includes('jennifer@')).pop().html;
+    assert.match(html, /Paid toward your stay/);
+    assert.match(html, /\$2795\.42/);
+    assert.match(html, /Refundable security deposit/);
+    assert.match(html, /\$300\.00/);
+    assert.match(html, /Total Paid[\s\S]*\$3095\.42/);
+  });
+});
