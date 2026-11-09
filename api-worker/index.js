@@ -1236,13 +1236,13 @@ async function handleApprove(request, env) {
     ${paymentLink ? `
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;text-align:center;">
       <p style="margin:0 0 12px;font-size:13px;font-weight:600;color:#2C2C2C;">Credit Card via Square: ${cardTotal} (includes 3% fee)</p>
-      <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Pay by Card &rarr;</a>
+      <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:999px;letter-spacing:0.02em;">Pay by Card &rarr;</a>
     </div>` : ''}
     ${splitEligible ? `
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;text-align:center;">
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Prefer to split it? Pay by card in two parts</p>
       <p style="margin:0 0 14px;font-size:13px;color:#555;line-height:1.6;">Pay 50% now (${'$' + splitAmts.firstCharge.toFixed(2)}, includes 3% fee). We save your card and automatically charge the remaining 50% (${'$' + splitAmts.balanceCharge.toFixed(2)}, includes 3% fee) on ${fmtDate(splitDueDate)}, 60 days before check-in.</p>
-      <a href="${payLink(id, payToken)}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Split payment by card &rarr;</a>
+      <a href="${payLink(id, payToken)}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:999px;letter-spacing:0.02em;">Split payment by card &rarr;</a>
     </div>` : ''}
     ${notesToGuest ? `<div style="margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notesToGuest}</p></div>` : ''}
     <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or email <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
@@ -1877,7 +1877,7 @@ async function handleCreateLease(request, env) {
           ${detailRow('Total Due', `$${grandTotal}`)}
         </table>
         <div style="text-align:center;margin-bottom:28px;">
-          <a href="${leaseUrl}" style="display:inline-block;padding:14px 32px;background:#607c67;color:white;text-decoration:none;border-radius:8px;font-weight:600;font-size:15px;">Review and Sign Agreement &rarr;</a>
+          <a href="${leaseUrl}" style="display:inline-block;padding:14px 32px;background:#607c67;color:white;text-decoration:none;border-radius:999px;font-weight:600;font-size:15px;">Review and Sign Agreement &rarr;</a>
         </div>
         <p style="margin:0;font-size:13px;color:#aaa;text-align:center;">Questions? Reply here or email <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
       `),

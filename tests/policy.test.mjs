@@ -95,3 +95,14 @@ test('guest emails do not use a vertical accent bar on the host note', () => {
   assert.doesNotMatch(src, /\$\{notesToGuest \? `<div[^`]*border-left/);
   assert.doesNotMatch(src, /\$\{notes \? `<div[^`]*border-left/);
 });
+
+test('guest-facing buttons are pill shaped like the site buttons', () => {
+  const src = readFileSync(new URL('../api-worker/index.js', import.meta.url), 'utf8');
+  for (const label of ['Pay by Card', 'Split payment by card', 'Review and Sign Agreement']) {
+    const m = src.match(new RegExp(`<a [^>]*style="[^"]*"[^>]*>${label}`));
+    assert.ok(m, label);
+    assert.match(m[0], /border-radius:999px/, label);
+  }
+  const pay = readFileSync(new URL('../pay/index.html', import.meta.url), 'utf8');
+  assert.match(pay, /button \{[^}]*border-radius:999px/);
+});
