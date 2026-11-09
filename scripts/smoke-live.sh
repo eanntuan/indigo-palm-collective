@@ -35,4 +35,25 @@ for page in / /book-direct/ /booking-flow/; do
   check "page $page loads" $([ "$code" = 200 ] && echo 0 || echo 1) "HTTP $code"
 done
 
+# Liveness endpoint (public, returns only {"ok":true}).
+code=$(curl -s -o /tmp/ping.json -w '%{http_code}' "$BASE/api/ping")
+check "api ping responds ok" $([ "$code" = 200 ] && tr -d ' \n' < /tmp/ping.json | grep -q '"ok":true' && echo 0 || echo 1) "HTTP $code: $(head -c 120 /tmp/ping.json 2>/dev/null)"
+
+# www host also loads (follows redirects, e.g. www -> apex).
+code=$(curl -s -L -o /dev/null -w '%{http_code}' "https://www.${BASE#https://}/")
+check "www host loads" $([ "$code" = 200 ] && echo 0 || echo 1) "HTTP $code"
+
+# TLS certificate must have at least MIN_CERT_DAYS days left (read-only handshake).
+MIN_CERT_DAYS="${MIN_CERT_DAYS:-14}"
+HOST="${BASE#https://}"; HOST="${HOST%%/*}"
+enddate=$(openssl s_client -connect "$HOST:443" -servername "$HOST" </dev/null 2>/dev/null | openssl x509 -noout -enddate 2>/dev/null | sed -n 's/^notAfter=//p')
+end_epoch=""
+[ -n "$enddate" ] && end_epoch=$(date -d "$enddate" +%s 2>/dev/null || true)
+if [ -z "$end_epoch" ]; then
+  check "TLS certificate expiry" 1 "could not read or parse certificate end date (got: '${enddate:-nothing}')"
+else
+  days=$(( (end_epoch - $(date +%s)) / 86400 ))
+  check "TLS certificate has at least $MIN_CERT_DAYS days left" $([ "$days" -ge "$MIN_CERT_DAYS" ] && echo 0 || echo 1) "$days days left (expires $enddate)"
+fi
+
 exit $fail

@@ -24,6 +24,7 @@ import {
   toCents, idempotencyKey, consentText, autopayAction, graceDeadlineMs, isDefinitiveDecline,
   addDays,
 } from './autopay-core.js';
+import { pushAlert } from './alerts.js';
 
 const SQUARE_VERSION = '2024-01-18';
 const HOST_EMAIL = 'indigopalmco@gmail.com';
@@ -303,6 +304,7 @@ async function handleEnroll(request, env, deps) {
         html: deps.emailWrapper(`<p>The first 50% (${usd(amounts.firstCharge)}) was charged for booking ${esc(id)}, but confirming the booking failed: ${esc(confirmError)}. Please confirm it manually.</p>`),
       });
     } catch (e) { console.error(e); }
+    await pushAlert(env, deps, 'Payment taken, booking NOT confirmed', `${booking.name}: first 50% charged but confirmation failed. Confirm it manually.`);
   }
 
   return respond(deps, { success: true, firstCharge: amounts.firstCharge, balanceCharge: amounts.balanceCharge, dueDate, last4: rec.last4 });
@@ -361,6 +363,7 @@ async function handlePayInFull(request, env, deps, booking, sourceId) {
         html: deps.emailWrapper(`<p>${usd(amounts.charge)} was charged for booking ${esc(id)}, but confirming the booking failed: ${esc(confirmError)}. Please confirm it manually.</p>`),
       });
     } catch (e) { console.error(e); }
+    await pushAlert(env, deps, 'Payment taken, booking NOT confirmed', `${booking.name}: full payment charged but confirmation failed. Confirm it manually.`);
   }
   return respond(deps, { success: true, plan: 'full', charge: amounts.charge });
 }
@@ -429,7 +432,8 @@ async function chargeBalance(env, deps, rec, nowMs) {
   return rec;
 }
 
-async function notifyHost(env, deps, booking, rec, subject, htmlBody) {
+async function notifyHost(env, deps, booking, rec, subject, htmlBody, { push = true } = {}) {
+  if (push) await pushAlert(env, deps, subject, `${booking ? booking.name : rec.bookingId}: see your email for details.`);
   try {
     await deps.sendEmail(env.RESEND_API_KEY, {
       from: FROM, to: HOST_EMAIL,
@@ -573,7 +577,7 @@ export async function processAutopayCharges(env, deps, nowMs = Date.now()) {
           await saveRecord(env, rec);
           const stop = `${SITE}/api/autopay/cancel?key=${encodeURIComponent(env.ADMIN_DEBUG_KEY || '')}&id=${encodeURIComponent(rec.bookingId)}`;
           await notifyHost(env, deps, booking, rec, 'Automatic charge in 3 days',
-            `${esc(booking ? booking.name : rec.bookingId)}'s card will be charged automatically on ${esc(rec.dueDate)}. If this booking was cancelled or changed, <a href="${stop}">stop the automatic charge</a> before then.`);
+            `${esc(booking ? booking.name : rec.bookingId)}'s card will be charged automatically on ${esc(rec.dueDate)}. If this booking was cancelled or changed, <a href="${stop}">stop the automatic charge</a> before then.`, { push: false });
         }
       } catch (e) { console.error(`Autopay job failed for ${k.name}`, e); }
     }

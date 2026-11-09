@@ -14,6 +14,7 @@
 import { gmailSentConfigured, copyToGmailSent, diagnoseGmailSent } from './gmail-sent.js';
 import { PROPERTY_CONFIG, isFlatPricing, buildQuote, calcCardFee, countNights, securityDepositFor } from './pricing-core.js';
 import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayUtc } from './autopay.js';
+import { recordHeartbeat, handlePing, handleHealth } from './alerts.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
 import { processZelleReminders, handleBalanceReceived } from './zelle-balance.js';
 
@@ -50,6 +51,7 @@ const autopayDeps = {
   get emailWrapper() { return emailWrapper; },
   get detailRow() { return detailRow; },
   get fmtDate() { return fmtDate; },
+  get sendWebPush() { return sendWebPush; },
   isAdminAuthorized,
   CORS_HEADERS,
 };
@@ -413,7 +415,7 @@ export default {
     RUNTIME_ENV = env;
     // Split-payment balance charges run once a day (09:00 UTC cron), not every 10 minutes.
     if (event && event.cron === '0 9 * * *') {
-      try { await processAutopayCharges(env, autopayDeps); }
+      try { await processAutopayCharges(env, autopayDeps); await recordHeartbeat(env); }
       catch (e) { console.error('Autopay job failed', e); }
       try { await processZelleReminders(env, autopayDeps); }
       catch (e) { console.error('Zelle reminder job failed', e); }
@@ -486,6 +488,9 @@ export default {
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: CORS_HEADERS });
     }
+
+    if (path === '/api/ping' && request.method === 'GET') return handlePing();
+    if (path === '/api/health' && request.method === 'GET') return handleHealth(request, env, autopayDeps);
 
     if (path === '/api/availability' && request.method === 'GET') {
       return handleAvailability(url);
