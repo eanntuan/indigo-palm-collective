@@ -41,3 +41,7 @@ The browser card form on `/pay/` (Square's SDK turning typed card numbers into a
 ## Test cards and tokens (sandbox only)
 
 - `cnon:card-nonce-ok`: approved. `cnon:card-nonce-declined`: declined.
+
+## SEO checks
+
+`scripts/seo/` holds three read-only checks (broken links and images, orphan pages, missing alt text) ported from the /babysit-seo skill. They run weekly in GitHub Actions (`.github/workflows/seo-checks.yml`) and write reports to the run summary and an artifact. Run locally: `python3 scripts/seo/check_broken_links.py --skip-external --output /tmp/broken.md` (needs `requests` and `beautifulsoup4`). The alt-text check reads the live site, so it needs network access.
