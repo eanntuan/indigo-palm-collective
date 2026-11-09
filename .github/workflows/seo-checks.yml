@@ -1,0 +1,29 @@
+name: SEO checks
+
+# Weekly read-only technical SEO checks (ported from the /babysit-seo skill): broken links,
+# missing alt text, orphan pages. Reports are saved as a downloadable artifact on each run.
+# The run fails only when an INTERNAL broken link or image is found.
+
+on:
+  schedule:
+    - cron: '41 12 * * 1'
+  workflow_dispatch:
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install requests beautifulsoup4
+      - name: Run checks
+        run: |
+          mkdir -p seo-reports
+          python3 scripts/seo/check_broken_links.py --output seo-reports/broken-links.md
+          python3 scripts/seo/check_orphan_pages.py --output seo-reports/orphan-pages.md
+          python3 scripts/seo/check_alt_text.py --output seo-reports/alt-text.md || true
+          cat seo-reports/*.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: seo-reports, path: seo-reports }
