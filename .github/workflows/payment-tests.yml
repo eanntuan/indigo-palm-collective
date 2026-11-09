@@ -1,0 +1,48 @@
+name: Payment tests
+
+# 1. Unit/flow tests with fakes (no secrets needed) on every push and PR.
+# 2. Square SANDBOX end-to-end (fake money, test cards) on pushes to main that touch the
+#    payment code, nightly, and by hand. Needs repository secret SQUARE_SANDBOX_ACCESS_TOKEN
+#    (and optionally SQUARE_SANDBOX_LOCATION_ID). Skips itself if the secret is missing.
+# 3. Nightly smoke check of the LIVE site (read-only, never charges anything).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: '17 11 * * *'
+  workflow_dispatch:
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      - run: npm test
+
+  sandbox-e2e:
+    runs-on: ubuntu-latest
+    needs: unit
+    if: github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      - name: Square sandbox end-to-end
+        env:
+          SQUARE_SANDBOX_ACCESS_TOKEN: ${{ secrets.SQUARE_SANDBOX_ACCESS_TOKEN }}
+          SQUARE_SANDBOX_LOCATION_ID: ${{ secrets.SQUARE_SANDBOX_LOCATION_ID }}
+        run: npm run test:sandbox
+
+  live-smoke:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the live site and API
+        run: bash scripts/smoke-live.sh
