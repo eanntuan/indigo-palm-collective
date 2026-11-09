@@ -71,8 +71,21 @@ describe('amounts', () => {
 describe('pay in full', () => {
   test('whole total plus one 3% fee', () => {
     const f = fullAmounts(2714);
-    assert.deepEqual(f, { total: 2714, fee: 81.42, charge: 2795.42 });
-    assert.deepEqual(fullAmounts(2451.6), { total: 2451.6, fee: 73.55, charge: 2525.15 });
+    assert.deepEqual(f, { total: 2714, fee: 81.42, deposit: 0, charge: 2795.42 });
+    assert.deepEqual(fullAmounts(2451.6), { total: 2451.6, fee: 73.55, deposit: 0, charge: 2525.15 });
+  });
+});
+
+describe('security deposit rides with the first card payment', () => {
+  test('full: deposit added after the fee, no fee on the deposit', () => {
+    assert.deepEqual(fullAmounts(2451.6, 300), { total: 2451.6, fee: 73.55, deposit: 300, charge: 2825.15 });
+  });
+  test('split: deposit goes entirely in the first charge, balance unchanged', () => {
+    const a = splitAmounts(2000, 300);
+    assert.equal(a.firstCharge, 1330);   // 1000 + 30 fee + 300 deposit
+    assert.equal(a.balanceCharge, 1030); // 1000 + 30 fee
+    assert.equal(a.deposit, 300);
+    assert.equal(splitAmounts(2000).firstCharge, 1030);
   });
 });
 

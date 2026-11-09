@@ -90,7 +90,7 @@ const call = async (method, path, body) => {
   let json = null; try { json = await res.clone().json(); } catch { /* html */ }
   return { status: res.status, json, res };
 };
-const approve = (id = 'bk1', extra = {}) => call('POST', '/api/approve', { id, token: 'hosttoken', ...extra });
+const approve = (id = 'bk1', extra = {}) => call('POST', '/api/approve', { id, token: 'hosttoken', waiveDeposit: true, ...extra });
 const runDaily = (iso) => { at(iso); return worker.scheduled({ cron: '0 9 * * *' }, env); };
 const getRec = async () => JSON.parse(await kv.get('autopay:bk1'));
 const getBooking = async () => JSON.parse(await kv.get('booking:bk1'));
@@ -483,5 +483,71 @@ describe('host controls', () => {
     const s = await call('GET', '/api/autopay/status?key=adminkey&id=bk1');
     assert.equal(s.json.record.status, 'paid');
     assert.equal(s.json.record.consent, undefined, 'consent evidence is not returned by the status endpoint');
+  });
+});
+
+// ── $300 refundable security deposit rides with the first card payment ───────
+
+describe('security deposit', () => {
+  test('approval adds it to the Square link, Zelle total and card total (no fee on it)', async () => {
+    await seedBooking();
+    const r = await call('POST', '/api/approve', { id: 'bk1', token: 'hosttoken' });
+    assert.equal(r.status, 200);
+    const link = sq('/v2/online-checkout/payment-links')[0].body.order.line_items;
+    const dep = link.find(l => /security deposit/i.test(l.name));
+    assert.equal(dep.base_price_money.amount, 30000);
+    const fee = link.find(l => /processing fee/i.test(l.name));
+    assert.equal(fee.base_price_money.amount, 8142, 'fee is 3% of the stay only');
+    assert.equal((await getBooking()).securityDeposit, 300);
+    const html = emailTo('jennifer@')[0].html;
+    assert.match(html, /Zelle \(no fee\): \$3014\.00/);
+    assert.match(html, /\$3095\.42 \(includes 3% fee on the stay only\)/);
+    assert.match(html, /\$1697\.71, includes 3% fee and the \$300\.00 refundable security deposit/);
+  });
+
+  test('waiving it removes it everywhere', async () => {
+    await seedBooking();
+    await call('POST', '/api/approve', { id: 'bk1', token: 'hosttoken', waiveDeposit: true });
+    const link = sq('/v2/online-checkout/payment-links')[0].body.order.line_items;
+    assert.ok(!link.some(l => /security deposit/i.test(l.name)));
+    assert.equal((await getBooking()).securityDeposit, 0);
+    assert.match(emailTo('jennifer@')[0].html, /Zelle \(no fee\): \$2714\.00/);
+  });
+
+  test('the-well never gets a deposit', async () => {
+    await seedBooking({ propertyId: 'the-well', property: 'The Well' });
+    await call('POST', '/api/approve', { id: 'bk1', token: 'hosttoken' });
+    assert.equal((await getBooking()).securityDeposit, 0);
+  });
+
+  test('split: first charge includes the deposit, balance does not', async () => {
+    await seedBooking();
+    await call('POST', '/api/approve', { id: 'bk1', token: 'hosttoken' });
+    const { payToken } = await getBooking();
+    const cfg = await call('GET', `/api/autopay/config?id=bk1&t=${payToken}`);
+    assert.equal(cfg.json.amounts.firstCharge, 1697.71);
+    assert.equal(cfg.json.amounts.balanceCharge, 1397.71);
+    assert.equal(cfg.json.full.charge, 3095.42);
+    assert.match(cfg.json.consentText, /\$300\.00 refundable security deposit/);
+    const r = await call('POST', '/api/autopay/enroll', { id: 'bk1', t: payToken, sourceId: 'cnon:x', consent: true });
+    assert.equal(r.status, 200, JSON.stringify(r.json));
+    assert.equal(sq('/v2/payments')[0].body.amount_money.amount, 169771);
+    assert.equal((await getRec()).balance.charge, 1397.71);
+  });
+
+  test('pay in full charges stay + fee + deposit', async () => {
+    await seedBooking();
+    await call('POST', '/api/approve', { id: 'bk1', token: 'hosttoken' });
+    const { payToken } = await getBooking();
+    const r = await call('POST', '/api/autopay/enroll', { id: 'bk1', t: payToken, sourceId: 'cnon:x', plan: 'full' });
+    assert.equal(r.json.charge, 3095.42);
+    assert.equal(sq('/v2/payments')[0].body.amount_money.amount, 309542);
+  });
+
+  test('bookings approved before this change are unaffected (no deposit field)', async () => {
+    await seedBooking({ status: 'approved', finalTotal: 2714, payToken: 'p'.repeat(32) });
+    const cfg = await call('GET', `/api/autopay/config?id=bk1&t=${'p'.repeat(32)}`);
+    assert.equal(cfg.json.full.charge, 2795.42);
+    assert.equal(cfg.json.amounts.firstCharge, 1397.71);
   });
 });

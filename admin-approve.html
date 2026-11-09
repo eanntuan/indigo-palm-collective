@@ -284,6 +284,14 @@
                     <p class="hint">Overrides the line item name shown on the Square checkout page. Use this whenever the amount due isn't the full stay total (e.g. a deposit) so the label matches what's actually being charged.</p>
                 </div>
 
+                <div class="form-group" id="deposit-group">
+                    <label style="display:flex;align-items:center;gap:8px;font-weight:500;">
+                        <input type="checkbox" id="waive-deposit" style="width:auto;margin:0;">
+                        Waive the $300 security deposit
+                    </label>
+                    <p class="hint">Leave unchecked and the $300 refundable deposit is added to the payment link, the Zelle amount and the split/pay-in-full page (no card fee on it). It is charged with the first payment.</p>
+                </div>
+
                 <div class="form-group">
                     <label>Note to Guest (optional)</label>
                     <textarea id="notes-to-guest" placeholder="Any message to include in their payment email..."></textarea>
@@ -445,6 +453,7 @@
                 updateFinalTotal();
                 document.getElementById('override-total').addEventListener('input', updateFinalTotal);
                 document.getElementById('flat-discount').addEventListener('input', updateFinalTotal);
+                document.getElementById('waive-deposit').addEventListener('change', updateFinalTotal);
                 document.getElementById('approve-btn').addEventListener('click', approveBooking);
             }
         }
@@ -505,7 +514,10 @@
                 final = Math.max(0, baseTotal - existingDiscount - flatDiscount);
             }
 
-            document.getElementById('final-total-display').textContent = `$${final.toFixed(2)}`;
+            const deposit = (booking.propertyId === 'the-well' || document.getElementById('waive-deposit').checked) ? 0 : 300;
+            document.getElementById('final-total-display').textContent = deposit > 0
+                ? `$${final.toFixed(2)} + $${deposit.toFixed(2)} refundable deposit = $${(final + deposit).toFixed(2)}`
+                : `$${final.toFixed(2)}`;
         }
 
         async function approveBooking() {
@@ -530,6 +542,7 @@
                         token,
                         overrideTotal: (!isNaN(override) && override > 0) ? override : null,
                         flatDiscount,
+                        waiveDeposit: document.getElementById('waive-deposit').checked,
                         notesToGuest,
                         lineItemLabel: lineItemLabel || null,
                     }),

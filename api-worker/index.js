@@ -12,7 +12,7 @@
 //   wrangler secret put ADMIN_DEBUG_KEY   (gates /inbox + internal debug/test endpoints)
 
 import { gmailSentConfigured, copyToGmailSent, diagnoseGmailSent } from './gmail-sent.js';
-import { PROPERTY_CONFIG, isFlatPricing, buildQuote, calcCardFee, countNights } from './pricing-core.js';
+import { PROPERTY_CONFIG, isFlatPricing, buildQuote, calcCardFee, countNights, securityDepositFor } from './pricing-core.js';
 import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayUtc } from './autopay.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
 
@@ -1115,7 +1115,7 @@ async function handleApprove(request, env) {
     });
   }
 
-  const { id, token, overrideTotal, flatDiscount, notesToGuest, lineItemLabel } = body;
+  const { id, token, overrideTotal, flatDiscount, notesToGuest, lineItemLabel, waiveDeposit } = body;
 
   if (!id || !token) {
     return new Response(JSON.stringify({ success: false, error: 'Missing id or token' }), {
@@ -1173,7 +1173,9 @@ async function handleApprove(request, env) {
 
   // Generate Square payment link (includes 3% CC fee as line item)
   const ccFee = calcCardFee(finalTotal);
-  const ccTotal = finalTotal + ccFee;
+  // Refundable security deposit rides along with the payment (no card fee on it).
+  const securityDeposit = securityDepositFor(booking.propertyId, waiveDeposit === true);
+  const ccTotal = finalTotal + ccFee + securityDeposit;
 
   let paymentLink = null;
   if (env.SQUARE_ACCESS_TOKEN) {
@@ -1193,6 +1195,7 @@ async function handleApprove(request, env) {
         discountAmount: (parseFloat(flatDiscount) || 0) + (booking.discountAmount || 0),
         discountCode: booking.discountCode,
         ccFee,
+        securityDeposit,
         fmtDate,
         squareBaseUrl,
         lineItemLabel: lineItemLabel || null,
@@ -1202,7 +1205,7 @@ async function handleApprove(request, env) {
     }
   }
 
-  const zelleTotal = `$${finalTotal.toFixed(2)}`;
+  const zelleTotal = `$${(finalTotal + securityDeposit).toFixed(2)}`;
   const cardTotal  = `$${ccTotal.toFixed(2)}`;
 
   // Optional split payment by card: 50% now, remaining 50% charged automatically
@@ -1213,7 +1216,7 @@ async function handleApprove(request, env) {
   const usedOverride = overrideTotal != null && overrideTotal > 0;
   const splitEligible = !!(env.SQUARE_ACCESS_TOKEN && env.SQUARE_APPLICATION_ID && !usedOverride &&
     finalTotal > 0 && isAutopayEligible(booking.checkIn, todayUtc()));
-  const splitAmts = splitEligible ? splitAmounts(finalTotal) : null;
+  const splitAmts = splitEligible ? splitAmounts(finalTotal, securityDeposit) : null;
   const splitDueDate = splitEligible ? balanceDueDate(booking.checkIn) : null;
 
   // Send payment email to guest
@@ -1232,21 +1235,23 @@ async function handleApprove(request, env) {
       ${detailRow('Check-out', fmtDate(booking.checkOut))}
       ${detailRow('Guests', `${booking.guests} guest${booking.guests !== 1 ? 's' : ''}`)}
       ${booking.poolHeat ? detailRow('Pool Heat', `$${(booking.poolHeatCost || 0).toFixed(2)}`) : ''}
-      ${detailRow('Total', `<strong>${zelleTotal}</strong>`)}
+      ${securityDeposit > 0 ? detailRow('Stay total', `$${finalTotal.toFixed(2)}`) + detailRow('Refundable security deposit', `$${securityDeposit.toFixed(2)}`) : ''}
+      ${detailRow(securityDeposit > 0 ? 'Total due' : 'Total', `<strong>${zelleTotal}</strong>`)}
     </table>
+    ${securityDeposit > 0 ? `<p style="margin:-14px 0 24px;font-size:13px;color:#888;line-height:1.6;">The security deposit is returned within 2 days of checkout as long as the house is left in good condition. It has no card fee.</p>` : ''}
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:16px;">
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Zelle (no fee): ${zelleTotal}</p>
       <p style="margin:0;font-size:14px;color:#555;">Send to <strong>214-606-1340</strong> (MPT Industries) and reply to this email to confirm.</p>
     </div>
     ${paymentLink ? `
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;text-align:center;">
-      <p style="margin:0 0 12px;font-size:13px;font-weight:600;color:#2C2C2C;">Credit Card via Square: ${cardTotal} (includes 3% fee)</p>
+      <p style="margin:0 0 12px;font-size:13px;font-weight:600;color:#2C2C2C;">Credit Card via Square: ${cardTotal} (includes 3% fee${securityDeposit > 0 ? ' on the stay only' : ''})</p>
       <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:999px;letter-spacing:0.02em;">Pay by Card &rarr;</a>
     </div>` : ''}
     ${splitEligible ? `
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;text-align:center;">
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Prefer to split it? Pay by card in two parts</p>
-      <p style="margin:0 0 14px;font-size:13px;color:#555;line-height:1.6;">Pay 50% now (${'$' + splitAmts.firstCharge.toFixed(2)}, includes 3% fee). We save your card and automatically charge the remaining 50% (${'$' + splitAmts.balanceCharge.toFixed(2)}, includes 3% fee) on ${fmtDate(splitDueDate)}, 60 days before check-in.</p>
+      <p style="margin:0 0 14px;font-size:13px;color:#555;line-height:1.6;">Pay 50% now (${'$' + splitAmts.firstCharge.toFixed(2)}, includes 3% fee${securityDeposit > 0 ? ' and the $' + securityDeposit.toFixed(2) + ' refundable security deposit' : ''}). We save your card and automatically charge the remaining 50% (${'$' + splitAmts.balanceCharge.toFixed(2)}, includes 3% fee) on ${fmtDate(splitDueDate)}, 60 days before check-in.</p>
       <a href="${payLink(id, payToken)}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:999px;letter-spacing:0.02em;">Split payment by card &rarr;</a>
     </div>` : ''}
     ${notesToGuest ? `<div style="margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notesToGuest}</p></div>` : ''}
@@ -1263,7 +1268,7 @@ async function handleApprove(request, env) {
 
     // Mark as approved
     await env.BOOKINGS.put(`booking:${id}`, JSON.stringify({
-      ...booking, status: 'approved', finalTotal, approvedAt: new Date().toISOString(), paymentLink, payToken,
+      ...booking, status: 'approved', finalTotal, securityDeposit, approvedAt: new Date().toISOString(), paymentLink, payToken,
     }));
 
     return new Response(JSON.stringify({ success: true, paymentLink, finalTotal }), {
@@ -2075,7 +2080,7 @@ async function handleDiscount(url, env) {
   }), { status: 200, headers: CORS_HEADERS });
 }
 
-async function createSquarePaymentLink(accessToken, { bookingId, property, checkIn, checkOut, pricing, poolHeat, poolHeatNights, poolHeatCost, discountAmount, discountCode, ccFee, fmtDate, squareBaseUrl = 'https://connect.squareup.com', lineItemLabel = null }) {
+async function createSquarePaymentLink(accessToken, { bookingId, property, checkIn, checkOut, pricing, poolHeat, poolHeatNights, poolHeatCost, discountAmount, discountCode, ccFee, securityDeposit = 0, fmtDate, squareBaseUrl = 'https://connect.squareup.com', lineItemLabel = null }) {
   // Fetch first location
   const locRes = await fetch(`${squareBaseUrl}/v2/locations`, {
     headers: { 'Authorization': `Bearer ${accessToken}`, 'Square-Version': '2024-01-18' },
@@ -2117,6 +2122,15 @@ async function createSquarePaymentLink(accessToken, { bookingId, property, check
       name: 'Credit card processing fee (3%)',
       quantity: '1',
       base_price_money: money(ccFee),
+    });
+  }
+
+  if (securityDeposit > 0) {
+    lineItems.push({
+      name: 'Refundable security deposit',
+      quantity: '1',
+      base_price_money: money(securityDeposit),
+      note: 'Returned within 2 days of checkout if the house is left in good condition',
     });
   }
 
