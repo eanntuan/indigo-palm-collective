@@ -84,7 +84,7 @@ layout: blog-post.njk
 
 <p><strong>Summer (June through September):</strong> The temperature contrast is the draw. The valley is 105 degrees and the top is around 70. Weekday crowds are lighter. The extended Friday and Saturday evening hours mean you can ride up at sunset, watch the valley light up below, and come down in the dark. That's a good use of a summer evening.</p>
 
-<p><strong>Fall and spring:</strong> The most popular seasons overall. Wildflowers appear in spring. Fall foliage in the mountains. Comfortable temperatures at both elevations. Weekends fill up quickly. Go early or go on a weekday if you want to park without circling.</p>
+<p><strong>Fall and spring:</strong> The most popular seasons overall. Wildflowers show up in spring and color turns up top in fall, temperatures are comfortable at both elevations, and weekends fill fast. Go early or go on a weekday if you want to park without circling.</p>
 
 <p><strong>Winter:</strong> Snow at the top, mild desert weather below. The contrast is more dramatic than summer and the crowds are thinner than spring. Check snow conditions before heading out since heavy snowfall can close the outdoor trails temporarily. The winter hours, Christmas Week schedule, and the Tram's December tree lighting are in my <a href="/blog/palm-springs-christmas-events/">Palm Springs Christmas guide</a>.</p>
 

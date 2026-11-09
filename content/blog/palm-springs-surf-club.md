@@ -116,7 +116,7 @@ relatedPosts:
 
 <p><strong>Hours:</strong> Generally open daily 10am-8pm, with seasonal variations. Check <a href="https://palmspringssurfclub.com" target="_blank" rel="noopener">palmspringssurfclub.com</a> for current operating hours before you go.</p>
 
-<h2>Honest Take</h2>
+<h2>Our Take</h2>
 
 <p>The concept is absurd on paper and it works in person. Surfing in the desert with the San Jacinto Mountains in the background feels specific to the Coachella Valley, and that's half the appeal.</p>
 

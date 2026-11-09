@@ -137,7 +137,7 @@ relatedPosts:
 <p><a href="/cozy-cactus/">The Cozy Cactus</a> is our place in Indio. Three bedrooms, community pool across the street, private hot tub, and a covered patio that makes you want to stay in as much as go out. But wherever you stay, stay in the valley long enough to get past the tourist layer. The real stuff is underneath.</p>
 
 <img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at The Cozy Cactus vacation rental in Indio CA, covered patio, string lights, palm trees at dusk" loading="lazy" width="800" height="533">
-<p class="image-caption">The hot tub at golden hour. Palm trees. String lights. This is why you stay in Indio.</p>
+<p class="image-caption">The hot tub at golden hour, under palm trees and string lights, is the reason to stay in Indio.</p>
 
 <h2>Frequently Asked Questions</h2>
 
