@@ -167,15 +167,16 @@ async function handleConfig(url, env, deps) {
   if (rec && rec.status !== 'cancelled') return respond(deps, { success: false, error: 'This booking already has a split payment set up.' }, 409);
   if (booking.status !== 'approved') return respond(deps, { success: false, error: 'This booking is not awaiting payment.' }, 409);
 
-  const full = fullAmounts(booking.finalTotal);
+  const deposit = booking.securityDeposit || 0;
+  const full = fullAmounts(booking.finalTotal, deposit);
   if (!(booking.finalTotal > 0)) return respond(deps, { success: false, error: 'This booking is not awaiting payment.' }, 409);
   const splitAvailable = isAutopayEligible(booking.checkIn, todayUtc());
   if (!splitAvailable) return respond(deps, { ...base, splitAvailable: false, full });
-  const amounts = splitAmounts(booking.finalTotal);
+  const amounts = splitAmounts(booking.finalTotal, deposit);
   const dueDate = balanceDueDate(booking.checkIn);
   return respond(deps, {
     ...base, splitAvailable: true, full, dueDate, amounts,
-    consentText: consentText({ firstCharge: amounts.firstCharge, balanceCharge: amounts.balanceCharge, dueDate, fmtDate: deps.fmtDate }),
+    consentText: consentText({ firstCharge: amounts.firstCharge, balanceCharge: amounts.balanceCharge, dueDate, fmtDate: deps.fmtDate, deposit }),
   });
 }
 
@@ -201,9 +202,9 @@ async function handleEnroll(request, env, deps) {
     return respond(deps, { success: false, error: `Check-in is less than ${BALANCE_DAYS} days away, so the full amount is due now.` }, 409);
   }
 
-  const amounts = splitAmounts(booking.finalTotal);
+  const amounts = splitAmounts(booking.finalTotal, booking.securityDeposit || 0);
   const dueDate = balanceDueDate(booking.checkIn);
-  const text = consentText({ firstCharge: amounts.firstCharge, balanceCharge: amounts.balanceCharge, dueDate, fmtDate: deps.fmtDate });
+  const text = consentText({ firstCharge: amounts.firstCharge, balanceCharge: amounts.balanceCharge, dueDate, fmtDate: deps.fmtDate, deposit: amounts.deposit });
   const locationId = await getLocationId(env);
   if (!locationId) return respond(deps, { success: false, error: 'Payment setup failed. Please email us.' }, 502);
 
@@ -242,7 +243,7 @@ async function handleEnroll(request, env, deps) {
     amount_money: { amount: toCents(amounts.firstCharge), currency: 'USD' },
     autocomplete: true,
     reference_id: id,
-    note: `${booking.property} ${booking.checkIn} to ${booking.checkOut}: 50% now (incl. 3% card fee)`,
+    note: `${booking.property} ${booking.checkIn} to ${booking.checkOut}: 50% now (incl. 3% card fee${amounts.deposit ? ' + $' + amounts.deposit.toFixed(2) + ' refundable security deposit' : ''})`,
   });
   const payment = pay.json.payment;
   if (!pay.ok || !payment?.id) {
@@ -255,7 +256,7 @@ async function handleEnroll(request, env, deps) {
   const rec = {
     bookingId: id, status: 'scheduled', dueDate, attempt: 0,
     customerId, cardId: cardObj.id, last4: cardObj.last_4 || null, brand: cardObj.card_brand || null, cardVersion: 0,
-    first: { amount: amounts.first, fee: amounts.firstFee, charge: amounts.firstCharge, paymentId: payment.id, paidAt: new Date().toISOString() },
+    first: { amount: amounts.first, fee: amounts.firstFee, deposit: amounts.deposit, charge: amounts.firstCharge, paymentId: payment.id, paidAt: new Date().toISOString() },
     balance: { amount: amounts.balance, fee: amounts.balanceFee, charge: amounts.balanceCharge, paymentId: null, paidAt: null },
     consent: {
       version: CONSENT_VERSION, text, acceptedAt: new Date().toISOString(),
@@ -271,7 +272,7 @@ async function handleEnroll(request, env, deps) {
   try {
     const r = await deps.finalizeBookingConfirmation({
       bookingId: id, orderId: payment.order_id || null, totalPaid: amounts.firstCharge,
-      paymentMethod: 'square', note: `Paid 50% by card. The remaining ${usd(amounts.balanceCharge)} charges automatically on ${deps.fmtDate(dueDate)}.`, env,
+      paymentMethod: 'square', note: `Paid 50% by card${amounts.deposit ? ` plus the ${usd(amounts.deposit)} refundable security deposit` : ''}. The remaining ${usd(amounts.balanceCharge)} charges automatically on ${deps.fmtDate(dueDate)}.`, env,
     });
     if (r?.error) confirmError = r.error;
   } catch (e) { confirmError = String(e.message || e); console.error('Autopay: finalize failed', e); }
@@ -285,7 +286,7 @@ async function handleEnroll(request, env, deps) {
         <h1 style="margin:0 0 16px;font-family:Georgia,serif;font-size:26px;font-weight:400;color:#2C2C2C;">Thank you, ${esc(String(booking.name).split(' ')[0])}.</h1>
         <p style="margin:0 0 20px;font-size:15px;color:#555;line-height:1.7;">Your first payment went through. Here is your schedule:</p>
         <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
-          ${deps.detailRow('Paid today', `${usd(amounts.firstCharge)} (50% + 3% card fee)`)}
+          ${deps.detailRow('Paid today', `${usd(amounts.firstCharge)} (50% + 3% card fee${amounts.deposit ? ' + refundable security deposit' : ''})`)}
           ${deps.detailRow('Charged on', `${esc(deps.fmtDate(dueDate))}`)}
           ${deps.detailRow('Amount', `${usd(amounts.balanceCharge)} (remaining 50% + 3% card fee)`)}
           ${deps.detailRow('Card', `${esc(rec.brand || 'Card')} ending ${esc(rec.last4 || '----')}`)}
@@ -317,7 +318,7 @@ async function handlePayInFull(request, env, deps, booking, sourceId) {
   if (existing && existing.status !== 'cancelled') return respond(deps, { success: false, error: 'This booking already has a payment set up.' }, 409);
   if (booking.status !== 'approved' || !(booking.finalTotal > 0)) return respond(deps, { success: false, error: 'This booking is not awaiting payment.' }, 409);
 
-  const amounts = fullAmounts(booking.finalTotal);
+  const amounts = fullAmounts(booking.finalTotal, booking.securityDeposit || 0);
   const locationId = await getLocationId(env);
   if (!locationId) return respond(deps, { success: false, error: 'Payment setup failed. Please email us.' }, 502);
 
@@ -329,7 +330,7 @@ async function handlePayInFull(request, env, deps, booking, sourceId) {
     autocomplete: true,
     reference_id: id,
     buyer_email_address: booking.email,
-    note: `${booking.property} ${booking.checkIn} to ${booking.checkOut}: paid in full (incl. 3% card fee)`,
+    note: `${booking.property} ${booking.checkIn} to ${booking.checkOut}: paid in full (incl. 3% card fee${amounts.deposit ? ' + $' + amounts.deposit.toFixed(2) + ' refundable security deposit' : ''})`,
   });
   const payment = pay.json.payment;
   if (!pay.ok || !payment?.id) {
@@ -340,7 +341,7 @@ async function handlePayInFull(request, env, deps, booking, sourceId) {
   // Record it first so the same booking can never be paid twice, then confirm.
   await saveRecord(env, {
     bookingId: id, status: 'paid_full',
-    full: { amount: amounts.total, fee: amounts.fee, charge: amounts.charge, paymentId: payment.id, paidAt: new Date().toISOString() },
+    full: { amount: amounts.total, fee: amounts.fee, deposit: amounts.deposit, charge: amounts.charge, paymentId: payment.id, paidAt: new Date().toISOString() },
     createdAt: new Date().toISOString(),
   });
 
@@ -348,7 +349,7 @@ async function handlePayInFull(request, env, deps, booking, sourceId) {
   try {
     const r = await deps.finalizeBookingConfirmation({
       bookingId: id, orderId: payment.order_id || null, totalPaid: amounts.charge,
-      paymentMethod: 'square', note: 'Paid in full by card.', env,
+      paymentMethod: 'square', note: amounts.deposit ? `Paid in full by card, including the ${usd(amounts.deposit)} refundable security deposit.` : 'Paid in full by card.', env,
     });
     if (r?.error) confirmError = r.error;
   } catch (e) { confirmError = String(e.message || e); console.error('Autopay: finalize failed', e); }

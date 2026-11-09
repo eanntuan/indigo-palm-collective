@@ -30,6 +30,14 @@ export const PEAK_DATES = [
 
 export const CARD_FEE_RATE = 0.03;
 
+// Refundable security deposit collected with the first card payment. No card
+// fee is charged on it. Long-term rentals (the-well) have no deposit here.
+export const SECURITY_DEPOSIT = 300;
+export function securityDepositFor(propertyId, waive = false) {
+  if (waive || propertyId === 'the-well') return 0;
+  return SECURITY_DEPOSIT;
+}
+
 export function isFlatPricing(propertyId) {
   return PROPERTY_CONFIG[propertyId]?.pricingMode === 'flat';
 }

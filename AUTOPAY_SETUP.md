@@ -74,3 +74,7 @@ Without `SQUARE_APPLICATION_ID` the split option is simply not offered.
 - No SCA/3-D Secure step (fine for US cards; add `verifyBuyer` for EU/UK cards).
 - Halves are fee'd separately, so total fees can differ from 3% of the total by a cent.
 - There is no admin-page button yet; stopping is via the emailed link.
+
+## Security deposit
+
+Approving a booking adds the $300 refundable security deposit to every payment method (Square link, Zelle total, split and pay-in-full page) unless "Waive the $300 security deposit" is ticked on the approve page. It carries no 3% card fee, and with the split plan it is charged entirely in the first payment. It is stored on the booking as `securityDeposit` (the-well never has one). Refund it from the Square dashboard after checkout. Bookings approved before this change have no `securityDeposit` and are unaffected.

@@ -36,7 +36,7 @@ export function isAutopayEligible(checkIn, today) {
 // Split the approved total into two halves that sum exactly to the total.
 // Any odd cent goes on the first (upfront) payment. Each half then gets the
 // standard 3% card fee on its own.
-export function splitAmounts(finalTotal) {
+export function splitAmounts(finalTotal, deposit = 0) {
   const cents = Math.round(finalTotal * 100);
   const firstCents = Math.ceil(cents / 2);
   const first = firstCents / 100;
@@ -47,16 +47,17 @@ export function splitAmounts(finalTotal) {
     total: roundCents(finalTotal),
     first, balance,
     firstFee, balanceFee,
-    firstCharge: roundCents(first + firstFee),
+    deposit: roundCents(deposit),
+    firstCharge: roundCents(first + firstFee + deposit),
     balanceCharge: roundCents(balance + balanceFee),
   };
 }
 
 // Pay-in-full by card: the whole total plus one 3% fee (same as the full-payment link).
-export function fullAmounts(finalTotal) {
+export function fullAmounts(finalTotal, deposit = 0) {
   const total = roundCents(finalTotal);
   const fee = calcCardFee(total);
-  return { total, fee, charge: roundCents(total + fee) };
+  return { total, fee, deposit: roundCents(deposit), charge: roundCents(total + fee + deposit) };
 }
 
 export const toCents = (dollars) => Math.round(dollars * 100);
@@ -68,12 +69,13 @@ export function idempotencyKey(kind, bookingId, attempt = 0) {
   return `ap-${kind}-${bookingId}-${attempt}`.slice(0, 45);
 }
 
-export function consentText({ firstCharge, balanceCharge, dueDate, fmtDate }) {
+export function consentText({ firstCharge, balanceCharge, dueDate, fmtDate, deposit = 0 }) {
   const usd = (n) => `$${n.toFixed(2)}`;
   const when = fmtDate ? fmtDate(dueDate) : dueDate;
   return (
     `I authorize Indigo Palm Collective (MPT Industries) to charge the card I enter ` +
-    `${usd(firstCharge)} today (50% of my total plus a 3% card processing fee), and to save this card ` +
+    `${usd(firstCharge)} today (50% of my total plus a 3% card processing fee` +
+    (deposit > 0 ? `, plus the ${usd(deposit)} refundable security deposit, which has no card fee` : '') + `), and to save this card ` +
     `and automatically charge it ${usd(balanceCharge)} on ${when} (the remaining 50% plus a 3% card ` +
     `processing fee), which is ${BALANCE_DAYS} days before check-in. I can ask to stop the automatic ` +
     `charge by emailing indigopalmco@gmail.com before that date. Cancellations made ${BALANCE_DAYS} or more ` +

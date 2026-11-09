@@ -146,14 +146,16 @@
                 plansEl.querySelectorAll('.plan').forEach(l => l.classList.toggle('on', l.dataset.plan === p));
                 if (p === 'full') {
                     $('subtitle').textContent = 'Pay the full amount by card today.';
-                    addRows([['Total', usd(full.total)], ['Card fee (3%)', usd(full.fee)], ['Pay today', usd(full.charge)]]);
+                    addRows([['Stay total', usd(full.total)], ['Card fee (3%)', usd(full.fee)]]
+                        .concat(full.deposit > 0 ? [['Refundable security deposit', usd(full.deposit)]] : [])
+                        .concat([['Pay today', usd(full.charge)]]));
                     hide(consentBox);
                     $('pay').textContent = 'Pay ' + usd(full.charge) + ' now';
                     $('pay').disabled = false;
                 } else {
                     $('subtitle').textContent = 'Pay half now by card. We charge the other half automatically on the date below.';
                     addRows([
-                        ['Pay today', usd(cfg.amounts.firstCharge) + ' (50% + 3% card fee)'],
+                        ['Pay today', usd(cfg.amounts.firstCharge) + (cfg.amounts.deposit > 0 ? ' (50% + 3% card fee + ' + usd(cfg.amounts.deposit) + ' refundable security deposit)' : ' (50% + 3% card fee)')],
                         ['Charged automatically on', fmt(cfg.dueDate)],
                         ['Amount then', usd(cfg.amounts.balanceCharge) + ' (50% + 3% card fee)'],
                     ]);
@@ -175,7 +177,7 @@
                     return i;
                 };
                 const splitInput = mk('split', 'Pay half now, half later', usd(cfg.amounts.firstCharge) + ' today, then ' + usd(cfg.amounts.balanceCharge) + ' on ' + fmt(cfg.dueDate));
-                mk('full', 'Pay in full today', usd(full.charge) + ' (includes 3% card fee)');
+                mk('full', 'Pay in full today', usd(full.charge) + (full.deposit > 0 ? ' (includes 3% card fee and refundable deposit)' : ' (includes 3% card fee)'));
                 show(plansEl);
                 splitInput.checked = true;
             }
