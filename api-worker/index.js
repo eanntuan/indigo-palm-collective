@@ -12,6 +12,8 @@
 //   wrangler secret put ADMIN_DEBUG_KEY   (gates /inbox + internal debug/test endpoints)
 
 import { PROPERTY_CONFIG, isFlatPricing, buildQuote, calcCardFee, countNights } from './pricing-core.js';
+import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayUtc } from './autopay.js';
+import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -38,6 +40,17 @@ function unauthorizedJson() {
     status: 401, headers: { 'Content-Type': 'application/json' },
   });
 }
+
+// Shared helpers handed to autopay.js (function declarations below are hoisted).
+const autopayDeps = {
+  get finalizeBookingConfirmation() { return finalizeBookingConfirmation; },
+  get sendEmail() { return sendEmail; },
+  get emailWrapper() { return emailWrapper; },
+  get detailRow() { return detailRow; },
+  get fmtDate() { return fmtDate; },
+  isAdminAuthorized,
+  CORS_HEADERS,
+};
 
 const ICAL_URLS = {
   'cozy-cactus': 'https://www.airbnb.com/calendar/ical/610023395582313286.ics?t=e3b2c94c1a67433bb8d523906b3e5df1',
@@ -395,6 +408,11 @@ async function sendPinterestDailyReport(env) {
 
 export default {
   async scheduled(event, env) {
+    // Split-payment balance charges run once a day (09:00 UTC cron), not every 10 minutes.
+    if (event && event.cron === '0 9 * * *') {
+      try { await processAutopayCharges(env, autopayDeps); }
+      catch (e) { console.error('Autopay job failed', e); }
+    }
     await sendDueWelcomeEmails(env);
     await processPendingAirbnbReplies(env);
     await sendPinterestDailyReport(env);
@@ -476,6 +494,11 @@ export default {
 
     if (path === '/api/booking' && request.method === 'GET') {
       return handleGetBooking(url, env);
+    }
+
+    if (path.startsWith('/api/autopay/')) {
+      const autopayResponse = await handleAutopayRoute(request, env, url, autopayDeps);
+      if (autopayResponse) return autopayResponse;
     }
 
     if (path === '/api/approve' && request.method === 'POST') {
@@ -1177,6 +1200,17 @@ async function handleApprove(request, env) {
   const zelleTotal = `$${finalTotal.toFixed(2)}`;
   const cardTotal  = `$${ccTotal.toFixed(2)}`;
 
+  // Optional split payment by card: 50% now, remaining 50% charged automatically
+  // 60 days before check-in. Offered only when it is configured, the stay is far
+  // enough out, and the host did not override the total (an override usually
+  // means the amount due is already a custom deposit, which must not be split again).
+  const payToken = booking.payToken || newPayToken();
+  const usedOverride = overrideTotal != null && overrideTotal > 0;
+  const splitEligible = !!(env.SQUARE_ACCESS_TOKEN && env.SQUARE_APPLICATION_ID && !usedOverride &&
+    finalTotal > 0 && isAutopayEligible(booking.checkIn, todayUtc()));
+  const splitAmts = splitEligible ? splitAmounts(finalTotal) : null;
+  const splitDueDate = splitEligible ? balanceDueDate(booking.checkIn) : null;
+
   // Send payment email to guest
   const approveHeroUrl = await getPropertyHeroImageUrl(booking.propertyId, env);
   const approvalBeat = PROPERTY_STORY_BEATS[booking.propertyId]?.confirmed || '';
@@ -1204,6 +1238,12 @@ async function handleApprove(request, env) {
       <p style="margin:0 0 12px;font-size:13px;font-weight:600;color:#2C2C2C;">Credit Card via Square: ${cardTotal} (includes 3% fee)</p>
       <a href="${paymentLink}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Pay by Card &rarr;</a>
     </div>` : ''}
+    ${splitEligible ? `
+    <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;text-align:center;">
+      <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Prefer to split it? Pay by card in two parts</p>
+      <p style="margin:0 0 14px;font-size:13px;color:#555;line-height:1.6;">Pay 50% now (${'$' + splitAmts.firstCharge.toFixed(2)}, includes 3% fee). We save your card and automatically charge the remaining 50% (${'$' + splitAmts.balanceCharge.toFixed(2)}, includes 3% fee) on ${fmtDate(splitDueDate)}, 60 days before check-in.</p>
+      <a href="${payLink(id, payToken)}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Split payment by card &rarr;</a>
+    </div>` : ''}
     ${notesToGuest ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notesToGuest}</p></div>` : ''}
     <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or email <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
@@ -1218,7 +1258,7 @@ async function handleApprove(request, env) {
 
     // Mark as approved
     await env.BOOKINGS.put(`booking:${id}`, JSON.stringify({
-      ...booking, status: 'approved', finalTotal, approvedAt: new Date().toISOString(), paymentLink,
+      ...booking, status: 'approved', finalTotal, approvedAt: new Date().toISOString(), paymentLink, payToken,
     }));
 
     return new Response(JSON.stringify({ success: true, paymentLink, finalTotal }), {

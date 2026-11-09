@@ -46,7 +46,9 @@ The `blog-post.njk` layout generates all schema and meta automatically from thes
 ### Cloudflare Worker (`api-worker/index.js`)
 Handles `indigopalm.co/api/*`: availability (from Airbnb iCal feeds), pricing (from PriceLabs), booking confirmation emails (via Resend), and CMS OAuth. Property slugs → iCal URLs and PriceLabs IDs are hardcoded in `ICAL_URLS` and `PRICELABS_LISTINGS` at the top of the file. `terra-luz` and `casa-moto` are aliases pointing to the same listing. Per-property rates, cleaning fees, tax rates, minimum stays and fallback peak multipliers live in `api-worker/pricing-core.js` (`PROPERTY_CONFIG`, `PEAK_DATES`). The Sundune (`ps-retreat`) uses `pricingMode: 'flat'`: $300/night every night, $200 cleaning, 18% on accommodation + cleaning, 4-night minimum, and no PriceLabs request. Secrets are Cloudflare Worker secrets, not `.env`.
 
-Pricing tests: `npm test` (node:test, `tests/pricing.test.mjs`).
+Split payment by card (50% now, 50% charged automatically 60 days before check-in): `api-worker/autopay.js` (routes, Square calls, daily job) and `api-worker/autopay-core.js` (pure logic), guest page `pay/index.html`. Setup and sandbox testing: `AUTOPAY_SETUP.md`.
+
+Tests: `npm test` (node:test, `tests/*.test.mjs`).
 
 ### go/ redirects
 `/go/[name]/` are static meta-refresh redirect pages (not Eleventy). Use the `redirect.njk` layout with a `redirectTo` frontmatter field. These are the short URLs in guest messages (e.g. `indigopalm.co/go/ps-local-guide`).

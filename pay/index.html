@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Split Payment | Indigo Palm Collective</title>
+    <style>
+        :root { --ink:#2C2C2C; --sage:#607c67; --sand:#F5F3EE; --line:#E4E0D6; --muted:#777; --err:#b3412e; }
+        * { box-sizing: border-box; }
+        body { margin:0; background:var(--sand); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.6; }
+        .wrap { max-width:520px; margin:0 auto; padding:32px 16px 64px; }
+        .brand { text-align:center; font-family:Georgia,'Times New Roman',serif; font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:20px; }
+        .card { background:#fff; border-radius:14px; padding:28px 24px; box-shadow:0 2px 12px rgba(0,0,0,.07); }
+        h1 { font-family:Georgia,'Times New Roman',serif; font-weight:400; font-size:26px; margin:0 0 6px; }
+        .sub { color:var(--muted); font-size:14px; margin:0 0 22px; }
+        table { width:100%; border-collapse:collapse; margin-bottom:22px; }
+        td { padding:10px 0; border-bottom:1px solid var(--line); font-size:14px; vertical-align:top; }
+        td:first-child { color:var(--muted); width:46%; }
+        td:last-child { font-weight:600; text-align:right; }
+        .consent { display:flex; gap:10px; align-items:flex-start; background:var(--sand); border-radius:10px; padding:14px; margin:0 0 18px; font-size:13px; color:#444; }
+        .consent input { margin-top:3px; width:18px; height:18px; flex:none; }
+        #card-container { min-height:96px; margin-bottom:18px; }
+        button { width:100%; padding:15px; border:0; border-radius:8px; background:var(--sage); color:#fff; font-size:16px; font-weight:600; cursor:pointer; }
+        button[disabled] { opacity:.45; cursor:not-allowed; }
+        .msg { margin-top:16px; font-size:14px; }
+        .msg.err { color:var(--err); }
+        .ok h1 { color:var(--sage); }
+        .fine { margin-top:18px; font-size:12px; color:var(--muted); text-align:center; }
+        .hidden { display:none; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="brand">Indigo Palm Collective</div>
+    <div class="card" id="root">
+        <p id="loading" class="sub">Loading your payment details...</p>
+
+        <div id="form" class="hidden">
+            <h1 id="title">Split your payment</h1>
+            <p class="sub" id="subtitle"></p>
+            <table id="summary"></table>
+
+            <label class="consent">
+                <input type="checkbox" id="consent">
+                <span id="consent-text"></span>
+            </label>
+
+            <div id="card-container"></div>
+            <button id="pay" disabled>Pay</button>
+            <p class="msg err hidden" id="error"></p>
+            <p class="fine">Card details are entered in a secure form hosted by Square. We never see or store your card number.</p>
+        </div>
+
+        <div id="done" class="hidden ok"></div>
+        <p id="fatal" class="msg err hidden"></p>
+    </div>
+</div>
+
+<script>
+(function () {
+    const params = new URLSearchParams(location.search);
+    const id = params.get('id');
+    const t = params.get('t');
+    const mode = params.get('mode') === 'update' ? 'update' : 'enroll';
+
+    const $ = (s) => document.getElementById(s);
+    const usd = (n) => '$' + Number(n).toFixed(2);
+    const show = (el) => el.classList.remove('hidden');
+    const hide = (el) => el.classList.add('hidden');
+    const fmt = (d) => { const [y, m, day] = d.split('-').map(Number); return new Date(y, m - 1, day).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }); };
+
+    function row(label, value) {
+        const tr = document.createElement('tr');
+        const a = document.createElement('td'); a.textContent = label;
+        const b = document.createElement('td'); b.textContent = value;
+        tr.append(a, b);
+        return tr;
+    }
+    function fatal(msg) { hide($('loading')); hide($('form')); const f = $('fatal'); f.textContent = msg; show(f); }
+
+    function loadSquare(sandbox) {
+        return new Promise((resolve, reject) => {
+            const s = document.createElement('script');
+            s.src = sandbox ? 'https://sandbox.web.squarecdn.com/v1/square.js' : 'https://web.squarecdn.com/v1/square.js';
+            s.onload = resolve;
+            s.onerror = () => reject(new Error('Could not load the secure card form.'));
+            document.head.appendChild(s);
+        });
+    }
+
+    async function init() {
+        if (!id || !t) return fatal('This payment link is not valid. Please use the link in your email.');
+        let cfg;
+        try {
+            const res = await fetch(`/api/autopay/config?id=${encodeURIComponent(id)}&t=${encodeURIComponent(t)}&mode=${mode}`);
+            cfg = await res.json();
+            if (!cfg.success) return fatal(cfg.error || 'This payment link is not valid.');
+        } catch (e) { return fatal('We could not load your payment details. Please try again.'); }
+
+        const summary = $('summary');
+        summary.append(row('Stay', cfg.property));
+        summary.append(row('Dates', `${fmt(cfg.checkIn)} to ${fmt(cfg.checkOut)}`));
+
+        if (mode === 'update') {
+            $('title').textContent = 'Update your card';
+            $('subtitle').textContent = cfg.owesNow
+                ? 'Your last charge was declined. Enter a new card to pay the remaining balance now.'
+                : 'Replace the card we will charge on the date below.';
+            summary.append(row('Remaining balance', usd(cfg.amounts.balanceCharge) + ' (includes 3% card fee)'));
+            summary.append(row(cfg.owesNow ? 'Charged' : 'Charge date', cfg.owesNow ? 'Today' : fmt(cfg.dueDate)));
+            if (cfg.last4) summary.append(row('Current card', 'ending ' + cfg.last4));
+            $('consent-text').textContent = 'I authorize Indigo Palm Collective (MPT Industries) to save this card and charge it ' + usd(cfg.amounts.balanceCharge) + (cfg.owesNow ? ' today' : ' on ' + fmt(cfg.dueDate)) + ' for the remaining balance of my booking.';
+            $('pay').textContent = cfg.owesNow ? 'Save card and pay ' + usd(cfg.amounts.balanceCharge) : 'Save new card';
+        } else {
+            $('subtitle').textContent = 'Pay half now by card. We charge the other half automatically on the date below.';
+            summary.append(row('Pay today', usd(cfg.amounts.firstCharge) + ' (50% + 3% card fee)'));
+            summary.append(row('Charged automatically on', fmt(cfg.dueDate)));
+            summary.append(row('Amount then', usd(cfg.amounts.balanceCharge) + ' (50% + 3% card fee)'));
+            $('consent-text').textContent = cfg.consentText;
+            $('pay').textContent = 'Pay ' + usd(cfg.amounts.firstCharge) + ' now';
+        }
+
+        let card;
+        try {
+            await loadSquare(cfg.sandbox);
+            const payments = window.Square.payments(cfg.appId, cfg.locationId);
+            card = await payments.card();
+            await card.attach('#card-container');
+        } catch (e) { return fatal(e.message || 'The secure card form could not start. Please try again later or contact us.'); }
+
+        hide($('loading')); show($('form'));
+        const consent = $('consent'), pay = $('pay'), err = $('error');
+        consent.addEventListener('change', () => { pay.disabled = !consent.checked; });
+
+        pay.addEventListener('click', async () => {
+            hide(err);
+            if (!consent.checked) return;
+            pay.disabled = true;
+            const label = pay.textContent;
+            pay.textContent = 'Processing...';
+            try {
+                const tok = await card.tokenize();
+                if (tok.status !== 'OK') throw new Error((tok.errors && tok.errors[0] && tok.errors[0].message) || 'Please check your card details.');
+                const res = await fetch('/api/autopay/' + (mode === 'update' ? 'update-card' : 'enroll'), {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id, t, sourceId: tok.token, consent: true }),
+                });
+                const out = await res.json();
+                if (!out.success) throw new Error(out.error || 'Something went wrong.');
+                hide($('form'));
+                const done = $('done'); done.innerHTML = '';
+                const h = document.createElement('h1');
+                const p = document.createElement('p'); p.className = 'sub';
+                if (mode === 'update') {
+                    h.textContent = out.charged ? 'Payment received' : 'Card updated';
+                    p.textContent = out.charged ? 'Your balance is paid. A receipt is on its way to your email.' : 'We will charge your new card on ' + fmt(out.dueDate) + '.';
+                } else {
+                    h.textContent = 'You are booked!';
+                    p.textContent = 'We charged ' + usd(out.firstCharge) + ' today. Your remaining ' + usd(out.balanceCharge) + ' will be charged automatically on ' + fmt(out.dueDate) + '. A confirmation is on its way to your email.';
+                }
+                done.append(h, p); show(done);
+            } catch (e) {
+                err.textContent = e.message || 'Something went wrong. Please try again.';
+                show(err);
+                pay.disabled = !consent.checked;
+                pay.textContent = label;
+            }
+        });
+    }
+    init();
+})();
+</script>
+</body>
+</html>
