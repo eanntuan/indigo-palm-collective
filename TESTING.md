@@ -26,6 +26,14 @@ The sandbox token is separate from your live token and cannot touch real money. 
     SQUARE_SANDBOX_ACCESS_TOKEN=... npm run test:sandbox
     bash scripts/smoke-live.sh
 
+## Alerts and health
+
+- **Push alerts.** When an automatic charge is declined, the 3-day grace period ends, a charge needs a manual check, or a card payment is taken but the booking fails to confirm, the Worker also sends a web push to the host's device (in addition to the existing email). Code: `api-worker/alerts.js`. A push failure is logged and ignored; it never blocks a charge. The 3-day "charge coming up" reminder stays email-only. To receive pushes, open `https://indigopalm.co/inbox` on your phone (iPhone: Add to Home Screen first) and tap Enable once, then check with `/api/test-push?key=ADMIN_KEY`. Only one device is stored (the latest subscription).
+- **Daily job heartbeat.** After each successful `0 9 * * *` run the Worker stores the time in KV key `heartbeat:daily`.
+- **`GET /api/health?key=ADMIN_KEY`** returns the last daily run time (and its age in hours) plus counts of autopay records that are `scheduled`, `failed` and `needs_attention`. No names, emails or secrets. If the age is over about 26 hours, the daily job is not running.
+- **`GET /api/ping`** is public and returns only `{"ok":true}`.
+- `scripts/smoke-live.sh` (nightly) also checks `/api/ping`, that `www.indigopalm.co` loads, and that the TLS certificate has at least 14 days left (`MIN_CERT_DAYS` to change). It fails if the certificate date cannot be read.
+
 ## What is not covered
 
 The browser card form on `/pay/` (Square's SDK turning typed card numbers into a token) is not exercised: the sandbox test uses Square's test token `cnon:card-nonce-ok` in its place. The live smoke check only confirms the page loads the Square SDK. Open `/pay/` once after changes to that page.
