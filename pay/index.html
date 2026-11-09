@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title>Split Payment | Indigo Palm Collective</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root { --ink:#2C2C2C; --sage:#607c67; --sand:#F5F3EE; --line:#E4E0D6; --muted:#777; --err:#b3412e; }
+        :root { --ink:#2C2C2C; --sage:#607c67; --sage-dark:#4d6653; --sage-light:#adbab7; --sand:#F5F3EE; --line:#E4E0D6; --muted:#6f6f6f; --err:#b3412e; }
         * { box-sizing: border-box; }
-        body { margin:0; background:var(--sand); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.6; }
-        .wrap { max-width:520px; margin:0 auto; padding:32px 16px 64px; }
-        .brand { text-align:center; font-family:Georgia,'Times New Roman',serif; font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:20px; }
-        .card { background:#fff; border-radius:14px; padding:28px 24px; box-shadow:0 2px 12px rgba(0,0,0,.07); }
-        h1 { font-family:Georgia,'Times New Roman',serif; font-weight:400; font-size:26px; margin:0 0 6px; }
-        .sub { color:var(--muted); font-size:14px; margin:0 0 22px; }
+        body { margin:0; background:var(--sand); color:var(--ink); font-family:'Work Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.6; }
+        .hero { position:relative; height:260px; background:linear-gradient(135deg,var(--sage-dark),var(--sage)); background-size:cover; background-position:center; }
+        .hero::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,rgba(40,60,46,.25),rgba(40,60,46,.55)); }
+        .wrap { max-width:540px; margin:0 auto; padding:0 16px 56px; position:relative; z-index:1; }
+        .logo { display:block; width:112px; height:112px; margin:-56px auto 0; border-radius:50%; border:5px solid #fff; box-shadow:0 4px 18px rgba(0,0,0,.18); object-fit:cover; }
+        .brand { text-align:center; font-family:'Cormorant Garamond',Georgia,serif; font-size:22px; font-weight:600; color:var(--sage-dark); margin:12px 0 18px; }
+        .card { background:#fff; border-radius:16px; padding:30px 26px; box-shadow:0 4px 24px rgba(0,0,0,.08); border-top:4px solid var(--sage); }
+        h1 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:600; font-size:32px; line-height:1.15; margin:0 0 8px; color:var(--sage-dark); }
+        .sub { color:var(--muted); font-size:15px; margin:0 0 22px; }
         table { width:100%; border-collapse:collapse; margin-bottom:22px; }
-        td { padding:10px 0; border-bottom:1px solid var(--line); font-size:14px; vertical-align:top; }
-        td:first-child { color:var(--muted); width:46%; }
+        td { padding:11px 0; border-bottom:1px solid var(--line); font-size:14px; vertical-align:top; }
+        td:first-child { color:var(--muted); width:42%; }
         td:last-child { font-weight:600; text-align:right; }
-        .consent { display:flex; gap:10px; align-items:flex-start; background:var(--sand); border-radius:10px; padding:14px; margin:0 0 18px; font-size:13px; color:#444; }
-        .consent input { margin-top:3px; width:18px; height:18px; flex:none; }
+        .consent { display:flex; gap:10px; align-items:flex-start; background:var(--sand); border:1px solid var(--line); border-radius:10px; padding:14px; margin:0 0 18px; font-size:13px; color:#444; }
+        .consent input { margin-top:3px; width:18px; height:18px; flex:none; accent-color:var(--sage); }
         #card-container { min-height:96px; margin-bottom:18px; }
-        button { width:100%; padding:15px; border:0; border-radius:8px; background:var(--sage); color:#fff; font-size:16px; font-weight:600; cursor:pointer; }
+        button { width:100%; padding:16px; border:0; border-radius:10px; background:var(--sage); color:#fff; font-family:inherit; font-size:16px; font-weight:600; cursor:pointer; transition:background .15s; }
+        button:hover:not([disabled]) { background:var(--sage-dark); }
         button[disabled] { opacity:.45; cursor:not-allowed; }
         .msg { margin-top:16px; font-size:14px; }
         .msg.err { color:var(--err); }
         .ok h1 { color:var(--sage); }
         .fine { margin-top:18px; font-size:12px; color:var(--muted); text-align:center; }
+        .foot { text-align:center; margin-top:22px; font-size:12px; color:var(--muted); }
+        .foot a { color:var(--sage-dark); }
         .hidden { display:none; }
+        @media (max-width:480px) { .hero { height:200px; } .card { padding:24px 18px; } h1 { font-size:28px; } }
     </style>
 </head>
 <body>
+<div class="hero" id="hero" role="img" aria-label="Indigo Palm Collective"></div>
 <div class="wrap">
+    <img class="logo" src="/pay/logo.png" alt="Indigo Palm Collective" width="112" height="112">
     <div class="brand">Indigo Palm Collective</div>
     <div class="card" id="root">
         <p id="loading" class="sub">Loading your payment details...</p>
@@ -55,6 +68,7 @@
         <div id="done" class="hidden ok"></div>
         <p id="fatal" class="msg err hidden"></p>
     </div>
+    <p class="foot">Questions? <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a></p>
 </div>
 
 <script>
@@ -98,6 +112,7 @@
             if (!cfg.success) return fatal(cfg.error || 'This payment link is not valid.');
         } catch (e) { return fatal('We could not load your payment details. Please try again.'); }
 
+        if (/sundune/i.test(cfg.property || '')) $('hero').style.backgroundImage = "url('/pay/hero-sundune.webp')";
         const summary = $('summary');
         summary.append(row('Stay', cfg.property));
         summary.append(row('Dates', `${fmt(cfg.checkIn)} to ${fmt(cfg.checkOut)}`));
