@@ -238,7 +238,7 @@ layout: blog-post.njk
 
 <h3>Canopy Wine Lounge</h3>
 
-<p><a href="https://www.canopypalmsprings.com/" target="_blank" rel="noopener noreferrer"><strong>Canopy Wine Lounge</strong></a> is the wine bar locals point to first. The list leans into small producers and sustainable winemaking rather than the usual by-the-glass suspects, and the food menu of light bites and shareable plates is built to support that, not compete with it. Downtown, walkable from most of the Uptown Design District restaurants above, and a good pre- or post-dinner stop.</p>
+<p><a href="https://www.canopypalmsprings.com/" target="_blank" rel="noopener noreferrer"><strong>Canopy Wine Lounge</strong></a> is the wine bar locals point to first. The list leans into small producers and sustainable winemaking rather than the usual by-the-glass suspects, and the food menu of light bites and shareable plates is built to support that, not compete with it. Downtown, walkable from most of the Uptown Design District restaurants above, and a good pre- or post-dinner stop. For more, see our <a href="/blog/best-wine-bars-palm-springs/">guide to the best wine bars in Palm Springs</a>.</p>
 
 <p><strong>175 N Palm Canyon Dr, Palm Springs, CA 92262.</strong> (760) 656-0054. Sun-Mon &amp; Thu 3-8:30pm, Fri-Sat 3-9:30pm, closed Tue-Wed. Happy hour daily 3-5pm.</p>
 

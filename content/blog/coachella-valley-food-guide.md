@@ -92,7 +92,7 @@ faqItems:
 
 <h3><a href="https://shieldsdategarden.com/" target="_blank" rel="noopener noreferrer">Shields Date Garden</a></h3>
 
-<p>Shields has been in the valley since 1924, and the Medjool dates here are the reason. Not a restaurant exactly, more of a farm store and date shake bar. The date shakes are thick, sweet, and specific to this part of California in a way that feels earned. The Medjool dates are sold by weight, soft and caramel-thick, and you will eat more of them than you planned in the parking lot.</p>
+<p>Shields has been in the valley since 1924, and the Medjool dates here are the reason. Not a restaurant exactly, more of a farm store and date shake bar. The date shakes are thick, sweet, and specific to this part of California in a way that feels earned. The Medjool dates are sold by weight, soft and caramel-thick, and you will eat more of them than you planned in the parking lot. For more cold treats, see our <a href="/blog/best-ice-cream-coachella-valley/">guide to the best ice cream in Palm Springs and the Coachella Valley</a>.</p>
 
 <p>Worth a stop any time you're driving through the area. It's on the main highway between Indio and Palm Springs, so it fits naturally into most itineraries.</p>
 
