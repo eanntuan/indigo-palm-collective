@@ -1,0 +1,5 @@
+# Drafts held back from the Eleventy build so they do not publish early.
+# To publish: delete the post's line below, set its date: to the publish day, then
+# follow "After Writing a Blog Post" in CLAUDE.md (blog/index.html card + sitemap.xml).
+content/blog/coachella-2027-weekend-stay-planner.md
+content/blog/stagecoach-2027-weekend-stay-planner.md
