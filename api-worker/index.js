@@ -15,6 +15,7 @@ import { gmailSentConfigured, copyToGmailSent, diagnoseGmailSent } from './gmail
 import { PROPERTY_CONFIG, isFlatPricing, buildQuote, calcCardFee, countNights, securityDepositFor } from './pricing-core.js';
 import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayUtc } from './autopay.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
+import { processZelleReminders, handleBalanceReceived } from './zelle-balance.js';
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -414,6 +415,8 @@ export default {
     if (event && event.cron === '0 9 * * *') {
       try { await processAutopayCharges(env, autopayDeps); }
       catch (e) { console.error('Autopay job failed', e); }
+      try { await processZelleReminders(env, autopayDeps); }
+      catch (e) { console.error('Zelle reminder job failed', e); }
     }
     await sendDueWelcomeEmails(env);
     await processPendingAirbnbReplies(env);
@@ -511,6 +514,10 @@ export default {
 
     if (path === '/api/confirm-payment' && request.method === 'POST') {
       return isAdminAuthorized(request, env) ? handleConfirmPayment(request, env) : unauthorizedJson();
+    }
+
+    if (path === '/api/balance-received' && request.method === 'POST') {
+      return isAdminAuthorized(request, env) ? handleBalanceReceived(request, env, autopayDeps) : unauthorizedJson();
     }
 
     if (path === '/api/confirm' && request.method === 'POST') {
@@ -1238,7 +1245,7 @@ async function handleApprove(request, env) {
       ${securityDeposit > 0 ? detailRow('Stay total', `$${finalTotal.toFixed(2)}`) + detailRow('Refundable security deposit', `$${securityDeposit.toFixed(2)}`) : ''}
       ${detailRow(securityDeposit > 0 ? 'Total due' : 'Total', `<strong>${zelleTotal}</strong>`)}
     </table>
-    ${securityDeposit > 0 ? `<p style="margin:-14px 0 24px;font-size:13px;color:#888;line-height:1.6;">The security deposit is returned within 2 days of checkout as long as the house is left in good condition. It has no card fee.</p>` : ''}
+    ${securityDeposit > 0 ? `<p style="margin:-14px 0 24px;font-size:13px;color:#888;line-height:1.6;">The security deposit is returned within 72 hours of checkout as long as the house is left in good condition. It has no card fee.</p>` : ''}
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:16px;">
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Zelle (no fee): ${zelleTotal}</p>
       <p style="margin:0;font-size:14px;color:#555;">Send to <strong>214-606-1340</strong> (MPT Industries) and reply to this email to confirm.</p>
@@ -1855,7 +1862,7 @@ async function handleCreateLease(request, env) {
     checkIn, checkOut,
     total: parseFloat(total),
     deposit: parseFloat(deposit) || 300,
-    cancellation: cancellation || 'Full refund of payments received if cancelled 60 or more days before check-in. Non-refundable less than 60 days before check-in. The refundable security deposit is handled separately.',
+    cancellation: cancellation || 'Full refund of payments received (except the 3% card processing fee) if cancelled 60 or more days before check-in. Non-refundable less than 60 days before check-in. The refundable security deposit is handled separately.',
     address: info.address,
     signed: false,
     signatureName: null,
@@ -1954,7 +1961,7 @@ async function handleSignLease(request, env) {
     </table>
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;">
       <p style="margin:0 0 12px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">What you agreed to</p>
-      <p style="margin:0;font-size:13px;color:#555;line-height:1.7;">No parties, no events, no subletting. No unauthorized pets. Outdoor noise curfew at 10pm. No smoking. Pool and amenities at your own risk. Security deposit returnable within 2 days of checkout if no issues. Payment: pay the full total by card (3% processing fee added), or send 50% by Zelle to secure the booking with the remaining 50% due 60 days before check-in (bookings within 60 days of check-in are paid in full). Cancel 60 or more days before check-in for a full refund of payments received; non-refundable after that. Governed by California law, Riverside County.</p>
+      <p style="margin:0;font-size:13px;color:#555;line-height:1.7;">No parties, no events, no subletting. No unauthorized pets. Outdoor noise curfew at 10pm. No smoking. Pool and amenities at your own risk. Security deposit returnable within 72 hours of checkout if no issues. Payment: pay the full total by card (3% processing fee added), or send 50% by Zelle to secure the booking with the remaining 50% due 60 days before check-in (bookings within 60 days of check-in are paid in full). Cancel 60 or more days before check-in for a full refund of payments received (except the 3% card processing fee); non-refundable after that. Governed by California law, Riverside County.</p>
     </div>
     <p style="margin:0;font-size:13px;color:#aaa;">Questions? <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
@@ -2132,7 +2139,7 @@ async function createSquarePaymentLink(accessToken, { bookingId, property, check
       name: 'Refundable security deposit',
       quantity: '1',
       base_price_money: money(securityDeposit),
-      note: 'Returned within 2 days of checkout if the house is left in good condition',
+      note: 'Returned within 72 hours of checkout if the house is left in good condition',
     });
   }
 
@@ -2658,7 +2665,7 @@ async function sendEscalationEmail(env, guestName, propertyName, message, draft)
 
   const draftBlock = draft
     ? `<p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Suggested reply (not sent):</p>
-       <blockquote style="margin:0 0 20px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
+       <blockquote style="margin:0 0 20px;padding:12px 16px;background:#EEF2FF;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
        <p style="font-size:13px;color:#666;">Log into Hostaway to send, edit, or ignore this reply.</p>`
     : `<p style="font-size:13px;color:#888;">Claude could not generate a reply. Check the message manually.</p>`;
 
@@ -2671,7 +2678,7 @@ async function sendEscalationEmail(env, guestName, propertyName, message, draft)
       <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Guest message</p>
       <h2 style="margin:0 0 20px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${guestName} at ${displayName}</h2>
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Their message:</p>
-      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;border-left:3px solid #B67550;font-size:14px;color:#333;line-height:1.6;">${message.replace(/\n/g, '<br>')}</blockquote>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;font-size:14px;color:#333;line-height:1.6;">${message.replace(/\n/g, '<br>')}</blockquote>
       ${draftBlock}
     `),
   });
@@ -2968,7 +2975,7 @@ async function sendAirbnbEscalationEmail(env, guestName, propertyName, guestMess
 
   const draftBlock = draft
     ? `<p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Suggested reply (not sent):</p>
-       <blockquote style="margin:0 0 20px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
+       <blockquote style="margin:0 0 20px;padding:12px 16px;background:#EEF2FF;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
        <p style="font-size:13px;color:#666;">Log into Airbnb to send, edit, or ignore this reply.</p>`
     : `<p style="font-size:13px;color:#888;">Claude could not generate a reply. Respond directly in Airbnb.</p>`;
 
@@ -2981,7 +2988,7 @@ async function sendAirbnbEscalationEmail(env, guestName, propertyName, guestMess
       <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Airbnb guest message</p>
       <h2 style="margin:0 0 20px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${guestName} at ${displayName}</h2>
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Their message:</p>
-      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;border-left:3px solid #B67550;font-size:14px;color:#333;line-height:1.6;">${guestMessage.replace(/\n/g, '<br>')}</blockquote>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;font-size:14px;color:#333;line-height:1.6;">${guestMessage.replace(/\n/g, '<br>')}</blockquote>
       ${draftBlock}
     `),
   });
@@ -3449,9 +3456,9 @@ async function handleTestGuestMessage(env) {
       <h2 style="margin:0 0 4px;font-family:Georgia,serif;font-size:22px;font-weight:400;color:#2C2C2C;">${fakeGuest} — ${fakeProperty.name}</h2>
       <p style="margin:0 0 20px;font-size:13px;color:#888;">Auto-sends in 10 minutes if you don't act. (This is a test — the reply address is fake and won't send to a real guest.)</p>
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Their message:</p>
-      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;border-left:3px solid #B67550;font-size:14px;color:#333;line-height:1.6;">${fakeMessage.replace(/\n/g, '<br>')}</blockquote>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;font-size:14px;color:#333;line-height:1.6;">${fakeMessage.replace(/\n/g, '<br>')}</blockquote>
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Draft reply:</p>
-      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#EEF2FF;font-size:14px;color:#333;line-height:1.6;">${draft.replace(/\n/g, '<br>')}</blockquote>
       <a href="${approveUrl}" style="display:inline-block;padding:12px 28px;background:#325CD9;color:white;text-decoration:none;border-radius:6px;font-size:15px;font-weight:600;">Review &amp; Send</a>
       <p style="margin:16px 0 0;font-size:12px;color:#aaa;">Tap "Review &amp; Send" to edit and send the reply. If you do nothing, it auto-sends in 10 minutes. (This test reply goes to a fake address — no real guest will receive it.)</p>
     `),
@@ -3652,7 +3659,7 @@ function buildAirbnbMessageEmail(subject, bodyText, property) {
   const msgBubble = ({ name, role, text }) => `
     <div style="margin-bottom:12px;">
       <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#888;">${e(name)}${role ? ` <span style="font-weight:400;color:#bbb;">${e(role)}</span>` : ''}</p>
-      <div style="background:#f7f5f1;border-left:3px solid #B67550;padding:12px 16px;border-radius:0 8px 8px 0;font-size:14px;color:#2C2C2C;line-height:1.6;">${e(text)}</div>
+      <div style="background:#f7f5f1;padding:12px 16px;border-radius:8px;font-size:14px;color:#2C2C2C;line-height:1.6;">${e(text)}</div>
     </div>`;
 
   // Strip residual Airbnb boilerplate from the fallback display text
@@ -3791,7 +3798,7 @@ function buildAirbnbConfirmationEmail(subject, bodyText, property) {
     </table>
 
     ${guestMsg ? `
-    <div style="background:#f7f5f1;border-left:3px solid #c8a97e;padding:14px 16px;border-radius:0 8px 8px 0;margin-bottom:20px;">
+    <div style="background:#f7f5f1;padding:14px 16px;border-radius:8px;margin-bottom:20px;">
       <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">Guest message</p>
       <p style="margin:0;font-size:14px;color:#2C2C2C;line-height:1.6;">${e(guestMsg)}</p>
     </div>` : ''}
@@ -3837,7 +3844,7 @@ async function handleApprovalPage(request, env) {
     .card{background:#fff;border-radius:14px;padding:20px;max-width:560px;margin:0 auto;box-shadow:0 2px 12px rgba(0,0,0,.08)}
     .label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:#aaa;margin-bottom:6px}
     .prop{font-size:13px;font-weight:600;color:#B67550;margin-bottom:18px}
-    .bubble{background:#f5f3ee;border-left:3px solid #B67550;padding:12px 14px;border-radius:0 8px 8px 0;font-size:14px;line-height:1.65;color:#333;margin-bottom:22px;white-space:pre-wrap}
+    .bubble{background:#f5f3ee;padding:12px 14px;border-radius:8px;font-size:14px;line-height:1.65;color:#333;margin-bottom:22px;white-space:pre-wrap}
     .timer{font-size:12px;color:#999;margin-bottom:10px}
     textarea{width:100%;border:1.5px solid #ddd;border-radius:10px;padding:12px;font-size:15px;line-height:1.6;resize:vertical;min-height:180px;font-family:inherit;color:#222;transition:border .15s}
     textarea:focus{border-color:#325CD9;outline:none}
@@ -4110,7 +4117,7 @@ async function handleAirbnbEmail(message, env) {
   const approveUrl = `https://indigopalm.co/api/approve-reply?id=${id}`;
   const escalateFlag = draft ? messageNeedsEscalation(guestMessage, draft) : true;
   const flagNote = escalateFlag
-    ? `<p style="margin:0 0 16px;padding:10px 14px;background:#FFF3CD;border-left:3px solid #F0A500;font-size:13px;color:#555;border-radius:0 6px 6px 0;">Heads up: this message may need your personal attention (escalation keyword or uncertain reply).</p>`
+    ? `<p style="margin:0 0 16px;padding:10px 14px;background:#FFF3CD;font-size:13px;color:#555;border-radius:6px;">Heads up: this message may need your personal attention (escalation keyword or uncertain reply).</p>`
     : '';
 
   await sendEmail(env.RESEND_API_KEY, {
@@ -4123,9 +4130,9 @@ async function handleAirbnbEmail(message, env) {
       <p style="margin:0 0 20px;font-size:13px;color:#888;">Auto-sends in 10 minutes if you don't act.</p>
       ${flagNote}
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Their message:</p>
-      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;border-left:3px solid #B67550;font-size:14px;color:#333;line-height:1.6;">${guestMessage.replace(/\n/g, '<br>')}</blockquote>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#F5F3EE;font-size:14px;color:#333;line-height:1.6;">${guestMessage.replace(/\n/g, '<br>')}</blockquote>
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Draft reply:</p>
-      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#EEF2FF;border-left:3px solid #325CD9;font-size:14px;color:#333;line-height:1.6;">${(draft || '(no draft generated)').replace(/\n/g, '<br>')}</blockquote>
+      <blockquote style="margin:0 0 24px;padding:12px 16px;background:#EEF2FF;font-size:14px;color:#333;line-height:1.6;">${(draft || '(no draft generated)').replace(/\n/g, '<br>')}</blockquote>
       <a href="${approveUrl}" style="display:inline-block;padding:12px 28px;background:#325CD9;color:white;text-decoration:none;border-radius:6px;font-size:15px;font-weight:600;">Review &amp; Send</a>
       <a href="${airbnbThreadUrl}" style="display:inline-block;margin-left:12px;padding:12px 20px;background:#fff;color:#FF5A5F;text-decoration:none;border-radius:6px;font-size:15px;font-weight:600;border:1.5px solid #FF5A5F;">View on Airbnb</a>
       <p style="margin:16px 0 0;font-size:12px;color:#aaa;">Clicking "Review &amp; Send" opens a page where you can edit the reply before sending. If you do nothing, the draft auto-sends in 10 minutes.</p>

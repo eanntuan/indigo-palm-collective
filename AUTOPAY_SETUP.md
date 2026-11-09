@@ -78,3 +78,7 @@ Without `SQUARE_APPLICATION_ID` the split option is simply not offered.
 ## Security deposit
 
 Approving a booking adds the $300 refundable security deposit to every payment method (Square link, Zelle total, split and pay-in-full page) unless "Waive the $300 security deposit" is ticked on the approve page. It carries no 3% card fee, and with the split plan it is charged entirely in the first payment. It is stored on the booking as `securityDeposit` (the-well never has one). Refund it from the Square dashboard after checkout. Bookings approved before this change have no `securityDeposit` and are unaffected.
+
+## Zelle, check and cash balances
+
+Guests who do not use card autopay owe the rest 60 days before check-in. For bookings approved on or after 2026-11-09 the daily job (09:00 UTC) emails the guest 14 days and 3 days before the due date (host copied) and emails the host the day after if still unpaid. Record a received balance on the approve page ("Balance by Zelle, check or cash"): that stops the reminders and emails the guest a receipt. Code: `api-worker/zelle-balance.js`.

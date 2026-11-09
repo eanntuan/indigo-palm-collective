@@ -4,7 +4,7 @@
 // due 60 days before check-in, $300 refundable security deposit, and a
 // 60-day full-refund cancellation window.
 
-import { test } from 'node:test';
+import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -105,4 +105,28 @@ test('guest-facing buttons are pill shaped like the site buttons', () => {
   }
   const pay = readFileSync(new URL('../pay/index.html', import.meta.url), 'utf8');
   assert.match(pay, /button \{[^}]*border-radius:999px/);
+});
+
+describe('refund and deposit wording is consistent everywhere', () => {
+  const files = ['booking-flow.html', 'booking-flow/index.html', 'lease.html', 'book-direct/index.html',
+    'booking-flow.js', 'admin-lease.html', 'api-worker/index.js', 'api-worker/autopay.js', 'api-worker/autopay-core.js'];
+  const read = (f) => readFileSync(new URL('../' + f, import.meta.url), 'utf8');
+  test('deposit return is 72 hours, never "2 days of checkout"', () => {
+    for (const f of files) assert.doesNotMatch(read(f), /within 2 days of check/i, f);
+  });
+  test('every cancellation statement says the 3% card fee is not refunded', () => {
+    for (const f of files) {
+      const s = read(f);
+      for (const m of s.matchAll(/full refund of payments received[^.<`"]{0,80}/gi)) {
+        assert.match(m[0], /3% card (processing )?fee/i, `${f}: ${m[0]}`);
+      }
+    }
+  });
+});
+
+test('no vertical accent bars (border-left) in guest, admin or Worker pages and emails', () => {
+  for (const f of ['lease.html', 'admin-lease.html', 'admin-approve.html', 'pay/index.html', 'api-worker/index.js', 'api-worker/autopay.js']) {
+    const s = readFileSync(new URL('../' + f, import.meta.url), 'utf8');
+    assert.doesNotMatch(s, /border-left:\s*\d+px solid/i, f);
+  }
 });

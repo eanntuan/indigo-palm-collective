@@ -714,7 +714,7 @@ function renderPriceSummary() {
         <div style="margin-top:1rem;padding:0.85rem 1rem;background:transparent;border-top:1px solid #B85A38;border-radius:0;font-size:0.82rem;line-height:1.6;color:#555;">
             <strong style="color:#2C2C2C;">Credit card:</strong> pay the full total via a Square link sent after approval (3% fee added)<br>
             <strong style="color:#2C2C2C;">Zelle (no fee):</strong> 50% upfront to secure your booking, 214-606-1340 (MPT Industries). Remaining 50% due 60 days before check-in; bookings within 60 days of check-in are paid in full.<br>
-            <strong style="color:#2C2C2C;">Cancellation:</strong> full refund of payments received if you cancel 60 or more days before check-in; non-refundable after that.
+            <strong style="color:#2C2C2C;">Cancellation:</strong> full refund of payments received (except the 3% card processing fee) if you cancel 60 or more days before check-in; non-refundable after that.
         </div>`;
 
     // Fade the pool row and tween amounts from their previous values
