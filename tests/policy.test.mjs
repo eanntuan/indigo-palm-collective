@@ -44,6 +44,7 @@ test('lease page, booking flow and lease emails carry the same terms', () => {
   const pages = {
     'lease.html': read('lease.html'),
     'booking-flow.html': read('booking-flow.html'),
+    'booking-flow/index.html': read('booking-flow/index.html'), // the live /booking-flow/ page
     'booking-flow.js': read('booking-flow.js'),
     'api-worker/index.js': read('api-worker/index.js'),
   };
@@ -55,6 +56,33 @@ test('lease page, booking flow and lease emails carry the same terms', () => {
   }
   assert.match(pages['lease.html'], /\$300 refundable security deposit/);
   assert.match(pages['booking-flow.html'], /\$300 refundable security deposit/);
+  assert.match(pages['booking-flow/index.html'], /\$300 refundable security deposit/);
+  assert.doesNotMatch(pages['booking-flow/index.html'], /No refund after that, except/);
+});
+
+test('booking price box: nightly rate x nights, refundable security deposit, total', () => {
+  const js = read('booking-flow.js');
+  const render = js.slice(js.indexOf('function renderPriceSummary'));
+
+  assert.match(render, /const SECURITY_DEPOSIT = 300;/);
+  assert.match(render, /night\$\{nights !== 1 \? 's' : ''\} &times; \$\$\{allInNightly\}\/night/);
+  assert.match(render, /Refundable security deposit/);
+  // total = stay (rate x nights, + optional pool heat, - discount) + deposit
+  assert.match(render, /const finalTotal = stayTotal \+ SECURITY_DEPOSIT;/);
+  // order on screen: nightly line, deposit line, total line
+  const iRate = render.indexOf('${allInNightly}/night');
+  const iDep = render.indexOf('Refundable security deposit');
+  const iTot = render.indexOf('<strong>Total</strong>');
+  assert.ok(iRate < iDep && iDep < iTot, 'rate, then deposit, then total');
+
+  // The deposit is display-only: the booking request still sends the stay pricing.
+  const submit = js.slice(js.indexOf("fetch('/api/booking'"), js.indexOf("fetch('/api/booking'") + 900);
+  assert.doesNotMatch(submit, /SECURITY_DEPOSIT/);
+  assert.match(submit, /pricing: pricingPayload/);
+});
+
+test('live booking page loads the updated script', () => {
+  assert.match(read('booking-flow/index.html'), /booking-flow\.js\?v=14/);
 });
 
 test('new-lease defaults use the $300 security deposit', () => {
