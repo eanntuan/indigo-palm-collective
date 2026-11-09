@@ -1231,6 +1231,9 @@ async function handleApprove(request, env) {
   const splitAmts = splitEligible ? splitAmounts(finalTotal, securityDeposit) : null;
   const splitDueDate = splitEligible ? balanceDueDate(booking.checkIn) : null;
 
+  const zelleSplit = !usedOverride && finalTotal > 0 && isAutopayEligible(booking.checkIn, todayUtc())
+    ? { first: Math.round(finalTotal * 50) / 100 + securityDeposit, rest: finalTotal - Math.round(finalTotal * 50) / 100 } : null;
+
   // Send payment email to guest
   const approveHeroUrl = await getPropertyHeroImageUrl(booking.propertyId, env);
   const approvalBeat = PROPERTY_STORY_BEATS[booking.propertyId]?.confirmed || '';
@@ -1254,6 +1257,7 @@ async function handleApprove(request, env) {
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:16px;">
       <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#2C2C2C;">Zelle (no fee): ${zelleTotal}</p>
       <p style="margin:0;font-size:14px;color:#555;">Send to <strong>214-606-1340</strong> (MPT Industries) and reply to this email to confirm.</p>
+      ${zelleSplit ? `<p style="margin:10px 0 0;font-size:13px;color:#555;line-height:1.6;">Prefer to split it? Send 50% now ($${zelleSplit.first.toFixed(2)}${securityDeposit > 0 ? ', includes the refundable security deposit' : ''}) and the other 50% ($${zelleSplit.rest.toFixed(2)}) by ${fmtDate(balanceDueDate(booking.checkIn))}, 60 days before check-in. We will email you a reminder.</p>` : ''}
     </div>
     ${paymentLink ? `
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;text-align:center;">
@@ -1267,6 +1271,7 @@ async function handleApprove(request, env) {
       <a href="${payLink(id, payToken)}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:999px;letter-spacing:0.02em;">Split payment by card &rarr;</a>
     </div>` : ''}
     ${notesToGuest ? `<div style="margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notesToGuest}</p></div>` : ''}
+    <p style="margin:0 0 20px;font-size:13px;color:#888;line-height:1.6;"><strong>Cancellation:</strong> full refund of payments received (except the 3% card fee, if you paid by card) when you cancel 60 or more days before check-in. Non-refundable inside 60 days.</p>
     <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or email <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
 
@@ -2185,7 +2190,10 @@ async function createSquarePaymentLink(accessToken, { bookingId, property, check
   return data.payment_link?.url;
 }
 
+const HERO_OVERRIDES = { 'ps-retreat': 'https://indigopalm.co/the-sundune/photos/Sundune2026-0047.webp' };
+
 async function getPropertyHeroImageUrl(propertyId, env) {
+  if (HERO_OVERRIDES[propertyId]) return HERO_OVERRIDES[propertyId];
   const cacheKey = `hero-img:${propertyId}`;
   if (env.BOOKINGS) {
     const cached = await env.BOOKINGS.get(cacheKey);
