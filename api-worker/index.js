@@ -1244,7 +1244,7 @@ async function handleApprove(request, env) {
       <p style="margin:0 0 14px;font-size:13px;color:#555;line-height:1.6;">Pay 50% now (${'$' + splitAmts.firstCharge.toFixed(2)}, includes 3% fee). We save your card and automatically charge the remaining 50% (${'$' + splitAmts.balanceCharge.toFixed(2)}, includes 3% fee) on ${fmtDate(splitDueDate)}, 60 days before check-in.</p>
       <a href="${payLink(id, payToken)}" style="display:inline-block;padding:14px 32px;background:#607c67;color:#ffffff;text-decoration:none;font-size:15px;font-weight:600;border-radius:6px;letter-spacing:0.02em;">Split payment by card &rarr;</a>
     </div>` : ''}
-    ${notesToGuest ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notesToGuest}</p></div>` : ''}
+    ${notesToGuest ? `<div style="margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notesToGuest}</p></div>` : ''}
     <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or email <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
 
@@ -1809,7 +1809,7 @@ function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nig
       `}
     </div>
 
-    ${notes ? `<div style="padding:16px 20px;background:#fff8f0;border-left:3px solid #B67550;border-radius:4px;margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notes}</p></div>` : ''}
+    ${notes ? `<div style="margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notes}</p></div>` : ''}
 
     <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">Check-in details are coming closer to the date. We'll make sure you're taken care of.</p>
     <p style="margin:0 0 20px;font-size:15px;color:#555;line-height:1.7;">See you in the desert.</p>

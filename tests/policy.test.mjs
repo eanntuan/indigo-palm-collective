@@ -89,3 +89,9 @@ test('new-lease defaults use the $300 security deposit', () => {
   assert.match(read('admin-lease.html'), /id="deposit"[^>]*value="300"/);
   assert.match(read('api-worker/index.js'), /deposit: parseFloat\(deposit\) \|\| 300,/);
 });
+
+test('guest emails do not use a vertical accent bar on the host note', () => {
+  const src = readFileSync(new URL('../api-worker/index.js', import.meta.url), 'utf8');
+  assert.doesNotMatch(src, /\$\{notesToGuest \? `<div[^`]*border-left/);
+  assert.doesNotMatch(src, /\$\{notes \? `<div[^`]*border-left/);
+});
