@@ -52,6 +52,13 @@ export function splitAmounts(finalTotal) {
   };
 }
 
+// Pay-in-full by card: the whole total plus one 3% fee (same as the full-payment link).
+export function fullAmounts(finalTotal) {
+  const total = roundCents(finalTotal);
+  const fee = calcCardFee(total);
+  return { total, fee, charge: roundCents(total + fee) };
+}
+
 export const toCents = (dollars) => Math.round(dollars * 100);
 
 // Square idempotency keys (max 45 chars). The attempt number only changes after

@@ -20,7 +20,7 @@
 // SQUARE_SANDBOX ('true' to use Square's sandbox).
 
 import {
-  BALANCE_DAYS, CONSENT_VERSION, balanceDueDate, isAutopayEligible, splitAmounts,
+  BALANCE_DAYS, CONSENT_VERSION, balanceDueDate, isAutopayEligible, splitAmounts, fullAmounts,
   toCents, idempotencyKey, consentText, autopayAction, graceDeadlineMs, isDefinitiveDecline,
   addDays,
 } from './autopay-core.js';
@@ -167,14 +167,14 @@ async function handleConfig(url, env, deps) {
   if (rec && rec.status !== 'cancelled') return respond(deps, { success: false, error: 'This booking already has a split payment set up.' }, 409);
   if (booking.status !== 'approved') return respond(deps, { success: false, error: 'This booking is not awaiting payment.' }, 409);
 
-  const today = todayUtc();
-  if (!isAutopayEligible(booking.checkIn, today)) {
-    return respond(deps, { success: false, error: `Check-in is less than ${BALANCE_DAYS} days away, so the full amount is due now. Please use the full payment link in your email.` }, 409);
-  }
+  const full = fullAmounts(booking.finalTotal);
+  if (!(booking.finalTotal > 0)) return respond(deps, { success: false, error: 'This booking is not awaiting payment.' }, 409);
+  const splitAvailable = isAutopayEligible(booking.checkIn, todayUtc());
+  if (!splitAvailable) return respond(deps, { ...base, splitAvailable: false, full });
   const amounts = splitAmounts(booking.finalTotal);
   const dueDate = balanceDueDate(booking.checkIn);
   return respond(deps, {
-    ...base, dueDate, amounts,
+    ...base, splitAvailable: true, full, dueDate, amounts,
     consentText: consentText({ firstCharge: amounts.firstCharge, balanceCharge: amounts.balanceCharge, dueDate, fmtDate: deps.fmtDate }),
   });
 }
@@ -184,11 +184,12 @@ async function handleConfig(url, env, deps) {
 async function handleEnroll(request, env, deps) {
   let body;
   try { body = await request.json(); } catch { return respond(deps, { success: false, error: 'Invalid request' }, 400); }
-  const { id, t, sourceId, consent } = body;
+  const { id, t, sourceId, consent, plan } = body;
 
   const booking = await loadBooking(env, id);
   const bad = guestPayError(booking, t);
   if (bad) return respond(deps, { success: false, error: bad.error }, bad.status);
+  if (plan === 'full') return handlePayInFull(request, env, deps, booking, sourceId);
   if (consent !== true) return respond(deps, { success: false, error: 'Please agree to the automatic payment authorization.' }, 400);
   if (!sourceId) return respond(deps, { success: false, error: 'Card details are missing. Please try again.' }, 400);
   if (!env.SQUARE_ACCESS_TOKEN) return respond(deps, { success: false, error: 'Card payments are not available right now.' }, 503);
@@ -304,6 +305,63 @@ async function handleEnroll(request, env, deps) {
   }
 
   return respond(deps, { success: true, firstCharge: amounts.firstCharge, balanceCharge: amounts.balanceCharge, dueDate, last4: rec.last4 });
+}
+
+// ── Guest: pay the whole amount by card (no saved card, no schedule) ─────────
+
+async function handlePayInFull(request, env, deps, booking, sourceId) {
+  const id = booking.id;
+  if (!sourceId) return respond(deps, { success: false, error: 'Card details are missing. Please try again.' }, 400);
+  if (!env.SQUARE_ACCESS_TOKEN) return respond(deps, { success: false, error: 'Card payments are not available right now.' }, 503);
+  const existing = await loadRecord(env, id);
+  if (existing && existing.status !== 'cancelled') return respond(deps, { success: false, error: 'This booking already has a payment set up.' }, 409);
+  if (booking.status !== 'approved' || !(booking.finalTotal > 0)) return respond(deps, { success: false, error: 'This booking is not awaiting payment.' }, 409);
+
+  const amounts = fullAmounts(booking.finalTotal);
+  const locationId = await getLocationId(env);
+  if (!locationId) return respond(deps, { success: false, error: 'Payment setup failed. Please email us.' }, 502);
+
+  const pay = await square(env, 'POST', '/v2/payments', {
+    idempotency_key: idempotencyKey('full', id, 0),
+    source_id: sourceId,
+    location_id: locationId,
+    amount_money: { amount: toCents(amounts.charge), currency: 'USD' },
+    autocomplete: true,
+    reference_id: id,
+    buyer_email_address: booking.email,
+    note: `${booking.property} ${booking.checkIn} to ${booking.checkOut}: paid in full (incl. 3% card fee)`,
+  });
+  const payment = pay.json.payment;
+  if (!pay.ok || !payment?.id) {
+    console.error('Autopay: full payment failed', pay.status, errText(pay.errors));
+    return respond(deps, { success: false, error: 'Your card was declined. Please try another card.' }, 402);
+  }
+
+  // Record it first so the same booking can never be paid twice, then confirm.
+  await saveRecord(env, {
+    bookingId: id, status: 'paid_full',
+    full: { amount: amounts.total, fee: amounts.fee, charge: amounts.charge, paymentId: payment.id, paidAt: new Date().toISOString() },
+    createdAt: new Date().toISOString(),
+  });
+
+  let confirmError = null;
+  try {
+    const r = await deps.finalizeBookingConfirmation({
+      bookingId: id, orderId: payment.order_id || null, totalPaid: amounts.charge,
+      paymentMethod: 'square', note: 'Paid in full by card.', env,
+    });
+    if (r?.error) confirmError = r.error;
+  } catch (e) { confirmError = String(e.message || e); console.error('Autopay: finalize failed', e); }
+
+  if (confirmError) {
+    try {
+      await deps.sendEmail(env.RESEND_API_KEY, {
+        from: FROM, to: HOST_EMAIL, subject: `ACTION: full payment taken but booking confirmation failed (${booking.name})`,
+        html: deps.emailWrapper(`<p>${usd(amounts.charge)} was charged for booking ${esc(id)}, but confirming the booking failed: ${esc(confirmError)}. Please confirm it manually.</p>`),
+      });
+    } catch (e) { console.error(e); }
+  }
+  return respond(deps, { success: true, plan: 'full', charge: amounts.charge });
 }
 
 // ── Charging the balance ──────────────────────────────────────────────────────

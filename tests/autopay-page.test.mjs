@@ -24,7 +24,13 @@ test('the charge button stays disabled until the guest ticks the consent box', (
   assert.match(html, /<button id="pay" disabled>/);
   assert.match(html, /pay\.disabled = !consent\.checked/);
   // consent is sent to the server, which rejects requests without it
-  assert.match(html, /consent: true/);
+  assert.match(html, /consent: needsConsent\(\)/);
+  assert.match(html, /needsConsent = \(\) => mode === 'update' \|\| plan === 'split'/);
+});
+
+test('guest can choose to pay in full instead of splitting', () => {
+  assert.match(html, /Pay in full today/);
+  assert.match(html, /plan: mode === 'enroll' \? plan : undefined/);
 });
 
 test('guest-visible values are written with textContent (no HTML injection)', () => {

@@ -222,6 +222,68 @@ describe('enroll', () => {
   });
 });
 
+// ── pay in full by card (no saved card, no schedule) ─────────────────────────
+
+describe('pay in full', () => {
+  test('config offers both plans when far out; full only inside 60 days', async () => {
+    await seedBooking(); await approve();
+    let b = await getBooking();
+    let r = await call('GET', `/api/autopay/config?id=bk1&t=${b.payToken}`);
+    assert.equal(r.json.splitAvailable, true);
+    assert.equal(r.json.full.charge, 2795.42);
+    assert.equal(r.json.amounts.firstCharge, 1397.71);
+
+    await kv.delete('booking:bk1'); await kv.delete('autopay:bk1');
+    await seedBooking({ checkIn: '2026-12-28', checkOut: '2027-01-04' }); await approve();
+    b = await getBooking();
+    r = await call('GET', `/api/autopay/config?id=bk1&t=${b.payToken}`);
+    assert.equal(r.status, 200);
+    assert.equal(r.json.splitAvailable, false);
+    assert.ok(r.json.full.charge > 0);
+  });
+
+  test('charges the full total + 3% once, saves no card, and confirms the booking', async () => {
+    await seedBooking(); await approve();
+    const { payToken } = await getBooking();
+    const r = await call('POST', '/api/autopay/enroll', { id: 'bk1', t: payToken, sourceId: 'cnon:x', plan: 'full' });
+    assert.equal(r.status, 200, JSON.stringify(r.json));
+    assert.equal(r.json.charge, 2795.42);
+    const pay = sq('/v2/payments');
+    assert.equal(pay.length, 1);
+    assert.equal(pay[0].body.amount_money.amount, 279542);
+    assert.equal(pay[0].body.source_id, 'cnon:x');
+    assert.equal(sq('/v2/cards').length, 0);
+    assert.equal(sq('/v2/customers').length, 0);
+    assert.equal((await getRec()).status, 'paid_full');
+
+    const again = await call('POST', '/api/autopay/enroll', { id: 'bk1', t: payToken, sourceId: 'cnon:y', plan: 'full' });
+    assert.equal(again.status, 409);
+    assert.equal(sq('/v2/payments').length, 1);
+    // and the daily job never touches it
+    await runDaily('2026-12-30T09:00:00Z');
+    assert.equal(sq('/v2/payments').length, 1);
+  });
+
+  test('works inside 60 days of check-in', async () => {
+    await seedBooking({ checkIn: '2026-12-28', checkOut: '2027-01-04' }); await approve();
+    const { payToken } = await getBooking();
+    const r = await call('POST', '/api/autopay/enroll', { id: 'bk1', t: payToken, sourceId: 'cnon:x', plan: 'full' });
+    assert.equal(r.status, 200);
+    assert.equal(sq('/v2/payments').length, 1);
+  });
+
+  test('declined card: nothing recorded, booking stays approved, wrong token refused', async () => {
+    paymentResponder = () => ({ status: 402, json: { errors: [{ category: 'PAYMENT_METHOD_ERROR', code: 'GENERIC_DECLINE' }] } });
+    await seedBooking(); await approve();
+    const { payToken } = await getBooking();
+    assert.equal((await call('POST', '/api/autopay/enroll', { id: 'bk1', t: 'nope', sourceId: 'c', plan: 'full' })).status, 404);
+    const r = await call('POST', '/api/autopay/enroll', { id: 'bk1', t: payToken, sourceId: 'cnon:x', plan: 'full' });
+    assert.equal(r.status, 402);
+    assert.equal(await kv.get('autopay:bk1'), null);
+    assert.equal((await getBooking()).status, 'approved');
+  });
+});
+
 // ── the daily job ────────────────────────────────────────────────────────────
 
 describe('daily balance charge', () => {

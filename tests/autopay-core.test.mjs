@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 
 import {
   BALANCE_DAYS, GRACE_DAYS, addDays, balanceDueDate, isAutopayEligible, splitAmounts,
-  toCents, idempotencyKey, consentText, autopayAction, graceDeadlineMs, isDefinitiveDecline,
+  fullAmounts, toCents, idempotencyKey, consentText, autopayAction, graceDeadlineMs, isDefinitiveDecline,
 } from '../api-worker/autopay-core.js';
 import { roundCents } from '../api-worker/pricing-core.js';
 
@@ -65,6 +65,14 @@ describe('amounts', () => {
     assert.equal(s.first, 770);
     assert.equal(s.firstFee, 23.1);
     assert.equal(s.firstCharge, 793.1);
+  });
+});
+
+describe('pay in full', () => {
+  test('whole total plus one 3% fee', () => {
+    const f = fullAmounts(2714);
+    assert.deepEqual(f, { total: 2714, fee: 81.42, charge: 2795.42 });
+    assert.deepEqual(fullAmounts(2451.6), { total: 2451.6, fee: 73.55, charge: 2525.15 });
   });
 });
 

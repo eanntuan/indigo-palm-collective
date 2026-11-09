@@ -25,6 +25,10 @@ against Square. Test in the Square sandbox before turning it on.**
 6. Three days before each charge the host gets an email with a one-tap "stop automatic
    charge" link. Stopping disables the saved card.
 
+The `/pay/` page also lets the guest pay the whole amount (total + 3%) by card in one
+charge. That path saves no card and schedules nothing (record status `paid_full`), and it
+still works for stays inside 60 days. Test it in the sandbox too.
+
 Not included: the $300 security deposit (undecided), refunds (do these in Square),
 and any change to Zelle or the full-payment card link.
 
