@@ -44,7 +44,7 @@ beforeEach(() => {
     const url = new URL(typeof input === 'string' ? input : input.url);
     const body = init.body ? JSON.parse(init.body) : null;
     if (url.hostname === 'api.resend.com') {
-      emails.push({ to: body.to, cc: body.cc, subject: body.subject, html: body.html });
+      emails.push({ to: body.to, cc: body.cc, bcc: body.bcc, subject: body.subject, html: body.html });
       return new Response('{"id":"e"}', { status: 200 });
     }
     if (url.hostname.includes('squareup')) {
@@ -219,6 +219,20 @@ describe('enroll', () => {
     const r = await call('POST', '/api/autopay/enroll', { id: 'bk1', t: payToken, sourceId: 'cnon:x', consent: true });
     assert.equal(r.status, 409);
     assert.equal(sq('/v2/payments').length, 0);
+  });
+});
+
+// ── host copy of guest emails ────────────────────────────────────────────────
+
+describe('host copy', () => {
+  test('guest emails are BCC\'d to the host; emails to the host are not duplicated', async () => {
+    await seedBooking();
+    await approve();
+    const guest = emailTo('jennifer@')[0];
+    assert.equal(guest.bcc, 'indigopalmco@gmail.com');
+    for (const e of emails.filter(x => String(x.to).includes('indigopalmco@gmail.com'))) {
+      assert.equal(e.bcc, undefined, e.subject);
+    }
   });
 });
 

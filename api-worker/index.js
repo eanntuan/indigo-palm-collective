@@ -2174,10 +2174,18 @@ async function getPropertyHeroImageUrl(propertyId, env) {
   return PROPERTY_INFO[propertyId]?.photo || null;
 }
 
-async function sendEmail(apiKey, { from, to, subject, html, reply_to, cc }) {
+// Every email that goes to someone else is also BCC'd to the host, so there is a
+// copy in Gmail (Resend does not write to Gmail's Sent folder). Emails already
+// addressed to the host are left alone to avoid duplicates.
+const HOST_COPY_EMAIL = 'indigopalmco@gmail.com';
+const mentionsHost = (v) => [].concat(v || []).some((a) => String(a).toLowerCase().includes(HOST_COPY_EMAIL));
+
+async function sendEmail(apiKey, { from, to, subject, html, reply_to, cc, bcc }) {
   const payload = { from, to, subject, html };
   if (reply_to) payload.reply_to = reply_to;
   if (cc) payload.cc = cc;
+  if (bcc) payload.bcc = bcc;
+  else if (!mentionsHost(to) && !mentionsHost(cc)) payload.bcc = HOST_COPY_EMAIL;
 
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
