@@ -11,7 +11,7 @@
 //   wrangler secret put RESEND_API_KEY
 //   wrangler secret put ADMIN_DEBUG_KEY   (gates /inbox + internal debug/test endpoints)
 
-import { gmailSentConfigured, copyToGmailSent } from './gmail-sent.js';
+import { gmailSentConfigured, copyToGmailSent, diagnoseGmailSent } from './gmail-sent.js';
 import { PROPERTY_CONFIG, isFlatPricing, buildQuote, calcCardFee, countNights } from './pricing-core.js';
 import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayUtc } from './autopay.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
@@ -563,6 +563,7 @@ export default {
     if (path === '/api/vapid-public-key') return handleVapidPublicKey(env);
     if (path === '/api/push-subscribe' && request.method === 'POST') return handlePushSubscribe(request, env);
     if (path === '/api/test-push') return isAdminAuthorized(request, env) ? handleTestPush(env) : unauthorizedJson();
+    if (path === '/api/test-gmail-sent') return isAdminAuthorized(request, env) ? new Response(JSON.stringify(await diagnoseGmailSent(env), null, 2), { headers: { 'Content-Type': 'application/json' } }) : unauthorizedJson();
     if (path === '/api/test-email') return isAdminAuthorized(request, env) ? handleTestEmail(env) : unauthorizedJson();
     if (path === '/api/test-guest-message') return isAdminAuthorized(request, env) ? handleTestGuestMessage(env) : unauthorizedJson();
     if (path === '/api/email-log') return isAdminAuthorized(request, env) ? handleEmailLog(env) : unauthorizedJson();
