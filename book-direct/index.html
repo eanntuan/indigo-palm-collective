@@ -438,6 +438,80 @@
             line-height: 1.6;
         }
 
+
+        /* Compare your total */
+        .compare-tool {
+            margin-top: 2.5rem;
+            max-width: 760px;
+            background: var(--sand, #F6F1E8);
+            border: 1px solid rgba(100, 124, 105, 0.45);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+        .compare-tool h3 {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: .5rem;
+        }
+        .compare-help { font-size: .95rem; color: #3a3028; margin-bottom: 1.25rem; }
+        .compare-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .compare-field label { display: block; font-size: .9rem; font-weight: 600; margin-bottom: .4rem; }
+        .compare-field input {
+            width: 100%;
+            font: inherit;
+            font-size: 1.1rem;
+            padding: .8rem 1rem;
+            border: 1px solid #8a8378;
+            border-radius: 12px;
+            background: #fff;
+            color: #000;
+        }
+        .compare-field input:focus-visible { outline: 3px solid #647C69; outline-offset: 2px; }
+        .compare-error { margin-top: .9rem; font-size: .92rem; color: #8a3b1c; }
+        .compare-results {
+            margin-top: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .compare-tile {
+            background: #fff;
+            border: 1px solid #d9d0c0;
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+        }
+        .compare-tile-label { font-size: .85rem; color: #3a3028; }
+        .compare-tile-value { font-family: var(--font-serif); font-size: 2rem; font-weight: 600; line-height: 1.1; }
+        .compare-diff { grid-column: 1 / -1; font-size: 1rem; font-weight: 600; color: #000; }
+        .compare-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+        .pill {
+            display: inline-block;
+            font: inherit;
+            font-size: .9rem;
+            font-weight: 600;
+            letter-spacing: .5px;
+            padding: .85rem 1.75rem;
+            border-radius: 999px;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid #647C69;
+        }
+        .pill-primary { background: #647C69; color: #fff; }
+        .pill-primary:hover { background: #55695a; border-color: #55695a; }
+        .pill-outline { background: transparent; color: #000; }
+        .pill-outline:hover { background: rgba(100, 124, 105, 0.12); }
+        .pill:focus-visible { outline: 3px solid #BB7D49; outline-offset: 2px; }
+        .compare-note { margin-top: 1.25rem; font-size: .88rem; color: #3a3028; line-height: 1.6; }
+        .compare-note a { color: #000; }
+        @media (max-width: 600px) {
+            .compare-tool { padding: 1.25rem; }
+            .compare-fields, .compare-results { grid-template-columns: 1fr; }
+        }
+
         /* How It Works */
         .how-section {
             background: var(--cream);
@@ -834,19 +908,103 @@
         </div>
     </section>
 
-    <!-- Fee Comparison -->
-    <section class="comparison-section">
+    <!-- Compare your total -->
+    <section class="comparison-section" id="compare">
         <div class="section-inner">
-            <div class="section-label">What You Save</div>
-            <h2 class="section-title">Compare the full stay total.</h2>
-            <p class="section-body">When comparing booking options, use the same dates, guest count, and extras. Check the full total, including cleaning and taxes.</p>
+            <div class="section-label">Compare Totals</div>
+            <h2 class="section-title">Compare your total.</h2>
+            <p class="section-body">Booking sites build their totals differently, so the only fair comparison is the full total for the same dates on both platforms. Use the same check-in and check-out dates, the same guest count, and the same extras (pets, early check-in and so on). Include the cleaning fee, service fees, and taxes. We do not promise that either total will be lower: that depends on your dates, and it can go either way.</p>
 
-            <div class="dollar-example">
-                <div class="ex-label">Have a question?</div>
-                <p class="ex-math">Questions about the total or what’s included? Email <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking.</p>
-            </div>
+            <form class="compare-tool" id="compareTool" novalidate aria-labelledby="compareHeading">
+                <h3 id="compareHeading">Side-by-side calculator</h3>
+                <p class="compare-help">Type the full total you see for each option. Nothing is sent anywhere: the math runs in your browser.</p>
+                <div class="compare-fields">
+                    <div class="compare-field">
+                        <label for="airbnbTotal">Total shown on Airbnb</label>
+                        <input type="text" id="airbnbTotal" inputmode="decimal" autocomplete="off" placeholder="$0.00">
+                    </div>
+                    <div class="compare-field">
+                        <label for="directTotal">Total shown on indigopalm.co</label>
+                        <input type="text" id="directTotal" inputmode="decimal" autocomplete="off" placeholder="$0.00">
+                    </div>
+                </div>
+                <p class="compare-error" id="compareError" role="alert" hidden></p>
+                <div class="compare-results" id="compareResults" aria-live="polite" hidden>
+                    <div class="compare-tile">
+                        <span class="compare-tile-label">Airbnb total</span>
+                        <span class="compare-tile-value" id="outAirbnb"></span>
+                    </div>
+                    <div class="compare-tile">
+                        <span class="compare-tile-label">Direct total</span>
+                        <span class="compare-tile-value" id="outDirect"></span>
+                    </div>
+                    <p class="compare-diff" id="outDiff"></p>
+                </div>
+                <div class="compare-actions">
+                    <a href="/booking-flow/" class="pill pill-primary" onclick="if (window.gtag) gtag('event', 'compare_check_direct_total', {'event_category': 'Booking', 'event_label': 'Compare section'});">Check my direct total</a>
+                    <button type="button" class="pill pill-outline" id="compareClear">Clear</button>
+                </div>
+                <p class="compare-note">Tip: the direct total depends on the payment method you pick at checkout (see the payment question below), so compare using the option you plan to use. Questions about what a total includes? Email <a href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a> before booking.</p>
+            </form>
         </div>
     </section>
+
+    <script>
+    (function () {
+        var a = document.getElementById('airbnbTotal');
+        var d = document.getElementById('directTotal');
+        if (!a || !d) return;
+        var results = document.getElementById('compareResults');
+        var err = document.getElementById('compareError');
+        var fmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+        var tracked = false;
+
+        function parse(v) {
+            var t = String(v).replace(/[\s$,]/g, '');
+            if (t === '') return null;
+            if (!/^\d+(\.\d{1,2})?$/.test(t)) return NaN;
+            return parseFloat(t);
+        }
+
+        function update() {
+            var x = parse(a.value), y = parse(d.value);
+            err.hidden = true;
+            if (x === null || y === null) { results.hidden = true; return; }
+            if (isNaN(x) || isNaN(y) || x <= 0 || y <= 0) {
+                results.hidden = true;
+                err.textContent = 'Enter each total as a dollar amount, like 4,250.00.';
+                err.hidden = false;
+                return;
+            }
+            document.getElementById('outAirbnb').textContent = fmt.format(x);
+            document.getElementById('outDirect').textContent = fmt.format(y);
+            var diff = Math.round((y - x) * 100) / 100;
+            var msg;
+            if (diff === 0) {
+                msg = 'The two totals are the same.';
+            } else if (diff < 0) {
+                msg = 'The direct total is ' + fmt.format(Math.abs(diff)) + ' lower than the Airbnb total you entered.';
+            } else {
+                msg = 'The direct total is ' + fmt.format(diff) + ' higher than the Airbnb total you entered.';
+            }
+            document.getElementById('outDiff').textContent = msg + ' Make sure both totals are for the same dates, guests and extras.';
+            results.hidden = false;
+            if (!tracked && window.gtag) {
+                tracked = true;
+                gtag('event', 'compare_totals_used', { event_category: 'Booking', event_label: 'Compare section' });
+            }
+        }
+
+        a.addEventListener('input', update);
+        d.addEventListener('input', update);
+        document.getElementById('compareTool').addEventListener('submit', function (e) { e.preventDefault(); update(); });
+        document.getElementById('compareClear').addEventListener('click', function () {
+            a.value = ''; d.value = '';
+            results.hidden = true; err.hidden = true;
+            a.focus();
+        });
+    })();
+    </script>
 
     <!-- FAQ -->
     <section class="section faq-section">
