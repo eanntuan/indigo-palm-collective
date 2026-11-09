@@ -538,6 +538,9 @@ export default {
     if (path === '/api/push-sub-status') return isAdminAuthorized(request, env) ? handlePushSubStatus(env) : unauthorizedJson();
     if (path === '/api/simulate-inbound') return isAdminAuthorized(request, env) ? handleSimulateInbound(env) : unauthorizedJson();
     if (path === '/api/debug-square-webhooks') return isAdminAuthorized(request, env) ? handleDebugSquareWebhooks(env) : unauthorizedJson();
+    const openMatch = path.match(/^\/api\/o\/([a-f0-9]{32})\.gif$/);
+    if (openMatch) return handleEmailOpen(openMatch[1], request, env);
+    if (path === '/api/email-opens') return isAdminAuthorized(request, env) ? handleEmailOpens(env) : unauthorizedJson();
     if (path === '/api/manual-confirm-payment') return isAdminAuthorized(request, env) ? handleManualConfirmPayment(url, env) : unauthorizedJson();
 
     // Approval page: GET /api/approve-reply?id=XXX
@@ -2182,26 +2185,65 @@ const mentionsHost = (v) => [].concat(v || []).some((a) => String(a).toLowerCase
 // without changing its 20 call sites. Bindings are identical across requests.
 let RUNTIME_ENV = null;
 
+const PIXEL_GIF = Uint8Array.from(atob('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'), (c) => c.charCodeAt(0));
+
+// Records opens by KV id. Apple Mail Privacy Protection and Gmail's image proxy can
+// fetch the pixel without a human open, so the user agent is kept to judge that.
+async function handleEmailOpen(id, request, env) {
+  const raw = env.BOOKINGS && await env.BOOKINGS.get(`eo:${id}`);
+  if (raw) {
+    const rec = JSON.parse(raw);
+    const now = new Date().toISOString();
+    rec.opens += 1;
+    rec.first ||= now;
+    rec.last = now;
+    rec.ua = (request.headers.get('user-agent') || '').slice(0, 120);
+    await env.BOOKINGS.put(`eo:${id}`, JSON.stringify(rec), { expirationTtl: 60 * 60 * 24 * 90 });
+  }
+  return new Response(PIXEL_GIF, { headers: { 'Content-Type': 'image/gif', 'Cache-Control': 'no-store, max-age=0' } });
+}
+
+async function handleEmailOpens(env) {
+  const { keys } = await env.BOOKINGS.list({ prefix: 'eo:', limit: 200 });
+  const rows = (await Promise.all(keys.map((k) => env.BOOKINGS.get(k.name)))).map((v) => JSON.parse(v));
+  rows.sort((a, b) => b.sent.localeCompare(a.sent));
+  return new Response(JSON.stringify(rows, null, 2), { headers: { 'Content-Type': 'application/json' } });
+}
+
+const resendPost = (apiKey, payload) => fetch('https://api.resend.com/emails', {
+  method: 'POST',
+  headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+  body: JSON.stringify(payload),
+});
+
+// Open tracking: a 1x1 pixel goes only in the copy the guest receives. The host's
+// copies (Gmail Sent, separate send) carry no pixel, so her own opens never count.
+const OPEN_PIXEL = (id) => `<img src="https://indigopalm.co/api/o/${id}.gif" width="1" height="1" alt="" style="display:none">`;
+
 async function sendEmail(apiKey, { from, to, subject, html, reply_to, cc, bcc }) {
   const payload = { from, to, subject, html };
   if (reply_to) payload.reply_to = reply_to;
   if (cc) payload.cc = cc;
   if (bcc) payload.bcc = bcc;
-  else if (!gmailSentConfigured(RUNTIME_ENV) && !mentionsHost(to) && !mentionsHost(cc)) payload.bcc = HOST_COPY_EMAIL;
+  const hostCopy = !bcc && !gmailSentConfigured(RUNTIME_ENV) && !mentionsHost(to) && !mentionsHost(cc);
 
-  const res = await fetch('https://api.resend.com/emails', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(payload),
-  });
+  const track = RUNTIME_ENV?.BOOKINGS && !bcc && !mentionsHost(to) && !mentionsHost(cc);
+  let trackId;
+  if (track) {
+    trackId = crypto.randomUUID().replace(/-/g, '');
+    payload.html = html + OPEN_PIXEL(trackId);
+    await RUNTIME_ENV.BOOKINGS.put(`eo:${trackId}`, JSON.stringify({ to, subject, sent: new Date().toISOString(), opens: 0 }), { expirationTtl: 60 * 60 * 24 * 90 });
+  }
+
+  const res = await resendPost(apiKey, payload);
 
   if (!res.ok) {
     const err = await res.text();
     throw new Error(`Resend error: ${err}`);
   }
+
+  // Fallback host copy as its own message instead of a BCC, since a BCC shares the guest's pixel.
+  if (hostCopy) await resendPost(apiKey, { ...payload, cc: undefined, html, to: HOST_COPY_EMAIL }).catch(() => {});
 
   // Put a copy in the host's real Gmail Sent folder (no-op unless configured).
   // Skipped for mail addressed to the host herself: that is not a sent-to-guest copy.
