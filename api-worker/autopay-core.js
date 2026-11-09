@@ -12,7 +12,7 @@ import { calcCardFee, roundCents } from './pricing-core.js';
 
 export const BALANCE_DAYS = 60;          // balance charged this many days before check-in
 export const GRACE_DAYS = 3;             // time to fix a failed balance charge
-export const CONSENT_VERSION = '2026-11-08';
+export const CONSENT_VERSION = '2026-11-09';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -79,7 +79,7 @@ export function consentText({ firstCharge, balanceCharge, dueDate, fmtDate, depo
     `and automatically charge it ${usd(balanceCharge)} on ${when} (the remaining 50% plus a 3% card ` +
     `processing fee), which is ${BALANCE_DAYS} days before check-in. I can ask to stop the automatic ` +
     `charge by emailing indigopalmco@gmail.com before that date. Cancellations made ${BALANCE_DAYS} or more ` +
-    `days before check-in receive a full refund of payments received.`
+    `days before check-in receive a full refund of payments received, except the 3% card processing fee, which is not refundable.`
   );
 }
 

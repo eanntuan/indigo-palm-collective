@@ -196,13 +196,11 @@
         .status-box.success {
             background: #e8f5e9;
             color: #2e7d32;
-            border-left: 4px solid #4caf50;
         }
 
         .status-box.error {
             background: #fdecea;
             color: #c62828;
-            border-left: 4px solid #f44336;
         }
 
         .payment-link-box {
@@ -342,6 +340,25 @@
                 <p style="color:#555;font-size:0.95rem;margin-bottom:0.5rem;">Confirmation email sent to the guest.</p>
                 <p id="hostaway-status" style="font-size:0.9rem;"></p>
             </div>
+
+            <div class="card" id="balance-card" style="display:none;">
+                <p class="section-title">Balance by Zelle, check or cash</p>
+                <p id="balance-summary" style="color:#555;font-size:0.95rem;margin-bottom:1rem;"></p>
+                <div class="form-group">
+                    <label>Amount received ($)</label>
+                    <input type="number" id="balance-amount" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label>Method</label>
+                    <select id="balance-method">
+                        <option value="zelle">Zelle</option>
+                        <option value="check">Check</option>
+                        <option value="cash">Cash</option>
+                    </select>
+                </div>
+                <button class="btn-approve" id="balance-btn">Record balance payment and email receipt</button>
+                <div id="balance-status"></div>
+            </div>
         </div>
     </div>
 
@@ -439,6 +456,7 @@
                 document.getElementById('hostaway-status').textContent = b.hostawayReservationId
                     ? `Hostaway reservation #${b.hostawayReservationId} created.`
                     : (b.hostawayError ? `Hostaway reservation failed: ${b.hostawayError}. Add it manually in Hostaway.` : `This property isn't synced to Hostaway.`);
+                setupBalanceCard();
             } else if (b.status === 'approved') {
                 document.getElementById('approval-form-card').style.display = 'none';
                 document.getElementById('approved-card').style.display = 'block';
@@ -455,6 +473,45 @@
                 document.getElementById('flat-discount').addEventListener('input', updateFinalTotal);
                 document.getElementById('waive-deposit').addEventListener('change', updateFinalTotal);
                 document.getElementById('approve-btn').addEventListener('click', approveBooking);
+            }
+        }
+
+        function setupBalanceCard() {
+            if (!booking || !(booking.finalTotal > 0) || !['zelle', 'check', 'cash'].includes(booking.paymentMethod || 'zelle')) return;
+            const owed = booking.finalTotal + (booking.securityDeposit || 0);
+            const remaining = Math.round((owed - (booking.totalPaid || 0)) * 100) / 100;
+            if (remaining <= 0.01) return;
+            document.getElementById('balance-card').style.display = 'block';
+            document.getElementById('balance-summary').textContent =
+                `Paid so far $${(booking.totalPaid || 0).toFixed(2)} of $${owed.toFixed(2)}. Remaining $${remaining.toFixed(2)}, due 60 days before check-in. Reminders go to the guest 14 and 3 days before, and to you the day after if unpaid.`;
+            document.getElementById('balance-amount').value = remaining.toFixed(2);
+            document.getElementById('balance-btn').addEventListener('click', recordBalance);
+        }
+
+        async function recordBalance() {
+            const btn = document.getElementById('balance-btn');
+            const statusDiv = document.getElementById('balance-status');
+            const amount = parseFloat(document.getElementById('balance-amount').value);
+            const method = document.getElementById('balance-method').value;
+            if (!(amount > 0)) { statusDiv.innerHTML = `<div class="status-box error">Enter the amount received.</div>`; return; }
+            btn.disabled = true; btn.textContent = 'Saving...'; statusDiv.innerHTML = '';
+            try {
+                const res = await fetch('/api/balance-received?key=' + encodeURIComponent(adminKey), {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: bookingId, token, amount, method }),
+                });
+                const data = await res.json();
+                if (data.success) {
+                    booking.totalPaid = data.totalPaid;
+                    statusDiv.innerHTML = `<div class="status-box success">Recorded. ${data.remaining > 0 ? 'Still owed: $' + data.remaining.toFixed(2) : 'Paid in full.'} Receipt emailed to the guest.</div>`;
+                    btn.style.display = 'none';
+                } else {
+                    statusDiv.innerHTML = `<div class="status-box error">${data.error || 'Could not record the payment.'}</div>`;
+                    btn.disabled = false; btn.textContent = 'Record balance payment and email receipt';
+                }
+            } catch (e) {
+                statusDiv.innerHTML = `<div class="status-box error">Network error. Try again.</div>`;
+                btn.disabled = false; btn.textContent = 'Record balance payment and email receipt';
             }
         }
 

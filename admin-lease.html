@@ -41,8 +41,8 @@
         .btn-send:hover { background: #4d6654; }
         .btn-send:disabled { background: #ccc; cursor: not-allowed; }
         .status-box { padding: 1rem 1.25rem; border-radius: 8px; font-size: 0.9rem; line-height: 1.6; margin-top: 1.25rem; }
-        .status-box.success { background: #e8f5e9; color: #2e7d32; border-left: 4px solid #4caf50; }
-        .status-box.error { background: #fdecea; color: #c62828; border-left: 4px solid #f44336; }
+        .status-box.success { background: #e8f5e9; color: #2e7d32; }
+        .status-box.error { background: #fdecea; color: #c62828; }
         @media (max-width: 600px) { .form-row, .form-row-3 { grid-template-columns: 1fr; } }
     </style>
 </head>
@@ -123,7 +123,7 @@
 
             <div class="form-group">
                 <label for="cancellation">Cancellation Policy</label>
-                <input type="text" id="cancellation" value="Full refund of payments received if cancelled 60 or more days before check-in. Non-refundable less than 60 days before check-in. The refundable security deposit is handled separately.">
+                <input type="text" id="cancellation" value="Full refund of payments received (except the 3% card processing fee) if cancelled 60 or more days before check-in. Non-refundable less than 60 days before check-in. The refundable security deposit is handled separately.">
             </div>
         </div>
 
