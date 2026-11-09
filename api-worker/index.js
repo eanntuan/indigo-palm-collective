@@ -11,6 +11,7 @@
 //   wrangler secret put RESEND_API_KEY
 //   wrangler secret put ADMIN_DEBUG_KEY   (gates /inbox + internal debug/test endpoints)
 
+import { gmailSentConfigured, copyToGmailSent } from './gmail-sent.js';
 import { PROPERTY_CONFIG, isFlatPricing, buildQuote, calcCardFee, countNights } from './pricing-core.js';
 import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayUtc } from './autopay.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
@@ -408,6 +409,7 @@ async function sendPinterestDailyReport(env) {
 
 export default {
   async scheduled(event, env) {
+    RUNTIME_ENV = env;
     // Split-payment balance charges run once a day (09:00 UTC cron), not every 10 minutes.
     if (event && event.cron === '0 9 * * *') {
       try { await processAutopayCharges(env, autopayDeps); }
@@ -419,10 +421,12 @@ export default {
   },
 
   async email(message, env, ctx) {
+    RUNTIME_ENV = env;
     ctx.waitUntil(handleAirbnbEmail(message, env));
   },
 
   async fetch(request, env) {
+    RUNTIME_ENV = env;
     const url = new URL(request.url);
     const path = url.pathname;
 
@@ -2180,12 +2184,16 @@ async function getPropertyHeroImageUrl(propertyId, env) {
 const HOST_COPY_EMAIL = 'indigopalmco@gmail.com';
 const mentionsHost = (v) => [].concat(v || []).some((a) => String(a).toLowerCase().includes(HOST_COPY_EMAIL));
 
+// The Worker's env, captured per request so sendEmail can reach the Gmail secrets
+// without changing its 20 call sites. Bindings are identical across requests.
+let RUNTIME_ENV = null;
+
 async function sendEmail(apiKey, { from, to, subject, html, reply_to, cc, bcc }) {
   const payload = { from, to, subject, html };
   if (reply_to) payload.reply_to = reply_to;
   if (cc) payload.cc = cc;
   if (bcc) payload.bcc = bcc;
-  else if (!mentionsHost(to) && !mentionsHost(cc)) payload.bcc = HOST_COPY_EMAIL;
+  else if (!gmailSentConfigured(RUNTIME_ENV) && !mentionsHost(to) && !mentionsHost(cc)) payload.bcc = HOST_COPY_EMAIL;
 
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -2199,6 +2207,12 @@ async function sendEmail(apiKey, { from, to, subject, html, reply_to, cc, bcc })
   if (!res.ok) {
     const err = await res.text();
     throw new Error(`Resend error: ${err}`);
+  }
+
+  // Put a copy in the host's real Gmail Sent folder (no-op unless configured).
+  // Skipped for mail addressed to the host herself: that is not a sent-to-guest copy.
+  if (gmailSentConfigured(RUNTIME_ENV) && !mentionsHost(to)) {
+    await copyToGmailSent(RUNTIME_ENV, { from, to, cc, subject, html, reply_to });
   }
 }
 

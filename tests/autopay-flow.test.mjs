@@ -27,12 +27,14 @@ function makeKV() {
   };
 }
 
+let gmail = [];
 let kv, env, calls, emails, paymentResponder, cardSeq;
 
 beforeEach(() => {
   kv = makeKV();
   calls = [];
   emails = [];
+  gmail = [];
   cardSeq = 0;
   paymentResponder = () => ({ status: 200, json: { payment: { id: 'PAY' + calls.filter(c => c.path === '/v2/payments').length, order_id: 'ORD1', status: 'COMPLETED' } } });
   env = {
@@ -42,11 +44,13 @@ beforeEach(() => {
   };
   globalThis.fetch = async (input, init = {}) => {
     const url = new URL(typeof input === 'string' ? input : input.url);
-    const body = init.body ? JSON.parse(init.body) : null;
+    let body = null; try { body = init.body ? JSON.parse(init.body) : null; } catch { body = null; } // form posts (Google OAuth) are not JSON
     if (url.hostname === 'api.resend.com') {
       emails.push({ to: body.to, cc: body.cc, bcc: body.bcc, subject: body.subject, html: body.html });
       return new Response('{"id":"e"}', { status: 200 });
     }
+    if (url.hostname === 'oauth2.googleapis.com') return new Response(JSON.stringify({ access_token: 'gtok', expires_in: 3600 }), { status: 200 });
+    if (url.hostname === 'gmail.googleapis.com') { gmail.push({ auth: init.headers.Authorization, body }); return new Response('{"id":"m1"}', { status: 200 }); }
     if (url.hostname.includes('squareup')) {
       calls.push({ method: init.method || 'GET', path: url.pathname, body });
       const p = url.pathname;
@@ -233,6 +237,40 @@ describe('host copy', () => {
     for (const e of emails.filter(x => String(x.to).includes('indigopalmco@gmail.com'))) {
       assert.equal(e.bcc, undefined, e.subject);
     }
+  });
+});
+
+describe('Gmail Sent copy', () => {
+  const decode = (raw) => Buffer.from(raw.replace(/-/g, '+').replace(/_/g, '/'), 'base64').toString('utf8');
+
+  test('when Google secrets are set, guest emails are inserted into Sent and the BCC is dropped', async () => {
+    Object.assign(env, { GOOGLE_CLIENT_ID: 'cid', GOOGLE_CLIENT_SECRET: 'cs', GOOGLE_REFRESH_TOKEN: 'rt' });
+    await seedBooking(); await approve();
+    const guest = emailTo('jennifer@')[0];
+    assert.equal(guest.bcc, undefined);
+    const copy = gmail.find(g => decode(g.body.raw).includes('To: jennifer@example.com'));
+    assert.ok(copy, 'a copy of the guest email was inserted');
+    assert.deepEqual(copy.body.labelIds, ['SENT']);
+    assert.equal(copy.auth, 'Bearer gtok');
+    const msg = decode(copy.body.raw);
+    assert.match(msg, /Subject: Your dates are approved/);
+    // mail addressed to the host is not copied into Sent
+    for (const g of gmail) assert.doesNotMatch(decode(g.body.raw), /^To: indigopalmco@gmail\.com/m);
+  });
+
+  test('a Gmail failure never breaks the booking flow', async () => {
+    Object.assign(env, { GOOGLE_CLIENT_ID: 'cid', GOOGLE_CLIENT_SECRET: 'cs', GOOGLE_REFRESH_TOKEN: 'rt' });
+    const orig = globalThis.fetch;
+    globalThis.fetch = async (input, init) => {
+      const u = new URL(typeof input === 'string' ? input : input.url);
+      if (u.hostname === 'gmail.googleapis.com') return new Response('{"error":"nope"}', { status: 403 });
+      return orig(input, init);
+    };
+    await seedBooking();
+    const r = await approve();
+    assert.equal(r.status, 200);
+    assert.equal((await getBooking()).status, 'approved');
+    assert.equal(emailTo('jennifer@').length, 1);
   });
 });
 
