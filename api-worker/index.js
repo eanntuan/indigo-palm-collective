@@ -1802,8 +1802,8 @@ async function handleCreateLease(request, env) {
     guests: guests || 1,
     checkIn, checkOut,
     total: parseFloat(total),
-    deposit: parseFloat(deposit) || 200,
-    cancellation: cancellation || '60 day cancellation for full refund. No refund after, except the refundable security deposit.',
+    deposit: parseFloat(deposit) || 300,
+    cancellation: cancellation || 'Full refund of payments received if cancelled 60 or more days before check-in. Non-refundable less than 60 days before check-in. The refundable security deposit is handled separately.',
     address: info.address,
     signed: false,
     signatureName: null,
@@ -1902,7 +1902,7 @@ async function handleSignLease(request, env) {
     </table>
     <div style="padding:20px;background:#F5F3EE;border-radius:8px;margin-bottom:20px;">
       <p style="margin:0 0 12px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#888;">What you agreed to</p>
-      <p style="margin:0;font-size:13px;color:#555;line-height:1.7;">No parties, no events, no subletting. No unauthorized pets. Outdoor noise curfew at 10pm. No smoking. Pool and amenities at your own risk. Security deposit returnable within 2 days of checkout if no issues. 60-day cancellation for full refund, no refund after except the refundable security deposit. Governed by California law, Riverside County.</p>
+      <p style="margin:0;font-size:13px;color:#555;line-height:1.7;">No parties, no events, no subletting. No unauthorized pets. Outdoor noise curfew at 10pm. No smoking. Pool and amenities at your own risk. Security deposit returnable within 2 days of checkout if no issues. Payment: pay the full total by card (3% processing fee added), or send 50% by Zelle to secure the booking with the remaining 50% due 60 days before check-in (bookings within 60 days of check-in are paid in full). Cancel 60 or more days before check-in for a full refund of payments received; non-refundable after that. Governed by California law, Riverside County.</p>
     </div>
     <p style="margin:0;font-size:13px;color:#aaa;">Questions? <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);
