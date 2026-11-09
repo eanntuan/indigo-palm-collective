@@ -17,6 +17,7 @@ import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayU
 import { recordHeartbeat, handlePing, handleHealth } from './alerts.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
 import { processZelleReminders, handleBalanceReceived } from './zelle-balance.js';
+import { handleGuestRoute, guideGate, sendDuePreArrivalEmails, ensurePayToken, bookingPageBlock } from './guest.js';
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -54,6 +55,14 @@ const autopayDeps = {
   get sendWebPush() { return sendWebPush; },
   isAdminAuthorized,
   CORS_HEADERS,
+};
+
+// Helpers handed to guest.js (guest booking page API, welcome-guide gate, pre-arrival email).
+const guestDeps = {
+  ...autopayDeps,
+  get PROPERTY_INFO() { return PROPERTY_INFO; },
+  get PROPERTY_CHECKIN_INFO() { return PROPERTY_CHECKIN_INFO; },
+  get PROPERTY_STORY_BEATS() { return PROPERTY_STORY_BEATS; },
 };
 
 const ICAL_URLS = {
@@ -220,68 +229,10 @@ const HTML_REDIRECTS = {
 
 // ── Welcome Email Cron ────────────────────────────────────────────────────────
 
+// The pre-arrival email (guest.js) goes out the moment the welcome guide opens:
+// 48 hours before the 4:00 PM Pacific check-in.
 async function sendDueWelcomeEmails(env) {
-  const today = new Date().toISOString().slice(0, 10);
-  const { keys } = await env.BOOKINGS.list({ prefix: 'welcome:' });
-
-  for (const key of keys) {
-    const raw = await env.BOOKINGS.get(key.name, { type: 'json' });
-    if (!raw || raw.sent || raw.sendDate > today) continue;
-
-    const { bookingId, propertyId, name, email, checkIn, checkOut, nights, guests } = raw;
-    const info = PROPERTY_INFO[propertyId];
-    if (!info?.welcomeGuide) continue;
-
-    const firstName = name.split(' ')[0];
-    const html = emailWrapper(`
-      ${info.photo ? `<img src="${info.photo}" alt="${info.name}" width="560" style="display:block;width:100%;max-width:560px;height:220px;object-fit:cover;border-radius:8px;margin-bottom:28px;" />` : ''}
-      <p style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:11px;font-weight:400;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.1em;">${info.name} &middot; ${fmtDate(checkIn)} &ndash; ${fmtDate(checkOut)}</p>
-      <h1 style="margin:0 0 20px;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;color:#2C2C2C;">You're almost here, ${firstName}.</h1>
-      <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.7;">Check-in is in 2 days. Everything you need is in your welcome guide: parking, entry, house rules, Wi-Fi, and local tips.</p>
-      <div style="padding:24px;background:#F5F3EE;border-radius:8px;margin-bottom:24px;">
-        <p style="margin:0 0 16px;font-size:13px;font-weight:600;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.08em;">Before you arrive</p>
-        <a href="${info.welcomeGuide}" style="display:block;margin-bottom:10px;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Welcome Guide &rarr;</a>
-        <p style="margin:0 0 16px;font-size:13px;color:#888;">Check-in, parking, house rules, community amenities. It's all in here.</p>
-        <a href="${info.mapsUrl}" style="display:block;color:#607c67;font-weight:600;font-size:14px;text-decoration:none;">Get Directions &rarr;</a>
-        <p style="margin:0;font-size:13px;color:#888;">${info.address}</p>
-      </div>
-      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;">
-        ${detailRow('Check-in', fmtDate(checkIn))}
-        ${detailRow('Check-out', fmtDate(checkOut))}
-        ${detailRow('Nights', `${nights} night${nights !== 1 ? 's' : ''}`)}
-        ${detailRow('Guests', `${guests} guest${guests !== 1 ? 's' : ''}`)}
-      </table>
-      ${PROPERTY_CHECKIN_INFO[propertyId] ? `
-      <div style="padding:24px;background:#F5F3EE;border-radius:8px;margin-bottom:24px;">
-        <p style="margin:0 0 14px;font-size:13px;font-weight:600;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.08em;">Getting in</p>
-        <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:16px;">
-          ${PROPERTY_CHECKIN_INFO[propertyId].doorCode ? detailRow('Front door', PROPERTY_CHECKIN_INFO[propertyId].doorCode) : ''}
-          ${PROPERTY_CHECKIN_INFO[propertyId].garageCode ? detailRow('Garage', PROPERTY_CHECKIN_INFO[propertyId].garageCode) : ''}
-        </table>
-        <p style="margin:0 0 4px;font-size:13px;font-weight:600;color:#2C2C2C;">WiFi</p>
-        <p style="margin:0 0 14px;font-size:13px;color:#555;line-height:1.6;">Connect to &ldquo;Indigo Palm Collective&rdquo; and a browser window will pop up asking for your email. Enter it and you&rsquo;re all set. (Indigo Palm is our little collection of four desert homes across the Coachella Valley.)</p>
-        ${PROPERTY_CHECKIN_INFO[propertyId].notes ? `<p style="margin:0;font-size:13px;color:#555;line-height:1.6;">${PROPERTY_CHECKIN_INFO[propertyId].notes}</p>` : ''}
-      </div>
-      ` : ''}
-      <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">See you in the desert.</p>
-      ${PROPERTY_STORY_BEATS[propertyId]?.welcome ? `<p style="margin:0 0 20px;font-size:14px;color:#777;line-height:1.7;">P.S. ${PROPERTY_STORY_BEATS[propertyId].welcome}</p>` : ''}
-      <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
-    `);
-
-    try {
-      await sendEmail(env.RESEND_API_KEY, {
-        from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
-        to: email,
-        cc: 'indigopalmco@gmail.com',
-        subject: `Your welcome guide: ${info.name} (check-in ${fmtDate(checkIn)})`,
-        html,
-      });
-      await env.BOOKINGS.put(key.name, JSON.stringify({ ...raw, sent: true, sentAt: new Date().toISOString() }));
-      console.log(`Welcome email sent: ${bookingId}`);
-    } catch (err) {
-      console.error(`Welcome email failed for ${bookingId}:`, err);
-    }
-  }
+  return sendDuePreArrivalEmails(env, guestDeps);
 }
 
 // ── Pinterest Campaign Monitoring ─────────────────────────────────────────────
@@ -508,6 +459,11 @@ export default {
       return handleGetBooking(url, env);
     }
 
+    if (path === '/api/guest/booking') {
+      const guestResponse = await handleGuestRoute(request, env, url, guestDeps);
+      if (guestResponse) return guestResponse;
+    }
+
     if (path.startsWith('/api/autopay/')) {
       const autopayResponse = await handleAutopayRoute(request, env, url, autopayDeps);
       if (autopayResponse) return autopayResponse;
@@ -629,6 +585,10 @@ export default {
         { headers: { 'Content-Type': 'text/plain' } }
       );
     }
+
+    // Welcome guides are held until 48 hours before check-in (guest.js)
+    const guideResponse = await guideGate(request, env, url);
+    if (guideResponse) return guideResponse;
 
     // Pass all non-API requests through to GitHub Pages
     return fetch(request);
@@ -1572,9 +1532,12 @@ async function finalizeBookingConfirmation({ bookingId, orderId, totalPaid, paym
     (new Date(checkOut + 'T00:00:00') - new Date(checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24)
   );
 
+  // Private "Your booking" link for the guest (persisted with the confirmed record below)
+  ensurePayToken(booking);
+
   // Send confirmation email to guest
   const heroUrl = await getPropertyHeroImageUrl(propertyId, env);
-  const html = buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes: note, heroUrl, securityDeposit: booking.securityDeposit || 0 });
+  const html = buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes: note, heroUrl, securityDeposit: booking.securityDeposit || 0, booking });
 
   await sendEmail(env.RESEND_API_KEY, {
     from: 'Bookings @ Indigo Palm Co <bookings@indigopalm.co>',
@@ -1782,7 +1745,7 @@ async function createHostawayReservation(env, { propertyId, name, email, checkIn
   return data.result?.id ?? null;
 }
 
-function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl, securityDeposit = 0 }) {
+function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nights, guests, totalPaid, notes, heroUrl, securityDeposit = 0, booking = null }) {
   const firstName = name.split(' ')[0];
   const confirmedBeat = PROPERTY_STORY_BEATS[propertyId]?.confirmed || '';
 
@@ -1811,6 +1774,8 @@ function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nig
       ${detailRow('Total Paid', totalPaid ? `$${parseFloat(totalPaid).toFixed(2)}` : 'N/A')}
     </table>
 
+    ${bookingPageBlock(booking)}
+
     <div style="padding:24px;background:#F5F3EE;border-radius:8px;margin-bottom:24px;">
       <p style="margin:0 0 16px;font-size:13px;font-weight:600;color:#2C2C2C;text-transform:uppercase;letter-spacing:0.08em;">Before you arrive</p>
       ${linksSection}
@@ -1835,7 +1800,7 @@ function buildConfirmationEmail({ info, propertyId, name, checkIn, checkOut, nig
 
     ${notes ? `<div style="margin-bottom:20px;"><p style="margin:0;font-size:14px;color:#555;line-height:1.6;">${notes}</p></div>` : ''}
 
-    <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">Check-in details are coming closer to the date. We'll make sure you're taken care of.</p>
+    <p style="margin:0 0 8px;font-size:15px;color:#555;line-height:1.7;">Check-in details and your welcome guide arrive by email 48 hours before check-in. We'll make sure you're taken care of.</p>
     <p style="margin:0 0 20px;font-size:15px;color:#555;line-height:1.7;">See you in the desert.</p>
     <p style="margin:0;font-size:14px;color:#888;">Questions? Reply here or reach us at <a href="mailto:indigopalmco@gmail.com" style="color:#B67550;">indigopalmco@gmail.com</a></p>
   `);

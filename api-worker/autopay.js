@@ -19,6 +19,7 @@
 // optional SQUARE_LOCATION_ID (defaults to the first Square location),
 // SQUARE_SANDBOX ('true' to use Square's sandbox).
 
+import { bookingPageBlock } from './guest.js';
 import {
   BALANCE_DAYS, CONSENT_VERSION, balanceDueDate, isAutopayEligible, splitAmounts, fullAmounts,
   toCents, idempotencyKey, consentText, autopayAction, graceDeadlineMs, isDefinitiveDecline,
@@ -52,6 +53,10 @@ export function newPayToken() {
 
 export function payLink(bookingId, payToken, mode) {
   return `${SITE}/pay/?id=${encodeURIComponent(bookingId)}&t=${encodeURIComponent(payToken)}${mode ? `&mode=${mode}` : ''}`;
+}
+
+export function bookingLink(bookingId, payToken) {
+  return `${SITE}/booking/?id=${encodeURIComponent(bookingId)}&t=${encodeURIComponent(payToken)}`;
 }
 
 // ── Square helpers ────────────────────────────────────────────────────────────
@@ -292,6 +297,7 @@ async function handleEnroll(request, env, deps) {
           ${deps.detailRow('Amount', `${usd(amounts.balanceCharge)} (remaining 50% + 3% card fee)`)}
           ${deps.detailRow('Card', `${esc(rec.brand || 'Card')} ending ${esc(rec.last4 || '----')}`)}
         </table>
+        ${bookingPageBlock(booking)}
         <p style="margin:0;font-size:14px;color:#888;line-height:1.6;">We will charge this card automatically on that date, ${BALANCE_DAYS} days before check-in. Cancel ${BALANCE_DAYS} or more days before check-in for a full refund of payments received, except the 3% card processing fee, which is not refundable. Questions or need to change the card? Email <a href="mailto:${HOST_EMAIL}" style="color:#B67550;">${HOST_EMAIL}</a>.</p>
       `),
     });

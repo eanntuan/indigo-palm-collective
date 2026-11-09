@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Your Booking | Indigo Palm Collective</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --ink:#2C2C2C; --sage:#647C69; --sage-dark:#4f6554; --copper:#BB7D49; --sand:#F6F1E8; --line:#E4E0D6; --muted:#6f6f6f; --err:#b3412e; }
+        * { box-sizing: border-box; }
+        body { margin:0; background:var(--sand); color:var(--ink); font-family:'Work Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.6; }
+        .hero { position:relative; height:260px; background:linear-gradient(135deg,var(--sage-dark),var(--sage)); background-size:cover; background-position:center; }
+        .hero::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,rgba(40,60,46,.25),rgba(40,60,46,.55)); }
+        .wrap { max-width:560px; margin:0 auto; padding:0 16px 56px; position:relative; z-index:1; }
+        .logo { display:block; width:112px; height:112px; margin:-56px auto 0; border-radius:50%; border:5px solid #fff; box-shadow:0 4px 18px rgba(0,0,0,.18); object-fit:cover; }
+        .brand { text-align:center; font-family:'Cormorant Garamond',Georgia,serif; font-size:24px; color:var(--sage-dark); margin:12px 0 18px; }
+        .card { background:#fff; border-radius:16px; padding:30px 26px; box-shadow:0 2px 10px rgba(0,0,0,.05); margin-bottom:16px; }
+        h1 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:400; font-size:34px; line-height:1.15; margin:0 0 8px; }
+        h2 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:600; font-size:24px; line-height:1.2; margin:0 0 12px; }
+        .sub { color:var(--muted); font-size:15px; margin:0 0 18px; }
+        .pill-status { display:inline-block; padding:4px 14px; border-radius:999px; background:var(--sand); color:var(--sage-dark); font-size:13px; font-weight:600; margin:0 0 16px; }
+        table { width:100%; border-collapse:collapse; }
+        td { padding:11px 0; border-bottom:1px solid var(--line); font-size:14px; vertical-align:top; }
+        tr:last-child td { border-bottom:0; }
+        td:first-child { color:var(--muted); width:46%; }
+        td:last-child { font-weight:600; text-align:right; }
+        .note { font-size:13px; color:var(--muted); margin:12px 0 0; }
+        .btn { display:inline-block; padding:14px 30px; border-radius:999px; background:var(--sage); color:#fff; text-decoration:none; font-size:15px; font-weight:500; letter-spacing:.5px; }
+        .btn:hover { background:var(--sage-dark); }
+        .btn-row { text-align:center; margin-top:16px; }
+        .box { background:var(--sand); border-radius:12px; padding:16px; font-size:14px; }
+        .err { color:var(--err); }
+        .foot { text-align:center; margin-top:22px; font-size:12px; color:var(--muted); }
+        .foot a, .note a { color:var(--copper); }
+        .hidden { display:none; }
+        @media (max-width:480px) { .hero { height:200px; } .card { padding:24px 18px; } h1 { font-size:28px; } }
+    </style>
+</head>
+<body>
+<div class="hero" id="hero" role="img" aria-label="Indigo Palm Collective"></div>
+<div class="wrap">
+    <img class="logo" src="/pay/logo.png" alt="Indigo Palm Collective" width="112" height="112">
+    <div class="brand">Indigo Palm Collective</div>
+
+    <div class="card" id="loading"><p class="sub" style="margin:0">Loading your booking...</p></div>
+    <div class="card hidden" id="fatal"><p class="err" id="fatal-msg" style="margin:0"></p></div>
+
+    <div id="content" class="hidden">
+        <div class="card">
+            <h1 id="title">Your booking</h1>
+            <span class="pill-status" id="status"></span>
+            <table id="stay"></table>
+            <p class="note hidden" id="address-note"></p>
+        </div>
+
+        <div class="card" id="pay-card">
+            <h2>Payments</h2>
+            <table id="payments"></table>
+            <p class="note" id="deposit-note"></p>
+            <div class="btn-row hidden" id="update-row"><a class="btn" id="update-card" href="#">Update your card</a></div>
+        </div>
+
+        <div class="card" id="guide-card">
+            <h2>Welcome guide</h2>
+            <p class="sub" id="guide-text" style="margin:0 0 4px"></p>
+            <div class="btn-row hidden" id="guide-row"><a class="btn" id="guide-link" href="#">Open your welcome guide</a></div>
+        </div>
+
+        <div class="card">
+            <h2>Cancellation policy</h2>
+            <div class="box" id="policy"></div>
+        </div>
+    </div>
+
+    <p class="foot">Please keep this page's link private. Questions? <a id="contact" href="mailto:indigopalmco@gmail.com">indigopalmco@gmail.com</a></p>
+</div>
+
+<script>
+(function () {
+    const params = new URLSearchParams(location.search);
+    const id = params.get('id');
+    const t = params.get('t');
+    const $ = (s) => document.getElementById(s);
+    const show = (el) => el.classList.remove('hidden');
+    const hide = (el) => el.classList.add('hidden');
+    const usd = (n) => '$' + Number(n).toFixed(2);
+    const fmt = (d) => { const [y, m, day] = d.split('-').map(Number); return new Date(y, m - 1, day).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }); };
+
+    function rows(table, list) {
+        table.textContent = '';
+        list.forEach(([a, b]) => {
+            const tr = document.createElement('tr');
+            const x = document.createElement('td'); x.textContent = a;
+            const y = document.createElement('td'); y.textContent = b;
+            tr.append(x, y); table.append(tr);
+        });
+    }
+    function fatal(msg) { hide($('loading')); $('fatal-msg').textContent = msg; show($('fatal')); }
+
+    async function init() {
+        if (!id || !t) return fatal('This booking link is not valid. Please use the link in your email.');
+        let d;
+        try {
+            const res = await fetch('/api/guest/booking?id=' + encodeURIComponent(id) + '&t=' + encodeURIComponent(t), { cache: 'no-store' });
+            d = await res.json();
+            if (!d.success) return fatal(d.error || 'This booking link is not valid.');
+        } catch (e) { return fatal('We could not load your booking. Please try again in a moment.'); }
+
+        const b = d.booking, p = d.payment, l = d.links;
+        if (/sundune/i.test(b.property || '')) $('hero').style.backgroundImage = "url('/pay/hero-sundune.webp')";
+        if (b.guestFirstName) $('title').textContent = 'Your booking, ' + b.guestFirstName;
+        $('status').textContent = b.statusLabel;
+        if (l.contactEmail) { $('contact').textContent = l.contactEmail; $('contact').href = 'mailto:' + l.contactEmail; }
+
+        rows($('stay'), [
+            ['Stay', b.property],
+            ['Check-in', fmt(b.checkIn) + ', ' + b.checkInTime],
+            ['Check-out', fmt(b.checkOut) + ', ' + b.checkOutTime],
+            ['Nights', String(b.nights)],
+            ['Guests', String(b.guests)],
+        ]);
+        if (b.address) {
+            const n = $('address-note'); n.textContent = '';
+            const a = document.createElement('a'); a.textContent = b.address; if (b.mapsUrl) a.href = b.mapsUrl;
+            n.append(a); show(n);
+        }
+
+        const pr = [];
+        if (p.stayTotal) pr.push(['Stay total', usd(p.stayTotal)]);
+        if (p.deposit) pr.push(['Refundable security deposit', usd(p.deposit.amount)]);
+        p.paid.forEach(x => pr.push([x.label + (x.paidOn ? ' (' + fmt(x.paidOn) + ')' : ''), usd(x.amount)]));
+        if (p.balance) {
+            const s = p.balance;
+            if (s.status !== 'paid') pr.push(['Remaining balance', usd(s.amount) + ' (50% plus 3% card fee)']);
+            if (s.status === 'scheduled') pr.push(['Charges automatically on', fmt(s.dueDate)]);
+            if (s.status === 'failed') pr.push(['Status', 'Last charge declined. Please update your card.']);
+            if (s.last4) pr.push(['Card on file', (s.brand ? s.brand + ' ' : '') + 'ending ' + s.last4]);
+        }
+        if (!p.paid.length) pr.push(['Payment', 'No payment has been received yet.']);
+        rows($('payments'), pr);
+        if (p.balance && p.balance.status === 'needs_attention') {
+            $('deposit-note').textContent = 'Something needs a quick look on our side. Please email us and we will sort it out.';
+        } else {
+            $('deposit-note').textContent = p.deposit ? p.deposit.note : '';
+            if (!p.deposit) hide($('deposit-note'));
+        }
+        if (l.updateCard) { $('update-card').href = l.updateCard; show($('update-row')); }
+
+        const g = l.welcomeGuide;
+        if (!g) { hide($('guide-card')); }
+        else if (g.available) {
+            $('guide-text').textContent = 'Parking, entry, house rules, Wi-Fi and local tips.';
+            $('guide-link').href = g.url; show($('guide-row'));
+        } else {
+            $('guide-text').textContent = 'Your welcome guide is available 48 hours before check-in, on ' + g.opensAtLabel + '. We will also email you the link.';
+        }
+
+        $('policy').textContent = d.policy.cancellation;
+        hide($('loading')); show($('content'));
+    }
+    init();
+})();
+</script>
+</body>
+</html>
