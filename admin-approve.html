@@ -310,6 +310,14 @@
                 <div class="payment-link-box" id="payment-link-display"></div>
 
                 <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #f0ede6;">
+                    <p class="section-title">Card payment page (pay half now or in full)</p>
+                    <p style="color:#555;font-size:0.95rem;margin-bottom:1rem;">Gets the branded page where the guest pays 50% now and 50% automatically 60 days before check-in, or pays in full. Use it for bookings approved before this page existed, or when a guest asks to pay by card in two halves.</p>
+                    <button class="btn-approve" id="paylink-show">Show the link</button>
+                    <button class="btn-approve" id="paylink-email" style="margin-top:0.75rem;">Email it to the guest</button>
+                    <div id="paylink-status"></div>
+                </div>
+
+                <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #f0ede6;">
                     <p class="section-title">Guest Paid (Zelle / Other)</p>
                     <div class="form-group">
                         <label>Amount Received<span class="required-star">*</span></label>
@@ -460,6 +468,8 @@
             } else if (b.status === 'approved') {
                 document.getElementById('approval-form-card').style.display = 'none';
                 document.getElementById('approved-card').style.display = 'block';
+                document.getElementById('paylink-show').onclick = () => getPayLink(false);
+                document.getElementById('paylink-email').onclick = () => { if (confirm('Email the card payment link to the guest?')) getPayLink(true); };
                 if (b.paymentLink) {
                     document.getElementById('payment-link-display').innerHTML =
                         `<a href="${b.paymentLink}" target="_blank">${b.paymentLink}</a>`;
@@ -473,6 +483,26 @@
                 document.getElementById('flat-discount').addEventListener('input', updateFinalTotal);
                 document.getElementById('waive-deposit').addEventListener('change', updateFinalTotal);
                 document.getElementById('approve-btn').addEventListener('click', approveBooking);
+            }
+        }
+
+        async function getPayLink(email) {
+            const status = document.getElementById('paylink-status');
+            status.innerHTML = '';
+            try {
+                const res = await fetch('/api/send-pay-link?key=' + encodeURIComponent(adminKey), {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: bookingId, token, email }),
+                });
+                const d = await res.json();
+                if (!d.success) { status.innerHTML = `<div class="status-box error">${d.error || 'Could not get the link.'}</div>`; return; }
+                const a = d.amounts;
+                const lines = d.splitAvailable
+                    ? `Half now $${a.first.toFixed(2)}, second half $${a.balance.toFixed(2)} on ${d.dueDate}, or $${a.full.toFixed(2)} in full.`
+                    : `Pay in full: $${a.full.toFixed(2)} (too close to check-in to split).`;
+                status.innerHTML = `<div class="status-box success">${d.emailed ? 'Emailed to the guest (you are copied). ' : ''}${lines}</div><div class="payment-link-box" style="margin-top:0.75rem;word-break:break-all;">${d.link}</div>`;
+            } catch (e) {
+                status.innerHTML = `<div class="status-box error">Network error. Try again.</div>`;
             }
         }
 
