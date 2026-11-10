@@ -1,0 +1,17 @@
+/* Phone polish shared by home + property pages. Loaded after each page's inline CSS. */
+html{-webkit-text-size-adjust:100%;scroll-padding-top:5rem}
+body{-webkit-tap-highlight-color:transparent}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+@media (max-width:768px){
+  section.hero,.hero{min-height:70vh;min-height:70svh}
+  nav ul{height:100vh;height:100dvh;overscroll-behavior:contain}
+  nav ul a{display:block;min-height:44px;line-height:44px}
+  .contact-links .contact-btn{flex:1 1 100%;justify-content:center;min-height:52px}
+  .details-main p,.section-subtitle{line-height:1.65}
+  .details-section,.gallery-section{padding-left:max(5%,20px);padding-right:max(5%,20px)}
+  .gallery-item,.gallery-img-wrap img{border-radius:12px}
+}
+@media (max-width:768px) and (prefers-reduced-motion:no-preference){
+  .cta-button,.mobile-cta-btn,.contact-btn,.booking-widget-btn{transition:transform .15s ease-out,background-color .15s ease-out,opacity .15s ease-out}
+}

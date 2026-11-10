@@ -17,3 +17,12 @@
 .newsletter-signup button {
     border-radius: 999px;
 }
+
+/* Tap comfort: 44px minimum hit area, no 300ms delay, pressed feedback. */
+.cta-button, .cta-btn-big, .hero-cta, .cta-btn-white, .cta-btn-outline-white,
+.mobile-cta-btn, .contact-btn, .booking-widget-btn, .email-form button {
+    min-height: 44px;
+    touch-action: manipulation;
+}
+.cta-button:active, .cta-btn-big:active, .hero-cta:active, .mobile-cta-btn:active,
+.contact-btn:active, .booking-widget-btn:active { transform: scale(.98); }
