@@ -43,8 +43,11 @@ export async function handleSendPayLink(request, env, deps) {
     const rows = [
       deps.detailRow('Property', esc(booking.property)),
       deps.detailRow('Dates', `${esc(deps.fmtDate(booking.checkIn))} to ${esc(deps.fmtDate(booking.checkOut))}`),
-      split ? deps.detailRow('Pay half now', `<strong>${usd(split.firstCharge)}</strong>`) : '',
-      split ? deps.detailRow(`Second half, ${esc(deps.fmtDate(dueDate))}`, usd(split.balanceCharge)) : '',
+      deps.detailRow('Stay total', usd(booking.finalTotal)),
+      deps.detailRow('Card fee (3%)', usd(full.charge - booking.finalTotal - deposit)),
+      deposit > 0 ? deps.detailRow('Security deposit', `${usd(deposit)} (refundable, no fee)`) : '',
+      split ? deps.detailRow('Pay half now', `<strong>${usd(split.firstCharge)}</strong> (fee included)`) : '',
+      split ? deps.detailRow(`Second half, ${esc(deps.fmtDate(dueDate))}`, `${usd(split.balanceCharge)} (fee included)`) : '',
       deps.detailRow('Or pay in full today', `<strong>${usd(full.charge)}</strong>`),
     ].join('');
     await deps.sendEmail(env.RESEND_API_KEY, {
