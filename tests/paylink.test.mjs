@@ -22,7 +22,7 @@ describe('send-pay-link', () => {
     assert.equal(r.status, 200);
     const saved = JSON.parse(await kv.get('booking:j1'));
     assert.ok(saved.payToken && saved.payToken.length >= 32);
-    assert.equal(j.link, `https://indigopalm.co/pay/?id=j1&t=${saved.payToken}`);
+    assert.equal(j.link, `https://indigopalm.co/pay/?id=j1&t=${saved.payToken}&plan=split`);
     assert.equal(j.splitAvailable, true);
     assert.equal(j.amounts.first, 1262.57);   // 1225.80 + 3% fee, no deposit
     assert.equal(j.amounts.balance, 1262.57);
@@ -32,12 +32,14 @@ describe('send-pay-link', () => {
   test('keeps the existing token and can email the guest (host copied)', async () => {
     await kv.put('booking:j1', JSON.stringify(booking({ payToken: 'p'.repeat(32) })));
     const j = await (await handleSendPayLink(req({ id: 'j1', token: 'tok', email: true }), env, deps)).json();
-    assert.ok(j.link.endsWith('t=' + 'p'.repeat(32)));
+    assert.ok(j.link.includes('t=' + 'p'.repeat(32)));
     assert.equal(sent.length, 1);
     assert.equal(sent[0].to, 'jen@example.com');
     assert.equal(sent[0].cc, 'indigopalmco@gmail.com');
     assert.match(sent[0].html, /1262\.57/);
-    assert.match(sent[0].html, /2525\.15/);
+    assert.match(sent[0].html, /save your card/);
+    assert.match(sent[0].html, /plan=split/);
+    assert.doesNotMatch(sent[0].html, /Pay in full today/);
     assert.match(sent[0].html, /Card fee \(3%\):\$73\.55/);
     assert.match(sent[0].html, /border-radius:999px/);
   });
