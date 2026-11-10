@@ -1,108 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Guide | Terra Luz</title>
-    <meta name="robots" content="noindex, nofollow">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-LCY4M0HEQB');
-    </script>
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "wf8wk28vyh");
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap"></noscript>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #f5f3ee; font-family: 'Work Sans', sans-serif; color: #2c2c2c; min-height: 100vh; display: flex; flex-direction: column; }
-        header { padding: 28px 40px; text-align: center; border-bottom: 1px solid rgba(44,44,44,0.1); }
-        .logo { font-family: 'Work Sans', sans-serif; font-size: 0.85rem; font-weight: 500; letter-spacing: 4px; color: #B67550; text-decoration: none; display: inline-block; margin-bottom: 10px; }
-        .logo:hover { color: #9d6143; }
-        h1 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; }
-        h1 a { color: inherit; text-decoration: none; }
-        h1 a:hover { color: #B67550; }
-        .subtitle { font-size: 1rem; color: #888; margin-top: 4px; }
-        .guide-container { flex: 1; padding: 40px; max-width: 900px; width: 100%; margin: 0 auto; }
-        .canva-embed { border-radius: 8px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.1); position: relative; padding-top: 141%; }
-        .canva-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
-        .open-link { text-align: center; padding: 20px; font-size: 0.85rem; color: #aaa; }
-        .open-link a { color: #B67550; text-decoration: none; }
-        footer { text-align: center; padding: 28px; font-size: 0.8rem; color: #aaa; border-top: 1px solid rgba(44,44,44,0.1); }
-        .popup-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 100; align-items: center; justify-content: center; padding: 20px; }
-        .popup-overlay.active { display: flex; }
-        .popup { background: #fff; border-radius: 12px; padding: 48px 40px; max-width: 440px; width: 100%; text-align: center; position: relative; }
-        .popup-close { position: absolute; top: 16px; right: 20px; font-size: 1.4rem; cursor: pointer; color: #aaa; background: none; border: none; line-height: 1; }
-        .popup h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 12px; }
-        .popup p { font-size: 0.9rem; color: #666; line-height: 1.7; margin-bottom: 28px; }
-        .popup-form { display: flex; flex-direction: column; gap: 10px; }
-        .popup-form input { padding: 13px 16px; border: 1px solid #ddd; border-radius: 4px; font-family: 'Work Sans', sans-serif; font-size: 1rem; outline: none; }
-        .popup-form input:focus { border-color: #B67550; }
-        .popup-form button { padding: 13px; background: #B67550; color: #fff; border: none; border-radius: 4px; font-family: 'Work Sans', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 1.5px; cursor: pointer; }
-        .popup-form button:hover { background: #9d6143; }
-        .popup-skip { margin-top: 14px; font-size: 0.78rem; color: #aaa; cursor: pointer; }
-        .popup-success { display: none; }
-        .popup-success p { color: #5a7a50; font-size: 0.95rem; margin: 0; }
-        @media (max-width: 600px) { header { padding: 20px; } .guide-container { padding: 20px 16px; } .popup { padding: 40px 24px; } }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#7A4A31">
+<title>Welcome Guide | Terra Luz</title>
+<meta name="robots" content="noindex, nofollow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LCY4M0HEQB"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-LCY4M0HEQB');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap"></noscript>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--dark:#7A4A31;--accent:#9D6143;--accent-dark:#7A4A31;--bg:#F5F3EE;--soft:#EBD9CC;--text:#2c2c2c;--muted:#5f5f5f;--line:rgba(44,44,44,.12);--bar:64px}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 'Work Sans',system-ui,sans-serif;padding-bottom:calc(var(--bar) + env(safe-area-inset-bottom) + 16px)}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--accent-dark)}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.15;text-wrap:balance}
+.hero{background:var(--dark);color:#fff;text-align:center;padding:calc(env(safe-area-inset-top) + 36px) 20px 32px}
+.hero .brand{font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;opacity:.8}
+.hero h1{font-size:2.4rem;letter-spacing:.06em;text-transform:uppercase;margin:8px 0 4px}
+.hero p{opacity:.85}
+.panel{display:none;max-width:680px;margin:0 auto;padding:24px 20px 40px}
+.panel.on{display:block}
+.panel>*+*{margin-top:16px}
+.panel h2{font-size:1.9rem;margin-top:32px}
+.panel h2:first-child{margin-top:0}
+p{max-width:60ch}
+.card{background:#fff;border-radius:14px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.callout{background:var(--soft);border-radius:14px;padding:16px 18px}
+.callout.warn{background:#fdf0e6}
+.row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border:0}
+.row b{font-weight:600;text-align:right}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 20px;border:0;border-radius:14px;background:var(--accent);color:#fff;font:600 1rem 'Work Sans',sans-serif;text-decoration:none;touch-action:manipulation;cursor:pointer;width:100%}
+.btn:active{background:var(--accent-dark);transform:scale(.98)}
+.btn.alt{background:#fff;color:var(--accent-dark);box-shadow:inset 0 0 0 1.5px var(--accent)}
+.steps{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:0 20px 8px;scrollbar-width:none}
+.steps::-webkit-scrollbar{display:none}
+.step{flex:0 0 82%;scroll-snap-align:center;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.step img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.step p{padding:12px 14px 14px;font-size:.95rem;line-height:1.5}
+.step b{color:var(--accent-dark)}
+details{background:#fff;border-radius:14px;box-shadow:0 1px 3px rgba(0,0,0,.08);overflow:hidden}
+summary{display:flex;align-items:center;justify-content:space-between;min-height:56px;padding:0 18px;font-weight:600;cursor:pointer;list-style:none;touch-action:manipulation}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font-size:1.5rem;color:var(--accent)}
+details[open] summary::after{content:'\2212'}
+details>div{padding:0 18px 18px}
+details>div>*+*{margin-top:12px}
+.photo{border-radius:14px;width:100%}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px}
+.contact a{display:flex;align-items:center;min-height:44px;padding:0 4px;font-weight:600}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;background:var(--dark);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;min-height:var(--bar);border:0;background:none;color:rgba(255,255,255,.65);font:600 .75rem 'Work Sans',sans-serif;letter-spacing:.04em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;touch-action:manipulation;border-top:3px solid transparent}
+nav button .i{font-size:1.25rem;line-height:1}
+nav button[aria-selected=true]{color:#fff;border-top-color:var(--accent)}
+.pdf{text-align:center;font-size:.9rem;padding:8px 20px}
+@media (prefers-reduced-motion:no-preference){.panel.on{animation:in .2s ease-out}@keyframes in{from{opacity:0;transform:translateY(6px)}}}
+@media (min-width:700px){.step{flex-basis:46%}}
+</style>
 </head>
 <body>
-    <header>
-        <a href="https://indigopalm.co" class="logo">Indigo Palm Collective</a>
-        <h1><a href="https://indigopalm.co">TERRA LUZ</a></h1>
-        <p class="subtitle">Welcome Guide</p>
-    </header>
-    <div class="guide-container">
-        <div class="canva-embed">
-            <iframe src="/terra-luz/welcome-book.pdf" title="Terra Luz Welcome Guide" loading="lazy"></iframe>
-        </div>
-        <div class="open-link"><a href="/terra-luz/welcome-book.pdf" target="_blank" onclick="gtag('event', 'open_fullscreen', { property: 'terra-luz' })">Open in full screen ↗</a></div>
-    </div>
-    <footer>&copy; 2026 Indigo Palm Collective</footer>
-    <div class="popup-overlay" id="popupOverlay">
-        <div class="popup">
-            <button class="popup-close" id="popupClose">&times;</button>
-            <h2>COME BACK SOON</h2>
-            <p>Get early access to availability, last-minute deals, and 10% off your next direct booking.</p>
-            <div class="popup-success" id="popupSuccess"><p>You're in. See you next time.</p></div>
-            <form class="popup-form" id="popupForm">
-                <input type="text" name="firstName" placeholder="First name" required>
-                <input type="email" name="email" placeholder="Email address" required>
-                <button type="submit" id="popupBtn">SAVE MY SPOT</button>
-            </form>
-            <p class="popup-skip" id="popupSkip">No thanks</p>
-        </div>
-    </div>
-    <script>
-        setTimeout(() => { document.getElementById('popupOverlay').classList.add('active'); }, 30000);
-        document.getElementById('popupClose').addEventListener('click', () => { document.getElementById('popupOverlay').classList.remove('active'); });
-        document.getElementById('popupSkip').addEventListener('click', () => { document.getElementById('popupOverlay').classList.remove('active'); });
-        document.getElementById('popupForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const btn = document.getElementById('popupBtn');
-            btn.disabled = true; btn.textContent = 'SAVING...';
-            const email = e.target.querySelector('input[name="email"]').value;
-            try {
-                await fetch('https://newsletter.indigopalm.co/signup', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email }) });
-                gtag('event', 'email_signup', { property: 'terra-luz', source: 'welcome_guide_popup' });
-                document.getElementById('popupForm').style.display = 'none';
-                document.getElementById('popupSkip').style.display = 'none';
-                document.getElementById('popupSuccess').style.display = 'block';
-                setTimeout(() => { document.getElementById('popupOverlay').classList.remove('active'); }, 2500);
-            } catch (err) { btn.disabled = false; btn.textContent = 'SAVE MY SPOT'; }
-        });
-    </script>
+<header class="hero">
+  <a class="brand" href="https://indigopalm.co" style="color:inherit;text-decoration:none">Indigo Palm Collective</a>
+  <h1>Terra Luz</h1>
+  <p>Indio &middot; Welcome Guide</p>
+</header>
+
+<main>
+<!-- Copy the Welcome / Arrival / House / Explore / Checkout panels from the extracted content. Components: .card .callout .row .steps>.step details .btn .contact .photo -->
+<section class="panel on" id="welcome" role="tabpanel">
+<h2>Welcome</h2>
+<p>We are your hosts, Eann and Brandon. Eann is a software engineer by day and cat lover by night, and Brandon loves to travel and will be your on-site host throughout your stay.</p>
+<p>This guide covers check-in, wifi, the pool and spa, great coffee and the best local restaurants. Relax, recharge, reconnect, and enjoy your stay.</p>
+<div class="card">
+<div class="row"><span>Check-in</span><b>4 pm</b></div>
+<div class="row"><span>Check-out</span><b>10 am</b></div>
+<div class="row"><span>Address</span><b><a href="https://maps.google.com/?q=49768+Pacino+St,+Indio,+CA+92201" target="_blank" rel="noopener">49768 Pacino St, Indio</a></b></div>
+<div class="row"><span>Wifi network</span><b data-copy="Indigo Palm Collective" style="cursor:pointer">Indigo Palm Collective</b></div>
+</div>
+<h2>House rules</h2>
+<div class="callout warn"><p>Any verifiable violation of the rules means a cancellation of your trip without refund.</p></div>
+<div class="card">
+<p><b>No parties.</b> Be mindful of the neighbors and the community. This is not a party house and it is against Airbnb rules.</p>
+<p><b>10 pm outdoor curfew.</b> Noise complaints mean a minimum $300 fine and removal from the property with no refund.</p>
+<p><b>No smoking.</b> No smoking, vaping or drugs of any kind on the premises, with a minimum $250 fine for violations.</p>
+</div>
+<h2>Make it a moment</h2>
+<div class="card">
+<p><b>Play a soundtrack.</b> Put on a Spotify playlist for the drive here and for the rest of your stay.</p>
+<p><b>Splurge on El Paseo.</b> Global designers sit next to indie boutiques there, so grab a Wilma &amp; Frieda pop tart and go people watching.</p>
+<p><b>Make toast, the good kind.</b> Sweet fig is toasted ciabatta with ricotta, cinnamon, grated parmesan, sliced figs, honey, basil and chopped pistachios. Savory mushroom is ciabatta brushed with olive oil, topped with mashed cannellini beans and salt, then sauteed cremini, red onion and cracked pepper.</p>
+</div>
+<h2>Emergency contacts</h2>
+<div class="card">
+<div class="contact"><span>Eann</span><a href="tel:+12146061340">214 606 1340</a></div>
+<div class="contact"><span>Brandon</span><a href="tel:+14252327603">425 232 7603</a></div>
+<div class="contact"><span>Medical emergency</span><a href="tel:911">Call 911</a></div>
+<div class="contact"><span>JFK Memorial Hospital</span><a href="tel:+17603476191">760 347 6191</a></div>
+<div class="contact"><span>Rite Aid pharmacy</span><a href="tel:+17603473646">760 347 3646</a></div>
+<div class="contact"><span>Fire department</span><a href="tel:+17603470726">760 347 0726</a></div>
+<div class="contact"><span>Rock3t Towing</span><a href="tel:+17609078954">760 907 8954</a></div>
+</div>
+<p>Questions, feedback or concerns? Reach out and we will make it right.</p>
+</section>
+<section class="panel" id="arrival" role="tabpanel">
+<h2>Getting here</h2>
+<p>We live inside Indian Palms Country Club, a gated community, and check-in is at 4 pm. Type "Indian Palms Country Club" into your GPS and it takes you to the Monroe St gate.</p>
+<a class="btn" href="https://maps.google.com/?q=49768+Pacino+St,+Indio,+CA+92201" target="_blank" rel="noopener">Open directions to 49768 Pacino St</a>
+<img class="photo" src="/terra-luz/welcome-guide/gate-map.webp" alt="Map of the four Indian Palms Country Club gates: Monroe, Ave 48, Jackson and Ave 50" width="900" height="921" loading="lazy" decoding="async">
+<div class="callout"><p><b>Monroe gate</b> is the main gate. Give the guard your name and our address, or pick up a paper guest pass, or use the Conekt app on the iPod Touch once you are inside to use the "transponder only" lane.</p></div>
+<p>The Ave 48, Jackson and Ave 50 gates need mobile phone credentials (including the Conekt app on the iPod Touch) or a license plate registered with us. If more than one driver is coming, send us names and plates, one per vehicle. The club monitors every vehicle, so allow extra time.</p>
+<h2>Check in</h2>
+<div class="card">
+<p><b>1. Your code.</b> We send a 4 digit access code at least 24 hours before arrival, and it only works from check-in until check-out.</p>
+<p><b>2. The smart lock.</b> Type the code and the lock should unlock on its own. If it gives you trouble, message us.</p>
+<p><b>3. Parking.</b> The garage fits 2 cars and the driveway fits 2 more. Day guests can park on the street from 7 am to midnight, and security patrol tickets and tows overnight street parking.</p>
+</div>
+<img class="photo" src="/terra-luz/welcome-guide/front-door.webp" alt="Terra Luz front door with the smart lock keypad" width="900" height="600" loading="lazy" decoding="async">
+<div class="callout warn"><p><b>Noise curfew starts at 10 pm.</b> Neighbors report and the city can issue hefty citations for excessive noise, Bluetooth speakers on the patio included.</p></div>
+<h2>Wifi and TV</h2>
+<p>Each TV has a Roku, so log in to your own streaming accounts. We provide Netflix and YouTube Premium.</p>
+</section>
+<section class="panel" id="house" role="tabpanel">
+<h2>The house</h2>
+<details open><summary>Temperature</summary><div><p>The Sensi thermostat is in the living room. The default is 74 F, so please do not set it below 72 because that freezes the unit, and keep windows and outside doors closed.</p></div></details><details><summary>TV</summary><div><p>Each TV runs Roku with Netflix and YouTube Premium. Keep track of the remote, since they walk off often.</p></div></details><details><summary>Laundry</summary><div><p>Use the washer and dryer, with detergent and dryer sheets provided. A regular cycle takes 50 minutes.</p></div></details><details><summary>Trash</summary><div><p>Bins are on the left side of the garage. Burrtec picks up on Mondays and the blue bin is recycling.</p></div></details><details><summary>Coffee</summary><div><p>Cafe Bustelo grounds and Peet's whole beans are waiting, and the mugs are handmade by local artist Leigh Dierck. Creamer is tricky in the desert, but L&amp;G Desert Store down the road carries local dairy.</p><p><b>Drip.</b> Use the Caffeinator with the Bustelo grounds and tap the screen to navigate. Unplug it to power off since there is no off button, and filters are in the cabinet below.</p><p><b>Keurig.</b> Pods are in the primary bedroom coffee cabinet.</p><p><b>French press.</b> The Fellow press works well with the Peet's beans, and the grinder is in the cabinet below.</p><p><b>Pour over.</b> Kettle, dripper and filters are set up and ready.</p></div></details><details><summary>Families</summary><div><p>We have a Pack n Play, Diaper Genie, Stokke high chair, changing pad, kids dishes and a step stool.</p></div></details><details><summary>Games and guestbook</summary><div><p>Cookbooks and games are under the living room TV and in the second closet. The leather guestbook is on the green entry table in the living room, and we read every entry.</p></div></details><details><summary>Pardon the dust</summary><div><p>Desert wind is part of the experience, so a little dust on arrival is normal. We left colored towels and a leaf blower for a quick refresh before you settle in.</p></div></details>
+<h2>Pool and spa</h2>
+<p>The backyard was built to keep you outside: pool, spa, string lights and desert air.</p>
+<details open><summary>Spa heat and lights</summary><div><p>Spa heat is complimentary and takes about an hour to reach 103. The Spa button on the wall panel runs the jets for one hour, and the Lights button flips the underwater lights. Please turn the spa and jets off when you are done.</p></div></details><details><summary>Pool heat</summary><div><p>Pool heat and spa heat cannot run at the same time. If you paid for pool heating, the spa is off while the pool heats, and the other way around.</p></div></details><details><summary>Umbrella and floaties</summary><div><p>Open umbrellas do not survive desert wind, so close it and bring it in when you are done. Store the floaties in the garage, where the electric pump is too, because direct sun breaks them down fast.</p></div></details><details><summary>Pool rules</summary><div><p><b>No diving.</b> The pool is only 5 feet deep.</p><p><b>No glass.</b> Plastic dishware and cups are in the kitchen.</p><p><b>No water balloons</b> and <b>no food in the pool.</b> Eat at the patio table and do not leave food out overnight, because it attracts pests.</p></div></details><details><summary>BBQ</summary><div><p>The built-in gas BBQ is ready to use. Turn on the gas line to the left of the tanning ledge and turn it off when you finish. Utensils are in the kitchen drawer and plastic dinnerware is in the cabinet left of the dishwasher.</p></div></details>
+<h2>Community amenities</h2>
+<p>You have access to three community heated pools, spas, the fitness center, and the Lifestyle Center tennis and pickleball courts. Courts usually need no reservation, and equipment rents with an ID. Pool hours are 8 am to 10 pm.</p>
+<img class="photo" src="/terra-luz/welcome-guide/lifestyle-center-map.webp" alt="Aerial map from the house to the Lifestyle Center big pool, fitness center, tennis and pickleball courts" width="900" height="813" loading="lazy" decoding="async"><details><summary>Fitness center and main pool</summary><div><p>Message us the names of all guests and we will submit a form for a temporary card, and only 4 guests can enter at a time. The main pool asks for a $10 deposit on a temporary membership card at the gym front desk, refunded when you return it.</p><p><a href="https://maps.google.com/?q=82075+Country+Club+Drive,+Indio,+CA" target="_blank" rel="noopener">82075 Country Club Drive</a> &middot; <a href="https://hoa-ipcca.com/lifestyle-center/" target="_blank" rel="noopener">Gym hours</a></p></div></details><details><summary>Pickleball and golf</summary><div><p>Four paddles and extra balls are in the bunk bedroom closet. For golf, see <a href="https://indianpalms.com" target="_blank" rel="noopener">indianpalms.com</a>, <a href="https://golfnow.com" target="_blank" rel="noopener">golfnow.com</a> or ask at the club house.</p></div></details></section>
+<section class="panel" id="explore" role="tabpanel">
+<h2>Explore</h2>
+<p>Call ahead, because desert hours often differ from what is listed.</p>
+<details open><summary>Places to eat</summary><div><p><b>One Stop Taco Shop</b><br><a href="https://maps.google.com/?q=84051+Indio+Blvd,+Indio,+CA+92201" target="_blank" rel="noopener">84051 Indio Blvd, Indio, CA 92201</a><br>Tacos in homemade flour tortillas, with a pineapple agua fresca. Cash is easiest, or pay 50 cents extra for a card.<br><a href="tel:+17603402444">Call 760-340-2444</a> </p><p><b>TKB Bakery &amp; Deli</b><br><a href="https://maps.google.com/?q=45334+Golf+Center+Pkwy,+Indio,+CA+92201" target="_blank" rel="noopener">45334 Golf Center Pkwy, Indio, CA 92201</a><br>Sandwiches and desserts, and Eann's favorite is the Mexican Marilyn Monroe. Order ahead to skip the line.<br><a href="tel:+17607758330">Call 760-775-8330</a> <a href="http://www.tkbbakery.com" target="_blank" rel="noopener">Website</a></p><p><b>Pueblo Viejo Grill</b><br><a href="https://maps.google.com/?q=81931+CA-111,+Indio,+CA+92201" target="_blank" rel="noopener">81931 CA-111, Indio, CA 92201</a><br>Happy hour is 3 to 5 pm daily, so get the carne asada nachos. Closed Mondays.<br><a href="tel:+17603425900">Call 760-342-5900</a> <a href="http://puebloviejogrill.com" target="_blank" rel="noopener">Website</a></p><p><b>The Palms Cafe</b><br><a href="https://maps.google.com/?q=79255+CA-111+STE+6,+La+Quinta,+CA+92253" target="_blank" rel="noopener">79255 CA-111 STE 6, La Quinta, CA 92253</a><br>The best pancakes in the desert, in a charming, locally owned spot with large portions.<br><a href="tel:+17609840286">Call 760-984-0286</a> <a href="https://www.thepalmscafelaquinta.com" target="_blank" rel="noopener">Website</a></p><p><b>Heirloom Craft Kitchen</b><br><a href="https://maps.google.com/?q=49990+Jefferson+St+#100,+Indio,+CA+92201" target="_blank" rel="noopener">49990 Jefferson St #100, Indio, CA 92201</a><br>American food with gluten free and vegetarian options. Some days it closes at 3 pm.<br><a href="tel:+17607732233">Call 760-773-2233</a> <a href="http://heirloomcraftkitchen.com" target="_blank" rel="noopener">Website</a></p></div></details><details><summary>Coffee and drinks</summary><div><p><b>Yes Please</b><br><a href="https://maps.google.com/?q=78065+Main+St+STE+100,+La+Quinta,+CA+92253" target="_blank" rel="noopener">78065 Main St STE 100, La Quinta, CA 92253</a><br>Old Town La Quinta breakfast with handmade lattes, huckleberry scones and homemade biscuits.<br><a href="tel:+13107761620">Call 310-776-1620</a> <a href="http://yespleaselaquinta.com/" target="_blank" rel="noopener">Website</a></p><p><b>Everbloom Coffee</b><br><a href="https://maps.google.com/?q=81730+CA-111+Suite+14,+Indio,+CA+92201" target="_blank" rel="noopener">81730 CA-111 Suite 14, Indio, CA 92201</a><br>Minimalist local shop for matcha or iced lattes with housemade syrups.<br><a href="tel:+14422741316">Call 442-274-1316</a> <a href="https://everbloom.coffee" target="_blank" rel="noopener">Website</a></p><p><b>Cactus Jack's Bar and Grill</b><br><a href="https://maps.google.com/?q=74450+CA-111,+Palm+Desert,+CA+92260" target="_blank" rel="noopener">74450 CA-111, Palm Desert, CA 92260</a><br>Prime rib, drinks and people watching, with outdoor seating when it is cool enough.<br><a href="tel:+17603461565">Call 760-346-1565</a> <a href="http://cactusjacks.net" target="_blank" rel="noopener">Website</a></p><p><b>La Quinta Brewing Co</b><br><a href="https://maps.google.com/?q=78-100+Main+St+#101,+La+Quinta,+CA+92253" target="_blank" rel="noopener">78-100 Main St #101, La Quinta, CA 92253</a><br>A flight of beers with the date salad and flatbread.<br><a href="tel:+17609724251">Call 760-972-4251</a> <a href="https://www.laquintabrewing.com" target="_blank" rel="noopener">Website</a></p><p><b>Tack Room Tavern</b><br><a href="https://maps.google.com/?q=81800+Avenue+51,+Indio,+CA+92201" target="_blank" rel="noopener">81800 Avenue 51, Indio, CA 92201</a><br>Craft cocktails on the Empire Polo Club grounds, and the 10-Goal Hamburger is the favorite. Closed Sunday and Monday.<br><a href="tel:+17603479985">Call 760-347-9985</a> <a href="https://empirepolo.com/food-drink-entertainment" target="_blank" rel="noopener">Website</a></p></div></details><details><summary>With kids</summary><div><p><b>Living Desert Zoo and Gardens</b><br><a href="https://maps.google.com/?q=47900+Portola+Ave,+Palm+Desert,+CA+92260" target="_blank" rel="noopener">47900 Portola Ave, Palm Desert, CA 92260</a><br>Over 1,000 acres of desert, with bighorn sheep and small animal exhibits.<br><a href="tel:+17603465694">Call 760-346-5694</a> <a href="https://www.livingdesert.org/" target="_blank" rel="noopener">Website</a></p><p><b>Over the Rainbow Desserts</b><br><a href="https://maps.google.com/?q=1775+E+Palm+Canyon+Dr+STE+150,+Palm+Springs,+CA+92264" target="_blank" rel="noopener">1775 E Palm Canyon Dr STE 150, Palm Springs, CA 92264</a><br>Cupcakes, with great gluten free ones, and day-old cupcakes are half off earlier in the day.<br><a href="tel:+17603222253">Call 760-322-2253</a> <a href="http://www.overtherainbowdesserts.com/" target="_blank" rel="noopener">Website</a></p><p><b>Bear Creek Trailhead</b><br><a href="https://maps.google.com/?q=Bear+Creek+Trail,+La+Quinta,+CA+92253" target="_blank" rel="noopener">Bear Creek Trail, La Quinta, CA 92253</a><br>A paved nature trail along the base of the Santa Rosa Mountains through a protected preserve.<br></p><p><b>Cabazon Dinosaurs</b><br><a href="https://maps.google.com/?q=50770+Seminole+Dr,+Cabazon,+CA+92230" target="_blank" rel="noopener">50770 Seminole Dr, Cabazon, CA 92230</a><br>A dinosaur garden and robotic dinosaurs.<br><a href="tel:+19092728164">Call 909-272-8164</a> <a href="http://www.cabazondinosaurs.com/" target="_blank" rel="noopener">Website</a></p><p><b>Palm Springs Air Museum</b><br><a href="https://maps.google.com/?q=745+N+Gene+Autry+Trail,+Palm+Springs,+CA+92262" target="_blank" rel="noopener">745 N Gene Autry Trail, Palm Springs, CA 92262</a><br>Climb inside a B-17 and try the flight simulator, a good plan for a day too hot for the zoo.<br><a href="tel:+17607786262">Call 760-778-6262</a> <a href="http://palmspringsairmuseum.org/" target="_blank" rel="noopener">Website</a></p></div></details><details><summary>Cool off</summary><div><p><b>Escape Room Palm Springs</b><br><a href="https://maps.google.com/?q=2500+N+Palm+Canyon+Dr+B3,+Palm+Springs,+CA+92262" target="_blank" rel="noopener">2500 N Palm Canyon Dr B3, Palm Springs, CA 92262</a><br>Over 6,000 sq ft of games and puzzles. The owner, Dominique, is a friend and offered code ABNB10 for 10% off.<br><a href="tel:+17607798888">Call 760-779-8888</a> <a href="https://escapeps.com/" target="_blank" rel="noopener">Website</a></p><p><b>Ice skating</b><br><a href="https://maps.google.com/?q=75702+Varner+Rd,+Palm+Desert,+CA+92211" target="_blank" rel="noopener">75702 Varner Rd, Palm Desert, CA 92211</a><br>Skate where the Coachella Firebirds train at Acrisure Arena, $15 a session and $5 for skate rental. Pre-register.<br><a href="tel:+17603187388">Call 760-318-7388</a> <a href="https://www.bergerfoundationiceplex.com/public-skating/" target="_blank" rel="noopener">Website</a></p><p><b>Palm Springs Art Museum</b><br><a href="https://maps.google.com/?q=2500+N+Palm+Canyon+Dr+B3,+Palm+Springs,+CA+92262" target="_blank" rel="noopener">2500 N Palm Canyon Dr B3, Palm Springs, CA 92262</a><br>European and Native American art, a theater and a cafe. Thursday afternoons are free, with live music.<br><a href="tel:+17603224800">Call 760-322-4800</a> <a href="https://www.psmuseum.org/" target="_blank" rel="noopener">Website</a></p><p><b>The Shops at Palm Desert</b><br><a href="https://maps.google.com/?q=72-840+CA-111,+Palm+Desert,+CA+92260" target="_blank" rel="noopener">72-840 CA-111, Palm Desert, CA 92260</a><br>A classic indoor mall.<br><a href="tel:+17603462121">Call 760-346-2121</a> <a href="https://www.shopsatpalmdesert.com" target="_blank" rel="noopener">Website</a></p><p><b>Shots in the Night</b><br><a href="https://maps.google.com/?q=43-500+Monterey+Ave,+Palm+Desert,+CA+92260" target="_blank" rel="noopener">43-500 Monterey Ave, Palm Desert, CA 92260</a><br>Mini-golf with lasers and glow-in-the-dark targets at Indian Wells Golf Resort, Thursday to Saturday starting half an hour after sunset.<br><a href="tel:+17603464653">Call 760-346-4653</a> <a href="https://indianwellsgolfresort.ticketspice.com/indian-wells-shots-in-the-night/" target="_blank" rel="noopener">Website</a></p></div></details><details><summary>More to do</summary><div><p><b>Old Town La Quinta</b> for cafes and boutiques.</p><p><b>Stagecoach</b> for country music.</p><p><b>Indio Swap Meet</b>, Wednesday and Saturday 4 to 10 pm, with 400+ vendors.</p><p><b>Shields Date Garden</b>, a 17 acre date grove, and get the date shake.</p><p><b>Palm Springs Aerial Tram</b>, a climb of 6,000 ft to the top of San Jacinto Peak.</p><p><b>Thousand Palms Preserve</b> for desert landscape hiking.</p><p><b>Shadow Hills golf course</b> for stunning views at any skill level.</p><p><b>Air California Adventure</b> for flights over Indio, the San Bernardino Mountains, Joshua Tree and the Salton Sea.</p><p><b>El Paseo</b> for designer shopping in the open air.</p></div></details></section>
+<section class="panel" id="checkout" role="tabpanel">
+<h2>Check out</h2>
+<div class="card"><div class="row"><span>Check-out time</span><b>10 am</b></div></div>
+<p>These are appreciated but not required. Before you go, sign the guestbook on the green entry table in the living room.</p>
+<div class="card">
+<p><b>1.</b> Set the AC to 85.</p>
+<p><b>2.</b> Clear the fridge.</p>
+<p><b>3.</b> Load the dishwasher.</p>
+<p><b>4.</b> Close the garage door and lock the doors.</p>
+</div>
+<h2>Thank you</h2>
+<p>If you enjoyed your stay, we would love a 5 star review, and a shoutout on Instagram at <a href="https://instagram.com/_indigopalmco" target="_blank" rel="noopener">@_indigopalmco</a> makes our day.</p>
+<p>Eann &amp; Brandon</p>
+<a class="btn" href="https://indigopalm.co/terra-luz/" target="_blank" rel="noopener">Book your next stay at indigopalm.co</a>
+</section>
+</main>
+
+<p class="pdf"><a href="/terra-luz/welcome-book.pdf" download onclick="gtag('event','download_guide',{property:'terra-luz'})">Download the PDF version</a></p>
+
+<nav role="tablist" aria-label="Guide sections">
+  <button role="tab" data-t="welcome" aria-selected="true"><span class="i">🏡</span>Welcome</button>
+  <button role="tab" data-t="arrival" aria-selected="false"><span class="i">🗝️</span>Arrival</button>
+  <button role="tab" data-t="house" aria-selected="false"><span class="i">📋</span>House</button>
+  <button role="tab" data-t="explore" aria-selected="false"><span class="i">🌵</span>Explore</button>
+  <button role="tab" data-t="checkout" aria-selected="false"><span class="i">✓</span>Checkout</button>
+</nav>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('nav button')),panels=[].slice.call(document.querySelectorAll('.panel'));
+  function show(id,push){
+    if(!document.getElementById(id))id='welcome';
+    tabs.forEach(function(b){b.setAttribute('aria-selected',b.dataset.t===id)});
+    panels.forEach(function(p){p.classList.toggle('on',p.id===id)});
+    window.scrollTo(0,0);
+    if(push){history.pushState(null,'','#'+id);gtag('event','tab_view',{tab:id,property:'terra-luz'})}
+  }
+  tabs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.t,true)})});
+  window.addEventListener('popstate',function(){show(location.hash.slice(1),false)});
+  show(location.hash.slice(1),false);
+  document.addEventListener('click',function(e){
+    var c=e.target.closest('[data-copy]');if(!c)return;
+    navigator.clipboard.writeText(c.dataset.copy).then(function(){var t=c.textContent;c.textContent='Copied';setTimeout(function(){c.textContent=t},1500)});
+  });
+})();
+</script>
 </body>
 </html>
