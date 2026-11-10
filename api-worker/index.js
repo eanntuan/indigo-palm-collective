@@ -17,6 +17,7 @@ import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayU
 import { recordHeartbeat, handlePing, handleHealth } from './alerts.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
 import { processZelleReminders, handleBalanceReceived } from './zelle-balance.js';
+import { handleSendPayLink } from './paylink.js';
 import { handleGuestRoute, guideGate, sendDuePreArrivalEmails, ensurePayToken, bookingPageBlock } from './guest.js';
 
 const CORS_HEADERS = {
@@ -475,6 +476,10 @@ export default {
 
     if (path === '/api/confirm-payment' && request.method === 'POST') {
       return isAdminAuthorized(request, env) ? handleConfirmPayment(request, env) : unauthorizedJson();
+    }
+
+    if (path === '/api/send-pay-link' && request.method === 'POST') {
+      return isAdminAuthorized(request, env) ? handleSendPayLink(request, env, autopayDeps) : unauthorizedJson();
     }
 
     if (path === '/api/balance-received' && request.method === 'POST') {
