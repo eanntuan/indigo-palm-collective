@@ -38,6 +38,7 @@ describe('send-pay-link', () => {
     assert.equal(sent[0].cc, 'indigopalmco@gmail.com');
     assert.match(sent[0].html, /1262\.57/);
     assert.match(sent[0].html, /2525\.15/);
+    assert.match(sent[0].html, /Card fee \(3%\):\$73\.55/);
     assert.match(sent[0].html, /border-radius:999px/);
   });
   test('inside 60 days only pay-in-full is offered', async () => {
