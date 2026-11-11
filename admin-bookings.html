@@ -25,13 +25,19 @@ input,select{font:inherit;padding:10px;border:1px solid #ddd;border-radius:6px;m
 .cc{border-bottom:1px solid #eee;border-left:1px solid #f0f0f0;height:56px}
 .bar{height:36px;align-self:center;border-radius:999px;background:#647C69;color:#fff;font-size:12px;padding:0 12px;display:flex;align-items:center;overflow:hidden;white-space:nowrap;z-index:1}
 .bar.pending{background:#B67550}.bar.due{background:#7d9482}
+.seg{display:flex;gap:6px}.seg button{background:#fff;color:#2C2C2C;border:1px solid #ddd;padding:8px 16px;min-height:40px}.seg button.on{background:#2C2C2C;color:#fff;border-color:#2C2C2C}
+#psel{width:auto;min-height:40px;padding:6px 10px}
+.dow{display:grid;grid-template-columns:repeat(7,1fr);font-size:11px;color:#888;text-align:center;padding:8px 0;border-bottom:1px solid #eee}
+.wk{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:auto 40px;border-bottom:1px solid #eee}
+.dc{grid-row:1/span 2;border-left:1px solid #f0f0f0;padding:6px 8px;font-size:13px;min-height:84px}.dc.out{color:#ccc;background:#fafafa}.dc.today b{background:#2C2C2C;color:#fff;border-radius:999px;padding:2px 7px}
+.wk .bar{grid-row:2;align-self:end;margin-bottom:8px}
 </style>
 </head>
 <body>
 <main>
 <h1>Bookings</h1>
-<div class="calbar"><button id="prev">&larr;</button><h2 id="mon"></h2><button id="next">&rarr;</button></div>
-<div class="cal"><div id="cal" class="calgrid"></div></div>
+<div class="calbar"><div class="seg"><button id="vm" class="on">Multi</button><button id="vs">Single</button></div><select id="psel" hidden></select><button id="prev">&larr;</button><h2 id="mon"></h2><button id="next">&rarr;</button></div>
+<div class="cal"><div id="cal" class="calgrid"></div><div id="single" hidden></div></div>
 <div id="list">Loading…</div>
 <details><summary>Add a booking made elsewhere (Airbnb, phone)</summary>
 <form id="add">
@@ -72,12 +78,41 @@ function renderCal() {
   });
   g.innerHTML = h;
 }
-$('prev').onclick = () => { month.setMonth(month.getMonth() - 1); renderCal(); };
-$('next').onclick = () => { month.setMonth(month.getMonth() + 1); renderCal(); };
+$('prev').onclick = () => { month.setMonth(month.getMonth() - 1); show(); };
+$('next').onclick = () => { month.setMonth(month.getMonth() + 1); show(); };
+let view = 'multi';
+function renderSingle() {
+  const y = month.getFullYear(), m = month.getMonth(), p = $('psel').value, t = new Date().toISOString().slice(0, 10);
+  $('mon').textContent = month.toLocaleString('en-US', {month: 'long', year: 'numeric'});
+  const iso = d => d.toISOString().slice(0, 10), start = new Date(Date.UTC(y, m, 1 - new Date(y, m, 1).getDay()));
+  const bs = ALL.filter(b => b.property === p);
+  let h = '<div class="dow">' + ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(d => `<div>${d}</div>`).join('') + '</div>';
+  for (let w = 0; w < 6; w++) {
+    const days = [...Array(7)].map((_, i) => new Date(start.getTime() + (w * 7 + i) * 864e5)), a = iso(days[0]), z = iso(days[6]);
+    if (w >= 4 && days[0].getUTCMonth() !== m) break;
+    h += '<div class="wk">' + days.map((d, i) => `<div class="dc${d.getUTCMonth() !== m ? ' out' : ''}${iso(d) === t ? ' today' : ''}" style="grid-column:${i + 1}"><b>${d.getUTCDate()}</b></div>`).join('');
+    bs.filter(b => b.checkIn <= z && b.checkOut >= a).forEach(b => {
+      const s = b.checkIn < a ? 0 : days.findIndex(d => iso(d) === b.checkIn), e = b.checkOut > z ? 6 : days.findIndex(d => iso(d) === b.checkOut), cells = e - s + 1;
+      const l = b.checkIn >= a ? `calc(50%/${cells})` : 0, r = b.checkOut <= z ? `calc(50%/${cells})` : 0;
+      h += `<div class="bar ${b.status === 'pending' ? 'pending' : ''}" style="grid-column:${s + 1}/span ${cells};margin-left:${l};margin-right:${r}" title="${esc(b.name)} ${esc(b.checkIn)} to ${esc(b.checkOut)}">${esc(b.name)}${b.guests ? ' &middot; ' + esc(b.guests) : ''}</div>`;
+    });
+    h += '</div>';
+  }
+  $('single').innerHTML = h;
+}
+function show() {
+  const multi = view === 'multi';
+  $('cal').hidden = !multi; $('single').hidden = multi; $('psel').hidden = multi;
+  $('vm').classList.toggle('on', multi); $('vs').classList.toggle('on', !multi);
+  multi ? renderCal() : renderSingle();
+}
+$('psel').innerHTML = PROPS.map(p => `<option>${p}</option>`).join('');
+$('psel').onchange = show; $('vm').onclick = () => { view = 'multi'; show(); }; $('vs').onclick = () => { view = 'single'; show(); };
+
 async function load() {
   const d = await api('bookings');
   if (!d.success) { $('list').textContent = 'Not authorized. Add ?key=... to the URL.'; return; }
-  ALL = d.bookings.filter(b => PROPS.includes(b.property)); renderCal();
+  ALL = d.bookings.filter(b => PROPS.includes(b.property)); show();
   const today = new Date().toISOString().slice(0, 10);
   $('list').innerHTML = ALL.filter(b => b.checkOut >= today).map(b => `
     <div class="card">
