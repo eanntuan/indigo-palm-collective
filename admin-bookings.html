@@ -71,6 +71,7 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const money = n => '$' + Number(n || 0).toLocaleString('en-US', {minimumFractionDigits: 2});
 
+const AIRBNB_ID = {'The Well': '868862893900280104', 'The Sundune': '1171049679026732503'};
 const PROPS = ['The Sundune', 'The Well'];
 let month = new Date(); month.setDate(1); let ALL = [];
 function renderCal() {
@@ -135,7 +136,7 @@ async function load() {
         ${esc(b.property)} &middot; ${esc(b.checkIn)} to ${esc(b.checkOut)} &middot; ${esc(b.guests)} guests<br>
         <span class="meta">${esc(b.email)} ${esc(b.phone)}</span></div>
       <div style="text-align:right"><span class="paid">${money(b.totalPaid)}</span> paid of ${money(b.finalTotal)}<br>
-        ${b.balanceDue > 0 ? `<span class="due">${money(b.balanceDue)} due ${esc(b.balanceDueDate)}</span>` : '<span class="paid">Paid in full</span>'}<br>
+        ${b.balanceDue > 0 ? `<span class="due">${money(b.balanceDue)} due ${esc(b.balanceDueDate)}</span>` : (b.source === 'airbnb' ? '<span class="meta">Airbnb pays out monthly</span>' : '<span class="paid">Paid in full</span>')}<br>
         ${b.status !== 'pending' && b.balanceDue > 0 ? `<button data-id="${esc(b.id)}" data-due="${b.balanceDue}">Record payment</button>` : ''}</div>
     </div>`).join('') || 'No upcoming bookings.';
 }
@@ -157,7 +158,7 @@ function openPanel(id) {
       <div class="r"><b>Checkout</b><small>${fmt(b.checkOut)}</small><small>11:00 AM</small></div>
       <div class="full"><b>Payments</b>${(b.payments || []).map(p => `<small>${esc(p.date)} &middot; ${esc(p.method)} &middot; ${money(p.amount)}</small>`).join('') || '<small>None recorded</small>'}</div>
       <div class="full"><b>Stay total</b> ${money(b.finalTotal)}<br><span class="paid">${money(b.totalPaid)} paid</span>${b.balanceDue > 0 ? `<br><span class="due">${money(b.balanceDue)} due ${esc(b.balanceDueDate)}</span>` : ''}</div></div>
-    ${b.source === 'airbnb' ? '<div class="box"><div class="full"><b>Emails</b><small>Airbnb handles guest messages for this booking.</small></div></div>' : `<div class="box"><div class="full"><b>Upcoming emails</b>${(b.upcoming || []).map(m => `<small>${fmt(m.date)} &middot; ${esc(m.what)}</small>`).join('') || '<small>None queued</small>'}</div></div>`}
+    ${b.source === 'airbnb' ? `<div class="box"><div class="full"><b>Airbnb payouts</b>${(b.payouts || []).map(p => `<small>${fmt(p.date)} &middot; ${money(p.amount)} &middot; ${p.date <= today ? 'expected paid' : 'upcoming'}</small>`).join('') || '<small>None listed</small>'}<small>Dates are estimates, confirm in Airbnb earnings. Airbnb handles guest messages.</small></div></div><div class="acts">${b.confirmationCode && AIRBNB_ID[b.property] ? `<a href="https://www.airbnb.com/multicalendar/${AIRBNB_ID[b.property]}/reservation/${esc(b.confirmationCode)}" target="_blank" rel="noopener">Open in Airbnb (${esc(b.confirmationCode)})</a>` : ''}</div>` : `<div class="box"><div class="full"><b>Upcoming emails</b>${(b.upcoming || []).map(m => `<small>${fmt(m.date)} &middot; ${esc(m.what)}</small>`).join('') || '<small>None queued</small>'}</div></div>`}
     <div class="acts">${b.email ? `<a href="mailto:${esc(b.email)}">Message</a>` : ''}${b.email ? `<a href="https://mail.google.com/mail/u/0/#search/${encodeURIComponent('from:'+b.email+' OR to:'+b.email)}" target="_blank" rel="noopener">Past emails</a>` : ''}${b.phone ? `<a href="tel:${esc(b.phone)}">Call</a>` : ''}</div>
     ${b.status !== 'pending' && b.balanceDue > 0 ? `<div class="acts"><button data-pay="${esc(b.id)}" data-due="${b.balanceDue}">Record payment</button></div>` : ''}
     <p class="meta">${esc(b.email)} ${esc(b.phone)}</p>`;
