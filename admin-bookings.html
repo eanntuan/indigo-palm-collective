@@ -15,11 +15,23 @@ button{background:#647C69;color:#fff;border:0;border-radius:999px;padding:10px 1
 details{background:#fff;border-radius:8px;padding:14px 16px;margin:20px 0}summary{cursor:pointer;font-weight:600}
 form{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:12px}
 input,select{font:inherit;padding:10px;border:1px solid #ddd;border-radius:6px;min-height:44px;width:100%}
+.calbar{display:flex;align-items:center;gap:12px;margin-bottom:10px}.calbar h2{font-family:Georgia,serif;font-weight:400;margin:0;flex:1}
+.calbar button{padding:8px 16px;min-height:40px}
+.cal{background:#fff;border-radius:8px;overflow-x:auto;margin-bottom:24px}
+.calgrid{display:grid;min-width:900px;position:relative}
+.ch{font-size:11px;color:#888;text-align:center;padding:6px 0;border-bottom:1px solid #eee;border-left:1px solid #f0f0f0}.ch b{display:block;font-size:13px;color:#2C2C2C;font-weight:600}
+.ch.today b{background:#2C2C2C;color:#fff;border-radius:999px;width:24px;margin:0 auto}
+.pn{padding:0 12px;font-size:13px;font-weight:600;display:flex;align-items:center;border-bottom:1px solid #eee;background:#fff;position:sticky;left:0;z-index:2}
+.cc{border-bottom:1px solid #eee;border-left:1px solid #f0f0f0;height:56px}
+.bar{height:36px;align-self:center;border-radius:999px;background:#647C69;color:#fff;font-size:12px;padding:0 12px;display:flex;align-items:center;overflow:hidden;white-space:nowrap;z-index:1}
+.bar.pending{background:#B67550}.bar.due{background:#7d9482}
 </style>
 </head>
 <body>
 <main>
 <h1>Bookings</h1>
+<div class="calbar"><button id="prev">&larr;</button><h2 id="mon"></h2><button id="next">&rarr;</button></div>
+<div class="cal"><div id="cal" class="calgrid"></div></div>
 <div id="list">Loading…</div>
 <details><summary>Add a booking made elsewhere (Airbnb, phone)</summary>
 <form id="add">
@@ -37,9 +49,35 @@ const api = (p, o) => fetch(`/api/admin/${p}?key=${encodeURIComponent(key)}`, o)
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const money = n => '$' + Number(n || 0).toLocaleString('en-US', {minimumFractionDigits: 2});
+
+const PROPS = ['The Sundune', 'The Cozy Cactus', 'Terra Luz', 'The Well'];
+let month = new Date(); month.setDate(1); let ALL = [];
+function renderCal() {
+  const y = month.getFullYear(), m = month.getMonth(), n = new Date(y, m + 1, 0).getDate();
+  $('mon').textContent = month.toLocaleString('en-US', {month: 'long', year: 'numeric'});
+  const iso = d => `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+  const t = new Date().toISOString().slice(0, 10), g = $('cal');
+  g.style.gridTemplateColumns = `130px repeat(${n}, minmax(32px, 1fr))`;
+  let h = '<div class="pn" style="border-bottom:1px solid #eee"></div>';
+  for (let d = 1; d <= n; d++) h += `<div class="ch${iso(d) === t ? ' today' : ''}">${'SMTWTFS'[new Date(y, m, d).getDay()]}<b>${d}</b></div>`;
+  PROPS.forEach((p, i) => {
+    const row = i + 2;
+    h += `<div class="pn" style="grid-row:${row};grid-column:1">${p}</div>`;
+    for (let d = 1; d <= n; d++) h += `<div class="cc" style="grid-row:${row};grid-column:${d + 1}"></div>`;
+    ALL.filter(b => b.property === p && b.checkIn <= iso(n) && b.checkOut >= iso(1)).forEach(b => {
+      const s = b.checkIn < iso(1) ? 1 : +b.checkIn.slice(8), e = b.checkOut > iso(n) ? n : +b.checkOut.slice(8);
+      const cells = e - s + 1, l = b.checkIn >= iso(1) ? `calc(50%/${cells})` : 0, r = b.checkOut <= iso(n) ? `calc(50%/${cells})` : 0;
+      h += `<div class="bar ${b.status === 'pending' ? 'pending' : ''}" style="grid-row:${row};grid-column:${s + 1}/span ${cells};margin-left:${l};margin-right:${r}" title="${esc(b.name)} ${esc(b.checkIn)} to ${esc(b.checkOut)}">${esc(b.name)}${b.guests ? ' &middot; ' + esc(b.guests) : ''}</div>`;
+    });
+  });
+  g.innerHTML = h;
+}
+$('prev').onclick = () => { month.setMonth(month.getMonth() - 1); renderCal(); };
+$('next').onclick = () => { month.setMonth(month.getMonth() + 1); renderCal(); };
 async function load() {
   const d = await api('bookings');
   if (!d.success) { $('list').textContent = 'Not authorized. Add ?key=... to the URL.'; return; }
+  ALL = d.bookings; renderCal();
   const today = new Date().toISOString().slice(0, 10);
   $('list').innerHTML = d.bookings.filter(b => b.checkOut >= today).map(b => `
     <div class="card">
