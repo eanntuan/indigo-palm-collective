@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookings | Indigo Palm Collective</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<style>
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 'Work Sans',system-ui,sans-serif;background:#F5F3EE;color:#2C2C2C;padding:20px}
+h1{font-family:Georgia,serif;font-weight:400;margin:0 0 16px}main{max-width:980px;margin:0 auto}
+.card{background:#fff;border-radius:8px;padding:14px 16px;margin-bottom:10px;display:grid;grid-template-columns:1fr auto;gap:4px 16px}
+.meta{color:#888;font-size:13px}.due{color:#B67550;font-weight:600}.paid{color:#607c67;font-weight:600}
+.tag{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#607c67}
+button{background:#647C69;color:#fff;border:0;border-radius:999px;padding:10px 18px;font:inherit;cursor:pointer;min-height:44px}
+details{background:#fff;border-radius:8px;padding:14px 16px;margin:20px 0}summary{cursor:pointer;font-weight:600}
+form{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:12px}
+input,select{font:inherit;padding:10px;border:1px solid #ddd;border-radius:6px;min-height:44px;width:100%}
+.calbar{display:flex;align-items:center;gap:12px;margin-bottom:10px}.calbar h2{font-family:Georgia,serif;font-weight:400;margin:0;flex:1}
+.calbar button{padding:8px 16px;min-height:40px}
+.cal{background:#fff;border-radius:8px;overflow-x:auto;margin-bottom:24px}
+.calgrid{display:grid;min-width:900px;position:relative}
+.ch{font-size:11px;color:#888;text-align:center;padding:6px 0;border-bottom:1px solid #eee;border-left:1px solid #f0f0f0}.ch b{display:block;font-size:13px;color:#2C2C2C;font-weight:600}
+.ch.today b{background:#2C2C2C;color:#fff;border-radius:999px;width:24px;margin:0 auto}
+.pn{padding:0 12px;font-size:13px;font-weight:600;display:flex;align-items:center;border-bottom:1px solid #eee;background:#fff;position:sticky;left:0;z-index:2}
+.cc{border-bottom:1px solid #eee;border-left:1px solid #f0f0f0;height:56px}
+.bar{height:36px;align-self:center;border-radius:999px;background:#647C69;color:#fff;font-size:12px;padding:0 12px;display:flex;align-items:center;overflow:hidden;white-space:nowrap;z-index:1}
+.bar.pending{background:#B67550}.bar.due{background:#7d9482}
+.seg{display:flex;gap:6px}.seg button{background:#fff;color:#2C2C2C;border:1px solid #ddd;padding:8px 16px;min-height:40px}.seg button.on{background:#2C2C2C;color:#fff;border-color:#2C2C2C}
+#psel{width:auto;min-height:40px;padding:6px 10px}
+.dow{display:grid;grid-template-columns:repeat(7,1fr);font-size:11px;color:#888;text-align:center;padding:8px 0;border-bottom:1px solid #eee}
+.wk{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:auto 40px;border-bottom:1px solid #eee}
+.dc{grid-row:1/span 2;border-left:1px solid #f0f0f0;padding:6px 8px;font-size:13px;min-height:84px}.dc.out{color:#ccc;background:#fafafa}.dc.today b{background:#2C2C2C;color:#fff;border-radius:999px;padding:2px 7px}
+.wk .bar{grid-row:2;align-self:end;margin-bottom:8px}
+.bar{cursor:pointer}.bar.sel{outline:2px solid #2C2C2C;outline-offset:1px}
+#panel{position:fixed;top:0;right:0;bottom:0;width:380px;max-width:100%;background:#fff;box-shadow:-4px 0 24px rgba(0,0,0,.12);padding:24px;overflow-y:auto;transform:translateX(100%);transition:transform .2s ease-out;z-index:10;text-align:center}
+#panel.open{transform:none}#px{position:absolute;top:16px;right:16px;width:40px;height:40px;padding:0;background:#f0f0f0;color:#2C2C2C;font-size:18px}
+#panel .st{font-weight:600;margin:6px 0 18px}#panel h2{font-family:Georgia,serif;font-size:28px;font-weight:400;margin:0 0 6px}
+#panel .box{background:#F5F3EE;border-radius:12px;padding:16px;margin:18px 0;text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
+#panel .box .r{text-align:right}#panel .box small{display:block;color:#888}#panel .full{grid-column:1/-1;border-top:1px solid #e3e0d8;padding-top:10px}
+#panel .acts{display:flex;gap:10px;margin:14px 0}#panel .acts a,#panel .acts button{flex:1;text-align:center;background:#2C2C2C;color:#fff;border-radius:999px;padding:12px;text-decoration:none;min-height:44px;font:inherit;border:0}
+@media(min-width:900px){body.pn-open main{margin-right:380px}}
+</style>
+</head>
+<body>
+<aside id="panel"><button id="px" aria-label="Close">&times;</button><div id="pbody"></div></aside>
+<main>
+<h1>Bookings</h1>
+<div class="calbar"><div class="seg"><button id="vm" class="on">Multi</button><button id="vs">Single</button></div><select id="psel" hidden></select><button id="prev">&larr;</button><h2 id="mon"></h2><button id="next">&rarr;</button></div>
+<div class="cal"><div id="cal" class="calgrid"></div><div id="single" hidden></div></div>
+<div id="list">Loading…</div>
+<details><summary>Add a booking made elsewhere (Airbnb, phone)</summary>
+<form id="add">
+<select name="propertyId" required><option value="ps-retreat">The Sundune</option><option value="the-well">The Well</option></select>
+<input name="name" placeholder="Guest name" required><input name="email" type="email" placeholder="Email">
+<input name="phone" placeholder="Phone"><input name="checkIn" type="date" required><input name="checkOut" type="date" required>
+<input name="guests" type="number" min="1" placeholder="Guests"><input name="finalTotal" type="number" step="0.01" placeholder="Stay total $">
+<input name="paid" type="number" step="0.01" placeholder="Paid so far $"><input name="source" placeholder="Source (airbnb, phone)">
+<button type="submit">Add booking</button>
+</form></details>
+</main>
+<script>
+const key = new URLSearchParams(location.search).get('key') || '';
+const api = (p, o) => fetch(`/api/admin/${p}?key=${encodeURIComponent(key)}`, o).then(r => r.json());
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const money = n => '$' + Number(n || 0).toLocaleString('en-US', {minimumFractionDigits: 2});
+
+const PROPS = ['The Sundune', 'The Well'];
+let month = new Date(); month.setDate(1); let ALL = [];
+function renderCal() {
+  const y = month.getFullYear(), m = month.getMonth(), n = new Date(y, m + 1, 0).getDate();
+  $('mon').textContent = month.toLocaleString('en-US', {month: 'long', year: 'numeric'});
+  const iso = d => `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+  const t = new Date().toISOString().slice(0, 10), g = $('cal');
+  g.style.gridTemplateColumns = `130px repeat(${n}, minmax(32px, 1fr))`;
+  let h = '<div class="pn" style="border-bottom:1px solid #eee"></div>';
+  for (let d = 1; d <= n; d++) h += `<div class="ch${iso(d) === t ? ' today' : ''}">${'SMTWTFS'[new Date(y, m, d).getDay()]}<b>${d}</b></div>`;
+  PROPS.forEach((p, i) => {
+    const row = i + 2;
+    h += `<div class="pn" style="grid-row:${row};grid-column:1">${p}</div>`;
+    for (let d = 1; d <= n; d++) h += `<div class="cc" style="grid-row:${row};grid-column:${d + 1}"></div>`;
+    ALL.filter(b => b.property === p && b.checkIn <= iso(n) && b.checkOut >= iso(1)).forEach(b => {
+      const s = b.checkIn < iso(1) ? 1 : +b.checkIn.slice(8), e = b.checkOut > iso(n) ? n : +b.checkOut.slice(8);
+      const cells = e - s + 1, l = b.checkIn >= iso(1) ? `calc(50%/${cells})` : 0, r = b.checkOut <= iso(n) ? `calc(50%/${cells})` : 0;
+      h += `<div class="bar ${b.status === 'pending' ? 'pending' : ''}" data-id="${esc(b.id)}" style="grid-row:${row};grid-column:${s + 1}/span ${cells};margin-left:${l};margin-right:${r}" title="${esc(b.name)} ${esc(b.checkIn)} to ${esc(b.checkOut)}">${esc(b.name)}${b.guests ? ' &middot; ' + esc(b.guests) : ''}</div>`;
+    });
+  });
+  g.innerHTML = h;
+}
+$('prev').onclick = () => { month.setMonth(month.getMonth() - 1); show(); };
+$('next').onclick = () => { month.setMonth(month.getMonth() + 1); show(); };
+let view = 'multi';
+function renderSingle() {
+  const y = month.getFullYear(), m = month.getMonth(), p = $('psel').value, t = new Date().toISOString().slice(0, 10);
+  $('mon').textContent = month.toLocaleString('en-US', {month: 'long', year: 'numeric'});
+  const iso = d => d.toISOString().slice(0, 10), start = new Date(Date.UTC(y, m, 1 - new Date(y, m, 1).getDay()));
+  const bs = ALL.filter(b => b.property === p);
+  let h = '<div class="dow">' + ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(d => `<div>${d}</div>`).join('') + '</div>';
+  for (let w = 0; w < 6; w++) {
+    const days = [...Array(7)].map((_, i) => new Date(start.getTime() + (w * 7 + i) * 864e5)), a = iso(days[0]), z = iso(days[6]);
+    if (w >= 4 && days[0].getUTCMonth() !== m) break;
+    h += '<div class="wk">' + days.map((d, i) => `<div class="dc${d.getUTCMonth() !== m ? ' out' : ''}${iso(d) === t ? ' today' : ''}" style="grid-column:${i + 1}"><b>${d.getUTCDate()}</b></div>`).join('');
+    bs.filter(b => b.checkIn <= z && b.checkOut >= a).forEach(b => {
+      const s = b.checkIn < a ? 0 : days.findIndex(d => iso(d) === b.checkIn), e = b.checkOut > z ? 6 : days.findIndex(d => iso(d) === b.checkOut), cells = e - s + 1;
+      const l = b.checkIn >= a ? `calc(50%/${cells})` : 0, r = b.checkOut <= z ? `calc(50%/${cells})` : 0;
+      h += `<div class="bar ${b.status === 'pending' ? 'pending' : ''}" data-id="${esc(b.id)}" style="grid-column:${s + 1}/span ${cells};margin-left:${l};margin-right:${r}" title="${esc(b.name)} ${esc(b.checkIn)} to ${esc(b.checkOut)}">${esc(b.name)}${b.guests ? ' &middot; ' + esc(b.guests) : ''}</div>`;
+    });
+    h += '</div>';
+  }
+  $('single').innerHTML = h;
+}
+function show() {
+  const multi = view === 'multi';
+  $('cal').hidden = !multi; $('single').hidden = multi; $('psel').hidden = multi;
+  $('vm').classList.toggle('on', multi); $('vs').classList.toggle('on', !multi);
+  multi ? renderCal() : renderSingle();
+}
+$('psel').innerHTML = PROPS.map(p => `<option>${p}</option>`).join('');
+$('psel').onchange = show; $('vm').onclick = () => { view = 'multi'; show(); }; $('vs').onclick = () => { view = 'single'; show(); };
+
+async function load() {
+  const d = await api('bookings');
+  if (!d.success) { $('list').textContent = 'Not authorized. Add ?key=... to the URL.'; return; }
+  ALL = d.bookings.filter(b => PROPS.includes(b.property)); show();
+  const today = new Date().toISOString().slice(0, 10);
+  $('list').innerHTML = ALL.filter(b => b.checkOut >= today).map(b => `
+    <div class="card">
+      <div><strong>${esc(b.name)}</strong> <span class="tag">${esc(b.status)}</span><br>
+        ${esc(b.property)} &middot; ${esc(b.checkIn)} to ${esc(b.checkOut)} &middot; ${esc(b.guests)} guests<br>
+        <span class="meta">${esc(b.email)} ${esc(b.phone)}</span></div>
+      <div style="text-align:right"><span class="paid">${money(b.totalPaid)}</span> paid of ${money(b.finalTotal)}<br>
+        ${b.balanceDue > 0 ? `<span class="due">${money(b.balanceDue)} due ${esc(b.balanceDueDate)}</span>` : '<span class="paid">Paid in full</span>'}<br>
+        ${b.status !== 'pending' && b.balanceDue > 0 ? `<button data-id="${esc(b.id)}" data-due="${b.balanceDue}">Record payment</button>` : ''}</div>
+    </div>`).join('') || 'No upcoming bookings.';
+}
+async function recordPay(id, due) {
+  const amount = prompt('Amount received', due); if (!amount) return;
+  const method = prompt('Method (square, zelle, check)', 'square'); if (!method) return;
+  const r = await api('record-payment', {method: 'POST', body: JSON.stringify({id, amount: Number(amount), method})});
+  alert(r.success ? `Recorded. Balance ${money(r.balanceDue)}` : r.error); await load(); if (r.success) openPanel(id);
+}
+function openPanel(id) {
+  const b = ALL.find(x => x.id === id); if (!b) return;
+  const day = x => new Date(x + 'T00:00:00'), fmt = x => day(x).toLocaleDateString('en-US', {weekday: 'short', month: 'short', day: 'numeric'});
+  const today = new Date().toISOString().slice(0, 10), n = Math.round((day(b.checkOut) - day(b.checkIn)) / 864e5), until = Math.round((day(b.checkIn) - day(today)) / 864e5);
+  const st = b.status === 'pending' ? 'Booking request' : b.checkOut < today ? 'Checked out' : b.checkIn <= today ? 'Staying now' : until === 0 ? 'Arrives today' : `Arrives in ${until} day${until > 1 ? 's' : ''}`;
+  $('pbody').innerHTML = `<div class="st">${st}</div>
+    <h2>${esc(b.name)}${b.guests ? "'s group of " + esc(b.guests) : ''}</h2>
+    <div class="meta">${fmt(b.checkIn)} &ndash; ${fmt(b.checkOut)} &middot; ${n} night${n > 1 ? 's' : ''}<br>${esc(b.property)}</div>
+    <div class="box"><div><b>Check-in</b><small>${fmt(b.checkIn)}</small><small>4:00 PM</small></div>
+      <div class="r"><b>Checkout</b><small>${fmt(b.checkOut)}</small><small>11:00 AM</small></div>
+      <div class="full"><b>Payments</b>${(b.payments || []).map(p => `<small>${esc(p.date)} &middot; ${esc(p.method)} &middot; ${money(p.amount)}</small>`).join('') || '<small>None recorded</small>'}</div>
+      <div class="full"><b>Stay total</b> ${money(b.finalTotal)}<br><span class="paid">${money(b.totalPaid)} paid</span>${b.balanceDue > 0 ? `<br><span class="due">${money(b.balanceDue)} due ${esc(b.balanceDueDate)}</span>` : ''}</div></div>
+    <div class="acts">${b.email ? `<a href="mailto:${esc(b.email)}">Message</a>` : ''}${b.email ? `<a href="https://mail.google.com/mail/u/0/#search/${encodeURIComponent('from:'+b.email+' OR to:'+b.email)}" target="_blank" rel="noopener">Past emails</a>` : ''}${b.phone ? `<a href="tel:${esc(b.phone)}">Call</a>` : ''}</div>
+    ${b.status !== 'pending' && b.balanceDue > 0 ? `<div class="acts"><button data-pay="${esc(b.id)}" data-due="${b.balanceDue}">Record payment</button></div>` : ''}
+    <p class="meta">${esc(b.email)} ${esc(b.phone)}</p>`;
+  $('panel').classList.add('open'); document.body.classList.add('pn-open');
+  document.querySelectorAll('.bar').forEach(x => x.classList.toggle('sel', x.dataset.id === id));
+}
+function closePanel() { $('panel').classList.remove('open'); document.body.classList.remove('pn-open'); document.querySelectorAll('.bar.sel').forEach(x => x.classList.remove('sel')); }
+document.addEventListener('click', e => {
+  const bar = e.target.closest('.bar[data-id]'), pay = e.target.closest('[data-pay]');
+  if (bar) openPanel(bar.dataset.id); else if (pay) recordPay(pay.dataset.pay, pay.dataset.due);
+  else if (e.target.closest('[data-id]:not(.bar)')) recordPay(e.target.closest('[data-id]').dataset.id, e.target.closest('[data-id]').dataset.due);
+});
+$('px').onclick = closePanel; document.addEventListener('keydown', e => e.key === 'Escape' && closePanel());
+$('add').addEventListener('submit', async e => {
+  e.preventDefault();
+  const body = Object.fromEntries(new FormData(e.target).entries());
+  const r = await api('add-booking', {method: 'POST', body: JSON.stringify(body)});
+  alert(r.success ? 'Added.' : r.error); if (r.success) { e.target.reset(); load(); }
+});
+load();
+</script>
+</body>
+</html>

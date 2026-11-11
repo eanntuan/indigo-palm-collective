@@ -62,3 +62,28 @@ export async function handleRecordPayment(request, env, deps) {
   }));
   return json({ success: true, firstConfirm, totalPaid, grand, balanceDue, balanceDueDate: balanceDue > 0 ? balanceDueDate(checkIn) : null });
 }
+
+// Body: { propertyId, name, email?, phone?, checkIn, checkOut, guests, finalTotal, source?, paid? }.
+// Adds a confirmed booking made outside the site (Airbnb, phone). No TTL, no guest email.
+export async function handleAddBooking(request, env, deps) {
+  const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: deps.CORS_HEADERS });
+  let b; try { b = await request.json(); } catch { return json({ success: false, error: 'Invalid JSON' }, 400); }
+  const info = deps.PROPERTY_INFO[b.propertyId];
+  if (!info || !b.name || !b.checkIn || !b.checkOut || !(b.checkOut > b.checkIn)) return json({ success: false, error: 'Need valid propertyId, name, checkIn, checkOut' }, 400);
+
+  const id = Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+  const finalTotal = r2(Number(b.finalTotal) || 0);
+  const payments = Number(b.paid) > 0 ? [{ date: new Date().toISOString().slice(0, 10), amount: r2(Number(b.paid)), method: b.source || 'manual', note: null, ref: null }] : [];
+  const totalPaid = r2(payments.reduce((s, p) => s + p.amount, 0));
+  const balanceDue = Math.max(0, r2(finalTotal - totalPaid));
+  await env.BOOKINGS.put(`booking:${id}`, JSON.stringify({
+    id, status: 'confirmed', property: info.name, propertyId: b.propertyId, name: b.name, email: b.email || '', phone: b.phone || '',
+    checkIn: b.checkIn, checkOut: b.checkOut, guests: Number(b.guests) || null, finalTotal,
+    source: b.source || 'manual', payments, totalPaid, balanceDue,
+    balanceDueDate: balanceDue > 0 ? balanceDueDate(b.checkIn) : null, confirmedAt: new Date().toISOString(),
+  }));
+  if (['ps-retreat', 'the-well'].includes(b.propertyId)) {
+    await deps.addIcalBooking(env, { propertyId: b.propertyId, uid: id, checkIn: b.checkIn, checkOut: b.checkOut, guestName: b.name });
+  }
+  return json({ success: true, id });
+}

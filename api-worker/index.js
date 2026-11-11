@@ -17,7 +17,7 @@ import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayU
 import { recordHeartbeat, handlePing, handleHealth } from './alerts.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
 import { processZelleReminders, handleBalanceReceived } from './zelle-balance.js';
-import { handleAdminBookings, handleRecordPayment } from './admin-bookings.js';
+import { handleAdminBookings, handleRecordPayment, handleAddBooking } from './admin-bookings.js';
 import { handleSendPayLink } from './paylink.js';
 import { handleGuestRoute, guideGate, sendDuePreArrivalEmails, ensurePayToken, bookingPageBlock } from './guest.js';
 
@@ -495,6 +495,10 @@ export default {
 
     if (path === '/api/admin/record-payment' && request.method === 'POST') {
       return isAdminAuthorized(request, env) ? handleRecordPayment(request, env, bookingDeps) : unauthorizedJson();
+    }
+
+    if (path === '/api/admin/add-booking' && request.method === 'POST') {
+      return isAdminAuthorized(request, env) ? handleAddBooking(request, env, bookingDeps) : unauthorizedJson();
     }
 
     if (path === '/api/balance-received' && request.method === 'POST') {
