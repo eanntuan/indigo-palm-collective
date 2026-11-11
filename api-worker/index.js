@@ -17,6 +17,7 @@ import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayU
 import { recordHeartbeat, handlePing, handleHealth } from './alerts.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
 import { processZelleReminders, handleBalanceReceived } from './zelle-balance.js';
+import { handleAdminBookings, handleRecordPayment } from './admin-bookings.js';
 import { handleSendPayLink } from './paylink.js';
 import { handleGuestRoute, guideGate, sendDuePreArrivalEmails, ensurePayToken, bookingPageBlock } from './guest.js';
 
@@ -56,6 +57,12 @@ const autopayDeps = {
   get sendWebPush() { return sendWebPush; },
   isAdminAuthorized,
   CORS_HEADERS,
+};
+
+const bookingDeps = {
+  CORS_HEADERS,
+  get PROPERTY_INFO() { return PROPERTY_INFO; },
+  get addIcalBooking() { return addIcalBooking; },
 };
 
 // Helpers handed to guest.js (guest booking page API, welcome-guide gate, pre-arrival email).
@@ -480,6 +487,14 @@ export default {
 
     if (path === '/api/send-pay-link' && request.method === 'POST') {
       return isAdminAuthorized(request, env) ? handleSendPayLink(request, env, autopayDeps) : unauthorizedJson();
+    }
+
+    if (path === '/api/admin/bookings' && request.method === 'GET') {
+      return isAdminAuthorized(request, env) ? handleAdminBookings(env, bookingDeps) : unauthorizedJson();
+    }
+
+    if (path === '/api/admin/record-payment' && request.method === 'POST') {
+      return isAdminAuthorized(request, env) ? handleRecordPayment(request, env, bookingDeps) : unauthorizedJson();
     }
 
     if (path === '/api/balance-received' && request.method === 'POST') {
