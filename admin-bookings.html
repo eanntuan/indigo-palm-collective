@@ -130,7 +130,7 @@ async function load() {
   ALL = d.bookings.filter(b => PROPS.includes(b.property)); show();
   const today = new Date().toISOString().slice(0, 10);
   $('list').innerHTML = ALL.filter(b => b.checkOut >= today).map(b => `
-    <div class="card">
+    <div class="card" data-open="${esc(b.id)}" style="cursor:pointer">
       <div><strong>${esc(b.name)}</strong> <span class="tag">${esc(b.status)}</span><br>
         ${esc(b.property)} &middot; ${esc(b.checkIn)} to ${esc(b.checkOut)} &middot; ${esc(b.guests)} guests<br>
         <span class="meta">${esc(b.email)} ${esc(b.phone)}</span></div>
@@ -168,7 +168,8 @@ function closePanel() { $('panel').classList.remove('open'); document.body.class
 document.addEventListener('click', e => {
   const bar = e.target.closest('.bar[data-id]'), pay = e.target.closest('[data-pay]');
   if (bar) openPanel(bar.dataset.id); else if (pay) recordPay(pay.dataset.pay, pay.dataset.due);
-  else if (e.target.closest('[data-id]:not(.bar)')) recordPay(e.target.closest('[data-id]').dataset.id, e.target.closest('[data-id]').dataset.due);
+  else if (e.target.closest('[data-id]:not(.bar)')) recordPay(e.target.closest('[data-id]').dataset.id, e.target.closest('[data-id]').dataset.due)
+  else if (e.target.closest('.card[data-open]') && !e.target.closest('a')) openPanel(e.target.closest('.card').dataset.open);
 });
 $('px').onclick = closePanel; document.addEventListener('keydown', e => e.key === 'Escape' && closePanel());
 $('add').addEventListener('submit', async e => {

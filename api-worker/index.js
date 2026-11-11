@@ -415,6 +415,12 @@ export default {
       return Response.redirect('https://' + url.hostname + clean, 301);
     }
 
+    // Any other top-level .html page redirects to its clean URL, query string kept
+    // (welcome guides, templates, Decap /admin/ and /go/ links stay as they are).
+    if (path.endsWith('.html') && !/^\/(blog|admin|go)\/|welcome-guide|pinterest-automation|^\/google/.test(path)) {
+      return Response.redirect('https://' + url.hostname + path.replace(/(^|\/)index\.html$/, '$1').replace(/\.html$/, '') + url.search, 301);
+    }
+
     // 301 redirect blog category URLs to main blog index
     if (path.startsWith('/blog/category/') || path.startsWith('/blog/tag/')) {
       return Response.redirect('https://' + url.hostname + '/blog/', 301);
@@ -973,7 +979,7 @@ async function handleBooking(request, env) {
   // key is the host-only admin secret, never sent to the guest — it's a second
   // factor on /api/confirm-payment so a leaked/guessed booking token alone
   // can't confirm a payment.
-  const adminUrl = `https://indigopalm.co/admin-approve.html?id=${bookingId}&token=${token}&key=${encodeURIComponent(env.ADMIN_DEBUG_KEY || '')}`;
+  const adminUrl = `https://indigopalm.co/admin-approve?id=${bookingId}&token=${token}&key=${encodeURIComponent(env.ADMIN_DEBUG_KEY || '')}`;
 
   // Host email
   const hostEmailHtml = emailWrapper(`
@@ -1869,7 +1875,7 @@ async function handleCreateLease(request, env) {
 
   await env.BOOKINGS.put(`lease:${id}`, JSON.stringify(lease));
 
-  const leaseUrl = `https://indigopalm.co/lease.html?id=${id}`;
+  const leaseUrl = `https://indigopalm.co/lease?id=${id}`;
   const nights = Math.round((new Date(checkOut + 'T00:00:00') - new Date(checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24));
   const firstName = name.split(' ')[0];
   const grandTotal = (lease.total + lease.deposit).toFixed(2);
