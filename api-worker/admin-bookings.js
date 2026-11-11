@@ -77,7 +77,7 @@ export async function handleAddBooking(request, env, deps) {
   const totalPaid = r2(payments.reduce((s, p) => s + p.amount, 0));
   const balanceDue = Math.max(0, r2(finalTotal - totalPaid));
   await env.BOOKINGS.put(`booking:${id}`, JSON.stringify({
-    id, status: 'confirmed', property: info.name, propertyId, name: b.name, email: b.email || '', phone: b.phone || '',
+    id, status: 'confirmed', property: info.name, propertyId: b.propertyId, name: b.name, email: b.email || '', phone: b.phone || '',
     checkIn: b.checkIn, checkOut: b.checkOut, guests: Number(b.guests) || null, finalTotal,
     source: b.source || 'manual', payments, totalPaid, balanceDue,
     balanceDueDate: balanceDue > 0 ? balanceDueDate(b.checkIn) : null, confirmedAt: new Date().toISOString(),
