@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookings | Indigo Palm Collective</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 'Work Sans',system-ui,sans-serif;background:#F5F3EE;color:#2C2C2C;padding:20px}
+h1{font-family:Georgia,serif;font-weight:400;margin:0 0 16px}main{max-width:980px;margin:0 auto}
+.card{background:#fff;border-radius:8px;padding:14px 16px;margin-bottom:10px;display:grid;grid-template-columns:1fr auto;gap:4px 16px}
+.meta{color:#888;font-size:13px}.due{color:#B67550;font-weight:600}.paid{color:#607c67;font-weight:600}
+.tag{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#607c67}
+button{background:#647C69;color:#fff;border:0;border-radius:999px;padding:10px 18px;font:inherit;cursor:pointer;min-height:44px}
+details{background:#fff;border-radius:8px;padding:14px 16px;margin:20px 0}summary{cursor:pointer;font-weight:600}
+form{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:12px}
+input,select{font:inherit;padding:10px;border:1px solid #ddd;border-radius:6px;min-height:44px;width:100%}
+</style>
+</head>
+<body>
+<main>
+<h1>Bookings</h1>
+<div id="list">Loading…</div>
+<details><summary>Add a booking made elsewhere (Airbnb, phone)</summary>
+<form id="add">
+<select name="propertyId" required><option value="ps-retreat">The Sundune</option><option value="cozy-cactus">The Cozy Cactus</option><option value="terra-luz">Terra Luz</option><option value="the-well">The Well</option></select>
+<input name="name" placeholder="Guest name" required><input name="email" type="email" placeholder="Email">
+<input name="phone" placeholder="Phone"><input name="checkIn" type="date" required><input name="checkOut" type="date" required>
+<input name="guests" type="number" min="1" placeholder="Guests"><input name="finalTotal" type="number" step="0.01" placeholder="Stay total $">
+<input name="paid" type="number" step="0.01" placeholder="Paid so far $"><input name="source" placeholder="Source (airbnb, phone)">
+<button type="submit">Add booking</button>
+</form></details>
+</main>
+<script>
+const key = new URLSearchParams(location.search).get('key') || '';
+const api = (p, o) => fetch(`/api/admin/${p}?key=${encodeURIComponent(key)}`, o).then(r => r.json());
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const money = n => '$' + Number(n || 0).toLocaleString('en-US', {minimumFractionDigits: 2});
+async function load() {
+  const d = await api('bookings');
+  if (!d.success) { $('list').textContent = 'Not authorized. Add ?key=... to the URL.'; return; }
+  const today = new Date().toISOString().slice(0, 10);
+  $('list').innerHTML = d.bookings.filter(b => b.checkOut >= today).map(b => `
+    <div class="card">
+      <div><strong>${esc(b.name)}</strong> <span class="tag">${esc(b.status)}</span><br>
+        ${esc(b.property)} &middot; ${esc(b.checkIn)} to ${esc(b.checkOut)} &middot; ${esc(b.guests)} guests<br>
+        <span class="meta">${esc(b.email)} ${esc(b.phone)}</span></div>
+      <div style="text-align:right"><span class="paid">${money(b.totalPaid)}</span> paid of ${money(b.finalTotal)}<br>
+        ${b.balanceDue > 0 ? `<span class="due">${money(b.balanceDue)} due ${esc(b.balanceDueDate)}</span>` : '<span class="paid">Paid in full</span>'}<br>
+        ${b.status !== 'pending' && b.balanceDue > 0 ? `<button data-id="${esc(b.id)}" data-due="${b.balanceDue}">Record payment</button>` : ''}</div>
+    </div>`).join('') || 'No upcoming bookings.';
+}
+$('list').addEventListener('click', async e => {
+  const id = e.target.dataset.id; if (!id) return;
+  const amount = prompt('Amount received', e.target.dataset.due); if (!amount) return;
+  const method = prompt('Method (square, zelle, check)', 'square'); if (!method) return;
+  const r = await api('record-payment', {method: 'POST', body: JSON.stringify({id, amount: Number(amount), method})});
+  alert(r.success ? `Recorded. Balance ${money(r.balanceDue)}` : r.error); load();
+});
+$('add').addEventListener('submit', async e => {
+  e.preventDefault();
+  const body = Object.fromEntries(new FormData(e.target).entries());
+  const r = await api('add-booking', {method: 'POST', body: JSON.stringify(body)});
+  alert(r.success ? 'Added.' : r.error); if (r.success) { e.target.reset(); load(); }
+});
+load();
+</script>
+</body>
+</html>
