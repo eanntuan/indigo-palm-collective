@@ -157,6 +157,7 @@ function openPanel(id) {
       <div class="r"><b>Checkout</b><small>${fmt(b.checkOut)}</small><small>11:00 AM</small></div>
       <div class="full"><b>Payments</b>${(b.payments || []).map(p => `<small>${esc(p.date)} &middot; ${esc(p.method)} &middot; ${money(p.amount)}</small>`).join('') || '<small>None recorded</small>'}</div>
       <div class="full"><b>Stay total</b> ${money(b.finalTotal)}<br><span class="paid">${money(b.totalPaid)} paid</span>${b.balanceDue > 0 ? `<br><span class="due">${money(b.balanceDue)} due ${esc(b.balanceDueDate)}</span>` : ''}</div></div>
+    ${b.source === 'airbnb' ? '<div class="box"><div class="full"><b>Emails</b><small>Airbnb handles guest messages for this booking.</small></div></div>' : `<div class="box"><div class="full"><b>Upcoming emails</b>${(b.upcoming || []).map(m => `<small>${fmt(m.date)} &middot; ${esc(m.what)}</small>`).join('') || '<small>None queued</small>'}</div></div>`}
     <div class="acts">${b.email ? `<a href="mailto:${esc(b.email)}">Message</a>` : ''}${b.email ? `<a href="https://mail.google.com/mail/u/0/#search/${encodeURIComponent('from:'+b.email+' OR to:'+b.email)}" target="_blank" rel="noopener">Past emails</a>` : ''}${b.phone ? `<a href="tel:${esc(b.phone)}">Call</a>` : ''}</div>
     ${b.status !== 'pending' && b.balanceDue > 0 ? `<div class="acts"><button data-pay="${esc(b.id)}" data-due="${b.balanceDue}">Record payment</button></div>` : ''}
     <p class="meta">${esc(b.email)} ${esc(b.phone)}</p>`;
