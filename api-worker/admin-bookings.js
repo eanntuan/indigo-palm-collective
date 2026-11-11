@@ -35,7 +35,7 @@ export async function handleAdminBookings(env, deps) {
     id: b.id, status: b.status, property: b.property, name: b.name, email: b.email, phone: b.phone,
     checkIn: b.checkIn, checkOut: b.checkOut, guests: b.guests, finalTotal: b.finalTotal,
     totalPaid: b.totalPaid ?? 0, balanceDue: b.balanceDue ?? null, balanceDueDate: b.balanceDueDate ?? null,
-    payments: b.payments || [], source: b.source || null, confirmationCode: b.confirmationCode || null,
+    payments: b.payments || [], source: b.source || null, confirmationCode: b.confirmationCode || null, payouts: b.payouts || [],
     upcoming: await upcomingMessages(env, { ...b, payToken }, today).catch(() => []),
   })));
   rows.sort((a, b) => (a.checkIn || '').localeCompare(b.checkIn || ''));
