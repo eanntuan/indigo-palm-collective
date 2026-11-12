@@ -3591,3 +3591,23 @@ Housekeeping: dropped `stash@{0}` (2026-11-02 autostash). Its only content was t
 **Technical:** alt text 0 HIGH/MEDIUM (3 LOW lazy-load), internal links clean. Two scheduled posts (`coachella-2027-weekend-stay-planner` dated 2026-12-01, `stagecoach-2027-weekend-stay-planner` dated 2026-12-15) are not built until their dates, so a stray local sitemap entry for them (would 404) was not published; add to sitemap on publish day.
 **Audit:** no em dashes, banned phrases or fee/distance errors in content/blog. Removed 2 "actually" from the Coachella 2027 planner.
 **Not actionable:** XMAS-1 (waiting on 2026 schedules), PIN-1/PIN-5 (Eann), GA4-1 (needs live ad view).
+
+### What changed on 2026-11-12: GSC Check-in
+
+**Period:** 2026-08-13 to 2026-11-10 (90 days). **Overall:** 900 clicks, 97,928 impressions, 0.9% CTR, avg position 9.5. **vs. prior:** +546 clicks, +52,031 impressions.
+
+**Working:** palm-springs-vs-scottsdale (99 clicks, pos 5.4), halloween-2026 (2.7% CTR), palm-springs-birthday-freebies (7.5% CTR, pos 4.2).
+
+**CTR leaks (title/meta rewrite candidates):** palm-springs-vs-indio (10,293 imps, 0.3% CTR, pos 5.7), where-to-stay-coachella (9,400 imps, 0.3%, pos 9.2), palm-springs-bars (6,935 imps, 0.6%), palm-springs-aerial-tram (6,007 imps, 0.6%, pos 14), idyllwild-day-trip (5,008 imps, 0.4%).
+
+### Pinterest Check-in 2026-11-12
+
+API, 30 days: 1,273 impressions, 5 saves, 50 pin clicks, 8 outbound clicks. Far below the 25K threshold; links stay on Airbnb.
+
+### GA4 Check-in 2026-11-12
+
+7 days: 329 active users (+69), 377 sessions, 128s avg session (+35s). Organic Search 194, Direct 147, AI Assistant 17, Organic Social 3. Top page where-to-stay-coachella (33 views, 34.5% bounce).
+
+### Technical SEO 2026-11-12
+
+Broken links, alt text, orphans: no real defects. The 2 HIGH hits (coachella/stagecoach-2027-weekend-stay-planner) are future-dated 2026-12-01 posts that Eleventy has not built yet; their uncommitted sitemap entries are premature, left uncommitted on purpose. 3 LOW missing lazy-load attrs.
