@@ -3611,3 +3611,29 @@ API, 30 days: 1,273 impressions, 5 saves, 50 pin clicks, 8 outbound clicks. Far 
 ### Technical SEO 2026-11-12
 
 Broken links, alt text, orphans: no real defects. The 2 HIGH hits (coachella/stagecoach-2027-weekend-stay-planner) are future-dated 2026-12-01 posts that Eleventy has not built yet; their uncommitted sitemap entries are premature, left uncommitted on purpose. 3 LOW missing lazy-load attrs.
+
+### babysit-seo run 2026-11-13 (Daily SEO Sprint)
+
+**GSC (90d, 2026-08-14 to 2026-11-11):** 894 clicks (+534 vs prior), 97,093 impressions (+50,629), CTR 0.9%, avg position 9.5. Mobile 593 clicks at 1.1%, desktop 274 at 0.7%. Working: `palm-springs-vs-scottsdale` (97 clicks, pos 5.4), `halloween-2026-coachella-valley` (2.7%), `palm-springs-birthday-freebies` (7.5%, pos 4.2).
+
+**The Oct 8 title rewrites did not move CTR, so stop re-queuing them.** Same pages, 2026-09-06 to 10-07 vs. 10-11 to 11-11: `palm-springs-vs-indio` 0.40% to 0.37% (pos 5.4 to 5.2), `where-to-stay-coachella` 0.27% to 0.28% (pos 8.3 to 11.0), `palm-springs-bars` 0.77% to 0.48%. Gains: `palm-springs-surf-club` 0.73% to 1.33%, `idyllwild-day-trip` 0.31% to 0.53%. Query view explains why another rewrite won't help: `palm-springs-vs-indio` gets 882 of its imps from "how far is indio from palm springs" at pos 4.2 with 1 click, and the title already states the 30-40 min answer, so Google answers it on the SERP (zero-click). `palm-springs-bars` gets most imps from "bars near me" (271, pos 7.6), a local-pack query a blog post won't win. Closing the "how far is indio" re-check (due 11-05) as zero-click, no further title work. **Real regression:** `palm-springs-aerial-tram` fell from pos 10.9 to 21.1 and imps halved (2,121 to 1,096). Worth a content refresh check (2026-27 ticket price, hours) next run, not a title change.
+
+**Striking distance:** `where-to-stay-coachella` has 46 page-two queries (2,144 imps, 1 click), led by "coachella hotels in california" (190, pos 13.3), "coachella accommodation" (183, 13.8), "where to stay for coachella" (149, 13.4). Already in title and H2, so this is an authority/depth gap, not a keyword gap.
+
+**GSC alert emails:** 3 in 14 days, all digests (October performance, two "350 clicks in 28 days"). No open deficiencies.
+
+**GA4 (7d, 11-06 to 11-13):** 344 active users (+71), 404 sessions (+77), 117s avg session (+24s). Organic Search 205, Direct 155, AI Assistant 17, Organic Social 4. High bounce on real traffic: `/blog/palm-springs-bars/` 14 views at 92.9% and 3s (matches the "bars near me" intent mismatch above), `bnp-paribas-indian-wells-where-to-stay` and `joshua-tree-day-trip-from-indio` 14 views each at 78.6%. Property pages: Terra Luz 12 / Cozy Cactus 16 / Sundune 9.
+
+**Pinterest (30d API):** 1,230 impressions, 5 saves, 49 pin clicks, 8 outbound. Interior Design (600 imps) still carries the account. Cadence still zero new pins, so the slow decline is organic. About 5% of the 25K ceiling; links stay as they are, PIN-5 is Eann's. The Social board's per-pin analytics calls all failed this run (4/4).
+
+**Rachel:** newest item still 2026-10-07, nothing new. **PSL feed:** live (newest 11-13). Added one sourced line to `things-to-do-palm-desert` from the 11-12 Palm Desert public art piece (1986 ordinance, 18 El Paseo median sculptures rotated every two years). Café des Beaux-Arts and Indian Wells Golf Resort items are sponsored content, skipped; Sherman's Deli is already in `palm-springs-bars`, `best-pastries-palm-springs` and `arriving-coachella-valley-first-afternoon`.
+
+**Hero:** not rerun; the 11-03 inventory is under 30 days old and its yes/no items are still open for Eann.
+
+**Technical:** 0 broken internal links, 0 HIGH/MEDIUM alt text (3 LOW lazy-load, fixed on this branch pending merge), 0 orphans, 3 weakly linked (`best-italian-restaurants-palm-springs`, `bnp-paribas-open-vacation-rental-guide` (redirect stub, ignore), `things-to-do-palm-springs` (redirect stub, ignore)). Dropped the uncommitted sitemap entries for the two 2027 planners again (identical to reverted 3a91aef9); add them on 12-01 and 12-15 publish days.
+
+**audit-website:** 0 em dashes in blog content, 0 banned phrases (all "elevated" hits are literal), no misattributed private-pool claims. LOW: one em dash in `admin-approve.html:412`, an internal noindex admin string, left alone.
+
+**StayFi:** not run, the MCP tool call was denied permission in this headless session.
+
+**Not actionable:** PIN-1/PIN-5 (Eann), GA4-1 (needs the live ad), TASK 10 (human conversation), 2027 planner sitemap entries (publish dates).
