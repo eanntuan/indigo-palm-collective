@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs Aerial Tram: $36.95 Tickets, Worth It?"
 date: 2026-01-21
-dateModified: 2026-06-22
+dateModified: 2026-11-14
 metaDescription: "Yes, it's worth it, with caveats. Adult tickets are $36.95, the top sits at 8,516 feet, and timed tickets skip the line. Best time to go inside."
 ogImage: /blog/images/ps-aerial-tram-sunrise.webp
 heroImage: /blog/images/ps-aerial-tram-sunrise.webp
@@ -52,14 +52,14 @@ layout: blog-post.njk
 
 <p>Buy tickets online at <a href="https://pstramway.vivaticket.com/" target="_blank" rel="noopener">pstramway.vivaticket.com</a>. Timed departure windows are available, which means you skip the ticket counter line entirely. On busy spring and summer weekends, that line can add a significant wait. The $2 fee is worth it.</p>
 
-<p>Dining packages that bundle a tram ticket with a meal credit at the summit restaurants run $27.50 to $43 per person. Worth considering if you're planning to eat up there anyway. If you have AAA membership, military benefits, or access to Costco, check for discounts before purchasing full price.</p>
+<p>Ride 'n' Dine packages bundle round-trip tram fare with dinner at Pines Café for $45 per adult or $31.50 per child (ages 3 to 10), available after 4pm. Worth considering if you're planning to eat up there anyway. If you have AAA membership, military benefits, or access to Costco, check for discounts before purchasing full price.</p>
 
 <h2>Hours</h2>
 
 <ul>
-  <li><strong>Monday through Friday:</strong> First tram up at 10:00am. Last tram up at 8:00pm.</li>
-  <li><strong>Weekends and holidays:</strong> First tram up at 8:00am. Last tram up at 8:00pm.</li>
-  <li><strong>Summer extended hours (late May through early September):</strong> Friday and Saturday last tram up at 9:00pm.</li>
+  <li><strong>Monday through Friday:</strong> First tram up at 10:00am. Last tram up at 8:00pm, last tram down at 9:30pm.</li>
+  <li><strong>Weekends and holidays:</strong> First tram up at 8:00am. Last tram up at 8:00pm, last tram down at 9:30pm.</li>
+  <li><strong>Summer hours (May 28 to September 6, 2027):</strong> Friday and Saturday last tram up at 9:00pm, last tram down at 10:30pm.</li>
 </ul>
 
 <p>The tram closes periodically for maintenance, usually in late August or early September. Check the <a href="https://pstramway.com/about-us/hours/" target="_blank" rel="noopener">official hours page at pstramway.com</a> before driving out.</p>
@@ -100,7 +100,7 @@ layout: blog-post.njk
 
 <p><strong>Getting there:</strong> The Valley Station is at the top of Tramway Road, off Highway 111 north of Palm Springs. From downtown Palm Springs it's about 15 minutes by car. There's no public transit to the base station, so you need a car or rideshare.</p>
 
-<p><strong>Dogs:</strong> Allowed in the tram cars and on the trails within the State Park. Keep them leashed.</p>
+<p><strong>Dogs:</strong> Not allowed. The tram bans pets, and Mount San Jacinto State Park keeps dogs out of its wilderness trails, so service animals are the only exception. Leave the dog at the rental for this one.</p>
 
 <p><strong>Accessibility:</strong> The tram cars and Mountain Station are ADA accessible. The outdoor trails vary. Ask at the ranger station about current conditions on specific trails.</p>
 
@@ -113,7 +113,7 @@ layout: blog-post.njk
 <h2>Frequently Asked Questions</h2>
 
 <h3>How much does the Palm Springs Aerial Tram cost?</h3>
-<p>As of 2026, adult tickets are $36.95 with the $2 online processing fee included. Seniors (65+) pay $33.95 and children ages 3 to 10 pay $20.95. Parking at the Valley Station is $5. Dining packages that bundle a ticket with a meal credit at the summit restaurants run $27.50 to $43 per person.</p>
+<p>As of 2026, adult tickets are $36.95 with the $2 online processing fee included. Seniors (65+) pay $33.95 and children ages 3 to 10 pay $20.95. Parking at the Valley Station is $5. Ride 'n' Dine packages, round-trip fare plus dinner at Pines Café after 4pm, are $45 per adult and $31.50 per child.</p>
 
 <h3>How long should you plan for the Palm Springs Aerial Tram?</h3>
 <p>Two to three hours is the right minimum. The tram ride is 10 minutes each way. Add wait time for departures, 30 minutes of buffer, and at least an hour for the Desert View Trail at the top. If you're planning any serious hiking in the San Jacinto Wilderness, plan for a full day and check with the rangers about current trail conditions. For hikes down on the valley floor, our guide to the <a href="/blog/best-hiking-palm-springs/">best hiking in Palm Springs</a> covers 13 more trails, including the Indian Canyons palm oases.</p>
@@ -122,16 +122,16 @@ layout: blog-post.njk
 <p>Yes. The elevation change from 2,643 feet to 8,516 feet in 10 minutes is dramatic, and the view from the top reframes the entire geography of the valley. At $37 per adult it's a real cost, but the experience is not a tourist trap: the scenery, trails, and temperature contrast are all genuine. I've sent many guests up there who had been to Palm Springs multiple times and never done it. The reaction is always some version of "why did I wait."</p>
 
 <h3>Can you hike at the top of the Palm Springs Aerial Tram?</h3>
-<p>Yes. The Mountain Station at 8,516 feet sits at the edge of Mount San Jacinto State Park with over 50 miles of trails. The Desert View Trail is a two-mile loop accessible to most fitness levels. The trail to San Jacinto Peak at 10,834 feet is a serious full-day undertaking requiring ranger check-in. Dogs are allowed on the trails, leashed.</p>
+<p>Yes. The Mountain Station at 8,516 feet sits at the edge of Mount San Jacinto State Park with over 50 miles of trails. The Desert View Trail is a two-mile loop accessible to most fitness levels. The trail to San Jacinto Peak at 10,834 feet is a serious full-day undertaking requiring ranger check-in. Dogs are not allowed on these wilderness trails, service animals excepted.</p>
 
 <h3>What's the best time of day to visit the Palm Springs Aerial Tram?</h3>
 <p>Early morning on a weekday keeps crowds thin, and online timed-entry tickets eliminate the in-person line entirely. The other compelling window is a summer evening: Friday and Saturday departures run until 9pm from late May through early September, which means you can board around 7pm, watch the valley light up as the sun drops, and come back down after dark. That's a good use of a summer evening. Check pstramway.com for the annual maintenance closure (usually late August or early September) before planning your trip around it.</p>
 
 <h3>Are dogs allowed on the Palm Springs Aerial Tram?</h3>
-<p>Yes. Dogs ride inside the tram car with you and are allowed on all trails at the summit, leashed. The 30-to-40-degree temperature drop at the top catches both dogs and owners off guard if you haven't packed a layer for them. The Desert View Trail at the summit is well-suited for most dogs. For serious hikes toward San Jacinto Peak, check with rangers at the Mountain Station about current conditions before heading out.</p>
+<p>No. The tram does not allow pets, and Mount San Jacinto State Park bans dogs from its wilderness trails at the summit, with an exception for service animals. If your dog is along for the trip, the North Lykken Trail is the closest free dog-friendly hike in Palm Springs, and our <a href="/blog/best-hiking-palm-springs/">Palm Springs hiking guide</a> flags which trails allow dogs.</p>
 
 <h3>Is there anything to eat at the top of the Palm Springs Aerial Tram?</h3>
-<p>The Mountain Station has two options: Peaks Restaurant for sit-down dining with valley views, and Top of the Tram for quick service. Dining packages that bundle a tram ticket with a meal credit run $27.50 to $43 per person and are worth considering if you're planning to eat up there anyway. The summit also has a gift shop and two documentary theaters, so there's enough to fill two to three hours without stepping outside at all. For where to stay in Palm Springs near the tram, see <a href="https://indigopalm.co/blog/palm-springs-aerial-tram/">the full guide at indigopalm.co</a>.</p>
+<p>The Mountain Station has two options: Peaks Restaurant for sit-down dining with valley views, and Top of the Tram for quick service. Ride 'n' Dine packages (round-trip fare plus dinner at Pines Café, after 4pm) are $45 per adult and $31.50 per child and are worth considering if you're planning to eat up there anyway. The summit also has a gift shop and two documentary theaters, so there's enough to fill two to three hours without stepping outside at all. For where to stay in Palm Springs near the tram, see <a href="https://indigopalm.co/blog/palm-springs-aerial-tram/">the full guide at indigopalm.co</a>.</p>
 
 <h3>What happens if you're afraid of heights?</h3>
 <p>The tram cars are fully enclosed with large windows, so you're not exposed to open air at any point. The rotation is slow and gradual during ascent, and the views are dramatic but not vertigo-inducing for most people. The sheer face of Chino Canyon drops away below you as you climb, which is impressive, though some people find the window-to-floor drop disorienting. If cable cars or ski gondolas are manageable for you, the tram typically is too.</p>
@@ -147,7 +147,7 @@ layout: blog-post.njk
 
 <h2>Quick Reference</h2>
 
-<p><strong>Tickets:</strong> Adults $36.95, seniors $33.95, children (3-10) $20.95. Parking $5. Buy online at <a href="https://pstramway.vivaticket.com/" target="_blank" rel="noopener">pstramway.vivaticket.com</a>. Dining packages $27.50 to $43 per person.</p>
+<p><strong>Tickets:</strong> Adults $36.95, seniors $33.95, children (3-10) $20.95. Parking $5. Buy online at <a href="https://pstramway.vivaticket.com/" target="_blank" rel="noopener">pstramway.vivaticket.com</a>. Ride 'n' Dine $45 adults, $31.50 children.</p>
 
 <p><strong>Hours:</strong> Weekdays first tram up at 10:00am. Weekends first tram up at 8:00am. Last tram up 8:00pm most nights, 9:00pm Friday and Saturday in summer. Check the <a href="https://pstramway.com/about-us/hours/" target="_blank" rel="noopener">official hours page</a> for current schedule.</p>
 
@@ -163,7 +163,7 @@ layout: blog-post.njk
       "name": "How much does the Palm Springs Aerial Tram cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of 2026, adult tickets are $36.95 with the $2 online processing fee included. Seniors (65+) pay $33.95 and children ages 3 to 10 pay $20.95. Parking at the Valley Station is $5. Dining packages that bundle a ticket with a meal credit at the summit restaurants run $27.50 to $43 per person."
+        "text": "As of 2026, adult tickets are $36.95 with the $2 online processing fee included. Seniors (65+) pay $33.95 and children ages 3 to 10 pay $20.95. Parking at the Valley Station is $5. Ride 'n' Dine packages, round-trip fare plus dinner at Pines Café after 4pm, are $45 per adult and $31.50 per child."
       }
     },
     {
@@ -187,7 +187,7 @@ layout: blog-post.njk
       "name": "Can you hike at the top of the Palm Springs Aerial Tram?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The Mountain Station sits at the edge of Mount San Jacinto State Park with over 50 miles of trails. The Desert View Trail is a two-mile loop accessible to most fitness levels. The trail to San Jacinto Peak at 10,834 feet is a serious full-day undertaking requiring ranger check-in. Dogs are allowed on the trails, leashed."
+        "text": "Yes. The Mountain Station sits at the edge of Mount San Jacinto State Park with over 50 miles of trails. The Desert View Trail is a two-mile loop accessible to most fitness levels. The trail to San Jacinto Peak at 10,834 feet is a serious full-day undertaking requiring ranger check-in. Dogs are not allowed on these wilderness trails, service animals excepted."
       }
     },
     {
@@ -203,7 +203,7 @@ layout: blog-post.njk
       "name": "Are dogs allowed on the Palm Springs Aerial Tram?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Dogs ride inside the tram car with you and are allowed on all trails at the summit, leashed. The 30-to-40-degree temperature drop at the top catches dogs and owners off guard if you haven't packed a layer. The Desert View Trail is well-suited for most dogs. Check with rangers for trail conditions before attempting anything beyond the loop."
+        "text": "No. The tram does not allow pets, and Mount San Jacinto State Park bans dogs from its wilderness trails at the summit, with an exception for service animals. The North Lykken Trail is the closest free dog-friendly hike in Palm Springs."
       }
     },
     {
@@ -211,7 +211,7 @@ layout: blog-post.njk
       "name": "Is there food at the top of the Palm Springs Aerial Tram?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The Mountain Station has Peaks Restaurant for sit-down dining with valley views and Top of the Tram for quick service. Dining packages that bundle a tram ticket with a meal credit run $27.50 to $43 per person. The summit also has a gift shop, two documentary theaters, and a natural history museum."
+        "text": "Yes. The Mountain Station has Peaks Restaurant for sit-down dining with valley views and Top of the Tram for quick service. Ride 'n' Dine packages (round-trip fare plus dinner at Pines Café, after 4pm) are $45 per adult and $31.50 per child. The summit also has a gift shop, two documentary theaters, and a natural history museum."
       }
     }
   ]

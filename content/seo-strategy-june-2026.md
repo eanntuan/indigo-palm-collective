@@ -3637,3 +3637,25 @@ Broken links, alt text, orphans: no real defects. The 2 HIGH hits (coachella/sta
 **StayFi:** not run, the MCP tool call was denied permission in this headless session.
 
 **Not actionable:** PIN-1/PIN-5 (Eann), GA4-1 (needs the live ad), TASK 10 (human conversation), 2027 planner sitemap entries (publish dates).
+
+### babysit-seo run 2026-11-14 (Daily SEO Sprint)
+
+**GSC (90d, 2026-08-15 to 2026-11-12):** 933 clicks (+569 vs prior), 99,581 impressions (+52,296), CTR 0.9%, avg position 9.4. Mobile 616 clicks at 1.1%, desktop 290 at 0.7%. Working: `palm-springs-vs-scottsdale` (98 clicks, pos 5.3), `halloween-2026-coachella-valley` (2.7%), `palm-springs-birthday-freebies` (7.4%, pos 4.2). The leaks (`palm-springs-vs-indio`, `where-to-stay-coachella`, `palm-springs-bars`) are the zero-click and local-pack cases closed on 11-13, so no new title work. **GSC alert emails:** none in the last 3 days.
+
+**TASK (from 11-13): `palm-springs-aerial-tram` content refresh** ✅ **DONE 2026-11-14**. Checked against pstramway.com/tickets and /about-us/hours. Ticket prices still match ($36.95 / $33.95 / $20.95). Fixed three things: (1) **factual error, the post said dogs ride the tram and use the summit trails.** The tram says "Sorry, pets are not allowed," and California State Parks bans dogs from the Mount San Jacinto wilderness (service animals excepted), so the Dogs line, the hiking FAQ and the dogs FAQ (HTML and JSON-LD) now say no and point to North Lykken and `best-hiking-palm-springs`, which already had it right. (2) Dining packages: "$27.50 to $43" became Ride 'n' Dine at $45 adult / $31.50 child (Pines Café, after 4pm). (3) Hours now include last tram down (9:30pm, 10:30pm on summer Fri/Sat) and the 2027 summer dates (May 28 to Sep 6). dateModified 2026-11-14. Re-check the position (21 on 11-13) in GSC around 12-01.
+
+**GA4 (7d, 11-07 to 11-14):** 268 active users (+5), 326 sessions (+17), 97s avg session (-4s). Organic Search 167, Direct 116, AI Assistant 8, Organic Social 3. High bounce is still `palm-springs-bars` (88.9%, 4s, the "bars near me" mismatch), `joshua-tree-day-trip-from-indio` (80%) and `bnp-paribas-indian-wells-where-to-stay` (75%), all under 50 views, so nothing hits the 50-view/60% bar. Property pages: Terra Luz 9 / Cozy Cactus 9 / Sundune 5.
+
+**Pinterest (30d API):** 1,248 impressions, 5 saves, 53 pin clicks, 8 outbound. Interior Design (597) and Cozy cactus instagram (397) carry it, with no new pins, so it's organic drift. About 5% of the 25K ceiling, links unchanged. The Social board's per-pin analytics failed 4/4 again (second day in a row).
+
+**Rachel:** newest still 2026-10-07, nothing new. **PSL feed:** live (newest 11-14). New items are Westin Rancho Mirage (sponsored), MSA Consulting (business profile), and a celebrity-dogs photo book (no Coachella Valley travel angle). Skipped all three.
+
+**Hero:** not rerun. The 11-03 inventory is under 30 days old and only the tram post changed (text only).
+
+**Technical:** 123 pages, 0 broken internal links, 0 HIGH/MEDIUM alt text, 3 LOW lazy-load (same 3, fix sits on branch `seo-lazy-attrs-2026-11-08`, not merged), 0 orphans, 3 weakly linked. The uncommitted sitemap entries for the two 2027 planners came back a fourth time. I dropped them (they would 404 until 12-01 and 12-15). Some local process keeps re-adding them.
+
+**audit-website (mechanical):** 0 em dashes in copy, 0 banned phrases (the "oasis" hits are place names like Sheep Hole Oasis), fee/Polo/pool/pet/Sundune-walk checks clean. The tram dog claim above was the only CRITICAL, fixed.
+
+**StayFi:** not run, the MCP call was denied permission in this headless session again.
+
+**Not actionable:** PIN-1/PIN-5 (Eann), GA4-1 (needs the live ad), TASK 10 (human conversation), 2027 planner sitemap entries (publish dates), merge of `seo-lazy-attrs-2026-11-08`.
