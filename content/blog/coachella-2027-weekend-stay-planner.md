@@ -40,7 +40,7 @@ faqItems:
 
 <p><a href="https://www.coachella.com/" target="_blank" rel="noopener noreferrer"><strong>Coachella</strong></a> 2027 is scheduled for two weekends at the Empire Polo Club in Indio: <strong>April 9-11</strong> (Weekend 1) and <strong>April 16-18</strong> (Weekend 2). The lineup is the same both weekends, so the choice usually comes down to your calendar and what you can find for a place to stay.</p>
 
-<p>This post is about the part that gets less attention than the lineup: how the weekend actually runs when your base is in Indio. If you are still deciding between Indio and Palm Springs, start with <a href="/blog/coachella-2027-where-to-stay/">our where-to-stay guide</a>. If you have already decided on Indio, this is the planning checklist.</p>
+<p>This post is about the part that gets less attention than the lineup: how the weekend runs when your base is in Indio. If you are still deciding between Indio and Palm Springs, start with <a href="/blog/coachella-2027-where-to-stay/">our where-to-stay guide</a>. If you have already decided on Indio, this is the planning checklist.</p>
 
 <p>Dates are as announced by the festival at the time of writing. Passes, lineup, and policies can change, so treat <a href="https://www.coachella.com/" target="_blank" rel="noopener noreferrer">coachella.com</a> as the final word.</p>
 
@@ -80,7 +80,7 @@ faqItems:
 <p><strong>One person's job: the exit plan.</strong> Decide before the night starts how you are getting home and what you will do if the group splits up.</p>
 
 <img src="/blog/images/terra-luz-pool-umbrella.webp" alt="Terra Luz private saltwater pool with a striped umbrella and in-water lounge chairs under a pergola at dusk in Indio" width="1600" height="1067" loading="lazy">
-<p class="image-caption">The private pool at Terra Luz. A pool with some shade is what makes the afternoon break actually restful.</p>
+<p class="image-caption">The private pool at Terra Luz. A pool with some shade is what makes the afternoon break restful.</p>
 
 <h2>Getting in and out</h2>
 

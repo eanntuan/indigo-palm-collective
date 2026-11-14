@@ -178,3 +178,5 @@ faqItems:
 
 <h3>What should I eat at Shields Date Garden in the Coachella Valley?</h3>
 <p>The date shake is the thing, thick and sweet in a way that is specific to this part of California. The Medjool dates sold by weight are soft and caramel-rich and you will eat more of them in the parking lot than planned. It has been here since 1924, sits on Highway 111 between Indio and Palm Springs, and fits naturally into most driving itineraries through the valley.</p>
+
+<p>Staying right by the festival grounds? Our guide to the <a href="/blog/best-restaurants-near-coachella/">best restaurants near Coachella</a> covers what is worth the drive on a festival weekend and what to book ahead.</p>

@@ -39,6 +39,8 @@ layout: blog-post.njk
 
 <p>El Paseo runs about a mile through central Palm Desert and is the main upscale shopping street in the Coachella Valley. It has a mix of independent boutiques, galleries, jewelry stores, and national brands, all organized in a walkable corridor with good restaurants in between. It's a pleasant street to walk even if you're not shopping.</p>
 
+<p>Look at the median while you walk. Palm Desert has required developers to build artwork into their projects since a 1986 public art ordinance, and the city keeps 18 sculptures down the middle of El Paseo that it swaps out every two years, so what you saw last visit probably isn't there now (<a href="https://www.palmspringslife.com/arts-culture/palm-desert-public-art-where-to-find-sculptures-and-murals-around-the-city/" target="_blank" rel="noopener">Palm Springs Life</a>).</p>
+
 <p>The Desert Art Walk happens on Thursdays from October through May: galleries stay open late, music plays on the street, and the whole area has more energy than usual. If your visit overlaps with a Thursday, it's worth timing dinner around it.</p>
 
 <img src="/blog/images/ps-mcm-neighborhood.webp" alt="Mid-century modern neighborhood street in the Coachella Valley with palm trees and mountain backdrop" width="1400" height="933" loading="lazy">

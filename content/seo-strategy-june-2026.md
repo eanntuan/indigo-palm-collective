@@ -3558,3 +3558,104 @@ Housekeeping: dropped `stash@{0}` (2026-11-02 autostash). Its only content was t
 **Technical:** 0 broken internal links and 0 HIGH/MEDIUM alt text. The 3 LOW missing-lazy images are unchanged. Commit 4f7d2184 had re-added four `redirectTo` stubs to `sitemap.xml` (`best-restaurants-near-coachella`, `bnp-paribas-open-vacation-rental-guide`, `things-to-do-palm-springs`, `where-to-stay-coachella-2026`). That's the same regression the 11-02/11-03/11-04 runs dropped, so I removed them again. Whatever re-adds them needs a fix that skips `layout: redirect.njk` files.
 
 **audit-website:** 0 em dashes, 0 banned phrases (the "oasis" hits are all literal palm oases or trail names), and 0 fee or Polo-distance errors. I fixed one CRITICAL: `pet-friendly-palm-springs` gave the Sundune pet fee as "applied at checkout", and it now says $150 per pet, per stay. MEDIUM for Eann: `booking-flow.html:612` says "unauthorized pet fee of $150 per night" for Cozy Cactus violations. That's a penalty clause and differs from the pet fee, so I left it as is. Copy changed since 11-04: only `booking-widget.html` and `checkout.html` (the merged PR #2 pricing config), with no prose changes.
+
+### babysit-seo run 2026-11-09 (Daily SEO Sprint)
+
+**BLOCKED again: GSC, GA4, Sheets, GSC email search.** `~/.claude/google_credentials.json` is still an **etuan@netflix.com** token on the Netflix OAuth client (687323208640). A refresh asking for `webmasters.readonly` or `analytics.readonly` returns `invalid_scope`, so the grant itself lacks them, not just the cached scope list. The Gmail search ran against the Netflix inbox (0 GSC emails), so it says nothing about indigopalm.co. Eann needs to run `reauth_google.py` as eann.tuan@gmail.com; until then the "how far is indio from palm springs" re-check (due 2026-11-05) stays pending. The 08:53 write looks like a routine token refresh (the 08:17 Daily Briefing already hit the same 403s); the Netflix overwrite dates to 2026-11-08 15:18.
+
+**Housekeeping:** branch `seo-lazy-attrs-2026-11-08` had one unmerged commit (lazy attrs on 3 below-fold images, no PR). It was cherry-picked onto `seo-sprint-2026-11-09` off current main. No stashes.
+
+**Pinterest (30d API):** 1,302 impressions, 3 saves, 42 pin clicks, 9 outbound. Interior Design (656) and Cozy cactus instagram (375) carry the account. Posting cadence is still zero, so this is organic decay rather than an ads effect. About 5% of the 25K threshold; links stay on Airbnb, PIN-5 is still Eann's.
+
+**Rachel:** newest item is still 2026-10-07. Nothing new. **PSL feed:** live (newest 11-09). WTA Finals is covered in `bnp-paribas-indian-wells-where-to-stay` (switch to past tense after 11-15). Pride/Arenas is a 2027 update candidate for `palm-springs-lgbtq-guide`. Plaza Theatre rePlay is a possible new downtown-theater post. No edits.
+
+**XMAS-1 (partial):** Magic of Lights (Nov 20 to Jan 2, $26.99 November car ticket, $29.99 Santa Saver before Nov 19, $89.99 season pass) and WildLights (select nights Nov 24 to Dec 30, $25 adult, $20 child, Jingle Pups 12/10, adults 12/17, Pride 12/18) published 2026 schedules. `palm-springs-christmas-events` now uses them, sourced to magicoflights.com and livingdesert.org. Still open: parade route end (Tachevah vs. Tamarisk) and El Paseo tree lighting.
+
+**Hero:** not rerun; the 11-03 inventory is current and its 9 yes/no items are still open for Eann.
+
+**Technical:** 0 broken internal links, 0 HIGH/MEDIUM alt text, 0 orphans, 4 weakly linked (unchanged). The 3 LOW missing-lazy images are fixed on this branch and clear once it deploys.
+
+**Cron health (from launchd logs, since the Sheet is unreadable):** 11-06 SEO Sprint and Bookings Sprint, and 11-07 SEO Sprint, Daily Briefing and Bookings Sprint exited 1 on inference-gateway 502s/timeouts. Every run on 11-08 and 11-09 so far exited 0, but none could write its Cron Log row because of the Sheets 403.
+
+**audit-website:** 0 em dashes, 0 banned phrases (all "oasis" hits are place names), pet fee, check-out, max guests, Sundune 4-night minimum and Polo distances all correct. Fixed 4 CRITICAL: `best-restaurants-palm-springs` said the Sundune is 5 min from downtown (now about 10 by car); `palm-springs-bachelorette-guide` said Indio is 7 to 10 min from Palm Springs restaurants, body and FAQ JSON-LD (now 30 to 40 min, matching `palm-springs-vs-indio`); the Sundune page's schema review said "walkable to shops", swapped for Natalie W.'s on-page review; a `cozy-cactus-story` aerial caption implied a private pool. Fixed 11 HIGH: five stacked-sentence captions or lines (`coachella-valley-insider-guide`, `terra-luz-origin-story`, `best-restaurants-palm-springs`, `palm-springs-aerial-tram`, `beyond-coachella-desert-escape`) and six "honest" fillers (`indian-canyons-palm-springs`, `palm-springs-surf-club`, `pricing-vacation-rental-seasonal-market`, `terra-luz-wild-tropics-bedroom`, `where-to-stay-coachella`, Sundune FAQ intro). MEDIUM left for Eann: "Honest" still appears 45 times including the `cozy-cactus-review` and `terra-luz-review` titles; `palm-springs-neighborhood-guide:105` places the Sundune "between the Mesa and Warm Sands" while `palm-springs-local-guide-sundune:143` says Sunrise Park, and one is wrong; `cozy-cactus-what-i-built:117` says "a community pool" and skips the hot tub; five "energy/vibe" lines.
+
+**Image QA (new HIGH vs. 11-08):** the two 2027 festival planners from PR #16 have oversized heroes (`indian-palms-aerial-pool-courts-hero.webp` 370KB, `stagecoach-festival-crowd.webp` 369KB). The other 11 HIGH are unchanged. **Striking distance:** skipped, needs GSC.
+
+### babysit-seo run 2026-11-11 (Daily SEO Sprint)
+
+**GSC (90d, 2026-08-12 to 2026-11-09):** 891 clicks (+540 vs prior), 97,076 impressions (+51,813), CTR 0.9%, avg position 9.6. Mobile 590 clicks at 1.1% CTR, desktop 274 at 0.7%.
+**CTR leaks (high impressions, low CTR):** `/blog/palm-springs-vs-indio/` 10,268 imps at 0.4%, `/blog/where-to-stay-coachella/` 9,242 at 0.3%, `/blog/palm-springs-bars/` 6,881 at 0.6%, `/blog/palm-springs-aerial-tram/` 5,972 at 0.6% (position 14.1). Title/meta rewrites are the lever.
+**GSC alert emails:** none in the last 30 days. No open deficiencies.
+**GA4 (7d):** 263 active users (+3), 317 sessions, organic search 157, direct 127, AI assistant 6. High bounce: `/blog/bnp-paribas-indian-wells-where-to-stay/` 14 views at 85.7%.
+**Pinterest (30d API):** 1,292 impressions, 5 saves, 48 pin clicks, 8 outbound clicks. TASK PIN-5 (restart posting) still open. Business Hub viewer figure still pending Eann.
+**Technical:** alt text 0 HIGH/MEDIUM (3 LOW lazy-load), internal links clean. Two scheduled posts (`coachella-2027-weekend-stay-planner` dated 2026-12-01, `stagecoach-2027-weekend-stay-planner` dated 2026-12-15) are not built until their dates, so a stray local sitemap entry for them (would 404) was not published; add to sitemap on publish day.
+**Audit:** no em dashes, banned phrases or fee/distance errors in content/blog. Removed 2 "actually" from the Coachella 2027 planner.
+**Not actionable:** XMAS-1 (waiting on 2026 schedules), PIN-1/PIN-5 (Eann), GA4-1 (needs live ad view).
+
+### What changed on 2026-11-12: GSC Check-in
+
+**Period:** 2026-08-13 to 2026-11-10 (90 days). **Overall:** 900 clicks, 97,928 impressions, 0.9% CTR, avg position 9.5. **vs. prior:** +546 clicks, +52,031 impressions.
+
+**Working:** palm-springs-vs-scottsdale (99 clicks, pos 5.4), halloween-2026 (2.7% CTR), palm-springs-birthday-freebies (7.5% CTR, pos 4.2).
+
+**CTR leaks (title/meta rewrite candidates):** palm-springs-vs-indio (10,293 imps, 0.3% CTR, pos 5.7), where-to-stay-coachella (9,400 imps, 0.3%, pos 9.2), palm-springs-bars (6,935 imps, 0.6%), palm-springs-aerial-tram (6,007 imps, 0.6%, pos 14), idyllwild-day-trip (5,008 imps, 0.4%).
+
+### Pinterest Check-in 2026-11-12
+
+API, 30 days: 1,273 impressions, 5 saves, 50 pin clicks, 8 outbound clicks. Far below the 25K threshold; links stay on Airbnb.
+
+### GA4 Check-in 2026-11-12
+
+7 days: 329 active users (+69), 377 sessions, 128s avg session (+35s). Organic Search 194, Direct 147, AI Assistant 17, Organic Social 3. Top page where-to-stay-coachella (33 views, 34.5% bounce).
+
+### Technical SEO 2026-11-12
+
+Broken links, alt text, orphans: no real defects. The 2 HIGH hits (coachella/stagecoach-2027-weekend-stay-planner) are future-dated 2026-12-01 posts that Eleventy has not built yet; their uncommitted sitemap entries are premature, left uncommitted on purpose. 3 LOW missing lazy-load attrs.
+
+### babysit-seo run 2026-11-13 (Daily SEO Sprint)
+
+**GSC (90d, 2026-08-14 to 2026-11-11):** 894 clicks (+534 vs prior), 97,093 impressions (+50,629), CTR 0.9%, avg position 9.5. Mobile 593 clicks at 1.1%, desktop 274 at 0.7%. Working: `palm-springs-vs-scottsdale` (97 clicks, pos 5.4), `halloween-2026-coachella-valley` (2.7%), `palm-springs-birthday-freebies` (7.5%, pos 4.2).
+
+**The Oct 8 title rewrites did not move CTR, so stop re-queuing them.** Same pages, 2026-09-06 to 10-07 vs. 10-11 to 11-11: `palm-springs-vs-indio` 0.40% to 0.37% (pos 5.4 to 5.2), `where-to-stay-coachella` 0.27% to 0.28% (pos 8.3 to 11.0), `palm-springs-bars` 0.77% to 0.48%. Gains: `palm-springs-surf-club` 0.73% to 1.33%, `idyllwild-day-trip` 0.31% to 0.53%. Query view explains why another rewrite won't help: `palm-springs-vs-indio` gets 882 of its imps from "how far is indio from palm springs" at pos 4.2 with 1 click, and the title already states the 30-40 min answer, so Google answers it on the SERP (zero-click). `palm-springs-bars` gets most imps from "bars near me" (271, pos 7.6), a local-pack query a blog post won't win. Closing the "how far is indio" re-check (due 11-05) as zero-click, no further title work. **Real regression:** `palm-springs-aerial-tram` fell from pos 10.9 to 21.1 and imps halved (2,121 to 1,096). Worth a content refresh check (2026-27 ticket price, hours) next run, not a title change.
+
+**Striking distance:** `where-to-stay-coachella` has 46 page-two queries (2,144 imps, 1 click), led by "coachella hotels in california" (190, pos 13.3), "coachella accommodation" (183, 13.8), "where to stay for coachella" (149, 13.4). Already in title and H2, so this is an authority/depth gap, not a keyword gap.
+
+**GSC alert emails:** 3 in 14 days, all digests (October performance, two "350 clicks in 28 days"). No open deficiencies.
+
+**GA4 (7d, 11-06 to 11-13):** 344 active users (+71), 404 sessions (+77), 117s avg session (+24s). Organic Search 205, Direct 155, AI Assistant 17, Organic Social 4. High bounce on real traffic: `/blog/palm-springs-bars/` 14 views at 92.9% and 3s (matches the "bars near me" intent mismatch above), `bnp-paribas-indian-wells-where-to-stay` and `joshua-tree-day-trip-from-indio` 14 views each at 78.6%. Property pages: Terra Luz 12 / Cozy Cactus 16 / Sundune 9.
+
+**Pinterest (30d API):** 1,230 impressions, 5 saves, 49 pin clicks, 8 outbound. Interior Design (600 imps) still carries the account. Cadence still zero new pins, so the slow decline is organic. About 5% of the 25K ceiling; links stay as they are, PIN-5 is Eann's. The Social board's per-pin analytics calls all failed this run (4/4).
+
+**Rachel:** newest item still 2026-10-07, nothing new. **PSL feed:** live (newest 11-13). Added one sourced line to `things-to-do-palm-desert` from the 11-12 Palm Desert public art piece (1986 ordinance, 18 El Paseo median sculptures rotated every two years). Café des Beaux-Arts and Indian Wells Golf Resort items are sponsored content, skipped; Sherman's Deli is already in `palm-springs-bars`, `best-pastries-palm-springs` and `arriving-coachella-valley-first-afternoon`.
+
+**Hero:** not rerun; the 11-03 inventory is under 30 days old and its yes/no items are still open for Eann.
+
+**Technical:** 0 broken internal links, 0 HIGH/MEDIUM alt text (3 LOW lazy-load, fixed on this branch pending merge), 0 orphans, 3 weakly linked (`best-italian-restaurants-palm-springs`, `bnp-paribas-open-vacation-rental-guide` (redirect stub, ignore), `things-to-do-palm-springs` (redirect stub, ignore)). Dropped the uncommitted sitemap entries for the two 2027 planners again (identical to reverted 3a91aef9); add them on 12-01 and 12-15 publish days.
+
+**audit-website:** 0 em dashes in blog content, 0 banned phrases (all "elevated" hits are literal), no misattributed private-pool claims. LOW: one em dash in `admin-approve.html:412`, an internal noindex admin string, left alone.
+
+**StayFi:** not run, the MCP tool call was denied permission in this headless session.
+
+**Not actionable:** PIN-1/PIN-5 (Eann), GA4-1 (needs the live ad), TASK 10 (human conversation), 2027 planner sitemap entries (publish dates).
+
+### babysit-seo run 2026-11-14 (Daily SEO Sprint)
+
+**GSC (90d, 2026-08-15 to 2026-11-12):** 933 clicks (+569 vs prior), 99,581 impressions (+52,296), CTR 0.9%, avg position 9.4. Mobile 616 clicks at 1.1%, desktop 290 at 0.7%. Working: `palm-springs-vs-scottsdale` (98 clicks, pos 5.3), `halloween-2026-coachella-valley` (2.7%), `palm-springs-birthday-freebies` (7.4%, pos 4.2). The leaks (`palm-springs-vs-indio`, `where-to-stay-coachella`, `palm-springs-bars`) are the zero-click and local-pack cases closed on 11-13, so no new title work. **GSC alert emails:** none in the last 3 days.
+
+**TASK (from 11-13): `palm-springs-aerial-tram` content refresh** ✅ **DONE 2026-11-14**. Checked against pstramway.com/tickets and /about-us/hours. Ticket prices still match ($36.95 / $33.95 / $20.95). Fixed three things: (1) **factual error, the post said dogs ride the tram and use the summit trails.** The tram says "Sorry, pets are not allowed," and California State Parks bans dogs from the Mount San Jacinto wilderness (service animals excepted), so the Dogs line, the hiking FAQ and the dogs FAQ (HTML and JSON-LD) now say no and point to North Lykken and `best-hiking-palm-springs`, which already had it right. (2) Dining packages: "$27.50 to $43" became Ride 'n' Dine at $45 adult / $31.50 child (Pines Café, after 4pm). (3) Hours now include last tram down (9:30pm, 10:30pm on summer Fri/Sat) and the 2027 summer dates (May 28 to Sep 6). dateModified 2026-11-14. Re-check the position (21 on 11-13) in GSC around 12-01.
+
+**GA4 (7d, 11-07 to 11-14):** 268 active users (+5), 326 sessions (+17), 97s avg session (-4s). Organic Search 167, Direct 116, AI Assistant 8, Organic Social 3. High bounce is still `palm-springs-bars` (88.9%, 4s, the "bars near me" mismatch), `joshua-tree-day-trip-from-indio` (80%) and `bnp-paribas-indian-wells-where-to-stay` (75%), all under 50 views, so nothing hits the 50-view/60% bar. Property pages: Terra Luz 9 / Cozy Cactus 9 / Sundune 5.
+
+**Pinterest (30d API):** 1,248 impressions, 5 saves, 53 pin clicks, 8 outbound. Interior Design (597) and Cozy cactus instagram (397) carry it, with no new pins, so it's organic drift. About 5% of the 25K ceiling, links unchanged. The Social board's per-pin analytics failed 4/4 again (second day in a row).
+
+**Rachel:** newest still 2026-10-07, nothing new. **PSL feed:** live (newest 11-14). New items are Westin Rancho Mirage (sponsored), MSA Consulting (business profile), and a celebrity-dogs photo book (no Coachella Valley travel angle). Skipped all three.
+
+**Hero:** not rerun. The 11-03 inventory is under 30 days old and only the tram post changed (text only).
+
+**Technical:** 123 pages, 0 broken internal links, 0 HIGH/MEDIUM alt text, 3 LOW lazy-load (same 3, fix sits on branch `seo-lazy-attrs-2026-11-08`, not merged), 0 orphans, 3 weakly linked. The uncommitted sitemap entries for the two 2027 planners came back a fourth time. I dropped them (they would 404 until 12-01 and 12-15). Some local process keeps re-adding them.
+
+**audit-website (mechanical):** 0 em dashes in copy, 0 banned phrases (the "oasis" hits are place names like Sheep Hole Oasis), fee/Polo/pool/pet/Sundune-walk checks clean. The tram dog claim above was the only CRITICAL, fixed.
+
+**StayFi:** not run, the MCP call was denied permission in this headless session again.
+
+**Not actionable:** PIN-1/PIN-5 (Eann), GA4-1 (needs the live ad), TASK 10 (human conversation), 2027 planner sitemap entries (publish dates), merge of `seo-lazy-attrs-2026-11-08`.

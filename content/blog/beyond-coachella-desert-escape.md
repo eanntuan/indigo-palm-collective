@@ -109,7 +109,7 @@ layout: blog-post.njk
 
 <p><strong>Day 3:</strong> Morning coffee at <a href="https://www.everbloom.coffee/" target="_blank" rel="noopener noreferrer"><strong>Everbloom</strong></a>. Drive to Palm Springs for the Art Museum or Aerial Tramway. Brunch at <a href="https://www.cheekysf10.com/" target="_blank" rel="noopener noreferrer">Cheeky's</a>. Evening back at Terra Luz: grill out on the terracotta patio, close out the night in the pool.</p>
 
-<p><strong>Day 4:</strong> Sleep in. Lazy breakfast at the house. Pool float marathon. One last swim. Pack. (Or stay another night. We won't judge.)</p>
+<p><strong>Day 4:</strong> Sleep in, eat a lazy breakfast at the house, and float until it's time for one last swim and packing. (Or stay another night. We won't judge.)</p>
 
 <h2>The Desert Beyond Coachella</h2>
 

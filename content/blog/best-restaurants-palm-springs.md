@@ -35,7 +35,7 @@ layout: blog-post.njk
   <table>
     <tr><th>Location</th><td>Palm Springs, CA</td></tr>
     <tr><th>Best For</th><td>Date nights, casual dinners, weekend brunch</td></tr>
-    <tr><th>Closest Property</th><td><a href="/the-sundune/">The Sundune</a>, 5 min from Downtown PS</td></tr>
+    <tr><th>Closest Property</th><td><a href="/the-sundune/">The Sundune</a>, about 10 min by car from Downtown PS</td></tr>
     <tr><th>Price Range</th><td>$ (casual) to $$$ (sit-down dinner)</td></tr>
     <tr><th>Reservations</th><td>Recommended for dinner Fri–Sat; most lunch spots are walk-in</td></tr>
   </table>
@@ -99,7 +99,7 @@ layout: blog-post.njk
 
 <p><a href="https://www.cheekysf10.com/" target="_blank" rel="noopener noreferrer"><strong>Cheeky's</strong></a> is the Palm Springs brunch institution, and it earns the reputation. The menu rotates weekly around seasonal ingredients, which is part of why regulars keep showing up. The bacon flight is four preparations of the same ingredient and it works: each one is different. The frittata is usually excellent. The outdoor patio has mountain views. Michelin-recommended.</p>
 
-<p>Walk-ins only. Weekend waits are real. Weekdays before 9am are manageable. Saturday at 9am is a line. Plan accordingly.</p>
+<p>Walk-ins only, and weekend waits are real: a weekday before 9am is manageable, Saturday at 9am is a line.</p>
 
 <p><strong>622 N Palm Canyon Dr, Palm Springs, CA 92262.</strong> (760) 327-7595. Daily 8am-2pm. Find them at <a href="https://www.instagram.com/cheekys.f10/" target="_blank" rel="noopener">@cheekys.f10</a>.</p>
 

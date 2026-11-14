@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs Christmas 2026: Parade, Tamales and Lights"
 date: 2026-10-14
-dateModified: 2026-10-14
+dateModified: 2026-11-09
 metaDescription: "Palm Springs Christmas 2026: the Festival of Lights Parade on Dec 5, the Indio Tamale Festival, snow at the Tram, and drive-through lights, dates checked."
 ogImage: /blog/images/ps-palm-springs-sign.webp
 heroImage: /blog/images/ps-palm-springs-sign.webp
@@ -63,15 +63,15 @@ layout: blog-post.njk
 
 <h2>Lights you can see all season</h2>
 
-<p>None of these had published a 2026 schedule where I could find it on October 14, so the dates below are last year's pattern, labeled as such. Check each organizer's page before you buy anything.</p>
+<p>Magic of Lights and WildLights both posted their 2026 schedules in November, and the dates below come straight from their own pages as of November 9. Candy Cane Lane has no organizer and no schedule, so that one runs on neighborhood rhythm.</p>
 
 <h3>Magic of Lights, Indio</h3>
-<p>This is a drive-through show at the <strong>Empire Polo Club</strong> (81-800 51st Avenue), priced per carload instead of per person. The club's <a href="https://empirepoloclubevents.com/public-events/" target="_blank" rel="noopener">public events page</a> lists it for November and December 2026, and last year it ran November 18 to December 31, opening at 5:30 PM and closing at 9 PM Sunday through Thursday and 10 PM Friday and Saturday. Last year's regular price was $35.99 per vehicle, and tickets are sold through the <a href="https://magicoflights.com/locations/" target="_blank" rel="noopener">Magic of Lights locations page</a>.</p>
+<p>This is a drive-through show at the <strong>Empire Polo Club</strong> (81-800 51st Avenue), priced per carload instead of per person. The 2026 run is November 20 through January 2, 2027, 5:30 to 9 PM Sunday through Thursday and until 10 PM on Fridays and Saturdays, per the <a href="https://magicoflights.com/locations/coachella-valley-ca/" target="_blank" rel="noopener">Coachella Valley page</a>. November is the cheap month: a November-only car ticket is $26.99, the Santa Saver is $29.99 for any night of the season if you buy before November 19, and a season pass is $89.99. Tickets go through AXS, and gate pricing only appears once the show opens.</p>
 
 <p>These are the same grounds Coachella and Stagecoach use, which are walking distance from Indian Palms Country Club, though a drive-through means the car comes along regardless.</p>
 
 <h3>WildLights, Palm Desert</h3>
-<p>The Living Desert Zoo and Gardens (47900 Portola Ave) turns the zoo into a ticketed light walk on select nights. In 2025 it ran from November 25 to December 30, 6 to 9 PM, closed on Christmas Day, with advance reservations recommended because capacity is limited each night. The ticket page showed no 2026 dates yet, so watch the <a href="https://www.livingdesert.org/" target="_blank" rel="noopener">Living Desert site</a> for the WildLights schedule. If you're coming with little ones, my <a href="/blog/coachella-valley-with-kids/">Coachella Valley with kids guide</a> has the rest of the family-friendly list.</p>
+<p>The Living Desert Zoo and Gardens (47900 Portola Ave) turns the zoo into a ticketed light walk on select nights. The <a href="https://www.livingdesert.org/events/wildlights-2026/2026-11-25/" target="_blank" rel="noopener">2026 schedule</a> skips around, so check your night: November 24, 25, 27 and 28, then December 4, 5, 10 to 12, 17 to 24 and 26 to 30, 6 to 9 PM with last entry at 8:30, closed Christmas Day. Tickets are $25 for adults and $20 for kids 3 to 17, sold for a specific date and non-refundable. December 10 is Jingle Pups dog night (your dog needs a ticket too), December 17 is adults only, and December 18 is Pride Night. If you're coming with little ones, my <a href="/blog/coachella-valley-with-kids/">Coachella Valley with kids guide</a> has the rest of the family-friendly list.</p>
 
 <h3>Candy Cane Lane, Cathedral City</h3>
 <p>It's a residential street, Minerva Road between Tachevah Drive and Avenida La Vista, and it's free. There are no official hours, the lights come on at dark, and weekends and the days closer to Christmas run busiest. Go earlier in the evening, since neighbors live there, and park and walk if you can. <a href="https://www.palmspringslife.com/arts-culture/families-on-candy-cane-lane-in-cathedral-city-share-their-holiday-traditions/" target="_blank" rel="noopener">Palm Springs Life</a> profiled some of the families behind it.</p>
@@ -126,7 +126,7 @@ layout: blog-post.njk
 <p>Not on the valley floor, where December highs average about 69°F. There is usually snow at the top of the Palm Springs Aerial Tramway, which sits at 8,516 feet and runs 30 to 40 degrees cooler than the desert.</p>
 
 <h3>Where can I see Christmas lights in the Coachella Valley?</h3>
-<p>The three best-known options are Magic of Lights, a drive-through show at the Empire Polo Club in Indio, WildLights at The Living Desert in Palm Desert, and Candy Cane Lane, a free residential street in Cathedral City. Their 2026 schedules were not published as of October 14, so check each organizer.</p>
+<p>The three best-known options are Magic of Lights, a drive-through show at the Empire Polo Club in Indio, WildLights at The Living Desert in Palm Desert, and Candy Cane Lane, a free residential street in Cathedral City. Magic of Lights runs November 20 to January 2, WildLights runs select nights November 24 to December 30, and Candy Cane Lane is free every night once it gets dark.</p>
 
 <h3>Is it warm enough to use the pool at Christmas?</h3>
 <p>Highs around 69°F make a heated pool pleasant at midday, but nights drop to about 43°F, so plan on heat or a hot tub. Terra Luz offers pool heating for $75 a night with a 2-night minimum and includes spa heating, and The Cozy Cactus has a private hot tub.</p>
@@ -154,7 +154,7 @@ layout: blog-post.njk
     {"@type": "Question", "name": "When is the Palm Springs Festival of Lights Parade in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Saturday, December 5, 2026, starting at 5:45 PM on Palm Canyon Drive in downtown Palm Springs. It is free, and the city's holiday tree lighting happens the night before, on Friday, December 4."}},
     {"@type": "Question", "name": "When is the Indio Tamale Festival in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "The 34th festival runs Saturday and Sunday, December 5 and 6, 2026, in downtown Indio. The City of Indio lists admission as free, and published hours vary by source, so check the festival's own site the week of."}},
     {"@type": "Question", "name": "Does it snow in Palm Springs at Christmas?", "acceptedAnswer": {"@type": "Answer", "text": "Not on the valley floor, where December highs average about 69°F. There is usually snow at the top of the Palm Springs Aerial Tramway, which sits at 8,516 feet and runs 30 to 40 degrees cooler than the desert."}},
-    {"@type": "Question", "name": "Where can I see Christmas lights in the Coachella Valley?", "acceptedAnswer": {"@type": "Answer", "text": "The three best-known options are Magic of Lights, a drive-through show at the Empire Polo Club in Indio, WildLights at The Living Desert in Palm Desert, and Candy Cane Lane, a free residential street in Cathedral City. Their 2026 schedules were not published as of October 14, so check each organizer."}},
+    {"@type": "Question", "name": "Where can I see Christmas lights in the Coachella Valley?", "acceptedAnswer": {"@type": "Answer", "text": "The three best-known options are Magic of Lights, a drive-through show at the Empire Polo Club in Indio, WildLights at The Living Desert in Palm Desert, and Candy Cane Lane, a free residential street in Cathedral City. Magic of Lights runs November 20 to January 2, WildLights runs select nights November 24 to December 30, and Candy Cane Lane is free every night once it gets dark."}},
     {"@type": "Question", "name": "Is it warm enough to use the pool at Christmas?", "acceptedAnswer": {"@type": "Answer", "text": "Highs around 69°F make a heated pool pleasant at midday, but nights drop to about 43°F, so plan on heat or a hot tub. Terra Luz offers pool heating for $75 a night with a 2-night minimum and includes spa heating, and The Cozy Cactus has a private hot tub."}}
   ]
 }
