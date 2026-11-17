@@ -17,6 +17,8 @@ import { handleAutopayRoute, processAutopayCharges, newPayToken, payLink, todayU
 import { recordHeartbeat, handlePing, handleHealth } from './alerts.js';
 import { splitAmounts, balanceDueDate, isAutopayEligible } from './autopay-core.js';
 import { processZelleReminders, handleBalanceReceived } from './zelle-balance.js';
+import { handleAdminBookings, handleRecordPayment, handleAddBooking } from './admin-bookings.js';
+import { handleSendPayLink } from './paylink.js';
 import { handleGuestRoute, guideGate, sendDuePreArrivalEmails, ensurePayToken, bookingPageBlock } from './guest.js';
 
 const CORS_HEADERS = {
@@ -55,6 +57,12 @@ const autopayDeps = {
   get sendWebPush() { return sendWebPush; },
   isAdminAuthorized,
   CORS_HEADERS,
+};
+
+const bookingDeps = {
+  CORS_HEADERS,
+  get PROPERTY_INFO() { return PROPERTY_INFO; },
+  get addIcalBooking() { return addIcalBooking; },
 };
 
 // Helpers handed to guest.js (guest booking page API, welcome-guide gate, pre-arrival email).
@@ -407,6 +415,12 @@ export default {
       return Response.redirect('https://' + url.hostname + clean, 301);
     }
 
+    // Any other top-level .html page redirects to its clean URL, query string kept
+    // (welcome guides, templates, Decap /admin/ and /go/ links stay as they are).
+    if (path.endsWith('.html') && !/^\/(blog|admin|go)\/|welcome-guide|pinterest-automation|^\/google/.test(path)) {
+      return Response.redirect('https://' + url.hostname + path.replace(/(^|\/)index\.html$/, '$1').replace(/\.html$/, '') + url.search, 301);
+    }
+
     // 301 redirect blog category URLs to main blog index
     if (path.startsWith('/blog/category/') || path.startsWith('/blog/tag/')) {
       return Response.redirect('https://' + url.hostname + '/blog/', 301);
@@ -475,6 +489,22 @@ export default {
 
     if (path === '/api/confirm-payment' && request.method === 'POST') {
       return isAdminAuthorized(request, env) ? handleConfirmPayment(request, env) : unauthorizedJson();
+    }
+
+    if (path === '/api/send-pay-link' && request.method === 'POST') {
+      return isAdminAuthorized(request, env) ? handleSendPayLink(request, env, autopayDeps) : unauthorizedJson();
+    }
+
+    if (path === '/api/admin/bookings' && request.method === 'GET') {
+      return isAdminAuthorized(request, env) ? handleAdminBookings(env, bookingDeps) : unauthorizedJson();
+    }
+
+    if (path === '/api/admin/record-payment' && request.method === 'POST') {
+      return isAdminAuthorized(request, env) ? handleRecordPayment(request, env, bookingDeps) : unauthorizedJson();
+    }
+
+    if (path === '/api/admin/add-booking' && request.method === 'POST') {
+      return isAdminAuthorized(request, env) ? handleAddBooking(request, env, bookingDeps) : unauthorizedJson();
     }
 
     if (path === '/api/balance-received' && request.method === 'POST') {
@@ -949,7 +979,7 @@ async function handleBooking(request, env) {
   // key is the host-only admin secret, never sent to the guest — it's a second
   // factor on /api/confirm-payment so a leaked/guessed booking token alone
   // can't confirm a payment.
-  const adminUrl = `https://indigopalm.co/admin-approve.html?id=${bookingId}&token=${token}&key=${encodeURIComponent(env.ADMIN_DEBUG_KEY || '')}`;
+  const adminUrl = `https://indigopalm.co/admin-approve?id=${bookingId}&token=${token}&key=${encodeURIComponent(env.ADMIN_DEBUG_KEY || '')}`;
 
   // Host email
   const hostEmailHtml = emailWrapper(`
@@ -1845,7 +1875,7 @@ async function handleCreateLease(request, env) {
 
   await env.BOOKINGS.put(`lease:${id}`, JSON.stringify(lease));
 
-  const leaseUrl = `https://indigopalm.co/lease.html?id=${id}`;
+  const leaseUrl = `https://indigopalm.co/lease?id=${id}`;
   const nights = Math.round((new Date(checkOut + 'T00:00:00') - new Date(checkIn + 'T00:00:00')) / (1000 * 60 * 60 * 24));
   const firstName = name.split(' ')[0];
   const grandTotal = (lease.total + lease.deposit).toFixed(2);

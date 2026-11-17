@@ -85,6 +85,7 @@
     const t = params.get('t');
     const mode = params.get('mode') === 'update' ? 'update' : 'enroll';
     let plan = 'split';
+    const lockSplit = params.get('plan') === 'split'; // link sent to a guest who asked for 50/50: no plan chooser
     const needsConsent = () => mode === 'update' || plan === 'split';
 
     const $ = (s) => document.getElementById(s);
@@ -178,7 +179,7 @@
                 };
                 const splitInput = mk('split', 'Pay half now, half later', usd(cfg.amounts.firstCharge) + ' today, then ' + usd(cfg.amounts.balanceCharge) + ' on ' + fmt(cfg.dueDate));
                 mk('full', 'Pay in full today', usd(full.charge) + (full.deposit > 0 ? ' (includes 3% card fee and refundable deposit)' : ' (includes 3% card fee)'));
-                show(plansEl);
+                if (!lockSplit) show(plansEl);
                 splitInput.checked = true;
             }
             setPlan(cfg.splitAvailable ? 'split' : 'full');

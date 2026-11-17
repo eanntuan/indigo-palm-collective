@@ -233,7 +233,10 @@ describe('host copy', () => {
     await seedBooking();
     await approve();
     const guest = emailTo('jennifer@')[0];
-    assert.equal(guest.bcc, 'indigopalmco@gmail.com');
+    // The host copy is its own message (a BCC would share the guest's open-tracking pixel).
+    assert.equal(guest.bcc, undefined);
+    const copy = emails.find(x => String(x.to).includes('indigopalmco@gmail.com') && x.subject === guest.subject);
+    assert.ok(copy, 'host gets a separate copy of the guest email');
     for (const e of emails.filter(x => String(x.to).includes('indigopalmco@gmail.com'))) {
       assert.equal(e.bcc, undefined, e.subject);
     }
