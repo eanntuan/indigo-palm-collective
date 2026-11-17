@@ -1,7 +1,7 @@
 ---
 title: "Palm Springs Christmas 2026: Parade, Tamales and Lights"
 date: 2026-10-14
-dateModified: 2026-11-09
+dateModified: 2026-11-17
 metaDescription: "Palm Springs Christmas 2026: the Festival of Lights Parade on Dec 5, the Indio Tamale Festival, snow at the Tram, and drive-through lights, dates checked."
 ogImage: /blog/images/ps-palm-springs-sign.webp
 heroImage: /blog/images/ps-palm-springs-sign.webp
@@ -23,7 +23,7 @@ layout: blog-post.njk
 
 <p>By the first week of December the sun is down by about 5 PM, the valley cools into jacket weather, and every strand of string lights in the Coachella Valley starts earning its keep. This is the Christmas version of the desert, and it comes with a parade, a tamale festival, a drive-through light show on the same grounds as Coachella, and a tram ride up to real snow.</p>
 
-<p>I own rentals in both Indio and Palm Springs, so I pulled the dates into one place. Every date below was cross-checked against city, organizer, and venue listings on October 14, 2026, though a few of those sites wouldn't open for me directly, so confirm before you buy tickets. Several of the big light displays haven't published their 2026 schedules yet, and I say so where that's the case instead of guessing.</p>
+<p>I own rentals in both Indio and Palm Springs, so I pulled the dates into one place. I first cross-checked every date against city, organizer, and venue listings on October 14, 2026, then rechecked the light displays and the El Paseo tree lighting in November once their 2026 schedules went up. Where a source still hasn't confirmed something, I say so instead of guessing, so confirm before you buy tickets.</p>
 
 <div class="quick-summary">
 <p><strong>Quick version:</strong></p>
@@ -76,7 +76,7 @@ layout: blog-post.njk
 <h3>Candy Cane Lane, Cathedral City</h3>
 <p>It's a residential street, Minerva Road between Tachevah Drive and Avenida La Vista, and it's free. There are no official hours, the lights come on at dark, and weekends and the days closer to Christmas run busiest. Go earlier in the evening, since neighbors live there, and park and walk if you can. <a href="https://www.palmspringslife.com/arts-culture/families-on-candy-cane-lane-in-cathedral-city-share-their-holiday-traditions/" target="_blank" rel="noopener">Palm Springs Life</a> profiled some of the families behind it.</p>
 
-<p>One more date worth a pencil mark: The Shops on El Paseo in Palm Desert held its tree lighting on the Saturday before Thanksgiving in 2024 and 2025 (November 23 and November 22). That pattern would make it November 21 this year, but I haven't seen a 2026 announcement, so treat it as a guess until <a href="https://theshopsonelpaseo.com/" target="_blank" rel="noopener">their site</a> says otherwise.</p>
+<p>One more date worth a pencil mark: The Shops on El Paseo in Palm Desert hosts its free tree lighting, "Light Up the Holidays," on Saturday, November 21, from 4 to 6 PM, with Santa and Mrs. Claus, kids' activities and letters to Santa, per the <a href="https://theshopsonelpaseo.com/events/" target="_blank" rel="noopener">Shops on El Paseo events page</a>. They ask you to RSVP, and the page doesn't say exactly when the tree switches on, so get there before dark.</p>
 
 <h2>Snow without leaving the valley</h2>
 

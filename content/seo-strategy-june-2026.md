@@ -2069,6 +2069,20 @@ Two new posts since the 9/21 check-in. `claude-cowork-now-runs-your-scheduled` (
 Our 5 CronCreate jobs are session-bound and get recreated every session, and they depend on local scripts (~/.claude/skills, Google creds) and Hostaway/PriceLabs MCPs, so none can move as-is. Candidate for a pilot: the Monday competitor brief (WebSearch only, no local files), writing .md to a Drive _Inbox folder. Not actionable-yet: needs Eann to confirm Pro/Max plan, Cowork Scheduled page, and a Drive connector. Low priority, do not migrate the Hostaway/GSC jobs.
 Source: claude-cowork-now-runs-your-scheduled
 
+### New from Rachel — 2026-11-17
+
+Two new posts since the 10-08 check-in. `the-hook-the-image-and-the-level` (11-17): three lessons, line one has to make a stranger ask for more, build the image before the words, and "using AI" vs. "AI built in" (a dashboard replacing a weekly manual report). `steal-my-notes-on-russell-brunson` (11-16): notes on 20 AI Marketing World speakers plus her Nov 21 doctors summit lineup. Only three pieces transfer here; the rest is marketer/doctor content. The dashboard lesson is already covered by the five headless crons and the Cron Log tab.
+
+**TASK RG-28: Image-first, line-one-first test for Pinterest pins**
+Rachel's top 20 image posts and top 20 comment posts overlapped 14 of 20: the photo stops the scroll, and line one is a promise a stranger says yes to. This supports the 2026-07 pin audit finding (concrete room+audience+location titles win). When Eann restarts posting (PIN-5), pick the photo first, then read only the title and ask "would a stranger tap this?" Not actionable by Claude: pins are manual for Eann and never auto-published.
+Source: the-hook-the-image-and-the-level
+
+**TASK RG-29: Cost seg Layer 3 (removed-asset write-off) for the Terra Luz renovation, CPA question**
+Kim Lochridge (Engineered Tax Services) via Rachel: the write-off for what was torn out only counts in the tax year the old item came out, so a 2026 renovation has to be claimed on the 2026 return; a real study costs about $3,000 and 6 weeks for a single-family home. Terra Luz's renovation finished in 2026. Not tax advice from this doc, and not actionable by Claude: flag for Eann to raise with the CPA before the 2026 return (a `/cpa` session can model it).
+Source: steal-my-notes-on-russell-brunson
+
+Skipped: Jamie Lane (AirDNA) "find where people are moving, then where they vacation" (market-entry advice, no acquisition in flight); Natalie Walthour market picks (same).
+
 ### What changed on 2026-07-27 — GSC Check-in
 
 **Period:** 2026-04-28 to 2026-07-27 (90 days) vs. 2026-01-27 to 2026-04-27
@@ -3351,7 +3365,7 @@ Feed pulled (25 items). Nothing new worth actioning since the 2026-10-08 run: "H
 - Inbound links to the new post added in `best-time-to-visit-palm-springs`, `things-to-do-indio-ca` and `palm-springs-aerial-tram`; inbound links to the two weakly linked posts added in `palm-springs-bars`, `best-time-to-visit-palm-springs` (Halloween), `palm-springs-with-kids` and `palm-springs-heat-activities` (Air Museum).
 - Hero position fix on `palm-springs-air-museum-guide`.
 
-**TASK XMAS-1: Refresh the Christmas post when 2026 schedules publish (added 2026-10-14)**
+~~**TASK XMAS-1: Refresh the Christmas post when 2026 schedules publish (added 2026-10-14)**~~ ✅ **DONE 2026-11-17** — Magic of Lights and WildLights done 11-09; El Paseo tree lighting confirmed 11-17 (Nov 21, 4 to 6 PM); parade route end, Tram tree-lighting station and Tamale Festival hours stay hedged in the post since sources still disagree.
 Not actionable until about 2026-11-10 to 2026-11-15. Magic of Lights, WildLights and the El Paseo tree lighting had no confirmed 2026 dates on 2026-10-14 (the post labels them as last year's pattern). When each publishes, replace the "last year" wording with the confirmed dates and prices, re-verify the parade route end (Visit Palm Springs says Tachevah Road, Marching.com says Tamarisk Road) and the Dec 4 tree lighting venue (Frances Stevens Park in 2025), then bump `dateModified`. Also confirm the Tamale Festival hours (sources disagree: noon to 8 PM versus 10 AM to 7 PM) and which Tram station hosts the Dec 6 tree lighting.
 
 **Needs Eann:** (1) Google reauth plus the "In production" consent-screen decision above, so GSC, GA4 and Gmail alert mining can run again; (2) Halloween hero swap yes/no; (3) the still-open 2026-10-08 list: Pinterest Business Hub monthly-viewer figure, Pinterest UI cleanup, Quora status from Sabbir, hiking post 12 to 13 trails yes/no, RG-27 Cowork pilot yes/no, GSC Pages report URL lists for "Not found (404)" and "Page with redirect", and the `indigopalmco@gmail.com` ownership check.
@@ -3659,3 +3673,23 @@ Broken links, alt text, orphans: no real defects. The 2 HIGH hits (coachella/sta
 **StayFi:** not run, the MCP call was denied permission in this headless session again.
 
 **Not actionable:** PIN-1/PIN-5 (Eann), GA4-1 (needs the live ad), TASK 10 (human conversation), 2027 planner sitemap entries (publish dates), merge of `seo-lazy-attrs-2026-11-08`.
+
+### babysit-seo run 2026-11-17 (Daily SEO Sprint)
+
+**GSC (90d, 2026-08-18 to 2026-11-15):** 989 clicks (+605 vs prior), 105,505 impressions (+55,841), CTR 0.9%, avg position 9.4. Mobile 659 clicks at 1.1%, desktop 306 at 0.7%. Working: `palm-springs-vs-scottsdale` (94 clicks, pos 5.3), `halloween-2026-coachella-valley` (2.6%), `palm-springs-birthday-freebies` (7.1%, pos 4.1), homepage (3.5%). CTR leaks are the same zero-click and local-pack cases closed 11-13 ("how far is indio from palm springs", "bars near me"), no new title work. `palm-springs-aerial-tram` blended 90d position 14.2; the 12-01 re-check after the 11-14 refresh still stands. **GSC alert emails:** none since the 11-03 October digest. No open deficiencies.
+
+**GA4 (7d, 11-10 to 11-17):** 382 active users (+108), 438 sessions (+110), 109s avg session (-17s). Organic Search 228, Direct 170, AI Assistant 25, Organic Social 5. No page meets 50 views and 60% bounce. `where-to-stay-coachella` 61 views at 41.8% bounce and 215s, healthy. Property pages: Terra Luz 16 / Cozy Cactus 21 / Sundune 5. Sundune is the visibility gap again (PIN-1 Sundune board still open for Eann).
+
+**Pinterest (30d API):** 1,260 impressions, 4 saves, 54 pin clicks, 9 outbound. Interior Design (592) and Cozy cactus instagram (411) carry it, still no new pins, organic drift. About 5% of the 25K ceiling, links unchanged. Social board per-pin analytics failed 4/4 for the third run in a row.
+
+**Rachel:** two new posts (11-16, 11-17), spawned RG-28 (pin image/hook test, Eann) and RG-29 (Terra Luz cost seg removed-asset deduction, CPA question). **PSL feed:** live (newest 11-17). Cathedral City Hot Air Balloon Festival (Nov 20 to 22) is this weekend, no post, too late to rank; worth an entry on next year's events list. Yozu restaurant roundup, Walling architecture, walking, Materias Primas books, Kaptur home remodel, law firm, DAP Health, economic report: no Indigo Palm angle or already covered, skipped.
+
+**XMAS-1 done:** `palm-springs-christmas-events` now gives the confirmed El Paseo "Light Up the Holidays" tree lighting (Sat Nov 21, 4 to 6 PM, free, RSVP) from theshopsonelpaseo.com/events, replacing the "treat it as a guess" line, and the intro no longer says the light displays are unpublished. dateModified 2026-11-17.
+
+**Hero:** not rerun, the 11-03 inventory is under 30 days old.
+
+**Technical:** 0 broken internal links, 0 HIGH/MEDIUM alt text, 0 real orphans. The only HIGH hits are the two 2027 planners, which come from the uncommitted local sitemap entries again (fifth time). Left uncommitted on purpose until the 12-01 and 12-15 publish days. 3 weakly linked (same as 11-14). Note: the check scripts and Gmail skill need the google-workspace venv python (system python3 is 3.9 with no bs4).
+
+**StayFi:** not run, the MCP fails to connect in this headless session.
+
+**Not actionable:** PIN-1/PIN-5 (Eann), GA4-1 (needs the live ad), TASK 10 (human conversation), RG-28 (Eann posts pins), RG-29 (CPA), 2027 planner sitemap entries (publish dates).
