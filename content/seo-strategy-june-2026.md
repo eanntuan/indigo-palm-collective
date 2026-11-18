@@ -3693,3 +3693,19 @@ Broken links, alt text, orphans: no real defects. The 2 HIGH hits (coachella/sta
 **StayFi:** not run, the MCP fails to connect in this headless session.
 
 **Not actionable:** PIN-1/PIN-5 (Eann), GA4-1 (needs the live ad), TASK 10 (human conversation), RG-28 (Eann posts pins), RG-29 (CPA), 2027 planner sitemap entries (publish dates).
+
+### babysit-seo run 2026-11-18 (Daily SEO Sprint)
+
+**GSC (90d, 2026-08-19 to 2026-11-16):** 1,005 clicks (+616 vs prior), 106,240 impressions (+55,822), CTR 0.9%, avg position 9.4. Mobile 664 clicks at 1.1%, desktop 316 at 0.7%. Working: `palm-springs-vs-scottsdale` (95 clicks, pos 5.3), `halloween-2026-coachella-valley` (2.6%), `palm-springs-birthday-freebies` (7.1%, pos 4.2), homepage (3.6%). CTR leaks are the same zero-click and local-pack queries closed 11-13, no new title work. New low-click page: `box-canyon-sheep-hole-oasis-hike` (234 imps, 2 clicks, all at pos 20 or better), a title/meta candidate but only 234 imps, queued as LOW. **GSC alert emails:** one new digest (400 clicks in 28 days, 11-17), no deficiencies.
+
+**GA4 (7d, 11-11 to 11-18):** 390 active users (+114), 447 sessions (+123), 110s avg session (-4s). Organic Search 227, Direct 181, AI Assistant 24, Organic Social 5. No page meets 50 views and 60% bounce (`palm-springs-bars` 14 views at 93.3%, the known "bars near me" mismatch). Property pages: Terra Luz 15 / Cozy Cactus 23 / Sundune 5.
+
+**Pinterest (30d API):** 1,272 impressions, 4 saves, 56 pin clicks, 8 outbound. No new pins, so cadence is the cause. About 5% of the 25K ceiling, links unchanged. PIN-1/PIN-5 remain Eann's.
+
+**Rachel:** no new posts (newest 11-17, already RG-28/29); added the two slugs to the processed list in memory. **PSL feed:** live (newest 11-18). Filipino Festival (Nov 21) is too late to rank, Twenty6, Tia Carmen, Yozu, art finds, tourism-marketing piece: no Indigo Palm angle or already covered, skipped.
+
+**Hero:** not rerun, 11-03 inventory is under 30 days old. **Technical:** 0 broken links, 0 HIGH/MEDIUM alt text, 0 real orphans; the only HIGH hits are the two 2027 planners (uncommitted sitemap entries held until 12-01 and 12-15). **audit-website:** 0 em dashes, 0 banned words (the only hits are "Discover Cathedral City" in link text, a proper name).
+
+**StayFi:** not run, MCP call denied permission in this headless session.
+
+**Not actionable:** PIN-1/PIN-5 (Eann), GA4-1, TASK 10, RG-28 (Eann), RG-29 (CPA), 2027 planner sitemap entries, merge of `seo-lazy-attrs-2026-11-08`.
