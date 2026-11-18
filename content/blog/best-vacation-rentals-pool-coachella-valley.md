@@ -31,7 +31,7 @@ layout: blog-post.njk
 
 <p>So here's what I've learned about what makes a pool rental worth booking out here.</p>
 
-<img src="/blog/images/cozy-cactus-pool-backyard.webp" alt="Backyard patio and desert landscaping at Cozy Cactus vacation rental in Indio California with lounge area" width="1400" height="933" loading="eager">
+<img src="/blog/images/cozy-cactus-pool-backyard.webp" loading="lazy" alt="Backyard patio and desert landscaping at Cozy Cactus vacation rental in Indio California with lounge area" width="1400" height="933" loading="eager">
 <p class="image-caption">The Cozy Cactus backyard in Indian Palms, Indio. The shot you see in the listing is the one I spent the most time thinking about before launch.</p>
 
 <h2>Private vs. Shared: The First Filter</h2>

@@ -30,7 +30,7 @@ layout: blog-post.njk
 
 <p>Turns out the list is longer than I expected.</p>
 
-<img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz private saltwater pool and enclosed backyard at pet-friendly vacation rental in Indio California Coachella Valley" width="1024" height="1536" loading="eager">
+<img src="/blog/images/terra-luz-pool-backyard.webp" loading="lazy" alt="Terra Luz private saltwater pool and enclosed backyard at pet-friendly vacation rental in Indio California Coachella Valley" width="1024" height="1536" loading="eager">
 <p class="image-caption">The backyard. Fully enclosed. This was a deliberate decision: the gate latches, the fence is solid, and dogs can be out there without anyone hovering.</p>
 
 <h2>The Backyard Is Fully Enclosed</h2>

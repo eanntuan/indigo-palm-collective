@@ -61,7 +61,7 @@ layout: blog-post.njk
 
 <h2>What PriceLabs Is Good For and Where It Falls Short</h2>
 
-<p>We've used PriceLabs across all three properties for a few years. The honest summary: it's excellent at the routine work and unreliable at the edges.</p>
+<p>We've used PriceLabs across all three properties for a few years. The short version: it's excellent at the routine work and unreliable at the edges.</p>
 
 <p>Good: day-of adjustments to capture last-minute bookings, weekday/weekend splits, reading local occupancy trends, auto-adjusting around smaller events we didn't manually calendar. This is the majority of your calendar, and it handles it better than manual management.</p>
 

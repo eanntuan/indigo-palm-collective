@@ -148,7 +148,7 @@ faqItems:
 <img src="/blog/images/festival-coachella-aerial.webp" alt="Aerial view of the Coachella festival grounds at Empire Polo Club in Indio California showing stages and camping areas" width="960" height="503" loading="lazy">
 <p class="image-caption">The full footprint of the festival grounds from above. Camping and glamping options are on the property. Everything else is off-site.</p>
 
-<h2>The Honest Breakdown by Group Type</h2>
+<h2>The Breakdown by Group Type</h2>
 
 <p><strong>Solo traveler or couple with a generous budget:</strong> On-site camping for the full experience, or a Palm Springs hotel if you want the city as part of the trip. Shuttle passes plus a well-rated hotel in Palm Springs is a comfortable setup if you're not watching the transportation math too closely.</p>
 

@@ -69,7 +69,7 @@ Andreas also has a picnic area with tables at the trailhead. It's a reasonable s
 
 Murray Canyon is the third and least-visited of the three. It requires a 4-mile roundtrip hike to reach the waterfall at the back of the canyon. The trail is unsigned in places and involves several stream crossings. Not technical, but you'll get your feet wet if there's been recent rain.
 
-Honest take: Murray Canyon rewards the effort, but if it's your first visit, do Palm Canyon and Andreas first. Murray is for the second trip.
+Murray Canyon rewards the effort, but if it's your first visit, do Palm Canyon and Andreas first. Murray is for the second trip.
 
 ## What to Bring
 

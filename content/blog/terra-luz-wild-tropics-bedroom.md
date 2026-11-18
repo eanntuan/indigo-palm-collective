@@ -70,7 +70,7 @@ layout: blog-post.njk
 
 <h2>Everything in the room, what it cost</h2>
 
-<p>I find that people appreciate the honest breakdown, so here it is. Total for the Wild Tropics bedroom was right around $5,600, with the wallpaper carrying the bulk of it.</p>
+<p>Here's the breakdown. Total for the Wild Tropics bedroom was right around $5,600, with the wallpaper carrying the bulk of it.</p>
 
 <ul>
   <li>Rebel Wall botanical wallpaper (57' x 9'5"): $3,800</li>

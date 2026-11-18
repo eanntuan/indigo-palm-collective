@@ -92,7 +92,7 @@ layout: blog-post.njk
 <p>None of that is accidental. The details add up to something that's hard to describe when you're booking and obvious within an hour of arriving.</p>
 
 <img src="/blog/images/terra-luz-pool-backyard.webp" alt="Terra Luz Kahlo blue pool with desert landscaping and covered patio in Indio California" width="1024" height="1536" loading="lazy" decoding="async">
-<p class="image-caption">The Kahlo blue pool. In-pool sun shelf. Pergola lights overhead. This is the whole point.</p>
+<p class="image-caption">The Kahlo blue pool, with the sun shelf underfoot and pergola lights overhead, is the whole point.</p>
 
 <h2>From Casa Moto to Terra Luz: What Changed, What Stayed</h2>
 

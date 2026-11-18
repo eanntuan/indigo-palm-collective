@@ -144,7 +144,7 @@ layout: blog-post.njk
 <p class="image-caption">A place where families rest. 15 minutes from Coachella, designed for humans who appreciate when someone gives a damn.</p>
 
 <img src="/blog/images/cozy-cactus-aerial.webp" alt="Aerial drone shot of The Cozy Cactus vacation rental in Indian Palms Indio CA at sunset with pool and mountain views" loading="lazy" decoding="async" width="1400" height="933">
-<p class="image-caption">Indian Palms Country Club at sunset. The pool is the blue rectangle. That's the backyard.</p>
+<p class="image-caption">Indian Palms Country Club at sunset, with the mountains on the horizon.</p>
 
 <script type="application/ld+json">
 {

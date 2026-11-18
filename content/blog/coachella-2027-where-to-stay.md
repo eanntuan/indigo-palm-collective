@@ -199,6 +199,8 @@ relatedPosts:
 }
 </script>
 
+<p>Once you have a place, sort out dinner early with our list of the <a href="/blog/best-restaurants-near-coachella/">best restaurants near Coachella</a>, since the good tables fill up fast on festival weekends.</p>
+
 <div style="background: #fff8e7; padding: 1.2rem 1.5rem; margin: 2rem 0; border-radius: 0 6px 6px 0;">
 <p style="margin-top: 0;"><a href="/book-direct/">Check dates and full totals</a>, or email us with questions before booking.</p>
 <p><a href="/cozy-cactus/"><strong>The Cozy Cactus</strong></a>, 3BR/2BA, sleeps 8, private hot tub, putting green, game room, three community pools<br><a href="/terra-luz/"><strong>Terra Luz</strong></a>, 3BR/2BA, sleeps 8, private saltwater pool, dog-friendly, Cuban-inspired design</p>

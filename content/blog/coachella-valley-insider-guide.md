@@ -137,7 +137,7 @@ relatedPosts:
 <p><a href="/cozy-cactus/">The Cozy Cactus</a> is our place in Indio. Three bedrooms, community pool across the street, private hot tub, and a covered patio that makes you want to stay in as much as go out. But wherever you stay, stay in the valley long enough to get past the tourist layer. The real stuff is underneath.</p>
 
 <img src="/blog/images/cozy-cactus-hot-tub.webp" alt="Private hot tub at The Cozy Cactus vacation rental in Indio CA, covered patio, string lights, palm trees at dusk" loading="lazy" width="800" height="533">
-<p class="image-caption">The hot tub at golden hour. Palm trees. String lights. This is why you stay in Indio.</p>
+<p class="image-caption">The hot tub at golden hour, under palm trees and string lights, is the reason to stay in Indio.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -161,6 +161,8 @@ relatedPosts:
 
 <h3>Is the Coachella Valley worth visiting in summer?</h3>
 <p>Yes, with adjusted expectations. Daytime temperatures regularly exceed 110°F in July and August, so outdoor activities shift to early morning and evening. The tradeoff: the valley empties out, rates drop significantly, pools are warm enough to use all day, and Joshua Tree is pleasant at dawn when the desert cools overnight. Some people prefer it. More on that in the <a href="/blog/beyond-coachella-desert-escape/">year-round desert escape guide</a>.</p>
+
+<p>Heading west for a day trip? Our rundown of <a href="/blog/things-to-do-palm-springs/">things to do in Palm Springs</a> picks up where this valley guide leaves off.</p>
 
 <script type="application/ld+json">
 {
