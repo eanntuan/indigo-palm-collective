@@ -1,0 +1,270 @@
+{
+  "welcome": {
+    "intro": [
+      "Welcome to The Sundune. My name is Eann. Instead of buying a Tesla, I inadvertently started Indigo Palm Collective, a suite of boutique vacation rentals in the Coachella Valley. You are staying in one of them!",
+      "I surf most mornings, before I open my laptop. The Sundune is built for the same kind of trip: move during the day, wander without a plan, be somewhere comfortable by evening. That's about as structured as it needs to get.",
+      "Use the explore tab. Everything in there I've sent to friends, not a list I padded for appearances. Come back before dark and the balcony does the rest.",
+      "Please reach out if something's off. I hope you find your version of the stoke out here."
+    ],
+    "signature": "Eann",
+    "quote": "\"There's no better feeling than diving into the water and swimming as far as you want.\"",
+    "quote_by": "Hannah Ferrara, Al Fresco",
+    "tips": [
+      {
+        "label": "Set the vibe",
+        "text": "She leans coastal-desert. Put something nostalgic on, crack the windows, and let the air do what it does out here."
+      },
+      {
+        "label": "Slow morning, every morning",
+        "text": "The balcony gets good light before it gets hot. Coffee out there, palms, nowhere to be. Start there every day if you can."
+      },
+      {
+        "label": "Worth the detour",
+        "text": "El Paseo in Palm Desert has indie boutiques alongside the usual brand names, all with a mountain backdrop. Worth a half-day if you're into that."
+      },
+      {
+        "label": "More local intel",
+        "text": "Restaurant picks, what to skip, and how the valley actually works: <a href=\"https://indigopalm.co/go/guide-sundune\">indigopalm.co</a>"
+      }
+    ]
+  },
+  "arrival": {
+    "gps_warning": "GPS will probably try to route you down Highway 111. Don't. It drops you at the wrong entrance with nowhere to turn. Look for the <strong>Golf Club Drive traffic light</strong> and turn there to get into Palm Canyon Villas.",
+    "steps": [
+      {
+        "title": "Door Code",
+        "text": "Your code comes through at least 24 hours before check-in. It's active from 4 pm on arrival day until 11 am checkout."
+      },
+      {
+        "title": "Black Screen Door",
+        "text": "Open the black screen door first, it's unlocked. The blue door behind it has the Schlage keypad."
+      },
+      {
+        "title": "Blue Schlage Keypad",
+        "text": "Enter your 4-digit code. If the keypad is dark, press the <strong>bottom left corner</strong> to wake it. Don't tap anywhere else first, Schlage counts any touch as a keystroke. If it resists, pull the handle toward you to align the lock, then try again."
+      },
+      {
+        "title": "Inside",
+        "text": "Lights are on the left as you walk in. The <strong>pool key</strong> hangs on the cactus key holder by the light switch. Don't lose it, $300 to replace and I will definitely know."
+      }
+    ],
+    "wifi_note": "Both TVs have Roku with Netflix already loaded. For everything else, log into your own streaming apps, it's all in there.",
+    "curfew": "<strong>10 pm noise curfew.</strong> Everything outdoors, including Bluetooth speakers on the patio. The community enforces this without much patience, and the city fines are not small."
+  },
+  "house": {
+    "rules": [
+      {
+        "title": "No Parties",
+        "text": "People live here year-round. Small gatherings only, and keep the energy low-key."
+      },
+      {
+        "title": "10 PM Curfew",
+        "text": "Outdoor noise wraps at 10 pm, full stop. The community takes this seriously and so do I. ($300 fine plus removal, no refund)"
+      },
+      {
+        "title": "No Shoes",
+        "text": "Shoes off at the door. It keeps things cleaner and your downstairs neighbors will thank you."
+      },
+      {
+        "title": "No Smoking",
+        "text": "No smoking, vaping, or drugs anywhere on the property. ($250 fine, no exceptions)"
+      },
+      {
+        "title": "Pets: Please Read",
+        "text": "If you brought a pet, the sofa and rugs are brand new, so cover what you can or redirect them when you're able. I have a dog and two cats, so I genuinely get it. Just do your best."
+      }
+    ],
+    "guide": [
+      {
+        "title": "Temperature",
+        "text": "Keep it at 73° or above. Colder than that and the system can freeze up. I've got it set to 74° as a starting point."
+      },
+      {
+        "title": "Pool",
+        "text": "One minute from the front door: downstairs, turn right. Pool key is on the coat rack. Return it before you leave, replacing it costs $300 and neither of us wants that conversation."
+      },
+      {
+        "title": "Laundry",
+        "text": "Washer, dryer, detergent, and dryer sheets are on the patio."
+      },
+      {
+        "title": "Trash",
+        "text": "Dumpsters in lots 4 and 5 on your way out."
+      },
+      {
+        "title": "Coffee",
+        "text": "Keurig on the counter, French press and K-cups in the cabinet above. <a href=\"https://indigopalm.co/blog/palm-springs-coffee-guide/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--terra-dark);text-decoration:underline;\">Palm Springs coffee guide ↗</a> if you want to go out."
+      },
+      {
+        "title": "Kids + Games",
+        "text": "Pack n Play, high chair, and baby bathtub are in the primary bathroom closet, and games are on the storage bench by the TV."
+      }
+    ],
+    "pool": [
+      "Down the stairs, turn right: pool, spa, and tennis courts are about a minute from the door.",
+      "Use the pool key from the <strong>coat rack at the entrance</strong>. Four beach chairs are in the primary bathroom closet if you need them, BYOC to the pool.",
+      "<strong>Return the pool key before checkout.</strong> $300 to replace."
+    ]
+  },
+  "explore": {
+    "intro": "Restaurant picks, what to skip, the places that aren't on any list. These are the ones I actually send to friends when they ask.",
+    "eat_note": "Call ahead. Desert hours are unpredictable.",
+    "eat": [
+      {
+        "name": "Palm Greens Cafe",
+        "desc": "Laid-back spot with a health-conscious menu and good sourcing. Get the Macrobiotic Bowl and the Green Goddess Juice."
+      },
+      {
+        "name": "Les Filles",
+        "desc": "Run by a French woman and her Italian wife who met on vacation 18 years ago and never left the idea. Pain au chocolat, cornetti, focaccia, and genuinely good espresso."
+      },
+      {
+        "name": "The Heyday",
+        "desc": "Straightforward diner. The smashburger is really good, which is all it needs to be."
+      },
+      {
+        "name": "Sherman's Deli &amp; Bakery",
+        "desc": "NYC-style kosher deli, open all day, with specialty cakes and baked goods on top of the usual. Order the pastrami, don't overthink it."
+      },
+      {
+        "name": "533 Viet Fusion",
+        "desc": "Mix of modern and traditional Vietnamese with a cocktail lounge in the back. The flourless chocolate cake is the sleeper hit on the menu, get it even if you're full."
+      },
+      {
+        "name": "Sottovoce",
+        "desc": "Italian cafe with handmade gelato and a serious coffee program. My sister-in-law had the gelato catered for her wedding. That should tell you what you need to know."
+      },
+      {
+        "name": "The Front Porch",
+        "desc": "Easy breakfast and brunch spot in the village, patio out front, locally sourced and cocktails going all day if that's the kind of morning you want."
+      }
+    ],
+    "drink": [
+      {
+        "name": "Cartel Roasting Co.",
+        "desc": "My regular. Cold brew is the best in the valley, and I've tried them all so you don't have to."
+      },
+      {
+        "name": "Koffi",
+        "desc": "My backup when Cartel has a line. Get the banana walnut muffin, trust me on that one."
+      },
+      {
+        "name": "La Perlita Mexican Food",
+        "desc": "Best margaritas in Palm Springs, and that's not a casual claim. Outdoor seating when the weather behaves."
+      },
+      {
+        "name": "Las Palmas Brewing",
+        "desc": "Family-owned brewery with Tuesday specials and tacos that are better than a brewery should be making."
+      },
+      {
+        "name": "The Nest",
+        "desc": "Live music, dancing, drinks, full restaurant. Hard to explain without sounding like I'm exaggerating, so just go and tell me what you thought."
+      }
+    ],
+    "todo": [
+      {
+        "title": "Palm Springs Aerial Tram",
+        "text": "6,000 ft up to San Jacinto Peak in about 10 minutes, and it goes from desert heat to alpine cold in that same ride. Get there early on weekends, the line gets long."
+      },
+      {
+        "title": "Moorten Botanical Garden",
+        "text": "Cactarium full of rare cacti and succulents you genuinely won't find anywhere else. Give it an hour, and check the gift shop before you leave, they have plants worth dragging home."
+      },
+      {
+        "title": "Modernism Week",
+        "text": "11 days in February covering architecture tours, home tours, film, and design panels. Book the specific events you want early, a lot of them sell out weeks out."
+      },
+      {
+        "title": "Palm Springs Art Museum",
+        "text": "Desert art, European works, and a solid Native American collection. Free on Thursdays from 4 to 8pm, which is worth knowing."
+      },
+      {
+        "title": "Coachella + Stagecoach",
+        "text": "Two weekends each in April: Coachella for pop, electronic, and indie, Stagecoach for country. Both completely take over the valley and both are 20 minutes from here."
+      },
+      {
+        "title": "The V Pool Party",
+        "text": "Weekend pool parties at The Sonder Hotel with DJs and the classic Palm Springs day-drinking vibe. No ticket, just show up."
+      },
+      {
+        "title": "Palm Springs Vintage Market",
+        "text": "MCM furniture, clothing, and art on the first Sunday of the month, October through May. If you want the good stuff, be there by 8am."
+      },
+      {
+        "title": "El Paseo, Palm Desert",
+        "text": "Open-air shopping strip with a decent mix of high-end brands and independent boutiques, mountain views the whole way down. 20 minutes from here, good for a half-day."
+      }
+    ],
+    "kids": [
+      {
+        "name": "Living Desert Zoo and Gardens",
+        "desc": "Over 1,000 acres of desert ecosystem with a bighorn sheep enclosure and small animal exhibits worth seeing with kids."
+      },
+      {
+        "name": "Over the Rainbow Desserts",
+        "desc": "Their gluten-free cupcakes are the best I've had, which surprised me too. Go early and ask about half-off day-olds, they taste exactly the same."
+      },
+      {
+        "name": "Bear Creek Trailhead",
+        "desc": "Paved trail through a protected nature preserve along the base of the Southern Santa Rosa Mountains, easy enough for kids and still worth it for adults."
+      },
+      {
+        "name": "Cabazon Dinosaurs",
+        "desc": "Roadside attraction with a dinosaur garden and robotic dinosaurs. Ridiculous in the best way, especially with kids."
+      },
+      {
+        "name": "Palm Springs Air Museum",
+        "desc": "Kids can climb inside a fully functional Boeing B-17 Flying Fortress and try the flight simulator. Honestly, adults want to do it too."
+      }
+    ],
+    "cool": [
+      {
+        "name": "Escape Room Palm Springs",
+        "desc": "Over 6,000 sq ft, supposedly the largest escape room in Southern California. Dominique (the owner) is a friend and set up code <strong>ABNB10</strong> for 10% off."
+      },
+      {
+        "name": "Ice Skating at Acrisure Arena",
+        "desc": "Same ice the Coachella Firebirds train on. $15 per session, $5 skate rental, pre-register online."
+      },
+      {
+        "name": "Palm Springs Art Museum",
+        "desc": "Desert art, European and Native American works, theater, outdoor space, and a cafe inside. Free Thursday afternoons with live music added in."
+      },
+      {
+        "name": "Agua Caliente Cultural Museum",
+        "desc": "Newer museum covering Cahuilla tribal history and desert culture in a well-designed space. Also: AC, which is reason enough in summer."
+      },
+      {
+        "name": "\"Shots in the Night\"",
+        "desc": "Mini-golf at Indian Wells Golf Resort after dark, with lasers, glow-in-the-dark targets, music, and food. Better than it sounds."
+      }
+    ],
+    "ev_note": "Two options close by, both under 10 minutes from the condo.",
+    "ev": [
+      {
+        "title": "Tesla Supercharger",
+        "text": "8 min away at <a href=\"https://maps.google.com/?q=101+North+Museum+Drive,+Palm+Springs,+CA\" target=\"_blank\" rel=\"noopener\">101 North Museum Drive ↗</a>."
+      },
+      {
+        "title": "Electrify America",
+        "text": "10 min away at <a href=\"https://maps.google.com/?q=588+S+Palm+Canyon+Dr,+Palm+Springs,+CA\" target=\"_blank\" rel=\"noopener\">588 S Palm Canyon Dr ↗</a>. Grab a Macrobiotic Bowl at <a href=\"https://palmgreenscafe.com\" target=\"_blank\" rel=\"noopener\">Palm Greens Cafe</a> while you charge, it's right there."
+      }
+    ]
+  },
+  "checkout": {
+    "intro": "Checkout is at <strong>11 am</strong>. The following are appreciated, not required.",
+    "items": [
+      "Turn off lights and fans",
+      "Return pool key to the coat rack at the entrance",
+      "Load dishwasher",
+      "Take out trash (dumpsters in lots 4 and 5)"
+    ],
+    "review_title": "Leave a Review",
+    "review": [
+      "If The Sundune came through for you, a 5-star review genuinely matters. It takes about 30 seconds and helps other guests find their way here, which is how this whole thing keeps going.",
+      "More local guides and desert intel at <a href=\"https://indigopalm.co\" target=\"_blank\" rel=\"noopener\">indigopalm.co</a>. If you post anything worth showing, tag us @indigopalmco.",
+      "Hope it was worth the trip. Would love to see you again!"
+    ],
+    "review_sig": "Eann"
+  }
+}

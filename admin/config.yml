@@ -100,3 +100,62 @@ collections:
           - { label: "Description Paragraph 2", name: "description_p2", widget: "text" }
           - { label: "Description Paragraph 3", name: "description_p3", widget: "text" }
           - { label: "Description Paragraph 4", name: "description_p4", widget: "text" }
+
+  - name: "sundune-guide"
+    label: "Sundune Welcome Guide"
+    files:
+      - name: "sundune-guide"
+        label: "Welcome Guide Copy"
+        file: "_content/sundune-guide.json"
+        fields:
+          - label: "Welcome tab"
+            name: "welcome"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Host intro paragraphs", name: "intro", widget: "list", field: { label: "Text", name: "text", widget: "text" }, hint: "Four paragraphs in the host card, in order." }
+              - { label: "Host signature", name: "signature", widget: "string" }
+              - { label: "Pull quote", name: "quote", widget: "text" }
+              - { label: "Pull quote attribution", name: "quote_by", widget: "string" }
+              - { label: "Host tips", name: "tips", widget: "list", allow_add: false, fields: [{ label: "Label", name: "label", widget: "string" }, { label: "Text", name: "text", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+          - label: "Arrival tab"
+            name: "arrival"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Highway 111 warning", name: "gps_warning", widget: "text", hint: "Red callout at the top. Keep the <strong> around the traffic light name." }
+              - { label: "Entering the condo steps", name: "steps", widget: "list", allow_add: false, fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Text", name: "text", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+              - { label: "WiFi note (under the network name)", name: "wifi_note", widget: "text" }
+              - { label: "Noise curfew callout", name: "curfew", widget: "text" }
+          - label: "House tab"
+            name: "house"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "House rules", name: "rules", widget: "list", allow_add: false, fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Text", name: "text", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+              - { label: "House guide cards", name: "guide", widget: "list", allow_add: false, fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Text", name: "text", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+              - { label: "Pool and spa paragraphs", name: "pool", widget: "list", field: { label: "Text", name: "text", widget: "text" }, hint: "Three paragraphs, in order." }
+          - label: "Explore tab"
+            name: "explore"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Wanderlust Approved intro", name: "intro", widget: "text" }
+              - { label: "Places to Eat note", name: "eat_note", widget: "text" }
+              - { label: "Places to Eat", name: "eat", widget: "list", allow_add: false, fields: [{ label: "Name", name: "name", widget: "string" }, { label: "Description", name: "desc", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+              - { label: "Places to Drink", name: "drink", widget: "list", allow_add: false, fields: [{ label: "Name", name: "name", widget: "string" }, { label: "Description", name: "desc", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+              - { label: "Things to Do", name: "todo", widget: "list", allow_add: false, fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Text", name: "text", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+              - { label: "Family Activities", name: "kids", widget: "list", allow_add: false, fields: [{ label: "Name", name: "name", widget: "string" }, { label: "Description", name: "desc", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+              - { label: "Places to Cool Off", name: "cool", widget: "list", allow_add: false, fields: [{ label: "Name", name: "name", widget: "string" }, { label: "Description", name: "desc", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+              - { label: "EV Charging note", name: "ev_note", widget: "text" }
+              - { label: "EV Charging options", name: "ev", widget: "list", allow_add: false, fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Text", name: "text", widget: "text" }], hint: "Edit text only. Items keep their order, photos, links and addresses. Basic HTML (<strong>, <a href>) is allowed." }
+          - label: "Checkout tab"
+            name: "checkout"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Checkout intro callout", name: "intro", widget: "text" }
+              - { label: "Checkout checklist", name: "items", widget: "list", field: { label: "Text", name: "text", widget: "text" }, hint: "Four items, in order." }
+              - { label: "Review card title", name: "review_title", widget: "string" }
+              - { label: "Review card paragraphs", name: "review", widget: "list", field: { label: "Text", name: "text", widget: "text" }, hint: "Three paragraphs, in order." }
+              - { label: "Review card signature", name: "review_sig", widget: "string" }
