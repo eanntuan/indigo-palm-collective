@@ -1,6 +1,7 @@
 ---
 title: "Desert Hot Springs Day Trip: 7 Mineral Pools Worth Visiting"
 date: 2026-05-24
+dateModified: 2026-11-21
 metaDescription: "7 mineral pool spots near Indio and Palm Springs: from free public soaks to full-day spa passes. Two Bunch Palms, Azure Palm, Miracle Springs, and more."
 ogImage: /blog/images/cozy-cactus-hot-tub.webp
 heroImage: /blog/images/cozy-cactus-hot-tub.webp
@@ -33,7 +34,7 @@ layout: blog-post.njk
 <h2>1. Two Bunch Palms Resort</h2>
 <p><strong>$$$</strong> | Day passes available</p>
 
-<p><a href="https://twobunchpalms.com/" target="_blank" rel="noopener noreferrer"><strong>Two Bunch Palms</strong></a> is the most well-known mineral spa in the area, and the one that earns that reputation. Two Bunch Palms has been operating since the 1940s and the grounds feel it: mature palms, rock grottos, an unhurried pace. Day passes run around $80 to $140 depending on season and day of week. That gets you access to the main mineral pool and grotto. Spa treatments book out, so plan ahead if that's the goal.</p>
+<p><a href="https://twobunchpalms.com/" target="_blank" rel="noopener noreferrer"><strong>Two Bunch Palms</strong></a> is the most well-known mineral spa in the area, and the one that earns that reputation. Two Bunch Palms has been operating since the 1940s and the grounds feel it: mature palms, rock grottos, an unhurried pace. The Mineral Soak Day pass is $185 (9 AM to 6 PM) and covers a full day of mineral soaking, daily wellness offerings, and lunch with a non-alcoholic drink, while a Day Retreat with a 50-minute spa treatment runs $345. Spa treatments book out, so plan ahead if that's the goal.</p>
 
 <p>They have a specific approach to quiet here. No phones at the pools, no loud conversations. If you're coming with someone who needs to be on a call every 30 minutes, this is not the right spot.</p>
 
