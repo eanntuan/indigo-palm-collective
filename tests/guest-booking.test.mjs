@@ -244,12 +244,18 @@ describe('welcome guide gate', () => {
     assert.match(cookie, /HttpOnly/);
     assert.match(cookie, /Secure/);
     const c = cookie.split(';')[0];
-    const sub = await guide('/the-sundune/welcome-guide/arrival/', { Cookie: c });
+    const sub = await guide('/ps-retreat/welcome-guide.html', { Cookie: c });
     assert.equal(await sub.res.text(), '<html>GUIDE PAGE</html>');
     // the same cookie is held back again if the clock were earlier (it only carries credentials)
     at(BEFORE);
-    const early = await guide('/the-sundune/welcome-guide/arrival/', { Cookie: c });
+    const early = await guide('/ps-retreat/welcome-guide.html', { Cookie: c });
     assert.doesNotMatch(await early.res.text(), /GUIDE PAGE/);
+  });
+
+  test('The Sundune guide is open to everyone: no credentials, any time', async () => {
+    at(BEFORE);
+    const r = await guide('/the-sundune/welcome-guide/');
+    assert.equal(await r.res.text(), '<html>GUIDE PAGE</html>');
   });
 
   test('no credentials, wrong token, wrong property, unconfirmed booking: not served', async () => {

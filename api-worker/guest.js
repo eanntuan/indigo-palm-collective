@@ -247,7 +247,7 @@ function lockPage({ title, body, button, status = 200 }) {
 export async function guideGate(request, env, url, nowMs = Date.now()) {
   if (!['GET', 'HEAD'].includes(request.method)) return null;
   const g = matchGuidePath(url.pathname);
-  if (!g) return null;
+  if (!g || g.slug === 'the-sundune') return null; // Sundune guide is intentionally open to everyone
 
   const pass = async (cookie) => {
     const res = await fetch(request);
