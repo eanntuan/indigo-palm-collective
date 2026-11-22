@@ -285,7 +285,8 @@ describe('welcome guide gate', () => {
 
   test('other pages are untouched', async () => {
     const r = await guide('/terra-luz/farewell.html');
-    assert.equal(await r.res.text(), '<html>GUIDE PAGE</html>');
+    assert.equal(r.res.status, 301);
+    assert.equal(r.res.headers.get('Location'), 'https://indigopalm.co/terra-luz/farewell');
     assert.ok(!r.res.headers.get('Set-Cookie'));
   });
 });
